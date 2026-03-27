@@ -27,6 +27,8 @@ export type PaginationCopy = {
   of_text?: string;
 };
 
+type PaginationToken = number | 'ellipsis';
+
 type RpcResult = { total?: number; rows?: RaceListRow[] };
 
 function firstYyyymmdd(dates: unknown): string | null {
@@ -68,6 +70,16 @@ function isDefaultFilterState(
     month === 'all' &&
     categoryKey === 'all'
   );
+}
+
+function buildPaginationTokens(page: number, totalPages: number): PaginationToken[] {
+  if (totalPages <= 1) return [1];
+  if (totalPages <= 5) {
+    return Array.from({ length: totalPages }, (_, i) => i + 1);
+  }
+  if (page <= 2) return [1, 2, 3, 'ellipsis', totalPages];
+  if (page >= totalPages - 1) return [1, 'ellipsis', totalPages - 2, totalPages - 1, totalPages];
+  return [1, 'ellipsis', page - 1, page, page + 1, 'ellipsis', totalPages];
 }
 
 const PLACEHOLDER_GIF =
@@ -247,6 +259,8 @@ export default function RaceListPageIsland(props: {
   const [mobileMapOpen, setMobileMapOpen] = useState(false);
   const [desktopMapOpen, setDesktopMapOpen] = useState(true);
   const mapInst = useRef<mapboxgl.Map | null>(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const didMountRef = useRef(false);
 
   useEffect(() => {
     document.body.classList.toggle('race-list-mobile-map-open', mobileMapOpen);
@@ -333,7 +347,22 @@ export default function RaceListPageIsland(props: {
     void fetchPage();
   }, [needsRemote, fetchPage]);
 
+  useEffect(() => {
+    if (!didMountRef.current) {
+      didMountRef.current = true;
+      return;
+    }
+    const target = sectionRef.current;
+    if (!target || typeof window === 'undefined') return;
+    const top = Math.max(0, window.scrollY + target.getBoundingClientRect().top - 24);
+    window.scrollTo({ top, behavior: 'smooth' });
+  }, [page]);
+
   const totalPages = Math.max(1, Math.ceil(total / RACE_LIST_PAGE_SIZE));
+  const paginationTokens = useMemo(
+    () => buildPaginationTokens(page, totalPages),
+    [page, totalPages],
+  );
 
   const rangeLabel = useMemo(() => {
     if (total === 0) return '';
@@ -538,7 +567,7 @@ export default function RaceListPageIsland(props: {
         </div>
       </section>
 
-      <section className="section section-race-cards">
+      <section className="section section-race-cards" ref={sectionRef}>
         <div className="section-race-cards-header-container">
           <h1 id="race-cards-title" className="section-header section-header-race-cards static-header">
             {raceListTitle}
@@ -593,8 +622,6 @@ export default function RaceListPageIsland(props: {
                   r.race_type ??
                   '';
                 const distParts = splitDistanceVerbose(distVerbose);
-                const withSpacing =
-                  distParts.length > 0 || Boolean(venue.trim()) || Boolean(displayType.trim());
 
                 return (
                   <a
@@ -636,7 +663,7 @@ export default function RaceListPageIsland(props: {
                             </div>
                           ) : null}
                           <div
-                            className={`race-distances${distParts.length > 0 ? ' with-spacing' : ''}`}
+                            className="race-distances"
                           >
                             <div className="distance-container">
                               {distParts.length > 0 ? (
@@ -668,9 +695,7 @@ export default function RaceListPageIsland(props: {
                         <div className="left-container">
                           <h3 className="race-name">{name}</h3>
                           {venue ? (
-                            <div
-                              className={`race-location${distParts.length > 0 ? ' with-spacing' : ''}`}
-                            >
+                            <div className="race-location">
                               <svg className="icon" aria-hidden="true">
                                 <use
                                   href="/icons/svg-sprite.svg#location-icon"
@@ -683,9 +708,7 @@ export default function RaceListPageIsland(props: {
                         </div>
                       </div>
                       {summary ? <div className="race-summary">{summary}</div> : null}
-                      <div
-                        className={`cta-button${withSpacing ? ' with-spacing' : ''}`}
-                      >
+                      <div className="cta-button">
                         <div className="more-info-button">{raceCardCta}</div>
                       </div>
                     </div>
@@ -708,7 +731,24 @@ export default function RaceListPageIsland(props: {
                     {pagination.previous_text ?? ''}
                   </button>
                   <div id="page-numbers">
-                    {pagination.page_text ?? ''} {page} {pagination.of_text ?? ''} {totalPages}
+                    {paginationTokens.map((token, index) =>
+                      token === 'ellipsis' ? (
+                        <span key={`ellipsis-${index}`} className="ellipsis">
+                          ...
+                        </span>
+                      ) : (
+                        <button
+                          key={`page-${token}`}
+                          type="button"
+                          className={token === page ? 'active' : undefined}
+                          aria-current={token === page ? 'page' : undefined}
+                          onClick={() => setPage(token)}
+                          disabled={loading || token === page}
+                        >
+                          {token}
+                        </button>
+                      ),
+                    )}
                   </div>
                   <button
                     type="button"

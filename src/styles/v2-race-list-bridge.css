@@ -127,15 +127,15 @@ body.race-list-page.v2-race-list .race-card .race-card-upper-meta {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  gap: 0.35rem;
+  gap: 0.5rem;
 }
 
 body.race-list-page.v2-race-list .race-card .race-card-upper-box .race-info-top .race-date,
 body.race-list-page.v2-race-list .race-card .race-card-upper-box .race-info-top .race-location {
   padding: 0.55rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 body.race-list-page.v2-race-list .race-card .race-card-upper-box .race-info-top .race-location {
@@ -146,8 +146,8 @@ body.race-list-page.v2-race-list .race-card .race-card-upper-meta .race-distance
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.35rem;
-  max-width: min(80%, 24rem);
+  gap: 0.5rem;
+  max-width: 100%;
   margin-bottom: 0;
   flex-wrap: wrap;
 }
@@ -156,26 +156,26 @@ body.race-list-page.v2-race-list .race-card .race-card-upper-meta .distance-cont
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.35rem;
+  gap: 0.5rem;
 }
 
 body.race-list-page.v2-race-list .race-card .race-card-upper-meta .race-distance {
   background: var(--info-highlight-background);
-  color: var(--color-primary-dark);
+  color: #000;
   padding: 0.35rem 0.7rem;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 1;
 }
 
 body.race-list-page.v2-race-list .race-card .race-card-upper-meta .race-type--image {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.45rem;
   background: var(--info-highlight-background);
-  color: var(--color-primary-dark);
+  color: #000;
   padding: 0.35rem 0.7rem;
   border-radius: 5px;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 1;
   white-space: nowrap;
 }
@@ -195,7 +195,6 @@ body.race-list-page.v2-race-list .race-card .race-info-bottom {
 
 body.race-list-page.v2-race-list .race-card .race-info-bottom .upper-container {
   display: block;
-  align-items: start;
   margin-top: 0;
   width: 100%;
 }
@@ -208,7 +207,6 @@ body.race-list-page.v2-race-list .race-card .race-info-bottom .upper-container .
   overflow: visible;
   white-space: normal;
   text-align: left;
-  align-items: flex-start;
 }
 
 body.race-list-page.v2-race-list
@@ -248,16 +246,13 @@ body.race-list-page.v2-race-list
   text-overflow: ellipsis;
 }
 
-body.race-list-page.v2-race-list .race-card .race-distance {
-  padding: 0.3rem 0.75rem;
-  font-size: 1.3rem;
-}
-
 body.race-list-page.v2-race-list .race-card .race-summary {
   margin-bottom: 0.8rem;
   font-size: 1.42rem;
   line-height: 1.4;
-  min-height: 6.8rem;
+  min-height: 0;
+  display: block;
+  overflow: visible;
 }
 
 body.race-list-page.v2-race-list .race-card .cta-button {
@@ -311,6 +306,41 @@ body.race-list-page.v2-race-list .map-placeholder {
 
 body.race-list-page.v2-race-list .map-placeholder.map-placeholder--disabled {
   display: none;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .pagination {
+  gap: 0.2rem;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .pagination #page-numbers {
+  display: flex;
+  align-items: center;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .pagination #page-numbers button,
+body.race-list-page.v2-race-list .section-race-cards .pagination #page-numbers .ellipsis {
+  margin: 0 5px 5px 5px;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .pagination #page-numbers button {
+  min-width: 3.6rem;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .pagination #page-numbers .ellipsis {
+  font-size: 2rem;
+  line-height: 1;
+  padding-bottom: 0.4rem;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .pagination button.active {
+  background-color: var(--info-highlight-background2);
+  border-color: var(--info-highlight-background2);
+  color: var(--color-primary-dark);
+  opacity: 1;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .pagination button[aria-current='page'] {
+  cursor: default;
 }
 
 @media (max-width: 75em) {
@@ -387,12 +417,14 @@ body.race-list-page.v2-race-list .map-placeholder.map-placeholder--disabled {
     white-space: normal;
   }
 
-  body.race-list-page.v2-race-list .race-card .race-summary {
-    min-height: 0;
-  }
-
   body.race-list-page.v2-race-list .race-card .more-info-button {
     min-height: 5rem;
     padding-right: 4rem;
+  }
+
+  body.race-list-page.v2-race-list .section-race-cards .pagination {
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+    margin-bottom: 6rem;
   }
 }
