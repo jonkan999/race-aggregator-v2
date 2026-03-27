@@ -157,3 +157,4 @@ Playwright MCP or similar browser-driving tooling is optional agent infrastructu
 - [PRD.md](./PRD.md) — architecture decisions and phases.
 - [AGENTS.md](./AGENTS.md) — Codex-oriented repo workflow and migration checklist.
 - [architecture.md](./architecture.md) — compact architecture and SEO guardrails.
+- [docs/README.md](./docs/README.md) — repo map, rebuild plan, and migration baseline.

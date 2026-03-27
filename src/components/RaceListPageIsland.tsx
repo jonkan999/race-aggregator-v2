@@ -219,6 +219,7 @@ export default function RaceListPageIsland(props: {
 
   const prefix = routeLocale === 'en' ? `/${countryCode}/en/` : `/${countryCode}/`;
   const raceBase = `${prefix}${racePageFolder}/`;
+  const hasMapboxToken = Boolean(mapboxToken.trim());
 
   const snapshotRef = useRef<{ rows: RaceListRow[]; total: number }>({
     rows: initialRows,
@@ -521,17 +522,19 @@ export default function RaceListPageIsland(props: {
               <div className="browse-link-text">{browseByCategoryButton}</div>
             </a>
           </div>
-          <div className="toggle-button desktop" id="toggleMapButton">
-            <button type="button" onClick={() => setDesktopMapOpen((v) => !v)}>
-              <svg className="icon" id="onIcon" role="img" aria-hidden="true">
-                <use href="/icons/svg-sprite.svg#radio-button-on-outline" xlinkHref="/icons/svg-sprite.svg#radio-button-on-outline" />
-              </svg>
-              <svg className="icon" id="offIcon" role="img" aria-hidden="true">
-                <use href="/icons/svg-sprite.svg#radio-button-off-outline" xlinkHref="/icons/svg-sprite.svg#radio-button-off-outline" />
-              </svg>
-              {desktopMapOpen ? mapToggleDesktopActive : mapToggleDesktop}
-            </button>
-          </div>
+          {hasMapboxToken ? (
+            <div className="toggle-button desktop" id="toggleMapButton">
+              <button type="button" onClick={() => setDesktopMapOpen((v) => !v)}>
+                <svg className="icon" id="onIcon" role="img" aria-hidden="true">
+                  <use href="/icons/svg-sprite.svg#radio-button-on-outline" xlinkHref="/icons/svg-sprite.svg#radio-button-on-outline" />
+                </svg>
+                <svg className="icon" id="offIcon" role="img" aria-hidden="true">
+                  <use href="/icons/svg-sprite.svg#radio-button-off-outline" xlinkHref="/icons/svg-sprite.svg#radio-button-off-outline" />
+                </svg>
+                {desktopMapOpen ? mapToggleDesktopActive : mapToggleDesktop}
+              </button>
+            </div>
+          ) : null}
         </div>
       </section>
 
@@ -552,7 +555,10 @@ export default function RaceListPageIsland(props: {
           </h2>
         </div>
 
-        <div className="race-cards-selector" data-testid="race-split">
+        <div
+          className={`race-cards-selector${!hasMapboxToken ? ' race-cards-selector--mapless' : ''}`}
+          data-testid="race-split"
+        >
           <div
             className="race-cards-grid"
             id="race-cards-container"
@@ -617,6 +623,43 @@ export default function RaceListPageIsland(props: {
                           <div className="race-date">{dateDisp}</div>
                           <div className="race-location">{regionLabel}</div>
                         </div>
+                        <div className="race-card-upper-meta">
+                          {displayType.trim() ? (
+                            <div className="race-type race-type--image">
+                              <svg className="icon" aria-hidden="true">
+                                <use
+                                  href="/icons/svg-sprite.svg#footsteps-icon"
+                                  xlinkHref="/icons/svg-sprite.svg#footsteps-icon"
+                                />
+                              </svg>
+                              {displayType}
+                            </div>
+                          ) : null}
+                          <div
+                            className={`race-distances${distParts.length > 0 ? ' with-spacing' : ''}`}
+                          >
+                            <div className="distance-container">
+                              {distParts.length > 0 ? (
+                                <>
+                                  {distParts.slice(0, 4).map((seg, di) => (
+                                    <div key={`${r.id}-d-${di}`} className="distance-item">
+                                      <span className="race-distance">
+                                        {formatDistanceSegment(seg, verboseLocalDistanceMapping)}
+                                      </span>
+                                    </div>
+                                  ))}
+                                  {distParts.length > 4 ? (
+                                    <div className="distance-item">
+                                      <span className="race-distance">…</span>
+                                    </div>
+                                  ) : null}
+                                </>
+                              ) : (
+                                null
+                              )}
+                            </div>
+                          </div>
+                        </div>
                         <div className="overlay soft" />
                       </div>
                     </div>
@@ -635,51 +678,6 @@ export default function RaceListPageIsland(props: {
                                 />
                               </svg>
                               {venue}
-                            </div>
-                          ) : null}
-                        </div>
-                        <div className="right-container">
-                          <div
-                            className={`race-distances${distParts.length > 0 ? ' with-spacing' : ''}`}
-                          >
-                            <svg className="icon" aria-hidden="true">
-                              <use
-                                href="/icons/svg-sprite.svg#flag-icon"
-                                xlinkHref="/icons/svg-sprite.svg#flag-icon"
-                              />
-                            </svg>
-                            <div className="distance-container">
-                              {distParts.length > 0 ? (
-                                <>
-                                  {distParts.slice(0, 4).map((seg, di) => (
-                                    <div key={`${r.id}-d-${di}`} className="distance-item">
-                                      <span className="race-distance">
-                                        {formatDistanceSegment(seg, verboseLocalDistanceMapping)}
-                                      </span>
-                                    </div>
-                                  ))}
-                                  {distParts.length > 4 ? (
-                                    <div className="distance-item">
-                                      <span className="race-distance">…</span>
-                                    </div>
-                                  ) : null}
-                                </>
-                              ) : (
-                                <div className="distance-item">
-                                  <span className="race-distance">{displayType}</span>
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                          {displayType.trim() ? (
-                            <div className="race-type">
-                              <svg className="icon" aria-hidden="true">
-                                <use
-                                  href="/icons/svg-sprite.svg#footsteps-icon"
-                                  xlinkHref="/icons/svg-sprite.svg#footsteps-icon"
-                                />
-                              </svg>
-                              {displayType}
                             </div>
                           ) : null}
                         </div>
@@ -731,7 +729,7 @@ export default function RaceListPageIsland(props: {
           </div>
 
           <div
-            className={`map-placeholder${mobileMapOpen ? ' map-placeholder--react-visible' : ''}${!desktopMapOpen ? ' desktop-map-hidden' : ''}`}
+            className={`map-placeholder${mobileMapOpen ? ' map-placeholder--react-visible' : ''}${!desktopMapOpen ? ' desktop-map-hidden' : ''}${!hasMapboxToken ? ' map-placeholder--disabled' : ''}`}
             id="map-placeholder"
           >
             <RaceMapIsland
@@ -755,30 +753,32 @@ export default function RaceListPageIsland(props: {
         </div>
       </section>
 
-      <button
-        type="button"
-        className={`toggle-button mobile${mobileMapOpen ? ' active' : ''}`}
-        id="toggleMapButtonMobile"
-        onClick={() => setMobileMapOpen((v) => !v)}
-      >
-        {mobileMapOpen ? (
-          <>
-            <svg className="icon" role="img" aria-hidden="true">
-              <use href="/icons/svg-sprite.svg#list-outline" xlinkHref="/icons/svg-sprite.svg#list-outline" />
-            </svg>
-            <p>{mapToggleMobileList}</p>
-          </>
-        ) : (
-          <>
-            <div className="icon-container">
+      {hasMapboxToken ? (
+        <button
+          type="button"
+          className={`toggle-button mobile${mobileMapOpen ? ' active' : ''}`}
+          id="toggleMapButtonMobile"
+          onClick={() => setMobileMapOpen((v) => !v)}
+        >
+          {mobileMapOpen ? (
+            <>
               <svg className="icon" role="img" aria-hidden="true">
-                <use href="/icons/svg-sprite.svg#map-outline" xlinkHref="/icons/svg-sprite.svg#map-outline" />
+                <use href="/icons/svg-sprite.svg#list-outline" xlinkHref="/icons/svg-sprite.svg#list-outline" />
               </svg>
-            </div>
-            <p>{mapToggleMobile}</p>
-          </>
-        )}
-      </button>
+              <p>{mapToggleMobileList}</p>
+            </>
+          ) : (
+            <>
+              <div className="icon-container">
+                <svg className="icon" role="img" aria-hidden="true">
+                  <use href="/icons/svg-sprite.svg#map-outline" xlinkHref="/icons/svg-sprite.svg#map-outline" />
+                </svg>
+              </div>
+              <p>{mapToggleMobile}</p>
+            </>
+          )}
+        </button>
+      ) : null}
     </>
   );
 }

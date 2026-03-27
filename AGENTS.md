@@ -7,6 +7,7 @@ This repository is the Astro + Supabase migration of the live legacy project at 
 - Read [`README.md`](./README.md) for setup, commands, and local development flow.
 - Read [`PRD.md`](./PRD.md) for product goals, SEO priorities, and phased delivery.
 - Read [`architecture.md`](./architecture.md) before changing list rendering, Supabase access, YAML content, or map data flow.
+- Read [`docs/README.md`](./docs/README.md) for the repo map, rebuild plan, and migration baseline.
 
 ## Core Rules
 
