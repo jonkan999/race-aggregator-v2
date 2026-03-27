@@ -1,0 +1,33 @@
+{
+  "name": "race-aggregator-v2",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "export-markers": "node scripts/export-markers.mjs",
+    "seed-races": "node scripts/seed-races.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:legacy-ref": "PW_LEGACY_REFERENCE=1 PW_SKIP_WEB_SERVER=1 playwright test --project=legacy-reference"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "astro": "^5.4.2",
+    "js-yaml": "^4.1.0",
+    "mapbox-gl": "^3.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/mapbox-gl": "^3.4.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "supabase": "^2.84.4",
+    "typescript": "^5.7.3"
+  }
+}

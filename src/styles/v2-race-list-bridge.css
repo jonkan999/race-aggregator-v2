@@ -1,0 +1,58 @@
+/* Bridge legacy layout to React islands (Mapbox, hydration). */
+.race-list-error {
+  color: var(--color-warning, #b91c1c);
+  grid-column: 1 / -1;
+}
+
+.race-list-loading {
+  grid-column: 1 / -1;
+}
+
+.map-placeholder .race-map-shell,
+.map-placeholder .race-map-canvas {
+  height: 100%;
+  min-height: 280px;
+}
+
+.map-placeholder .race-map-canvas {
+  min-height: calc(100vh - 28rem);
+}
+
+@media (max-width: 44em) {
+  .map-placeholder.map-placeholder--react-visible {
+    display: block !important;
+    z-index: 50;
+  }
+}
+
+@media (min-width: 45em) {
+  .map-placeholder.desktop-map-hidden {
+    display: none !important;
+  }
+}
+
+body.race-list-mobile-map-open .section-header-menu,
+body.race-list-mobile-map-open .site-footer,
+body.race-list-mobile-map-open .section-race-cards-header-container,
+body.race-list-mobile-map-open .section-filters {
+  display: none !important;
+}
+
+body.race-list-mobile-map-open .section-race-cards {
+  margin-top: 0 !important;
+}
+
+body.race-list-mobile-map-open .pagination {
+  display: none !important;
+}
+
+/* Avoid double margin when legacy .section-race-cards expects fixed header offset */
+body.race-list-page.v2-race-list .section-race-cards {
+  margin-top: 0;
+  height: auto;
+  min-height: 60vh;
+}
+
+body.race-list-page.v2-race-list .section-filters {
+  margin-top: 0;
+}

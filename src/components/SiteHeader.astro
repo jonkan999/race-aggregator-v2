@@ -1,0 +1,90 @@
+---
+import type { IndexYaml } from '../lib/content';
+import { slugify, hasEnglishMerge } from '../lib/content';
+
+type Locale = 'native' | 'en';
+
+interface Props {
+  country: string;
+  locale: Locale;
+  content: IndexYaml;
+  /** Full path to the race list in the *other* locale (e.g. `/se/en/race-calendar/`). */
+  alternateRaceListHref?: string;
+  raceListPage?: boolean;
+}
+
+const { country, locale, content, alternateRaceListHref, raceListPage = false } = Astro.props;
+
+const prefix = locale === 'en' ? `/${country}/en/` : `/${country}/`;
+const homeHref = locale === 'en' ? `/${country}/en/` : `/${country}/`;
+
+function navHref(segment: string): string {
+  return `${prefix}${segment}`;
+}
+
+const nav = content.navigation ?? {};
+const cc = content.country_code ?? country;
+const altText = String(content.alternate_locale_link_text ?? '');
+const showAltLink =
+  altText &&
+  alternateRaceListHref &&
+  (locale === 'native' ? hasEnglishMerge(country) : true);
+const altHref = alternateRaceListHref ?? '';
+---
+
+<section
+  class:list={[
+    'section-header-menu',
+    raceListPage && 'header-menu--inline',
+  ]}
+>
+  <div class="upper-header">
+    <a href={homeHref} class="logo-container">
+      <img
+        class="logo-image"
+        src="/common_images/logo100px.jpg"
+        alt=""
+        width="100"
+        height="100"
+      />
+    </a>
+    <a class="home-link" href={homeHref}>
+      <h2 class="page-name new-amsterdam">{content.page_name}</h2>
+    </a>
+    <div class="login-container" id="login-container" aria-hidden="true">
+      <div class="login-wrapper"></div>
+    </div>
+  </div>
+  <nav class="main-nav-container right-scroller" aria-label="Main">
+    {
+      Object.entries(nav).map(([key, value]) => {
+        if (typeof value !== 'string') return null;
+        if (key === 'main') {
+          return (
+            <a class="nav-container" href={homeHref}>
+              <span class="nav-item">{value}</span>
+            </a>
+          );
+        }
+        const seg = slugify(value, cc);
+        return (
+          <a class="nav-container" href={navHref(seg)}>
+            <span class="nav-item">{value}</span>
+          </a>
+        );
+      })
+    }
+    <a class="nav-container" href={navHref('privacy')}>
+      <span class="nav-item">{(content.footer as { privacy?: string } | undefined)?.privacy}</span>
+    </a>
+    {
+      showAltLink ? (
+        <div class="language-selector-nav">
+          <a class="nav-container language-switch-link" href={altHref}>
+            <span class="nav-item">{altText}</span>
+          </a>
+        </div>
+      ) : null
+    }
+  </nav>
+</section>

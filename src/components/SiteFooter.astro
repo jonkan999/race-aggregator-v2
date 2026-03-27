@@ -1,0 +1,136 @@
+---
+import type { IndexYaml } from '../lib/content';
+import { slugify } from '../lib/content';
+
+type Locale = 'native' | 'en';
+
+interface Props {
+  country: string;
+  locale: Locale;
+  content: IndexYaml;
+}
+
+const { country, locale, content } = Astro.props;
+const prefix = locale === 'en' ? `/${country}/en/` : `/${country}/`;
+const cc = content.country_code ?? country;
+const nav = content.navigation ?? {};
+const aux = content.auxiliary_pages ?? {};
+const footer = (content.footer ?? {}) as Record<string, unknown>;
+const social = (footer.social_links ?? {}) as Record<string, string>;
+
+function href(seg: string): string {
+  return `${prefix}${seg}`;
+}
+
+const racesHeading = String(footer.races_heading ?? '');
+const toolsHeading = String(footer.tools_heading ?? '');
+const aboutHeading = String(footer.about_heading ?? '');
+const privacyLabel = String(footer.privacy ?? '');
+const copyrightYear = String(footer.copyright_year ?? '');
+const siteName = String(footer.site_name ?? '');
+const rightsText = String(footer.rights_text ?? '');
+---
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3 class="footer-heading">{racesHeading}</h3>
+      <ul class="footer-links">
+        <li>
+          <a href={href(slugify(nav['race-list'] ?? 'races', cc))}>{nav['race-list']}</a>
+        </li>
+        <li>
+          <a href={href(slugify(nav['add-race'] ?? '', cc))}>{nav['add-race']}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3 class="footer-heading">{toolsHeading}</h3>
+      <ul class="footer-links">
+        <li>
+          <a href={href(slugify(nav['measure-route'] ?? '', cc))}>{nav['measure-route']}</a>
+        </li>
+        <li>
+          <a href={href(slugify(nav['training-plans'] ?? '', cc))}>{nav['training-plans']}</a>
+        </li>
+        <li>
+          <a href={href(slugify(nav['pace-calculator'] ?? '', cc))}>{nav['pace-calculator']}</a>
+        </li>
+        <li>
+          <a href={href(slugify(nav['racetime-estimator'] ?? '', cc))}>{nav['racetime-estimator']}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3 class="footer-heading">{aboutHeading}</h3>
+      <ul class="footer-links">
+        <li>
+          <a href={href(slugify(nav['about-us'] ?? '', cc))}>{nav['about-us']}</a>
+        </li>
+        <li>
+          <a href={href(slugify(nav['contact'] ?? '', cc))}>{nav['contact']}</a>
+        </li>
+        <li>
+          <a href={href('privacy')}>{privacyLabel}</a>
+        </li>
+        {
+          aux['terms-of-service'] ? (
+            <li>
+              <a href={href(slugify(String(aux['terms-of-service']), cc))}>
+                {aux['terms-of-service']}
+              </a>
+            </li>
+          ) : null
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="copyright">
+      &copy; {copyrightYear} {siteName}. {rightsText}
+    </div>
+    <div class="social-links">
+      {
+        social.facebook ? (
+          <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg class="icon" aria-hidden="true">
+              <use href="/icons/svg-sprite.svg#logo-facebook" xlink:href="/icons/svg-sprite.svg#logo-facebook" />
+            </svg>
+          </a>
+        ) : null
+      }
+      {
+        social.instagram ? (
+          <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg class="icon" aria-hidden="true">
+              <use href="/icons/svg-sprite.svg#logo-instagram" xlink:href="/icons/svg-sprite.svg#logo-instagram" />
+            </svg>
+          </a>
+        ) : null
+      }
+      {
+        social.youtube ? (
+          <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg class="icon" aria-hidden="true">
+              <use href="/icons/svg-sprite.svg#logo-youtube" xlink:href="/icons/svg-sprite.svg#logo-youtube" />
+            </svg>
+          </a>
+        ) : null
+      }
+      {
+        social.tiktok ? (
+          <a href={social.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg class="icon" aria-hidden="true">
+              <use href="/icons/svg-sprite.svg#logo-tiktok" xlink:href="/icons/svg-sprite.svg#logo-tiktok" />
+            </svg>
+          </a>
+        ) : null
+      }
+    </div>
+  </div>
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg class="icon" aria-hidden="true">
+      <use href="/icons/svg-sprite.svg#chevron-up-outline" xlink:href="/icons/svg-sprite.svg#chevron-up-outline" />
+    </svg>
+  </a>
+</footer>

@@ -1,0 +1,417 @@
+.section-header-menu {
+  padding-bottom: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-size);
+  width: 100%;
+  z-index: 9;
+  background-color: var(--color-background);
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+.section-header-menu.scrolled {
+  box-shadow: rgba(0, 0, 0, 0.16) 0 0 6px;
+}
+.section-header-menu.with-banner {
+  top: var(--ad-banner-height);
+}
+.upper-header {
+  display: flex;
+  justify-content: center;
+  /* Center the title horizontally */
+  align-items: center;
+  /* Vertically center the title and login icon */
+  position: relative;
+  /* Allows positioning the login-container */
+  padding: 1rem 2rem;
+  /* Add some padding to the header */
+  width: 100%;
+  /* Make the header span the full width */
+  color: var(--color-primary-shade);
+  margin: 0 auto 1.5rem auto;
+  max-width: 70%;
+}
+@media (max-width: 34em) {
+  .upper-header {
+    max-width: 95%;
+  }
+}
+.logo-container {
+  position: absolute;
+  /* Position the login container absolutely within the header */
+  left: 0.5rem;
+  /* Add margin to the right edge of the screen */
+  height: 6rem;
+  width: 6rem;
+}
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.login-container {
+  position: absolute;
+  right: 0.3rem;
+  transform: translateY(0.8rem);
+  width: 7rem;
+  height: 6.4rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.login-container:hover {
+  color: var(--color-primary-tint);
+}
+.login-container .user-display-name {
+  pointer-events: none;
+}
+.login-icon {
+  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+}
+.home-link {
+  padding-top: 0.5rem;
+  color: var(--color-primary-shade);
+  text-decoration: none;
+}
+.page-name {
+  flex-grow: 1;
+  /* Ensures the title takes up available space */
+  text-align: center;
+  /* Center the title text */
+  font-weight: 600;
+  font-size: 3.5rem;
+  /* Adjust the title size as needed */
+  margin: 0;
+  /* Remove default margins */
+}
+.main-nav-container {
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 59em) {
+  .main-nav-container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 44em) {
+  .main-nav-container {
+    padding-bottom: 0.5rem;
+  }
+}
+/* .main-nav-container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+.nav-container {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem 0.1rem;
+}
+.nav-item {
+  display: block;
+  color: var(--color-black-text);
+  font-size: 1.8rem;
+  padding-bottom: 0.1rem;
+}
+.nav-container.active .nav-item {
+  border-bottom: 2px solid var(--color-black-text);
+}
+/* Optional: Hide scrollbar on WebKit-based browsers (Chrome, Safari) */
+/* Login Modal Styles */
+.auth-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  min-width: 30rem;
+}
+.auth-modal h2 {
+  margin-bottom: 0.2rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 34em) {
+  .auth-modal {
+    min-width: 35rem;
+  }
+}
+.auth-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.auth-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.auth-modal input {
+  padding: 0.8rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+}
+.auth-modal button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.auth-modal button:hover {
+  background: var(--color-primary-tint);
+}
+.create-account-button {
+  background-color: #007bff;
+  /* Change to your desired color */
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.auth-modal .error {
+  color: var(--color-warning);
+  font-size: 1.6rem;
+}
+.login-icon {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.auth-form-container {
+  width: 100%;
+}
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.link-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+.logged-in-user-info {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
+}
+.logged-in-user-info p {
+  margin: 0.8rem 0;
+}
+.logged-in-user-info strong {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.primary-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.secondary-button {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.primary-button:hover {
+  background-color: var(--color-primary-tint);
+}
+.secondary-button:hover {
+  background-color: var(--color-primary-light);
+}
+.verification-notice {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.error-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.error {
+  color: var(--color-warning);
+  flex: 1;
+}
+.error-reset-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+.error-reset-link:hover {
+  text-decoration: underline;
+}
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.login-icon {
+  font-size: 4rem;
+}
+.user-display-name {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  display: none;
+  white-space: nowrap;
+  text-align: center;
+}
+.login-text {
+  display: block;
+}
+/* Regular fixed header */
+.section-header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /* other styles */
+}
+/* In-flow header for race list pages */
+.header-menu--inline {
+  position: relative;
+}
+/* Adjust main content when header is fixed */
+/* No need for extra padding when header is in-flow */
+.race-list-page main {
+  padding-top: 0;
+}
+/* Language selector in navigation bar */
+.language-selector-nav {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 3.8rem 0.1rem 0.8rem;
+  height: 100%;
+}
+.language-selector-nav .language-selector-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: var(--color-black-text);
+}
+.language-flag {
+  width: 16px;
+  height: 12px;
+  border-radius: 2px;
+}
+.language-code {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* Language modal */
+.language-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  min-width: 30rem;
+  max-width: 90%;
+}
+.language-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.language-modal-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.language-options-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: var(--color-black-text);
+  transition: background-color 0.2s;
+  position: relative;
+}
+.language-option:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.language-option.current {
+  background-color: rgba(0, 0, 0, 0.03);
+  pointer-events: none;
+}
+.language-option.current::after {
+  content: '✓';
+  position: absolute;
+  right: 16px;
+  color: var(--color-primary, #007bff);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.language-name {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .language-modal {
+    width: 250px;
+  }
+}

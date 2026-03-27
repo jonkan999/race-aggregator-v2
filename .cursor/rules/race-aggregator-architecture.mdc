@@ -1,0 +1,22 @@
+---
+description: Race Aggregator v2 architecture — YAML, Supabase, SSG, maps, keys
+globs:
+  - "src/**/*"
+  - "data/countries/**/*"
+  - "supabase/migrations/**/*"
+  - "scripts/**/*"
+---
+
+# Race Aggregator v2 — architecture rules
+
+- **Project mission**: Replace and evolve the legacy site into an SEO-first platform optimized for **cost**, **client speed**, and **market extensibility** (new countries/languages with minimal rework).
+- **Priority order for trade-offs**: SEO outcomes first, then recurring infra cost, then client runtime performance, then implementation convenience.
+- **SEO references**: Follow Google Search Central guidance and Schema.org feature-specific types. Avoid using overly generic schema when a concrete type (`Event`, `ItemList`, `BreadcrumbList`, etc.) exists.
+- **Copy**: No hardcoded user-facing strings. Use `data/countries/{code}/index.yaml` (native) and `merged_index_int.yaml` (English) where present. Add new keys there instead of literals in components.
+- **Race list page 1**: Built from `getRaceListFirstPageSnapshot` (Supabase at build if URL + secret, else `final_races.json`). Same data is passed into the client island for hydration.
+- **Pagination / filters / page 2+**: Use the browser Supabase client (`PUBLIC_SUPABASE_*` publishable key) and the `get_races_list_page` RPC (single request returns `total` + `rows` with translations).
+- **Map pins**: Load from static `public/markers-{country}.json` only — never from paginated list queries.
+- **Keys**: Only **publishable** keys in client bundles. **Secret** / service keys for `seed-races`, `export-markers`, and build-time DB snapshot only.
+- **New markets**: Add `data/countries/{code}/` (YAML + seed JSON), ensure `getStaticPaths` picks up the folder, run seed + `export-markers` for that code, update PRD if behaviour changes.
+- **List UI**: Race list route uses [RaceListLayout.astro](src/layouts/RaceListLayout.astro) and legacy-scoped CSS under `src/styles/legacy/`; keep markup class names aligned with legacy CSS when changing structure.
+- **Structured-data contract**: Any new SEO-significant route must document and ship its schema contract (PRD + implementation) as part of the feature, not as a later cleanup.

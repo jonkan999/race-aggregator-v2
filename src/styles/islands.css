@@ -1,0 +1,150 @@
+.race-list-island {
+  padding: 0.5rem 0;
+}
+
+.race-list-filters input {
+  width: 100%;
+  max-width: 20rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.race-list-error {
+  color: #b91c1c;
+}
+
+.race-cards {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.race-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+}
+
+.race-card-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.race-card-meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.race-card-cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0d9488;
+}
+
+.race-pagination {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.race-range {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.race-pagination-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.race-pagination-buttons button {
+  font: inherit;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.race-pagination-buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.race-map-shell {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.race-map-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid #eee;
+}
+
+.race-map-toggle-desktop {
+  font: inherit;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.race-map-toggle-mobile-labels {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+@media (min-width: 900px) {
+  .race-map-toggle-mobile-labels {
+    display: none;
+  }
+}
+
+.race-map-canvas {
+  width: 100%;
+  height: min(55vh, 420px);
+}
+
+@media (min-width: 900px) {
+  .race-map-canvas {
+    height: 480px;
+  }
+}
+
+.race-map-error {
+  margin: 0;
+  padding: 0.5rem 0.65rem;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
