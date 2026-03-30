@@ -1,0 +1,272 @@
+.auxiliary-page .section-add-race {
+  max-width: 80rem;
+  margin: 0 auto 15rem;
+  padding: 2rem 2rem 10rem;
+  padding-top: calc(var(--header-size) + 1.5rem) !important;
+}
+
+.auxiliary-page .section-add-race .section-header {
+  color: var(--color-primary-dark);
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.auxiliary-page .section-add-race .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.auxiliary-page .section-add-race .form-group + .form-group {
+  margin-top: 2rem;
+}
+
+.auxiliary-page .section-add-race label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.auxiliary-page .section-add-race input[type='text'],
+.auxiliary-page .section-add-race input[type='email'],
+.auxiliary-page .section-add-race input[type='url'],
+.auxiliary-page .section-add-race input[type='date'],
+.auxiliary-page .section-add-race input[type='time'],
+.auxiliary-page .section-add-race input[type='number'],
+.auxiliary-page .section-add-race select,
+.auxiliary-page .section-add-race textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  background-color: var(--color-white);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.auxiliary-page .section-add-race textarea {
+  min-height: 15rem;
+}
+
+.auxiliary-page .section-add-race input:focus,
+.auxiliary-page .section-add-race select:focus,
+.auxiliary-page .section-add-race textarea:focus {
+  outline: none;
+  border-color: var(--info-highlight-background2);
+  box-shadow: 0 0 0 0.2rem rgba(52, 188, 140, 0.25);
+}
+
+.auxiliary-page .section-add-race .optional {
+  font-weight: 400;
+}
+
+.auxiliary-page .section-add-race .map-container {
+  margin-bottom: 2rem;
+}
+
+.auxiliary-page .section-add-race #map-placeholder {
+  width: 100%;
+  height: 30rem;
+  background-color: var(--color-background-shade);
+  border: 0.1rem solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.auxiliary-page .section-add-race #map-placeholder:hover {
+  background-color: var(--color-background);
+}
+
+.auxiliary-page .section-add-race #map-placeholder .leaflet-pane,
+.auxiliary-page .section-add-race #map-placeholder .leaflet-control-container,
+.auxiliary-page .section-add-race #map-placeholder .leaflet-top,
+.auxiliary-page .section-add-race #map-placeholder .leaflet-bottom {
+  z-index: 1 !important;
+}
+
+.auxiliary-page .section-add-race #map-placeholder .leaflet-control {
+  z-index: 2 !important;
+}
+
+.auxiliary-page .section-add-race .marker-default {
+  background-color: var(--info-highlight-background2);
+  border-radius: 50%;
+  border: 0.1rem solid var(--color-primary);
+  width: 1rem;
+  height: 1rem;
+}
+
+.auxiliary-page .section-add-race #coordinates-display {
+  min-height: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.auxiliary-page .section-add-race .multi-day-toggle {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.auxiliary-page .section-add-race .multi-day-toggle label {
+  margin-bottom: 0;
+}
+
+.auxiliary-page .section-add-race #end-date-container {
+  margin-top: 1rem;
+}
+
+.auxiliary-page .section-add-race .distance-input-container {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.auxiliary-page .section-add-race #add-distance {
+  margin: 0.3rem 0 0.6rem 0.3rem;
+}
+
+.auxiliary-page .section-add-race .quick-distance {
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.auxiliary-page .section-add-race #distances-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auxiliary-page .section-add-race #distances-container .distance-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.9rem;
+  background: var(--info-highlight-background);
+  border-radius: 0.4rem;
+}
+
+.auxiliary-page .section-add-race .remove-distance {
+  padding: 0;
+  min-width: 0;
+  background: transparent;
+}
+
+.auxiliary-page .section-add-race .picture-upload-container {
+  margin-bottom: 1.5rem;
+}
+
+.auxiliary-page .section-add-race .picture-upload-input {
+  display: none;
+}
+
+.auxiliary-page .section-add-race .picture-upload-button {
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: var(--color-background-shade);
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.auxiliary-page .section-add-race .picture-upload-button:hover,
+.auxiliary-page .section-add-race .drag-drop-area.dragging-over {
+  background-color: var(--info-highlight-background);
+}
+
+.auxiliary-page .section-add-race .drag-drop-copy {
+  display: none;
+}
+
+.auxiliary-page .section-add-race .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.auxiliary-page .section-add-race .uploaded-image-container {
+  position: relative;
+  width: 20rem;
+  height: 15rem;
+}
+
+.auxiliary-page .section-add-race .uploaded-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.auxiliary-page .section-add-race .delete-icon {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.auxiliary-page .section-add-race #fileUploadStatus {
+  min-height: 1.8rem;
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+}
+
+.auxiliary-page .section-add-race .form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.auxiliary-page .section-add-race button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: var(--color-background-shade);
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.auxiliary-page .section-add-race button:hover {
+  background-color: var(--info-highlight-background);
+}
+
+.auxiliary-page .section-add-race button:active {
+  transform: translateY(0.1rem);
+}
+
+.auxiliary-page .section-add-race button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.auxiliary-page .section-add-race #clear-form {
+  margin-top: 1rem;
+}
+
+@media (max-width: 75em) {
+  .auxiliary-page .section-add-race {
+    padding: 1.5rem;
+    padding-top: calc(var(--header-size) + 1.5rem) !important;
+  }
+
+  .auxiliary-page .section-add-race .form-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .auxiliary-page .section-add-race .distance-input-container {
+    flex-direction: column;
+  }
+}

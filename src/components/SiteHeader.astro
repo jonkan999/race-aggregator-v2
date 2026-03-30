@@ -1,6 +1,7 @@
 ---
 import type { IndexYaml } from '../lib/content';
-import { slugify, hasEnglishMerge } from '../lib/content';
+import { localeBasePrefix, slugify, hasEnglishMerge } from '../lib/content';
+import HeaderAuth from './HeaderAuth';
 
 type Locale = 'native' | 'en';
 
@@ -8,15 +9,15 @@ interface Props {
   country: string;
   locale: Locale;
   content: IndexYaml;
-  /** Full path to the race list in the *other* locale (e.g. `/se/en/race-calendar/`). */
+  /** Full path to the race list in the other locale (for example `/en/race-calendar/`). */
   alternateRaceListHref?: string;
   raceListPage?: boolean;
 }
 
 const { country, locale, content, alternateRaceListHref, raceListPage = false } = Astro.props;
 
-const prefix = locale === 'en' ? `/${country}/en/` : `/${country}/`;
-const homeHref = locale === 'en' ? `/${country}/en/` : `/${country}/`;
+const prefix = localeBasePrefix(country, locale);
+const homeHref = prefix;
 
 function navHref(segment: string): string {
   return `${prefix}${segment}`;
@@ -30,6 +31,23 @@ const showAltLink =
   alternateRaceListHref &&
   (locale === 'native' ? hasEnglishMerge(country) : true);
 const altHref = alternateRaceListHref ?? '';
+const authBase = `${prefix}auth`;
+const authModal = (content.auth_modal ?? {}) as Record<string, string>;
+const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
+
+function normalizePath(path: string): string {
+  return path.replace(/\/+$/, '') || '/';
+}
+
+function isActiveNavPath(targetHref: string, key: string): boolean {
+  const normalizedHref = normalizePath(targetHref);
+
+  if (key === 'main') {
+    return currentPath === normalizedHref;
+  }
+
+  return currentPath === normalizedHref || currentPath.startsWith(`${normalizedHref}/`);
+}
 ---
 
 <section
@@ -51,30 +69,85 @@ const altHref = alternateRaceListHref ?? '';
     <a class="home-link" href={homeHref}>
       <h2 class="page-name new-amsterdam">{content.page_name}</h2>
     </a>
-    <div class="login-container" id="login-container" aria-hidden="true">
-      <div class="login-wrapper"></div>
-    </div>
+    <HeaderAuth
+      client:load
+      siteKey={`${content.country_code ?? country}:${content.page_name ?? 'site'}`}
+      siteName={String(content.page_name ?? 'Site')}
+      countryCode={country}
+      locale={locale}
+      signInLabel={String(authModal.title_sign_in ?? 'Logga in')}
+      confirmUrl={`${authBase}/confirm/`}
+      resetPasswordUrl={`${authBase}/reset-password/`}
+      messages={{
+        titleSignIn: String(authModal.title_sign_in ?? 'Logga in'),
+        titleCreateAccount: String(authModal.title_create_account ?? 'Skapa konto'),
+        titleResetPassword: String(authModal.title_reset_password ?? 'Återställ lösenord'),
+        namePlaceholder: String(authModal.name_placeholder ?? 'Ditt namn'),
+        emailPlaceholder: String(authModal.email_placeholder ?? 'Din e-post'),
+        passwordPlaceholder: String(authModal.password_placeholder ?? 'Lösenord'),
+        submitSignIn: String(authModal.submit_sign_in ?? 'Logga in'),
+        submitCreateAccount: String(authModal.submit_create_account ?? 'Skapa konto'),
+        submitResetPassword: String(authModal.submit_reset_password ?? 'Skicka återställningslänk'),
+        createAccount: String(authModal.create_account ?? 'Skapa konto'),
+        forgotPassword: String(authModal.forgot_password ?? 'Glömt lösenord?'),
+        backToLogin: String(authModal.back_to_login ?? 'Tillbaka till inloggning'),
+        errorWrongPassword: String(authModal.error_wrong_password ?? 'Fel lösenord'),
+        errorEmailNotFound: String(authModal.error_email_not_found ?? 'E-postadressen finns inte'),
+        alreadyLoggedIn: String(authModal.already_logged_in ?? 'Du är redan inloggad som'),
+        asEmail: String(authModal.as_email ?? 'med e-post'),
+        continueAsUser: String(authModal.continue_as_user ?? 'Fortsätt som denna användare'),
+        logoutAndSwitch: String(authModal.logout_and_switch ?? 'Logga ut och byt användare'),
+        accountCreated: String(authModal.account_created ?? 'Konto skapat!'),
+        accountCreatedDetails: String(authModal.account_created_details ?? 'Du är nu inloggad som'),
+        verificationEmailSent: String(authModal.verification_email_sent ?? 'En verifieringslänk har skickats till din e-post'),
+        pleaseVerify: String(authModal.please_verify ?? 'Vänligen verifiera din e-postadress'),
+        errorInvalidCredential: String(authModal.error_invalid_credential ?? 'Felaktig e-post eller lösenord'),
+        createAccountPrompt: String(authModal.create_account_prompt ?? 'Skapa konto istället'),
+        errorTooManyRequests: String(authModal.error_too_many_requests ?? 'För många försök. Försök igen senare.'),
+        authUnavailable: String(authModal.auth_unavailable ?? (locale === 'en' ? 'Authentication is not configured yet.' : 'Autentisering är inte konfigurerad ännu.')),
+        passwordResetSent: String((content.submission_flow as Record<string, string> | undefined)?.password_reset_sent ?? (locale === 'en' ? 'Password reset sent. Check your inbox.' : 'Lösenordsåterställning skickad. Kolla din inkorg.')),
+        continueWithGoogle: String(authModal.continue_with_google ?? (locale === 'en' ? 'Continue with Google' : 'Fortsätt med Google')),
+        continueWithGoogleCreate: String(authModal.continue_with_google_create ?? (locale === 'en' ? 'Create account with Google' : 'Skapa konto med Google')),
+        googleInProgress: String(authModal.google_in_progress ?? (locale === 'en' ? 'Continuing with Google...' : 'Fortsätter med Google...')),
+        oauthDivider: String(authModal.oauth_divider ?? (locale === 'en' ? 'or' : 'eller')),
+      }}
+    />
   </div>
-  <nav class="main-nav-container right-scroller" aria-label="Main">
+  <nav class="main-nav-container right-scroller" aria-label="Main" data-header-nav>
     {
       Object.entries(nav).map(([key, value]) => {
         if (typeof value !== 'string') return null;
         if (key === 'main') {
+          const isActive = isActiveNavPath(homeHref, key);
           return (
-            <a class="nav-container" href={homeHref}>
+            <a
+              class:list={['nav-container', isActive && 'active']}
+              href={homeHref}
+              aria-current={isActive ? 'page' : undefined}
+            >
               <span class="nav-item">{value}</span>
             </a>
           );
         }
         const seg = slugify(value, cc);
+        const href = navHref(seg);
+        const isActive = isActiveNavPath(href, key);
         return (
-          <a class="nav-container" href={navHref(seg)}>
+          <a
+            class:list={['nav-container', isActive && 'active']}
+            href={href}
+            aria-current={isActive ? 'page' : undefined}
+          >
             <span class="nav-item">{value}</span>
           </a>
         );
       })
     }
-    <a class="nav-container" href={navHref('privacy')}>
+    <a
+      class:list={['nav-container', isActiveNavPath(navHref('privacy'), 'privacy') && 'active']}
+      href={navHref('privacy')}
+      aria-current={isActiveNavPath(navHref('privacy'), 'privacy') ? 'page' : undefined}
+    >
       <span class="nav-item">{(content.footer as { privacy?: string } | undefined)?.privacy}</span>
     </a>
     {
@@ -88,3 +161,25 @@ const altHref = alternateRaceListHref ?? '';
     }
   </nav>
 </section>
+
+<script is:inline>
+  function scrollActiveHeaderNavIntoView() {
+    const nav = document.querySelector('[data-header-nav]');
+    const activeItem = nav?.querySelector('.nav-container.active');
+    if (!(activeItem instanceof HTMLElement)) return;
+
+    window.requestAnimationFrame(() => {
+      activeItem.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center',
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', scrollActiveHeaderNavIntoView, { once: true });
+  } else {
+    scrollActiveHeaderNavIntoView();
+  }
+</script>

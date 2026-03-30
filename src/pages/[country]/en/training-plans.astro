@@ -1,0 +1,99 @@
+---
+import AuxiliaryLayout from '../../../layouts/AuxiliaryLayout.astro';
+import AuxiliaryPageIntro from '../../../components/AuxiliaryPageIntro.astro';
+import TrainingPlansIsland from '../../../components/TrainingPlansIsland';
+import { alternateAuxiliaryPageHref, auxiliaryStaticPaths } from '../../../lib/auxiliaryPages';
+import { loadIndexYaml, type Locale } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return auxiliaryStaticPaths('en');
+}
+
+const { country } = Astro.params;
+const locale: Locale = 'en';
+const content = loadIndexYaml(country, locale);
+const trainingPlans = (content.training_plans ?? {}) as Record<string, any>;
+const form = (trainingPlans.form ?? {}) as Record<string, any>;
+const results = (trainingPlans.results ?? {}) as Record<string, any>;
+const planVariation = (trainingPlans.plan_variation ?? {}) as Record<string, any>;
+const messages = (trainingPlans.messages ?? {}) as Record<string, any>;
+const errors = (trainingPlans.errors ?? {}) as Record<string, any>;
+const workoutComponents = (trainingPlans.workout_components ?? {}) as Record<string, any>;
+const weekdays = (trainingPlans.weekdays ?? {}) as Record<string, string>;
+const pageTitle = String(trainingPlans.title ?? content.navigation?.['training-plans'] ?? 'Training Plans');
+const title = `${pageTitle} | ${content.page_name ?? 'Loppkartan'}`;
+const description = String(trainingPlans.description ?? '');
+const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'training-plans' });
+const contactHref = `/${country}/en/contact-us/`;
+const targetDistanceOptions = Object.entries((form.target_distance?.options ?? {}) as Record<string, string>).map(
+  ([value, label]) => ({ value, label }),
+);
+const trainingDayOptions = Object.entries((form.training_days?.options ?? {}) as Record<string, string>).map(
+  ([value, label]) => ({ value, label }),
+);
+const sessionTimeOptions = Object.entries((form.session_time?.options ?? {}) as Record<string, string>).map(
+  ([value, label]) => ({ value, label }),
+);
+---
+
+<AuxiliaryLayout
+  title={title}
+  description={description}
+  lang={content.country_language_code ?? 'en'}
+  country={country}
+  locale={locale}
+  content={content}
+  alternateHref={alternateHref}
+  breadcrumbLabel={pageTitle}
+  schemaType="WebApplication"
+>
+  <Fragment slot="head">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </Fragment>
+  <section class="section-training-plans">
+    <div class="container">
+      <AuxiliaryPageIntro title={pageTitle} description={description} />
+      <div class="info-disclaimer">
+        <p>
+          {String(trainingPlans.disclaimer_text_tp_1 ?? '')} <a href={contactHref}>{String(trainingPlans.disclaimer_link_tp ?? '')}</a>{' '}
+          {String(trainingPlans.disclaimer_text_tp_2 ?? '')}
+        </p>
+      </div>
+
+      <TrainingPlansIsland
+        client:load
+        dataUrl="/json/training_plans_processed_en.json"
+        loadingText={String(content.race_list_loading ?? 'Loading…')}
+        requiredFieldsError={String(errors.required_fields ?? '')}
+        loadingPlansError={String(errors.loading_plans ?? '')}
+        noMatchingPlanError={String(errors.no_matching_plan ?? '')}
+        resultsTitle={String(results.title ?? '')}
+        regenerateButtonText={String(results.regenerate_button ?? '')}
+        exportButtonText={String(results.export_button ?? '')}
+        raceDateLabel={String(form.race_date_label ?? '')}
+        targetDistanceLabel={String(form.target_distance_label ?? '')}
+        targetTimeLabel={String(form.target_time_label ?? '')}
+        trainingDaysLabel={String(form.training_days_label ?? '')}
+        sessionTimeLabel={String(form.session_time_label ?? '')}
+        isHillyLabel={String(form.is_hilly_label ?? '')}
+        submitButtonText={String(form.submit_button ?? '')}
+        hourUnit={String(form.hours_placeholder ?? '')}
+        minuteUnit={String(form.minutes_placeholder ?? '')}
+        secondUnit={String(form.seconds_placeholder ?? '')}
+        targetDistanceOptions={targetDistanceOptions}
+        trainingDayOptions={trainingDayOptions}
+        sessionTimeOptions={sessionTimeOptions}
+        focusLabel={String(planVariation.focus_label ?? '')}
+        weeklyStructureLabel={String(planVariation.weekly_structure_label ?? '')}
+        distributionLabel={String(planVariation.distribution_label ?? '')}
+        sessionsPerWeekText={String(planVariation.sessions_per_week ?? '')}
+        weeksText={String(messages.weeks ?? trainingPlans.weeks ?? '')}
+        weekLabel={String(messages.week_label ?? trainingPlans.week ?? '')}
+        hillyTerrainNote={String(messages.hilly_terrain_note ?? '')}
+        weekdays={weekdays}
+        durationLabel={String(workoutComponents.duration_label ?? '')}
+        paceLabel={String(workoutComponents.intensity_label ?? '')}
+      />
+    </div>
+  </section>
+</AuxiliaryLayout>

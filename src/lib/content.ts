@@ -9,6 +9,40 @@ export type Locale = 'native' | 'en';
 export type IndexYaml = {
   navigation?: Record<string, string>;
   auxiliary_pages?: Record<string, string>;
+  about_us?: {
+    title?: string;
+    meta_description?: string;
+    content?: {
+      intro?: string;
+      mission?: string;
+      story?: string;
+      closing?: string;
+      features?: Array<{ title?: string; description?: string }>;
+    };
+  };
+  contact?: {
+    title?: string;
+    meta_description?: string;
+    content?: {
+      intro?: string;
+      email?: { title?: string; address?: string; description?: string };
+      social?: { title?: string; description?: string };
+      feedback?: { title?: string; description?: string };
+    };
+  };
+  privacy_page?: {
+    title?: string;
+    meta_description?: string;
+    last_updated_label?: string;
+    last_updated_date?: string;
+    contact_intro?: string;
+    contact_email?: string;
+    sections?: Array<{
+      title?: string;
+      intro?: string;
+      bullets?: string[];
+    }>;
+  };
   race_list_name?: string;
   page_name?: string;
   base_url?: string;
@@ -58,7 +92,38 @@ export type IndexYaml = {
   };
   month_mapping?: Record<string, string>;
   type_options?: Record<string, string>;
-  browse_by_category?: { button?: string; helper_text?: string };
+  browse_by_category?: {
+    button?: string;
+    helper_text?: string;
+    overview?: string;
+    counties?: string;
+    cities?: string;
+    months?: string;
+    types?: string;
+    categories?: string;
+    neighboring?: string;
+  };
+  browse_overview?: { title?: string; meta_description?: string };
+  browse_categories?: { title?: string; meta_description?: string };
+  auth_modal?: Record<string, string>;
+  submission_flow?: Record<string, string>;
+  /** Copy + accent for `scripts/build-supabase-auth-templates.mjs` (GoTrue HTML). */
+  supabase_auth_email?: {
+    site_name?: string;
+    primary_color?: string;
+    shared?: {
+      greeting?: string;
+      closing_salutation?: string;
+      link_fallback_intro?: string;
+    };
+    confirm_signup?: { body?: string; button_label?: string; ignore_note?: string };
+    reset_password?: { body?: string; button_label?: string; ignore_note?: string };
+    change_email?: { body?: string; button_label?: string; ignore_note?: string };
+  };
+  seo_templates?: {
+    title_parts?: Record<string, string>;
+    paragraph_templates?: Record<string, string>;
+  };
   section_race_card_category_prefix?: string;
   section_race_card_category_suffix?: string;
   section_race_card_header_separator?: string;
@@ -114,6 +179,23 @@ export function loadIndexYaml(countryCode: string, locale: Locale): IndexYaml {
 export function raceListSlug(content: IndexYaml, countryCode: string): string {
   const label = content.navigation?.['race-list'] ?? 'races';
   return slugify(label, countryCode);
+}
+
+export function findCountryByRaceListSlug(raceList: string, locale: Locale): string | null {
+  for (const country of listCountryCodes()) {
+    const content = loadIndexYaml(country, locale);
+    if (raceListSlug(content, country) === raceList) {
+      return country;
+    }
+  }
+  return null;
+}
+
+export function localeBasePrefix(countryCode: string, locale: Locale): string {
+  if (locale === 'en') {
+    return countryCode === 'se' ? '/en/' : `/${countryCode}/en/`;
+  }
+  return countryCode === 'se' ? '/' : `/${countryCode}/`;
 }
 
 export { slugify };

@@ -1,6 +1,6 @@
 ---
 import type { IndexYaml } from '../lib/content';
-import { slugify } from '../lib/content';
+import { localeBasePrefix, slugify } from '../lib/content';
 
 type Locale = 'native' | 'en';
 
@@ -11,7 +11,7 @@ interface Props {
 }
 
 const { country, locale, content } = Astro.props;
-const prefix = locale === 'en' ? `/${country}/en/` : `/${country}/`;
+const prefix = localeBasePrefix(country, locale);
 const cc = content.country_code ?? country;
 const nav = content.navigation ?? {};
 const aux = content.auxiliary_pages ?? {};

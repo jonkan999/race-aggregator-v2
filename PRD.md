@@ -42,8 +42,8 @@
 |--------|-----------------|
 | Astro SSG | Per-market routes, YAML-driven titles/copy, **pre-rendered first page** of each list surface (see below), **ItemList JSON-LD** + visually hidden crawlable links for page-1 races. |
 | React islands | `RaceListPageIsland` (legacy-styled filters + cards + pagination + map/list toggles; page 1 unfiltered from SSG props; page 2+ and any filter via Supabase **RPC**), `RaceMapIsland` (Mapbox + clustered GeoJSON from static JSON; toolbar optional when parent supplies desktop toggle). |
-| Supabase | `races` + `race_translations`, RLS public read for published races only; **Publishable** key in the browser, **Secret** key in seed/export scripts and optional **build-time** list snapshot (no legacy JWT anon key in app code). |
-| Scripts | `scripts/seed-races.mjs` (JSON → DB), `scripts/export-markers.mjs` (DB or JSON → `public/markers-*.json`). |
+| Supabase | `races` + `race_translations`, RLS public read for published races only; **Publishable** key in the browser, **Secret** key only in seed/export/build-snapshot scripts (no legacy JWT anon key in app code). |
+| Scripts | `scripts/seed-races.mjs` (JSON → DB), `scripts/export-markers.mjs` (DB or JSON → `public/markers-*.json`), `scripts/export-race-list-snapshots.mjs` (DB → temporary per-country build snapshot), `scripts/build-with-race-list-snapshots.mjs` (snapshot-first build wrapper). Anonymous add-race submissions write directly from the browser to Supabase Storage + `public.race_submissions` via RLS-limited insert policies. |
 
 ## Cost accounting (Supabase reads)
 
@@ -67,20 +67,25 @@
 
 **Build-time snapshot source** (`getRaceListFirstPageSnapshot` in `src/lib/raceListSsg.ts`):
 
-1. If **`SUPABASE_URL` (or `PUBLIC_SUPABASE_URL`) + `SUPABASE_SECRET_KEY` (or legacy `SUPABASE_SERVICE_ROLE_KEY`)** are set at **build** time, load page 1 + total count from **Supabase** so the static HTML matches production DB (recommended for production CI).
-2. Otherwise fall back to **`data/countries/{code}/final_races.json`** (+ int file for translations). No extra public JSON asset; data is **inlined into the page** at build only.
+1. `npm run build` first exports a temporary local snapshot for each country into `.cache/race-list-build-snapshots/`.
+2. If **`SUPABASE_URL` (or `PUBLIC_SUPABASE_URL`) + `SUPABASE_SECRET_KEY` (or legacy `SUPABASE_SERVICE_ROLE_KEY`)** are set at build time, that export reads Supabase **once per country** and writes the snapshot locally.
+3. Static race-list and browse routes must reuse the local snapshot for the rest of the build rather than issuing repeated live reads from route code.
+4. If DB credentials are unavailable, build falls back to **`data/countries/{code}/final_races.json`** (+ int file for translations). No extra public JSON asset; data is **inlined into the page** at build only.
 
-**Caveat:** If production builds use JSON fallback while the live site uses Supabase, page 1 may **diverge** from page 2+ until the next deploy. **Mitigation:** supply server secrets in the build environment for release pipelines.
+**Cost guardrail:** build-time Supabase usage should scale with the number of countries being built, not with the number of static routes. The correct model is **export once, reuse everywhere**.
+
+**Caveat:** If production builds use JSON fallback while the live site uses Supabase, page 1 may **diverge** from page 2+ until the next deploy. **Mitigation:** supply server secrets in the build environment for release pipelines so the temporary build snapshot matches the DB.
 
 **Without browser Supabase keys:** Page 1 still works from the build snapshot; **Next** and **filter** are disabled or show copy from `race_list_remote_required` in YAML (no runtime fallback fetch).
 
-## Granular list routes (county / city / race type) — next
+## Granular list routes (county / city / race type / category)
 
-Legacy SEO uses dedicated URLs per county, city, type, etc. **Planned pattern (same as main list):**
+Legacy SEO uses dedicated URLs per county, city, type, etc. Category browse pages are now the first shipped slice in v2, using the same static-first pattern and a cache-aware SEO copy model. Broader county/city/type expansion should follow the same contract:
 
 - **`getStaticPaths`** emits one static route per segment (e.g. each county slug).
-- Each page pre-renders **the first page** of results for that segment (build tries Supabase secret first, else seed JSON filtered in Node).
+- Each page pre-renders **the first page** of results for that segment from the temporary build snapshot (or seed JSON fallback), not by issuing repeated direct Supabase reads per route.
 - **Further pages** for that segment use the same client Supabase pattern with query filters (`county`, `race_type`, …).
+- Category landing pages read `seo_content_cache*.json` first and fall back to deterministic YAML-template copy so the site can keep shipping even when LLM copy is missing or intentionally reduced.
 
 This keeps **hot paths cheap** (CDN + optional zero DB reads) while **long tail and interaction** stay on Supabase.
 
@@ -106,14 +111,17 @@ This keeps **hot paths cheap** (CDN + optional zero DB reads) while **long tail 
 ## Phased delivery
 
 1. **Current**: Astro scaffold, YAML loading, schema, seed/export scripts, **legacy-styled race list** (SSG page 1 + RPC for filters/pagination), static markers, Sweden (sv/en). Repo guidance: [`AGENTS.md`](./AGENTS.md), [`architecture.md`](./architecture.md), plus the existing [`.cursor/`](.cursor/) migration notes.
-2. **Next**: Static or hybrid race detail pages, **browse/SEO list routes** (county/city/type) using the same SSG-first pattern, sitemap.
-3. **Later**: Forum/auth, marketplace, additional markets under `data/countries/`.
+2. **Current next slice**: Static category browse routes and category landing pages with cached SEO copy, plus the remaining browse/SEO list routes (county/city/type/month) and sitemap.
+3. **Later**: Forum/auth expansion, marketplace, additional markets under `data/countries/`.
+
+All future markets should use the same per-country build snapshot flow automatically. Do not introduce route-specific direct Supabase build reads when expanding to new countries.
 
 ## Operational notes
 
 - **race-collector-v2** should upsert Supabase and trigger marker export + site rebuild (or upload `markers-*.json` to CDN) as part of its pipeline.
-- **Production builds** should pass **Supabase URL + secret** so list page 1 matches the database; use JSON-only builds only for local/offline previews.
+- **Production builds** should pass **Supabase URL + secret** so the temporary build snapshot matches the database; use JSON-only builds only for local/offline previews.
 - Secrets: client bundle only `PUBLIC_SUPABASE_URL` + `PUBLIC_SUPABASE_PUBLISHABLE_KEY` (and Mapbox). Elevated keys are for build scripts, CI, and seed—never shipped to the browser.
+- Add-race submissions are intentionally anonymous in v2. Keep submission review/manual moderation on the backend table rather than re-introducing required login on the public form unless product requirements change.
 
 ## Agent browser tooling
 

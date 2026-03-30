@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Upsert races + race_translations from data/countries/{country}/final_races.json
- * and final_races_int.json (locale en). Requires SUPABASE_SECRET_KEY (sb_secret_...),
+ * Upsert races + race_translations from data/countries/{country}/final_races*.json.
+ * Prefers the neighbor-aware files when available. Requires SUPABASE_SECRET_KEY (sb_secret_...),
  * or temporarily SUPABASE_SERVICE_ROLE_KEY (legacy JWT) until you rotate to a secret key.
  */
 import { createClient } from '@supabase/supabase-js';
@@ -54,17 +54,22 @@ function racePayload(race) {
 }
 
 async function main() {
-  const localRaces = loadJson('final_races.json');
-  const intRaces = loadJson('final_races_int.json');
-  const intByDomain = new Map(intRaces.map((r) => [r.domain_name, r]));
+  const localRaces = loadJson('final_races_w_neighbors.json');
+  const intRaces = loadJson('final_races_w_neighbors_int.json');
+  const fallbackLocalRaces = localRaces.length > 0 ? localRaces : loadJson('final_races.json');
+  const fallbackIntRaces = intRaces.length > 0 ? intRaces : loadJson('final_races_int.json');
+  const sourceLocal = localRaces.length > 0 ? 'final_races_w_neighbors.json' : 'final_races.json';
+  const sourceInt = intRaces.length > 0 ? 'final_races_w_neighbors_int.json' : 'final_races_int.json';
+  const intByDomain = new Map(fallbackIntRaces.map((r) => [r.domain_name, r]));
 
-  if (localRaces.length === 0) {
-    console.error(`No races in final_races.json for ${country}`);
+  if (fallbackLocalRaces.length === 0) {
+    console.error(`No races in ${sourceLocal} for ${country}`);
     process.exit(1);
   }
 
   let n = 0;
-  for (const race of localRaces) {
+  console.warn(`Seeding ${country} from ${sourceLocal} + ${sourceInt}`);
+  for (const race of fallbackLocalRaces) {
     const row = racePayload(race);
     const { data: upserted, error: upErr } = await sb
       .from('races')

@@ -1,36 +1,43 @@
 ---
-import RaceListLayout from '../../../layouts/RaceListLayout.astro';
-import RaceListPageIsland from '../../../components/RaceListPageIsland';
+import RaceListLayout from '../../layouts/RaceListLayout.astro';
+import RaceListPageIsland from '../../components/RaceListPageIsland';
 import {
+  findCountryByRaceListSlug,
   listCountryCodes,
+  localeBasePrefix,
   loadIndexYaml,
   raceListSlug,
   hasEnglishMerge,
   type Locale,
-} from '../../../lib/content';
-import { slugify } from '../../../lib/slugify';
-import { getRaceListFirstPageSnapshot } from '../../../lib/raceListSsg';
-import { categoryFilterOptionsFromYaml } from '../../../lib/categoryFilterOptions';
-import { pickTranslation } from '../../../lib/raceListRow';
+} from '../../lib/content';
+import { slugify } from '../../lib/slugify';
+import { getAllRaceListRows, getRaceListFirstPageSnapshot } from '../../lib/raceListSsg';
+import { categoryFilterOptionsFromYaml } from '../../lib/categoryFilterOptions';
+import { getNeighboringCountryOptions } from '../../lib/neighboringCountryOptions';
+import { pickTranslation } from '../../lib/raceListRow';
 
 export function getStaticPaths() {
-  const paths: { params: { country: string; raceList: string } }[] = [];
+  const paths: { params: { raceList: string } }[] = [];
   for (const country of listCountryCodes()) {
     const content = loadIndexYaml(country, 'native');
     paths.push({
-      params: { country, raceList: raceListSlug(content, country) },
+      params: { raceList: raceListSlug(content, country) },
     });
   }
   return paths;
 }
 
-const { country, raceList } = Astro.params;
+const { raceList } = Astro.params;
+const country = findCountryByRaceListSlug(raceList, 'native');
+if (!country) {
+  return Astro.redirect('/', 302);
+}
 const locale: Locale = 'native';
 const content = loadIndexYaml(country, locale);
 const expectedSlug = raceListSlug(content, country);
 
 if (raceList !== expectedSlug) {
-  return Astro.redirect(`/${country}/${expectedSlug}/`, 301);
+  return Astro.redirect(`/${expectedSlug}/`, 301);
 }
 
 const translationLocale = content.country_language_code ?? 'sv';
@@ -38,17 +45,21 @@ const title = `${content.race_list_title ?? content.race_list_name} — ${conten
 const desc = `${content.race_list_meta_description_1 ?? ''} ${content.race_list_meta_description_2 ?? ''}`.trim();
 
 const listSnapshot = await getRaceListFirstPageSnapshot(country);
+const highlightedRows = (await getAllRaceListRows(country)).rows.filter((row) => {
+  const payload = row.payload ?? {};
+  return Boolean(payload.supplied_at) || (Array.isArray(payload.supplied_ids) && payload.supplied_ids.length > 0);
+});
 const raceListSlugEn = hasEnglishMerge(country)
   ? raceListSlug(loadIndexYaml(country, 'en'), country)
   : expectedSlug;
-const alternateRaceListHref = `/${country}/en/${raceListSlugEn}/`;
+const alternateRaceListHref = `${localeBasePrefix(country, 'en')}${raceListSlugEn}/`;
 
 const racePageFolder = String(content.race_page_folder_name ?? 'loppsidor');
 const browseBtn = content.browse_by_category && typeof content.browse_by_category === 'object'
   ? (content.browse_by_category as { button?: string }).button ?? ''
   : '';
 const browseHref = browseBtn
-  ? `/${country}/${expectedSlug}/${slugify(browseBtn, country)}/`
+  ? `/${expectedSlug}/${slugify(browseBtn, country)}/`
   : '#';
 
 const monthMappingShort =
@@ -56,6 +67,11 @@ const monthMappingShort =
 const categoryFilterOptions = categoryFilterOptionsFromYaml(content.category_mapping);
 const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
 const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
+const neighboringCountryOptions = await getNeighboringCountryOptions({
+  hostCountryCode: country,
+  locale,
+  content,
+});
 const monthMapping = (content.month_mapping as Record<string, string> | undefined) ?? {};
 const verboseLocalDistanceMapping =
   (content.verbose_local_distance_mapping as Record<string, string> | undefined) ?? {};
@@ -64,7 +80,7 @@ const baseUrl = (content.base_url ?? '').replace(/\/$/, '');
 const itemListElements = listSnapshot.rows.map((r, i) => {
   const tr = pickTranslation(r.race_translations, translationLocale);
   const name = tr?.name ?? r.domain_name;
-  const path = `/${country}/${racePageFolder}/${r.domain_name}/`;
+  const path = `${localeBasePrefix(country, locale)}${racePageFolder}/${r.domain_name}/`;
   return {
     '@type': 'ListItem',
     position: i + 1,
@@ -98,7 +114,7 @@ const itemListJson = JSON.stringify({
           const name = tr?.name ?? r.domain_name;
           return (
             <li>
-              <a href={`/${country}/${racePageFolder}/${r.domain_name}/`}>{name}</a>
+              <a href={`${localeBasePrefix(country, locale)}${racePageFolder}/${r.domain_name}/`}>{name}</a>
             </li>
           );
         })
@@ -112,6 +128,7 @@ const itemListJson = JSON.stringify({
     translationLocale={translationLocale}
     initialRows={listSnapshot.rows}
     initialTotal={listSnapshot.total}
+    highlightedRows={highlightedRows}
     pagination={content.pagination ?? {}}
     raceListTitle={String(content.race_list_title ?? '')}
     raceListMeta1={String(content.race_list_meta_description_1 ?? '')}
@@ -124,6 +141,8 @@ const itemListJson = JSON.stringify({
     filterRaceType={String(content.filter_race_type ?? '')}
     browseByCategoryButton={browseBtn}
     browseByCategoryHref={browseHref}
+    selectedRacesTitle={String(content.selected_races_title ?? '')}
+    enableHighlightedRaces={true}
     mapToggleDesktop={String(content.map_toggle_desktop ?? '')}
     mapToggleDesktopActive={String(content.map_toggle_desktop_active ?? '')}
     mapToggleMobile={String(content.map_toggle_mobile ?? '')}
@@ -134,11 +153,18 @@ const itemListJson = JSON.stringify({
     sectionRaceCardHeaderRegionDefault={String(
       content.section_race_card_header_region_default ?? content.country_native ?? '',
     )}
+    sectionRaceCardHeaderNeighborsDefault={neighboringCountryOptions.headingDefault}
+    sectionRaceCardHeaderDateRangeFrom={String(content.section_race_card_header_date_range_from ?? '')}
+    sectionRaceCardHeaderDateRangeTo={String(content.section_race_card_header_date_range_to ?? '')}
+    sectionRaceCardHeaderDateRangeSingle={String(content.section_race_card_header_date_range_single ?? '')}
     raceCardCta={String(content.race_card_cta_text ?? '')}
     altPrefix={String(content.race_page_alt_prefix ?? content.alt_prefix ?? '')}
     racePageFolder={racePageFolder}
     countryNative={String(content.country_native ?? '')}
     countyMapping={countyMapping}
+    neighboringCountries={neighboringCountryOptions.countries}
+    neighboringCountriesLabel={neighboringCountryOptions.label}
+    neighboringCountriesAllLabel={neighboringCountryOptions.allLabel}
     monthMapping={monthMapping}
     monthMappingShort={monthMappingShort}
     typeOptions={typeOptions}
@@ -152,7 +178,7 @@ const itemListJson = JSON.stringify({
     mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
     centerLat={content.mapbox_center?.latitude ?? 59.35}
     centerLng={content.mapbox_center?.longitude ?? 15.03}
-    zoom={parseFloat(String(content.mapbox_zoom ?? '6')) || 6}
+    zoom={parseFloat(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '6')) || 6}
     verboseLocalDistanceMapping={verboseLocalDistanceMapping}
   />
 </RaceListLayout>

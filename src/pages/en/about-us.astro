@@ -1,0 +1,52 @@
+---
+import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
+import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { loadIndexYaml, type Locale } from '../../lib/content';
+
+const country = 'se';
+const locale: Locale = 'en';
+const content = loadIndexYaml(country, locale);
+const about = content.about_us ?? {};
+const pageTitle = String(about.title ?? content.navigation?.['about-us'] ?? 'About Us');
+const title = `${pageTitle} | ${content.page_name ?? 'Loppkartan'}`;
+const description = String(about.meta_description ?? about.content?.intro ?? '');
+const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'about-us' });
+const features = Array.isArray(about.content?.features) ? about.content?.features : [];
+const contactHref = '/en/contact-us/';
+---
+
+<AuxiliaryLayout
+  title={title}
+  description={description}
+  lang={content.country_language_code ?? 'en'}
+  country={country}
+  locale={locale}
+  content={content}
+  alternateHref={alternateHref}
+  breadcrumbLabel={pageTitle}
+  schemaType="AboutPage"
+>
+  <section class="section-about-us">
+    <div class="container">
+      <h1>{pageTitle}</h1>
+      <div class="about-content">
+        <p class="intro">{String(about.content?.intro ?? '')}</p>
+        <p class="mission">{String(about.content?.mission ?? '')}</p>
+        <p class="story">{String(about.content?.story ?? '')}</p>
+
+        <div class="features">
+          {features.map((feature) => (
+            <div class="feature-card">
+              <h3>{String(feature.title ?? '')}</h3>
+              <p>{String(feature.description ?? '')}</p>
+            </div>
+          ))}
+        </div>
+
+        <p class="closing">
+          {String(about.content?.closing ?? '')} <a href={contactHref}>{content.navigation?.contact}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</AuxiliaryLayout>

@@ -1,0 +1,338 @@
+---
+import BrowseLayout from '../../../layouts/BrowseLayout.astro';
+import BrowsePopularLinks from '../../../components/BrowsePopularLinks.astro';
+import RaceListPageIsland from '../../../components/RaceListPageIsland';
+import {
+  findCountryByRaceListSlug,
+  hasEnglishMerge,
+  listCountryCodes,
+  localeBasePrefix,
+  loadIndexYaml,
+  raceListSlug,
+  type Locale,
+} from '../../../lib/content';
+import { slugify } from '../../../lib/slugify';
+import {
+  getBrowseCategoriesIndexHref,
+  getBrowseNavigationJson,
+  getBrowseNeighboringEntries,
+  getBrowseNeighboringIndexHref,
+  getBrowseNeighboringRows,
+  getBrowseOverviewData,
+  getBrowseOverviewHref,
+  getCategoryItemListJson,
+  getRaceListBaseHref,
+  getScopedPopularNavigationEntries,
+} from '../../../lib/raceBrowse';
+import { categoryFilterOptionsFromYaml } from '../../../lib/categoryFilterOptions';
+import { getScopedSeoCopy } from '../../../lib/seoPageCopy';
+import { pickTranslation } from '../../../lib/raceListRow';
+import { getRaceListSnapshot } from '../../../lib/raceListSsg';
+import { RACE_LIST_PAGE_SIZE } from '../../../lib/raceListConfig';
+
+function cityFolderSlug(country: string, content: Record<string, unknown>): string {
+  return slugify(
+    String((content as { seo_cities_folder_name?: string }).seo_cities_folder_name ?? 'cities'),
+    country,
+  );
+}
+
+function allCountiesSlug(country: string, content: Record<string, unknown>): string {
+  return slugify(
+    String((content as { county_label_text?: string }).county_label_text ?? 'all-counties'),
+    country,
+  );
+}
+
+export async function getStaticPaths() {
+  const paths: { params: { raceList: string; scope: string } }[] = [];
+  for (const country of listCountryCodes()) {
+    const content = loadIndexYaml(country, 'native');
+    const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'native', content });
+    const neighboringEntries = await getBrowseNeighboringEntries({
+      countryCode: country,
+      locale: 'native',
+      content,
+    });
+
+    for (const entry of overviewData.counties) {
+      paths.push({
+        params: {
+          raceList: raceListSlug(content, country),
+          scope: entry.slug,
+        },
+      });
+    }
+
+    for (const entry of overviewData.months) {
+      paths.push({
+        params: {
+          raceList: raceListSlug(content, country),
+          scope: entry.slug,
+        },
+      });
+    }
+
+    paths.push({
+      params: {
+        raceList: raceListSlug(content, country),
+        scope: slugify(String(content.browse_by_category?.neighboring ?? 'neighboring'), country),
+      },
+    });
+  }
+  return paths;
+}
+
+const { raceList, scope } = Astro.params;
+const country = findCountryByRaceListSlug(raceList, 'native');
+if (!country) {
+  return Astro.redirect('/', 302);
+}
+const locale: Locale = 'native';
+const content = loadIndexYaml(country, locale);
+const expectedRaceList = raceListSlug(content, country);
+
+if (raceList !== expectedRaceList) {
+  return Astro.redirect(`/${expectedRaceList}/${scope}/`, 301);
+}
+
+const overviewHref = getBrowseOverviewHref(country, locale, content);
+const categoriesHref = getBrowseCategoriesIndexHref(country, locale, content);
+const neighboringHref = getBrowseNeighboringIndexHref(country, locale, content);
+const overviewData = await getBrowseOverviewData({ countryCode: country, locale, content });
+const neighboringEntries = await getBrowseNeighboringEntries({ countryCode: country, locale, content });
+const monthEntry = overviewData.months.find((item) => item.slug === scope);
+const countyEntry = overviewData.counties.find((item) => item.slug === scope);
+const isNeighboringIndex = scope === slugify(String(content.browse_by_category?.neighboring ?? 'neighboring'), country);
+
+const market = String(content.country_native ?? content.country ?? 'Sverige');
+const racePageFolder = String(content.race_page_folder_name ?? 'loppsidor');
+const translationLocale = String(content.country_language_code ?? 'sv');
+const monthMappingShort = (content.month_mapping_short as Record<string, string> | undefined) ?? {};
+const monthMapping = (content.month_mapping as Record<string, string> | undefined) ?? {};
+const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
+const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
+const verboseLocalDistanceMapping =
+  (content.verbose_local_distance_mapping as Record<string, string> | undefined) ?? {};
+
+let title = '';
+let description = '';
+let activeTab: 'overview' | 'categories' | 'neighboring' = 'overview';
+let breadcrumbs: Array<{ label: string; href?: string }> = [];
+let rows: Awaited<ReturnType<typeof getBrowseNeighboringRows>> = [];
+let initialTotal = 0;
+let currentHref = '';
+let itemListJson = '';
+let navigationJson: string | null = null;
+let popularEntries: Array<{ label: string; href: string; count: number }> = [];
+let initialCounty = '';
+
+if (countyEntry) {
+  const snapshot = await getRaceListSnapshot(country, { county: countyEntry.key });
+  const seoCopy = getScopedSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: [`county:${countyEntry.label}`, `county:${countyEntry.key}`],
+    title: `${countyEntry.label} lopp | ${content.page_name ?? content.race_list_name ?? market}`,
+    description: `Hitta löplopp i ${countyEntry.label}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
+    h1: `Lopp i ${countyEntry.label}`,
+    paragraph: `Här hittar du löplopp i ${countyEntry.label}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? 'Bläddra'), href: overviewHref },
+    { label: countyEntry.label },
+  ];
+  rows = snapshot.rows;
+  initialTotal = snapshot.total;
+  currentHref = countyEntry.href;
+  itemListJson = getCategoryItemListJson({
+    rows,
+    total: initialTotal,
+    countryCode: country,
+    locale,
+    content,
+    racePageFolder,
+  });
+  popularEntries = getScopedPopularNavigationEntries({
+    rows,
+    countryCode: country,
+    locale,
+    content,
+    currentHref,
+  });
+  navigationJson = getBrowseNavigationJson({ entries: popularEntries, content, locale });
+  initialCounty = countyEntry.key;
+} else if (monthEntry) {
+  const snapshot = await getRaceListSnapshot(country, { month: Number.parseInt(monthEntry.key, 10) });
+  const seoCopy = getScopedSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: [`month:${monthEntry.label}`, `month:${monthEntry.key}`],
+    title: `${monthEntry.label} lopp | ${content.page_name ?? content.race_list_name ?? market}`,
+    description: `Hitta löplopp i ${monthEntry.label.toLowerCase()} i ${market}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
+    h1: `Lopp i ${monthEntry.label}`,
+    paragraph: `Här hittar du löplopp i ${monthEntry.label.toLowerCase()} i ${market}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? 'Bläddra'), href: overviewHref },
+    { label: monthEntry.label },
+  ];
+  rows = snapshot.rows;
+  initialTotal = snapshot.total;
+  currentHref = monthEntry.href;
+  itemListJson = getCategoryItemListJson({
+    rows,
+    total: initialTotal,
+    countryCode: country,
+    locale,
+    content,
+    racePageFolder,
+  });
+  popularEntries = getScopedPopularNavigationEntries({
+    rows,
+    countryCode: country,
+    locale,
+    content,
+    currentHref,
+  });
+  navigationJson = getBrowseNavigationJson({ entries: popularEntries, content, locale });
+} else if (isNeighboringIndex) {
+  title = String(content.browse_neighboring?.title ?? content.browse_by_category?.neighboring ?? 'Närliggande länder');
+  description = String(content.browse_neighboring?.meta_description ?? '');
+  activeTab = 'neighboring';
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? 'Bläddra'), href: overviewHref },
+    { label: title },
+  ];
+} else {
+  return Astro.redirect(getRaceListBaseHref(country, locale, content), 302);
+}
+
+const alternateRaceListHref = hasEnglishMerge(country)
+  ? `${localeBasePrefix(country, 'en')}${raceListSlug(loadIndexYaml(country, 'en'), country)}/`
+  : undefined;
+---
+
+<BrowseLayout
+  title={title}
+  description={description}
+  lang={translationLocale}
+  country={country}
+  locale="native"
+  content={content}
+  alternateRaceListHref={alternateRaceListHref}
+  activeTab={activeTab}
+  overviewHref={overviewHref}
+  categoriesHref={categoriesHref}
+  neighboringHref={neighboringHref}
+  breadcrumbs={breadcrumbs}
+>
+  {
+    isNeighboringIndex ? (
+      <>
+        <section class="browse-intro">
+          <h1 class="browse-intro__title">{title}</h1>
+          <p class="browse-intro__description">{description}</p>
+        </section>
+        <div class="browse-grid">
+          {
+            neighboringEntries.map((entry) => (
+              <a href={entry.href} class="browse-card">
+                <h2 class="browse-card__title">
+                  <span>{entry.label}</span>
+                  <span class="browse-card__count">{entry.count}</span>
+                </h2>
+              </a>
+            ))
+          }
+        </div>
+      </>
+    ) : (
+      <>
+        <script slot="head" type="application/ld+json" set:html={itemListJson} />
+        {navigationJson && <script slot="head" type="application/ld+json" set:html={navigationJson} />}
+        <nav class="visually-hidden" aria-label={title}>
+          <ul>
+            {
+              rows.map((row) => {
+                const translation = pickTranslation(row.race_translations, translationLocale);
+                return (
+                  <li>
+                    <a href={`${localeBasePrefix(country, locale)}${racePageFolder}/${row.domain_name}/`}>
+                      {translation?.name ?? row.domain_name}
+                    </a>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </nav>
+
+        <RaceListPageIsland
+          client:load
+          countryCode={country}
+          routeLocale="native"
+          translationLocale={translationLocale}
+          initialRows={rows}
+          initialTotal={initialTotal}
+          initialCounty={initialCounty}
+          autoPopulateDateRange={true}
+          showIntroHeader={true}
+          pagination={content.pagination ?? {}}
+          raceListTitle={title}
+          raceListMeta1={description}
+          raceListMeta2=""
+          filterDateFrom={String(content.filter_date_from ?? '')}
+          filterDateTo={String(content.filter_date_to ?? '')}
+          filterMonths={String(content.filter_months ?? '')}
+          filterDistance={String(content.filter_distance ?? '')}
+          filterCounty={String(content.filter_county ?? '')}
+          filterRaceType={String(content.filter_race_type ?? '')}
+          browseByCategoryButton={String(content.browse_by_category?.button ?? '')}
+          browseByCategoryHref={overviewHref}
+          mapToggleDesktop={String(content.map_toggle_desktop ?? '')}
+          mapToggleDesktopActive={String(content.map_toggle_desktop_active ?? '')}
+          mapToggleMobile={String(content.map_toggle_mobile ?? '')}
+          mapToggleMobileList={String(content.map_toggle_mobile_list ?? '')}
+          sectionRaceCardCategoryPrefix={String(content.section_race_card_category_prefix ?? '')}
+          sectionRaceCardCategorySuffix={String(content.section_race_card_category_suffix ?? '')}
+          sectionRaceCardHeaderSeparator={String(content.section_race_card_header_separator ?? '')}
+          sectionRaceCardHeaderRegionDefault={String(content.section_race_card_header_region_default ?? content.country_native ?? '')}
+          sectionRaceCardHeaderDateRangeFrom={String(content.section_race_card_header_date_range_from ?? '')}
+          sectionRaceCardHeaderDateRangeTo={String(content.section_race_card_header_date_range_to ?? '')}
+          sectionRaceCardHeaderDateRangeSingle={String(content.section_race_card_header_date_range_single ?? '')}
+          raceCardCta={String(content.race_card_cta_text ?? '')}
+          altPrefix={String(content.race_page_alt_prefix ?? content.alt_prefix ?? '')}
+          racePageFolder={racePageFolder}
+          countryNative={String(content.country_native ?? '')}
+          countyMapping={countyMapping}
+          monthMapping={monthMapping}
+          monthMappingShort={monthMappingShort}
+          typeOptions={typeOptions}
+          categoryFilterOptions={categoryFilterOptionsFromYaml(content.category_mapping)}
+          dataError={String(content.race_list_data_error ?? '')}
+          emptyMessage={String(content.race_list_empty ?? '')}
+          loadingMessage={String(content.race_list_loading ?? '')}
+          remoteRequiredMessage={String(content.race_list_remote_required ?? '')}
+          markersLoadError={String(content.map_markers_load_error ?? '')}
+          mapNotConfiguredMessage={String(content.map_not_configured ?? '')}
+          mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
+          centerLat={content.mapbox_center?.latitude ?? 59.35}
+          centerLng={content.mapbox_center?.longitude ?? 15.03}
+          zoom={parseFloat(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '6')) || 6}
+          verboseLocalDistanceMapping={verboseLocalDistanceMapping}
+        />
+        <BrowsePopularLinks
+          title={String(content.popular_subcategories_title ?? 'Populära underkategorier')}
+          entries={popularEntries}
+        />
+      </>
+    )
+  }
+</BrowseLayout>

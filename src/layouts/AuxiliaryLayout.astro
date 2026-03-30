@@ -1,0 +1,111 @@
+---
+import '../styles/legacy/legacy-race-list.css';
+import '../styles/auxiliary-pages.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { localeBasePrefix, type IndexYaml } from '../lib/content';
+
+type LayoutLocale = 'native' | 'en';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: string;
+  country: string;
+  locale: LayoutLocale;
+  content: IndexYaml;
+  alternateHref?: string;
+  breadcrumbLabel?: string;
+  schemaType?: string;
+}
+
+const {
+  title,
+  description = '',
+  lang,
+  country,
+  locale,
+  content,
+  alternateHref,
+  breadcrumbLabel,
+  schemaType = 'WebPage',
+} = Astro.props;
+
+const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
+const currentPath = Astro.url.pathname;
+const currentUrl = baseUrl ? `${baseUrl}${currentPath}` : currentPath;
+const alternateUrl = alternateHref && baseUrl ? `${baseUrl}${alternateHref}` : alternateHref;
+const homePath = localeBasePrefix(country, locale);
+const pageSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': schemaType,
+  name: title,
+  description,
+  url: currentUrl,
+  inLanguage: lang,
+});
+const breadcrumbSchema =
+  breadcrumbLabel && baseUrl
+    ? JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            item: {
+              '@id': `${baseUrl}${homePath}`,
+              '@type': 'WebPage',
+              name: String(content.page_name ?? 'Home'),
+            },
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            item: {
+              '@id': currentUrl,
+              '@type': 'WebPage',
+              name: breadcrumbLabel,
+            },
+          },
+        ],
+      })
+    : null;
+---
+
+<!doctype html>
+<html lang={lang} id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
+    <title>{title}</title>
+    {baseUrl && <link rel="canonical" href={currentUrl} />}
+    {
+      alternateUrl && (
+        <link rel="alternate" hreflang={locale === 'en' ? 'sv' : 'en'} href={alternateUrl} />
+      )
+    }
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <slot name="head" />
+    <script type="application/ld+json" set:html={pageSchema} />
+    {breadcrumbSchema && <script type="application/ld+json" set:html={breadcrumbSchema} />}
+  </head>
+  <body class="auxiliary-page loaded">
+    <div id="page-wrapper">
+      <main>
+        <SiteHeader
+          country={country}
+          locale={locale}
+          content={content}
+          alternateRaceListHref={alternateHref}
+        />
+        <slot />
+      </main>
+      <SiteFooter country={country} locale={locale} content={content} />
+    </div>
+  </body>
+</html>

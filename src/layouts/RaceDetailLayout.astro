@@ -1,0 +1,60 @@
+---
+import '../styles/legacy/general.css';
+import '../styles/legacy/header-menu.css';
+import '../styles/legacy/footer.css';
+import '../styles/race-detail.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import type { IndexYaml } from '../lib/content';
+
+type LayoutLocale = 'native' | 'en';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: string;
+  country: string;
+  locale: LayoutLocale;
+  content: IndexYaml;
+  alternateHref?: string;
+}
+
+const {
+  title,
+  description = '',
+  lang,
+  country,
+  locale,
+  content,
+  alternateHref,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang} id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <slot name="head" />
+  </head>
+  <body class="race-detail-page loaded">
+    <div id="page-wrapper">
+      <main>
+        <SiteHeader
+          country={country}
+          locale={locale}
+          content={content}
+          alternateRaceListHref={alternateHref}
+        />
+        <slot />
+      </main>
+      <SiteFooter country={country} locale={locale} content={content} />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+---
+import type { BrowseNavigationEntry } from '../lib/raceBrowse';
+
+interface Props {
+  title: string;
+  entries: BrowseNavigationEntry[];
+  description?: string;
+}
+
+const {
+  title,
+  entries,
+  description = '',
+} = Astro.props;
+---
+
+{
+  entries.length > 0 && (
+    <section class="browse-grid-section">
+      <h2 class="browse-grid-section__title">{title}</h2>
+      <div class="browse-grid">
+        {entries.map((entry) => (
+          <a href={entry.href} class="browse-card">
+            <h3 class="browse-card__title">
+              <span>{entry.label}</span>
+              <span class="browse-card__count">{entry.count}</span>
+            </h3>
+            {description ? <p class="browse-card__meta">{description}</p> : null}
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

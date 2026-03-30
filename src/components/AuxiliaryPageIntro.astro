@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  note?: string;
+  noteClass?: string;
+  titleClass?: string;
+}
+
+const {
+  title,
+  description = '',
+  note,
+  noteClass = '',
+  titleClass = 'heading-primary',
+} = Astro.props;
+---
+
+<h1 class={titleClass}>{title}</h1>
+{description ? <p class="description">{description}</p> : null}
+{note ? <p class={noteClass}>{note}</p> : null}

@@ -1,4 +1,5 @@
 import {
+  Fragment,
   useCallback,
   useEffect,
   useMemo,
@@ -8,14 +9,22 @@ import {
 } from 'react';
 import type mapboxgl from 'mapbox-gl';
 import RaceMapIsland from './RaceMapIsland';
+import HighlightedRacesStrip, { type HighlightedRaceEntry } from './HighlightedRacesStrip';
 import { getSupabaseBrowserClient, isSupabaseConfigured } from '../lib/supabase';
 import { RACE_LIST_PAGE_SIZE } from '../lib/raceListConfig';
 import type { CategoryFilterOption } from '../lib/categoryFilterOptions';
 import {
   excerptDescription,
   formatDistanceSegment,
+  primaryRaceImageUrl,
   splitDistanceVerbose,
 } from '../lib/raceCardDisplay';
+import {
+  ALL_NEIGHBORING_COUNTIES_VALUE,
+  neighboringCountryValue,
+  parseNeighboringSelection,
+  type NeighboringCountryOption,
+} from '../lib/neighboringSelection';
 import { pickTranslation, type RaceListRow } from '../lib/raceListRow';
 
 export type PaginationCopy = {
@@ -30,6 +39,56 @@ export type PaginationCopy = {
 type PaginationToken = number | 'ellipsis';
 
 type RpcResult = { total?: number; rows?: RaceListRow[] };
+
+function todayYyyyMmDd(): string {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function oneYearFromTodayYyyyMmDd(): string {
+  const now = new Date();
+  now.setFullYear(now.getFullYear() + 1);
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function formatDateInputValue(value: Date): string {
+  const year = value.getFullYear();
+  const month = String(value.getMonth() + 1).padStart(2, '0');
+  const day = String(value.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function monthDateRangeYyyyMmDd(month: string, now = new Date()): {
+  dateFrom: string;
+  dateTo: string;
+} {
+  if (!/^\d{2}$/.test(month)) {
+    return {
+      dateFrom: todayYyyyMmDd(),
+      dateTo: oneYearFromTodayYyyyMmDd(),
+    };
+  }
+
+  const selectedMonthIndex = Number.parseInt(month, 10) - 1;
+  const currentYear = now.getFullYear();
+  const currentMonthIndex = now.getMonth();
+  const year = selectedMonthIndex < currentMonthIndex ? currentYear + 1 : currentYear;
+
+  const start = new Date(year, selectedMonthIndex, 1);
+  const end = new Date(year, selectedMonthIndex + 1, 0);
+  const isCurrentMonth = year === currentYear && selectedMonthIndex === currentMonthIndex;
+
+  return {
+    dateFrom: isCurrentMonth ? formatDateInputValue(now) : formatDateInputValue(start),
+    dateTo: formatDateInputValue(end),
+  };
+}
 
 function firstYyyymmdd(dates: unknown): string | null {
   if (!Array.isArray(dates) || dates.length === 0) return null;
@@ -46,12 +105,48 @@ function formatYyyymmdd(raw: string, monthShort: Record<string, string>): string
   return `${d} ${monthName}`;
 }
 
+function comparableTodayYyyymmdd(): string {
+  return todayYyyyMmDd().replaceAll('-', '');
+}
+
 function placeholderImage(domain: string, raceType: string | null): string {
   const h = domain.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
   const n = (h % 4) + 1;
   const kind =
     raceType && ['trail', 'terrain'].includes(raceType.toLowerCase()) ? 'trail' : 'road';
   return `/common_images/${kind}-${n}-optimized.webp`;
+}
+
+function highlightedImage(row: RaceListRow): { src: string; alt?: string } {
+  const normalized = primaryRaceImageUrl(row.payload);
+  const images = Array.isArray(row.payload?.images) ? row.payload.images : [];
+  if (normalized) {
+    const first = images.find((image) => image && typeof image === 'object') as
+      | { alt_text?: unknown }
+      | undefined;
+    const altText =
+      typeof first?.alt_text === 'string'
+        ? first.alt_text
+        : undefined;
+    return { src: normalized, alt: altText };
+  }
+  for (const image of images) {
+    if (!image || typeof image !== 'object') continue;
+    const altText =
+      typeof (image as { alt_text?: unknown }).alt_text === 'string'
+        ? (image as { alt_text: string }).alt_text
+        : undefined;
+    if (altText) return { src: placeholderImage(row.domain_name, row.race_type), alt: altText };
+  }
+  return { src: placeholderImage(row.domain_name, row.race_type) };
+}
+
+function isSuppliedRace(row: RaceListRow): boolean {
+  const payload = row.payload ?? {};
+  return (
+    Boolean(payload.supplied_at) ||
+    (Array.isArray(payload.supplied_ids) && payload.supplied_ids.length > 0)
+  );
 }
 
 function isDefaultFilterState(
@@ -82,6 +177,72 @@ function buildPaginationTokens(page: number, totalPages: number): PaginationToke
   return [1, 'ellipsis', page - 1, page, page + 1, 'ellipsis', totalPages];
 }
 
+function rowMatchesCity(row: RaceListRow, city: string): boolean {
+  const normalized = city.trim().toLowerCase();
+  if (!normalized) return false;
+
+  const values = new Set<string>();
+  if (typeof row.payload?.nearest_city === 'string' && row.payload.nearest_city.trim()) {
+    values.add(row.payload.nearest_city.trim());
+  }
+  if (Array.isArray(row.payload?.nearby_cities)) {
+    for (const value of row.payload.nearby_cities) {
+      if (typeof value === 'string' && value.trim()) values.add(value.trim());
+    }
+  }
+  if (typeof row.payload?.location === 'string' && row.payload.location.trim()) {
+    values.add(row.payload.location.trim());
+  }
+
+  return [...values].some((value) => value.toLowerCase() === normalized);
+}
+
+function rowMatchesMonth(row: RaceListRow, month: string): boolean {
+  if (month === 'all') return true;
+  if (!Array.isArray(row.race_dates)) return false;
+  return row.race_dates.some((entry) => {
+    if (!Array.isArray(entry) || typeof entry[0] !== 'string') return false;
+    return entry[0].slice(4, 6) === month.padStart(2, '0');
+  });
+}
+
+function rowMatchesDateRange(row: RaceListRow, dateFrom: string, dateTo: string): boolean {
+  const from = dateFrom.replaceAll('-', '').trim();
+  const to = dateTo.replaceAll('-', '').trim();
+  if (!from && !to) return true;
+  if (!Array.isArray(row.race_dates)) return false;
+  return row.race_dates.some((entry) => {
+    if (!Array.isArray(entry) || typeof entry[0] !== 'string') return false;
+    const value = entry[0].trim();
+    if (!/^\d{8}$/.test(value)) return false;
+    if (from && value < from) return false;
+    if (to && value > to) return false;
+    return true;
+  });
+}
+
+function rowMatchesDistanceRange(
+  row: RaceListRow,
+  minKm: number | null,
+  maxKm: number | null,
+): boolean {
+  if (minKm == null && maxKm == null) return true;
+  if (!Array.isArray(row.distance_m) || row.distance_m.length === 0) return false;
+  return row.distance_m.some((value) => {
+    const meters =
+      typeof value === 'number'
+        ? value
+        : typeof value === 'string'
+          ? Number.parseFloat(value)
+          : Number.NaN;
+    if (!Number.isFinite(meters)) return false;
+    const km = meters / 1000;
+    if (minKm != null && km < minKm) return false;
+    if (maxKm != null && km > maxKm) return false;
+    return true;
+  });
+}
+
 const PLACEHOLDER_GIF =
   'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
@@ -89,34 +250,10 @@ function LazyCardImg(
   props: ImgHTMLAttributes<HTMLImageElement> & { src: string; fallbackSrc?: string },
 ) {
   const { src, fallbackSrc, alt, className, ...rest } = props;
-  const ref = useRef<HTMLImageElement>(null);
-  const [shown, setShown] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            setShown(true);
-            obs.disconnect();
-          }
-        });
-      },
-      { rootMargin: '120px', threshold: 0.01 },
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
-  const displaySrc = shown ? src : PLACEHOLDER_GIF;
 
   return (
     <img
-      ref={ref}
-      src={displaySrc}
-      {...(shown ? {} : { 'data-src': src })}
+      src={src || PLACEHOLDER_GIF}
       alt={alt}
       className={className}
       width={600}
@@ -139,6 +276,17 @@ export default function RaceListPageIsland(props: {
   translationLocale: string;
   initialRows: RaceListRow[];
   initialTotal: number;
+  localRows?: RaceListRow[];
+  highlightedRows?: RaceListRow[];
+  initialCity?: string;
+  initialCounty?: string;
+  initialRaceType?: string;
+  initialDateFrom?: string;
+  initialDateTo?: string;
+  initialMonth?: string;
+  initialCategoryKey?: string;
+  autoPopulateDateRange?: boolean;
+  showIntroHeader?: boolean;
   pagination: PaginationCopy;
   raceListTitle: string;
   raceListMeta1: string;
@@ -151,6 +299,8 @@ export default function RaceListPageIsland(props: {
   filterRaceType: string;
   browseByCategoryButton: string;
   browseByCategoryHref: string;
+  selectedRacesTitle?: string;
+  enableHighlightedRaces?: boolean;
   mapToggleDesktop: string;
   mapToggleDesktopActive: string;
   mapToggleMobile: string;
@@ -159,11 +309,18 @@ export default function RaceListPageIsland(props: {
   sectionRaceCardCategorySuffix: string;
   sectionRaceCardHeaderSeparator: string;
   sectionRaceCardHeaderRegionDefault: string;
+  sectionRaceCardHeaderNeighborsDefault?: string;
+  sectionRaceCardHeaderDateRangeFrom?: string;
+  sectionRaceCardHeaderDateRangeTo?: string;
+  sectionRaceCardHeaderDateRangeSingle?: string;
   raceCardCta: string;
   altPrefix: string;
   racePageFolder: string;
   countryNative: string;
   countyMapping: Record<string, string>;
+  neighboringCountries?: NeighboringCountryOption[];
+  neighboringCountriesLabel?: string;
+  neighboringCountriesAllLabel?: string;
   monthMapping: Record<string, string>;
   monthMappingShort: Record<string, string>;
   typeOptions: Record<string, string>;
@@ -187,6 +344,17 @@ export default function RaceListPageIsland(props: {
     translationLocale,
     initialRows,
     initialTotal,
+    localRows,
+    highlightedRows,
+    initialCity = '',
+    initialCounty = '',
+    initialRaceType = '',
+    initialDateFrom = '',
+    initialDateTo = '',
+    initialMonth = 'all',
+    initialCategoryKey = 'all',
+    autoPopulateDateRange = true,
+    showIntroHeader = true,
     pagination,
     raceListTitle,
     raceListMeta1,
@@ -199,6 +367,8 @@ export default function RaceListPageIsland(props: {
     filterCounty,
     browseByCategoryButton,
     browseByCategoryHref,
+    selectedRacesTitle = '',
+    enableHighlightedRaces = false,
     mapToggleDesktop,
     mapToggleDesktopActive,
     mapToggleMobile,
@@ -207,11 +377,18 @@ export default function RaceListPageIsland(props: {
     sectionRaceCardCategorySuffix,
     sectionRaceCardHeaderSeparator,
     sectionRaceCardHeaderRegionDefault,
+    sectionRaceCardHeaderNeighborsDefault = '',
+    sectionRaceCardHeaderDateRangeFrom = '',
+    sectionRaceCardHeaderDateRangeTo = '',
+    sectionRaceCardHeaderDateRangeSingle = '',
     raceCardCta,
     altPrefix,
     racePageFolder,
     countryNative,
     countyMapping,
+    neighboringCountries = [],
+    neighboringCountriesLabel = '',
+    neighboringCountriesAllLabel = '',
     monthMapping,
     monthMappingShort,
     typeOptions,
@@ -229,7 +406,14 @@ export default function RaceListPageIsland(props: {
     verboseLocalDistanceMapping = {},
   } = props;
 
-  const prefix = routeLocale === 'en' ? `/${countryCode}/en/` : `/${countryCode}/`;
+  const prefix =
+    routeLocale === 'en'
+      ? countryCode === 'se'
+        ? '/en/'
+        : `/${countryCode}/en/`
+      : countryCode === 'se'
+        ? '/'
+        : `/${countryCode}/`;
   const raceBase = `${prefix}${racePageFolder}/`;
   const hasMapboxToken = Boolean(mapboxToken.trim());
 
@@ -238,33 +422,141 @@ export default function RaceListPageIsland(props: {
     total: initialTotal,
   });
   snapshotRef.current = { rows: initialRows, total: initialTotal };
-
+  const defaultDateRange = useMemo(() => {
+    if (initialDateFrom || initialDateTo) {
+      return {
+        dateFrom: initialDateFrom,
+        dateTo: initialDateTo,
+      };
+    }
+    if (initialMonth !== 'all') {
+      return monthDateRangeYyyyMmDd(initialMonth);
+    }
+    return {
+      dateFrom: autoPopulateDateRange ? todayYyyyMmDd() : '',
+      dateTo: autoPopulateDateRange ? oneYearFromTodayYyyyMmDd() : '',
+    };
+  }, [initialDateFrom, initialDateTo, initialMonth, autoPopulateDateRange]);
+  const initialFilterState = useRef({
+    county: initialCounty,
+    raceType: initialRaceType,
+    dateFrom: defaultDateRange.dateFrom,
+    dateTo: defaultDateRange.dateTo,
+    month: initialMonth,
+    categoryKey: initialCategoryKey,
+  });
   const [page, setPage] = useState(1);
-  const [county, setCounty] = useState('');
-  const [raceType, setRaceType] = useState('');
-  const [dateFrom, setDateFrom] = useState('');
-  const [dateTo, setDateTo] = useState('');
-  const [month, setMonth] = useState('all');
-  const [categoryKey, setCategoryKey] = useState('all');
+  const [city] = useState(initialCity);
+  const [county, setCounty] = useState(initialCounty);
+  const [raceType, setRaceType] = useState(initialRaceType);
+  const [dateFrom, setDateFrom] = useState(() => defaultDateRange.dateFrom);
+  const [dateTo, setDateTo] = useState(() => defaultDateRange.dateTo);
+  const [month, setMonth] = useState(initialMonth);
+  const [categoryKey, setCategoryKey] = useState(initialCategoryKey);
 
-  const [rows, setRows] = useState<RaceListRow[]>(() =>
-    isDefaultFilterState('', '', '', '', 'all', 'all') ? initialRows : [],
-  );
-  const [total, setTotal] = useState(() =>
-    isDefaultFilterState('', '', '', '', 'all', 'all') ? initialTotal : 0,
-  );
-  const [loading, setLoading] = useState(!isDefaultFilterState('', '', '', '', 'all', 'all'));
+  const [rows, setRows] = useState<RaceListRow[]>(() => initialRows);
+  const [total, setTotal] = useState(() => initialTotal);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const [mobileMapOpen, setMobileMapOpen] = useState(false);
   const [desktopMapOpen, setDesktopMapOpen] = useState(true);
   const mapInst = useRef<mapboxgl.Map | null>(null);
+  const filtersRef = useRef<HTMLElement | null>(null);
+  const [filtersScrolled, setFiltersScrolled] = useState(false);
   const sectionRef = useRef<HTMLElement | null>(null);
   const didMountRef = useRef(false);
+  const handleMapInstance = useCallback((m: mapboxgl.Map | null) => {
+    mapInst.current = m;
+  }, []);
+  const applyMonthSelection = useCallback(
+    (nextMonth: string) => {
+      setMonth(nextMonth);
+      if (nextMonth === 'all') {
+        setDateFrom(defaultDateRange.dateFrom);
+        setDateTo(defaultDateRange.dateTo);
+      } else {
+        const range = monthDateRangeYyyyMmDd(nextMonth);
+        setDateFrom(range.dateFrom);
+        setDateTo(range.dateTo);
+      }
+      setPage(1);
+    },
+    [defaultDateRange.dateFrom, defaultDateRange.dateTo],
+  );
 
   useEffect(() => {
     document.body.classList.toggle('race-list-mobile-map-open', mobileMapOpen);
     return () => document.body.classList.remove('race-list-mobile-map-open');
+  }, [mobileMapOpen]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const syncMobileFilterHeight = () => {
+      const filters = filtersRef.current;
+      const height = filters ? `${Math.ceil(filters.getBoundingClientRect().height)}px` : '0px';
+      document.body.style.setProperty('--race-list-mobile-filter-height', height);
+    };
+
+    syncMobileFilterHeight();
+    const observer =
+      typeof ResizeObserver === 'undefined' || !filtersRef.current
+        ? null
+        : new ResizeObserver(syncMobileFilterHeight);
+    if (observer && filtersRef.current) observer.observe(filtersRef.current);
+    window.addEventListener('resize', syncMobileFilterHeight);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener('resize', syncMobileFilterHeight);
+      document.body.style.removeProperty('--race-list-mobile-filter-height');
+    };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const queryCounty = params.get('county');
+    const queryRaceType = params.get('raceType');
+    const queryMonth = params.get('month');
+    const queryCategory = params.get('category');
+    const queryDateFrom = params.get('dateFrom');
+    const queryDateTo = params.get('dateTo');
+
+    if (queryCounty) setCounty(queryCounty);
+    if (queryRaceType) setRaceType(queryRaceType);
+    if (queryMonth && /^\d{1,2}$/.test(queryMonth)) {
+      const normalizedMonth = queryMonth.padStart(2, '0');
+      setMonth(normalizedMonth);
+      if (!queryDateFrom && !queryDateTo) {
+        const range = monthDateRangeYyyyMmDd(normalizedMonth);
+        setDateFrom(range.dateFrom);
+        setDateTo(range.dateTo);
+      }
+    }
+    if (queryCategory) setCategoryKey(queryCategory);
+    if (queryDateFrom) setDateFrom(queryDateFrom);
+    if (queryDateTo) setDateTo(queryDateTo);
+    if (
+      queryCounty ||
+      queryRaceType ||
+      queryMonth ||
+      queryCategory ||
+      queryDateFrom ||
+      queryDateTo
+    ) {
+      setPage(1);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const t = window.setTimeout(() => {
+      const filters = filtersRef.current;
+      const height = filters ? `${Math.ceil(filters.getBoundingClientRect().height)}px` : '0px';
+      document.body.style.setProperty('--race-list-mobile-filter-height', height);
+    }, 50);
+    return () => window.clearTimeout(t);
   }, [mobileMapOpen]);
 
   useEffect(() => {
@@ -273,6 +565,26 @@ export default function RaceListPageIsland(props: {
       return () => window.clearTimeout(t);
     }
   }, [mobileMapOpen, desktopMapOpen]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const syncFilters = () => {
+      const filters = filtersRef.current;
+      if (!filters) return;
+
+      const isScrolled = filters.getBoundingClientRect().top <= 0;
+      setFiltersScrolled((prev) => (prev === isScrolled ? prev : isScrolled));
+    };
+
+    syncFilters();
+    window.addEventListener('scroll', syncFilters, { passive: true });
+    window.addEventListener('resize', syncFilters);
+    return () => {
+      window.removeEventListener('scroll', syncFilters);
+      window.removeEventListener('resize', syncFilters);
+    };
+  }, []);
 
   const rpcParams = useMemo(() => {
     let pMin: number | null = null;
@@ -288,11 +600,14 @@ export default function RaceListPageIsland(props: {
       }
     }
     const effectiveRaceType = raceType || extraType || '';
+    const neighboringSelection = parseNeighboringSelection(county);
     return {
       p_country_code: countryCode,
       p_page: page,
       p_page_size: RACE_LIST_PAGE_SIZE,
-      p_county: county.trim() || null,
+      p_county: neighboringSelection ? null : county.trim() || null,
+      p_origin_country: neighboringSelection?.kind === 'country' ? neighboringSelection.code : null,
+      p_include_neighboring: neighboringSelection?.kind === 'all',
       p_race_type: effectiveRaceType.trim() || null,
       p_date_from: dateFrom.trim() || null,
       p_date_to: dateTo.trim() || null,
@@ -302,11 +617,118 @@ export default function RaceListPageIsland(props: {
     };
   }, [countryCode, page, county, raceType, dateFrom, dateTo, month, categoryKey, categoryFilterOptions]);
 
+  const localResult = useMemo(() => {
+    if (!localRows) return null;
+
+    let pMin: number | null = null;
+    let pMax: number | null = null;
+    let extraType = '';
+    if (categoryKey !== 'all') {
+      const opt = categoryFilterOptions.find((o) => o.label === categoryKey);
+      if (opt?.kind === 'distance') {
+        pMin = opt.minKm;
+        pMax = opt.maxKm;
+      } else if (opt?.kind === 'type') {
+        extraType = opt.raceType;
+      }
+    }
+    const effectiveRaceType = (raceType || extraType).trim().toLowerCase();
+    const normalizedCounty = county.trim().toLowerCase();
+    const neighboringSelection = parseNeighboringSelection(county);
+
+    const filtered = localRows.filter((row) => {
+      if (city && !rowMatchesCity(row, city)) return false;
+      const rowOriginCountry = row.origin_country?.trim().toLowerCase() ?? '';
+      const isDomestic = !rowOriginCountry || rowOriginCountry === countryCode.toLowerCase();
+      if (neighboringSelection?.kind === 'all') {
+        if (isDomestic) return false;
+      } else if (neighboringSelection?.kind === 'country') {
+        if (rowOriginCountry !== neighboringSelection.code) return false;
+      } else {
+        if (!isDomestic) return false;
+        if (normalizedCounty) {
+          const rowCounty = row.county?.trim().toLowerCase() ?? '';
+          if (!rowCounty.includes(normalizedCounty)) return false;
+        }
+      }
+      if (effectiveRaceType) {
+        const rowRaceType = row.race_type?.trim().toLowerCase() ?? '';
+        if (rowRaceType !== effectiveRaceType) return false;
+      }
+      if (!rowMatchesMonth(row, month)) return false;
+      if (!rowMatchesDateRange(row, dateFrom, dateTo)) return false;
+      if (!rowMatchesDistanceRange(row, pMin, pMax)) return false;
+      return true;
+    });
+
+    const start = (page - 1) * RACE_LIST_PAGE_SIZE;
+    return {
+      total: filtered.length,
+      rows: filtered.slice(start, start + RACE_LIST_PAGE_SIZE),
+    };
+  }, [localRows, categoryKey, categoryFilterOptions, raceType, county, month, dateFrom, dateTo, page, city, countryCode]);
+
+  const filteredHighlightedRows = useMemo(() => {
+    const sourceRows = localRows ?? highlightedRows ?? null;
+    if (!sourceRows) return null;
+
+    let pMin: number | null = null;
+    let pMax: number | null = null;
+    let extraType = '';
+    if (categoryKey !== 'all') {
+      const opt = categoryFilterOptions.find((o) => o.label === categoryKey);
+      if (opt?.kind === 'distance') {
+        pMin = opt.minKm;
+        pMax = opt.maxKm;
+      } else if (opt?.kind === 'type') {
+        extraType = opt.raceType;
+      }
+    }
+    const effectiveRaceType = (raceType || extraType).trim().toLowerCase();
+    const normalizedCounty = county.trim().toLowerCase();
+    const neighboringSelection = parseNeighboringSelection(county);
+
+    const filtered = sourceRows.filter((row) => {
+      if (city && !rowMatchesCity(row, city)) return false;
+      const rowOriginCountry = row.origin_country?.trim().toLowerCase() ?? '';
+      const isDomestic = !rowOriginCountry || rowOriginCountry === countryCode.toLowerCase();
+      if (neighboringSelection?.kind === 'all') {
+        if (isDomestic) return false;
+      } else if (neighboringSelection?.kind === 'country') {
+        if (rowOriginCountry !== neighboringSelection.code) return false;
+      } else {
+        if (!isDomestic) return false;
+        if (normalizedCounty) {
+          const rowCounty = row.county?.trim().toLowerCase() ?? '';
+          if (!rowCounty.includes(normalizedCounty)) return false;
+        }
+      }
+      if (effectiveRaceType) {
+        const rowRaceType = row.race_type?.trim().toLowerCase() ?? '';
+        if (rowRaceType !== effectiveRaceType) return false;
+      }
+      if (!rowMatchesMonth(row, month)) return false;
+      if (!rowMatchesDateRange(row, dateFrom, dateTo)) return false;
+      if (!rowMatchesDistanceRange(row, pMin, pMax)) return false;
+      return true;
+    });
+
+    return filtered;
+  }, [localRows, highlightedRows, categoryKey, categoryFilterOptions, raceType, county, month, dateFrom, dateTo, city, countryCode]);
+
   const needsRemote = useMemo(() => {
+    if (localRows) return false;
+    const initial = initialFilterState.current;
     return (
-      !isDefaultFilterState(county, raceType, dateFrom, dateTo, month, categoryKey) || page !== 1
+      county !== initial.county ||
+      raceType !== initial.raceType ||
+      dateFrom !== initial.dateFrom ||
+      dateTo !== initial.dateTo ||
+      month !== initial.month ||
+      categoryKey !== initial.categoryKey ||
+      page !== 1
     );
-  }, [county, raceType, dateFrom, dateTo, month, categoryKey, page]);
+  }, [localRows, county, raceType, dateFrom, dateTo, month, categoryKey, page]);
 
   const fetchPage = useCallback(async () => {
     if (!isSupabaseConfigured()) {
@@ -336,6 +758,17 @@ export default function RaceListPageIsland(props: {
   }, [rpcParams, dataError, remoteRequiredMessage]);
 
   useEffect(() => {
+    if (localResult) {
+      setRows(localResult.rows);
+      setTotal(localResult.total);
+      setError(null);
+      setLoading(false);
+      return;
+    }
+  }, [localResult]);
+
+  useEffect(() => {
+    if (localRows) return;
     if (!needsRemote) {
       const snap = snapshotRef.current;
       setRows(snap.rows);
@@ -345,7 +778,7 @@ export default function RaceListPageIsland(props: {
       return;
     }
     void fetchPage();
-  }, [needsRemote, fetchPage]);
+  }, [localRows, needsRemote, fetchPage, localResult]);
 
   useEffect(() => {
     if (!didMountRef.current) {
@@ -418,9 +851,124 @@ export default function RaceListPageIsland(props: {
     [countyMapping, countryNative],
   );
 
+  const highlightedEntries = useMemo<HighlightedRaceEntry[]>(() => {
+    if (!enableHighlightedRaces || !selectedRacesTitle.trim()) return [];
+
+    const today = comparableTodayYyyymmdd();
+    const highlightSource = filteredHighlightedRows ?? rows;
+    return highlightSource
+      .filter((row) => isSuppliedRace(row))
+      .sort((left, right) => {
+        const leftDate = firstYyyymmdd(left.race_dates) ?? '99999999';
+        const rightDate = firstYyyymmdd(right.race_dates) ?? '99999999';
+
+        const leftUpcoming = leftDate >= today ? 0 : 1;
+        const rightUpcoming = rightDate >= today ? 0 : 1;
+        if (leftUpcoming !== rightUpcoming) return leftUpcoming - rightUpcoming;
+        if (leftUpcoming === 0) return leftDate.localeCompare(rightDate);
+        return rightDate.localeCompare(leftDate);
+      })
+      .slice(0, 7)
+      .map((row) => {
+        const image = highlightedImage(row);
+        const name = pickName(row);
+        const typeLocal = pickTypeLocal(row);
+        const distVerbose = pickDistanceVerbose(row);
+        const distParts = splitDistanceVerbose(distVerbose).map((segment) =>
+          formatDistanceSegment(segment, verboseLocalDistanceMapping),
+        );
+
+        return {
+          id: row.id,
+          href: `${raceBase}${row.domain_name}/`,
+          name,
+          dateLabel: formatYyyymmdd(firstYyyymmdd(row.race_dates) ?? '', monthMappingShort),
+          regionLabel: countyLabel(row),
+          typeLabel: typeLocal,
+          distanceLabels: distParts,
+          imageSrc: image.src,
+          imageAlt: image.alt ?? `${altPrefix}${name}`,
+        };
+      });
+  }, [
+    altPrefix,
+    countyLabel,
+    enableHighlightedRaces,
+    monthMappingShort,
+    pickDistanceVerbose,
+    pickName,
+    pickTypeLocal,
+    raceBase,
+    rows,
+    filteredHighlightedRows,
+    selectedRacesTitle,
+    verboseLocalDistanceMapping,
+  ]);
+
+  const selectedCategoryTitle = useMemo(() => {
+    return categoryKey !== 'all' ? categoryKey : '';
+  }, [categoryKey]);
+
+  const selectedRegionTitle = useMemo(() => {
+    const neighboringSelection = parseNeighboringSelection(county);
+    if (neighboringSelection?.kind === 'all') {
+      return sectionRaceCardHeaderNeighborsDefault || neighboringCountriesAllLabel;
+    }
+    if (neighboringSelection?.kind === 'country') {
+      return (
+        neighboringCountries.find((entry) => entry.code === neighboringSelection.code)?.label ??
+        neighboringSelection.code.toUpperCase()
+      );
+    }
+    if (city.trim()) return city.trim();
+    if (county.trim()) return countyMapping[county.trim()] ?? county.trim();
+    return sectionRaceCardHeaderRegionDefault;
+  }, [
+    city,
+    county,
+    countyMapping,
+    neighboringCountries,
+    neighboringCountriesAllLabel,
+    sectionRaceCardHeaderNeighborsDefault,
+    sectionRaceCardHeaderRegionDefault,
+  ]);
+
+  const dateRangeTitle = useMemo(() => {
+    if (!dateFrom || !dateTo) return '';
+
+    const from = new Date(dateFrom);
+    const to = new Date(dateTo);
+    if (Number.isNaN(from.getTime()) || Number.isNaN(to.getTime())) return '';
+
+    const localeCode = routeLocale === 'en' ? 'en' : translationLocale || 'sv';
+    const fromMonth = from.toLocaleString(localeCode, { month: 'long' });
+    const toMonth = to.toLocaleString(localeCode, { month: 'long' });
+    const fromYear = from.getFullYear();
+    const toYear = to.getFullYear();
+
+    if (fromMonth === toMonth && fromYear === toYear) {
+      return ` ${sectionRaceCardHeaderDateRangeSingle}${fromMonth} ${fromYear}`;
+    }
+
+    return ` ${sectionRaceCardHeaderDateRangeFrom}${fromMonth} ${fromYear} ${sectionRaceCardHeaderDateRangeTo}${toMonth} ${toYear}`;
+  }, [
+    dateFrom,
+    dateTo,
+    routeLocale,
+    translationLocale,
+    sectionRaceCardHeaderDateRangeFrom,
+    sectionRaceCardHeaderDateRangeTo,
+    sectionRaceCardHeaderDateRangeSingle,
+  ]);
+
+  const highlightInsertionIndex = rows.length > 1 ? 1 : 0;
+
   return (
     <>
-      <section className="section-filters">
+      <section
+        ref={filtersRef}
+        className={`section-filters${filtersScrolled ? ' scrolled' : ''}`}
+      >
         <div className="filter-date">
           <label htmlFor="date-from">{filterDateFrom}:</label>
           <input
@@ -453,10 +1001,7 @@ export default function RaceListPageIsland(props: {
             type="button"
             className={`month-button${month === 'all' ? ' active' : ''}`}
             data-month="all"
-            onClick={() => {
-              setMonth('all');
-              setPage(1);
-            }}
+            onClick={() => applyMonthSelection('all')}
           >
             {filterMonths}
           </button>
@@ -466,10 +1011,7 @@ export default function RaceListPageIsland(props: {
               type="button"
               className={`month-button${month === k ? ' active' : ''}`}
               data-month={k}
-              onClick={() => {
-                setMonth(k);
-                setPage(1);
-              }}
+              onClick={() => applyMonthSelection(k)}
             >
               {label}
             </button>
@@ -516,6 +1058,18 @@ export default function RaceListPageIsland(props: {
               }}
             >
               <option value="">{filterCounty}</option>
+              {neighboringCountries.length > 0 ? (
+                <optgroup label={neighboringCountriesLabel}>
+                  <option value={ALL_NEIGHBORING_COUNTIES_VALUE}>
+                    {neighboringCountriesAllLabel}
+                  </option>
+                  {neighboringCountries.map((entry) => (
+                    <option key={entry.code} value={neighboringCountryValue(entry.code)}>
+                      {entry.label}
+                    </option>
+                  ))}
+                </optgroup>
+              ) : null}
               {Object.entries(countyMapping).map(([key, label]) => (
                 <option key={key} value={key}>
                   {label}
@@ -568,21 +1122,24 @@ export default function RaceListPageIsland(props: {
       </section>
 
       <section className="section section-race-cards" ref={sectionRef}>
-        <div className="section-race-cards-header-container">
-          <h1 id="race-cards-title" className="section-header section-header-race-cards static-header">
-            {raceListTitle}
-          </h1>
-          <p className="section-description static-description">
-            {raceListMeta1} {raceListMeta2}
-          </p>
-          <h2 className="section-header phone-min-height-51rem">
-            {sectionRaceCardCategoryPrefix}{' '}
-            <span id="race-cards-title-category">{filterDistance}</span>{' '}
-            {sectionRaceCardCategorySuffix}{' '}
-            <span id="race-cards-title-separator">{sectionRaceCardHeaderSeparator}</span>{' '}
-            <span id="race-cards-title-region">{sectionRaceCardHeaderRegionDefault}</span>
-          </h2>
-        </div>
+        {showIntroHeader ? (
+          <div className="section-race-cards-header-container">
+            <h1 id="race-cards-title" className="section-header section-header-race-cards static-header">
+              {raceListTitle}
+            </h1>
+            <p className="section-description static-description">
+              {raceListMeta1} {raceListMeta2}
+            </p>
+            <h2 className="section-header phone-min-height-51rem">
+              {sectionRaceCardCategoryPrefix}{' '}
+              <span id="race-cards-title-category">{selectedCategoryTitle}</span>{' '}
+              {sectionRaceCardCategorySuffix}{' '}
+              <span id="race-cards-title-separator">{sectionRaceCardHeaderSeparator}</span>{' '}
+              <span id="race-cards-title-region">{selectedRegionTitle}</span>
+              <span id="date-range">{dateRangeTitle}</span>
+            </h2>
+          </div>
+        ) : null}
 
         <div
           className={`race-cards-selector${!hasMapboxToken ? ' race-cards-selector--mapless' : ''}`}
@@ -603,11 +1160,12 @@ export default function RaceListPageIsland(props: {
 
             {!loading &&
               !error &&
-              rows.map((r) => {
+              rows.map((r, index) => {
                 const name = pickName(r);
                 const rawDate = firstYyyymmdd(r.race_dates);
                 const dateDisp = rawDate ? formatYyyymmdd(rawDate, monthMappingShort) : '';
-                const img = placeholderImage(r.domain_name, r.race_type);
+                const img =
+                  primaryRaceImageUrl(r.payload) ?? placeholderImage(r.domain_name, r.race_type);
                 const regionLabel = countyLabel(r);
                 const distVerbose = pickDistanceVerbose(r);
                 const venue = pickVenueLocation(r);
@@ -624,95 +1182,99 @@ export default function RaceListPageIsland(props: {
                 const distParts = splitDistanceVerbose(distVerbose);
 
                 return (
-                  <a
-                    key={r.id}
-                    href={href}
-                    className="race-card"
-                    data-name={name}
-                    data-date={rawDate ?? ''}
-                    data-county={regionLabel}
-                    data-race-type={typeLocal}
-                    data-distance={distVerbose}
-                    data-location={venue}
-                    data-description={summary}
-                  >
-                    <div className="race-card-upper-box background-container">
-                      <picture>
-                        <LazyCardImg
-                          src={img}
-                          fallbackSrc={img}
-                          alt={`${altPrefix}${name}`}
-                          className="background-img"
-                        />
-                      </picture>
-                      <div className="race-card-content">
-                        <div className="race-info-top">
-                          <div className="race-date">{dateDisp}</div>
-                          <div className="race-location">{regionLabel}</div>
-                        </div>
-                        <div className="race-card-upper-meta">
-                          {displayType.trim() ? (
-                            <div className="race-type race-type--image">
-                              <svg className="icon" aria-hidden="true">
-                                <use
-                                  href="/icons/svg-sprite.svg#footsteps-icon"
-                                  xlinkHref="/icons/svg-sprite.svg#footsteps-icon"
-                                />
-                              </svg>
-                              {displayType}
-                            </div>
-                          ) : null}
-                          <div
-                            className="race-distances"
-                          >
-                            <div className="distance-container">
-                              {distParts.length > 0 ? (
-                                <>
-                                  {distParts.slice(0, 4).map((seg, di) => (
-                                    <div key={`${r.id}-d-${di}`} className="distance-item">
-                                      <span className="race-distance">
-                                        {formatDistanceSegment(seg, verboseLocalDistanceMapping)}
-                                      </span>
-                                    </div>
-                                  ))}
-                                  {distParts.length > 4 ? (
-                                    <div className="distance-item">
-                                      <span className="race-distance">…</span>
-                                    </div>
-                                  ) : null}
-                                </>
-                              ) : (
-                                null
-                              )}
+                  <Fragment key={r.id}>
+                    <a
+                      href={href}
+                      className="race-card"
+                      data-name={name}
+                      data-date={rawDate ?? ''}
+                      data-county={regionLabel}
+                      data-race-type={typeLocal}
+                      data-distance={distVerbose}
+                      data-location={venue}
+                      data-description={summary}
+                    >
+                      <div className="race-card-upper-box background-container">
+                        <picture>
+                          <LazyCardImg
+                            src={img}
+                            fallbackSrc={img}
+                            alt={`${altPrefix}${name}`}
+                            className="background-img"
+                          />
+                        </picture>
+                        <div className="race-card-content">
+                          <div className="race-info-top">
+                            <div className="race-date">{dateDisp}</div>
+                            <div className="race-location">{regionLabel}</div>
+                          </div>
+                          <div className="race-card-upper-meta">
+                            {displayType.trim() ? (
+                              <div className="race-type race-type--image">
+                                <svg className="icon" aria-hidden="true">
+                                  <use
+                                    href="/icons/svg-sprite.svg#footsteps-icon"
+                                    xlinkHref="/icons/svg-sprite.svg#footsteps-icon"
+                                  />
+                                </svg>
+                                {displayType}
+                              </div>
+                            ) : null}
+                            <div className="race-distances">
+                              <div className="distance-container">
+                                {distParts.length > 0 ? (
+                                  <>
+                                    {distParts.slice(0, 4).map((seg, di) => (
+                                      <div key={`${r.id}-d-${di}`} className="distance-item">
+                                        <span className="race-distance">
+                                          {formatDistanceSegment(seg, verboseLocalDistanceMapping)}
+                                        </span>
+                                      </div>
+                                    ))}
+                                    {distParts.length > 4 ? (
+                                      <div className="distance-item">
+                                        <span className="race-distance">…</span>
+                                      </div>
+                                    ) : null}
+                                  </>
+                                ) : null}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="overlay soft" />
-                      </div>
-                    </div>
-                    <div className="race-info-bottom">
-                      <div className="upper-container">
-                        <div className="left-container">
-                          <h3 className="race-name">{name}</h3>
-                          {venue ? (
-                            <div className="race-location">
-                              <svg className="icon" aria-hidden="true">
-                                <use
-                                  href="/icons/svg-sprite.svg#location-icon"
-                                  xlinkHref="/icons/svg-sprite.svg#location-icon"
-                                />
-                              </svg>
-                              {venue}
-                            </div>
-                          ) : null}
+                          <div className="overlay soft" />
                         </div>
                       </div>
-                      {summary ? <div className="race-summary">{summary}</div> : null}
-                      <div className="cta-button">
-                        <div className="more-info-button">{raceCardCta}</div>
+                      <div className="race-info-bottom">
+                        <div className="upper-container">
+                          <div className="left-container">
+                            <h3 className="race-name">{name}</h3>
+                            {venue ? (
+                              <div className="race-location">
+                                <svg className="icon" aria-hidden="true">
+                                  <use
+                                    href="/icons/svg-sprite.svg#location-icon"
+                                    xlinkHref="/icons/svg-sprite.svg#location-icon"
+                                  />
+                                </svg>
+                                {venue}
+                              </div>
+                            ) : null}
+                          </div>
+                        </div>
+                        {summary ? <div className="race-summary">{summary}</div> : null}
+                        <div className="cta-button">
+                          <div className="more-info-button">{raceCardCta}</div>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                    {index === highlightInsertionIndex && highlightedEntries.length > 0 ? (
+                      <HighlightedRacesStrip
+                        title={selectedRacesTitle}
+                        cta={raceCardCta}
+                        entries={highlightedEntries}
+                      />
+                    ) : null}
+                  </Fragment>
                 );
               })}
 
@@ -774,6 +1336,13 @@ export default function RaceListPageIsland(props: {
           >
             <RaceMapIsland
               countryCode={countryCode}
+              routeLocale={routeLocale}
+              racePageFolder={racePageFolder}
+              countyMapping={countyMapping}
+              countryNative={countryNative}
+              monthMappingShort={monthMappingShort}
+              typeOptions={typeOptions}
+              verboseLocalDistanceMapping={verboseLocalDistanceMapping}
               mapboxToken={mapboxToken}
               centerLat={centerLat}
               centerLng={centerLng}
@@ -784,10 +1353,15 @@ export default function RaceListPageIsland(props: {
               toggleMobileList={mapToggleMobileList}
               markersLoadError={markersLoadError}
               mapNotConfiguredMessage={mapNotConfiguredMessage}
+              filterCounty={county}
+              filterRaceType={raceType}
+              filterDateFrom={dateFrom}
+              filterDateTo={dateTo}
+              filterMonth={month}
+              filterCategoryKey={categoryKey}
+              categoryFilterOptions={categoryFilterOptions}
               hideToolbar
-              onMapInstance={(m) => {
-                mapInst.current = m;
-              }}
+              onMapInstance={handleMapInstance}
             />
           </div>
         </div>

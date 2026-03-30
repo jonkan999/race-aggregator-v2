@@ -12,6 +12,7 @@ export type RaceListRow = {
   domain_name: string;
   county: string | null;
   race_type: string | null;
+  origin_country?: string | null;
   race_dates: unknown;
   latitude: number | null;
   longitude: number | null;

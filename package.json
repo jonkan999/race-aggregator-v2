@@ -3,11 +3,15 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "rm -rf node_modules/.vite && astro dev",
+    "build": "node scripts/build-with-race-list-snapshots.mjs",
+    "build:astro": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "export-markers": "node scripts/export-markers.mjs",
+    "export-race-list-snapshots": "node scripts/export-race-list-snapshots.mjs",
+    "build-category-seo-cache": "node scripts/build-category-seo-cache.mjs",
+    "build-auth-email-templates": "node scripts/build-supabase-auth-templates.mjs",
     "seed-races": "node scripts/seed-races.mjs",
     "test:e2e": "playwright test",
     "test:e2e:legacy-ref": "PW_LEGACY_REFERENCE=1 PW_SKIP_WEB_SERVER=1 playwright test --project=legacy-reference"
@@ -15,8 +19,10 @@
   "dependencies": {
     "@astrojs/react": "^4.2.0",
     "@supabase/supabase-js": "^2.49.1",
+    "@types/leaflet": "^1.9.21",
     "astro": "^5.4.2",
     "js-yaml": "^4.1.0",
+    "leaflet": "^1.9.4",
     "mapbox-gl": "^3.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

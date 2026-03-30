@@ -1,0 +1,526 @@
+---
+import RaceDetailLayout from '../layouts/RaceDetailLayout.astro';
+import RaceDetailMapIsland from './RaceDetailMapIsland';
+import {
+  comparableDateForSchema,
+  getRaceDetailFields,
+  getRaceDetailRelatedContent,
+  raceDetailParagraphs,
+} from '../lib/raceDetail';
+import type { IndexYaml, Locale } from '../lib/content';
+import type { RaceListRow } from '../lib/raceListRow';
+
+interface Props {
+  country: string;
+  locale: Locale;
+  content: IndexYaml;
+  row: RaceListRow;
+  allRows?: RaceListRow[];
+  canonicalPath: string;
+  alternateHref?: string;
+}
+
+const { country, locale, content, row, allRows = [], canonicalPath, alternateHref } = Astro.props;
+const detail = getRaceDetailFields(row, content, locale);
+const relatedContent = getRaceDetailRelatedContent({
+  countryCode: country,
+  locale,
+  content,
+  currentRow: row,
+  allRows,
+});
+const lang = locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv');
+const countyLabel = detail.county
+  ? ((content.county_mapping as Record<string, string> | undefined)?.[detail.county] ?? detail.county)
+  : String(content.country_native ?? '');
+const title = detail.raceName;
+const description = detail.description || detail.additionalInfo || `${detail.raceName} ${countyLabel}`.trim();
+const descriptionParagraphs = raceDetailParagraphs(detail.description);
+const additionalParagraphs = raceDetailParagraphs(detail.additionalInfo);
+const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
+const hasEstimatedDates = detail.dateEntries.some((entry) => entry.isEstimated);
+const hasGalleryImages = detail.images.length > 0;
+const galleryImages = detail.images.slice(1);
+
+function toAbsoluteUrl(path: string | null | undefined): string | undefined {
+  if (!path) return undefined;
+  if (/^https?:\/\//.test(path)) return path;
+  if (!baseUrl) return path;
+  return `${baseUrl}${path.startsWith('/') ? path : `/${path}`}`;
+}
+
+const eventJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: detail.raceName,
+  description,
+  startDate: comparableDateForSchema(detail.dateEntries, 'startIso'),
+  endDate: comparableDateForSchema(detail.dateEntries, 'endIso'),
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  eventStatus: 'https://schema.org/EventScheduled',
+  image: detail.images.map((image) => toAbsoluteUrl(image.src)).filter(Boolean),
+  location: {
+    '@type': 'Place',
+    name: detail.location || countyLabel,
+    address: countyLabel
+      ? {
+          '@type': 'PostalAddress',
+          addressRegion: countyLabel,
+          addressCountry: String(content.country_native ?? content.country ?? country).trim(),
+        }
+      : undefined,
+  },
+  organizer: detail.organizer
+    ? {
+        '@type': 'Organization',
+        name: detail.organizer,
+        url: detail.website || undefined,
+      }
+    : undefined,
+  url: toAbsoluteUrl(canonicalPath) ?? canonicalPath,
+});
+
+const breadcrumbJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: relatedContent.breadcrumbs.map((crumb, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: crumb.label,
+    item: toAbsoluteUrl(
+      crumb.href ?? (index === relatedContent.breadcrumbs.length - 1 ? canonicalPath : undefined),
+    ),
+  })),
+});
+
+const saveTitle = String(
+  content.race_page_favorites_title ??
+    (locale === 'en' ? 'Do not miss race updates' : 'Missa inga uppdateringar'),
+);
+const saveBody = String(
+  content.race_page_favorites_body ??
+    (locale === 'en'
+      ? 'Create an account and save this race to your favorites so you can receive updates, news and selected offers when favorites launch.'
+      : 'Skapa konto och spara loppet i dina favoriter för att kunna få uppdateringar, nyheter och utvalda erbjudanden när favoriter lanseras.'),
+);
+const saveCta = String(
+  content.race_page_favorites_cta ??
+    (locale === 'en' ? 'Save race to favorites' : 'Spara lopp i favoriter'),
+);
+const similarTitle = String(
+  content.race_page_similar_title ?? (locale === 'en' ? 'Similar races' : 'Liknande lopp'),
+);
+const similarBody = String(
+  content.race_page_similar_body ??
+    (locale === 'en'
+      ? 'More races with similar distance, type or nearby location.'
+      : 'Fler lopp med liknande distans, typ eller plats i närheten.'),
+);
+const discoverTitle = String(
+  content.race_page_discover_title ?? (locale === 'en' ? 'Explore more races' : 'Utforska fler lopp'),
+);
+const backToListLabel = String(
+  content.race_page_back_to_list ??
+    content.navigation?.['race-list'] ??
+    (locale === 'en' ? 'Race calendar' : 'Loppkalender'),
+);
+const sliderCta = String(
+  content.to_race_page_cta ?? (locale === 'en' ? 'To race page' : 'Till loppsida'),
+);
+---
+
+<RaceDetailLayout
+  title={title}
+  description={description}
+  lang={lang}
+  country={country}
+  locale={locale}
+  content={content}
+  alternateHref={alternateHref}
+>
+  <script slot="head" type="application/ld+json" set:html={eventJson} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbJson} />
+
+  <section class="race-detail-shell">
+    <nav class="race-detail-breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        {
+          relatedContent.breadcrumbs.map((crumb) => (
+            <li>
+              {crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span aria-current="page">{crumb.label}</span>}
+            </li>
+          ))
+        }
+      </ol>
+    </nav>
+
+    <div class="race-detail-hero">
+      <div class:list={['race-detail-hero__main background-container', !hasGalleryImages && 'race-detail-hero__main--no-image']}>
+        {
+          hasGalleryImages ? (
+            <img
+              src={detail.images[0]?.src}
+              alt={detail.images[0]?.alt ?? detail.raceName}
+              class="background-img-nofilter"
+              fetchpriority="high"
+            />
+          ) : null
+        }
+        <div class="overlay soft"></div>
+        <div class="race-detail-hero__content">
+          <div class="race-detail-hero__header">
+            <a class="race-detail-back-link" href={relatedContent.breadcrumbs[0]?.href ?? '#'}>
+              {backToListLabel}
+            </a>
+            <h1 class="race-detail-heading">{detail.raceName}</h1>
+            {
+              detail.location ? (
+                <p class="race-detail-location">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="/icons/svg-sprite.svg#location-icon" xlink:href="/icons/svg-sprite.svg#location-icon" />
+                  </svg>
+                  <span>{detail.location}</span>
+                </p>
+              ) : null
+            }
+          </div>
+
+          <div class="race-detail-hero__chips">
+            {
+              detail.dateEntries.map((entry) => (
+                <div class="race-detail-chip race-detail-chip--date">
+                  <span>{entry.label}</span>
+                  {entry.isEstimated ? (
+                    <span class="race-detail-chip__estimated">
+                      {String(content.race_page_estimated_date_label ?? '')}
+                    </span>
+                  ) : null}
+                </div>
+              ))
+            }
+            {countyLabel ? <div class="race-detail-chip">{countyLabel}</div> : null}
+            {detail.raceTypeLabel ? <div class="race-detail-chip">{detail.raceTypeLabel}</div> : null}
+            {detail.distanceLabels.map((distance) => <div class="race-detail-chip">{distance}</div>)}
+          </div>
+        </div>
+      </div>
+
+      {
+        galleryImages.length > 0 ? (
+          <div class="race-detail-thumbnails race-detail-thumbnails--desktop">
+            {galleryImages.slice(0, 4).map((image) => (
+              <figure class="race-detail-thumbnail">
+                <img src={image.src} alt={image.alt} loading="lazy" />
+              </figure>
+            ))}
+          </div>
+        ) : null
+      }
+
+      {
+        galleryImages.length > 0 ? (
+          <div
+            class:list={[
+              'race-detail-media-rail',
+              galleryImages.length === 1 && 'race-detail-media-rail--single',
+            ]}
+          >
+            {galleryImages.map((image) => (
+              <figure class="race-detail-media-slide">
+                <img src={image.src} alt={image.alt} loading="lazy" />
+              </figure>
+            ))}
+          </div>
+        ) : null
+      }
+    </div>
+
+    <div class="race-detail-intro-grid">
+      <div class="race-detail-highlights">
+        {
+          detail.dateEntries.length ? (
+            <article class="race-detail-card">
+              <span class="race-detail-card__eyebrow">
+                {String(content.race_page_date_label ?? '')}
+              </span>
+              <div class="race-detail-card__value">
+                {detail.dateEntries.map((entry) => entry.label).join(', ')}
+              </div>
+            </article>
+          ) : null
+        }
+        {
+          detail.distanceLabels.length ? (
+            <article class="race-detail-card">
+              <span class="race-detail-card__eyebrow">
+                {String(content.race_page_distances_label ?? '')}
+              </span>
+              <div class="race-detail-card__value">{detail.distanceLabels.join(', ')}</div>
+            </article>
+          ) : null
+        }
+        {
+          detail.raceTypeLabel ? (
+            <article class="race-detail-card">
+              <span class="race-detail-card__eyebrow">
+                {String(content.race_page_surface_label ?? '')}
+              </span>
+              <div class="race-detail-card__value">{detail.raceTypeLabel}</div>
+            </article>
+          ) : null
+        }
+        {
+          detail.location ? (
+            <article class="race-detail-card">
+              <span class="race-detail-card__eyebrow">
+                {String(content.race_page_place_label ?? '')}
+              </span>
+              <div class="race-detail-card__value">{detail.location}</div>
+            </article>
+          ) : null
+        }
+      </div>
+
+      <aside class="race-detail-panel race-detail-panel--favorites">
+        <span class="race-detail-panel__eyebrow">{saveTitle}</span>
+        <h2>{saveTitle}</h2>
+        <p>{saveBody}</p>
+        <div class="race-detail-actions">
+          <button type="button" class="race-detail-cta" data-auth-modal-trigger data-auth-view="create">
+            {saveCta}
+          </button>
+          {
+            detail.website ? (
+              <a class="race-detail-secondary-cta" href={detail.website} target="_blank" rel="noopener noreferrer">
+                {String(content.race_page_visit_organizer_website ?? '')}
+              </a>
+            ) : null
+          }
+        </div>
+      </aside>
+    </div>
+
+    {
+      hasEstimatedDates ? (
+        <div class="race-detail-note" role="note">
+          <strong>{String(content.race_page_estimated_date_label ?? '')}.</strong>{' '}
+          <span>{String(content.race_page_estimated_disclaimer ?? '')}</span>
+        </div>
+      ) : null
+    }
+
+    <div class="race-detail-content">
+      <div class="race-detail-stack">
+        {
+          descriptionParagraphs.length ? (
+            <article class="race-detail-panel">
+              <h2>{String(content.race_page_description_label ?? '')}</h2>
+              <div class="race-detail-richtext">
+                {descriptionParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+              </div>
+            </article>
+          ) : null
+        }
+
+        {
+          detail.courseHighlights.length ? (
+            <article class="race-detail-panel">
+              <h2>{String(content.race_page_course_highlights_label ?? '')}</h2>
+              <ul class="race-detail-list">
+                {detail.courseHighlights.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+          ) : null
+        }
+
+        {
+          additionalParagraphs.length ? (
+            <article class="race-detail-panel">
+              <h2>{String(content.race_page_additional_label ?? '')}</h2>
+              <div class="race-detail-richtext">
+                {additionalParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+              </div>
+            </article>
+          ) : null
+        }
+      </div>
+
+      <div class="race-detail-stack race-detail-stack--sidebar">
+        <article class="race-detail-panel">
+          <h2>{String(content.race_page_detailed_info_label ?? '')}</h2>
+          <ul class="race-detail-detail-list">
+            <li>
+              <strong>{String(content.name_label ?? '')}</strong>
+              <span>{detail.raceName}</span>
+            </li>
+            {detail.location ? (
+              <li>
+                <strong>{String(content.place_label ?? '')}</strong>
+                <span>{detail.location}</span>
+              </li>
+            ) : null}
+            {detail.distanceLabels.length ? (
+              <li>
+                <strong>{String(content.distance_label ?? '')}</strong>
+                <span>{detail.distanceLabels.join(', ')}</span>
+              </li>
+            ) : null}
+            {detail.organizer ? (
+              <li>
+                <strong>{String(content.organizer_label ?? '')}</strong>
+                <span>{detail.organizer}</span>
+              </li>
+            ) : null}
+            {detail.contact ? (
+              <li>
+                <strong>{String(content.organizer_contact_label ?? '')}</strong>
+                <span>{detail.contact}</span>
+              </li>
+            ) : null}
+            {detail.priceRange ? (
+              <li>
+                <strong>{String(content.price_range_label ?? '')}</strong>
+                <span>{detail.priceRange}</span>
+              </li>
+            ) : null}
+            {detail.website ? (
+              <li>
+                <strong>{String(content.website_label ?? '')}</strong>
+                <a href={detail.website} target="_blank" rel="noopener noreferrer">
+                  {detail.website}
+                </a>
+              </li>
+            ) : null}
+            {detail.startTime ? (
+              <li>
+                <strong>{String(content.start_time_label ?? '')}</strong>
+                <span>{detail.startTime}</span>
+              </li>
+            ) : null}
+            {detail.raceTypeLabel ? (
+              <li>
+                <strong>{String(content.type_text ?? '')}</strong>
+                <span>{detail.raceTypeLabel}</span>
+              </li>
+            ) : null}
+          </ul>
+        </article>
+
+        {
+          detail.socialLinks.length ? (
+            <article class="race-detail-panel">
+              <h2>{String(content.race_page_social_links_label ?? '')}</h2>
+              <ul class="race-detail-social">
+                {detail.socialLinks.map((link) => (
+                  <li>
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+                      <svg class="icon" aria-hidden="true">
+                        <use
+                          href={`/icons/svg-sprite.svg#${link.iconId}`}
+                          xlink:href={`/icons/svg-sprite.svg#${link.iconId}`}
+                        />
+                      </svg>
+                      <span>{link.label}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ) : null
+        }
+
+        <article class="race-detail-map">
+          <div class="race-detail-map__header">
+            <h2>{String(content.race_page_place_label ?? '')}</h2>
+          </div>
+          <RaceDetailMapIsland
+            client:load
+            mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
+            latitude={row.latitude}
+            longitude={row.longitude}
+            zoom={Number.parseInt(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '8'), 10) || 8}
+            markerLabel={detail.location || detail.raceName}
+            mapNotConfiguredMessage={String(content.map_not_configured ?? '')}
+          />
+        </article>
+      </div>
+    </div>
+
+    {
+      relatedContent.shortcuts.length ? (
+        <section class="race-detail-panel race-detail-panel--discover">
+          <div class="race-detail-section-header">
+            <h2>{discoverTitle}</h2>
+          </div>
+          <div class="race-detail-link-grid">
+            {relatedContent.shortcuts.map((entry) => (
+              <a class="race-detail-link-card" href={entry.href}>
+                <span>{entry.label}</span>
+                <span class="race-detail-link-card__arrow" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ) : null
+    }
+
+    {
+      relatedContent.similarRaces.length ? (
+        <section class="race-detail-panel race-detail-panel--related">
+          <div class="race-detail-section-header">
+            <div>
+              <h2>{similarTitle}</h2>
+              <p>{similarBody}</p>
+            </div>
+          </div>
+          <div class="race-detail-slider" aria-label={similarTitle}>
+            {relatedContent.similarRaces.map((entry) => (
+              <a class="race-detail-related-card" href={entry.href}>
+                <div class="race-detail-related-card__media background-container">
+                  <img
+                    src={entry.imageSrc}
+                    alt={entry.imageAlt}
+                    class="background-img selected-race-card-img"
+                    loading="lazy"
+                  />
+                  <div class="overlay soft"></div>
+                  <div class="race-detail-related-card__meta">
+                    {entry.dateLabel ? <span>{entry.dateLabel}</span> : null}
+                    {entry.locationLabel ? <span>{entry.locationLabel}</span> : null}
+                  </div>
+                </div>
+                <div class="race-detail-related-card__body">
+                  <h3>{entry.name}</h3>
+                  <div class="race-detail-related-card__tags">
+                    {entry.typeLabel ? <span>{entry.typeLabel}</span> : null}
+                    {entry.distanceLabels.slice(0, 3).map((label) => <span>{label}</span>)}
+                  </div>
+                  <span class="race-detail-related-card__cta">{sliderCta}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ) : null
+    }
+  </section>
+
+  <script is:inline>
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const trigger = target.closest('[data-auth-modal-trigger]');
+      if (!(trigger instanceof HTMLElement)) return;
+      event.preventDefault();
+      window.dispatchEvent(
+        new CustomEvent('race-aggregator:open-auth-modal', {
+          detail: {
+            view: trigger.dataset.authView || 'create',
+          },
+        }),
+      );
+    });
+  </script>
+</RaceDetailLayout>

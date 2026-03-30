@@ -1,0 +1,157 @@
+---
+import '../styles/legacy/legacy-race-list.css';
+import '../styles/v2-race-list-bridge.css';
+import '../styles/browse.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { localeBasePrefix, raceListSlug, type IndexYaml } from '../lib/content';
+
+type LayoutLocale = 'native' | 'en';
+type BrowseTab = 'overview' | 'categories' | 'neighboring';
+type Breadcrumb = { label: string; href?: string };
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: string;
+  country: string;
+  locale: LayoutLocale;
+  content: IndexYaml;
+  alternateRaceListHref?: string;
+  activeTab: BrowseTab;
+  overviewHref: string;
+  categoriesHref: string;
+  neighboringHref?: string;
+  breadcrumbs?: Breadcrumb[];
+}
+
+const {
+  title,
+  description = '',
+  lang,
+  country,
+  locale,
+  content,
+  alternateRaceListHref,
+  activeTab,
+  overviewHref,
+  categoriesHref,
+  neighboringHref,
+  breadcrumbs = [],
+} = Astro.props;
+
+const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
+const currentPath = Astro.url.pathname;
+const currentUrl = baseUrl ? `${baseUrl}${currentPath}` : currentPath;
+const raceListHref = `${localeBasePrefix(country, locale)}${raceListSlug(content, country)}/`;
+const breadcrumbItems =
+  breadcrumbs.length > 0
+    ? [{ label: String(content.race_list_name ?? content.page_name ?? 'Race calendar'), href: raceListHref }, ...breadcrumbs]
+    : [];
+const breadcrumbVisual = breadcrumbItems.map((item, index) => ({
+  name: item.label,
+  href:
+    item.href ??
+    (index === breadcrumbItems.length - 1 ? currentPath : undefined),
+}));
+const breadcrumbSchema =
+  breadcrumbItems.length > 0
+    ? JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbVisual.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@id': item.href && baseUrl ? `${baseUrl}${item.href}` : currentUrl,
+            '@type': 'WebPage',
+            name: item.name,
+          },
+        })),
+      })
+    : null;
+---
+
+<!doctype html>
+<html lang={lang} id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <slot name="head" />
+  </head>
+  <body class="race-list-page v2-race-list loaded">
+    <div id="page-wrapper">
+      <main>
+        <SiteHeader
+          country={country}
+          locale={locale}
+          content={content}
+          alternateRaceListHref={alternateRaceListHref}
+          raceListPage={true}
+        />
+        <div class="browse-shell">
+          <div class="browse-breadcrumbs-shell">
+            {
+              breadcrumbItems.length > 0 && (
+                <nav class="browse-breadcrumbs" aria-label="Breadcrumb">
+                  <ol class="browse-breadcrumbs__list">
+                    {breadcrumbItems.map((item, index) => (
+                      <li class="browse-breadcrumbs__item">
+                        {item.href ? (
+                          <a href={item.href} class="browse-breadcrumbs__link">
+                            {item.label}
+                          </a>
+                        ) : (
+                          <span class="browse-breadcrumbs__current">{item.label}</span>
+                        )}
+                        {
+                          index < breadcrumbItems.length - 1 && (
+                            <svg
+                              class="browse-breadcrumbs__separator"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1.5em"
+                              height="1.5em"
+                              viewBox="0 -960 960 960"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <path d="m516.43-481-198-198L375-735.57 629.57-481 375-226.43 318.43-283z"></path>
+                            </svg>
+                          )
+                        }
+                      </li>
+                    ))}
+                  </ol>
+                </nav>
+              )
+            }
+          </div>
+          <nav class="browse-tabs right-scroller" aria-label={String(content.browse_by_category?.button ?? 'Browse')}>
+            <a href={overviewHref} class:list={['browse-tabs__link', activeTab === 'overview' && 'is-active']}>
+              {String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? 'Overview')}
+            </a>
+            <a href={categoriesHref} class:list={['browse-tabs__link', activeTab === 'categories' && 'is-active']}>
+              {String(content.browse_by_category?.categories ?? content.browse_categories?.title ?? 'Categories')}
+            </a>
+            {
+              neighboringHref && (
+                <a href={neighboringHref} class:list={['browse-tabs__link', activeTab === 'neighboring' && 'is-active']}>
+                  {String(content.browse_by_category?.neighboring ?? content.browse_neighboring?.title ?? 'Neighboring')}
+                </a>
+              )
+            }
+          </nav>
+          {breadcrumbSchema && <script type="application/ld+json" set:html={breadcrumbSchema} />}
+          <slot />
+        </div>
+      </main>
+      <SiteFooter country={country} locale={locale} content={content} />
+    </div>
+  </body>
+</html>

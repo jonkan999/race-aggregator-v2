@@ -1,0 +1,101 @@
+---
+import BrowseLayout from '../../../../layouts/BrowseLayout.astro';
+import {
+  findCountryByRaceListSlug,
+  hasEnglishMerge,
+  listCountryCodes,
+  loadIndexYaml,
+  raceListSlug,
+  type Locale,
+} from '../../../../lib/content';
+import { slugify } from '../../../../lib/slugify';
+import {
+  BROWSE_CATEGORIES_SEGMENT,
+  getBrowseCategoriesIndexHref,
+  getBrowseCategoryEntries,
+  getBrowseOverviewHref,
+} from '../../../../lib/raceBrowse';
+
+export function getStaticPaths() {
+  return listCountryCodes().map((country) => {
+    const content = loadIndexYaml(country, 'native');
+    return {
+      params: {
+        raceList: raceListSlug(content, country),
+        browse: slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country),
+      },
+    };
+  });
+}
+
+const { raceList, browse } = Astro.params;
+const country = findCountryByRaceListSlug(raceList, 'native');
+if (!country) {
+  return Astro.redirect('/', 302);
+}
+const locale: Locale = 'native';
+const content = loadIndexYaml(country, locale);
+const expectedRaceList = raceListSlug(content, country);
+const expectedBrowse = slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country);
+
+if (raceList !== expectedRaceList || browse !== expectedBrowse) {
+  return Astro.redirect(`/${expectedRaceList}/${expectedBrowse}/${BROWSE_CATEGORIES_SEGMENT}/`, 301);
+}
+
+const overviewHref = getBrowseOverviewHref(country, locale, content);
+const categoriesHref = getBrowseCategoriesIndexHref(country, locale, content);
+const categories = await getBrowseCategoryEntries({ countryCode: country, locale, content });
+const title = String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? 'Categories');
+const description = String(content.browse_categories?.meta_description ?? '');
+const alternateRaceListHref = hasEnglishMerge(country)
+  ? getBrowseCategoriesIndexHref(country, 'en', loadIndexYaml(country, 'en'))
+  : undefined;
+---
+
+<BrowseLayout
+  title={`${title} — ${content.page_name ?? ''}`}
+  description={description}
+  lang={String(content.country_language_code ?? 'sv')}
+  country={country}
+  locale="native"
+  content={content}
+  alternateRaceListHref={alternateRaceListHref}
+  activeTab="categories"
+  overviewHref={overviewHref}
+  categoriesHref={categoriesHref}
+  breadcrumbs={[
+    { label: String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? 'Bläddra efter kategori'), href: overviewHref },
+    { label: title },
+  ]}
+>
+  <section class="browse-intro">
+    <h1 class="browse-intro__title">{title}</h1>
+    <p class="browse-intro__description">{description}</p>
+  </section>
+
+  <div class="browse-grid">
+    {
+      categories.map((category) => (
+        <article class="browse-card">
+          <a href={category.href}>
+            <h2 class="browse-card__title">
+              <span>{category.label}</span>
+              <span class="browse-card__count">{category.count}</span>
+            </h2>
+          </a>
+          <p class="browse-card__meta">{description}</p>
+          {category.topTypes.length > 0 ? (
+            <div class="browse-card__links">
+              {category.topTypes.map((typeLink) => (
+                <a href={typeLink.href} class="browse-card__chip">
+                  <span>{typeLink.label}</span>
+                  <span class="browse-card__chip-count">{typeLink.count}</span>
+                </a>
+              ))}
+            </div>
+          ) : null}
+        </article>
+      ))
+    }
+  </div>
+</BrowseLayout>

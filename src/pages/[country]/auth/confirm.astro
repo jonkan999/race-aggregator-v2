@@ -1,0 +1,99 @@
+---
+import AuxiliaryLayout from '../../../layouts/AuxiliaryLayout.astro';
+import '../../../styles/auth-pages.css';
+import { listCountryCodes, loadIndexYaml, type Locale } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return listCountryCodes().filter((country) => country !== 'se').map((country) => ({ params: { country } }));
+}
+
+const { country } = Astro.params;
+const locale: Locale = 'native';
+const content = loadIndexYaml(country, locale);
+const auth = (content.auth_modal ?? {}) as Record<string, string>;
+const authPages = (content.auth_pages ?? {}) as Record<string, string>;
+const title = `${String(auth.account_created ?? 'Konto skapat!')} | ${content.page_name ?? 'Loppkartan'}`;
+const description = String(auth.verification_email_sent ?? '');
+---
+
+<AuxiliaryLayout
+  title={title}
+  description={description}
+  lang={content.country_language_code ?? 'sv'}
+  country={country}
+  locale={locale}
+  content={content}
+  breadcrumbLabel={String(auth.account_created ?? 'Konto skapat!')}
+>
+  <section class="auth-page-section">
+    <div class="container">
+      <div class="auth-page-card">
+        <h1>{String(auth.account_created ?? 'Konto skapat!')}</h1>
+        <p id="auth-confirm-message">{String(auth.verification_email_sent ?? '')}</p>
+        <p class="auth-page-note" id="auth-confirm-note">{String(auth.please_verify ?? '')}</p>
+        <p class="auth-page-error" id="auth-confirm-error" hidden></p>
+        <a class="auth-page-link" href={`/${country}/`}>{String(content.navigation?.main ?? content.page_name ?? 'Loppkartan')}</a>
+      </div>
+    </div>
+  </section>
+</AuxiliaryLayout>
+
+<script define:vars={{
+  confirmSuccess: String(authPages.confirm_success ?? 'Din e-postadress är nu bekräftad och ditt konto är aktivt.'),
+  confirmReady: String(authPages.confirm_ready ?? 'Du kan nu fortsätta att använda Loppkartan.'),
+  confirmError: String(authPages.confirm_error ?? 'Kunde inte bekräfta e-postadressen.'),
+  siteKey: `${content.country_code ?? country}:${content.page_name ?? 'site'}`,
+  siteName: String(content.page_name ?? 'Site'),
+  countryCode: country,
+  locale,
+}}>
+  import { getSupabaseBrowserClient, isSupabaseConfigured } from '../../../lib/supabase';
+  import { looksLikeNewOAuthUser, recordSupabaseSignup } from '../../../lib/authTracking';
+
+  if (typeof window !== 'undefined' && isSupabaseConfigured()) {
+    const message = document.getElementById('auth-confirm-message');
+    const note = document.getElementById('auth-confirm-note');
+    const error = document.getElementById('auth-confirm-error');
+    const supabase = getSupabaseBrowserClient();
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+
+    (async () => {
+      try {
+        if (code) {
+          const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
+          if (exchangeError) throw exchangeError;
+        }
+
+        const { data } = await supabase.auth.getSession();
+        if (data.session?.user) {
+          const user = data.session.user;
+          if (looksLikeNewOAuthUser(user)) {
+            await recordSupabaseSignup({
+              supabase,
+              email: user.email,
+              siteKey,
+              siteName,
+              countryCode,
+              locale,
+              siteUrl: window.location.origin,
+            });
+          }
+
+          window.sessionStorage.removeItem('authOAuthContext');
+          if (message) {
+            message.textContent = confirmSuccess;
+          }
+          if (note) {
+            note.textContent = confirmReady;
+          }
+        }
+      } catch (err) {
+        if (error) {
+          error.hidden = false;
+          error.textContent = err instanceof Error ? err.message : confirmError;
+        }
+      }
+    })();
+  }
+</script>

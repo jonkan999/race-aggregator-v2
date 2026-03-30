@@ -1,0 +1,395 @@
+---
+import BrowseLayout from '../../../../../../layouts/BrowseLayout.astro';
+import BrowsePopularLinks from '../../../../../../components/BrowsePopularLinks.astro';
+import RaceListPageIsland from '../../../../../../components/RaceListPageIsland';
+import {
+  hasEnglishMerge,
+  listCountryCodes,
+  loadIndexYaml,
+  raceListSlug,
+  type Locale,
+} from '../../../../../../lib/content';
+import { slugify } from '../../../../../../lib/slugify';
+import {
+  findMatchingBrowseCategory,
+  getBrowseCategoriesIndexHref,
+  getBrowseCategoryEntries,
+  getBrowseCityRows,
+  getBrowseNavigationJson,
+  getBrowseNeighboringEntries,
+  getBrowseNeighboringIndexHref,
+  getBrowseNeighboringRows,
+  getBrowseOverviewData,
+  getBrowseOverviewHref,
+  getCategoryItemListJson,
+  getCategorySnapshot,
+  getRaceListBaseHref,
+  getScopedPopularNavigationEntries,
+} from '../../../../../../lib/raceBrowse';
+import { categoryFilterOptionsFromYaml } from '../../../../../../lib/categoryFilterOptions';
+import { getCategorySeoCopy } from '../../../../../../lib/seoPageCopy';
+import { pickTranslation } from '../../../../../../lib/raceListRow';
+import { RACE_LIST_PAGE_SIZE } from '../../../../../../lib/raceListConfig';
+import { getRaceListSnapshot } from '../../../../../../lib/raceListSsg';
+
+export async function getStaticPaths() {
+  const paths: { params: { country: string; raceList: string; scope: string; sub: string } }[] = [];
+  for (const country of listCountryCodes().filter((code) => code !== 'se' && hasEnglishMerge(code))) {
+    const content = loadIndexYaml(country, 'en');
+    const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'en', content });
+    const categories = await getBrowseCategoryEntries({ countryCode: country, locale: 'en', content });
+    const neighboringEntries = await getBrowseNeighboringEntries({ countryCode: country, locale: 'en', content });
+    const citiesSlug = slugify(
+      String((content as { seo_cities_folder_name?: string }).seo_cities_folder_name ?? 'cities'),
+      country,
+    );
+    const allSlug = slugify(
+      String((content as { county_label_text?: string }).county_label_text ?? 'all-counties'),
+      country,
+    );
+    const neighboringSlug = slugify(
+      String(
+        (content as { browse_by_category?: { neighboring?: string } }).browse_by_category?.neighboring ??
+          'neighboring',
+      ),
+      country,
+    );
+
+    for (const entry of overviewData.cities) {
+      paths.push({
+        params: {
+          country,
+          raceList: raceListSlug(content, country),
+          scope: citiesSlug,
+          sub: entry.slug,
+        },
+      });
+    }
+
+    for (const entry of neighboringEntries) {
+      paths.push({
+        params: {
+          country,
+          raceList: raceListSlug(content, country),
+          scope: neighboringSlug,
+          sub: entry.slug,
+        },
+      });
+    }
+
+    for (const entry of overviewData.types) {
+      paths.push({
+        params: {
+          country,
+          raceList: raceListSlug(content, country),
+          scope: allSlug,
+          sub: entry.slug,
+        },
+      });
+    }
+
+    for (const entry of categories) {
+      paths.push({
+        params: {
+          country,
+          raceList: raceListSlug(content, country),
+          scope: allSlug,
+          sub: entry.slug,
+        },
+      });
+    }
+  }
+  return paths;
+}
+
+const { country, raceList, scope, sub } = Astro.params;
+const locale: Locale = 'en';
+const content = loadIndexYaml(country, locale);
+const expectedRaceList = raceListSlug(content, country);
+
+if (raceList !== expectedRaceList) {
+  return Astro.redirect(`/${country}/en/${expectedRaceList}/${scope}/${sub}/`, 301);
+}
+
+const overviewHref = getBrowseOverviewHref(country, locale, content);
+const categoriesHref = getBrowseCategoriesIndexHref(country, locale, content);
+const neighboringHref = getBrowseNeighboringIndexHref(country, locale, content);
+const overviewData = await getBrowseOverviewData({ countryCode: country, locale, content });
+const categories = await getBrowseCategoryEntries({ countryCode: country, locale, content });
+const neighboringEntries = await getBrowseNeighboringEntries({ countryCode: country, locale, content });
+
+const isCity =
+  scope ===
+  slugify(
+    String((content as { seo_cities_folder_name?: string }).seo_cities_folder_name ?? 'cities'),
+    country,
+  );
+const isNeighboring =
+  scope ===
+  slugify(
+    String(
+      (content as { browse_by_category?: { neighboring?: string } }).browse_by_category?.neighboring ??
+        'neighboring',
+    ),
+    country,
+  );
+const isAllCounties =
+  scope ===
+  slugify(
+    String((content as { county_label_text?: string }).county_label_text ?? 'all-counties'),
+    country,
+  );
+
+const cityEntry = isCity ? overviewData.cities.find((item) => item.slug === sub) : undefined;
+const neighboringEntry = isNeighboring ? neighboringEntries.find((item) => item.slug === sub) : undefined;
+const typeEntry = isAllCounties ? overviewData.types.find((item) => item.slug === sub) : undefined;
+const categoryEntry = isAllCounties ? categories.find((item) => item.slug === sub) : undefined;
+
+const market = String(content.country ?? content.country_native ?? 'Sweden');
+const racePageFolder = String(content.race_page_folder_name ?? 'race-pages');
+const translationLocale = 'en';
+const monthMappingShort = (content.month_mapping_short as Record<string, string> | undefined) ?? {};
+const monthMapping = (content.month_mapping as Record<string, string> | undefined) ?? {};
+const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
+const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
+const verboseLocalDistanceMapping =
+  (content.verbose_local_distance_mapping as Record<string, string> | undefined) ?? {};
+
+let title = '';
+let description = '';
+let activeTab: 'overview' | 'categories' | 'neighboring' = 'overview';
+let breadcrumbs: Array<{ label: string; href?: string }> = [];
+let rows: Awaited<ReturnType<typeof getBrowseCityRows>> = [];
+let initialTotal = 0;
+let currentHref = '';
+let itemListJson = '';
+let navigationJson: string | null = null;
+let popularEntries: Array<{ label: string; href: string; count: number }> = [];
+let initialCounty = '';
+let initialRaceType = '';
+let initialCategoryKey = '';
+let browseByCategoryHref = overviewHref;
+let alternateRaceListHref: string | undefined;
+
+if (cityEntry) {
+  rows = await getBrowseCityRows(country, cityEntry.key);
+  initialTotal = rows.length;
+  title = `${cityEntry.label} races | ${content.page_name ?? content.race_list_name ?? market}`;
+  description = `Find races tied to ${cityEntry.label}. Compare dates, distances and practical details before choosing your next race.`;
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.cities ?? 'Cities') },
+    { label: cityEntry.label },
+  ];
+  currentHref = cityEntry.href;
+
+  const nativeContent = loadIndexYaml(country, 'native');
+  const nativeOverview = await getBrowseOverviewData({
+    countryCode: country,
+    locale: 'native',
+    content: nativeContent,
+  });
+  alternateRaceListHref = nativeOverview.cities.find((item) => item.key === cityEntry.key)?.href;
+} else if (neighboringEntry) {
+  rows = await getBrowseNeighboringRows(country, neighboringEntry.key);
+  initialTotal = rows.length;
+  title =
+    content.neighboring_countries_title_specific_country?.replace('{country_name}', neighboringEntry.label) ??
+    `Races in ${neighboringEntry.label}`;
+  description =
+    content.neighboring_countries_description_specific_country?.replace('{country_name}', neighboringEntry.label) ??
+    `Here we list races held in ${neighboringEntry.label}.`;
+  activeTab = 'neighboring';
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    {
+      label: String(content.browse_by_category?.neighboring ?? 'Neighboring countries'),
+      href: neighboringHref,
+    },
+    { label: neighboringEntry.label },
+  ];
+  currentHref = neighboringEntry.href;
+  initialCounty = `__neighbor__:${neighboringEntry.key}`;
+  browseByCategoryHref = neighboringHref;
+
+  const nativeContent = loadIndexYaml(country, 'native');
+  const nativeEntries = await getBrowseNeighboringEntries({
+    countryCode: country,
+    locale: 'native',
+    content: nativeContent,
+  });
+  alternateRaceListHref = nativeEntries.find((item) => item.key === neighboringEntry.key)?.href;
+} else if (typeEntry) {
+  const snapshot = await getRaceListSnapshot(country, { raceType: typeEntry.key });
+  rows = snapshot.rows;
+  initialTotal = snapshot.total;
+  title = `${typeEntry.label} races | ${content.page_name ?? content.race_list_name ?? market}`;
+  description = `Find ${typeEntry.label.toLowerCase()} races in ${market}. Compare dates, distances and practical details before choosing your next race.`;
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: typeEntry.label },
+  ];
+  currentHref = typeEntry.href;
+  initialRaceType = typeEntry.key;
+
+  const nativeContent = loadIndexYaml(country, 'native');
+  const nativeOverview = await getBrowseOverviewData({
+    countryCode: country,
+    locale: 'native',
+    content: nativeContent,
+  });
+  alternateRaceListHref = nativeOverview.types.find((item) => item.key === typeEntry.key)?.href;
+} else if (categoryEntry) {
+  const snapshot = await getCategorySnapshot({ countryCode: country, category: categoryEntry });
+  rows = snapshot.rows;
+  initialTotal = snapshot.total;
+  const seoCopy = getCategorySeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    categoryLabel: categoryEntry.label,
+    raceCount: categoryEntry.count,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
+  activeTab = 'categories';
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.categories ?? 'Categories'), href: categoriesHref },
+    { label: categoryEntry.label },
+  ];
+  currentHref = categoryEntry.href;
+  initialCategoryKey = categoryEntry.label;
+  browseByCategoryHref = categoriesHref;
+
+  const nativeContent = loadIndexYaml(country, 'native');
+  const nativeCategories = await getBrowseCategoryEntries({
+    countryCode: country,
+    locale: 'native',
+    content: nativeContent,
+  });
+  const nativeMatch = findMatchingBrowseCategory(nativeCategories, categoryEntry);
+  alternateRaceListHref = nativeMatch?.href;
+} else {
+  return Astro.redirect(getRaceListBaseHref(country, locale, content), 302);
+}
+
+itemListJson = getCategoryItemListJson({
+  rows: isCity || isNeighboring ? rows.slice(0, RACE_LIST_PAGE_SIZE) : rows,
+  total: initialTotal,
+  countryCode: country,
+  locale,
+  content,
+  racePageFolder,
+});
+popularEntries = getScopedPopularNavigationEntries({
+  rows,
+  countryCode: country,
+  locale,
+  content,
+  currentHref,
+  lockedRaceTypeKey: typeEntry?.key,
+  lockedCategoryLabel: categoryEntry?.label,
+});
+navigationJson = getBrowseNavigationJson({ entries: popularEntries, content, locale });
+
+const initialRows = isCity || isNeighboring ? rows.slice(0, RACE_LIST_PAGE_SIZE) : rows;
+---
+
+<BrowseLayout
+  title={title}
+  description={description}
+  lang="en"
+  country={country}
+  locale="en"
+  content={content}
+  alternateRaceListHref={alternateRaceListHref}
+  activeTab={activeTab}
+  overviewHref={overviewHref}
+  categoriesHref={categoriesHref}
+  neighboringHref={neighboringHref}
+  breadcrumbs={breadcrumbs}
+>
+  <script slot="head" type="application/ld+json" set:html={itemListJson} />
+  {navigationJson && <script slot="head" type="application/ld+json" set:html={navigationJson} />}
+  <nav class="visually-hidden" aria-label={title}>
+    <ul>
+      {
+        initialRows.map((row) => {
+          const translation = pickTranslation(row.race_translations, translationLocale);
+          return (
+            <li>
+              <a href={`/${country}/en/${racePageFolder}/${row.domain_name}/`}>
+                {translation?.name ?? row.domain_name}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </nav>
+
+  <RaceListPageIsland
+    client:load
+    countryCode={country}
+    routeLocale="en"
+    translationLocale={translationLocale}
+    initialRows={initialRows}
+    initialTotal={initialTotal}
+    localRows={isCity || isNeighboring ? rows : undefined}
+    initialCounty={initialCounty}
+    initialRaceType={initialRaceType}
+    initialCategoryKey={initialCategoryKey}
+    initialCity={cityEntry?.key ?? ''}
+    autoPopulateDateRange={true}
+    showIntroHeader={true}
+    pagination={content.pagination ?? {}}
+    raceListTitle={title}
+    raceListMeta1={description}
+    raceListMeta2=""
+    filterDateFrom={String(content.filter_date_from ?? '')}
+    filterDateTo={String(content.filter_date_to ?? '')}
+    filterMonths={String(content.filter_months ?? '')}
+    filterDistance={String(content.filter_distance ?? '')}
+    filterCounty={String(content.filter_county ?? '')}
+    filterRaceType={String(content.filter_race_type ?? '')}
+    browseByCategoryButton={String(content.browse_by_category?.button ?? '')}
+    browseByCategoryHref={browseByCategoryHref}
+    mapToggleDesktop={String(content.map_toggle_desktop ?? '')}
+    mapToggleDesktopActive={String(content.map_toggle_desktop_active ?? '')}
+    mapToggleMobile={String(content.map_toggle_mobile ?? '')}
+    mapToggleMobileList={String(content.map_toggle_mobile_list ?? '')}
+    sectionRaceCardCategoryPrefix={String(content.section_race_card_category_prefix ?? '')}
+    sectionRaceCardCategorySuffix={String(content.section_race_card_category_suffix ?? '')}
+    sectionRaceCardHeaderSeparator={String(content.section_race_card_header_separator ?? '')}
+    sectionRaceCardHeaderRegionDefault={String(content.section_race_card_header_region_default ?? content.country ?? '')}
+    sectionRaceCardHeaderDateRangeFrom={String(content.section_race_card_header_date_range_from ?? '')}
+    sectionRaceCardHeaderDateRangeTo={String(content.section_race_card_header_date_range_to ?? '')}
+    sectionRaceCardHeaderDateRangeSingle={String(content.section_race_card_header_date_range_single ?? '')}
+    raceCardCta={String(content.race_card_cta_text ?? '')}
+    altPrefix={String(content.race_page_alt_prefix ?? content.alt_prefix ?? '')}
+    racePageFolder={racePageFolder}
+    countryNative={String(content.country ?? '')}
+    countyMapping={countyMapping}
+    monthMapping={monthMapping}
+    monthMappingShort={monthMappingShort}
+    typeOptions={typeOptions}
+    categoryFilterOptions={categoryFilterOptionsFromYaml(content.category_mapping)}
+    dataError={String(content.race_list_data_error ?? '')}
+    emptyMessage={String(content.race_list_empty ?? '')}
+    loadingMessage={String(content.race_list_loading ?? '')}
+    remoteRequiredMessage={String(content.race_list_remote_required ?? '')}
+    markersLoadError={String(content.map_markers_load_error ?? '')}
+    mapNotConfiguredMessage={String(content.map_not_configured ?? '')}
+    mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
+    centerLat={content.mapbox_center?.latitude ?? 59.35}
+    centerLng={content.mapbox_center?.longitude ?? 15.03}
+    zoom={parseFloat(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '6')) || 6}
+    verboseLocalDistanceMapping={verboseLocalDistanceMapping}
+  />
+
+  <BrowsePopularLinks
+    title={String(content.popular_subcategories_title ?? 'Popular subcategories')}
+    entries={popularEntries}
+  />
+</BrowseLayout>

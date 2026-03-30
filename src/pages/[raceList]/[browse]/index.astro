@@ -1,0 +1,174 @@
+---
+import BrowseLayout from '../../../layouts/BrowseLayout.astro';
+import {
+  findCountryByRaceListSlug,
+  hasEnglishMerge,
+  listCountryCodes,
+  loadIndexYaml,
+  raceListSlug,
+  type Locale,
+} from '../../../lib/content';
+import { slugify } from '../../../lib/slugify';
+import {
+  getBrowseCategoriesIndexHref,
+  getBrowseNeighboringIndexHref,
+  getBrowseOverviewData,
+  getBrowseOverviewHref,
+} from '../../../lib/raceBrowse';
+
+export function getStaticPaths() {
+  return listCountryCodes().map((country) => {
+    const content = loadIndexYaml(country, 'native');
+    return {
+      params: {
+        raceList: raceListSlug(content, country),
+        browse: slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country),
+      },
+    };
+  });
+}
+
+const { raceList, browse } = Astro.params;
+const country = findCountryByRaceListSlug(raceList, 'native');
+if (!country) {
+  return Astro.redirect('/', 302);
+}
+const locale: Locale = 'native';
+const content = loadIndexYaml(country, locale);
+const expectedRaceList = raceListSlug(content, country);
+const expectedBrowse = slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country);
+
+if (raceList !== expectedRaceList || browse !== expectedBrowse) {
+  return Astro.redirect(`/${expectedRaceList}/${expectedBrowse}/`, 301);
+}
+
+const overviewHref = getBrowseOverviewHref(country, locale, content);
+const categoriesHref = getBrowseCategoriesIndexHref(country, locale, content);
+const neighboringHref = getBrowseNeighboringIndexHref(country, locale, content);
+const overviewData = await getBrowseOverviewData({ countryCode: country, locale, content });
+
+const title = String(content.browse_overview?.title ?? content.browse_by_category?.overview ?? 'Browse');
+const description = String(content.browse_overview?.meta_description ?? '');
+const alternateRaceListHref = hasEnglishMerge(country)
+  ? getBrowseOverviewHref(country, 'en', loadIndexYaml(country, 'en'))
+  : undefined;
+---
+
+<BrowseLayout
+  title={`${title} — ${content.page_name ?? ''}`}
+  description={description}
+  lang={String(content.country_language_code ?? 'sv')}
+  country={country}
+  locale="native"
+  content={content}
+  alternateRaceListHref={alternateRaceListHref}
+  activeTab="overview"
+  overviewHref={overviewHref}
+  categoriesHref={categoriesHref}
+  neighboringHref={neighboringHref}
+  breadcrumbs={[
+    { label: String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? 'Bläddra efter kategori') },
+  ]}
+>
+  <section class="browse-intro">
+    <h1 class="browse-intro__title">{title}</h1>
+    <p class="browse-intro__description">{description}</p>
+  </section>
+
+  <section class="browse-grid-section">
+    <h2 class="browse-grid-section__title">{String(content.browse_by_category?.counties ?? 'Counties')}</h2>
+    <div class="browse-grid">
+      {
+        overviewData.counties.slice(0, 12).map((entry) => (
+          <a href={entry.href} class="browse-card">
+            <h3 class="browse-card__title">
+              <span>{entry.label}</span>
+              <span class="browse-card__count">{entry.count}</span>
+            </h3>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="browse-grid-section">
+    <h2 class="browse-grid-section__title">{String(content.browse_by_category?.cities ?? 'Cities')}</h2>
+    <div class="browse-grid">
+      {
+        overviewData.cities.map((entry) => (
+          <a href={entry.href} class="browse-card">
+            <h3 class="browse-card__title">
+              <span>{entry.label}</span>
+              <span class="browse-card__count">{entry.count}</span>
+            </h3>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="browse-grid-section">
+    <h2 class="browse-grid-section__title">{String(content.browse_by_category?.neighboring ?? 'Närliggande länder')}</h2>
+    <div class="browse-grid">
+      {
+        overviewData.neighboring.map((entry) => (
+          <a href={entry.href} class="browse-card">
+            <h3 class="browse-card__title">
+              <span>{entry.label}</span>
+              <span class="browse-card__count">{entry.count}</span>
+            </h3>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="browse-grid-section">
+    <h2 class="browse-grid-section__title">{String(content.browse_by_category?.types ?? 'Types')}</h2>
+    <div class="browse-grid">
+      {
+        overviewData.types.slice(0, 12).map((entry) => (
+          <a href={entry.href} class="browse-card">
+            <h3 class="browse-card__title">
+              <span>{entry.label}</span>
+              <span class="browse-card__count">{entry.count}</span>
+            </h3>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="browse-grid-section">
+    <h2 class="browse-grid-section__title">{String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? 'Categories')}</h2>
+    <div class="browse-grid">
+      {
+        overviewData.categories.map((entry) => (
+          <a href={entry.href} class="browse-card">
+            <h3 class="browse-card__title">
+              <span>{entry.label}</span>
+              <span class="browse-card__count">{entry.count}</span>
+            </h3>
+            <p class="browse-card__meta">{content.browse_categories?.meta_description}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="browse-grid-section">
+    <h2 class="browse-grid-section__title">{String(content.browse_by_category?.months ?? 'Months')}</h2>
+    <div class="browse-grid">
+      {
+        overviewData.months.map((entry) => (
+          <a href={entry.href} class="browse-card">
+            <h3 class="browse-card__title">
+              <span>{entry.label}</span>
+              <span class="browse-card__count">{entry.count}</span>
+            </h3>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BrowseLayout>

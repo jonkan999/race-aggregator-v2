@@ -1,0 +1,785 @@
+.auxiliary-page .section-about-us,
+.auxiliary-page .section-contact,
+.auxiliary-page .section-privacy,
+.auxiliary-page .section-measure-route,
+.auxiliary-page .section-pace-calculator,
+.auxiliary-page .section-race-estimator,
+.auxiliary-page .section-training-plans {
+  position: relative;
+}
+
+.auxiliary-page .section-about-us,
+.auxiliary-page .section-contact,
+.auxiliary-page .section-privacy,
+.auxiliary-page .section-measure-route,
+.auxiliary-page .section-pace-calculator,
+.auxiliary-page .section-race-estimator,
+.auxiliary-page .section-training-plans {
+  padding: 6.4rem 0;
+  padding-top: calc(var(--header-size) + 4rem) !important;
+}
+
+.auxiliary-page .section-about-us .container,
+.auxiliary-page .section-contact .container,
+.auxiliary-page .section-measure-route .container,
+.auxiliary-page .section-pace-calculator .container,
+.auxiliary-page .section-race-estimator .container,
+.auxiliary-page .section-training-plans .container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.auxiliary-page .section-privacy .container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.auxiliary-page .section-about-us h1,
+.auxiliary-page .section-contact h1,
+.auxiliary-page .section-privacy h1,
+.auxiliary-page .section-pace-calculator h1,
+.auxiliary-page .section-race-estimator h1,
+.auxiliary-page .section-training-plans h1 {
+  color: var(--color-primary-dark);
+  font-size: 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.auxiliary-page .section-pace-calculator h1,
+.auxiliary-page .section-race-estimator h1,
+.auxiliary-page .section-training-plans h1 {
+  padding: 0 2rem;
+}
+
+.auxiliary-page .section-measure-route .heading-primary {
+  color: var(--color-primary-dark);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.auxiliary-page .section-contact h1,
+.auxiliary-page .section-contact .intro {
+  text-align: center;
+}
+
+.auxiliary-page .section-about-us .intro,
+.auxiliary-page .section-about-us .mission,
+.auxiliary-page .section-about-us .story,
+.auxiliary-page .section-about-us .closing,
+.auxiliary-page .section-contact .intro,
+.auxiliary-page .section-privacy .privacy-section p,
+.auxiliary-page .section-privacy .privacy-section li,
+.auxiliary-page .section-measure-route .description,
+.auxiliary-page .section-pace-calculator .description,
+.auxiliary-page .section-race-estimator .description,
+.auxiliary-page .section-training-plans .description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.auxiliary-page .section-pace-calculator .description,
+.auxiliary-page .section-race-estimator .description,
+.auxiliary-page .section-training-plans .description {
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.auxiliary-page .section-pace-calculator .conversion-note {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: var(--color-grey-dark-2);
+  padding: 0 2rem;
+}
+
+.auxiliary-page .about-content,
+.auxiliary-page .contact-content,
+.auxiliary-page .privacy-content,
+.auxiliary-page .aux-tool-shell {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.auxiliary-page .section-about-us .intro,
+.auxiliary-page .section-contact .intro {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.auxiliary-page .section-about-us .mission,
+.auxiliary-page .section-about-us .story,
+.auxiliary-page .section-about-us .closing {
+  margin-top: 1.6rem;
+}
+
+.auxiliary-page .features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.auxiliary-page .feature-card,
+.auxiliary-page .contact-method {
+  background: var(--color-white);
+  border: 0;
+  border-top: 1px solid var(--color-divider-grey);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 2rem;
+}
+
+.auxiliary-page .feature-card h3,
+.auxiliary-page .contact-method h3,
+.auxiliary-page .section-privacy .privacy-section h2,
+.auxiliary-page .section-training-plans .heading-secondary,
+.auxiliary-page .section-race-estimator .heading-secondary {
+  color: var(--color-primary-dark);
+  text-transform: none;
+}
+
+.auxiliary-page .feature-card h3,
+.auxiliary-page .contact-method h3 {
+  margin-bottom: 1rem;
+}
+
+.auxiliary-page .feature-card p,
+.auxiliary-page .contact-method p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.auxiliary-page .contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin-top: 3rem;
+}
+
+.auxiliary-page .contact-method {
+  text-align: center;
+}
+
+.auxiliary-page .contact-method a,
+.auxiliary-page .section-privacy .privacy-section a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.auxiliary-page .contact-method a:hover,
+.auxiliary-page .section-privacy .privacy-section a:hover {
+  text-decoration: underline;
+}
+
+.auxiliary-page .aux-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.auxiliary-page .aux-social-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.auxiliary-page .aux-social-link:hover {
+  text-decoration: underline;
+}
+
+.auxiliary-page .section-privacy .last-updated {
+  color: var(--color-grey-dark-1);
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.auxiliary-page .section-privacy .privacy-section {
+  margin-bottom: 4rem;
+}
+
+.auxiliary-page .section-privacy .privacy-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.auxiliary-page .section-privacy .privacy-section p {
+  margin-bottom: 1.5rem;
+}
+
+.auxiliary-page .section-privacy .privacy-section ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.auxiliary-page .section-privacy .privacy-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.auxiliary-page .section-measure-route .route-controls {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  margin-top: 2rem;
+  margin-bottom: 2.2rem;
+}
+
+.auxiliary-page .section-measure-route .description,
+.auxiliary-page .section-measure-route .route-controls,
+.auxiliary-page .section-measure-route .route-controls .control-button {
+  color: var(--color-primary-dark);
+}
+
+.auxiliary-page .section-measure-route .route-controls .control-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.4rem;
+  min-width: 24rem;
+  padding: 1.4rem 1.8rem;
+  border-radius: 0.4rem;
+  background: #dceddf;
+  border: 1px solid rgba(0, 73, 47, 0.08);
+  box-shadow: none;
+  font-weight: 600;
+  font-size: 1.55rem;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.auxiliary-page .section-measure-route .route-controls .control-button:hover {
+  background: #cfe3d5;
+}
+
+.auxiliary-page .section-measure-route .route-controls .control-button .icon {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+}
+
+.auxiliary-page .section-measure-route .measure-map-shell {
+  position: relative;
+}
+
+.auxiliary-page .section-measure-route .distance-display {
+  position: absolute;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.8rem;
+  background: rgba(230, 244, 239, 0.98);
+  border: 1px solid rgba(0, 73, 47, 0.08);
+  box-shadow: 0 1rem 2.4rem rgba(0, 37, 24, 0.07);
+  color: var(--color-primary-dark);
+  font-size: 1.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.auxiliary-page .section-measure-route .description {
+  max-width: 72rem;
+  font-size: 1.75rem;
+  line-height: 1.65;
+}
+
+.auxiliary-page .section-measure-route .measure-map {
+  height: min(68vh, 72rem);
+  border-radius: 0;
+  border: 1px solid rgba(0, 73, 47, 0.08);
+}
+
+.auxiliary-page .section-measure-route .measure-route-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 73, 47, 0.08);
+}
+
+.auxiliary-page .marker-measure {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.auxiliary-page .marker-measure .marker-inner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.auxiliary-page .section-pace-calculator .pace-table-container,
+.auxiliary-page .section-race-estimator .calculator-container,
+.auxiliary-page .section-training-plans .calculator-container,
+.auxiliary-page .section-race-estimator .results-container,
+.auxiliary-page .section-training-plans .results-container {
+  background: var(--color-white);
+  border: 1px solid var(--color-divider-grey);
+  border-radius: var(--border-radius);
+  box-shadow: none;
+}
+
+.auxiliary-page .section-race-estimator .calculator-container,
+.auxiliary-page .section-training-plans .calculator-container {
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.auxiliary-page .section-race-estimator .calculator-form,
+.auxiliary-page .section-training-plans .calculator-form {
+  max-width: 64rem;
+}
+
+.auxiliary-page .section-race-estimator .form-group,
+.auxiliary-page .section-training-plans .form-group {
+  margin-bottom: 2.4rem;
+}
+
+.auxiliary-page .section-race-estimator label,
+.auxiliary-page .section-training-plans label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.auxiliary-page .section-race-estimator .form-select,
+.auxiliary-page .section-training-plans .form-select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid var(--color-divider-grey);
+  border-radius: 0.4rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.auxiliary-page .section-race-estimator .form-select:focus,
+.auxiliary-page .section-training-plans .form-select:focus,
+.auxiliary-page .section-race-estimator .form-input:focus,
+.auxiliary-page .section-training-plans .form-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(52, 188, 140, 0.25);
+}
+
+.auxiliary-page .section-race-estimator .time-inputs,
+.auxiliary-page .section-training-plans .time-inputs {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.auxiliary-page .section-race-estimator .time-input,
+.auxiliary-page .section-training-plans .time-input {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.auxiliary-page .section-race-estimator .form-input,
+.auxiliary-page .section-training-plans .form-input {
+  width: 8rem;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid var(--color-divider-grey);
+  border-radius: 0.4rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.auxiliary-page .section-race-estimator .unit,
+.auxiliary-page .section-training-plans .unit {
+  font-size: 1.6rem;
+  color: var(--color-grey-dark-2);
+}
+
+.auxiliary-page .section-race-estimator .checkbox-wrapper,
+.auxiliary-page .section-training-plans .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.auxiliary-page .section-race-estimator .checkbox-wrapper .form-checkbox,
+.auxiliary-page .section-training-plans .checkbox-wrapper .form-checkbox {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.auxiliary-page .section-race-estimator .checkbox-wrapper label,
+.auxiliary-page .section-training-plans .checkbox-wrapper label {
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.auxiliary-page .section-race-estimator .btn,
+.auxiliary-page .section-training-plans .btn {
+  display: block;
+  width: 100%;
+  margin-top: 3.2rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.auxiliary-page .section-race-estimator .btn:hover,
+.auxiliary-page .section-training-plans .btn:hover {
+  background: var(--color-primary-tint);
+}
+
+.auxiliary-page .section-race-estimator .btn:active,
+.auxiliary-page .section-training-plans .btn:active {
+  transform: translateY(0.1rem);
+}
+
+.auxiliary-page .section-training-plans .btn--outline {
+  background: transparent;
+  color: var(--color-primary-dark);
+  border: 1px solid rgba(0, 73, 47, 0.24);
+}
+
+.auxiliary-page .section-training-plans .btn--outline:hover {
+  background: rgba(0, 73, 47, 0.06);
+}
+
+.auxiliary-page .section-training-plans .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.auxiliary-page .section-race-estimator .results-container,
+.auxiliary-page .section-training-plans .results-container {
+  margin-top: 4.8rem;
+  padding: 2rem 0;
+}
+
+.auxiliary-page .section-race-estimator .results-container.hidden,
+.auxiliary-page .section-training-plans .results-container.hidden {
+  display: none;
+}
+
+.auxiliary-page .section-race-estimator .heading-secondary,
+.auxiliary-page .section-training-plans .heading-secondary {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.auxiliary-page .section-pace-calculator .pace-table,
+.auxiliary-page .section-race-estimator .results-table,
+.auxiliary-page .section-training-plans .results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.auxiliary-page .section-pace-calculator .pace-table-container {
+  overflow-x: auto;
+  max-height: 60rem;
+  overflow-y: auto;
+}
+
+.auxiliary-page .section-pace-calculator .pace-table {
+  font-size: 1.4rem;
+}
+
+.auxiliary-page .section-pace-calculator .pace-table th,
+.auxiliary-page .section-pace-calculator .pace-table td,
+.auxiliary-page .section-race-estimator .results-table th,
+.auxiliary-page .section-race-estimator .results-table td,
+.auxiliary-page .section-training-plans .results-table th,
+.auxiliary-page .section-training-plans .results-table td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider-grey);
+}
+
+.auxiliary-page .section-pace-calculator .pace-table th,
+.auxiliary-page .section-race-estimator .results-table th,
+.auxiliary-page .section-training-plans .results-table th {
+  color: var(--color-primary-dark);
+  background-color: #e4f0ea;
+}
+
+.auxiliary-page .section-pace-calculator .pace-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.auxiliary-page .section-pace-calculator .pace-table tr:hover,
+.auxiliary-page .section-race-estimator .results-table tr:hover,
+.auxiliary-page .section-training-plans .results-table tr:hover {
+  background-color: var(--color-background-shade);
+}
+
+.auxiliary-page .leaflet-container {
+  font: inherit;
+}
+
+.auxiliary-page .leaflet-interactive {
+  stroke: var(--color-primary);
+  stroke-width: 3;
+}
+
+.auxiliary-page .section-training-plans .info-disclaimer {
+  margin-bottom: 2rem;
+  padding: 1.6rem 2rem;
+  background: rgba(255, 223, 1, 0.22);
+  border-left: 0.4rem solid rgba(0, 73, 47, 0.24);
+  border-radius: 0.6rem;
+}
+
+.auxiliary-page .section-training-plans .plan-overview,
+.auxiliary-page .section-training-plans #training-schedule .week-container {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(0, 73, 47, 0.08);
+  box-shadow: none;
+}
+
+.auxiliary-page .section-training-plans .plan-overview {
+  margin: 2.4rem 0;
+}
+
+.auxiliary-page .section-training-plans .plan-overview h3 {
+  font-size: 2.4rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 2rem;
+}
+
+.auxiliary-page .section-training-plans .plan-focus,
+.auxiliary-page .section-training-plans .plan-description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.auxiliary-page .section-training-plans .plan-highlights {
+  margin: 2rem 0;
+}
+
+.auxiliary-page .section-training-plans .plan-highlights ul {
+  padding-left: 2rem;
+}
+
+.auxiliary-page .section-training-plans .plan-highlights ul li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.auxiliary-page .section-training-plans .plan-structure,
+.auxiliary-page .section-training-plans .plan-distribution {
+  margin-top: 1.5rem;
+}
+
+.auxiliary-page .section-training-plans .plan-structure strong,
+.auxiliary-page .section-training-plans .plan-distribution strong {
+  color: var(--color-grey-dark-2);
+}
+
+.auxiliary-page .section-training-plans #training-schedule {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.auxiliary-page .section-training-plans #training-schedule .week-container {
+  margin-bottom: 3rem;
+}
+
+.auxiliary-page .section-training-plans .week-header {
+  margin-bottom: 2.5rem;
+}
+
+.auxiliary-page .section-training-plans .week-header h4 {
+  font-size: 2.2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.8rem;
+}
+
+.auxiliary-page .section-training-plans .week-focus {
+  color: var(--color-grey-dark-2);
+  font-style: italic;
+}
+
+.auxiliary-page .section-training-plans .sessions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.auxiliary-page .section-training-plans .sessions-container .session {
+  background: #eef6f1;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  transition: transform 0.2s ease;
+}
+
+.auxiliary-page .section-training-plans .sessions-container .session:hover {
+  transform: translateX(4px);
+}
+
+.auxiliary-page .section-training-plans .session-header {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.auxiliary-page .section-training-plans .session-header strong {
+  color: var(--color-primary-dark);
+  margin-right: 0.5rem;
+}
+
+.auxiliary-page .section-training-plans .session-details p {
+  margin-bottom: 1.5rem;
+  color: var(--color-grey-dark-2);
+}
+
+.auxiliary-page .section-training-plans .workout-specs {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.auxiliary-page .section-training-plans .workout-specs li strong {
+  color: var(--color-grey-dark-2);
+  margin-right: 0.5rem;
+}
+
+.auxiliary-page .section-training-plans .plan-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.auxiliary-page .section-training-plans .plan-actions .btn {
+  width: auto;
+  margin-top: 2rem;
+  min-width: 15rem;
+}
+
+.auxiliary-page .aux-inline-error,
+.auxiliary-page .aux-inline-loading {
+  margin-top: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.auxiliary-page .aux-inline-error {
+  color: #8a3d14;
+}
+
+.auxiliary-page .aux-inline-loading {
+  color: var(--color-grey-dark-2);
+}
+
+@media (max-width: 75em) {
+  .auxiliary-page .section-about-us,
+  .auxiliary-page .section-contact,
+  .auxiliary-page .section-privacy,
+  .auxiliary-page .section-pace-calculator,
+  .auxiliary-page .section-race-estimator,
+  .auxiliary-page .section-training-plans {
+    padding: 1rem 0;
+    padding-top: calc(var(--header-size) + 2rem) !important;
+  }
+
+  .auxiliary-page .section-about-us .container,
+  .auxiliary-page .section-contact .container,
+  .auxiliary-page .section-privacy .container,
+  .auxiliary-page .section-measure-route .container,
+  .auxiliary-page .section-pace-calculator .container,
+  .auxiliary-page .section-race-estimator .container,
+  .auxiliary-page .section-training-plans .container {
+    padding: 0 1.5rem;
+  }
+
+  .auxiliary-page .features,
+  .auxiliary-page .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .auxiliary-page .section-measure-route .route-controls {
+    flex-direction: row-reverse;
+  }
+
+  .auxiliary-page .section-measure-route .route-controls .control-button {
+    flex-grow: 1;
+    min-width: 0;
+    line-height: 1.4;
+  }
+
+  .auxiliary-page .section-measure-route .distance-display {
+    top: 0.8rem;
+    max-width: calc(100% - 3rem);
+    z-index: 1000;
+  }
+
+  .auxiliary-page .section-race-estimator .time-inputs,
+  .auxiliary-page .section-training-plans .time-inputs {
+    flex-wrap: wrap;
+  }
+
+  .auxiliary-page .section-training-plans .plan-overview,
+  .auxiliary-page .section-training-plans #training-schedule .week-container {
+    padding: 2rem;
+  }
+
+  .auxiliary-page .section-training-plans .sessions-container .session {
+    padding: 1.5rem;
+  }
+
+  .auxiliary-page .section-training-plans .workout-specs {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .auxiliary-page .section-training-plans .plan-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .auxiliary-page .section-training-plans .plan-actions .btn {
+    width: 100%;
+  }
+
+  .auxiliary-page .section-training-plans .plan-overview h3 {
+    font-size: 2rem;
+  }
+
+  .auxiliary-page .section-training-plans .week-header h4 {
+    font-size: 1.8rem;
+  }
+
+  .auxiliary-page .section-training-plans .session-header {
+    font-size: 1.6rem;
+  }
+}

@@ -82,10 +82,18 @@ Equivalent: `npm run export-markers -- se`. Without DB credentials, the script r
 
 ### Race list: static first page + Supabase RPC for interaction
 
-At **`astro build`** / **`astro dev`**, the first page of the main calendar is filled from:
+At **`astro dev`**, the first page of the main calendar is filled from:
 
 1. **Supabase** if `SUPABASE_URL` (or `PUBLIC_SUPABASE_URL`) and `SUPABASE_SECRET_KEY` are set in the environment (recommended for production CI so HTML matches the DB), or  
 2. Otherwise **`data/countries/{code}/final_races.json`** (and int file)—inlined into the page, no extra public JSON.
+
+At **`npm run build`**, the repo now uses a snapshot-first flow:
+
+1. Export all race rows once per country into a temporary local directory under `.cache/race-list-build-snapshots/`
+2. Reuse that snapshot for every static list/browse page during the build
+3. Remove the temporary snapshot directory after the build finishes
+
+This keeps build-time Supabase egress roughly proportional to the number of countries being built, rather than the number of generated routes.
 
 In the browser, **pagination** and **filters** (dates, month, distance/category, county, race type) call **`get_races_list_page`** once per change (returns total + rows with translations). If `PUBLIC_SUPABASE_*` keys are missing, page 1 still works; further pages and filtering show copy from `race_list_remote_required` in YAML.
 
@@ -109,12 +117,39 @@ npm run dev
 
 - Swedish list: [http://127.0.0.1:4321/se/loppkalender/](http://127.0.0.1:4321/se/loppkalender/)
 - English list: [http://127.0.0.1:4321/se/en/race-calendar/](http://127.0.0.1:4321/se/en/race-calendar/)
+- Swedish browse overview: [http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/](http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/)
+- Example category landing page: [http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/categories/10-km/](http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/categories/10-km/)
+- Add race: [http://127.0.0.1:4321/se/lagg-till-lopp/](http://127.0.0.1:4321/se/lagg-till-lopp/)
 
 ## Build
 
 ```bash
 npm run build
 npm run preview
+```
+
+If you want the raw Astro build without the snapshot wrapper:
+
+```bash
+npm run build:astro
+```
+
+You can also export snapshots directly:
+
+```bash
+npm run export-race-list-snapshots -- se
+```
+
+## Add race submissions
+
+- The add-race page is a static Astro route with a hydrated React form island and a legacy-style Leaflet map.
+- Submissions are intentionally anonymous: users do not need to log in before sending a race.
+- Uploaded images go to the Supabase Storage bucket `race-submissions`.
+- Form rows go to the `public.race_submissions` table with `pending_review` status by default.
+- Apply the corresponding migration before testing real submissions:
+
+```bash
+./scripts/shell/supabase-db-push.sh
 ```
 
 ## Tests
@@ -147,6 +182,13 @@ Mapbox is optional for smoke tests (the map shows a YAML message if `PUBLIC_MAPB
 - `data/countries/{code}/index.yaml` — native language strings and config (include **`alternate_locale_link_text`** for the nav link to the English list when `merged_index_int.yaml` exists).
 - `data/countries/{code}/merged_index_int.yaml` — English strings for that market (same key for the link back to the native list).
 - `data/countries/{code}/final_races*.json` — seed/export inputs (managed long-term by **race-collector-v2**).
+- `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides used by category landing pages. Missing category entries fall back to deterministic template copy from YAML.
+
+Refresh missing category-cache entries without regenerating existing overrides:
+
+```bash
+npm run build-category-seo-cache -- se
+```
 
 ## Agent browser tooling
 

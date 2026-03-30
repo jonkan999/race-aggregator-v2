@@ -15,6 +15,7 @@ This repository is the Astro + Supabase migration of the live legacy project at 
 - Keep the race list SEO-first and SSG-first: page 1 is pre-rendered, while pagination and filters use the `get_races_list_page` RPC.
 - Use static `public/markers-{country}.json` for map pins. Do not fetch pins from paginated list queries.
 - Only publishable Supabase keys belong in the browser. Secret or service-role keys are only for scripts, CI, and build-time snapshots.
+- Treat build-time Supabase access as export-only: fetch race rows once per country into the temporary build snapshot, then reuse that local snapshot for the rest of static generation. Do not add route-level patterns that repeatedly hit Supabase during `astro build`.
 - Preserve legacy class names and layout expectations on race list routes unless there is a clear reason to modernize them deliberately.
 
 ## Migration Workflow
@@ -24,7 +25,8 @@ This repository is the Astro + Supabase migration of the live legacy project at 
 3. Seed data with `./scripts/shell/seed-races.sh {code}` when needed.
 4. Refresh markers with `./scripts/shell/export-markers.sh {code}` when map data changes.
 5. Verify with `npm run build` and `npm run test:e2e`.
-6. Update [`README.md`](./README.md), [`PRD.md`](./PRD.md), and [`architecture.md`](./architecture.md) when architecture, setup, or SEO-visible behavior changes.
+6. If you change build-time race data loading, preserve the “one snapshot export per country, then local reuse” contract and document it.
+7. Update [`README.md`](./README.md), [`PRD.md`](./PRD.md), and [`architecture.md`](./architecture.md) when architecture, setup, or SEO-visible behavior changes.
 
 ## Legacy Reference
 
