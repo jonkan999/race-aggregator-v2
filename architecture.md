@@ -13,8 +13,10 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - UI copy: `data/countries/{code}/index.yaml`
 - English copy: `data/countries/{code}/merged_index_int.yaml`
+- Newsletter popup copy: `newsletter_popup` in the same per-country YAML files
 - Canonical race data: Supabase
 - Anonymous race submissions: `public.race_submissions` + Storage bucket `race-submissions`
+- Newsletter popup events and subscriptions: `crm` schema in Supabase via RPC writes
 - Build-time race-list snapshot: temporary JSON under `.cache/race-list-build-snapshots/` generated once per country for each build
 - Build fallback data: `data/countries/{code}/final_races*.json`
 - Map pins: `public/markers-{country}.json`
@@ -31,6 +33,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - Browser code may use `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 - Secret or service-role keys are only for seed scripts, marker export, and one-time build snapshot export.
+- Newsletter popups must stay inside the same browser-key boundary: anonymous capture goes through the publishable client and RPC/table boundaries only.
 - Public add-race submissions must work with the browser publishable key only; do not require login as part of the submission flow.
 - Map pins must remain static JSON, not live list-query output.
 - Static generation must not fan out repeated live Supabase reads per route. Any large build-time read should be exported once and reused locally for the rest of the build.

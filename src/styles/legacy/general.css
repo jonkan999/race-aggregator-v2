@@ -71,7 +71,8 @@ select:focus {
   --color-section-separator: #e2e2e3;
   --color-divider-grey: #d9d9d9;
   --color-white-text: #f1f3f4;
-  --color-black-text: #18181b;
+  --color-white: #f1f3f4;
+  --color-black-text: #020203;
   --header-size: 14.5rem;
   --ad-banner-height: min(90px, 10rem);
   --mobile-standard-box-width: 390px;
@@ -269,8 +270,4 @@ h2.section-header {
 .info-disclaimer a {
   color: #1976d2;
 }
-@media (max-width: 44em) {
-  .phone-min-height-51rem {
-    min-height: 5.5rem;
-  }
-}
+

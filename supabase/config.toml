@@ -226,10 +226,22 @@ otp_expiry = 3600
 # admin_email = "admin@email.com"
 # sender_name = "Admin"
 
-# Uncomment to customize email template
-# [auth.email.template.invite]
-# subject = "You have been invited"
-# content_path = "./supabase/templates/invite.html"
+# Generate site templates with:
+#   npm run build-auth-email-templates
+#   (optional country code, default se — reads data/countries/{code}/index.yaml)
+# Then point the relevant templates here before `npx supabase start` / `npx supabase db push`.
+#
+# [auth.email.template.confirmation]
+# subject = "Bekräfta din e-postadress för Loppkartan"
+# content_path = "./templates/se/confirm_signup.html"
+#
+# [auth.email.template.recovery]
+# subject = "Återställ ditt lösenord för Loppkartan"
+# content_path = "./templates/se/reset_password.html"
+#
+# [auth.email.template.email_change]
+# subject = "Bekräfta din nya e-postadress för Loppkartan"
+# content_path = "./templates/se/change_email.html"
 
 # Uncomment to customize notification email template
 # [auth.email.notification.password_changed]

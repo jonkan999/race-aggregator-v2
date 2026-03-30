@@ -9,6 +9,7 @@
 ## Product north star
 
 - **Primary objective:** modernize and replace the legacy site while preserving the user value that already works.
+- **Commercial objective:** convert high-intent visitors into newsletter subscribers from the list, browse, and race detail surfaces.
 - **Optimization priorities (in order):**
   1. **SEO leverage** (indexable route structure, strong metadata/schema, crawlable content model).
   2. **Cost efficiency** (SSG-first hot paths, bounded live reads, static marker payloads).
@@ -43,6 +44,7 @@
 | Astro SSG | Per-market routes, YAML-driven titles/copy, **pre-rendered first page** of each list surface (see below), **ItemList JSON-LD** + visually hidden crawlable links for page-1 races. |
 | React islands | `RaceListPageIsland` (legacy-styled filters + cards + pagination + map/list toggles; page 1 unfiltered from SSG props; page 2+ and any filter via Supabase **RPC**), `RaceMapIsland` (Mapbox + clustered GeoJSON from static JSON; toolbar optional when parent supplies desktop toggle). |
 | Supabase | `races` + `race_translations`, RLS public read for published races only; **Publishable** key in the browser, **Secret** key only in seed/export/build-snapshot scripts (no legacy JWT anon key in app code). |
+| CRM / Newsletter | Context-aware newsletter popups on list/browse/detail surfaces. Copy stays in country YAML, while impressions, dismissals, and subscriptions are written through RPCs into the `crm` schema for later reporting. |
 | Scripts | `scripts/seed-races.mjs` (JSON → DB), `scripts/export-markers.mjs` (DB or JSON → `public/markers-*.json`), `scripts/export-race-list-snapshots.mjs` (DB → temporary per-country build snapshot), `scripts/build-with-race-list-snapshots.mjs` (snapshot-first build wrapper). Anonymous add-race submissions write directly from the browser to Supabase Storage + `public.race_submissions` via RLS-limited insert policies. |
 
 ## Cost accounting (Supabase reads)
@@ -77,6 +79,8 @@
 **Caveat:** If production builds use JSON fallback while the live site uses Supabase, page 1 may **diverge** from page 2+ until the next deploy. **Mitigation:** supply server secrets in the build environment for release pipelines so the temporary build snapshot matches the DB.
 
 **Without browser Supabase keys:** Page 1 still works from the build snapshot; **Next** and **filter** are disabled or show copy from `race_list_remote_required` in YAML (no runtime fallback fetch).
+
+**Newsletter popup boundary:** newsletter capture also stays on the publishable browser client. Anonymous popup events and subscriptions must go through RLS-safe tables or security-definer RPCs only; never ship elevated keys for CRM capture.
 
 ## Granular list routes (county / city / race type / category)
 

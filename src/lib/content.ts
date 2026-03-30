@@ -106,6 +106,7 @@ export type IndexYaml = {
   browse_overview?: { title?: string; meta_description?: string };
   browse_categories?: { title?: string; meta_description?: string };
   auth_modal?: Record<string, string>;
+  newsletter_popup?: Record<string, unknown>;
   submission_flow?: Record<string, string>;
   /** Copy + accent for `scripts/build-supabase-auth-templates.mjs` (GoTrue HTML). */
   supabase_auth_email?: {

@@ -21,7 +21,23 @@
 @media (max-width: 44em) {
   .map-placeholder.map-placeholder--react-visible {
     display: block !important;
+    position: fixed;
+    inset: var(--race-list-mobile-filter-height, 0px) 0 0 0;
+    height: calc(100dvh - var(--race-list-mobile-filter-height, 0px));
+    margin: 0 !important;
+    padding: 0 !important;
     z-index: 50;
+  }
+
+  .map-placeholder.map-placeholder--react-visible .race-map-shell,
+  .map-placeholder.map-placeholder--react-visible .race-map-stage,
+  .map-placeholder.map-placeholder--react-visible .race-map-canvas {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .map-placeholder.map-placeholder--react-visible .race-map-shell {
+    margin: 0;
   }
 }
 
@@ -33,17 +49,39 @@
 
 body.race-list-mobile-map-open .section-header-menu,
 body.race-list-mobile-map-open .site-footer,
-body.race-list-mobile-map-open .section-race-cards-header-container,
-body.race-list-mobile-map-open .section-filters {
+body.race-list-mobile-map-open .section-race-cards-header-container {
   display: none !important;
 }
 
 body.race-list-mobile-map-open .section-race-cards {
   margin-top: 0 !important;
+  padding-top: 0 !important;
+  min-height: calc(100dvh - var(--race-list-mobile-filter-height, 0px));
+  contain: none;
 }
 
 body.race-list-mobile-map-open .pagination {
   display: none !important;
+}
+
+body.race-list-mobile-map-open .section-filters {
+  display: flex !important;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 95;
+  padding: 0.2rem 0 0 0.8rem;
+  margin: 0;
+  background: var(--color-background);
+  gap: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+body.race-list-mobile-map-open .section-race-cards .race-cards-selector {
+  display: block;
 }
 
 /* Avoid double margin when legacy .section-race-cards expects fixed header offset */
@@ -53,8 +91,34 @@ body.race-list-page.v2-race-list .section-race-cards {
   min-height: 60vh;
 }
 
+body.race-list-page.v2-race-list .section-race-cards-header-container .section-header-race-cards.static-header {
+  margin-top: 2rem;
+  color: var(--color-primary-dark);
+  font-size: clamp(2.2rem, 3.2vw, 4rem);
+  line-height: 1.2;
+}
+
+body.race-list-page.v2-race-list .section-race-cards-header-container h2.section-header {
+  color: var(--color-primary-dark);
+  font-size: clamp(2.2rem, 3.2vw, 4rem);
+  line-height: 1.2;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 body.race-list-page.v2-race-list .section-filters {
   margin-top: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background: var(--color-background);
+  transition: box-shadow 0.2s ease;
+}
+
+body.race-list-page.v2-race-list .section-filters.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 body.race-list-page.v2-race-list .section-race-cards .race-cards-selector {
@@ -173,7 +237,7 @@ body.race-list-page.v2-race-list .race-card .race-card-upper-meta .race-type--im
   gap: 0.45rem;
   background: var(--info-highlight-background);
   color: #000;
-  padding: 0.35rem 0.7rem;
+  padding: 0.45rem 0.7rem;
   border-radius: 5px;
   font-size: 1.35rem;
   line-height: 1;
@@ -297,11 +361,9 @@ body.race-list-page.v2-race-list .race-card:active .more-info-button {
 body.race-list-page.v2-race-list .map-placeholder {
   width: 100%;
   max-width: none;
-  height: calc(100vh - calc(var(--header-size) + 12rem));
   min-height: 48rem;
   transform: none;
   position: sticky;
-  top: calc(var(--header-size) + 2rem);
 }
 
 body.race-list-page.v2-race-list .map-placeholder.map-placeholder--disabled {
@@ -341,6 +403,174 @@ body.race-list-page.v2-race-list .section-race-cards .pagination button.active {
 
 body.race-list-page.v2-race-list .section-race-cards .pagination button[aria-current='page'] {
   cursor: default;
+}
+
+body.race-list-page.v2-race-list .section-race-cards .section-selected-races {
+  grid-column: 1 / -1;
+  align-self: start;
+  width: 100%;
+  margin: 0.6rem 0 1.2rem;
+  padding: 1.8rem 1.8rem 2rem;
+  background: linear-gradient(180deg, rgba(220, 237, 223, 0.92), rgba(246, 248, 239, 0.98));
+  border-top: 0.2rem solid rgba(0, 73, 47, 0.22);
+  box-shadow: 0 1.2rem 3rem rgba(12, 44, 29, 0.08);
+}
+
+body.race-list-page.v2-race-list .section-selected-races .section-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .section-header {
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-size: 2.2rem;
+  text-transform: none;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .selected-races-controls {
+  display: none;
+  gap: 0.6rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .selected-races-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.1rem solid rgba(0, 73, 47, 0.12);
+  color: var(--color-primary-dark);
+}
+
+body.race-list-page.v2-race-list .section-selected-races .selected-races-control:hover {
+  background: rgba(255, 255, 255, 1);
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .selected-races-control:disabled {
+  opacity: 0.4;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .selected-races-control .icon {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-card-big-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  justify-content: flex-start;
+  gap: 1.4rem;
+  padding-bottom: 0.4rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-card-big {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  box-shadow: none;
+  min-width: 0;
+  max-width: none;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-card-big-upper-box {
+  position: relative;
+  min-height: 24rem;
+  padding: 1rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .selected-race-card-img {
+  filter: grayscale(0.25) contrast(120%) brightness(106%);
+  mix-blend-mode: multiply;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-info-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-info-top .race-date,
+body.race-list-page.v2-race-list .section-selected-races .race-info-top .race-location,
+body.race-list-page.v2-race-list .section-selected-races .race-type,
+body.race-list-page.v2-race-list .section-selected-races .race-distance {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-info-top .race-date,
+body.race-list-page.v2-race-list .section-selected-races .race-type,
+body.race-list-page.v2-race-list .section-selected-races .race-distance {
+  background: var(--info-highlight-background);
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-info-top .race-location {
+  background: var(--info-highlight-background2);
+  color: #111;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-info-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-distances .distance-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 1.1rem;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .race-name {
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-size: 1.9rem;
+  line-height: 1.2;
+  max-width: none;
+  min-height: 0;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .cta-button {
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+body.race-list-page.v2-race-list .section-selected-races .more-info-button {
+  left: 0;
+  width: auto;
+  min-width: 13rem;
+  box-shadow: 0 0.4rem 1rem rgba(15, 58, 37, 0.1);
 }
 
 @media (max-width: 75em) {
@@ -426,5 +656,35 @@ body.race-list-page.v2-race-list .section-race-cards .pagination button[aria-cur
     flex-wrap: wrap;
     row-gap: 0.6rem;
     margin-bottom: 6rem;
+  }
+
+  body.race-list-page.v2-race-list .section-race-cards .section-selected-races {
+    padding: 1.4rem 1.2rem 1.6rem;
+  }
+
+  body.race-list-page.v2-race-list .section-selected-races .selected-races-controls {
+    display: inline-flex;
+  }
+
+  body.race-list-page.v2-race-list .section-selected-races .race-card-big-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+  }
+
+  body.race-list-page.v2-race-list .section-selected-races .section-header {
+    font-size: 1.9rem;
+  }
+
+  body.race-list-page.v2-race-list .section-selected-races .race-card-big {
+    flex: 0 0 24rem;
+    flex-basis: 24rem;
+    min-width: 24rem;
+    max-width: 24rem;
+    scroll-snap-align: start;
+  }
+
+  body.race-list-page.v2-race-list .section-selected-races .race-card-big-upper-box {
+    min-height: 20rem;
   }
 }

@@ -193,6 +193,52 @@
 .auth-form-container {
   width: 100%;
 }
+.oauth-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--color-white) !important;
+  color: var(--color-primary-dark) !important;
+  border: 1px solid rgba(0, 73, 47, 0.18) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.oauth-button:hover {
+  background: #f7fbf8 !important;
+}
+.oauth-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+.oauth-button__icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  flex: 0 0 auto;
+}
+.oauth-divider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0.4rem 0 0.6rem;
+}
+.oauth-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(0, 73, 47, 0.14);
+}
+.oauth-divider span {
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+  background: var(--color-white);
+  color: var(--color-primary-shade);
+  font-size: 1.4rem;
+  text-transform: lowercase;
+}
 .auth-links {
   display: flex;
   justify-content: space-between;

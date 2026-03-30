@@ -97,6 +97,23 @@ This keeps build-time Supabase egress roughly proportional to the number of coun
 
 In the browser, **pagination** and **filters** (dates, month, distance/category, county, race type) call **`get_races_list_page`** once per change (returns total + rows with translations). If `PUBLIC_SUPABASE_*` keys are missing, page 1 still works; further pages and filtering show copy from `race_list_remote_required` in YAML.
 
+### Newsletter capture popups
+
+- Popup copy is YAML-driven under `data/countries/{code}/` via `newsletter_popup`.
+- The current popup surfaces are the race list, browse/listing pages, and race detail pages.
+- Browser tracking uses the publishable Supabase client and two RPCs:
+  - `record_newsletter_popup_event` for impressions and dismissals
+  - `subscribe_newsletter_popup` for subscriptions
+- CRM data lives in the `crm` schema:
+  - `crm.newsletter_popup_events`
+  - `crm.newsletter_popup_subscriptions`
+  - `crm.newsletter_popup_metrics` view for grouped counts
+- Popup suppression is intentionally stateful:
+  - never again after a successful subscription in the browser
+  - never twice in the same session
+  - cooldown after a show or dismissal before another popup may appear
+- iOS Safari uses a fixed body-appended overlay plus a delayed first-tap fallback trigger to reduce missed popup opens on touch devices.
+
 ### Legacy UI assets
 
 Static files under [`public/common_images/`](public/common_images/) and [`public/icons/svg-sprite.svg`](public/icons/svg-sprite.svg) are copied from the legacy `race-aggregator` repo for card images and icons. Refresh them if the legacy site updates shared artwork.

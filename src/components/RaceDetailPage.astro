@@ -1,6 +1,7 @@
 ---
 import RaceDetailLayout from '../layouts/RaceDetailLayout.astro';
 import RaceDetailMapIsland from './RaceDetailMapIsland';
+import NewsletterPopup from './NewsletterPopup';
 import {
   comparableDateForSchema,
   getRaceDetailFields,
@@ -127,6 +128,14 @@ const backToListLabel = String(
 const sliderCta = String(
   content.to_race_page_cta ?? (locale === 'en' ? 'To race page' : 'Till loppsida'),
 );
+const newsletterContext = {
+  surface: 'race-detail',
+  kind: 'race-detail',
+  raceName: detail.raceName,
+  countyLabel,
+  raceTypeLabel: detail.raceTypeLabel,
+  backgroundImageSrc: detail.images[0]?.src ?? null,
+} as const;
 ---
 
 <RaceDetailLayout
@@ -140,6 +149,7 @@ const sliderCta = String(
 >
   <script slot="head" type="application/ld+json" set:html={eventJson} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbJson} />
+  <NewsletterPopup client:load context={newsletterContext} />
 
   <section class="race-detail-shell">
     <nav class="race-detail-breadcrumbs" aria-label="Breadcrumb">

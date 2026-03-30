@@ -251,6 +251,7 @@ export default function RaceMapIsland(props: {
   const [mapVisible, setMapVisible] = useState(true);
   const [allMarkers, setAllMarkers] = useState<MarkerRecord[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [mapError, setMapError] = useState<string | null>(null);
   const [selectedRaceIds, setSelectedRaceIds] = useState<string[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedClusterId, setSelectedClusterId] = useState<number | null>(null);
@@ -395,13 +396,34 @@ export default function RaceMapIsland(props: {
   useEffect(() => {
     if (!mapboxToken?.trim() || !containerRef.current) return;
 
+    if (typeof mapboxgl.supported === 'function' && !mapboxgl.supported()) {
+      setMapError(mapNotConfiguredMessage);
+      return;
+    }
+
+    setMapError(null);
     mapboxgl.accessToken = mapboxToken;
-    const map = new mapboxgl.Map({
-      container: containerRef.current,
-      style: 'mapbox://styles/mapbox/light-v10',
-      center: [centerLng, centerLat],
-      zoom,
-    });
+    let map: mapboxgl.Map;
+    try {
+      map = new mapboxgl.Map({
+        container: containerRef.current,
+        style: 'mapbox://styles/mapbox/light-v10',
+        center: [centerLng, centerLat],
+        zoom,
+      });
+    } catch (error) {
+      console.error('Race map failed to initialize', error);
+      setMapError(mapNotConfiguredMessage);
+      setMapInstance(null);
+      onMapInstance?.(null);
+      return;
+    }
+
+    const handleMapError = () => {
+      setMapError(mapNotConfiguredMessage);
+    };
+
+    map.on('error', handleMapError);
     map.addControl(new mapboxgl.NavigationControl(), 'top-right');
     map.once('load', () => {
       setMapInstance(map);
@@ -411,9 +433,10 @@ export default function RaceMapIsland(props: {
     return () => {
       setMapInstance(null);
       onMapInstance?.(null);
+      map.off('error', handleMapError);
       map.remove();
     };
-  }, [mapboxToken, centerLat, centerLng, zoom, onMapInstance]);
+  }, [mapboxToken, centerLat, centerLng, zoom, mapNotConfiguredMessage, onMapInstance]);
 
   useEffect(() => {
     const map = mapInstance;
@@ -638,11 +661,11 @@ export default function RaceMapIsland(props: {
     });
   }, [isMobileViewport, selectedRaceIds]);
 
-  if (!mapboxToken?.trim()) {
+  if (!mapboxToken?.trim() || mapError) {
     return (
       <div className="race-map-shell" data-testid="race-map-shell">
         <p className="race-map-error" role="status">
-          {mapNotConfiguredMessage}
+          {mapError ?? mapNotConfiguredMessage}
         </p>
       </div>
     );

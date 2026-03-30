@@ -51,7 +51,7 @@ export default defineConfig({
           command: useFastDev
             ? `npx astro dev --host ${host} --port ${port}`
             : `npm run build && npx astro preview --host ${host} --port ${port}`,
-          url: `${baseURL}/se/`,
+          url: `${baseURL}/loppkalender/`,
           reuseExistingServer: !process.env.CI,
           timeout: useFastDev ? 180_000 : 300_000,
           stdout: 'inherit',

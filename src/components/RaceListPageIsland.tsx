@@ -8,8 +8,10 @@ import {
   type ImgHTMLAttributes,
 } from 'react';
 import type mapboxgl from 'mapbox-gl';
+import NewsletterPopup from './NewsletterPopup';
 import RaceMapIsland from './RaceMapIsland';
 import HighlightedRacesStrip, { type HighlightedRaceEntry } from './HighlightedRacesStrip';
+import type { NewsletterPopupContext } from '../lib/newsletterPopup';
 import { getSupabaseBrowserClient, isSupabaseConfigured } from '../lib/supabase';
 import { RACE_LIST_PAGE_SIZE } from '../lib/raceListConfig';
 import type { CategoryFilterOption } from '../lib/categoryFilterOptions';
@@ -932,6 +934,113 @@ export default function RaceListPageIsland(props: {
     sectionRaceCardHeaderNeighborsDefault,
     sectionRaceCardHeaderRegionDefault,
   ]);
+  const popupContext = useMemo<NewsletterPopupContext>(() => {
+    const featuredRow = rows[0] ?? highlightedRows?.[0] ?? initialRows[0];
+    const backgroundImageSrc = featuredRow ? highlightedImage(featuredRow).src : null;
+    const neighboringSelection = parseNeighboringSelection(county);
+    const currentTypeLabel = raceType ? (typeOptions[raceType] ?? raceType) : '';
+
+    if (city) {
+      return {
+        surface: 'race-list',
+        kind: 'browse-city',
+        cityLabel: city,
+        backgroundImageSrc,
+      };
+    }
+
+    if (neighboringSelection?.kind === 'country') {
+      const neighboringLabel =
+        neighboringCountries.find((entry) => entry.code === neighboringSelection.code)?.label ??
+        neighboringSelection.code.toUpperCase();
+
+      return {
+        surface: 'race-list',
+        kind: 'browse-neighboring-country',
+        label: neighboringLabel,
+        backgroundImageSrc,
+      };
+    }
+
+    if (neighboringSelection?.kind === 'all') {
+      return {
+        surface: 'race-list',
+        kind: 'browse-neighboring',
+        label: neighboringCountriesAllLabel || neighboringCountriesLabel || countryNative,
+        backgroundImageSrc,
+      };
+    }
+
+    if (county) {
+      return {
+        surface: 'race-list',
+        kind: 'browse-county',
+        countyLabel: countyMapping[county] ?? county,
+        backgroundImageSrc,
+      };
+    }
+
+    if (categoryKey !== 'all' && currentTypeLabel) {
+      return {
+        surface: 'race-list',
+        kind: 'browse-category-type',
+        categoryLabel: categoryKey,
+        raceTypeLabel: currentTypeLabel,
+        backgroundImageSrc,
+      };
+    }
+
+    if (categoryKey !== 'all') {
+      return {
+        surface: 'race-list',
+        kind: 'browse-category',
+        categoryLabel: categoryKey,
+        backgroundImageSrc,
+      };
+    }
+
+    if (currentTypeLabel) {
+      return {
+        surface: 'race-list',
+        kind: 'browse-type',
+        raceTypeLabel: currentTypeLabel,
+        backgroundImageSrc,
+      };
+    }
+
+    if (month !== 'all') {
+      return {
+        surface: 'race-list',
+        kind: 'browse-month',
+        monthLabel: monthMapping[month] ?? month,
+        backgroundImageSrc,
+      };
+    }
+
+    return {
+      surface: 'race-list',
+      kind: 'race-list',
+      heading: raceListTitle,
+      backgroundImageSrc,
+    };
+  }, [
+    rows,
+    highlightedRows,
+    initialRows,
+    city,
+    county,
+    raceType,
+    categoryKey,
+    month,
+    countryNative,
+    countyMapping,
+    monthMapping,
+    neighboringCountries,
+    neighboringCountriesAllLabel,
+    neighboringCountriesLabel,
+    raceListTitle,
+    typeOptions,
+  ]);
 
   const dateRangeTitle = useMemo(() => {
     if (!dateFrom || !dateTo) return '';
@@ -965,6 +1074,8 @@ export default function RaceListPageIsland(props: {
 
   return (
     <>
+      <NewsletterPopup context={popupContext} />
+
       <section
         ref={filtersRef}
         className={`section-filters${filtersScrolled ? ' scrolled' : ''}`}

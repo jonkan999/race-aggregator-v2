@@ -2,6 +2,7 @@
 import '../styles/legacy/legacy-race-list.css';
 import '../styles/v2-race-list-bridge.css';
 import '../styles/browse.css';
+import NewsletterPopupConfig from '../components/NewsletterPopupConfig.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { localeBasePrefix, raceListSlug, type IndexYaml } from '../lib/content';
@@ -84,6 +85,7 @@ const breadcrumbSchema =
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
     <slot name="head" />
+    <NewsletterPopupConfig country={country} locale={locale} content={content} />
   </head>
   <body class="race-list-page v2-race-list loaded">
     <div id="page-wrapper">

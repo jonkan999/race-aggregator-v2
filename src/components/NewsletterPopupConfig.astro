@@ -1,0 +1,30 @@
+---
+import type { IndexYaml } from '../lib/content';
+import { deriveSiteIdentity } from '../lib/siteIdentity';
+
+type LayoutLocale = 'native' | 'en';
+
+interface Props {
+  country: string;
+  locale: LayoutLocale;
+  content: IndexYaml;
+}
+
+const { country, locale, content } = Astro.props;
+const popupConfig = (content.newsletter_popup ?? null) as Record<string, unknown> | null;
+const { siteKey, siteName } = deriveSiteIdentity(content, country);
+
+const payload = popupConfig
+  ? JSON.stringify({
+      ...popupConfig,
+      siteKey,
+      siteName,
+      countryCode: country,
+      localeCode: locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv'),
+      countryName: String(content.country_native ?? content.country ?? country),
+      baseUrl: String(content.base_url ?? ''),
+    })
+  : null;
+---
+
+{payload ? <script id="newsletter-popup-config" type="application/json" set:html={payload} /> : null}
