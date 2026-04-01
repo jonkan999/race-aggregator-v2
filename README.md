@@ -2,6 +2,10 @@
 
 Astro + Supabase rebuild of the legacy `race-aggregator` static site: YAML-driven copy, dynamic race list from Postgres (single RPC per interaction), map pins from static per-country JSON for low database read cost. The **race list** route uses ported legacy CSS and layout ([`src/layouts/RaceListLayout.astro`](src/layouts/RaceListLayout.astro), [`src/styles/legacy/`](src/styles/legacy/)).
 
+Public routing is market-scoped per domain: the native site lives at `/`, and the fully translated English site for that same market lives at `/en/`.
+
+Neighboring-country browse pages follow the legacy-style canonical structure at `/neighbors/` and `/en/neighbors/`. Those pages may list foreign races, but static race detail pages are generated only for the current market's domestic races. When a foreign race belongs to another configured market in `data/countries/{code}/index.yaml`, links resolve to that market's English race-detail route on its own domain automatically.
+
 ## North Star
 
 - Modernize and replace the legacy site with an **SEO-first** architecture.
@@ -70,6 +74,14 @@ Loads `data/countries/se/final_races.json` and `final_races_int.json`. Put **`SU
 
 Equivalent: `npm run seed-races -- se` (with env vars set yourself).
 
+To replace all existing races for one market before importing the new export:
+
+```bash
+./scripts/shell/seed-races.sh se --replace
+```
+
+Equivalent: `npm run seed-races -- se --replace`.
+
 ### Map markers file
 
 Regenerate `public/markers-se.json` (committed for convenience; refresh after data changes):
@@ -90,8 +102,9 @@ At **`astro dev`**, the first page of the main calendar is filled from:
 At **`npm run build`**, the repo now uses a snapshot-first flow:
 
 1. Export all race rows once per country into a temporary local directory under `.cache/race-list-build-snapshots/`
-2. Reuse that snapshot for every static list/browse page during the build
-3. Remove the temporary snapshot directory after the build finishes
+2. Regenerate missing browse SEO cache entries from that same local snapshot before Astro renders pages
+3. Reuse the snapshot for every static list/browse page during the build
+4. Remove the temporary snapshot directory after the build finishes
 
 This keeps build-time Supabase egress roughly proportional to the number of countries being built, rather than the number of generated routes.
 
@@ -108,6 +121,13 @@ In the browser, **pagination** and **filters** (dates, month, distance/category,
   - `crm.newsletter_popup_events`
   - `crm.newsletter_popup_subscriptions`
   - `crm.newsletter_popup_metrics` view for grouped counts
+- Popup serving logic now supports A/B testing:
+  - `standard` serves with the current time/scroll heuristics
+  - `delayed_second_page` waits until page view two and uses deeper engagement thresholds
+- Metrics are intended to be compared as a funnel by serving variant:
+  - eligible sessions
+  - popup impressions
+  - subscriptions
 - Popup suppression is intentionally stateful:
   - never again after a successful subscription in the browser
   - never twice in the same session
@@ -132,11 +152,11 @@ Static files under [`public/common_images/`](public/common_images/) and [`public
 npm run dev
 ```
 
-- Swedish list: [http://127.0.0.1:4321/se/loppkalender/](http://127.0.0.1:4321/se/loppkalender/)
-- English list: [http://127.0.0.1:4321/se/en/race-calendar/](http://127.0.0.1:4321/se/en/race-calendar/)
-- Swedish browse overview: [http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/](http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/)
-- Example category landing page: [http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/categories/10-km/](http://127.0.0.1:4321/se/loppkalender/bladdra-efter-kategori/categories/10-km/)
-- Add race: [http://127.0.0.1:4321/se/lagg-till-lopp/](http://127.0.0.1:4321/se/lagg-till-lopp/)
+- Native list: [http://127.0.0.1:4321/loppkalender/](http://127.0.0.1:4321/loppkalender/)
+- English list: [http://127.0.0.1:4321/en/race-calendar/](http://127.0.0.1:4321/en/race-calendar/)
+- Native browse overview: [http://127.0.0.1:4321/loppkalender/bladdra-efter-kategori/](http://127.0.0.1:4321/loppkalender/bladdra-efter-kategori/)
+- Example category landing page: [http://127.0.0.1:4321/loppkalender/bladdra-efter-kategori/categories/10-km/](http://127.0.0.1:4321/loppkalender/bladdra-efter-kategori/categories/10-km/)
+- Add race: [http://127.0.0.1:4321/lagg-till-lopp/](http://127.0.0.1:4321/lagg-till-lopp/)
 
 ## Build
 
@@ -144,6 +164,8 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+`npm run build` now regenerates `dist/sitemap.xml` from the canonical built HTML routes, so `/neighbors/*` entries and market-specific race-detail URLs stay aligned with the actual Astro output.
 
 If you want the raw Astro build without the snapshot wrapper:
 
@@ -156,6 +178,50 @@ You can also export snapshots directly:
 ```bash
 npm run export-race-list-snapshots -- se
 ```
+
+Rebuild the browse SEO cache manually:
+
+```bash
+npm run build-browse-seo-cache -- se
+```
+
+Force-regenerate the current market cache with deterministic timeless copy:
+
+```bash
+npm run build-browse-seo-cache -- --force --provider=template se
+```
+
+If you want AI generation for cache misses or forced refreshes, set `OPENAI_API_KEY` and optionally `OPENAI_SEO_MODEL`, then run with `--provider=openai`.
+
+Browse fallback copy is YAML-driven. Keep the browse-page template strings in `data/countries/{code}/index.yaml` and `data/countries/{code}/merged_index_int.yaml` under `seo_templates.browse_page_templates`, and let both the generator and the route fallback read from there instead of hardcoding copy in code.
+
+Browse SEO expansion should follow the canonical matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md). In particular, keep the full browse/filter taxonomy available in UX, but only index the canonical subsets and combinations that clear the documented intent and inventory thresholds.
+
+The indexing logic is now market-configurable under `browse_seo_indexing` in each market YAML. That block controls which browse families are indexable, the minimum race-count thresholds, and which race types or category labels are allowed for standalone and combo pages.
+
+## Deploy To Vercel
+
+The current public-root deployment is Sweden-specific: native Swedish pages live at `/` and English pages live at `/en/`, matching [`src/pages/index.astro`](./src/pages/index.astro) and [`src/pages/en/index.astro`](./src/pages/en/index.astro). That means the current repo can be deployed directly for **`loppkartan.se`** as-is, but another market such as Norway should not be pointed at the same public root until the market selection is parameterized.
+
+[`vercel.json`](./vercel.json) pins the expected Vercel behavior for this repo:
+
+- install command: `npm install`
+- build command: `npm run build`
+- output directory: `dist`
+
+Recommended `loppkartan.se` rollout checklist:
+
+1. In Supabase, apply all SQL from [`supabase/migrations/`](./supabase/migrations/) so the list RPC, newsletter RPCs, and add-race submission tables/policies exist.
+2. Confirm the production canonical domain in [`data/countries/se/index.yaml`](./data/countries/se/index.yaml) under `base_url`. For `loppkartan.se`, it should stay `https://loppkartan.se/`.
+3. In Vercel, create a project pointing at this repo. The project can use the Astro preset, or no preset at all because `vercel.json` already defines the build/output contract.
+4. Add production environment variables in Vercel:
+   `PUBLIC_SUPABASE_URL`, `PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `PUBLIC_MAPBOX_TOKEN`, and `SUPABASE_SECRET_KEY`.
+5. Treat `SUPABASE_SECRET_KEY` as required for release builds even though the build can technically fall back to local JSON without it. With the secret present, the build exports one fresh race snapshot per market from Supabase so static page 1 stays aligned with the live DB.
+6. Whenever map data changes, regenerate and commit [`public/markers-se.json`](./public/markers-se.json) before deploying.
+7. Before shipping, verify locally with `npm run build` and `npm run test:e2e`.
+8. In Vercel, assign the custom domain `loppkartan.se` (and `www.loppkartan.se` if you want a redirect) to this project after the first successful deploy.
+
+If you later want **`lopskalender.com`** or another market to have native pages at `/` and English at `/en/`, the next step is to parameterize the market instead of relying on the current Sweden-root page files.
 
 ## Add race submissions
 
@@ -184,7 +250,7 @@ npm run test:e2e:legacy-ref
 
 Details: [`AGENTS.md`](./AGENTS.md) and [`.cursor/skills/race-aggregator-legacy-reference/SKILL.md`](.cursor/skills/race-aggregator-legacy-reference/SKILL.md).
 
-Playwright starts a server automatically: by default it runs **`npm run build`** then **`astro preview`** on `127.0.0.1:4321` (waits until `/se/` responds). That avoids `astro dev` subprocess issues where the readiness check never passes.
+Playwright starts a server automatically: by default it runs **`npm run build`** then **`astro preview`** on `127.0.0.1:4321` (waits until `/loppkalender/` responds). That avoids `astro dev` subprocess issues where the readiness check never passes.
 
 Optional:
 
@@ -199,12 +265,14 @@ Mapbox is optional for smoke tests (the map shows a YAML message if `PUBLIC_MAPB
 - `data/countries/{code}/index.yaml` — native language strings and config (include **`alternate_locale_link_text`** for the nav link to the English list when `merged_index_int.yaml` exists).
 - `data/countries/{code}/merged_index_int.yaml` — English strings for that market (same key for the link back to the native list).
 - `data/countries/{code}/final_races*.json` — seed/export inputs (managed long-term by **race-collector-v2**).
-- `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides used by category landing pages. Missing category entries fall back to deterministic template copy from YAML.
+- `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides for browse landings (county, city, month, race type, distance/category, and valid race type + category combinations). Missing entries fall back to deterministic template copy.
 
-Refresh missing category-cache entries without regenerating existing overrides:
+Adding a new `data/countries/{code}/index.yaml` market makes it eligible for market-aware routing helpers automatically. If that market also has `merged_index_int.yaml`, neighboring-country links can route straight to its English detail pages without hardcoded country cases.
+
+Refresh missing browse-cache entries without regenerating existing overrides:
 
 ```bash
-npm run build-category-seo-cache -- se
+npm run build-browse-seo-cache -- se
 ```
 
 ## Agent browser tooling
@@ -216,4 +284,5 @@ Playwright MCP or similar browser-driving tooling is optional agent infrastructu
 - [PRD.md](./PRD.md) — architecture decisions and phases.
 - [AGENTS.md](./AGENTS.md) — Codex-oriented repo workflow and migration checklist.
 - [architecture.md](./architecture.md) — compact architecture and SEO guardrails.
+- [docs/browse-seo-matrix.md](./docs/browse-seo-matrix.md) — canonical browse SEO families, thresholds, and long-tail rollout guidance.
 - [docs/README.md](./docs/README.md) — repo map, rebuild plan, and migration baseline.

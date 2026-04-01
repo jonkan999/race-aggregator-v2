@@ -1,6 +1,5 @@
 import {
   hasEnglishMerge,
-  listCountryCodes,
   localeBasePrefix,
   loadIndexYaml,
   slugify,
@@ -58,10 +57,4 @@ export function alternateAuxiliaryPageHref(args: {
 
   const content = loadIndexYaml(country, 'native');
   return auxiliaryPageHref({ country, locale: 'native', content, pageKey });
-}
-
-export function auxiliaryStaticPaths(locale: Locale) {
-  return listCountryCodes()
-    .filter((country) => country !== 'se' && (locale === 'native' || hasEnglishMerge(country)))
-    .map((country) => ({ params: { country } }));
 }

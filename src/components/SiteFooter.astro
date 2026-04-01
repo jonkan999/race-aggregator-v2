@@ -1,5 +1,6 @@
 ---
 import type { IndexYaml } from '../lib/content';
+import { auxiliaryPageHref } from '../lib/auxiliaryPages';
 import { localeBasePrefix, slugify } from '../lib/content';
 
 type Locale = 'native' | 'en';
@@ -14,9 +15,9 @@ const { country, locale, content } = Astro.props;
 const prefix = localeBasePrefix(country, locale);
 const cc = content.country_code ?? country;
 const nav = content.navigation ?? {};
-const aux = content.auxiliary_pages ?? {};
 const footer = (content.footer ?? {}) as Record<string, unknown>;
 const social = (footer.social_links ?? {}) as Record<string, string>;
+const accessibility = (content.accessibility ?? {}) as Record<string, string>;
 
 function href(seg: string): string {
   return `${prefix}${seg}`;
@@ -29,6 +30,7 @@ const privacyLabel = String(footer.privacy ?? '');
 const copyrightYear = String(footer.copyright_year ?? '');
 const siteName = String(footer.site_name ?? '');
 const rightsText = String(footer.rights_text ?? '');
+const privacyHref = auxiliaryPageHref({ country, locale, content, pageKey: 'privacy' });
 ---
 
 <footer class="site-footer">
@@ -71,17 +73,8 @@ const rightsText = String(footer.rights_text ?? '');
           <a href={href(slugify(nav['contact'] ?? '', cc))}>{nav['contact']}</a>
         </li>
         <li>
-          <a href={href('privacy')}>{privacyLabel}</a>
+          <a href={privacyHref}>{privacyLabel}</a>
         </li>
-        {
-          aux['terms-of-service'] ? (
-            <li>
-              <a href={href(slugify(String(aux['terms-of-service']), cc))}>
-                {aux['terms-of-service']}
-              </a>
-            </li>
-          ) : null
-        }
       </ul>
     </div>
   </div>
@@ -92,7 +85,12 @@ const rightsText = String(footer.rights_text ?? '');
     <div class="social-links">
       {
         social.facebook ? (
-          <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a
+            href={social.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={String(accessibility.social_facebook_label ?? '')}
+          >
             <svg class="icon" aria-hidden="true">
               <use href="/icons/svg-sprite.svg#logo-facebook" xlink:href="/icons/svg-sprite.svg#logo-facebook" />
             </svg>
@@ -101,7 +99,12 @@ const rightsText = String(footer.rights_text ?? '');
       }
       {
         social.instagram ? (
-          <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a
+            href={social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={String(accessibility.social_instagram_label ?? '')}
+          >
             <svg class="icon" aria-hidden="true">
               <use href="/icons/svg-sprite.svg#logo-instagram" xlink:href="/icons/svg-sprite.svg#logo-instagram" />
             </svg>
@@ -110,7 +113,12 @@ const rightsText = String(footer.rights_text ?? '');
       }
       {
         social.youtube ? (
-          <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <a
+            href={social.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={String(accessibility.social_youtube_label ?? '')}
+          >
             <svg class="icon" aria-hidden="true">
               <use href="/icons/svg-sprite.svg#logo-youtube" xlink:href="/icons/svg-sprite.svg#logo-youtube" />
             </svg>
@@ -119,7 +127,12 @@ const rightsText = String(footer.rights_text ?? '');
       }
       {
         social.tiktok ? (
-          <a href={social.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <a
+            href={social.tiktok}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={String(accessibility.social_tiktok_label ?? '')}
+          >
             <svg class="icon" aria-hidden="true">
               <use href="/icons/svg-sprite.svg#logo-tiktok" xlink:href="/icons/svg-sprite.svg#logo-tiktok" />
             </svg>
@@ -128,7 +141,12 @@ const rightsText = String(footer.rights_text ?? '');
       }
     </div>
   </div>
-  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <a
+    href="#top"
+    class="back-to-top"
+    id="backToTop"
+    aria-label={String(accessibility.back_to_top_label ?? '')}
+  >
     <svg class="icon" aria-hidden="true">
       <use href="/icons/svg-sprite.svg#chevron-up-outline" xlink:href="/icons/svg-sprite.svg#chevron-up-outline" />
     </svg>

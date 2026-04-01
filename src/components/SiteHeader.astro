@@ -26,6 +26,7 @@ function navHref(segment: string): string {
 const nav = content.navigation ?? {};
 const cc = content.country_code ?? country;
 const altText = String(content.alternate_locale_link_text ?? '');
+const accessibility = (content.accessibility ?? {}) as Record<string, string>;
 const showAltLink =
   altText &&
   alternateRaceListHref &&
@@ -34,6 +35,17 @@ const altHref = alternateRaceListHref ?? '';
 const authBase = `${prefix}auth`;
 const authModal = (content.auth_modal ?? {}) as Record<string, string>;
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const supportedNavKeys = new Set([
+  'main',
+  'race-list',
+  'add-race',
+  'measure-route',
+  'training-plans',
+  'pace-calculator',
+  'racetime-estimator',
+  'about-us',
+  'contact',
+]);
 
 function normalizePath(path: string): string {
   return path.replace(/\/+$/, '') || '/';
@@ -75,48 +87,55 @@ function isActiveNavPath(targetHref: string, key: string): boolean {
       siteName={String(content.page_name ?? 'Site')}
       countryCode={country}
       locale={locale}
-      signInLabel={String(authModal.title_sign_in ?? 'Logga in')}
+      signInLabel={String(authModal.title_sign_in ?? '')}
       confirmUrl={`${authBase}/confirm/`}
       resetPasswordUrl={`${authBase}/reset-password/`}
       messages={{
-        titleSignIn: String(authModal.title_sign_in ?? 'Logga in'),
-        titleCreateAccount: String(authModal.title_create_account ?? 'Skapa konto'),
-        titleResetPassword: String(authModal.title_reset_password ?? 'Återställ lösenord'),
-        namePlaceholder: String(authModal.name_placeholder ?? 'Ditt namn'),
-        emailPlaceholder: String(authModal.email_placeholder ?? 'Din e-post'),
-        passwordPlaceholder: String(authModal.password_placeholder ?? 'Lösenord'),
-        submitSignIn: String(authModal.submit_sign_in ?? 'Logga in'),
-        submitCreateAccount: String(authModal.submit_create_account ?? 'Skapa konto'),
-        submitResetPassword: String(authModal.submit_reset_password ?? 'Skicka återställningslänk'),
-        createAccount: String(authModal.create_account ?? 'Skapa konto'),
-        forgotPassword: String(authModal.forgot_password ?? 'Glömt lösenord?'),
-        backToLogin: String(authModal.back_to_login ?? 'Tillbaka till inloggning'),
-        errorWrongPassword: String(authModal.error_wrong_password ?? 'Fel lösenord'),
-        errorEmailNotFound: String(authModal.error_email_not_found ?? 'E-postadressen finns inte'),
-        alreadyLoggedIn: String(authModal.already_logged_in ?? 'Du är redan inloggad som'),
-        asEmail: String(authModal.as_email ?? 'med e-post'),
-        continueAsUser: String(authModal.continue_as_user ?? 'Fortsätt som denna användare'),
-        logoutAndSwitch: String(authModal.logout_and_switch ?? 'Logga ut och byt användare'),
-        accountCreated: String(authModal.account_created ?? 'Konto skapat!'),
-        accountCreatedDetails: String(authModal.account_created_details ?? 'Du är nu inloggad som'),
-        verificationEmailSent: String(authModal.verification_email_sent ?? 'En verifieringslänk har skickats till din e-post'),
-        pleaseVerify: String(authModal.please_verify ?? 'Vänligen verifiera din e-postadress'),
-        errorInvalidCredential: String(authModal.error_invalid_credential ?? 'Felaktig e-post eller lösenord'),
-        createAccountPrompt: String(authModal.create_account_prompt ?? 'Skapa konto istället'),
-        errorTooManyRequests: String(authModal.error_too_many_requests ?? 'För många försök. Försök igen senare.'),
-        authUnavailable: String(authModal.auth_unavailable ?? (locale === 'en' ? 'Authentication is not configured yet.' : 'Autentisering är inte konfigurerad ännu.')),
-        passwordResetSent: String((content.submission_flow as Record<string, string> | undefined)?.password_reset_sent ?? (locale === 'en' ? 'Password reset sent. Check your inbox.' : 'Lösenordsåterställning skickad. Kolla din inkorg.')),
-        continueWithGoogle: String(authModal.continue_with_google ?? (locale === 'en' ? 'Continue with Google' : 'Fortsätt med Google')),
-        continueWithGoogleCreate: String(authModal.continue_with_google_create ?? (locale === 'en' ? 'Create account with Google' : 'Skapa konto med Google')),
-        googleInProgress: String(authModal.google_in_progress ?? (locale === 'en' ? 'Continuing with Google...' : 'Fortsätter med Google...')),
-        oauthDivider: String(authModal.oauth_divider ?? (locale === 'en' ? 'or' : 'eller')),
+        titleSignIn: String(authModal.title_sign_in ?? ''),
+        titleCreateAccount: String(authModal.title_create_account ?? ''),
+        titleResetPassword: String(authModal.title_reset_password ?? ''),
+        namePlaceholder: String(authModal.name_placeholder ?? ''),
+        emailPlaceholder: String(authModal.email_placeholder ?? ''),
+        passwordPlaceholder: String(authModal.password_placeholder ?? ''),
+        submitSignIn: String(authModal.submit_sign_in ?? ''),
+        submitCreateAccount: String(authModal.submit_create_account ?? ''),
+        submitResetPassword: String(authModal.submit_reset_password ?? ''),
+        createAccount: String(authModal.create_account ?? ''),
+        forgotPassword: String(authModal.forgot_password ?? ''),
+        backToLogin: String(authModal.back_to_login ?? ''),
+        errorWrongPassword: String(authModal.error_wrong_password ?? ''),
+        errorEmailNotFound: String(authModal.error_email_not_found ?? ''),
+        alreadyLoggedIn: String(authModal.already_logged_in ?? ''),
+        asEmail: String(authModal.as_email ?? ''),
+        continueAsUser: String(authModal.continue_as_user ?? ''),
+        logoutAndSwitch: String(authModal.logout_and_switch ?? ''),
+        accountCreated: String(authModal.account_created ?? ''),
+        accountCreatedDetails: String(authModal.account_created_details ?? ''),
+        verificationEmailSent: String(authModal.verification_email_sent ?? ''),
+        pleaseVerify: String(authModal.please_verify ?? ''),
+        errorInvalidCredential: String(authModal.error_invalid_credential ?? ''),
+        createAccountPrompt: String(authModal.create_account_prompt ?? ''),
+        errorTooManyRequests: String(authModal.error_too_many_requests ?? ''),
+        authUnavailable: String(authModal.auth_unavailable ?? ''),
+        passwordResetSent: String(
+          (content.submission_flow as Record<string, string> | undefined)?.password_reset_sent ?? '',
+        ),
+        continueWithGoogle: String(authModal.continue_with_google ?? ''),
+        continueWithGoogleCreate: String(authModal.continue_with_google_create ?? ''),
+        googleInProgress: String(authModal.google_in_progress ?? ''),
+        oauthDivider: String(authModal.oauth_divider ?? ''),
       }}
     />
   </div>
-  <nav class="main-nav-container right-scroller" aria-label="Main" data-header-nav>
+  <nav
+    class="main-nav-container right-scroller"
+    aria-label={String(accessibility.main_navigation_label ?? '')}
+    data-header-nav
+  >
     {
       Object.entries(nav).map(([key, value]) => {
         if (typeof value !== 'string') return null;
+        if (!supportedNavKeys.has(key)) return null;
         if (key === 'main') {
           const isActive = isActiveNavPath(homeHref, key);
           return (
@@ -153,6 +172,7 @@ function isActiveNavPath(targetHref: string, key: string): boolean {
     {
       showAltLink ? (
         <div class="language-selector-nav">
+        <svg class="language-flag nav-flag" aria-label="no"><use href="/icons/svg-sprite.svg#flag-en" xlink:href="/icons/svg-sprite.svg#flag-no"></use></svg>
           <a class="nav-container language-switch-link" href={altHref}>
             <span class="nav-item">{altText}</span>
           </a>

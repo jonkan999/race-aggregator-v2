@@ -28,11 +28,27 @@ type Props = {
 
 type ActivePopup = NewsletterPopupResolvedContent & {
   impressionId: string;
+  pageViewCount: number;
+  servingStrategyId: NewsletterServingStrategyId;
+  sessionId: string;
   triggerType: NewsletterPopupTrigger;
+};
+
+type NewsletterServingStrategyId = 'standard' | 'delayed_second_page';
+
+type NewsletterSessionState = {
+  pageViewCount: number;
+  sessionId: string;
+  servingStrategyId: NewsletterServingStrategyId;
 };
 
 const GENERAL_COOLDOWN_MS = 18 * 60 * 60 * 1000;
 const DISMISS_COOLDOWN_MS = 72 * 60 * 60 * 1000;
+
+function parseStoredCount(value: string | null): number {
+  const parsed = Number.parseInt(value ?? '', 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
+}
 
 function storageKey(siteKey: string, key: string): string {
   return `race-aggregator:newsletter:${siteKey}:${key}`;
@@ -94,6 +110,80 @@ function markPopupDismissed(config: NewsletterPopupConfig): void {
 function markPopupSubscribed(config: NewsletterPopupConfig): void {
   writeStorage(localStorage, storageKey(config.siteKey, 'subscribed'), 'true');
   writeStorage(sessionStorage, storageKey(config.siteKey, 'session-shown'), 'true');
+}
+
+function getOrCreateSessionId(config: NewsletterPopupConfig): string {
+  const key = storageKey(config.siteKey, 'session-id');
+  const existing = readStorage(sessionStorage, key);
+  if (existing) return existing;
+
+  const next = createClientId();
+  writeStorage(sessionStorage, key, next);
+  return next;
+}
+
+function getOrSelectServingStrategy(config: NewsletterPopupConfig): NewsletterServingStrategyId {
+  const key = storageKey(config.siteKey, 'serving-strategy');
+  const stored = readStorage(localStorage, key);
+  if (stored === 'standard' || stored === 'delayed_second_page') {
+    return stored;
+  }
+
+  const next: NewsletterServingStrategyId =
+    Math.random() < 0.5 ? 'standard' : 'delayed_second_page';
+  writeStorage(localStorage, key, next);
+  return next;
+}
+
+function registerSessionPageView(config: NewsletterPopupConfig): NewsletterSessionState {
+  const sessionId = getOrCreateSessionId(config);
+  const servingStrategyId = getOrSelectServingStrategy(config);
+  const countKey = storageKey(config.siteKey, 'page-view-count');
+  const lastPathKey = storageKey(config.siteKey, 'last-page-path');
+  const currentPath = window.location.pathname;
+  const previousPath = readStorage(sessionStorage, lastPathKey);
+  let pageViewCount = parseStoredCount(readStorage(sessionStorage, countKey));
+
+  if (previousPath !== currentPath) {
+    pageViewCount += 1;
+    writeStorage(sessionStorage, countKey, String(pageViewCount));
+    writeStorage(sessionStorage, lastPathKey, currentPath);
+  }
+
+  if (!pageViewCount) {
+    pageViewCount = 1;
+    writeStorage(sessionStorage, countKey, '1');
+    writeStorage(sessionStorage, lastPathKey, currentPath);
+  }
+
+  return {
+    pageViewCount,
+    sessionId,
+    servingStrategyId,
+  };
+}
+
+function servingPlan(
+  popup: NewsletterPopupResolvedContent,
+  sessionState: NewsletterSessionState,
+): {
+  allowAutoTrigger: boolean;
+  delayMs: number;
+  scrollThreshold: number;
+} {
+  if (sessionState.servingStrategyId === 'standard') {
+    return {
+      allowAutoTrigger: true,
+      delayMs: popup.triggerDelayMs,
+      scrollThreshold: popup.scrollThreshold,
+    };
+  }
+
+  return {
+    allowAutoTrigger: sessionState.pageViewCount >= 2,
+    delayMs: Math.round(popup.triggerDelayMs * 1.75),
+    scrollThreshold: Math.min(0.82, popup.scrollThreshold + 0.24),
+  };
 }
 
 function canShowPopup(config: NewsletterPopupConfig, force = false): boolean {
@@ -165,6 +255,10 @@ export default function NewsletterPopup({ context }: Props) {
   const [toastMessage, setToastMessage] = useState('');
   const emailInputRef = useRef<HTMLInputElement | null>(null);
   const toastTimeoutRef = useRef<number | null>(null);
+  const sessionState = useMemo(
+    () => (config && typeof window !== 'undefined' ? registerSessionPageView(config) : null),
+    [config],
+  );
 
   const popupEnabled = Boolean(
     popupDraft &&
@@ -201,12 +295,15 @@ export default function NewsletterPopup({ context }: Props) {
 
   const openPopup = useCallback(
     (triggerType: NewsletterPopupTrigger, force = false): boolean => {
-      if (!config || !popupDraft || !popupEnabled || activePopup) return false;
+      if (!config || !popupDraft || !popupEnabled || !sessionState || activePopup) return false;
       if (!canShowPopup(config, force)) return false;
 
       const nextPopup: ActivePopup = {
         ...popupDraft,
         impressionId: createClientId(),
+        pageViewCount: sessionState.pageViewCount,
+        servingStrategyId: sessionState.servingStrategyId,
+        sessionId: sessionState.sessionId,
         triggerType,
       };
 
@@ -217,9 +314,10 @@ export default function NewsletterPopup({ context }: Props) {
       setActivePopup(nextPopup);
 
       void recordNewsletterPopupEvent({
+        sessionId: nextPopup.sessionId,
         impressionId: nextPopup.impressionId,
         eventType: 'impression',
-        popupVariant: nextPopup.variantId,
+        popupVariant: nextPopup.servingStrategyId,
         popupSurface: nextPopup.popupSurface,
         popupContext: nextPopup.popupContext,
         triggerType,
@@ -231,6 +329,10 @@ export default function NewsletterPopup({ context }: Props) {
         pageUrl: window.location.href,
         referrer: document.referrer || null,
         contextData: nextPopup.contextData,
+        meta: {
+          page_view_count: nextPopup.pageViewCount,
+          serving_strategy: nextPopup.servingStrategyId,
+        },
       }).catch((loggingError) => {
         console.error('Newsletter popup impression logging failed', loggingError);
       });
@@ -250,9 +352,10 @@ export default function NewsletterPopup({ context }: Props) {
       setError('');
 
       void recordNewsletterPopupEvent({
+        sessionId: activePopup.sessionId,
         impressionId: activePopup.impressionId,
         eventType: 'dismiss',
-        popupVariant: activePopup.variantId,
+        popupVariant: activePopup.servingStrategyId,
         popupSurface: activePopup.popupSurface,
         popupContext: activePopup.popupContext,
         triggerType: activePopup.triggerType,
@@ -266,6 +369,8 @@ export default function NewsletterPopup({ context }: Props) {
         contextData: activePopup.contextData,
         meta: {
           dismiss_reason: reason,
+          page_view_count: activePopup.pageViewCount,
+          serving_strategy: activePopup.servingStrategyId,
         },
       }).catch((loggingError) => {
         console.error('Newsletter popup dismiss logging failed', loggingError);
@@ -296,8 +401,44 @@ export default function NewsletterPopup({ context }: Props) {
   }, [config, openPopup, popupEnabled]);
 
   useEffect(() => {
-    if (!config || !popupDraft || !popupEnabled || activePopup) return;
+    if (!config || !popupDraft || !popupEnabled || !sessionState || activePopup) return;
     if (!canShowPopup(config)) return;
+
+    const eligibleLoggedKey = storageKey(config.siteKey, 'eligible-session-logged');
+    if (readStorage(sessionStorage, eligibleLoggedKey) === 'true') return;
+
+    writeStorage(sessionStorage, eligibleLoggedKey, 'true');
+    void recordNewsletterPopupEvent({
+      sessionId: sessionState.sessionId,
+      impressionId: null,
+      eventType: 'eligible_session',
+      popupVariant: sessionState.servingStrategyId,
+      popupSurface: popupDraft.popupSurface,
+      popupContext: popupDraft.popupContext,
+      triggerType: 'session_eligible',
+      siteKey: config.siteKey,
+      siteName: config.siteName,
+      countryCode: config.countryCode,
+      localeCode: config.localeCode,
+      pagePath: window.location.pathname,
+      pageUrl: window.location.href,
+      referrer: document.referrer || null,
+      contextData: popupDraft.contextData,
+      meta: {
+        page_view_count: sessionState.pageViewCount,
+        serving_strategy: sessionState.servingStrategyId,
+      },
+    }).catch((loggingError) => {
+      console.error('Newsletter popup eligible-session logging failed', loggingError);
+    });
+  }, [activePopup, config, popupDraft, popupEnabled, sessionState]);
+
+  useEffect(() => {
+    if (!config || !popupDraft || !popupEnabled || !sessionState || activePopup) return;
+    if (!canShowPopup(config)) return;
+
+    const plan = servingPlan(popupDraft, sessionState);
+    if (!plan.allowAutoTrigger) return;
 
     let triggered = false;
     let delayComplete = false;
@@ -311,7 +452,7 @@ export default function NewsletterPopup({ context }: Props) {
     const delayTimer = window.setTimeout(() => {
       delayComplete = true;
       attemptOpen('time_delay');
-    }, popupDraft.triggerDelayMs);
+    }, plan.delayMs);
 
     const scrollHandler = () => {
       if (triggered) return;
@@ -319,7 +460,7 @@ export default function NewsletterPopup({ context }: Props) {
       if (scrollHeight <= 0) return;
 
       const scrollRatio = window.scrollY / scrollHeight;
-      if (scrollRatio >= popupDraft.scrollThreshold) {
+      if (scrollRatio >= plan.scrollThreshold) {
         attemptOpen('scroll_depth');
       }
     };
@@ -333,7 +474,7 @@ export default function NewsletterPopup({ context }: Props) {
     };
 
     const mouseHandler = (event: MouseEvent) => {
-      if (triggered || Date.now() - startTime < popupDraft.triggerDelayMs) return;
+      if (triggered || Date.now() - startTime < plan.delayMs) return;
       if (event.clientY > 12) return;
       if (event.relatedTarget) return;
       attemptOpen('exit_intent');
@@ -361,7 +502,7 @@ export default function NewsletterPopup({ context }: Props) {
       document.removeEventListener('touchstart', tapHandler, true);
       document.body?.removeEventListener('touchstart', tapHandler, true);
     };
-  }, [activePopup, config, openPopup, popupDraft, popupEnabled]);
+  }, [activePopup, config, openPopup, popupDraft, popupEnabled, sessionState]);
 
   useEffect(() => {
     if (!activePopup) return;
@@ -419,8 +560,9 @@ export default function NewsletterPopup({ context }: Props) {
     try {
       await subscribeNewsletterPopup({
         email: normalizedEmail,
+        sessionId: activePopup.sessionId,
         impressionId: activePopup.impressionId,
-        popupVariant: activePopup.variantId,
+        popupVariant: activePopup.servingStrategyId,
         popupSurface: activePopup.popupSurface,
         popupContext: activePopup.popupContext,
         siteKey: config.siteKey,

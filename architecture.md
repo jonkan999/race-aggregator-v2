@@ -25,6 +25,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - The default race list page is pre-rendered at build time through `getRaceListFirstPageSnapshot`.
 - `npm run build` must fetch race-list rows from Supabase at most once per country, write a temporary local snapshot, and force the rest of the build to reuse that snapshot.
+- `npm run build` should also rebuild missing browse SEO cache entries from that same temporary snapshot before Astro renders the static browse routes.
 - Build-time snapshot should prefer the temporary build snapshot when present, otherwise fall back to Supabase, otherwise local JSON.
 - Page 2 and any filtered state should use one browser-side Supabase RPC call to `get_races_list_page`.
 - The list route should preserve legacy CSS compatibility via `src/layouts/RaceListLayout.astro` and `src/styles/legacy/`.
@@ -33,7 +34,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - Browser code may use `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 - Secret or service-role keys are only for seed scripts, marker export, and one-time build snapshot export.
-- Newsletter popups must stay inside the same browser-key boundary: anonymous capture goes through the publishable client and RPC/table boundaries only.
+- Newsletter popups must stay inside the same browser-key boundary: anonymous capture goes through the publishable client and RPC/table boundaries only, including serving-logic A/B metrics such as eligible sessions and impressions.
 - Public add-race submissions must work with the browser publishable key only; do not require login as part of the submission flow.
 - Map pins must remain static JSON, not live list-query output.
 - Static generation must not fan out repeated live Supabase reads per route. Any large build-time read should be exported once and reused locally for the rest of the build.
@@ -43,10 +44,21 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - No indexable route ships without a defined canonical pattern, YAML-driven metadata strategy, and schema contract.
 - Use route-specific schema types such as `ItemList`, `Event`, and `BreadcrumbList` where appropriate.
 - Critical content for SEO landing pages should be present server-side before hydration.
-- Category landing pages may use cached SEO copy from `data/countries/{code}/seo_content_cache*.json`, but must always have a deterministic YAML-template fallback so builds do not depend on live LLM generation.
+- Browse landing pages may use cached SEO copy from `data/countries/{code}/seo_content_cache*.json`, but must always have a deterministic fallback so builds do not depend on live AI generation.
+- SEO cache generation should cover county, city, month, race type, category, and valid race type + category pages in both native and English where English content exists.
+- Cached copy should stay timeless and reusable; avoid year-specific language and avoid making claims that only hold for a single snapshot moment.
+- Deterministic browse fallback copy should be YAML-driven per market under `seo_templates.browse_page_templates`, so the generator and page-level fallback share the same content source.
+- Browse indexability rules should also be YAML-driven per market under `browse_seo_indexing`, so canonical subsets and thresholds can be tuned without route-code edits.
+- Browse SEO should distinguish between the full filter taxonomy and the smaller canonical indexable SEO surface. Use the matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md) for which category labels, race types, and combinations should actually be indexed.
+- Avoid canonical duplication across equivalent intents such as `10 km` vs `Millopp` or distance-style labels that duplicate race-type intent such as `Backyard Ultra`.
 
 ## Market Expansion
 
+- Public deployment is one market per domain: native pages belong at `/`, and that market's English pages belong at `/en/`.
+- Canonical neighboring-country browse pages belong at `/neighbors/` and `/neighbors/{country}/`, with English equivalents under `/en/neighbors/`.
 - New markets should add `data/countries/{code}/` content, seed data, and marker exports.
 - New markets should automatically participate in the one-snapshot-per-country build flow. Do not add market-specific direct Supabase reads inside route files.
+- Neighbor-market linking should resolve to the neighboring market's English site, using that market's own YAML-driven site configuration rather than a country-prefixed path on the current host.
+- Static race-detail routes should be generated only for domestic races in the current market snapshot. Foreign races shown in neighboring-country views should link to the origin market's English detail route when that market is configured locally.
+- Market-aware routing should discover eligible markets from `data/countries/{code}/index.yaml` so adding a new country folder expands the route graph without hardcoded country logic.
 - Any change to list behavior, routing, or schema should be reflected in [`PRD.md`](./PRD.md).

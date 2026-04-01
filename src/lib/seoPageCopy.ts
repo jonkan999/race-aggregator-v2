@@ -18,10 +18,28 @@ export type SeoPageCopy = {
   source: 'cache' | 'template';
 };
 
+export type BrowsePageSeoKind =
+  | 'county'
+  | 'city'
+  | 'month'
+  | 'race_type'
+  | 'category'
+  | 'race_type_category'
+  | 'race_type_county'
+  | 'race_type_month'
+  | 'race_type_city';
+
 type SeoCacheLookupArgs = {
   countryCode: string;
   locale: Locale;
   cacheKeys: string[];
+};
+
+type BrowsePageTemplate = {
+  title: string;
+  meta_description: string;
+  h1: string;
+  paragraph: string;
 };
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -44,6 +62,96 @@ function readCache(countryCode: string, locale: Locale): Record<string, RawSeoCa
   } catch {
     return {};
   }
+}
+
+function uniqueCacheKeys(keys: Array<string | null | undefined>): string[] {
+  return Array.from(
+    new Set(
+      keys
+        .filter((key): key is string => typeof key === 'string')
+        .map((key) => key.trim())
+        .filter(Boolean),
+    ),
+  );
+}
+
+function scopedCacheKeys(prefix: string, values: Array<string | null | undefined>): string[] {
+  return uniqueCacheKeys(values).map((value) => `${prefix}:${value}`);
+}
+
+export function getCountySeoCacheKeys(...values: Array<string | null | undefined>): string[] {
+  return scopedCacheKeys('county', values);
+}
+
+export function getCitySeoCacheKeys(...values: Array<string | null | undefined>): string[] {
+  return uniqueCacheKeys([
+    ...scopedCacheKeys('city', values),
+    ...scopedCacheKeys('county', values),
+  ]);
+}
+
+export function getMonthSeoCacheKeys(...values: Array<string | null | undefined>): string[] {
+  return scopedCacheKeys('month', values);
+}
+
+export function getRaceTypeSeoCacheKeys(...values: Array<string | null | undefined>): string[] {
+  return scopedCacheKeys('race_type', values);
+}
+
+export function getCategorySeoCacheKeys(...values: Array<string | null | undefined>): string[] {
+  return scopedCacheKeys('category', values);
+}
+
+export function getRaceTypeCategorySeoCacheKeys(args: {
+  raceTypeValues: Array<string | null | undefined>;
+  categoryValues: Array<string | null | undefined>;
+}): string[] {
+  const keys: string[] = [];
+  for (const raceTypeValue of uniqueCacheKeys(args.raceTypeValues)) {
+    for (const categoryValue of uniqueCacheKeys(args.categoryValues)) {
+      keys.push(`race_type:${raceTypeValue}-category:${categoryValue}`);
+    }
+  }
+  return uniqueCacheKeys(keys);
+}
+
+export function getRaceTypeCountySeoCacheKeys(args: {
+  raceTypeValues: Array<string | null | undefined>;
+  countyValues: Array<string | null | undefined>;
+}): string[] {
+  const keys: string[] = [];
+  for (const raceTypeValue of uniqueCacheKeys(args.raceTypeValues)) {
+    for (const countyValue of uniqueCacheKeys(args.countyValues)) {
+      keys.push(`race_type:${raceTypeValue}-county:${countyValue}`);
+    }
+  }
+  return uniqueCacheKeys(keys);
+}
+
+export function getRaceTypeMonthSeoCacheKeys(args: {
+  raceTypeValues: Array<string | null | undefined>;
+  monthValues: Array<string | null | undefined>;
+}): string[] {
+  const keys: string[] = [];
+  for (const raceTypeValue of uniqueCacheKeys(args.raceTypeValues)) {
+    for (const monthValue of uniqueCacheKeys(args.monthValues)) {
+      keys.push(`race_type:${raceTypeValue}-month:${monthValue}`);
+    }
+  }
+  return uniqueCacheKeys(keys);
+}
+
+export function getRaceTypeCitySeoCacheKeys(args: {
+  raceTypeValues: Array<string | null | undefined>;
+  cityValues: Array<string | null | undefined>;
+}): string[] {
+  const keys: string[] = [];
+  for (const raceTypeValue of uniqueCacheKeys(args.raceTypeValues)) {
+    for (const cityValue of uniqueCacheKeys(args.cityValues)) {
+      keys.push(`race_type:${raceTypeValue}-city:${cityValue}`);
+    }
+  }
+  return uniqueCacheKeys(keys);
 }
 
 function getCachedSeoEntry(args: SeoCacheLookupArgs): SeoPageCopy | null {
@@ -72,64 +180,121 @@ function replaceTokens(template: string, values: Record<string, string>): string
   return template.replace(/\{(\w+)\}/g, (_, key: string) => values[key] ?? '');
 }
 
+function cleanWhitespace(value: string | undefined): string {
+  return String(value ?? '').replace(/\s+/g, ' ').trim();
+}
+
 function marketLabel(content: IndexYaml, locale: Locale): string {
   return locale === 'en'
     ? String(content.country ?? content.country_native ?? 'the country')
     : String(content.country_native ?? content.country ?? 'landet');
 }
 
-function defaultRaceLabel(locale: Locale): string {
-  return locale === 'en' ? 'races' : 'lopp';
+function siteNameLabel(content: IndexYaml, locale: Locale): string {
+  return String(content.page_name ?? content.race_list_name ?? marketLabel(content, locale));
 }
 
-function buildDeterministicCategoryCopy(
-  content: IndexYaml,
-  locale: Locale,
-  categoryLabel: string,
-  raceCount: number,
-): SeoPageCopy {
-  const raceLabel = defaultRaceLabel(locale);
-  const market = marketLabel(content, locale);
-  const titleBase =
-    replaceTokens(content.seo_templates?.title_parts?.category ?? '{category} ' + raceLabel, {
-      category: categoryLabel,
-    }).trim() || `${categoryLabel} ${raceLabel}`;
-  const paragraphLead =
-    replaceTokens(
-      content.seo_templates?.paragraph_templates?.category_only ??
-        (locale === 'en'
-          ? 'Find {category} races across {location}.'
-          : 'Hitta {category} lopp i {location}.'),
-      {
-        category: categoryLabel,
-        location: market,
-        race_type: '',
-      },
-    ).trim() || `${categoryLabel} ${raceLabel}`;
-  const paragraphSuffix = String(
-    content.seo_templates?.paragraph_templates?.default_suffix ??
-      (locale === 'en'
-        ? 'Compare dates, distances and practical details before choosing your next race.'
-        : 'Jämför datum, distanser och praktisk information inför ditt nästa lopp.'),
-  ).trim();
-  const countLead =
-    locale === 'en'
-      ? `${raceCount} upcoming options currently match this category.`
-      : `${raceCount} kommande alternativ matchar kategorin just nu.`;
-
-  const h1 =
-    locale === 'en'
-      ? `${categoryLabel} races in ${market}`
-      : `${categoryLabel} lopp i ${market}`;
-  const title = `${titleBase} | ${content.page_name ?? content.race_list_name ?? market}`.trim();
-  const metaDescription = `${paragraphLead} ${countLead}`.trim();
-  const paragraph = `${paragraphLead} ${paragraphSuffix}`.trim();
+function browseTemplateValues(args: {
+  content: IndexYaml;
+  locale: Locale;
+  kind: BrowsePageSeoKind;
+  label: string;
+  secondaryLabel?: string;
+}): Record<string, string> {
+  const market = marketLabel(args.content, args.locale);
+  const siteName = siteNameLabel(args.content, args.locale);
+  const label = cleanWhitespace(args.label);
+  const secondaryLabel = cleanWhitespace(args.secondaryLabel);
+  const raceType =
+    args.kind === 'race_type_category' ||
+    args.kind === 'race_type_county' ||
+    args.kind === 'race_type_month' ||
+    args.kind === 'race_type_city'
+      ? secondaryLabel
+      : args.kind === 'race_type'
+        ? label
+        : '';
+  const category =
+    args.kind === 'race_type_category' || args.kind === 'category' ? label : '';
 
   return {
+    site_name: siteName,
+    market,
+    market_lower: market.toLowerCase(),
+    label,
+    label_lower: label.toLowerCase(),
+    secondary_label: secondaryLabel,
+    secondary_label_lower: secondaryLabel.toLowerCase(),
+    category,
+    category_lower: category.toLowerCase(),
+    race_type: raceType,
+    race_type_lower: raceType.toLowerCase(),
+    county: args.kind === 'county' || args.kind === 'race_type_county' ? label : '',
+    county_lower:
+      args.kind === 'county' || args.kind === 'race_type_county' ? label.toLowerCase() : '',
+    city: args.kind === 'city' || args.kind === 'race_type_city' ? label : '',
+    city_lower:
+      args.kind === 'city' || args.kind === 'race_type_city' ? label.toLowerCase() : '',
+    month: args.kind === 'month' || args.kind === 'race_type_month' ? label : '',
+    month_lower:
+      args.kind === 'month' || args.kind === 'race_type_month' ? label.toLowerCase() : '',
+    location:
+      args.kind === 'county' ||
+      args.kind === 'city' ||
+      args.kind === 'month' ||
+      args.kind === 'race_type_county' ||
+      args.kind === 'race_type_city' ||
+      args.kind === 'race_type_month'
+        ? label
+        : market,
+    location_lower:
+      args.kind === 'county' ||
+      args.kind === 'city' ||
+      args.kind === 'month' ||
+      args.kind === 'race_type_county' ||
+      args.kind === 'race_type_city' ||
+      args.kind === 'race_type_month'
+        ? label.toLowerCase()
+        : market.toLowerCase(),
+  };
+}
+
+function configuredBrowseTemplate(
+  content: IndexYaml,
+  kind: BrowsePageSeoKind,
+): BrowsePageTemplate {
+  const configured = content.seo_templates?.browse_page_templates?.[kind];
+  const title = cleanWhitespace(configured?.title);
+  const metaDescription = cleanWhitespace(configured?.meta_description);
+  const h1 = cleanWhitespace(configured?.h1);
+  const paragraph = cleanWhitespace(configured?.paragraph);
+  if (!title || !metaDescription || !h1 || !paragraph) {
+    throw new Error(
+      `Missing seo_templates.browse_page_templates.${kind} in country YAML content.`,
+    );
+  }
+  return {
     title,
-    metaDescription,
+    meta_description: metaDescription,
     h1,
     paragraph,
+  };
+}
+
+function buildBrowseTemplateCopy(args: {
+  content: IndexYaml;
+  locale: Locale;
+  kind: BrowsePageSeoKind;
+  label: string;
+  secondaryLabel?: string;
+}): SeoPageCopy {
+  const template = configuredBrowseTemplate(args.content, args.kind);
+  const values = browseTemplateValues(args);
+  return {
+    title: cleanWhitespace(replaceTokens(template.title, values)),
+    metaDescription: cleanWhitespace(replaceTokens(template.meta_description, values)),
+    h1: cleanWhitespace(replaceTokens(template.h1, values)),
+    paragraph: cleanWhitespace(replaceTokens(template.paragraph, values)),
     source: 'template',
   };
 }
@@ -141,17 +306,22 @@ export function getCategorySeoCopy(args: {
   categoryLabel: string;
   raceCount: number;
 }): SeoPageCopy {
-  const { countryCode, locale, content, categoryLabel, raceCount } = args;
+  const { countryCode, locale, content, categoryLabel } = args;
   const cached = getCachedSeoEntry({
     countryCode,
     locale,
-    cacheKeys: [`category:${categoryLabel}`],
+    cacheKeys: getCategorySeoCacheKeys(categoryLabel),
   });
   if (cached) {
     return cached;
   }
 
-  return buildDeterministicCategoryCopy(content, locale, categoryLabel, raceCount);
+  return buildBrowseTemplateCopy({
+    content,
+    locale,
+    kind: 'category',
+    label: categoryLabel,
+  });
 }
 
 function deterministicSeoCopy(args: {
@@ -188,4 +358,22 @@ export function getScopedSeoCopy(args: {
   });
   if (cached) return cached;
   return deterministicSeoCopy(args);
+}
+
+export function getBrowsePageSeoCopy(args: {
+  countryCode: string;
+  locale: Locale;
+  content: IndexYaml;
+  cacheKeys: string[];
+  kind: BrowsePageSeoKind;
+  label: string;
+  secondaryLabel?: string;
+}): SeoPageCopy {
+  const cached = getCachedSeoEntry({
+    countryCode: args.countryCode,
+    locale: args.locale,
+    cacheKeys: args.cacheKeys,
+  });
+  if (cached) return cached;
+  return buildBrowseTemplateCopy(args);
 }

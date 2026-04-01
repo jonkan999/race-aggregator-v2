@@ -23,7 +23,7 @@ interface Props {
 
 const { country, locale, content, row, allRows = [], canonicalPath, alternateHref } = Astro.props;
 const detail = getRaceDetailFields(row, content, locale);
-const relatedContent = getRaceDetailRelatedContent({
+const relatedContent = await getRaceDetailRelatedContent({
   countryCode: country,
   locale,
   content,
@@ -39,6 +39,7 @@ const description = detail.description || detail.additionalInfo || `${detail.rac
 const descriptionParagraphs = raceDetailParagraphs(detail.description);
 const additionalParagraphs = raceDetailParagraphs(detail.additionalInfo);
 const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
+const accessibility = (content.accessibility ?? {}) as Record<string, string>;
 const hasEstimatedDates = detail.dateEntries.some((entry) => entry.isEstimated);
 const hasGalleryImages = detail.images.length > 0;
 const galleryImages = detail.images.slice(1);
@@ -94,40 +95,14 @@ const breadcrumbJson = JSON.stringify({
   })),
 });
 
-const saveTitle = String(
-  content.race_page_favorites_title ??
-    (locale === 'en' ? 'Do not miss race updates' : 'Missa inga uppdateringar'),
-);
-const saveBody = String(
-  content.race_page_favorites_body ??
-    (locale === 'en'
-      ? 'Create an account and save this race to your favorites so you can receive updates, news and selected offers when favorites launch.'
-      : 'Skapa konto och spara loppet i dina favoriter för att kunna få uppdateringar, nyheter och utvalda erbjudanden när favoriter lanseras.'),
-);
-const saveCta = String(
-  content.race_page_favorites_cta ??
-    (locale === 'en' ? 'Save race to favorites' : 'Spara lopp i favoriter'),
-);
-const similarTitle = String(
-  content.race_page_similar_title ?? (locale === 'en' ? 'Similar races' : 'Liknande lopp'),
-);
-const similarBody = String(
-  content.race_page_similar_body ??
-    (locale === 'en'
-      ? 'More races with similar distance, type or nearby location.'
-      : 'Fler lopp med liknande distans, typ eller plats i närheten.'),
-);
-const discoverTitle = String(
-  content.race_page_discover_title ?? (locale === 'en' ? 'Explore more races' : 'Utforska fler lopp'),
-);
-const backToListLabel = String(
-  content.race_page_back_to_list ??
-    content.navigation?.['race-list'] ??
-    (locale === 'en' ? 'Race calendar' : 'Loppkalender'),
-);
-const sliderCta = String(
-  content.to_race_page_cta ?? (locale === 'en' ? 'To race page' : 'Till loppsida'),
-);
+const saveTitle = String(content.race_page_favorites_title ?? '');
+const saveBody = String(content.race_page_favorites_body ?? '');
+const saveCta = String(content.race_page_favorites_cta ?? '');
+const similarTitle = String(content.race_page_similar_title ?? '');
+const similarBody = String(content.race_page_similar_body ?? '');
+const discoverTitle = String(content.race_page_discover_title ?? '');
+const backToListLabel = String(content.race_page_back_to_list ?? content.navigation?.['race-list'] ?? '');
+const sliderCta = String(content.to_race_page_cta ?? '');
 const newsletterContext = {
   surface: 'race-detail',
   kind: 'race-detail',
@@ -152,7 +127,10 @@ const newsletterContext = {
   <NewsletterPopup client:load context={newsletterContext} />
 
   <section class="race-detail-shell">
-    <nav class="race-detail-breadcrumbs" aria-label="Breadcrumb">
+    <nav
+      class="race-detail-breadcrumbs"
+      aria-label={String(accessibility.breadcrumb_label ?? '')}
+    >
       <ol>
         {
           relatedContent.breadcrumbs.map((crumb) => (

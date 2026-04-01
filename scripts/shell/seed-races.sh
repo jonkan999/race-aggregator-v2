@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Loads .env from repo root (for SUPABASE_SECRET_KEY), then seeds DB.
-# Usage: ./scripts/shell/seed-races.sh [country]   default: se
+# Usage: ./scripts/shell/seed-races.sh [country] [--replace]   default: se
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT"
@@ -10,5 +10,4 @@ if [[ -f .env ]]; then
   source .env
   set +a
 fi
-COUNTRY="${1:-se}"
-exec npm run seed-races -- "$COUNTRY"
+exec npm run seed-races -- "$@"

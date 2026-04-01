@@ -103,6 +103,14 @@ body.race-list-page.v2-race-list .browse-grid-section__title {
   color: var(--color-primary-dark);
 }
 
+body.race-list-page.v2-race-list .browse-grid-section__description {
+  max-width: 72rem;
+  margin: -0.4rem 0 1.6rem;
+  color: #667085;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
 body.race-list-page.v2-race-list .browse-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
@@ -132,6 +140,16 @@ body.race-list-page.v2-race-list .browse-card--static {
 body.race-list-page.v2-race-list .browse-card a {
   color: var(--color-primary-dark);
   text-decoration: none;
+}
+
+body.race-list-page.v2-race-list .browse-card__title a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+body.race-list-page.v2-race-list .browse-card__title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 body.race-list-page.v2-race-list .browse-card__title {

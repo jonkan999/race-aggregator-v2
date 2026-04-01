@@ -3,29 +3,33 @@ import BrowseLayout from '../../../layouts/BrowseLayout.astro';
 import {
   findCountryByRaceListSlug,
   hasEnglishMerge,
-  listCountryCodes,
   loadIndexYaml,
   raceListSlug,
   type Locale,
 } from '../../../lib/content';
 import { slugify } from '../../../lib/slugify';
 import {
+  getBrowseCategoryEntries,
   getBrowseCategoriesIndexHref,
   getBrowseNeighboringIndexHref,
   getBrowseOverviewData,
   getBrowseOverviewHref,
+  getScopedRaceTypeEntries,
+  getTypeCategoryNavigationEntries,
 } from '../../../lib/raceBrowse';
+import { getAllRaceListRows } from '../../../lib/raceListSsg';
+import { isDomesticOrigin } from '../../../lib/neighboringSelection';
+import { filterRowsToUpcomingWindow } from '../../../lib/upcomingRaceWindow';
 
 export function getStaticPaths() {
-  return listCountryCodes().map((country) => {
-    const content = loadIndexYaml(country, 'native');
-    return {
-      params: {
-        raceList: raceListSlug(content, country),
-        browse: slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country),
-      },
-    };
-  });
+  const country = 'se';
+  const content = loadIndexYaml(country, 'native');
+  return [{
+    params: {
+      raceList: raceListSlug(content, country),
+      browse: slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country),
+    },
+  }];
 }
 
 const { raceList, browse } = Astro.params;
@@ -46,8 +50,78 @@ const overviewHref = getBrowseOverviewHref(country, locale, content);
 const categoriesHref = getBrowseCategoriesIndexHref(country, locale, content);
 const neighboringHref = getBrowseNeighboringIndexHref(country, locale, content);
 const overviewData = await getBrowseOverviewData({ countryCode: country, locale, content });
+const categoryEntries = await getBrowseCategoryEntries({ countryCode: country, locale, content });
+const domesticUpcomingRows = filterRowsToUpcomingWindow(
+  (await getAllRaceListRows(country)).rows.filter((row) => isDomesticOrigin(row.origin_country, country)),
+);
 
-const title = String(content.browse_overview?.title ?? content.browse_by_category?.overview ?? 'Browse');
+const countyCards = await Promise.all(
+  overviewData.counties.slice(0, 12).map(async (entry) => {
+    const rows = domesticUpcomingRows.filter(
+      (row) => (row.county?.trim().toLowerCase() ?? '') === entry.key.trim().toLowerCase(),
+    );
+    return {
+      ...entry,
+      chips: getScopedRaceTypeEntries({
+        rows,
+        countryCode: country,
+        locale,
+        content,
+        scopeKind: 'county',
+        scopeLabel: entry.label,
+        scopeHref: entry.href,
+      }).slice(0, 4),
+    };
+  }),
+);
+
+const typeCards = await Promise.all(
+  overviewData.types.slice(0, 12).map(async (entry) => {
+    const rows = domesticUpcomingRows.filter(
+      (row) => (row.race_type?.trim().toLowerCase() ?? '') === entry.key.trim().toLowerCase(),
+    );
+    return {
+      ...entry,
+      chips: getTypeCategoryNavigationEntries({
+        rows,
+        countryCode: country,
+        locale,
+        content,
+        raceTypeKey: entry.key,
+      }).slice(0, 4),
+    };
+  }),
+);
+
+const monthCards = await Promise.all(
+  overviewData.months.map(async (entry) => {
+    const monthNumber = Number.parseInt(entry.key, 10);
+    const rows = domesticUpcomingRows.filter((row) =>
+      Array.isArray(row.race_dates)
+        ? row.race_dates.some(
+            (raceDate) =>
+              Array.isArray(raceDate) &&
+              typeof raceDate[0] === 'string' &&
+              Number.parseInt(raceDate[0].slice(4, 6), 10) === monthNumber,
+          )
+        : false,
+    );
+    return {
+      ...entry,
+      chips: getScopedRaceTypeEntries({
+        rows,
+        countryCode: country,
+        locale,
+        content,
+        scopeKind: 'month',
+        scopeLabel: entry.label,
+        scopeHref: entry.href,
+      }).slice(0, 4),
+    };
+  }),
+);
+
+const title = String(content.browse_overview?.title ?? content.browse_by_category?.overview ?? '');
 const description = String(content.browse_overview?.meta_description ?? '');
 const alternateRaceListHref = hasEnglishMerge(country)
   ? getBrowseOverviewHref(country, 'en', loadIndexYaml(country, 'en'))
@@ -77,15 +151,28 @@ const alternateRaceListHref = hasEnglishMerge(country)
 
   <section class="browse-grid-section">
     <h2 class="browse-grid-section__title">{String(content.browse_by_category?.counties ?? 'Counties')}</h2>
+    <p class="browse-grid-section__description">{String(content.browse_counties?.meta_description ?? '')}</p>
     <div class="browse-grid">
       {
-        overviewData.counties.slice(0, 12).map((entry) => (
-          <a href={entry.href} class="browse-card">
+        countyCards.map((entry) => (
+          <div class="browse-card browse-card--static">
             <h3 class="browse-card__title">
-              <span>{entry.label}</span>
+              <a href={entry.href}>{entry.label}</a>
               <span class="browse-card__count">{entry.count}</span>
             </h3>
-          </a>
+            {
+              entry.chips.length > 0 && (
+                <div class="browse-card__links">
+                  {entry.chips.map((chip) => (
+                    <a href={chip.href} class="browse-card__chip">
+                      {chip.label}
+                      <span class="browse-card__chip-count">{chip.count}</span>
+                    </a>
+                  ))}
+                </div>
+              )
+            }
+          </div>
         ))
       }
     </div>
@@ -93,6 +180,7 @@ const alternateRaceListHref = hasEnglishMerge(country)
 
   <section class="browse-grid-section">
     <h2 class="browse-grid-section__title">{String(content.browse_by_category?.cities ?? 'Cities')}</h2>
+    <p class="browse-grid-section__description">{String(content.browse_cities?.meta_description ?? '')}</p>
     <div class="browse-grid">
       {
         overviewData.cities.map((entry) => (
@@ -125,32 +213,58 @@ const alternateRaceListHref = hasEnglishMerge(country)
 
   <section class="browse-grid-section">
     <h2 class="browse-grid-section__title">{String(content.browse_by_category?.types ?? 'Types')}</h2>
+    <p class="browse-grid-section__description">{String(content.browse_types?.meta_description ?? '')}</p>
     <div class="browse-grid">
       {
-        overviewData.types.slice(0, 12).map((entry) => (
-          <a href={entry.href} class="browse-card">
+        typeCards.map((entry) => (
+          <div class="browse-card browse-card--static">
             <h3 class="browse-card__title">
-              <span>{entry.label}</span>
+              <a href={entry.href}>{entry.label}</a>
               <span class="browse-card__count">{entry.count}</span>
             </h3>
-          </a>
+            {
+              entry.chips.length > 0 && (
+                <div class="browse-card__links">
+                  {entry.chips.map((chip) => (
+                    <a href={chip.href} class="browse-card__chip">
+                      {chip.label}
+                      <span class="browse-card__chip-count">{chip.count}</span>
+                    </a>
+                  ))}
+                </div>
+              )
+            }
+          </div>
         ))
       }
     </div>
   </section>
 
   <section class="browse-grid-section">
-    <h2 class="browse-grid-section__title">{String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? 'Categories')}</h2>
+    <h2 class="browse-grid-section__title">{String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? '')}</h2>
+    <p class="browse-grid-section__description">{String(content.browse_categories?.meta_description ?? '')}</p>
     <div class="browse-grid">
       {
-        overviewData.categories.map((entry) => (
-          <a href={entry.href} class="browse-card">
+        categoryEntries.map((entry) => (
+          <div class="browse-card browse-card--static">
             <h3 class="browse-card__title">
-              <span>{entry.label}</span>
+              <a href={entry.href}>{entry.label}</a>
               <span class="browse-card__count">{entry.count}</span>
             </h3>
             <p class="browse-card__meta">{content.browse_categories?.meta_description}</p>
-          </a>
+            {
+              entry.topTypes.length > 0 && (
+                <div class="browse-card__links">
+                  {entry.topTypes.slice(0, 4).map((chip) => (
+                    <a href={chip.href} class="browse-card__chip">
+                      {chip.label}
+                      <span class="browse-card__chip-count">{chip.count}</span>
+                    </a>
+                  ))}
+                </div>
+              )
+            }
+          </div>
         ))
       }
     </div>
@@ -158,15 +272,28 @@ const alternateRaceListHref = hasEnglishMerge(country)
 
   <section class="browse-grid-section">
     <h2 class="browse-grid-section__title">{String(content.browse_by_category?.months ?? 'Months')}</h2>
+    <p class="browse-grid-section__description">{String(content.browse_months?.meta_description ?? '')}</p>
     <div class="browse-grid">
       {
-        overviewData.months.map((entry) => (
-          <a href={entry.href} class="browse-card">
+        monthCards.map((entry) => (
+          <div class="browse-card browse-card--static">
             <h3 class="browse-card__title">
-              <span>{entry.label}</span>
+              <a href={entry.href}>{entry.label}</a>
               <span class="browse-card__count">{entry.count}</span>
             </h3>
-          </a>
+            {
+              entry.chips.length > 0 && (
+                <div class="browse-card__links">
+                  {entry.chips.map((chip) => (
+                    <a href={chip.href} class="browse-card__chip">
+                      {chip.label}
+                      <span class="browse-card__chip-count">{chip.count}</span>
+                    </a>
+                  ))}
+                </div>
+              )
+            }
+          </div>
         ))
       }
     </div>

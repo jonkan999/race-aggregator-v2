@@ -8,7 +8,7 @@ const locale: Locale = 'native';
 const content = loadIndexYaml(country, locale);
 const auth = (content.auth_modal ?? {}) as Record<string, string>;
 const authPages = (content.auth_pages ?? {}) as Record<string, string>;
-const title = `${String(auth.account_created ?? 'Konto skapat!')} | ${content.page_name ?? 'Loppkartan'}`;
+const title = `${String(auth.account_created ?? '')} | ${String(content.page_name ?? '')}`;
 const description = String(auth.verification_email_sent ?? '');
 ---
 
@@ -19,25 +19,25 @@ const description = String(auth.verification_email_sent ?? '');
   country={country}
   locale={locale}
   content={content}
-  breadcrumbLabel={String(auth.account_created ?? 'Konto skapat!')}
+  breadcrumbLabel={String(auth.account_created ?? '')}
 >
   <section class="auth-page-section">
     <div class="container">
       <div class="auth-page-card">
-        <h1>{String(auth.account_created ?? 'Konto skapat!')}</h1>
+        <h1>{String(auth.account_created ?? '')}</h1>
         <p id="auth-confirm-message">{String(auth.verification_email_sent ?? '')}</p>
         <p class="auth-page-note" id="auth-confirm-note">{String(auth.please_verify ?? '')}</p>
         <p class="auth-page-error" id="auth-confirm-error" hidden></p>
-        <a class="auth-page-link" href="/">{String(content.navigation?.main ?? content.page_name ?? 'Loppkartan')}</a>
+        <a class="auth-page-link" href="/">{String(content.navigation?.main ?? content.page_name ?? '')}</a>
       </div>
     </div>
   </section>
 </AuxiliaryLayout>
 
 <script define:vars={{
-  confirmSuccess: String(authPages.confirm_success ?? 'Din e-postadress är nu bekräftad och ditt konto är aktivt.'),
-  confirmReady: String(authPages.confirm_ready ?? 'Du kan nu fortsätta att använda Loppkartan.'),
-  confirmError: String(authPages.confirm_error ?? 'Kunde inte bekräfta e-postadressen.'),
+  confirmSuccess: String(authPages.confirm_success ?? ''),
+  confirmReady: String(authPages.confirm_ready ?? ''),
+  confirmError: String(authPages.confirm_error ?? ''),
   siteKey: `${content.country_code ?? country}:${content.page_name ?? 'site'}`,
   siteName: String(content.page_name ?? 'Site'),
   countryCode: country,

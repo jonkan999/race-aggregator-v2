@@ -6,6 +6,7 @@ import NewsletterPopupConfig from '../components/NewsletterPopupConfig.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import type { IndexYaml } from '../lib/content';
+import { getMarketRouteTargets } from '../lib/marketRouteTargets';
 
 type LayoutLocale = 'native' | 'en';
 
@@ -21,6 +22,7 @@ interface Props {
 
 const { title, description = '', lang, country, locale, content, alternateRaceListHref } =
   Astro.props;
+const marketRouteTargetsJson = JSON.stringify(getMarketRouteTargets());
 ---
 
 <!doctype html>
@@ -34,6 +36,7 @@ const { title, description = '', lang, country, locale, content, alternateRaceLi
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <script is:inline set:html={`window.__MARKET_ROUTE_TARGETS__ = ${marketRouteTargetsJson};`} />
     <slot name="head" />
     <NewsletterPopupConfig country={country} locale={locale} content={content} />
   </head>

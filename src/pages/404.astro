@@ -1,0 +1,33 @@
+---
+import { loadIndexYaml, raceListSlug } from '../lib/content';
+
+const country = 'se';
+const nativeContent = loadIndexYaml(country, 'native');
+const englishContent = loadIndexYaml(country, 'en');
+const nativeRaceListHref = `/${raceListSlug(nativeContent, country)}/`;
+const englishRaceListHref = `/en/${raceListSlug(englishContent, country)}/`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0;url=${nativeRaceListHref}`} />
+    <link rel="canonical" href={nativeRaceListHref} />
+  </head>
+  <body>
+    <script define:vars={{ nativeRaceListHref, englishRaceListHref }} is:inline>
+      const requestedPath = window.location.pathname;
+      const targetHref = requestedPath.startsWith('/en/')
+        ? englishRaceListHref
+        : nativeRaceListHref;
+
+      window.location.replace(targetHref);
+    </script>
+    <p>
+      Redirecting to <a href={nativeRaceListHref}>the default race list</a>.
+    </p>
+  </body>
+</html>

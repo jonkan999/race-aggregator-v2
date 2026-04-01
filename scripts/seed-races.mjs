@@ -12,7 +12,21 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 
-const country = (process.argv[2] || 'se').toLowerCase();
+const args = process.argv.slice(2);
+const flags = new Set(args.filter((value) => value.startsWith('--')));
+const positional = args.filter((value) => !value.startsWith('--'));
+const country = (positional[0] || 'se').toLowerCase();
+const replaceExisting = flags.has('--replace');
+const showHelp = flags.has('--help') || flags.has('-h');
+
+if (showHelp) {
+  console.log(`Usage: node scripts/seed-races.mjs [country] [--replace]
+
+Options:
+  --replace   Delete existing races for the selected country before seeding
+  --help      Show this help message`);
+  process.exit(0);
+}
 
 const url = process.env.SUPABASE_URL || process.env.PUBLIC_SUPABASE_URL;
 const elevatedKey =
@@ -68,7 +82,16 @@ async function main() {
   }
 
   let n = 0;
-  console.warn(`Seeding ${country} from ${sourceLocal} + ${sourceInt}`);
+  console.warn(
+    `Seeding ${country} from ${sourceLocal} + ${sourceInt}${replaceExisting ? ' (replace mode)' : ''}`,
+  );
+
+  if (replaceExisting) {
+    const { error: deleteErr } = await sb.from('races').delete().eq('country_code', country);
+    if (deleteErr) throw deleteErr;
+    console.warn(`Deleted existing races for ${country}.`);
+  }
+
   for (const race of fallbackLocalRaces) {
     const row = racePayload(race);
     const { data: upserted, error: upErr } = await sb

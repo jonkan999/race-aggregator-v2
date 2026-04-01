@@ -9,7 +9,7 @@ const country = 'se';
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const pageTitle = String(content.add_race_title ?? content.navigation?.['add-race'] ?? 'Add race');
-const title = `${pageTitle} | ${content.page_name ?? 'Loppkartan'}`;
+const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(content.add_race_meta_description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'add-race' });
 const center = (content.mapbox_center ?? {}) as { latitude?: number; longitude?: number };
@@ -32,7 +32,7 @@ const quickDistances = [
   { value: '80.5', label: String(content.fifty_miles_button ?? '50 miles') },
   { value: '160.9', label: String(content.hundred_miles_button ?? '100 miles') },
 ];
-const contactSegment = slugify(String(content.navigation?.contact ?? 'Contact us'), country);
+const contactSegment = slugify(String(content.navigation?.contact ?? ''), country);
 const contactHref = `/en/${contactSegment}/`;
 const submissionFlow = (content.submission_flow ?? {}) as Record<string, string>;
 ---
@@ -55,7 +55,7 @@ const submissionFlow = (content.submission_flow ?? {}) as Record<string, string>
       countryCode={country}
       locale={locale}
       siteKey={siteKey}
-      siteName={String(content.page_name ?? 'Loppkartan')}
+      siteName={String(content.page_name ?? '')}
       mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
       centerLat={Number(center.latitude ?? 62.0)}
       centerLng={Number(center.longitude ?? 15.0)}

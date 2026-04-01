@@ -16,12 +16,16 @@ import {
   getBrowseOverviewHref,
   getCategoryItemListJson,
   getCategorySiblingNavigationEntries,
+  getCategoryTypePageHref,
   getRaceListBaseHref,
 } from '../../../../../../lib/raceBrowse';
 import { categoryFilterOptionsFromYaml } from '../../../../../../lib/categoryFilterOptions';
-import { getScopedSeoCopy } from '../../../../../../lib/seoPageCopy';
+import {
+  getBrowsePageSeoCopy,
+  getRaceTypeCategorySeoCacheKeys,
+} from '../../../../../../lib/seoPageCopy';
 import { pickTranslation } from '../../../../../../lib/raceListRow';
-import { getRaceListSnapshot } from '../../../../../../lib/raceListSsg';
+import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../../../../lib/raceListSsg';
 
 export async function getStaticPaths() {
   const country = 'se';
@@ -33,7 +37,7 @@ export async function getStaticPaths() {
     );
     const categories = await getBrowseCategoryEntries({ countryCode: country, locale: 'en', content });
     for (const category of categories) {
-      for (const typeLink of category.topTypes) {
+      for (const typeLink of category.allTypes) {
         const hrefParts = typeLink.href.split('/').filter(Boolean);
         paths.push({
           params: {
@@ -79,6 +83,7 @@ if (!raceTypeEntry) {
 
 const [raceTypeKey, raceTypeLabel] = raceTypeEntry;
 const snapshot = await getRaceListSnapshot(country, {
+  ...defaultUpcomingRaceListFilters(),
   raceType: raceTypeKey,
   ...(category.option.kind === 'distance'
     ? {
@@ -89,18 +94,17 @@ const snapshot = await getRaceListSnapshot(country, {
 });
 
 const market = String(content.country ?? content.country_native ?? 'Sweden');
-const seoCopy = getScopedSeoCopy({
+const seoCopy = getBrowsePageSeoCopy({
   countryCode: country,
   locale: 'en',
   content,
-  cacheKeys: [
-    `race_type:${raceTypeLabel}-category:${category.label}`,
-    `race_type:${raceTypeKey}-category:${category.label}`,
-  ],
-  title: `${category.label} ${raceTypeLabel.toLowerCase()} races | ${content.page_name ?? content.race_list_name ?? market}`,
-  description: `Find ${category.label.toLowerCase()} ${raceTypeLabel.toLowerCase()} races in ${market}.`,
-  h1: `${category.label} ${raceTypeLabel} races`,
-  paragraph: `Find ${category.label.toLowerCase()} ${raceTypeLabel.toLowerCase()} races in ${market}. Compare dates, distances and practical details before choosing your next race.`,
+  cacheKeys: getRaceTypeCategorySeoCacheKeys({
+    raceTypeValues: [raceTypeLabel, raceTypeKey],
+    categoryValues: [category.label],
+  }),
+  kind: 'race_type_category',
+  label: category.label,
+  secondaryLabel: raceTypeLabel,
 });
 
 const racePageFolder = String(content.race_page_folder_name ?? 'race-pages');
@@ -142,7 +146,13 @@ if (hasEnglishMerge(country)) {
   });
   const nativeMatch = findMatchingBrowseCategory(nativeCategories, category);
   if (nativeMatch) {
-    alternateRaceListHref = `${nativeMatch.href}${slugify(raceTypeKey, country)}/`;
+    alternateRaceListHref = getCategoryTypePageHref({
+      countryCode: country,
+      locale: 'native',
+      content: nativeContent,
+      categorySlug: nativeMatch.slug,
+      raceTypeKey,
+    });
   }
 }
 ---
@@ -159,8 +169,8 @@ if (hasEnglishMerge(country)) {
   overviewHref={overviewHref}
   categoriesHref={categoriesHref}
   breadcrumbs={[
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
-    { label: String(content.browse_by_category?.categories ?? 'Categories'), href: categoriesHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
+    { label: String(content.browse_by_category?.categories ?? ''), href: categoriesHref },
     { label: category.label, href: category.href },
     { label: raceTypeLabel },
   ]}

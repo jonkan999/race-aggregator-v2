@@ -3,7 +3,6 @@ import RaceListLayout from '../../layouts/RaceListLayout.astro';
 import RaceListPageIsland from '../../components/RaceListPageIsland';
 import {
   findCountryByRaceListSlug,
-  listCountryCodes,
   localeBasePrefix,
   loadIndexYaml,
   raceListSlug,
@@ -15,16 +14,12 @@ import { getAllRaceListRows, getRaceListFirstPageSnapshot } from '../../lib/race
 import { categoryFilterOptionsFromYaml } from '../../lib/categoryFilterOptions';
 import { getNeighboringCountryOptions } from '../../lib/neighboringCountryOptions';
 import { pickTranslation } from '../../lib/raceListRow';
+import { rowHasUpcomingRaceWithinWindow } from '../../lib/upcomingRaceWindow';
 
 export function getStaticPaths() {
-  const paths: { params: { raceList: string } }[] = [];
-  for (const country of listCountryCodes()) {
-    const content = loadIndexYaml(country, 'native');
-    paths.push({
-      params: { raceList: raceListSlug(content, country) },
-    });
-  }
-  return paths;
+  const country = 'se';
+  const content = loadIndexYaml(country, 'native');
+  return [{ params: { raceList: raceListSlug(content, country) } }];
 }
 
 const { raceList } = Astro.params;
@@ -47,7 +42,10 @@ const desc = `${content.race_list_meta_description_1 ?? ''} ${content.race_list_
 const listSnapshot = await getRaceListFirstPageSnapshot(country);
 const highlightedRows = (await getAllRaceListRows(country)).rows.filter((row) => {
   const payload = row.payload ?? {};
-  return Boolean(payload.supplied_at) || (Array.isArray(payload.supplied_ids) && payload.supplied_ids.length > 0);
+  return (
+    (Boolean(payload.supplied_at) || (Array.isArray(payload.supplied_ids) && payload.supplied_ids.length > 0)) &&
+    rowHasUpcomingRaceWithinWindow(row)
+  );
 });
 const raceListSlugEn = hasEnglishMerge(country)
   ? raceListSlug(loadIndexYaml(country, 'en'), country)
@@ -106,7 +104,7 @@ const itemListJson = JSON.stringify({
   alternateRaceListHref={alternateRaceListHref}
 >
   <script slot="head" type="application/ld+json" set:html={itemListJson} />
-  <nav class="visually-hidden" aria-label={String(content.race_list_name ?? 'Races')}>
+  <nav class="visually-hidden" aria-label={String(content.race_list_name ?? '')}>
     <ul>
       {
         listSnapshot.rows.map((r) => {
@@ -142,6 +140,7 @@ const itemListJson = JSON.stringify({
     browseByCategoryButton={browseBtn}
     browseByCategoryHref={browseHref}
     selectedRacesTitle={String(content.selected_races_title ?? '')}
+    selectedRacesTopTitle={String(content.selected_races_top_title ?? '')}
     enableHighlightedRaces={true}
     mapToggleDesktop={String(content.map_toggle_desktop ?? '')}
     mapToggleDesktopActive={String(content.map_toggle_desktop_active ?? '')}

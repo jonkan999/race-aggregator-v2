@@ -1,6 +1,8 @@
 import type { IndexYaml, Locale } from './content';
 import { categoryFilterOptionsFromYaml, type CategoryFilterOption } from './categoryFilterOptions';
 import { slugify } from './content';
+import { getMarketRouteTargets } from './marketRouteTargets';
+import { resolveRaceDetailHref } from './marketRoutes';
 import {
   formatDistanceSegment,
   normalizeRaceImageUrl,
@@ -8,6 +10,7 @@ import {
 } from './raceCardDisplay';
 import {
   getBrowseCountyPageHref,
+  getBrowseOverviewData,
   getBrowseOverviewHref,
   getBrowseTypePageHref,
   getCategoryPageHref,
@@ -243,7 +246,14 @@ export function resolveRaceImages(
   const hasSuppliedImages =
     suppliedImages === true ||
     (Array.isArray(suppliedImages) && suppliedImages.length > 0);
-  if (!hasSuppliedImages) return [];
+  if (!hasSuppliedImages) {
+    return [
+      {
+        src: fallbackRaceImage(row.domain_name, row.race_type),
+        alt: `${altPrefix}${raceName}`,
+      },
+    ];
+  }
 
   const payloadImages = Array.isArray(row.payload?.images)
     ? (row.payload?.images as RaceImage[])
@@ -397,25 +407,28 @@ export function raceDetailParagraphs(value: string): string[] {
   return cleanMultilineParagraphs(value);
 }
 
-export function getRaceDetailRelatedContent(args: {
+export async function getRaceDetailRelatedContent(args: {
   countryCode: string;
   locale: Locale;
   content: IndexYaml;
   currentRow: RaceListRow;
   allRows: RaceListRow[];
-}): RaceDetailRelatedContent {
+}): Promise<RaceDetailRelatedContent> {
   const { countryCode, locale, content, currentRow, allRows } = args;
   const translationLocale = locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv');
   const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
   const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
   const racePageFolder = String(content.race_page_folder_name ?? (locale === 'en' ? 'race-pages' : 'loppsidor'));
-  const localePrefix = getRaceListBaseHref(countryCode, locale, content).replace(/[^/]+\/$/, '');
   const listHref = getRaceListBaseHref(countryCode, locale, content);
   const overviewHref = getBrowseOverviewHref(countryCode, locale, content);
+  const marketRouteTargets = getMarketRouteTargets();
+  const overviewData = await getBrowseOverviewData({ countryCode, locale, content });
+  const countyKeys = new Set(overviewData.counties.map((entry) => normalizedText(entry.key)));
+  const currentCountyKey = normalizedText(currentRow.county);
   const currentCountyLabel = currentRow.county
     ? (countyMapping[currentRow.county] ?? currentRow.county)
     : '';
-  const countyHref = currentCountyLabel
+  const countyHref = currentCountyLabel && currentCountyKey && countyKeys.has(currentCountyKey)
     ? getBrowseCountyPageHref({
         countryCode,
         locale,
@@ -440,16 +453,13 @@ export function getRaceDetailRelatedContent(args: {
   };
 
   const countyTemplate = String(
-    content.race_page_discover_county_link ??
-      (locale === 'en' ? 'All races in {county}' : 'Alla lopp i {county}'),
+    content.race_page_discover_county_link ?? '',
   );
   const typeTemplate = String(
-    content.race_page_discover_type_link ??
-      (locale === 'en' ? 'More {type} races' : 'Fler lopp av typen {type}'),
+    content.race_page_discover_type_link ?? '',
   );
   const categoryTemplate = String(
-    content.race_page_discover_category_link ??
-      (locale === 'en' ? 'More {category} races' : 'Fler {category} lopp'),
+    content.race_page_discover_category_link ?? '',
   );
 
   if (currentCountyLabel && countyHref) {
@@ -483,17 +493,13 @@ export function getRaceDetailRelatedContent(args: {
   }
 
   addShortcut(
-    String(
-      content.race_page_discover_overview_link ??
-        (locale === 'en' ? 'Browse all race categories' : 'Bläddra bland alla kategorier'),
-    ),
+    String(content.race_page_discover_overview_link ?? ''),
     overviewHref,
   );
 
   const currentDateKey = firstComparableRowDate(currentRow);
   const currentDateNumber = comparableDateToEpochDay(currentDateKey);
   const todayEpochDay = todayEpochDayUtc();
-  const currentCountyKey = normalizedText(currentRow.county);
   const currentTypeKey = normalizedText(currentRow.race_type);
   const currentCategoryKey = primaryCategory?.label ?? '';
   const currentLatitude = currentRow.latitude;
@@ -556,7 +562,13 @@ export function getRaceDetailRelatedContent(args: {
 
     return {
       id: candidate.id,
-      href: `${localePrefix}${racePageFolder}/${candidate.domain_name}/`,
+      href: resolveRaceDetailHref({
+        hostCountryCode: countryCode,
+        routeLocale: locale,
+        localRacePageFolder: racePageFolder,
+        row: candidate,
+        marketRouteTargets,
+      }),
       name: candidateTranslation?.name?.trim() || candidate.domain_name,
       dateLabel: candidateDetail.dateEntries[0]?.label ?? '',
       locationLabel,

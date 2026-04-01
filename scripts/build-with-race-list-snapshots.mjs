@@ -49,9 +49,16 @@ async function main() {
       RACE_LIST_BUILD_SNAPSHOT_DIR: snapshotDir,
     });
 
+    await runNodeScript('./scripts/build-browse-seo-cache.mjs', process.argv.slice(2), {
+      RACE_LIST_BUILD_SNAPSHOT_DIR: snapshotDir,
+      BROWSE_SEO_PROVIDER: process.env.BROWSE_SEO_PROVIDER ?? 'template',
+    });
+
     await runAstroBuild({
       RACE_LIST_BUILD_SNAPSHOT_DIR: snapshotDir,
     });
+
+    await runNodeScript('./scripts/generate-sitemap.mjs');
   } finally {
     fs.rmSync(snapshotDir, { recursive: true, force: true });
   }

@@ -56,7 +56,7 @@ const breadcrumbSchema =
             item: {
               '@id': `${baseUrl}${homePath}`,
               '@type': 'WebPage',
-              name: String(content.page_name ?? 'Home'),
+              name: String(content.page_name ?? ''),
             },
           },
           {
@@ -86,7 +86,7 @@ const breadcrumbSchema =
       alternateUrl && (
         <link rel="alternate" hreflang={locale === 'en' ? 'sv' : 'en'} href={alternateUrl} />
       )
-    }
+}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />

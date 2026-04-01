@@ -11,6 +11,7 @@ import { getAllRaceListRows, getRaceListFirstPageSnapshot } from '../../../lib/r
 import { categoryFilterOptionsFromYaml } from '../../../lib/categoryFilterOptions';
 import { getNeighboringCountryOptions } from '../../../lib/neighboringCountryOptions';
 import { pickTranslation } from '../../../lib/raceListRow';
+import { rowHasUpcomingRaceWithinWindow } from '../../../lib/upcomingRaceWindow';
 
 export function getStaticPaths() {
   const country = 'se';
@@ -34,7 +35,10 @@ const desc = `${content.race_list_meta_description_1 ?? ''} ${content.race_list_
 const listSnapshot = await getRaceListFirstPageSnapshot(country);
 const highlightedRows = (await getAllRaceListRows(country)).rows.filter((row) => {
   const payload = row.payload ?? {};
-  return Boolean(payload.supplied_at) || (Array.isArray(payload.supplied_ids) && payload.supplied_ids.length > 0);
+  return (
+    (Boolean(payload.supplied_at) || (Array.isArray(payload.supplied_ids) && payload.supplied_ids.length > 0)) &&
+    rowHasUpcomingRaceWithinWindow(row)
+  );
 });
 const nativeListSlug = raceListSlug(loadIndexYaml(country, 'native'), country);
 const alternateRaceListHref = `/${nativeListSlug}/`;
@@ -91,7 +95,7 @@ const itemListJson = JSON.stringify({
   alternateRaceListHref={alternateRaceListHref}
 >
   <script slot="head" type="application/ld+json" set:html={itemListJson} />
-  <nav class="visually-hidden" aria-label={String(content.race_list_name ?? 'Races')}>
+  <nav class="visually-hidden" aria-label={String(content.race_list_name ?? '')}>
     <ul>
       {
         listSnapshot.rows.map((r) => {
@@ -127,6 +131,7 @@ const itemListJson = JSON.stringify({
     browseByCategoryButton={browseBtn}
     browseByCategoryHref={browseHref}
     selectedRacesTitle={String(content.selected_races_title ?? '')}
+    selectedRacesTopTitle={String(content.selected_races_top_title ?? '')}
     enableHighlightedRaces={true}
     mapToggleDesktop={String(content.map_toggle_desktop ?? '')}
     mapToggleDesktopActive={String(content.map_toggle_desktop_active ?? '')}

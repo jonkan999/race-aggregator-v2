@@ -7,6 +7,15 @@ import { slugify } from './slugify';
 export type Locale = 'native' | 'en';
 
 export type IndexYaml = {
+  accessibility?: {
+    main_navigation_label?: string;
+    breadcrumb_label?: string;
+    back_to_top_label?: string;
+    social_facebook_label?: string;
+    social_instagram_label?: string;
+    social_youtube_label?: string;
+    social_tiktok_label?: string;
+  };
   navigation?: Record<string, string>;
   auxiliary_pages?: Record<string, string>;
   about_us?: {
@@ -105,6 +114,12 @@ export type IndexYaml = {
   };
   browse_overview?: { title?: string; meta_description?: string };
   browse_categories?: { title?: string; meta_description?: string };
+  home_tools?: {
+    measure_route?: { description?: string };
+    training_plans?: { description?: string };
+    racetime_estimator?: { description?: string };
+    pace_calculator?: { description?: string };
+  };
   auth_modal?: Record<string, string>;
   newsletter_popup?: Record<string, unknown>;
   submission_flow?: Record<string, string>;
@@ -124,6 +139,66 @@ export type IndexYaml = {
   seo_templates?: {
     title_parts?: Record<string, string>;
     paragraph_templates?: Record<string, string>;
+    browse_page_templates?: Record<
+      string,
+      {
+        title?: string;
+        meta_description?: string;
+        h1?: string;
+        paragraph?: string;
+      }
+    >;
+  };
+  seo_generation?: {
+    browse_system_prompt?: string;
+    browse_guidance?: Record<string, string>;
+  };
+  browse_seo_indexing?: {
+    county_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+    };
+    city_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+      require_qualified_city?: boolean;
+    };
+    month_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+    };
+    race_type_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+      allowed_race_type_keys?: string[];
+    };
+    category_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+      allowed_labels?: string[];
+    };
+    race_type_category_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+      allowed_race_type_keys?: string[];
+      allowed_labels?: string[];
+    };
+    race_type_county_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+      allowed_race_type_keys?: string[];
+    };
+    race_type_month_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+      allowed_race_type_keys?: string[];
+    };
+    race_type_city_pages?: {
+      enabled?: boolean;
+      min_race_count?: number;
+      allowed_race_type_keys?: string[];
+      require_qualified_city?: boolean;
+    };
   };
   section_race_card_category_prefix?: string;
   section_race_card_category_suffix?: string;
@@ -136,6 +211,33 @@ export type IndexYaml = {
 };
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+
+function resolveContentPlaceholders(value: unknown): unknown {
+  const replacements: Record<string, string> = {
+    CURRENT_YEAR: String(new Date().getFullYear()),
+  };
+
+  if (typeof value === 'string') {
+    return value.replace(/\{\{([A-Z0-9_]+)\}\}/g, (match, key: string) => {
+      return replacements[key] ?? match;
+    });
+  }
+
+  if (Array.isArray(value)) {
+    return value.map((item) => resolveContentPlaceholders(item));
+  }
+
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value as Record<string, unknown>).map(([key, item]) => [
+        key,
+        resolveContentPlaceholders(item),
+      ]),
+    );
+  }
+
+  return value;
+}
 
 function dataCountriesDir(): string {
   return path.join(repoRoot, 'data', 'countries');
@@ -174,11 +276,11 @@ export function loadIndexYaml(countryCode: string, locale: Locale): IndexYaml {
   if (!doc || typeof doc !== 'object') {
     throw new Error(`Invalid YAML: ${file}`);
   }
-  return doc;
+  return resolveContentPlaceholders(doc) as IndexYaml;
 }
 
 export function raceListSlug(content: IndexYaml, countryCode: string): string {
-  const label = content.navigation?.['race-list'] ?? 'races';
+  const label = content.navigation?.['race-list'] ?? '';
   return slugify(label, countryCode);
 }
 
@@ -192,6 +294,18 @@ export function findCountryByRaceListSlug(raceList: string, locale: Locale): str
   return null;
 }
 
+/**
+ * Public production routing is market-scoped per domain:
+ * native pages live at `/...` and English pages live at `/en/...`.
+ */
+export function publicLocaleBasePrefix(locale: Locale): string {
+  return locale === 'en' ? '/en/' : '/';
+}
+
+/**
+ * Country-aware prefix helper retained for market-specific content code.
+ * Public IA should still be modeled as native `/...` and English `/en/...`.
+ */
 export function localeBasePrefix(countryCode: string, locale: Locale): string {
   if (locale === 'en') {
     return countryCode === 'se' ? '/en/' : `/${countryCode}/en/`;

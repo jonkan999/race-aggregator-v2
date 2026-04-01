@@ -8,6 +8,7 @@ import { slugify } from '../../../../../lib/slugify';
 import {
   BROWSE_CATEGORIES_SEGMENT,
   getBrowseCategoriesIndexHref,
+  getBrowseNeighboringIndexHref,
   getBrowseCategoryEntries,
   getBrowseOverviewHref,
 } from '../../../../../lib/raceBrowse';
@@ -35,8 +36,9 @@ if (raceList !== expectedRaceList || browse !== expectedBrowse) {
 
 const overviewHref = getBrowseOverviewHref(country, 'en', content);
 const categoriesHref = getBrowseCategoriesIndexHref(country, 'en', content);
+const neighboringHref = getBrowseNeighboringIndexHref(country, 'en', content);
 const categories = await getBrowseCategoryEntries({ countryCode: country, locale: 'en', content });
-const title = String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? 'Categories');
+const title = String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? '');
 const description = String(content.browse_categories?.meta_description ?? '');
 const alternateRaceListHref = getBrowseCategoriesIndexHref(country, 'native', loadIndexYaml(country, 'native'));
 ---
@@ -52,8 +54,9 @@ const alternateRaceListHref = getBrowseCategoriesIndexHref(country, 'native', lo
   activeTab="categories"
   overviewHref={overviewHref}
   categoriesHref={categoriesHref}
+  neighboringHref={neighboringHref}
   breadcrumbs={[
-    { label: String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? 'Browse by category'), href: overviewHref },
+    { label: String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? ''), href: overviewHref },
     { label: title },
   ]}
 >

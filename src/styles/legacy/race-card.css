@@ -56,6 +56,10 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
   text-align: right;
   overflow: hidden;
   text-overflow: ellipsis;

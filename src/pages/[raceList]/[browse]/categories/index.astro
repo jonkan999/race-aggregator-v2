@@ -3,7 +3,6 @@ import BrowseLayout from '../../../../layouts/BrowseLayout.astro';
 import {
   findCountryByRaceListSlug,
   hasEnglishMerge,
-  listCountryCodes,
   loadIndexYaml,
   raceListSlug,
   type Locale,
@@ -12,20 +11,20 @@ import { slugify } from '../../../../lib/slugify';
 import {
   BROWSE_CATEGORIES_SEGMENT,
   getBrowseCategoriesIndexHref,
+  getBrowseNeighboringIndexHref,
   getBrowseCategoryEntries,
   getBrowseOverviewHref,
 } from '../../../../lib/raceBrowse';
 
 export function getStaticPaths() {
-  return listCountryCodes().map((country) => {
-    const content = loadIndexYaml(country, 'native');
-    return {
-      params: {
-        raceList: raceListSlug(content, country),
-        browse: slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country),
-      },
-    };
-  });
+  const country = 'se';
+  const content = loadIndexYaml(country, 'native');
+  return [{
+    params: {
+      raceList: raceListSlug(content, country),
+      browse: slugify(String(content.browse_by_category?.button ?? 'browse-by-category'), country),
+    },
+  }];
 }
 
 const { raceList, browse } = Astro.params;
@@ -44,8 +43,9 @@ if (raceList !== expectedRaceList || browse !== expectedBrowse) {
 
 const overviewHref = getBrowseOverviewHref(country, locale, content);
 const categoriesHref = getBrowseCategoriesIndexHref(country, locale, content);
+const neighboringHref = getBrowseNeighboringIndexHref(country, locale, content);
 const categories = await getBrowseCategoryEntries({ countryCode: country, locale, content });
-const title = String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? 'Categories');
+const title = String(content.browse_categories?.title ?? content.browse_by_category?.categories ?? '');
 const description = String(content.browse_categories?.meta_description ?? '');
 const alternateRaceListHref = hasEnglishMerge(country)
   ? getBrowseCategoriesIndexHref(country, 'en', loadIndexYaml(country, 'en'))
@@ -63,6 +63,7 @@ const alternateRaceListHref = hasEnglishMerge(country)
   activeTab="categories"
   overviewHref={overviewHref}
   categoriesHref={categoriesHref}
+  neighboringHref={neighboringHref}
   breadcrumbs={[
     { label: String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? 'Bläddra efter kategori'), href: overviewHref },
     { label: title },

@@ -1,3 +1,23 @@
 ---
-return Astro.redirect('/loppkalender/', 302);
+import HomePage from '../components/HomePage.astro';
+import HomeLayout from '../layouts/HomeLayout.astro';
+import { loadIndexYaml } from '../lib/content';
+import { getHomePageData } from '../lib/homePage';
+
+const country = 'se';
+const locale = 'native';
+const content = loadIndexYaml(country, locale);
+const data = await getHomePageData({ countryCode: country, locale, content });
 ---
+
+<HomeLayout
+  title={data.title}
+  description={data.description}
+  lang={String(content.country_language_code ?? 'sv')}
+  country={country}
+  locale={locale}
+  content={content}
+  alternateHref="/en/"
+>
+  <HomePage country={country} locale={locale} content={content} data={data} />
+</HomeLayout>

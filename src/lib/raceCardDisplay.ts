@@ -83,3 +83,29 @@ export function splitDistanceVerbose(verbose: string | null | undefined): string
     .map((s) => s.trim())
     .filter(Boolean);
 }
+
+const KNOWN_FLAG_CODES = new Set([
+  'en',
+  'se',
+  'sv',
+  'no',
+  'fi',
+  'dk',
+  'da',
+  'de',
+  'fr',
+  'es',
+  'it',
+  'pt',
+  'ee',
+  'lv',
+  'lt',
+  'pl',
+  'nl',
+  'be',
+]);
+
+export function supportedFlagCode(code: string | null | undefined): string | null {
+  const normalized = code?.trim().toLowerCase() ?? '';
+  return KNOWN_FLAG_CODES.has(normalized) ? normalized : null;
+}

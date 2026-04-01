@@ -4,12 +4,30 @@ import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 import type { CategoryFilterOption } from './categoryFilterOptions';
 import { categoryFilterOptionsFromYaml } from './categoryFilterOptions';
+import {
+  getBrowseSeoIndexingPolicy,
+  isBrowseCombinationAllowed,
+  isBrowseStandaloneAllowed,
+} from './browseSeoIndexing.js';
+import { cityNamesMatch } from './cityNames';
 import type { IndexYaml, Locale } from './content';
 import { getNeighboringCountryOptions } from './neighboringCountryOptions';
 import { primaryRaceImageUrl } from './raceCardDisplay';
-import { getAllRaceListRows, getRaceListSnapshot, type RaceListSnapshotFilters } from './raceListSsg';
+import {
+  defaultUpcomingRaceListFilters,
+  getAllRaceListRows,
+  getRaceListSnapshot,
+  type RaceListSnapshotFilters,
+} from './raceListSsg';
+import { getMarketRouteTargets } from './marketRouteTargets';
+import {
+  getNeighboringCountryPath,
+  getNeighboringIndexPath,
+  resolveRaceDetailHref,
+} from './marketRoutes';
 import { isDomesticOrigin } from './neighboringSelection';
 import { pickTranslation, type RaceListRow } from './raceListRow';
+import { filterRowsToUpcomingWindow } from './upcomingRaceWindow';
 import { localeBasePrefix, raceListSlug, slugify } from './content';
 
 export const BROWSE_CATEGORIES_SEGMENT = 'categories';
@@ -27,6 +45,7 @@ export type BrowseCategoryEntry = {
   count: number;
   href: string;
   option: CategoryFilterOption;
+  allTypes: Array<{ label: string; count: number; href: string }>;
   topTypes: Array<{ label: string; count: number; href: string }>;
 };
 
@@ -59,18 +78,41 @@ export type BrowseNavigationEntry = {
   count: number;
 };
 
+export type BrowseScopedRaceTypeEntry = {
+  key: string;
+  label: string;
+  slug: string;
+  href: string;
+  count: number;
+};
+
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+
+type QualifiedCitiesYaml = {
+  cities?: Array<{
+    name?: string;
+    original_name?: string;
+    nearby_race_count?: number;
+  }>;
+};
+
+type QualifiedCity = {
+  label: string;
+  aliases: string[];
+  nearbyRaceCount: number;
+};
 
 function distanceFilterPath(countryCode: string): string {
   return path.join(repoRoot, 'data', 'countries', countryCode, 'distance_filter.yaml');
 }
 
+function qualifiedCitiesPath(countryCode: string): string {
+  return path.join(repoRoot, 'data', 'countries', countryCode, 'qualified_cities.yaml');
+}
+
 function browseBasePath(countryCode: string, locale: Locale, content: IndexYaml): string {
   const listSlug = raceListSlug(content, countryCode);
-  const browseSlug = slugify(
-    String(content.browse_by_category?.button ?? 'browse-by-category'),
-    countryCode,
-  );
+  const browseSlug = slugify(String(content.browse_by_category?.button ?? ''), countryCode);
   return `${localeBasePrefix(countryCode, locale)}${listSlug}/${browseSlug}`;
 }
 
@@ -91,19 +133,12 @@ function raceTypeSlug(countryCode: string, locale: Locale, content: IndexYaml, r
 }
 
 function allCountiesSlug(countryCode: string, content: IndexYaml): string {
-  return slugify(String(content.county_label_text ?? 'all-counties'), countryCode);
+  return slugify(String(content.county_label_text ?? ''), countryCode);
 }
 
 function citiesFolderSlug(countryCode: string, content: IndexYaml): string {
   return slugify(
-    String(content.seo_cities_folder_name ?? content.browse_by_category?.cities ?? 'cities'),
-    countryCode,
-  );
-}
-
-function neighboringFolderSlug(countryCode: string, content: IndexYaml): string {
-  return slugify(
-    String(content.browse_by_category?.neighboring ?? content.browse_neighboring?.title ?? 'neighboring'),
+    String(content.seo_cities_folder_name ?? content.browse_by_category?.cities ?? ''),
     countryCode,
   );
 }
@@ -127,9 +162,9 @@ export function getBrowseCategoriesIndexHref(
 export function getBrowseNeighboringIndexHref(
   countryCode: string,
   locale: Locale,
-  content: IndexYaml,
+  _content: IndexYaml,
 ): string {
-  return `${raceListBasePath(countryCode, locale, content)}${neighboringFolderSlug(countryCode, content)}/`;
+  return getNeighboringIndexPath(countryCode, locale);
 }
 
 export function getBrowseScopePageHref(args: {
@@ -197,10 +232,11 @@ export function getBrowseNeighboringCountryPageHref(args: {
   content: IndexYaml;
   neighborCountryCode: string;
 }): string {
-  return `${getBrowseNeighboringIndexHref(args.countryCode, args.locale, args.content)}${slugify(
-    args.neighborCountryCode,
-    args.countryCode,
-  )}/`;
+  return getNeighboringCountryPath({
+    countryCode: args.countryCode,
+    locale: args.locale,
+    neighborCountryCode: args.neighborCountryCode,
+  });
 }
 
 export function getCategoryPageHref(args: {
@@ -284,8 +320,11 @@ export async function getBrowseCategoryEntries(args: {
   content: IndexYaml;
 }): Promise<BrowseCategoryEntry[]> {
   const { countryCode, locale, content } = args;
+  const policy = getBrowseSeoIndexingPolicy(content);
   const allRows = await getAllRaceListRows(countryCode);
-  const domesticRows = allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode));
+  const domesticRows = filterRowsToUpcomingWindow(
+    allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode)),
+  );
   const options = categoryFilterOptionsFromYaml(content.category_mapping);
   const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
 
@@ -293,6 +332,14 @@ export async function getBrowseCategoryEntries(args: {
     .map((option) => {
       const filtered = domesticRows.filter((row) => matchesCategory(row, option));
       if (filtered.length === 0) return null;
+      if (
+        !isBrowseStandaloneAllowed(policy, 'category', {
+          label: option.label,
+          count: filtered.length,
+        })
+      ) {
+        return null;
+      }
 
       const typeCounts = new Map<string, number>();
       for (const row of filtered) {
@@ -309,9 +356,15 @@ export async function getBrowseCategoryEntries(args: {
         categorySlug: slug,
       });
 
-      const topTypes = [...typeCounts.entries()]
+      const allTypes = [...typeCounts.entries()]
+        .filter(([typeKey, count]) =>
+          isBrowseCombinationAllowed(policy, 'race_type_category', {
+            raceTypeKey: typeKey,
+            label: option.label,
+            count,
+          }),
+        )
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'sv'))
-        .slice(0, 5)
         .map(([typeKey, count]) => ({
           label: typeOptions[typeKey] ?? typeKey,
           count,
@@ -330,7 +383,8 @@ export async function getBrowseCategoryEntries(args: {
         count: filtered.length,
         href,
         option,
-        topTypes,
+        allTypes,
+        topTypes: allTypes.slice(0, 5),
       } satisfies BrowseCategoryEntry;
     })
     .filter((entry): entry is BrowseCategoryEntry => entry !== null);
@@ -354,6 +408,7 @@ function formatSchemaDate(raw: string | null): string | null {
 }
 
 function absoluteUrl(baseUrl: string, path: string): string {
+  if (/^https?:\/\//.test(path)) return path;
   return baseUrl ? `${baseUrl}${path}` : path;
 }
 
@@ -378,6 +433,43 @@ function addEntryCount(map: Map<string, number>, key: string) {
   map.set(key, (map.get(key) ?? 0) + 1);
 }
 
+function loadQualifiedCities(countryCode: string): QualifiedCity[] {
+  const file = qualifiedCitiesPath(countryCode);
+  if (!fs.existsSync(file)) return [];
+
+  try {
+    const parsed = (yaml.load(fs.readFileSync(file, 'utf8')) as QualifiedCitiesYaml) ?? {};
+    if (!Array.isArray(parsed.cities)) return [];
+
+    return parsed.cities
+      .map((entry) => {
+        const label = typeof entry.name === 'string' ? entry.name.trim() : '';
+        if (!label) return null;
+
+        const aliases = Array.from(
+          new Set(
+            [label, entry.original_name]
+              .filter((value): value is string => typeof value === 'string')
+              .map((value) => value.trim())
+              .filter(Boolean),
+          ),
+        );
+
+        return {
+          label,
+          aliases,
+          nearbyRaceCount:
+            typeof entry.nearby_race_count === 'number' && Number.isFinite(entry.nearby_race_count)
+              ? entry.nearby_race_count
+              : 0,
+        } satisfies QualifiedCity;
+      })
+      .filter((entry): entry is QualifiedCity => entry !== null);
+  } catch {
+    return [];
+  }
+}
+
 function uniqueRowCities(row: RaceListRow): string[] {
   const values = new Set<string>();
   const nearestCity =
@@ -394,9 +486,13 @@ function uniqueRowCities(row: RaceListRow): string[] {
 }
 
 export function rowMatchesCity(row: RaceListRow, city: string): boolean {
-  const normalized = city.trim().toLowerCase();
+  const normalized = city.trim();
   if (!normalized) return false;
-  return uniqueRowCities(row).some((value) => value.toLowerCase() === normalized);
+  return uniqueRowCities(row).some((value) => cityNamesMatch(value, normalized));
+}
+
+function rowMatchesAnyCity(row: RaceListRow, cityAliases: string[]): boolean {
+  return cityAliases.some((city) => rowMatchesCity(row, city));
 }
 
 function firstNearestCity(row: RaceListRow): string | null {
@@ -410,7 +506,7 @@ export async function getBrowseNeighboringEntries(args: {
   content: IndexYaml;
 }): Promise<BrowseOverviewSectionEntry[]> {
   const { countryCode, locale, content } = args;
-  const allRows = await getAllRaceListRows(countryCode);
+  const allRows = filterRowsToUpcomingWindow((await getAllRaceListRows(countryCode)).rows);
   const neighboringOptions = await getNeighboringCountryOptions({
     hostCountryCode: countryCode,
     locale,
@@ -418,7 +514,7 @@ export async function getBrowseNeighboringEntries(args: {
   });
 
   const counts = new Map<string, number>();
-  for (const row of allRows.rows) {
+  for (const row of allRows) {
     const origin = row.origin_country?.trim().toLowerCase();
     if (!origin || isDomesticOrigin(origin, countryCode)) continue;
     addEntryCount(counts, origin);
@@ -451,8 +547,11 @@ export async function getBrowseOverviewData(args: {
   content: IndexYaml;
 }): Promise<BrowseOverviewData> {
   const { countryCode, locale, content } = args;
+  const policy = getBrowseSeoIndexingPolicy(content);
   const allRows = await getAllRaceListRows(countryCode);
-  const domesticRows = allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode));
+  const domesticRows = filterRowsToUpcomingWindow(
+    allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode)),
+  );
   const translationLocale = translationLocaleForContent(content, locale);
   const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
   const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
@@ -496,26 +595,63 @@ export async function getBrowseOverviewData(args: {
 
   const neighboring = await getBrowseNeighboringEntries(args);
 
-  const cityEntries = [...cityCandidateCounts.keys()]
-    .map((label) => {
-      const count = domesticRows.filter((row) => rowMatchesCity(row, label)).length;
-      if (count === 0) return null;
-      return {
-        key: label,
-        label,
-        slug: slugify(label, countryCode),
-        href: getBrowseCityPageHref({
-          countryCode,
-          locale,
-          content,
-          cityLabel: label,
-        }),
-        count,
-      } satisfies BrowseOverviewSectionEntry;
-    })
-    .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
-    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv'))
-    .slice(0, BROWSE_CITY_LIMIT);
+  const qualifiedCities = loadQualifiedCities(countryCode);
+  const cityEntries =
+    qualifiedCities.length > 0
+      ? qualifiedCities
+          .map((city) => {
+            const count = domesticRows.filter((row) => rowMatchesAnyCity(row, city.aliases)).length;
+            if (count === 0) return null;
+            if (
+              !isBrowseStandaloneAllowed(policy, 'city', {
+                count,
+                isQualifiedCity: true,
+              })
+            ) {
+              return null;
+            }
+            return {
+              key: city.label,
+              label: city.label,
+              slug: slugify(city.label, countryCode),
+              href: getBrowseCityPageHref({
+                countryCode,
+                locale,
+                content,
+                cityLabel: city.label,
+              }),
+              count,
+            } satisfies BrowseOverviewSectionEntry;
+          })
+          .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
+      : [...cityCandidateCounts.keys()]
+          .map((label) => {
+            const count = domesticRows.filter((row) => rowMatchesCity(row, label)).length;
+            if (count === 0) return null;
+            if (
+              !isBrowseStandaloneAllowed(policy, 'city', {
+                count,
+                isQualifiedCity: false,
+              })
+            ) {
+              return null;
+            }
+            return {
+              key: label,
+              label,
+              slug: slugify(label, countryCode),
+              href: getBrowseCityPageHref({
+                countryCode,
+                locale,
+                content,
+                cityLabel: label,
+              }),
+              count,
+            } satisfies BrowseOverviewSectionEntry;
+          })
+          .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
+          .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv'))
+          .slice(0, BROWSE_CITY_LIMIT);
 
   return {
     categories: categoryEntries.map((entry) => ({
@@ -526,6 +662,12 @@ export async function getBrowseOverviewData(args: {
       count: entry.count,
     })),
     types: [...typeCounts.entries()]
+      .filter(([key, count]) =>
+        isBrowseStandaloneAllowed(policy, 'race_type', {
+          raceTypeKey: key,
+          count,
+        }),
+      )
       .map(([key, count]) => ({
         key,
         label: typeOptions[key] ?? key,
@@ -540,6 +682,7 @@ export async function getBrowseOverviewData(args: {
       }))
       .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
     counties: [...countyCounts.entries()]
+      .filter(([, data]) => isBrowseStandaloneAllowed(policy, 'county', { count: data.count }))
       .map(([key, data]) => ({
         key,
         label: data.label,
@@ -554,6 +697,7 @@ export async function getBrowseOverviewData(args: {
       }))
       .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
     months: [...monthCounts.entries()]
+      .filter(([, count]) => isBrowseStandaloneAllowed(policy, 'month', { count }))
       .map(([label, count]) => ({
         key: Object.entries(monthMapping).find(([, monthLabel]) => monthLabel === label)?.[0] ?? label,
         label,
@@ -574,9 +718,68 @@ export async function getBrowseOverviewData(args: {
 
 export async function getBrowseCityRows(countryCode: string, cityLabel: string): Promise<RaceListRow[]> {
   const allRows = await getAllRaceListRows(countryCode);
-  return allRows.rows.filter(
+  return filterRowsToUpcomingWindow(allRows.rows).filter(
     (row) => isDomesticOrigin(row.origin_country, countryCode) && rowMatchesCity(row, cityLabel),
   );
+}
+
+function scopedRaceTypeEntriesFromRows(args: {
+  rows: RaceListRow[];
+  countryCode: string;
+  locale: Locale;
+  content: IndexYaml;
+  scopeKind: 'county' | 'month' | 'city';
+  scopeLabel: string;
+  scopeHref: string;
+  isQualifiedCity?: boolean;
+}): BrowseScopedRaceTypeEntry[] {
+  const policy = getBrowseSeoIndexingPolicy(args.content);
+  const typeOptions = (args.content.type_options as Record<string, string> | undefined) ?? {};
+  const comboKind =
+    args.scopeKind === 'county'
+      ? 'race_type_county'
+      : args.scopeKind === 'month'
+        ? 'race_type_month'
+        : 'race_type_city';
+  const typeCounts = new Map<string, number>();
+  for (const row of args.rows) {
+    const key = row.race_type?.trim().toLowerCase();
+    if (!key) continue;
+    addEntryCount(typeCounts, key);
+  }
+
+  return [...typeCounts.entries()]
+    .filter(([key, count]) =>
+      isBrowseCombinationAllowed(policy, comboKind, {
+        raceTypeKey: key,
+        count,
+        isQualifiedCity: args.isQualifiedCity,
+      }),
+    )
+    .map(([key, count]) => {
+      const slug = raceTypeSlug(args.countryCode, args.locale, args.content, key);
+      return {
+        key,
+        label: typeOptions[key] ?? key,
+        slug,
+        href: `${args.scopeHref}${slug}/`,
+        count,
+      } satisfies BrowseScopedRaceTypeEntry;
+    })
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, args.locale === 'en' ? 'en' : 'sv'));
+}
+
+export function getScopedRaceTypeEntries(args: {
+  rows: RaceListRow[];
+  countryCode: string;
+  locale: Locale;
+  content: IndexYaml;
+  scopeKind: 'county' | 'month' | 'city';
+  scopeLabel: string;
+  scopeHref: string;
+  isQualifiedCity?: boolean;
+}): BrowseScopedRaceTypeEntry[] {
+  return scopedRaceTypeEntriesFromRows(args);
 }
 
 export async function getBrowseNeighboringRows(
@@ -585,7 +788,7 @@ export async function getBrowseNeighboringRows(
 ): Promise<RaceListRow[]> {
   const allRows = await getAllRaceListRows(countryCode);
   const normalized = neighborCountryCode?.trim().toLowerCase() ?? '';
-  return allRows.rows.filter((row) => {
+  return filterRowsToUpcomingWindow(allRows.rows).filter((row) => {
     const origin = row.origin_country?.trim().toLowerCase() ?? '';
     if (!origin || isDomesticOrigin(origin, countryCode)) return false;
     if (!normalized) return true;
@@ -598,7 +801,10 @@ export async function getCategorySnapshot(args: {
   category: BrowseCategoryEntry;
 }) {
   const { countryCode, category } = args;
-  return getRaceListSnapshot(countryCode, categoryFiltersForOption(category.option));
+  return getRaceListSnapshot(countryCode, {
+    ...defaultUpcomingRaceListFilters(),
+    ...categoryFiltersForOption(category.option),
+  });
 }
 
 export function getCategoryFilters(category: BrowseCategoryEntry): RaceListSnapshotFilters {
@@ -624,6 +830,7 @@ export function getCategoryItemListJson(args: {
   const { rows, total, countryCode, locale, content, racePageFolder } = args;
   const translationLocale = translationLocaleForContent(content, locale);
   const baseUrl = (content.base_url ?? '').replace(/\/$/, '');
+  const marketRouteTargets = getMarketRouteTargets();
 
   return JSON.stringify({
     '@context': 'https://schema.org',
@@ -631,8 +838,13 @@ export function getCategoryItemListJson(args: {
     numberOfItems: total,
     itemListElement: rows.map((row, index) => {
       const translation = pickTranslation(row.race_translations, translationLocale);
-      const path =
-        `${localeBasePrefix(countryCode, locale)}${racePageFolder}/${row.domain_name}/`;
+      const href = resolveRaceDetailHref({
+        hostCountryCode: countryCode,
+        routeLocale: locale,
+        localRacePageFolder: racePageFolder,
+        row,
+        marketRouteTargets,
+      });
       const rawDate = firstRaceDate(row);
       const locationName =
         typeof row.payload?.location === 'string' && row.payload.location.trim()
@@ -640,7 +852,7 @@ export function getCategoryItemListJson(args: {
           : typeof row.payload?.nearest_city === 'string' && row.payload.nearest_city.trim()
             ? row.payload.nearest_city.trim()
             : row.county ?? '';
-      const typeLocal = translation?.type_local ?? row.race_type ?? 'Running';
+      const typeLocal = translation?.type_local ?? row.race_type ?? '';
       return {
         '@type': 'ListItem',
         position: index + 1,
@@ -651,7 +863,7 @@ export function getCategoryItemListJson(args: {
           description:
             translation?.description ??
             (typeof row.payload?.description === 'string' ? row.payload.description : ''),
-          url: absoluteUrl(baseUrl, path),
+          url: absoluteUrl(baseUrl, href),
           image: rowPrimaryImage(row) ?? undefined,
           sport: `Löpning${typeLocal ? `, ${typeLocal}` : ''}`,
           eventStatus: 'https://schema.org/EventScheduled',
@@ -741,7 +953,7 @@ export function getCategorySiblingNavigationEntries(args: {
   locale: Locale;
   content: IndexYaml;
 }): BrowseNavigationEntry[] {
-  return args.category.topTypes
+  return args.category.allTypes
     .filter((entry) => !args.currentRaceTypeKey || slugify(args.currentRaceTypeKey, args.countryCode) !== slugify(entry.href.split('/').filter(Boolean).pop() ?? '', args.countryCode))
     .map((entry) => ({
       label: entry.label,
@@ -757,11 +969,21 @@ export function getTypeCategoryNavigationEntries(args: {
   content: IndexYaml;
   raceTypeKey: string;
 }): BrowseNavigationEntry[] {
+  const policy = getBrowseSeoIndexingPolicy(args.content);
   const options = categoryFilterOptionsFromYaml(args.content.category_mapping);
   return options
     .map((option) => {
       const count = args.rows.filter((row) => matchesCategory(row, option)).length;
       if (count === 0) return null;
+      if (
+        !isBrowseCombinationAllowed(policy, 'race_type_category', {
+          raceTypeKey: args.raceTypeKey,
+          label: option.label,
+          count,
+        })
+      ) {
+        return null;
+      }
       const categorySlug = slugify(option.label, args.countryCode);
       return {
         label: option.label,
@@ -789,6 +1011,7 @@ export function getScopedPopularNavigationEntries(args: {
   lockedRaceTypeKey?: string;
   lockedCategoryLabel?: string;
 }): BrowseNavigationEntry[] {
+  const policy = getBrowseSeoIndexingPolicy(args.content);
   const options = categoryFilterOptionsFromYaml(args.content.category_mapping);
   const typeOptions = (args.content.type_options as Record<string, string> | undefined) ?? {};
   const lockedRaceType = args.lockedRaceTypeKey?.trim().toLowerCase() ?? '';
@@ -799,6 +1022,14 @@ export function getScopedPopularNavigationEntries(args: {
       if (lockedCategory && option.label.trim().toLowerCase() === lockedCategory) return null;
       const count = args.rows.filter((row) => matchesCategory(row, option)).length;
       if (count === 0) return null;
+      if (
+        !isBrowseStandaloneAllowed(policy, 'category', {
+          label: option.label,
+          count,
+        })
+      ) {
+        return null;
+      }
       return {
         label: option.label,
         href: withQueryParams(args.currentHref, { category: option.label }),
@@ -814,14 +1045,21 @@ export function getScopedPopularNavigationEntries(args: {
     addEntryCount(typeCounts, key);
   }
 
-  const typeEntries = [...typeCounts.entries()].map(([key, count]) => ({
-    label: typeOptions[key] ?? key,
-    href:
-      key === lockedRaceType
-        ? ''
-        : withQueryParams(args.currentHref, { raceType: key }),
-    count,
-  }));
+  const typeEntries = [...typeCounts.entries()]
+    .filter(([key, count]) =>
+      isBrowseStandaloneAllowed(policy, 'race_type', {
+        raceTypeKey: key,
+        count,
+      }),
+    )
+    .map(([key, count]) => ({
+      label: typeOptions[key] ?? key,
+      href:
+        key === lockedRaceType
+          ? ''
+          : withQueryParams(args.currentHref, { raceType: key }),
+      count,
+    }));
 
   return sortNavigationEntries([...categoryEntries, ...typeEntries]).slice(0, 5);
 }

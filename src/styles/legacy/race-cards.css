@@ -68,9 +68,7 @@
   grid-column: 1 / -1;
   grid-row: 3;
 }
-.section-race-cards .race-cards-grid .section-selected-races .section-header-container {
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
-}
+
 @media (min-width: 34em) {
   .section-race-cards .race-cards-grid {
     grid-template-columns: repeat(2, 1fr);

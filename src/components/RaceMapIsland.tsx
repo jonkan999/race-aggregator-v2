@@ -4,6 +4,11 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { formatDistanceSegment, splitDistanceVerbose } from '../lib/raceCardDisplay';
 import type { CategoryFilterOption } from '../lib/categoryFilterOptions';
 import { isDomesticOrigin, parseNeighboringSelection } from '../lib/neighboringSelection';
+import {
+  getBrowserMarketRouteTargets,
+  type MarketRouteTargets,
+  resolveRaceDetailHref,
+} from '../lib/marketRoutes';
 
 type RaceFeatureCollection = {
   type: 'FeatureCollection';
@@ -147,20 +152,13 @@ function buildMapRaceItem(
   routeLocale: 'native' | 'en',
   countryCode: string,
   racePageFolder: string,
+  marketRouteTargets: MarketRouteTargets,
   countyMapping: Record<string, string>,
   countryNative: string,
   monthMappingShort: Record<string, string>,
   typeOptions: Record<string, string>,
   verboseLocalDistanceMapping: Record<string, string>,
 ): MapRaceItem {
-  const prefix =
-    routeLocale === 'en'
-      ? countryCode === 'se'
-        ? '/en/'
-        : `/${countryCode}/en/`
-      : countryCode === 'se'
-        ? '/'
-        : `/${countryCode}/`;
   const raceTypeKey = marker.race_type?.toLowerCase() ?? '';
   const raceTypeLabel =
     (raceTypeKey ? typeOptions[raceTypeKey] : undefined) ??
@@ -172,7 +170,13 @@ function buildMapRaceItem(
     id: marker.id,
     latitude: marker.latitude,
     longitude: marker.longitude,
-    href: `${prefix}${racePageFolder}/${marker.domain_name}/`,
+    href: resolveRaceDetailHref({
+      hostCountryCode: countryCode,
+      routeLocale,
+      localRacePageFolder: racePageFolder,
+      row: marker,
+      marketRouteTargets,
+    }),
     imageSrc: placeholderImage(marker.domain_name, marker.race_type),
     name: marker.name?.trim() || marker.domain_name,
     dateLabel: marker.race_date ? formatYyyymmdd(marker.race_date, monthMappingShort) : '',
@@ -256,6 +260,7 @@ export default function RaceMapIsland(props: {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedClusterId, setSelectedClusterId] = useState<number | null>(null);
   const [isMobileViewport, setIsMobileViewport] = useState(false);
+  const marketRouteTargets = useMemo(() => getBrowserMarketRouteTargets(), []);
 
   const filteredRaces = useMemo(() => {
     let minKm: number | null = null;
@@ -310,6 +315,7 @@ export default function RaceMapIsland(props: {
           routeLocale,
           countryCode,
           racePageFolder,
+          marketRouteTargets,
           countyMapping,
           countryNative,
           monthMappingShort,
@@ -329,6 +335,7 @@ export default function RaceMapIsland(props: {
     routeLocale,
     countryCode,
     racePageFolder,
+    marketRouteTargets,
     countyMapping,
     countryNative,
     monthMappingShort,

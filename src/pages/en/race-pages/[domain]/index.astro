@@ -3,6 +3,7 @@ import RaceDetailPage from '../../../../components/RaceDetailPage.astro';
 import {
   getAllRaceListRows,
 } from '../../../../lib/raceListSsg';
+import { isDomesticOrigin } from '../../../../lib/neighboringSelection';
 import {
   loadIndexYaml,
   raceListSlug,
@@ -14,6 +15,7 @@ export async function getStaticPaths() {
   const country = 'se';
   const allRows = await getAllRaceListRows(country);
   for (const row of allRows.rows) {
+    if (!isDomesticOrigin(row.origin_country, country)) continue;
     const key = `${country}:${row.domain_name}`;
     if (seen.has(key)) continue;
     seen.add(key);
@@ -30,7 +32,9 @@ const country = 'se';
 const { domain } = Astro.params;
 const content = loadIndexYaml(country, 'en');
 const allRows = await getAllRaceListRows(country);
-const row = allRows.rows.find((entry) => entry.domain_name === domain);
+const row = allRows.rows.find(
+  (entry) => entry.domain_name === domain && isDomesticOrigin(entry.origin_country, country),
+);
 
 if (!row) {
   return Astro.redirect(`/en/${raceListSlug(content, country)}/`, 302);

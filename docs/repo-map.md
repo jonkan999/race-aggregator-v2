@@ -2,8 +2,8 @@
 
 ## App shell
 
-- `src/pages/index.astro` — redirects `/` to the default market.
-- `src/pages/[country]/index.astro` — market home route.
+- `src/pages/index.astro` — market home.
+- `src/pages/neighbors/` and `src/pages/en/neighbors/` — canonical neighboring-country browse pages for the default market.
 - `src/layouts/BaseLayout.astro` — base page shell.
 - `src/layouts/RaceListLayout.astro` — legacy-styled race list shell.
 - `src/components/SiteHeader.astro` / `src/components/SiteFooter.astro` — shared chrome.
@@ -19,6 +19,7 @@
 - `src/lib/raceListSsg.ts` — build-time page-1 list snapshot from Supabase or local JSON.
 - `src/lib/raceListRow.ts` — list row typing and translation selection helpers.
 - `src/lib/raceCardDisplay.ts` — race card formatting helpers.
+- `src/lib/marketRoutes.ts` / `src/lib/marketRouteTargets.ts` — market-aware detail-link resolution and configured-market discovery.
 - `src/lib/raceListConfig.ts` — list page size and related config.
 - `src/lib/categoryFilterOptions.ts` — category filter derivation.
 - `src/lib/supabase.ts` — browser Supabase setup.
@@ -36,6 +37,7 @@
 - `data/countries/se/merged_index_int.yaml` — English copy and settings for Sweden.
 - `data/countries/se/final_races.json` / `final_races_int.json` — local seed inputs and SSG fallback data.
 - `data/countries/se/distance_filter.yaml` — category/filter source data.
+- [`browse-seo-matrix.md`](./browse-seo-matrix.md) — the canonical browse SEO subset and long-tail combination policy.
 
 ## Scripts and database
 

@@ -22,19 +22,19 @@ import {
   getScopedPopularNavigationEntries,
 } from '../../../../lib/raceBrowse';
 import { categoryFilterOptionsFromYaml } from '../../../../lib/categoryFilterOptions';
+import {
+  getBrowsePageSeoCopy,
+  getCountySeoCacheKeys,
+  getMonthSeoCacheKeys,
+} from '../../../../lib/seoPageCopy';
 import { pickTranslation } from '../../../../lib/raceListRow';
-import { getRaceListSnapshot } from '../../../../lib/raceListSsg';
+import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../../lib/raceListSsg';
 
 export async function getStaticPaths() {
   const country = 'se';
   const content = loadIndexYaml(country, 'en');
   const paths: { params: { raceList: string; scope: string } }[] = [];
   const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'en', content });
-  const neighboringEntries = await getBrowseNeighboringEntries({
-    countryCode: country,
-    locale: 'en',
-    content,
-  });
 
   for (const entry of overviewData.counties) {
     paths.push({
@@ -50,15 +50,6 @@ export async function getStaticPaths() {
       params: {
         raceList: raceListSlug(content, country),
         scope: entry.slug,
-      },
-    });
-  }
-
-  if (neighboringEntries.length > 0) {
-    paths.push({
-      params: {
-        raceList: raceListSlug(content, country),
-        scope: slugify(String(content.browse_by_category?.neighboring ?? 'neighboring'), country),
       },
     });
   }
@@ -109,11 +100,22 @@ let initialCounty = '';
 let alternateRaceListHref: string | undefined;
 
 if (countyEntry) {
-  const snapshot = await getRaceListSnapshot(country, { county: countyEntry.key });
-  title = `${countyEntry.label} races | ${content.page_name ?? content.race_list_name ?? market}`;
-  description = `Find races in ${countyEntry.label}. Compare dates, distances and practical details before choosing your next race.`;
+  const snapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    county: countyEntry.key,
+  });
+  const seoCopy = getBrowsePageSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: getCountySeoCacheKeys(countyEntry.label, countyEntry.key),
+    kind: 'county',
+    label: countyEntry.label,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
   breadcrumbs = [
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
     { label: countyEntry.label },
   ];
   rows = snapshot.rows;
@@ -145,11 +147,22 @@ if (countyEntry) {
   });
   alternateRaceListHref = nativeOverview.counties.find((item) => item.key === countyEntry.key)?.href;
 } else if (monthEntry) {
-  const snapshot = await getRaceListSnapshot(country, { month: Number.parseInt(monthEntry.key, 10) });
-  title = `${monthEntry.label} races | ${content.page_name ?? content.race_list_name ?? market}`;
-  description = `Find races in ${monthEntry.label.toLowerCase()} in ${market}. Compare dates, distances and practical details before choosing your next race.`;
+  const snapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    month: Number.parseInt(monthEntry.key, 10),
+  });
+  const seoCopy = getBrowsePageSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: getMonthSeoCacheKeys(monthEntry.label, monthEntry.key),
+    kind: 'month',
+    label: monthEntry.label,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
   breadcrumbs = [
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
     { label: monthEntry.label },
   ];
   rows = snapshot.rows;
@@ -186,7 +199,7 @@ if (countyEntry) {
   description = String(content.browse_neighboring?.meta_description ?? '');
   activeTab = 'neighboring';
   breadcrumbs = [
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
     { label: title },
   ];
   alternateRaceListHref = getBrowseNeighboringIndexHref(

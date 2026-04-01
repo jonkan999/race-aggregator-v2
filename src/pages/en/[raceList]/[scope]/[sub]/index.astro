@@ -23,13 +23,21 @@ import {
   getCategoryItemListJson,
   getCategorySnapshot,
   getRaceListBaseHref,
+  getScopedRaceTypeEntries,
   getScopedPopularNavigationEntries,
 } from '../../../../../lib/raceBrowse';
 import { categoryFilterOptionsFromYaml } from '../../../../../lib/categoryFilterOptions';
-import { getCategorySeoCopy } from '../../../../../lib/seoPageCopy';
+import {
+  getBrowsePageSeoCopy,
+  getCategorySeoCopy,
+  getCitySeoCacheKeys,
+  getRaceTypeCountySeoCacheKeys,
+  getRaceTypeMonthSeoCacheKeys,
+  getRaceTypeSeoCacheKeys,
+} from '../../../../../lib/seoPageCopy';
 import { pickTranslation } from '../../../../../lib/raceListRow';
 import { RACE_LIST_PAGE_SIZE } from '../../../../../lib/raceListConfig';
-import { getRaceListSnapshot } from '../../../../../lib/raceListSsg';
+import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../../../lib/raceListSsg';
 
 export async function getStaticPaths() {
   const country = 'se';
@@ -37,7 +45,6 @@ export async function getStaticPaths() {
   const paths: { params: { raceList: string; scope: string; sub: string } }[] = [];
   const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'en', content });
   const categories = await getBrowseCategoryEntries({ countryCode: country, locale: 'en', content });
-  const neighboringEntries = await getBrowseNeighboringEntries({ countryCode: country, locale: 'en', content });
     const citiesSlug = slugify(
       String((content as { seo_cities_folder_name?: string }).seo_cities_folder_name ?? 'cities'),
       country,
@@ -46,29 +53,11 @@ export async function getStaticPaths() {
       String((content as { county_label_text?: string }).county_label_text ?? 'all-counties'),
       country,
     );
-    const neighboringSlug = slugify(
-      String(
-        (content as { browse_by_category?: { neighboring?: string } }).browse_by_category?.neighboring ??
-          'neighboring',
-      ),
-      country,
-    );
-
     for (const entry of overviewData.cities) {
       paths.push({
         params: {
           raceList: raceListSlug(content, country),
           scope: citiesSlug,
-          sub: entry.slug,
-        },
-      });
-    }
-
-    for (const entry of neighboringEntries) {
-      paths.push({
-        params: {
-          raceList: raceListSlug(content, country),
-          scope: neighboringSlug,
           sub: entry.slug,
         },
       });
@@ -92,6 +81,56 @@ export async function getStaticPaths() {
           sub: entry.slug,
         },
       });
+    }
+
+    for (const entry of overviewData.counties) {
+      const snapshot = await getRaceListSnapshot(country, {
+        ...defaultUpcomingRaceListFilters(),
+        county: entry.key,
+      });
+      const typeEntries = getScopedRaceTypeEntries({
+        rows: snapshot.rows,
+        countryCode: country,
+        locale: 'en',
+        content,
+        scopeKind: 'county',
+        scopeLabel: entry.label,
+        scopeHref: entry.href,
+      });
+      for (const typeEntry of typeEntries) {
+        paths.push({
+          params: {
+            raceList: raceListSlug(content, country),
+            scope: entry.slug,
+            sub: typeEntry.slug,
+          },
+        });
+      }
+    }
+
+    for (const entry of overviewData.months) {
+      const snapshot = await getRaceListSnapshot(country, {
+        ...defaultUpcomingRaceListFilters(),
+        month: Number.parseInt(entry.key, 10),
+      });
+      const typeEntries = getScopedRaceTypeEntries({
+        rows: snapshot.rows,
+        countryCode: country,
+        locale: 'en',
+        content,
+        scopeKind: 'month',
+        scopeLabel: entry.label,
+        scopeHref: entry.href,
+      });
+      for (const typeEntry of typeEntries) {
+        paths.push({
+          params: {
+            raceList: raceListSlug(content, country),
+            scope: entry.slug,
+            sub: typeEntry.slug,
+          },
+        });
+      }
     }
   return paths;
 }
@@ -139,6 +178,8 @@ const cityEntry = isCity ? overviewData.cities.find((item) => item.slug === sub)
 const neighboringEntry = isNeighboring ? neighboringEntries.find((item) => item.slug === sub) : undefined;
 const typeEntry = isAllCounties ? overviewData.types.find((item) => item.slug === sub) : undefined;
 const categoryEntry = isAllCounties ? categories.find((item) => item.slug === sub) : undefined;
+const countyEntry = overviewData.counties.find((item) => item.slug === scope);
+const monthEntry = overviewData.months.find((item) => item.slug === scope);
 
 const market = String(content.country ?? content.country_native ?? 'Sweden');
 const racePageFolder = String(content.race_page_folder_name ?? 'race-pages');
@@ -163,16 +204,25 @@ let popularEntries: Array<{ label: string; href: string; count: number }> = [];
 let initialCounty = '';
 let initialRaceType = '';
 let initialCategoryKey = '';
+let initialMonth = 'all';
 let browseByCategoryHref = overviewHref;
 let alternateRaceListHref: string | undefined;
 
 if (cityEntry) {
   rows = await getBrowseCityRows(country, cityEntry.key);
   initialTotal = rows.length;
-  title = `${cityEntry.label} races | ${content.page_name ?? content.race_list_name ?? market}`;
-  description = `Find races tied to ${cityEntry.label}. Compare dates, distances and practical details before choosing your next race.`;
+  const seoCopy = getBrowsePageSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: getCitySeoCacheKeys(cityEntry.label, cityEntry.key),
+    kind: 'city',
+    label: cityEntry.label,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
   breadcrumbs = [
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
     { label: String(content.browse_by_category?.cities ?? 'Cities') },
     { label: cityEntry.label },
   ];
@@ -196,9 +246,9 @@ if (cityEntry) {
     `Here we list races held in ${neighboringEntry.label}.`;
   activeTab = 'neighboring';
   breadcrumbs = [
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
     {
-      label: String(content.browse_by_category?.neighboring ?? 'Neighboring countries'),
+      label: String(content.browse_by_category?.neighboring ?? ''),
       href: neighboringHref,
     },
     { label: neighboringEntry.label },
@@ -215,13 +265,24 @@ if (cityEntry) {
   });
   alternateRaceListHref = nativeEntries.find((item) => item.key === neighboringEntry.key)?.href;
 } else if (typeEntry) {
-  const snapshot = await getRaceListSnapshot(country, { raceType: typeEntry.key });
+  const snapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    raceType: typeEntry.key,
+  });
   rows = snapshot.rows;
   initialTotal = snapshot.total;
-  title = `${typeEntry.label} races | ${content.page_name ?? content.race_list_name ?? market}`;
-  description = `Find ${typeEntry.label.toLowerCase()} races in ${market}. Compare dates, distances and practical details before choosing your next race.`;
+  const seoCopy = getBrowsePageSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: getRaceTypeSeoCacheKeys(typeEntry.label, typeEntry.key),
+    kind: 'race_type',
+    label: typeEntry.label,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
   breadcrumbs = [
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
     { label: typeEntry.label },
   ];
   currentHref = typeEntry.href;
@@ -234,6 +295,143 @@ if (cityEntry) {
     content: nativeContent,
   });
   alternateRaceListHref = nativeOverview.types.find((item) => item.key === typeEntry.key)?.href;
+} else if (countyEntry) {
+  const countyScopedRows = (
+    await getRaceListSnapshot(country, {
+      ...defaultUpcomingRaceListFilters(),
+      county: countyEntry.key,
+    })
+  ).rows;
+  const countyTypeEntry = getScopedRaceTypeEntries({
+    rows: countyScopedRows,
+    countryCode: country,
+    locale,
+    content,
+    scopeKind: 'county',
+    scopeLabel: countyEntry.label,
+    scopeHref: countyEntry.href,
+  }).find((item) => item.slug === sub);
+  if (!countyTypeEntry) {
+    return Astro.redirect(countyEntry.href, 302);
+  }
+  const snapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    county: countyEntry.key,
+    raceType: countyTypeEntry.key,
+  });
+  rows = snapshot.rows;
+  initialTotal = snapshot.total;
+  const seoCopy = getBrowsePageSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: getRaceTypeCountySeoCacheKeys({
+      raceTypeValues: [countyTypeEntry.label, countyTypeEntry.key],
+      countyValues: [countyEntry.label, countyEntry.key],
+    }),
+    kind: 'race_type_county',
+    label: countyEntry.label,
+    secondaryLabel: countyTypeEntry.label,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
+    { label: countyEntry.label, href: countyEntry.href },
+    { label: countyTypeEntry.label },
+  ];
+  currentHref = countyTypeEntry.href;
+  initialCounty = countyEntry.key;
+  initialRaceType = countyTypeEntry.key;
+
+  const nativeContent = loadIndexYaml(country, 'native');
+  const nativeSnapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    county: countyEntry.key,
+  });
+  alternateRaceListHref = getScopedRaceTypeEntries({
+    rows: nativeSnapshot.rows,
+    countryCode: country,
+    locale: 'native',
+    content: nativeContent,
+    scopeKind: 'county',
+    scopeLabel: countyEntry.label,
+    scopeHref:
+      (await getBrowseOverviewData({ countryCode: country, locale: 'native', content: nativeContent })).counties.find(
+        (item) => item.key === countyEntry.key,
+      )?.href ?? countyEntry.href,
+  }).find((item) => item.key === countyTypeEntry.key)?.href;
+} else if (monthEntry) {
+  const monthScopedRows = (
+    await getRaceListSnapshot(country, {
+      ...defaultUpcomingRaceListFilters(),
+      month: Number.parseInt(monthEntry.key, 10),
+    })
+  ).rows;
+  const monthTypeEntry = getScopedRaceTypeEntries({
+    rows: monthScopedRows,
+    countryCode: country,
+    locale,
+    content,
+    scopeKind: 'month',
+    scopeLabel: monthEntry.label,
+    scopeHref: monthEntry.href,
+  }).find((item) => item.slug === sub);
+  if (!monthTypeEntry) {
+    return Astro.redirect(monthEntry.href, 302);
+  }
+  const snapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    month: Number.parseInt(monthEntry.key, 10),
+    raceType: monthTypeEntry.key,
+  });
+  rows = snapshot.rows;
+  initialTotal = snapshot.total;
+  const seoCopy = getBrowsePageSeoCopy({
+    countryCode: country,
+    locale,
+    content,
+    cacheKeys: getRaceTypeMonthSeoCacheKeys({
+      raceTypeValues: [monthTypeEntry.label, monthTypeEntry.key],
+      monthValues: [monthEntry.label, monthEntry.key],
+    }),
+    kind: 'race_type_month',
+    label: monthEntry.label,
+    secondaryLabel: monthTypeEntry.label,
+  });
+  title = seoCopy.title;
+  description = seoCopy.metaDescription;
+  breadcrumbs = [
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
+    { label: monthEntry.label, href: monthEntry.href },
+    { label: monthTypeEntry.label },
+  ];
+  currentHref = monthTypeEntry.href;
+  initialRaceType = monthTypeEntry.key;
+  initialMonth = monthEntry.key;
+
+  const nativeContent = loadIndexYaml(country, 'native');
+  const nativeOverview = await getBrowseOverviewData({
+    countryCode: country,
+    locale: 'native',
+    content: nativeContent,
+  });
+  const nativeMonth = nativeOverview.months.find((item) => item.key === monthEntry.key);
+  if (nativeMonth) {
+    const nativeSnapshot = await getRaceListSnapshot(country, {
+      ...defaultUpcomingRaceListFilters(),
+      month: Number.parseInt(nativeMonth.key, 10),
+    });
+    alternateRaceListHref = getScopedRaceTypeEntries({
+      rows: nativeSnapshot.rows,
+      countryCode: country,
+      locale: 'native',
+      content: nativeContent,
+      scopeKind: 'month',
+      scopeLabel: nativeMonth.label,
+      scopeHref: nativeMonth.href,
+    }).find((item) => item.key === monthTypeEntry.key)?.href;
+  }
 } else if (categoryEntry) {
   const snapshot = await getCategorySnapshot({ countryCode: country, category: categoryEntry });
   rows = snapshot.rows;
@@ -249,8 +447,8 @@ if (cityEntry) {
   description = seoCopy.metaDescription;
   activeTab = 'categories';
   breadcrumbs = [
-    { label: String(content.browse_by_category?.overview ?? 'Browse'), href: overviewHref },
-    { label: String(content.browse_by_category?.categories ?? 'Categories'), href: categoriesHref },
+    { label: String(content.browse_by_category?.overview ?? ''), href: overviewHref },
+    { label: String(content.browse_by_category?.categories ?? ''), href: categoriesHref },
     { label: categoryEntry.label },
   ];
   currentHref = categoryEntry.href;
@@ -335,6 +533,7 @@ const initialRows = isCity || isNeighboring ? rows.slice(0, RACE_LIST_PAGE_SIZE)
     initialCounty={initialCounty}
     initialRaceType={initialRaceType}
     initialCategoryKey={initialCategoryKey}
+    initialMonth={initialMonth}
     initialCity={cityEntry?.key ?? ''}
     autoPopulateDateRange={true}
     showIntroHeader={true}

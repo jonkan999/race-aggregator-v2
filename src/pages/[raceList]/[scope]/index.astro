@@ -5,7 +5,6 @@ import RaceListPageIsland from '../../../components/RaceListPageIsland';
 import {
   findCountryByRaceListSlug,
   hasEnglishMerge,
-  listCountryCodes,
   localeBasePrefix,
   loadIndexYaml,
   raceListSlug,
@@ -25,9 +24,13 @@ import {
   getScopedPopularNavigationEntries,
 } from '../../../lib/raceBrowse';
 import { categoryFilterOptionsFromYaml } from '../../../lib/categoryFilterOptions';
-import { getScopedSeoCopy } from '../../../lib/seoPageCopy';
+import {
+  getBrowsePageSeoCopy,
+  getCountySeoCacheKeys,
+  getMonthSeoCacheKeys,
+} from '../../../lib/seoPageCopy';
 import { pickTranslation } from '../../../lib/raceListRow';
-import { getRaceListSnapshot } from '../../../lib/raceListSsg';
+import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../lib/raceListSsg';
 import { RACE_LIST_PAGE_SIZE } from '../../../lib/raceListConfig';
 
 function cityFolderSlug(country: string, content: Record<string, unknown>): string {
@@ -45,38 +48,25 @@ function allCountiesSlug(country: string, content: Record<string, unknown>): str
 }
 
 export async function getStaticPaths() {
+  const country = 'se';
+  const content = loadIndexYaml(country, 'native');
   const paths: { params: { raceList: string; scope: string } }[] = [];
-  for (const country of listCountryCodes()) {
-    const content = loadIndexYaml(country, 'native');
-    const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'native', content });
-    const neighboringEntries = await getBrowseNeighboringEntries({
-      countryCode: country,
-      locale: 'native',
-      content,
-    });
+  const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'native', content });
 
-    for (const entry of overviewData.counties) {
-      paths.push({
-        params: {
-          raceList: raceListSlug(content, country),
-          scope: entry.slug,
-        },
-      });
-    }
-
-    for (const entry of overviewData.months) {
-      paths.push({
-        params: {
-          raceList: raceListSlug(content, country),
-          scope: entry.slug,
-        },
-      });
-    }
-
+  for (const entry of overviewData.counties) {
     paths.push({
       params: {
         raceList: raceListSlug(content, country),
-        scope: slugify(String(content.browse_by_category?.neighboring ?? 'neighboring'), country),
+        scope: entry.slug,
+      },
+    });
+  }
+
+  for (const entry of overviewData.months) {
+    paths.push({
+      params: {
+        raceList: raceListSlug(content, country),
+        scope: entry.slug,
       },
     });
   }
@@ -128,16 +118,17 @@ let popularEntries: Array<{ label: string; href: string; count: number }> = [];
 let initialCounty = '';
 
 if (countyEntry) {
-  const snapshot = await getRaceListSnapshot(country, { county: countyEntry.key });
-  const seoCopy = getScopedSeoCopy({
+  const snapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    county: countyEntry.key,
+  });
+  const seoCopy = getBrowsePageSeoCopy({
     countryCode: country,
     locale,
     content,
-    cacheKeys: [`county:${countyEntry.label}`, `county:${countyEntry.key}`],
-    title: `${countyEntry.label} lopp | ${content.page_name ?? content.race_list_name ?? market}`,
-    description: `Hitta löplopp i ${countyEntry.label}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
-    h1: `Lopp i ${countyEntry.label}`,
-    paragraph: `Här hittar du löplopp i ${countyEntry.label}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
+    cacheKeys: getCountySeoCacheKeys(countyEntry.label, countyEntry.key),
+    kind: 'county',
+    label: countyEntry.label,
   });
   title = seoCopy.title;
   description = seoCopy.metaDescription;
@@ -166,16 +157,17 @@ if (countyEntry) {
   navigationJson = getBrowseNavigationJson({ entries: popularEntries, content, locale });
   initialCounty = countyEntry.key;
 } else if (monthEntry) {
-  const snapshot = await getRaceListSnapshot(country, { month: Number.parseInt(monthEntry.key, 10) });
-  const seoCopy = getScopedSeoCopy({
+  const snapshot = await getRaceListSnapshot(country, {
+    ...defaultUpcomingRaceListFilters(),
+    month: Number.parseInt(monthEntry.key, 10),
+  });
+  const seoCopy = getBrowsePageSeoCopy({
     countryCode: country,
     locale,
     content,
-    cacheKeys: [`month:${monthEntry.label}`, `month:${monthEntry.key}`],
-    title: `${monthEntry.label} lopp | ${content.page_name ?? content.race_list_name ?? market}`,
-    description: `Hitta löplopp i ${monthEntry.label.toLowerCase()} i ${market}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
-    h1: `Lopp i ${monthEntry.label}`,
-    paragraph: `Här hittar du löplopp i ${monthEntry.label.toLowerCase()} i ${market}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
+    cacheKeys: getMonthSeoCacheKeys(monthEntry.label, monthEntry.key),
+    kind: 'month',
+    label: monthEntry.label,
   });
   title = seoCopy.title;
   description = seoCopy.metaDescription;

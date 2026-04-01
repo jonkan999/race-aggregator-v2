@@ -1,9 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-test('home redirects to default country', async ({ page }) => {
+test('Swedish home page renders', async ({ page }) => {
   const res = await page.goto('/');
   expect(res?.status()).toBeLessThan(400);
-  await expect(page).toHaveURL(/\/loppkalender\/$/);
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByRole('heading', { level: 1, name: /allt om löpning i sverige/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /hitta lopp/i })).toBeVisible();
+  await expect(page.locator('.home-feature-card--lead')).toBeVisible();
+  await expect(page.locator('.home-tool-card').first()).toBeVisible();
 });
 
 test('Swedish race list shell renders', async ({ page }) => {
@@ -17,6 +21,12 @@ test('Swedish race list shell renders', async ({ page }) => {
 test('English race list shell renders', async ({ page }) => {
   await page.goto('/en/race-calendar/');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+});
+
+test('English home page renders', async ({ page }) => {
+  await page.goto('/en/');
+  await expect(page.getByRole('heading', { level: 1, name: /everything about running in sweden/i })).toBeVisible();
+  await expect(page.locator('.home-feature-card--lead')).toBeVisible();
 });
 
 test('browse overview renders', async ({ page }) => {
@@ -58,7 +68,7 @@ test('city browse page renders', async ({ page }) => {
 });
 
 test('neighboring browse page renders', async ({ page }) => {
-  await page.goto('/loppkalender/narliggande-lander/');
+  await page.goto('/neighbors/');
   await expect(page.getByRole('heading', { level: 1, name: /närliggande länder/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /danmark|norge|finland/i }).first()).toBeVisible();
 });

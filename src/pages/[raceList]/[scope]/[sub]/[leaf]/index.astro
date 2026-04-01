@@ -4,7 +4,6 @@ import RaceListPageIsland from '../../../../../components/RaceListPageIsland';
 import {
   findCountryByRaceListSlug,
   hasEnglishMerge,
-  listCountryCodes,
   localeBasePrefix,
   loadIndexYaml,
   raceListSlug,
@@ -20,31 +19,33 @@ import {
   getRaceListBaseHref,
 } from '../../../../../lib/raceBrowse';
 import { categoryFilterOptionsFromYaml } from '../../../../../lib/categoryFilterOptions';
-import { getScopedSeoCopy } from '../../../../../lib/seoPageCopy';
+import {
+  getBrowsePageSeoCopy,
+  getRaceTypeCategorySeoCacheKeys,
+} from '../../../../../lib/seoPageCopy';
 import { pickTranslation } from '../../../../../lib/raceListRow';
-import { getRaceListSnapshot } from '../../../../../lib/raceListSsg';
+import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../../../lib/raceListSsg';
 
 export async function getStaticPaths() {
+  const country = 'se';
+  const content = loadIndexYaml(country, 'native');
   const paths: { params: { raceList: string; scope: string; sub: string; leaf: string } }[] = [];
-  for (const country of listCountryCodes()) {
-    const content = loadIndexYaml(country, 'native');
-    const allCounties = slugify(
-      String((content as { county_label_text?: string }).county_label_text ?? 'all-counties'),
-      country,
-    );
-    const categories = await getBrowseCategoryEntries({ countryCode: country, locale: 'native', content });
-    for (const category of categories) {
-      for (const typeLink of category.topTypes) {
-        const hrefParts = typeLink.href.split('/').filter(Boolean);
-        paths.push({
-          params: {
-            raceList: raceListSlug(content, country),
-            scope: allCounties,
-            sub: slugify(hrefParts.at(-2) ?? '', country),
-            leaf: category.slug,
-          },
-        });
-      }
+  const allCounties = slugify(
+    String((content as { county_label_text?: string }).county_label_text ?? 'all-counties'),
+    country,
+  );
+  const categories = await getBrowseCategoryEntries({ countryCode: country, locale: 'native', content });
+  for (const category of categories) {
+    for (const typeLink of category.allTypes) {
+      const hrefParts = typeLink.href.split('/').filter(Boolean);
+      paths.push({
+        params: {
+          raceList: raceListSlug(content, country),
+          scope: allCounties,
+          sub: slugify(hrefParts.at(-2) ?? '', country),
+          leaf: category.slug,
+        },
+      });
     }
   }
   return paths;
@@ -84,6 +85,7 @@ if (!raceTypeEntry) {
 
 const [raceTypeKey, raceTypeLabel] = raceTypeEntry;
 const snapshot = await getRaceListSnapshot(country, {
+  ...defaultUpcomingRaceListFilters(),
   raceType: raceTypeKey,
   ...(category.option.kind === 'distance'
     ? {
@@ -93,15 +95,17 @@ const snapshot = await getRaceListSnapshot(country, {
     : {}),
 });
 
-const seoCopy = getScopedSeoCopy({
+const seoCopy = getBrowsePageSeoCopy({
   countryCode: country,
   locale: 'native',
   content,
-  cacheKeys: [`race_type:${raceTypeLabel}-category:${category.label}`, `race_type:${raceTypeKey}-category:${category.label}`],
-  title: `${category.label} ${raceTypeLabel.toLowerCase()}lopp | ${content.page_name ?? content.race_list_name ?? ''}`.trim(),
-  description: `Hitta ${category.label.toLowerCase()} ${raceTypeLabel.toLowerCase()}lopp i ${content.country_native ?? 'Sverige'}.`,
-  h1: `${category.label} + ${raceTypeLabel}`,
-  paragraph: `Hitta ${category.label.toLowerCase()} ${raceTypeLabel.toLowerCase()}lopp i ${content.country_native ?? 'Sverige'}. Jämför datum, distanser och praktisk information inför ditt nästa lopp.`,
+  cacheKeys: getRaceTypeCategorySeoCacheKeys({
+    raceTypeValues: [raceTypeLabel, raceTypeKey],
+    categoryValues: [category.label],
+  }),
+  kind: 'race_type_category',
+  label: category.label,
+  secondaryLabel: raceTypeLabel,
 });
 
 const racePageFolder = String(content.race_page_folder_name ?? 'loppsidor');

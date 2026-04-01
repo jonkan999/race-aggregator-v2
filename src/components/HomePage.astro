@@ -1,0 +1,493 @@
+---
+import type { IndexYaml, Locale } from '../lib/content';
+import type { HomePageData } from '../lib/homePage';
+
+interface Props {
+  country: string;
+  locale: Locale;
+  content: IndexYaml;
+  data: HomePageData;
+}
+
+const { content, data } = Astro.props;
+const navigation = content.navigation ?? {};
+const featuredLead = data.featuredRaces[0] ?? null;
+const featuredStrip = data.featuredRaces.slice(1, 7);
+const trendingLead = data.trendingRaces[0] ?? null;
+const trendingSupporting = data.trendingRaces.slice(1, 5);
+const recentLead = data.recentRaces[0] ?? null;
+const recentSupporting = data.recentRaces.slice(1, 5);
+const heroExplore = data.quickExplore.slice(0, 4);
+const featuredLabel = String(content.selected_races_title ?? '').trim();
+const featuredTopLabel = String(content.selected_races_top_title ?? '').trim();
+const trendingLabel = String(content.trending_races_title ?? '').trim();
+const trendingDescription = String(content.trending_races_description ?? '').trim();
+const trendingMostViewed = String(content.trending_races_most_viewed ?? '').trim();
+const trendingViewsLabel = String(content.trending_races_views_last_30_days ?? '').trim();
+const trendingHasMetrics = data.trendingRaces.some((race) => race.popularityValue != null);
+const recentLabel = String(content.recent_races_title ?? '').trim();
+const toolLabel = String(content.tools_title ?? '').trim();
+const addRaceLabel = String(content.add_race_mp_title ?? navigation['add-race'] ?? '').trim();
+const addRaceEyebrow = String(content.missing_race ?? '').trim();
+const newestRaceBadge = String(content.newest_race_badge ?? '').trim();
+const raceCta = String(content.to_race_page_cta ?? content.race_card_cta_text ?? '').trim();
+const toolIconViewBoxes: Record<string, string> = {
+  'map-outline': '0 0 512 512',
+  'fitness-outline': '0 0 512 512',
+  'stopwatch-outline': '0 0 512 512',
+  'calculator-outline': '0 0 512 512',
+};
+---
+
+<div class="home-shell">
+  {
+    featuredLead && (
+      <section class="home-hero home-section home-section--hero">
+        <div class="home-hero__layout">
+          <div class="home-hero__intro">
+            <p class="home-hero__eyebrow">{content.page_name}</p>
+            <h1 class="home-hero__title">
+              {String(content.title ?? '')}
+              <span class="home-hero__accent new-amsterdam">{String(content.country_native ?? '')}</span>
+            </h1>
+            <p class="home-hero__description">{String(content.description ?? '')}</p>
+
+            <div class="home-hero__actions">
+              <a class="home-button home-button--primary" href={data.raceListHref}>
+                {String(content.cta_search ?? navigation['race-list'] ?? '')}
+              </a>
+              <a class="home-button home-button--secondary" href={data.addRaceHref}>
+                {String(content.cta_add ?? navigation['add-race'] ?? '')}
+              </a>
+            </div>
+
+            {
+              data.heroStats.length > 0 && (
+                <div class="home-stat-list">
+                  {data.heroStats.map((stat) => (
+                    <div class="home-stat-card">
+                      <span class="home-stat-card__value">{stat.value}</span>
+                      <span class="home-stat-card__label">{stat.label}</span>
+                    </div>
+                  ))}
+                </div>
+              )
+            }
+
+            {
+              heroExplore.length > 0 && (
+                <div class="home-hero__explore">
+                  {heroExplore.map((entry) => (
+                    <a class="home-explore-chip" href={entry.href}>
+                      <span>{entry.label}</span>
+                      <strong>{entry.count}</strong>
+                    </a>
+                  ))}
+                </div>
+              )
+            }
+          </div>
+
+          <a class="home-feature-card home-feature-card--hero" href={featuredLead.href}>
+            <img
+              src={featuredLead.imageSrc}
+              alt={featuredLead.imageAlt}
+              class="home-feature-card__image"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="home-feature-card__overlay home-feature-card__overlay--hero"></div>
+
+            <div class="home-feature-card__content home-feature-card__content--hero">
+              {featuredTopLabel && <p class="home-feature-card__hero-kicker">{featuredTopLabel}</p>}
+
+              <div class="home-feature-card__meta">
+                {
+                  featuredLead.dateLabel && featuredLead.dateIso ? (
+                    <time datetime={featuredLead.dateIso}>{featuredLead.dateLabel}</time>
+                  ) : (
+                    <span>{featuredLead.dateLabel}</span>
+                  )
+                }
+                <span>{featuredLead.locationLabel}</span>
+              </div>
+
+              <h2>{featuredLead.name}</h2>
+
+              {
+                featuredLead.distanceLabels.length > 0 && (
+                  <div class="home-pill-row">
+                    {featuredLead.distanceLabels.map((label) => (
+                      <span class="home-pill">{label}</span>
+                    ))}
+                  </div>
+                )
+              }
+
+              {featuredLead.summary && <p>{featuredLead.summary}</p>}
+              {raceCta && <span class="home-feature-card__cta">{raceCta}</span>}
+            </div>
+          </a>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    featuredStrip.length > 0 && (
+      <section class="home-section">
+        <div class="home-section__head">
+          <h2>{featuredLabel}</h2>
+          <a class="home-section__link" href={data.raceListHref}>{String(content.cta_all_races ?? '')}</a>
+        </div>
+
+        <div class="home-race-grid">
+          {featuredStrip.map((race) => (
+            <a class="home-race-card" href={race.href}>
+              <div class="home-race-card__media">
+                <img src={race.imageSrc} alt={race.imageAlt} class="home-race-card__image" loading="lazy" decoding="async" />
+                <div class="home-race-card__media-overlay"></div>
+                <div class="home-race-card__media-copy">
+                  <p class="home-race-card__media-meta">
+                    {race.dateLabel ? `${race.dateLabel} · ` : ''}
+                    {race.locationLabel}
+                  </p>
+                  <h3>{race.name}</h3>
+                </div>
+              </div>
+
+              <div class="home-race-card__body">
+                {race.typeLabel ? <p class="home-race-card__type">{race.typeLabel}</p> : null}
+                {
+                  race.distanceLabels.length > 0 && (
+                    <div class="home-pill-row">
+                      {race.distanceLabels.slice(0, 3).map((label) => (
+                        <span class="home-pill home-pill--light">{label}</span>
+                      ))}
+                    </div>
+                  )
+                }
+                {raceCta && <span class="home-race-card__cta">{raceCta}</span>}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    trendingLead && (
+      <section class="home-section">
+        <div class="home-section__head home-section__head--stacked">
+          <h2>{trendingLabel}</h2>
+          {trendingHasMetrics && trendingDescription && <p class="home-section__description">{trendingDescription}</p>}
+        </div>
+
+        <div class="home-trending-layout">
+          <a class="home-feature-card home-trending-lead" href={trendingLead.href}>
+            <img
+              src={trendingLead.imageSrc}
+              alt={trendingLead.imageAlt}
+              class="home-feature-card__image"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="home-feature-card__overlay"></div>
+            <div class="home-feature-card__content">
+              {
+                trendingHasMetrics && (
+                  <div class="home-trending-lead__badges">
+                    {trendingMostViewed && <span class="home-badge home-badge--primary">{trendingMostViewed}</span>}
+                    {
+                      trendingLead.popularityValue != null && trendingViewsLabel && (
+                        <span class="home-badge">{`${Math.round(trendingLead.popularityValue)} ${trendingViewsLabel}`}</span>
+                      )
+                    }
+                  </div>
+                )
+              }
+
+              <div class="home-feature-card__meta">
+                {
+                  trendingLead.dateLabel && trendingLead.dateIso ? (
+                    <time datetime={trendingLead.dateIso}>{trendingLead.dateLabel}</time>
+                  ) : (
+                    <span>{trendingLead.dateLabel}</span>
+                  )
+                }
+                <span>{trendingLead.locationLabel}</span>
+              </div>
+
+              <h3>{trendingLead.name}</h3>
+
+              {
+                trendingLead.distanceLabels.length > 0 && (
+                  <div class="home-pill-row">
+                    {trendingLead.distanceLabels.slice(0, 4).map((label) => (
+                      <span class="home-pill">{label}</span>
+                    ))}
+                  </div>
+                )
+              }
+
+              {trendingLead.summary && <p>{trendingLead.summary}</p>}
+              {raceCta && <span class="home-feature-card__cta">{raceCta}</span>}
+            </div>
+          </a>
+
+          <div class="home-trending-list">
+            {trendingSupporting.map((race, index) => (
+              <a class="home-trending-rank" href={race.href}>
+                <span class="home-trending-rank__badge">{index + 2}</span>
+                <div class="home-trending-rank__copy">
+                  <h3>{race.name}</h3>
+                  <p class="home-trending-rank__meta">
+                    {race.dateLabel ? `${race.dateLabel} · ` : ''}
+                    {race.locationLabel}
+                  </p>
+                  {
+                    trendingHasMetrics && race.popularityValue != null && trendingViewsLabel && (
+                      <p class="home-trending-rank__views">
+                        {Math.round(race.popularityValue)} {trendingViewsLabel}
+                      </p>
+                    )
+                  }
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    recentLead && (
+      <section class="home-section home-section--split">
+        <div class="home-section__head">
+          <h2>{recentLabel}</h2>
+        </div>
+
+        <div class="home-fresh-layout">
+          <a class="home-fresh-lead" href={recentLead.href}>
+            <img src={recentLead.imageSrc} alt={recentLead.imageAlt} class="home-fresh-lead__image" loading="lazy" decoding="async" />
+            <div class="home-fresh-lead__body">
+              <div class="home-fresh-lead__badges">
+                {newestRaceBadge && <span class="home-badge home-badge--primary">{newestRaceBadge}</span>}
+                {recentLead.typeLabel ? <span class="home-badge">{recentLead.typeLabel}</span> : null}
+              </div>
+              <h3>{recentLead.name}</h3>
+              <p class="home-fresh-lead__meta">
+                {recentLead.dateLabel ? `${recentLead.dateLabel} · ` : ''}
+                {recentLead.locationLabel}
+              </p>
+              {recentLead.summary && <p class="home-fresh-lead__summary">{recentLead.summary}</p>}
+              {raceCta && <span class="home-feature-card__cta">{raceCta}</span>}
+            </div>
+          </a>
+
+          <div class="home-fresh-list">
+            {recentSupporting.map((race) => (
+              <a class="home-fresh-item" href={race.href}>
+                <div class="home-fresh-item__copy">
+                  <div class="home-fresh-item__meta">
+                    {newestRaceBadge && <span class="home-badge">{newestRaceBadge}</span>}
+                    <span>{race.locationLabel}</span>
+                  </div>
+                  <h3>{race.name}</h3>
+                  <p>
+                    {race.dateLabel ? `${race.dateLabel} · ` : ''}
+                    {race.typeLabel}
+                  </p>
+                </div>
+                <img src={race.imageSrc} alt="" class="home-fresh-item__image" loading="lazy" decoding="async" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="home-section">
+    <div class="home-location-layout">
+      <div class="home-location-card">
+        <div class="home-section__head home-section__head--compact">
+          <h2>{String(content.popular_counties_title ?? '')}</h2>
+          <a class="home-section__link" href={data.browseHref}>{String(content.all_counties ?? '')}</a>
+        </div>
+        <div class="home-link-grid">
+          {data.popularRegions.map((entry) => (
+            <a class="home-link-card" href={entry.href}>
+              <span>{entry.label}</span>
+              <strong>{entry.count}</strong>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="home-location-card">
+        <div class="home-section__head home-section__head--compact">
+          <h2>{String(content.popular_cities_title ?? '')}</h2>
+          <a class="home-section__link" href={data.browseHref}>{String(content.all_cities ?? '')}</a>
+        </div>
+        <div class="home-link-grid">
+          {data.popularCities.map((entry) => (
+            <a class="home-link-card" href={entry.href}>
+              <span>{entry.label}</span>
+              <strong>{entry.count}</strong>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {
+    data.categoryPanels.length > 0 && (
+      <section class="home-category-layout">
+        {data.categoryPanels.map((panel) => (
+          <a class="home-category-card" href={panel.href}>
+            <img src={panel.imageSrc} alt="" class="home-category-card__image" loading="lazy" decoding="async" />
+            <div class="home-category-card__overlay"></div>
+            <div class="home-category-card__body">
+              <h2>{panel.title}</h2>
+              <div class="home-category-card__links">
+                {panel.sublinks.map((link) => (
+                  <span class="home-category-card__tag">{link.label}</span>
+                ))}
+              </div>
+              <span class="home-category-card__cta">{panel.ctaLabel}</span>
+            </div>
+          </a>
+        ))}
+      </section>
+    )
+  }
+
+  {
+    data.toolLinks.length > 0 && (
+      <section class="home-section">
+        <div class="home-section__head">
+          <h2>{toolLabel}</h2>
+        </div>
+
+        <div class="home-tool-grid">
+          {data.toolLinks.map((tool) => (
+            <a class="home-tool-card" href={tool.href}>
+              <span class="home-tool-card__icon-wrap" aria-hidden="true">
+                <svg
+                  class="icon"
+                  aria-hidden="true"
+                  viewBox={toolIconViewBoxes[tool.iconId] ?? '0 0 512 512'}
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  {
+                    tool.iconId === 'map-outline' && (
+                      <>
+                        <path
+                          d="M313.27 124.64L198.73 51.36a32 32 0 00-29.28.35L56.51 127.49A16 16 0 0048 141.63v295.8a16 16 0 0023.49 14.14l97.82-63.79a32 32 0 0129.5-.24l111.86 73a32 32 0 0029.27-.11l115.43-75.94a16 16 0 008.63-14.2V74.57a16 16 0 00-23.49-14.14l-98 63.86a32 32 0 01-29.24.35z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="32"
+                        />
+                        <path d="M328 128v336M184 48v336" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                      </>
+                    )
+                  }
+                  {
+                    tool.iconId === 'fitness-outline' && (
+                      <>
+                        <path
+                          d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="32"
+                        />
+                        <path
+                          d="M48 256h112l48-96 48 160 48-96 32 64h128"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="32"
+                        />
+                      </>
+                    )
+                  }
+                  {
+                    tool.iconId === 'stopwatch-outline' && (
+                      <>
+                        <path d="M256 232v-80" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                        <path d="M256 88V72M132 132l-12-12" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" />
+                        <circle cx="256" cy="272" r="32" stroke-miterlimit="10" stroke-width="32"></circle>
+                        <path d="M256 96a176 176 0 10176 176A176 176 0 00256 96z" stroke-miterlimit="10" stroke-width="32" />
+                      </>
+                    )
+                  }
+                  {
+                    tool.iconId === 'calculator-outline' && (
+                      <>
+                        <rect
+                          x="112"
+                          y="48"
+                          width="288"
+                          height="416"
+                          rx="32"
+                          ry="32"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="32"
+                        ></rect>
+                        <path
+                          d="M160.01 112H352v64H160.01z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="32"
+                        />
+                        <circle cx="168" cy="248" r="24" fill="currentColor" stroke="none"></circle>
+                        <circle cx="256" cy="248" r="24" fill="currentColor" stroke="none"></circle>
+                        <circle cx="344" cy="248" r="24" fill="currentColor" stroke="none"></circle>
+                        <circle cx="168" cy="328" r="24" fill="currentColor" stroke="none"></circle>
+                        <circle cx="256" cy="328" r="24" fill="currentColor" stroke="none"></circle>
+                        <circle cx="168" cy="408" r="24" fill="currentColor" stroke="none"></circle>
+                        <circle cx="256" cy="408" r="24" fill="currentColor" stroke="none"></circle>
+                        <rect x="320" y="304" width="48" height="128" rx="24" ry="24" fill="currentColor" stroke="none"></rect>
+                      </>
+                    )
+                  }
+                </svg>
+              </span>
+              <div class="home-tool-card__body">
+                <h3>{tool.label}</h3>
+                {tool.description && <p>{tool.description}</p>}
+              </div>
+              <span class="home-tool-card__meta" aria-hidden="true">
+                <span class="home-tool-card__meta-line"></span>
+                <span class="home-tool-card__meta-arrow">→</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <section class="home-add-race">
+    <a class="home-add-race__card" href={data.addRaceHref}>
+      <img
+        src="/common_images/add-race-background.webp"
+        alt=""
+        class="home-add-race__image"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="home-add-race__overlay"></div>
+      <div class="home-add-race__body">
+        {addRaceEyebrow && <p class="home-add-race__eyebrow">{addRaceEyebrow}</p>}
+        <h2>{addRaceLabel}</h2>
+        <span class="home-add-race__cta">{String(navigation['add-race'] ?? addRaceLabel)}</span>
+      </div>
+    </a>
+  </section>
+</div>

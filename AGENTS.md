@@ -12,11 +12,13 @@ This repository is the Astro + Supabase migration of the live legacy project at 
 ## Core Rules
 
 - Do not hardcode user-facing copy in components. Add or update YAML under `data/countries/{code}/`.
+- Design routing for one market per domain: native lives at `/`, English lives at `/en/`. Do not introduce country-prefixed native public URLs.
 - Keep the race list SEO-first and SSG-first: page 1 is pre-rendered, while pagination and filters use the `get_races_list_page` RPC.
 - Use static `public/markers-{country}.json` for map pins. Do not fetch pins from paginated list queries.
 - Only publishable Supabase keys belong in the browser. Secret or service-role keys are only for scripts, CI, and build-time snapshots.
 - Treat build-time Supabase access as export-only: fetch race rows once per country into the temporary build snapshot, then reuse that local snapshot for the rest of static generation. Do not add route-level patterns that repeatedly hit Supabase during `astro build`.
 - Preserve legacy class names and layout expectations on race list routes unless there is a clear reason to modernize them deliberately.
+- If preview-only `/{country}/...` routes are used locally, keep them clearly separated from canonical public routing decisions.
 
 ## Migration Workflow
 

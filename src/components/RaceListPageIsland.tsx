@@ -20,13 +20,17 @@ import {
   formatDistanceSegment,
   primaryRaceImageUrl,
   splitDistanceVerbose,
+  supportedFlagCode,
 } from '../lib/raceCardDisplay';
+import { cityNamesMatch } from '../lib/cityNames';
 import {
   ALL_NEIGHBORING_COUNTIES_VALUE,
+  isDomesticOrigin,
   neighboringCountryValue,
   parseNeighboringSelection,
   type NeighboringCountryOption,
 } from '../lib/neighboringSelection';
+import { getBrowserMarketRouteTargets, resolveRaceDetailHref } from '../lib/marketRoutes';
 import { pickTranslation, type RaceListRow } from '../lib/raceListRow';
 
 export type PaginationCopy = {
@@ -41,6 +45,14 @@ export type PaginationCopy = {
 type PaginationToken = number | 'ellipsis';
 
 type RpcResult = { total?: number; rows?: RaceListRow[] };
+type CardTopLocation = { label: string; flagCode: string | null };
+
+function countryLabelForNeighbor(
+  code: string,
+  neighboringCountries: NeighboringCountryOption[],
+): string {
+  return neighboringCountries.find((entry) => entry.code === code)?.label ?? code.toUpperCase();
+}
 
 function todayYyyyMmDd(): string {
   const now = new Date();
@@ -105,6 +117,11 @@ function formatYyyymmdd(raw: string, monthShort: Record<string, string>): string
   const d = String(parseInt(raw.slice(6, 8), 10));
   const monthName = monthShort[m] ?? m;
   return `${d} ${monthName}`;
+}
+
+function yyyymmddToIso(raw: string | null | undefined): string | undefined {
+  if (!raw || !/^\d{8}$/.test(raw)) return undefined;
+  return `${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}`;
 }
 
 function comparableTodayYyyymmdd(): string {
@@ -180,7 +197,7 @@ function buildPaginationTokens(page: number, totalPages: number): PaginationToke
 }
 
 function rowMatchesCity(row: RaceListRow, city: string): boolean {
-  const normalized = city.trim().toLowerCase();
+  const normalized = city.trim();
   if (!normalized) return false;
 
   const values = new Set<string>();
@@ -196,7 +213,7 @@ function rowMatchesCity(row: RaceListRow, city: string): boolean {
     values.add(row.payload.location.trim());
   }
 
-  return [...values].some((value) => value.toLowerCase() === normalized);
+  return [...values].some((value) => cityNamesMatch(value, normalized));
 }
 
 function rowMatchesMonth(row: RaceListRow, month: string): boolean {
@@ -302,6 +319,7 @@ export default function RaceListPageIsland(props: {
   browseByCategoryButton: string;
   browseByCategoryHref: string;
   selectedRacesTitle?: string;
+  selectedRacesTopTitle?: string;
   enableHighlightedRaces?: boolean;
   mapToggleDesktop: string;
   mapToggleDesktopActive: string;
@@ -370,6 +388,7 @@ export default function RaceListPageIsland(props: {
     browseByCategoryButton,
     browseByCategoryHref,
     selectedRacesTitle = '',
+    selectedRacesTopTitle = '',
     enableHighlightedRaces = false,
     mapToggleDesktop,
     mapToggleDesktopActive,
@@ -408,15 +427,7 @@ export default function RaceListPageIsland(props: {
     verboseLocalDistanceMapping = {},
   } = props;
 
-  const prefix =
-    routeLocale === 'en'
-      ? countryCode === 'se'
-        ? '/en/'
-        : `/${countryCode}/en/`
-      : countryCode === 'se'
-        ? '/'
-        : `/${countryCode}/`;
-  const raceBase = `${prefix}${racePageFolder}/`;
+  const marketRouteTargets = useMemo(() => getBrowserMarketRouteTargets(), []);
   const hasMapboxToken = Boolean(mapboxToken.trim());
 
   const snapshotRef = useRef<{ rows: RaceListRow[]; total: number }>({
@@ -853,6 +864,29 @@ export default function RaceListPageIsland(props: {
     [countyMapping, countryNative],
   );
 
+  const topLocation = useCallback(
+    (r: RaceListRow): CardTopLocation => {
+      const originCode = r.origin_country?.trim().toLowerCase() ?? '';
+      const isNeighboringRace = originCode && !isDomesticOrigin(originCode, countryCode);
+      if (isNeighboringRace) {
+        const nearestCity =
+          typeof r.payload?.nearest_city === 'string' ? r.payload.nearest_city.trim() : '';
+        const fallbackLocation =
+          typeof r.payload?.location === 'string' ? r.payload.location.trim() : '';
+        return {
+          label: nearestCity || fallbackLocation || countryLabelForNeighbor(originCode, neighboringCountries),
+          flagCode: supportedFlagCode(originCode),
+        };
+      }
+
+      return {
+        label: countyLabel(r),
+        flagCode: null,
+      };
+    },
+    [countryCode, countyLabel, neighboringCountries],
+  );
+
   const highlightedEntries = useMemo<HighlightedRaceEntry[]>(() => {
     if (!enableHighlightedRaces || !selectedRacesTitle.trim()) return [];
 
@@ -870,24 +904,34 @@ export default function RaceListPageIsland(props: {
         if (leftUpcoming === 0) return leftDate.localeCompare(rightDate);
         return rightDate.localeCompare(leftDate);
       })
-      .slice(0, 7)
+      .slice(0, 9)
       .map((row) => {
         const image = highlightedImage(row);
         const name = pickName(row);
         const typeLocal = pickTypeLocal(row);
         const distVerbose = pickDistanceVerbose(row);
+        const rawDate = firstYyyymmdd(row.race_dates);
         const distParts = splitDistanceVerbose(distVerbose).map((segment) =>
           formatDistanceSegment(segment, verboseLocalDistanceMapping),
         );
+        const summary = excerptDescription(pickDescription(row), 170);
 
         return {
           id: row.id,
-          href: `${raceBase}${row.domain_name}/`,
+          href: resolveRaceDetailHref({
+            hostCountryCode: countryCode,
+            routeLocale,
+            localRacePageFolder: racePageFolder,
+            row,
+            marketRouteTargets,
+          }),
           name,
-          dateLabel: formatYyyymmdd(firstYyyymmdd(row.race_dates) ?? '', monthMappingShort),
-          regionLabel: countyLabel(row),
+          dateLabel: formatYyyymmdd(rawDate ?? '', monthMappingShort),
+          dateIso: yyyymmddToIso(rawDate),
+          topLocation: topLocation(row),
           typeLabel: typeLocal,
           distanceLabels: distParts,
+          summary,
           imageSrc: image.src,
           imageAlt: image.alt ?? `${altPrefix}${name}`,
         };
@@ -897,14 +941,19 @@ export default function RaceListPageIsland(props: {
     countyLabel,
     enableHighlightedRaces,
     monthMappingShort,
+    countryCode,
+    routeLocale,
+    pickDescription,
     pickDistanceVerbose,
     pickName,
     pickTypeLocal,
-    raceBase,
+    racePageFolder,
     rows,
     filteredHighlightedRows,
     selectedRacesTitle,
+    topLocation,
     verboseLocalDistanceMapping,
+    marketRouteTargets,
   ]);
 
   const selectedCategoryTitle = useMemo(() => {
@@ -1277,12 +1326,18 @@ export default function RaceListPageIsland(props: {
                 const dateDisp = rawDate ? formatYyyymmdd(rawDate, monthMappingShort) : '';
                 const img =
                   primaryRaceImageUrl(r.payload) ?? placeholderImage(r.domain_name, r.race_type);
-                const regionLabel = countyLabel(r);
+                const cardTopLocation = topLocation(r);
                 const distVerbose = pickDistanceVerbose(r);
                 const venue = pickVenueLocation(r);
                 const description = pickDescription(r);
                 const summary = excerptDescription(description);
-                const href = `${raceBase}${r.domain_name}/`;
+                const href = resolveRaceDetailHref({
+                  hostCountryCode: countryCode,
+                  routeLocale,
+                  localRacePageFolder: racePageFolder,
+                  row: r,
+                  marketRouteTargets,
+                });
                 const typeLocal = pickTypeLocal(r);
                 const typeSlug = r.race_type?.toLowerCase() ?? '';
                 const displayType =
@@ -1299,7 +1354,7 @@ export default function RaceListPageIsland(props: {
                       className="race-card"
                       data-name={name}
                       data-date={rawDate ?? ''}
-                      data-county={regionLabel}
+                      data-county={cardTopLocation.label}
                       data-race-type={typeLocal}
                       data-distance={distVerbose}
                       data-location={venue}
@@ -1317,7 +1372,17 @@ export default function RaceListPageIsland(props: {
                         <div className="race-card-content">
                           <div className="race-info-top">
                             <div className="race-date">{dateDisp}</div>
-                            <div className="race-location">{regionLabel}</div>
+                            <div className="race-location">
+                              {cardTopLocation.flagCode ? (
+                                <svg className="language-flag" aria-label={cardTopLocation.flagCode}>
+                                  <use
+                                    href={`/icons/svg-sprite.svg#flag-${cardTopLocation.flagCode}`}
+                                    xlinkHref={`/icons/svg-sprite.svg#flag-${cardTopLocation.flagCode}`}
+                                  />
+                                </svg>
+                              ) : null}
+                              {cardTopLocation.label}
+                            </div>
                           </div>
                           <div className="race-card-upper-meta">
                             {displayType.trim() ? (
@@ -1379,11 +1444,12 @@ export default function RaceListPageIsland(props: {
                       </div>
                     </a>
                     {index === highlightInsertionIndex && highlightedEntries.length > 0 ? (
-                      <HighlightedRacesStrip
-                        title={selectedRacesTitle}
-                        cta={raceCardCta}
-                        entries={highlightedEntries}
-                      />
+                        <HighlightedRacesStrip
+                          title={selectedRacesTitle}
+                          topTitle={selectedRacesTopTitle}
+                          cta={raceCardCta}
+                          entries={highlightedEntries}
+                        />
                     ) : null}
                   </Fragment>
                 );

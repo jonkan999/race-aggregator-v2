@@ -1,0 +1,66 @@
+---
+import BrowseLayout from '../../layouts/BrowseLayout.astro';
+import { hasEnglishMerge, loadIndexYaml } from '../../lib/content';
+import {
+  getBrowseCategoriesIndexHref,
+  getBrowseNeighboringEntries,
+  getBrowseNeighboringIndexHref,
+  getBrowseOverviewHref,
+} from '../../lib/raceBrowse';
+
+const country = 'se';
+const locale = 'native' as const;
+const content = loadIndexYaml(country, locale);
+const overviewHref = getBrowseOverviewHref(country, locale, content);
+const categoriesHref = getBrowseCategoriesIndexHref(country, locale, content);
+const neighboringHref = getBrowseNeighboringIndexHref(country, locale, content);
+const neighboringEntries = await getBrowseNeighboringEntries({ countryCode: country, locale, content });
+const title = String(
+  content.browse_neighboring?.title ?? content.browse_by_category?.neighboring ?? 'Narliggande lander',
+);
+const description = String(content.browse_neighboring?.meta_description ?? '');
+const alternateRaceListHref = hasEnglishMerge(country)
+  ? getBrowseNeighboringIndexHref(country, 'en', loadIndexYaml(country, 'en'))
+  : undefined;
+---
+
+<BrowseLayout
+  title={`${title} — ${content.page_name ?? ''}`}
+  description={description}
+  lang={String(content.country_language_code ?? 'sv')}
+  country={country}
+  locale={locale}
+  content={content}
+  alternateRaceListHref={alternateRaceListHref}
+  activeTab="neighboring"
+  overviewHref={overviewHref}
+  categoriesHref={categoriesHref}
+  neighboringHref={neighboringHref}
+  breadcrumbs={[
+    {
+      label: String(
+        content.browse_by_category?.overview ?? content.browse_overview?.title ?? 'Bladdra efter kategori',
+      ),
+      href: overviewHref,
+    },
+    { label: title },
+  ]}
+>
+  <section class="browse-intro">
+    <h1 class="browse-intro__title">{title}</h1>
+    <p class="browse-intro__description">{description}</p>
+  </section>
+
+  <div class="browse-grid">
+    {
+      neighboringEntries.map((entry) => (
+        <a href={entry.href} class="browse-card">
+          <h2 class="browse-card__title">
+            <span>{entry.label}</span>
+            <span class="browse-card__count">{entry.count}</span>
+          </h2>
+        </a>
+      ))
+    }
+  </div>
+</BrowseLayout>

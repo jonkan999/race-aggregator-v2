@@ -77,7 +77,8 @@ export type NewsletterPopupTrigger =
   | 'scroll_depth'
   | 'exit_intent'
   | 'first_tap_ios'
-  | 'manual';
+  | 'manual'
+  | 'session_eligible';
 
 export type NewsletterPopupDismissReason =
   | 'close_button'
@@ -109,8 +110,9 @@ export type NewsletterPopupResolvedContent = {
 };
 
 type NewsletterPopupEventArgs = {
+  sessionId?: string | null;
   impressionId: string | null;
-  eventType: 'impression' | 'dismiss';
+  eventType: 'eligible_session' | 'impression' | 'dismiss';
   popupVariant: string;
   popupSurface: string;
   popupContext: string;
@@ -127,6 +129,7 @@ type NewsletterPopupEventArgs = {
 };
 
 type NewsletterSubscribeArgs = {
+  sessionId?: string | null;
   email: string;
   impressionId: string | null;
   popupVariant: string;
@@ -361,7 +364,7 @@ export function resolveNewsletterPopupContent(
     submittingText: String(config.submitting_text ?? ''),
     successMessage: String(config.success_message ?? ''),
     privacyNote: String(config.privacy_note ?? ''),
-    closeAriaLabel: String(config.close_aria_label ?? 'Close'),
+    closeAriaLabel: String(config.close_aria_label ?? ''),
     contextData: popupContextData(context),
   };
 }
@@ -382,6 +385,7 @@ export function readNewsletterPopupConfigFromDocument(): NewsletterPopupConfig |
 }
 
 export async function recordNewsletterPopupEvent({
+  sessionId,
   impressionId,
   eventType,
   popupVariant,
@@ -402,6 +406,7 @@ export async function recordNewsletterPopupEvent({
 
   const supabase = getSupabaseBrowserClient();
   const { error } = await supabase.rpc('record_newsletter_popup_event', {
+    p_session_id: sessionId ?? null,
     p_impression_id: impressionId,
     p_event_type: eventType,
     p_popup_variant: popupVariant,
@@ -423,6 +428,7 @@ export async function recordNewsletterPopupEvent({
 }
 
 export async function subscribeNewsletterPopup({
+  sessionId,
   email,
   impressionId,
   popupVariant,
@@ -443,6 +449,7 @@ export async function subscribeNewsletterPopup({
 
   const supabase = getSupabaseBrowserClient();
   const { error } = await supabase.rpc('subscribe_newsletter_popup', {
+    p_session_id: sessionId ?? null,
     p_email: email,
     p_impression_id: impressionId,
     p_popup_variant: popupVariant,

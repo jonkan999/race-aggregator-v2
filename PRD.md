@@ -27,7 +27,7 @@
 
 | Surface | Primary schema | Status | Notes |
 |--------|-----------------|--------|-------|
-| Race list (`/[country]/...race-list...`) | `ItemList` + `ListItem` | Implemented | Keep URLs stable and ensure list item names align with visible UI copy. |
+| Race list (`/...race-list...` on the market domain, `/en/...` for English) | `ItemList` + `ListItem` | Implemented | Keep URLs stable and ensure list item names align with visible UI copy. |
 | Race detail (`/.../{race_page_folder}/{domain_name}/`) | `Event` | Planned next | Highest-value schema for this project; include name, dates, location, organizer, url, image where available. |
 | Site-level identity | `Organization` + `WebSite` | Planned | Add once core race routes stabilize; support sitename consistency and trust signals. |
 | Breadcrumb trails | `BreadcrumbList` | Planned | Add on list/detail routes with canonical path hierarchy. |
@@ -44,8 +44,18 @@
 | Astro SSG | Per-market routes, YAML-driven titles/copy, **pre-rendered first page** of each list surface (see below), **ItemList JSON-LD** + visually hidden crawlable links for page-1 races. |
 | React islands | `RaceListPageIsland` (legacy-styled filters + cards + pagination + map/list toggles; page 1 unfiltered from SSG props; page 2+ and any filter via Supabase **RPC**), `RaceMapIsland` (Mapbox + clustered GeoJSON from static JSON; toolbar optional when parent supplies desktop toggle). |
 | Supabase | `races` + `race_translations`, RLS public read for published races only; **Publishable** key in the browser, **Secret** key only in seed/export/build-snapshot scripts (no legacy JWT anon key in app code). |
-| CRM / Newsletter | Context-aware newsletter popups on list/browse/detail surfaces. Copy stays in country YAML, while impressions, dismissals, and subscriptions are written through RPCs into the `crm` schema for later reporting. |
+| CRM / Newsletter | Context-aware newsletter popups on list/browse/detail surfaces. Copy stays in country YAML, while eligible sessions, impressions, dismissals, and subscriptions are written through RPCs into the `crm` schema for later reporting and serving-logic A/B tests. |
 | Scripts | `scripts/seed-races.mjs` (JSON → DB), `scripts/export-markers.mjs` (DB or JSON → `public/markers-*.json`), `scripts/export-race-list-snapshots.mjs` (DB → temporary per-country build snapshot), `scripts/build-with-race-list-snapshots.mjs` (snapshot-first build wrapper). Anonymous add-race submissions write directly from the browser to Supabase Storage + `public.race_submissions` via RLS-limited insert policies. |
+
+### Market and locale routing model
+
+- Production is market-scoped per domain, not country-prefixed.
+- The market's native site lives at `/`.
+- That same market's English site lives at `/en/`.
+- Neighboring-country browse pages are canonical at `/neighbors/` and `/neighbors/{country}/`, with English equivalents at `/en/neighbors/` and `/en/neighbors/{country}/`.
+- Neighbor-market surfaces should point at the neighboring market's English site, not a native country-prefixed path on the current host.
+- Static race-detail generation is domestic-only for each market. Foreign rows shown on neighbor-market surfaces should link to the origin market's English detail page when that market is configured locally.
+- Market-aware routing should discover configured markets from `data/countries/{code}/index.yaml` so new country folders join the routing model without code changes.
 
 ## Cost accounting (Supabase reads)
 
@@ -58,7 +68,7 @@
 - **Layout:** [RaceListLayout.astro](src/layouts/RaceListLayout.astro) — header, footer, and **ported CSS** from the legacy site (`src/styles/legacy/`, loaded only on race list routes) plus [v2-race-list-bridge.css](src/styles/v2-race-list-bridge.css) for islands and mobile map mode.
 - **Assets:** `public/common_images/`, `public/icons/svg-sprite.svg` (copied from legacy) for cards and chrome.
 - **Filters:** Date range, month chips, distance/category chips (from YAML `category_mapping`), county + race-type selects, browse link (stub path until browse routes exist).
-- **Cards:** Legacy-style `race-card` markup, lazy-loaded placeholder images, links to `/{country}/[en/]{race_page_folder}/{domain_name}/`.
+- **Cards:** Legacy-style `race-card` markup, lazy-loaded placeholder images, links to `/[en/]{race_page_folder}/{domain_name}/` on the current market domain.
 - **Map:** Single `RaceMapIsland` inside `.map-placeholder`; desktop show/hide via filter-bar toggle; mobile full-screen toggle via `body.race-list-mobile-map-open` (mirrors legacy behaviour).
 
 ## Race list: cost, speed, and SEO
@@ -82,28 +92,37 @@
 
 **Newsletter popup boundary:** newsletter capture also stays on the publishable browser client. Anonymous popup events and subscriptions must go through RLS-safe tables or security-definer RPCs only; never ship elevated keys for CRM capture.
 
-## Granular list routes (county / city / race type / category)
+## Granular list routes (county / city / race type / month / category)
 
 Legacy SEO uses dedicated URLs per county, city, type, etc. Category browse pages are now the first shipped slice in v2, using the same static-first pattern and a cache-aware SEO copy model. Broader county/city/type expansion should follow the same contract:
 
-- **`getStaticPaths`** emits one static route per segment (e.g. each county slug).
+- **`getStaticPaths`** emits one static route per valid segment or valid combination (for example county pages, city pages, month pages, race-type pages, distance/category pages, and valid race-type + category pages).
 - Each page pre-renders **the first page** of results for that segment from the temporary build snapshot (or seed JSON fallback), not by issuing repeated direct Supabase reads per route.
 - **Further pages** for that segment use the same client Supabase pattern with query filters (`county`, `race_type`, …).
-- Category landing pages read `seo_content_cache*.json` first and fall back to deterministic YAML-template copy so the site can keep shipping even when LLM copy is missing or intentionally reduced.
+- Browse landing pages read `seo_content_cache*.json` first and fall back to deterministic template copy so the site can keep shipping even when AI copy is missing or intentionally reduced.
+- That deterministic fallback copy must live in the market YAML files, not in route code, so native and English browse SEO can be edited by content changes rather than code edits.
+- The cache-generation step must enumerate targets from the same local build snapshot used for SSG so SEO copy coverage matches the pages actually being built.
+- Cache keys must be stable per browse intent so the same county, city, month, race type, category, or race-type + category page is not regenerated unnecessarily.
+- Generated copy should be timeless in both native and English, avoid year-specific phrasing, and avoid claims that depend on transient race counts.
+- Browse family thresholds and canonical subsets should live in market YAML under `browse_seo_indexing`, so future markets can tune indexability without code forks.
+- Browse SEO should follow the canonical matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md): keep broad filter coverage for users, but index only the page families and combinations that clear intent, uniqueness, and inventory thresholds.
+- Do not create multiple canonical browse families for the same practical intent. Examples to avoid are `10 km` vs `Millopp` vs `10000 meter`, or a separate distance-style page that duplicates a race-type page such as `Backyard Ultra`.
 
 This keeps **hot paths cheap** (CDN + optional zero DB reads) while **long tail and interaction** stay on Supabase.
 
 ## Routing
 
-- `/` → redirect to `/se/` (default market until multi-country index exists).
-- `/[country]/` — market home (YAML).
-- `/[country]/{race-list-slug}/` — native race list (`slugify(navigation['race-list'], country)`).
-- `/[country]/en/{race-list-slug}/` — English list when `merged_index_int.yaml` exists.
+- Public production routing is per-domain:
+  - `/` — native market home.
+  - `/{race-list-slug}/` — native race list (`slugify(navigation['race-list'], country)`).
+  - `/en/` — English market home.
+  - `/en/{race-list-slug}/` — English race list when `merged_index_int.yaml` exists.
 
 ## Internationalisation
 
 - Native locale: strings from `index.yaml`; `country_language_code` drives `<html lang>` and which `race_translations` row is preferred in the list.
 - English: strings from `merged_index_int.yaml`; list prefers `locale === 'en'` translations with fallbacks.
+- English must be templated exactly like native copy. Do not hardcode English strings in components or pages.
 
 ## Map markers
 

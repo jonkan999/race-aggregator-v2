@@ -6,6 +6,7 @@ import NewsletterPopupConfig from '../components/NewsletterPopupConfig.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { localeBasePrefix, raceListSlug, type IndexYaml } from '../lib/content';
+import { getMarketRouteTargets } from '../lib/marketRouteTargets';
 
 type LayoutLocale = 'native' | 'en';
 type BrowseTab = 'overview' | 'categories' | 'neighboring';
@@ -40,14 +41,16 @@ const {
   neighboringHref,
   breadcrumbs = [],
 } = Astro.props;
+const marketRouteTargetsJson = JSON.stringify(getMarketRouteTargets());
 
 const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
+const accessibility = (content.accessibility ?? {}) as Record<string, string>;
 const currentPath = Astro.url.pathname;
 const currentUrl = baseUrl ? `${baseUrl}${currentPath}` : currentPath;
 const raceListHref = `${localeBasePrefix(country, locale)}${raceListSlug(content, country)}/`;
 const breadcrumbItems =
   breadcrumbs.length > 0
-    ? [{ label: String(content.race_list_name ?? content.page_name ?? 'Race calendar'), href: raceListHref }, ...breadcrumbs]
+    ? [{ label: String(content.race_list_name ?? content.page_name ?? ''), href: raceListHref }, ...breadcrumbs]
     : [];
 const breadcrumbVisual = breadcrumbItems.map((item, index) => ({
   name: item.label,
@@ -84,6 +87,7 @@ const breadcrumbSchema =
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <script is:inline set:html={`window.__MARKET_ROUTE_TARGETS__ = ${marketRouteTargetsJson};`} />
     <slot name="head" />
     <NewsletterPopupConfig country={country} locale={locale} content={content} />
   </head>
@@ -101,7 +105,10 @@ const breadcrumbSchema =
           <div class="browse-breadcrumbs-shell">
             {
               breadcrumbItems.length > 0 && (
-                <nav class="browse-breadcrumbs" aria-label="Breadcrumb">
+                <nav
+                  class="browse-breadcrumbs"
+                  aria-label={String(accessibility.breadcrumb_label ?? '')}
+                >
                   <ol class="browse-breadcrumbs__list">
                     {breadcrumbItems.map((item, index) => (
                       <li class="browse-breadcrumbs__item">
@@ -134,17 +141,20 @@ const breadcrumbSchema =
               )
             }
           </div>
-          <nav class="browse-tabs right-scroller" aria-label={String(content.browse_by_category?.button ?? 'Browse')}>
+          <nav
+            class="browse-tabs right-scroller"
+            aria-label={String(content.browse_by_category?.button ?? '')}
+          >
             <a href={overviewHref} class:list={['browse-tabs__link', activeTab === 'overview' && 'is-active']}>
-              {String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? 'Overview')}
+              {String(content.browse_by_category?.overview ?? content.browse_overview?.title ?? '')}
             </a>
             <a href={categoriesHref} class:list={['browse-tabs__link', activeTab === 'categories' && 'is-active']}>
-              {String(content.browse_by_category?.categories ?? content.browse_categories?.title ?? 'Categories')}
+              {String(content.browse_by_category?.categories ?? content.browse_categories?.title ?? '')}
             </a>
             {
               neighboringHref && (
                 <a href={neighboringHref} class:list={['browse-tabs__link', activeTab === 'neighboring' && 'is-active']}>
-                  {String(content.browse_by_category?.neighboring ?? content.browse_neighboring?.title ?? 'Neighboring')}
+                  {String(content.browse_by_category?.neighboring ?? content.browse_neighboring?.title ?? '')}
                 </a>
               )
             }
