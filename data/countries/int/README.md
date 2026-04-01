@@ -1,0 +1,1 @@
+This folder is reserved for shared international **template** YAML if you later split English strings out of per-country `merged_index_int.yaml` files. Sweden (`se`) currently ships English copy in `../se/merged_index_int.yaml`.

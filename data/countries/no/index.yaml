@@ -1,0 +1,1026 @@
+navigation:
+  main: 'Alt'
+  race-list: 'Terminliste'
+  add-race: 'Legg til løp'
+  forum: 'Forum'
+  #  news: 'Nyheter'
+  #  marketplace: 'Markedsplass'
+  #  shop: 'Produkter'
+  measure-route: 'Mål ruten din'
+  training-plans: 'Treningsprogram'
+  pace-calculator: 'Fartkalkulator'
+  racetime-estimator: 'Estimér sluttiden din'
+  about-us: 'Om oss'
+  contact: 'Kontakt oss'
+  neighboring: "Nærliggende land"
+
+race_list_name: 'Terminliste'
+alternate_locale_link_text: 'English'
+
+auxiliary_pages:
+  race-page-preview: 'Forhåndsvis løp'
+  terms-of-service: 'Brukervilkår'
+  privacy-policy: 'Personvernpolicy'
+  about-us: 'Om oss'
+  contact: 'Kontakt oss'
+  faq: 'Vanlige spørsmål'
+
+page_name: 'Lopskalender'
+base_url: 'https://lopskalender.com/'
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: 'Hei!'
+    closing_salutation: 'Med vennlig hilsen,'
+    link_fallback_intro: 'Hvis knappen ikke fungerer kan du kopiere lenken her:'
+  confirm_signup:
+    body: 'Takk for at du registrerte deg på {site_name}. Bekreft e-postadressen din for å aktivere kontoen og kunne håndtere innsendte løp.'
+    button_label: 'Bekreft e-postadresse'
+    ignore_note: 'Hvis du ikke opprettet kontoen kan du ignorere denne e-posten.'
+  reset_password:
+    body: 'Vi mottok en forespørsel om å tilbakestille passordet ditt for {site_name}. Klikk på knappen nedenfor for å velge et nytt passord.'
+    button_label: 'Tilbakestill passord'
+    ignore_note: 'Hvis du ikke ba om dette kan du ignorere e-posten. Passordet ditt endres ikke før du velger et nytt.'
+  change_email:
+    body: 'Du har bedt om å bytte e-postadresse for kontoen din på {site_name}. Bekreft endringen ved å klikke på knappen nedenfor.'
+    button_label: 'Bekreft ny e-postadresse'
+    ignore_note: 'Hvis du ikke ba om endringen kan du se bort fra denne e-posten.'
+title: 'Alt om løping i'
+country_native: 'Norge'
+meta_description: 'Mest omfattende løpercommunity i Norge'  
+country: 'Norway'
+country_code: 'no'
+country_language: 'norwegian'
+country_language_code: 'no'
+local_name_for_race: 'løp'
+main_bullet_1: 'Finn ditt neste løp'
+main_bullet_2: ' - Eller legg det til her'
+main_bullet_3: 'Gjør kupp i bruktmarkedet vårt'
+main_bullet_4: 'Les det siste eller del dine tanker i forumet vårt'
+description: 'Dette fellesskapsdrevne initiativet har som mål å samle løpere fra hele Norge. Plattformen vår er under utvikling, men med din hjelp kan vi skape noe fantastisk!'
+cta_search: 'Finn Løp'
+cta_add: 'Legg til et Løp'
+selected_races_title: 'Utvalgte Løp'
+cta_all_races: 'Vis alle løp'
+show_local: 'Vis'
+race_local: 'Løp'
+running_local: 'Løping'
+
+alt_prefix: 'Bilde til '
+
+#race_list
+race_list_title: 'Norges mest komplette liste over maraton, halvmaraton, milløp og andre løpekonkurranser'
+race_list_meta_description: 'Den komplette løpslisten for løpere. Finn ditt neste løp i dag!'
+race_list_meta_description_1: Her finner du alle løp og arrangementer i Norge.
+race_list_meta_description_2:
+  ✔️Største løpskalender ✔️Løping, terreng eller maraton
+  ✔️Løp i hele Norge
+race_card_cta_text: 'Mer info & påmelding'
+section_race_card_category_prefix: 'Alle'
+section_race_card_category_suffix: 'løp'
+section_race_card_header_separator: 'i'
+section_race_card_header_region_default: 'Norge'
+section_race_card_header_date_range_from: 'fra '
+section_race_card_header_date_range_to: 'til '
+section_race_card_header_date_range_single: 'i '
+
+filter_date_from: 'Fra'
+filter_date_to: 'Til'
+
+filter_county: 'Alle fylker'
+
+filter_race_type: 'Alle løpstyper'
+filter_categories: 'Alle kategorier'
+filter_months: 'Hele året'
+filter_distance: 'Alle distanser'
+
+month_mapping:
+  '01': 'Januar'
+  '02': 'Februar'
+  '03': 'Mars'
+  '04': 'April'
+  '05': 'Mai'
+  '06': 'Juni'
+  '07': 'Juli'
+  '08': 'August'
+  '09': 'September'
+  '10': 'Oktober'
+  '11': 'November'
+  '12': 'Desember'
+
+month_mapping_short:
+  '01': 'jan.'
+  '02': 'feb.'
+  '03': 'mars'
+  '04': 'apr.'
+  '05': 'mai'
+  '06': 'juni'
+  '07': 'juli'
+  '08': 'aug.'
+  '09': 'sep.'
+  '10': 'okt.'
+  '11': 'nov.'
+  '12': 'des.'
+
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Tidsløp
+  relay: Stafett
+
+distance_units:
+  - range: [20.9, 21.3]
+    label: Halvmaraton
+  - range: [41.9, 42.4]
+    label: Maraton
+
+county_label_text: 'Alle fylker'
+county_mapping:
+  'Oslo': 'Oslo'
+  'Rogaland': 'Rogaland'
+  'Møre og Romsdal': 'Møre og Romsdal'
+  'Nordland': 'Nordland'
+  'Viken': 'Viken'
+  'Innlandet': 'Innlandet'
+  'Vestfold og Telemark': 'Vestfold og Telemark'
+  'Agder': 'Agder'
+  'Vestland': 'Vestland'
+  'Trøndelag': 'Trøndelag'
+  'Troms og Finnmark': 'Troms og Finnmark'
+
+category_label_text: 'Løpskategori'
+category_mapping:
+  '5 km':
+    range: [4, 6]
+  '10 km':
+    range: [9, 11]
+  'Halvmaraton':
+    range: [20, 22]
+  'Maraton':
+    range: [40, 44]
+  'Backyard Ultra': 'backyard'
+  '50 miles':
+    range: [75, 100]
+  '100 miles':
+    range: [150, 170]
+  '200 miles':
+    range: [300, 500]
+  '50 km':
+    range: [45, 55]
+  '100 km':
+    range: [90, 110]
+  'Milløp':
+    range: [9, 11]
+  '1500 meter':
+    range: [1.5, 1.5]
+  '3000 meter':
+    range: [3, 3]
+  '5000 meter':
+    range: [5, 5]
+  '10000 meter':
+    range: [10, 10]
+  'Ultraløp':
+    range: [42, 500]
+
+verbose_local_distance_mapping:
+  'half marathon': 'Halvmaraton'
+  'marathon': 'Maraton'
+  'fallback': 'Blandet distanse'
+
+to_race_page_cta: 'Til løpssiden'
+
+# Map Toggle Buttons
+map_toggle_desktop: 'Vis kart'
+map_toggle_desktop_active: 'Skjul kart'
+map_toggle_mobile: 'Kart'
+map_toggle_mobile_list: 'Liste'
+
+race_page_map_zoom: '4'
+
+# Pagination
+pagination:
+  results_text: 'av'
+  events_text: 'Løp'
+  previous_text: 'Forrige'
+  next_text: 'Neste'
+  page_text: 'Side'
+  of_text: 'av'
+
+# ADD RACE PAGE
+add_race_title: 'Legg til et nytt løp'
+add_race_meta_description: 'Legg til ditt løp på Lopskalender.no'
+map_message: 'Plasser løpet ditt ved å klikke på kartet'
+mapbox_center:
+  latitude: 61.114952
+  longitude: 9.808722
+mapbox_zoom: '5'
+date_text: 'Dato'
+multi_day_toggle: 'Flerdagersløp'
+end_date_text: 'Sluttdato'
+type_text: 'Type underlag / Type løp'
+type_select_placeholder: 'Velg underlag / type løp'
+type_options:
+  road: 'Landevei'
+  terrain: 'Terreng'
+  trail: 'Trail/Fjelløp'
+  track: 'Løpebane'
+  backyard: 'Backyard Ultra'
+  frontyard: 'Frontyard Ultra'
+  relay: 'Stafett'
+  time: 'Tidsløp'
+  other: 'Annet'
+
+name_label: 'Løpets navn:'
+name_placeholder: 'f.eks. Bislett Games'
+distance_label: 'Distanser:'
+distance_placeholder: 'Angi distanse i km'
+add_distance_button: 'Legg til'
+half_marathon_button: 'Halvmaraton'
+marathon_button: 'Maraton'
+backyard_ultra_button: 'Backyard Ultra'
+frontyard_ultra_button: 'Frontyard Ultra'
+fifty_miles_button: '50 miles'
+hundred_miles_button: '100 miles'
+place_label: 'Navn på stedet hvor løpet arrangeres:'
+place_placeholder: 'f.eks. Bislett Stadion, Oslo'
+organizer_label: 'Arrangør:'
+organizer_contact_placeholder: 'Bislett Alliansen'
+organizer_contact_label: 'E-post til kontaktperson:'
+organizer_mail_placeholder: 'info@lopskartet.no'
+website_label: 'Arrangørens nettside:'
+website_placeholder: 'https://bislettalliansen.no/'
+start_time_label: 'Starttid:'
+start_time_placeholder: '09:00'
+price_range_label: 'Prisintervall:'
+price_range_placeholder: 'f.eks. 200-500 kr'
+add_race_description_label: 'Beskriv løpet'
+add_race_description_placeholder: 'Bislett Games er et internasjonalt friidrettsstevne...'
+add_race_additional_label: 'Annen nødvendig informasjon'
+add_race_additional_placeholder: 'f.eks. start og målgang, startgrupper osv.'
+add_race_images_label: 'Last opp bilder (Gjerne minst 4)'
+choose_pictures_button: 'Velg bilder'
+drag_drop_text: 'Dra og slipp bilder her eller klikk for å velge'
+clear_images_button: 'Tøm bilder'
+clear_form_button: 'Tøm skjema'
+preview_button: 'Forhåndsvis'
+submit_button: 'Send inn'
+preview_title: 'Forhåndsvisning'
+preview_exit_button: 'Lukk forhåndsvisning'
+
+optional_label: 'Valgfritt'
+
+#forum
+comments_suffix: 'Kommentarer'
+cta_forum: 'Vis Alle Innlegg'
+
+# Race Page Preview
+race_page_preview_title: 'Slik vil løpet ditt se ut'
+edit_race_button: 'Rediger'
+race_page_description_label: 'Beskrivelse av løpet'
+race_page_course_highlights_label: 'Høydepunkter'
+race_page_additional_label: 'Annen informasjon'
+race_page_detailed_info_label: 'Detaljert informasjon'
+race_page_social_links_label: 'Følg løpet'
+
+# Race Page Details
+race_page_place_label: 'Sted:'
+race_page_distances_label: 'Distanser:'
+race_page_surface_label: 'Underlag:'
+race_page_date_label: 'Dato:'
+race_page_estimated_date_label: 'Estimert dato'
+race_page_estimated_disclaimer: 'Vi har ikke fått et offisielt dato for dette løpet.'
+race_page_registration_link: 'Link til påmelding'
+race_page_back_to_list: 'Til terminlisten'
+race_page_favorites_title: 'Gå ikke glipp av oppdateringer'
+race_page_favorites_body: 'Opprett konto og lagre løpet i favorittene dine for å kunne få oppdateringer, nyheter og utvalgte tilbud når favoritter lanseres.'
+race_page_favorites_cta: 'Lagre løp i favoritter'
+race_page_similar_title: 'Lignende løp'
+race_page_similar_body: 'Flere løp med lignende distanse, type eller sted i nærheten.'
+race_page_discover_title: 'Utforsk flere løp'
+race_page_discover_county_link: 'Alle løp i {county}'
+race_page_discover_type_link: 'Flere løp av typen {type}'
+race_page_discover_category_link: 'Flere {category} løp'
+race_page_discover_type_county_link: '{type}løp i {county}'
+race_page_discover_overview_link: 'Bla blant alle kategorier'
+
+disclaimer_text_1: |
+  All info på denne siden er basert på åpne kildedata. Vi gjør vårt beste for å holde den oppdatert men
+  kan ikke garantere at alt er korrekt. Ser du noen feil,
+disclaimer_link: 'kontakt oss'
+disclaimer_text_2: 'så retter vi det opp så snart som mulig.'
+disclaimer_text_3: 'Noe mer du ønsker å legge til under løpet ditt?'
+disclaimer_text_4: 'så skal vi prøve å hjelpe!'
+race_page_visit_organizer_website: 'Til arrangørens side & påmelding'
+
+#race page layout
+race_page_folder_name: 'lopssider'
+race_page_layout_title: 'Løpsside for: '
+race_page_alt_prefix: 'Bilde til '
+
+#SEO STUFF
+seo_county_folder_name: 'Alle Fylker'
+seo_cities_folder_name: 'Byer'
+popular_subcategories_title: 'Populære underkategorier'
+important_keywords_racelist:
+  - 'løpskalender'
+  - 'terminliste'
+  - 'terminliste løping'
+  - 'løpskalenderen'
+  - 'løpekalender'
+  - 'løpekalenderen'
+  - 'løpeløp'
+  - 'løpekonkurranser'
+  - 'løping norge'
+  - 'løp norge'
+  - 'løpene norge'
+  - 'løpsliste'
+  - 'løping i norge'
+  - 'løping konkurranser'
+  - 'fjelløp'
+
+# SEO Content Templates
+seo_templates:
+  title_parts:
+    category: '{category} løp'
+    race_type: '{race_type}'
+    location: 'i {location}'
+    default: 'Alle løp'
+  paragraph_templates:
+    category_race_location: 'Finn {category} {race_type}løp i {location}.'
+    category_race: 'Utforsk {category} {race_type}løp i hele Norge.'
+    category_location: 'Oppdag {category} løp i {location}.'
+    race_location: 'Se alle {race_type}løp i {location}.'
+    category_only: 'Finn {category} løp over hele Norge.'
+    race_only: 'Utforsk {race_type}løp i alle regioner.'
+    location_only: 'Se alle typer løp i {location}.'
+    default_suffix: 'Her finner du datoer, distanser og all informasjon du trenger for å planlegge ditt neste løp.'
+  browse_page_templates:
+    county:
+      title: '{label} løp | {site_name}'
+      meta_description: 'Bla blant løp i {label}. Sammenlign datoer, distanser, løpstyper og praktisk informasjon før du velger ditt neste løp.'
+      h1: 'Løp i {label}'
+      paragraph: 'Denne siden samler løp i {label} for å gjøre det enklere å sammenligne datoer, distanser, løpstyper og praktisk informasjon på ett sted. Bruk den når du vil få bedre oversikt før du velger ditt neste løp.'
+    city:
+      title: '{label} løp | {site_name}'
+      meta_description: 'Finn løp med tilknytning til {label}. Sammenlign datoer, distanser, nærliggende alternativer og praktisk informasjon før ditt neste løp.'
+      h1: 'Løp nær {label}'
+      paragraph: 'Denne bysiden hjelper deg med å bla blant løp med tilknytning til {label}, inkludert nærliggende alternativer som er relevante når du planlegger løpsdag eller reise. Den er laget for å gjøre lokale løp enklere å oppdage og sammenligne.'
+    month:
+      title: '{label} løp | {site_name}'
+      meta_description: 'Bla blant løp i {label_lower} i {market}. Sammenlign datoer, distanser, løpstyper og praktisk informasjon når du planlegger sesongen.'
+      h1: 'Løp i {label}'
+      paragraph: 'Denne siden er laget for løpere som vil se kalenderen måned for måned og trenger en raskere måte å sammenligne hva som skjer i {label_lower}. Den hjelper deg å snevre inn utvalget før du går videre til distanser, underlag og løpssteder.'
+    race_type:
+      title: 'Løp av typen {label} i {market} | {site_name}'
+      meta_description: 'Bla blant løp av typen {label_lower} i {market}. Sammenlign datoer, distanser, steder og praktisk informasjon før du velger et løp som passer deg.'
+      h1: 'Løp av typen {label} i {market}'
+      paragraph: 'Denne siden fokuserer på løp av typen {label_lower} og gir deg en tydeligere oversikt når løpsformatet er like viktig som distansen. Bruk den for å sammenligne alternativer mellom regioner, datoer og praktiske detaljer uten å starte i hele kalenderen.'
+    category:
+      title: 'Løp i {market} for {label} | {site_name}'
+      meta_description: 'Bla blant løp i {market} for kategorien {label}. Sammenlign datoer, løpstyper, steder og praktisk informasjon før du bestemmer deg for neste konkurranse.'
+      h1: 'Løp i {market} for {label}'
+      paragraph: 'Denne distanse- og kategorisiden samler løp som matcher {label} for å gjøre det enklere å sammenligne relevante alternativer på ett sted. Den er laget for løpere som vil gå raskere fra bred blaing til en kortliste med realistiske løp.'
+    race_type_category:
+      title: 'Løp i {market} for {label} ({secondary_label}) | {site_name}'
+      meta_description: 'Bla blant løp i {market} for {label} innen løpstypen {secondary_label_lower}. Sammenlign datoer, steder og praktisk informasjon før du velger ditt neste løp.'
+      h1: 'Løp i {market} for {label} ({secondary_label})'
+      paragraph: 'Denne siden snevrer inn kalenderen til {label} løp innen løpstypen {secondary_label_lower}, noe som er nyttig når både distanse og løpsformat påvirker hva som passer best. Bruk den for å sammenligne mer like alternativer før du bestemmer deg for et løp.'
+    race_type_county:
+      title: '{secondary_label}løp i {label} | {site_name}'
+      meta_description: 'Bla blant {secondary_label_lower}løp i {label}. Sammenlign datoer, distanser og praktisk informasjon før du velger ditt neste løp.'
+      h1: '{secondary_label}løp i {label}'
+      paragraph: 'Denne siden fokuserer på {secondary_label_lower}løp i {label} for å gjøre det lettere å sammenligne mer relevante alternativer innen samme region. Den passer når både geografi og løpsformat styrer utvalget.'
+    race_type_month:
+      title: '{secondary_label}løp i {label} | {site_name}'
+      meta_description: 'Bla blant {secondary_label_lower}løp i {label_lower}. Sammenlign datoer, distanser og praktisk informasjon når du planlegger sesongen.'
+      h1: '{secondary_label}løp i {label}'
+      paragraph: 'Denne siden samler {secondary_label_lower}løp i {label_lower} for løpere som planlegger etter kalenderen først. Den hjelper deg å sammenligne lignende løpsformater før du snevrer videre inn på sted eller distanse.'
+    race_type_city:
+      title: '{secondary_label}løp nær {label} | {site_name}'
+      meta_description: 'Bla blant {secondary_label_lower}løp med tilknytning til {label}. Sammenlign datoer, distanser og nærliggende alternativer før ditt neste løp.'
+      h1: '{secondary_label}løp nær {label}'
+      paragraph: 'Denne siden samler {secondary_label_lower}løp med tilknytning til {label} for å gjøre lokal løpsleting raskere å sammenligne. Den er nyttig når du vil finne riktig løpsformat nær en bestemt by uten å starte i hele kalenderen.'
+seo_generation:
+  browse_system_prompt: 'Du skriver tidløs SEO-tekst for indekserbare landingssider for løp. Skriv først og fremst for mennesker og deretter for søkeintensjon. Returner kun gyldig JSON. Hold teksten tidløs: nevn aldri inneværende år, aktuelle antall, begrenset tidsperiode eller formuleringer som avhenger av ferskhet. Unngå keyword stuffing, hype, klikkagn, superlativer og påstander som ikke kan verifiseres. Gjør hver side tydelig unik ut fra konteksten som sendes inn. Bruk naturlig norsk for en norsk løpskalender. Foretrekk korte titler, korte H1-er, metabeskrivelser rundt 120-160 tegn når det passer og et avsnitt på 2-3 korte setninger.'
+  browse_guidance:
+    county: 'Brukeren vil finne løp i en region.'
+    city: 'Brukeren vil finne løp med tilknytning til en by eller nærliggende by.'
+    month: 'Brukeren vil finne løp etter måned.'
+    race_type: 'Brukeren vil finne en bestemt løpstype.'
+    category: 'Brukeren vil finne en bestemt distanse eller kategori.'
+    race_type_category: 'Brukeren vil finne en bestemt distanse eller kategori innen en løpstype.'
+    race_type_county: 'Brukeren vil finne en bestemt løpstype i en bestemt region.'
+    race_type_month: 'Brukeren vil finne en bestemt løpstype i en bestemt måned.'
+    race_type_city: 'Brukeren vil finne en bestemt løpstype med tilknytning til en bestemt by.'
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+      - road
+      - trail
+      - terrain
+      - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_labels:
+      - 5 km
+      - 10 km
+      - Halvmaraton
+      - Maraton
+      - 50 km
+      - 100 km
+      - 50 miles
+      - 100 miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+      - road
+      - trail
+    allowed_labels:
+      - 5 km
+      - 10 km
+      - Halvmaraton
+      - Maraton
+      - 50 km
+      - 100 km
+      - 50 miles
+      - 100 miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+      - road
+      - trail
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+      - road
+      - trail
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+      - road
+      - trail
+
+browse_by_category:
+  button: 'Bla etter kategori'
+  helper_text: 'Finn løp via forhåndsdefinerte filtre og kombinasjoner'
+  overview: 'Oversikt'
+  counties: 'Fylker'
+  cities: 'Byer'
+  months: 'Måned'
+  types: 'Løpstyper'
+  categories: 'Kategorier'
+  neighboring: "Nærliggende land"
+
+
+# Hardcoded values extracted from templates
+
+browse_overview:
+  title: 'Bladre blant alle løp'
+  meta_description: 'Finn løp etter fylke, type eller kategori'
+
+browse_types:
+  title: 'Bladre etter løptyp'
+  meta_description: 'Finn løp etter type av løp.'
+
+browse_counties:
+  title: 'Bladre etter fylke'
+  meta_description: 'Finn løp i ditt fylke.'
+
+browse_cities:
+  title: 'Bladre etter by'
+  meta_description: 'Finn løp i din by.'
+
+browse_months:
+  title: 'Bladre etter måned'
+  meta_description: 'Finn løp i en bestemt måned.'
+
+browse_categories:
+  title: 'Bladre etter kategori'
+  meta_description: 'Finn løp etter distanse og kategori.'
+
+
+# Authentication
+auth_modal:
+  title_sign_in: 'Logg inn'
+  title_create_account: 'Opprett konto'
+  title_reset_password: 'Tilbakestill passord'
+  name_placeholder: 'Ditt navn'
+  email_placeholder: 'Din e-post'
+  password_placeholder: 'Passord'
+  submit_sign_in: 'Logg inn'
+  submit_create_account: 'Opprett konto'
+  submit_reset_password: 'Send tilbakestillingslink'
+  create_account: 'Opprett konto'
+  forgot_password: 'Glemt passord?'
+  back_to_login: 'Tilbake til innlogging'
+  error_wrong_password: 'Feil passord'
+  error_email_not_found: 'E-postadressen finnes ikke'
+  prompt_reset_password: 'Vil du tilbakestille passordet ditt?'
+  prompt_create_account: 'Vil du opprette en konto med denne e-postadressen?'
+  already_logged_in: 'Du er allerede logget inn som'
+  as_email: 'med e-post'
+  continue_as_user: 'Fortsett som denne brukeren'
+  logout_and_switch: 'Logg ut og bytt bruker'
+  account_created: 'Konto opprettet!'
+  account_created_details: 'Du er nå logget inn som'
+  verification_email_sent: 'En verifiseringslink har blitt sendt til din e-post'
+  please_verify: 'Vennligst bekreft e-postadressen din'
+  error_invalid_credential: 'Feil e-post eller passord'
+  create_account_prompt: 'Opprett konto i stedet'
+  error_too_many_requests: 'For mange forsøk. Vennligst prøv igjen senere.'
+newsletter_popup:
+  email_placeholder: 'Din e-postadresse'
+  submit_button: 'Send meg oppdateringene'
+  dismiss_button: 'Ikke nå'
+  invalid_email: 'Fyll inn en gyldig e-postadresse.'
+  submit_error: 'Vi klarte ikke å lagre abonnementet ditt akkurat nå. Prøv igjen.'
+  submitting_text: 'Lagrer...'
+  success_message: 'Takk! Løpsoppdateringer er på vei til innboksen din.'
+  privacy_note: 'Nye løp, datoendringer og utvalgte tilbud. Avslutt når du vil.'
+  close_aria_label: 'Lukk abonnementsvindu'
+  benefits:
+    new_races: 'Nye løp først'
+    date_changes: 'Datoendringer med en gang'
+    selected_offers: 'Utvalgte tilbud'
+    similar_races: 'Lignende løp nær deg'
+    local_picks: 'Flere løp i nærheten'
+    opening_reminders: 'Påminnelser før plassene forsvinner'
+    race_updates: 'Oppdateringer om akkurat dette løpet'
+    nearby_races: 'Løp over grensen og nær deg'
+  generic:
+    eyebrow: 'Ikke gå glipp av neste løp'
+    title: 'Få nye løp og datoendringer før alle andre'
+    body: 'Abonner på nyhetsbrevet vårt og få nye løp, oppdaterte datoer og håndplukkede tips i {country} rett i innboksen.'
+  race_detail:
+    eyebrow: 'Følg dette løpet'
+    title: 'Vil du ha oppdateringer om {race_name}?'
+    body: 'Abonner for å få oppdateringer om {race_name}, lignende løp i {county} og viktige endringer sendt rett til innboksen.'
+  browse_category:
+    eyebrow: 'Mer av de riktige løpene'
+    title: 'Ikke gå glipp av nye {category}-løp'
+    body: 'Vi sender nye {category}-løp, relevante alternativer i nærheten og viktige datoer, så du slipper å lete manuelt.'
+  browse_category_type:
+    eyebrow: 'Mer av de riktige løpene'
+    title: 'Få flere {race_type}-løp innen {category}'
+    body: 'Abonner for flere {race_type}-løp innen {category}, løp i nærheten og datoendringer levert rett til innboksen.'
+  browse_county:
+    eyebrow: 'Lokale løp først'
+    title: 'Få flere løp i {county}'
+    body: 'Hold deg oppdatert på nye løp, oppdaterte datoer og smarte tips for {county} uten å sjekke kalenderen hele tiden.'
+  browse_city:
+    eyebrow: 'Lokale løp først'
+    title: 'Vil du ha flere løp i {city}?'
+    body: 'Abonner og få nye løp, alternativer i nærheten og viktige datoer for {city} sendt rett til innboksen.'
+  browse_type:
+    eyebrow: 'Riktig løpsstil'
+    title: 'Få flere {race_type}-løp i innboksen'
+    body: 'Vi sender nye {race_type}-løp, lignende alternativer og viktige datoer, så du kan handle før plassene forsvinner.'
+  browse_month:
+    eyebrow: 'Planlegg sesongen'
+    title: 'Få de beste løpene i {month} først'
+    body: 'Når løp i {month} åpner, flyttes eller blir ekstra interessante, får du vite det med en gang i innboksen.'
+  browse_neighboring:
+    eyebrow: 'Utvid kalenderen'
+    title: 'Få løp fra naboland også'
+    body: 'Abonner for nye løp, smarte grensenære tips og datoendringer fra {region} levert rett til innboksen.'
+  browse_neighboring_country:
+    eyebrow: 'Utvid kalenderen'
+    title: 'Få flere løp i {region}'
+    body: 'Vi sender nye løp, datoendringer og relevante alternativer nær Norge når noe interessant dukker opp i {region}.'
+submission_flow:
+  logged_in_as: 'Innlogget som arrangør'
+  submitting_new_race: 'sender inn nytt løp'
+  new_account_created: 'For at løpet skal kunne håndteres må du bekrefte e-postadressen din. En bekreftelseslink har blitt sendt til den angitte e-postadressen.'
+  password_reset_sent: 'Tilbakestilling av passord er sendt. Sjekk innboksen din.'
+  unexpected_error: 'En feil oppstod. Prøv igjen.'
+  processing_submission: 'Behandler innsending...'
+  race_exists: 'Løpet finnes allerede i databasen.'
+  race_submitted: 'Løpet er sendt inn!'
+  submission_failed: 'Kunne ikke sende inn løpet. Prøv igjen.'
+  missing_fields: 'Noe mangler. Sørg for at alle obligatoriske felt er fylt ut og at et sted er valgt på kartet.'
+
+race_page:
+  forum_section:
+    title: 'Spørsmål & Svar'
+    placeholder: 'Still et spørsmål til arrangøren...'
+    submit_button: 'Send spørsmål'
+    login_prompt: 'Logg inn for å stille et spørsmål'
+    empty_state: 'Ingen spørsmål ennå. Vær først til å stille et spørsmål!'
+    error_message_no_login: 'Logg inn eller opprett en konto for å stille et spørsmål'
+
+# Map Toggle Button Text
+map:
+  show_map: 'Vis kart'
+  show_list: 'Vis liste'
+  map: 'kart'
+  list: 'liste'
+
+## FORUM
+
+forum:
+  title: 'Forum - Snakk om løping og løperlivet med andre løpere i Norge'
+  meta_description: 'Snakk om løping og løperlivet med andre løpere i forumet vårt. Alt om trening, konkurranser, skader, kosthold, klær, utstyr og mye mer.'
+  categories:
+    - name: 'Trening'
+      slug: 'trening'
+      description: 'Diskusjoner om trening og teknikk'
+
+    - name: 'Konkurranser & Mosjonsløp'
+      slug: 'konkurranser'
+      description: 'Diskuter kommende løp'
+
+    - name: 'Skader & Rehab'
+      slug: 'skader'
+      description: 'Hjelp med skader og restitusjon'
+
+    - name: 'Ruter & Kart'
+      slug: 'ruter'
+      description: 'Diskuter ruter og kart'
+
+    - name: 'Reiser & Reiserelatert'
+      slug: 'reiser'
+      description: 'Diskuter reiser og reiserelatert løping'
+
+    - name: 'Kosthold & Ernæring'
+      slug: 'kosthold'
+      description: 'Diskuter kosthold og ernæring'
+
+    - name: 'Klær, Sko & Utstyr'
+      slug: 'klaer'
+      description: 'Diskuter klær, sko og utstyr'
+
+    - name: 'Kjøp & Salg'
+      slug: 'kjopsalg'
+      description: 'Diskuter kjøp og salg av løpeutstyr'
+
+    - name: 'Annet'
+      slug: 'annet'
+      description: 'Alt annet'
+
+  empty_category_state: 'Ingen tråder ennå. Få i gang diskusjonen ved å opprette den første tråden!'
+  empty_state_thread: 'Ingen innlegg ennå. Vær først til å skrive!'
+  empty_state: 'Ingen innlegg ennå. Vær først til å skrive!'
+  reply_placeholder: 'Skriv svaret ditt...'
+  submit_button: 'Send'
+  login_prompt: 'Logg inn for å svare'
+  new_thread_title_placeholder: 'Tittel på din nye tråd'
+  new_thread_content_placeholder: 'Skriv ditt første innlegg...'
+  create_thread_button: 'Opprett ny tråd'
+  back_to_forum: '← Tilbake til forumet'
+  back_to_category: '← Tilbake til '
+  empty_thread_state: 'Ingen innlegg ennå. Vær først til å skrive!'
+  discussion_login_prompt: 'Logg inn for å delta i diskusjonen'
+  posts_label: 'innlegg'
+  reply_label: 'svar'
+  thread_created_title: 'Takk for at du oppretter en ny tråd!'
+  thread_created_message: 'Tråden din vil bli gjennomgått og lagt til på siden snart.'
+  thread_created_back_link: 'Tilbake til kategorien'
+  show_more_threads: 'Vis flere tråder'
+  show_less_threads: 'Vis færre tråder'
+  create_new_thread: 'Opprett ny tråd'
+  reply_title: 'Svar på tråden'
+  showing_threads_count: 'Viser {x} av {y} tråder'
+# Training Plans Page
+training_plans:
+  title: 'Treningsprogram'
+  description: 'Lag et tilpasset treningsprogram basert på ditt mål'
+  disclaimer_text_tp_1: 'Våre treningsprogram genereres med hjelp av AI, og tilpasses etter dine angitte mål og preferanser. Programmene er ikke garantert å være perfekte eller fungere for alle.'
+  disclaimer_link_tp: 'Kontakt oss'
+  disclaimer_text_tp_2: 'hvis du har tilbakemeldinger eller forslag til forbedringer.'
+  form:
+    race_date_label: 'Konkurransedato'
+    plan_type_label: 'Type program'
+    target_distance_label: 'Måldistanse'
+    target_time_label: 'Måltid'
+    training_days_label: 'Treningsdager per uke'
+    session_time_label: 'Tid tilgjengelig per økt'
+    is_hilly_label: 'Kupert terreng'
+    hours_placeholder: 'Timer'
+    minutes_placeholder: 'Minutter'
+    seconds_placeholder: 'Sekunder'
+    submit_button: 'Generer treningsprogram'
+    target_distance:
+      placeholder: 'Velg distanse'
+      options:
+        '5000': '5 km'
+        '10000': '10 km'
+        '21097': 'Halvmaraton'
+        '42195': 'Maraton'
+    plan_type:
+      placeholder: 'Velg programtype'
+      options:
+        marathon: 'Maraton'
+        fartfokus: 'Fartfokus'
+        uthallighetsfokus: 'Utholdenhetsfokus'
+        balanserad: 'Balansert'
+    training_days:
+      placeholder: 'Velg antall dager'
+      options:
+        '3': '3 dager'
+        '4': '4 dager'
+        '5': '5 dager'
+        '6': '6 dager'
+    session_time:
+      placeholder: 'Velg tid per økt'
+      options:
+        '30-45': '30-45 minutter'
+        '45-60': '45-60 minutter'
+        '60-90': '60-90 minutter'
+        '90+': '90+ minutter'
+        
+  results:
+    title: 'Ditt treningsprogram'
+    variations:
+      title: 'Velg en variant som passer deg:'
+    plan_details:
+      duration_label: 'Programlengde:'
+      weekly_distance_label: 'Ukedistans:'
+    regenerate_button: 'Vis andre varianter'
+    export_button: 'Eksporter til PDF'
+
+  workout_types:
+    easy: 'Rolig økt'
+    tempo: 'Tempoøkt'
+    intervals: 'Intervaller'
+    long: 'Langtur'
+    rest: 'Hvile'
+
+  messages:
+    weeks: 'uker'
+    week_label: 'Uke'
+    hilly_terrain_note: 'tilpasset for kupert terreng'
+
+  plan_variation:
+    focus_label: 'Fokus'
+    weekly_structure_label: 'Ukestruktur'
+    distribution_label: 'Fordeling'
+    sessions_per_week: 'økter per uke'
+    select_button: 'Velg denne planen'
+  errors:
+    loading_plans: 'Feil ved lasting av treningsprogram'
+    required_fields: 'Vennligst fyll ut alle obligatoriske felt'
+    no_matching_plan: 'Ingen matchende treningsplan ble funnet'
+    no_matching_variations: 'Ingen matchende varianter ble funnet'
+    invalid_training_days: 'Antall treningsdager samsvarer ikke med planens krav'
+
+  week: 'Uke'
+  weeks: 'uker'
+  hilly_terrain_note: 'tilpasset for kupert terreng'
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: 'Oppbygging av grunnkondisjon'
+        weekly_template:
+          monday: { type: 'easy', description: 'Rolig distanseøkt' }
+          wednesday: { type: 'tempo', description: 'Tempoøkt' }
+          saturday: { type: 'long', description: 'Langtur' }
+          sunday: { type: 'recovery', description: 'Restitusjon' }
+      
+      build:
+        duration_percent: 40
+        focus: 'Økt intensitet og distanse'
+        weekly_template:
+          monday: { type: 'easy', description: 'Rolig distanseøkt' }
+          wednesday: { type: 'intervals', description: 'Intervalløkt' }
+          friday: { type: 'tempo', description: 'Tempoøkt' }
+          sunday: { type: 'long', description: 'Langtur' }
+      
+      peak:
+        duration_percent: 15
+        focus: 'Toppform og spesifikk trening'
+        weekly_template:
+          tuesday: { type: 'intervals', description: 'Kvalitetsøkt' }
+          thursday: { type: 'tempo', description: 'Tempoøkt' }
+          saturday: { type: 'long', description: 'Langtur' }
+          sunday: { type: 'recovery', description: 'Restitusjon' }
+      
+      taper:
+        duration_percent: 5
+        focus: 'Formtopping'
+        weekly_template:
+          tuesday: { type: 'easy', description: 'Rolig økt' }
+          thursday: { type: 'tempo', description: 'Kort tempoøkt' }
+          saturday: { type: 'easy', description: 'Veldig rolig økt' }
+
+    session_types:
+      easy:
+        intensity_adjustment: 60  # sekunder saktere enn målfart
+        duration_range: { min: 30, max: 60 }
+        warmup: '10-15 min rolig jogg'
+        cooldown: '5-10 min rolig jogg'
+      
+      tempo:
+        intensity_adjustment: -20  # sekunder raskere enn målfart
+        duration_range: { min: 40, max: 70 }
+        warmup: '15-20 min progressiv oppvarming'
+        cooldown: '10-15 min nedjogging'
+      
+      intervals:
+        intensity_adjustment: -30
+        duration_range: { min: 45, max: 75 }
+        warmup: '20 min inkl. løpskole og stigningsløp'
+        cooldown: '10-15 min rolig jogg'
+      
+      long:
+        intensity_adjustment: 30
+        duration_range: { min: 60, max: 180 }
+        warmup: '10-15 min veldig rolig jogg'
+        cooldown: '5-10 min gange/lett jogg'
+      
+      recovery:
+        intensity_adjustment: 90
+        duration_range: { min: 30, max: 45 }
+        warmup: '5-10 min gange'
+        cooldown: '5-10 min gange'
+
+    terrain_adjustment: 15  # sekunder lagt til per km for kupert terreng
+
+  # Messages and labels
+  workout_components:
+    warmup_label: 'Oppvarming'
+    main_workout_label: 'Øktbeskrivelse'
+    cooldown_label: 'Nedjogging'
+    intensity_label: 'Tempo'
+    duration_label: 'Tid'
+    
+  regenerate:
+    button_text: 'Generer ny variant'
+    confirmation: 'Er du sikker på at du vil generere en ny variant?'
+    
+  weekdays:
+    monday: 'Mandag'
+    tuesday: 'Tirsdag'
+    wednesday: 'Onsdag'
+    thursday: 'Torsdag'
+    friday: 'Fredag'
+    saturday: 'Lørdag'
+    sunday: 'Søndag'
+
+# Race Time Estimator
+racetime_estimator_title: 'Estimér din sluttid'
+racetime_estimator_description: 'Basert på et tidligere løp kan du estimere din sluttid for andre distanser.'
+known_distance_label: 'Velg distanse hvor du har et resultat fra tidligere'
+known_time_label: 'Angi din tid'
+calculate_button_text: 'Beregn tider'
+predicted_times_title: 'Estimerte tider'
+distance_header: 'Distanse'
+predicted_time_header: 'Estimert tid'
+hilly_course_label: 'Kupert løype'
+finish_time_header: 'Estimert sluttid'
+pace_per_km_header: 'Min/km'
+pace_per_mile_header: 'Min/mile'
+flat_time_header: 'Tid (flatt)'
+flat_pace_per_km_header: 'Min/km (flatt)'
+flat_pace_per_mile_header: 'Min/mile (flatt)'
+hill_adjustment_header: 'Kupert justering'
+
+# Pace Calculator
+pace_calculator_title: 'Fartkalkulator'
+pace_calculator_description: 'Et enkelt verktøy for å konvertere løpehastighet mellom ulike enheter'
+pace_table_header_kph: 'Kilometer per time'
+pace_table_header_mph: 'Miles per time'
+pace_table_header_min_km: 'Minutter per kilometer'
+pace_table_header_min_mile: 'Minutter per mile'
+pace_table_header_5k: '5k'
+pace_table_header_10k: '10k'
+pace_table_header_half: 'Halvmaraton'
+pace_table_header_full: 'Maraton'
+pace_conversion_note: '1 kilometer per time (kph) = 0.62 mile per time (mph)'
+
+# Measure Route
+measure_route_title: 'Mål ruten din'
+measure_route_description: 'Klikk på kartet for å markere punkter langs ruten din. Total distanse beregnes automatisk.'
+remove_last_point: 'Fjern siste punkt'
+clear_route: 'Tøm rute'
+total_distance: 'Total distanse'
+
+about_us:
+  title: 'Om Løpskartet'
+  meta_description: 'Løpskartet - Din guide til løping i Norge'
+  content:
+    intro: 'Velkommen til Løpskartet - Norges mest komplette plattform for løpere!'
+    mission: 'Vår misjon er å gjøre det enkelt for løpere å finne og dele informasjon om løp, trening og alt som handler om løping.'
+    story: 'Løpskartet ble startet i 2023 av løpere for løpere. Vi så behovet for en moderne og brukervennlig plattform hvor Norges løpermiljø kunne samles.'
+    features:
+      - title: 'Komplett Løpsliste'
+        description: 'Vi samler alle Norges løp på ett sted - fra små lokale løp til store internasjonale arrangementer.'
+      - title: 'Fellesskapsdrevet'
+        description: 'Vår plattform drives av løpere som deg. Alle kan bidra med informasjon om løp og delta i diskusjoner.'
+      - title: 'Gratis Verktøy'
+        description: 'Vi tilbyr nyttige verktøy som fartkalkulatorer, treningsprogram og ruteplanlegging - helt gratis.'
+    closing: 'Vi fortsetter å utvikle plattformen basert på tilbakemeldinger fra våre brukere. Har du forslag til forbedringer? Ta gjerne kontakt med oss!'
+
+contact:
+  title: 'Kontakt Oss'
+  meta_description: 'Kontakt Løpskartet - Vi er her for å hjelpe deg'
+  content:
+    intro: 'Vi vil gjerne høre fra deg! Her er ulike måter å nå oss på:'
+    email:
+      title: 'E-post'
+      address: 'lopskartet@gmail.com'
+      description: 'Vi svarer normalt innen 24 timer på hverdager.'
+    social:
+      title: 'Sosiale Medier'
+      description: 'Følg oss på sosiale medier for siste nytt og oppdateringer:'
+    feedback:
+      title: 'Tilbakemelding'
+      description: 'Vi setter pris på all tilbakemelding som hjelper oss å forbedre Løpskartet.'
+
+
+# Footer Configuration
+footer:
+  races_heading: 'Løp'
+  tools_heading: 'Verktøy'
+  about_heading: 'Om LoppKartan'
+  privacy: 'Integritetspolicy'
+  copyright_year: '2023-2025'
+  site_name: 'LoppKartan'
+  rights_text: 'Alle rettigheter forbeholdt.'
+  social_links:
+    facebook: 'https://www.facebook.com/loppkartan'
+    instagram: 'https://www.instagram.com/loppkartan'
+    youtube: 'https://www.youtube.com/channel/UCL6666666666666666'
+    tiktok: 'https://www.tiktok.com/@loppkartan'
+accessibility:
+  main_navigation_label: 'Hovednavigasjon'
+  breadcrumb_label: 'Brødsmuler'
+  back_to_top_label: 'Til toppen'
+  social_facebook_label: 'Facebook'
+  social_instagram_label: 'Instagram'
+  social_youtube_label: 'YouTube'
+  social_tiktok_label: 'TikTok'
+
+# Main page config
+
+trending_races_title: 'Trendende løp'
+trending_races_description: 'Her er de løpene som har fått mest oppmerksomhet blant norske løpere.'
+trending_races_views_last_30_days: 'visninger de siste 30 dagene'
+trending_races_most_viewed: 'Mest populært nå'
+races_views: 'visninger'
+
+recent_races_title: 'Nylig tilføyde løp'
+today: 'i dag'
+yesterday: 'i går'
+days_ago: 'dager siden'
+newest_race_badge: 'Nyligst tilføyd'
+
+# Ny oversettelse for lokasjonsseksjonen
+races_count: 'løp'
+popular_counties_title: 'Finn løp i ditt fylke'
+popular_cities_title: 'Finn løp i din by'
+all_counties: 'Vis alle fylker'
+all_cities: 'Vis alle byer'
+
+category_header_1: 'Trail/Fjelløp'
+category_type_1: 'trail'
+category_1_races_sub_title_1: "Trail Marathon"
+category_1_races_sub_ref_1: "marathon"
+category_1_races_sub_title_2: "Trail Ultra"
+category_1_races_sub_ref_2: "50-miles"
+category_1_races_sub_title_3: "Trail Ultra 100 miles"
+category_1_races_sub_ref_3: "100-miles"
+
+category_header_2: 'Landevei løp'
+category_type_2: 'road'
+category_2_races_sub_title_1: "Maraton"
+category_2_races_sub_ref_1: "maraton"
+category_2_races_sub_title_2: "Halvmaraton"
+category_2_races_sub_ref_2: "halvmaraton"
+category_2_races_sub_title_3: "10 km"
+category_2_races_sub_ref_3: "10-km"
+
+view_all_races: "Vis alle løp innen"
+
+tools_title: "Verktøy for ditt neste løp"
+
+missing_race: "Savner du et løp? Legg det til her!"
+add_race_mp_title: "Legg til ditt løp"
+
+# Nærliggende land
+neighboring_countries_title: "Løp i Norge og nærliggende land"
+neighboring_countries_title_specific_country: "Løp i {country_name}"
+neighboring_countries_description: "Her er løp som holdes i nærliggende land."
+neighboring_countries_description_specific_country: "Her lister vi løp som holdes i {country_name}."
+neighboring_countries_neighbors_native: "Nærliggende land"
+neighboring_countries_all_neighbors_native: "Alle nærliggende land"
+
+section_race_card_header_nieghbors_default: 'Norge og nærliggende land'
+
+browse_neighboring:
+  title: "Utforsk løp i nærliggende land"
+  meta_description: "Finn løp i nærliggende land nær deg. Utforsk etter land for å oppdage løp over grensene."
+
+neighboring_races_title: "Løp i nærliggende land"
+neighboring_countries_show_all: "Vis alle"

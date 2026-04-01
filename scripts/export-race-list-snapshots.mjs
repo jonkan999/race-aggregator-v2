@@ -151,7 +151,9 @@ async function main() {
 
   const countries = resolveCountries(process.argv.slice(2));
   if (countries.length === 0) {
-    console.warn('No countries found for build snapshot export.');
+    console.warn(
+      'No countries found for build snapshot export. Expected tracked market folders under data/countries/{code}/index.yaml.',
+    );
     process.exit(0);
   }
 

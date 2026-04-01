@@ -1035,7 +1035,9 @@ async function main() {
   const options = parseArgs(process.argv.slice(2));
   const countryCodes = options.countries.length > 0 ? options.countries : listCountryCodes();
   if (countryCodes.length === 0) {
-    throw new Error('No country codes found to build browse SEO cache.');
+    throw new Error(
+      'No country codes found to build browse SEO cache. Expected tracked market folders under data/countries/{code}/index.yaml.',
+    );
   }
 
   if (options.provider !== 'template' && options.provider !== 'openai') {
