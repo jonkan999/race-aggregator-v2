@@ -2,6 +2,8 @@
 import '../styles/legacy/legacy-race-list.css';
 import '../styles/islands.css';
 import '../styles/v2-race-list-bridge.css';
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import NewsletterPopupConfig from '../components/NewsletterPopupConfig.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -54,5 +56,7 @@ const marketRouteTargetsJson = JSON.stringify(getMarketRouteTargets());
       </main>
       <SiteFooter country={country} locale={locale} content={content} />
     </div>
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>

@@ -1,6 +1,8 @@
 ---
 import '../styles/legacy/legacy-race-list.css';
 import '../styles/home.css';
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import type { IndexYaml } from '../lib/content';
@@ -63,5 +65,7 @@ const pageSchema = JSON.stringify({
       </main>
       <SiteFooter country={country} locale={locale} content={content} />
     </div>
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>

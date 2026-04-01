@@ -1,4 +1,6 @@
 ---
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import { loadIndexYaml, raceListSlug } from '../lib/content';
 
 const country = 'se';
@@ -29,5 +31,7 @@ const englishRaceListHref = `/en/${raceListSlug(englishContent, country)}/`;
     <p>
       Redirecting to <a href={nativeRaceListHref}>the default race list</a>.
     </p>
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>

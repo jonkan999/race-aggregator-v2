@@ -3,6 +3,8 @@ import '../styles/legacy/general.css';
 import '../styles/legacy/header-menu.css';
 import '../styles/legacy/footer.css';
 import '../styles/race-detail.css';
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import NewsletterPopupConfig from '../components/NewsletterPopupConfig.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -58,5 +60,7 @@ const {
       </main>
       <SiteFooter country={country} locale={locale} content={content} />
     </div>
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>
