@@ -310,7 +310,6 @@ disclaimer_text_3: Something more you wish to add to your race?
 disclaimer_text_4: and we will try to help!
 race_page_visit_organizer_website: To organizer website & registration
 race_page_folder_name: race-pages
-race_page_layout_title: 'Race page for '
 race_page_alt_prefix: 'Image for '
 seo_county_folder_name: All Regions
 seo_cities_folder_name: Cities
@@ -385,6 +384,7 @@ seo_templates:
       h1: '{secondary_label} races near {label}'
       paragraph: 'This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.'
 seo_generation:
+  browse_model: gpt-5-mini
   browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Norway. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
   browse_guidance:
     county: 'User wants races in one region.'

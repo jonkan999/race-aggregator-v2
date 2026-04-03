@@ -149,7 +149,9 @@ export type IndexYaml = {
       }
     >;
   };
+  important_keywords_racelist?: string[];
   seo_generation?: {
+    browse_model?: string;
     browse_system_prompt?: string;
     browse_guidance?: Record<string, string>;
   };

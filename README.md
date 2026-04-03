@@ -191,7 +191,11 @@ Force-regenerate the current market cache with deterministic timeless copy:
 npm run build-browse-seo-cache -- --force --provider=template se
 ```
 
-If you want AI generation for cache misses or forced refreshes, set `OPENAI_API_KEY` and optionally `OPENAI_SEO_MODEL`, then run with `--provider=openai`.
+If you want AI generation for cache misses or forced refreshes, set `OPENAI_API_KEY` and run with `--provider=openai`.
+
+The browse SEO model is configured per market under `seo_generation.browse_model` in the country YAML files. This repo currently uses `gpt-5-mini` for browse SEO generation in those market configs. If no market config sets a model, the script falls back to `gpt-5-nano`.
+
+For one-off overrides, `OPENAI_SEO_MODEL` or `--model=...` still take precedence over the YAML setting.
 
 Browse fallback copy is YAML-driven. Keep the browse-page template strings in `data/countries/{code}/index.yaml` and `data/countries/{code}/merged_index_int.yaml` under `seo_templates.browse_page_templates`, and let both the generator and the route fallback read from there instead of hardcoding copy in code.
 

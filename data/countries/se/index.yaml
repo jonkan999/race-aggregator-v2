@@ -335,7 +335,6 @@ race_page_visit_organizer_website: 'Till arrangörssidan & anmälan'
 
 #race page layout
 race_page_folder_name: 'loppsidor'
-race_page_layout_title: 'Loppsida för '
 race_page_alt_prefix: 'Bild till '
 
 #SEO STUFF
@@ -414,6 +413,7 @@ seo_templates:
       h1: '{secondary_label}lopp nära {label}'
       paragraph: 'Den här sidan samlar {secondary_label_lower}lopp med koppling till {label} för att göra lokal loppjämförelse snabbare. Den är användbar när du vill hitta rätt loppformat nära en viss stad utan att börja i hela kalendern.'
 seo_generation:
+  browse_model: 'gpt-5-mini'
   browse_system_prompt: 'Du skriver tidlös SEO-text för indexerbara landningssidor för löplopp. Skriv i första hand för människor och i andra hand för sökintention. Returnera endast giltig JSON. Håll texten tidlös: nämn aldrig aktuellt år, aktuella antal, begränsad tidsperiod eller färskhetsanspråk. Undvik keyword stuffing, hype, klickbeten, superlativer och påståenden som inte går att verifiera. Gör varje sida tydligt unik utifrån den kontext som skickas in. Använd naturlig svenska för en svensk loppkalender. Föredra korta titlar, korta H1-rubriker, metabeskrivningar runt 120-160 tecken när det passar och ett stycke på 2-3 korta meningar.'
   browse_guidance:
     county: 'Användaren vill hitta lopp i en region.'

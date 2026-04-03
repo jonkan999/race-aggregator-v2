@@ -12,8 +12,8 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.join(__dirname, '..');
 const GENERATOR_VERSION = 'browse-seo-cache-v1';
-const DEFAULT_OPENAI_MODEL = process.env.OPENAI_SEO_MODEL?.trim() || 'gpt-5';
-const DEFAULT_CHUNK_SIZE = Number.parseInt(process.env.BROWSE_SEO_CHUNK_SIZE ?? '8', 10) || 8;
+const DEFAULT_OPENAI_MODEL = 'gpt-5-nano';
+const DEFAULT_CHUNK_SIZE = Number.parseInt(process.env.BROWSE_SEO_CHUNK_SIZE ?? '5', 10) || 5;
 const DEFAULT_OPENAI_TIMEOUT_MS =
   Number.parseInt(process.env.OPENAI_REQUEST_TIMEOUT_MS ?? '45000', 10) || 45000;
 const DEFAULT_OPENAI_RETRIES =
@@ -28,7 +28,7 @@ function parseArgs(argv) {
     provider:
       process.env.BROWSE_SEO_PROVIDER?.trim().toLowerCase() ||
       (process.env.OPENAI_API_KEY ? 'openai' : 'template'),
-    model: DEFAULT_OPENAI_MODEL,
+    model: process.env.OPENAI_SEO_MODEL?.trim() || '',
   };
 
   for (const arg of argv) {
@@ -783,7 +783,15 @@ function systemPromptForLocale(content) {
   if (!prompt) {
     throw new Error('Missing seo_generation.browse_system_prompt in country YAML.');
   }
-  return prompt;
+  const importantKeywords = Array.isArray(content?.important_keywords_racelist)
+    ? content.important_keywords_racelist.map((keyword) => cleanWhitespace(keyword)).filter(Boolean)
+    : [];
+
+  if (importantKeywords.length === 0) {
+    throw new Error('Missing important_keywords_racelist in country YAML.');
+  }
+
+  return `${prompt} When relevant to the specific page intent, naturally weave in these market-priority race list keywords across the SEO fields (title, meta description, H1, and paragraph) where they fit without sounding forced: ${importantKeywords.join(', ')}. Treat them as optional guidance, not a checklist: use only the keywords that genuinely fit the page, avoid repetition, and never sacrifice readability or specificity just to include one.`;
 }
 
 function batchPayloadForLocale(targets, content, locale) {
@@ -825,6 +833,11 @@ function responseSchema() {
     required: ['entries'],
     additionalProperties: false,
   };
+}
+
+function resolveOpenAiModel(content, overrideModel) {
+  const configuredModel = cleanWhitespace(content?.seo_generation?.browse_model);
+  return cleanWhitespace(overrideModel) || configuredModel || DEFAULT_OPENAI_MODEL;
 }
 
 function extractTextFromOpenAiResponse(data) {
@@ -962,6 +975,7 @@ async function fillEntries({ targets, locale, content, provider, model, chunkSiz
 }
 
 async function buildCountryCache({ countryCode, locale, content, provider, model, force, dryRun, chunkSize }) {
+  const resolvedModel = provider === 'openai' ? resolveOpenAiModel(content, model) : '';
   const rows = loadRows(countryCode).filter((row) => {
     const today = todayYyyyMmDd();
     const nextYear = oneYearFromTodayYyyyMmDd();
@@ -1004,7 +1018,7 @@ async function buildCountryCache({ countryCode, locale, content, provider, model
     locale,
     content,
     provider,
-    model,
+    model: resolvedModel,
     chunkSize,
   });
 
@@ -1019,7 +1033,7 @@ async function buildCountryCache({ countryCode, locale, content, provider, model
       _generator_version: GENERATOR_VERSION,
       _generated_by: provider,
       _generated_at: currentIsoTimestamp(),
-      ...(provider === 'openai' ? { _model: model } : {}),
+      ...(provider === 'openai' ? { _model: resolvedModel } : {}),
     };
     summary.updated += 1;
   }

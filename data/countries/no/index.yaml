@@ -313,7 +313,6 @@ race_page_visit_organizer_website: 'Til arrangørens side & påmelding'
 
 #race page layout
 race_page_folder_name: 'lopssider'
-race_page_layout_title: 'Løpsside for: '
 race_page_alt_prefix: 'Bilde til '
 
 #SEO STUFF
@@ -400,6 +399,7 @@ seo_templates:
       h1: '{secondary_label}løp nær {label}'
       paragraph: 'Denne siden samler {secondary_label_lower}løp med tilknytning til {label} for å gjøre lokal løpsleting raskere å sammenligne. Den er nyttig når du vil finne riktig løpsformat nær en bestemt by uten å starte i hele kalenderen.'
 seo_generation:
+  browse_model: 'gpt-5-mini'
   browse_system_prompt: 'Du skriver tidløs SEO-tekst for indekserbare landingssider for løp. Skriv først og fremst for mennesker og deretter for søkeintensjon. Returner kun gyldig JSON. Hold teksten tidløs: nevn aldri inneværende år, aktuelle antall, begrenset tidsperiode eller formuleringer som avhenger av ferskhet. Unngå keyword stuffing, hype, klikkagn, superlativer og påstander som ikke kan verifiseres. Gjør hver side tydelig unik ut fra konteksten som sendes inn. Bruk naturlig norsk for en norsk løpskalender. Foretrekk korte titler, korte H1-er, metabeskrivelser rundt 120-160 tegn når det passer og et avsnitt på 2-3 korte setninger.'
   browse_guidance:
     county: 'Brukeren vil finne løp i en region.'
