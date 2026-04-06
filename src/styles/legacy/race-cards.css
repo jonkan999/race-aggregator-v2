@@ -288,14 +288,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: black;
 }
 .popup-info-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .popup-date {
   background-color: var(--info-highlight-background);
@@ -437,7 +437,7 @@
   background: rgba(255, 255, 255, 0.9);
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--color-black-text);
   pointer-events: auto;
 }

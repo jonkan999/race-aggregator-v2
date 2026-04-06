@@ -91,7 +91,7 @@ body.newsletter-popup-open {
   background: rgba(241, 243, 244, 0.88);
   border-left: 3px solid var(--newsletter-highlight);
   color: var(--color-primary);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -145,7 +145,7 @@ body.newsletter-popup-open {
   border-radius: 0.35rem;
   background: rgba(226, 112, 27, 0.12);
   color: var(--color-warning);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -184,7 +184,7 @@ body.newsletter-popup-open {
   background: rgba(230, 237, 234, 0.72);
   border: 1px solid rgba(0, 37, 24, 0.08);
   color: var(--color-primary);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -248,7 +248,7 @@ body.newsletter-popup-open {
   min-height: 1.4rem;
   margin-top: 0.65rem;
   color: #b74126;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .newsletter-popup__footer {
@@ -261,7 +261,7 @@ body.newsletter-popup-open {
 
 .newsletter-popup__privacy {
   color: rgba(0, 37, 24, 0.6);
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -270,7 +270,7 @@ body.newsletter-popup-open {
   border: 0;
   background: transparent;
   color: rgba(0, 37, 24, 0.72);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
 }
@@ -344,6 +344,6 @@ body.newsletter-popup-open {
   }
 
   .newsletter-popup__body {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
   }
 }
