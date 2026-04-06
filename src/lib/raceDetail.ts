@@ -31,6 +31,28 @@ type DateEntry = {
   endIso: string | null;
   isRange: boolean;
   isEstimated: boolean;
+  comparableStart: string | null;
+  comparableEnd: string | null;
+  epochDay: number;
+};
+
+type PriceTierEntry = {
+  price: string;
+  deadlineLabel: string;
+  deadlineIso: string | null;
+  description: string;
+};
+
+type PriceLateFee = {
+  price: string;
+  deadlineLabel: string;
+  deadlineIso: string | null;
+};
+
+export type RacePriceTierGroup = {
+  distance: string;
+  tiers: PriceTierEntry[];
+  lateFee: PriceLateFee | null;
 };
 
 export type RaceDetailBreadcrumb = {
@@ -179,6 +201,10 @@ function firstNonEmptyString(...values: Array<unknown>): string {
   return '';
 }
 
+function payloadValue(row: RaceListRow, key: string): unknown {
+  return row.payload && typeof row.payload === 'object' ? row.payload[key] : undefined;
+}
+
 function cleanMultilineParagraphs(value: string): string[] {
   return value
     .split(/\n\s*\n+/)
@@ -224,9 +250,94 @@ export function formatRaceDateEntries(raw: unknown, estimatedRaw: unknown, local
         endIso: toIsoDate(end),
         isRange,
         isEstimated: estimatedKeys.has(start) || (end ? estimatedKeys.has(end) : false),
+        comparableStart: start,
+        comparableEnd: end,
+        epochDay: comparableDateToEpochDay(start),
       } satisfies DateEntry;
     })
     .filter((entry): entry is DateEntry => Boolean(entry));
+}
+
+function selectDisplayDateEntries(entries: DateEntry[], isSeries: boolean): DateEntry[] {
+  if (entries.length <= 1) return entries;
+
+  const todayEpochDay = todayEpochDayUtc();
+  const sorted = [...entries].sort((left, right) => left.epochDay - right.epochDay);
+  const upcoming = sorted.filter((entry) => Number.isFinite(entry.epochDay) && entry.epochDay >= todayEpochDay);
+
+  if (upcoming.length > 0) {
+    return upcoming.slice(0, isSeries ? 3 : 1);
+  }
+
+  return isSeries ? sorted.slice(-3) : [sorted[sorted.length - 1] ?? sorted[0]].filter(Boolean);
+}
+
+function toComparableDateFromUnknown(raw: unknown): string | null {
+  return typeof raw === 'string' ? toComparableDate(raw) : null;
+}
+
+function formatOptionalDateLabel(raw: unknown, locale: string): { iso: string | null; label: string } | null {
+  const comparable = toComparableDateFromUnknown(raw);
+  if (!comparable) return null;
+  return {
+    iso: toIsoDate(comparable),
+    label: formatDateLabel(comparable, locale),
+  };
+}
+
+function normalizePriceTierGroups(raw: unknown, locale: string): RacePriceTierGroup[] {
+  if (!Array.isArray(raw)) return [];
+
+  return raw
+    .map((group) => {
+      if (!group || typeof group !== 'object') return null;
+
+      const distance = typeof group.distance === 'string' ? group.distance.trim() : '';
+      const tiers = Array.isArray(group.tiers)
+        ? group.tiers
+            .map((tier) => {
+              if (!tier || typeof tier !== 'object') return null;
+              const price = typeof tier.price === 'string' ? tier.price.trim() : '';
+              const description =
+                typeof tier.description === 'string' ? tier.description.trim() : '';
+              const deadline = formatOptionalDateLabel(tier.deadline, locale);
+
+              if (!price && !description) return null;
+
+              return {
+                price,
+                deadlineLabel: deadline?.label ?? '',
+                deadlineIso: deadline?.iso ?? null,
+                description,
+              } satisfies PriceTierEntry;
+            })
+            .filter((tier): tier is PriceTierEntry => Boolean(tier))
+        : [];
+
+      const lateFee =
+        group.late_fee && typeof group.late_fee === 'object'
+          ? (() => {
+              const price =
+                typeof group.late_fee.price === 'string' ? group.late_fee.price.trim() : '';
+              const deadline = formatOptionalDateLabel(group.late_fee.deadline, locale);
+              if (!price && !deadline) return null;
+              return {
+                price,
+                deadlineLabel: deadline?.label ?? '',
+                deadlineIso: deadline?.iso ?? null,
+              } satisfies PriceLateFee;
+            })()
+          : null;
+
+      if (!distance && tiers.length === 0 && !lateFee) return null;
+
+      return {
+        distance,
+        tiers,
+        lateFee,
+      } satisfies RacePriceTierGroup;
+    })
+    .filter((group): group is RacePriceTierGroup => Boolean(group));
 }
 
 export function fallbackRaceImage(domainName: string, raceType: string | null | undefined): string {
@@ -295,8 +406,15 @@ export function getRaceDetailFields(
   organizer: string;
   contact: string;
   website: string;
+  registrationUrl: string;
+  raceInfoUrl: string;
   startTime: string;
   priceRange: string;
+  priceTiers: RacePriceTierGroup[];
+  isSeries: boolean;
+  displayDateEntries: DateEntry[];
+  registrationCloseDateLabel: string;
+  registrationCloseDateIso: string | null;
   location: string;
   county: string;
   socialLinks: Array<{ href: string; label: string; iconId: string }>;
@@ -324,40 +442,52 @@ export function getRaceDetailFields(
 
   const description =
     translation?.description?.trim() ||
-    (typeof row.payload?.description === 'string' ? row.payload.description.trim() : '');
+    (typeof payloadValue(row, 'description') === 'string' ? String(payloadValue(row, 'description')).trim() : '');
 
+  const additionalPayload = payloadValue(row, 'additional');
+  const additionalInfoPayload = payloadValue(row, 'additional_info');
   const additionalValue =
-    typeof row.payload?.additional === 'string'
-      ? row.payload.additional
-      : typeof row.payload?.additional_info === 'string'
-        ? row.payload.additional_info
+    typeof additionalPayload === 'string'
+      ? additionalPayload
+      : typeof additionalInfoPayload === 'string'
+        ? additionalInfoPayload
         : '';
 
-  const organizer = typeof row.payload?.organizer === 'string' ? row.payload.organizer.trim() : '';
-  const contact = typeof row.payload?.contact === 'string' ? row.payload.contact.trim() : '';
-  const website = firstNonEmptyString(row.payload?.website, row.website);
-  const startTime = typeof row.payload?.start_time === 'string' ? row.payload.start_time.trim() : '';
-  const priceRange = typeof row.payload?.price_range === 'string' ? row.payload.price_range.trim() : '';
-  const location = typeof row.payload?.location === 'string' ? row.payload.location.trim() : '';
+  const organizer =
+    typeof payloadValue(row, 'organizer') === 'string' ? String(payloadValue(row, 'organizer')).trim() : '';
+  const contact =
+    typeof payloadValue(row, 'contact') === 'string' ? String(payloadValue(row, 'contact')).trim() : '';
+  const website = firstNonEmptyString(payloadValue(row, 'website'), row.website);
+  const registrationUrl = firstNonEmptyString(payloadValue(row, 'registration_url'));
+  const raceInfoUrl = firstNonEmptyString(payloadValue(row, 'race_info_url'));
+  const startTime =
+    typeof payloadValue(row, 'start_time') === 'string' ? String(payloadValue(row, 'start_time')).trim() : '';
+  const priceRange =
+    typeof payloadValue(row, 'price_range') === 'string' ? String(payloadValue(row, 'price_range')).trim() : '';
+  const location =
+    typeof payloadValue(row, 'location') === 'string' ? String(payloadValue(row, 'location')).trim() : '';
   const county = typeof row.county === 'string' ? row.county.trim() : '';
+  const registrationCloseDate = formatOptionalDateLabel(payloadValue(row, 'registration_close_date'), translationLocale);
+  const priceTiers = normalizePriceTierGroups(payloadValue(row, 'price_tiers'), translationLocale);
+  const isSeries = payloadValue(row, 'is_series') === true;
 
-  const courseHighlights = Array.isArray(row.payload?.course_highlights)
-    ? row.payload.course_highlights
+  const courseHighlights = Array.isArray(payloadValue(row, 'course_highlights'))
+    ? (payloadValue(row, 'course_highlights') as unknown[])
         .filter((value): value is string => typeof value === 'string' && value.trim().length > 0)
         .slice(0, 5)
     : [];
 
   const socialLinks = [
-    typeof row.payload?.fb_link === 'string' && row.payload.fb_link.trim()
+    typeof payloadValue(row, 'fb_link') === 'string' && String(payloadValue(row, 'fb_link')).trim()
       ? {
-          href: row.payload.fb_link,
+          href: String(payloadValue(row, 'fb_link')),
           label: 'Facebook',
           iconId: 'logo-facebook',
         }
       : null,
-    typeof row.payload?.ig_link === 'string' && row.payload.ig_link.trim()
+    typeof payloadValue(row, 'ig_link') === 'string' && String(payloadValue(row, 'ig_link')).trim()
       ? {
-          href: row.payload.ig_link,
+          href: String(payloadValue(row, 'ig_link')),
           label: 'Instagram',
           iconId: 'logo-instagram',
         }
@@ -372,9 +502,10 @@ export function getRaceDetailFields(
 
   const dateEntries = formatRaceDateEntries(
     row.race_dates,
-    row.payload?.estimated_dates,
+    payloadValue(row, 'estimated_dates'),
     translationLocale,
   );
+  const displayDateEntries = selectDisplayDateEntries(dateEntries, isSeries);
 
   return {
     raceName,
@@ -385,8 +516,15 @@ export function getRaceDetailFields(
     organizer,
     contact,
     website,
+    registrationUrl,
+    raceInfoUrl,
     startTime,
     priceRange,
+    priceTiers,
+    isSeries,
+    displayDateEntries,
+    registrationCloseDateLabel: registrationCloseDate?.label ?? '',
+    registrationCloseDateIso: registrationCloseDate?.iso ?? null,
     location,
     county,
     socialLinks,
@@ -570,7 +708,7 @@ export async function getRaceDetailRelatedContent(args: {
         marketRouteTargets,
       }),
       name: candidateTranslation?.name?.trim() || candidate.domain_name,
-      dateLabel: candidateDetail.dateEntries[0]?.label ?? '',
+      dateLabel: candidateDetail.displayDateEntries[0]?.label ?? candidateDetail.dateEntries[0]?.label ?? '',
       locationLabel,
       typeLabel: candidateDetail.raceTypeLabel,
       distanceLabels: candidateDetail.distanceLabels,

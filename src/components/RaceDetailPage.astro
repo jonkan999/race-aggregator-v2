@@ -43,6 +43,34 @@ const accessibility = (content.accessibility ?? {}) as Record<string, string>;
 const hasEstimatedDates = detail.dateEntries.some((entry) => entry.isEstimated);
 const hasGalleryImages = detail.images.length > 0;
 const galleryImages = detail.images.slice(1);
+const hasPriceTiers = detail.priceTiers.length > 0;
+const primaryDetailDate = detail.displayDateEntries[0] ?? detail.dateEntries[0];
+const dateSummary = detail.displayDateEntries.map((entry) => entry.label).join(', ');
+const distinctActionLinks = [
+  detail.registrationUrl
+    ? {
+        href: detail.registrationUrl,
+        label: String(content.race_page_registration_cta ?? ''),
+        kind: 'primary',
+      }
+    : null,
+  detail.raceInfoUrl
+    ? {
+        href: detail.raceInfoUrl,
+        label: String(content.race_page_info_cta ?? ''),
+        kind: detail.registrationUrl ? 'secondary' : 'primary',
+      }
+    : null,
+  detail.website &&
+  detail.website !== detail.registrationUrl &&
+  detail.website !== detail.raceInfoUrl
+    ? {
+        href: detail.website,
+        label: String(content.race_page_visit_organizer_website ?? ''),
+        kind: 'secondary',
+      }
+    : null,
+].filter((entry): entry is { href: string; label: string; kind: 'primary' | 'secondary' } => Boolean(entry));
 
 function toAbsoluteUrl(path: string | null | undefined): string | undefined {
   if (!path) return undefined;
@@ -56,8 +84,8 @@ const eventJson = JSON.stringify({
   '@type': 'Event',
   name: detail.raceName,
   description,
-  startDate: comparableDateForSchema(detail.dateEntries, 'startIso'),
-  endDate: comparableDateForSchema(detail.dateEntries, 'endIso'),
+  startDate: comparableDateForSchema(detail.displayDateEntries, 'startIso'),
+  endDate: comparableDateForSchema(detail.displayDateEntries, 'endIso'),
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   eventStatus: 'https://schema.org/EventScheduled',
   image: detail.images.map((image) => toAbsoluteUrl(image.src)).filter(Boolean),
@@ -175,7 +203,7 @@ const newsletterContext = {
 
           <div class="race-detail-hero__chips">
             {
-              detail.dateEntries.map((entry) => (
+              detail.displayDateEntries.map((entry) => (
                 <div class="race-detail-chip race-detail-chip--date">
                   <span>{entry.label}</span>
                   {entry.isEstimated ? (
@@ -226,14 +254,22 @@ const newsletterContext = {
     <div class="race-detail-intro-grid">
       <div class="race-detail-highlights">
         {
-          detail.dateEntries.length ? (
+          detail.displayDateEntries.length ? (
             <article class="race-detail-card">
               <span class="race-detail-card__eyebrow">
                 {String(content.race_page_date_label ?? '')}
               </span>
-              <div class="race-detail-card__value">
-                {detail.dateEntries.map((entry) => entry.label).join(', ')}
-              </div>
+              <div class="race-detail-card__value">{dateSummary}</div>
+            </article>
+          ) : null
+        }
+        {
+          detail.registrationCloseDateLabel ? (
+            <article class="race-detail-card">
+              <span class="race-detail-card__eyebrow">
+                {String(content.race_page_registration_close_label ?? '')}
+              </span>
+              <div class="race-detail-card__value">{detail.registrationCloseDateLabel}</div>
             </article>
           ) : null
         }
@@ -289,6 +325,82 @@ const newsletterContext = {
     </div>
 
     {
+      hasPriceTiers || distinctActionLinks.length || detail.registrationCloseDateLabel ? (
+        <article class="race-detail-panel race-detail-panel--pricing">
+          <div class="race-detail-section-header race-detail-section-header--pricing">
+            <div>
+              <h2>{String(content.race_page_pricing_title ?? '')}</h2>
+              {
+                detail.registrationCloseDateLabel ? (
+                  <p>
+                    <strong>{String(content.race_page_registration_close_label ?? '')}:</strong>{' '}
+                    {detail.registrationCloseDateLabel}
+                  </p>
+                ) : null
+              }
+            </div>
+            {
+              distinctActionLinks.length ? (
+                <div class="race-detail-action-row">
+                  {distinctActionLinks.map((link) => (
+                    <a
+                      class={link.kind === 'primary' ? 'race-detail-cta' : 'race-detail-secondary-cta'}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              ) : null
+            }
+          </div>
+
+          {
+            hasPriceTiers ? (
+              <div class="race-detail-pricing-grid">
+                {detail.priceTiers.map((group) => (
+                  <section class="race-detail-price-card">
+                    {group.distance ? <h3>{group.distance}</h3> : null}
+                    {group.tiers.length ? (
+                      <ul class="race-detail-price-list">
+                        {group.tiers.map((tier) => (
+                          <li>
+                            <div class="race-detail-price-row">
+                              {tier.price ? <strong>{tier.price}</strong> : null}
+                              {tier.deadlineLabel ? (
+                                <span class="race-detail-price-deadline">
+                                  {String(content.race_page_price_deadline_label ?? '')} {tier.deadlineLabel}
+                                </span>
+                              ) : null}
+                            </div>
+                            {tier.description ? <p>{tier.description}</p> : null}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                    {
+                      group.lateFee ? (
+                        <div class="race-detail-late-fee">
+                          <span class="race-detail-late-fee__label">
+                            {String(content.race_page_price_late_fee_label ?? '')}
+                          </span>
+                          <strong>{group.lateFee.price}</strong>
+                          {group.lateFee.deadlineLabel ? <span>{group.lateFee.deadlineLabel}</span> : null}
+                        </div>
+                      ) : null
+                    }
+                  </section>
+                ))}
+              </div>
+            ) : null
+          }
+        </article>
+      ) : null
+    }
+
+    {
       hasEstimatedDates ? (
         <div class="race-detail-note" role="note">
           <strong>{String(content.race_page_estimated_date_label ?? '')}.</strong>{' '}
@@ -341,6 +453,12 @@ const newsletterContext = {
               <strong>{String(content.name_label ?? '')}</strong>
               <span>{detail.raceName}</span>
             </li>
+            {primaryDetailDate ? (
+              <li>
+                <strong>{String(content.race_page_date_label ?? '')}</strong>
+                <span>{primaryDetailDate.label}</span>
+              </li>
+            ) : null}
             {detail.location ? (
               <li>
                 <strong>{String(content.place_label ?? '')}</strong>
@@ -371,6 +489,12 @@ const newsletterContext = {
                 <span>{detail.priceRange}</span>
               </li>
             ) : null}
+            {detail.registrationCloseDateLabel ? (
+              <li>
+                <strong>{String(content.race_page_registration_close_label ?? '')}</strong>
+                <span>{detail.registrationCloseDateLabel}</span>
+              </li>
+            ) : null}
             {detail.website ? (
               <li>
                 <strong>{String(content.website_label ?? '')}</strong>
@@ -383,6 +507,22 @@ const newsletterContext = {
               <li>
                 <strong>{String(content.start_time_label ?? '')}</strong>
                 <span>{detail.startTime}</span>
+              </li>
+            ) : null}
+            {detail.registrationUrl ? (
+              <li>
+                <strong>{String(content.race_page_registration_link ?? '')}</strong>
+                <a href={detail.registrationUrl} target="_blank" rel="noopener noreferrer">
+                  {detail.registrationUrl}
+                </a>
+              </li>
+            ) : null}
+            {detail.raceInfoUrl && detail.raceInfoUrl !== detail.website ? (
+              <li>
+                <strong>{String(content.race_page_info_cta ?? '')}</strong>
+                <a href={detail.raceInfoUrl} target="_blank" rel="noopener noreferrer">
+                  {detail.raceInfoUrl}
+                </a>
               </li>
             ) : null}
             {detail.raceTypeLabel ? (
