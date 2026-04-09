@@ -31,6 +31,7 @@ const addRaceLabel = String(content.add_race_mp_title ?? navigation['add-race'] 
 const addRaceEyebrow = String(content.missing_race ?? '').trim();
 const newestRaceBadge = String(content.newest_race_badge ?? '').trim();
 const raceCta = String(content.to_race_page_cta ?? content.race_card_cta_text ?? '').trim();
+const allRacesCta = String(content.cta_all_races ?? '').trim();
 const toolIconViewBoxes: Record<string, string> = {
   'map-outline': '0 0 512 512',
   'fitness-outline': '0 0 512 512',
@@ -172,6 +173,16 @@ const toolIconViewBoxes: Record<string, string> = {
             </a>
           ))}
         </div>
+
+        {
+          allRacesCta && (
+            <div class="home-section__footer">
+              <a class="home-section__footer-link" href={data.raceListHref}>
+                {allRacesCta}
+              </a>
+            </div>
+          )
+        }
       </section>
     )
   }
@@ -258,6 +269,16 @@ const toolIconViewBoxes: Record<string, string> = {
             ))}
           </div>
         </div>
+
+        {
+          allRacesCta && (
+            <div class="home-section__footer">
+              <a class="home-section__footer-link" href={data.raceListHref}>
+                {allRacesCta}
+              </a>
+            </div>
+          )
+        }
       </section>
     )
   }
@@ -306,6 +327,16 @@ const toolIconViewBoxes: Record<string, string> = {
             ))}
           </div>
         </div>
+
+        {
+          allRacesCta && (
+            <div class="home-section__footer">
+              <a class="home-section__footer-link" href={data.raceListHref}>
+                {allRacesCta}
+              </a>
+            </div>
+          )
+        }
       </section>
     )
   }
@@ -341,27 +372,49 @@ const toolIconViewBoxes: Record<string, string> = {
           ))}
         </div>
       </div>
+
+      {
+        allRacesCta && (
+          <div class="home-section__footer home-section__footer--full">
+            <a class="home-section__footer-link" href={data.raceListHref}>
+              {allRacesCta}
+            </a>
+          </div>
+        )
+      }
     </div>
   </section>
 
   {
     data.categoryPanels.length > 0 && (
-      <section class="home-category-layout">
-        {data.categoryPanels.map((panel) => (
-          <a class="home-category-card" href={panel.href}>
-            <img src={panel.imageSrc} alt="" class="home-category-card__image" loading="lazy" decoding="async" />
-            <div class="home-category-card__overlay"></div>
-            <div class="home-category-card__body">
-              <h2>{panel.title}</h2>
-              <div class="home-category-card__links">
-                {panel.sublinks.map((link) => (
-                  <span class="home-category-card__tag">{link.label}</span>
-                ))}
+      <section class="home-section">
+        <div class="home-category-layout">
+          {data.categoryPanels.map((panel) => (
+            <a class="home-category-card" href={panel.href}>
+              <img src={panel.imageSrc} alt="" class="home-category-card__image" loading="lazy" decoding="async" />
+              <div class="home-category-card__overlay"></div>
+              <div class="home-category-card__body">
+                <h2>{panel.title}</h2>
+                <div class="home-category-card__links">
+                  {panel.sublinks.map((link) => (
+                    <span class="home-category-card__tag">{link.label}</span>
+                  ))}
+                </div>
+                <span class="home-category-card__cta">{panel.ctaLabel}</span>
               </div>
-              <span class="home-category-card__cta">{panel.ctaLabel}</span>
+            </a>
+          ))}
+        </div>
+
+        {
+          allRacesCta && (
+            <div class="home-section__footer">
+              <a class="home-section__footer-link" href={data.raceListHref}>
+                {allRacesCta}
+              </a>
             </div>
-          </a>
-        ))}
+          )
+        }
       </section>
     )
   }
@@ -469,6 +522,16 @@ const toolIconViewBoxes: Record<string, string> = {
             </a>
           ))}
         </div>
+
+        {
+          allRacesCta && (
+            <div class="home-section__footer">
+              <a class="home-section__footer-link" href={data.raceListHref}>
+                {allRacesCta}
+              </a>
+            </div>
+          )
+        }
       </section>
     )
   }
