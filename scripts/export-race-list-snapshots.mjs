@@ -10,6 +10,88 @@ const root = path.join(__dirname, '..');
 const listSelect =
   'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description )';
 
+function toFiniteNumber(value) {
+  if (typeof value === 'number' && Number.isFinite(value)) return value;
+  if (typeof value === 'string' && value.trim()) {
+    const parsed = Number.parseFloat(value);
+    if (Number.isFinite(parsed)) return parsed;
+  }
+  return null;
+}
+
+function mergeRaceDetailPageViewRankings(rows, rankings) {
+  const rankingByDomain = new Map(
+    (Array.isArray(rankings) ? rankings : [])
+      .filter((entry) => entry && typeof entry.domain_name === 'string')
+      .map((entry) => [
+        entry.domain_name,
+        {
+          count: toFiniteNumber(entry.page_views_last_30_days),
+          lastViewAt: typeof entry.last_view_at === 'string' ? entry.last_view_at : null,
+        },
+      ]),
+  );
+
+  return rows.map((row) => {
+    const payload =
+      row && row.payload && typeof row.payload === 'object' && !Array.isArray(row.payload)
+        ? row.payload
+        : {};
+    const existingAnalytics =
+      payload.analytics &&
+      typeof payload.analytics === 'object' &&
+      !Array.isArray(payload.analytics)
+        ? payload.analytics
+        : {};
+    const {
+      page_views_last_30_days: _ignoredPageViewsLast30Days,
+      views_last_30_days: _ignoredViewsLast30Days,
+      last_30_days_views: _ignoredLast30DaysViews,
+      last_view_at: _ignoredLastViewAt,
+      ...restAnalytics
+    } = existingAnalytics;
+    const ranking = rankingByDomain.get(row.domain_name);
+    const nextPayload = { ...payload };
+
+    if (ranking?.count != null && ranking.count > 0) {
+      nextPayload.analytics = {
+        ...restAnalytics,
+        page_views_last_30_days: ranking.count,
+        last_view_at: ranking.lastViewAt,
+      };
+    } else if (Object.keys(restAnalytics).length > 0) {
+      nextPayload.analytics = restAnalytics;
+    } else {
+      delete nextPayload.analytics;
+    }
+
+    return {
+      ...row,
+      payload: nextPayload,
+    };
+  });
+}
+
+async function loadRaceDetailPageViewRankings(sb, countryCode) {
+  const { data, error } = await sb.rpc('get_race_detail_page_view_rankings', {
+    p_country_code: countryCode,
+    p_days: 30,
+    p_limit: 5000,
+  });
+
+  if (error) {
+    if (error.code === 'PGRST202') {
+      console.warn(
+        `Skipping race-detail rankings for ${countryCode}: get_race_detail_page_view_rankings is not available in the connected Supabase schema yet.`,
+      );
+      return [];
+    }
+    throw error;
+  }
+
+  return Array.isArray(data) ? data : [];
+}
+
 function loadRowsFromJson(countryCode) {
   const countryDir = path.join(root, 'data', 'countries', countryCode);
   const localPath = fs.existsSync(path.join(countryDir, 'final_races_w_neighbors.json'))
@@ -121,8 +203,11 @@ async function exportCountrySnapshot(sb, countryCode, outputDir) {
 
   if (error) throw error;
 
+  const rankingData = await loadRaceDetailPageViewRankings(sb, countryCode);
+
   const jsonRows = loadRowsFromJson(countryCode);
-  const rows = jsonRows.length > (data ?? []).length ? jsonRows : (data ?? []);
+  const baseRows = jsonRows.length > (data ?? []).length ? jsonRows : (data ?? []);
+  const rows = mergeRaceDetailPageViewRankings(baseRows, rankingData ?? []);
   const source = jsonRows.length > (data ?? []).length ? 'json' : 'supabase';
 
   const outPath = path.join(outputDir, `${countryCode}.json`);

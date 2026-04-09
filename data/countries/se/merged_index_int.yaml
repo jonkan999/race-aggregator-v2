@@ -1,154 +1,13 @@
-navigation:
-  main: All
-  race-list: Race Calendar
-  add-race: Add Race
-  forum: Forum
-  measure-route: Measure Your Route
-  training-plans: Training Plans
-  pace-calculator: Pace Converter
-  racetime-estimator: Estimate Your Finish Time
-  about-us: About Us
-  contact: Contact Us
-race_list_name: Race Calendar
-alternate_locale_link_text: Svenska
-auxiliary_pages:
-  race-page-preview: Preview Race
-  terms-of-service: Terms of Service
-  privacy-policy: Privacy Policy
-  about-us: About Us
-  contact: Contact Us
-  faq: FAQ
-page_name: Loppkartan
-base_url: https://loppkartan.se/
-supabase_auth_email:
-  primary_color: '#00925e'
-  shared:
-    greeting: Hello!
-    closing_salutation: Best regards,
-    link_fallback_intro: 'If the button does not work, you can copy the link here:'
-  confirm_signup:
-    body: Thank you for signing up for {site_name}. Confirm your email address to activate your account and manage your submitted races.
-    button_label: Confirm email address
-    ignore_note: If you did not create the account, you can ignore this email.
-  reset_password:
-    body: We received a request to reset your password for {site_name}. Click the button below to choose a new password.
-    button_label: Reset password
-    ignore_note: If you did not request this, you can ignore the email. Your password will not change until you choose a new one.
-  change_email:
-    body: You requested to change the email address for your account on {site_name}. Confirm the change by clicking the button below.
-    button_label: Confirm new email address
-    ignore_note: If you did not request the change, you can ignore this email.
-title: Everything about running in
-country_native: Sweden
-country: Sweden
-meta_description: Most comprehensive running community in Sweden
-country_code: se
-country_language: swedish
-country_language_code: en
-local_name_for_race: race
-main_bullet_1: Find your next race
-main_bullet_2: ' - Or add it here'
-main_bullet_3: Browse our marketplace
-main_bullet_4: Read the latest news or join the discussion in our forum
-description: This community-driven initiative aims to bring together runners from
-  all over Sweden. Our platform is under development, but with your help we can create
-  something amazing!
-cta_search: Find Race
-cta_add: Add a Race
-selected_races_title: Featured Races
-selected_races_top_title: Race of the week
-cta_all_races: Show all races
-show_local: Show
-race_local: Race
-running_local: Running
-alt_prefix: 'Image for '
-race_list_title: The most complete list of marathons, half marathons, and other running
-  competitions
-race_list_meta_description_1: Find all running competitions and races in Sweden
-race_list_meta_description_2: ✔️Largest race calendar ✔️Trail, Backyard, or Marathon
-  ✔️Races from all over Sweden
-race_list_data_error: Could not load races. Please try again later.
-race_list_remote_required: For more pages or filters the database (Supabase) is required. Add PUBLIC_SUPABASE_URL and PUBLIC_SUPABASE_PUBLISHABLE_KEY to your .env file.
-race_list_empty: No races matched your filters.
-race_list_loading: Loading…
-race_card_cta_text: More info & registration
-section_race_card_category_prefix: All
-section_race_card_category_suffix: races
-section_race_card_header_separator: in
-section_race_card_header_region_default: Sweden
-section_race_card_header_date_range_from: 'from '
-section_race_card_header_date_range_to: 'to '
-section_race_card_header_date_range_single: 'in '
-filter_date_from: From
-filter_date_to: To
-filter_county: All regions
-filter_race_type: All race types
-filter_categories: All categories
-filter_months: All year
-filter_distance: All distances
-month_mapping:
-  '01': January
-  '02': February
-  '03': March
-  '04': April
-  '05': May
-  '06': June
-  '07': July
-  08: August
-  09: September
-  '10': October
-  '11': November
-  '12': December
-month_mapping_short:
-  '01': Jan
-  '02': Feb
-  '03': Mar
-  '04': Apr
-  '05': May
-  '06': Jun
-  '07': Jul
-  08: Aug
-  09: Sep
-  '10': Oct
-  '11': Nov
-  '12': Dec
-distance_mapping:
+type_options:
+  road: Road
+  terrain: Terrain
+  trail: Trail
+  track: Track
   backyard: Backyard Ultra
-  time: Time-based
+  frontyard: Frontyard Ultra
   relay: Relay
-distance_units:
-- range:
-  - 20.9
-  - 21.3
-  label: Half Marathon
-- range:
-  - 41.9
-  - 42.4
-  label: Marathon
-county_label_text: All regions
-county_mapping:
-  Stockholms: Stockholm
-  Uppsala: Uppsala
-  Södermanlands: Södermanland
-  Östergötlands: Östergötland
-  Jönköpings: Jönköping
-  Kronobergs: Kronoberg
-  Kalmar: Kalmar
-  Gotlands: Gotland
-  Blekinge: Blekinge
-  Skåne: Skåne
-  Halland: Halland
-  Västra Götalands: Västra Götaland
-  Värmland: Värmland
-  Örebro: Örebro
-  Västmanlands: Västmanland
-  Dalarnas: Dalarna
-  Gävleborgs: Gävleborg
-  Västernorrlands: Västernorrland
-  Jämtlands: Jämtland
-  Västerbottens: Västerbotten
-  Norrbottens: Norrbotten
-category_label_text: Race Category
+  time: Time-based
+  other: Other
 category_mapping:
   5 km:
     range:
@@ -203,14 +62,161 @@ category_mapping:
     range:
     - 10
     - 10
-Ultra Marathon:
-  range:
-  - 42
-  - 500
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Time-based
+  relay: Relay
 verbose_local_distance_mapping:
   half marathon: Half Marathon
   marathon: Marathon
   fallback: Mixed distance
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Half Marathon
+- range:
+  - 41.9
+  - 42.4
+  label: Marathon
+country_code: se
+country_language_code: en
+navigation:
+  main: All
+  race-list: Race Calendar
+  add-race: Add Race
+  forum: Forum
+  measure-route: Measure Your Route
+  training-plans: Training Plans
+  pace-calculator: Pace Converter
+  racetime-estimator: Estimate Your Finish Time
+  about-us: About Us
+  contact: Contact Us
+race_list_name: Race Calendar
+alternate_locale_link_text: Svenska
+auxiliary_pages:
+  race-page-preview: Preview Race
+  terms-of-service: Terms of Service
+  privacy-policy: Privacy Policy
+  about-us: About Us
+  contact: Contact Us
+  faq: FAQ
+page_name: Loppkartan
+base_url: https://loppkartan.se/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hello!
+    closing_salutation: Best regards,
+    link_fallback_intro: 'If the button does not work, you can copy the link here:'
+  confirm_signup:
+    body: Thank you for signing up for {site_name}. Confirm your email address to activate your account and manage your submitted races.
+    button_label: Confirm email address
+    ignore_note: If you did not create the account, you can ignore this email.
+  reset_password:
+    body: We received a request to reset your password for {site_name}. Click the button below to choose a new password.
+    button_label: Reset password
+    ignore_note: If you did not request this, you can ignore the email. Your password will not change until you choose a new one.
+  change_email:
+    body: You requested to change the email address for your account on {site_name}. Confirm the change by clicking the button below.
+    button_label: Confirm new email address
+    ignore_note: If you did not request the change, you can ignore this email.
+title: Everything about running in
+country_native: Sweden
+country: Sweden
+meta_description: Most comprehensive running community in Sweden
+country_language: swedish
+local_name_for_race: race
+main_bullet_1: Find your next race
+main_bullet_2: ' - Or add it here'
+main_bullet_3: Browse our marketplace
+main_bullet_4: Read the latest news or join the discussion in our forum
+description: This community-driven initiative aims to bring together runners from all over Sweden. Our platform is under development, but with your help we can create something amazing!
+cta_search: Find Race
+cta_add: Add a Race
+selected_races_title: Featured Races
+selected_races_top_title: Race of the week
+cta_all_races: Show all races
+show_local: Show
+race_local: Race
+running_local: Running
+alt_prefix: 'Image for '
+race_list_title: The most complete list of marathons, half marathons, and other running competitions
+race_list_meta_description_1: Find all running competitions and races in Sweden
+race_list_meta_description_2: ✔️Largest race calendar ✔️Trail, Backyard, or Marathon ✔️Races from all over Sweden
+race_list_data_error: Could not load races. Please try again later.
+race_list_remote_required: For more pages or filters the database (Supabase) is required. Add PUBLIC_SUPABASE_URL and PUBLIC_SUPABASE_PUBLISHABLE_KEY to your .env file.
+race_list_empty: No races matched your filters.
+race_list_loading: Loading…
+race_card_cta_text: More info & registration
+section_race_card_category_prefix: All
+section_race_card_category_suffix: races
+section_race_card_header_separator: in
+section_race_card_header_region_default: Sweden
+section_race_card_header_date_range_from: 'from '
+section_race_card_header_date_range_to: 'to '
+section_race_card_header_date_range_single: 'in '
+filter_date_from: From
+filter_date_to: To
+filter_county: All regions
+filter_race_type: All race types
+filter_categories: All categories
+filter_months: All year
+filter_distance: All distances
+month_mapping:
+  '01': January
+  '02': February
+  '03': March
+  '04': April
+  '05': May
+  '06': June
+  '07': July
+  08: August
+  09: September
+  '10': October
+  '11': November
+  '12': December
+month_mapping_short:
+  '01': Jan
+  '02': Feb
+  '03': Mar
+  '04': Apr
+  '05': May
+  '06': Jun
+  '07': Jul
+  08: Aug
+  09: Sep
+  '10': Oct
+  '11': Nov
+  '12': Dec
+county_label_text: All regions
+county_mapping:
+  Stockholms: Stockholm
+  Uppsala: Uppsala
+  Södermanlands: Södermanland
+  Östergötlands: Östergötland
+  Jönköpings: Jönköping
+  Kronobergs: Kronoberg
+  Kalmar: Kalmar
+  Gotlands: Gotland
+  Blekinge: Blekinge
+  Skåne: Skåne
+  Halland: Halland
+  Västra Götalands: Västra Götaland
+  Värmland: Värmland
+  Örebro: Örebro
+  Västmanlands: Västmanland
+  Dalarnas: Dalarna
+  Gävleborgs: Gävleborg
+  Västernorrlands: Västernorrland
+  Jämtlands: Jämtland
+  Västerbottens: Västerbotten
+  Norrbottens: Norrbotten
+category_label_text: Race Category
+Ultra Marathon:
+  range:
+  - 42
+  - 500
 to_race_page_cta: To race page
 map_toggle_desktop: Show map
 map_toggle_desktop_active: Hide map
@@ -238,16 +244,6 @@ multi_day_toggle: Multi-day event
 end_date_text: End date
 type_text: Surface / Race type
 type_select_placeholder: Select surface / race type
-type_options:
-  road: Road
-  terrain: Terrain
-  trail: Trail
-  track: Track
-  backyard: Backyard Ultra
-  frontyard: Frontyard Ultra
-  relay: Relay
-  time: Time-based
-  other: Other
 name_label: 'Race name:'
 name_placeholder: e.g. City Marathon
 distance_label: 'Distances:'
@@ -279,7 +275,7 @@ add_race_images_label: Upload images (At least 4 recommended)
 choose_pictures_button: Choose images
 drag_drop_text: Drag and drop images here or click to select
 add_race_remove_image_label: Remove image
-coordinates_display_prefix: 'Race coordinates'
+coordinates_display_prefix: Race coordinates
 add_race_upload_limit_message: You can only upload {count} more images.
 add_race_map_not_configured: The map could not be loaded right now.
 clear_images_button: Clear images
@@ -323,8 +319,7 @@ race_page_discover_type_link: More {type} races
 race_page_discover_category_link: More {category} races
 race_page_discover_type_county_link: '{type} races in {county}'
 race_page_discover_overview_link: Browse all race categories
-disclaimer_text_1: 'All information on this page is based on open source data. We
-  do our best to keep it updated but
+disclaimer_text_1: 'All information on this page is based on open source data. We do our best to keep it updated but
 
   cannot guarantee that everything is correct. If you see any inaccuracies,
 
@@ -360,67 +355,66 @@ seo_templates:
     category_only: Find {category} races across Sweden.
     race_only: Explore {race_type}races in all regions.
     location_only: See all types of races in {location}.
-    default_suffix: Here you will find dates, distances and all the information you
-      need to plan your next race.
+    default_suffix: Here you will find dates, distances and all the information you need to plan your next race.
   browse_page_templates:
     county:
       title: '{label} races | {site_name}'
-      meta_description: 'Browse running races in {label}. Compare dates, distances, race formats and practical details before choosing your next race.'
-      h1: 'Races in {label}'
-      paragraph: 'This landing page gathers running races in {label} so it is easier to compare dates, distances, race formats and practical details in one place. Use it when you want a clearer overview before choosing your next race.'
+      meta_description: Browse running races in {label}. Compare dates, distances, race formats and practical details before choosing your next race.
+      h1: Races in {label}
+      paragraph: This landing page gathers running races in {label} so it is easier to compare dates, distances, race formats and practical details in one place. Use it when you want a clearer overview before choosing your next race.
     city:
       title: '{label} races | {site_name}'
-      meta_description: 'Find running races linked to {label}. Compare dates, distances, nearby options and practical details before choosing your next race.'
-      h1: 'Races near {label}'
-      paragraph: 'This city page helps you browse running races connected to {label}, including nearby alternatives that are relevant when planning a race day or trip. It is built to make local race discovery faster and easier to compare.'
+      meta_description: Find running races linked to {label}. Compare dates, distances, nearby options and practical details before choosing your next race.
+      h1: Races near {label}
+      paragraph: This city page helps you browse running races connected to {label}, including nearby alternatives that are relevant when planning a race day or trip. It is built to make local race discovery faster and easier to compare.
     month:
       title: '{label} races | {site_name}'
-      meta_description: 'Browse running races in {label} in {market}. Compare dates, distances, race types and practical details before planning your season.'
-      h1: 'Races in {label}'
-      paragraph: 'This page is for runners who want a month-based view of the calendar and need a quicker way to compare what happens in {label}. It helps you narrow the field before drilling into distances, surfaces and race locations.'
+      meta_description: Browse running races in {label} in {market}. Compare dates, distances, race types and practical details before planning your season.
+      h1: Races in {label}
+      paragraph: This page is for runners who want a month-based view of the calendar and need a quicker way to compare what happens in {label}. It helps you narrow the field before drilling into distances, surfaces and race locations.
     race_type:
       title: '{label} races in {market} | {site_name}'
-      meta_description: 'Browse {label_lower} races in {market}. Compare dates, distances, locations and practical details before choosing a race that fits you.'
+      meta_description: Browse {label_lower} races in {market}. Compare dates, distances, locations and practical details before choosing a race that fits you.
       h1: '{label} races in {market}'
-      paragraph: 'This page focuses on {label_lower} races and gives you a cleaner overview when the race format matters as much as the distance. Use it to compare options across regions, dates and practical details without starting from the full calendar.'
+      paragraph: This page focuses on {label_lower} races and gives you a cleaner overview when the race format matters as much as the distance. Use it to compare options across regions, dates and practical details without starting from the full calendar.
     category:
       title: '{label} races in {market} | {site_name}'
-      meta_description: 'Browse {label} races in {market}. Compare dates, race types, locations and practical details before deciding on your next event.'
+      meta_description: Browse {label} races in {market}. Compare dates, race types, locations and practical details before deciding on your next event.
       h1: '{label} races in {market}'
-      paragraph: 'This distance and category page brings together races that match {label} so it is easier to compare relevant options in one place. It is designed for runners who want a faster path from broad browsing to a shortlist of realistic races.'
+      paragraph: This distance and category page brings together races that match {label} so it is easier to compare relevant options in one place. It is designed for runners who want a faster path from broad browsing to a shortlist of realistic races.
     race_type_category:
       title: '{label} {secondary_label} races in {market} | {site_name}'
-      meta_description: 'Browse {label} races in {market} within the {secondary_label_lower} race type. Compare dates, locations and practical details before choosing your next event.'
+      meta_description: Browse {label} races in {market} within the {secondary_label_lower} race type. Compare dates, locations and practical details before choosing your next event.
       h1: '{label} races in {market} ({secondary_label})'
-      paragraph: 'This page narrows the calendar to {label} races within the {secondary_label_lower} race type, which is helpful when both distance and race format shape the right choice. Use it to compare like-for-like options before committing to a race.'
+      paragraph: This page narrows the calendar to {label} races within the {secondary_label_lower} race type, which is helpful when both distance and race format shape the right choice. Use it to compare like-for-like options before committing to a race.
     race_type_county:
       title: '{secondary_label} races in {label} | {site_name}'
-      meta_description: 'Browse {secondary_label_lower} races in {label}. Compare dates, distances and practical details before choosing your next race.'
+      meta_description: Browse {secondary_label_lower} races in {label}. Compare dates, distances and practical details before choosing your next race.
       h1: '{secondary_label} races in {label}'
-      paragraph: 'This page focuses on {secondary_label_lower} races in {label} so it is easier to compare more relevant options within the same region. It is useful when both geography and race format shape the shortlist.'
+      paragraph: This page focuses on {secondary_label_lower} races in {label} so it is easier to compare more relevant options within the same region. It is useful when both geography and race format shape the shortlist.
     race_type_month:
       title: '{secondary_label} races in {label} | {site_name}'
-      meta_description: 'Browse {secondary_label_lower} races in {label_lower}. Compare dates, distances and practical details while planning your season.'
+      meta_description: Browse {secondary_label_lower} races in {label_lower}. Compare dates, distances and practical details while planning your season.
       h1: '{secondary_label} races in {label}'
-      paragraph: 'This page gathers {secondary_label_lower} races in {label_lower} for runners who plan around the calendar first. It helps you compare similar race formats before narrowing further by place or distance.'
+      paragraph: This page gathers {secondary_label_lower} races in {label_lower} for runners who plan around the calendar first. It helps you compare similar race formats before narrowing further by place or distance.
     race_type_city:
       title: '{secondary_label} races near {label} | {site_name}'
-      meta_description: 'Browse {secondary_label_lower} races linked to {label}. Compare dates, distances and nearby options before choosing your next race.'
+      meta_description: Browse {secondary_label_lower} races linked to {label}. Compare dates, distances and nearby options before choosing your next race.
       h1: '{secondary_label} races near {label}'
-      paragraph: 'This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.'
+      paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
 seo_generation:
   browse_model: gpt-5-mini
   browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Sweden. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
   browse_guidance:
-    county: 'User wants races in one region.'
-    city: 'User wants races connected to a city or nearby city.'
-    month: 'User wants races by month.'
-    race_type: 'User wants a specific race type.'
-    category: 'User wants a specific distance or race category.'
-    race_type_category: 'User wants a specific distance/category inside one race type.'
-    race_type_county: 'User wants a specific race type in one region.'
-    race_type_month: 'User wants a specific race type in one month.'
-    race_type_city: 'User wants a specific race type connected to one city.'
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
 browse_seo_indexing:
   county_pages:
     min_race_count: 5
@@ -432,54 +426,54 @@ browse_seo_indexing:
   race_type_pages:
     min_race_count: 8
     allowed_race_type_keys:
-      - road
-      - trail
-      - terrain
-      - backyard
+    - road
+    - trail
+    - terrain
+    - backyard
   category_pages:
     min_race_count: 8
     allowed_labels:
-      - 5 km
-      - 10 km
-      - Half Marathon
-      - Marathon
-      - 50 km
-      - 100 km
-      - 50 miles
-      - 100 miles
+    - 5 km
+    - 10 km
+    - Half Marathon
+    - Marathon
+    - 50 km
+    - 100 km
+    - 50 miles
+    - 100 miles
   race_type_category_pages:
     enabled: true
     min_race_count: 5
     allowed_race_type_keys:
-      - road
-      - trail
+    - road
+    - trail
     allowed_labels:
-      - 5 km
-      - 10 km
-      - Half Marathon
-      - Marathon
-      - 50 km
-      - 100 km
-      - 50 miles
-      - 100 miles
+    - 5 km
+    - 10 km
+    - Half Marathon
+    - Marathon
+    - 50 km
+    - 100 km
+    - 50 miles
+    - 100 miles
   race_type_county_pages:
     enabled: true
     min_race_count: 5
     allowed_race_type_keys:
-      - road
-      - trail
+    - road
+    - trail
   race_type_month_pages:
     enabled: true
     min_race_count: 6
     allowed_race_type_keys:
-      - road
-      - trail
+    - road
+    - trail
   race_type_city_pages:
     enabled: false
     min_race_count: 5
     allowed_race_type_keys:
-      - road
-      - trail
+    - road
+    - trail
 browse_by_category:
   button: Browse by category
   helper_text: Find races through predefined filters and combinations
@@ -612,16 +606,14 @@ newsletter_popup:
 submission_flow:
   logged_in_as: Logged in as organizer
   submitting_new_race: submitting new race
-  new_account_created: To manage the race, you must confirm your email address. A
-    confirmation link has been sent to the provided email address.
+  new_account_created: To manage the race, you must confirm your email address. A confirmation link has been sent to the provided email address.
   password_reset_sent: Password reset sent. Check your inbox.
   unexpected_error: An error occurred. Please try again.
   processing_submission: Processing submission...
   race_exists: The race already exists in the database.
   race_submitted: Race has been submitted!
   submission_failed: Could not submit the race. Please try again.
-  missing_fields: Something is missing. Make sure all required fields are filled and
-    a location has been selected on the map.
+  missing_fields: Something is missing. Make sure all required fields are filled and a location has been selected on the map.
 race_page:
   forum_section:
     title: Questions & Answers
@@ -637,9 +629,7 @@ map:
   list: list
 forum:
   title: Forum - Talk about running and running life with other runners in Sweden
-  meta_description: Talk about running and running life with other runners in our
-    forum. Everything about training, competitions, injuries, nutrition, clothes,
-    gear and much more.
+  meta_description: Talk about running and running life with other runners in our forum. Everything about training, competitions, injuries, nutrition, clothes, gear and much more.
   categories:
   - name: Training
     slug: training
@@ -668,8 +658,7 @@ forum:
   - name: Miscellaneous
     slug: misc
     description: Everything else
-  empty_category_state: No threads yet. Get the discussion going by creating the first
-    thread!
+  empty_category_state: No threads yet. Get the discussion going by creating the first thread!
   empty_state_thread: No posts yet. Be the first to write!
   empty_state: No posts yet. Be the first to write!
   reply_placeholder: Write your reply...
@@ -696,22 +685,16 @@ about_us:
   meta_description: Loppkartan - Your guide to running in Sweden
   content:
     intro: Welcome to Loppkartan - The most complete platform for runners in Sweden!
-    mission: Our mission is to make it easy for runners to find and share information
-      about races, training and everything related to running.
-    story: Loppkartan was started in 2023 by runners for runners. We saw the need
-      for a modern and user-friendly platform where the running community could gather.
+    mission: Our mission is to make it easy for runners to find and share information about races, training and everything related to running.
+    story: Loppkartan was started in 2023 by runners for runners. We saw the need for a modern and user-friendly platform where the running community could gather.
     features:
     - title: Complete Race List
-      description: We gather all races in Sweden in one place - from small local races
-        to large international events.
+      description: We gather all races in Sweden in one place - from small local races to large international events.
     - title: Community-Driven
-      description: Our platform is driven by runners like you. Anyone can contribute
-        with information about races and participate in discussions.
+      description: Our platform is driven by runners like you. Anyone can contribute with information about races and participate in discussions.
     - title: Free Tools
-      description: We offer useful tools like pace calculators, training programs
-        and route planning - completely free.
-    closing: We continue to develop the platform based on feedback from our users.
-      Do you have suggestions for improvements? Please contact us!
+      description: We offer useful tools like pace calculators, training programs and route planning - completely free.
+    closing: We continue to develop the platform based on feedback from our users. Do you have suggestions for improvements? Please contact us!
 contact:
   title: Contact Us
   meta_description: Contact Loppkartan - We are here to help you
@@ -767,8 +750,7 @@ privacy_page:
   - title: 5. Contact Us
     intro: If you have questions about how we process personal data or use cookies, you are always welcome to reach out.
 racetime_estimator_title: Estimate your finish time
-racetime_estimator_description: Based on a previous race, you can estimate your finish
-  time for other distances.
+racetime_estimator_description: Based on a previous race, you can estimate your finish time for other distances.
 known_distance_label: Select distance where you have a previous result
 known_time_label: Enter your time
 calculate_button_text: Calculate times
@@ -784,8 +766,7 @@ flat_pace_per_km_header: Min/km (flat)
 flat_pace_per_mile_header: Min/mile (flat)
 hill_adjustment_header: Hilly adjustment
 pace_calculator_title: Pace Converter
-pace_calculator_description: A simple tool for converting your running speed between
-  different units
+pace_calculator_description: A simple tool for converting your running speed between different units
 pace_table_header_kph: Kilometers per hour
 pace_table_header_mph: Miles per hour
 pace_table_header_min_km: Minutes per kilometer
@@ -796,17 +777,14 @@ pace_table_header_half: Half Marathon
 pace_table_header_full: Marathon
 pace_conversion_note: 1 kilometer per hour (kph) = 0.62 mile per hour (mph)
 measure_route_title: Measure your route
-measure_route_description: Click on the map to mark points along your route. Total
-  distance is calculated automatically.
+measure_route_description: Click on the map to mark points along your route. Total distance is calculated automatically.
 remove_last_point: Remove last point
 clear_route: Clear route
 total_distance: Total distance
 training_plans:
   title: Training Plans
   description: Create a customized training plan based on your goal
-  disclaimer_text_tp_1: Our training plans are generated using AI, and then adapted
-    to your stated goals and preferences. The programs are not guaranteed to be perfect
-    or work for everyone.
+  disclaimer_text_tp_1: Our training plans are generated using AI, and then adapted to your stated goals and preferences. The programs are not guaranteed to be perfect or work for everyone.
   disclaimer_link_tp: Contact us
   disclaimer_text_tp_2: if you have feedback or suggestions for improvements.
   form:
@@ -1015,8 +993,7 @@ accessibility:
   social_youtube_label: YouTube
   social_tiktok_label: TikTok
 trending_races_title: Trending races
-trending_races_description: Here are the races that have received the most attention
-  from runners.
+trending_races_description: Here are the races that have received the most attention from runners.
 trending_races_views_last_30_days: views in the last 30 days
 trending_races_most_viewed: Most popular right now
 races_views: views
@@ -1068,7 +1045,6 @@ neighboring_countries_all_neighbors_native: All neighboring countries
 section_race_card_header_nieghbors_default: Sweden and neighboring countries
 browse_neighboring:
   title: Browse Races by Neighboring Countries
-  meta_description: Find races in neighboring countries near you. Browse by country
-    to discover running events across borders.
+  meta_description: Find races in neighboring countries near you. Browse by country to discover running events across borders.
 neighboring_races_title: Races in neighboring countries
 neighboring_countries_show_all: Show all

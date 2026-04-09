@@ -211,8 +211,8 @@ const toolIconViewBoxes: Record<string, string> = {
                   <div class="home-trending-lead__badges">
                     {trendingMostViewed && <span class="home-badge home-badge--primary">{trendingMostViewed}</span>}
                     {
-                      trendingLead.popularityValue != null && trendingViewsLabel && (
-                        <span class="home-badge">{`${Math.round(trendingLead.popularityValue)} ${trendingViewsLabel}`}</span>
+                      trendingLead.popularityDisplayValue != null && trendingViewsLabel && (
+                        <span class="home-badge">{`${trendingLead.popularityDisplayValue} ${trendingViewsLabel}`}</span>
                       )
                     }
                   </div>
@@ -258,9 +258,9 @@ const toolIconViewBoxes: Record<string, string> = {
                     {race.locationLabel}
                   </p>
                   {
-                    trendingHasMetrics && race.popularityValue != null && trendingViewsLabel && (
+                    trendingHasMetrics && race.popularityDisplayValue != null && trendingViewsLabel && (
                       <p class="home-trending-rank__views">
-                        {Math.round(race.popularityValue)} {trendingViewsLabel}
+                        {race.popularityDisplayValue} {trendingViewsLabel}
                       </p>
                     )
                   }

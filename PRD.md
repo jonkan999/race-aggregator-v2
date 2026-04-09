@@ -44,8 +44,8 @@
 | Astro SSG | Per-market routes, YAML-driven titles/copy, **pre-rendered first page** of each list surface (see below), **ItemList JSON-LD** + visually hidden crawlable links for page-1 races. |
 | React islands | `RaceListPageIsland` (legacy-styled filters + cards + pagination + map/list toggles; page 1 unfiltered from SSG props; page 2+ and any filter via Supabase **RPC**), `RaceMapIsland` (Mapbox + clustered GeoJSON from static JSON; toolbar optional when parent supplies desktop toggle). |
 | Supabase | `races` + `race_translations`, RLS public read for published races only; **Publishable** key in the browser, **Secret** key only in seed/export/build-snapshot scripts (no legacy JWT anon key in app code). |
-| CRM / Newsletter | Context-aware newsletter popups on list/browse/detail surfaces. Copy stays in country YAML, while eligible sessions, impressions, dismissals, and subscriptions are written through RPCs into the `crm` schema for later reporting and serving-logic A/B tests. |
-| Scripts | `scripts/seed-races.mjs` (JSON → DB), `scripts/export-markers.mjs` (DB or JSON → `public/markers-*.json`), `scripts/export-race-list-snapshots.mjs` (DB → temporary per-country build snapshot), `scripts/build-with-race-list-snapshots.mjs` (snapshot-first build wrapper). Anonymous add-race submissions write directly from the browser to Supabase Storage + `public.race_submissions` via RLS-limited insert policies. |
+| CRM / Newsletter / Trending | Context-aware newsletter popups on list/browse/detail surfaces. Copy stays in country YAML, while eligible sessions, impressions, dismissals, subscriptions, and race-detail page views are written through RPCs into the `crm` schema for later reporting, A/B analysis, and homepage trending rankings. |
+| Scripts | `scripts/seed-races.mjs` (JSON → DB), `scripts/export-markers.mjs` (DB or JSON → `public/markers-*.json`), `scripts/export-race-list-snapshots.mjs` (DB → temporary per-country build snapshot plus merged trending metrics), `scripts/build-with-race-list-snapshots.mjs` (snapshot-first build wrapper). Anonymous add-race submissions write directly from the browser to Supabase Storage + `public.race_submissions` via RLS-limited insert policies. |
 
 ### Market and locale routing model
 
@@ -81,8 +81,9 @@
 
 1. `npm run build` first exports a temporary local snapshot for each country into `.cache/race-list-build-snapshots/`.
 2. If **`SUPABASE_URL` (or `PUBLIC_SUPABASE_URL`) + `SUPABASE_SECRET_KEY` (or legacy `SUPABASE_SERVICE_ROLE_KEY`)** are set at build time, that export reads Supabase **once per country** and writes the snapshot locally.
-3. Static race-list and browse routes must reuse the local snapshot for the rest of the build rather than issuing repeated live reads from route code.
-4. If DB credentials are unavailable, build falls back to **`data/countries/{code}/final_races.json`** (+ int file for translations). No extra public JSON asset; data is **inlined into the page** at build only.
+3. That same export may also merge per-race 30-day race-detail page-view rankings into the local snapshot so homepage trending stays deployment-driven without route-level analytics reads.
+4. Static race-list and browse routes must reuse the local snapshot for the rest of the build rather than issuing repeated live reads from route code.
+5. If DB credentials are unavailable, build falls back to **`data/countries/{code}/final_races.json`** (+ int file for translations). No extra public JSON asset; data is **inlined into the page** at build only.
 
 **Cost guardrail:** build-time Supabase usage should scale with the number of countries being built, not with the number of static routes. The correct model is **export once, reuse everywhere**.
 
@@ -91,6 +92,8 @@
 **Without browser Supabase keys:** Page 1 still works from the build snapshot; **Next** and **filter** are disabled or show copy from `race_list_remote_required` in YAML (no runtime fallback fetch).
 
 **Newsletter popup boundary:** newsletter capture also stays on the publishable browser client. Anonymous popup events and subscriptions must go through RLS-safe tables or security-definer RPCs only; never ship elevated keys for CRM capture.
+
+**Trending boundary:** race-detail page-view capture must follow that same browser-key rule. Detail pages record views through a publishable-key RPC, while deployment-time builds read only aggregated rankings through a server-side key and merge them into the temporary snapshot.
 
 ## Granular list routes (county / city / race type / month / category)
 

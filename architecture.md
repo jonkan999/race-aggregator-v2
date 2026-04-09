@@ -17,6 +17,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Canonical race data: Supabase
 - Anonymous race submissions: `public.race_submissions` + Storage bucket `race-submissions`
 - Newsletter popup events and subscriptions: `crm` schema in Supabase via RPC writes
+- Race-detail page views for homepage trending: `crm.race_detail_page_views` via RPC writes
 - Build-time race-list snapshot: temporary JSON under `.cache/race-list-build-snapshots/` generated once per country for each build
 - Build fallback data: `data/countries/{code}/final_races*.json`
 - Map pins: `public/markers-{country}.json`
@@ -25,6 +26,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - The default race list page is pre-rendered at build time through `getRaceListFirstPageSnapshot`.
 - `npm run build` must fetch race-list rows from Supabase at most once per country, write a temporary local snapshot, and force the rest of the build to reuse that snapshot.
+- The snapshot export may merge derived 30-day race-detail page-view rankings into the same local snapshot, but it must still do that aggregation once per country during the export step rather than from route files.
 - `npm run build` should also rebuild missing browse SEO cache entries from that same temporary snapshot before Astro renders the static browse routes.
 - Build-time snapshot should prefer the temporary build snapshot when present, otherwise fall back to Supabase, otherwise local JSON.
 - Page 2 and any filtered state should use one browser-side Supabase RPC call to `get_races_list_page`.
@@ -35,6 +37,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Browser code may use `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 - Secret or service-role keys are only for seed scripts, marker export, and one-time build snapshot export.
 - Newsletter popups must stay inside the same browser-key boundary: anonymous capture goes through the publishable client and RPC/table boundaries only, including serving-logic A/B metrics such as eligible sessions and impressions.
+- Race-detail page-view tracking must stay inside that same browser-key boundary: detail pages record views through a publishable-key RPC, while deployment-time ranking export reads aggregated counts with a server-side key.
 - Public add-race submissions must work with the browser publishable key only; do not require login as part of the submission flow.
 - Map pins must remain static JSON, not live list-query output.
 - Static generation must not fan out repeated live Supabase reads per route. Any large build-time read should be exported once and reused locally for the rest of the build.

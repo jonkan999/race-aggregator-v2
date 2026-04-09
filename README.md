@@ -102,9 +102,10 @@ At **`astro dev`**, the first page of the main calendar is filled from:
 At **`npm run build`**, the repo now uses a snapshot-first flow:
 
 1. Export all race rows once per country into a temporary local directory under `.cache/race-list-build-snapshots/`
-2. Regenerate missing browse SEO cache entries from that same local snapshot before Astro renders pages
-3. Reuse the snapshot for every static list/browse page during the build
-4. Remove the temporary snapshot directory after the build finishes
+2. Merge the latest 30-day race-detail page-view rankings into that same local snapshot
+3. Regenerate missing browse SEO cache entries from that same local snapshot before Astro renders pages
+4. Reuse the snapshot for every static list/browse page during the build
+5. Remove the temporary snapshot directory after the build finishes
 
 This keeps build-time Supabase egress roughly proportional to the number of countries being built, rather than the number of generated routes.
 
@@ -121,6 +122,11 @@ In the browser, **pagination** and **filters** (dates, month, distance/category,
   - `crm.newsletter_popup_events`
   - `crm.newsletter_popup_subscriptions`
   - `crm.newsletter_popup_metrics` view for grouped counts
+- Trending race tracking also lives in `crm`:
+  - `crm.race_detail_page_views`
+  - `record_race_detail_page_view` for browser-side detail page hits
+  - `get_race_detail_page_view_rankings` for build-time ranking export
+- The homepage ranks trending races from raw 30-day page views and displays a boosted count using `ceil(raw * 1.5)`.
 - Popup serving logic now supports A/B testing:
   - `standard` serves with the current time/scroll heuristics
   - `delayed_second_page` waits until page view two and uses deeper engagement thresholds

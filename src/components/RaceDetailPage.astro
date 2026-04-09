@@ -2,6 +2,7 @@
 import RaceDetailLayout from '../layouts/RaceDetailLayout.astro';
 import RaceDetailMapIsland from './RaceDetailMapIsland';
 import NewsletterPopup from './NewsletterPopup';
+import RaceDetailPageViewTracker from './RaceDetailPageViewTracker';
 import {
   comparableDateForSchema,
   getRaceDetailFields,
@@ -10,6 +11,7 @@ import {
 } from '../lib/raceDetail';
 import type { IndexYaml, Locale } from '../lib/content';
 import type { RaceListRow } from '../lib/raceListRow';
+import { deriveSiteIdentity } from '../lib/siteIdentity';
 
 interface Props {
   country: string;
@@ -23,6 +25,8 @@ interface Props {
 
 const { country, locale, content, row, allRows = [], canonicalPath, alternateHref } = Astro.props;
 const detail = getRaceDetailFields(row, content, locale);
+const { siteKey, siteName } = deriveSiteIdentity(content, country);
+const localeCode = locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv');
 const relatedContent = await getRaceDetailRelatedContent({
   countryCode: country,
   locale,
@@ -153,6 +157,14 @@ const newsletterContext = {
   <script slot="head" type="application/ld+json" set:html={eventJson} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbJson} />
   <NewsletterPopup client:load context={newsletterContext} />
+  <RaceDetailPageViewTracker
+    client:load
+    siteKey={siteKey}
+    siteName={siteName}
+    countryCode={country}
+    localeCode={localeCode}
+    domainName={row.domain_name}
+  />
 
   <section class="race-detail-shell">
     <nav

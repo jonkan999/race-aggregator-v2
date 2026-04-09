@@ -10,6 +10,13 @@ const legacyReference = !!process.env.PW_LEGACY_REFERENCE;
 
 const legacyBaseURL =
   (process.env.LEGACY_SITE_URL ?? 'https://loppkartan.se').replace(/\/?$/, '') + '/';
+const webServerEnv = {
+  ...process.env,
+  PUBLIC_SUPABASE_URL:
+    process.env.PUBLIC_SUPABASE_URL ?? 'https://race-aggregator-tests.supabase.co',
+  PUBLIC_SUPABASE_PUBLISHABLE_KEY:
+    process.env.PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? 'sb_publishable_test',
+};
 
 export default defineConfig({
   testDir: 'tests',
@@ -51,6 +58,7 @@ export default defineConfig({
           command: useFastDev
             ? `npx astro dev --host ${host} --port ${port}`
             : `npm run build && npx astro preview --host ${host} --port ${port}`,
+          env: webServerEnv,
           url: `${baseURL}/loppkalender/`,
           reuseExistingServer: !process.env.CI,
           timeout: useFastDev ? 180_000 : 300_000,

@@ -38,6 +38,7 @@ export type HomeRaceEntry = {
   summary: string;
   metaLabel?: string;
   popularityValue?: number;
+  popularityDisplayValue?: number;
 };
 
 export type HomeCategoryPanel = {
@@ -220,8 +221,16 @@ function parseOptionalNumber(raw: unknown): number | null {
   return null;
 }
 
+export function getBoostedPopularityDisplayValue(raw: number): number {
+  return Math.ceil(raw * 1.5);
+}
+
 function rowPopularityScore(row: RaceListRow): number | null {
-  const topLevel = row as RaceListRow & { view_count?: unknown; last_30_days_views?: unknown };
+  const topLevel = row as RaceListRow & {
+    page_views_last_30_days?: unknown;
+    view_count?: unknown;
+    last_30_days_views?: unknown;
+  };
   const payload = row.payload as Record<string, unknown> | null | undefined;
   const analytics =
     payload && typeof payload.analytics === 'object'
@@ -229,15 +238,16 @@ function rowPopularityScore(row: RaceListRow): number | null {
       : null;
 
   const candidates = [
+    topLevel.page_views_last_30_days,
+    analytics?.page_views_last_30_days,
+    payload?.page_views_last_30_days,
     topLevel.last_30_days_views,
     topLevel.view_count,
     payload?.last_30_days_views,
     payload?.views_last_30_days,
-    payload?.page_views_last_30_days,
     payload?.view_count,
     analytics?.last_30_days_views,
     analytics?.views_last_30_days,
-    analytics?.page_views_last_30_days,
   ];
 
   for (const candidate of candidates) {
@@ -352,6 +362,8 @@ function toHomeRaceEntry(args: {
     imageAlt: image.alt,
     summary: excerptDescription(summarySource, recent ? 120 : 170),
     popularityValue,
+    popularityDisplayValue:
+      popularityValue != null ? getBoostedPopularityDisplayValue(popularityValue) : undefined,
     metaLabel: recent
       ? formatRecentMeta(
           typeof row.payload?.created_date === 'string' ? row.payload.created_date : null,
@@ -423,6 +435,53 @@ function buildCategoryPanel(args: {
   };
 }
 
+export function buildTrendingRaces(args: {
+  promotableRows: RaceListRow[];
+  featuredRaces: HomeRaceEntry[];
+  countryCode: string;
+  locale: Locale;
+  content: IndexYaml;
+  upcomingStartComparable: string;
+  upcomingEndComparable: string;
+}): HomeRaceEntry[] {
+  const {
+    promotableRows,
+    featuredRaces,
+    countryCode,
+    locale,
+    content,
+    upcomingStartComparable,
+    upcomingEndComparable,
+  } = args;
+
+  const analyticsTrendingRaces = [...promotableRows]
+    .map((row) => ({ row, score: rowPopularityScore(row) }))
+    .filter((entry): entry is { row: RaceListRow; score: number } => entry.score != null)
+    .sort((left, right) => {
+      if (left.score !== right.score) return right.score - left.score;
+      return compareUpcomingRows(left.row, right.row, upcomingStartComparable, upcomingEndComparable);
+    })
+    .slice(0, 5)
+    .map(({ row, score }) =>
+      toHomeRaceEntry({
+        row,
+        countryCode,
+        locale,
+        content,
+        upcomingStartComparable,
+        upcomingEndComparable,
+        popularityValue: score,
+      }),
+    );
+
+  const trendingFallbackRaces = featuredRaces.slice(1, 6);
+  return analyticsTrendingRaces.length > 0
+    ? analyticsTrendingRaces
+    : trendingFallbackRaces.length > 0
+      ? trendingFallbackRaces
+      : featuredRaces.slice(0, 5);
+}
+
 export async function getHomePageData(args: {
   countryCode: string;
   locale: Locale;
@@ -474,33 +533,15 @@ export async function getHomePageData(args: {
       }),
     );
 
-  const analyticsTrendingRaces = [...promotableRows]
-    .map((row) => ({ row, score: rowPopularityScore(row) }))
-    .filter((entry): entry is { row: RaceListRow; score: number } => entry.score != null)
-    .sort((left, right) => {
-      if (left.score !== right.score) return right.score - left.score;
-      return compareUpcomingRows(left.row, right.row, upcomingStartComparable, upcomingEndComparable);
-    })
-    .slice(0, 5)
-    .map(({ row, score }) =>
-      toHomeRaceEntry({
-        row,
-        countryCode,
-        locale,
-        content,
-        upcomingStartComparable,
-        upcomingEndComparable,
-        popularityValue: score,
-      }),
-    );
-
-  const trendingFallbackRaces = featuredRaces.slice(1, 6);
-  const trendingRaces =
-    analyticsTrendingRaces.length > 0
-      ? analyticsTrendingRaces
-      : trendingFallbackRaces.length > 0
-        ? trendingFallbackRaces
-        : featuredRaces.slice(0, 5);
+  const trendingRaces = buildTrendingRaces({
+    promotableRows,
+    featuredRaces,
+    countryCode,
+    locale,
+    content,
+    upcomingStartComparable,
+    upcomingEndComparable,
+  });
 
   const recentRaces = promotableRows
     .filter((row) => typeof row.payload?.created_date === 'string')

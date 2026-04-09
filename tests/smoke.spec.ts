@@ -1,4 +1,62 @@
 import { test, expect } from '@playwright/test';
+import { loadIndexYaml } from '../src/lib/content';
+import {
+  buildTrendingRaces,
+  getBoostedPopularityDisplayValue,
+  type HomeRaceEntry,
+} from '../src/lib/homePage';
+import type { RaceListRow } from '../src/lib/raceListRow';
+import { upcomingWindowEnd, upcomingWindowStart } from '../src/lib/upcomingRaceWindow';
+
+test.beforeEach(async ({ page }) => {
+  await page.route('https://race-aggregator-tests.supabase.co/rest/v1/rpc/**', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: 'null',
+    });
+  });
+});
+
+function buildPromotedRow(args: {
+  id: string;
+  domainName: string;
+  name: string;
+  date: string;
+  pageViews?: number;
+}): RaceListRow {
+  const { id, domainName, name, date, pageViews } = args;
+  return {
+    id,
+    domain_name: domainName,
+    county: 'stockholm',
+    race_type: 'road',
+    origin_country: 'se',
+    race_dates: [[date]],
+    latitude: null,
+    longitude: null,
+    distance_m: [10000],
+    website: null,
+    payload: {
+      nearest_city: 'Stockholm',
+      analytics:
+        pageViews != null
+          ? {
+              page_views_last_30_days: pageViews,
+            }
+          : undefined,
+    },
+    race_translations: [
+      {
+        locale: 'sv',
+        name,
+        type_local: 'Landsväg',
+        distance_verbose: '10 km',
+        description: `${name} description`,
+      },
+    ],
+  };
+}
 
 test('Swedish home page renders', async ({ page }) => {
   const res = await page.goto('/');
@@ -6,7 +64,7 @@ test('Swedish home page renders', async ({ page }) => {
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByRole('heading', { level: 1, name: /allt om löpning i sverige/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /hitta lopp/i })).toBeVisible();
-  await expect(page.locator('.home-feature-card--lead')).toBeVisible();
+  await expect(page.locator('.home-feature-card--hero')).toBeVisible();
   await expect(page.locator('.home-tool-card').first()).toBeVisible();
 });
 
@@ -26,14 +84,125 @@ test('English race list shell renders', async ({ page }) => {
 test('English home page renders', async ({ page }) => {
   await page.goto('/en/');
   await expect(page.getByRole('heading', { level: 1, name: /everything about running in sweden/i })).toBeVisible();
-  await expect(page.locator('.home-feature-card--lead')).toBeVisible();
+  await expect(page.locator('.home-feature-card--hero')).toBeVisible();
+});
+
+test('home trending falls back without visible metrics when analytics are absent', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.home-trending-rank__views')).toHaveCount(0);
+});
+
+test('buildTrendingRaces ranks raw page views and boosts displayed counts', () => {
+  const content = loadIndexYaml('se', 'native');
+  const trending = buildTrendingRaces({
+    promotableRows: [
+      buildPromotedRow({
+        id: '1',
+        domainName: 'alpha-race',
+        name: 'Alpha Race',
+        date: '20260510',
+        pageViews: 12,
+      }),
+      buildPromotedRow({
+        id: '2',
+        domainName: 'beta-race',
+        name: 'Beta Race',
+        date: '20260511',
+        pageViews: 20,
+      }),
+      buildPromotedRow({
+        id: '3',
+        domainName: 'gamma-race',
+        name: 'Gamma Race',
+        date: '20260509',
+        pageViews: 20,
+      }),
+    ],
+    featuredRaces: [],
+    countryCode: 'se',
+    locale: 'native',
+    content,
+    upcomingStartComparable: upcomingWindowStart(),
+    upcomingEndComparable: upcomingWindowEnd(),
+  });
+
+  expect(trending.map((race) => race.name)).toEqual(['Gamma Race', 'Beta Race', 'Alpha Race']);
+  expect(trending.map((race) => race.popularityValue)).toEqual([20, 20, 12]);
+  expect(trending.map((race) => race.popularityDisplayValue)).toEqual([
+    getBoostedPopularityDisplayValue(20),
+    getBoostedPopularityDisplayValue(20),
+    getBoostedPopularityDisplayValue(12),
+  ]);
+});
+
+test('buildTrendingRaces falls back to featured entries when analytics are missing', () => {
+  const featuredRaces: HomeRaceEntry[] = [
+    {
+      id: 'featured-1',
+      href: '/loppsidor/featured-1/',
+      name: 'Featured 1',
+      dateLabel: '10 maj',
+      dateIso: '2026-05-10',
+      locationLabel: 'Stockholm',
+      typeLabel: 'Landsväg',
+      distanceLabels: ['10 km'],
+      imageSrc: '/common_images/road-running.webp',
+      imageAlt: 'Featured 1',
+      summary: 'Featured one',
+    },
+    {
+      id: 'featured-2',
+      href: '/loppsidor/featured-2/',
+      name: 'Featured 2',
+      dateLabel: '11 maj',
+      dateIso: '2026-05-11',
+      locationLabel: 'Göteborg',
+      typeLabel: 'Landsväg',
+      distanceLabels: ['5 km'],
+      imageSrc: '/common_images/road-running.webp',
+      imageAlt: 'Featured 2',
+      summary: 'Featured two',
+    },
+    {
+      id: 'featured-3',
+      href: '/loppsidor/featured-3/',
+      name: 'Featured 3',
+      dateLabel: '12 maj',
+      dateIso: '2026-05-12',
+      locationLabel: 'Malmö',
+      typeLabel: 'Trail',
+      distanceLabels: ['21 km'],
+      imageSrc: '/common_images/trail-running.webp',
+      imageAlt: 'Featured 3',
+      summary: 'Featured three',
+    },
+  ];
+
+  expect(
+    buildTrendingRaces({
+      promotableRows: [
+        buildPromotedRow({
+          id: 'no-analytics',
+          domainName: 'no-analytics',
+          name: 'No Analytics',
+          date: '20260513',
+        }),
+      ],
+      featuredRaces,
+      countryCode: 'se',
+      locale: 'native',
+      content: loadIndexYaml('se', 'native'),
+      upcomingStartComparable: upcomingWindowStart(),
+      upcomingEndComparable: upcomingWindowEnd(),
+    }).map((race) => race.name),
+  ).toEqual(['Featured 2', 'Featured 3']);
 });
 
 test('browse overview renders', async ({ page }) => {
   await page.goto('/loppkalender/bladdra-efter-kategori/');
   await expect(page.getByRole('heading', { level: 1, name: /bläddra bland alla lopp/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /10 km/i }).first()).toBeVisible();
-  await expect(page.getByRole('link', { name: /danmark|norge|finland/i }).first()).toBeVisible();
+  await expect(page.getByRole('link', { name: /närliggande länder/i })).toBeVisible();
 });
 
 test('category landing page renders prefiltered list', async ({ page }) => {
@@ -69,8 +238,8 @@ test('city browse page renders', async ({ page }) => {
 
 test('neighboring browse page renders', async ({ page }) => {
   await page.goto('/neighbors/');
-  await expect(page.getByRole('heading', { level: 1, name: /närliggande länder/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /danmark|norge|finland/i }).first()).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: /utforska lopp i närliggande länder/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /översikt/i }).first()).toBeVisible();
 });
 
 test('newsletter popup can be opened on the Swedish race list', async ({ page }) => {
@@ -106,4 +275,39 @@ test('newsletter popup on race detail references the current race', async ({ pag
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();
   await expect(dialog).toContainText(raceName);
+});
+
+test('race detail page view tracker records one hit per detail-page load', async ({ page }) => {
+  const calls: Array<Record<string, unknown>> = [];
+
+  await page.route(
+    'https://race-aggregator-tests.supabase.co/rest/v1/rpc/record_race_detail_page_view',
+    async (route) => {
+      const payload = route.request().postDataJSON() as Record<string, unknown>;
+      calls.push(payload);
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: 'null',
+      });
+    },
+  );
+
+  await page.goto('/loppkalender/');
+  const raceHref = await page.locator('.race-card').first().getAttribute('href');
+  expect(raceHref).toBeTruthy();
+
+  await page.goto(raceHref!);
+  await expect.poll(() => calls.length).toBe(1);
+  const nativeDomainName = String(calls[0]?.p_domain_name ?? '');
+  expect(nativeDomainName).not.toBe('');
+  expect(calls[0]?.p_country_code).toBe('se');
+  expect(calls[0]?.p_locale).toBe('sv');
+  expect(String(calls[0]?.p_page_path ?? '')).toContain(`/loppsidor/${nativeDomainName}/`);
+
+  await page.goto(`/en/race-pages/${nativeDomainName}/`);
+  await expect.poll(() => calls.length).toBe(2);
+  expect(calls[1]?.p_domain_name).toBe(nativeDomainName);
+  expect(calls[1]?.p_locale).toBe('en');
+  expect(String(calls[1]?.p_page_path ?? '')).toContain(`/en/race-pages/${nativeDomainName}/`);
 });
