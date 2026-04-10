@@ -1,0 +1,1051 @@
+type_options:
+  road: Silniční běh
+  terrain: Terén
+  trail: Trail
+  track: Dráha
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Štafeta
+  time: Časový závod
+  other: Ostatní
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Půlmaraton:
+    range:
+    - 20
+    - 22
+  Maraton:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 meter:
+    range:
+    - 1.5
+    - 1.5
+  3000 meter:
+    range:
+    - 3
+    - 3
+  5000 meter:
+    range:
+    - 5
+    - 5
+  10000 meter:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Tidslopp
+  relay: Stafett
+verbose_local_distance_mapping:
+  half marathon: Půlmaraton
+  marathon: Maraton
+  fallback: Smíšená distance
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Halvmarathon
+- range:
+  - 41.9
+  - 42.4
+  label: Marathon
+country_code: cz
+country_language_code: cs
+navigation:
+  main: Allt
+  race-list: Loppkalender
+  add-race: Lägg till lopp
+  forum: Forum
+  measure-route: Mät din runda
+  training-plans: Träningsprogram
+  pace-calculator: Fartomvandlare
+  racetime-estimator: Uppskatta din sluttid
+  about-us: Om oss
+  contact: Kontakta oss
+race_list_name: Loppkalender
+auxiliary_pages:
+  race-page-preview: Förhandsgranska lopp
+  terms-of-service: Användarvillkor
+  privacy-policy: Integritetspolicy
+  about-us: Om oss
+  contact: Kontakta oss
+  faq: Vanliga frågor
+page_name: Běžecký kalendář
+base_url: https://bezeckykalendar.com/
+title: Allt om löpning i
+country_native: Česko
+meta_description: Mest omfattande löparcommunity i Sverige
+country: Czech Republic
+country_language: Czech
+local_name_for_race: lopp
+main_bullet_1: Hitta ditt nästa lopp
+main_bullet_2: ' - Eller lägg till det här'
+main_bullet_3: Fynda på vår andrahandsmarknad
+main_bullet_4: Läs det senaste eller prata av dig i vårt forum
+description: Detta gemenskapsdrivna initiativ syftar till att samla löpare från hela Sverige och få fler att springa mer lopp. Vår plattform är under utveckling, men med din hjälp kan vi skapa något fantastiskt!
+cta_search: Hitta Lopp
+cta_add: Lägg till ett Lopp
+selected_races_title: Utvalda Lopp
+cta_all_races: Visa alla lopp
+show_local: Visa
+race_local: Lopp
+running_local: Löpning
+alt_prefix: 'Bild till '
+race_list_title: Sveriges mest kompletta lista på maraton, halvmaraton, millopp och andra löpartävlingar
+race_list_meta_description_1: Här hittar du alla löpartävlingar och lopp i Sverige
+race_list_meta_description_2: ✔️Största löparkalendern ✔️Trail, Backyard, eller Maraton ✔️Lopp från hela Sverige
+race_card_cta_text: Mer info & anmälan
+section_race_card_category_prefix: Alla
+section_race_card_category_suffix: lopp
+section_race_card_header_separator: i
+section_race_card_header_region_default: Sverige
+section_race_card_header_date_range_from: 'från '
+section_race_card_header_date_range_to: 'till '
+section_race_card_header_date_range_single: 'i '
+filter_date_from: Från
+filter_date_to: Till
+filter_county: Alla län
+filter_race_type: Alla loppstyper
+filter_categories: Alla kategorier
+filter_months: Hela året
+filter_distance: Alla distanser
+month_mapping:
+  '01': Januari
+  '02': Februari
+  '03': Mars
+  '04': April
+  '05': Maj
+  '06': Juni
+  '07': Juli
+  08: Augusti
+  09: September
+  '10': Oktober
+  '11': November
+  '12': December
+month_mapping_short:
+  '01': jan.
+  '02': feb.
+  '03': mars
+  '04': apr.
+  '05': maj
+  '06': juni
+  '07': juli
+  08: aug.
+  09: sep.
+  '10': okt.
+  '11': nov.
+  '12': dec.
+county_label_text: Alla län
+county_mapping:
+  Stockholms: Stockholm
+  Uppsala: Uppsala
+  Södermanlands: Södermanland
+  Östergötlands: Östergötland
+  Jönköpings: Jönköping
+  Kronobergs: Kronoberg
+  Kalmar: Kalmar
+  Gotlands: Gotland
+  Blekinge: Blekinge
+  Skåne: Skåne
+  Halland: Halland
+  Västra Götalands: Västra Götaland
+  Värmland: Värmland
+  Örebro: Örebro
+  Västmanlands: Västmanland
+  Dalarnas: Dalarna
+  Gävleborgs: Gävleborg
+  Västernorrlands: Västernorrland
+  Jämtlands: Jämtland
+  Västerbottens: Västerbotten
+  Norrbottens: Norrbotten
+category_label_text: Loppkategori
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Till loppsida
+map_toggle_desktop: Visa karta
+map_toggle_desktop_active: Dölj karta
+map_toggle_mobile: Karta
+map_toggle_mobile_list: Lista
+race_page_map_zoom: '4'
+pagination:
+  results_text: av
+  events_text: Lopp
+  previous_text: Föregående
+  next_text: Nästa
+  page_text: Sida
+  of_text: av
+add_race_title: Lägg till ett nytt lopp
+add_race_meta_description: Lägg till ditt lopp på LoppKartan.se
+map_message: Placera ut ditt lopp genom att klicka på kartan
+mapbox_center:
+  latitude: 49.8175
+  longitude: 15.473
+mapbox_zoom: '7'
+date_text: Datum
+multi_day_toggle: Flerdagarslopp
+end_date_text: Slutdatum
+type_text: Typ av underlag / Typ av lopp
+type_select_placeholder: Välj underlag / typ av lopp
+name_label: 'Loppets namn:'
+name_placeholder: t ex Kungsholmen runt
+distance_label: 'Distanser:'
+distance_placeholder: Ange distans i km
+add_distance_button: Lägg till
+half_marathon_button: Halvmarathon
+marathon_button: Marathon
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Namn på plats där loppet arrangeras:'
+place_placeholder: t ex Rålambshovsparken, Stockholm
+organizer_label: 'Arrangör:'
+organizer_contact_placeholder: FK Studenterna
+organizer_contact_label: 'Mail till kontaktperson:'
+organizer_mail_placeholder: info@LoppKartan.se
+website_label: 'Arrangörshemsida:'
+website_placeholder: https://fkstudenterna.se/
+start_time_label: 'Starttid:'
+start_time_placeholder: 09:00
+price_range_label: 'Prisintervall:'
+price_range_placeholder: t.ex. 200-500 kr
+add_race_description_label: Beskriv loppet
+add_race_description_placeholder: KfS Kungsholmen Runt är en milbana med långa, flacka rakor ...
+add_race_additional_label: Övrig nödvändig information
+add_race_additional_placeholder: t.ex. start och målgång, startgrupper mm
+add_race_images_label: Ladda upp bilder (Gärna minst 4)
+choose_pictures_button: Välj bilder
+drag_drop_text: Dra och släpp bilder här eller klicka för att välja
+clear_images_button: Rensa bilder
+clear_form_button: Rensa formulär
+preview_button: Förhandsgranska
+submit_button: Skicka in
+preview_title: Förhandsgranskning
+preview_exit_button: Stäng förhandsgranskning
+optional_label: Valfritt
+comments_suffix: Kommentarer
+cta_forum: Visa Alla Inlägg
+race_page_preview_title: Så här kommer ditt lopp att se ut
+edit_race_button: Redigera
+race_page_description_label: Beskrivning av loppet
+race_page_course_highlights_label: Höjdpunkter
+race_page_additional_label: Övrig information
+race_page_detailed_info_label: Detaljerad information
+race_page_social_links_label: Följ loppet
+race_page_place_label: 'Plats:'
+race_page_distances_label: 'Distanser:'
+race_page_surface_label: 'Underlag:'
+race_page_date_label: 'Datum:'
+race_page_estimated_date_label: Estimerat datum
+race_page_estimated_disclaimer: Vi har inte fått något officiellt datum för detta lopp.
+race_page_registration_link: Länk till anmälan
+disclaimer_text_1: 'All info på den här sidan är baserat på öppen källdata. Vi gör vårt bästa för att hålla den uppdaterad men
+
+  kan inte garantera att allt är korrekt. Ser du några felaktigheter,
+
+  '
+disclaimer_link: kontakta oss
+disclaimer_text_2: så rättar vi till det snarast.
+disclaimer_text_3: Något mer du önskar lägga till under ditt lopp?
+disclaimer_text_4: så ska vi försöka hjälpa till!
+race_page_visit_organizer_website: Till arrangörssidan & anmälan
+race_page_folder_name: loppsidor
+race_page_alt_prefix: 'Bild till '
+seo_county_folder_name: Alla Län
+seo_cities_folder_name: Städer
+popular_subcategories_title: Populära underkategorier
+important_keywords_racelist:
+- loppkalender
+- loppkalendern
+- löparkalender
+- löparkalendern
+- löplopp
+- löpartävlingar
+- lopplista
+seo_templates:
+  title_parts:
+    category: '{category} lopp'
+    race_type: '{race_type}'
+    location: i {location}
+    default: Alla lopp
+  paragraph_templates:
+    category_race_location: Hitta {category} {race_type}lopp i {location}.
+    category_race: Utforska {category} {race_type}lopp i hela Sverige.
+    category_location: Upptäck {category} lopp i {location}.
+    race_location: Se alla {race_type}lopp i {location}.
+    category_only: Hitta {category} lopp över hela Sverige.
+    race_only: Utforska {race_type}lopp i alla regioner.
+    location_only: Se alla typer av lopp i {location}.
+    default_suffix: Här hittar du datum, distanser och all information du behöver för att planera ditt nästa lopp.
+  browse_page_templates:
+    county:
+      title: '{label} lopp | {site_name}'
+      meta_description: Bläddra bland löplopp i {label}. Jämför datum, distanser, loppformat och praktisk information inför ditt nästa lopp.
+      h1: Lopp i {label}
+      paragraph: Den här sidan samlar löplopp i {label} för att göra det enklare att jämföra datum, distanser, loppformat och praktisk information på ett ställe. Använd den när du vill få bättre överblick inför valet av ditt nästa lopp.
+    city:
+      title: '{label} lopp | {site_name}'
+      meta_description: Hitta löplopp med koppling till {label}. Jämför datum, distanser, närliggande alternativ och praktisk information inför ditt nästa lopp.
+      h1: Lopp nära {label}
+      paragraph: Den här stadssidan hjälper dig att bläddra bland löplopp med koppling till {label}, inklusive närliggande alternativ som är relevanta när du planerar en tävlingsdag eller resa. Den är byggd för att göra lokal loppupptäckt snabbare och enklare att jämföra.
+    month:
+      title: '{label} lopp | {site_name}'
+      meta_description: Bläddra bland löplopp i {label_lower} i {market}. Jämför datum, distanser, lopptyper och praktisk information när du planerar säsongen.
+      h1: Lopp i {label}
+      paragraph: Den här sidan är till för löpare som vill se kalendern månad för månad och behöver ett snabbare sätt att jämföra vad som händer i {label_lower}. Den hjälper dig att smalna av urvalet innan du går vidare till distanser, underlag och tävlingsorter.
+    race_type:
+      title: Lopp av typen {label} i {market} | {site_name}
+      meta_description: Bläddra bland lopp av typen {label_lower} i {market}. Jämför datum, distanser, orter och praktisk information innan du väljer ett lopp som passar dig.
+      h1: Lopp av typen {label} i {market}
+      paragraph: Den här sidan fokuserar på lopp av typen {label_lower} och ger dig en tydligare överblick när loppformatet är lika viktigt som distansen. Använd den för att jämföra alternativ mellan regioner, datum och praktiska detaljer utan att börja i hela kalendern.
+    category:
+      title: Lopp i {market} för {label} | {site_name}
+      meta_description: Bläddra bland lopp i {market} för kategorin {label}. Jämför datum, lopptyper, orter och praktisk information innan du bestämmer dig för nästa tävling.
+      h1: Lopp i {market} för {label}
+      paragraph: Den här distans- och kategorisidan samlar lopp som matchar {label} för att göra det enklare att jämföra relevanta alternativ på ett ställe. Den är gjord för löpare som vill gå snabbare från bred bläddring till en kortlista med realistiska lopp.
+    race_type_category:
+      title: Lopp i {market} för {label} ({secondary_label}) | {site_name}
+      meta_description: Bläddra bland lopp i {market} för {label} inom lopptypen {secondary_label_lower}. Jämför datum, orter och praktisk information innan du väljer ditt nästa lopp.
+      h1: Lopp i {market} för {label} ({secondary_label})
+      paragraph: Den här sidan smalnar av kalendern till {label} lopp inom lopptypen {secondary_label_lower}, vilket är hjälpsamt när både distans och loppformat påverkar vad som passar bäst. Använd den för att jämföra mer likvärdiga alternativ innan du bestämmer dig för ett lopp.
+    race_type_county:
+      title: '{secondary_label}lopp i {label} | {site_name}'
+      meta_description: Bläddra bland {secondary_label_lower}lopp i {label}. Jämför datum, distanser och praktisk information innan du väljer nästa lopp.
+      h1: '{secondary_label}lopp i {label}'
+      paragraph: Den här sidan fokuserar på {secondary_label_lower}lopp i {label} för att göra det lättare att jämföra mer relevanta alternativ inom samma region. Den passar när både geografin och loppformatet styr urvalet.
+    race_type_month:
+      title: '{secondary_label}lopp i {label} | {site_name}'
+      meta_description: Bläddra bland {secondary_label_lower}lopp i {label_lower}. Jämför datum, distanser och praktisk information när du planerar säsongen.
+      h1: '{secondary_label}lopp i {label}'
+      paragraph: Den här sidan samlar {secondary_label_lower}lopp i {label_lower} för löpare som planerar efter säsong och kalender. Den hjälper dig att jämföra lopp med liknande upplägg innan du går vidare till ort och distans.
+    race_type_city:
+      title: '{secondary_label}lopp nära {label} | {site_name}'
+      meta_description: Bläddra bland {secondary_label_lower}lopp med koppling till {label}. Jämför datum, distanser och närliggande alternativ inför nästa lopp.
+      h1: '{secondary_label}lopp nära {label}'
+      paragraph: Den här sidan samlar {secondary_label_lower}lopp med koppling till {label} för att göra lokal loppjämförelse snabbare. Den är användbar när du vill hitta rätt loppformat nära en viss stad utan att börja i hela kalendern.
+browse_by_category:
+  button: Bläddra efter kategori
+  helper_text: Hitta lopp via fördefinierade filter och kombinationer
+  overview: Översikt
+  counties: Län
+  cities: Städer
+  months: Månad
+  types: Lopptyper
+  categories: Kategorier
+  neighboring: Närliggande länder
+browse_overview:
+  title: Bläddra bland alla lopp
+  meta_description: Hitta lopp efter län, typ eller kategori
+browse_types:
+  title: Bläddra efter lopptyp
+  meta_description: Hitta lopp efter typ av lopp.
+browse_counties:
+  title: Bläddra efter län
+  meta_description: Hitta lopp i ditt län.
+browse_cities:
+  title: Bläddra efter stad
+  meta_description: Hitta lopp i din stad.
+browse_categories:
+  title: Bläddra efter kategori
+  meta_description: Hitta lopp efter distans och kategori.
+browse_months:
+  title: Bläddra efter månad
+  meta_description: Hitta lopp efter månad.
+auth_modal:
+  title_sign_in: Logga in
+  title_create_account: Skapa konto
+  title_reset_password: Återställ lösenord
+  auth_unavailable: Autentisering är inte konfigurerad ännu.
+  name_placeholder: Ditt namn
+  email_placeholder: Din e-post
+  password_placeholder: Lösenord
+  submit_sign_in: Logga in
+  submit_create_account: Skapa konto
+  submit_reset_password: Skicka återställningslänk
+  create_account: Skapa konto
+  forgot_password: Glömt lösenord?
+  back_to_login: Tillbaka till inloggning
+  error_wrong_password: Fel lösenord
+  error_email_not_found: E-postadressen finns inte
+  prompt_reset_password: Vill du återställa ditt lösenord?
+  prompt_create_account: Vill du skapa ett konto med denna e-postadress?
+  already_logged_in: Du är redan inloggad som
+  as_email: med e-post
+  continue_as_user: Fortsätt som denna användare
+  logout_and_switch: Logga ut och byt användare
+  account_created: Konto skapat!
+  account_created_details: Du är nu inloggad som
+  verification_email_sent: En verifieringslänk har skickats till din e-post
+  please_verify: Vänligen verifiera din e-postadress
+  error_invalid_credential: Felaktig e-post eller lösenord
+  create_account_prompt: Skapa konto istället
+  error_too_many_requests: För många försök. Vänligen försök igen lite senare.
+  continue_with_google: Fortsätt med Google
+  continue_with_google_create: Skapa konto med Google
+  google_in_progress: Fortsätter med Google...
+  oauth_divider: eller
+submission_flow:
+  logged_in_as: Inloggad som arrangör
+  submitting_new_race: skickar in nytt lopp
+  new_account_created: För att loppet ska kunna hanteras måste du bekräfta din e-postadress. En länk till bekräftelse har skickats till den angivna e-postadressen.
+  password_reset_sent: Lösenordsåterställning skickad. Kolla din inkorg.
+  unexpected_error: Ett fel uppstod. Försök igen.
+  processing_submission: Bearbetar inskickning...
+  race_exists: Loppet finns redan i databasen.
+  race_submitted: Loppet har skickats in!
+  submission_failed: Kunde inte skicka in loppet. Försök igen.
+  missing_fields: Något saknas. Se till att alla obligatoriska fält är ifyllda och att en plats har valts på kartan.
+race_page:
+  forum_section:
+    title: Frågor & Svar
+    placeholder: Ställ en fråga till arrangören...
+    submit_button: Skicka fråga
+    login_prompt: Logga in för att ställa en fråga
+    empty_state: Inga frågor än. Var först med att ställa en fråga!
+    error_message_no_login: Logga in eller skapa ett konto för att ställa en fråga
+map:
+  show_map: Visa karta
+  show_list: Visa lista
+  map: karta
+  list: lista
+forum:
+  title: Forum - Prata om löpning och löparlivet med andra löpare i Sverige
+  meta_description: Prata om löpning och löparlivet med andra löpare i vårat forum. Allt om träning, tävlingar, skador, kost, kläder, prylar och mycket mer.
+  categories:
+  - name: Träning
+    slug: traning
+    description: Diskussioner om träning och teknik
+  - name: Tävlingar & Motionslopp
+    slug: tavlingar
+    description: Diskutera kommande lopp
+  - name: Skador & Rehab
+    slug: skador
+    description: Hjälp med skador och återhämtning
+  - name: Rundor & Kartor
+    slug: rundor
+    description: Diskutera rundor och kartor
+  - name: Resor & Reserelaterat
+    slug: resor
+    description: Diskutera resor och reserelaterad löpning
+  - name: Kost & Näring
+    slug: kost
+    description: Diskutera kost och näring
+  - name: Kläder, Skor & Prylar
+    slug: klader
+    description: Diskutera kläder, skor och prylar
+  - name: Köp & Sälj
+    slug: kopsalj
+    description: Diskutera köp och sälj av löparprodukter
+  - name: Övrigt
+    slug: ovrigt
+    description: Allt annat
+  empty_category_state: Inga trådar än. Få igång diskussionen genom att skapa den första tråden!
+  empty_state_thread: Inga inlägg än. Var först med att skriva!
+  empty_state: Inga inlägg än. Var först med att skriva!
+  reply_placeholder: Skriv ditt svar...
+  submit_button: Skicka
+  login_prompt: Logga in för att delta i diskussionen
+  new_thread_title_placeholder: Titel på din nya tråd
+  new_thread_content_placeholder: Skriv ditt första inlägg...
+  create_thread_button: Skapa ny tråd
+  back_to_forum: ← Tillbaka till forumet
+  back_to_category: '← Tillbaka till '
+  empty_thread_state: Inga inlägg än. Var först med att skriva!
+  posts_label: inlägg
+  reply_label: svar
+  thread_created_title: Tack för att du skapar en ny tråd!
+  thread_created_message: Din tråd kommer att granskas och läggas till på sidan inom kort.
+  thread_created_back_link: Tillbaka till kategorin
+  show_more_threads: Visa fler trådar
+  show_less_threads: Visa färre trådar
+  create_new_thread: Skapa ny tråd
+  reply_title: Svara på tråden
+  showing_threads_count: Visar {x} av {y} trådar
+about_us:
+  title: Om LoppKartan
+  meta_description: LoppKartan - Din guide till löpning i Sverige
+  content:
+    intro: Välkommen till LoppKartan - Sveriges mest kompletta plattform för löpare!
+    mission: Vår mission är att göra det enkelt för löpare att hitta och dela information om lopp, träning och allt som rör löpning.
+    story: LoppKartan startades 2023 av löpare för löpare. Vi såg behovet av en modern och användarvänlig plattform där Sveriges löparcommunity kunde samlas.
+    features:
+    - title: Komplett Lopplista
+      description: Vi samlar alla Sveriges lopp på ett ställe - från små lokala lopp till stora internationella evenemang.
+    - title: Community-Driven
+      description: Vår plattform drivs av löpare som du. Alla kan bidra med information om lopp och delta i diskussioner.
+    - title: Gratis Verktyg
+      description: Vi erbjuder användbara verktyg som fartkalkylatorer, träningsprogram och ruttplanering - helt gratis.
+    closing: Vi fortsätter att utveckla plattformen baserat på feedback från våra användare. Har du förslag på förbättringar? Kontakta oss gärna!
+contact:
+  title: Kontakta Oss
+  meta_description: Kontakta LoppKartan - Vi finns här för att hjälpa dig
+  content:
+    intro: 'Vi vill gärna höra från dig! Här är olika sätt att nå oss:'
+    email:
+      title: E-post
+      address: loppkartan@gmail.com
+      description: Vi svarar normalt inom 24 timmar på vardagar.
+    social:
+      title: Sociala Medier
+      description: 'Följ oss på sociala medier för senaste nytt och uppdateringar:'
+    feedback:
+      title: Feedback
+      description: Vi uppskattar all feedback som hjälper oss att förbättra LoppKartan.
+racetime_estimator_title: Uppskatta din sluttid
+racetime_estimator_description: Baserat på ett tidigare lopp kan du uppskatta din sluttid för andra distanser.
+known_distance_label: Välj distans där du har ett resultat sen tidigare
+known_time_label: Ange din tid
+calculate_button_text: Beräkna tider
+predicted_times_title: Uppskattade tider
+distance_header: Distans
+predicted_time_header: Uppskattad tid
+hilly_course_label: Kuperad bana
+finish_time_header: Uppskattad sluttid
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/mile
+flat_time_header: Tid (platt)
+flat_pace_per_km_header: Min/km (platt)
+flat_pace_per_mile_header: Min/mile (platt)
+hill_adjustment_header: Kuperad justering
+pace_calculator_title: Fartomvandlare
+pace_calculator_description: Ett enkelt verktyg för att omvandla din löphastighet mellan olika enheter
+pace_table_header_kph: Kilometer per timme
+pace_table_header_mph: Miles per timme
+pace_table_header_min_km: Minuter per kilometer
+pace_table_header_min_mile: Minuter per mile
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Halvmaraton
+pace_table_header_full: Maraton
+pace_conversion_note: 1 kilometer per timme (kph) = 0.62 mile per timme (mph)
+measure_route_title: Mät din runda
+measure_route_description: Klicka på kartan för att markera punkter längs din rutt. Totala distansen beräknas automatiskt.
+remove_last_point: Ta bort senaste punkt
+clear_route: Rensa rutt
+total_distance: Total distans
+training_plans:
+  title: Träningsprogram
+  description: Skapa ett anpassat träningsprogram baserat på ditt mål
+  disclaimer_text_tp_1: Våra träningsprogram genereras med hjälp av AI, och anpassas sedan efter dina angivna mål och preferenser. Programmen är inte garanterat att vara perfekt eller fungerar för alla.
+  disclaimer_link_tp: Kontakta oss
+  disclaimer_text_tp_2: om du har feedback eller förslag på förbättringar.
+  form:
+    race_date_label: Tävlingsdatum
+    plan_type_label: Typ av plan
+    target_distance_label: Måldistans
+    target_time_label: Måltid
+    training_days_label: Träningsdagar per vecka
+    session_time_label: Tid tillgänglig per pass
+    is_hilly_label: Kuperad terräng
+    hours_placeholder: Timmar
+    minutes_placeholder: Minuter
+    seconds_placeholder: Sekunder
+    submit_button: Generera träningsplan
+    target_distance:
+      placeholder: Välj distans
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Halvmaraton
+        '42195': Maraton
+    training_days:
+      placeholder: Välj antal dagar
+      options:
+        '3': 3 dagar
+        '4': 4 dagar
+        '5': 5 dagar
+        '6': 6 dagar
+    session_time:
+      placeholder: Välj tid per pass
+      options:
+        30-45: 30-45 minuter
+        45-60: 45-60 minuter
+        60-90: 60-90 minuter
+        90+: 90+ minuter
+  results:
+    title: Ditt träningsprogram
+    variations:
+      title: 'Välj en variant som passar dig:'
+    plan_details:
+      duration_label: 'Programlängd:'
+      weekly_distance_label: 'Veckodistans:'
+    regenerate_button: Visa andra varianter
+    export_button: Exportera till PDF
+  workout_types:
+    easy: Lugnt pass
+    tempo: Tempopass
+    intervals: Intervaller
+    long: Långpass
+    rest: Vila
+  messages:
+    weeks: veckor
+    week_label: Vecka
+    hilly_terrain_note: anpassat för kuperad terräng
+  plan_variation:
+    focus_label: Fokus
+    weekly_structure_label: Veckostruktur
+    distribution_label: Fördelning
+    sessions_per_week: pass per vecka
+    select_button: Välj denna plan
+  errors:
+    loading_plans: Fel vid laddning av träningsprogram
+    required_fields: Vänligen fyll i alla obligatoriska fält
+    no_matching_plan: Ingen matchande träningsplan hittades
+    no_matching_variations: Inga matchande variationer hittades
+    invalid_training_days: Antalet träningsdagar matchar inte planens krav
+  week: Vecka
+  weeks: veckor
+  hilly_terrain_note: anpassat för kuperad terräng
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Uppbyggnad av grundkondition
+        weekly_template:
+          monday:
+            type: easy
+            description: Lugnt distanspass
+          wednesday:
+            type: tempo
+            description: Tempopass
+          saturday:
+            type: long
+            description: Långpass
+          sunday:
+            type: recovery
+            description: Återhämtning
+      build:
+        duration_percent: 40
+        focus: Ökad intensitet och distans
+        weekly_template:
+          monday:
+            type: easy
+            description: Lugnt distanspass
+          wednesday:
+            type: intervals
+            description: Intervaller
+          friday:
+            type: tempo
+            description: Tempopass
+          sunday:
+            type: long
+            description: Långpass
+      peak:
+        duration_percent: 15
+        focus: Toppning och specifik träning
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Kvalitetspass
+          thursday:
+            type: tempo
+            description: Tempopass
+          saturday:
+            type: long
+            description: Långpass
+          sunday:
+            type: recovery
+            description: Återhämtning
+      taper:
+        duration_percent: 5
+        focus: Formtoppning
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Lugnt pass
+          thursday:
+            type: tempo
+            description: Kort tempopass
+          saturday:
+            type: easy
+            description: Mycket lugnt pass
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min lugn jogg
+        cooldown: 5-10 min lugn jogg
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progressiv uppvärmning
+        cooldown: 10-15 min nedvarvning
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min inkl. löpskolning och stegringslopp
+        cooldown: 10-15 min lugn jogg
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min mycket lugn jogg
+        cooldown: 5-10 min gång/lätt jogg
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min gång
+        cooldown: 5-10 min gång
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Uppvärmning
+    main_workout_label: Passbeskrivning
+    cooldown_label: Nedvarvning
+    intensity_label: Tempo
+    duration_label: Tid
+  regenerate:
+    button_text: Generera ny variant
+    confirmation: Är du säker på att du vill generera en ny variant?
+  weekdays:
+    monday: Måndag
+    tuesday: Tisdag
+    wednesday: Onsdag
+    thursday: Torsdag
+    friday: Fredag
+    saturday: Lördag
+    sunday: Söndag
+footer:
+  races_heading: Lopp
+  tools_heading: Verktyg
+  about_heading: Om LoppKartan
+  privacy: Integritetspolicy
+  copyright_year: 2023-{{CURRENT_YEAR}}
+  site_name: LoppKartan
+  rights_text: Alla rättigheter förbehållna.
+  social_links:
+    facebook: https://www.facebook.com/loppkartan
+    instagram: https://www.instagram.com/loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@loppkartan
+trending_races_title: Trendande lopp
+trending_races_description: Här är de lopp som har fått mest uppmärksamhet hos svenska löpare.
+trending_races_views_last_30_days: visningar de senaste 30 dagarna
+trending_races_most_viewed: Populärast just nu
+races_views: visningar
+recent_races_title: Nyligen tillagda lopp
+today: idag
+yesterday: igår
+days_ago: dagar sedan
+newest_race_badge: Senast tillagt
+races_count: lopp
+popular_counties_title: Hitta lopp i ditt län
+popular_cities_title: Hitta lopp i din stad
+all_counties: Visa alla län
+all_cities: Visa alla städer
+category_header_1: Traillöpning
+category_type_1: trail
+category_1_races_sub_title_1: Trail Marathon
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Trail Ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail Ultra 100 miles
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Landsvägslopp
+category_type_2: road
+category_2_races_sub_title_1: Marathon
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Halvmarathon
+category_2_races_sub_ref_2: halvmarathon
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Visa alla lopp inom
+tools_title: Verktyg för ditt nästa lopp
+alternate_locale_link_text: English
+selected_races_top_title: Veckans lopp
+race_list_data_error: Kunde inte ladda lopp. Försök igen senare.
+race_list_remote_required: För fler sidor eller filtrering behövs databasen (Supabase). Lägg till PUBLIC_SUPABASE_URL och PUBLIC_SUPABASE_PUBLISHABLE_KEY i .env.
+race_list_empty: Inga lopp matchade dina filter.
+race_list_loading: Laddar…
+map_markers_load_error: Kunde inte ladda kartmarkörer.
+map_not_configured: Kartan är inte konfigurerad (saknar kartnyckel).
+add_race_remove_image_label: Ta bort bild
+coordinates_display_prefix: Loppets koordinater
+add_race_upload_limit_message: Du kan bara ladda upp {count} bilder till.
+add_race_map_not_configured: Kartan kunde inte laddas just nu.
+race_page_registration_cta: Anmäl dig
+race_page_info_cta: Mer information
+race_page_registration_close_label: Sista anmälningsdag
+race_page_pricing_title: Anmälan och priser
+race_page_price_deadline_label: Gäller till
+race_page_price_late_fee_label: Efteranmälan
+race_page_back_to_list: Till loppkalendern
+race_page_favorites_title: Missa inga uppdateringar
+race_page_favorites_body: Skapa konto och spara loppet i dina favoriter för att kunna få uppdateringar, nyheter och utvalda erbjudanden när favoriter lanseras.
+race_page_favorites_cta: Spara lopp i favoriter
+race_page_similar_title: Liknande lopp
+race_page_similar_body: Fler lopp med liknande distans, typ eller plats i närheten.
+race_page_discover_title: Utforska fler lopp
+race_page_discover_county_link: Alla lopp i {county}
+race_page_discover_type_link: Fler lopp av typen {type}
+race_page_discover_category_link: Fler {category} lopp
+race_page_discover_type_county_link: '{type}lopp i {county}'
+race_page_discover_overview_link: Bläddra bland alla kategorier
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hej!
+    closing_salutation: Med vänliga hälsningar,
+    link_fallback_intro: 'Om knappen inte fungerar kan du kopiera länken här:'
+  confirm_signup:
+    body: Tack för att du registrerade dig på {site_name}. Bekräfta din e-postadress för att aktivera ditt konto och kunna hantera dina inskickade lopp.
+    button_label: Bekräfta e-postadress
+    ignore_note: Om du inte skapade kontot kan du ignorera det här mejlet.
+  reset_password:
+    body: Vi fick en begäran om att återställa ditt lösenord för {site_name}. Klicka på knappen nedan för att välja ett nytt lösenord.
+    button_label: Återställ lösenord
+    ignore_note: Om du inte begärde detta kan du ignorera mejlet. Ditt lösenord ändras inte förrän du väljer ett nytt.
+  change_email:
+    body: Du har begärt att byta e-postadress för ditt konto på {site_name}. Bekräfta ändringen genom att klicka på knappen nedan.
+    button_label: Bekräfta ny e-postadress
+    ignore_note: Om du inte begärde ändringen kan du bortse från det här mejlet.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Du skriver tidlös SEO-text för indexerbara landningssidor för löplopp. Skriv i första hand för människor och i andra hand för sökintention. Returnera endast giltig JSON. Håll texten tidlös: nämn aldrig aktuellt år, aktuella antal, begränsad tidsperiod eller färskhetsanspråk. Undvik keyword stuffing, hype, klickbeten, superlativer och påståenden som inte går att verifiera. Gör varje sida tydligt unik utifrån den kontext som skickas in. Använd naturlig svenska för en svensk loppkalender. Föredra korta titlar, korta H1-rubriker, metabeskrivningar runt 120-160 tecken när det passar och ett stycke på 2-3 korta meningar.'
+  browse_guidance:
+    county: Användaren vill hitta lopp i en region.
+    city: Användaren vill hitta lopp med koppling till en stad eller närliggande stad.
+    month: Användaren vill hitta lopp efter månad.
+    race_type: Användaren vill hitta en viss lopptyp.
+    category: Användaren vill hitta en viss distans eller kategori.
+    race_type_category: Användaren vill hitta en viss distans eller kategori inom en lopptyp.
+    race_type_county: Användaren vill hitta en viss lopptyp i en viss region.
+    race_type_month: Användaren vill hitta en viss lopptyp under en viss månad.
+    race_type_city: Användaren vill hitta en viss lopptyp med koppling till en viss stad.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_labels:
+    - 5 km
+    - 10 km
+    - Halvmarathon
+    - Marathon
+    - 50 km
+    - 100 km
+    - 50 miles
+    - 100 miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    allowed_labels:
+    - 5 km
+    - 10 km
+    - Halvmarathon
+    - Marathon
+    - 50 km
+    - 100 km
+    - 50 miles
+    - 100 miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+auth_pages:
+  confirm_success: Din e-postadress är nu bekräftad och ditt konto är aktivt.
+  confirm_ready: Du kan nu fortsätta att använda Loppkartan.
+  confirm_error: Kunde inte bekräfta e-postadressen.
+  reset_intro: Ange ett nytt lösenord för ditt konto.
+  reset_confirm_label: Bekräfta lösenord
+  reset_mismatch_error: Lösenorden matchar inte.
+  reset_invalid_link_error: Ogiltig eller saknad återställningslänk.
+  reset_success: Ditt lösenord har uppdaterats. Du kan nu logga in.
+newsletter_popup:
+  email_placeholder: Din e-postadress
+  submit_button: Ge mig uppdateringarna
+  dismiss_button: Inte nu
+  invalid_email: Fyll i en giltig e-postadress.
+  submit_error: Det gick inte att spara din prenumeration just nu. Försök igen.
+  submitting_text: Sparar...
+  success_message: Tack! Du får snart loppuppdateringar i inkorgen.
+  privacy_note: Nya lopp, datumändringar och utvalda erbjudanden. Avsluta när du vill.
+  close_aria_label: Stäng prenumerationsruta
+  benefits:
+    new_races: Nya lopp först
+    date_changes: Datumändringar direkt
+    selected_offers: Utvalda erbjudanden
+    similar_races: Liknande lopp nära dig
+    local_picks: Fler lopp i närheten
+    opening_reminders: Påminnelser innan platserna tar slut
+    race_updates: Uppdateringar om just detta lopp
+    nearby_races: Lopp över gränsen och nära dig
+  generic:
+    eyebrow: Missa inte nästa lopp
+    title: Få nya lopp och datumändringar innan alla andra
+    body: Prenumerera på vårt nyhetsbrev och få nya lopp, uppdaterade datum och handplockade tips i {country} direkt till din inkorg.
+  race_detail:
+    eyebrow: Bevaka detta lopp
+    title: Vill du följa {race_name}?
+    body: Prenumerera för att få uppdateringar om {race_name}, liknande lopp i {county} och viktiga förändringar skickade direkt till din inkorg.
+  browse_category:
+    eyebrow: Mer av rätt lopp
+    title: Missa inte nya {category}-lopp
+    body: Vi skickar ut nya {category}-lopp, relevanta alternativ i närheten och viktiga datum så att du slipper leta manuellt.
+  browse_category_type:
+    eyebrow: Mer av rätt lopp
+    title: Få fler {race_type}-lopp inom {category}
+    body: Prenumerera för att få fler {race_type}-lopp inom {category}, liknande lopp i närheten och datumändringar direkt till inkorgen.
+  browse_county:
+    eyebrow: Lokala lopp först
+    title: Få fler lopp i {county}
+    body: Håll koll på nya lopp, uppdaterade datum och smarta tips för {county} utan att behöva kolla kalendern hela tiden.
+  browse_city:
+    eyebrow: Lokala lopp först
+    title: Vill du ha fler lopp i {city}?
+    body: Prenumerera och få nya lopp, närliggande alternativ och viktiga datum för {city} skickade direkt till din inkorg.
+  browse_type:
+    eyebrow: Rätt loppstil
+    title: Få fler {race_type}-lopp i inkorgen
+    body: Vi skickar nya {race_type}-lopp, liknande alternativ och viktiga datum så att du kan agera innan platserna försvinner.
+  browse_month:
+    eyebrow: Planera säsongen
+    title: Få de bästa loppen i {month} först
+    body: När lopp i {month} öppnar, flyttas eller blir extra intressanta får du veta det direkt i inkorgen.
+  browse_neighboring:
+    eyebrow: Bredda kalendern
+    title: Få lopp från närliggande länder också
+    body: Prenumerera för att få nya lopp, smarta gränsnära tips och datumändringar från {region} direkt till din inkorg.
+  browse_neighboring_country:
+    eyebrow: Bredda kalendern
+    title: Få fler lopp i {region}
+    body: Vi skickar ut nya lopp, datumändringar och relevanta alternativ nära Sverige när något intressant dyker upp i {region}.
+privacy_page:
+  title: Integritetspolicy
+  meta_description: Integritetspolicy och information om hur LoppKartan hanterar personuppgifter och cookies.
+  last_updated_label: Senast uppdaterad
+  last_updated_date: 27 mars 2026
+  contact_intro: 'För frågor som rör integritet och personuppgifter kan du kontakta oss på:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Information vi samlar in
+    intro: 'Vi samlar in information som du lämnar direkt till oss när du:'
+    bullets:
+    - Skapar ett konto
+    - Skickar in information om lopp
+    - Publicerar inlägg i forumet
+    - Kontaktar oss
+  - title: 2. Cookies och spårning
+    intro: 'Vi använder cookies för att:'
+    bullets:
+    - Komma ihåg dina inställningar
+    - Hålla dig inloggad och spara din session
+    - Analysera trafik och användning av webbplatsen
+    - Visa relevanta annonser och förbättra innehållet
+  - title: 3. Hur vi använder din information
+    intro: 'Din information hjälper oss att:'
+    bullets:
+    - Tillhandahålla och förbättra våra tjänster
+    - Skicka viktiga uppdateringar och notiser
+    - Svara på frågor och supportärenden
+    - Förebygga bedrägerier och missbruk
+  - title: 4. Dina rättigheter
+    intro: 'Enligt GDPR har du rätt att:'
+    bullets:
+    - Begära tillgång till dina personuppgifter
+    - Rätta felaktiga eller ofullständiga uppgifter
+    - Begära att dina uppgifter raderas
+    - Invända mot viss behandling av personuppgifter
+    - Begära dataportabilitet
+  - title: 5. Kontakta oss
+    intro: Om du har frågor om hur vi behandlar personuppgifter eller använder cookies är du alltid välkommen att höra av dig.
+accessibility:
+  main_navigation_label: Huvudnavigation
+  breadcrumb_label: Brödsmulor
+  back_to_top_label: Till toppen
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+home_tools:
+  measure_route:
+    description: Mät en tänkt runda och få en snabb uppskattning av distansen innan du ger dig ut.
+  training_plans:
+    description: Hitta träningsupplägg för olika mål, nivåer och lopp så att du kan planera din väg framåt.
+  racetime_estimator:
+    description: Uppskatta en rimlig sluttid utifrån tidigare resultat och jämför olika målsättningar.
+  pace_calculator:
+    description: Omvandla fart, tempo och sluttid mellan vanliga distanser när du planerar träning eller lopp.
+missing_race: Saknar du ett lopp? Lägg till det här!
+add_race_mp_title: Lägg till ditt lopp
+neighboring_countries_title: Lopp i Sverige och närliggande länder
+neighboring_countries_title_specific_country: Lopp i {country_name}
+neighboring_countries_description: Här är lopp som hålls i närliggande länder.
+neighboring_countries_description_specific_country: Här listar vi löplopp som hålls i {country_name}.
+neighboring_countries_neighbors_native: Närliggande länder
+neighboring_countries_all_neighbors_native: Alla närliggande länder
+section_race_card_header_nieghbors_default: Sverige och närliggande länder
+browse_neighboring:
+  title: Utforska lopp i närliggande länder
+  meta_description: Hitta lopp i närliggande länder nära dig. Utforska efter land för att upptäcka löplopp över gränserna.
+neighboring_races_title: Lopp i närliggande länder
+neighboring_countries_show_all: Visa alla
