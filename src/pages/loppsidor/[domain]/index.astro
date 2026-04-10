@@ -1,9 +1,15 @@
 ---
 import RaceDetailPage from '../../../components/RaceDetailPage.astro';
+import { loadIndexYaml } from '../../../lib/content';
 import { loadRaceDetailRoute, getRaceDetailStaticPaths } from '../../../lib/raceDetailRoutePage';
+import { localRacePageFolder } from '../../../lib/routeSegments';
 
 export async function getStaticPaths() {
   const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+  const content = loadIndexYaml(country, 'native');
+  if (localRacePageFolder(content, 'native') !== 'loppsidor') {
+    return [];
+  }
   return getRaceDetailStaticPaths(country);
 }
 

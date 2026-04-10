@@ -271,9 +271,11 @@ The deploy flow per market is:
 3. `npm install --global vercel@latest`
 4. `vercel pull --yes --environment=production`
 5. `vercel build --prod`
-6. `vercel deploy --prebuilt --prod`
+6. `vercel deploy --prebuilt --archive=tgz --prod`
 
 Each market runs in its own isolated GitHub Actions job so generated route wrappers and `.vercel/` state never leak across builds.
+
+The deploy step uses `--archive=tgz` intentionally so Vercel receives the prebuilt output as a single compressed upload. That avoids free-plan file-upload rate limits such as `api-upload-free` when large Astro/Vercel outputs would otherwise be sent as thousands of individual files.
 
 ### Manual deploys and retries
 

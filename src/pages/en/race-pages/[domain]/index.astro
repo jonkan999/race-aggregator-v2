@@ -1,9 +1,15 @@
 ---
 import RaceDetailPage from '../../../../components/RaceDetailPage.astro';
+import { loadIndexYaml } from '../../../../lib/content';
 import { getRaceDetailStaticPaths, loadRaceDetailRoute } from '../../../../lib/raceDetailRoutePage';
+import { localRacePageFolder } from '../../../../lib/routeSegments';
 
 export async function getStaticPaths() {
   const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+  const content = loadIndexYaml(country, 'en');
+  if (localRacePageFolder(content, 'en') !== 'race-pages') {
+    return [];
+  }
   return getRaceDetailStaticPaths(country);
 }
 
