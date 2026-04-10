@@ -3,9 +3,11 @@ import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadLocalEnvFiles } from './lib/load-env.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+loadLocalEnvFiles(root);
 const snapshotDir = path.join(root, '.cache', 'race-list-build-snapshots');
 
 function runNodeScript(scriptPath, args = [], extraEnv = {}) {
@@ -51,7 +53,8 @@ async function main() {
 
     await runNodeScript('./scripts/build-browse-seo-cache.mjs', process.argv.slice(2), {
       RACE_LIST_BUILD_SNAPSHOT_DIR: snapshotDir,
-      BROWSE_SEO_PROVIDER: process.env.BROWSE_SEO_PROVIDER ?? 'template',
+      BROWSE_SEO_PROVIDER:
+        process.env.BROWSE_SEO_PROVIDER ?? (process.env.OPENAI_API_KEY ? 'openai' : 'template'),
     });
 
     await runAstroBuild({

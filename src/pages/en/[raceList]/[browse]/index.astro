@@ -19,7 +19,7 @@ import { isDomesticOrigin } from '../../../../lib/neighboringSelection';
 import { filterRowsToUpcomingWindow } from '../../../../lib/upcomingRaceWindow';
 
 export function getStaticPaths() {
-  const country = 'se';
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'en');
   return [{
     params: {
@@ -29,7 +29,7 @@ export function getStaticPaths() {
   }];
 }
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const { raceList, browse } = Astro.params;
 const content = loadIndexYaml(country, 'en');
 const expectedRaceList = raceListSlug(content, country);

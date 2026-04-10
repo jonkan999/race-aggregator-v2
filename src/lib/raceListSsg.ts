@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
+import { resolveMarketDataRoot } from './market';
 import { RACE_LIST_PAGE_SIZE } from './raceListConfig';
 import { isDomesticOrigin } from './neighboringSelection';
 import type { RaceListRow, RaceTranslationRow } from './raceListRow';
@@ -14,6 +15,7 @@ export type SsgRaceRow = RaceListRow;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '../..');
+const countriesRoot = resolveMarketDataRoot(path.join(repoRoot, 'data', 'countries'));
 const allRowsCache = new Map<string, Promise<{ rows: SsgRaceRow[]; source: RaceListSsgSource }>>();
 const snapshotCache = new Map<
   string,
@@ -82,7 +84,7 @@ function compareRaceRowsByDateThenDomain(a: SsgRaceRow, b: SsgRaceRow): number {
 }
 
 function dataCountryDir(code: string): string {
-  return path.join(repoRoot, 'data', 'countries', code);
+  return path.join(countriesRoot, code);
 }
 
 function buildSnapshotPath(countryCode: string): string | null {

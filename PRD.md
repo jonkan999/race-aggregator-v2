@@ -106,6 +106,7 @@ Legacy SEO uses dedicated URLs per county, city, type, etc. Category browse page
 - That deterministic fallback copy must live in the market YAML files, not in route code, so native and English browse SEO can be edited by content changes rather than code edits.
 - The cache-generation step must enumerate targets from the same local build snapshot used for SSG so SEO copy coverage matches the pages actually being built.
 - Cache keys must be stable per browse intent so the same county, city, month, race type, category, or race-type + category page is not regenerated unnecessarily.
+- Cache rebuilds must also remove obsolete keys and rewrite active aliases so old source-market seed copy cannot outlive the current market templates.
 - Generated copy should be timeless in both native and English, avoid year-specific phrasing, and avoid claims that depend on transient race counts.
 - Browse family thresholds and canonical subsets should live in market YAML under `browse_seo_indexing`, so future markets can tune indexability without code forks.
 - Browse SEO should follow the canonical matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md): keep broad filter coverage for users, but index only the page families and combinations that clear intent, uniqueness, and inventory thresholds.
@@ -145,6 +146,7 @@ All future markets should use the same per-country build snapshot flow automatic
 ## Operational notes
 
 - **race-collector-v2** should upsert Supabase and trigger marker export + site rebuild (or upload `markers-*.json` to CDN) as part of its pipeline.
+- Production deploy automation should live in GitHub Actions and target one Vercel project per live market. The launch registry belongs in `config/deploy-markets.json`, and market deploy jobs should fail independently rather than cancel sibling markets.
 - **Production builds** should pass **Supabase URL + secret** so the temporary build snapshot matches the database; use JSON-only builds only for local/offline previews.
 - Secrets: client bundle only `PUBLIC_SUPABASE_URL` + `PUBLIC_SUPABASE_PUBLISHABLE_KEY` (and Mapbox). Elevated keys are for build scripts, CI, and seed—never shipped to the browser.
 - Add-race submissions are intentionally anonymous in v2. Keep submission review/manual moderation on the backend table rather than re-introducing required login on the public form unless product requirements change.

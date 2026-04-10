@@ -48,7 +48,7 @@ function allCountiesSlug(country: string, content: Record<string, unknown>): str
 }
 
 export async function getStaticPaths() {
-  const country = 'se';
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'native');
   const paths: { params: { raceList: string; scope: string } }[] = [];
   const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'native', content });

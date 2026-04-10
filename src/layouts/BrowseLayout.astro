@@ -27,6 +27,8 @@ interface Props {
   categoriesHref: string;
   neighboringHref?: string;
   breadcrumbs?: Breadcrumb[];
+  noindex?: boolean;
+  disableCanonical?: boolean;
 }
 
 const {
@@ -43,6 +45,8 @@ const {
   neighboringHref,
   breadcrumbs = [],
 } = Astro.props;
+const noindex = Boolean(Astro.props.noindex);
+const disableCanonical = Boolean(Astro.props.disableCanonical);
 const marketRouteTargetsJson = JSON.stringify(getMarketRouteTargets());
 
 const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
@@ -86,6 +90,18 @@ const breadcrumbSchema =
     <meta name="description" content={description} />
     <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
     <title>{title}</title>
+    {!disableCanonical && baseUrl && <link rel="canonical" href={currentUrl} />}
+    {
+      alternateRaceListHref &&
+      baseUrl && (
+        <link
+          rel="alternate"
+          hreflang={locale === 'en' ? 'sv' : 'en'}
+          href={`${baseUrl}${alternateRaceListHref}`}
+        />
+      )
+    }
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />

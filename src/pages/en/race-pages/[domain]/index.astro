@@ -1,54 +1,28 @@
 ---
 import RaceDetailPage from '../../../../components/RaceDetailPage.astro';
-import {
-  getAllRaceListRows,
-} from '../../../../lib/raceListSsg';
-import { isDomesticOrigin } from '../../../../lib/neighboringSelection';
-import {
-  loadIndexYaml,
-  raceListSlug,
-} from '../../../../lib/content';
+import { getRaceDetailStaticPaths, loadRaceDetailRoute } from '../../../../lib/raceDetailRoutePage';
 
 export async function getStaticPaths() {
-  const paths: Array<{ params: { domain: string } }> = [];
-  const seen = new Set<string>();
-  const country = 'se';
-  const allRows = await getAllRaceListRows(country);
-  for (const row of allRows.rows) {
-    if (!isDomesticOrigin(row.origin_country, country)) continue;
-    const key = `${country}:${row.domain_name}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    paths.push({
-      params: {
-        domain: row.domain_name,
-      },
-    });
-  }
-  return paths;
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+  return getRaceDetailStaticPaths(country);
 }
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const { domain } = Astro.params;
-const content = loadIndexYaml(country, 'en');
-const allRows = await getAllRaceListRows(country);
-const row = allRows.rows.find(
-  (entry) => entry.domain_name === domain && isDomesticOrigin(entry.origin_country, country),
-);
+const result = await loadRaceDetailRoute({ countryCode: country, locale: 'en', domain: String(domain ?? '') });
 
-if (!row) {
-  return Astro.redirect(`/en/${raceListSlug(content, country)}/`, 302);
+if ('redirectTo' in result) {
+  return Astro.redirect(result.redirectTo, 302);
 }
-
-const alternateHref = `/${String(loadIndexYaml(country, 'native').race_page_folder_name ?? 'loppsidor')}/${domain}/`;
 ---
 
 <RaceDetailPage
   country={country}
   locale="en"
-  content={content}
-  row={row}
-  allRows={allRows.rows}
-  canonicalPath={`/en/race-pages/${domain}/`}
-  alternateHref={alternateHref}
+  content={result.content}
+  row={result.row}
+  allRows={result.allRows}
+  canonicalPath={result.canonicalPath}
+  alternateHref={result.alternateHref}
+  noindex={Astro.url.pathname !== result.canonicalPath}
 />

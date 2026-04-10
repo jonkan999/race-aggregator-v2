@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
 
-/** Avoid `[country]` catching GET /favicon.ico in dev and static preview. */
+/** Keep favicon requests routed to the static asset. */
 export const GET: APIRoute = () =>
   new Response(null, { status: 302, headers: { Location: '/favicon.svg' } });

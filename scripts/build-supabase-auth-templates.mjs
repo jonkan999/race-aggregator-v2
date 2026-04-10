@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
+import { resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
 
 function subSiteName(text, siteName) {
   return String(text).replaceAll('{site_name}', siteName);
@@ -115,8 +116,9 @@ const templates = {
 };
 
 const root = process.cwd();
-const countryCode = (process.argv[2] || 'se').toLowerCase();
-const indexPath = path.join(root, 'data', 'countries', countryCode, 'index.yaml');
+const countriesRoot = resolveCountriesRoot(root);
+const countryCode = resolveCountryArg(process.argv[2]);
+const indexPath = path.join(countriesRoot, countryCode, 'index.yaml');
 
 if (!fs.existsSync(indexPath)) {
   console.error(`Missing index.yaml for country "${countryCode}": ${indexPath}`);

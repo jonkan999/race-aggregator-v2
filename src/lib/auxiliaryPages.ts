@@ -2,10 +2,10 @@ import {
   hasEnglishMerge,
   localeBasePrefix,
   loadIndexYaml,
-  slugify,
   type IndexYaml,
   type Locale,
 } from './content';
+import { auxiliaryRouteSegment } from './routeSegments';
 
 export type AuxiliaryPageKey =
   | 'add-race'
@@ -17,6 +17,17 @@ export type AuxiliaryPageKey =
   | 'contact'
   | 'privacy';
 
+export const AUXILIARY_PAGE_KEYS: AuxiliaryPageKey[] = [
+  'add-race',
+  'measure-route',
+  'training-plans',
+  'pace-calculator',
+  'racetime-estimator',
+  'about-us',
+  'contact',
+  'privacy',
+];
+
 function localePrefix(country: string, locale: Locale): string {
   return localeBasePrefix(country, locale).replace(/\/$/, '');
 }
@@ -25,11 +36,20 @@ export function auxiliaryPageSegment(
   content: IndexYaml,
   country: string,
   pageKey: AuxiliaryPageKey,
+  locale: Locale,
 ): string {
-  if (pageKey === 'privacy') return 'privacy';
+  return auxiliaryRouteSegment(content, country, pageKey, locale);
+}
 
-  const label = content.navigation?.[pageKey] ?? content.auxiliary_pages?.[pageKey] ?? pageKey;
-  return slugify(String(label), content.country_code ?? country);
+export function findAuxiliaryPageKeyBySegment(
+  content: IndexYaml,
+  country: string,
+  locale: Locale,
+  segment: string,
+): AuxiliaryPageKey | undefined {
+  return AUXILIARY_PAGE_KEYS.find(
+    (pageKey) => auxiliaryPageSegment(content, country, pageKey, locale) === segment,
+  );
 }
 
 export function auxiliaryPageHref(args: {
@@ -39,7 +59,7 @@ export function auxiliaryPageHref(args: {
   pageKey: AuxiliaryPageKey;
 }): string {
   const { country, locale, content, pageKey } = args;
-  return `${localePrefix(country, locale)}/${auxiliaryPageSegment(content, country, pageKey)}/`;
+  return `${localePrefix(country, locale)}/${auxiliaryPageSegment(content, country, pageKey, locale)}/`;
 }
 
 export function alternateAuxiliaryPageHref(args: {

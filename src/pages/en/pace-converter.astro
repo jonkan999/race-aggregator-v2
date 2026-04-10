@@ -1,17 +1,18 @@
 ---
 import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
 import AuxiliaryPageIntro from '../../components/AuxiliaryPageIntro.astro';
-import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../../lib/content';
 import paceData from '../../data/tools/paceTable.json';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const pageTitle = String(content.pace_calculator_title ?? content.navigation?.['pace-calculator'] ?? 'Pace Converter');
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(content.pace_calculator_description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'pace-calculator' });
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'pace-calculator' });
 const rows = Array.isArray((paceData as { pace_conversions?: unknown[] }).pace_conversions)
   ? (paceData as { pace_conversions: Array<Record<string, string | number>> }).pace_conversions
   : [];
@@ -25,6 +26,7 @@ const rows = Array.isArray((paceData as { pace_conversions?: unknown[] }).pace_c
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
   schemaType="WebApplication"
 >

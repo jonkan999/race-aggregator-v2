@@ -3,6 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
+import { getActiveMarketCode, resolveCountriesRoot } from './lib/market-config.mjs';
+import { loadLocalEnvFiles } from './lib/load-env.mjs';
 import {
   getBrowseSeoIndexingPolicy,
   isBrowseCombinationAllowed,
@@ -11,13 +13,31 @@ import {
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.join(__dirname, '..');
-const GENERATOR_VERSION = 'browse-seo-cache-v1';
+loadLocalEnvFiles(repoRoot);
+const resolvedCountriesRoot = resolveCountriesRoot(repoRoot);
+const GENERATOR_VERSION = 'browse-seo-cache-v2';
 const DEFAULT_OPENAI_MODEL = 'gpt-5-nano';
 const DEFAULT_CHUNK_SIZE = Number.parseInt(process.env.BROWSE_SEO_CHUNK_SIZE ?? '5', 10) || 5;
 const DEFAULT_OPENAI_TIMEOUT_MS =
   Number.parseInt(process.env.OPENAI_REQUEST_TIMEOUT_MS ?? '45000', 10) || 45000;
 const DEFAULT_OPENAI_RETRIES =
   Number.parseInt(process.env.OPENAI_REQUEST_RETRIES ?? '2', 10) || 2;
+const SWEDISH_NATIVE_SEED_TERMS = [
+  'bläddra bland',
+  'jämför datum',
+  'den här sidan',
+  'löplopp',
+  'i hela sverige',
+  'över hela sverige',
+  'loppkartan',
+  'sverige',
+];
+const SWEDISH_ENGLISH_SEED_TERMS = [
+  'across sweden',
+  'in sweden',
+  'running calendar in sweden',
+  'loppkartan',
+];
 
 function parseArgs(argv) {
   const options = {
@@ -63,7 +83,7 @@ function parseArgs(argv) {
 }
 
 function countriesRoot() {
-  return path.join(repoRoot, 'data', 'countries');
+  return resolvedCountriesRoot;
 }
 
 function countryDir(countryCode) {
@@ -768,10 +788,70 @@ function entryIsComplete(entry) {
   );
 }
 
-function entryNeedsRefresh(entry, force) {
+function entryMatches(entry, expected) {
+  return (
+    cleanWhitespace(entry?.title) === cleanWhitespace(expected?.title) &&
+    cleanWhitespace(entry?.meta_description) === cleanWhitespace(expected?.meta_description) &&
+    cleanWhitespace(entry?.h1) === cleanWhitespace(expected?.h1) &&
+    cleanWhitespace(entry?.paragraph) === cleanWhitespace(expected?.paragraph)
+  );
+}
+
+function entryHasSeedLeak(entry, locale, countryCode) {
+  if (countryCode === 'se') return false;
+  const haystack = [
+    cleanWhitespace(entry?.title),
+    cleanWhitespace(entry?.meta_description),
+    cleanWhitespace(entry?.h1),
+    cleanWhitespace(entry?.paragraph),
+  ]
+    .join(' ')
+    .toLowerCase();
+  const disallowed = locale === 'en' ? SWEDISH_ENGLISH_SEED_TERMS : SWEDISH_NATIVE_SEED_TERMS;
+  return disallowed.some((term) => haystack.includes(term));
+}
+
+function entryNeedsRefresh({ entry, force, provider, deterministicEntry, locale, countryCode }) {
   if (force) return true;
   if (!entryIsComplete(entry)) return true;
+  if (cleanWhitespace(entry?._generator_version) !== GENERATOR_VERSION) return true;
+  if (entryHasSeedLeak(entry, locale, countryCode)) return true;
+  if (provider === 'openai' && cleanWhitespace(entry?._generated_by) !== 'openai') return true;
+  if (
+    cleanWhitespace(entry?._generated_by) === 'template' &&
+    deterministicEntry &&
+    !entryMatches(entry, deterministicEntry)
+  ) {
+    return true;
+  }
   return false;
+}
+
+function targetNeedsRefresh({ target, cache, force, provider, deterministicEntry, locale, countryCode }) {
+  return target.cacheKeys.some((cacheKey) =>
+    entryNeedsRefresh({
+      entry: cache[cacheKey],
+      force,
+      provider,
+      deterministicEntry,
+      locale,
+      countryCode,
+    }),
+  );
+}
+
+function pruneObsoleteCacheEntries(cache, targets) {
+  const currentKeys = new Set(targets.flatMap((target) => target.cacheKeys));
+  let removed = 0;
+
+  for (const key of Object.keys(cache)) {
+    if (key.startsWith('neighbor:')) continue;
+    if (currentKeys.has(key)) continue;
+    delete cache[key];
+    removed += 1;
+  }
+
+  return removed;
 }
 
 function currentIsoTimestamp() {
@@ -995,9 +1075,18 @@ async function buildCountryCache({ countryCode, locale, content, provider, model
     }
   }
   const targets = buildTargetsForLocale({ countryCode, locale, content, rows });
+  const removedObsolete = pruneObsoleteCacheEntries(cache, targets);
   const targetsToGenerate = targets.filter((target) => {
-    const existing = cache[target.cacheKeys[0]];
-    return entryNeedsRefresh(existing, force);
+    const deterministicEntry = sanitizeEntry(buildDeterministicEntry(target, content, locale));
+    return targetNeedsRefresh({
+      target,
+      cache,
+      force,
+      provider,
+      deterministicEntry,
+      locale,
+      countryCode,
+    });
   });
 
   const summary = {
@@ -1005,6 +1094,7 @@ async function buildCountryCache({ countryCode, locale, content, provider, model
     locale,
     totalTargets: targets.length,
     updated: 0,
+    removedObsolete,
     reused: targets.length - targetsToGenerate.length,
     file: cacheFile,
   };
@@ -1025,16 +1115,21 @@ async function buildCountryCache({ countryCode, locale, content, provider, model
   for (const target of targetsToGenerate) {
     const generated = generatedEntries.get(target.cacheKeys[0]);
     const entry = sanitizeEntry(generated ?? buildDeterministicEntry(target, content, locale));
-    cache[target.cacheKeys[0]] = {
-      ...entry,
-      _cache_key: target.cacheKeys[0],
-      _route_kind: target.kind,
-      _race_count: target.raceCount,
-      _generator_version: GENERATOR_VERSION,
-      _generated_by: provider,
-      _generated_at: currentIsoTimestamp(),
-      ...(provider === 'openai' ? { _model: resolvedModel } : {}),
-    };
+    const generatedBy = generated ? provider : 'template';
+    const generatedAt = currentIsoTimestamp();
+    for (const cacheKey of target.cacheKeys) {
+      cache[cacheKey] = {
+        ...entry,
+        _cache_key: cacheKey,
+        _primary_cache_key: target.cacheKeys[0],
+        _route_kind: target.kind,
+        _race_count: target.raceCount,
+        _generator_version: GENERATOR_VERSION,
+        _generated_by: generatedBy,
+        _generated_at: generatedAt,
+        ...(generatedBy === 'openai' ? { _model: resolvedModel } : {}),
+      };
+    }
     summary.updated += 1;
   }
 
@@ -1047,7 +1142,7 @@ async function buildCountryCache({ countryCode, locale, content, provider, model
 
 async function main() {
   const options = parseArgs(process.argv.slice(2));
-  const countryCodes = options.countries.length > 0 ? options.countries : listCountryCodes();
+  const countryCodes = options.countries.length > 0 ? options.countries : [getActiveMarketCode()];
   if (countryCodes.length === 0) {
     throw new Error(
       'No country codes found to build browse SEO cache. Expected tracked market folders under data/countries/{code}/index.yaml.',

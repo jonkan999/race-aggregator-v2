@@ -3,11 +3,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
+import { getActiveMarketCode, resolveCountriesRoot } from './lib/market-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const distDir = path.join(root, 'dist');
-const countriesDir = path.join(root, 'data', 'countries');
+const countriesDir = resolveCountriesRoot(root);
 const sitemapPath = path.join(distDir, 'sitemap.xml');
 
 function listConfiguredCountries() {
@@ -20,7 +21,7 @@ function listConfiguredCountries() {
 }
 
 function loadDefaultBaseUrl() {
-  const indexPath = path.join(countriesDir, 'se', 'index.yaml');
+  const indexPath = path.join(countriesDir, getActiveMarketCode(), 'index.yaml');
   const raw = fs.readFileSync(indexPath, 'utf8');
   const doc = yaml.load(raw);
   if (!doc || typeof doc !== 'object' || typeof doc.base_url !== 'string') {

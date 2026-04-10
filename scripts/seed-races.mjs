@@ -8,14 +8,16 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+const countriesRoot = resolveCountriesRoot(root);
 
 const args = process.argv.slice(2);
 const flags = new Set(args.filter((value) => value.startsWith('--')));
 const positional = args.filter((value) => !value.startsWith('--'));
-const country = (positional[0] || 'se').toLowerCase();
+const country = resolveCountryArg(positional[0]);
 const replaceExisting = flags.has('--replace');
 const showHelp = flags.has('--help') || flags.has('-h');
 
@@ -42,7 +44,7 @@ if (!url || !elevatedKey) {
 const sb = createClient(url, elevatedKey);
 
 function loadJson(name) {
-  const fp = path.join(root, 'data', 'countries', country, name);
+  const fp = path.join(countriesRoot, country, name);
   if (!fs.existsSync(fp)) return [];
   return JSON.parse(fs.readFileSync(fp, 'utf8'));
 }

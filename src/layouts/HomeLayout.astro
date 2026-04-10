@@ -17,9 +17,21 @@ interface Props {
   locale: LayoutLocale;
   content: IndexYaml;
   alternateHref?: string;
+  noindex?: boolean;
+  disableCanonical?: boolean;
 }
 
-const { title, description = '', lang, country, locale, content, alternateHref } = Astro.props;
+const {
+  title,
+  description = '',
+  lang,
+  country,
+  locale,
+  content,
+  alternateHref,
+  noindex = false,
+  disableCanonical = false,
+} = Astro.props;
 const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
 const currentPath = Astro.url.pathname;
 const currentUrl = baseUrl ? `${baseUrl}${currentPath}` : currentPath;
@@ -42,15 +54,17 @@ const pageSchema = JSON.stringify({
     <meta name="description" content={description} />
     <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
     <title>{title}</title>
-    {baseUrl && <link rel="canonical" href={currentUrl} />}
+    {!disableCanonical && baseUrl && <link rel="canonical" href={currentUrl} />}
     {
       alternateUrl && (
         <link rel="alternate" hreflang={locale === 'en' ? 'sv' : 'en'} href={alternateUrl} />
       )
     }
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="application/ld+json" set:html={pageSchema} />
+    <slot name="head" />
   </head>
   <body class="home-page loaded">
     <div id="page-wrapper">

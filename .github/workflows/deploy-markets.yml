@@ -1,0 +1,93 @@
+name: Deploy Markets
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      marketCode:
+        description: "Optional market code to deploy (for example: se or cz). Leave blank to deploy all enabled markets."
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  resolve-markets:
+    name: Resolve Deploy Matrix
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.resolve.outputs.matrix }}
+      selected_market_codes: ${{ steps.resolve.outputs.selected_market_codes }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Resolve enabled markets
+        id: resolve
+        run: node ./scripts/resolve-deploy-markets.mjs --market="${{ github.event.inputs.marketCode || '' }}"
+
+  deploy:
+    name: Deploy ${{ matrix.marketCode }} to ${{ matrix.productionDomain }}
+    needs: resolve-markets
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.resolve-markets.outputs.matrix) }}
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID || secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ matrix.vercelProjectId }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Skip unconfigured market
+        if: ${{ !matrix.configured }}
+        run: |
+          echo "::warning title=Deploy skipped::Replace the placeholder vercelProjectId for market '${{ matrix.marketCode }}' in config/deploy-markets.json before relying on this workflow."
+
+      - name: Install dependencies
+        if: ${{ matrix.configured }}
+        run: npm ci
+
+      - name: Install Vercel CLI
+        if: ${{ matrix.configured }}
+        run: npm install --global vercel@latest
+
+      - name: Validate Vercel credentials
+        if: ${{ matrix.configured }}
+        run: |
+          test -n "$VERCEL_TOKEN" || { echo "Missing GitHub secret VERCEL_TOKEN"; exit 1; }
+          test -n "$VERCEL_ORG_ID" || { echo "Missing GitHub variable or secret VERCEL_ORG_ID"; exit 1; }
+
+      - name: Link workspace to Vercel project
+        if: ${{ matrix.configured }}
+        run: |
+          mkdir -p .vercel
+          printf '{"orgId":"%s","projectId":"%s"}\n' "$VERCEL_ORG_ID" "$VERCEL_PROJECT_ID" > .vercel/project.json
+
+      - name: Pull Vercel environment information
+        if: ${{ matrix.configured }}
+        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+
+      - name: Build project artifacts
+        if: ${{ matrix.configured }}
+        run: vercel build --prod --token="$VERCEL_TOKEN"
+
+      - name: Deploy project artifacts
+        if: ${{ matrix.configured }}
+        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"

@@ -12,6 +12,7 @@ const legacyBaseURL =
   (process.env.LEGACY_SITE_URL ?? 'https://loppkartan.se').replace(/\/?$/, '') + '/';
 const webServerEnv = {
   ...process.env,
+  MARKET_CODE: process.env.MARKET_CODE ?? 'se',
   PUBLIC_SUPABASE_URL:
     process.env.PUBLIC_SUPABASE_URL ?? 'https://race-aggregator-tests.supabase.co',
   PUBLIC_SUPABASE_PUBLISHABLE_KEY:
@@ -59,7 +60,7 @@ export default defineConfig({
             ? `npx astro dev --host ${host} --port ${port}`
             : `npm run build && npx astro preview --host ${host} --port ${port}`,
           env: webServerEnv,
-          url: `${baseURL}/loppkalender/`,
+          url: `${baseURL}/`,
           reuseExistingServer: !process.env.CI,
           timeout: useFastDev ? 180_000 : 300_000,
           stdout: 'inherit',

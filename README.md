@@ -66,7 +66,7 @@ More detail: [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started
 
 ### Seed races (optional)
 
-Loads `data/countries/se/final_races.json` and `final_races_int.json`. Put **`SUPABASE_SECRET_KEY`** in `.env` (or export it); the script sources `.env` when present.
+Loads `data/countries/{code}/final_races.json` and `final_races_int.json` for the selected market. Put **`SUPABASE_SECRET_KEY`** in `.env` (or export it); the script sources `.env` when present.
 
 ```bash
 ./scripts/shell/seed-races.sh se
@@ -90,7 +90,7 @@ Regenerate `public/markers-se.json` (committed for convenience; refresh after da
 ./scripts/shell/export-markers.sh se
 ```
 
-Equivalent: `npm run export-markers -- se`. Without DB credentials, the script reads `data/countries/se/final_races.json` only.
+Equivalent: `npm run export-markers -- se`. Without DB credentials, the script reads `data/countries/{code}/final_races.json` only.
 
 ### Race list: static first page + Supabase RPC for interaction
 
@@ -191,6 +191,8 @@ Rebuild the browse SEO cache manually:
 npm run build-browse-seo-cache -- se
 ```
 
+If you put `OPENAI_API_KEY` in a local ignored env file such as `.env.local`, `npm run build` will automatically prefer generated browse SEO for the active market and then reuse the cached entries on later builds. New browse combinations are generated only when they first appear or when the cache is intentionally refreshed.
+
 Force-regenerate the current market cache with deterministic timeless copy:
 
 ```bash
@@ -211,7 +213,7 @@ The indexing logic is now market-configurable under `browse_seo_indexing` in eac
 
 ## Deploy To Vercel
 
-The current public-root deployment is Sweden-specific: native Swedish pages live at `/` and English pages live at `/en/`, matching [`src/pages/index.astro`](./src/pages/index.astro) and [`src/pages/en/index.astro`](./src/pages/en/index.astro). That means the current repo can be deployed directly for **`loppkartan.se`** as-is, but another market such as Norway should not be pointed at the same public root until the market selection is parameterized.
+This repo now builds one active market per deploy. Set `MARKET_CODE={cc}` so the selected market owns `/` and `/en/`.
 
 [`vercel.json`](./vercel.json) pins the expected Vercel behavior for this repo:
 
@@ -219,19 +221,80 @@ The current public-root deployment is Sweden-specific: native Swedish pages live
 - build command: `npm run build`
 - output directory: `dist`
 
-Recommended `loppkartan.se` rollout checklist:
+### Production deploy model
+
+- One Vercel project per live market
+- One GitHub Actions workflow at [`.github/workflows/deploy-markets.yml`](./.github/workflows/deploy-markets.yml)
+- One repo-owned launch registry at [`config/deploy-markets.json`](./config/deploy-markets.json)
+- Independent deploy jobs per market with `strategy.fail-fast: false`, so one market can fail without canceling the rest
+
+The workflow reads `config/deploy-markets.json`, resolves the enabled markets, and runs a fresh Vercel build/deploy job for each market. Keep non-launch-ready folders such as `data/countries/int` out of the deploy registry.
+
+### Initial registry setup
+
+[`config/deploy-markets.json`](./config/deploy-markets.json) ships with `se` and `cz` entries plus placeholder Vercel project IDs. Replace:
+
+- `REPLACE_WITH_VERCEL_PROJECT_ID_SE`
+- `REPLACE_WITH_VERCEL_PROJECT_ID_CZ`
+
+before relying on the workflow for production deploys. Until you do, the workflow will skip those markets and emit a warning instead of trying to deploy to a fake project.
+
+### Vercel project setup
+
+For each live market project in Vercel:
 
 1. In Supabase, apply all SQL from [`supabase/migrations/`](./supabase/migrations/) so the list RPC, newsletter RPCs, and add-race submission tables/policies exist.
-2. Confirm the production canonical domain in [`data/countries/se/index.yaml`](./data/countries/se/index.yaml) under `base_url`. For `loppkartan.se`, it should stay `https://loppkartan.se/`.
-3. In Vercel, create a project pointing at this repo. The project can use the Astro preset, or no preset at all because `vercel.json` already defines the build/output contract.
-4. Add production environment variables in Vercel:
-   `PUBLIC_SUPABASE_URL`, `PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `PUBLIC_MAPBOX_TOKEN`, and `SUPABASE_SECRET_KEY`.
-5. Treat `SUPABASE_SECRET_KEY` as required for release builds even though the build can technically fall back to local JSON without it. With the secret present, the build exports one fresh race snapshot per market from Supabase so static page 1 stays aligned with the live DB.
-6. Whenever map data changes, regenerate and commit [`public/markers-se.json`](./public/markers-se.json) before deploying.
-7. Before shipping, verify locally with `npm run build` and `npm run test:e2e`.
-8. In Vercel, assign the custom domain `loppkartan.se` (and `www.loppkartan.se` if you want a redirect) to this project after the first successful deploy.
+2. Sync the market from `race-collector-v2` and confirm the production canonical domain in `data/countries/{cc}/index.yaml` under `base_url`.
+3. Create or reuse one Vercel project for that market. The project can use the Astro preset, or no preset at all because `vercel.json` already defines the build/output contract.
+4. Add production environment variables in that Vercel project:
+   `MARKET_CODE`, `PUBLIC_SUPABASE_URL`, `PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `PUBLIC_MAPBOX_TOKEN`, and `SUPABASE_SECRET_KEY`.
+5. Set `MARKET_CODE` to the market code that project owns, for example `se` or `cz`.
+6. Attach the market's custom domain to that same Vercel project.
+7. Treat `SUPABASE_SECRET_KEY` as required for release builds even though the build can technically fall back to local JSON without it. With the secret present, the build exports one fresh race snapshot per market from Supabase so static page 1 stays aligned with the live DB.
+8. Whenever map data changes, regenerate and commit `public/markers-{country}.json` for the active market before deploying.
 
-If you later want **`lopskalender.com`** or another market to have native pages at `/` and English at `/en/`, the next step is to parameterize the market instead of relying on the current Sweden-root page files.
+For the current Swedish project, reuse the existing project and switch production ownership to GitHub Actions. Disable duplicate production deploys from Vercel's Git integration once the workflow is ready, otherwise `main` can ship twice.
+
+### GitHub Actions setup
+
+The workflow expects:
+
+- GitHub secret: `VERCEL_TOKEN`
+- GitHub variable or secret: `VERCEL_ORG_ID`
+
+`VERCEL_PROJECT_ID` is read per market from [`config/deploy-markets.json`](./config/deploy-markets.json), not from one shared repository secret.
+
+The deploy flow per market is:
+
+1. `actions/checkout`
+2. `npm ci`
+3. `npm install --global vercel@latest`
+4. `vercel pull --yes --environment=production`
+5. `vercel build --prod`
+6. `vercel deploy --prebuilt --prod`
+
+Each market runs in its own isolated GitHub Actions job so generated route wrappers and `.vercel/` state never leak across builds.
+
+### Manual deploys and retries
+
+- Push to `main`: deploy all enabled markets in [`config/deploy-markets.json`](./config/deploy-markets.json)
+- Manual dispatch: run the `Deploy Markets` workflow and optionally pass `marketCode=se` or `marketCode=cz`
+- Re-run one failed market: use the same manual dispatch input so the retry only touches that market's Vercel project
+
+### Local verification before shipping
+
+Verify the market locally before letting CI ship it:
+
+```bash
+MARKET_CODE=cz npm run build
+MARKET_CODE=cz npm run test:e2e
+```
+
+Use the same pattern for any other market code.
+
+For local development against collector-owned market data before syncing it into this repo, set `MARKET_DATA_ROOT=/abs/path/to/race-collector-v2/data/countries` and run a separate dev server per market with the desired `MARKET_CODE`.
+
+Native auxiliary route slugs are derived from the active market's synced YAML at startup/build time. That means markets can own native URLs such as `/o-nas/`, `/kontakt/`, or `/pridat-zavod/` without hand-editing route code in this repo. The generated alias routes keep the old template paths reachable for compatibility, but those alias pages should canonicalize back to the market-owned slug and stay `noindex`.
 
 ## Add race submissions
 
@@ -275,7 +338,9 @@ Mapbox is optional for smoke tests (the map shows a YAML message if `PUBLIC_MAPB
 - `data/countries/{code}/index.yaml` — native language strings and config (include **`alternate_locale_link_text`** for the nav link to the English list when `merged_index_int.yaml` exists).
 - `data/countries/{code}/merged_index_int.yaml` — English strings for that market (same key for the link back to the native list).
 - `data/countries/{code}/final_races*.json` — seed/export inputs (managed long-term by **race-collector-v2**).
-- `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides for browse landings (county, city, month, race type, distance/category, and valid race type + category combinations). Missing entries fall back to deterministic template copy.
+- `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides for browse landings (county, city, month, race type, distance/category, and valid race type + category combinations). Missing entries fall back to deterministic template copy. Rebuilds prune obsolete keys, refresh stale generator versions, and rewrite current aliases so old market-seed copy cannot silently survive.
+
+In the intended workflow, those market files are collector-owned sync artifacts. Keep launched markets here, but avoid treating this repo as the editing surface for onboarding or in-progress market content.
 
 Adding a new `data/countries/{code}/index.yaml` market makes it eligible for market-aware routing helpers automatically. If that market also has `merged_index_int.yaml`, neighboring-country links can route straight to its English detail pages without hardcoded country cases.
 

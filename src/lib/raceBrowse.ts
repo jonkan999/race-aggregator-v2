@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
+import { resolveMarketDataRoot } from './market';
 import type { CategoryFilterOption } from './categoryFilterOptions';
 import { categoryFilterOptionsFromYaml } from './categoryFilterOptions';
 import {
@@ -87,6 +88,7 @@ export type BrowseScopedRaceTypeEntry = {
 };
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const countriesRoot = resolveMarketDataRoot(path.join(repoRoot, 'data', 'countries'));
 
 type QualifiedCitiesYaml = {
   cities?: Array<{
@@ -103,11 +105,11 @@ type QualifiedCity = {
 };
 
 function distanceFilterPath(countryCode: string): string {
-  return path.join(repoRoot, 'data', 'countries', countryCode, 'distance_filter.yaml');
+  return path.join(countriesRoot, countryCode, 'distance_filter.yaml');
 }
 
 function qualifiedCitiesPath(countryCode: string): string {
-  return path.join(repoRoot, 'data', 'countries', countryCode, 'qualified_cities.yaml');
+  return path.join(countriesRoot, countryCode, 'qualified_cities.yaml');
 }
 
 function browseBasePath(countryCode: string, locale: Locale, content: IndexYaml): string {
@@ -118,9 +120,6 @@ function browseBasePath(countryCode: string, locale: Locale, content: IndexYaml)
 
 function raceListBasePath(countryCode: string, locale: Locale, content: IndexYaml): string {
   const listSlug = raceListSlug(content, countryCode);
-  if (locale === 'native') {
-    return countryCode === 'se' ? `/${listSlug}/` : `/${countryCode}/${listSlug}/`;
-  }
   return `${localeBasePrefix(countryCode, locale)}${listSlug}/`;
 }
 

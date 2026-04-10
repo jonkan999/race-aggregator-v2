@@ -1,9 +1,9 @@
 ---
 import AuxiliaryLayout from '../layouts/AuxiliaryLayout.astro';
-import { alternateAuxiliaryPageHref } from '../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../lib/content';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'native';
 const content = loadIndexYaml(country, locale);
 const contact = content.contact ?? {};
@@ -11,7 +11,8 @@ const pageTitle = String(contact.title ?? content.navigation?.contact ?? 'Kontak
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(contact.meta_description ?? contact.content?.intro ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'contact' });
-const social = Object.entries((content.footer?.social_links ?? {}) as Record<string, string>);
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'contact' });
+const social = Object.entries((content.footer?.social_links ?? {}) as Record<string, string>).filter(([, href]) => Boolean(String(href).trim()));
 const socialLabel = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
 ---
 
@@ -23,6 +24,7 @@ const socialLabel = (value: string) => value.charAt(0).toUpperCase() + value.sli
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
   schemaType="ContactPage"
 >

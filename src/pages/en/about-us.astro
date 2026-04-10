@@ -1,9 +1,9 @@
 ---
 import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
-import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../../lib/content';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const about = content.about_us ?? {};
@@ -11,8 +11,9 @@ const pageTitle = String(about.title ?? content.navigation?.['about-us'] ?? '');
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(about.meta_description ?? about.content?.intro ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'about-us' });
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'about-us' });
 const features = Array.isArray(about.content?.features) ? about.content?.features : [];
-const contactHref = '/en/contact-us/';
+const contactHref = auxiliaryPageHref({ country, locale, content, pageKey: 'contact' });
 ---
 
 <AuxiliaryLayout
@@ -23,6 +24,7 @@ const contactHref = '/en/contact-us/';
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
   schemaType="AboutPage"
 >

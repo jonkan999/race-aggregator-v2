@@ -3,7 +3,7 @@ import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
 import { loadIndexYaml, raceListSlug } from '../lib/content';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const nativeContent = loadIndexYaml(country, 'native');
 const englishContent = loadIndexYaml(country, 'en');
 const nativeRaceListHref = `/${raceListSlug(nativeContent, country)}/`;

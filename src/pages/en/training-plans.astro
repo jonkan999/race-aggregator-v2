@@ -2,10 +2,11 @@
 import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
 import AuxiliaryPageIntro from '../../components/AuxiliaryPageIntro.astro';
 import TrainingPlansIsland from '../../components/TrainingPlansIsland';
-import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../../lib/content';
+import { trainingPlansDataUrl } from '../../lib/trainingPlans';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const trainingPlans = (content.training_plans ?? {}) as Record<string, any>;
@@ -20,7 +21,8 @@ const pageTitle = String(trainingPlans.title ?? content.navigation?.['training-p
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(trainingPlans.description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'training-plans' });
-const contactHref = '/en/contact-us/';
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'training-plans' });
+const contactHref = auxiliaryPageHref({ country, locale, content, pageKey: 'contact' });
 const targetDistanceOptions = Object.entries((form.target_distance?.options ?? {}) as Record<string, string>).map(
   ([value, label]) => ({ value, label }),
 );
@@ -40,6 +42,7 @@ const sessionTimeOptions = Object.entries((form.session_time?.options ?? {}) as 
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
   schemaType="WebApplication"
 >
@@ -58,7 +61,7 @@ const sessionTimeOptions = Object.entries((form.session_time?.options ?? {}) as 
 
       <TrainingPlansIsland
         client:load
-        dataUrl="/json/training_plans_processed_en.json"
+        dataUrl={trainingPlansDataUrl(locale)}
         loadingText={String(content.race_list_loading ?? '')}
         requiredFieldsError={String(errors.required_fields ?? '')}
         loadingPlansError={String(errors.loading_plans ?? '')}

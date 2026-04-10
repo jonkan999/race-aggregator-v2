@@ -20,6 +20,9 @@ interface Props {
   locale: LayoutLocale;
   content: IndexYaml;
   alternateHref?: string;
+  canonicalUrl?: string;
+  disableCanonical?: boolean;
+  noindex?: boolean;
 }
 
 const {
@@ -30,6 +33,9 @@ const {
   locale,
   content,
   alternateHref,
+  canonicalUrl,
+  disableCanonical = false,
+  noindex = false,
 } = Astro.props;
 ---
 
@@ -41,6 +47,8 @@ const {
     <meta name="description" content={description} />
     <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
     <title>{title}</title>
+    {!disableCanonical && canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />

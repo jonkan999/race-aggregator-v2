@@ -17,7 +17,7 @@ import { pickTranslation } from '../../lib/raceListRow';
 import { rowHasUpcomingRaceWithinWindow } from '../../lib/upcomingRaceWindow';
 
 export function getStaticPaths() {
-  const country = 'se';
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'native');
   return [{ params: { raceList: raceListSlug(content, country) } }];
 }

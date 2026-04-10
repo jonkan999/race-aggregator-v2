@@ -21,7 +21,7 @@ import { pickTranslation } from '../../../../lib/raceListRow';
 import { RACE_LIST_PAGE_SIZE } from '../../../../lib/raceListConfig';
 
 export async function getStaticPaths() {
-  const country = 'se';
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'en');
   const entries = await getBrowseNeighboringEntries({ countryCode: country, locale: 'en', content });
   return entries.map((entry) => ({
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale = 'en' as const;
 const { neighbor: neighborSlug } = Astro.params;
 const content = loadIndexYaml(country, locale);

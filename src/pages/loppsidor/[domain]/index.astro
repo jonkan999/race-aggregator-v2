@@ -1,42 +1,28 @@
 ---
 import RaceDetailPage from '../../../components/RaceDetailPage.astro';
-import { getAllRaceListRows } from '../../../lib/raceListSsg';
-import { loadIndexYaml, raceListSlug } from '../../../lib/content';
-import { isDomesticOrigin } from '../../../lib/neighboringSelection';
+import { loadRaceDetailRoute, getRaceDetailStaticPaths } from '../../../lib/raceDetailRoutePage';
 
 export async function getStaticPaths() {
-  const allRows = await getAllRaceListRows('se');
-  const seen = new Set<string>();
-
-  return allRows.rows.flatMap((row) => {
-    if (!isDomesticOrigin(row.origin_country, 'se')) return [];
-    if (seen.has(row.domain_name)) return [];
-    seen.add(row.domain_name);
-    return [{ params: { domain: row.domain_name } }];
-  });
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+  return getRaceDetailStaticPaths(country);
 }
 
 const { domain } = Astro.params;
-const country = 'se';
-const content = loadIndexYaml(country, 'native');
-const allRows = await getAllRaceListRows(country);
-const row = allRows.rows.find(
-  (entry) => entry.domain_name === domain && isDomesticOrigin(entry.origin_country, country),
-);
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+const result = await loadRaceDetailRoute({ countryCode: country, locale: 'native', domain: String(domain ?? '') });
 
-if (!row) {
-  return Astro.redirect(`/${raceListSlug(content, country)}/`, 302);
+if ('redirectTo' in result) {
+  return Astro.redirect(result.redirectTo, 302);
 }
-
-const alternateHref = `/en/race-pages/${domain}/`;
 ---
 
 <RaceDetailPage
   country={country}
   locale="native"
-  content={content}
-  row={row}
-  allRows={allRows.rows}
-  canonicalPath={`/loppsidor/${domain}/`}
-  alternateHref={alternateHref}
+  content={result.content}
+  row={result.row}
+  allRows={result.allRows}
+  canonicalPath={result.canonicalPath}
+  alternateHref={result.alternateHref}
+  noindex={Astro.url.pathname !== result.canonicalPath}
 />

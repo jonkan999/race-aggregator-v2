@@ -13,6 +13,8 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - UI copy: `data/countries/{code}/index.yaml`
 - English copy: `data/countries/{code}/merged_index_int.yaml`
+- Collector-owned source of truth: `race-collector-v2/data/countries/{code}/`; this repo consumes synced mirrors for launched or launch-ready markets
+- Production deployment registry: `config/deploy-markets.json`
 - Newsletter popup copy: `newsletter_popup` in the same per-country YAML files
 - Canonical race data: Supabase
 - Anonymous race submissions: `public.race_submissions` + Storage bucket `race-submissions`
@@ -51,6 +53,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - SEO cache generation should cover county, city, month, race type, category, and valid race type + category pages in both native and English where English content exists.
 - Cached copy should stay timeless and reusable; avoid year-specific language and avoid making claims that only hold for a single snapshot moment.
 - Deterministic browse fallback copy should be YAML-driven per market under `seo_templates.browse_page_templates`, so the generator and page-level fallback share the same content source.
+- SEO cache rebuilds should be self-healing: prune obsolete keys, rewrite all current aliases, and prefer fresh generated copy when available while falling back to the market’s current native/English templates.
 - Browse indexability rules should also be YAML-driven per market under `browse_seo_indexing`, so canonical subsets and thresholds can be tuned without route-code edits.
 - Browse SEO should distinguish between the full filter taxonomy and the smaller canonical indexable SEO surface. Use the matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md) for which category labels, race types, and combinations should actually be indexed.
 - Avoid canonical duplication across equivalent intents such as `10 km` vs `Millopp` or distance-style labels that duplicate race-type intent such as `Backyard Ultra`.
@@ -58,9 +61,15 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 ## Market Expansion
 
 - Public deployment is one market per domain: native pages belong at `/`, and that market's English pages belong at `/en/`.
+- The active production market is selected with `MARKET_CODE`; local development should follow the same route shape as production.
+- Production deploy automation should build one isolated Vercel job per enabled market so generated route wrappers and `.vercel` state never leak between markets.
+- GitHub Actions should treat market deploys as independent siblings rather than an all-or-nothing rollout; one market failure must not cancel the others.
+- Native auxiliary slugs should come from market YAML, not Sweden-seed filenames. Generate market-specific wrapper routes at dev/build time so each market can own native paths without duplicating page implementations.
+- If a template-era alias route remains reachable for compatibility, it should canonicalize to the market-owned slug and emit `noindex`.
 - Canonical neighboring-country browse pages belong at `/neighbors/` and `/neighbors/{country}/`, with English equivalents under `/en/neighbors/`.
-- New markets should add `data/countries/{code}/` content, seed data, and marker exports.
+- New markets should be prepared in `race-collector-v2`, synced into this repo only when launch-ready, then seeded and exported here.
 - New markets should automatically participate in the one-snapshot-per-country build flow. Do not add market-specific direct Supabase reads inside route files.
+- Only markets listed in `config/deploy-markets.json` should be deployed automatically; do not treat every folder under `data/countries/` as launch-ready.
 - Neighbor-market linking should resolve to the neighboring market's English site, using that market's own YAML-driven site configuration rather than a country-prefixed path on the current host.
 - Static race-detail routes should be generated only for domestic races in the current market snapshot. Foreign races shown in neighboring-country views should link to the origin market's English detail route when that market is configured locally.
 - Market-aware routing should discover eligible markets from `data/countries/{code}/index.yaml` so adding a new country folder expands the route graph without hardcoded country logic.

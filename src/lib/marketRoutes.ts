@@ -28,11 +28,7 @@ export function normalizeCountryCode(value: string | null | undefined): string {
 }
 
 export function getMarketLocalePrefix(countryCode: string, locale: RouteLocale): string {
-  const normalizedCountryCode = normalizeCountryCode(countryCode);
-  if (locale === 'en') {
-    return normalizedCountryCode === 'se' ? '/en/' : `/${normalizedCountryCode}/en/`;
-  }
-  return normalizedCountryCode === 'se' ? '/' : `/${normalizedCountryCode}/`;
+  return locale === 'en' ? '/en/' : '/';
 }
 
 export function getLocalRaceDetailPath(args: {

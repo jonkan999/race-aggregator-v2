@@ -3,9 +3,12 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getActiveMarketCode, resolveCountriesRoot } from './lib/market-config.mjs';
+import { loadLocalEnvFiles } from './lib/load-env.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+const countriesRoot = resolveCountriesRoot(root);
 
 const listSelect =
   'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description )';
@@ -93,7 +96,7 @@ async function loadRaceDetailPageViewRankings(sb, countryCode) {
 }
 
 function loadRowsFromJson(countryCode) {
-  const countryDir = path.join(root, 'data', 'countries', countryCode);
+  const countryDir = path.join(countriesRoot, countryCode);
   const localPath = fs.existsSync(path.join(countryDir, 'final_races_w_neighbors.json'))
     ? path.join(countryDir, 'final_races_w_neighbors.json')
     : path.join(countryDir, 'final_races.json');
@@ -144,27 +147,8 @@ function loadRowsFromJson(countryCode) {
   });
 }
 
-function loadEnvFile() {
-  const candidates = ['.env', '.env.local', '.env.development'];
-  for (const name of candidates) {
-    const fullPath = path.join(root, name);
-    if (!fs.existsSync(fullPath)) continue;
-    const lines = fs.readFileSync(fullPath, 'utf8').split(/\r?\n/);
-    for (const line of lines) {
-      const trimmed = line.trim();
-      if (!trimmed || trimmed.startsWith('#')) continue;
-      const eqIndex = trimmed.indexOf('=');
-      if (eqIndex <= 0) continue;
-      const key = trimmed.slice(0, eqIndex).trim();
-      const rawValue = trimmed.slice(eqIndex + 1).trim();
-      if (!key || process.env[key] != null) continue;
-      process.env[key] = rawValue.replace(/^['"]|['"]$/g, '');
-    }
-  }
-}
-
 function listCountryCodes() {
-  const countriesDir = path.join(root, 'data', 'countries');
+  const countriesDir = countriesRoot;
   if (!fs.existsSync(countriesDir)) return [];
   return fs
     .readdirSync(countriesDir, { withFileTypes: true })
@@ -182,7 +166,7 @@ function resolveCountries(args) {
     .map((value) => value.trim().toLowerCase())
     .filter(Boolean);
   if (fromEnv.length > 0) return fromEnv;
-  return listCountryCodes();
+  return [getActiveMarketCode()];
 }
 
 function resolveOutputDir() {
@@ -222,7 +206,7 @@ async function exportCountrySnapshot(sb, countryCode, outputDir) {
 }
 
 async function main() {
-  loadEnvFile();
+  loadLocalEnvFiles(root);
 
   const url = process.env.SUPABASE_URL || process.env.PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;

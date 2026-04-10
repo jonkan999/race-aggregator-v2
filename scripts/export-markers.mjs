@@ -8,11 +8,12 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
-
-const country = (process.argv[2] || 'se').toLowerCase();
+const countriesRoot = resolveCountriesRoot(root);
+const country = resolveCountryArg(process.argv[2]);
 
 function writeMarkers(markers) {
   const outDir = path.join(root, 'public');
@@ -59,9 +60,9 @@ function fromJsonRace(r) {
 }
 
 function readSupplementalJson() {
-  const fp = fs.existsSync(path.join(root, 'data', 'countries', country, 'final_races_w_neighbors.json'))
-    ? path.join(root, 'data', 'countries', country, 'final_races_w_neighbors.json')
-    : path.join(root, 'data', 'countries', country, 'final_races.json');
+  const fp = fs.existsSync(path.join(countriesRoot, country, 'final_races_w_neighbors.json'))
+    ? path.join(countriesRoot, country, 'final_races_w_neighbors.json')
+    : path.join(countriesRoot, country, 'final_races.json');
   if (!fs.existsSync(fp)) return new Map();
   const rows = JSON.parse(fs.readFileSync(fp, 'utf8'));
   return new Map(rows.map((row) => [row.domain_name, row]));
@@ -100,8 +101,8 @@ async function main() {
   let markers = await fromDatabase(supplementByDomain);
   if (!markers) {
     if (supplementByDomain.size === 0) {
-      const fp = path.join(root, 'data', 'countries', country, 'final_races.json');
-      console.error(`No database credentials and no file: ${fp}`);
+      const resolvedPath = path.join(countriesRoot, country, 'final_races.json');
+      console.error(`No database credentials and no file: ${resolvedPath}`);
       process.exit(1);
     }
     markers = Array.from(supplementByDomain.values())

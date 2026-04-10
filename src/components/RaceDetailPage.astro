@@ -21,9 +21,21 @@ interface Props {
   allRows?: RaceListRow[];
   canonicalPath: string;
   alternateHref?: string;
+  disableCanonical?: boolean;
+  noindex?: boolean;
 }
 
-const { country, locale, content, row, allRows = [], canonicalPath, alternateHref } = Astro.props;
+const {
+  country,
+  locale,
+  content,
+  row,
+  allRows = [],
+  canonicalPath,
+  alternateHref,
+  disableCanonical = false,
+  noindex = false,
+} = Astro.props;
 const detail = getRaceDetailFields(row, content, locale);
 const { siteKey, siteName } = deriveSiteIdentity(content, country);
 const localeCode = locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv');
@@ -153,6 +165,9 @@ const newsletterContext = {
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalUrl={toAbsoluteUrl(canonicalPath)}
+  disableCanonical={disableCanonical}
+  noindex={noindex}
 >
   <script slot="head" type="application/ld+json" set:html={eventJson} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbJson} />

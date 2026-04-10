@@ -1,6 +1,7 @@
 ---
 import type { IndexYaml } from '../lib/content';
 import { localeBasePrefix, slugify, hasEnglishMerge } from '../lib/content';
+import { auxiliaryPageHref, type AuxiliaryPageKey } from '../lib/auxiliaryPages';
 import HeaderAuth from './HeaderAuth';
 
 type Locale = 'native' | 'en';
@@ -21,6 +22,21 @@ const homeHref = prefix;
 
 function navHref(segment: string): string {
   return `${prefix}${segment}`;
+}
+
+function pageKeyForNavKey(key: string): AuxiliaryPageKey | null {
+  switch (key) {
+    case 'add-race':
+    case 'measure-route':
+    case 'training-plans':
+    case 'pace-calculator':
+    case 'racetime-estimator':
+    case 'about-us':
+    case 'contact':
+      return key;
+    default:
+      return null;
+  }
 }
 
 const nav = content.navigation ?? {};
@@ -148,8 +164,10 @@ function isActiveNavPath(targetHref: string, key: string): boolean {
             </a>
           );
         }
-        const seg = slugify(value, cc);
-        const href = navHref(seg);
+        const pageKey = pageKeyForNavKey(key);
+        const href = pageKey
+          ? auxiliaryPageHref({ country, locale, content, pageKey })
+          : navHref(slugify(value, cc));
         const isActive = isActiveNavPath(href, key);
         return (
           <a

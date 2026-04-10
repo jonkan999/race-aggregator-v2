@@ -14,12 +14,12 @@ import { pickTranslation } from '../../../lib/raceListRow';
 import { rowHasUpcomingRaceWithinWindow } from '../../../lib/upcomingRaceWindow';
 
 export function getStaticPaths() {
-  const country = 'se';
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'en');
   return [{ params: { raceList: raceListSlug(content, country) } }];
 }
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const { raceList } = Astro.params;
 const content = loadIndexYaml(country, 'en');
 const expectedSlug = raceListSlug(content, country);

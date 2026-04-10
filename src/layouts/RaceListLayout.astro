@@ -20,11 +20,20 @@ interface Props {
   locale: LayoutLocale;
   content: IndexYaml;
   alternateRaceListHref?: string;
+  noindex?: boolean;
+  disableCanonical?: boolean;
 }
 
 const { title, description = '', lang, country, locale, content, alternateRaceListHref } =
   Astro.props;
+const noindex = Boolean(Astro.props.noindex);
+const disableCanonical = Boolean(Astro.props.disableCanonical);
 const marketRouteTargetsJson = JSON.stringify(getMarketRouteTargets());
+const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
+const currentPath = Astro.url.pathname;
+const currentUrl = baseUrl ? `${baseUrl}${currentPath}` : currentPath;
+const alternateUrl =
+  alternateRaceListHref && baseUrl ? `${baseUrl}${alternateRaceListHref}` : alternateRaceListHref;
 ---
 
 <!doctype html>
@@ -35,6 +44,13 @@ const marketRouteTargetsJson = JSON.stringify(getMarketRouteTargets());
     <meta name="description" content={description} />
     <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
     <title>{title}</title>
+    {!disableCanonical && baseUrl && <link rel="canonical" href={currentUrl} />}
+    {
+      alternateUrl && (
+        <link rel="alternate" hreflang={locale === 'en' ? 'sv' : 'en'} href={alternateUrl} />
+      )
+    }
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />

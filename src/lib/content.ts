@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
+import { resolveMarketDataRoot } from './market';
 import { slugify } from './slugify';
 
 export type Locale = 'native' | 'en';
@@ -242,7 +243,7 @@ function resolveContentPlaceholders(value: unknown): unknown {
 }
 
 function dataCountriesDir(): string {
-  return path.join(repoRoot, 'data', 'countries');
+  return resolveMarketDataRoot(path.join(repoRoot, 'data', 'countries'));
 }
 
 export function listCountryCodes(): string[] {
@@ -309,10 +310,7 @@ export function publicLocaleBasePrefix(locale: Locale): string {
  * Public IA should still be modeled as native `/...` and English `/en/...`.
  */
 export function localeBasePrefix(countryCode: string, locale: Locale): string {
-  if (locale === 'en') {
-    return countryCode === 'se' ? '/en/' : `/${countryCode}/en/`;
-  }
-  return countryCode === 'se' ? '/' : `/${countryCode}/`;
+  return publicLocaleBasePrefix(locale);
 }
 
 export { slugify };

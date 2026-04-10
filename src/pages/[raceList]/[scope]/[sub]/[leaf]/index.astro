@@ -27,7 +27,7 @@ import { pickTranslation } from '../../../../../lib/raceListRow';
 import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../../../lib/raceListSsg';
 
 export async function getStaticPaths() {
-  const country = 'se';
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'native');
   const paths: { params: { raceList: string; scope: string; sub: string; leaf: string } }[] = [];
   const allCounties = slugify(

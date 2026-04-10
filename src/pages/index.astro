@@ -4,7 +4,7 @@ import HomeLayout from '../layouts/HomeLayout.astro';
 import { loadIndexYaml } from '../lib/content';
 import { getHomePageData } from '../lib/homePage';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale = 'native';
 const content = loadIndexYaml(country, locale);
 const data = await getHomePageData({ countryCode: country, locale, content });

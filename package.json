@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "rm -rf node_modules/.vite && astro dev",
-    "build": "node scripts/build-with-race-list-snapshots.mjs",
-    "build:astro": "astro build",
+    "dev": "node scripts/generate-market-routes.mjs && rm -rf node_modules/.vite && astro dev",
+    "build": "node scripts/generate-market-routes.mjs && node scripts/build-with-race-list-snapshots.mjs",
+    "build:astro": "node scripts/generate-market-routes.mjs && astro build",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "preview": "astro preview",
     "astro": "astro",

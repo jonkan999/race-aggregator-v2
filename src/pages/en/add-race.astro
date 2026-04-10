@@ -2,16 +2,17 @@
 import '../../styles/add-race.css';
 import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
 import AddRaceFormIsland from '../../components/AddRaceFormIsland';
-import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../../lib/auxiliaryPages';
 import { loadIndexYaml, slugify, type Locale } from '../../lib/content';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const pageTitle = String(content.add_race_title ?? content.navigation?.['add-race'] ?? 'Add race');
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(content.add_race_meta_description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'add-race' });
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'add-race' });
 const center = (content.mapbox_center ?? {}) as { latitude?: number; longitude?: number };
 const fallbackZoom = Number.parseInt(String(content.mapbox_zoom ?? '6'), 10);
 const baseUrl = String(content.base_url ?? '');
@@ -32,8 +33,7 @@ const quickDistances = [
   { value: '80.5', label: String(content.fifty_miles_button ?? '50 miles') },
   { value: '160.9', label: String(content.hundred_miles_button ?? '100 miles') },
 ];
-const contactSegment = slugify(String(content.navigation?.contact ?? ''), country);
-const contactHref = `/en/${contactSegment}/`;
+const contactHref = auxiliaryPageHref({ country, locale, content, pageKey: 'contact' });
 const submissionFlow = (content.submission_flow ?? {}) as Record<string, string>;
 ---
 
@@ -45,6 +45,7 @@ const submissionFlow = (content.submission_flow ?? {}) as Record<string, string>
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
   schemaType="WebPage"
 >

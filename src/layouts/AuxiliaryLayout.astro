@@ -17,8 +17,11 @@ interface Props {
   locale: LayoutLocale;
   content: IndexYaml;
   alternateHref?: string;
+  canonicalPath?: string;
   breadcrumbLabel?: string;
   schemaType?: string;
+  noindex?: boolean;
+  disableCanonical?: boolean;
 }
 
 const {
@@ -29,12 +32,16 @@ const {
   locale,
   content,
   alternateHref,
+  canonicalPath,
   breadcrumbLabel,
   schemaType = 'WebPage',
+  noindex = false,
+  disableCanonical = false,
 } = Astro.props;
 
 const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
-const currentPath = Astro.url.pathname;
+const currentPath = String(canonicalPath ?? Astro.url.pathname);
+const isAliasPath = Astro.url.pathname !== currentPath;
 const currentUrl = baseUrl ? `${baseUrl}${currentPath}` : currentPath;
 const alternateUrl = alternateHref && baseUrl ? `${baseUrl}${alternateHref}` : alternateHref;
 const homePath = localeBasePrefix(country, locale);
@@ -83,12 +90,13 @@ const breadcrumbSchema =
     <meta name="description" content={description} />
     <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
     <title>{title}</title>
-    {baseUrl && <link rel="canonical" href={currentUrl} />}
+    {!disableCanonical && baseUrl && <link rel="canonical" href={currentUrl} />}
     {
       alternateUrl && (
         <link rel="alternate" hreflang={locale === 'en' ? 'sv' : 'en'} href={alternateUrl} />
       )
-}
+    }
+    {(noindex || isAliasPath) && <meta name="robots" content="noindex" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />

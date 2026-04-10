@@ -1,9 +1,9 @@
 ---
 import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
-import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../../lib/content';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const privacy = content.privacy_page ?? {};
@@ -11,6 +11,7 @@ const pageTitle = String(privacy.title ?? content.footer?.privacy ?? '');
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(privacy.meta_description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'privacy' });
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'privacy' });
 const sections = Array.isArray(privacy.sections) ? privacy.sections : [];
 ---
 
@@ -22,6 +23,7 @@ const sections = Array.isArray(privacy.sections) ? privacy.sections : [];
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
 >
   <section class="section-privacy">

@@ -8,6 +8,8 @@ type RawSeoCacheEntry = {
   meta_description?: string;
   h1?: string;
   paragraph?: string;
+  _generated_by?: string;
+  _generator_version?: string;
 };
 
 export type SeoPageCopy = {
@@ -33,6 +35,7 @@ type SeoCacheLookupArgs = {
   countryCode: string;
   locale: Locale;
   cacheKeys: string[];
+  fallbackCopy?: SeoPageCopy;
 };
 
 type BrowsePageTemplate = {
@@ -43,6 +46,22 @@ type BrowsePageTemplate = {
 };
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const SWEDISH_NATIVE_SEED_TERMS = [
+  'bläddra bland',
+  'jämför datum',
+  'den här sidan',
+  'löplopp',
+  'i hela sverige',
+  'över hela sverige',
+  'loppkartan',
+  'sverige',
+];
+const SWEDISH_ENGLISH_SEED_TERMS = [
+  'across sweden',
+  'in sweden',
+  'running calendar in sweden',
+  'loppkartan',
+];
 
 function cachePath(countryCode: string, locale: Locale): string {
   return path.join(
@@ -164,12 +183,42 @@ function getCachedSeoEntry(args: SeoCacheLookupArgs): SeoPageCopy | null {
       cached?.h1?.trim() &&
       cached?.paragraph?.trim()
     ) {
-      return {
+      const normalizedCached = {
         title: cached.title.trim(),
         metaDescription: cached.meta_description.trim(),
         h1: cached.h1.trim(),
         paragraph: cached.paragraph.trim(),
-        source: 'cache',
+        source: 'cache' as const,
+      };
+      if (
+        args.fallbackCopy &&
+        cached._generated_by === 'template' &&
+        (normalizedCached.title !== args.fallbackCopy.title ||
+          normalizedCached.metaDescription !== args.fallbackCopy.metaDescription ||
+          normalizedCached.h1 !== args.fallbackCopy.h1 ||
+          normalizedCached.paragraph !== args.fallbackCopy.paragraph)
+      ) {
+        continue;
+      }
+
+      if (args.countryCode !== 'se') {
+        const haystack = [
+          normalizedCached.title,
+          normalizedCached.metaDescription,
+          normalizedCached.h1,
+          normalizedCached.paragraph,
+        ]
+          .join(' ')
+          .toLowerCase();
+        const disallowedTerms =
+          args.locale === 'en' ? SWEDISH_ENGLISH_SEED_TERMS : SWEDISH_NATIVE_SEED_TERMS;
+        if (disallowedTerms.some((term) => haystack.includes(term))) {
+          continue;
+        }
+      }
+
+      return {
+        ...normalizedCached,
       };
     }
   }
@@ -307,21 +356,23 @@ export function getCategorySeoCopy(args: {
   raceCount: number;
 }): SeoPageCopy {
   const { countryCode, locale, content, categoryLabel } = args;
-  const cached = getCachedSeoEntry({
-    countryCode,
-    locale,
-    cacheKeys: getCategorySeoCacheKeys(categoryLabel),
-  });
-  if (cached) {
-    return cached;
-  }
-
-  return buildBrowseTemplateCopy({
+  const fallbackCopy = buildBrowseTemplateCopy({
     content,
     locale,
     kind: 'category',
     label: categoryLabel,
   });
+  const cached = getCachedSeoEntry({
+    countryCode,
+    locale,
+    cacheKeys: getCategorySeoCacheKeys(categoryLabel),
+    fallbackCopy,
+  });
+  if (cached) {
+    return cached;
+  }
+
+  return fallbackCopy;
 }
 
 function deterministicSeoCopy(args: {
@@ -351,13 +402,15 @@ export function getScopedSeoCopy(args: {
   h1: string;
   paragraph: string;
 }): SeoPageCopy {
+  const fallbackCopy = deterministicSeoCopy(args);
   const cached = getCachedSeoEntry({
     countryCode: args.countryCode,
     locale: args.locale,
     cacheKeys: args.cacheKeys,
+    fallbackCopy,
   });
   if (cached) return cached;
-  return deterministicSeoCopy(args);
+  return fallbackCopy;
 }
 
 export function getBrowsePageSeoCopy(args: {
@@ -369,11 +422,13 @@ export function getBrowsePageSeoCopy(args: {
   label: string;
   secondaryLabel?: string;
 }): SeoPageCopy {
+  const fallbackCopy = buildBrowseTemplateCopy(args);
   const cached = getCachedSeoEntry({
     countryCode: args.countryCode,
     locale: args.locale,
     cacheKeys: args.cacheKeys,
+    fallbackCopy,
   });
   if (cached) return cached;
-  return buildBrowseTemplateCopy(args);
+  return fallbackCopy;
 }

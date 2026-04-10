@@ -64,716 +64,709 @@ category_mapping:
     - 10
 distance_mapping:
   backyard: Backyard Ultra
-  time: Tidslopp
-  relay: Stafett
+  time: Časový závod
+  relay: Štafeta
 verbose_local_distance_mapping:
   half marathon: Půlmaraton
   marathon: Maraton
-  fallback: Smíšená distance
+  fallback: Smíšené vzdálenosti
 distance_units:
 - range:
   - 20.9
   - 21.3
-  label: Halvmarathon
+  label: Půlmaraton
 - range:
   - 41.9
   - 42.4
-  label: Marathon
+  label: Maraton
 country_code: cz
 country_language_code: cs
 navigation:
-  main: Allt
-  race-list: Loppkalender
-  add-race: Lägg till lopp
+  main: Vše
+  race-list: Běžecký kalendář
+  add-race: Přidat závod
   forum: Forum
-  measure-route: Mät din runda
-  training-plans: Träningsprogram
-  pace-calculator: Fartomvandlare
-  racetime-estimator: Uppskatta din sluttid
-  about-us: Om oss
-  contact: Kontakta oss
-race_list_name: Loppkalender
+  measure-route: Změřit trasu
+  training-plans: Tréninkové plány
+  pace-calculator: Převodník tempa
+  racetime-estimator: Odhad cílového času
+  about-us: O nás
+  contact: Kontakt
+race_list_name: Běžecký kalendář
 auxiliary_pages:
-  race-page-preview: Förhandsgranska lopp
-  terms-of-service: Användarvillkor
-  privacy-policy: Integritetspolicy
-  about-us: Om oss
-  contact: Kontakta oss
-  faq: Vanliga frågor
+  race-page-preview: Náhled závodu
+  terms-of-service: Podmínky použití
+  privacy-policy: Zásady ochrany osobních údajů
+  about-us: O nás
+  contact: Kontakt
+  faq: Časté dotazy
 page_name: Běžecký kalendář
 base_url: https://bezeckykalendar.com/
-title: Allt om löpning i
+title: Vše o běhání v
 country_native: Česko
-meta_description: Mest omfattande löparcommunity i Sverige
+meta_description: Nejobsáhlejší běžecký kalendář a běžecká komunita v Česku
 country: Czech Republic
 country_language: Czech
-local_name_for_race: lopp
-main_bullet_1: Hitta ditt nästa lopp
-main_bullet_2: ' - Eller lägg till det här'
-main_bullet_3: Fynda på vår andrahandsmarknad
-main_bullet_4: Läs det senaste eller prata av dig i vårt forum
-description: Detta gemenskapsdrivna initiativ syftar till att samla löpare från hela Sverige och få fler att springa mer lopp. Vår plattform är under utveckling, men med din hjälp kan vi skapa något fantastiskt!
-cta_search: Hitta Lopp
-cta_add: Lägg till ett Lopp
-selected_races_title: Utvalda Lopp
-cta_all_races: Visa alla lopp
-show_local: Visa
-race_local: Lopp
-running_local: Löpning
-alt_prefix: 'Bild till '
-race_list_title: Sveriges mest kompletta lista på maraton, halvmaraton, millopp och andra löpartävlingar
-race_list_meta_description_1: Här hittar du alla löpartävlingar och lopp i Sverige
-race_list_meta_description_2: ✔️Största löparkalendern ✔️Trail, Backyard, eller Maraton ✔️Lopp från hela Sverige
-race_card_cta_text: Mer info & anmälan
-section_race_card_category_prefix: Alla
-section_race_card_category_suffix: lopp
-section_race_card_header_separator: i
-section_race_card_header_region_default: Sverige
-section_race_card_header_date_range_from: 'från '
-section_race_card_header_date_range_to: 'till '
-section_race_card_header_date_range_single: 'i '
-filter_date_from: Från
-filter_date_to: Till
-filter_county: Alla län
-filter_race_type: Alla loppstyper
-filter_categories: Alla kategorier
-filter_months: Hela året
-filter_distance: Alla distanser
+local_name_for_race: závod
+main_bullet_1: Najděte svůj další závod
+main_bullet_2: ' - nebo ho sem přidejte'
+main_bullet_3: Objevte závody po celé zemi
+main_bullet_4: Sledujte novinky nebo se zapojte do diskuse ve fóru
+description: Tato komunitní platforma pomáhá běžcům v Česku objevovat závody, sdílet informace a běhat častěji. Web stále vylepšujeme, ale už teď může být užitečným domovem pro českou běžeckou komunitu.
+cta_search: Najít závod
+cta_add: Přidat závod
+selected_races_title: Vybrané závody
+cta_all_races: Zobrazit všechny závody
+show_local: Zobrazit
+race_local: závody
+running_local: běhání
+alt_prefix: 'Obrázek pro '
+race_list_title: Nejúplnější přehled maratonů, půlmaratonů a dalších běžeckých závodů v Česku
+race_list_meta_description_1: Najděte běžecké závody a termíny po celém Česku
+race_list_meta_description_2: ✔️Kompletní běžecký kalendář ✔️Trail, backyard i silniční závody ✔️Závody z celé republiky
+race_card_cta_text: Více informací a registrace
+section_race_card_category_prefix: Všechny
+section_race_card_category_suffix: závody
+section_race_card_header_separator: v
+section_race_card_header_region_default: Česko
+section_race_card_header_date_range_from: 'od '
+section_race_card_header_date_range_to: 'do '
+section_race_card_header_date_range_single: 'v '
+filter_date_from: Od
+filter_date_to: Do
+filter_county: Všechny kraje
+filter_race_type: Všechny typy závodů
+filter_categories: Všechny kategorie
+filter_months: Celý rok
+filter_distance: Všechny vzdálenosti
 month_mapping:
-  '01': Januari
-  '02': Februari
-  '03': Mars
-  '04': April
-  '05': Maj
-  '06': Juni
-  '07': Juli
-  08: Augusti
-  09: September
-  '10': Oktober
-  '11': November
-  '12': December
+  '01': leden
+  '02': únor
+  '03': březen
+  '04': duben
+  '05': květen
+  '06': červen
+  '07': červenec
+  08: srpen
+  09: září
+  '10': říjen
+  '11': listopad
+  '12': prosinec
 month_mapping_short:
-  '01': jan.
-  '02': feb.
-  '03': mars
-  '04': apr.
-  '05': maj
-  '06': juni
-  '07': juli
-  08: aug.
-  09: sep.
-  '10': okt.
-  '11': nov.
-  '12': dec.
-county_label_text: Alla län
+  '01': led
+  '02': úno
+  '03': bře
+  '04': dub
+  '05': kvě
+  '06': čvn
+  '07': čvc
+  08: srp
+  09: zář
+  '10': říj
+  '11': lis
+  '12': pro
+county_label_text: Všechny kraje
 county_mapping:
-  Stockholms: Stockholm
-  Uppsala: Uppsala
-  Södermanlands: Södermanland
-  Östergötlands: Östergötland
-  Jönköpings: Jönköping
-  Kronobergs: Kronoberg
-  Kalmar: Kalmar
-  Gotlands: Gotland
-  Blekinge: Blekinge
-  Skåne: Skåne
-  Halland: Halland
-  Västra Götalands: Västra Götaland
-  Värmland: Värmland
-  Örebro: Örebro
-  Västmanlands: Västmanland
-  Dalarnas: Dalarna
-  Gävleborgs: Gävleborg
-  Västernorrlands: Västernorrland
-  Jämtlands: Jämtland
-  Västerbottens: Västerbotten
-  Norrbottens: Norrbotten
-category_label_text: Loppkategori
+  Hlavní město Praha: Hlavní město Praha
+  Středočeský kraj: Středočeský kraj
+  Jihočeský kraj: Jihočeský kraj
+  Plzeňský kraj: Plzeňský kraj
+  Karlovarský kraj: Karlovarský kraj
+  Ústecký kraj: Ústecký kraj
+  Liberecký kraj: Liberecký kraj
+  Královéhradecký kraj: Královéhradecký kraj
+  Pardubický kraj: Pardubický kraj
+  Kraj Vysočina: Kraj Vysočina
+  Jihomoravský kraj: Jihomoravský kraj
+  Olomoucký kraj: Olomoucký kraj
+  Zlínský kraj: Zlínský kraj
+  Moravskoslezský kraj: Moravskoslezský kraj
+category_label_text: Kategorie závodu
 Ultra Marathon:
   range:
   - 42
   - 500
-to_race_page_cta: Till loppsida
-map_toggle_desktop: Visa karta
-map_toggle_desktop_active: Dölj karta
-map_toggle_mobile: Karta
-map_toggle_mobile_list: Lista
-race_page_map_zoom: '4'
+to_race_page_cta: Na stránku závodu
+map_toggle_desktop: Zobrazit mapu
+map_toggle_desktop_active: Skrýt mapu
+map_toggle_mobile: Mapa
+map_toggle_mobile_list: Seznam
+race_page_map_zoom: '6'
 pagination:
-  results_text: av
-  events_text: Lopp
-  previous_text: Föregående
-  next_text: Nästa
-  page_text: Sida
-  of_text: av
-add_race_title: Lägg till ett nytt lopp
-add_race_meta_description: Lägg till ditt lopp på LoppKartan.se
-map_message: Placera ut ditt lopp genom att klicka på kartan
+  results_text: z
+  events_text: závodů
+  previous_text: Předchozí
+  next_text: Další
+  page_text: Strana
+  of_text: z
+add_race_title: Přidat nový závod
+add_race_meta_description: Přidejte svůj závod do Běžeckého kalendáře
+map_message: Umístěte svůj závod kliknutím do mapy
 mapbox_center:
   latitude: 49.8175
   longitude: 15.473
-mapbox_zoom: '7'
+mapbox_zoom: '6'
 date_text: Datum
-multi_day_toggle: Flerdagarslopp
-end_date_text: Slutdatum
-type_text: Typ av underlag / Typ av lopp
-type_select_placeholder: Välj underlag / typ av lopp
-name_label: 'Loppets namn:'
-name_placeholder: t ex Kungsholmen runt
-distance_label: 'Distanser:'
-distance_placeholder: Ange distans i km
-add_distance_button: Lägg till
-half_marathon_button: Halvmarathon
-marathon_button: Marathon
+multi_day_toggle: Vícedenní závod
+end_date_text: Datum konce
+type_text: Povrch / typ závodu
+type_select_placeholder: Vyberte povrch / typ závodu
+name_label: 'Název závodu:'
+name_placeholder: například Pražský maraton
+distance_label: 'Vzdálenosti:'
+distance_placeholder: Zadejte vzdálenost v km
+add_distance_button: Přidat
+half_marathon_button: Půlmaraton
+marathon_button: Maraton
 backyard_ultra_button: Backyard Ultra
 frontyard_ultra_button: Frontyard Ultra
 fifty_miles_button: 50 miles
 hundred_miles_button: 100 miles
-place_label: 'Namn på plats där loppet arrangeras:'
-place_placeholder: t ex Rålambshovsparken, Stockholm
-organizer_label: 'Arrangör:'
-organizer_contact_placeholder: FK Studenterna
-organizer_contact_label: 'Mail till kontaktperson:'
-organizer_mail_placeholder: info@LoppKartan.se
-website_label: 'Arrangörshemsida:'
-website_placeholder: https://fkstudenterna.se/
-start_time_label: 'Starttid:'
+place_label: 'Místo konání závodu:'
+place_placeholder: například Stromovka, Praha
+organizer_label: 'Pořadatel:'
+organizer_contact_placeholder: Běžecký klub Praha
+organizer_contact_label: 'E-mail na kontaktní osobu:'
+organizer_mail_placeholder: info@bezeckykalendar.com
+website_label: 'Web pořadatele:'
+website_placeholder: https://example.cz/
+start_time_label: 'Čas startu:'
 start_time_placeholder: 09:00
-price_range_label: 'Prisintervall:'
-price_range_placeholder: t.ex. 200-500 kr
-add_race_description_label: Beskriv loppet
-add_race_description_placeholder: KfS Kungsholmen Runt är en milbana med långa, flacka rakor ...
-add_race_additional_label: Övrig nödvändig information
-add_race_additional_placeholder: t.ex. start och målgång, startgrupper mm
-add_race_images_label: Ladda upp bilder (Gärna minst 4)
-choose_pictures_button: Välj bilder
-drag_drop_text: Dra och släpp bilder här eller klicka för att välja
-clear_images_button: Rensa bilder
-clear_form_button: Rensa formulär
-preview_button: Förhandsgranska
-submit_button: Skicka in
-preview_title: Förhandsgranskning
-preview_exit_button: Stäng förhandsgranskning
-optional_label: Valfritt
-comments_suffix: Kommentarer
-cta_forum: Visa Alla Inlägg
-race_page_preview_title: Så här kommer ditt lopp att se ut
-edit_race_button: Redigera
-race_page_description_label: Beskrivning av loppet
-race_page_course_highlights_label: Höjdpunkter
-race_page_additional_label: Övrig information
-race_page_detailed_info_label: Detaljerad information
-race_page_social_links_label: Följ loppet
-race_page_place_label: 'Plats:'
-race_page_distances_label: 'Distanser:'
-race_page_surface_label: 'Underlag:'
+price_range_label: 'Cenové rozpětí:'
+price_range_placeholder: například 300-900 Kč
+add_race_description_label: Popis závodu
+add_race_description_placeholder: Pražský maraton vede centrem města a nabízí rychlou, převážně rovinatou trať ...
+add_race_additional_label: Další důležité informace
+add_race_additional_placeholder: například start a cíl, startovní vlny nebo zázemí
+add_race_images_label: Nahrajte obrázky (ideálně alespoň 4)
+choose_pictures_button: Vybrat obrázky
+drag_drop_text: Přetáhněte obrázky sem nebo klikněte pro výběr
+clear_images_button: Vymazat obrázky
+clear_form_button: Vymazat formulář
+preview_button: Náhled
+submit_button: Odeslat
+preview_title: Náhled
+preview_exit_button: Zavřít náhled
+optional_label: Volitelné
+comments_suffix: Komentáře
+cta_forum: Zobrazit všechny příspěvky
+race_page_preview_title: Takto bude váš závod vypadat
+edit_race_button: Upravit
+race_page_description_label: Popis závodu
+race_page_course_highlights_label: Zajímavosti na trati
+race_page_additional_label: Další informace
+race_page_detailed_info_label: Podrobné informace
+race_page_social_links_label: Sledujte závod
+race_page_place_label: 'Místo:'
+race_page_distances_label: 'Vzdálenosti:'
+race_page_surface_label: 'Povrch:'
 race_page_date_label: 'Datum:'
-race_page_estimated_date_label: Estimerat datum
-race_page_estimated_disclaimer: Vi har inte fått något officiellt datum för detta lopp.
-race_page_registration_link: Länk till anmälan
-disclaimer_text_1: 'All info på den här sidan är baserat på öppen källdata. Vi gör vårt bästa för att hålla den uppdaterad men
+race_page_estimated_date_label: Odhadované datum
+race_page_estimated_disclaimer: Pro tento závod zatím nemáme potvrzené oficiální datum.
+race_page_registration_link: Odkaz na registraci
+disclaimer_text_1: 'Všechny informace na této stránce vycházejí z veřejně dostupných zdrojů. Děláme maximum pro jejich aktuálnost, ale
 
-  kan inte garantera att allt är korrekt. Ser du några felaktigheter,
+  nemůžeme zaručit, že je vše stoprocentně správně. Pokud uvidíte nepřesnost,
 
   '
-disclaimer_link: kontakta oss
-disclaimer_text_2: så rättar vi till det snarast.
-disclaimer_text_3: Något mer du önskar lägga till under ditt lopp?
-disclaimer_text_4: så ska vi försöka hjälpa till!
-race_page_visit_organizer_website: Till arrangörssidan & anmälan
-race_page_folder_name: loppsidor
+disclaimer_link: kontaktujte nás
+disclaimer_text_2: rádi ji co nejdříve opravíme.
+disclaimer_text_3: Chcete ke svému závodu doplnit ještě něco?
+disclaimer_text_4: ozvěte se a pokusíme se pomoci!
+race_page_visit_organizer_website: Na web pořadatele a registraci
+race_page_folder_name: stranky-zavodu
 race_page_alt_prefix: 'Bild till '
-seo_county_folder_name: Alla Län
-seo_cities_folder_name: Städer
+seo_county_folder_name: Kraje
+seo_cities_folder_name: Města
 popular_subcategories_title: Populära underkategorier
 important_keywords_racelist:
-- loppkalender
-- loppkalendern
-- löparkalender
-- löparkalendern
-- löplopp
-- löpartävlingar
-- lopplista
+- běžecký kalendář
+- kalendář závodů
+- běžecké závody
+- závody v běhu
+- běžecké akce
+- termínovka závodů
+- seznam závodů
 seo_templates:
   title_parts:
-    category: '{category} lopp'
+    category: '{category} závody'
     race_type: '{race_type}'
-    location: i {location}
-    default: Alla lopp
+    location: v {location}
+    default: Všechny závody
   paragraph_templates:
-    category_race_location: Hitta {category} {race_type}lopp i {location}.
-    category_race: Utforska {category} {race_type}lopp i hela Sverige.
-    category_location: Upptäck {category} lopp i {location}.
-    race_location: Se alla {race_type}lopp i {location}.
-    category_only: Hitta {category} lopp över hela Sverige.
-    race_only: Utforska {race_type}lopp i alla regioner.
-    location_only: Se alla typer av lopp i {location}.
-    default_suffix: Här hittar du datum, distanser och all information du behöver för att planera ditt nästa lopp.
+    category_race_location: Najděte {category} {race_type} závody v {location}.
+    category_race: Prozkoumejte {category} {race_type} závody po celém Česku.
+    category_location: Objevte {category} závody v {location}.
+    race_location: Zobrazte všechny {race_type} závody v {location}.
+    category_only: Najděte {category} závody po celém Česku.
+    race_only: Prozkoumejte {race_type} závody ve všech krajích.
+    location_only: Zobrazte všechny typy závodů v {location}.
+    default_suffix: Najdete zde termíny, vzdálenosti a praktické informace pro plánování svého dalšího závodu.
   browse_page_templates:
     county:
-      title: '{label} lopp | {site_name}'
-      meta_description: Bläddra bland löplopp i {label}. Jämför datum, distanser, loppformat och praktisk information inför ditt nästa lopp.
-      h1: Lopp i {label}
-      paragraph: Den här sidan samlar löplopp i {label} för att göra det enklare att jämföra datum, distanser, loppformat och praktisk information på ett ställe. Använd den när du vill få bättre överblick inför valet av ditt nästa lopp.
+      title: '{label} závody | {site_name}'
+      meta_description: Procházejte běžecké závody v {label}. Porovnejte termíny, vzdálenosti, formát závodu i praktické informace před výběrem dalšího závodu.
+      h1: Závody v {label}
+      paragraph: Tato stránka shromažďuje běžecké závody v {label}, aby bylo snazší porovnat termíny, vzdálenosti, formát závodu a praktické informace na jednom místě. Hodí se ve chvíli, kdy chcete lepší přehled před výběrem dalšího závodu.
     city:
-      title: '{label} lopp | {site_name}'
-      meta_description: Hitta löplopp med koppling till {label}. Jämför datum, distanser, närliggande alternativ och praktisk information inför ditt nästa lopp.
-      h1: Lopp nära {label}
-      paragraph: Den här stadssidan hjälper dig att bläddra bland löplopp med koppling till {label}, inklusive närliggande alternativ som är relevanta när du planerar en tävlingsdag eller resa. Den är byggd för att göra lokal loppupptäckt snabbare och enklare att jämföra.
+      title: '{label} závody | {site_name}'
+      meta_description: Najděte běžecké závody spojené s {label}. Porovnejte termíny, vzdálenosti, blízké alternativy a praktické informace před svým dalším závodem.
+      h1: Závody v okolí {label}
+      paragraph: Tato městská stránka pomáhá procházet běžecké závody spojené s {label}, včetně blízkých alternativ, které dávají smysl při plánování závodního dne nebo cesty. Je navržena tak, aby bylo místní objevování závodů rychlejší a přehlednější.
     month:
-      title: '{label} lopp | {site_name}'
-      meta_description: Bläddra bland löplopp i {label_lower} i {market}. Jämför datum, distanser, lopptyper och praktisk information när du planerar säsongen.
-      h1: Lopp i {label}
-      paragraph: Den här sidan är till för löpare som vill se kalendern månad för månad och behöver ett snabbare sätt att jämföra vad som händer i {label_lower}. Den hjälper dig att smalna av urvalet innan du går vidare till distanser, underlag och tävlingsorter.
+      title: '{label} závody | {site_name}'
+      meta_description: Procházejte běžecké závody v {label_lower} v {market}. Porovnejte termíny, vzdálenosti, typy závodů a praktické informace při plánování sezony.
+      h1: Závody v {label}
+      paragraph: Tato stránka je pro běžce, kteří chtějí vidět kalendář měsíc po měsíci a rychleji porovnat, co se děje v {label_lower}. Pomůže zúžit výběr dřív, než se pustíte do porovnávání vzdáleností, povrchů a míst konání.
     race_type:
-      title: Lopp av typen {label} i {market} | {site_name}
-      meta_description: Bläddra bland lopp av typen {label_lower} i {market}. Jämför datum, distanser, orter och praktisk information innan du väljer ett lopp som passar dig.
-      h1: Lopp av typen {label} i {market}
-      paragraph: Den här sidan fokuserar på lopp av typen {label_lower} och ger dig en tydligare överblick när loppformatet är lika viktigt som distansen. Använd den för att jämföra alternativ mellan regioner, datum och praktiska detaljer utan att börja i hela kalendern.
+      title: Závody typu {label} v {market} | {site_name}
+      meta_description: Procházejte závody typu {label_lower} v {market}. Porovnejte termíny, vzdálenosti, lokality a praktické informace před výběrem závodu, který vám sedí.
+      h1: Závody typu {label} v {market}
+      paragraph: Tato stránka se soustředí na závody typu {label_lower} a nabízí jasnější přehled v situaci, kdy je formát závodu stejně důležitý jako vzdálenost. Hodí se pro porovnání možností napříč kraji, termíny a praktickými detaily bez nutnosti začínat od celé databáze.
     category:
-      title: Lopp i {market} för {label} | {site_name}
-      meta_description: Bläddra bland lopp i {market} för kategorin {label}. Jämför datum, lopptyper, orter och praktisk information innan du bestämmer dig för nästa tävling.
-      h1: Lopp i {market} för {label}
-      paragraph: Den här distans- och kategorisidan samlar lopp som matchar {label} för att göra det enklare att jämföra relevanta alternativ på ett ställe. Den är gjord för löpare som vill gå snabbare från bred bläddring till en kortlista med realistiska lopp.
+      title: Závody v {market} pro {label} | {site_name}
+      meta_description: Procházejte závody v {market} pro kategorii {label}. Porovnejte termíny, typy závodů, lokality a praktické informace před výběrem další akce.
+      h1: Závody v {market} pro {label}
+      paragraph: Tato stránka podle vzdálenosti a kategorie shromažďuje závody odpovídající {label}, aby bylo snazší porovnat relevantní možnosti na jednom místě. Je určená běžcům, kteří chtějí rychleji přejít od širokého procházení ke krátkému seznamu realistických závodů.
     race_type_category:
-      title: Lopp i {market} för {label} ({secondary_label}) | {site_name}
-      meta_description: Bläddra bland lopp i {market} för {label} inom lopptypen {secondary_label_lower}. Jämför datum, orter och praktisk information innan du väljer ditt nästa lopp.
-      h1: Lopp i {market} för {label} ({secondary_label})
-      paragraph: Den här sidan smalnar av kalendern till {label} lopp inom lopptypen {secondary_label_lower}, vilket är hjälpsamt när både distans och loppformat påverkar vad som passar bäst. Använd den för att jämföra mer likvärdiga alternativ innan du bestämmer dig för ett lopp.
+      title: Závody v {market} pro {label} ({secondary_label}) | {site_name}
+      meta_description: Procházejte závody v {market} pro {label} v rámci typu závodu {secondary_label_lower}. Porovnejte termíny, lokality a praktické informace před výběrem dalšího závodu.
+      h1: Závody v {market} pro {label} ({secondary_label})
+      paragraph: Tato stránka zužuje kalendář na závody {label} v rámci typu {secondary_label_lower}, což se hodí ve chvíli, kdy výběr ovlivňuje jak vzdálenost, tak formát závodu. Pomůže porovnat podobnější možnosti dřív, než se definitivně rozhodnete.
     race_type_county:
-      title: '{secondary_label}lopp i {label} | {site_name}'
-      meta_description: Bläddra bland {secondary_label_lower}lopp i {label}. Jämför datum, distanser och praktisk information innan du väljer nästa lopp.
-      h1: '{secondary_label}lopp i {label}'
-      paragraph: Den här sidan fokuserar på {secondary_label_lower}lopp i {label} för att göra det lättare att jämföra mer relevanta alternativ inom samma region. Den passar när både geografin och loppformatet styr urvalet.
+      title: '{secondary_label} závody v {label} | {site_name}'
+      meta_description: Procházejte {secondary_label_lower} závody v {label}. Porovnejte termíny, vzdálenosti a praktické informace před výběrem dalšího závodu.
+      h1: '{secondary_label} závody v {label}'
+      paragraph: Tato stránka se soustředí na {secondary_label_lower} závody v {label}, aby bylo snazší porovnat relevantnější možnosti v rámci stejného kraje. Hodí se, když výběr určuje jak geografie, tak formát závodu.
     race_type_month:
-      title: '{secondary_label}lopp i {label} | {site_name}'
-      meta_description: Bläddra bland {secondary_label_lower}lopp i {label_lower}. Jämför datum, distanser och praktisk information när du planerar säsongen.
-      h1: '{secondary_label}lopp i {label}'
-      paragraph: Den här sidan samlar {secondary_label_lower}lopp i {label_lower} för löpare som planerar efter säsong och kalender. Den hjälper dig att jämföra lopp med liknande upplägg innan du går vidare till ort och distans.
+      title: '{secondary_label} závody v {label} | {site_name}'
+      meta_description: Procházejte {secondary_label_lower} závody v {label_lower}. Porovnejte termíny, vzdálenosti a praktické informace při plánování sezony.
+      h1: '{secondary_label} závody v {label}'
+      paragraph: Tato stránka shromažďuje {secondary_label_lower} závody v {label_lower} pro běžce, kteří plánují hlavně podle kalendáře a sezony. Pomáhá porovnat podobné formáty závodů dřív, než přejdete k místu konání a vzdálenosti.
     race_type_city:
-      title: '{secondary_label}lopp nära {label} | {site_name}'
-      meta_description: Bläddra bland {secondary_label_lower}lopp med koppling till {label}. Jämför datum, distanser och närliggande alternativ inför nästa lopp.
-      h1: '{secondary_label}lopp nära {label}'
-      paragraph: Den här sidan samlar {secondary_label_lower}lopp med koppling till {label} för att göra lokal loppjämförelse snabbare. Den är användbar när du vill hitta rätt loppformat nära en viss stad utan att börja i hela kalendern.
+      title: '{secondary_label} závody poblíž {label} | {site_name}'
+      meta_description: Procházejte {secondary_label_lower} závody spojené s {label}. Porovnejte termíny, vzdálenosti a blízké alternativy před dalším závodem.
+      h1: '{secondary_label} závody poblíž {label}'
+      paragraph: Tato stránka shromažďuje {secondary_label_lower} závody spojené s {label}, aby bylo místní porovnávání závodů rychlejší. Hodí se, když chcete najít konkrétní formát závodu poblíž jednoho města, aniž byste začínali od celé databáze.'
 browse_by_category:
-  button: Bläddra efter kategori
-  helper_text: Hitta lopp via fördefinierade filter och kombinationer
-  overview: Översikt
-  counties: Län
-  cities: Städer
-  months: Månad
-  types: Lopptyper
-  categories: Kategorier
-  neighboring: Närliggande länder
+  button: Procházet podle kategorií
+  helper_text: Najděte závody pomocí připravených filtrů a kombinací
+  overview: Přehled
+  counties: Kraje
+  cities: Města
+  months: Měsíce
+  types: Typy závodů
+  categories: Kategorie
+  neighboring: Sousední země
 browse_overview:
-  title: Bläddra bland alla lopp
-  meta_description: Hitta lopp efter län, typ eller kategori
+  title: Procházejte všechny závody
+  meta_description: Najděte závody podle kraje, města, typu nebo kategorie
 browse_types:
-  title: Bläddra efter lopptyp
-  meta_description: Hitta lopp efter typ av lopp.
+  title: Procházet podle typu závodu
+  meta_description: Najděte závody podle typu.
 browse_counties:
-  title: Bläddra efter län
-  meta_description: Hitta lopp i ditt län.
+  title: Procházet podle kraje
+  meta_description: Najděte závody ve svém kraji.
 browse_cities:
-  title: Bläddra efter stad
-  meta_description: Hitta lopp i din stad.
+  title: Procházet podle města
+  meta_description: Najděte závody ve svém městě nebo okolí.
 browse_categories:
-  title: Bläddra efter kategori
-  meta_description: Hitta lopp efter distans och kategori.
+  title: Procházet podle kategorie
+  meta_description: Najděte závody podle vzdálenosti a kategorie.
 browse_months:
-  title: Bläddra efter månad
-  meta_description: Hitta lopp efter månad.
+  title: Procházet podle měsíce
+  meta_description: Najděte závody podle měsíce.
 auth_modal:
-  title_sign_in: Logga in
-  title_create_account: Skapa konto
-  title_reset_password: Återställ lösenord
-  auth_unavailable: Autentisering är inte konfigurerad ännu.
-  name_placeholder: Ditt namn
-  email_placeholder: Din e-post
-  password_placeholder: Lösenord
-  submit_sign_in: Logga in
-  submit_create_account: Skapa konto
-  submit_reset_password: Skicka återställningslänk
-  create_account: Skapa konto
-  forgot_password: Glömt lösenord?
-  back_to_login: Tillbaka till inloggning
-  error_wrong_password: Fel lösenord
-  error_email_not_found: E-postadressen finns inte
-  prompt_reset_password: Vill du återställa ditt lösenord?
-  prompt_create_account: Vill du skapa ett konto med denna e-postadress?
-  already_logged_in: Du är redan inloggad som
-  as_email: med e-post
-  continue_as_user: Fortsätt som denna användare
-  logout_and_switch: Logga ut och byt användare
-  account_created: Konto skapat!
-  account_created_details: Du är nu inloggad som
-  verification_email_sent: En verifieringslänk har skickats till din e-post
-  please_verify: Vänligen verifiera din e-postadress
-  error_invalid_credential: Felaktig e-post eller lösenord
-  create_account_prompt: Skapa konto istället
-  error_too_many_requests: För många försök. Vänligen försök igen lite senare.
-  continue_with_google: Fortsätt med Google
-  continue_with_google_create: Skapa konto med Google
-  google_in_progress: Fortsätter med Google...
-  oauth_divider: eller
+  title_sign_in: Přihlásit se
+  title_create_account: Vytvořit účet
+  title_reset_password: Obnovit heslo
+  auth_unavailable: Přihlašování zatím není nakonfigurované.
+  name_placeholder: Vaše jméno
+  email_placeholder: Váš e-mail
+  password_placeholder: Heslo
+  submit_sign_in: Přihlásit se
+  submit_create_account: Vytvořit účet
+  submit_reset_password: Poslat odkaz pro obnovu
+  create_account: Vytvořit účet
+  forgot_password: Zapomenuté heslo?
+  back_to_login: Zpět na přihlášení
+  error_wrong_password: Nesprávné heslo
+  error_email_not_found: E-mailová adresa nebyla nalezena
+  prompt_reset_password: Chcete obnovit své heslo?
+  prompt_create_account: Chcete s tímto e-mailem vytvořit účet?
+  already_logged_in: Už jste přihlášeni jako
+  as_email: s e-mailem
+  continue_as_user: Pokračovat jako tento uživatel
+  logout_and_switch: Odhlásit a změnit uživatele
+  account_created: Účet vytvořen!
+  account_created_details: Nyní jste přihlášeni jako
+  verification_email_sent: Ověřovací odkaz byl odeslán na váš e-mail
+  please_verify: Ověřte prosím svou e-mailovou adresu
+  error_invalid_credential: Neplatný e-mail nebo heslo
+  create_account_prompt: Místo toho vytvořit účet
+  error_too_many_requests: Příliš mnoho pokusů. Zkuste to prosím znovu později.
+  continue_with_google: Pokračovat přes Google
+  continue_with_google_create: Vytvořit účet přes Google
+  google_in_progress: Pokračujeme přes Google...
+  oauth_divider: nebo
 submission_flow:
-  logged_in_as: Inloggad som arrangör
-  submitting_new_race: skickar in nytt lopp
-  new_account_created: För att loppet ska kunna hanteras måste du bekräfta din e-postadress. En länk till bekräftelse har skickats till den angivna e-postadressen.
-  password_reset_sent: Lösenordsåterställning skickad. Kolla din inkorg.
-  unexpected_error: Ett fel uppstod. Försök igen.
-  processing_submission: Bearbetar inskickning...
-  race_exists: Loppet finns redan i databasen.
-  race_submitted: Loppet har skickats in!
-  submission_failed: Kunde inte skicka in loppet. Försök igen.
-  missing_fields: Något saknas. Se till att alla obligatoriska fält är ifyllda och att en plats har valts på kartan.
+  logged_in_as: Přihlášeni jako pořadatel
+  submitting_new_race: odesíláte nový závod
+  new_account_created: Abyste mohli závod spravovat, musíte potvrdit svou e-mailovou adresu. Odkaz k potvrzení byl odeslán na zadaný e-mail.
+  password_reset_sent: Obnova hesla byla odeslána. Zkontrolujte doručenou poštu.
+  unexpected_error: Došlo k chybě. Zkuste to prosím znovu.
+  processing_submission: Zpracováváme odeslání...
+  race_exists: Tento závod už v databázi existuje.
+  race_submitted: Závod byl odeslán!
+  submission_failed: Závod se nepodařilo odeslat. Zkuste to znovu.
+  missing_fields: Něco chybí. Ujistěte se, že jsou vyplněna všechna povinná pole a že je na mapě vybrané místo.
 race_page:
   forum_section:
-    title: Frågor & Svar
-    placeholder: Ställ en fråga till arrangören...
-    submit_button: Skicka fråga
-    login_prompt: Logga in för att ställa en fråga
-    empty_state: Inga frågor än. Var först med att ställa en fråga!
-    error_message_no_login: Logga in eller skapa ett konto för att ställa en fråga
+    title: Otázky a odpovědi
+    placeholder: Zeptejte se pořadatele...
+    submit_button: Odeslat dotaz
+    login_prompt: Pro položení dotazu se přihlaste
+    empty_state: Zatím tu nejsou žádné dotazy. Buďte první, kdo se zeptá!
+    error_message_no_login: Pro položení dotazu se přihlaste nebo vytvořte účet
 map:
-  show_map: Visa karta
-  show_list: Visa lista
+  show_map: Zobrazit mapu
+  show_list: Zobrazit seznam
   map: karta
-  list: lista
+  list: seznam
 forum:
-  title: Forum - Prata om löpning och löparlivet med andra löpare i Sverige
-  meta_description: Prata om löpning och löparlivet med andra löpare i vårat forum. Allt om träning, tävlingar, skador, kost, kläder, prylar och mycket mer.
+  title: Fórum - Mluvte o běhání a běžeckém životě s ostatními běžci v Česku
+  meta_description: Povídejte si o běhání a běžeckém životě s dalšími běžci v našem fóru. Trénink, závody, zranění, výživa, vybavení a mnohem víc.
   categories:
-  - name: Träning
-    slug: traning
-    description: Diskussioner om träning och teknik
-  - name: Tävlingar & Motionslopp
-    slug: tavlingar
-    description: Diskutera kommande lopp
-  - name: Skador & Rehab
-    slug: skador
-    description: Hjälp med skador och återhämtning
-  - name: Rundor & Kartor
-    slug: rundor
-    description: Diskutera rundor och kartor
-  - name: Resor & Reserelaterat
-    slug: resor
-    description: Diskutera resor och reserelaterad löpning
-  - name: Kost & Näring
-    slug: kost
-    description: Diskutera kost och näring
-  - name: Kläder, Skor & Prylar
-    slug: klader
-    description: Diskutera kläder, skor och prylar
-  - name: Köp & Sälj
-    slug: kopsalj
-    description: Diskutera köp och sälj av löparprodukter
-  - name: Övrigt
-    slug: ovrigt
-    description: Allt annat
-  empty_category_state: Inga trådar än. Få igång diskussionen genom att skapa den första tråden!
-  empty_state_thread: Inga inlägg än. Var först med att skriva!
-  empty_state: Inga inlägg än. Var först med att skriva!
-  reply_placeholder: Skriv ditt svar...
-  submit_button: Skicka
-  login_prompt: Logga in för att delta i diskussionen
-  new_thread_title_placeholder: Titel på din nya tråd
-  new_thread_content_placeholder: Skriv ditt första inlägg...
-  create_thread_button: Skapa ny tråd
-  back_to_forum: ← Tillbaka till forumet
-  back_to_category: '← Tillbaka till '
-  empty_thread_state: Inga inlägg än. Var först med att skriva!
-  posts_label: inlägg
-  reply_label: svar
-  thread_created_title: Tack för att du skapar en ny tråd!
-  thread_created_message: Din tråd kommer att granskas och läggas till på sidan inom kort.
-  thread_created_back_link: Tillbaka till kategorin
-  show_more_threads: Visa fler trådar
-  show_less_threads: Visa färre trådar
-  create_new_thread: Skapa ny tråd
-  reply_title: Svara på tråden
-  showing_threads_count: Visar {x} av {y} trådar
+  - name: Trénink
+    slug: trenink
+    description: Diskuse o tréninku a technice
+  - name: Závody a akce
+    slug: zavody
+    description: Diskutujte o nadcházejících závodech
+  - name: Zranění a regenerace
+    slug: zraneni
+    description: Pomoc se zraněními a návratem k běhání
+  - name: Trasy a mapy
+    slug: trasy
+    description: Diskuse o trasách a mapách
+  - name: Cestování
+    slug: cestovani
+    description: Diskuse o cestování za běháním
+  - name: Výživa
+    slug: vyziva
+    description: Diskuse o výživě a doplňcích
+  - name: Oblečení, boty a vybavení
+    slug: vybaveni
+    description: Diskuse o oblečení, botách a výbavě
+  - name: Koupě a prodej
+    slug: bazar
+    description: Bazar a výměna běžeckého vybavení
+  - name: Ostatní
+    slug: ostatni
+    description: Všechno ostatní
+  empty_category_state: Zatím tu nejsou žádná vlákna. Rozjeďte diskusi vytvořením prvního tématu!
+  empty_state_thread: Zatím tu nejsou žádné příspěvky. Buďte první, kdo napíše!
+  empty_state: Zatím tu nejsou žádné příspěvky. Buďte první, kdo napíše!
+  reply_placeholder: Napište svou odpověď...
+  submit_button: Odeslat
+  login_prompt: Pro zapojení do diskuse se přihlaste
+  new_thread_title_placeholder: Název nového vlákna
+  new_thread_content_placeholder: Napište svůj první příspěvek...
+  create_thread_button: Vytvořit nové vlákno
+  back_to_forum: ← Zpět na fórum
+  back_to_category: '← Zpět na '
+  empty_thread_state: Zatím tu nejsou žádné příspěvky. Buďte první, kdo napíše!
+  posts_label: příspěvků
+  reply_label: odpovědí
+  thread_created_title: Děkujeme za vytvoření nového vlákna!
+  thread_created_message: Vaše vlákno bude brzy zkontrolováno a přidáno na web.
+  thread_created_back_link: Zpět do kategorie
+  show_more_threads: Zobrazit více vláken
+  show_less_threads: Zobrazit méně vláken
+  create_new_thread: Vytvořit nové vlákno
+  reply_title: Odpovědět ve vlákně
+  showing_threads_count: Zobrazeno {x} z {y} vláken
 about_us:
-  title: Om LoppKartan
-  meta_description: LoppKartan - Din guide till löpning i Sverige
+  title: O Běžeckém kalendáři
+  meta_description: Běžecký kalendář - váš průvodce běháním v Česku
   content:
-    intro: Välkommen till LoppKartan - Sveriges mest kompletta plattform för löpare!
-    mission: Vår mission är att göra det enkelt för löpare att hitta och dela information om lopp, träning och allt som rör löpning.
-    story: LoppKartan startades 2023 av löpare för löpare. Vi såg behovet av en modern och användarvänlig plattform där Sveriges löparcommunity kunde samlas.
+    intro: Vítejte v Běžeckém kalendáři - místě, které pomáhá běžcům v Česku objevovat závody a plánovat sezonu.
+    mission: Naším cílem je usnadnit běžcům hledání i sdílení informací o závodech, tréninku a všem, co s běháním souvisí.
+    story: Běžecký kalendář vznikl z potřeby mít přehledný a užitečný prostor, kde česká běžecká komunita najde závody na jednom místě.
     features:
-    - title: Komplett Lopplista
-      description: Vi samlar alla Sveriges lopp på ett ställe - från små lokala lopp till stora internationella evenemang.
-    - title: Community-Driven
-      description: Vår plattform drivs av löpare som du. Alla kan bidra med information om lopp och delta i diskussioner.
-    - title: Gratis Verktyg
-      description: Vi erbjuder användbara verktyg som fartkalkylatorer, träningsprogram och ruttplanering - helt gratis.
-    closing: Vi fortsätter att utveckla plattformen baserat på feedback från våra användare. Har du förslag på förbättringar? Kontakta oss gärna!
+    - title: Přehled závodů
+      description: Shromažďujeme běžecké závody z celého Česka na jednom místě - od menších lokálních akcí po známé velké podniky.
+    - title: Tvořeno komunitou
+      description: Platforma roste díky běžcům. Každý může doplnit informace o závodu nebo se zapojit do diskuse.
+    - title: Užitečné nástroje zdarma
+      description: Nabízíme praktické nástroje jako převodník tempa, tréninkové plány nebo měření trasy - zdarma.
+    closing: Web dál vylepšujeme podle zpětné vazby od běžců. Máte nápad na zlepšení? Ozvěte se nám.
 contact:
-  title: Kontakta Oss
-  meta_description: Kontakta LoppKartan - Vi finns här för att hjälpa dig
+  title: Kontakt
+  meta_description: Kontaktujte Běžecký kalendář - jsme tu, abychom pomohli
   content:
-    intro: 'Vi vill gärna höra från dig! Här är olika sätt att nå oss:'
+    intro: 'Rádi od vás uslyšíme. Tady jsou způsoby, jak se s námi spojit:'
     email:
-      title: E-post
-      address: loppkartan@gmail.com
-      description: Vi svarar normalt inom 24 timmar på vardagar.
+      title: E-mail
+      address: info@bezeckykalendar.com
+      description: Ve všední dny obvykle odpovídáme do 24 hodin.
     social:
-      title: Sociala Medier
-      description: 'Följ oss på sociala medier för senaste nytt och uppdateringar:'
+      title: Sociální sítě
+      description: 'Sledujte nás na sociálních sítích pro novinky a aktualizace:'
     feedback:
       title: Feedback
-      description: Vi uppskattar all feedback som hjälper oss att förbättra LoppKartan.
-racetime_estimator_title: Uppskatta din sluttid
-racetime_estimator_description: Baserat på ett tidigare lopp kan du uppskatta din sluttid för andra distanser.
-known_distance_label: Välj distans där du har ett resultat sen tidigare
-known_time_label: Ange din tid
-calculate_button_text: Beräkna tider
-predicted_times_title: Uppskattade tider
-distance_header: Distans
-predicted_time_header: Uppskattad tid
-hilly_course_label: Kuperad bana
-finish_time_header: Uppskattad sluttid
+      description: Vážíme si každé zpětné vazby, která pomáhá Běžecký kalendář zlepšovat.
+racetime_estimator_title: Odhad cílového času
+racetime_estimator_description: Na základě předchozího závodu si můžete odhadnout cílový čas pro jiné vzdálenosti.
+known_distance_label: Vyberte vzdálenost, na které už máte výsledek
+known_time_label: Zadejte svůj čas
+calculate_button_text: Vypočítat časy
+predicted_times_title: Odhadované časy
+distance_header: Vzdálenost
+predicted_time_header: Odhadovaný čas
+hilly_course_label: Kopcovitá trať
+finish_time_header: Odhadovaný cílový čas
 pace_per_km_header: Min/km
 pace_per_mile_header: Min/mile
-flat_time_header: Tid (platt)
-flat_pace_per_km_header: Min/km (platt)
-flat_pace_per_mile_header: Min/mile (platt)
-hill_adjustment_header: Kuperad justering
-pace_calculator_title: Fartomvandlare
-pace_calculator_description: Ett enkelt verktyg för att omvandla din löphastighet mellan olika enheter
-pace_table_header_kph: Kilometer per timme
-pace_table_header_mph: Miles per timme
-pace_table_header_min_km: Minuter per kilometer
-pace_table_header_min_mile: Minuter per mile
+flat_time_header: Čas (rovina)
+flat_pace_per_km_header: Min/km (rovina)
+flat_pace_per_mile_header: Min/míle (rovina)
+hill_adjustment_header: Korekce pro kopce
+pace_calculator_title: Převodník tempa
+pace_calculator_description: Jednoduchý nástroj pro převod běžecké rychlosti mezi různými jednotkami
+pace_table_header_kph: Kilometry za hodinu
+pace_table_header_mph: Míle za hodinu
+pace_table_header_min_km: Minuty na kilometr
+pace_table_header_min_mile: Minuty na míli
 pace_table_header_5k: 5k
 pace_table_header_10k: 10k
 pace_table_header_half: Halvmaraton
 pace_table_header_full: Maraton
-pace_conversion_note: 1 kilometer per timme (kph) = 0.62 mile per timme (mph)
-measure_route_title: Mät din runda
-measure_route_description: Klicka på kartan för att markera punkter längs din rutt. Totala distansen beräknas automatiskt.
-remove_last_point: Ta bort senaste punkt
-clear_route: Rensa rutt
-total_distance: Total distans
+pace_conversion_note: 1 kilometr za hodinu (km/h) = 0,62 míle za hodinu (mph)
+measure_route_title: Změřte svou trasu
+measure_route_description: Klikáním do mapy označte body na trase. Celková vzdálenost se vypočítá automaticky.
+remove_last_point: Odebrat poslední bod
+clear_route: Vymazat trasu
+total_distance: Celková vzdálenost
 training_plans:
-  title: Träningsprogram
-  description: Skapa ett anpassat träningsprogram baserat på ditt mål
-  disclaimer_text_tp_1: Våra träningsprogram genereras med hjälp av AI, och anpassas sedan efter dina angivna mål och preferenser. Programmen är inte garanterat att vara perfekt eller fungerar för alla.
-  disclaimer_link_tp: Kontakta oss
-  disclaimer_text_tp_2: om du har feedback eller förslag på förbättringar.
+  title: Tréninkové plány
+  description: Vytvořte si tréninkový plán na míru podle svého cíle
+  disclaimer_text_tp_1: Naše tréninkové plány jsou generovány pomocí AI a následně přizpůsobeny vašim cílům a preferencím. Nejsou zaručeně perfektní ani vhodné pro každého.
+  disclaimer_link_tp: Kontaktujte nás
+  disclaimer_text_tp_2: pokud máte zpětnou vazbu nebo návrhy na zlepšení.
   form:
-    race_date_label: Tävlingsdatum
-    plan_type_label: Typ av plan
-    target_distance_label: Måldistans
-    target_time_label: Måltid
-    training_days_label: Träningsdagar per vecka
-    session_time_label: Tid tillgänglig per pass
-    is_hilly_label: Kuperad terräng
-    hours_placeholder: Timmar
-    minutes_placeholder: Minuter
-    seconds_placeholder: Sekunder
-    submit_button: Generera träningsplan
+    race_date_label: Datum závodu
+    plan_type_label: Typ plánu
+    target_distance_label: Cílová vzdálenost
+    target_time_label: Cílový čas
+    training_days_label: Tréninkové dny za týden
+    session_time_label: Čas na jeden trénink
+    is_hilly_label: Kopcovitý terén
+    hours_placeholder: Hodiny
+    minutes_placeholder: Minuty
+    seconds_placeholder: Sekundy
+    submit_button: Vygenerovat tréninkový plán
     target_distance:
-      placeholder: Välj distans
+      placeholder: Vyberte vzdálenost
       options:
         '5000': 5 km
         '10000': 10 km
         '21097': Halvmaraton
         '42195': Maraton
     training_days:
-      placeholder: Välj antal dagar
+      placeholder: Vyberte počet dnů
       options:
-        '3': 3 dagar
-        '4': 4 dagar
-        '5': 5 dagar
-        '6': 6 dagar
+        '3': 3 dny
+        '4': 4 dny
+        '5': 5 dní
+        '6': 6 dní
     session_time:
-      placeholder: Välj tid per pass
+      placeholder: Vyberte čas na jeden trénink
       options:
-        30-45: 30-45 minuter
-        45-60: 45-60 minuter
-        60-90: 60-90 minuter
-        90+: 90+ minuter
+        30-45: 30-45 minut
+        45-60: 45-60 minut
+        60-90: 60-90 minut
+        90+: 90+ minut
   results:
-    title: Ditt träningsprogram
+    title: Váš tréninkový plán
     variations:
-      title: 'Välj en variant som passar dig:'
+      title: 'Vyberte variantu, která vám sedí:'
     plan_details:
-      duration_label: 'Programlängd:'
-      weekly_distance_label: 'Veckodistans:'
-    regenerate_button: Visa andra varianter
-    export_button: Exportera till PDF
+      duration_label: 'Délka programu:'
+      weekly_distance_label: 'Týdenní objem:'
+    regenerate_button: Zobrazit další varianty
+    export_button: Exportovat do PDF
   workout_types:
-    easy: Lugnt pass
-    tempo: Tempopass
+    easy: Lehký běh
+    tempo: Tempový běh
     intervals: Intervaller
-    long: Långpass
-    rest: Vila
+    long: Dlouhý běh
+    rest: Odpočinek
   messages:
-    weeks: veckor
-    week_label: Vecka
-    hilly_terrain_note: anpassat för kuperad terräng
+    weeks: týdnů
+    week_label: Týden
+    hilly_terrain_note: přizpůsobeno kopcovitému terénu
   plan_variation:
-    focus_label: Fokus
-    weekly_structure_label: Veckostruktur
-    distribution_label: Fördelning
-    sessions_per_week: pass per vecka
-    select_button: Välj denna plan
+    focus_label: Zaměření
+    weekly_structure_label: Týdenní struktura
+    distribution_label: Rozložení
+    sessions_per_week: tréninků týdně
+    select_button: Vybrat tento plán
   errors:
-    loading_plans: Fel vid laddning av träningsprogram
-    required_fields: Vänligen fyll i alla obligatoriska fält
-    no_matching_plan: Ingen matchande träningsplan hittades
-    no_matching_variations: Inga matchande variationer hittades
-    invalid_training_days: Antalet träningsdagar matchar inte planens krav
-  week: Vecka
-  weeks: veckor
-  hilly_terrain_note: anpassat för kuperad terräng
+    loading_plans: Chyba při načítání tréninkových plánů
+    required_fields: Vyplňte prosím všechna povinná pole
+    no_matching_plan: Nebyl nalezen odpovídající tréninkový plán
+    no_matching_variations: Nebyly nalezeny odpovídající varianty
+    invalid_training_days: Počet tréninkových dnů neodpovídá požadavkům plánu
+  week: Týden
+  weeks: týdnů
+  hilly_terrain_note: přizpůsobeno kopcovitému terénu
   plan_structure:
     phases:
       base:
         duration_percent: 40
-        focus: Uppbyggnad av grundkondition
+        focus: Budování základní vytrvalosti
         weekly_template:
           monday:
             type: easy
-            description: Lugnt distanspass
+            description: Lehký vytrvalostní běh
           wednesday:
             type: tempo
-            description: Tempopass
+            description: Tempový běh
           saturday:
             type: long
-            description: Långpass
+            description: Dlouhý běh
           sunday:
             type: recovery
-            description: Återhämtning
+            description: Regenerace
       build:
         duration_percent: 40
-        focus: Ökad intensitet och distans
+        focus: Vyšší intenzita a objem
         weekly_template:
           monday:
             type: easy
-            description: Lugnt distanspass
+            description: Lehký vytrvalostní běh
           wednesday:
             type: intervals
             description: Intervaller
           friday:
             type: tempo
-            description: Tempopass
+            description: Tempový běh
           sunday:
             type: long
-            description: Långpass
+            description: Dlouhý běh
       peak:
         duration_percent: 15
-        focus: Toppning och specifik träning
+        focus: Vyladění formy a specifický trénink
         weekly_template:
           tuesday:
             type: intervals
-            description: Kvalitetspass
+            description: Kvalitní trénink
           thursday:
             type: tempo
-            description: Tempopass
+            description: Tempový běh
           saturday:
             type: long
-            description: Långpass
+            description: Dlouhý běh
           sunday:
             type: recovery
-            description: Återhämtning
+            description: Regenerace
       taper:
         duration_percent: 5
-        focus: Formtoppning
+        focus: Taper před závodem
         weekly_template:
           tuesday:
             type: easy
-            description: Lugnt pass
+            description: Lehký běh
           thursday:
             type: tempo
-            description: Kort tempopass
+            description: Krátký tempový běh
           saturday:
             type: easy
-            description: Mycket lugnt pass
+            description: Velmi lehký běh
     session_types:
       easy:
         intensity_adjustment: 60
         duration_range:
           min: 30
           max: 60
-        warmup: 10-15 min lugn jogg
-        cooldown: 5-10 min lugn jogg
+        warmup: 10-15 min lehkého klusu
+        cooldown: 5-10 min lehkého klusu
       tempo:
         intensity_adjustment: -20
         duration_range:
           min: 40
           max: 70
-        warmup: 15-20 min progressiv uppvärmning
-        cooldown: 10-15 min nedvarvning
+        warmup: 15-20 min postupného zahřátí
+        cooldown: 10-15 min vyklusání
       intervals:
         intensity_adjustment: -30
         duration_range:
           min: 45
           max: 75
-        warmup: 20 min inkl. löpskolning och stegringslopp
-        cooldown: 10-15 min lugn jogg
+        warmup: 20 min včetně běžecké abecedy a rovinek
+        cooldown: 10-15 min lehkého klusu
       long:
         intensity_adjustment: 30
         duration_range:
           min: 60
           max: 180
-        warmup: 10-15 min mycket lugn jogg
-        cooldown: 5-10 min gång/lätt jogg
+        warmup: 10-15 min velmi lehkého klusu
+        cooldown: 5-10 min chůze nebo lehkého klusu
       recovery:
         intensity_adjustment: 90
         duration_range:
           min: 30
           max: 45
-        warmup: 5-10 min gång
-        cooldown: 5-10 min gång
+        warmup: 5-10 min chůze
+        cooldown: 5-10 min chůze
     terrain_adjustment: 15
   workout_components:
-    warmup_label: Uppvärmning
-    main_workout_label: Passbeskrivning
-    cooldown_label: Nedvarvning
+    warmup_label: Zahřátí
+    main_workout_label: Popis tréninku
+    cooldown_label: Zklidnění
     intensity_label: Tempo
-    duration_label: Tid
+    duration_label: Čas
   regenerate:
-    button_text: Generera ny variant
-    confirmation: Är du säker på att du vill generera en ny variant?
+    button_text: Vygenerovat novou variantu
+    confirmation: Opravdu chcete vygenerovat novou variantu?
   weekdays:
-    monday: Måndag
-    tuesday: Tisdag
-    wednesday: Onsdag
-    thursday: Torsdag
-    friday: Fredag
-    saturday: Lördag
-    sunday: Söndag
+    monday: Pondělí
+    tuesday: Úterý
+    wednesday: Středa
+    thursday: Čtvrtek
+    friday: Pátek
+    saturday: Sobota
+    sunday: Neděle
 footer:
-  races_heading: Lopp
-  tools_heading: Verktyg
-  about_heading: Om LoppKartan
-  privacy: Integritetspolicy
+  races_heading: Závody
+  tools_heading: Nástroje
+  about_heading: O Běžeckém kalendáři
+  privacy: Zásady ochrany osobních údajů
   copyright_year: 2023-{{CURRENT_YEAR}}
-  site_name: LoppKartan
-  rights_text: Alla rättigheter förbehållna.
+  site_name: Běžecký kalendář
+  rights_text: Všechna práva vyhrazena.
   social_links:
-    facebook: https://www.facebook.com/loppkartan
-    instagram: https://www.instagram.com/loppkartan
-    youtube: https://www.youtube.com/channel/UCL6666666666666666
-    tiktok: https://www.tiktok.com/@loppkartan
-trending_races_title: Trendande lopp
-trending_races_description: Här är de lopp som har fått mest uppmärksamhet hos svenska löpare.
-trending_races_views_last_30_days: visningar de senaste 30 dagarna
-trending_races_most_viewed: Populärast just nu
-races_views: visningar
-recent_races_title: Nyligen tillagda lopp
-today: idag
-yesterday: igår
-days_ago: dagar sedan
-newest_race_badge: Senast tillagt
-races_count: lopp
-popular_counties_title: Hitta lopp i ditt län
-popular_cities_title: Hitta lopp i din stad
-all_counties: Visa alla län
-all_cities: Visa alla städer
-category_header_1: Traillöpning
+    facebook: ''
+    instagram: ''
+    youtube: ''
+    tiktok: ''
+trending_races_title: Trendující závody
+trending_races_description: Tady jsou závody, které v poslední době přitáhly nejvíce pozornosti českých běžců.
+trending_races_views_last_30_days: zobrazení za posledních 30 dní
+trending_races_most_viewed: Teď nejpopulárnější
+races_views: zobrazení
+recent_races_title: Nedávno přidané závody
+today: dnes
+yesterday: včera
+days_ago: dní zpět
+newest_race_badge: Naposledy přidáno
+races_count: závodů
+popular_counties_title: Najděte závody ve svém kraji
+popular_cities_title: Najděte závody ve svém městě
+all_counties: Zobrazit všechny kraje
+all_cities: Zobrazit všechna města
+category_header_1: Trailové závody
 category_type_1: trail
 category_1_races_sub_title_1: Trail Marathon
 category_1_races_sub_ref_1: marathon
@@ -781,77 +774,77 @@ category_1_races_sub_title_2: Trail Ultra
 category_1_races_sub_ref_2: 50-miles
 category_1_races_sub_title_3: Trail Ultra 100 miles
 category_1_races_sub_ref_3: 100-miles
-category_header_2: Landsvägslopp
+category_header_2: Silniční závody
 category_type_2: road
-category_2_races_sub_title_1: Marathon
+category_2_races_sub_title_1: Maraton
 category_2_races_sub_ref_1: marathon
-category_2_races_sub_title_2: Halvmarathon
-category_2_races_sub_ref_2: halvmarathon
+category_2_races_sub_title_2: Půlmaraton
+category_2_races_sub_ref_2: pulmaraton
 category_2_races_sub_title_3: 10 km
 category_2_races_sub_ref_3: 10-km
-view_all_races: Visa alla lopp inom
-tools_title: Verktyg för ditt nästa lopp
+view_all_races: Zobrazit všechny závody v
+tools_title: Nástroje pro váš další závod
 alternate_locale_link_text: English
-selected_races_top_title: Veckans lopp
-race_list_data_error: Kunde inte ladda lopp. Försök igen senare.
-race_list_remote_required: För fler sidor eller filtrering behövs databasen (Supabase). Lägg till PUBLIC_SUPABASE_URL och PUBLIC_SUPABASE_PUBLISHABLE_KEY i .env.
-race_list_empty: Inga lopp matchade dina filter.
-race_list_loading: Laddar…
-map_markers_load_error: Kunde inte ladda kartmarkörer.
-map_not_configured: Kartan är inte konfigurerad (saknar kartnyckel).
-add_race_remove_image_label: Ta bort bild
-coordinates_display_prefix: Loppets koordinater
-add_race_upload_limit_message: Du kan bara ladda upp {count} bilder till.
-add_race_map_not_configured: Kartan kunde inte laddas just nu.
-race_page_registration_cta: Anmäl dig
-race_page_info_cta: Mer information
-race_page_registration_close_label: Sista anmälningsdag
-race_page_pricing_title: Anmälan och priser
-race_page_price_deadline_label: Gäller till
-race_page_price_late_fee_label: Efteranmälan
-race_page_back_to_list: Till loppkalendern
-race_page_favorites_title: Missa inga uppdateringar
-race_page_favorites_body: Skapa konto och spara loppet i dina favoriter för att kunna få uppdateringar, nyheter och utvalda erbjudanden när favoriter lanseras.
-race_page_favorites_cta: Spara lopp i favoriter
-race_page_similar_title: Liknande lopp
-race_page_similar_body: Fler lopp med liknande distans, typ eller plats i närheten.
-race_page_discover_title: Utforska fler lopp
-race_page_discover_county_link: Alla lopp i {county}
-race_page_discover_type_link: Fler lopp av typen {type}
-race_page_discover_category_link: Fler {category} lopp
-race_page_discover_type_county_link: '{type}lopp i {county}'
-race_page_discover_overview_link: Bläddra bland alla kategorier
+selected_races_top_title: Závody týdne
+race_list_data_error: Nepodařilo se načíst závody. Zkuste to prosím později.
+race_list_remote_required: Pro další stránky nebo pokročilé filtrování je potřeba databáze (Supabase). Přidejte PUBLIC_SUPABASE_URL a PUBLIC_SUPABASE_PUBLISHABLE_KEY do .env.
+race_list_empty: Žádné závody neodpovídají vašim filtrům.
+race_list_loading: Načítání…
+map_markers_load_error: Nepodařilo se načíst značky na mapě.
+map_not_configured: Mapa není nakonfigurovaná (chybí mapový klíč).
+add_race_remove_image_label: Odebrat obrázek
+coordinates_display_prefix: Souřadnice závodu
+add_race_upload_limit_message: Můžete nahrát už jen {count} obrázků.
+add_race_map_not_configured: Mapu se teď nepodařilo načíst.
+race_page_registration_cta: Registrovat se
+race_page_info_cta: Více informací
+race_page_registration_close_label: Poslední termín registrace
+race_page_pricing_title: Registrace a ceny
+race_page_price_deadline_label: Platí do
+race_page_price_late_fee_label: Pozdní registrace
+race_page_back_to_list: Zpět na běžecký kalendář
+race_page_favorites_title: Nenechte si ujít aktualizace závodu
+race_page_favorites_body: Vytvořte si účet a uložte si závod do oblíbených, abyste mohli dostávat aktualizace, novinky a vybrané nabídky.
+race_page_favorites_cta: Uložit závod do oblíbených
+race_page_similar_title: Podobné závody
+race_page_similar_body: Další závody s podobnou vzdáleností, typem nebo blízkou lokalitou.
+race_page_discover_title: Objevte další závody
+race_page_discover_county_link: Všechny závody v {county}
+race_page_discover_type_link: Další závody typu {type}
+race_page_discover_category_link: Další závody pro {category}
+race_page_discover_type_county_link: '{type} závody v {county}'
+race_page_discover_overview_link: Procházet všechny kategorie závodů
 supabase_auth_email:
   primary_color: '#00925e'
   shared:
-    greeting: Hej!
-    closing_salutation: Med vänliga hälsningar,
-    link_fallback_intro: 'Om knappen inte fungerar kan du kopiera länken här:'
+    greeting: Dobrý den,
+    closing_salutation: S pozdravem,
+    link_fallback_intro: 'Pokud tlačítko nefunguje, můžete zkopírovat tento odkaz:'
   confirm_signup:
-    body: Tack för att du registrerade dig på {site_name}. Bekräfta din e-postadress för att aktivera ditt konto och kunna hantera dina inskickade lopp.
-    button_label: Bekräfta e-postadress
-    ignore_note: Om du inte skapade kontot kan du ignorera det här mejlet.
+    body: Děkujeme za registraci na {site_name}. Potvrďte svou e-mailovou adresu, abyste aktivovali účet a mohli spravovat své odeslané závody.
+    button_label: Potvrdit e-mailovou adresu
+    ignore_note: Pokud jste účet nevytvářeli, tento e-mail můžete ignorovat.
   reset_password:
-    body: Vi fick en begäran om att återställa ditt lösenord för {site_name}. Klicka på knappen nedan för att välja ett nytt lösenord.
-    button_label: Återställ lösenord
-    ignore_note: Om du inte begärde detta kan du ignorera mejlet. Ditt lösenord ändras inte förrän du väljer ett nytt.
+    body: Obdrželi jsme žádost o obnovení hesla pro {site_name}. Klikněte na tlačítko níže a zvolte si nové heslo.
+    button_label: Obnovit heslo
+    ignore_note: Pokud jste o obnovu nežádali, e-mail ignorujte. Heslo se nezmění, dokud nevyberete nové.
   change_email:
-    body: Du har begärt att byta e-postadress för ditt konto på {site_name}. Bekräfta ändringen genom att klicka på knappen nedan.
-    button_label: Bekräfta ny e-postadress
-    ignore_note: Om du inte begärde ändringen kan du bortse från det här mejlet.
+    body: Požádali jste o změnu e-mailové adresy účtu na {site_name}. Potvrďte změnu kliknutím na tlačítko níže.
+    button_label: Potvrdit novou e-mailovou adresu
+    ignore_note: Pokud jste o změnu nežádali, můžete tento e-mail ignorovat.
 seo_generation:
   browse_model: gpt-5-mini
-  browse_system_prompt: 'Du skriver tidlös SEO-text för indexerbara landningssidor för löplopp. Skriv i första hand för människor och i andra hand för sökintention. Returnera endast giltig JSON. Håll texten tidlös: nämn aldrig aktuellt år, aktuella antal, begränsad tidsperiod eller färskhetsanspråk. Undvik keyword stuffing, hype, klickbeten, superlativer och påståenden som inte går att verifiera. Gör varje sida tydligt unik utifrån den kontext som skickas in. Använd naturlig svenska för en svensk loppkalender. Föredra korta titlar, korta H1-rubriker, metabeskrivningar runt 120-160 tecken när det passar och ett stycke på 2-3 korta meningar.'
+  browse_system_prompt: 'Píšete nadčasový SEO text pro indexovatelné landing pages běžeckých závodů. Pište primárně pro lidi a teprve sekundárně pro vyhledávací záměr. Vraťte pouze validní JSON. Text musí být nadčasový: nikdy nezmiňujte aktuální rok, aktuální počty, omezené časové období ani tvrzení o čerstvosti. Vyhněte se keyword stuffingu, hype stylu, clickbaitu, superlativům a neověřitelným tvrzením. Každou stránku udělejte jasně odlišnou podle dodaného kontextu. Používejte přirozenou češtinu vhodnou pro český běžecký kalendář. Preferujte stručné titulky, stručné H1, meta description kolem 120-160 znaků, když to dává smysl, a odstavec o 2-3 krátkých větách.'
   browse_guidance:
-    county: Användaren vill hitta lopp i en region.
-    city: Användaren vill hitta lopp med koppling till en stad eller närliggande stad.
-    month: Användaren vill hitta lopp efter månad.
-    race_type: Användaren vill hitta en viss lopptyp.
-    category: Användaren vill hitta en viss distans eller kategori.
-    race_type_category: Användaren vill hitta en viss distans eller kategori inom en lopptyp.
-    race_type_county: Användaren vill hitta en viss lopptyp i en viss region.
-    race_type_month: Användaren vill hitta en viss lopptyp under en viss månad.
-    race_type_city: Användaren vill hitta en viss lopptyp med koppling till en viss stad.
+    county: Uživatel chce najít závody v jednom kraji nebo regionu.
+    city: Uživatel chce najít závody spojené s městem nebo blízkým městem.
+    month: Uživatel chce najít závody podle měsíce.
+    race_type: Uživatel chce najít konkrétní typ závodu.
+    category: Uživatel chce najít konkrétní vzdálenost nebo kategorii závodu.
+    race_type_category: Uživatel chce najít konkrétní vzdálenost nebo kategorii v rámci jednoho typu závodu.
+    race_type_county: Uživatel chce najít konkrétní typ závodu v jednom regionu.
+    race_type_month: Uživatel chce najít konkrétní typ závodu v jednom měsíci.
+    race_type_city: Uživatel chce najít konkrétní typ závodu spojený s jedním městem.
 browse_seo_indexing:
   county_pages:
     min_race_count: 5
@@ -872,8 +865,8 @@ browse_seo_indexing:
     allowed_labels:
     - 5 km
     - 10 km
-    - Halvmarathon
-    - Marathon
+    - Půlmaraton
+    - Maraton
     - 50 km
     - 100 km
     - 50 miles
@@ -887,8 +880,8 @@ browse_seo_indexing:
     allowed_labels:
     - 5 km
     - 10 km
-    - Halvmarathon
-    - Marathon
+    - Půlmaraton
+    - Maraton
     - 50 km
     - 100 km
     - 50 miles
@@ -912,140 +905,140 @@ browse_seo_indexing:
     - road
     - trail
 auth_pages:
-  confirm_success: Din e-postadress är nu bekräftad och ditt konto är aktivt.
-  confirm_ready: Du kan nu fortsätta att använda Loppkartan.
-  confirm_error: Kunde inte bekräfta e-postadressen.
-  reset_intro: Ange ett nytt lösenord för ditt konto.
-  reset_confirm_label: Bekräfta lösenord
-  reset_mismatch_error: Lösenorden matchar inte.
-  reset_invalid_link_error: Ogiltig eller saknad återställningslänk.
-  reset_success: Ditt lösenord har uppdaterats. Du kan nu logga in.
+  confirm_success: Vaše e-mailová adresa je nyní potvrzená a účet je aktivní.
+  confirm_ready: Teď můžete pokračovat v používání webu.
+  confirm_error: Nepodařilo se potvrdit e-mailovou adresu.
+  reset_intro: Zadejte nové heslo pro svůj účet.
+  reset_confirm_label: Potvrdit heslo
+  reset_mismatch_error: Hesla se neshodují.
+  reset_invalid_link_error: Neplatný nebo chybějící odkaz pro obnovu.
+  reset_success: Vaše heslo bylo aktualizováno. Nyní se můžete přihlásit.
 newsletter_popup:
-  email_placeholder: Din e-postadress
-  submit_button: Ge mig uppdateringarna
-  dismiss_button: Inte nu
-  invalid_email: Fyll i en giltig e-postadress.
-  submit_error: Det gick inte att spara din prenumeration just nu. Försök igen.
-  submitting_text: Sparar...
-  success_message: Tack! Du får snart loppuppdateringar i inkorgen.
-  privacy_note: Nya lopp, datumändringar och utvalda erbjudanden. Avsluta när du vill.
-  close_aria_label: Stäng prenumerationsruta
+  email_placeholder: Váš e-mail
+  submit_button: Chci dostávat novinky
+  dismiss_button: Teď ne
+  invalid_email: Zadejte prosím platnou e-mailovou adresu.
+  submit_error: Předplatné se teď nepodařilo uložit. Zkuste to prosím znovu.
+  submitting_text: Ukládáme...
+  success_message: Děkujeme! Aktualizace závodů brzy dorazí do vaší schránky.
+  privacy_note: Nové závody, změny termínů a vybrané nabídky. Odběr můžete kdykoli zrušit.
+  close_aria_label: Zavřít okno newsletteru
   benefits:
-    new_races: Nya lopp först
-    date_changes: Datumändringar direkt
-    selected_offers: Utvalda erbjudanden
-    similar_races: Liknande lopp nära dig
-    local_picks: Fler lopp i närheten
-    opening_reminders: Påminnelser innan platserna tar slut
-    race_updates: Uppdateringar om just detta lopp
-    nearby_races: Lopp över gränsen och nära dig
+    new_races: Nové závody jako první
+    date_changes: Změny termínů hned
+    selected_offers: Vybrané nabídky
+    similar_races: Podobné závody ve vašem okolí
+    local_picks: Další závody poblíž
+    opening_reminders: Připomínky, než se místa zaplní
+    race_updates: Aktualizace k tomuto závodu
+    nearby_races: Závody za hranicemi i poblíž vás
   generic:
-    eyebrow: Missa inte nästa lopp
-    title: Få nya lopp och datumändringar innan alla andra
-    body: Prenumerera på vårt nyhetsbrev och få nya lopp, uppdaterade datum och handplockade tips i {country} direkt till din inkorg.
+    eyebrow: Nenechte si ujít další závod
+    title: Získejte nové závody a změny termínů dřív než ostatní
+    body: Přihlaste se k odběru newsletteru a dostávejte nové závody, aktualizované termíny a vybrané tipy v {country} přímo do schránky.
   race_detail:
-    eyebrow: Bevaka detta lopp
-    title: Vill du följa {race_name}?
-    body: Prenumerera för att få uppdateringar om {race_name}, liknande lopp i {county} och viktiga förändringar skickade direkt till din inkorg.
+    eyebrow: Sledujte tento závod
+    title: Chcete dostávat novinky o {race_name}?
+    body: Přihlaste se a dostávejte aktualizace o {race_name}, podobné závody v {county} a důležité změny přímo do schránky.
   browse_category:
-    eyebrow: Mer av rätt lopp
-    title: Missa inte nya {category}-lopp
-    body: Vi skickar ut nya {category}-lopp, relevanta alternativ i närheten och viktiga datum så att du slipper leta manuellt.
+    eyebrow: Více správných závodů
+    title: Nenechte si ujít nové závody pro {category}
+    body: Posíláme nové závody pro {category}, relevantní blízké alternativy a důležitá data, abyste nemuseli vše hledat ručně.
   browse_category_type:
-    eyebrow: Mer av rätt lopp
-    title: Få fler {race_type}-lopp inom {category}
-    body: Prenumerera för att få fler {race_type}-lopp inom {category}, liknande lopp i närheten och datumändringar direkt till inkorgen.
+    eyebrow: Více správných závodů
+    title: Získejte více závodů typu {race_type} v kategorii {category}
+    body: Přihlaste se k odběru a dostávejte více závodů typu {race_type} v kategorii {category}, podobné blízké akce a změny termínů přímo do schránky.
   browse_county:
-    eyebrow: Lokala lopp först
-    title: Få fler lopp i {county}
-    body: Håll koll på nya lopp, uppdaterade datum och smarta tips för {county} utan att behöva kolla kalendern hela tiden.
+    eyebrow: Lokální závody jako první
+    title: Získejte více závodů v {county}
+    body: Sledujte nové závody, aktualizované termíny a užitečné tipy pro {county} bez neustálého kontrolování kalendáře.
   browse_city:
-    eyebrow: Lokala lopp först
-    title: Vill du ha fler lopp i {city}?
-    body: Prenumerera och få nya lopp, närliggande alternativ och viktiga datum för {city} skickade direkt till din inkorg.
+    eyebrow: Lokální závody jako první
+    title: Chcete více závodů v {city}?
+    body: Přihlaste se a dostávejte nové závody, blízké alternativy a důležitá data pro {city} přímo do schránky.
   browse_type:
-    eyebrow: Rätt loppstil
-    title: Få fler {race_type}-lopp i inkorgen
-    body: Vi skickar nya {race_type}-lopp, liknande alternativ och viktiga datum så att du kan agera innan platserna försvinner.
+    eyebrow: Správný styl závodu
+    title: Získejte více závodů typu {race_type} do schránky
+    body: Posíláme nové závody typu {race_type}, podobné alternativy a důležitá data, abyste mohli reagovat dřív, než zmizí volná místa.
   browse_month:
-    eyebrow: Planera säsongen
-    title: Få de bästa loppen i {month} först
-    body: När lopp i {month} öppnar, flyttas eller blir extra intressanta får du veta det direkt i inkorgen.
+    eyebrow: Naplánujte sezonu
+    title: Získejte nejlepší závody v {month} jako první
+    body: Když se závody v {month} otevřou, přesunou nebo začnou být obzvlášť zajímavé, dozvíte se to hned v e-mailu.
   browse_neighboring:
-    eyebrow: Bredda kalendern
-    title: Få lopp från närliggande länder också
-    body: Prenumerera för att få nya lopp, smarta gränsnära tips och datumändringar från {region} direkt till din inkorg.
+    eyebrow: Rozšiřte si kalendář
+    title: Dostávejte i závody ze sousedních zemí
+    body: Přihlaste se a dostávejte nové závody, chytré přeshraniční tipy a změny termínů z {region} přímo do schránky.
   browse_neighboring_country:
-    eyebrow: Bredda kalendern
-    title: Få fler lopp i {region}
-    body: Vi skickar ut nya lopp, datumändringar och relevanta alternativ nära Sverige när något intressant dyker upp i {region}.
+    eyebrow: Rozšiřte si kalendář
+    title: Získejte více závodů v {region}
+    body: Posíláme nové závody, změny termínů a relevantní blízké alternativy, když se v {region} objeví něco zajímavého.
 privacy_page:
-  title: Integritetspolicy
-  meta_description: Integritetspolicy och information om hur LoppKartan hanterar personuppgifter och cookies.
-  last_updated_label: Senast uppdaterad
+  title: Zásady ochrany osobních údajů
+  meta_description: Zásady ochrany osobních údajů a informace o tom, jak Běžecký kalendář pracuje s osobními údaji a cookies.
+  last_updated_label: Naposledy aktualizováno
   last_updated_date: 27 mars 2026
-  contact_intro: 'För frågor som rör integritet och personuppgifter kan du kontakta oss på:'
-  contact_email: loppkartan@gmail.com
+  contact_intro: 'S dotazy týkajícími se soukromí a osobních údajů nás můžete kontaktovat na:'
+  contact_email: info@bezeckykalendar.com
   sections:
-  - title: 1. Information vi samlar in
-    intro: 'Vi samlar in information som du lämnar direkt till oss när du:'
+  - title: 1. Jaké informace shromažďujeme
+    intro: 'Shromažďujeme informace, které nám přímo poskytujete, když:'
     bullets:
-    - Skapar ett konto
-    - Skickar in information om lopp
-    - Publicerar inlägg i forumet
-    - Kontaktar oss
-  - title: 2. Cookies och spårning
-    intro: 'Vi använder cookies för att:'
+    - Vytváříte účet
+    - Odesíláte informace o závodu
+    - Publikujete příspěvky ve fóru
+    - Kontaktujete nás
+  - title: 2. Cookies a měření
+    intro: 'Cookies používáme k tomu, abychom:'
     bullets:
-    - Komma ihåg dina inställningar
-    - Hålla dig inloggad och spara din session
-    - Analysera trafik och användning av webbplatsen
-    - Visa relevanta annonser och förbättra innehållet
-  - title: 3. Hur vi använder din information
-    intro: 'Din information hjälper oss att:'
+    - si pamatovali vaše nastavení
+    - udrželi vaše přihlášení a relaci
+    - analyzovali návštěvnost a používání webu
+    - zobrazovali relevantní reklamu a zlepšovali obsah
+  - title: 3. Jak vaše informace používáme
+    intro: 'Vaše informace nám pomáhají:'
     bullets:
-    - Tillhandahålla och förbättra våra tjänster
-    - Skicka viktiga uppdateringar och notiser
-    - Svara på frågor och supportärenden
-    - Förebygga bedrägerier och missbruk
-  - title: 4. Dina rättigheter
-    intro: 'Enligt GDPR har du rätt att:'
+    - poskytovat a zlepšovat naše služby
+    - posílat důležité aktualizace a upozornění
+    - odpovídat na dotazy a podporu
+    - předcházet podvodům a zneužití
+  - title: 4. Vaše práva
+    intro: 'Podle GDPR máte právo:'
     bullets:
-    - Begära tillgång till dina personuppgifter
-    - Rätta felaktiga eller ofullständiga uppgifter
-    - Begära att dina uppgifter raderas
-    - Invända mot viss behandling av personuppgifter
-    - Begära dataportabilitet
-  - title: 5. Kontakta oss
-    intro: Om du har frågor om hur vi behandlar personuppgifter eller använder cookies är du alltid välkommen att höra av dig.
+    - požádat o přístup ke svým osobním údajům
+    - opravit nepřesné nebo neúplné údaje
+    - požádat o výmaz svých údajů
+    - vznést námitku proti určitému zpracování osobních údajů
+    - požádat o přenositelnost dat
+  - title: 5. Kontakt
+    intro: Pokud máte otázky k tomu, jak zpracováváme osobní údaje nebo používáme cookies, kdykoli se nám ozvěte.
 accessibility:
-  main_navigation_label: Huvudnavigation
-  breadcrumb_label: Brödsmulor
-  back_to_top_label: Till toppen
+  main_navigation_label: Hlavní navigace
+  breadcrumb_label: Drobečková navigace
+  back_to_top_label: Zpět nahoru
   social_facebook_label: Facebook
   social_instagram_label: Instagram
   social_youtube_label: YouTube
   social_tiktok_label: TikTok
 home_tools:
   measure_route:
-    description: Mät en tänkt runda och få en snabb uppskattning av distansen innan du ger dig ut.
+    description: Změřte si plánovanou trasu a získejte rychlý odhad vzdálenosti ještě před vyběhnutím.
   training_plans:
-    description: Hitta träningsupplägg för olika mål, nivåer och lopp så att du kan planera din väg framåt.
+    description: Najděte tréninkové plány pro různé cíle, úrovně i závody a lépe si naplánujte další kroky.
   racetime_estimator:
-    description: Uppskatta en rimlig sluttid utifrån tidigare resultat och jämför olika målsättningar.
+    description: Odhadněte realistický cílový čas podle předchozích výsledků a porovnejte různé cíle.
   pace_calculator:
-    description: Omvandla fart, tempo och sluttid mellan vanliga distanser när du planerar träning eller lopp.
-missing_race: Saknar du ett lopp? Lägg till det här!
-add_race_mp_title: Lägg till ditt lopp
-neighboring_countries_title: Lopp i Sverige och närliggande länder
-neighboring_countries_title_specific_country: Lopp i {country_name}
-neighboring_countries_description: Här är lopp som hålls i närliggande länder.
-neighboring_countries_description_specific_country: Här listar vi löplopp som hålls i {country_name}.
-neighboring_countries_neighbors_native: Närliggande länder
-neighboring_countries_all_neighbors_native: Alla närliggande länder
-section_race_card_header_nieghbors_default: Sverige och närliggande länder
+    description: Převádějte rychlost, tempo a cílový čas mezi běžnými vzdálenostmi při plánování tréninku nebo závodu.
+missing_race: Chybí tu váš závod? Přidejte ho sem!
+add_race_mp_title: Přidejte svůj závod
+neighboring_countries_title: Závody v sousedních zemích
+neighboring_countries_title_specific_country: Závody v {country_name}
+neighboring_countries_description: Tady najdete závody pořádané v sousedních zemích.
+neighboring_countries_description_specific_country: Tady najdete běžecké závody pořádané v {country_name}.
+neighboring_countries_neighbors_native: Sousední země
+neighboring_countries_all_neighbors_native: Všechny sousední země
+section_race_card_header_nieghbors_default: Česko a sousední země
 browse_neighboring:
-  title: Utforska lopp i närliggande länder
-  meta_description: Hitta lopp i närliggande länder nära dig. Utforska efter land för att upptäcka löplopp över gränserna.
-neighboring_races_title: Lopp i närliggande länder
-neighboring_countries_show_all: Visa alla
+  title: Objevujte závody v sousedních zemích
+  meta_description: Najděte závody v okolních zemích. Procházejte podle země a objevujte běžecké závody za hranicemi.
+neighboring_races_title: Závody v sousedních zemích
+neighboring_countries_show_all: Zobrazit vše

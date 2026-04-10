@@ -2,16 +2,17 @@
 import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
 import AuxiliaryPageIntro from '../../components/AuxiliaryPageIntro.astro';
 import MeasureRouteIsland from '../../components/MeasureRouteIsland';
-import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../../lib/content';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const pageTitle = String(content.measure_route_title ?? content.navigation?.['measure-route'] ?? 'Measure your route');
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(content.measure_route_description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'measure-route' });
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'measure-route' });
 const center = (content.mapbox_center ?? {}) as { latitude?: number; longitude?: number };
 const fallbackZoom = Number.parseInt(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '6'), 10);
 ---
@@ -24,6 +25,7 @@ const fallbackZoom = Number.parseInt(String(content.race_page_map_zoom ?? conten
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
   schemaType="WebApplication"
 >

@@ -40,7 +40,7 @@ import { RACE_LIST_PAGE_SIZE } from '../../../../../lib/raceListConfig';
 import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../../../lib/raceListSsg';
 
 export async function getStaticPaths() {
-  const country = 'se';
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'en');
   const paths: { params: { raceList: string; scope: string; sub: string } }[] = [];
   const overviewData = await getBrowseOverviewData({ countryCode: country, locale: 'en', content });
@@ -135,7 +135,7 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const { raceList, scope, sub } = Astro.params;
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);

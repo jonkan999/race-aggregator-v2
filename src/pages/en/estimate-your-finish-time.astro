@@ -2,17 +2,18 @@
 import AuxiliaryLayout from '../../layouts/AuxiliaryLayout.astro';
 import AuxiliaryPageIntro from '../../components/AuxiliaryPageIntro.astro';
 import RaceTimeEstimatorIsland from '../../components/RaceTimeEstimatorIsland';
-import { alternateAuxiliaryPageHref } from '../../lib/auxiliaryPages';
+import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../../lib/content';
 import lookupData from '../../data/tools/lookupTable.json';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'en';
 const content = loadIndexYaml(country, locale);
 const pageTitle = String(content.racetime_estimator_title ?? content.navigation?.['racetime-estimator'] ?? 'Estimate your finish time');
 const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(' | ');
 const description = String(content.racetime_estimator_description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'racetime-estimator' });
+const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'racetime-estimator' });
 const halfMarathonLabel = String(content.pace_table_header_half ?? 'Half Marathon');
 const marathonLabel = String(content.pace_table_header_full ?? 'Marathon');
 const lookupTable = Array.isArray((lookupData as { data?: unknown[] }).data)
@@ -28,6 +29,7 @@ const lookupTable = Array.isArray((lookupData as { data?: unknown[] }).data)
   locale={locale}
   content={content}
   alternateHref={alternateHref}
+  canonicalPath={canonicalPath}
   breadcrumbLabel={pageTitle}
   schemaType="WebApplication"
 >

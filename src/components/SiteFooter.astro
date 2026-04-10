@@ -30,6 +30,13 @@ const privacyLabel = String(footer.privacy ?? '');
 const copyrightYear = String(footer.copyright_year ?? '');
 const siteName = String(footer.site_name ?? '');
 const rightsText = String(footer.rights_text ?? '');
+const addRaceHref = auxiliaryPageHref({ country, locale, content, pageKey: 'add-race' });
+const measureRouteHref = auxiliaryPageHref({ country, locale, content, pageKey: 'measure-route' });
+const trainingPlansHref = auxiliaryPageHref({ country, locale, content, pageKey: 'training-plans' });
+const paceCalculatorHref = auxiliaryPageHref({ country, locale, content, pageKey: 'pace-calculator' });
+const raceTimeEstimatorHref = auxiliaryPageHref({ country, locale, content, pageKey: 'racetime-estimator' });
+const aboutHref = auxiliaryPageHref({ country, locale, content, pageKey: 'about-us' });
+const contactHref = auxiliaryPageHref({ country, locale, content, pageKey: 'contact' });
 const privacyHref = auxiliaryPageHref({ country, locale, content, pageKey: 'privacy' });
 ---
 
@@ -42,7 +49,7 @@ const privacyHref = auxiliaryPageHref({ country, locale, content, pageKey: 'priv
           <a href={href(slugify(nav['race-list'] ?? 'races', cc))}>{nav['race-list']}</a>
         </li>
         <li>
-          <a href={href(slugify(nav['add-race'] ?? '', cc))}>{nav['add-race']}</a>
+          <a href={addRaceHref}>{nav['add-race']}</a>
         </li>
       </ul>
     </div>
@@ -50,16 +57,16 @@ const privacyHref = auxiliaryPageHref({ country, locale, content, pageKey: 'priv
       <h3 class="footer-heading">{toolsHeading}</h3>
       <ul class="footer-links">
         <li>
-          <a href={href(slugify(nav['measure-route'] ?? '', cc))}>{nav['measure-route']}</a>
+          <a href={measureRouteHref}>{nav['measure-route']}</a>
         </li>
         <li>
-          <a href={href(slugify(nav['training-plans'] ?? '', cc))}>{nav['training-plans']}</a>
+          <a href={trainingPlansHref}>{nav['training-plans']}</a>
         </li>
         <li>
-          <a href={href(slugify(nav['pace-calculator'] ?? '', cc))}>{nav['pace-calculator']}</a>
+          <a href={paceCalculatorHref}>{nav['pace-calculator']}</a>
         </li>
         <li>
-          <a href={href(slugify(nav['racetime-estimator'] ?? '', cc))}>{nav['racetime-estimator']}</a>
+          <a href={raceTimeEstimatorHref}>{nav['racetime-estimator']}</a>
         </li>
       </ul>
     </div>
@@ -67,10 +74,10 @@ const privacyHref = auxiliaryPageHref({ country, locale, content, pageKey: 'priv
       <h3 class="footer-heading">{aboutHeading}</h3>
       <ul class="footer-links">
         <li>
-          <a href={href(slugify(nav['about-us'] ?? '', cc))}>{nav['about-us']}</a>
+          <a href={aboutHref}>{nav['about-us']}</a>
         </li>
         <li>
-          <a href={href(slugify(nav['contact'] ?? '', cc))}>{nav['contact']}</a>
+          <a href={contactHref}>{nav['contact']}</a>
         </li>
         <li>
           <a href={privacyHref}>{privacyLabel}</a>

@@ -8,7 +8,7 @@ import {
   getBrowseOverviewHref,
 } from '../../../lib/raceBrowse';
 
-const country = 'se';
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale = 'en' as const;
 const content = loadIndexYaml(country, locale);
 const overviewHref = getBrowseOverviewHref(country, locale, content);
