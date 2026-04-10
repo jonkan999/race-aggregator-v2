@@ -45,6 +45,7 @@ jobs:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID || secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ matrix.vercelProjectId }}
+      MARKET_CODE: ${{ matrix.marketCode }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -73,6 +74,14 @@ jobs:
         run: |
           test -n "$VERCEL_TOKEN" || { echo "Missing GitHub secret VERCEL_TOKEN"; exit 1; }
           test -n "$VERCEL_ORG_ID" || { echo "Missing GitHub variable or secret VERCEL_ORG_ID"; exit 1; }
+          test -n "$MARKET_CODE" || { echo "Missing matrix MARKET_CODE"; exit 1; }
+
+      - name: Show deploy target
+        if: ${{ matrix.configured }}
+        run: |
+          echo "Deploying market: $MARKET_CODE"
+          echo "Vercel project: $VERCEL_PROJECT_ID"
+          echo "Production domain: ${{ matrix.productionDomain }}"
 
       - name: Link workspace to Vercel project
         if: ${{ matrix.configured }}
