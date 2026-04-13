@@ -10,6 +10,7 @@ import { resolveMarketDataRoot } from './market';
 import { RACE_LIST_PAGE_SIZE } from './raceListConfig';
 import { isDomesticOrigin } from './neighboringSelection';
 import type { RaceListRow, RaceTranslationRow } from './raceListRow';
+import { compareRaceRowsByRelevantDate } from './upcomingRaceWindow';
 
 export type SsgRaceRow = RaceListRow;
 
@@ -61,26 +62,13 @@ export function defaultUpcomingRaceListFilters(now = new Date()): RaceListSnapsh
   };
 }
 
-function firstRaceDateValue(raw: unknown): string | null {
-  if (!Array.isArray(raw) || raw.length === 0) return null;
-  const first = raw[0];
-  if (!Array.isArray(first) || typeof first[0] !== 'string') return null;
-  const candidate = first[0].trim();
-  if (!/^\d{8}$/.test(candidate)) return null;
-  return candidate;
-}
-
-function compareRaceRowsByDateThenDomain(a: SsgRaceRow, b: SsgRaceRow): number {
-  const da = firstRaceDateValue(a.race_dates);
-  const db = firstRaceDateValue(b.race_dates);
-  if (da && db) {
-    if (da !== db) return da.localeCompare(db);
-  } else if (da) {
-    return -1;
-  } else if (db) {
-    return 1;
-  }
-  return a.domain_name.localeCompare(b.domain_name, 'sv');
+function compareRaceRowsByDateThenDomain(
+  a: SsgRaceRow,
+  b: SsgRaceRow,
+  startComparable?: string | null,
+  endComparable?: string | null,
+): number {
+  return compareRaceRowsByRelevantDate(a, b, startComparable, endComparable);
 }
 
 function dataCountryDir(code: string): string {
@@ -347,6 +335,11 @@ export async function getRaceListSnapshot(
   const pending = (async () => {
     const all = await getAllRaceListRows(countryCode);
     const filtered = applySnapshotFilters(all.rows, countryCode, filters);
+    const startComparable = normalizeComparableDate(filters.dateFrom);
+    const endComparable = normalizeComparableDate(filters.dateTo);
+    filtered.sort((left, right) =>
+      compareRaceRowsByDateThenDomain(left, right, startComparable, endComparable),
+    );
     const start = (safePage - 1) * safePageSize;
     return {
       rows: filtered.slice(start, start + safePageSize),

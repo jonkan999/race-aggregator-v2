@@ -13,6 +13,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - UI copy: `data/countries/{code}/index.yaml`
 - English copy: `data/countries/{code}/merged_index_int.yaml`
+- Training-plan payloads: `data/countries/{code}/json/training_plans_processed_{locale}.json`
 - Collector-owned source of truth: `race-collector-v2/data/countries/{code}/`; this repo consumes synced mirrors for launched or launch-ready markets
 - Production deployment registry: `config/deploy-markets.json`
 - Newsletter popup copy: `newsletter_popup` in the same per-country YAML files

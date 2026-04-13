@@ -34,6 +34,11 @@ const SWEDISH_ENGLISH_SEED_TERMS = [
   'running calendar in sweden',
   'loppkartan',
 ];
+const SEED_LEAK_IGNORED_PATHS = [
+  'footer.social_links',
+  'contact.content.email.address',
+  'privacy_page.contact_email',
+];
 const EXPECTED_SEO_GENERATOR_VERSION = 'browse-seo-cache-v2';
 
 function loadYaml(filePath) {
@@ -65,6 +70,45 @@ function collectLeafPaths(value, prefix = '', result = new Set()) {
   return result;
 }
 
+function collectTextLeaves(value, prefix = '', result = []) {
+  if (Array.isArray(value)) {
+    for (const entry of value) {
+      collectTextLeaves(entry, prefix ? `${prefix}[]` : '[]', result);
+    }
+    return result;
+  }
+
+  if (value && typeof value === 'object') {
+    for (const [key, nested] of Object.entries(value)) {
+      const nextPrefix = prefix ? `${prefix}.${key}` : key;
+      collectTextLeaves(nested, nextPrefix, result);
+    }
+    return result;
+  }
+
+  if (prefix && typeof value === 'string' && value.trim()) {
+    result.push({ path: prefix, text: value.trim().toLowerCase() });
+  }
+
+  return result;
+}
+
+function textValue(value) {
+  return String(value ?? '').trim();
+}
+
+function trainingPlansEnabled(content) {
+  return Boolean(
+    textValue(content?.navigation?.['training-plans']) ||
+      textValue(content?.training_plans?.title),
+  );
+}
+
+function trainingPlansLocaleCode(countryCode, nativeContent, locale) {
+  if (locale === 'en') return 'en';
+  return textValue(nativeContent?.country_language_code) || countryCode;
+}
+
 function loadJson(filePath, fallback = {}) {
   if (!fs.existsSync(filePath)) return fallback;
   try {
@@ -83,6 +127,14 @@ function entryText(entry) {
   ]
     .join(' ')
     .toLowerCase();
+}
+
+function shouldIgnoreSeedLeakPath(pathKey) {
+  return SEED_LEAK_IGNORED_PATHS.some((prefix) => pathKey === prefix || pathKey.startsWith(`${prefix}.`));
+}
+
+function looksLikeUrlOrEmail(value) {
+  return /^https?:\/\//i.test(value) || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
 function collectInvalidSeoCacheEntries(cache, predicate) {
@@ -109,6 +161,8 @@ for (const countryCode of countryCodes) {
 
   const nativeContent = loadYaml(nativeFile);
   const englishContent = loadYaml(englishFile);
+  const trainingPlansAreEnabled =
+    trainingPlansEnabled(nativeContent) || trainingPlansEnabled(englishContent);
 
   for (const content of [nativeContent, englishContent]) {
     for (const key of Object.keys(content)) {
@@ -132,6 +186,90 @@ for (const countryCode of countryCodes) {
     failures.push(
       `${countryCode}: missing in index.yaml -> ${englishOnly.slice(0, 20).join(', ')}`,
     );
+  }
+
+  if (countryCode !== 'se') {
+    const nativeSeedLeakPaths = collectTextLeaves(nativeContent)
+      .filter(({ path, text }) => !shouldIgnoreSeedLeakPath(path) && !looksLikeUrlOrEmail(text))
+      .filter(({ text }) => SWEDISH_NATIVE_SEED_TERMS.some((term) => text.includes(term)))
+      .slice(0, 20)
+      .map(({ path }) => path);
+    if (nativeSeedLeakPaths.length > 0) {
+      failures.push(
+        `${countryCode}: native index.yaml still contains Sweden-seed copy -> ${nativeSeedLeakPaths.join(', ')}`,
+      );
+    }
+
+    const englishSeedLeakPaths = collectTextLeaves(englishContent)
+      .filter(({ path, text }) => !shouldIgnoreSeedLeakPath(path) && !looksLikeUrlOrEmail(text))
+      .filter(({ text }) => SWEDISH_ENGLISH_SEED_TERMS.some((term) => text.includes(term)))
+      .slice(0, 20)
+      .map(({ path }) => path);
+    if (englishSeedLeakPaths.length > 0) {
+      failures.push(
+        `${countryCode}: merged_index_int.yaml still contains Sweden-seed copy -> ${englishSeedLeakPaths.join(', ')}`,
+      );
+    }
+  }
+
+  const finalRacesPath = path.join(countryDir, 'final_races.json');
+  const finalRaces = loadJson(finalRacesPath, []);
+  if (Array.isArray(finalRaces) && finalRaces.length > 0) {
+    const countyKeys = [...new Set(
+      finalRaces
+        .map((row) => textValue(row?.county))
+        .filter(Boolean),
+    )];
+
+    if (countyKeys.length > 0) {
+      const nativeCountyMapping = nativeContent?.county_mapping ?? {};
+      const englishCountyMapping = englishContent?.county_mapping ?? {};
+
+      const missingNativeCountyMappings = countyKeys
+        .filter((countyLabel) => !textValue(nativeCountyMapping?.[countyLabel]))
+        .slice(0, 20);
+      if (missingNativeCountyMappings.length > 0) {
+        failures.push(
+          `${countryCode}: native county_mapping missing raw county labels -> ${missingNativeCountyMappings.join(', ')}`,
+        );
+      }
+
+      const missingEnglishCountyMappings = countyKeys
+        .filter((countyLabel) => !textValue(englishCountyMapping?.[countyLabel]))
+        .slice(0, 20);
+      if (missingEnglishCountyMappings.length > 0) {
+        failures.push(
+          `${countryCode}: English county_mapping missing raw county labels -> ${missingEnglishCountyMappings.join(', ')}`,
+        );
+      }
+    }
+  }
+
+  if (trainingPlansAreEnabled) {
+    const expectedTrainingPlanFiles = [
+      path.join(
+        countryDir,
+        'json',
+        `training_plans_processed_${trainingPlansLocaleCode(countryCode, nativeContent, 'native')}.json`,
+      ),
+      path.join(countryDir, 'json', 'training_plans_processed_en.json'),
+    ];
+
+    for (const filePath of expectedTrainingPlanFiles) {
+      if (!fs.existsSync(filePath)) {
+        failures.push(
+          `${countryCode}: training plans UI is enabled but missing collector-synced artifact ${path.relative(countryDir, filePath)}`,
+        );
+        continue;
+      }
+
+      const payload = loadJson(filePath, null);
+      if (!payload || typeof payload !== 'object' || typeof payload.plans !== 'object') {
+        failures.push(
+          `${countryCode}: invalid training plans payload ${path.relative(countryDir, filePath)} (expected object with plans)`,
+        );
+      }
+    }
   }
 
   if (countryCode !== 'se') {

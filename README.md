@@ -288,6 +288,7 @@ The deploy step uses `--archive=tgz` intentionally so Vercel receives the prebui
 Verify the market locally before letting CI ship it:
 
 ```bash
+npm run validate:content -- cz
 MARKET_CODE=cz npm run build
 MARKET_CODE=cz npm run test:e2e
 ```
@@ -340,6 +341,7 @@ Mapbox is optional for smoke tests (the map shows a YAML message if `PUBLIC_MAPB
 - `data/countries/{code}/index.yaml` — native language strings and config (include **`alternate_locale_link_text`** for the nav link to the English list when `merged_index_int.yaml` exists).
 - `data/countries/{code}/merged_index_int.yaml` — English strings for that market (same key for the link back to the native list).
 - `data/countries/{code}/final_races*.json` — seed/export inputs (managed long-term by **race-collector-v2**).
+- `data/countries/{code}/json/training_plans_processed_{locale}.json` — collector-owned training-plan payloads. When a market exposes training plans in YAML, ship both the native-language file and `training_plans_processed_en.json` through the collector sync.
 - `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides for browse landings (county, city, month, race type, distance/category, and valid race type + category combinations). Missing entries fall back to deterministic template copy. Rebuilds prune obsolete keys, refresh stale generator versions, and rewrite current aliases so old market-seed copy cannot silently survive.
 
 In the intended workflow, those market files are collector-owned sync artifacts. Keep launched markets here, but avoid treating this repo as the editing surface for onboarding or in-progress market content.

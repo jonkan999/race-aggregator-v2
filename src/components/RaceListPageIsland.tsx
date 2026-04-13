@@ -32,6 +32,10 @@ import {
 } from '../lib/neighboringSelection';
 import { getBrowserMarketRouteTargets, resolveRaceDetailHref } from '../lib/marketRoutes';
 import { pickTranslation, type RaceListRow } from '../lib/raceListRow';
+import {
+  compareRaceRowsByRelevantDate,
+  relevantRaceDate,
+} from '../lib/upcomingRaceWindow';
 
 export type PaginationCopy = {
   results_text?: string;
@@ -104,13 +108,6 @@ function monthDateRangeYyyyMmDd(month: string, now = new Date()): {
   };
 }
 
-function firstYyyymmdd(dates: unknown): string | null {
-  if (!Array.isArray(dates) || dates.length === 0) return null;
-  const first = dates[0];
-  if (Array.isArray(first) && typeof first[0] === 'string') return first[0];
-  return null;
-}
-
 function formatYyyymmdd(raw: string, monthShort: Record<string, string>): string {
   if (!raw || raw.length < 8) return raw;
   const m = raw.slice(4, 6);
@@ -124,8 +121,9 @@ function yyyymmddToIso(raw: string | null | undefined): string | undefined {
   return `${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}`;
 }
 
-function comparableTodayYyyymmdd(): string {
-  return todayYyyyMmDd().replaceAll('-', '');
+function comparableFilterDate(raw: string): string | null {
+  const normalized = raw.replaceAll('-', '').trim();
+  return /^\d{8}$/.test(normalized) ? normalized : null;
 }
 
 function placeholderImage(domain: string, raceType: string | null): string {
@@ -471,6 +469,8 @@ export default function RaceListPageIsland(props: {
   const [total, setTotal] = useState(() => initialTotal);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const dateStartComparable = useMemo(() => comparableFilterDate(dateFrom), [dateFrom]);
+  const dateEndComparable = useMemo(() => comparableFilterDate(dateTo), [dateTo]);
 
   const [mobileMapOpen, setMobileMapOpen] = useState(false);
   const [desktopMapOpen, setDesktopMapOpen] = useState(true);
@@ -673,13 +673,30 @@ export default function RaceListPageIsland(props: {
       if (!rowMatchesDistanceRange(row, pMin, pMax)) return false;
       return true;
     });
+    filtered.sort((left, right) =>
+      compareRaceRowsByRelevantDate(left, right, dateStartComparable, dateEndComparable),
+    );
 
     const start = (page - 1) * RACE_LIST_PAGE_SIZE;
     return {
       total: filtered.length,
       rows: filtered.slice(start, start + RACE_LIST_PAGE_SIZE),
     };
-  }, [localRows, categoryKey, categoryFilterOptions, raceType, county, month, dateFrom, dateTo, page, city, countryCode]);
+  }, [
+    localRows,
+    categoryKey,
+    categoryFilterOptions,
+    raceType,
+    county,
+    month,
+    dateFrom,
+    dateTo,
+    page,
+    city,
+    countryCode,
+    dateStartComparable,
+    dateEndComparable,
+  ]);
 
   const filteredHighlightedRows = useMemo(() => {
     const sourceRows = localRows ?? highlightedRows ?? null;
@@ -725,9 +742,26 @@ export default function RaceListPageIsland(props: {
       if (!rowMatchesDistanceRange(row, pMin, pMax)) return false;
       return true;
     });
+    filtered.sort((left, right) =>
+      compareRaceRowsByRelevantDate(left, right, dateStartComparable, dateEndComparable),
+    );
 
     return filtered;
-  }, [localRows, highlightedRows, categoryKey, categoryFilterOptions, raceType, county, month, dateFrom, dateTo, city, countryCode]);
+  }, [
+    localRows,
+    highlightedRows,
+    categoryKey,
+    categoryFilterOptions,
+    raceType,
+    county,
+    month,
+    dateFrom,
+    dateTo,
+    city,
+    countryCode,
+    dateStartComparable,
+    dateEndComparable,
+  ]);
 
   const needsRemote = useMemo(() => {
     if (localRows) return false;
@@ -890,27 +924,19 @@ export default function RaceListPageIsland(props: {
   const highlightedEntries = useMemo<HighlightedRaceEntry[]>(() => {
     if (!enableHighlightedRaces || !selectedRacesTitle.trim()) return [];
 
-    const today = comparableTodayYyyymmdd();
     const highlightSource = filteredHighlightedRows ?? rows;
     return highlightSource
       .filter((row) => isSuppliedRace(row))
-      .sort((left, right) => {
-        const leftDate = firstYyyymmdd(left.race_dates) ?? '99999999';
-        const rightDate = firstYyyymmdd(right.race_dates) ?? '99999999';
-
-        const leftUpcoming = leftDate >= today ? 0 : 1;
-        const rightUpcoming = rightDate >= today ? 0 : 1;
-        if (leftUpcoming !== rightUpcoming) return leftUpcoming - rightUpcoming;
-        if (leftUpcoming === 0) return leftDate.localeCompare(rightDate);
-        return rightDate.localeCompare(leftDate);
-      })
+      .sort((left, right) =>
+        compareRaceRowsByRelevantDate(left, right, dateStartComparable, dateEndComparable),
+      )
       .slice(0, 9)
       .map((row) => {
         const image = highlightedImage(row);
         const name = pickName(row);
         const typeLocal = pickTypeLocal(row);
         const distVerbose = pickDistanceVerbose(row);
-        const rawDate = firstYyyymmdd(row.race_dates);
+        const rawDate = relevantRaceDate(row.race_dates, dateStartComparable, dateEndComparable);
         const distParts = splitDistanceVerbose(distVerbose).map((segment) =>
           formatDistanceSegment(segment, verboseLocalDistanceMapping),
         );
@@ -939,6 +965,8 @@ export default function RaceListPageIsland(props: {
   }, [
     altPrefix,
     countyLabel,
+    dateEndComparable,
+    dateStartComparable,
     enableHighlightedRaces,
     monthMappingShort,
     countryCode,
@@ -1322,7 +1350,7 @@ export default function RaceListPageIsland(props: {
               !error &&
               rows.map((r, index) => {
                 const name = pickName(r);
-                const rawDate = firstYyyymmdd(r.race_dates);
+                const rawDate = relevantRaceDate(r.race_dates, dateStartComparable, dateEndComparable);
                 const dateDisp = rawDate ? formatYyyymmdd(rawDate, monthMappingShort) : '';
                 const img =
                   primaryRaceImageUrl(r.payload) ?? placeholderImage(r.domain_name, r.race_type);

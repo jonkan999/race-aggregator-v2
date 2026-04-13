@@ -17,11 +17,11 @@ category_mapping:
     range:
     - 9
     - 11
-  Půlmaraton:
+  Half Marathon:
     range:
     - 20
     - 22
-  Maraton:
+  Marathon:
     range:
     - 40
     - 44
@@ -68,7 +68,7 @@ distance_mapping:
   relay: Relay
 verbose_local_distance_mapping:
   half marathon: Half Marathon
-  marathon: Maraton
+  marathon: Marathon
   fallback: Mixed distance
 distance_units:
 - range:
@@ -78,8 +78,8 @@ distance_units:
 - range:
   - 41.9
   - 42.4
-  label: Maraton
-country_code: cz
+  label: Marathon
+country_code: sk
 country_language_code: en
 navigation:
   main: All
@@ -93,7 +93,7 @@ navigation:
   about-us: About Us
   contact: Contact Us
 race_list_name: Race Calendar
-alternate_locale_link_text: Čeština
+alternate_locale_link_text: Slovenčina
 auxiliary_pages:
   race-page-preview: Preview Race
   terms-of-service: Terms of Service
@@ -101,8 +101,8 @@ auxiliary_pages:
   about-us: About Us
   contact: Contact Us
   faq: FAQ
-page_name: Běžecký kalendář
-base_url: https://bezeckykalendar.com/
+page_name: Slovakia Race Calendar
+base_url: https://terminovkabehov.com
 supabase_auth_email:
   primary_color: '#00925e'
   shared:
@@ -121,17 +121,17 @@ supabase_auth_email:
     body: You requested to change the email address for your account on {site_name}. Confirm the change by clicking the button below.
     button_label: Confirm new email address
     ignore_note: If you did not request the change, you can ignore this email.
-title: Everything about running in
-country_native: Czech Republic
-country: Czech Republic
-meta_description: The most comprehensive running calendar and community for races in the Czech Republic
-country_language: Czech
+title: Everything about running in Slovakia
+country_native: Slovensko
+country: Slovakia
+meta_description: Most comprehensive running calendar and community in Slovakia
+country_language: Slovak
 local_name_for_race: race
 main_bullet_1: Find your next race
 main_bullet_2: ' - Or add it here'
 main_bullet_3: Browse our marketplace
 main_bullet_4: Read the latest news or join the discussion in our forum
-description: This community-driven initiative aims to bring together runners from across the Czech Republic. The platform is still growing, but with your help it can become a great home for the local running community.
+description: This community-driven platform helps runners across Slovakia discover races, share information, and run more often.
 cta_search: Find Race
 cta_add: Add a Race
 selected_races_title: Featured Races
@@ -142,8 +142,8 @@ race_local: Race
 running_local: Running
 alt_prefix: 'Image for '
 race_list_title: The most complete list of marathons, half marathons, and other running competitions
-race_list_meta_description_1: Find running races and event dates from across the Czech Republic
-race_list_meta_description_2: ✔️Complete race calendar ✔️Trail, backyard, road, and marathon events ✔️Races from all over the country
+race_list_meta_description_1: Find running races and race dates across Slovakia
+race_list_meta_description_2: ✔️Comprehensive race calendar ✔️Trail, backyard, and road races ✔️Events from all over Slovakia
 race_list_data_error: Could not load races. Please try again later.
 race_list_remote_required: For more pages or filters the database (Supabase) is required. Add PUBLIC_SUPABASE_URL and PUBLIC_SUPABASE_PUBLISHABLE_KEY to your .env file.
 race_list_empty: No races matched your filters.
@@ -152,7 +152,7 @@ race_card_cta_text: More info & registration
 section_race_card_category_prefix: All
 section_race_card_category_suffix: races
 section_race_card_header_separator: in
-section_race_card_header_region_default: Czech Republic
+section_race_card_header_region_default: Slovakia
 section_race_card_header_date_range_from: 'from '
 section_race_card_header_date_range_to: 'to '
 section_race_card_header_date_range_single: 'in '
@@ -191,20 +191,14 @@ month_mapping_short:
   '12': Dec
 county_label_text: All regions
 county_mapping:
-  Hlavní město Praha: Prague
-  Středočeský kraj: Central Bohemian Region
-  Jihočeský kraj: South Bohemian Region
-  Plzeňský kraj: Pilsen Region
-  Karlovarský kraj: Karlovy Vary Region
-  Ústecký kraj: Usti nad Labem Region
-  Liberecký kraj: Liberec Region
-  Královéhradecký kraj: Hradec Kralove Region
-  Pardubický kraj: Pardubice Region
-  Kraj Vysočina: Vysocina Region
-  Jihomoravský kraj: South Moravian Region
-  Olomoucký kraj: Olomouc Region
-  Zlínský kraj: Zlin Region
-  Moravskoslezský kraj: Moravian-Silesian Region
+  Region of Bratislava: Bratislava Region
+  Region of Trnava: Trnava Region
+  Region of Trenčín: Trencin Region
+  Region of Nitra: Nitra Region
+  Region of Žilina: Zilina Region
+  Region of Banská Bystrica: Banska Bystrica Region
+  Region of Prešov: Presov Region
+  Region of Košice: Kosice Region
 category_label_text: Race Category
 Ultra Marathon:
   range:
@@ -226,11 +220,11 @@ pagination:
   page_text: Page
   of_text: of
 add_race_title: Add a new race
-add_race_meta_description: Add your race to Běžecký kalendář
+add_race_meta_description: Add your race to the Slovakia race calendar
 map_message: Place your race by clicking on the map
 mapbox_center:
-  latitude: 49.8175
-  longitude: 15.473
+  latitude: 48.7
+  longitude: 19.7
 mapbox_zoom: '6'
 date_text: Date
 multi_day_toggle: Multi-day event
@@ -253,7 +247,7 @@ place_placeholder: e.g. Central Park, New York
 organizer_label: 'Organizer:'
 organizer_contact_placeholder: Running Club
 organizer_contact_label: 'Contact email:'
-organizer_mail_placeholder: info@organizer.com
+organizer_mail_placeholder: info@terminovkabehov.com
 website_label: 'Organizer website:'
 website_placeholder: https://organizer.com/
 start_time_label: 'Start time:'
@@ -342,10 +336,10 @@ seo_templates:
     default: All races
   paragraph_templates:
     category_race_location: Find {category} {race_type}races in {location}.
-    category_race: Explore {category} {race_type}races across the Czech Republic.
+    category_race: Explore {category} {race_type}races across Slovakia.
     category_location: Discover {category} races in {location}.
     race_location: See all {race_type}races in {location}.
-    category_only: Find {category} races across the Czech Republic.
+    category_only: Find {category} races across Slovakia.
     race_only: Explore {race_type}races in all regions.
     location_only: See all types of races in {location}.
     default_suffix: Here you will find dates, distances and all the information you need to plan your next race.
@@ -397,7 +391,7 @@ seo_templates:
       paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
 seo_generation:
   browse_model: gpt-5-mini
-  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in the Czech Republic. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
+  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Slovakia. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
   browse_guidance:
     county: User wants races in one region.
     city: User wants races connected to a city or nearby city.
@@ -621,7 +615,7 @@ map:
   map: map
   list: list
 forum:
-  title: Forum - Talk about running and running life with other runners in the Czech Republic
+  title: Forum - talk about running and racing with other runners in Slovakia
   meta_description: Talk about running and running life with other runners in our forum. Everything about training, competitions, injuries, nutrition, clothes, gear and much more.
   categories:
   - name: Training
@@ -674,42 +668,42 @@ forum:
   reply_title: Reply to thread
   showing_threads_count: Showing {x} of {y} threads
 about_us:
-  title: About Běžecký kalendář
-  meta_description: Běžecký kalendář - your guide to running in the Czech Republic
+  title: About the Slovakia Race Calendar
+  meta_description: Slovakia Race Calendar - your guide to running in Slovakia
   content:
-    intro: Welcome to Běžecký kalendář - a running calendar built to help runners in the Czech Republic discover races more easily.
+    intro: Welcome to the Slovakia Race Calendar - a practical platform for runners in Slovakia.
     mission: Our mission is to make it easy for runners to find and share information about races, training and everything related to running.
-    story: Běžecký kalendář was created by runners for runners. We saw the need for a modern and useful place where the local running community could gather.
+    story: The Slovakia Race Calendar was started in 2023 by runners for runners. We saw the need for a modern and user-friendly platform where the running community could gather.
     features:
     - title: Complete Race List
-      description: We gather races from across the Czech Republic in one place - from small local events to larger destination races.
+      description: We gather races from across Slovakia in one place - from smaller local events to larger international races.
     - title: Community-Driven
       description: Our platform is driven by runners like you. Anyone can contribute with information about races and participate in discussions.
     - title: Free Tools
       description: We offer useful tools like pace calculators, training programs and route planning - completely free.
-    closing: We keep improving the platform based on feedback from runners. If you have suggestions, we would love to hear from you.
+    closing: We continue to develop the platform based on feedback from our users. Do you have suggestions for improvements? Please contact us!
 contact:
   title: Contact Us
-  meta_description: Contact Běžecký kalendář - we are here to help
+  meta_description: Contact the Slovakia Race Calendar - we are here to help you
   content:
     intro: 'We would love to hear from you! Here are different ways to reach us:'
     email:
       title: Email
-      address: loppkartan@gmail.com
+      address: info@terminovkabehov.com
       description: We normally respond within 24 hours on weekdays.
     social:
       title: Social Media
       description: 'Follow us on social media for the latest news and updates:'
     feedback:
       title: Feedback
-      description: We appreciate all feedback that helps us improve Běžecký kalendář.
+      description: We appreciate all feedback that helps us improve the Slovakia Race Calendar.
 privacy_page:
   title: Privacy Policy
-  meta_description: Privacy policy and information about how Běžecký kalendář handles personal data and cookies.
+  meta_description: Privacy policy and information about how the Slovakia Race Calendar handles personal data and cookies.
   last_updated_label: Last updated
   last_updated_date: March 27, 2026
   contact_intro: 'For privacy-related questions and requests, please contact us at:'
-  contact_email: loppkartan@gmail.com
+  contact_email: info@terminovkabehov.com
   sections:
   - title: 1. Information We Collect
     intro: 'We collect information that you provide directly to us when you:'
@@ -757,7 +751,7 @@ pace_per_mile_header: Min/mile
 flat_time_header: Time (flat)
 flat_pace_per_km_header: Min/km (flat)
 flat_pace_per_mile_header: Min/mile (flat)
-hill_adjustment_header: Hilly adjustment
+hill_adjustment_header: Hilly adjustment 
 pace_calculator_title: Pace Converter
 pace_calculator_description: A simple tool for converting your running speed between different units
 pace_table_header_kph: Kilometers per hour
@@ -967,16 +961,16 @@ training_plans:
 footer:
   races_heading: Races
   tools_heading: Tools
-  about_heading: About Běžecký kalendář
+  about_heading: About the Slovakia Race Calendar
   privacy: Privacy Policy
   copyright_year: 2023-2025
-  site_name: Běžecký kalendář
+  site_name: Slovakia Race Calendar
   rights_text: All rights reserved.
   social_links:
-    facebook: ''
-    instagram: ''
-    youtube: ''
-    tiktok: ''
+    facebook: https://www.facebook.com/Loppkartan
+    instagram: https://www.instagram.com/Loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@Loppkartan
 accessibility:
   main_navigation_label: Main navigation
   breadcrumb_label: Breadcrumbs
@@ -1029,13 +1023,13 @@ home_tools:
     description: Convert pace, speed, and finish time across common race distances while planning training.
 missing_race: Missing a race? Add it here!
 add_race_mp_title: Add your race
-neighboring_countries_title: Races in the Czech Republic and neighboring countries
+neighboring_countries_title: Races in Slovakia and neighboring countries
 neighboring_countries_title_specific_country: Races in {country_name}
 neighboring_countries_description: Here are races held in neighboring countries.
 neighboring_countries_description_specific_country: Here we list races held in {country_name}.
 neighboring_countries_neighbors_native: Neighboring countries
 neighboring_countries_all_neighbors_native: All neighboring countries
-section_race_card_header_nieghbors_default: Czech Republic and neighboring countries
+section_race_card_header_nieghbors_default: Slovakia and neighboring countries
 browse_neighboring:
   title: Browse Races by Neighboring Countries
   meta_description: Find races in neighboring countries near you. Browse by country to discover running events across borders.

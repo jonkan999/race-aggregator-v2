@@ -48,6 +48,9 @@ The goal is to make the site **cost efficient, scalable, and reusable across mul
 - Must always come from:
   - `index.yaml` (per country)
   - Separate `index.yaml` for English/international
+- When onboarding or syncing a non-Swedish market, treat the YAML as incomplete until it has been reviewed for leftover Swedish seed copy.
+- Native route labels must be market-owned. Do not accept Swedish placeholder values for auxiliary routes, browse routes, or utility pages just because wrappers are generated from YAML.
+- Raw geography labels in synced race data must be normalized through market YAML. If `final_races.json` contains values such as `Region of ...`, ensure both native and English `county_mapping` translate those raw labels into market-appropriate display names before the market is considered ready.
 
 #### Race Data
 - Currently sourced from `.json`
@@ -130,6 +133,7 @@ The goal is to make the site **cost efficient, scalable, and reusable across mul
 - Maintain full feature parity with current site
 - Optimize for scalability and multi-market reuse
 - Keep the system clean, modular, and maintainable
+- For every new market sync, explicitly verify `index.yaml` and `merged_index_int.yaml` for source-market leakage in auxiliary pages, browse SEO copy, about/contact/privacy content, homepage helpers, and county mappings before shipping.
 
 ---
 

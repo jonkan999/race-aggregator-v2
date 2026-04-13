@@ -81,6 +81,89 @@ test('English race list shell renders', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
 });
 
+test('race list uses the next in-window date for card display and ordering', async ({ page }) => {
+  await page.route(
+    'https://race-aggregator-tests.supabase.co/rest/v1/rpc/get_races_list_page',
+    async (route) => {
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({
+          total: 2,
+          rows: [
+            {
+              id: 'history-row',
+              domain_name: 'window-race',
+              county: 'Uppsala',
+              race_type: 'road',
+              origin_country: 'se',
+              race_dates: [
+                ['20250520', '20250520'],
+                ['20260615', '20260615'],
+              ],
+              latitude: null,
+              longitude: null,
+              distance_m: [10000],
+              website: null,
+              payload: {
+                nearest_city: 'Uppsala',
+                location: 'Uppsala',
+                description: 'Window race description',
+              },
+              race_translations: [
+                {
+                  locale: 'sv',
+                  name: 'Window Race',
+                  type_local: 'Landsväg',
+                  distance_verbose: '10 km',
+                  description: 'Window race description',
+                },
+              ],
+            },
+            {
+              id: 'later-row',
+              domain_name: 'later-race',
+              county: 'Uppsala',
+              race_type: 'road',
+              origin_country: 'se',
+              race_dates: [
+                ['20250510', '20250510'],
+                ['20260620', '20260620'],
+              ],
+              latitude: null,
+              longitude: null,
+              distance_m: [10000],
+              website: null,
+              payload: {
+                nearest_city: 'Uppsala',
+                location: 'Uppsala',
+                description: 'Later race description',
+              },
+              race_translations: [
+                {
+                  locale: 'sv',
+                  name: 'Later Race',
+                  type_local: 'Landsväg',
+                  distance_verbose: '10 km',
+                  description: 'Later race description',
+                },
+              ],
+            },
+          ],
+        }),
+      });
+    },
+  );
+
+  await page.goto('/loppkalender/?county=uppsala');
+
+  const cards = page.locator('#race-cards-container .race-card[data-name]');
+  await expect(cards.first()).toHaveAttribute('data-name', 'Window Race');
+  await expect(cards.first()).toHaveAttribute('data-date', '20260615');
+  await expect(cards.nth(1)).toHaveAttribute('data-name', 'Later Race');
+  await expect(cards.nth(1)).toHaveAttribute('data-date', '20260620');
+});
+
 test('English home page renders', async ({ page }) => {
   await page.goto('/en/');
   await expect(page.getByRole('heading', { level: 1, name: /everything about running in sweden/i })).toBeVisible();

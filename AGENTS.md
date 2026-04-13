@@ -33,6 +33,14 @@ This repository is the Astro + Supabase migration of the live legacy project at 
 6. If you change build-time race data loading, preserve the “one snapshot export per country, then local reuse” contract and document it.
 7. Update [`README.md`](./README.md), [`PRD.md`](./PRD.md), and [`architecture.md`](./architecture.md) when architecture, setup, or SEO-visible behavior changes.
 
+## Market Onboarding Checklist
+
+- Treat a newly synced market as unfinished until both `index.yaml` and `merged_index_int.yaml` have been reviewed for leftover source-market copy.
+- Verify native auxiliary labels are actually localized before trusting generated slugs. Utility routes such as measure-route, training-plans, pace-calculator, privacy, contact, and browse overview must not inherit Swedish template text.
+- Check `browse_by_category`, `browse_*`, `seo_templates`, `about_us`, `contact`, `privacy_page`, tool pages, and any homepage helper copy for seed-language leakage.
+- Ensure `county_mapping` keys match the raw county labels present in `final_races.json`, and that both native and English mappings produce market-appropriate display names.
+- Run `npm run validate:content -- {code}` before calling a synced market “ready”. If validation fails on leaked source-market copy or missing county mappings, fix the collector-owned YAML before relying on the sync.
+
 ## Legacy Reference
 
 - Legacy repo: [`../race-aggregator`](../race-aggregator)

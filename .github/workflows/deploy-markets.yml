@@ -65,6 +65,10 @@ jobs:
         if: ${{ matrix.configured }}
         run: npm ci
 
+      - name: Validate synced market content
+        if: ${{ matrix.configured }}
+        run: npm run validate:content -- "$MARKET_CODE"
+
       - name: Install Vercel CLI
         if: ${{ matrix.configured }}
         run: npm install --global vercel@latest

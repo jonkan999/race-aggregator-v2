@@ -275,11 +275,12 @@ disclaimer_text_3: Chcete ke svému závodu doplnit ještě něco?
 disclaimer_text_4: ozvěte se a pokusíme se pomoci!
 race_page_visit_organizer_website: Na web pořadatele a registraci
 race_page_folder_name: stranky-zavodu
-race_page_alt_prefix: 'Bild till '
+race_page_alt_prefix: 'Obrázek pro '
 seo_county_folder_name: Kraje
 seo_cities_folder_name: Města
-popular_subcategories_title: Populära underkategorier
+popular_subcategories_title: Populární podkategorie
 important_keywords_racelist:
+- termínovka
 - běžecký kalendář
 - kalendář závodů
 - běžecké závody
@@ -431,7 +432,7 @@ race_page:
 map:
   show_map: Zobrazit mapu
   show_list: Zobrazit seznam
-  map: karta
+  map: mapa
   list: seznam
 forum:
   title: Fórum - Mluvte o běhání a běžeckém životě s ostatními běžci v Česku
@@ -540,7 +541,7 @@ pace_table_header_min_km: Minuty na kilometr
 pace_table_header_min_mile: Minuty na míli
 pace_table_header_5k: 5k
 pace_table_header_10k: 10k
-pace_table_header_half: Halvmaraton
+pace_table_header_half: Půlmaraton
 pace_table_header_full: Maraton
 pace_conversion_note: 1 kilometr za hodinu (km/h) = 0,62 míle za hodinu (mph)
 measure_route_title: Změřte svou trasu
@@ -571,7 +572,7 @@ training_plans:
       options:
         '5000': 5 km
         '10000': 10 km
-        '21097': Halvmaraton
+        '21097': Půlmaraton
         '42195': Maraton
     training_days:
       placeholder: Vyberte počet dnů
@@ -599,7 +600,7 @@ training_plans:
   workout_types:
     easy: Lehký běh
     tempo: Tempový běh
-    intervals: Intervaller
+    intervals: Intervaly
     long: Dlouhý běh
     rest: Odpočinek
   messages:
@@ -648,7 +649,7 @@ training_plans:
             description: Lehký vytrvalostní běh
           wednesday:
             type: intervals
-            description: Intervaller
+            description: Intervaly
           friday:
             type: tempo
             description: Tempový běh
@@ -725,7 +726,7 @@ training_plans:
     warmup_label: Zahřátí
     main_workout_label: Popis tréninku
     cooldown_label: Zklidnění
-    intensity_label: Tempo
+    intensity_label: Intenzita
     duration_label: Čas
   regenerate:
     button_text: Vygenerovat novou variantu
@@ -976,7 +977,7 @@ privacy_page:
   title: Zásady ochrany osobních údajů
   meta_description: Zásady ochrany osobních údajů a informace o tom, jak Běžecký kalendář pracuje s osobními údaji a cookies.
   last_updated_label: Naposledy aktualizováno
-  last_updated_date: 27 mars 2026
+  last_updated_date: 27. března 2026
   contact_intro: 'S dotazy týkajícími se soukromí a osobních údajů nás můžete kontaktovat na:'
   contact_email: info@bezeckykalendar.com
   sections:

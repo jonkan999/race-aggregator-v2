@@ -1,0 +1,1039 @@
+type_options:
+  road: Cestný beh
+  terrain: Terén
+  trail: Trail
+  track: Dráha
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Štafeta
+  time: Časový pretek
+  other: Ostatné
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Polmaratón:
+    range:
+    - 20
+    - 22
+  Maratón:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 meter:
+    range:
+    - 1.5
+    - 1.5
+  3000 meter:
+    range:
+    - 3
+    - 3
+  5000 meter:
+    range:
+    - 5
+    - 5
+  10000 meter:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Časový pretek
+  relay: Štafeta
+verbose_local_distance_mapping:
+  half marathon: Polmaratón
+  marathon: Maratón
+  fallback: Zmiešané vzdialenosti
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Polmaratón
+- range:
+  - 41.9
+  - 42.4
+  label: Maratón
+country_code: sk
+country_language_code: sk
+navigation:
+  main: Všetko
+  race-list: Termínovka
+  add-race: Pridať pretek
+  forum: Fórum
+  measure-route: Zmerať trasu
+  training-plans: Tréningové plány
+  pace-calculator: Prevodník tempa
+  racetime-estimator: Odhad cieľového času
+  about-us: O nás
+  contact: Kontakt
+race_list_name: Termínovka
+auxiliary_pages:
+  race-page-preview: Náhľad preteku
+  terms-of-service: Podmienky používania
+  privacy-policy: Zásady ochrany osobných údajov
+  about-us: O nás
+  contact: Kontakt
+  faq: Časté otázky
+page_name: Termínovka behov
+base_url: https://terminovkabehov.com
+title: Všetko o behu na Slovensku
+country_native: Slovensko
+meta_description: Najkompletnejší bežecký termínovka behov a komunita na Slovensku
+country: Slovakia
+country_language: Slovak
+local_name_for_race: pretek
+main_bullet_1: Nájdite svoje ďalšie preteky
+main_bullet_2: ' - alebo ich sem pridajte'
+main_bullet_3: Objavte preteky po celej krajine
+main_bullet_4: Sledujte novinky alebo sa zapojte do diskusie vo fóre
+description: Táto komunitná platforma pomáha bežcom na Slovensku objavovať preteky, zdieľať informácie a behať častejšie.
+cta_search: Nájsť pretek
+cta_add: Pridať pretek
+selected_races_title: Vybrané preteky
+cta_all_races: Zobraziť všetky preteky
+show_local: Zobraziť
+race_local: preteky
+running_local: beh
+alt_prefix: 'Obrázok pre '
+race_list_title: Najkompletnejší prehľad maratónov, polmaratónov a ďalších behov na Slovensku
+race_list_meta_description_1: Nájdite bežecké preteky a termíny po celom Slovensku
+race_list_meta_description_2: ✔️Kompletný bežecký termínovka ✔️Trailové, backyard aj cestné preteky ✔️Preteky z celého Slovenska
+race_card_cta_text: Viac informácií a registrácia
+section_race_card_category_prefix: Všetky
+section_race_card_category_suffix: preteky
+section_race_card_header_separator: i
+section_race_card_header_region_default: Slovensko
+section_race_card_header_date_range_from: 'od '
+section_race_card_header_date_range_to: 'do '
+section_race_card_header_date_range_single: 'i '
+filter_date_from: Od
+filter_date_to: Do
+filter_county: Všetky kraje
+filter_race_type: Všetky typy pretekov
+filter_categories: Všetky kategórie
+filter_months: Celý rok
+filter_distance: Všetky vzdialenosti
+month_mapping:
+  '01': Január
+  '02': Február
+  '03': Marec
+  '04': Apríl
+  '05': Máj
+  '06': Jún
+  '07': Júl
+  08: August
+  09: September
+  '10': Október
+  '11': November
+  '12': December
+month_mapping_short:
+  '01': jan
+  '02': feb
+  '03': mar
+  '04': apr
+  '05': máj
+  '06': jún
+  '07': júl
+  08: aug
+  09: sep
+  '10': okt
+  '11': nov
+  '12': dec
+county_label_text: Všetky kraje
+county_mapping:
+  Region of Bratislava: Bratislavský kraj
+  Region of Trnava: Trnavský kraj
+  Region of Trenčín: Trenčiansky kraj
+  Region of Nitra: Nitriansky kraj
+  Region of Žilina: Žilinský kraj
+  Region of Banská Bystrica: Banskobystrický kraj
+  Region of Prešov: Prešovský kraj
+  Region of Košice: Košický kraj
+category_label_text: Kategória pretekov
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Na stránku preteku
+map_toggle_desktop: Zobraziť mapu
+map_toggle_desktop_active: Skryť mapu
+map_toggle_mobile: Mapa
+map_toggle_mobile_list: Zoznam
+race_page_map_zoom: '6'
+pagination:
+  results_text: z
+  events_text: pretekov
+  previous_text: Predchádzajúca
+  next_text: Ďalšia
+  page_text: Strana
+  of_text: z
+add_race_title: Pridať nový pretek
+add_race_meta_description: Pridajte svoj pretek do termínovka behov
+map_message: Umiestnite svoj pretek kliknutím na mapu
+mapbox_center:
+  latitude: 48.7
+  longitude: 19.7
+mapbox_zoom: '6'
+date_text: Dátum
+multi_day_toggle: Viacdňový pretek
+end_date_text: Dátum konca
+type_text: Povrch / typ preteku
+type_select_placeholder: Vyberte povrch / typ preteku
+name_label: 'Názov preteku:'
+name_placeholder: napríklad Košický maratón
+distance_label: 'Vzdialenosti:'
+distance_placeholder: Zadajte vzdialenosť v km
+add_distance_button: Pridať
+half_marathon_button: Polmaratón
+marathon_button: Maratón
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Miesto konania preteku:'
+place_placeholder: napríklad Hlavná ulica, Košice
+organizer_label: 'Organizátor:'
+organizer_contact_placeholder: Bežecký klub
+organizer_contact_label: 'E-mail kontaktnej osoby:'
+organizer_mail_placeholder: info@terminovkabehov.com
+website_label: 'Web organizátora:'
+website_placeholder: https://example.sk/
+start_time_label: 'Čas štartu:'
+start_time_placeholder: 09:00
+price_range_label: 'Cenové rozpätie:'
+price_range_placeholder: napríklad 10-35 EUR
+add_race_description_label: Popis preteku
+add_race_description_placeholder: Mestský maratón vedie centrom mesta a ponúka rýchlu, prevažne rovinatú trať...
+add_race_additional_label: Ďalšie dôležité informácie
+add_race_additional_placeholder: napríklad štart a cieľ, štartové vlny alebo zázemie
+add_race_images_label: Nahrajte obrázky (odporúčané sú aspoň 4)
+choose_pictures_button: Vybrať obrázky
+drag_drop_text: Presuňte sem obrázky alebo kliknite na výber
+clear_images_button: Vymazať obrázky
+clear_form_button: Vymazať formulár
+preview_button: Náhľad
+submit_button: Odoslať
+preview_title: Náhľad
+preview_exit_button: Zavrieť náhľad
+optional_label: Voliteľné
+comments_suffix: Komentáre
+cta_forum: Zobraziť všetky príspevky
+race_page_preview_title: Takto bude váš pretek vyzerať
+edit_race_button: Upraviť
+race_page_description_label: Popis preteku
+race_page_course_highlights_label: Zaujímavosti na trati
+race_page_additional_label: Ďalšie informácie
+race_page_detailed_info_label: Podrobné informácie
+race_page_social_links_label: Sledujte pretek
+race_page_place_label: 'Miesto:'
+race_page_distances_label: 'Vzdialenosti:'
+race_page_surface_label: 'Povrch:'
+race_page_date_label: 'Dátum:'
+race_page_estimated_date_label: Odhadovaný dátum
+race_page_estimated_disclaimer: Pre tento pretek zatiaľ nemáme potvrdený oficiálny dátum.
+race_page_registration_link: Odkaz na registráciu
+disclaimer_text_1: 'Všetky informácie na tejto stránke vychádzajú z verejne dostupných zdrojov. Robíme maximum pre ich aktuálnosť, ale
+
+  nemôžeme zaručiť, že je všetko úplne správne. Ak si všimnete nepresnosť,
+
+  '
+disclaimer_link: kontaktujte nás
+disclaimer_text_2: radi ju čo najskôr opravíme.
+disclaimer_text_3: Chcete k svojmu preteku doplniť ešte niečo?
+disclaimer_text_4: ozvite sa a pokúsime sa pomôcť!
+race_page_visit_organizer_website: Na web organizátora a registráciu
+race_page_folder_name: stranky-pretekov
+race_page_alt_prefix: 'Obrázok pre '
+seo_county_folder_name: Kraje
+seo_cities_folder_name: Mestá
+popular_subcategories_title: Populárne podkategórie
+important_keywords_racelist:
+- termínovka
+- kalendár behov
+- termínovka behov
+- bežecké preteky
+- bežecký kalendár
+- preteky v behu
+- zoznam behov
+- zoznam pretekov
+seo_templates:
+  title_parts:
+    category: '{category} preteky'
+    race_type: '{race_type}'
+    location: v {location}
+    default: Všetky preteky
+  paragraph_templates:
+    category_race_location: Nájdite {category} {race_type} preteky v {location}.
+    category_race: Objavte {category} {race_type} preteky na celom Slovensku.
+    category_location: Objavte {category} preteky v {location}.
+    race_location: Zobraziť všetky {race_type} preteky v {location}.
+    category_only: Nájdite {category} preteky na celom Slovensku.
+    race_only: Objavte {race_type} preteky vo všetkých regiónoch.
+    location_only: Zobraziť všetky typy pretekov v {location}.
+    default_suffix: Tu nájdete dátumy, vzdialenosti a všetky informácie, ktoré potrebujete na plánovanie svojho ďalšieho preteku.
+  browse_page_templates:
+    county:
+      title: '{label} preteky | {site_name}'
+      meta_description: Prehliadajte si bežecké preteky v {label}. Porovnajte dátumy, vzdialenosti, formát pretekov a praktické informácie pred výberom svojho ďalšieho preteku.
+      h1: Preteky v {label}
+      paragraph: Táto stránka zhromažďuje bežecké preteky v {label}, aby bolo jednoduchšie porovnať dátumy, vzdialenosti, formát pretekov a praktické informácie na jednom mieste. Použite ju, keď chcete získať lepší prehľad pred výberom svojho ďalšieho preteku.
+    city:
+      title: '{label} preteky | {site_name}'
+      meta_description: Nájdite bežecké preteky spojené s {label}. Porovnajte dátumy, vzdialenosti, blízke alternatívy a praktické informácie pred svojím ďalším pretekom.
+      h1: Preteky v okolí {label}
+      paragraph: Táto mestská stránka vám pomôže prehliadať bežecké preteky spojené s {label}, vrátane blízkych alternatív, ktoré sú relevantné pri plánovaní pretekového dňa alebo cesty. Je vytvorená tak, aby bolo lokálne objavovanie pretekov rýchlejšie a jednoduchšie na porovnanie.
+    month:
+      title: '{label} preteky | {site_name}'
+      meta_description: Prehliadajte si bežecké preteky v {label_lower} v {market}. Porovnajte dátumy, vzdialenosti, typy pretekov a praktické informácie pri plánovaní sezóny.
+      h1: Preteky v {label}
+      paragraph: Táto stránka je určená pre bežcov, ktorí chcú vidieť kalendár mesiac po mesiaci a potrebujú rýchlejší spôsob porovnania toho, čo sa deje v {label_lower}. Pomáha zúžiť výber ešte predtým, než sa pustíte do vzdialeností, povrchov a miest konania.
+    race_type:
+      title: '{label} preteky v {market} | {site_name}'
+      meta_description: Prehliadajte si {label_lower} preteky v {market}. Porovnajte dátumy, vzdialenosti, lokality a praktické informácie pred výberom preteku, ktorý vám sadne.
+      h1: '{label} preteky v {market}'
+      paragraph: Táto stránka sa zameriava na {label_lower} preteky a poskytuje prehľadnejší pohľad vtedy, keď je formát pretekov rovnako dôležitý ako vzdialenosť. Použite ju na porovnanie možností medzi regiónmi, dátumami a praktickými detailmi bez toho, aby ste začínali od celého kalendára.
+    category:
+      title: '{label} preteky v {market} | {site_name}'
+      meta_description: Prehliadajte si {label} preteky v {market}. Porovnajte dátumy, typy pretekov, miesta a praktické informácie pred rozhodnutím o ďalšom štarte.
+      h1: '{label} preteky v {market}'
+      paragraph: Táto stránka podľa vzdialenosti a kategórie zhromažďuje preteky, ktoré zodpovedajú {label}, aby bolo jednoduchšie porovnať relevantné možnosti na jednom mieste. Je určená pre bežcov, ktorí chcú rýchlejšie prejsť od širokého prehliadania ku krátkemu zoznamu reálnych možností.
+    race_type_category:
+      title: '{label} preteky v {market} ({secondary_label}) | {site_name}'
+      meta_description: Prehliadajte si {label} preteky v {market} v rámci typu preteku {secondary_label_lower}. Porovnajte dátumy, miesta a praktické informácie pred výberom svojho ďalšieho preteku.
+      h1: '{label} preteky v {market} ({secondary_label})'
+      paragraph: Táto stránka zužuje kalendár na {label} preteky v rámci typu {secondary_label_lower}, čo je užitočné vtedy, keď výber ovplyvňuje vzdialenosť aj formát preteku. Použite ju na porovnanie podobných možností pred konečným rozhodnutím.
+    race_type_county:
+      title: '{secondary_label} preteky v {label} | {site_name}'
+      meta_description: Prehliadajte si {secondary_label_lower} preteky v {label}. Porovnajte dátumy, vzdialenosti a praktické informácie pred výberom svojho ďalšieho preteku.
+      h1: '{secondary_label} preteky v {label}'
+      paragraph: Táto stránka sa zameriava na {secondary_label_lower} preteky v {label}, aby bolo jednoduchšie porovnávať relevantnejšie možnosti v rámci rovnakého regiónu. Hodí sa vtedy, keď výber určujú geografia aj formát preteku.
+    race_type_month:
+      title: '{secondary_label} preteky v {label} | {site_name}'
+      meta_description: Prehliadajte si {secondary_label_lower} preteky v {label_lower}. Porovnajte dátumy, vzdialenosti a praktické informácie pri plánovaní sezóny.
+      h1: '{secondary_label} preteky v {label}'
+      paragraph: Táto stránka zhromažďuje {secondary_label_lower} preteky v {label_lower} pre bežcov, ktorí plánujú najmä podľa kalendára a sezóny. Pomáha porovnať podobné formáty pretekov ešte pred zúžením podľa miesta alebo vzdialenosti.
+    race_type_city:
+      title: '{secondary_label} preteky v okolí {label} | {site_name}'
+      meta_description: Prehliadajte si {secondary_label_lower} preteky spojené s {label}. Porovnajte dátumy, vzdialenosti a blízke alternatívy pred výberom svojho ďalšieho preteku.
+      h1: '{secondary_label} preteky v okolí {label}'
+      paragraph: Táto stránka zhromažďuje {secondary_label_lower} preteky spojené s {label}, aby bolo lokálne porovnávanie pretekov rýchlejšie. Hodí sa vtedy, keď hľadáte konkrétny formát preteku v blízkosti jedného mesta bez nutnosti začínať od celého kalendára.
+browse_by_category:
+  button: Prehliadať podľa kategórie
+  helper_text: Nájdite preteky pomocou preddefinovaných filtrov a kombinácií
+  overview: Prehľad
+  counties: Kraje
+  cities: Mestá
+  months: Mesiac
+  types: Typy pretekov
+  categories: Kategórie
+  neighboring: Susedné krajiny
+browse_overview:
+  title: Prehliadať všetky preteky
+  meta_description: Nájdite preteky podľa kraja, typu alebo kategórie
+browse_types:
+  title: Prehliadať podľa typu pretekov
+  meta_description: Nájdite preteky podľa typu preteku.
+browse_counties:
+  title: Prehliadať podľa kraja
+  meta_description: Nájdite preteky vo svojom kraji.
+browse_cities:
+  title: Prehliadať podľa mesta
+  meta_description: Nájdite preteky vo svojom meste.
+browse_categories:
+  title: Prehliadať podľa kategórie
+  meta_description: Nájdite preteky podľa vzdialenosti a kategórie.
+browse_months:
+  title: Prehliadať podľa mesiaca
+  meta_description: Nájdite preteky podľa mesiaca.
+auth_modal:
+  title_sign_in: Prihlásiť sa
+  title_create_account: Vytvoriť účet
+  title_reset_password: Obnoviť heslo
+  auth_unavailable: Overenie zatiaľ nie je nakonfigurované.
+  name_placeholder: Vaše meno
+  email_placeholder: Váš e-mail
+  password_placeholder: Heslo
+  submit_sign_in: Prihlásiť sa
+  submit_create_account: Vytvoriť účet
+  submit_reset_password: Poslať odkaz na obnovenie
+  create_account: Vytvoriť účet
+  forgot_password: Zabudli ste heslo?
+  back_to_login: Späť na prihlásenie
+  error_wrong_password: Nesprávne heslo
+  error_email_not_found: E-mailová adresa nebola nájdená
+  prompt_reset_password: Chcete obnoviť svoje heslo?
+  prompt_create_account: Chcete si vytvoriť účet s touto e-mailovou adresou?
+  already_logged_in: Už ste prihlásený ako
+  as_email: s e-mailom
+  continue_as_user: Pokračovať ako tento používateľ
+  logout_and_switch: Odhlásiť sa a zmeniť používateľa
+  account_created: Účet bol vytvorený!
+  account_created_details: Teraz ste prihlásený ako
+  verification_email_sent: Na váš e-mail bol odoslaný verifikačný odkaz
+  please_verify: Potvrďte svoju e-mailovú adresu
+  error_invalid_credential: Neplatný e-mail alebo heslo
+  create_account_prompt: Vytvoriť účet namiesto toho
+  error_too_many_requests: Príliš veľa pokusov. Skúste to prosím neskôr.
+  continue_with_google: Pokračovať cez Google
+  continue_with_google_create: Vytvoriť účet cez Google
+  google_in_progress: Pokračuje sa cez Google...
+  oauth_divider: alebo
+submission_flow:
+  logged_in_as: Prihlásený ako organizátor
+  submitting_new_race: odosiela sa nový pretek
+  new_account_created: Aby bolo možné pretek spravovať, musíte potvrdiť svoju e-mailovú adresu. Na zadaný e-mail bol odoslaný potvrdzovací odkaz.
+  password_reset_sent: Odkaz na obnovenie hesla bol odoslaný. Skontrolujte si doručenú poštu.
+  unexpected_error: Vyskytla sa chyba. Skúste to prosím znova.
+  processing_submission: Spracováva sa odoslanie...
+  race_exists: Pretek už v databáze existuje.
+  race_submitted: Pretek bol odoslaný!
+  submission_failed: Pretek sa nepodarilo odoslať. Skúste to prosím znova.
+  missing_fields: Niečo chýba. Uistite sa, že sú vyplnené všetky povinné polia a že je na mape vybrané miesto.
+race_page:
+  forum_section:
+    title: Otázky a odpovede
+    placeholder: Opýtajte sa organizátora...
+    submit_button: Odoslať otázku
+    login_prompt: Ak chcete položiť otázku, prihláste sa
+    empty_state: Zatiaľ tu nie sú žiadne otázky. Buďte prvý, kto sa opýta!
+    error_message_no_login: Ak chcete položiť otázku, prihláste sa alebo si vytvorte účet
+map:
+  show_map: Zobraziť mapu
+  show_list: Zobraziť zoznam
+  map: mapa
+  list: zoznam
+forum:
+  title: Fórum - diskutujte o behu a pretekoch s ďalšími bežcami na Slovensku
+  meta_description: Diskutujte o behu a bežeckom živote s ďalšími bežcami na našom fóre. Tréning, preteky, zranenia, výživa, oblečenie, výbava a omnoho viac.
+  categories:
+  - name: Tréning
+    slug: trening
+    description: Diskusie o tréningu a technike
+  - name: Preteky a podujatia
+    slug: preteky
+    description: Diskutujte o nadchádzajúcich pretekoch
+  - name: Zranenia a regenerácia
+    slug: zranenia
+    description: Pomoc so zraneniami a návratom k behu
+  - name: Trasy a mapy
+    slug: trasy
+    description: Diskutujte o trasách a mapách
+  - name: Cestovanie a beh
+    slug: cestovanie
+    description: Diskutujte o cestovaní a behu na cestách
+  - name: Strava a výživa
+    slug: vyziva
+    description: Diskutujte o strave a výžive
+  - name: Oblečenie, topánky a výbava
+    slug: vybava
+    description: Diskutujte o oblečení, topánkach a výbavení
+  - name: Kúpa a predaj
+    slug: kupa-predaj
+    description: Diskutujte o kúpe a predaji bežeckých produktov
+  - name: Ostatné
+    slug: ostatne
+    description: Všetko ostatné
+  empty_category_state: Zatiaľ tu nie sú žiadne vlákna. Rozbehnite diskusiu vytvorením prvého vlákna!
+  empty_state_thread: Zatiaľ tu nie sú žiadne príspevky. Buďte prvý, kto napíše!
+  empty_state: Zatiaľ tu nie sú žiadne príspevky. Buďte prvý, kto napíše!
+  reply_placeholder: Napíšte svoju odpoveď...
+  submit_button: Odoslať
+  login_prompt: Prihláste sa, ak sa chcete zapojiť do diskusie
+  new_thread_title_placeholder: Názov vášho nového vlákna
+  new_thread_content_placeholder: Napíšte svoj prvý príspevok...
+  create_thread_button: Vytvoriť nové vlákno
+  back_to_forum: ← Späť na fórum
+  back_to_category: '← Späť na kategóriu '
+  empty_thread_state: Zatiaľ tu nie sú žiadne príspevky. Buďte prvý, kto napíše!
+  posts_label: príspevky
+  reply_label: odpovede
+  thread_created_title: Ďakujeme, že ste vytvorili nové vlákno!
+  thread_created_message: Vaše vlákno bude čoskoro skontrolované a pridané na stránku.
+  thread_created_back_link: Späť na kategóriu
+  show_more_threads: Zobraziť viac vlákien
+  show_less_threads: Zobraziť menej vlákien
+  create_new_thread: Vytvoriť nové vlákno
+  reply_title: Odpovedať na vlákno
+  showing_threads_count: Zobrazuje sa {x} z {y} vlákien
+about_us:
+  title: O termínovka behov
+  meta_description: Termínovka behov - váš sprievodca behom na Slovensku
+  content:
+    intro: Vitajte v Termínovka behov - prehľadnej platforme pre bežcov na Slovensku.
+    mission: Naším cieľom je uľahčiť bežcom vyhľadávanie a zdieľanie informácií o pretekoch, tréningu a všetkom, čo súvisí s behom.
+    story: Termínovka behov vznikol z potreby mať moderné a užitočné miesto, kde slovenská bežecká komunita nájde preteky na jednom mieste.
+    features:
+    - title: Kompletný zoznam pretekov
+      description: Zhromažďujeme preteky z celého Slovenska na jednom mieste - od menších lokálnych behov až po veľké medzinárodné podujatia.
+    - title: Komunita bežcov
+      description: Platformu tvoria bežci pre bežcov. Každý môže prispieť informáciami o pretekoch a zapojiť sa do diskusie.
+    - title: Bezplatné nástroje
+      description: Ponúkame užitočné nástroje ako prevodník tempa, tréningové plány a meranie trás - úplne zadarmo.
+    closing: Platformu ďalej rozvíjame na základe spätnej väzby od používateľov. Ak máte návrhy na zlepšenie, budeme radi, keď sa nám ozvete.
+contact:
+  title: Kontakt
+  meta_description: Kontaktujte Termínovka behov - sme tu, aby sme vám pomohli
+  content:
+    intro: 'Radi sa vám ozveme! Tu sú rôzne spôsoby, ako nás kontaktovať:'
+    email:
+      title: E-mail
+      address: info@terminovkabehov.com
+      description: Zvyčajne odpovedáme do 24 hodín počas pracovných dní.
+    social:
+      title: Sociálne siete
+      description: 'Sledujte nás na sociálnych sieťach pre najnovšie novinky a aktualizácie:'
+    feedback:
+      title: Spätná väzba
+      description: Vážíme si každú spätnú väzbu, ktorá nám pomáha Kalendár behov zlepšovať.
+racetime_estimator_title: Odhad cieľového času
+racetime_estimator_description: Na základe predchádzajúceho preteku si môžete odhadnúť cieľový čas pre iné vzdialenosti.
+known_distance_label: Vyberte vzdialenosť, z ktorej už máte výsledok
+known_time_label: Zadajte svoj čas
+calculate_button_text: Vypočítať časy
+predicted_times_title: Odhadované časy
+distance_header: Vzdialenosť
+predicted_time_header: Odhadovaný čas
+hilly_course_label: Kopcovitá trať
+finish_time_header: Odhadovaný cieľový čas
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/mile
+flat_time_header: Čas (rovina)
+flat_pace_per_km_header: Min/km (rovina)
+flat_pace_per_mile_header: Min/míľa (rovina)
+hill_adjustment_header: Kopcovitá úprava
+pace_calculator_title: Prevodník tempa
+pace_calculator_description: Jednoduchý nástroj na prevod bežeckej rýchlosti medzi rôznymi jednotkami
+pace_table_header_kph: Kilometre za hodinu
+pace_table_header_mph: Míle za hodinu
+pace_table_header_min_km: Minúty na kilometer
+pace_table_header_min_mile: Minúty na míľu
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Polmaratón
+pace_table_header_full: Maratón
+pace_conversion_note: 1 kilometer za hodinu (km/h) = 0,62 míle za hodinu (mph)
+measure_route_title: Zmerať trasu
+measure_route_description: Klikaním do mapy označte body na trase. Celková vzdialenosť sa vypočíta automaticky.
+remove_last_point: Odstrániť posledný bod
+clear_route: Vymazať trasu
+total_distance: Celková vzdialenosť
+training_plans:
+  title: Tréningové plány
+  description: Vytvorte si tréningový plán na mieru podľa svojho cieľa
+  disclaimer_text_tp_1: Naše tréningové plány sú generované pomocou AI a následne prispôsobené vašim cieľom a preferenciám. Nezaručujeme, že budú perfektné alebo vhodné pre každého.
+  disclaimer_link_tp: Kontaktujte nás
+  disclaimer_text_tp_2: ak máte spätnú väzbu alebo návrhy na zlepšenie.
+  form:
+    race_date_label: Dátum preteku
+    plan_type_label: Typ plánu
+    target_distance_label: Cieľová vzdialenosť
+    target_time_label: Cieľový čas
+    training_days_label: Tréningové dni za týždeň
+    session_time_label: Čas na jeden tréning
+    is_hilly_label: Kopcovitý terén
+    hours_placeholder: Hodiny
+    minutes_placeholder: Minúty
+    seconds_placeholder: Sekundy
+    submit_button: Vygenerovať tréningový plán
+    target_distance:
+      placeholder: Vyberte vzdialenosť
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Polmaratón
+        '42195': Maratón
+    training_days:
+      placeholder: Vyberte počet dní
+      options:
+        '3': 3 dni
+        '4': 4 dni
+        '5': 5 dní
+        '6': 6 dní
+    session_time:
+      placeholder: Vyberte čas na jeden tréning
+      options:
+        30-45: 30-45 minút
+        45-60: 45-60 minút
+        60-90: 60-90 minút
+        90+: 90+ minút
+  results:
+    title: Váš tréningový plán
+    variations:
+      title: 'Vyberte variant, ktorý vám vyhovuje:'
+    plan_details:
+      duration_label: 'Dĺžka programu:'
+      weekly_distance_label: 'Týždenný objem:'
+    regenerate_button: Zobraziť ďalšie varianty
+    export_button: Exportovať do PDF
+  workout_types:
+    easy: Ľahký beh
+    tempo: Tempový beh
+    intervals: Intervaly
+    long: Dlhý beh
+    rest: Oddych
+  messages:
+    weeks: týždňov
+    week_label: Týždeň
+    hilly_terrain_note: prispôsobené kopcovitému terénu
+  plan_variation:
+    focus_label: Zameranie
+    weekly_structure_label: Týždenná štruktúra
+    distribution_label: Rozdelenie
+    sessions_per_week: tréningov za týždeň
+    select_button: Vybrať tento plán
+  errors:
+    loading_plans: Chyba pri načítaní tréningových plánov
+    required_fields: Vyplňte prosím všetky povinné polia
+    no_matching_plan: Nenašiel sa žiadny zodpovedajúci tréningový plán
+    no_matching_variations: Nenašli sa žiadne zodpovedajúce varianty
+    invalid_training_days: Počet tréningových dní nezodpovedá požiadavkám plánu
+  week: Týždeň
+  weeks: týždňov
+  hilly_terrain_note: prispôsobené kopcovitému terénu
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Budovanie základnej vytrvalosti
+        weekly_template:
+          monday:
+            type: easy
+            description: Ľahký vytrvalostný beh
+          wednesday:
+            type: tempo
+            description: Tempový beh
+          saturday:
+            type: long
+            description: Dlhý beh
+          sunday:
+            type: recovery
+            description: Regenerácia
+      build:
+        duration_percent: 40
+        focus: Vyššia intenzita a objem
+        weekly_template:
+          monday:
+            type: easy
+            description: Ľahký vytrvalostný beh
+          wednesday:
+            type: intervals
+            description: Intervaly
+          friday:
+            type: tempo
+            description: Tempový beh
+          sunday:
+            type: long
+            description: Dlhý beh
+      peak:
+        duration_percent: 15
+        focus: Vrcholná forma a špecifický tréning
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Kvalitný tréning
+          thursday:
+            type: tempo
+            description: Tempový beh
+          saturday:
+            type: long
+            description: Dlhý beh
+          sunday:
+            type: recovery
+            description: Regenerácia
+      taper:
+        duration_percent: 5
+        focus: Laďovanie formy
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Ľahký beh
+          thursday:
+            type: tempo
+            description: Krátky tempový beh
+          saturday:
+            type: easy
+            description: Veľmi ľahký beh
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min ľahký klus
+        cooldown: 5-10 min ľahký klus
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min postupné rozohriatie
+        cooldown: 10-15 min vyklusanie
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min vrátane bežeckej abecedy a rovinek
+        cooldown: 10-15 min ľahký klus
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min veľmi ľahký klus
+        cooldown: 5-10 min chôdza/ľahký klus
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min chôdza
+        cooldown: 5-10 min chôdza
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Rozohriatie
+    main_workout_label: Popis tréningu
+    cooldown_label: Ukľudnenie
+    intensity_label: Intenzita
+    duration_label: Čas
+  regenerate:
+    button_text: Vygenerovať nový variant
+    confirmation: Naozaj chcete vygenerovať nový variant?
+  weekdays:
+    monday: Pondelok
+    tuesday: Utorok
+    wednesday: Streda
+    thursday: Štvrtok
+    friday: Piatok
+    saturday: Sobota
+    sunday: Nedeľa
+footer:
+  races_heading: Preteky
+  tools_heading: Nástroje
+  about_heading: O termínovka behov
+  privacy: Zásady ochrany osobných údajov
+  copyright_year: 2023-{{CURRENT_YEAR}}
+  site_name: Termínovka behov
+  rights_text: Všetky práva vyhradené.
+  social_links:
+    facebook: https://www.facebook.com/loppkartan
+    instagram: https://www.instagram.com/loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@loppkartan
+trending_races_title: Trendujúce preteky
+trending_races_description: Tu sú preteky, ktoré v poslednom čase zaujali najviac slovenských bežcov.
+trending_races_views_last_30_days: zobrazení za posledných 30 dní
+trending_races_most_viewed: Najpopulárnejšie práve teraz
+races_views: zobrazení
+recent_races_title: Nedávno pridané preteky
+today: dnes
+yesterday: včera
+days_ago: dní dozadu
+newest_race_badge: Najnovšie pridané
+races_count: pretekov
+popular_counties_title: Nájdite preteky vo svojom kraji
+popular_cities_title: Nájdite preteky vo svojom meste
+all_counties: Zobraziť všetky kraje
+all_cities: Zobraziť všetky mestá
+category_header_1: Trailové preteky
+category_type_1: trail
+category_1_races_sub_title_1: Trail Marathon
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Trail Ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail Ultra 100 miles
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Cestné preteky
+category_type_2: road
+category_2_races_sub_title_1: Marathon
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Polmaratón
+category_2_races_sub_ref_2: polmaraton
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Zobraziť všetky preteky v
+tools_title: Nástroje pre váš ďalší pretek
+alternate_locale_link_text: English
+selected_races_top_title: Pretek týždňa
+race_list_data_error: Preteky sa nepodarilo načítať. Skúste to prosím neskôr.
+race_list_remote_required: Pre viac strán alebo filtrov je potrebná databáza (Supabase). Pridajte PUBLIC_SUPABASE_URL a PUBLIC_SUPABASE_PUBLISHABLE_KEY do svojho .env súboru.
+race_list_empty: Vašim filtrom nezodpovedajú žiadne preteky.
+race_list_loading: Načítava sa…
+map_markers_load_error: Nepodarilo sa načítať značky na mape.
+map_not_configured: Mapa nie je nakonfigurovaná (chýba kľúč mapy).
+add_race_remove_image_label: Odstrániť obrázok
+coordinates_display_prefix: Súradnice preteku
+add_race_upload_limit_message: Môžete nahrať už len {count} obrázkov.
+add_race_map_not_configured: Mapu sa momentálne nepodarilo načítať.
+race_page_registration_cta: Registrovať sa
+race_page_info_cta: Viac informácií
+race_page_registration_close_label: Registrácia končí
+race_page_pricing_title: Registrácia a ceny
+race_page_price_deadline_label: Platí do
+race_page_price_late_fee_label: Neskorá registrácia
+race_page_back_to_list: Späť na termínovka behov
+race_page_favorites_title: Nenechajte si ujsť aktualizácie preteku
+race_page_favorites_body: Vytvorte si účet a uložte si pretek medzi obľúbené, aby ste mohli dostávať aktualizácie, novinky a vybrané ponuky, keď budú obľúbené dostupné.
+race_page_favorites_cta: Uložiť pretek medzi obľúbené
+race_page_similar_title: Podobné preteky
+race_page_similar_body: Ďalšie preteky s podobnou vzdialenosťou, typom alebo blízkou lokalitou.
+race_page_discover_title: Objavte ďalšie preteky
+race_page_discover_county_link: Všetky preteky v {county}
+race_page_discover_type_link: Ďalšie preteky typu {type}
+race_page_discover_category_link: Ďalšie {category} preteky
+race_page_discover_type_county_link: '{type} preteky v {county}'
+race_page_discover_overview_link: Prehliadať všetky kategórie pretekov
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Dobrý deň!
+    closing_salutation: S pozdravom,
+    link_fallback_intro: 'Ak tlačidlo nefunguje, môžete skopírovať odkaz tu:'
+  confirm_signup:
+    body: Ďakujeme za registráciu na {site_name}. Potvrďte svoju e-mailovú adresu, aby ste aktivovali účet a mohli spravovať odoslané preteky.
+    button_label: Potvrdiť e-mailovú adresu
+    ignore_note: Ak ste účet nevytvorili vy, tento e-mail môžete ignorovať.
+  reset_password:
+    body: Dostali sme žiadosť o obnovenie hesla pre váš účet na {site_name}. Kliknutím na tlačidlo nižšie si zvolíte nové heslo.
+    button_label: Obnoviť heslo
+    ignore_note: Ak ste o to nežiadali, môžete tento e-mail ignorovať. Vaše heslo sa nezmení, kým si nevyberiete nové.
+  change_email:
+    body: Požiadali ste o zmenu e-mailovej adresy pre svoj účet na {site_name}. Potvrďte zmenu kliknutím na tlačidlo nižšie.
+    button_label: Potvrdiť novú e-mailovú adresu
+    ignore_note: Ak ste o zmenu nežiadali, môžete tento e-mail ignorovať.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Píšete nadčasový SEO text pre indexovateľné landing pages bežeckých pretekov. Píšte primárne pre ľudí a až sekundárne pre vyhľadávací zámer. Vráťte iba platný JSON. Text musí zostať nadčasový: nikdy nespomínajte aktuálny rok, aktuálne počty, obmedzené časové obdobie ani tvrdenia o čerstvosti. Vyhnite sa keyword stuffingu, hype štýlu, clickbaitu, superlatívom a neoveriteľným tvrdeniam. Každú stránku spravte jasne odlišnú podľa dodaného kontextu. Používajte prirodzenú slovenčinu vhodnú pre slovenský kalendár behov. Uprednostnite stručné titulky, stručné H1, meta description okolo 120-160 znakov, keď to dáva zmysel, a odsek s 2-3 krátkymi vetami.'
+  browse_guidance:
+    county: Používateľ chce nájsť preteky v jednom regióne.
+    city: Používateľ chce nájsť preteky spojené s mestom alebo blízkym mestom.
+    month: Používateľ chce nájsť preteky podľa mesiaca.
+    race_type: Používateľ chce nájsť konkrétny typ preteku.
+    category: Používateľ chce nájsť konkrétnu vzdialenosť alebo kategóriu preteku.
+    race_type_category: Používateľ chce nájsť konkrétnu vzdialenosť alebo kategóriu v rámci jedného typu preteku.
+    race_type_county: Používateľ chce nájsť konkrétny typ preteku v jednom regióne.
+    race_type_month: Používateľ chce nájsť konkrétny typ preteku v jednom mesiaci.
+    race_type_city: Používateľ chce nájsť konkrétny typ preteku spojený s jedným mestom.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_labels:
+    - 5 km
+    - 10 km
+    - Polmaratón
+    - Maratón
+    - 50 km
+    - 100 km
+    - 50 miles
+    - 100 miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    allowed_labels:
+    - 5 km
+    - 10 km
+    - Polmaratón
+    - Maratón
+    - 50 km
+    - 100 km
+    - 50 miles
+    - 100 miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+auth_pages:
+  confirm_success: Vaša e-mailová adresa bola potvrdená a váš účet je teraz aktívny.
+  confirm_ready: Teraz môžete pokračovať v používaní stránky.
+  confirm_error: Nepodarilo sa potvrdiť vašu e-mailovú adresu.
+  reset_intro: Zadajte nové heslo pre svoj účet.
+  reset_confirm_label: Potvrďte heslo
+  reset_mismatch_error: Heslá sa nezhodujú.
+  reset_invalid_link_error: Neplatný alebo chýbajúci odkaz na obnovenie.
+  reset_success: Vaše heslo bolo aktualizované. Teraz sa môžete prihlásiť.
+newsletter_popup:
+  email_placeholder: Vaša e-mailová adresa
+  submit_button: Posielať mi aktualizácie
+  dismiss_button: Teraz nie
+  invalid_email: Zadajte platnú e-mailovú adresu.
+  submit_error: Vaše prihlásenie sa teraz nepodarilo uložiť. Skúste to prosím znova.
+  submitting_text: Ukladá sa...
+  success_message: Ďakujeme! Aktualizácie pretekov vám čoskoro prídu do schránky.
+  privacy_note: Nové preteky, zmeny dátumov a vybrané ponuky. Odhlásiť sa môžete kedykoľvek.
+  close_aria_label: Zavrieť okno prihlásenia na odber
+  benefits:
+    new_races: Nové preteky ako prvé
+    date_changes: Zmeny dátumov okamžite
+    selected_offers: Vybrané ponuky
+    similar_races: Podobné preteky vo vašom okolí
+    local_picks: Viac pretekov nablízku
+    opening_reminders: Pripomienky skôr, než sa míňajú miesta
+    race_updates: Aktualizácie o tomto konkrétnom preteku
+    nearby_races: Cezhraničné preteky vo vašom okolí
+  generic:
+    eyebrow: Nezmeškajte ďalší pretek
+    title: Získajte nové preteky a zmeny dátumov skôr než ostatní
+    body: Prihláste sa na odber nášho newslettera a dostávajte nové preteky, aktualizované dátumy a ručne vybrané tipy v {country} priamo do svojej schránky.
+  race_detail:
+    eyebrow: Sledujte tento pretek
+    title: Chcete sledovať {race_name}?
+    body: Prihláste sa na odber aktualizácií o {race_name}, podobných pretekoch v {county} a dôležitých zmenách priamo do svojej schránky.
+  browse_category:
+    eyebrow: Viac správnych pretekov
+    title: Nezmeškajte nové {category} preteky
+    body: Posielame nové {category} preteky, relevantné alternatívy v okolí a dôležité dátumy, aby ste nemuseli všetko hľadať ručne.
+  browse_category_type:
+    eyebrow: Viac správnych pretekov
+    title: Získajte viac {race_type} pretekov v kategórii {category}
+    body: Prihláste sa na odber ďalších {race_type} pretekov v kategórii {category}, podobných pretekov v okolí a zmien dátumov priamo do schránky.
+  browse_county:
+    eyebrow: Lokálne preteky na prvom mieste
+    title: Získajte viac pretekov v {county}
+    body: Sledujte nové preteky, aktualizované dátumy a šikovné tipy pre {county} bez toho, aby ste museli stále kontrolovať kalendár.
+  browse_city:
+    eyebrow: Lokálne preteky na prvom mieste
+    title: Chcete viac pretekov v {city}?
+    body: Prihláste sa na odber a dostávajte nové preteky, blízke alternatívy a dôležité dátumy pre {city} priamo do svojej schránky.
+  browse_type:
+    eyebrow: Správny štýl pretekov
+    title: Získajte viac {race_type} pretekov do schránky
+    body: Posielame nové {race_type} preteky, podobné alternatívy a dôležité dátumy, aby ste mohli reagovať skôr, než sa minú voľné miesta.
+  browse_month:
+    eyebrow: Naplánujte si sezónu
+    title: Získajte najlepšie preteky v {month} ako prví
+    body: Keď sa preteky v {month} otvoria, presunú alebo začnú byť obzvlášť zaujímavé, dozviete sa to hneď vo svojej schránke.
+  browse_neighboring:
+    eyebrow: Rozšírte si kalendár
+    title: Získajte aj preteky zo susedných krajín
+    body: Prihláste sa na odber nových pretekov, šikovných cezhraničných tipov a zmien dátumov z {region} priamo do svojej schránky.
+  browse_neighboring_country:
+    eyebrow: Rozšírte si kalendár
+    title: Získajte viac pretekov v {region}
+    body: Posielame nové preteky, zmeny dátumov a relevantné blízke alternatívy, keď sa v {region} objaví niečo zaujímavé.
+privacy_page:
+  title: Zásady ochrany osobných údajov
+  meta_description: Zásady ochrany osobných údajov a informácie o tom, ako Kalendár behov spracúva osobné údaje a cookies.
+  last_updated_label: Naposledy aktualizované
+  last_updated_date: 27. marca 2026
+  contact_intro: 'V prípade otázok týkajúcich sa súkromia a osobných údajov nás môžete kontaktovať na:'
+  contact_email: info@terminovkabehov.com
+  sections:
+  - title: 1. Aké informácie zhromažďujeme
+    intro: 'Zhromažďujeme informácie, ktoré nám priamo poskytujete, keď:'
+    bullets:
+    - Vytvoríte účet
+    - Odošlete informácie o pretekoch
+    - Uverejníte príspevok na fóre
+    - Kontaktujete nás
+  - title: 2. Cookies a sledovanie
+    intro: 'Používame cookies na to, aby sme:'
+    bullets:
+    - si pamätali vaše nastavenia
+    - vás udržali prihláseného a zachovali vašu reláciu
+    - analyzovali návštevnosť a používanie webu
+    - zobrazovali relevantné reklamy a zlepšovali obsah
+  - title: 3. Ako používame vaše informácie
+    intro: 'Vaše informácie nám pomáhajú:'
+    bullets:
+    - poskytovať a zlepšovať naše služby
+    - posielať dôležité aktualizácie a oznámenia
+    - odpovedať na otázky a požiadavky podpory
+    - predchádzať podvodom a zneužívaniu
+  - title: 4. Vaše práva
+    intro: 'Podľa GDPR máte právo:'
+    bullets:
+    - požiadať o prístup k svojim osobným údajom
+    - opraviť nesprávne alebo neúplné údaje
+    - požiadať o vymazanie svojich údajov
+    - namietať proti určitému spracúvaniu osobných údajov
+    - požiadať o prenosnosť údajov
+  - title: 5. Kontaktujte nás
+    intro: Ak máte otázky o tom, ako spracúvame osobné údaje alebo používame cookies, môžete sa nám kedykoľvek ozvať.
+accessibility:
+  main_navigation_label: Hlavná navigácia
+  breadcrumb_label: Navigačná cesta
+  back_to_top_label: Späť hore
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+home_tools:
+  measure_route:
+    description: Zmerajte si trasu a získajte rýchly odhad vzdialenosti ešte predtým, než vyrazíte.
+  training_plans:
+    description: Nájdite tréningové plány pre rôzne ciele, úrovne a vzdialenosti, aby ste si mohli naplánovať ďalší krok.
+  racetime_estimator:
+    description: Odhadnite realistický cieľový čas na základe predchádzajúcich výsledkov a porovnajte rôzne cieľové scenáre.
+  pace_calculator:
+    description: Prepočítajte rýchlosť, tempo a cieľový čas medzi bežnými vzdialenosťami pri plánovaní tréningu alebo pretekov.
+missing_race: Chýba vám nejaký pretek? Pridajte ho sem!
+add_race_mp_title: Pridajte svoj pretek
+neighboring_countries_title: Preteky na Slovensku a v susedných krajinách
+neighboring_countries_title_specific_country: Preteky v {country_name}
+neighboring_countries_description: Tu nájdete preteky organizované v susedných krajinách.
+neighboring_countries_description_specific_country: Tu uvádzame bežecké preteky organizované v {country_name}.
+neighboring_countries_neighbors_native: Susedné krajiny
+neighboring_countries_all_neighbors_native: Všetky susedné krajiny
+section_race_card_header_nieghbors_default: Slovensko a susedné krajiny
+browse_neighboring:
+  title: Objavte preteky v susedných krajinách
+  meta_description: Nájdite preteky v susedných krajinách vo svojom okolí. Prehliadajte podľa krajiny a objavujte bežecké podujatia za hranicami.
+neighboring_races_title: Preteky v susedných krajinách
+neighboring_countries_show_all: Zobraziť všetko
