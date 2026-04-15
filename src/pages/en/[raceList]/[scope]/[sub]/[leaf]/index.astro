@@ -236,7 +236,10 @@ if (hasEnglishMerge(country)) {
     monthMapping={monthMapping}
     monthMappingShort={monthMappingShort}
     typeOptions={typeOptions}
-    categoryFilterOptions={categoryFilterOptionsFromYaml(content.category_mapping)}
+    categoryFilterOptions={categoryFilterOptionsFromYaml(
+      content.category_mapping,
+      content.verbose_local_distance_mapping,
+    )}
     dataError={String(content.race_list_data_error ?? '')}
     emptyMessage={String(content.race_list_empty ?? '')}
     loadingMessage={String(content.race_list_loading ?? '')}

@@ -62,7 +62,10 @@ const browseHref = browseBtn
 
 const monthMappingShort =
   (content.month_mapping_short as Record<string, string> | undefined) ?? {};
-const categoryFilterOptions = categoryFilterOptionsFromYaml(content.category_mapping);
+const categoryFilterOptions = categoryFilterOptionsFromYaml(
+  content.category_mapping,
+  content.verbose_local_distance_mapping,
+);
 const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
 const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
 const neighboringCountryOptions = await getNeighboringCountryOptions({

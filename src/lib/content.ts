@@ -178,13 +178,13 @@ export type IndexYaml = {
     category_pages?: {
       enabled?: boolean;
       min_race_count?: number;
-      allowed_labels?: string[];
+      allowed_category_keys?: string[];
     };
     race_type_category_pages?: {
       enabled?: boolean;
       min_race_count?: number;
       allowed_race_type_keys?: string[];
-      allowed_labels?: string[];
+      allowed_category_keys?: string[];
     };
     race_type_county_pages?: {
       enabled?: boolean;

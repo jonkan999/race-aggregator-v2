@@ -209,7 +209,7 @@ Browse fallback copy is YAML-driven. Keep the browse-page template strings in `d
 
 Browse SEO expansion should follow the canonical matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md). In particular, keep the full browse/filter taxonomy available in UX, but only index the canonical subsets and combinations that clear the documented intent and inventory thresholds.
 
-The indexing logic is now market-configurable under `browse_seo_indexing` in each market YAML. That block controls which browse families are indexable, the minimum race-count thresholds, and which race types or category labels are allowed for standalone and combo pages.
+The indexing logic is now market-configurable under `browse_seo_indexing` in each market YAML. That block controls which browse families are indexable, the minimum race-count thresholds, and which race types or category keys are allowed for standalone and combo pages.
 
 ## Deploy To Vercel
 

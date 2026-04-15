@@ -165,7 +165,10 @@ function optionPriority(option: CategoryFilterOption): number {
 }
 
 function pickPrimaryCategory(row: RaceListRow, content: IndexYaml): CategoryFilterOption | null {
-  const options = categoryFilterOptionsFromYaml(content.category_mapping);
+  const options = categoryFilterOptionsFromYaml(
+    content.category_mapping,
+    content.verbose_local_distance_mapping as Record<string, unknown> | undefined,
+  );
   const matches = options.filter((option) => rowMatchesCategory(row, option));
   if (matches.length === 0) return null;
 

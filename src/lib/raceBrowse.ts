@@ -324,7 +324,10 @@ export async function getBrowseCategoryEntries(args: {
   const domesticRows = filterRowsToUpcomingWindow(
     allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode)),
   );
-  const options = categoryFilterOptionsFromYaml(content.category_mapping);
+  const options = categoryFilterOptionsFromYaml(
+    content.category_mapping,
+    content.verbose_local_distance_mapping as Record<string, unknown> | undefined,
+  );
   const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
 
   const entries = options
@@ -333,6 +336,7 @@ export async function getBrowseCategoryEntries(args: {
       if (filtered.length === 0) return null;
       if (
         !isBrowseStandaloneAllowed(policy, 'category', {
+          categoryKey: option.key,
           label: option.label,
           count: filtered.length,
         })
@@ -359,6 +363,7 @@ export async function getBrowseCategoryEntries(args: {
         .filter(([typeKey, count]) =>
           isBrowseCombinationAllowed(policy, 'race_type_category', {
             raceTypeKey: typeKey,
+            categoryKey: option.key,
             label: option.label,
             count,
           }),
@@ -969,7 +974,10 @@ export function getTypeCategoryNavigationEntries(args: {
   raceTypeKey: string;
 }): BrowseNavigationEntry[] {
   const policy = getBrowseSeoIndexingPolicy(args.content);
-  const options = categoryFilterOptionsFromYaml(args.content.category_mapping);
+  const options = categoryFilterOptionsFromYaml(
+    args.content.category_mapping,
+    args.content.verbose_local_distance_mapping as Record<string, unknown> | undefined,
+  );
   return options
     .map((option) => {
       const count = args.rows.filter((row) => matchesCategory(row, option)).length;
@@ -977,6 +985,7 @@ export function getTypeCategoryNavigationEntries(args: {
       if (
         !isBrowseCombinationAllowed(policy, 'race_type_category', {
           raceTypeKey: args.raceTypeKey,
+          categoryKey: option.key,
           label: option.label,
           count,
         })
@@ -1011,7 +1020,10 @@ export function getScopedPopularNavigationEntries(args: {
   lockedCategoryLabel?: string;
 }): BrowseNavigationEntry[] {
   const policy = getBrowseSeoIndexingPolicy(args.content);
-  const options = categoryFilterOptionsFromYaml(args.content.category_mapping);
+  const options = categoryFilterOptionsFromYaml(
+    args.content.category_mapping,
+    args.content.verbose_local_distance_mapping as Record<string, unknown> | undefined,
+  );
   const typeOptions = (args.content.type_options as Record<string, string> | undefined) ?? {};
   const lockedRaceType = args.lockedRaceTypeKey?.trim().toLowerCase() ?? '';
   const lockedCategory = args.lockedCategoryLabel?.trim().toLowerCase() ?? '';
@@ -1023,6 +1035,7 @@ export function getScopedPopularNavigationEntries(args: {
       if (count === 0) return null;
       if (
         !isBrowseStandaloneAllowed(policy, 'category', {
+          categoryKey: option.key,
           label: option.label,
           count,
         })

@@ -27,7 +27,7 @@ function normalizeFamily(raw, defaults = {}) {
   return {
     enabled: typeof source.enabled === 'boolean' ? source.enabled : defaults.enabled ?? true,
     minRaceCount: asNumber(source.min_race_count, defaults.minRaceCount ?? 1),
-    allowedLabels: asLowercaseSet(source.allowed_labels),
+    allowedCategoryKeys: asLowercaseSet(source.allowed_category_keys),
     allowedRaceTypeKeys: asLowercaseSet(source.allowed_race_type_keys),
     requireQualifiedCity:
       typeof source.require_qualified_city === 'boolean'
@@ -56,6 +56,13 @@ function setAllows(set, value) {
   return set.has(String(value ?? '').trim().toLowerCase());
 }
 
+function allowsCategory(family, args = {}) {
+  if (family.allowedCategoryKeys instanceof Set && family.allowedCategoryKeys.size > 0) {
+    return setAllows(family.allowedCategoryKeys, args.categoryKey);
+  }
+  return true;
+}
+
 function meetsThreshold(count, minRaceCount) {
   return Number(count ?? 0) >= Number(minRaceCount ?? 1);
 }
@@ -77,7 +84,7 @@ export function isBrowseStandaloneAllowed(policy, kind, args = {}) {
   if (!meetsThreshold(args.count, family.minRaceCount)) return false;
   if (kind === 'city' && family.requireQualifiedCity && !args.isQualifiedCity) return false;
   if (kind === 'race_type' && !setAllows(family.allowedRaceTypeKeys, args.raceTypeKey)) return false;
-  if (kind === 'category' && !setAllows(family.allowedLabels, args.label)) return false;
+  if (kind === 'category' && !allowsCategory(family, args)) return false;
   return true;
 }
 
@@ -95,8 +102,7 @@ export function isBrowseCombinationAllowed(policy, kind, args = {}) {
   if (!family?.enabled) return false;
   if (!meetsThreshold(args.count, family.minRaceCount)) return false;
   if (!setAllows(family.allowedRaceTypeKeys, args.raceTypeKey)) return false;
-  if (kind === 'race_type_category' && !setAllows(family.allowedLabels, args.label)) return false;
+  if (kind === 'race_type_category' && !allowsCategory(family, args)) return false;
   if (kind === 'race_type_city' && family.requireQualifiedCity && !args.isQualifiedCity) return false;
   return true;
 }
-

@@ -1,14 +1,16 @@
 {
   "metadata": {
     "version": "1.0",
-    "generated_date": "2024-12-03T08:30:12.964575",
+    "generated_date": "2026-04-14T18:44:43.538585+00:00",
     "variations_per_plan": 4,
     "total_plan_types": 12,
-    "language": "en"
+    "language": "Hungarian",
+    "source_language": "English",
+    "source_hash": "b28fbaed72450ce11d240c7333cd1af65003adec929842626406aa1b92a4c709"
   },
   "plans": {
     "marathon_beginner": {
-      "name": "Marathon Beginner",
+      "name": "Maraton Kezdő",
       "user_inputs": {
         "target_distance": "marathon",
         "experience_level": "beginner",
@@ -24,23 +26,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week Marathon Training for Beginners",
-            "focus": "Establishing a running routine and building foundational endurance",
-            "description": "[4-WEEK PLAN] This four-week training program is designed for beginner runners preparing for their first marathon. The focus is on establishing a consistent running routine, building aerobic capacity, and gradually increasing endurance through a variety of run types.",
+            "title": "4-Hétes Maraton Edzés Kezdőknek",
+            "focus": "Futási rutin kialakítása és alapállóképesség építése",
+            "description": "[4-HÉTES TERV] Ez a négyhetes edzésprogram kezdő futóknak készült, akik az első maratonjukra készülnek. A fókusz a következetes futási rutin kialakításán, aerob kapacitás növelésén és fokozatos állóképesség fejlesztésén van különböző futástípusok alkalmazásával.",
             "highlights": [
-              "Structured progression from base runs to long runs",
-              "Emphasis on recovery and form",
-              "Variety of workout types to build endurance and speed"
+              "Strukturált fejlődés az alapfutásoktól a hosszú futásokig",
+              "Fókusz a regenerációra és a helyes futásformára",
+              "Különböző edzés típusok a kitartás és sebesség növelésére"
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Building Aerobic Capacity",
+                "focus": "Aerob kapacitás növelése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run 1",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás 1",
+                    "description": "30-45 perc kényelmes tempóban, beszélgetős üzemmódban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -48,8 +50,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Recovery Run 1",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regenerációs futás 1",
+                    "description": "30-40 perc nagyon könnyű tempóban, a helyes futásformára és a relaxációra fókuszálva.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -57,8 +59,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run 2",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás 2",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel, beszélgetős üzemmódban.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -66,8 +68,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run 2",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regenerációs futás 2",
+                    "description": "40-50 perc nagyon könnyű tempóban, a formára és relaxációra figyelve.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -75,8 +77,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run 3",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás 3",
+                    "description": "60-75 perc kényelmes tempóban, enyhe emelkedőkkel, beszélgetős üzemmódban.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -84,8 +86,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -93,8 +95,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run 1",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás 1",
+                    "description": "75-90 perc kényelmes tempóban, az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -104,12 +106,12 @@
               },
               {
                 "week": 2,
-                "focus": "Increasing Endurance and Speed",
+                "focus": "Növekvő állóképesség és sebesség",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run 4",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás 4",
+                    "description": "30-45 perc kényelmes tempóban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -118,7 +120,7 @@
                   {
                     "day": "TUESDAY",
                     "workout": "Fartlek 1",
-                    "description": "5 minutes easy running, followed by 5 x 1 minute fast running with 1-minute easy running in between.",
+                    "description": "5 perc könnyű futás, majd 5 x 1 perc gyors futás, 1 perc könnyű futással közben.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -126,8 +128,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run 5",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás 5",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel, beszélgetős üzemmódban.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -135,8 +137,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run 3",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regenerációs futás 3",
+                    "description": "30-40 perc nagyon könnyű tempóban, a formára és relaxációra fókuszálva.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -144,8 +146,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Speed Work 1",
-                    "description": "10-minute warm-up, 3 x 1km at 5K pace with 3-minute recoveries.",
+                    "workout": "Sebesség edzés 1",
+                    "description": "10 perc bemelegítés, 3 x 1 km 5K sebességgel, 3 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -153,8 +155,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -162,8 +164,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run 2",
-                    "description": "90-105 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás 2",
+                    "description": "90-105 perc kényelmes tempóban, az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 105,
                     "duration_unit": "minutes",
@@ -44983,7 +44985,7 @@
       ]
     },
     "marathon_intermediate": {
-      "name": "Marathon Intermediate",
+      "name": "Maraton Középhaladó",
       "user_inputs": {
         "target_distance": "marathon",
         "experience_level": "intermediate",
@@ -44999,23 +45001,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week Marathon Intermediate Training Plan",
-            "focus": "Building endurance and speed for marathon readiness",
-            "description": "[4-WEEK PLAN] This 4-week training program is designed for intermediate runners preparing for a marathon. It focuses on enhancing aerobic capacity, speed, and recovery through a structured mix of base runs, tempo runs, interval training, and long runs.",
+            "title": "4-Hétes Maraton Középhaladó Edzésterv",
+            "focus": "Állóképesség és sebesség fejlesztése maratonra való felkészüléshez",
+            "description": "[4-HÉTES TERV] Ez a 4 hetes edzésprogram középhaladó futóknak készült, akik maratonra készülnek. A program az aerob kapacitás, sebesség és regeneráció növelésére fókuszál, strukturált alap-, tempó-, intervall- és hosszú futásokkal.",
             "highlights": [
-              "Comprehensive blend of speed and endurance workouts tailored for marathon preparation.",
-              "Emphasis on recovery and form to enhance overall running efficiency.",
-              "Progressive intensity to build fitness while allowing for adequate recovery."
+              "Átfogó sebesség és állóképesség edzések, melyek a maratonra való felkészülést szolgálják.",
+              "Fókusz a regenerációra és a helyes futótechnikára az összteljesítmény növelése érdekében.",
+              "Progresszív intenzitás, mely a fittség növelését és a megfelelő regenerációt támogatja."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Building Aerobic Capacity and Endurance",
+                "focus": "Aerob kapacitás és állóképesség növelése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-45 perc nagyon könnyű tempóban, a forma és a relaxáció hangsúlyozásával.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -45023,8 +45025,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes, beszélgetős tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -45032,8 +45034,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás",
+                    "description": "30-45 perc kényelmes, beszélgetős tempóban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -45041,8 +45043,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Tempo Run",
-                    "description": "20 minutes at tempo pace (comfortably hard) following a 10-minute warm-up.",
+                    "workout": "Tempó futás",
+                    "description": "20 perc tempóban (kényelmesen kemény), 10 perc bemelegítéssel.",
                     "intensity": "TEMPO_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -45050,8 +45052,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes, beszélgetős tempóban, enyhe emelkedőkkel.",
                     "intensity": "LONG_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -45059,8 +45061,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban, az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -45068,8 +45070,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű, változó sebességgel.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -45079,12 +45081,12 @@
               },
               {
                 "week": 2,
-                "focus": "Increasing Speed and Endurance",
+                "focus": "Sebesség és állóképesség növelése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-45 perc nagyon könnyű tempóban, a forma és relaxáció hangsúlyozásával.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -45092,8 +45094,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes, beszélgetős tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -45101,8 +45103,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás",
+                    "description": "30-45 perc kényelmes, beszélgetős tempóban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -45110,8 +45112,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Tempo Run",
-                    "description": "25 minutes at tempo pace following a 10-minute warm-up.",
+                    "workout": "Tempó futás",
+                    "description": "25 perc tempóban (kényelmesen kemény), 10 perc bemelegítéssel.",
                     "intensity": "TEMPO_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -45119,8 +45121,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes, beszélgetős tempóban, enyhe emelkedőkkel.",
                     "intensity": "LONG_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -45128,8 +45130,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run",
-                    "description": "90-105 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban, az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 105,
                     "duration_unit": "minutes",
@@ -45137,8 +45139,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű, változó sebességgel.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -91323,7 +91325,7 @@
       ]
     },
     "marathon_advanced": {
-      "name": "Marathon Advanced",
+      "name": "Maraton Haladó",
       "user_inputs": {
         "target_distance": "marathon",
         "experience_level": "advanced",
@@ -91339,23 +91341,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week Marathon Taper Phase",
-            "focus": "Peak Performance for Marathon",
-            "description": "[4-WEEK PLAN] The final four weeks of training focus on fine-tuning speed and endurance while allowing for recovery, ensuring peak performance on race day. Key sessions include tempo runs, speed work, and long runs, emphasizing a balance between hard efforts and recovery.",
+            "title": "4-Hétes Maraton Felkészülési Fázis",
+            "focus": "Csúcsformára való felkészülés maratonra",
+            "description": "[4-HÉTES TERV] (Módosított az eredeti 4 hetes tervből) [4-HÉTES TERV] Az utolsó négy hét edzése a sebesség és állóképesség finomhangolására fókuszál, miközben pihenést is biztosít, hogy a verseny napján csúcsformában legyen a sportoló. Kulcsfontosságú edzések közé tartoznak a tempó futások, sebességgyakorlatok és hosszú futások, hangsúlyozva az intenzív erőfeszítések és a regeneráció közötti egyensúlyt.",
             "highlights": [
-              "Gradual reduction in weekly mileage to promote recovery and peak performance.",
-              "Inclusion of speed work and tempo runs to enhance race pace and speed.",
-              "Emphasis on recovery and easy runs to prepare the body for the marathon."
+              "Fokozatos csökkentés a heti kilométerekben a regeneráció és a csúcsformára való felkészülés érdekében.",
+              "Sebességgyakorlatok és tempó futások beépítése a versenytempó és sebesség növelése érdekében.",
+              "Fókusz a regenerációra és könnyű futásokra a test felkészítésében a maratonra."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Speed and Endurance",
+                "focus": "Sebesség és állóképesség",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run 45-60 mins",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás 45-60 perc",
+                    "description": "Kényelmes tempóban 45-60 perc, enyhe dombokkal, a regeneráció és az állóképesség növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -91363,8 +91365,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Tempo Run 25 mins",
-                    "description": "10-minute warm-up, followed by 25 minutes at tempo pace (comfortably hard), and a 5-minute cool down.",
+                    "workout": "Tempó futás 20 perc",
+                    "description": "10 perc bemelegítés, majd 20 perc tempóban (kényelmesen kemény), utána 10 perc pihenő.",
                     "intensity": "TEMPO_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -91372,8 +91374,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run 40-50 mins",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regenerációs futás 30-40 perc",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és a relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -91381,8 +91383,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Speed Work: 4 x 1.5km",
-                    "description": "10-minute warm-up, 4 x 1.5km at 10K pace with 2-minute recoveries.",
+                    "workout": "Sebességgyakorlat: 3 x 1 km",
+                    "description": "10 perc bemelegítés, 3 x 1 km 5K tempóban, 3 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -91390,8 +91392,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run 30-45 mins",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Könnyű futás 45 perc",
+                    "description": "Kényelmes tempóban 45 perc, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -91399,8 +91401,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run: 75-90 mins",
-                    "description": "Long Run: 75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás 75-90 perc",
+                    "description": "Hosszú futás: 75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -91408,8 +91410,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Recovery Run 30-40 mins",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regenerációs futás 30-40 perc",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -91419,12 +91421,12 @@
               },
               {
                 "week": 2,
-                "focus": "Speed and Endurance",
+                "focus": "Folytatólagos sebesség és állóképesség fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run 45-60 mins",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás 45-60 perc",
+                    "description": "Kényelmes tempóban 45-60 perc, enyhe dombokkal, az állóképesség növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -91432,8 +91434,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Tempo Run 30 mins",
-                    "description": "10-minute warm-up, followed by 30 minutes at tempo pace (comfortably hard), and a 5-minute cool down.",
+                    "workout": "Tempó futás 25 perc",
+                    "description": "10 perc bemelegítés, majd 25 perc tempóban, utána 10 perc pihenő.",
                     "intensity": "TEMPO_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -91441,8 +91443,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run 30-40 mins",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regenerációs futás 30-40 perc",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -91450,8 +91452,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Speed Work: 3 x 1km",
-                    "description": "10-minute warm-up, 3 x 1km at 5K pace with 3-minute recoveries.",
+                    "workout": "Sebességgyakorlat: 3 x 1 km",
+                    "description": "10 perc bemelegítés, 3 x 1 km 5K tempóban, 3 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -91459,8 +91461,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run 60 mins",
-                    "description": "60 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Könnyű futás 45 perc",
+                    "description": "Kényelmes tempóban 45 perc, az állóképesség növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -91468,8 +91470,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run: 75-90 mins",
-                    "description": "Long Run: 75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás 75-90 perc",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -91477,8 +91479,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Recovery Run 40-50 mins",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regenerációs futás 30-40 perc",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -91488,12 +91490,12 @@
               },
               {
                 "week": 3,
-                "focus": "Speed and Endurance",
+                "focus": "Sebesség és állóképesség fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run 60-75 mins",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás 45-60 perc",
+                    "description": "Kényelmes tempóban 45-60 perc, enyhe dombokkal, az állóképesség növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -91501,8 +91503,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Tempo Run 20 mins",
-                    "description": "10-minute warm-up, followed by 20 minutes at tempo pace (comfortably hard), and a 5-minute cool down.",
+                    "workout": "Tempó futás 30 perc",
+                    "description": "10 perc bemelegítés, majd 30 perc tempóban, utána 10 perc pihenő.",
                     "intensity": "TEMPO_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -91510,8 +91512,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run 40-50 mins",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regenerációs futás 40-50 perc",
+                    "description": "30-50 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -91519,8 +91521,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Speed Work: 6 x 800m",
-                    "description": "10-minute warm-up, 6 x 800m at mile pace with 400m jog recoveries.",
+                    "workout": "Sebességgyakorlat: 4 x 1,5 km",
+                    "description": "10 perc bemelegítés, 4 x 1,5 km 10K tempóban, 2 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -91528,8 +91530,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run 30-45 mins",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Váltófutás 45 perc",
+                    "description": "30-45 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -91537,8 +91539,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run: 90-105 mins",
-                    "description": "Long Run: 90-105 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás 75-90 perc",
+                    "description": "75-90 perc kényelmes tempóban, enyhe dombos útvonalon, az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 105,
                     "duration_unit": "minutes",
@@ -91546,8 +91548,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Recovery Run 30-40 mins",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regenerációs futás 30-40 perc",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -127841,7 +127843,7 @@
       ]
     },
     "half_marathon_beginner": {
-      "name": "Half Marathon Beginner",
+      "name": "Félmaraton Kezdő",
       "user_inputs": {
         "target_distance": "half_marathon",
         "experience_level": "beginner",
@@ -127857,23 +127859,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week Half Marathon Beginner Training Plan",
-            "focus": "Building endurance and speed for half marathon",
-            "description": "[4-WEEK PLAN] This training plan is designed for beginner runners preparing for a half marathon. It focuses on gradually increasing running endurance and speed through a variety of workout sessions, including base runs, tempo runs, and long runs, over a four-week period.",
+            "title": "4 Hetes Félmaraton Kezdő Edzésterv",
+            "focus": "Állóképesség és sebesség növelése félmaratonra",
+            "description": "[4-HÉTES TERV] (Eredeti 4 hetes terv módosítva) Ez az edzésterv kezdő futóknak készült, akik felkészülnek egy félmaratonra. Fókuszában a futás állóképességének és sebességének fokozatos növelése különböző edzésszámokkal, beleértve az alap-, tempó- és hosszú futásokat.",
             "highlights": [
-              "Gradual progression in run durations and intensities to build endurance and speed.",
-              "Incorporation of varied workout types (base, tempo, long) to enhance different aspects of running fitness.",
-              "Emphasis on recovery and easy runs to prevent burnout and aid in training adaptation."
+              "Fokozatos növekedés az időtartamban és intenzitásban az állóképesség és sebesség növelése érdekében.",
+              "Különböző futótípusok (alap, tempó, hosszú) beépítése a kiegyensúlyozott edzésért.",
+              "Fókusz a regenerációra és könnyű futásokra a kiégés megelőzése és az adaptáció támogatása érdekében."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Building aerobic capacity and recovery",
+                "focus": "Aerob kapacitás növelése és regeneráció",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás",
+                    "description": "30-45 perc kényelmes tempóban, beszélgetős üzemmódban az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -127881,8 +127883,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és a relaxáció fókuszában.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -127890,8 +127892,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel, az aerob kapacitás növelése.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -127899,8 +127901,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, a változatos sebesség lehetőségével.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -127908,8 +127910,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -127917,8 +127919,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe emelkedőkkel, az állóképesség növelése.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -127926,8 +127928,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -127937,12 +127939,12 @@
               },
               {
                 "week": 2,
-                "focus": "Increasing endurance and introducing tempo runs",
+                "focus": "Állóképesség növelése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás",
+                    "description": "30-45 perc kényelmes tempóban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -127950,8 +127952,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció fókuszában.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -127959,8 +127961,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Tempo Run",
-                    "description": "10-minute warm-up followed by 20 minutes at tempo pace (comfortably hard) and a 10-minute cooldown.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel, az állóképesség növelése.",
                     "intensity": "TEMPO_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -127968,8 +127970,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, a változatos sebesség lehetőségével.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -127977,8 +127979,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -127986,8 +127988,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe emelkedőkkel, az állóképesség növelése.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -127995,8 +127997,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -173275,7 +173277,7 @@
       ]
     },
     "half_marathon_intermediate": {
-      "name": "Half Marathon Intermediate",
+      "name": "Félmaraton Középhaladó",
       "user_inputs": {
         "target_distance": "half_marathon",
         "experience_level": "intermediate",
@@ -173291,23 +173293,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week Half Marathon Intermediate Training Plan",
-            "focus": "Building endurance and speed for race day",
-            "description": "[4-WEEK PLAN] This 4-week training program is designed for intermediate runners preparing for a half marathon. The plan focuses on enhancing endurance through long runs, building speed with tempo and interval workouts, and allowing for recovery to optimize performance.",
+            "title": "4 Hetes Félmaraton Középhaladó Edzésterv",
+            "focus": "Kitartás és sebesség növelése a verseny napjára",
+            "description": "[4-HÉTES TERV] (Módosítva az eredeti 4 hetes tervből) Ez a 4 hetes edzésprogram középhaladó futóknak készült, akik félmaratonra készülnek. A terv a kitartás növelésére hosszú futásokkal, sebesség fejlesztésére tempó és intervall edzésekkel, valamint pihenő és regeneráló futásokkal összpontosít.",
             "highlights": [
-              "Structured workouts balancing speed, endurance, and recovery.",
-              "Gradual progression in intensity and volume to prepare for race day.",
-              "Emphasis on both aerobic capacity and speed work."
+              "Strukturált edzések, amelyek ötvözik a sebességet, kitartást és regenerációt.",
+              "Fokozatos fejlődés az intenzitásban és a mennyiségben a verseny napjára való felkészülés érdekében.",
+              "Mindkét aerob kapacitás és sebesség fejlesztése."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Aerobic capacity and recovery",
+                "focus": "Aerob kapacitás és regeneráció",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-45 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -173315,8 +173317,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -173324,8 +173326,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, variálva a sebességet.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -173333,8 +173335,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -173342,8 +173344,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -173351,8 +173353,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Tempo Run",
-                    "description": "20 minutes at tempo pace (comfortably hard) following a 10-minute warm-up.",
+                    "workout": "Tempó futás",
+                    "description": "20 perc tempóban (kényelmesen kemény) a 10 perces bemelegítés után.",
                     "intensity": "TEMPO_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -173360,8 +173362,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -173371,12 +173373,12 @@
               },
               {
                 "week": 2,
-                "focus": "Endurance and speed maintenance",
+                "focus": "Kitartás és sebesség fenntartása",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -173384,8 +173386,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -173393,8 +173395,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, variálva a sebességet.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -173402,8 +173404,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -173411,8 +173413,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -173420,8 +173422,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Tempo Run",
-                    "description": "25 minutes at tempo pace following a 10-minute warm-up.",
+                    "workout": "Tempó futás",
+                    "description": "25 perc tempóban a 10 perces bemelegítés után.",
                     "intensity": "TEMPO_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -173429,8 +173431,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -214509,7 +214511,7 @@
       ]
     },
     "half_marathon_advanced": {
-      "name": "Half Marathon Advanced",
+      "name": "Félmaraton Haladó",
       "user_inputs": {
         "target_distance": "half_marathon",
         "experience_level": "advanced",
@@ -214525,23 +214527,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week Advanced Half Marathon Training Plan",
-            "focus": "Building endurance and speed for race day",
-            "description": "[4-WEEK PLAN] This 4-week training plan is designed for experienced runners preparing for a half marathon. It focuses on enhancing aerobic capacity, speed, and recovery through a structured regimen of varied workouts.",
+            "title": "4 Hetes Haladó Félmaraton Edzésterv",
+            "focus": "Kitartás és sebesség növelése a verseny napjára",
+            "description": "[4-HÉTES TERV] (Módosított eredeti 4 hetes tervből) Ez a 4 hetes edzésterv tapasztalt futóknak készült, akik felkészülnek egy félmaratonra. A program a légzési kapacitás, sebesség és regeneráció fejlesztésére fókuszál, változatos edzésekkel.",
             "highlights": [
-              "Incorporation of long runs to build endurance.",
-              "Emphasis on speed work and tempo runs for race preparation.",
-              "Structured recovery and easy runs to enhance performance."
+              "Hosszú futások beépítése az állóképesség növelése érdekében.",
+              "Tempó és intervall edzések a verseny sebességének fejlesztésére.",
+              "Strukturált regenerációs és könnyű futások a teljesítmény növelése érdekében."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Base building and recovery",
+                "focus": "Az aerob kapacitás és az állóképesség építése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Alapozó futás",
+                    "description": "30-45 perc kényelmes tempóban, a légzési kapacitás növelése érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -214549,8 +214551,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, finom emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -214558,8 +214560,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció fókuszában.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -214567,8 +214569,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Tempó futás",
+                    "description": "10 perc bemelegítés, majd 20 perc tempóban (kényelmesen kemény), 5 perc lehűlés.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -214576,8 +214578,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes tempóban, finom emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -214585,8 +214587,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 5 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, a gyorsaság és forma fejlesztése érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 55,
                     "duration_unit": "minutes",
@@ -214594,8 +214596,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -214605,12 +214607,12 @@
               },
               {
                 "week": 2,
-                "focus": "Endurance and speed development",
+                "focus": "Az aerob kapacitás és az állóképesség fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Alapozó futás",
+                    "description": "30-45 perc kényelmes tempóban, a légzési kapacitás növelése érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -214618,8 +214620,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, finom emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -214627,8 +214629,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció fókuszában.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -214636,8 +214638,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Tempó futás",
+                    "description": "10 perc bemelegítés, majd 20 perc tempóban (kényelmesen kemény), 5 perc lehűlés.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -214645,8 +214647,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "75-90 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes tempóban, finom emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -214654,8 +214656,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 7 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, a gyorsaság és forma fejlesztése érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -214663,8 +214665,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "90-105 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 105,
                     "duration_unit": "minutes",
@@ -255905,7 +255907,7 @@
       ]
     },
     "10k_beginner": {
-      "name": "10K Beginner",
+      "name": "10K Kezdő",
       "user_inputs": {
         "target_distance": "10k",
         "experience_level": "beginner",
@@ -255921,23 +255923,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week 10K Training Plan for Beginners",
-            "focus": "Building endurance and speed for a 10K race",
-            "description": "[4-WEEK PLAN] This four-week training program is designed for beginner runners preparing for a 10K race. It focuses on gradually increasing mileage and incorporating speed work to enhance both endurance and pace.",
+            "title": "4-Hétes 10K Edzésterv Kezdőknek",
+            "focus": "Állóképesség és sebesség fejlesztése 10K versenyre",
+            "description": "[4-HETES TERV] Ez a négyhetes edzésprogram kezdő futóknak készült, akik készülnek egy 10K versenyre. A hangsúly a futás állóképességének és sebességének fokozatos növelésén van, különböző futástípusokat alkalmazva, mint alapfutások, tempófutások és intervallum edzések.",
             "highlights": [
-              "Structured progression to safely build 10K fitness",
-              "Incorporation of varied workouts: easy runs, tempo runs, and speed work",
-              "Emphasis on recovery and proper pacing"
+              "Fokozatos növekedés az edzés intenzitásában és időtartamában az állóképesség és sebesség növelése érdekében.",
+              "Különböző futástípusok alkalmazása (alapfutás, tempófutás, intervallum) a sokoldalú fejlődés érdekében.",
+              "Az edzésterv szakaszos felépítése a hatékony fejlődéshez."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Establishing a running routine",
+                "focus": "Futási rutin kialakítása",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alapfutás",
+                    "description": "30-45 perc kényelmes tempóban, hogy növelje az aerob kapacitást.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -255945,8 +255947,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-50 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -255954,8 +255956,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alapfutás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe dombokkal.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -255963,8 +255965,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, változó sebességgel.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -255972,8 +255974,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alapfutás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe dombokkal.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -255981,8 +255983,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -255990,8 +255992,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -256001,12 +256003,12 @@
               },
               {
                 "week": 2,
-                "focus": "Increasing mileage and incorporating speed work",
+                "focus": "Növekvő futásteljesítmény és sebesség bevezetése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alapfutás",
+                    "description": "45-60 perc kényelmes tempóban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -256015,7 +256017,7 @@
                   {
                     "day": "TUESDAY",
                     "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 5 x 1 minute fast running with 1-minute easy running in between.",
+                    "description": "5 perc könnyű futás, majd 5 x 1 perc gyors futás, 1 perc könnyű között.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -256023,8 +256025,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alapfutás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe dombokkal.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -256032,8 +256034,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-50 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -256041,8 +256043,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 3 x 1km at 5K pace with 3-minute recoveries.",
+                    "workout": "Sebesség növelő edzés",
+                    "description": "10 perc bemelegítés, 3 x 1 km 5K tempóban, 3 perc pihenővel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -256050,8 +256052,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -256059,8 +256061,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -256070,12 +256072,12 @@
               },
               {
                 "week": 3,
-                "focus": "Building endurance and speed",
+                "focus": "Állóképesség és sebesség fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alapfutás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe dombokkal.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -256083,8 +256085,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 7 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Recovery Run",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -256092,8 +256094,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Tempófutás",
+                    "description": "25 perc tempóban, 10 perc bemelegítéssel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -256101,8 +256103,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, változó sebességgel.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -256110,8 +256112,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 4 x 1.5km at 10K pace with 2-minute recoveries.",
+                    "workout": "Alapfutás",
+                    "description": "75-90 perc kényelmes tempóban, az állóképesség növelése érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -256119,8 +256121,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run",
-                    "description": "90-105 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "90-105 perc kényelmes tempóban, enyhe dombokkal.",
                     "intensity": "LONG_PACE",
                     "duration": 105,
                     "duration_unit": "minutes",
@@ -256128,8 +256130,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -256139,12 +256141,12 @@
               },
               {
                 "week": 4,
-                "focus": "Tapering and fine-tuning",
+                "focus": "Sebesség és állóképesség finomhangolása",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Recovery Run",
+                    "description": "30-50 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -256152,8 +256154,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 9 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Tempófutás",
+                    "description": "20 perc tempóban, 10 perc bemelegítéssel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -256161,8 +256163,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, változó sebességgel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -256170,8 +256172,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Strides",
-                    "description": "6-8 x 100m strides after an easy run to enhance speed and form.",
+                    "workout": "Alapfutás",
+                    "description": "75-90 perc kényelmes tempóban, enyhe dombokkal.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -256180,7 +256182,7 @@
                   {
                     "day": "FRIDAY",
                     "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "description": "40-50 perc nagyon könnyű tempóban, változó sebességgel.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -256188,8 +256190,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Long Run",
-                    "description": "105-120 minutes at a comfortable pace, ideally on a hilly route.",
+                    "workout": "Hosszú futás",
+                    "description": "90-105 perc kényelmes tempóban, enyhe dombokkal.",
                     "intensity": "LONG_PACE",
                     "duration": 120,
                     "duration_unit": "minutes",
@@ -256197,8 +256199,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs edzés",
                     "intensity": "Rest",
                     "duration": 0,
                     "duration_unit": "minutes",
@@ -287656,7 +287658,7 @@
       ]
     },
     "10k_intermediate": {
-      "name": "10K Intermediate",
+      "name": "10K Középhaladó",
       "user_inputs": {
         "target_distance": "10k",
         "experience_level": "intermediate",
@@ -287672,23 +287674,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week 10K Training Plan for Intermediate Runners",
-            "focus": "Building speed and endurance for a 10K race",
-            "description": "[4-WEEK PLAN] This four-week training program is designed for runners with a solid base, aiming to enhance speed and endurance in preparation for a 10K race. The plan incorporates a mix of easy runs, tempo workouts, interval training, and long runs to develop aerobic capacity and race readiness.",
+            "title": "4-Hétes 10K Edzésterv Középhaladóknak",
+            "focus": "Gyorsaság és állóképesség fejlesztése 10K versenyre",
+            "description": "[4-HÉTES TERV] (Eredeti 4 hetes terv módosítva) Ez a négyhetes edzésprogram középhaladó futóknak készült, akik a gyorsaságot és az állóképességet kívánják növelni a 10K versenyre való felkészülés során. A terv könnyű futásokat, tempóedzéseket, intervallumokat és hosszú futásokat ötvöz, az aerob kapacitás fejlesztése és a versenyre való felkészülés érdekében.",
             "highlights": [
-              "Structured progression of speed and endurance workouts tailored for 10K preparation.",
-              "Emphasis on recovery and form through designated recovery runs.",
-              "Inclusion of varied paces and distances to simulate race conditions and enhance performance."
+              "Strukturált gyorsaság és állóképesség fejlesztő edzések, melyek a 10K felkészüléshez igazítottak.",
+              "Fókusz a regenerációra és a helyes futásformára a kijelölt pihenőfutások révén.",
+              "Változatos tempók és távolságok alkalmazása a versenyhelyzetek szimulálására és a teljesítmény növelésére."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Aerobic capacity and endurance",
+                "focus": "Aerob kapacitás és állóképesség fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alapfutás",
+                    "description": "30-45 perc kényelmes tempóban, hogy növelje az aerob kapacitást.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -287696,8 +287698,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és a relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -287705,8 +287707,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alapfutás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -287714,8 +287716,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, változó sebességgel.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -287723,8 +287725,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Tempo Run",
-                    "description": "20 minutes at tempo pace (comfortably hard) following a 10-minute warm-up.",
+                    "workout": "Tempófutás",
+                    "description": "20 perc tempóban (kényelmesen kemény), 10 perc bemelegítéssel.",
                     "intensity": "TEMPO_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -287732,8 +287734,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alapfutás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -287741,8 +287743,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -287752,12 +287754,12 @@
               },
               {
                 "week": 2,
-                "focus": "Speed development and endurance maintenance",
+                "focus": "Gyorsaság és állóképesség fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alapfutás",
+                    "description": "30-45 perc kényelmes tempóban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -287765,8 +287767,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 5 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -287774,8 +287776,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alapfutás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -287783,8 +287785,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, változó sebességgel.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -287792,8 +287794,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Tempo Run",
-                    "description": "25 minutes at tempo pace following a 10-minute warm-up.",
+                    "workout": "Tempófutás",
+                    "description": "10 perc bemelegítés, 3 x 1 km tempóban (5K sebesség), 3 perc pihenővel.",
                     "intensity": "TEMPO_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -287801,8 +287803,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -287810,8 +287812,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "90-105 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Pihenőnap",
+                    "description": "Vila - nincs edzés",
                     "intensity": "LONG_PACE",
                     "duration": 105,
                     "duration_unit": "minutes",
@@ -324327,7 +324329,7 @@
       ]
     },
     "10k_advanced": {
-      "name": "10K Advanced",
+      "name": "10K Haladó",
       "user_inputs": {
         "target_distance": "10k",
         "experience_level": "advanced",
@@ -324343,23 +324345,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week 10K Advanced Training Program",
-            "focus": "Peak performance for 10K race",
-            "description": "[4-WEEK PLAN] This program is designed to fine-tune speed, endurance, and race strategies for advanced runners preparing for a 10K event. Emphasis is placed on a balanced mix of tempo runs, interval training, and long runs to optimize performance.",
+            "title": "4-Hét 14-Hét 10K Haladó Edzésterv",
+            "focus": "Csúcsforma a 10K versenyen",
+            "description": "[14-HÉT TERV] (Hosszabbított az eredeti 14 hetes tervből) [12-HÉT TERV] Ez a 14 hetes edzésterv haladó futóknak készült, akik a legjobb eredményüket szeretnék elérni 10K versenyen. A terv a kitartás, gyorsaság és versenyfelkészülés fejlesztésére fókuszál strukturált, változatos edzésekkel.",
             "highlights": [
-              "Targeted speed work with varied intervals to enhance 5K and 10K pacing.",
-              "Progressive tempo runs to build endurance and comfort at race pace.",
-              "Structured long runs to ensure adequate preparation for race day."
+              "Progresszív intenzitás és volumen növelése a versenyfelkészüléshez",
+              "Különböző edzésfajták alkalmazása: könnyű futások, tempó, intervallumok és hosszú távok",
+              "Strukturált regenerációs és könnyű napok a túlterhelés elkerülése érdekében"
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Building endurance and speed",
+                "focus": "Aerob kapacitás növelése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban az aerob kapacitás növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -324367,8 +324369,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Tempo Run",
-                    "description": "20 minutes at tempo pace (comfortably hard) following a 10-minute warm-up.",
+                    "workout": "Tempó futás",
+                    "description": "10 perces bemelegítés után 20 perc tempóban (kényelmesen kemény).",
                     "intensity": "TEMPO_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -324376,8 +324378,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -324385,8 +324387,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 3 x 1km at 5K pace with 3-minute recoveries.",
+                    "workout": "Gyorsasági edzés",
+                    "description": "10 perc bemelegítés, 3 x 1 km 5K tempóban, 3 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -324394,8 +324396,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -324403,8 +324405,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 5 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -324423,12 +324425,12 @@
               },
               {
                 "week": 2,
-                "focus": "Increasing speed and endurance",
+                "focus": "Növekvő gyorsaság és állóképesség",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció fókuszában.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -324436,8 +324438,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban, enyhe emelkedőkkel.",
                     "intensity": "LONG_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -324445,8 +324447,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Tempo Run",
-                    "description": "25 minutes at tempo pace following a 10-minute warm-up.",
+                    "workout": "Tempó futás",
+                    "description": "10 perc bemelegítés után 25 perc tempóban (kényelmesen kemény).",
                     "intensity": "TEMPO_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -324454,8 +324456,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 4 x 1.5km at 10K pace with 2-minute recoveries.",
+                    "workout": "Intervallum edzés",
+                    "description": "10 perc bemelegítés, 4 x 1,5 km 10K tempóban, 2 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -324463,8 +324465,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban, enyhe emelkedőkkel.",
                     "intensity": "LONG_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -324472,8 +324474,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 7 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -324492,12 +324494,12 @@
               },
               {
                 "week": 3,
-                "focus": "Speed endurance and race preparation",
+                "focus": "Tempó és gyorsasági edzés",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban az aerob kapacitás növelése érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -324505,8 +324507,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Tempó futás",
+                    "description": "20 perc tempóban (kényelmesen kemény) a bemelegítés után.",
                     "intensity": "LONG_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -324514,8 +324516,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Tempo Run",
-                    "description": "30 minutes at tempo pace following a 10-minute warm-up.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció fókuszában.",
                     "intensity": "TEMPO_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -324523,8 +324525,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 6 x 800m at mile pace with 400m jog recoveries.",
+                    "workout": "Intervallum edzés",
+                    "description": "5 perc bemelegítés, 7 x 1 perc gyors futás, 1 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -324532,8 +324534,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Könnyű futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban, enyhe emelkedőkkel.",
                     "intensity": "LONG_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -324541,8 +324543,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 9 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -324561,12 +324563,12 @@
               },
               {
                 "week": 4,
-                "focus": "Tapering and fine-tuning",
+                "focus": "Gyorsaság és hosszú táv fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban az aerob kapacitás növelése érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -324574,8 +324576,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Tempó futás",
+                    "description": "25 perc tempóban (kényelmesen kemény) a bemelegítés után.",
                     "intensity": "LONG_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -324583,8 +324585,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Tempo Run",
-                    "description": "25 minutes at tempo pace following a 10-minute warm-up.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció fókuszában.",
                     "intensity": "TEMPO_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -324592,8 +324594,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 3 x 1km at 5K pace with 3-minute recoveries.",
+                    "workout": "Intervallum edzés",
+                    "description": "5 perc bemelegítés, 9 x 1 perc gyors futás, 1 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -324601,8 +324603,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Könnyű futás",
+                    "description": "45-60 perc kényelmes 'beszélgetős' tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -324610,8 +324612,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Strides",
-                    "description": "6-8 x 100m strides after an easy run to enhance speed and form.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -365369,7 +365371,7 @@
       ]
     },
     "5k_beginner": {
-      "name": "5K Beginner",
+      "name": "5K Kezdő",
       "user_inputs": {
         "target_distance": "5k",
         "experience_level": "beginner",
@@ -365385,107 +365387,107 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week 5K Training for Beginners",
-            "focus": "Building endurance and speed for a 5K race",
-            "description": "[4-WEEK PLAN] This program is designed for beginners aiming to complete a 5K. It focuses on gradually increasing running endurance and speed through a mix of easy runs, tempo workouts, and interval training, ensuring a balanced approach to fitness.",
+            "title": "4 Hetes 5K Edzés Kezdőknek",
+            "focus": "Állóképesség és sebesség fejlesztése egy 5K versenyre",
+            "description": "[4-HELYEZÉS] Ez a program kezdők számára készült, akik célul tűzték ki, hogy teljesítsenek egy 5K-t. Fókuszában az állóképesség és sebesség fokozatos növelése könnyű futások, tempóedzések és intervallum tréningek kombinációjával, kiegyensúlyozott megközelítést biztosítva a fittséghez.",
             "highlights": [
-              "Gradual progression in distance and intensity to safely build fitness.",
-              "Incorporation of varied workout types (easy, tempo, intervals) for comprehensive training.",
-              "Emphasis on recovery and form to enhance overall running efficiency."
+              "Fokozatos növekedés távolságban és intenzitásban az egészséges fejlődés érdekében.",
+              "Különböző edzéstípusok (könnyű, tempó, intervallumok) beépítése a komplex edzéshez.",
+              "Fókusz a regenerációra és a helyes forma kialakítására a futás hatékonyságának növelése érdekében."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Establishing a running routine and building aerobic capacity.",
+                "focus": "Futási rutin kialakítása és aerob kapacitás növelése",
                 "sessions": [
                   {
                     "day": "FRIDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   }
                 ]
               },
               {
                 "week": 2,
-                "focus": "Introducing tempo runs and building on aerobic capacity.",
+                "focus": "Tempó futások bevezetése és az aerob kapacitás növelése",
                 "sessions": [
                   {
                     "day": "FRIDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   }
                 ]
               },
               {
                 "week": 3,
-                "focus": "Building speed and endurance through interval training.",
+                "focus": "Sebesség intervallumok növelése",
                 "sessions": [
                   {
                     "day": "FRIDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   }
                 ]
               },
               {
                 "week": 4,
-                "focus": "Tapering and preparing for race day.",
+                "focus": "Hosszabb futások növelése",
                 "sessions": [
                   {
                     "day": "FRIDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Rest",
-                    "description": "Vila - ingen träning",
+                    "workout": "Pihenő",
+                    "description": "Pihenés - nincs tréning",
                     "intensity": "Rest",
                     "duration": 0,
-                    "duration_unit": "minutes",
+                    "duration_unit": "perc",
                     "priority": 4
                   }
                 ]
@@ -405307,7 +405309,7 @@
       ]
     },
     "5k_intermediate": {
-      "name": "5K Intermediate",
+      "name": "5K Középhaladó",
       "user_inputs": {
         "target_distance": "5k",
         "experience_level": "intermediate",
@@ -405323,23 +405325,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week 5K Intermediate Training Plan",
-            "focus": "Building Speed and Endurance for 5K Race",
-            "description": "[4-WEEK PLAN] This 4-week training plan is designed for intermediate runners preparing for a 5K race. The program focuses on enhancing speed, endurance, and recovery through a variety of structured workouts, including base runs, tempo runs, interval training, and long runs.",
+            "title": "4-Hétes 5K Középhaladó Edzésterv",
+            "focus": "Gyorsaság és állóképesség fejlesztése 5K versenyre",
+            "description": "[4-HÉTES TERV] Ez a 4 hetes edzésterv középhaladó futóknak készült, akik 5K versenyre készülnek. A program a gyorsaság, állóképesség és regeneráció fejlesztésére fókuszál, strukturált edzésekkel, mint alapfutások, tempó futások, intervall edzések és hosszú futások.",
             "highlights": [
-              "Incorporates a mix of speed work and endurance training tailored for 5K performance.",
-              "Emphasizes recovery and form to optimize performance and prevent injury.",
-              "Gradual progression in intensity and volume to adapt to the runner's fitness level."
+              "Gyorsaság és állóképesség edzések váltakozása a verseny sikeréért.",
+              "Fokozatos terhelésnövelés az optimális eredményért.",
+              "Regeneráció és helyes technika hangsúlyozása a teljesítmény növelése érdekében."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Introduction to Speed and Endurance",
+                "focus": "Gyorsaság és állóképesség bevezetése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-45 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -405347,8 +405349,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alapfutás",
+                    "description": "30-45 perc kényelmes tempóban, az aerob kapacitás növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -405356,8 +405358,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -405365,8 +405367,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 5 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Tempó futás",
+                    "description": "10 perc bemelegítés, majd 20 perc tempóban (kényelmesen kemény).",
                     "intensity": "INTERVAL_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -405374,8 +405376,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, a gyorsaság és állóképesség növelése érdekében.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -405383,8 +405385,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban, az állóképesség növelése érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -405403,12 +405405,12 @@
               },
               {
                 "week": 2,
-                "focus": "Building Endurance and Speed",
+                "focus": "Állóképesség és gyorsaság fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, a sebesség változatosságával.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -405416,8 +405418,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alapfutás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe lejtőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -405425,8 +405427,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, sebesség változatosságával.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -405434,8 +405436,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 7 x 1 minute fast running with 1-minute easy running in between.",
+                    "workout": "Tempó futás",
+                    "description": "10 perc bemelegítés, majd 25 perc tempóban, majd 10 perc lehűlés.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -405443,8 +405445,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, sebesség változatosságával.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -405452,8 +405454,8 @@
                   },
                   {
                     "day": "SATURDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban, az állóképesség növelése érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -447594,7 +447596,7 @@
       ]
     },
     "5k_advanced": {
-      "name": "5K Advanced",
+      "name": "5K Haladó",
       "user_inputs": {
         "target_distance": "5k",
         "experience_level": "advanced",
@@ -447610,23 +447612,23 @@
       "variations": [
         {
           "variation": {
-            "title": "4-Week 5K Advanced Training Plan",
-            "focus": "Peak Performance for 5K Race",
-            "description": "[4-WEEK PLAN] This four-week training program is designed for advanced runners aiming to achieve their best performance in a 5K race. The plan emphasizes a balanced mix of speed work, tempo runs, and long runs to enhance both aerobic and anaerobic capacities.",
+            "title": "4 Hetes 5K Haladó Edzésterv",
+            "focus": "Csúcsforma az 5K versenyen",
+            "description": "[4-HÉTES TERV] (Eredeti 4 hetes terv módosítva) Ez a négyhetes edzésprogram haladó futóknak készült, akik a legjobb eredményt akarják elérni egy 5K versenyen. A terv hangsúlyozza a sebesség, tempó és hosszú futások kiegyensúlyozott kombinációját, hogy növelje az aerob és anaerob kapacitást.",
             "highlights": [
-              "Targeted workouts to optimize speed and endurance for a 5K race.",
-              "Progressive intensity to adapt and prepare the body for race conditions.",
-              "Structured recovery and easy runs to ensure peak performance."
+              "Célzott edzések a sebesség és kitartás optimalizálására 5K versenyre.",
+              "Progresszív intenzitás a test alkalmazkodásához és felkészítéséhez a verseny körülményekre.",
+              "Strukturált regeneráció és könnyű futások a csúcsforma eléréséhez."
             ],
             "main_weeks": [
               {
                 "week": 1,
-                "focus": "Building Aerobic Capacity and Speed Endurance",
+                "focus": "Aerob kapacitás és sebesség alapozása",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "30-45 minutes at a comfortable 'chatty' pace to build aerobic capacity.",
+                    "workout": "Alap futás",
+                    "description": "30-45 perc kényelmes tempóban, hogy növelje az aerob kapacitást.",
                     "intensity": "EASY_PACE",
                     "duration": 45,
                     "duration_unit": "minutes",
@@ -447634,8 +447636,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 3 x 1km at 5K pace with 3-minute recoveries.",
+                    "workout": "Sebesség edzés",
+                    "description": "10 perc bemelegítés, 3 x 1 km 5K tempóban, 3 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 33,
                     "duration_unit": "minutes",
@@ -447643,8 +447645,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run",
-                    "description": "30-40 minutes at a very easy pace, focusing on form and relaxation.",
+                    "workout": "Regeneráló futás",
+                    "description": "30-40 perc nagyon könnyű tempóban, a forma és relaxáció érdekében.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 40,
                     "duration_unit": "minutes",
@@ -447652,8 +447654,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Tempo Run",
-                    "description": "20 minutes at tempo pace (comfortably hard) following a 10-minute warm-up.",
+                    "workout": "Tempo futás",
+                    "description": "20 perc tempóban (kényelmesen kemény), 10 perc bemelegítéssel.",
                     "intensity": "TEMPO_PACE",
                     "duration": 30,
                     "duration_unit": "minutes",
@@ -447661,8 +447663,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -447671,7 +447673,7 @@
                   {
                     "day": "SATURDAY",
                     "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 5 x 1 minute fast running with 1-minute easy running in between.",
+                    "description": "5 perc könnyű futás, majd 5 x 1 perc gyors futás, 1 perc könnyű között.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 20,
                     "duration_unit": "minutes",
@@ -447679,8 +447681,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "75-90 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "75-90 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 90,
                     "duration_unit": "minutes",
@@ -447690,12 +447692,12 @@
               },
               {
                 "week": 2,
-                "focus": "Enhancing Speed and Lactate Threshold",
+                "focus": "Sebesség és kitartás fejlesztése",
                 "sessions": [
                   {
                     "day": "MONDAY",
-                    "workout": "Base Run",
-                    "description": "45-60 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "45-60 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 60,
                     "duration_unit": "minutes",
@@ -447703,8 +447705,8 @@
                   },
                   {
                     "day": "TUESDAY",
-                    "workout": "Speed Work",
-                    "description": "10-minute warm-up, 4 x 1.5km at 10K pace with 2-minute recoveries.",
+                    "workout": "Sebesség edzés",
+                    "description": "10 perc bemelegítés, 4 x 1,5 km 10K tempóban, 2 perc pihenőkkel.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -447712,8 +447714,8 @@
                   },
                   {
                     "day": "WEDNESDAY",
-                    "workout": "Recovery Run",
-                    "description": "40-50 minutes at a very easy pace, allowing for some variation in speed.",
+                    "workout": "Regeneráló futás",
+                    "description": "40-50 perc nagyon könnyű tempóban, a sebesség változatosságával.",
                     "intensity": "RECOVERY_PACE",
                     "duration": 50,
                     "duration_unit": "minutes",
@@ -447721,8 +447723,8 @@
                   },
                   {
                     "day": "THURSDAY",
-                    "workout": "Tempo Run",
-                    "description": "25 minutes at tempo pace following a 10-minute warm-up.",
+                    "workout": "Tempo futás",
+                    "description": "25 perc tempóban, 10 perc bemelegítéssel.",
                     "intensity": "TEMPO_PACE",
                     "duration": 35,
                     "duration_unit": "minutes",
@@ -447730,8 +447732,8 @@
                   },
                   {
                     "day": "FRIDAY",
-                    "workout": "Base Run",
-                    "description": "60-75 minutes at a comfortable 'chatty' pace, incorporating gentle hills.",
+                    "workout": "Alap futás",
+                    "description": "60-75 perc kényelmes tempóban, enyhe emelkedőkkel.",
                     "intensity": "EASY_PACE",
                     "duration": 75,
                     "duration_unit": "minutes",
@@ -447740,7 +447742,7 @@
                   {
                     "day": "SATURDAY",
                     "workout": "Fartlek",
-                    "description": "5 minutes easy running, followed by 7 x 1 minute fast running with 1-minute easy running in between.",
+                    "description": "5 perc könnyű futás, majd 7 x 1 perc gyors futás, 1 perc könnyű között.",
                     "intensity": "INTERVAL_PACE",
                     "duration": 25,
                     "duration_unit": "minutes",
@@ -447748,8 +447750,8 @@
                   },
                   {
                     "day": "SUNDAY",
-                    "workout": "Long Run",
-                    "description": "90-105 minutes at a comfortable pace to enhance endurance.",
+                    "workout": "Hosszú futás",
+                    "description": "90-105 perc kényelmes tempóban az állóképesség növelése érdekében.",
                     "intensity": "LONG_PACE",
                     "duration": 105,
                     "duration_unit": "minutes",

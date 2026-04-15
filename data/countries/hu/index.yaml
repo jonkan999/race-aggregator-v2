@@ -1,0 +1,1057 @@
+type_options:
+  road: Országúti futás
+  terrain: Terep
+  trail: Trail
+  track: Pálya
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Váltó
+  time: Időalapú verseny
+  other: Egyéb
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Félmaraton:
+    range:
+    - 20
+    - 22
+  Maraton:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 meter:
+    range:
+    - 1.5
+    - 1.5
+  3000 meter:
+    range:
+    - 3
+    - 3
+  5000 meter:
+    range:
+    - 5
+    - 5
+  10000 meter:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Időalapú verseny
+  relay: Váltó
+verbose_local_distance_mapping:
+  half marathon: Félmaraton
+  marathon: Maraton
+  fallback: Vegyes távok
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Félmaraton
+- range:
+  - 41.9
+  - 42.4
+  label: Maraton
+country_code: hu
+country_language_code: hu
+navigation:
+  main: Összes
+  race-list: Futónaptár
+  add-race: Verseny hozzáadása
+  forum: Fórum
+  measure-route: Útvonal mérése
+  training-plans: Edzéstervek
+  pace-calculator: Tempóátváltó
+  racetime-estimator: Célidő-becslő
+  about-us: Rólunk
+  contact: Kapcsolat
+race_list_name: Futónaptár
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Verseny előnézete
+  terms-of-service: Felhasználási feltételek
+  privacy-policy: Adatvédelmi szabályzat
+  about-us: Rólunk
+  contact: Kapcsolat
+  faq: GYIK
+page_name: Futásnaptár
+base_url: https://futasnaptar.com/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Helló!
+    closing_salutation: Üdvözlettel,
+    link_fallback_intro: 'Ha a gomb nem működik, ezt a linket is bemásolhatod:'
+  confirm_signup:
+    body: Köszönjük, hogy regisztráltál a(z) {site_name} oldalra. Az e-mail-címed megerősítésével aktiválhatod a fiókodat és kezelheted a beküldött versenyeket.
+    button_label: E-mail-cím megerősítése
+    ignore_note: Ha nem te hoztad létre ezt a fiókot, ezt az e-mailt figyelmen kívül hagyhatod.
+  reset_password:
+    body: Jelszó-visszaállítási kérést kaptunk a(z) {site_name} fiókodhoz. Az alábbi gombra kattintva új jelszót állíthatsz be.
+    button_label: Jelszó visszaállítása
+    ignore_note: Ha nem te kérted ezt, nyugodtan figyelmen kívül hagyhatod ezt az e-mailt. A jelszavad addig nem változik meg, amíg újat nem választasz.
+  change_email:
+    body: E-mail-cím módosítását kérted a(z) {site_name} oldalon használt fiókodhoz. Az alábbi gombra kattintva erősítheted meg a változást.
+    button_label: Új e-mail-cím megerősítése
+    ignore_note: Ha nem te kérted a módosítást, ezt az e-mailt figyelmen kívül hagyhatod.
+title: Minden a futásról itt
+country_native: Magyarország
+country: Magyarország
+meta_description: Magyarország egyik legátfogóbb futóverseny-naptára és futó közösségi oldala
+country_language: magyar
+local_name_for_race: verseny
+main_bullet_1: Találd meg a következő versenyedet
+main_bullet_2: ' - vagy add hozzá itt'
+main_bullet_3: Fedezz fel versenyeket az egész országban
+main_bullet_4: Olvasd el a friss híreket vagy szólj hozzá a fórumban
+description: Ez a közösségi kezdeményezés azért jött létre, hogy közelebb hozza egymáshoz a magyarországi futókat. Az oldal még fejlődik, de a segítségeddel valóban hasznos otthona lehet a hazai futóközösségnek.
+cta_search: Verseny keresése
+cta_add: Verseny hozzáadása
+selected_races_title: Kiemelt versenyek
+selected_races_top_title: A hét versenye
+cta_all_races: Összes verseny megjelenítése
+show_local: Mutasd
+race_local: versenyek
+running_local: futás
+alt_prefix: 'Kép ehhez: '
+race_list_title: A legteljesebb magyarországi gyűjtés maratonokról, félmaratonokról és más futóversenyekről
+race_list_meta_description_1: Találd meg a futóversenyeket és versenydátumokat Magyarország egész területéről
+race_list_meta_description_2: ✔️Átfogó futásnaptár ✔️Terep-, backyard-, országúti és maratoni versenyek ✔️Versenyek az egész országból
+race_list_data_error: Nem sikerült betölteni a versenyeket. Kérjük, próbáld újra később.
+race_list_remote_required: További oldalakhoz és szűrőkhöz adatbázis (Supabase) szükséges. Add hozzá a PUBLIC_SUPABASE_URL és PUBLIC_SUPABASE_PUBLISHABLE_KEY értékeket a .env fájlhoz.
+race_list_empty: Egyik verseny sem felelt meg a kiválasztott szűrőknek.
+race_list_loading: Betöltés…
+race_card_cta_text: További infó és nevezés
+section_race_card_category_prefix: Összes
+section_race_card_category_suffix: verseny
+section_race_card_header_separator: itt
+section_race_card_header_region_default: Magyarország
+section_race_card_header_date_range_from: 'ettől: '
+section_race_card_header_date_range_to: 'eddig: '
+section_race_card_header_date_range_single: 'ekkor: '
+filter_date_from: Ettől
+filter_date_to: Eddig
+filter_county: Minden régió
+filter_race_type: Minden versenytípus
+filter_categories: Minden kategória
+filter_months: Egész év
+filter_distance: Minden táv
+month_mapping:
+  '01': január
+  '02': február
+  '03': március
+  '04': április
+  '05': május
+  '06': június
+  '07': július
+  08: augusztus
+  09: szeptember
+  '10': október
+  '11': november
+  '12': december
+month_mapping_short:
+  '01': jan
+  '02': febr
+  '03': márc
+  '04': ápr
+  '05': máj
+  '06': jún
+  '07': júl
+  08: aug
+  09: szept
+  '10': okt
+  '11': nov
+  '12': dec
+county_label_text: Minden régió
+county_mapping:
+  Budapest: Budapest
+  Baranya: Baranya
+  Bács-Kiskun: Bács-Kiskun
+  Békés: Békés
+  Borsod-Abaúj-Zemplén: Borsod-Abaúj-Zemplén
+  Csongrád: Csongrád
+  Fejér: Fejér
+  Győr-Moson-Sopron: Győr-Moson-Sopron
+  Hajdú-Bihar: Hajdú-Bihar
+  Heves: Heves
+  Komárom-Esztergom: Komárom-Esztergom
+  Nógrád: Nógrád
+  Pest: Pest
+  Somogy: Somogy
+  Szabolcs-Szatmár-Bereg: Szabolcs-Szatmár-Bereg
+  Jász-Nagykun-Szolnok: Jász-Nagykun-Szolnok
+  Tolna: Tolna
+  Vas: Vas
+  Veszprém: Veszprém
+  Zala: Zala
+category_label_text: Versenykategória
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Ugrás a verseny oldalára
+map_toggle_desktop: Térkép megjelenítése
+map_toggle_desktop_active: Térkép elrejtése
+map_toggle_mobile: Térkép
+map_toggle_mobile_list: Lista
+map_markers_load_error: Nem sikerült betölteni a térképes jelölőket.
+map_not_configured: A térkép nincs beállítva (hiányzik a térképkulcs).
+race_page_map_zoom: '{default_map_zoom}'
+pagination:
+  results_text: /
+  events_text: verseny
+  previous_text: Előző
+  next_text: Következő
+  page_text: Oldal
+  of_text: /
+add_race_title: Új verseny hozzáadása
+add_race_meta_description: Add hozzá a versenyedet a Futásnaptárhoz
+map_message: A verseny helyszínét a térképre kattintva add meg
+mapbox_center:
+  latitude: 47.169048
+  longitude: 19.50898
+mapbox_zoom: '7'
+date_text: Dátum
+multi_day_toggle: Többnapos esemény
+end_date_text: Záró dátum
+type_text: Borítás / versenytípus
+type_select_placeholder: Válassz borítást / versenytípust
+name_label: 'Verseny neve:'
+name_placeholder: pl. Városi Maraton
+distance_label: 'Távok:'
+distance_placeholder: Add meg a távot km-ben
+add_distance_button: Hozzáadás
+half_marathon_button: Félmaraton
+marathon_button: Maraton
+backyard_ultra_button: Backyard ultra
+frontyard_ultra_button: Frontyard ultra
+fifty_miles_button: 50 mérföld
+hundred_miles_button: 100 mérföld
+place_label: 'Helyszín neve:'
+place_placeholder: pl. Városliget, Budapest
+organizer_label: 'Szervező:'
+organizer_contact_placeholder: Futóklub
+organizer_contact_label: 'Kapcsolati e-mail:'
+organizer_mail_placeholder: info@organizer.com
+website_label: 'Szervező weboldala:'
+website_placeholder: https://organizer.com/
+start_time_label: 'Rajtidő:'
+start_time_placeholder: 09:00
+price_range_label: 'Ártartomány:'
+price_range_placeholder: pl. 8000-15000 Ft
+add_race_description_label: Verseny leírása
+add_race_description_placeholder: A Városi Maraton sík pályán, hosszú egyenes szakaszokkal vezet...
+add_race_additional_label: További információk
+add_race_additional_placeholder: pl. rajt- és célhelyszín, rajtzónák stb.
+add_race_images_label: Képek feltöltése (legalább 4 ajánlott)
+choose_pictures_button: Képek kiválasztása
+drag_drop_text: Húzd ide a képeket, vagy kattints a kiválasztáshoz
+add_race_remove_image_label: Kép eltávolítása
+coordinates_display_prefix: Verseny koordinátái
+add_race_upload_limit_message: Már csak {count} további képet tölthetsz fel.
+add_race_map_not_configured: A térkép jelenleg nem tölthető be.
+clear_images_button: Képek törlése
+clear_form_button: Űrlap törlése
+preview_button: Előnézet
+submit_button: Beküldés
+preview_title: Előnézet
+preview_exit_button: Előnézet bezárása
+optional_label: Opcionális
+comments_suffix: hozzászólás
+cta_forum: Összes bejegyzés megjelenítése
+race_page_preview_title: Így fog kinézni a versenyoldalad
+edit_race_button: Szerkesztés
+race_page_description_label: Verseny leírása
+race_page_course_highlights_label: Kiemelések
+race_page_additional_label: További információk
+race_page_detailed_info_label: Részletes információk
+race_page_social_links_label: Kövesd a versenyt
+race_page_place_label: 'Helyszín:'
+race_page_distances_label: 'Távok:'
+race_page_surface_label: 'Borítás:'
+race_page_date_label: 'Dátum:'
+race_page_estimated_date_label: Becsült dátum
+race_page_estimated_disclaimer: Ehhez a versenyhez még nem kaptunk hivatalos dátumot.
+race_page_registration_link: Nevezési link
+race_page_registration_cta: Nevezz most
+race_page_info_cta: További információ
+race_page_registration_close_label: Nevezés zárása
+race_page_pricing_title: Nevezés és árak
+race_page_price_deadline_label: Érvényes eddig
+race_page_price_late_fee_label: Késői nevezés
+race_page_back_to_list: Vissza a versenynaptárhoz
+race_page_favorites_title: Ne maradj le a verseny frissítéseiről
+race_page_favorites_body: Hozz létre fiókot, és mentsd el ezt a versenyt a kedvenceid közé, hogy értesülhess a frissítésekről, hírekről és válogatott ajánlatokról, amikor elindul a kedvencek funkció.
+race_page_favorites_cta: Verseny mentése a kedvencek közé
+race_page_similar_title: Hasonló versenyek
+race_page_similar_body: További versenyek hasonló távval, típussal vagy közeli helyszínnel.
+race_page_discover_title: Fedezz fel több versenyt
+race_page_discover_county_link: 'Összes verseny itt: {county}'
+race_page_discover_type_link: További {type} versenyek
+race_page_discover_category_link: További {category} versenyek
+race_page_discover_type_county_link: '{type} versenyek itt: {county}'
+race_page_discover_overview_link: Összes versenykategória böngészése
+disclaimer_text_1: 'Az oldalon szereplő minden információ nyílt forrású adatokon alapul. Igyekszünk naprakészen tartani, de
+
+  nem tudjuk garantálni, hogy minden adat hibátlan. Ha pontatlanságot látsz,
+
+  '
+disclaimer_link: írj nekünk
+disclaimer_text_2: és a lehető leghamarabb javítjuk.
+disclaimer_text_3: Van még valami, amit hozzáadnál a versenyedhez?
+disclaimer_text_4: és megpróbálunk segíteni!
+race_page_visit_organizer_website: Szervező weboldala és nevezés
+race_page_folder_name: futoversenyek
+race_page_alt_prefix: 'Kép ehhez: '
+seo_county_folder_name: Minden régió
+seo_cities_folder_name: Városok
+popular_subcategories_title: Népszerű alkategóriák
+important_keywords_racelist:
+- futónaptár
+- versenynaptár
+- futóverseny naptára
+- futóversenyek
+- futórendezvények
+- futóverseny
+- futóversenyek listája
+- futóverseny kereső
+seo_templates:
+  title_parts:
+    category: '{category} versenyek'
+    race_type: '{race_type}'
+    location: itt {location}
+    default: Összes verseny
+  paragraph_templates:
+    category_race_location: 'Találj {category} {race_type} versenyeket itt: {location}.'
+    category_race: Fedezz fel {category} {race_type} versenyeket Magyarország egész területén.
+    category_location: 'Fedezz fel {category} versenyeket itt: {location}.'
+    race_location: 'Nézd meg az összes {race_type} versenyt itt: {location}.'
+    category_only: Találj {category} versenyeket Magyarország egész területén.
+    race_only: Fedezz fel {race_type} versenyeket minden régióban.
+    location_only: 'Nézd meg az összes versenytípust itt: {location}.'
+    default_suffix: Itt megtalálod a dátumokat, távokat és minden fontos információt a következő versenyed megtervezéséhez.
+  browse_page_templates:
+    county:
+      title: '{label} versenyek | {site_name}'
+      meta_description: 'Böngészd a futóversenyeket itt: {label}. Hasonlítsd össze a dátumokat, távokat, versenyformátumokat és gyakorlati részleteket, mielőtt kiválasztod a következő versenyedet.'
+      h1: 'Versenyek itt: {label}'
+      paragraph: 'Ez az oldal összegyűjti a futóversenyeket itt: {label}, hogy könnyebb legyen egy helyen összehasonlítani a dátumokat, távokat, versenyformátumokat és gyakorlati részleteket. Akkor hasznos, ha tisztább áttekintést szeretnél a következő verseny kiválasztása előtt.'
+    city:
+      title: '{label} versenyek | {site_name}'
+      meta_description: 'Találj futóversenyeket, amelyek kapcsolódnak ehhez a városhoz: {label}. Hasonlítsd össze a dátumokat, távokat, közeli lehetőségeket és gyakorlati részleteket, mielőtt kiválasztod a következő versenyedet.'
+      h1: Versenyek {label} közelében
+      paragraph: Ez a városi oldal segít böngészni a(z) {label} városhoz kapcsolódó futóversenyeket, beleértve a közeli alternatívákat is, amelyek hasznosak lehetnek egy versenynap vagy utazás megtervezésekor. Azért készült, hogy gyorsabbá és könnyebben összehasonlíthatóvá tegye a helyi versenykeresést.
+    month:
+      title: '{label} versenyek | {site_name}'
+      meta_description: 'Böngészd a futóversenyeket itt: {label}, ebben a piacon: {market}. Hasonlítsd össze a dátumokat, távokat, versenytípusokat és gyakorlati részleteket, mielőtt megtervezed a szezonodat.'
+      h1: 'Versenyek ekkor: {label}'
+      paragraph: 'Ez az oldal azoknak a futóknak szól, akik hónap szerinti nézetben szeretnék látni a naptárat, és gyorsabban akarják összehasonlítani, mi történik ekkor: {label}. Segít szűkíteni a lehetőségeket, mielőtt belemerülnél a távokba, borításokba és helyszínekbe.'
+    race_type:
+      title: '{label} versenyek itt: {market} | {site_name}'
+      meta_description: 'Böngészd a(z) {label_lower} versenyeket itt: {market}. Hasonlítsd össze a dátumokat, távokat, helyszíneket és gyakorlati részleteket, mielőtt kiválasztod a hozzád illő versenyt.'
+      h1: '{label} versenyek itt: {market}'
+      paragraph: Ez az oldal a(z) {label_lower} versenyekre fókuszál, és átláthatóbb képet ad, amikor a versenyformátum legalább annyira fontos, mint a táv. Használd arra, hogy régiók, dátumok és gyakorlati részletek szerint hasonlítsd össze a lehetőségeket anélkül, hogy a teljes naptárból kellene kiindulnod.
+    category:
+      title: '{label} versenyek itt: {market} | {site_name}'
+      meta_description: 'Böngészd a(z) {label} versenyeket itt: {market}. Hasonlítsd össze a dátumokat, versenytípusokat, helyszíneket és gyakorlati részleteket, mielőtt döntesz a következő eseményedről.'
+      h1: '{label} versenyek itt: {market}'
+      paragraph: Ez a táv- és kategóriaoldal egy helyre gyűjti a(z) {label} címkéhez illő versenyeket, hogy könnyebb legyen összehasonlítani a releváns lehetőségeket. Azoknak a futóknak készült, akik gyorsabban szeretnének eljutni az általános böngészéstől egy reális rövidlistáig.
+    race_type_category:
+      title: '{label} {secondary_label} versenyek itt: {market} | {site_name}'
+      meta_description: 'Böngészd a(z) {label} versenyeket itt: {market}, a(z) {secondary_label_lower} versenytípuson belül. Hasonlítsd össze a dátumokat, helyszíneket és gyakorlati részleteket, mielőtt kiválasztod a következő eseményedet.'
+      h1: '{label} versenyek itt: {market} ({secondary_label})'
+      paragraph: Ez az oldal a naptárat a(z) {secondary_label_lower} versenytípuson belüli {label} versenyekre szűkíti, ami hasznos, amikor a táv és a versenyformátum együtt határozza meg a jó választást. Használd arra, hogy valóban összeillő lehetőségeket vess össze, mielőtt elköteleződsz egy verseny mellett.
+    race_type_county:
+      title: '{secondary_label} versenyek itt: {label} | {site_name}'
+      meta_description: 'Böngészd a(z) {secondary_label_lower} versenyeket itt: {label}. Hasonlítsd össze a dátumokat, távokat és gyakorlati részleteket, mielőtt kiválasztod a következő versenyedet.'
+      h1: '{secondary_label} versenyek itt: {label}'
+      paragraph: Ez az oldal a(z) {label} területén rendezett {secondary_label_lower} versenyekre fókuszál, így könnyebb összehasonlítani a relevánsabb lehetőségeket ugyanazon a régión belül. Akkor hasznos, ha a földrajzi elhelyezkedés és a versenyformátum is meghatározza a rövidlistát.
+    race_type_month:
+      title: '{secondary_label} versenyek ekkor: {label} | {site_name}'
+      meta_description: 'Böngészd a(z) {secondary_label_lower} versenyeket ekkor: {label_lower}. Hasonlítsd össze a dátumokat, távokat és gyakorlati részleteket, miközben megtervezed a szezonodat.'
+      h1: '{secondary_label} versenyek ekkor: {label}'
+      paragraph: 'Ez az oldal a(z) {secondary_label_lower} versenyeket gyűjti össze ekkor: {label_lower}, azoknak a futóknak, akik először a naptár alapján terveznek. Segít összehasonlítani a hasonló versenyformátumokat, mielőtt tovább szűkítenél helyszín vagy táv szerint.'
+    race_type_city:
+      title: '{secondary_label} versenyek {label} közelében | {site_name}'
+      meta_description: 'Böngészd a(z) {secondary_label_lower} versenyeket, amelyek kapcsolódnak ehhez a városhoz: {label}. Hasonlítsd össze a dátumokat, távokat és a közeli lehetőségeket, mielőtt kiválasztod a következő versenyedet.'
+      h1: '{secondary_label} versenyek {label} közelében'
+      paragraph: Ez az oldal a(z) {label} városhoz kapcsolódó {secondary_label_lower} versenyeket gyűjti egybe, hogy gyorsabban lehessen összehasonlítani a helyi lehetőségeket. Akkor hasznos, ha egy adott versenyformátumot keresel egy város közelében anélkül, hogy a teljes naptárból kellene kiindulnod.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Örökzöld SEO-szöveget írsz indexelhető futóverseny-böngésző oldalakhoz. Elsősorban embereknek írj, másodsorban keresési szándékra optimalizálj. Kizárólag érvényes JSON-t adj vissza. A szöveg legyen időtálló: soha ne említs aktuális évet, aktuális darabszámot, időkorlátos megfogalmazást vagy frissességi állítást. Kerüld a kulcsszóhalmozást, a hype-ot, a clickbaitet, a túlzó állításokat és a nem igazolható kijelentéseket. Minden oldal legyen egyértelműen különböző a megadott útvonalkontextus alapján. Természetes magyar nyelvet használj, amely illik egy magyar futónaptárhoz. Törekedj rövid címekre, rövid H1-ekre, lehetőleg 120-160 karakter közötti meta leírásokra, valamint 2-3 rövid mondatból álló bekezdésre.'
+  browse_guidance:
+    county: A felhasználó egy adott régió versenyeit keresi.
+    city: A felhasználó egy városhoz vagy közeli városhoz kapcsolódó versenyeket keresi.
+    month: A felhasználó hónap szerint keres versenyeket.
+    race_type: A felhasználó egy adott versenytípust keres.
+    category: A felhasználó egy adott távot vagy versenykategóriát keres.
+    race_type_category: A felhasználó egy adott távot vagy kategóriát keres egy versenytípuson belül.
+    race_type_county: A felhasználó egy adott versenytípust keres egy régióban.
+    race_type_month: A felhasználó egy adott versenytípust keres egy hónapban.
+    race_type_city: A felhasználó egy adott versenytípust keres egy városhoz kapcsolódva.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Böngészés kategória szerint
+  helper_text: Találj versenyeket előre meghatározott szűrők és kombinációk alapján
+  overview: Áttekintés
+  counties: Régiók
+  cities: Városok
+  months: Hónapok
+  types: Versenytípusok
+  categories: Kategóriák
+  neighboring: Szomszédos országok
+browse_overview:
+  title: Összes verseny böngészése
+  meta_description: Találj versenyeket régió, típus vagy kategória szerint
+browse_types:
+  title: Böngészés versenytípus szerint
+  meta_description: Találj versenyeket versenytípus szerint.
+browse_counties:
+  title: Böngészés régió szerint
+  meta_description: Találj versenyeket a régiódban.
+browse_cities:
+  title: Böngészés város szerint
+  meta_description: Találj versenyeket a városodban.
+browse_categories:
+  title: Böngészés kategória szerint
+  meta_description: Találj versenyeket táv és kategória szerint.
+browse_months:
+  title: Böngészés hónap szerint
+  meta_description: Találj versenyeket hónap szerint.
+auth_modal:
+  title_sign_in: Bejelentkezés
+  title_create_account: Fiók létrehozása
+  title_reset_password: Jelszó visszaállítása
+  auth_unavailable: A hitelesítés még nincs beállítva.
+  name_placeholder: A neved
+  email_placeholder: Az e-mail-címed
+  password_placeholder: Jelszó
+  submit_sign_in: Bejelentkezés
+  submit_create_account: Fiók létrehozása
+  submit_reset_password: Visszaállító link küldése
+  create_account: Fiók létrehozása
+  forgot_password: Elfelejtetted a jelszavad?
+  back_to_login: Vissza a bejelentkezéshez
+  error_wrong_password: Hibás jelszó
+  error_email_not_found: Az e-mail-cím nem található
+  prompt_reset_password: Szeretnéd visszaállítani a jelszavadat?
+  prompt_create_account: Szeretnél ezzel az e-mail-címmel fiókot létrehozni?
+  already_logged_in: Már be vagy jelentkezve mint
+  as_email: ezzel az e-mail-címmel
+  continue_as_user: Folytatás ezzel a felhasználóval
+  logout_and_switch: Kijelentkezés és felhasználóváltás
+  account_created: A fiók létrejött!
+  account_created_details: Most már be vagy jelentkezve mint
+  verification_email_sent: Megerősítő linket küldtünk az e-mail-címedre
+  please_verify: Kérjük, erősítsd meg az e-mail-címedet
+  error_invalid_credential: Érvénytelen e-mail-cím vagy jelszó
+  create_account_prompt: Inkább hozz létre fiókot
+  error_too_many_requests: Túl sok próbálkozás. Kérjük, próbáld újra később.
+  continue_with_google: Folytatás Google-lel
+  continue_with_google_create: Fiók létrehozása Google-lel
+  google_in_progress: Folytatás Google-lel...
+  oauth_divider: vagy
+auth_pages:
+  confirm_success: Az e-mail-címed megerősítése sikerült, a fiókod most már aktív.
+  confirm_ready: Most már folytathatod az oldal használatát.
+  confirm_error: Nem sikerült megerősíteni az e-mail-címedet.
+  reset_intro: Adj meg új jelszót a fiókodhoz.
+  reset_confirm_label: Jelszó megerősítése
+  reset_mismatch_error: A jelszavak nem egyeznek.
+  reset_invalid_link_error: Érvénytelen vagy hiányzó helyreállítási link.
+  reset_success: A jelszavad frissült. Most már bejelentkezhetsz.
+newsletter_popup:
+  email_placeholder: Az e-mail-címed
+  submit_button: Kérem a frissítéseket
+  dismiss_button: Most nem
+  invalid_email: Kérjük, adj meg érvényes e-mail-címet.
+  submit_error: Jelenleg nem sikerült elmenteni a feliratkozásodat. Kérjük, próbáld újra.
+  submitting_text: Mentés...
+  success_message: Köszönjük! A versenyfrissítések úton vannak a postaládádba.
+  privacy_note: Új versenyek, dátumváltozások és válogatott ajánlatok. Bármikor leiratkozhatsz.
+  close_aria_label: Feliratkozási felugró ablak bezárása
+  benefits:
+    new_races: Új versenyek elsőként
+    date_changes: Azonnali dátumváltozások
+    selected_offers: Válogatott ajánlatok
+    similar_races: Hasonló versenyek a közeledben
+    local_picks: Több közeli verseny
+    opening_reminders: Emlékeztetők, mielőtt elfogynak a helyek
+    race_updates: Frissítések erről a versenyről
+    nearby_races: Határon túli versenyek a közeledben
+  generic:
+    eyebrow: Ne maradj le a következő versenyről
+    title: Kapd meg az új versenyeket és dátumváltozásokat mindenki előtt
+    body: Iratkozz fel a hírlevelünkre, és kapj új versenyeket, frissített dátumokat és válogatott tippeket {country} területéről közvetlenül a postaládádba.
+  race_detail:
+    eyebrow: Kövesd ezt a versenyt
+    title: 'Kérsz frissítéseket erről: {race_name}?'
+    body: Iratkozz fel, hogy közvetlenül a postaládádba kapd a(z) {race_name} versenyről, a(z) {county} területén található hasonló versenyekről és a fontos változásokról szóló frissítéseket.
+  browse_category:
+    eyebrow: Több megfelelő verseny
+    title: Ne maradj le az új {category} versenyekről
+    body: Új {category} versenyeket, releváns közeli alternatívákat és fontos dátumokat küldünk, hogy ne kelljen folyamatosan kézzel keresgélned.
+  browse_category_type:
+    eyebrow: Több megfelelő verseny
+    title: 'Kapj több {race_type} versenyt ebben a kategóriában: {category}'
+    body: 'Iratkozz fel több {race_type} versenyre ebben a kategóriában: {category}, valamint közeli alternatívákra és dátumváltozásokra, közvetlenül a postaládádba.'
+  browse_county:
+    eyebrow: Először a helyi versenyek
+    title: 'Kapj több versenyt innen: {county}'
+    body: 'Kövesd az új versenyeket, a frissített dátumokat és a hasznos ajánlásokat itt: {county} anélkül, hogy állandóan a naptárt kellene nézned.'
+  browse_city:
+    eyebrow: Először a helyi versenyek
+    title: 'Szeretnél több versenyt itt: {city}?'
+    body: Iratkozz fel, és kapj új versenyeket, közeli alternatívákat és fontos dátumokat {city} környékéről közvetlenül a postaládádba.
+  browse_type:
+    eyebrow: A megfelelő versenystílus
+    title: Kapj több {race_type} versenyt a postaládádba
+    body: Új {race_type} versenyeket, hasonló alternatívákat és fontos dátumokat küldünk, hogy még azelőtt léphess, mielőtt elfogynak a helyek.
+  browse_month:
+    eyebrow: Tervezd meg a szezont
+    title: 'Kapd meg először a legjobb versenyeket ekkor: {month}'
+    body: Amikor a(z) {month} hónapban rendezett versenyek megnyílnak, elmozdulnak vagy különösen érdekessé válnak, azonnal hallasz róluk a postaládádban.
+  browse_neighboring:
+    eyebrow: Szélesítsd a naptáradat
+    title: Kapj versenyeket a szomszédos országokból is
+    body: Iratkozz fel új versenyekre, okos határon túli ajánlásokra és dátumváltozásokra {region} területéről, közvetlenül a postaládádba.
+  browse_neighboring_country:
+    eyebrow: Szélesítsd a naptáradat
+    title: 'Kapj több versenyt innen: {region}'
+    body: 'Új versenyeket, dátumváltozásokat és releváns közeli alternatívákat küldünk, amikor valami érdekes jelenik meg itt: {region}.'
+submission_flow:
+  logged_in_as: Bejelentkezve szervezőként
+  submitting_new_race: új verseny beküldése folyamatban
+  new_account_created: A verseny kezeléséhez meg kell erősítened az e-mail-címedet. Megerősítő linket küldtünk a megadott e-mail-címre.
+  password_reset_sent: Jelszó-visszaállító üzenet elküldve. Ellenőrizd a postaládádat.
+  unexpected_error: Hiba történt. Kérjük, próbáld újra.
+  processing_submission: Beküldés feldolgozása...
+  race_exists: A verseny már szerepel az adatbázisban.
+  race_submitted: A verseny beküldése sikerült!
+  submission_failed: Nem sikerült beküldeni a versenyt. Kérjük, próbáld újra.
+  missing_fields: Valami hiányzik. Győződj meg róla, hogy minden kötelező mező ki van töltve, és a térképen is ki lett választva egy helyszín.
+race_page:
+  forum_section:
+    title: Kérdések és válaszok
+    placeholder: Tegyél fel kérdést a szervezőnek...
+    submit_button: Kérdés elküldése
+    login_prompt: Jelentkezz be, hogy kérdést tehess fel
+    empty_state: Még nincsenek kérdések. Légy te az első, aki kérdez!
+    error_message_no_login: Jelentkezz be vagy hozz létre fiókot, hogy kérdést tehess fel
+map:
+  show_map: Térkép megjelenítése
+  show_list: Lista megjelenítése
+  map: térkép
+  list: lista
+forum:
+  title: Fórum - beszélgess a futásról és a futóéletről más magyar futókkal
+  meta_description: Beszélgess a futásról és a futóéletről más futókkal a fórumunkban. Edzés, versenyek, sérülések, táplálkozás, ruházat, felszerelés és még sok más.
+  categories:
+  - name: Edzés
+    slug: training
+    description: Beszélgetések edzésről és technikáról
+  - name: Versenyek és események
+    slug: races
+    description: Beszélgess a közelgő versenyekről
+  - name: Sérülések és rehabilitáció
+    slug: injuries
+    description: Segítség sérülésekhez és regenerációhoz
+  - name: Útvonalak és térképek
+    slug: routes
+    description: Beszélgess útvonalakról és térképekről
+  - name: Utazás és kapcsolódó témák
+    slug: travel
+    description: Beszélgess utazásról és az utazáshoz kapcsolódó futásról
+  - name: Diéta és táplálkozás
+    slug: nutrition
+    description: Beszélgess diétáról és táplálkozásról
+  - name: Ruházat, cipők és felszerelés
+    slug: gear
+    description: Beszélgess ruházatról, cipőkről és felszerelésről
+  - name: Adok-veszek
+    slug: buysell
+    description: Beszélgess futófelszerelések adásvételéről
+  - name: Egyéb
+    slug: misc
+    description: Minden egyéb
+  empty_category_state: Még nincsenek témák. Indítsd el a beszélgetést az első témával!
+  empty_state_thread: Még nincsenek bejegyzések. Légy te az első, aki ír!
+  empty_state: Még nincsenek bejegyzések. Légy te az első, aki ír!
+  reply_placeholder: Írd meg a válaszodat...
+  submit_button: Küldés
+  login_prompt: Jelentkezz be, hogy részt vehess a beszélgetésben
+  new_thread_title_placeholder: Az új témád címe
+  new_thread_content_placeholder: Írd meg az első bejegyzésedet...
+  create_thread_button: Új téma létrehozása
+  back_to_forum: ← Vissza a fórumhoz
+  back_to_category: '← Vissza ide: '
+  empty_thread_state: Még nincsenek bejegyzések. Légy te az első, aki ír!
+  posts_label: bejegyzés
+  reply_label: válasz
+  thread_created_title: Köszönjük, hogy új témát hoztál létre!
+  thread_created_message: A témádat hamarosan átnézzük és hozzáadjuk az oldalhoz.
+  thread_created_back_link: Vissza a kategóriához
+  show_more_threads: További témák megjelenítése
+  show_less_threads: Kevesebb téma megjelenítése
+  create_new_thread: Új téma létrehozása
+  reply_title: Válasz a témára
+  showing_threads_count: '{x} / {y} téma megjelenítve'
+about_us:
+  title: A Futásnaptárról
+  meta_description: Futásnaptár - útmutatód a magyarországi futáshoz
+  content:
+    intro: Üdvözlünk a Futásnaptárnál - az egyik legátfogóbb platformnál a magyar futók számára!
+    mission: Küldetésünk, hogy megkönnyítsük a futók számára a versenyekkel, edzéssel és minden futással kapcsolatos információ megtalálását és megosztását.
+    story: A Futásnaptár 2026-ban indult futóktól futóknak. Úgy láttuk, szükség van egy modern és jól használható felületre, ahol a magyar futóközösség egy helyen találkozhat.
+    features:
+    - title: Teljes versenynaptár
+      description: Magyarország futóversenyeit gyűjtjük egy helyre - a kisebb helyi eseményektől a nagyobb célversenyekig.
+    - title: Közösség által építve
+      description: A platformot hozzád hasonló futók mozgatják. Bárki hozzájárulhat versenyinformációkkal és részt vehet a beszélgetésekben.
+    - title: Ingyenes eszközök
+      description: Hasznos eszközöket kínálunk, például tempókalkulátort, edzésterveket és útvonaltervezést - teljesen ingyen.
+    closing: A platformot folyamatosan fejlesztjük a felhasználóink visszajelzései alapján. Van fejlesztési javaslatod? Lépj velünk kapcsolatba!
+contact:
+  title: Kapcsolat
+  meta_description: Lépj kapcsolatba a Futásnaptárral - itt vagyunk, hogy segítsünk
+  content:
+    intro: 'Örömmel hallunk felőled! Itt többféleképpen is elérhetsz minket:'
+    email:
+      title: E-mail
+      address: hello@futasnaptar.com
+      description: Hétköznapokon általában 24 órán belül válaszolunk.
+    social:
+      title: Közösségi média
+      description: 'Kövess minket a közösségi médiában a legfrissebb hírekért és frissítésekért:'
+    feedback:
+      title: Visszajelzés
+      description: Nagyra értékelünk minden visszajelzést, amely segít jobbá tenni a Futásnaptárt.
+privacy_page:
+  title: Adatvédelmi szabályzat
+  meta_description: Adatvédelmi tájékoztató arról, hogyan kezeli a Futásnaptár a személyes adatokat és a sütiket.
+  last_updated_label: Utolsó frissítés
+  last_updated_date: 2026. március 27.
+  contact_intro: 'Adatvédelemmel kapcsolatos kérdések vagy kérések esetén írj nekünk ide:'
+  contact_email: hello@futasnaptar.com
+  sections:
+  - title: 1. Milyen adatokat gyűjtünk
+    intro: 'Azokat az információkat gyűjtjük, amelyeket közvetlenül te adsz meg nekünk, amikor:'
+    bullets:
+    - fiókot hozol létre
+    - versenyinformációt küldesz be
+    - bejegyzést írsz a fórumba
+    - kapcsolatba lépsz velünk
+  - title: 2. Sütik és követés
+    intro: 'A sütiket a következőkre használjuk:'
+    bullets:
+    - megjegyezzük a beállításaidat
+    - fenntartsuk a munkamenetedet és a bejelentkezési állapotodat
+    - elemezzük a forgalmat és az oldalhasználatot
+    - releváns hirdetéseket mutassunk és javítsuk a felhasználói élményt
+  - title: 3. Hogyan használjuk az adataidat
+    intro: 'Az adataid abban segítenek nekünk, hogy:'
+    bullets:
+    - biztosítsuk és fejlesszük a szolgáltatásainkat
+    - fontos értesítéseket és frissítéseket küldjünk
+    - válaszoljunk a kéréseidre és támogatási kérdéseidre
+    - megelőzzük a csalást és a visszaéléseket
+  - title: 4. A jogaid
+    intro: 'A GDPR alapján jogod van a következőkhöz:'
+    bullets:
+    - hozzáférj a személyes adataidhoz
+    - helyesbíttesd a pontatlan vagy hiányos adatokat
+    - kérd az adataid törlését
+    - tiltakozz bizonyos adatkezelési tevékenységek ellen
+    - kérd az adathordozhatóságot
+  - title: 5. Kapcsolat
+    intro: Ha kérdésed van arról, hogyan kezeljük a személyes adatokat vagy hogyan használjuk a sütiket, bármikor felveheted velünk a kapcsolatot.
+racetime_estimator_title: Becsüld meg a célidődet
+racetime_estimator_description: Egy korábbi versenyed alapján megbecsülheted a várható idődet más távokra.
+known_distance_label: Válaszd ki azt a távot, amelyen már van eredményed
+known_time_label: Add meg az idődet
+calculate_button_text: Idők kiszámítása
+predicted_times_title: Becsült idők
+distance_header: Táv
+predicted_time_header: Becsült idő
+hilly_course_label: Dombos pálya
+finish_time_header: Becsült célidő
+pace_per_km_header: Min/km
+pace_per_mile_header: Perc/mérföld
+flat_time_header: Idő (sík pálya)
+flat_pace_per_km_header: Perc/km (sík pálya)
+flat_pace_per_mile_header: Perc/mérföld (sík pálya)
+hill_adjustment_header: Dombos pályás korrekció
+pace_calculator_title: Tempóátváltó
+pace_calculator_description: Egyszerű eszköz a futótempó különböző mértékegységek közötti átváltásához
+pace_table_header_kph: Kilométer per óra
+pace_table_header_mph: Mérföld per óra
+pace_table_header_min_km: Perc / kilométer
+pace_table_header_min_mile: Perc / mérföld
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Félmaraton
+pace_table_header_full: Maraton
+pace_conversion_note: 1 kilométer per óra (kph) = 0,62 mérföld per óra (mph)
+measure_route_title: Útvonal mérése
+measure_route_description: Kattints a térképre az útvonal pontjainak kijelöléséhez. A teljes táv automatikusan kiszámolódik.
+remove_last_point: Utolsó pont eltávolítása
+clear_route: Útvonal törlése
+total_distance: Teljes táv
+training_plans:
+  title: Edzéstervek
+  description: Készíts személyre szabott edzéstervet a célod alapján.
+  disclaimer_text_tp_1: Edzésterveinket mesterséges intelligencia készíti, majd a megadott céljaidhoz és preferenciáidhoz igazítjuk. A programok nem garantáltan tökéletesek, és nem biztos, hogy mindenkinek megfelelnek.
+  disclaimer_link_tp: Kapcsolatfelvétel
+  disclaimer_text_tp_2: ha van visszajelzésed vagy fejlesztési javaslatod.
+  form:
+    race_date_label: Verseny dátuma
+    plan_type_label: Terv típusa
+    target_distance_label: Célzott táv
+    target_time_label: Célidő
+    training_days_label: Edzésnapok hetente
+    session_time_label: Egy edzésre szánt idő
+    is_hilly_label: Dombos terep
+    hours_placeholder: Óra
+    minutes_placeholder: Perc
+    seconds_placeholder: Másodperc
+    submit_button: Edzésterv generálása
+    target_distance:
+      placeholder: Válassz távot
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Félmaraton
+        '42195': Maraton
+    training_days:
+      placeholder: Válassz napszámot
+      options:
+        '3': 3 nap
+        '4': 4 nap
+        '5': 5 nap
+        '6': 6 nap
+    session_time:
+      placeholder: Válassz időt egy edzésre
+      options:
+        30-45: 30-45 perc
+        45-60: 45-60 perc
+        60-90: 60-90 perc
+        90+: 90+ perc
+  results:
+    title: A te edzésterved
+    variations:
+      title: 'Válassz egy hozzád illő változatot:'
+    plan_details:
+      duration_label: 'Program hossza:'
+      weekly_distance_label: 'Heti táv:'
+    regenerate_button: További változatok megjelenítése
+    export_button: Exportálás PDF-be
+  workout_types:
+    easy: Könnyű futás
+    tempo: Tempófutás
+    intervals: Intervallok
+    long: Hosszú futás
+    rest: Pihenő
+  messages:
+    weeks: hét
+    week_label: Hét
+    hilly_terrain_note: dombos terepre igazítva
+  plan_variation:
+    focus_label: Fókusz
+    weekly_structure_label: Heti felépítés
+    distribution_label: Eloszlás
+    sessions_per_week: edzés hetente
+    select_button: Ezt a tervet választom
+  errors:
+    loading_plans: Hiba történt az edzéstervek betöltése közben
+    required_fields: Kérjük, tölts ki minden kötelező mezőt
+    no_matching_plan: Nem található megfelelő edzésterv
+    no_matching_variations: Nem találhatók megfelelő változatok
+    invalid_training_days: Az edzésnapok száma nem egyezik a terv követelményeivel
+  week: Hét
+  weeks: hét
+  hilly_terrain_note: dombos terepre igazítva
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Alapállóképesség fejlesztése
+        weekly_template:
+          monday:
+            type: easy
+            description: Könnyű állóképességi futás
+          wednesday:
+            type: tempo
+            description: Tempófutás
+          saturday:
+            type: long
+            description: Hosszú futás
+          sunday:
+            type: recovery
+            description: Regeneráció
+      build:
+        duration_percent: 40
+        focus: Intenzitás és terjedelem növelése
+        weekly_template:
+          monday:
+            type: easy
+            description: Könnyű állóképességi futás
+          wednesday:
+            type: intervals
+            description: Intervallok
+          friday:
+            type: tempo
+            description: Tempófutás
+          sunday:
+            type: long
+            description: Hosszú futás
+      peak:
+        duration_percent: 15
+        focus: Formaidőzítés és specifikus felkészülés
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Minőségi edzés
+          thursday:
+            type: tempo
+            description: Tempófutás
+          saturday:
+            type: long
+            description: Hosszú futás
+          sunday:
+            type: recovery
+            description: Regeneráció
+      taper:
+        duration_percent: 5
+        focus: Verseny előtti frissítés
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Könnyű futás
+          thursday:
+            type: tempo
+            description: Rövid tempófutás
+          saturday:
+            type: easy
+            description: Nagyon könnyű futás
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 perc könnyű kocogás
+        cooldown: 5-10 perc könnyű kocogás
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 perc fokozatos bemelegítés
+        cooldown: 10-15 perc levezetés
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 perc, futóiskolával és repülőkkel
+        cooldown: 10-15 perc könnyű kocogás
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 perc nagyon könnyű kocogás
+        cooldown: 5-10 perc séta vagy könnyű kocogás
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 perc séta
+        cooldown: 5-10 perc séta
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Bemelegítés
+    main_workout_label: Edzés leírása
+    cooldown_label: Levezetés
+    intensity_label: Tempó
+    duration_label: Idő
+  regenerate:
+    button_text: Új változat generálása
+    confirmation: Biztosan új változatot szeretnél generálni?
+  weekdays:
+    monday: Hétfő
+    tuesday: Kedd
+    wednesday: Szerda
+    thursday: Csütörtök
+    friday: Péntek
+    saturday: Szombat
+    sunday: Vasárnap
+footer:
+  races_heading: Versenyek
+  tools_heading: Eszközök
+  about_heading: A Futásnaptárról
+  privacy: Adatvédelmi szabályzat
+  copyright_year: 2023-2025
+  site_name: Futásnaptár
+  rights_text: Minden jog fenntartva.
+  social_links:
+    facebook: ''
+    instagram: ''
+    youtube: ''
+    tiktok: ''
+accessibility:
+  main_navigation_label: Fő navigáció
+  breadcrumb_label: Morzsamenü
+  back_to_top_label: Vissza az oldal tetejére
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Felkapott versenyek
+trending_races_description: Ezek azok a versenyek, amelyek most a legnagyobb figyelmet kapják a futóktól.
+trending_races_views_last_30_days: megtekintés az elmúlt 30 napban
+trending_races_most_viewed: Most a legnépszerűbb
+races_views: megtekintés
+recent_races_title: Nemrég hozzáadott versenyek
+today: ma
+yesterday: tegnap
+days_ago: nappal ezelőtt
+newest_race_badge: Legújabb hozzáadás
+races_count: verseny
+popular_counties_title: Találj versenyeket a régiódban
+popular_cities_title: Találj versenyeket a városodban
+all_counties: Összes régió megjelenítése
+all_cities: Összes város megjelenítése
+category_header_1: Terepfutó versenyek
+category_type_1: trail
+category_1_races_sub_title_1: Terepmaraton
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Terep ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: 100 mérföldes terep ultra
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Országúti versenyek
+category_type_2: road
+category_2_races_sub_title_1: Maraton
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Félmaraton
+category_2_races_sub_ref_2: half-marathon
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: 'Összes verseny megtekintése itt:'
+tools_title: Eszközök a következő versenyedhez
+home_tools:
+  measure_route:
+    description: Mérj le egy útvonalötletet, és kapj gyors távolságbecslést, mielőtt elindulsz.
+  training_plans:
+    description: Találj edzésterveket különböző célokhoz, szintekhez és versenytávokhoz a következő felkészülési időszakodhoz.
+  racetime_estimator:
+    description: Becsülj reális célidőt a korábbi eredményeid alapján, és hasonlíts össze különböző célforgatókönyveket.
+  pace_calculator:
+    description: Válts tempó, sebesség és célidő között a gyakori versenytávokon, miközben megtervezed az edzésedet.
+missing_race: Hiányzik egy verseny? Add hozzá itt!
+add_race_mp_title: Add hozzá a versenyedet
+neighboring_countries_title: Versenyek Magyarországon és a szomszédos országokban
+neighboring_countries_title_specific_country: 'Versenyek itt: {country_name}'
+neighboring_countries_description: Itt találod a szomszédos országokban rendezett versenyeket.
+neighboring_countries_description_specific_country: Itt soroljuk fel a(z) {country_name} területén rendezett versenyeket.
+neighboring_countries_neighbors_native: Szomszédos országok
+neighboring_countries_all_neighbors_native: Összes szomszédos ország
+section_race_card_header_nieghbors_default: Magyarország és a szomszédos országok
+browse_neighboring:
+  title: Böngészés szomszédos országok szerint
+  meta_description: Találj hozzád közeli versenyeket a szomszédos országokban. Országonként böngészve fedezd fel a határon túli futóeseményeket.
+neighboring_races_title: Versenyek a szomszédos országokban
+neighboring_countries_show_all: Összes megjelenítése

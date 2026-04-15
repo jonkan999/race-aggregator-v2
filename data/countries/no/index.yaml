@@ -428,30 +428,30 @@ browse_seo_indexing:
       - backyard
   category_pages:
     min_race_count: 8
-    allowed_labels:
-      - 5 km
-      - 10 km
-      - Halvmaraton
-      - Maraton
-      - 50 km
-      - 100 km
-      - 50 miles
-      - 100 miles
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
   race_type_category_pages:
     enabled: true
     min_race_count: 5
     allowed_race_type_keys:
       - road
       - trail
-    allowed_labels:
-      - 5 km
-      - 10 km
-      - Halvmaraton
-      - Maraton
-      - 50 km
-      - 100 km
-      - 50 miles
-      - 100 miles
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
   race_type_county_pages:
     enabled: true
     min_race_count: 5

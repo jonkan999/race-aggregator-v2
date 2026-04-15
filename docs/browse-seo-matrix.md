@@ -239,7 +239,7 @@ That block should define:
 
 - minimum race-count thresholds per page family
 - which race-type keys are allowed for standalone and combo pages
-- which category labels are allowed as canonical category pages
+- which category keys are allowed as canonical category pages
 - whether each combo family is enabled for that market
 
 Current live rollout in Sweden:

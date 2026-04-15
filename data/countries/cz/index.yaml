@@ -863,48 +863,54 @@ browse_seo_indexing:
     - backyard
   category_pages:
     min_race_count: 8
-    allowed_labels:
-    - 5 km
-    - 10 km
-    - Půlmaraton
-    - Maraton
-    - 50 km
-    - 100 km
-    - 50 miles
-    - 100 miles
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
   race_type_category_pages:
     enabled: true
     min_race_count: 5
     allowed_race_type_keys:
     - road
     - trail
-    allowed_labels:
-    - 5 km
-    - 10 km
-    - Půlmaraton
-    - Maraton
-    - 50 km
-    - 100 km
-    - 50 miles
-    - 100 miles
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
   race_type_county_pages:
     enabled: true
     min_race_count: 5
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
   race_type_month_pages:
     enabled: true
     min_race_count: 6
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
   race_type_city_pages:
     enabled: false
     min_race_count: 5
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
 auth_pages:
   confirm_success: Vaše e-mailová adresa je nyní potvrzená a účet je aktivní.
   confirm_ready: Teď můžete pokračovat v používání webu.
