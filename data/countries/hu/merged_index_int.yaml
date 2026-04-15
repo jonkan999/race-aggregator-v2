@@ -348,10 +348,10 @@ seo_templates:
     default: All races
   paragraph_templates:
     category_race_location: Find {category} {race_type}races in {location}.
-    category_race: Explore {category} {race_type}races across Sweden.
+    category_race: Explore {category} {race_type}races across Hungary.
     category_location: Discover {category} races in {location}.
     race_location: See all {race_type}races in {location}.
-    category_only: Find {category} races across Sweden.
+    category_only: Find {category} races across Hungary.
     race_only: Explore {race_type}races in all regions.
     location_only: See all types of races in {location}.
     default_suffix: Here you will find dates, distances and all the information you need to plan your next race.
@@ -403,7 +403,7 @@ seo_templates:
       paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
 seo_generation:
   browse_model: gpt-5-mini
-  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Sweden. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
+  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Hungary. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
   browse_guidance:
     county: User wants races in one region.
     city: User wants races connected to a city or nearby city.
