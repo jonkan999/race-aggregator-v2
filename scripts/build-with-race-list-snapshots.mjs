@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadLocalEnvFiles } from './lib/load-env.mjs';
+import { getActiveMarketCode } from './lib/market-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -43,6 +44,10 @@ function runAstroBuild(extraEnv = {}) {
 }
 
 async function main() {
+  const activeMarketCode = getActiveMarketCode();
+  const markersPath = path.join(root, 'public', `markers-${activeMarketCode}.json`);
+  const markersBackup = fs.existsSync(markersPath) ? fs.readFileSync(markersPath, 'utf8') : null;
+
   fs.rmSync(snapshotDir, { recursive: true, force: true });
   fs.mkdirSync(snapshotDir, { recursive: true });
 
@@ -57,12 +62,24 @@ async function main() {
         process.env.BROWSE_SEO_PROVIDER ?? (process.env.OPENAI_API_KEY ? 'openai' : 'template'),
     });
 
+    // Materialize the static map asset from the same build snapshot so deploys do not
+    // depend on separately committed marker refreshes or a second Supabase read.
+    await runNodeScript('./scripts/export-markers.mjs', [activeMarketCode], {
+      RACE_LIST_BUILD_SNAPSHOT_DIR: snapshotDir,
+    });
+
     await runAstroBuild({
       RACE_LIST_BUILD_SNAPSHOT_DIR: snapshotDir,
     });
 
     await runNodeScript('./scripts/generate-sitemap.mjs');
   } finally {
+    if (markersBackup == null) {
+      fs.rmSync(markersPath, { force: true });
+    } else {
+      fs.mkdirSync(path.dirname(markersPath), { recursive: true });
+      fs.writeFileSync(markersPath, markersBackup);
+    }
     fs.rmSync(snapshotDir, { recursive: true, force: true });
   }
 }

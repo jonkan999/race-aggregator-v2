@@ -30,6 +30,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - The default race list page is pre-rendered at build time through `getRaceListFirstPageSnapshot`.
 - `npm run build` must fetch race-list rows from Supabase at most once per country, write a temporary local snapshot, and force the rest of the build to reuse that snapshot.
 - The snapshot export may merge derived 30-day race-detail page-view rankings into the same local snapshot, but it must still do that aggregation once per country during the export step rather than from route files.
+- `npm run build` should also regenerate the active market's static `public/markers-{country}.json` from that same temporary snapshot before Astro copies public assets, so deploys do not need a second Supabase read or a separately committed marker refresh.
 - `npm run build` should also rebuild missing browse SEO cache entries from that same temporary snapshot before Astro renders the static browse routes.
 - Build-time snapshot should prefer the temporary build snapshot when present, otherwise fall back to Supabase, otherwise local JSON.
 - Page 2 and any filtered state should use one browser-side Supabase RPC call to `get_races_list_page`.

@@ -42,7 +42,7 @@
 ## Scripts and database
 
 - `scripts/seed-races.mjs` — JSON to Supabase import.
-- `scripts/export-markers.mjs` — marker export from DB or JSON.
+- `scripts/export-markers.mjs` — marker export from the temporary build snapshot, DB, or JSON.
 - `scripts/shell/` — wrapper scripts for Supabase login, link, db push, seed, and marker export.
 - `supabase/migrations/` — schema and RPC migrations.
 - `supabase/config.toml` — local Supabase config.

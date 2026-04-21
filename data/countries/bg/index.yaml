@@ -1,0 +1,1063 @@
+type_options:
+  road: Шосейно бягане
+  terrain: Пресечен терен
+  trail: Трейл
+  track: Писта
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Щафета
+  time: Състезание по време
+  other: Друго
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Полумаратон:
+    range:
+    - 20
+    - 22
+  Маратон:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 метра:
+    range:
+    - 1.5
+    - 1.5
+  3000 метра:
+    range:
+    - 3
+    - 3
+  5000 метра:
+    range:
+    - 5
+    - 5
+  10000 метра:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Състезание по време
+  relay: Щафета
+verbose_local_distance_mapping:
+  half marathon: Полумаратон
+  marathon: Маратон
+  fallback: Смесени дистанции
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Полумаратон
+- range:
+  - 41.9
+  - 42.4
+  label: Маратон
+country_code: bg
+country_language_code: bg
+navigation:
+  main: Всички
+  race-list: Календар
+  add-race: Добави състезание
+  forum: Форум
+  measure-route: Измери маршрут
+  training-plans: Тренировъчни планове
+  pace-calculator: Калкулатор на темпо
+  racetime-estimator: Прогноза за време
+  about-us: За нас
+  contact: Контакт
+race_list_name: Календар на състезанията по бягане
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Преглед на състезанието
+  terms-of-service: Условия за ползване
+  privacy-policy: Политика за поверителност
+  about-us: За нас
+  contact: Контакт
+  faq: Често задавани въпроси
+page_name: Календар на бяганията в България
+base_url: https://bulgariaracecalendar.com/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Здравейте!
+    closing_salutation: Поздрави,
+    link_fallback_intro: 'Ако бутонът не работи, можете да копирате този линк:'
+  confirm_signup:
+    body: Благодарим ви, че се регистрирахте в {site_name}. Потвърдете своя имейл адрес, за да активирате профила си и да управлявате подадените състезания.
+    button_label: Потвърди имейл адреса
+    ignore_note: Ако не сте създали този профил, можете да игнорирате това съобщение.
+  reset_password:
+    body: Получихме заявка за промяна на паролата за вашия профил в {site_name}. Натиснете бутона по-долу, за да изберете нова парола.
+    button_label: Смени паролата
+    ignore_note: Ако не сте поискали това, можете да игнорирате съобщението. Паролата ви няма да се промени, докато не изберете нова.
+  change_email:
+    body: Поискахте да промените имейл адреса за своя профил в {site_name}. Потвърдете промяната с бутона по-долу.
+    button_label: Потвърди новия имейл адрес
+    ignore_note: Ако не сте поискали промяната, можете да игнорирате това съобщение.
+title: Всичко за бягането в
+country_native: България
+country: Bulgaria
+meta_description: Най-пълният календар на състезанията по бягане и общност за бегачи в България
+country_language: Bulgarian
+local_name_for_race: състезание
+main_bullet_1: Намерете следващото си състезание
+main_bullet_2: ' - или го добавете тук'
+main_bullet_3: Открийте състезания в цяла България
+main_bullet_4: Следете новини и обсъждайте бягането във форума
+description: Тази общностна платформа помага на бегачите в България да откриват състезания, да споделят информация и да планират по-добре следващите си стартове. Продължаваме да я развиваме, но още сега тя може да бъде полезен дом за местната бегаческа общност.
+cta_search: Намери състезание
+cta_add: Добави състезание
+selected_races_title: Подбрани състезания
+selected_races_top_title: Състезание на седмицата
+cta_all_races: Покажи всички състезания
+show_local: Покажи
+race_local: състезания
+running_local: бягане
+alt_prefix: 'Снимка за '
+race_list_title: Най-пълният списък с маратони, полумаратони, трейл и други състезания по бягане в България
+race_list_meta_description_1: Намерете състезания по бягане и дати в цяла България
+race_list_meta_description_2: ✔️Календар на състезанията по бягане в България ✔️Шосейни, трейл и ултра състезания ✔️Стартове от цялата страна
+race_list_data_error: Не успяхме да заредим състезанията. Моля, опитайте отново по-късно.
+race_list_remote_required: За повече страници и филтри е необходима базата данни (Supabase). Добавете PUBLIC_SUPABASE_URL и PUBLIC_SUPABASE_PUBLISHABLE_KEY в своя .env файл.
+race_list_empty: Няма състезания, които да отговарят на избраните филтри.
+race_list_loading: Зареждане…
+race_card_cta_text: Повече информация и регистрация
+section_race_card_category_prefix: Всички
+section_race_card_category_suffix: състезания
+section_race_card_header_separator: в
+section_race_card_header_region_default: България
+section_race_card_header_date_range_from: 'от '
+section_race_card_header_date_range_to: 'до '
+section_race_card_header_date_range_single: 'на '
+filter_date_from: От
+filter_date_to: До
+filter_county: Всички области
+filter_race_type: Всички типове състезания
+filter_categories: Всички категории
+filter_months: Цялата година
+filter_distance: Всички дистанции
+month_mapping:
+  '01': януари
+  '02': февруари
+  '03': март
+  '04': април
+  '05': май
+  '06': юни
+  '07': юли
+  08: август
+  09: септември
+  '10': октомври
+  '11': ноември
+  '12': декември
+month_mapping_short:
+  '01': яну
+  '02': фев
+  '03': мар
+  '04': апр
+  '05': май
+  '06': юни
+  '07': юли
+  08: авг
+  09: сеп
+  '10': окт
+  '11': ное
+  '12': дек
+county_label_text: Всички области
+county_mapping:
+  Blagoevgrad: Благоевград
+  Burgas: Бургас
+  Dobrich: Добрич
+  Gabrovo: Габрово
+  Haskovo: Хасково
+  Kardzhali: Кърджали
+  Kyustendil: Кюстендил
+  Lovech: Ловеч
+  Montana: Монтана
+  Pazardzhik: Пазарджик
+  Pernik: Перник
+  Pleven: Плевен
+  Plovdiv: Пловдив
+  Razgrad: Разград
+  Ruse: Русе
+  Shumen: Шумен
+  Silistra: Силистра
+  Sliven: Сливен
+  Smolyan: Смолян
+  Sofia: Софийска област
+  Sofia City: София
+  Stara Zagora: Стара Загора
+  Targovishte: Търговище
+  Varna: Варна
+  Veliko Tarnovo: Велико Търново
+  Vidin: Видин
+  Vratsa: Враца
+  Yambol: Ямбол
+category_label_text: Категория на състезанието
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Към страницата на състезанието
+map_toggle_desktop: Покажи карта
+map_toggle_desktop_active: Скрий картата
+map_toggle_mobile: Карта
+map_toggle_mobile_list: Списък
+map_markers_load_error: Не успяхме да заредим маркерите на картата.
+map_not_configured: Картата не е конфигурирана в момента.
+race_page_map_zoom: '{default_map_zoom}'
+pagination:
+  results_text: от
+  events_text: състезания
+  previous_text: Предишна
+  next_text: Следваща
+  page_text: Страница
+  of_text: от
+add_race_title: Добавете ново състезание
+add_race_meta_description: Добавете своето състезание в Календара на бяганията в България
+map_message: Поставете своето състезание с клик върху картата
+mapbox_center:
+  latitude: 42.7339
+  longitude: 25.4858
+mapbox_zoom: '7'
+date_text: Дата
+multi_day_toggle: Многодневно събитие
+end_date_text: Крайна дата
+type_text: Настилка / тип състезание
+type_select_placeholder: Изберете настилка / тип състезание
+name_label: 'Име на състезанието:'
+name_placeholder: например Софийски маратон
+distance_label: 'Дистанции:'
+distance_placeholder: Въведете дистанция в км
+add_distance_button: Добави
+half_marathon_button: Полумаратон
+marathon_button: Маратон
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 мили
+hundred_miles_button: 100 мили
+place_label: 'Място на провеждане:'
+place_placeholder: например Южен парк, София
+organizer_label: 'Организатор:'
+organizer_contact_placeholder: Клуб по бягане
+organizer_contact_label: 'Имейл за контакт:'
+organizer_mail_placeholder: hello@bulgariaracecalendar.com
+website_label: 'Сайт на организатора:'
+website_placeholder: https://example.bg/
+start_time_label: 'Час на старта:'
+start_time_placeholder: 09:00
+price_range_label: 'Ценови диапазон:'
+price_range_placeholder: например 30-90 лв
+add_race_description_label: Описание на състезанието
+add_race_description_placeholder: Софийският маратон минава през центъра на града и предлага бързо трасе с дълги прави участъци...
+add_race_additional_label: Допълнителна информация
+add_race_additional_placeholder: например старт и финал, стартови вълни, паркинг или подкрепителни пунктове
+add_race_images_label: Качете снимки (препоръчително поне 4)
+choose_pictures_button: Изберете снимки
+drag_drop_text: Плъзнете снимки тук или натиснете, за да ги изберете
+add_race_remove_image_label: Премахни снимката
+coordinates_display_prefix: Координати на състезанието
+add_race_upload_limit_message: Можете да качите още само {count} снимки.
+add_race_map_not_configured: Картата не може да бъде заредена в момента.
+clear_images_button: Изчисти снимките
+clear_form_button: Изчисти формата
+preview_button: Преглед
+submit_button: Изпрати
+preview_title: Преглед
+preview_exit_button: Затвори прегледа
+optional_label: По желание
+comments_suffix: Коментари
+cta_forum: Виж всички публикации
+race_page_preview_title: Така ще изглежда вашето състезание
+edit_race_button: Редактирай
+race_page_description_label: Описание на състезанието
+race_page_course_highlights_label: Акценти по трасето
+race_page_additional_label: Допълнителна информация
+race_page_detailed_info_label: Подробна информация
+race_page_social_links_label: Следвайте състезанието
+race_page_place_label: 'Място:'
+race_page_distances_label: 'Дистанции:'
+race_page_surface_label: 'Настилка:'
+race_page_date_label: 'Дата:'
+race_page_estimated_date_label: Прогнозна дата
+race_page_estimated_disclaimer: Все още нямаме потвърдена официална дата за това състезание.
+race_page_registration_link: Линк за регистрация
+race_page_registration_cta: Регистрирайте се
+race_page_info_cta: Повече информация
+race_page_registration_close_label: Регистрацията затваря
+race_page_pricing_title: Регистрация и цени
+race_page_price_deadline_label: Валидно до
+race_page_price_late_fee_label: Късна регистрация
+race_page_back_to_list: Назад към календара
+race_page_favorites_title: Не изпускайте новини за това състезание
+race_page_favorites_body: Създайте профил и запазете това състезание в любими, за да получавате новини, промени и подбрани оферти, когато любимите стартират.
+race_page_favorites_cta: Запази в любими
+race_page_similar_title: Подобни състезания
+race_page_similar_body: Още състезания с подобна дистанция, тип или близка локация.
+race_page_discover_title: Открийте още състезания
+race_page_discover_county_link: Всички състезания в {county}
+race_page_discover_type_link: Още {type} състезания
+race_page_discover_category_link: Още {category} състезания
+race_page_discover_type_county_link: '{type} състезания в {county}'
+race_page_discover_overview_link: Разгледайте всички категории състезания
+disclaimer_text_1: 'Цялата информация на тази страница е събрана от публично достъпни източници. Правим всичко възможно да я поддържаме актуална, но
+
+  не можем да гарантираме, че всичко е напълно точно. Ако забележите неточност,
+
+  '
+disclaimer_link: свържете се с нас
+disclaimer_text_2: и ще я коригираме възможно най-скоро.
+disclaimer_text_3: Искате да добавите още нещо към своето състезание?
+disclaimer_text_4: пишете ни и ще опитаме да помогнем!
+race_page_visit_organizer_website: Към сайта на организатора и регистрацията
+race_page_folder_name: stranitsi-na-sastezaniyata
+race_page_alt_prefix: 'Снимка за '
+seo_county_folder_name: oblasti
+seo_cities_folder_name: gradove
+popular_subcategories_title: Популярни подкатегории
+important_keywords_racelist:
+- календар на състезанията по бягане
+- календар бягане
+- календар БГ бягания
+- състезания по бягане
+- календар на събития
+- маратон България
+seo_templates:
+  title_parts:
+    category: '{category} състезания'
+    race_type: '{race_type}'
+    location: в {location}
+    default: Всички състезания
+  paragraph_templates:
+    category_race_location: Намерете {category} {race_type} състезания в {location}.
+    category_race: Разгледайте {category} {race_type} състезания в цяла България.
+    category_location: Открийте {category} състезания в {location}.
+    race_location: Вижте всички {race_type} състезания в {location}.
+    category_only: Намерете {category} състезания в цяла България.
+    race_only: Разгледайте {race_type} състезания във всички области.
+    location_only: Вижте всички типове състезания в {location}.
+    default_suffix: Тук ще намерите дати, дистанции и практична информация за планирането на следващото си състезание.
+  browse_page_templates:
+    county:
+      title: '{label} състезания | {site_name}'
+      meta_description: Разгледайте състезания по бягане в {label}. Сравнете дати, дистанции, формат и практична информация, преди да изберете следващото си състезание.
+      h1: Състезания в {label}
+      paragraph: Тази страница събира състезанията по бягане в {label}, за да можете по-лесно да сравнявате дати, дистанции, формат и практична информация на едно място. Подходяща е, когато искате по-ясна картина, преди да решите кое да е следващото ви състезание.
+    city:
+      title: '{label} състезания | {site_name}'
+      meta_description: Намерете състезания по бягане, свързани с {label}. Сравнете дати, дистанции, близки алтернативи и практична информация, преди да изберете следващото си състезание.
+      h1: Състезания около {label}
+      paragraph: Тази градска страница ви помага да разглеждате състезания по бягане, свързани с {label}, включително близки алтернативи, които имат смисъл при планиране на старт или пътуване. Създадена е, за да прави местното търсене на състезания по-бързо и по-лесно за сравнение.
+    month:
+      title: '{label} състезания | {site_name}'
+      meta_description: Разгледайте състезания по бягане в {label_lower} в {market}. Сравнете дати, дистанции, типове състезания и практична информация, когато планирате сезона си.
+      h1: Състезания през {label}
+      paragraph: Тази страница е за бегачи, които искат да виждат календара месец по месец и по-бързо да сравняват какво се случва през {label_lower}. Помага да стесните избора, преди да навлезете в детайлите за дистанции, настилки и локации.
+    race_type:
+      title: '{label} състезания в {market} | {site_name}'
+      meta_description: Разгледайте {label_lower} състезания в {market}. Сравнете дати, дистанции, локации и практична информация, преди да изберете старт, който ви подхожда.
+      h1: '{label} състезания в {market}'
+      paragraph: Тази страница е фокусирана върху {label_lower} състезанията и дава по-ясна представа, когато форматът на състезанието е също толкова важен, колкото и дистанцията. Полезна е за сравнение между области, дати и практически детайли, без да започвате от целия календар.
+    category:
+      title: '{label} състезания в {market} | {site_name}'
+      meta_description: Разгледайте {label} състезания в {market}. Сравнете дати, типове състезания, локации и практична информация, преди да изберете следващото си събитие.
+      h1: '{label} състезания в {market}'
+      paragraph: Тази страница по дистанция и категория събира състезания, които отговарят на {label}, за да е по-лесно да сравнявате подходящите възможности на едно място. Създадена е за бегачи, които искат по-бърз преход от общо разглеждане към реалистичен кратък списък.
+    race_type_category:
+      title: '{label} {secondary_label} състезания в {market} | {site_name}'
+      meta_description: Разгледайте {label} състезания в {market} в рамките на типа {secondary_label_lower}. Сравнете дати, локации и практична информация, преди да изберете следващия си старт.
+      h1: '{label} състезания в {market} ({secondary_label})'
+      paragraph: Тази страница стеснява календара до {label} състезания в рамките на типа {secondary_label_lower}, което е полезно, когато и дистанцията, и форматът имат значение за избора. Така можете по-лесно да сравните сходни възможности, преди да вземете решение.
+    race_type_county:
+      title: '{secondary_label} състезания в {label} | {site_name}'
+      meta_description: Разгледайте {secondary_label_lower} състезания в {label}. Сравнете дати, дистанции и практична информация, преди да изберете следващото си състезание.
+      h1: '{secondary_label} състезания в {label}'
+      paragraph: Тази страница е насочена към {secondary_label_lower} състезанията в {label}, за да улесни сравняването на по-подходящи варианти в рамките на една и съща област. Полезна е, когато и географията, и форматът влияят върху избора.
+    race_type_month:
+      title: '{secondary_label} състезания през {label} | {site_name}'
+      meta_description: Разгледайте {secondary_label_lower} състезания в {label_lower}. Сравнете дати, дистанции и практична информация, докато планирате сезона си.
+      h1: '{secondary_label} състезания през {label}'
+      paragraph: Тази страница събира {secondary_label_lower} състезания през {label_lower} за бегачи, които планират първо по календара. Помага да сравните сходни формати, преди да стесните избора по място или дистанция.
+    race_type_city:
+      title: '{secondary_label} състезания около {label} | {site_name}'
+      meta_description: Разгледайте {secondary_label_lower} състезания, свързани с {label}. Сравнете дати, дистанции и близки алтернативи, преди да изберете следващото си състезание.
+      h1: '{secondary_label} състезания около {label}'
+      paragraph: Тази страница събира {secondary_label_lower} състезания, свързани с {label}, за да прави местното търсене на състезания по-бързо за сравнение. Полезна е, когато търсите конкретен формат близо до един град, без да започвате от целия календар.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Пишеш evergreen SEO текстове за индексируеми страници за разглеждане на състезания по бягане. Пиши първо за хората, после за търсенето. Върни само валиден JSON. Запази текста вечен: не споменавай текуща година, текущ брой състезания, временни оферти или твърдения за свежест. Избягвай keyword stuffing, hype, clickbait, суперлативи и непроверими твърдения. Направи всяка страница ясно различима според подадения контекст на маршрута. Използвай естествен български език, подходящ за календар на състезания по бягане в България. Предпочитай кратки заглавия, кратки H1, meta описания около 120-160 знака, когато е уместно, и абзац от 2-3 кратки изречения.'
+  browse_guidance:
+    county: Потребителят търси състезания в една област.
+    city: Потребителят търси състезания, свързани с град или близък град.
+    month: Потребителят търси състезания по месец.
+    race_type: Потребителят търси конкретен тип състезание.
+    category: Потребителят търси конкретна дистанция или категория.
+    race_type_category: Потребителят търси конкретна дистанция или категория в рамките на един тип състезание.
+    race_type_county: Потребителят търси конкретен тип състезание в една област.
+    race_type_month: Потребителят търси конкретен тип състезание в един месец.
+    race_type_city: Потребителят търси конкретен тип състезание, свързан с един град.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Разгледайте по категория
+  helper_text: Намерете състезания чрез готови филтри и комбинации
+  overview: Преглед
+  counties: Области
+  cities: Градове
+  months: Месеци
+  types: Типове състезания
+  categories: Категории
+  neighboring: Съседни държави
+browse_overview:
+  title: Разгледайте всички състезания
+  meta_description: Намерете състезания по област, град, тип или категория
+browse_types:
+  title: Разгледайте по тип състезание
+  meta_description: Намерете състезания според типа им.
+browse_counties:
+  title: Разгледайте по област
+  meta_description: Намерете състезания във вашата област.
+browse_cities:
+  title: Разгледайте по град
+  meta_description: Намерете състезания във вашия град или наблизо.
+browse_categories:
+  title: Разгледайте по категория
+  meta_description: Намерете състезания по дистанция и категория.
+browse_months:
+  title: Разгледайте по месец
+  meta_description: Намерете състезания по месец.
+auth_modal:
+  title_sign_in: Вход
+  title_create_account: Създай профил
+  title_reset_password: Нова парола
+  auth_unavailable: Входът все още не е конфигуриран.
+  name_placeholder: Вашето име
+  email_placeholder: Вашият имейл
+  password_placeholder: Парола
+  submit_sign_in: Вход
+  submit_create_account: Създай профил
+  submit_reset_password: Изпрати линк за възстановяване
+  create_account: Създай профил
+  forgot_password: Забравена парола?
+  back_to_login: Назад към вход
+  error_wrong_password: Грешна парола
+  error_email_not_found: Имейл адресът не е намерен
+  prompt_reset_password: Искате ли да възстановите паролата си?
+  prompt_create_account: Искате ли да създадете профил с този имейл?
+  already_logged_in: Вече сте влезли като
+  as_email: с имейл
+  continue_as_user: Продължи като този потребител
+  logout_and_switch: Излез и смени потребителя
+  account_created: Профилът е създаден!
+  account_created_details: Вече сте влезли като
+  verification_email_sent: На вашия имейл беше изпратен линк за потвърждение
+  please_verify: Моля, потвърдете имейл адреса си
+  error_invalid_credential: Невалиден имейл или парола
+  create_account_prompt: Вместо това създайте профил
+  error_too_many_requests: Твърде много опити. Моля, опитайте отново по-късно.
+  continue_with_google: Продължи с Google
+  continue_with_google_create: Създай профил с Google
+  google_in_progress: Продължаване с Google...
+  oauth_divider: или
+auth_pages:
+  confirm_success: Вашият имейл адрес е потвърден и профилът ви вече е активен.
+  confirm_ready: Вече можете да продължите да използвате сайта.
+  confirm_error: Не успяхме да потвърдим вашия имейл адрес.
+  reset_intro: Въведете нова парола за своя профил.
+  reset_confirm_label: Потвърдете паролата
+  reset_mismatch_error: Паролите не съвпадат.
+  reset_invalid_link_error: Невалиден или липсващ линк за възстановяване.
+  reset_success: Паролата ви е обновена. Вече можете да влезете.
+newsletter_popup:
+  email_placeholder: Вашият имейл адрес
+  submit_button: Изпращайте ми новини
+  dismiss_button: Не сега
+  invalid_email: Моля, въведете валиден имейл адрес.
+  submit_error: Не успяхме да запазим абонамента ви в момента. Моля, опитайте отново.
+  submitting_text: Запазване...
+  success_message: Благодарим! Новините за състезанията вече са на път към вашата поща.
+  privacy_note: Нови състезания, промени в датите и подбрани оферти. Можете да се отпишете по всяко време.
+  close_aria_label: Затвори прозореца за абонамент
+  benefits:
+    new_races: Нови състезания първо тук
+    date_changes: Промени в датите веднага
+    selected_offers: Подбрани оферти
+    similar_races: Подобни състезания близо до вас
+    local_picks: Още състезания наблизо
+    opening_reminders: Напомняния преди местата да свършат
+    race_updates: Новини за това състезание
+    nearby_races: Състезания отвъд границата близо до вас
+  generic:
+    eyebrow: Не изпускайте следващото състезание
+    title: Получавайте нови състезания и промени в датите преди всички останали
+    body: Абонирайте се за бюлетина ни и получавайте нови състезания, актуализирани дати и подбрани съвети в {country} директно в пощата си.
+  race_detail:
+    eyebrow: Следвайте това състезание
+    title: Искате ли новини за {race_name}?
+    body: Абонирайте се, за да получавате новини за {race_name}, подобни състезания в {county} и важни промени директно в пощата си.
+  browse_category:
+    eyebrow: Още от точния тип състезания
+    title: Не изпускайте нови {category} състезания
+    body: Изпращаме нови {category} състезания, подходящи близки алтернативи и важни дати, за да не се налага постоянно да търсите ръчно.
+  browse_category_type:
+    eyebrow: Още от точния тип състезания
+    title: Получавайте още {race_type} състезания в рамките на {category}
+    body: Абонирайте се за още {race_type} състезания в рамките на {category}, близки алтернативи и промени в датите директно в пощата си.
+  browse_county:
+    eyebrow: Първо местните състезания
+    title: Получавайте още състезания в {county}
+    body: Следете нови състезания, промени в датите и умни предложения за {county}, без да проверявате календара постоянно.
+  browse_city:
+    eyebrow: Първо местните състезания
+    title: Искате ли още състезания в {city}?
+    body: Абонирайте се и получавайте нови състезания, близки алтернативи и важни дати за {city} директно в пощата си.
+  browse_type:
+    eyebrow: Точният стил състезание
+    title: Получавайте още {race_type} състезания в пощата си
+    body: Изпращаме нови {race_type} състезания, сходни алтернативи и ключови дати, за да действате, преди местата да се изчерпат.
+  browse_month:
+    eyebrow: Планирайте сезона
+    title: Получавайте най-добрите състезания през {month} първи
+    body: Когато състезанията през {month} се отворят, преместят или станат особено интересни, ще научите веднага в пощата си.
+  browse_neighboring:
+    eyebrow: Разширете календара си
+    title: Получавайте и състезания от съседните държави
+    body: Абонирайте се за нови състезания, умни трансгранични предложения и промени в датите от {region}, изпратени директно в пощата ви.
+  browse_neighboring_country:
+    eyebrow: Разширете календара си
+    title: Получавайте още състезания в {region}
+    body: Изпращаме нови състезания, промени в датите и подходящи близки алтернативи, когато се появи нещо интересно в {region}.
+submission_flow:
+  logged_in_as: Влезли сте като организатор
+  submitting_new_race: изпращане на ново състезание
+  new_account_created: За да управлявате състезанието, трябва да потвърдите имейл адреса си. На посочения адрес беше изпратен линк за потвърждение.
+  password_reset_sent: Изпратихме инструкции за нова парола. Проверете пощата си.
+  unexpected_error: Възникна грешка. Моля, опитайте отново.
+  processing_submission: Обработваме подадената информация...
+  race_exists: Това състезание вече съществува в базата данни.
+  race_submitted: Състезанието беше изпратено!
+  submission_failed: Не успяхме да изпратим състезанието. Моля, опитайте отново.
+  missing_fields: Липсва задължителна информация. Уверете се, че всички нужни полета са попълнени и е избрана локация на картата.
+race_page:
+  forum_section:
+    title: Въпроси и отговори
+    placeholder: Задайте въпрос към организатора...
+    submit_button: Изпрати въпрос
+    login_prompt: Влезте, за да зададете въпрос
+    empty_state: Все още няма въпроси. Бъдете първите!
+    error_message_no_login: Влезте или създайте профил, за да зададете въпрос
+map:
+  show_map: Покажи картата
+  show_list: Покажи списъка
+  map: карта
+  list: списък
+forum:
+  title: Форум - обсъждайте бягането и състезанията с други бегачи в България
+  meta_description: Обсъждайте бягането и живота около него с други бегачи във форума ни. Тренировки, състезания, контузии, хранене, екипировка и още много.
+  categories:
+  - name: Тренировки
+    slug: training
+    description: Разговори за тренировки и техника
+  - name: Състезания и събития
+    slug: races
+    description: Обсъждайте предстоящи състезания
+  - name: Контузии и възстановяване
+    slug: injuries
+    description: Помощ при контузии и възстановяване
+  - name: Маршрути и карти
+    slug: routes
+    description: Обсъждайте маршрути и карти
+  - name: Пътуване и свързани теми
+    slug: travel
+    description: Обсъждайте пътувания и бягане в движение
+  - name: Хранене и нутриция
+    slug: nutrition
+    description: Обсъждайте хранене и нутриция
+  - name: Облекло, обувки и екипировка
+    slug: gear
+    description: Обсъждайте облекло, обувки и екипировка
+  - name: Купувам и продавам
+    slug: buysell
+    description: Купуване и продаване на бегачески продукти
+  - name: Разни
+    slug: misc
+    description: Всичко останало
+  empty_category_state: Все още няма теми. Дайте начало на дискусията!
+  empty_state_thread: Все още няма публикации. Бъдете първите!
+  empty_state: Все още няма публикации. Бъдете първите!
+  reply_placeholder: Напишете своя отговор...
+  submit_button: Изпрати
+  login_prompt: Влезте, за да участвате в дискусията
+  new_thread_title_placeholder: Заглавие на новата тема
+  new_thread_content_placeholder: Напишете първото си мнение...
+  create_thread_button: Създай нова тема
+  back_to_forum: ← Назад към форума
+  back_to_category: '← Назад към '
+  empty_thread_state: Все още няма публикации. Бъдете първите!
+  posts_label: публикации
+  reply_label: отговор
+  thread_created_title: Благодарим, че създадохте нова тема!
+  thread_created_message: Темата ви ще бъде прегледана и добавена към страницата скоро.
+  thread_created_back_link: Назад към категорията
+  show_more_threads: Покажи повече теми
+  show_less_threads: Покажи по-малко теми
+  create_new_thread: Създай нова тема
+  reply_title: Отговор на тема
+  showing_threads_count: Показани са {x} от общо {y} теми
+about_us:
+  title: За Календара на бяганията в България
+  meta_description: Календар на бяганията в България - вашият ориентир за бягане в България
+  content:
+    intro: Добре дошли в Календара на бяганията в България - практична платформа за бегачи в цялата страна.
+    mission: Нашата цел е да улесним бегачите в намирането и споделянето на информация за състезания, тренировки и всичко свързано с бягането.
+    story: Календарът на бяганията в България се развива от нуждата за модерно и полезно място, където местната бегаческа общност да намира състезания на едно място.
+    features:
+    - title: Пълен списък със състезания
+      description: Събираме състезания от цяла България на едно място - от по-малки локални стартове до големи международни събития.
+    - title: Общностен подход
+      description: Платформата се развива заедно с бегачите. Всеки може да допринася с информация за състезания и да участва в дискусии.
+    - title: Безплатни инструменти
+      description: Предлагаме полезни инструменти като калкулатор на темпо, тренировъчни планове и измерване на маршрути - напълно безплатно.
+    closing: Продължаваме да развиваме платформата според обратната връзка от потребителите. Ако имате идеи за подобрения, ще се радваме да ни пишете.
+contact:
+  title: Контакт
+  meta_description: Свържете се с Календара на бяганията в България - тук сме, за да помогнем
+  content:
+    intro: 'Ще се радваме да ни пишете! Ето различни начини да се свържете с нас:'
+    email:
+      title: Имейл
+      address: hello@bulgariaracecalendar.com
+      description: Обикновено отговаряме в рамките на 24 часа в работни дни.
+    social:
+      title: Социални мрежи
+      description: 'Следете ни в социалните мрежи за новини и актуализации:'
+    feedback:
+      title: Обратна връзка
+      description: Ценим всяка обратна връзка, която ни помага да подобряваме Календара на бяганията в България.
+privacy_page:
+  title: Политика за поверителност
+  meta_description: Политика за поверителност и информация как Календарът на бяганията в България обработва лични данни и бисквитки.
+  last_updated_label: Последна актуализация
+  last_updated_date: 15 април 2026
+  contact_intro: 'За въпроси или искания, свързани с поверителността, пишете ни на:'
+  contact_email: hello@bulgariaracecalendar.com
+  sections:
+  - title: 1. Каква информация събираме
+    intro: 'Събираме информация, която ни предоставяте директно, когато:'
+    bullets:
+    - създавате профил
+    - изпращате информация за състезание
+    - публикувате във форума
+    - се свързвате с нас
+  - title: 2. Бисквитки и проследяване
+    intro: 'Използваме бисквитки, за да:'
+    bullets:
+    - запомняме вашите предпочитания
+    - поддържаме сесията и състоянието на вход
+    - анализираме трафика и използването на сайта
+    - показваме релевантна реклама и подобряваме преживяването
+  - title: 3. Как използваме вашата информация
+    intro: 'Информацията ви ни помага да:'
+    bullets:
+    - предоставяме и подобряваме услугите си
+    - изпращаме важни известия и актуализации
+    - отговаряме на запитвания и молби за помощ
+    - предотвратяваме измами и злоупотреби
+  - title: 4. Вашите права
+    intro: 'Съгласно GDPR имате право да:'
+    bullets:
+    - получите достъп до личните си данни
+    - коригирате неточни или непълни данни
+    - поискате изтриване на данните си
+    - възразите срещу определени дейности по обработване
+    - поискате преносимост на данните
+  - title: 5. Свържете се с нас
+    intro: Ако имате въпроси за това как обработваме лични данни или как използваме бисквитки, винаги сте добре дошли да се свържете с нас.
+racetime_estimator_title: Прогноза за финално време
+racetime_estimator_description: На база предишно състезание можете да изчислите ориентировъчно време за други дистанции.
+known_distance_label: Изберете дистанцията, на която вече имате резултат
+known_time_label: Въведете своето време
+calculate_button_text: Изчисли времената
+predicted_times_title: Прогнозни времена
+distance_header: Дистанция
+predicted_time_header: Прогнозно време
+hilly_course_label: Хълмисто трасе
+finish_time_header: Прогнозно финално време
+pace_per_km_header: Мин/км
+pace_per_mile_header: Мин/миля
+flat_time_header: Време (равно трасе)
+flat_pace_per_km_header: Мин/км (равно)
+flat_pace_per_mile_header: Мин/миля (равно)
+hill_adjustment_header: Корекция за хълмист терен
+pace_calculator_title: Калкулатор на темпо
+pace_calculator_description: Лесен инструмент за преобразуване на скоростта на бягане между различни единици
+pace_table_header_kph: Километри в час
+pace_table_header_mph: Мили в час
+pace_table_header_min_km: Минути на километър
+pace_table_header_min_mile: Минути на миля
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Полумаратон
+pace_table_header_full: Маратон
+pace_conversion_note: 1 километър в час (км/ч) = 0,62 мили в час (mph)
+measure_route_title: Измерете маршрута си
+measure_route_description: Щракнете върху картата, за да отбележите точки по маршрута. Общата дистанция се изчислява автоматично.
+remove_last_point: Премахни последната точка
+clear_route: Изчисти маршрута
+total_distance: Обща дистанция
+training_plans:
+  title: Тренировъчни планове
+  description: Създайте персонализиран тренировъчен план според целта си
+  disclaimer_text_tp_1: Нашите тренировъчни планове се генерират с помощта на AI и след това се адаптират към вашите цели и предпочитания. Не гарантираме, че ще са идеални или подходящи за всеки.
+  disclaimer_link_tp: Свържете се с нас
+  disclaimer_text_tp_2: ако имате обратна връзка или предложения за подобрение.
+  form:
+    race_date_label: Дата на състезанието
+    plan_type_label: Тип план
+    target_distance_label: Целева дистанция
+    target_time_label: Целево време
+    training_days_label: Тренировъчни дни седмично
+    session_time_label: Време за една тренировка
+    is_hilly_label: Хълмист терен
+    hours_placeholder: Часове
+    minutes_placeholder: Минути
+    seconds_placeholder: Секунди
+    submit_button: Генерирай тренировъчен план
+    target_distance:
+      placeholder: Изберете дистанция
+      options:
+        '5000': 5 км
+        '10000': 10 км
+        '21097': Полумаратон
+        '42195': Маратон
+    training_days:
+      placeholder: Изберете брой дни
+      options:
+        '3': 3 дни
+        '4': 4 дни
+        '5': 5 дни
+        '6': 6 дни
+    session_time:
+      placeholder: Изберете време за една тренировка
+      options:
+        30-45: 30-45 минути
+        45-60: 45-60 минути
+        60-90: 60-90 минути
+        90+: 90+ минути
+  results:
+    title: Вашият тренировъчен план
+    variations:
+      title: 'Изберете вариант, който ви подхожда:'
+    plan_details:
+      duration_label: 'Продължителност на плана:'
+      weekly_distance_label: 'Седмична дистанция:'
+    regenerate_button: Покажи други варианти
+    export_button: Експортирай в PDF
+  workout_types:
+    easy: Леко бягане
+    tempo: Темпово бягане
+    intervals: Интервали
+    long: Дълго бягане
+    rest: Почивка
+  messages:
+    weeks: седмици
+    week_label: Седмица
+    hilly_terrain_note: адаптирано за хълмист терен
+  plan_variation:
+    focus_label: Фокус
+    weekly_structure_label: Седмична структура
+    distribution_label: Разпределение
+    sessions_per_week: тренировки седмично
+    select_button: Изберете този план
+  errors:
+    loading_plans: Грешка при зареждане на тренировъчните планове
+    required_fields: Моля, попълнете всички задължителни полета
+    no_matching_plan: Не е намерен подходящ тренировъчен план
+    no_matching_variations: Не са намерени подходящи варианти
+    invalid_training_days: Броят тренировъчни дни не отговаря на изискванията на плана
+  week: Седмица
+  weeks: седмици
+  hilly_terrain_note: адаптирано за хълмист терен
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Изграждане на основна издръжливост
+        weekly_template:
+          monday:
+            type: easy
+            description: Леко бягане за дистанция
+          wednesday:
+            type: tempo
+            description: Темпово бягане
+          saturday:
+            type: long
+            description: Дълго бягане
+          sunday:
+            type: recovery
+            description: Възстановяване
+      build:
+        duration_percent: 40
+        focus: Повече интензивност и по-голяма дистанция
+        weekly_template:
+          monday:
+            type: easy
+            description: Леко бягане за дистанция
+          wednesday:
+            type: intervals
+            description: Интервали
+          friday:
+            type: tempo
+            description: Темпово бягане
+          sunday:
+            type: long
+            description: Дълго бягане
+      peak:
+        duration_percent: 15
+        focus: Влизане в пикова форма и специфична подготовка
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Качествена тренировка
+          thursday:
+            type: tempo
+            description: Темпово бягане
+          saturday:
+            type: long
+            description: Дълго бягане
+          sunday:
+            type: recovery
+            description: Възстановяване
+      taper:
+        duration_percent: 5
+        focus: Намаляване на натоварването
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Леко бягане
+          thursday:
+            type: tempo
+            description: Кратко темпово бягане
+          saturday:
+            type: easy
+            description: Много леко бягане
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 мин леко разтичване
+        cooldown: 5-10 мин леко разтичване
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 мин постепенно загряване
+        cooldown: 10-15 мин охлаждане
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 мин с бегови упражнения и ускорения
+        cooldown: 10-15 мин леко разтичване
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 мин много леко разтичване
+        cooldown: 5-10 мин ходене или леко разтичване
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 мин ходене
+        cooldown: 5-10 мин ходене
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Загряване
+    main_workout_label: Описание на тренировката
+    cooldown_label: Разпускане
+    intensity_label: Темпо
+    duration_label: Време
+  regenerate:
+    button_text: Генерирай нов вариант
+    confirmation: Сигурни ли сте, че искате да генерирате нов вариант?
+  weekdays:
+    monday: Понеделник
+    tuesday: Вторник
+    wednesday: Сряда
+    thursday: Четвъртък
+    friday: Петък
+    saturday: Събота
+    sunday: Неделя
+footer:
+  races_heading: Състезания
+  tools_heading: Инструменти
+  about_heading: За Календара на бяганията в България
+  privacy: Политика за поверителност
+  copyright_year: 2023-{{CURRENT_YEAR}}
+  site_name: Календар на бяганията в България
+  rights_text: Всички права запазени.
+  social_links:
+    facebook: ''
+    instagram: ''
+    youtube: ''
+    tiktok: ''
+accessibility:
+  main_navigation_label: Основна навигация
+  breadcrumb_label: Навигационна пътека
+  back_to_top_label: Назад към началото
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Популярни състезания
+trending_races_description: Това са състезанията, които напоследък привличат най-голям интерес сред бегачите.
+trending_races_views_last_30_days: преглеждания през последните 30 дни
+trending_races_most_viewed: Най-популярни в момента
+races_views: преглеждания
+recent_races_title: Наскоро добавени състезания
+today: днес
+yesterday: вчера
+days_ago: дни назад
+newest_race_badge: Най-ново
+races_count: състезания
+popular_counties_title: Намерете състезания във вашата област
+popular_cities_title: Намерете състезания във вашия град
+all_counties: Покажи всички области
+all_cities: Покажи всички градове
+category_header_1: Трейл състезания
+category_type_1: trail
+category_1_races_sub_title_1: Трейл маратон
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Трейл ултра
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Трейл ултра 100 мили
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Шосейни състезания
+category_type_2: road
+category_2_races_sub_title_1: Маратон
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Полумаратон
+category_2_races_sub_ref_2: polumaraton
+category_2_races_sub_title_3: 10 км
+category_2_races_sub_ref_3: 10-km
+view_all_races: Виж всички състезания в
+tools_title: Инструменти за следващото ви състезание
+home_tools:
+  measure_route:
+    description: Измерете идея за маршрут и получете бърза оценка на дистанцията, преди да излезете да бягате.
+  training_plans:
+    description: Намерете тренировъчни планове за различни цели, нива и дистанции, за да подредите следващия си тренировъчен блок.
+  racetime_estimator:
+    description: Изчислете реалистично финално време от предишни резултати и сравнете различни сценарии за целево време.
+  pace_calculator:
+    description: Преобразувайте темпо, скорост и финално време за обичайните дистанции, докато планирате тренировките си.
+missing_race: Липсва състезание? Добавете го тук!
+add_race_mp_title: Добавете своето състезание
+neighboring_countries_title: Състезания в България и съседните държави
+neighboring_countries_title_specific_country: Състезания в {country_name}
+neighboring_countries_description: Тук ще откриете състезания, които се провеждат в съседните държави.
+neighboring_countries_description_specific_country: Тук събираме състезанията, които се провеждат в {country_name}.
+neighboring_countries_neighbors_native: Съседни държави
+neighboring_countries_all_neighbors_native: Всички съседни държави
+section_race_card_header_nieghbors_default: България и съседните държави
+browse_neighboring:
+  title: Разгледайте състезания по съседни държави
+  meta_description: Намерете състезания в съседни държави близо до вас. Разгледайте по държава и открийте събития отвъд границата.
+neighboring_races_title: Състезания в съседните държави
+neighboring_countries_show_all: Покажи всички

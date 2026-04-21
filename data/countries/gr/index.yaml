@@ -1,0 +1,1040 @@
+type_options:
+  road: Δρόμος
+  terrain: Ανώμαλο έδαφος
+  trail: Trail
+  track: Στίβος
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Σκυταλοδρομία
+  time: Αγώνας χρόνου
+  other: Άλλο
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Ημιμαραθώνιος:
+    range:
+    - 20
+    - 22
+  Μαραθώνιος:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 μέτρα:
+    range:
+    - 1.5
+    - 1.5
+  3000 μέτρα:
+    range:
+    - 3
+    - 3
+  5000 μέτρα:
+    range:
+    - 5
+    - 5
+  10000 μέτρα:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Αγώνας χρόνου
+  relay: Σκυταλοδρομία
+verbose_local_distance_mapping:
+  half marathon: Ημιμαραθώνιος
+  marathon: Μαραθώνιος
+  fallback: Μικτές αποστάσεις
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Ημιμαραθώνιος
+- range:
+  - 41.9
+  - 42.4
+  label: Μαραθώνιος
+country_code: gr
+country_language_code: el
+navigation:
+  main: Όλα
+  race-list: Καλεντάρι αγώνων
+  add-race: Προσθήκη Αγώνα
+  forum: Φόρουμ
+  measure-route: Μετρήστε τη Διαδρομή σας
+  training-plans: Προγράμματα Προπόνησης
+  pace-calculator: Μετατροπέας Ρυθμού
+  racetime-estimator: Εκτίμηση Χρόνου Τερματισμού
+  about-us: Σχετικά με Εμάς
+  contact: Επικοινωνήστε μαζί μας
+race_list_name: Καλεντάρι αγώνων δρόμου
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Προεπισκόπηση Αγώνα
+  terms-of-service: Όροι Χρήσης
+  privacy-policy: Πολιτική Απορρήτου
+  about-us: Σχετικά με Εμάς
+  contact: Επικοινωνία
+  faq: Συχνές Ερωτήσεις
+page_name: Καλεντάρι αγώνων δρόμου στην Ελλάδα
+base_url: https://kalentariagonon.com/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Γεια σας!
+    closing_salutation: Με εκτίμηση,
+    link_fallback_intro: 'Αν το κουμπί δεν λειτουργεί, μπορείτε να αντιγράψετε τον σύνδεσμο εδώ:'
+  confirm_signup:
+    body: Ευχαριστούμε που εγγραφήκατε στο {site_name}. Επιβεβαιώστε το email σας για να ενεργοποιήσετε τον λογαριασμό σας και να διαχειριστείτε τους αγώνες που έχετε υποβάλει.
+    button_label: Επιβεβαίωση διεύθυνσης email
+    ignore_note: Αν δεν δημιουργήσατε τον λογαριασμό, μπορείτε να αγνοήσετε αυτό το email.
+  reset_password:
+    body: Λάβαμε αίτημα για επαναφορά του κωδικού σας στο {site_name}. Πατήστε το κουμπί παρακάτω για να επιλέξετε νέο κωδικό.
+    button_label: Επαναφορά κωδικού
+    ignore_note: Αν δεν ζητήσατε αυτή την ενέργεια, μπορείτε να αγνοήσετε το email. Ο κωδικός σας δεν θα αλλάξει μέχρι να επιλέξετε νέο.
+  change_email:
+    body: Ζητήσατε αλλαγή της διεύθυνσης email για τον λογαριασμό σας στο {site_name}. Επιβεβαιώστε την αλλαγή πατώντας το κουμπί παρακάτω.
+    button_label: Επιβεβαίωση νέας διεύθυνσης email
+    ignore_note: Αν δεν ζητήσατε την αλλαγή, μπορείτε να αγνοήσετε αυτό το email.
+title: Όλα για το τρέξιμο στην
+country_native: Ελλάδα
+country: Greece
+meta_description: Το πιο πλήρες καλεντάρι αγώνων δρόμου και κοινότητα δρομέων στην Ελλάδα
+country_language: Greek
+local_name_for_race: αγώνας
+main_bullet_1: Βρείτε τον επόμενο αγώνα σας
+main_bullet_2: '- Ή προσθέστε τον εδώ'
+main_bullet_3: Περιηγηθείτε στην αγορά μας
+main_bullet_4: Διαβάστε τα τελευταία νέα ή συμμετέχετε στη συζήτηση στο φόρουμ μας
+description: Αυτή η κοινοτική πλατφόρμα βοηθά τους δρομείς σε όλη την Ελλάδα να ανακαλύπτουν αγώνες, να συγκρίνουν επιλογές και να οργανώνουν ευκολότερα την επόμενη συμμετοχή τους. Ο ιστότοπος συνεχίζει να εξελίσσεται, αλλά ήδη φιλοδοξεί να γίνει ένα πρακτικό σημείο αναφοράς για την ελληνική δρομική κοινότητα.
+cta_search: Βρείτε Αγώνα
+cta_add: Προσθέστε Αγώνα
+selected_races_title: Επιλεγμένοι Αγώνες
+selected_races_top_title: Αγώνας της εβδομάδας
+cta_all_races: Δείτε όλους τους αγώνες
+show_local: Εμφάνιση
+race_local: Αγώνας
+running_local: Τρέξιμο
+alt_prefix: Εικόνα για
+race_list_title: Το πιο πλήρες καλεντάρι με μαραθωνίους, ημιμαραθωνίους, trail και άλλους αγώνες δρόμου στην Ελλάδα
+race_list_meta_description_1: Βρείτε αγώνες δρόμου και ημερομηνίες σε όλη την Ελλάδα
+race_list_meta_description_2: ✔️Καλεντάρι αγώνων δρόμου στην Ελλάδα ✔️Αγώνες δρόμου, trail και ultra ✔️Διοργανώσεις σε όλη τη χώρα
+race_list_data_error: Δεν ήταν δυνατή η φόρτωση των αγώνων. Παρακαλώ δοκιμάστε ξανά αργότερα.
+race_list_remote_required: Για περισσότερες σελίδες ή φίλτρα απαιτείται η βάση δεδομένων (Supabase). Προσθέστε PUBLIC_SUPABASE_URL και PUBLIC_SUPABASE_PUBLISHABLE_KEY στο αρχείο .env σας.
+race_list_empty: Δεν βρέθηκαν αγώνες που να ταιριάζουν με τα φίλτρα σας.
+race_list_loading: Φόρτωση…
+race_card_cta_text: Περισσότερες πληροφορίες & εγγραφή
+section_race_card_category_prefix: Όλοι
+section_race_card_category_suffix: αγώνες
+section_race_card_header_separator: σε
+section_race_card_header_region_default: Ελλάδα
+section_race_card_header_date_range_from: από
+section_race_card_header_date_range_to: έως
+section_race_card_header_date_range_single: στις
+filter_date_from: Από
+filter_date_to: Έως
+filter_county: Όλες οι περιοχές
+filter_race_type: Όλοι οι τύποι αγώνων
+filter_categories: Όλες οι κατηγορίες
+filter_months: Όλο το χρόνο
+filter_distance: Όλες οι αποστάσεις
+month_mapping:
+  '01': Ιανουάριος
+  '02': Φεβρουάριος
+  '03': Μάρτιος
+  '04': Απρίλιος
+  '05': Μάιος
+  '06': Ιούνιος
+  '07': Ιούλιος
+  08: Αύγουστος
+  09: Σεπτέμβριος
+  '10': Οκτώβριος
+  '11': Νοέμβριος
+  '12': Δεκέμβριος
+month_mapping_short:
+  '01': Ιαν
+  '02': Φεβ
+  '03': Μαρ
+  '04': Απρ
+  '05': Μάι
+  '06': Ιούν
+  '07': Ιούλ
+  08: Αύγ
+  09: Σεπ
+  '10': Οκτ
+  '11': Νοέ
+  '12': Δεκ
+county_label_text: Όλες οι περιοχές
+county_mapping:
+  Agion Oros: Άγιον Όρος
+  Crete: Κρήτη
+  Attica: Αττική
+  Macedonia-Thrace: Μακεδονία - Θράκη
+  Epirus-Western Macedonia: Ήπειρος - Δυτική Μακεδονία
+  Peloponisos-W. Greece & Ionian: Πελοπόννησος - Δυτική Ελλάδα - Ιόνιο
+  Egean: Αιγαίο
+  Thessalia-Central Greece: Θεσσαλία - Στερεά Ελλάδα
+category_label_text: Κατηγορία Αγώνα
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Στη σελίδα του αγώνα
+map_toggle_desktop: Εμφάνιση χάρτη
+map_toggle_desktop_active: Απόκρυψη χάρτη
+map_toggle_mobile: Χάρτης
+map_toggle_mobile_list: Λίστα
+map_markers_load_error: Αδυναμία φόρτωσης σημείων στο χάρτη.
+map_not_configured: Ο χάρτης δεν έχει ρυθμιστεί (λείπει το κλειδί χάρτη).
+race_page_map_zoom: '{default_map_zoom}'
+pagination:
+  results_text: από
+  events_text: Αγώνες
+  previous_text: Προηγούμενο
+  next_text: Επόμενο
+  page_text: Σελίδα
+  of_text: από
+add_race_title: Προσθήκη νέου αγώνα
+add_race_meta_description: Προσθέστε τον αγώνα σας στο Καλεντάρι Αγώνων
+map_message: Τοποθετήστε τον αγώνα σας κάνοντας κλικ στον χάρτη
+mapbox_center:
+  latitude: 39.0742
+  longitude: 21.8243
+mapbox_zoom: '7'
+date_text: Ημερομηνία
+multi_day_toggle: Πολυήμερο γεγονός
+end_date_text: Ημερομηνία λήξης
+type_text: Επιφάνεια / Τύπος αγώνα
+type_select_placeholder: Επιλέξτε επιφάνεια / τύπο αγώνα
+name_label: 'Όνομα αγώνα:'
+name_placeholder: π.χ. Μαραθώνιος πόλης
+distance_label: 'Αποστάσεις:'
+distance_placeholder: Εισάγετε απόσταση σε χλμ
+add_distance_button: Προσθήκη
+half_marathon_button: Ημιμαραθώνιος
+marathon_button: Μαραθώνιος
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 μίλια
+hundred_miles_button: 100 μίλια
+place_label: 'Όνομα τοποθεσίας:'
+place_placeholder: π.χ. Central Park, New York
+organizer_label: 'Διοργανωτής:'
+organizer_contact_placeholder: Λέσχη Δρομέων
+organizer_contact_label: 'Email επικοινωνίας:'
+organizer_mail_placeholder: info@organizer.com
+website_label: 'Ιστότοπος διοργανωτή:'
+website_placeholder: https://organizer.com/
+start_time_label: 'Ώρα έναρξης:'
+start_time_placeholder: 09:00
+price_range_label: 'Εύρος τιμών:'
+price_range_placeholder: π.χ. $20-50
+add_race_description_label: Περιγράψτε τον αγώνα
+add_race_description_placeholder: Ο Μαραθώνιος πόλης είναι μια επίπεδη διαδρομή με μεγάλες ευθείες...
+add_race_additional_label: Επιπλέον πληροφορίες
+add_race_additional_placeholder: π.χ. τοποθεσία εκκίνησης και τερματισμού, ομάδες εκκίνησης, κ.ά.
+add_race_images_label: Ανέβασμα εικόνων (Συνιστώνται τουλάχιστον 4)
+choose_pictures_button: Επιλογή εικόνων
+drag_drop_text: Σύρετε και αποθέστε τις εικόνες εδώ ή κάντε κλικ για επιλογή
+add_race_remove_image_label: Αφαίρεση εικόνας
+coordinates_display_prefix: Συντεταγμένες αγώνα
+add_race_upload_limit_message: Μπορείτε να ανεβάσετε μόνο {count} ακόμα εικόνες.
+add_race_map_not_configured: Ο χάρτης δεν μπόρεσε να φορτωθεί αυτή τη στιγμή.
+clear_images_button: Καθαρισμός εικόνων
+clear_form_button: Καθαρισμός φόρμας
+preview_button: Προεπισκόπηση
+submit_button: Υποβολή
+preview_title: Προεπισκόπηση
+preview_exit_button: Κλείσιμο προεπισκόπησης
+optional_label: Προαιρετικό
+comments_suffix: Σχόλια
+cta_forum: Δείτε Όλες τις Αναρτήσεις
+race_page_preview_title: Έτσι θα φαίνεται ο αγώνας σας
+edit_race_button: Επεξεργασία
+race_page_description_label: Περιγραφή αγώνα
+race_page_course_highlights_label: Σημεία ενδιαφέροντος
+race_page_additional_label: Επιπλέον πληροφορίες
+race_page_detailed_info_label: Λεπτομερείς πληροφορίες
+race_page_social_links_label: Ακολουθήστε τον αγώνα
+race_page_place_label: 'Τοποθεσία:'
+race_page_distances_label: 'Αποστάσεις:'
+race_page_surface_label: 'Έδαφος:'
+race_page_date_label: 'Ημερομηνία:'
+race_page_estimated_date_label: Εκτιμώμενη ημερομηνία
+race_page_estimated_disclaimer: Δεν έχουμε λάβει επίσημη ημερομηνία για αυτόν τον αγώνα.
+race_page_registration_link: Σύνδεσμος εγγραφής
+race_page_registration_cta: Εγγραφείτε τώρα
+race_page_info_cta: Περισσότερες πληροφορίες
+race_page_registration_close_label: Λήξη εγγραφών
+race_page_pricing_title: Εγγραφές και τιμές
+race_page_price_deadline_label: Ισχύει έως
+race_page_price_late_fee_label: Καθυστερημένη εγγραφή
+race_page_back_to_list: Επιστροφή στο ημερολόγιο αγώνων
+race_page_favorites_title: Μην χάσετε ενημερώσεις αγώνων
+race_page_favorites_body: Δημιουργήστε λογαριασμό και αποθηκεύστε αυτόν τον αγώνα στα αγαπημένα σας για να λαμβάνετε ενημερώσεις, νέα και επιλεγμένες προσφορές όταν ενεργοποιηθούν τα αγαπημένα.
+race_page_favorites_cta: Αποθήκευση αγώνα στα αγαπημένα
+race_page_similar_title: Παρόμοιοι αγώνες
+race_page_similar_body: Περισσότεροι αγώνες με παρόμοια απόσταση, τύπο ή κοντινή τοποθεσία.
+race_page_discover_title: Ανακαλύψτε περισσότερους αγώνες
+race_page_discover_county_link: Όλοι οι αγώνες στο {county}
+race_page_discover_type_link: Περισσότεροι {type} αγώνες
+race_page_discover_category_link: Περισσότεροι {category} αγώνες
+race_page_discover_type_county_link: '{type} αγώνες στο {county}'
+race_page_discover_overview_link: Περιηγηθείτε σε όλες τις κατηγορίες αγώνων
+disclaimer_text_1: Όλες οι πληροφορίες σε αυτή τη σελίδα βασίζονται σε δεδομένα ανοιχτού κώδικα. Κάνουμε το καλύτερο για να τις κρατάμε ενημερωμένες αλλά δεν μπορούμε να εγγυηθούμε ότι όλα είναι σωστά. Αν δείτε οποιεσδήποτε ανακρίβειες,
+disclaimer_link: επικοινωνήστε μαζί μας
+disclaimer_text_2: και θα το διορθώσουμε το συντομότερο δυνατό.
+disclaimer_text_3: Κάτι ακόμα που θέλετε να προσθέσετε στον αγώνα σας;
+disclaimer_text_4: και θα προσπαθήσουμε να βοηθήσουμε!
+race_page_visit_organizer_website: Στην ιστοσελίδα διοργανωτή & εγγραφή
+race_page_folder_name: selides-agonon
+race_page_alt_prefix: Εικόνα για
+seo_county_folder_name: perifereies
+seo_cities_folder_name: poleis
+popular_subcategories_title: Δημοφιλείς υποκατηγορίες
+important_keywords_racelist:
+- καλεντάρι αγώνων
+- αγώνες δρόμου
+- ημερολόγιο αγώνων δρόμου
+- δρομικό καλεντάρι
+- μαραθώνιοι ελλάδα
+- ημιμαραθώνιοι ελλάδα
+seo_templates:
+  title_parts:
+    category: '{category} αγώνες'
+    race_type: '{race_type}'
+    location: στο {location}
+    default: Όλοι οι αγώνες
+  paragraph_templates:
+    category_race_location: Βρείτε {category} {race_type} αγώνες στο {location}.
+    category_race: Εξερευνήστε {category} {race_type} αγώνες σε όλη την Ελλάδα.
+    category_location: Ανακαλύψτε {category} αγώνες στο {location}.
+    race_location: Δείτε όλους τους {race_type} αγώνες στο {location}.
+    category_only: Βρείτε {category} αγώνες σε όλη την Ελλάδα.
+    race_only: Εξερευνήστε {race_type} αγώνες σε όλες τις περιοχές.
+    location_only: Δείτε όλους τους τύπους αγώνων στο {location}.
+    default_suffix: Εδώ θα βρείτε ημερομηνίες, αποστάσεις και όλες τις πληροφορίες που χρειάζεστε για να σχεδιάσετε τον επόμενο αγώνα σας.
+  browse_page_templates:
+    county:
+      title: '{label} αγώνες | {site_name}'
+      meta_description: Περιηγηθείτε σε αγώνες δρόμου στο {label}. Συγκρίνετε ημερομηνίες, αποστάσεις, μορφές αγώνων και πρακτικές λεπτομέρειες πριν επιλέξετε τον επόμενο αγώνα σας.
+      h1: Αγώνες στο {label}
+      paragraph: Αυτή η σελίδα συγκεντρώνει αγώνες δρόμου στο {label} ώστε να είναι πιο εύκολο να συγκρίνετε ημερομηνίες, αποστάσεις, μορφές αγώνων και πρακτικές λεπτομέρειες σε ένα μέρος. Χρησιμοποιήστε την όταν θέλετε μια πιο ξεκάθαρη εικόνα πριν επιλέξετε τον επόμενο αγώνα σας.
+    city:
+      title: '{label} αγώνες | {site_name}'
+      meta_description: Βρείτε αγώνες δρόμου που σχετίζονται με το {label}. Συγκρίνετε ημερομηνίες, αποστάσεις, κοντινές επιλογές και πρακτικές λεπτομέρειες πριν επιλέξετε τον επόμενο αγώνα σας.
+      h1: Αγώνες κοντά σε {label}
+      paragraph: Αυτή η σελίδα πόλης σας βοηθά να περιηγηθείτε σε αγώνες δρόμου συνδεδεμένους με το {label}, συμπεριλαμβανομένων κοντινών εναλλακτικών που είναι χρήσιμες για τον προγραμματισμό μιας ημέρας αγώνα ή ταξιδιού. Έχει σχεδιαστεί για να κάνει την τοπική αναζήτηση αγώνων πιο γρήγορη και εύκολη στη σύγκριση.
+    month:
+      title: Αγώνες {label} | {site_name}
+      meta_description: Περιηγηθείτε σε αγώνες δρόμου στο {label} στην {market}. Συγκρίνετε ημερομηνίες, αποστάσεις, τύπους αγώνων και πρακτικές λεπτομέρειες πριν οργανώσετε τη σεζόν σας.
+      h1: Αγώνες στο {label}
+      paragraph: Αυτή η σελίδα απευθύνεται σε δρομείς που θέλουν μια μηνιαία επισκόπηση του ημερολογίου και χρειάζονται έναν γρηγορότερο τρόπο να συγκρίνουν τι συμβαίνει στο {label}. Βοηθά να περιορίσετε τις επιλογές πριν εστιάσετε σε αποστάσεις, επιφάνειες και τοποθεσίες αγώνων.
+    race_type:
+      title: Αγώνες {label} στην {market} | {site_name}
+      meta_description: Περιηγηθείτε σε αγώνες {label_lower} στην {market}. Συγκρίνετε ημερομηνίες, αποστάσεις, τοποθεσίες και πρακτικές λεπτομέρειες πριν επιλέξετε τον κατάλληλο αγώνα για εσάς.
+      h1: Αγώνες {label} στην {market}
+      paragraph: Αυτή η σελίδα εστιάζει σε αγώνες {label_lower} και σας προσφέρει μια πιο καθαρή επισκόπηση όταν η μορφή του αγώνα έχει τόση σημασία όσο και η απόσταση. Χρησιμοποιήστε την για να συγκρίνετε επιλογές ανά περιοχές, ημερομηνίες και πρακτικές λεπτομέρειες χωρίς να ξεκινάτε από το πλήρες ημερολόγιο.
+    category:
+      title: Αγώνες {label} στην {market} | {site_name}
+      meta_description: Περιηγηθείτε σε αγώνες {label} στην {market}. Συγκρίνετε ημερομηνίες, τύπους αγώνων, τοποθεσίες και πρακτικές λεπτομέρειες πριν αποφασίσετε για την επόμενη διοργάνωσή σας.
+      h1: Αγώνες {label} στην {market}
+      paragraph: Αυτή η σελίδα απόστασης και κατηγορίας συγκεντρώνει αγώνες που ταιριάζουν με {label} ώστε να είναι πιο εύκολη η σύγκριση σχετικών επιλογών σε ένα μέρος. Είναι σχεδιασμένη για δρομείς που θέλουν γρηγορότερη μετάβαση από την ευρεία περιήγηση σε μια σύντομη λίστα ρεαλιστικών αγώνων.
+    race_type_category:
+      title: Αγώνες {label} {secondary_label} στην {market} | {site_name}
+      meta_description: Περιηγηθείτε σε αγώνες {label} στην {market} μέσα στον τύπο αγώνα {secondary_label_lower}. Συγκρίνετε ημερομηνίες, τοποθεσίες και πρακτικές λεπτομέρειες πριν επιλέξετε την επόμενη διοργάνωσή σας.
+      h1: Αγώνες {label} στην {market} ({secondary_label})
+      paragraph: Αυτή η σελίδα περιορίζει το ημερολόγιο σε αγώνες {label} μέσα στον τύπο αγώνα {secondary_label_lower}, κάτι που βοηθά όταν τόσο η απόσταση όσο και η μορφή του αγώνα καθορίζουν την κατάλληλη επιλογή. Χρησιμοποιήστε την για να συγκρίνετε ομοειδείς επιλογές πριν δεσμευτείτε σε έναν αγώνα.
+    race_type_county:
+      title: Αγώνες {secondary_label} στο {label} | {site_name}
+      meta_description: Περιηγηθείτε σε αγώνες {secondary_label_lower} στο {label}. Συγκρίνετε ημερομηνίες, αποστάσεις και πρακτικές λεπτομέρειες πριν επιλέξετε τον επόμενο αγώνα σας.
+      h1: Αγώνες {secondary_label} στο {label}
+      paragraph: Αυτή η σελίδα εστιάζει σε αγώνες {secondary_label_lower} στο {label} ώστε να είναι πιο εύκολη η σύγκριση πιο σχετικών επιλογών στην ίδια περιοχή. Είναι χρήσιμη όταν τόσο η γεωγραφία όσο και η μορφή του αγώνα διαμορφώνουν τη σύντομη λίστα.
+    race_type_month:
+      title: Αγώνες {secondary_label} στο {label} | {site_name}
+      meta_description: Περιηγηθείτε σε αγώνες {secondary_label_lower} στο {label_lower}. Συγκρίνετε ημερομηνίες, αποστάσεις και πρακτικές λεπτομέρειες ενώ σχεδιάζετε τη σεζόν σας.
+      h1: Αγώνες {secondary_label} στο {label}
+      paragraph: Αυτή η σελίδα συγκεντρώνει αγώνες {secondary_label_lower} στο {label_lower} για δρομείς που σχεδιάζουν πρώτα με βάση το ημερολόγιο. Βοηθά να συγκρίνετε παρόμοιες μορφές αγώνων πριν περιορίσετε περαιτέρω ανά τόπο ή απόσταση.
+    race_type_city:
+      title: Αγώνες {secondary_label} κοντά σε {label} | {site_name}
+      meta_description: Περιηγηθείτε σε αγώνες {secondary_label_lower} συνδεδεμένους με {label}. Συγκρίνετε ημερομηνίες, αποστάσεις και κοντινές επιλογές πριν επιλέξετε τον επόμενο αγώνα σας.
+      h1: Αγώνες {secondary_label} κοντά σε {label}
+      paragraph: Αυτή η σελίδα συγκεντρώνει αγώνες {secondary_label_lower} συνδεδεμένους με {label} για να κάνετε πιο γρήγορη την τοπική αναζήτηση αγώνων προς σύγκριση. Είναι χρήσιμη όταν θέλετε συγκεκριμένη μορφή αγώνα κοντά σε μια πόλη χωρίς να ξεκινάτε από το πλήρες ημερολόγιο.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Γράφετε διαχρονικό SEO κείμενο για σελίδες περιήγησης αγώνων δρόμου. Γράψτε πρώτα για ανθρώπους, δεύτερο για αναζητήσεις. Εξάγετε μόνο έγκυρο JSON. Κρατήστε το κείμενο διαχρονικό: μην αναφέρετε τρέχοντα έτη, αριθμούς, περιορισμένης διάρκειας εκφράσεις ή ισχυρισμούς φρεσκάδας. Αποφύγετε το keyword stuffing, τον υπερβολικό ενθουσιασμό, το clickbait, τα υπερθετικά και τους μη επαληθεύσιμους ισχυρισμούς. Κάντε κάθε σελίδα σαφώς διαφορετική βάσει του παρεχόμενου πλαισίου. Χρησιμοποιήστε φυσική ελληνική κατάλληλη για ημερολόγιο αγώνων στην Ελλάδα. Προτιμήστε σύντομους τίτλους, σύντομα H1, meta περιγραφές 120-160 χαρακτήρων όταν είναι πρακτικό, και μια παράγραφο 2-3 σύντομων προτάσεων.'
+  browse_guidance:
+    county: Ο χρήστης θέλει αγώνες σε μία περιοχή.
+    city: Ο χρήστης θέλει αγώνες συνδεδεμένους με μια πόλη ή κοντινή πόλη.
+    month: Ο χρήστης θέλει αγώνες ανά μήνα.
+    race_type: Ο χρήστης θέλει συγκεκριμένο τύπο αγώνα.
+    category: Ο χρήστης θέλει συγκεκριμένη απόσταση ή κατηγορία αγώνα.
+    race_type_category: Ο χρήστης θέλει συγκεκριμένη απόσταση/κατηγορία μέσα σε έναν τύπο αγώνα.
+    race_type_county: Ο χρήστης θέλει συγκεκριμένο τύπο αγώνα σε μία περιοχή.
+    race_type_month: Ο χρήστης θέλει συγκεκριμένο τύπο αγώνα σε έναν μήνα.
+    race_type_city: Ο χρήστης θέλει συγκεκριμένο τύπο αγώνα συνδεδεμένο με μία πόλη.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Περιήγηση κατά κατηγορία
+  helper_text: Βρείτε αγώνες μέσω προκαθορισμένων φίλτρων και συνδυασμών
+  overview: Επισκόπηση
+  counties: Περιφέρειες
+  cities: Πόλεις
+  months: Μήνας
+  types: Τύποι αγώνων
+  categories: Κατηγορίες
+  neighboring: Γειτονικές χώρες
+browse_overview:
+  title: Περιηγηθείτε σε όλους τους αγώνες
+  meta_description: Βρείτε αγώνες ανά περιοχή, τύπο ή κατηγορία
+browse_types:
+  title: Περιήγηση κατά τύπο αγώνα
+  meta_description: Βρείτε αγώνες ανά τύπο αγώνα.
+browse_counties:
+  title: Περιήγηση κατά περιοχή
+  meta_description: Βρείτε αγώνες στην περιοχή σας.
+browse_cities:
+  title: Περιήγηση ανά πόλη
+  meta_description: Βρείτε αγώνες στην πόλη σας.
+browse_categories:
+  title: Περιήγηση ανά κατηγορία
+  meta_description: Βρείτε αγώνες ανά απόσταση και κατηγορία.
+browse_months:
+  title: Περιήγηση ανά μήνα
+  meta_description: Βρείτε αγώνες ανά μήνα.
+auth_modal:
+  title_sign_in: Σύνδεση
+  title_create_account: Δημιουργία λογαριασμού
+  title_reset_password: Επαναφορά κωδικού
+  auth_unavailable: Η αυθεντικοποίηση δεν έχει ρυθμιστεί ακόμα.
+  name_placeholder: Το όνομά σας
+  email_placeholder: Το email σας
+  password_placeholder: Κωδικός
+  submit_sign_in: Σύνδεση
+  submit_create_account: Δημιουργία λογαριασμού
+  submit_reset_password: Αποστολή συνδέσμου επαναφοράς
+  create_account: Δημιουργία λογαριασμού
+  forgot_password: Ξεχάσατε τον κωδικό;
+  back_to_login: Επιστροφή στη σύνδεση
+  error_wrong_password: Λάθος κωδικός
+  error_email_not_found: Το email δεν βρέθηκε
+  prompt_reset_password: Θέλετε να επαναφέρετε τον κωδικό σας;
+  prompt_create_account: Θέλετε να δημιουργήσετε λογαριασμό με αυτό το email;
+  already_logged_in: Έχετε ήδη συνδεθεί ως
+  as_email: με email
+  continue_as_user: Συνέχεια ως αυτός ο χρήστης
+  logout_and_switch: Αποσύνδεση και αλλαγή χρήστη
+  account_created: Ο λογαριασμός δημιουργήθηκε!
+  account_created_details: Τώρα είστε συνδεδεμένοι ως
+  verification_email_sent: Έχει σταλεί σύνδεσμος επιβεβαίωσης στο email σας
+  please_verify: Παρακαλώ επιβεβαιώστε τη διεύθυνση email σας
+  error_invalid_credential: Μη έγκυρο email ή κωδικός
+  create_account_prompt: Δημιουργήστε λογαριασμό αντί γι' αυτό
+  error_too_many_requests: Πάρα πολλές προσπάθειες. Παρακαλώ δοκιμάστε αργότερα.
+  continue_with_google: Συνέχεια με Google
+  continue_with_google_create: Δημιουργία λογαριασμού με Google
+  google_in_progress: Συνέχεια με Google...
+  oauth_divider: ή
+auth_pages:
+  confirm_success: Το email σας έχει επιβεβαιωθεί και ο λογαριασμός σας είναι τώρα ενεργός.
+  confirm_ready: Μπορείτε τώρα να συνεχίσετε να χρησιμοποιείτε τον ιστότοπο.
+  confirm_error: Δεν ήταν δυνατή η επιβεβαίωση της διεύθυνσης email σας.
+  reset_intro: Εισάγετε έναν νέο κωδικό για τον λογαριασμό σας.
+  reset_confirm_label: Επιβεβαίωση κωδικού
+  reset_mismatch_error: Οι κωδικοί δεν ταιριάζουν.
+  reset_invalid_link_error: Μη έγκυρος ή λείπει σύνδεσμος ανάκτησης.
+  reset_success: Ο κωδικός σας ενημερώθηκε. Μπορείτε τώρα να συνδεθείτε.
+newsletter_popup:
+  email_placeholder: Η διεύθυνση email σας
+  submit_button: Στείλτε μου τις ενημερώσεις
+  dismiss_button: Όχι τώρα
+  invalid_email: Παρακαλώ εισάγετε μια έγκυρη διεύθυνση email.
+  submit_error: Δεν μπορέσαμε να αποθηκεύσουμε την εγγραφή σας αυτή τη στιγμή. Παρακαλώ δοκιμάστε ξανά.
+  submitting_text: Αποθήκευση...
+  success_message: Ευχαριστούμε! Οι ενημερώσεις αγώνων είναι καθ’ οδόν στο inbox σας.
+  privacy_note: Νέοι αγώνες, αλλαγές ημερομηνιών και επιλεγμένες προσφορές. Αποεγγραφή όποτε θέλετε.
+  close_aria_label: Κλείσιμο αναδυόμενου παραθύρου εγγραφής
+  benefits:
+    new_races: Πρώτοι οι νέοι αγώνες
+    date_changes: Άμεσες αλλαγές ημερομηνιών
+    selected_offers: Επιλεγμένες προσφορές
+    similar_races: Παρόμοιοι αγώνες κοντά σας
+    local_picks: Περισσότεροι αγώνες κοντά
+    opening_reminders: Υπενθυμίσεις πριν εξαφανιστούν οι θέσεις
+    race_updates: Ενημερώσεις για αυτόν τον αγώνα
+    nearby_races: Διασυνοριακοί αγώνες κοντά σας
+  generic:
+    eyebrow: Μην χάσετε τον επόμενο αγώνα
+    title: Λάβετε νέους αγώνες και αλλαγές ημερομηνιών πριν από όλους
+    body: Εγγραφείτε στο newsletter μας και λάβετε νέους αγώνες, ενημερωμένες ημερομηνίες και επιλεγμένες συμβουλές στην {country} απευθείας στο inbox σας.
+  race_detail:
+    eyebrow: Ακολουθήστε αυτόν τον αγώνα
+    title: Θέλετε ενημερώσεις για το {race_name};
+    body: Εγγραφείτε για να λαμβάνετε ενημερώσεις για το {race_name}, παρόμοιους αγώνες στο {county} και σημαντικές αλλαγές απευθείας στο inbox σας.
+  browse_category:
+    eyebrow: Περισσότεροι κατάλληλοι αγώνες
+    title: Μην χάσετε νέους αγώνες {category}
+    body: Στέλνουμε νέους αγώνες {category}, σχετικές κοντινές εναλλακτικές και σημαντικές ημερομηνίες ώστε να μην ψάχνετε χειροκίνητα.
+  browse_category_type:
+    eyebrow: Περισσότεροι κατάλληλοι αγώνες
+    title: Λάβετε περισσότερους αγώνες {race_type} εντός {category}
+    body: Εγγραφείτε για περισσότερους αγώνες {race_type} εντός {category}, κοντινές εναλλακτικές και αλλαγές ημερομηνιών απευθείας στο inbox σας.
+  browse_county:
+    eyebrow: Πρώτοι οι τοπικοί αγώνες
+    title: Λάβετε περισσότερους αγώνες στο {county}
+    body: Μείνετε ενημερωμένοι με νέους αγώνες, ενημερωμένες ημερομηνίες και έξυπνες επιλογές για το {county} χωρίς να ελέγχετε συνέχεια το ημερολόγιο.
+  browse_city:
+    eyebrow: Πρώτοι οι τοπικοί αγώνες
+    title: Θέλετε περισσότερους αγώνες στο {city};
+    body: Εγγραφείτε και λαμβάνετε νέους αγώνες, κοντινές εναλλακτικές και σημαντικές ημερομηνίες για το {city} απευθείας στο inbox σας.
+  browse_type:
+    eyebrow: Το σωστό στυλ αγώνα
+    title: Λάβετε περισσότερους αγώνες {race_type} στο inbox σας
+    body: Στέλνουμε νέους αγώνες {race_type}, παρόμοιες εναλλακτικές και βασικές ημερομηνίες για να προλάβετε πριν εξαντληθούν οι θέσεις.
+  browse_month:
+    eyebrow: Οργανώστε τη σεζόν
+    title: Λάβετε πρώτοι τους καλύτερους αγώνες τον {month}
+    body: Όταν ανοίγουν, μεταφέρονται ή γίνονται ιδιαίτερα ενδιαφέροντες αγώνες τον {month}, το μαθαίνετε αμέσως στο inbox σας.
+  browse_neighboring:
+    eyebrow: Διευρύνετε το ημερολόγιό σας
+    title: Λάβετε αγώνες και από γειτονικές χώρες
+    body: Εγγραφείτε για νέους αγώνες, έξυπνες επιλογές διασυνοριακά και αλλαγές ημερομηνιών από την περιοχή {region} απευθείας στο inbox σας.
+  browse_neighboring_country:
+    eyebrow: Διευρύνετε το ημερολόγιό σας
+    title: Λάβετε περισσότερους αγώνες στην περιοχή {region}
+    body: Στέλνουμε νέους αγώνες, αλλαγές ημερομηνιών και σχετικές κοντινές εναλλακτικές όταν εμφανίζεται κάτι ενδιαφέρον στην περιοχή {region}.
+submission_flow:
+  logged_in_as: Συνδεδεμένος ως διοργανωτής
+  submitting_new_race: υποβολή νέου αγώνα
+  new_account_created: Για να διαχειριστείτε τον αγώνα, πρέπει να επιβεβαιώσετε το email σας. Έχει σταλεί σύνδεσμος επιβεβαίωσης στη διεύθυνση που δώσατε.
+  password_reset_sent: Αποστολή επαναφοράς κωδικού. Ελέγξτε το inbox σας.
+  unexpected_error: Παρουσιάστηκε σφάλμα. Παρακαλώ δοκιμάστε ξανά.
+  processing_submission: Επεξεργασία υποβολής...
+  race_exists: Ο αγώνας υπάρχει ήδη στη βάση δεδομένων.
+  race_submitted: Ο αγώνας υποβλήθηκε!
+  submission_failed: Δεν ήταν δυνατή η υποβολή του αγώνα. Παρακαλώ δοκιμάστε ξανά.
+  missing_fields: Λείπουν στοιχεία. Βεβαιωθείτε ότι όλα τα απαιτούμενα πεδία είναι συμπληρωμένα και έχει επιλεγεί τοποθεσία στον χάρτη.
+race_page:
+  forum_section:
+    title: Ερωτήσεις & Απαντήσεις
+    placeholder: Κάντε μια ερώτηση στον διοργανωτή...
+    submit_button: Αποστολή ερώτησης
+    login_prompt: Συνδεθείτε για να κάνετε ερώτηση
+    empty_state: Δεν υπάρχουν ερωτήσεις ακόμα. Γίνετε ο πρώτος που θα ρωτήσει!
+    error_message_no_login: Συνδεθείτε ή δημιουργήστε λογαριασμό για να κάνετε ερώτηση
+map:
+  show_map: Εμφάνιση χάρτη
+  show_list: Εμφάνιση λίστας
+  map: χάρτης
+  list: λίστα
+forum:
+  title: Φόρουμ - Συζητήστε για τρέξιμο, αγώνες και προπόνηση με άλλους δρομείς στην Ελλάδα
+  meta_description: Συζητήστε για τρέξιμο και τη ζωή των αγώνων με άλλους δρομείς στο φόρουμ μας. Προπόνηση, αγώνες, τραυματισμοί, διατροφή, ρούχα, εξοπλισμός, ταξίδια και άλλα.
+  categories:
+  - name: Προπόνηση
+    slug: training
+    description: Συζητήσεις για προπόνηση και τεχνική
+  - name: Αγώνες & Εκδηλώσεις
+    slug: races
+    description: Συζητήστε για τους επερχόμενους αγώνες
+  - name: Τραυματισμοί & Αποκατάσταση
+    slug: τραυματισμοί
+    description: Βοήθεια για τραυματισμούς και ανάρρωση
+  - name: Διαδρομές & Χάρτες
+    slug: διαδρομές
+    description: Συζητήστε για διαδρομές και χάρτες
+  - name: Ταξίδια & Σχετικά
+    slug: ταξίδια
+    description: Συζητήστε για ταξίδια και τρέξιμο σχετικό με ταξίδια
+  - name: Διατροφή & Διατροφή
+    slug: διατροφή
+    description: Συζητήστε για διατροφή και θρέψη
+  - name: Ρούχα, Παπούτσια & Εξοπλισμός
+    slug: εξοπλισμός
+    description: Συζητήστε για ρούχα, παπούτσια και εξοπλισμό
+  - name: Αγορά & Πώληση
+    slug: αγοράπώληση
+    description: Συζητήστε για αγορά και πώληση προϊόντων για δρομείς
+  - name: Διάφορα
+    slug: διάφορα
+    description: Όλα τα υπόλοιπα
+  empty_category_state: Δεν υπάρχουν ακόμα θέματα. Ξεκινήστε τη συζήτηση δημιουργώντας το πρώτο θέμα!
+  empty_state_thread: Δεν υπάρχουν ακόμα δημοσιεύσεις. Γράψτε πρώτος!
+  empty_state: Δεν υπάρχουν ακόμα δημοσιεύσεις. Γράψτε πρώτος!
+  reply_placeholder: Γράψτε την απάντησή σας...
+  submit_button: Αποστολή
+  login_prompt: Συνδεθείτε για να συμμετάσχετε στη συζήτηση
+  new_thread_title_placeholder: Τίτλος του νέου σας θέματος
+  new_thread_content_placeholder: Γράψτε την πρώτη σας δημοσίευση...
+  create_thread_button: Δημιουργία νέου θέματος
+  back_to_forum: ← Επιστροφή στο φόρουμ
+  back_to_category: ← Επιστροφή στο
+  empty_thread_state: Δεν υπάρχουν ακόμα δημοσιεύσεις. Γράψτε πρώτος!
+  posts_label: δημοσιεύσεις
+  reply_label: απάντηση
+  thread_created_title: Ευχαριστούμε που δημιουργήσατε νέο θέμα!
+  thread_created_message: Το θέμα σας θα ελεγχθεί και θα προστεθεί στη σελίδα σύντομα.
+  thread_created_back_link: Επιστροφή στην κατηγορία
+  show_more_threads: Δείξε περισσότερα θέματα
+  show_less_threads: Εμφάνιση λιγότερων θεμάτων
+  create_new_thread: Δημιουργία νέου θέματος
+  reply_title: Απάντηση στο θέμα
+  showing_threads_count: Εμφάνιση {x} από {y} θέματα
+about_us:
+  title: Σχετικά με το Καλεντάρι Αγώνων
+  meta_description: Καλεντάρι Αγώνων - ο οδηγός σας για το τρέξιμο στην Ελλάδα
+  content:
+    intro: Καλώς ήρθατε στο Καλεντάρι Αγώνων - μια πρακτική πλατφόρμα για δρομείς σε όλη την Ελλάδα.
+    mission: Αποστολή μας είναι να διευκολύνουμε τους δρομείς να βρίσκουν και να μοιράζονται πληροφορίες για αγώνες, προπόνηση και όλα όσα σχετίζονται με το τρέξιμο.
+    story: Το Καλεντάρι Αγώνων δημιουργείται από την ανάγκη για έναν σύγχρονο και χρήσιμο χώρο όπου η ελληνική δρομική κοινότητα μπορεί να βρίσκει αγώνες συγκεντρωμένους σε ένα σημείο.
+    features:
+    - title: Πλήρες καλεντάρι αγώνων
+      description: Συγκεντρώνουμε αγώνες από όλη την Ελλάδα σε ένα σημείο, από μικρότερες τοπικές διοργανώσεις μέχρι μεγάλους διεθνείς αγώνες.
+    - title: Με γνώμονα την κοινότητα
+      description: Η πλατφόρμα μας κινείται από δρομείς σαν εσάς. Ο καθένας μπορεί να συνεισφέρει πληροφορίες για αγώνες και να συμμετέχει στις συζητήσεις.
+    - title: Δωρεάν εργαλεία
+      description: Προσφέρουμε χρήσιμα εργαλεία όπως υπολογιστές ρυθμού, προγράμματα προπόνησης και σχεδιασμό διαδρομών - εντελώς δωρεάν.
+    closing: Συνεχίζουμε να εξελίσσουμε την πλατφόρμα με βάση τα σχόλια των χρηστών μας. Έχετε προτάσεις βελτίωσης; Επικοινωνήστε μαζί μας!
+contact:
+  title: Επικοινωνήστε μαζί μας
+  meta_description: Επικοινωνήστε με το Καλεντάρι Αγώνων - είμαστε εδώ για να βοηθήσουμε
+  content:
+    intro: 'Θα χαρούμε να ακούσουμε νέα σας! Εδώ είναι διάφοροι τρόποι να επικοινωνήσετε μαζί μας:'
+    email:
+      title: Ηλεκτρονικό ταχυδρομείο
+      address: hello@kalentariagonon.com
+      description: Συνήθως απαντάμε εντός 24 ωρών τις εργάσιμες ημέρες.
+    social:
+      title: Κοινωνικά Δίκτυα
+      description: 'Ακολουθήστε μας στα κοινωνικά δίκτυα για τα τελευταία νέα και ενημερώσεις:'
+    feedback:
+      title: Ανατροφοδότηση
+      description: Εκτιμούμε κάθε σχόλιο που μας βοηθά να βελτιώνουμε το Καλεντάρι Αγώνων.
+privacy_page:
+  title: Πολιτική Απορρήτου
+  meta_description: Πολιτική απορρήτου και πληροφορίες για το πώς το Καλεντάρι Αγώνων διαχειρίζεται προσωπικά δεδομένα και cookies.
+  last_updated_label: Τελευταία ενημέρωση
+  last_updated_date: 15 Απριλίου 2026
+  contact_intro: 'Για ερωτήσεις και αιτήματα σχετικά με το απόρρητο, παρακαλούμε επικοινωνήστε μαζί μας στο:'
+  contact_email: hello@kalentariagonon.com
+  sections:
+  - title: 1. Πληροφορίες που Συλλέγουμε
+    intro: 'Συλλέγουμε πληροφορίες που παρέχετε απευθείας σε εμάς όταν:'
+    bullets:
+    - Δημιουργείτε λογαριασμό
+    - Υποβάλλετε πληροφορίες αγώνα
+    - Αναρτάτε στο forum
+    - Επικοινωνείτε μαζί μας
+  - title: 2. Cookies και Παρακολούθηση
+    intro: 'Χρησιμοποιούμε cookies για να:'
+    bullets:
+    - Θυμόμαστε τις προτιμήσεις σας
+    - Διατηρούμε τη συνεδρία και την κατάσταση σύνδεσής σας
+    - Ανάλυση της κίνησης και της χρήσης του ιστότοπου
+    - Εμφάνιση σχετικής διαφήμισης και βελτίωση της εμπειρίας
+  - title: 3. Πώς Χρησιμοποιούμε τις Πληροφορίες Σας
+    intro: 'Οι πληροφορίες σας μας βοηθούν να:'
+    bullets:
+    - Παρέχουμε και βελτιώνουμε τις υπηρεσίες μας
+    - Αποστέλλουμε σημαντικές ειδοποιήσεις και ενημερώσεις
+    - Ανταποκρινόμαστε σε αιτήματα και ερωτήσεις υποστήριξης
+    - Αποτρέπουμε απάτες και κακή χρήση
+  - title: 4. Τα Δικαιώματά Σας
+    intro: 'Σύμφωνα με τον GDPR, έχετε το δικαίωμα να:'
+    bullets:
+    - Έχετε πρόσβαση στα προσωπικά σας δεδομένα
+    - Διορθώσετε ανακριβή ή ελλιπή δεδομένα
+    - Ζητήσετε διαγραφή των δεδομένων σας
+    - Αντιταχθείτε σε ορισμένες δραστηριότητες επεξεργασίας
+    - Ζητήσετε φορητότητα δεδομένων
+  - title: 5. Επικοινωνήστε Μαζί Μας
+    intro: Αν έχετε ερωτήσεις σχετικά με το πώς επεξεργαζόμαστε προσωπικά δεδομένα ή χρησιμοποιούμε cookies, είστε πάντα ευπρόσδεκτοι να επικοινωνήσετε μαζί μας.
+racetime_estimator_title: Εκτιμήστε τον χρόνο τερματισμού σας
+racetime_estimator_description: Βασισμένο σε προηγούμενο αγώνα, μπορείτε να εκτιμήσετε τον χρόνο τερματισμού σας για άλλες αποστάσεις.
+known_distance_label: Επιλέξτε απόσταση όπου έχετε προηγούμενο αποτέλεσμα
+known_time_label: Εισάγετε τον χρόνο σας
+calculate_button_text: Υπολογίστε χρόνους
+predicted_times_title: Εκτιμώμενοι χρόνοι
+distance_header: Απόσταση
+predicted_time_header: Εκτιμώμενος χρόνος
+hilly_course_label: Διαδρομή με ανηφόρες
+finish_time_header: Εκτιμώμενος χρόνος τερματισμού
+pace_per_km_header: Λεπτά/χλμ
+pace_per_mile_header: Λεπτά/μίλι
+flat_time_header: Χρόνος (επίπεδο)
+flat_pace_per_km_header: Λεπτά/χλμ (επίπεδο)
+flat_pace_per_mile_header: Λεπτά/μίλι (επίπεδο)
+hill_adjustment_header: Προσαρμογή για ανηφόρες
+pace_calculator_title: Μετατροπέας ρυθμού
+pace_calculator_description: Ένα απλό εργαλείο για τη μετατροπή της ταχύτητας τρεξίματός σας μεταξύ διαφορετικών μονάδων
+pace_table_header_kph: Χιλιόμετρα ανά ώρα
+pace_table_header_mph: Μίλια ανά ώρα
+pace_table_header_min_km: Λεπτά ανά χιλιόμετρο
+pace_table_header_min_mile: Λεπτά ανά μίλι
+pace_table_header_5k: 5k
+pace_table_header_10k: 10χλμ
+pace_table_header_half: Ημιμαραθώνιος
+pace_table_header_full: Μαραθώνιος
+pace_conversion_note: 1 χιλιόμετρο ανά ώρα (kph) = 0,62 μίλια ανά ώρα (mph)
+measure_route_title: Μετρήστε τη διαδρομή σας
+measure_route_description: Κάντε κλικ στον χάρτη για να σημειώσετε σημεία κατά μήκος της διαδρομής σας. Η συνολική απόσταση υπολογίζεται αυτόματα.
+remove_last_point: Αφαίρεση τελευταίου σημείου
+clear_route: Καθαρισμός διαδρομής
+total_distance: Συνολική απόσταση
+training_plans:
+  title: Πλάνα Εκπαίδευσης
+  description: Δημιουργήστε ένα εξατομικευμένο πλάνο εκπαίδευσης βάσει του στόχου σας
+  disclaimer_text_tp_1: Τα πλάνα εκπαίδευσής μας δημιουργούνται με τη χρήση AI και προσαρμόζονται στους δηλωμένους στόχους και προτιμήσεις σας. Τα προγράμματα δεν εγγυώνται ότι είναι τέλεια ή ότι λειτουργούν για όλους.
+  disclaimer_link_tp: Επικοινωνήστε μαζί μας
+  disclaimer_text_tp_2: αν έχετε σχόλια ή προτάσεις για βελτιώσεις.
+  form:
+    race_date_label: Ημερομηνία αγώνα
+    plan_type_label: Τύπος πλάνου
+    target_distance_label: Στοχευόμενη απόσταση
+    target_time_label: Στοχευμένος χρόνος
+    training_days_label: Ημέρες προπόνησης ανά εβδομάδα
+    session_time_label: Διαθέσιμος χρόνος ανά προπόνηση
+    is_hilly_label: Λοφώδες έδαφος
+    hours_placeholder: Ώρες
+    minutes_placeholder: Λεπτά
+    seconds_placeholder: Δευτερόλεπτα
+    submit_button: Δημιουργία πλάνου εκπαίδευσης
+    target_distance:
+      placeholder: Επιλέξτε απόσταση
+      options:
+        '5000': 5 χλμ
+        '10000': 10 χλμ
+        '21097': Ημιμαραθώνιος
+        '42195': Μαραθώνιος
+    training_days:
+      placeholder: Επιλέξτε αριθμό ημερών
+      options:
+        '3': 3 ημέρες
+        '4': 4 ημέρες
+        '5': 5 ημέρες
+        '6': 6 ημέρες
+    session_time:
+      placeholder: Επιλέξτε χρόνο ανά προπόνηση
+      options:
+        30-45: 30-45 λεπτά
+        45-60: 45-60 λεπτά
+        60-90: 60-90 λεπτά
+        90+: Πάνω από 90 λεπτά
+  results:
+    title: Το πρόγραμμα προπόνησής σας
+    variations:
+      title: 'Επιλέξτε μια παραλλαγή που σας ταιριάζει:'
+    plan_details:
+      duration_label: 'Διάρκεια προγράμματος:'
+      weekly_distance_label: 'Εβδομαδιαία απόσταση:'
+    regenerate_button: Εμφάνιση άλλων παραλλαγών
+    export_button: Εξαγωγή σε PDF
+  workout_types:
+    easy: Εύκολο τρέξιμο
+    tempo: Τρέξιμο ρυθμού
+    intervals: Διαλειμματική προπόνηση
+    long: Μακρύ τρέξιμο
+    rest: Ξεκούραση
+  messages:
+    weeks: εβδομάδες
+    week_label: Εβδομάδα
+    hilly_terrain_note: προσαρμοσμένο σε λοφώδες έδαφος
+  plan_variation:
+    focus_label: Εστίαση
+    weekly_structure_label: Εβδομαδιαία δομή
+    distribution_label: Κατανομή
+    sessions_per_week: προπονήσεις ανά εβδομάδα
+    select_button: Επιλογή αυτού του προγράμματος
+  errors:
+    loading_plans: Σφάλμα κατά τη φόρτωση των προγραμμάτων προπόνησης
+    required_fields: Παρακαλώ συμπληρώστε όλα τα απαιτούμενα πεδία
+    no_matching_plan: Δεν βρέθηκε αντίστοιχο πρόγραμμα προπόνησης
+    no_matching_variations: Δεν βρέθηκαν αντίστοιχες παραλλαγές
+    invalid_training_days: Ο αριθμός των ημερών προπόνησης δεν ταιριάζει με τις απαιτήσεις του προγράμματος
+  week: Εβδομάδα
+  weeks: εβδομάδες
+  hilly_terrain_note: προσαρμοσμένο σε λοφώδες έδαφος
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Ανάπτυξη βασικής αντοχής
+        weekly_template:
+          monday:
+            type: εύκολο
+            description: Εύκολο τρέξιμο απόστασης
+          wednesday:
+            type: τρέξιμο ρυθμού
+            description: Τρέξιμο ρυθμού
+          saturday:
+            type: μακρύ
+            description: Μακρύ τρέξιμο
+          sunday:
+            type: ανάκαμψη
+            description: Ανάκαμψη
+      build:
+        duration_percent: 40
+        focus: Αυξημένη ένταση και απόσταση
+        weekly_template:
+          monday:
+            type: εύκολο
+            description: Εύκολο τρέξιμο απόστασης
+          wednesday:
+            type: διαλείμματα
+            description: Διαλειμματική προπόνηση
+          friday:
+            type: ρυθμός
+            description: Τρέξιμο ρυθμού
+          sunday:
+            type: μακρύ
+            description: Μακρύ τρέξιμο
+      peak:
+        duration_percent: 15
+        focus: Αποκορύφωση και ειδική προπόνηση
+        weekly_template:
+          tuesday:
+            type: διαλείμματα
+            description: Ποιοτική προπόνηση
+          thursday:
+            type: ρυθμός
+            description: Τρέξιμο ρυθμού
+          saturday:
+            type: μακρύ
+            description: Μακρύ τρέξιμο
+          sunday:
+            type: ανάκαμψη
+            description: Ανάκαμψη
+      taper:
+        duration_percent: 5
+        focus: Μείωση φόρτου
+        weekly_template:
+          tuesday:
+            type: εύκολο
+            description: Εύκολο τρέξιμο
+          thursday:
+            type: ρυθμός
+            description: Σύντομο τρέξιμο ρυθμού
+          saturday:
+            type: εύκολο
+            description: Πολύ εύκολο τρέξιμο
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 λεπτά εύκολο τρέξιμο
+        cooldown: 5-10 λεπτά εύκολο τρέξιμο
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 λεπτά προοδευτική προθέρμανση
+        cooldown: 10-15 λεπτά αποθεραπεία
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 λεπτά με ασκήσεις και επιταχύνσεις
+        cooldown: 10-15 λεπτά εύκολο τρέξιμο
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 λεπτά πολύ εύκολο τρέξιμο
+        cooldown: 5-10 λεπτά περπάτημα/ελαφρύ τρέξιμο
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 λεπτά περπάτημα
+        cooldown: 5-10 λεπτά περπάτημα
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Προθέρμανση
+    main_workout_label: Περιγραφή προπόνησης
+    cooldown_label: Αποθεραπεία
+    intensity_label: Ρυθμός
+    duration_label: Διάρκεια
+  regenerate:
+    button_text: Δημιουργία νέας παραλλαγής
+    confirmation: Είστε σίγουροι ότι θέλετε να δημιουργήσετε νέα παραλλαγή;
+  weekdays:
+    monday: Δευτέρα
+    tuesday: Τρίτη
+    wednesday: Τετάρτη
+    thursday: Πέμπτη
+    friday: Παρασκευή
+    saturday: Σάββατο
+    sunday: Κυριακή
+footer:
+  races_heading: Αγώνες
+  tools_heading: Εργαλεία
+  about_heading: Σχετικά με το Καλεντάρι Αγώνων
+  privacy: Πολιτική Απορρήτου
+  copyright_year: 2023-{{CURRENT_YEAR}}
+  site_name: Καλεντάρι Αγώνων
+  rights_text: Όλα τα δικαιώματα διατηρούνται.
+  social_links:
+    facebook: ''
+    instagram: ''
+    youtube: ''
+    tiktok: ''
+  contact_email: info@kalentariagonon.com
+accessibility:
+  main_navigation_label: Κύρια πλοήγηση
+  breadcrumb_label: Μονοπάτια πλοήγησης
+  back_to_top_label: Επιστροφή στην κορυφή
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Δημοφιλείς αγώνες
+trending_races_description: Εδώ είναι οι αγώνες που έχουν τραβήξει την περισσότερη προσοχή από τους δρομείς.
+trending_races_views_last_30_days: προβολές τις τελευταίες 30 ημέρες
+trending_races_most_viewed: Πιο δημοφιλείς αυτή τη στιγμή
+races_views: προβολές
+recent_races_title: Πρόσφατα προστιθέμενοι αγώνες
+today: σήμερα
+yesterday: χθες
+days_ago: ημέρες πριν
+newest_race_badge: Τελευταία προσθήκη
+races_count: αγώνες
+popular_counties_title: Βρείτε αγώνες στην περιοχή σας
+popular_cities_title: Βρείτε αγώνες στην πόλη σας
+all_counties: Εμφάνιση όλων των περιοχών
+all_cities: Εμφάνιση όλων των πόλεων
+category_header_1: Ορεινό Τρέξιμο
+category_type_1: trail
+category_1_races_sub_title_1: Ορεινός Μαραθώνιος
+category_1_races_sub_ref_1: μαραθώνιος
+category_1_races_sub_title_2: Ορεινό Ultra
+category_1_races_sub_ref_2: 50 μίλια
+category_1_races_sub_title_3: Ορεινό Ultra 100 μίλια
+category_1_races_sub_ref_3: 100 μίλια
+category_header_2: Αγώνες Δρόμου
+category_type_2: road
+category_2_races_sub_title_1: Μαραθώνιος
+category_2_races_sub_ref_1: μαραθώνιος
+category_2_races_sub_title_2: Ημιμαραθώνιος
+category_2_races_sub_ref_2: ημιμαραθώνιος
+category_2_races_sub_title_3: 10 χλμ
+category_2_races_sub_ref_3: 10-χλμ
+view_all_races: Δείτε όλους τους αγώνες στο
+tools_title: Εργαλεία για τον επόμενο αγώνα σας
+home_tools:
+  measure_route:
+    description: Μετρήστε μια διαδρομή και λάβετε γρήγορη εκτίμηση απόστασης πριν ξεκινήσετε.
+  training_plans:
+    description: Βρείτε προγράμματα προπόνησης για διαφορετικούς στόχους, επίπεδα και αποστάσεις αγώνων για να διαμορφώσετε το επόμενο μπλοκ σας.
+  racetime_estimator:
+    description: Εκτιμήστε ρεαλιστικό χρόνο τερματισμού από προηγούμενα αποτελέσματα και συγκρίνετε διαφορετικά σενάρια στόχων.
+  pace_calculator:
+    description: Μετατρέψτε ρυθμό, ταχύτητα και χρόνο τερματισμού σε κοινές αποστάσεις αγώνων κατά τον προγραμματισμό της προπόνησης.
+missing_race: Λείπει κάποιος αγώνας; Προσθέστε τον εδώ!
+add_race_mp_title: Προσθέστε τον αγώνα σας
+neighboring_countries_title: Αγώνες στην Ελλάδα και τις γειτονικές χώρες
+neighboring_countries_title_specific_country: Αγώνες στο {country_name}
+neighboring_countries_description: Εδώ είναι αγώνες που διεξάγονται σε γειτονικές χώρες.
+neighboring_countries_description_specific_country: Εδώ καταγράφουμε αγώνες που διεξάγονται στο {country_name}.
+neighboring_countries_neighbors_native: Γειτονικές χώρες
+neighboring_countries_all_neighbors_native: Όλες οι γειτονικές χώρες
+section_race_card_header_nieghbors_default: Ελλάδα και γειτονικές χώρες
+browse_neighboring:
+  title: Περιήγηση Αγώνων ανά Γειτονικές Χώρες
+  meta_description: Βρείτε αγώνες σε γειτονικές χώρες κοντά σας. Περιηγηθείτε ανά χώρα για να ανακαλύψετε αγώνες τρεξίματος πέρα από τα σύνορα.
+neighboring_races_title: Αγώνες σε γειτονικές χώρες
+neighboring_countries_show_all: Εμφάνιση όλων

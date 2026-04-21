@@ -6,7 +6,11 @@ import {
   type HomeRaceEntry,
 } from '../src/lib/homePage';
 import type { RaceListRow } from '../src/lib/raceListRow';
-import { upcomingWindowEnd, upcomingWindowStart } from '../src/lib/upcomingRaceWindow';
+import {
+  displayRaceDate,
+  upcomingWindowEnd,
+  upcomingWindowStart,
+} from '../src/lib/upcomingRaceWindow';
 
 test.beforeEach(async ({ page }) => {
   await page.route('https://race-aggregator-tests.supabase.co/rest/v1/rpc/**', async (route) => {
@@ -162,6 +166,10 @@ test('race list uses the next in-window date for card display and ordering', asy
   await expect(cards.first()).toHaveAttribute('data-date', '20260615');
   await expect(cards.nth(1)).toHaveAttribute('data-name', 'Later Race');
   await expect(cards.nth(1)).toHaveAttribute('data-date', '20260620');
+});
+
+test('displayRaceDate falls back to the first known date when a race is only in the past', () => {
+  expect(displayRaceDate([['20250312', '20250312']], '20260401', '20270401')).toBe('20250312');
 });
 
 test('English home page renders', async ({ page }) => {

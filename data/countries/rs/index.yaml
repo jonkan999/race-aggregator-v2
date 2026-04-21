@@ -1,0 +1,1056 @@
+type_options:
+  road: Drumska trka
+  terrain: Teren
+  trail: Trail
+  track: Atletska staza
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Štafeta
+  time: Trka na vreme
+  other: Ostalo
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Polumaraton:
+    range:
+    - 20
+    - 22
+  Maraton:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 metara:
+    range:
+    - 1.5
+    - 1.5
+  3000 metara:
+    range:
+    - 3
+    - 3
+  5000 metara:
+    range:
+    - 5
+    - 5
+  10000 metara:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Trka na vreme
+  relay: Štafeta
+verbose_local_distance_mapping:
+  half marathon: Polumaraton
+  marathon: Maraton
+  fallback: Kombinovane distance
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Polumaraton
+- range:
+  - 41.9
+  - 42.4
+  label: Maraton
+country_code: rs
+country_language_code: sr
+navigation:
+  main: Sve
+  race-list: Kalendar trka
+  add-race: Dodaj trku
+  forum: Forum
+  measure-route: Izmeri rutu
+  training-plans: Planovi treninga
+  pace-calculator: Kalkulator tempa
+  racetime-estimator: Proceni vreme na cilju
+  about-us: O nama
+  contact: Kontakt
+race_list_name: Kalendar trka
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Pregled trke
+  terms-of-service: Uslovi korišćenja
+  privacy-policy: Politika privatnosti
+  about-us: O nama
+  contact: Kontakt
+  faq: Česta pitanja
+page_name: Kalendar trka
+base_url: https://kalendartrka.com/
+supabase_auth_email:
+  primary_color: '#008f61'
+  shared:
+    greeting: Zdravo!
+    closing_salutation: Srdačan pozdrav,
+    link_fallback_intro: 'Ako dugme ne radi, kopirajte ovaj link:'
+  confirm_signup:
+    body: Hvala što ste se prijavili na {site_name}. Potvrdite svoju email adresu da biste aktivirali nalog i upravljali prijavljenim trkama.
+    button_label: Potvrdi email adresu
+    ignore_note: Ako niste napravili nalog, ovu poruku možete zanemariti.
+  reset_password:
+    body: Primili smo zahtev za resetovanje lozinke za {site_name}. Kliknite na dugme ispod da odaberete novu lozinku.
+    button_label: Resetuj lozinku
+    ignore_note: Ako niste poslali ovaj zahtev, slobodno zanemarite poruku. Lozinka se neće promeniti dok ne odaberete novu.
+  change_email:
+    body: Zatražili ste promenu email adrese za nalog na {site_name}. Potvrdite promenu klikom na dugme ispod.
+    button_label: Potvrdi novu email adresu
+    ignore_note: Ako niste tražili ovu promenu, slobodno zanemarite poruku.
+title: Sve o trčanju u
+country_native: Srbija
+country: Serbia
+meta_description: Najpotpuniji kalendar trka i trkačka zajednica u Srbiji
+country_language: Serbian
+local_name_for_race: trka
+main_bullet_1: Pronađi svoju sledeću trku
+main_bullet_2: ' - ili je dodaj ovde'
+main_bullet_3: Istraži trke širom zemlje
+main_bullet_4: Prati novosti ili se uključi u diskusiju na forumu
+description: Kalendar trka je zajednički vođena platforma za trkače u Srbiji. Pomaže da lakše otkrijete drumske i trail trke, uporedite važne detalje i pratite lokalni kalendar trčanja na jednom mestu.
+cta_search: Pronađi trku
+cta_add: Dodaj trku
+selected_races_title: Izdvojene trke
+selected_races_top_title: Trka nedelje
+cta_all_races: Prikaži sve trke
+show_local: Prikaži
+race_local: trke
+running_local: trčanje
+alt_prefix: 'Slika za '
+race_list_title: Najpotpuniji pregled maratona, polumaratona i drugih trkačkih događaja u Srbiji
+race_list_meta_description_1: Pronađi trke i termine širom Srbije
+race_list_meta_description_2: ✔️Kompletan kalendar trka ✔️Drumske, trail i backyard trke ✔️Trke iz cele Srbije
+race_list_data_error: Could not load races. Please try again later.
+race_list_remote_required: Za dodatne stranice ili filtere potrebna je baza (Supabase). Dodajte PUBLIC_SUPABASE_URL i PUBLIC_SUPABASE_PUBLISHABLE_KEY u svoj .env fajl.
+race_list_empty: No races matched your filters.
+race_list_loading: Učitavanje…
+race_card_cta_text: Više informacija i prijava
+section_race_card_category_prefix: Sve
+section_race_card_category_suffix: trke
+section_race_card_header_separator: u
+section_race_card_header_region_default: Srbija
+section_race_card_header_date_range_from: 'od '
+section_race_card_header_date_range_to: 'do '
+section_race_card_header_date_range_single: 'u '
+filter_date_from: Od
+filter_date_to: Do
+filter_county: Svi okruzi
+filter_race_type: Sve vrste trka
+filter_categories: Sve kategorije
+filter_months: Cela godina
+filter_distance: Sve distance
+month_mapping:
+  '01': januar
+  '02': februar
+  '03': mart
+  '04': april
+  '05': maj
+  '06': jun
+  '07': jul
+  08: avgust
+  09: septembar
+  '10': oktobar
+  '11': novembar
+  '12': decembar
+month_mapping_short:
+  '01': jan
+  '02': feb
+  '03': mar
+  '04': apr
+  '05': maj.
+  '06': jun
+  '07': jul
+  08: avg
+  09: sep
+  '10': okt
+  '11': nov
+  '12': dec
+county_label_text: Svi okruzi
+county_mapping:
+  Syrmia District: Sremski okrug
+  South Banat District: Južnobanatski okrug
+  North Banat District: Severnobanatski okrug
+  North Backa District: Severnobački okrug
+  Central Banat District: Srednjobanatski okrug
+  West Backa District: Zapadnobački okrug
+  South Backa District: Južnobački okrug
+  Belgrade: Beograd
+  Bor District: Borski okrug
+  Macva District: Mačvanski okrug
+  Pcinja District: Pčinjski okrug
+  Kolubara District: Kolubarski okrug
+  Podunavlje District: Podunavski okrug
+  Branicevo District: Braničevski okrug
+  Sumadija District: Šumadijski okrug
+  Pomoravlje District: Pomoravski okrug
+  Moravica District: Moravički okrug
+  Zajecar District: Zaječarski okrug
+  Zlatibor District: Zlatiborski okrug
+  Raska District: Raški okrug
+  Pirot District: Pirotski okrug
+  Jablanica District: Jablanički okrug
+  Toplica District: Toplički okrug
+  Nisava District: Nišavski okrug
+  Rasina District: Rasinski okrug
+category_label_text: Kategorija trke
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Na stranicu trke
+map_toggle_desktop: Prikaži mapu
+map_toggle_desktop_active: Sakrij mapu
+map_toggle_mobile: Mapa
+map_toggle_mobile_list: Spisak
+map_markers_load_error: Markeri na mapi nisu mogli da se učitaju.
+map_not_configured: Mapa nije podešena (nedostaje ključ za mapu).
+race_page_map_zoom: '{default_map_zoom}'
+pagination:
+  results_text: od
+  events_text: trka
+  previous_text: Prethodna
+  next_text: Sledeća
+  page_text: Strana
+  of_text: od
+add_race_title: Dodaj novu trku
+add_race_meta_description: Dodaj svoju trku na Kalendar trka
+map_message: Postavi svoju trku klikom na mapu
+mapbox_center:
+  latitude: 44.0165
+  longitude: 21.0059
+mapbox_zoom: '7'
+date_text: Datum trke
+multi_day_toggle: Višednevni događaj
+end_date_text: Datum završetka
+type_text: Podloga / vrsta trke
+type_select_placeholder: Izaberi podlogu / vrstu trke
+name_label: 'Naziv trke:'
+name_placeholder: npr. Beogradski maraton
+distance_label: 'Distance trke:'
+distance_placeholder: Unesite distancu u km
+add_distance_button: Dodaj
+half_marathon_button: Polumaraton
+marathon_button: Maraton
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Mesto trke:'
+place_placeholder: npr. Ada Ciganlija, Beograd
+organizer_label: 'Organizator:'
+organizer_contact_placeholder: Trkački klub
+organizer_contact_label: 'Kontakt email:'
+organizer_mail_placeholder: hello@kalendartrka.com
+website_label: 'Sajt organizatora:'
+website_placeholder: https://organizator.rs/
+start_time_label: 'Vreme starta:'
+start_time_placeholder: 09:00
+price_range_label: 'Raspon cene:'
+price_range_placeholder: npr. 1500-4500 RSD
+add_race_description_label: Opis trke
+add_race_description_placeholder: Na primer, Beogradski maraton vodi kroz centar grada i nudi brzu i uglavnom ravnu stazu...
+add_race_additional_label: Dodatne informacije
+add_race_additional_placeholder: npr. start i cilj, startne zone ili okrepne stanice
+add_race_images_label: Otpremite slike (preporučeno najmanje 4)
+choose_pictures_button: Izaberi slike
+drag_drop_text: Prevucite slike ovde ili kliknite za izbor
+add_race_remove_image_label: Ukloni sliku
+coordinates_display_prefix: Koordinate trke
+add_race_upload_limit_message: Možete da otpremite još samo {count} slika.
+add_race_map_not_configured: Mapa trenutno ne može da se učita.
+clear_images_button: Obriši slike
+clear_form_button: Obriši formular
+preview_button: Pregled
+submit_button: Pošalji
+preview_title: Pregled
+preview_exit_button: Zatvori pregled
+optional_label: Opcionalno
+comments_suffix: Komentari
+cta_forum: Prikaži sve objave
+race_page_preview_title: Ovako će vaša trka izgledati
+edit_race_button: Izmeni
+race_page_description_label: Opis trke
+race_page_course_highlights_label: Izdvajamo sa staze
+race_page_additional_label: Dodatne informacije
+race_page_detailed_info_label: Detaljne informacije
+race_page_social_links_label: Prati trku
+race_page_place_label: 'Mesto:'
+race_page_distances_label: 'Distance trke:'
+race_page_surface_label: 'Podloga:'
+race_page_date_label: 'Datum trke:'
+race_page_estimated_date_label: Procenjeni datum
+race_page_estimated_disclaimer: Za ovu trku još nemamo potvrđen zvanični datum.
+race_page_registration_link: Link za prijavu
+race_page_registration_cta: Prijavi se sada
+race_page_info_cta: Više informacija
+race_page_registration_close_label: Prijave se zatvaraju
+race_page_pricing_title: Prijava i cene
+race_page_price_deadline_label: Važi do
+race_page_price_late_fee_label: Kasna prijava
+race_page_back_to_list: Nazad na kalendar trka
+race_page_favorites_title: Ne propustite novosti o trci
+race_page_favorites_body: Napravite nalog i sačuvajte ovu trku u omiljene kako biste dobijali novosti, vesti i odabrane ponude kada omiljene trke budu aktivne.
+race_page_favorites_cta: Sačuvaj trku u omiljene
+race_page_similar_title: Slične trke
+race_page_similar_body: Još trka slične distance, vrste ili obližnje lokacije.
+race_page_discover_title: Istraži još trka
+race_page_discover_county_link: Sve trke u {county}
+race_page_discover_type_link: Još {type} trka
+race_page_discover_category_link: Još {category} trka
+race_page_discover_type_county_link: '{type} trke u {county}'
+race_page_discover_overview_link: Pregledaj sve kategorije trka
+disclaimer_text_1: 'Sve informacije na ovoj stranici zasnovane su na javno dostupnim izvorima. Trudimo se da budu ažurne, ali ne možemo da garantujemo da je sve potpuno tačno. Ako primetite grešku, '
+disclaimer_link: kontaktirajte nas
+disclaimer_text_2: i ispravićemo je što je pre moguće.
+disclaimer_text_3: Želite da dopunite još nešto o svojoj trci?
+disclaimer_text_4: i pokušaćemo da pomognemo!
+race_page_visit_organizer_website: Na sajt organizatora i prijavu
+race_page_folder_name: stranice-trka
+race_page_alt_prefix: 'Slika za '
+seo_county_folder_name: Okrugi
+seo_cities_folder_name: Gradovi
+popular_subcategories_title: Popularne potkategorije
+important_keywords_racelist:
+- kalendar trka
+- kalendar trka Srbija
+- trke Srbija
+- trkački kalendar
+- trkački događaji
+- trail i drumske trke u Srbiji
+seo_templates:
+  title_parts:
+    category: '{category} trke'
+    race_type: '{race_type}'
+    location: u {location}
+    default: Sve trke
+  paragraph_templates:
+    category_race_location: Pronađi {category} {race_type} trke u {location}.
+    category_race: Istraži {category} {race_type} trke širom Srbije.
+    category_location: Otkrij {category} trke u {location}.
+    race_location: Pogledaj sve {race_type} trke u {location}.
+    category_only: Pronađi {category} trke širom Srbije.
+    race_only: Istraži {race_type} trke u svim okruzima.
+    location_only: Pogledaj sve vrste trka u {location}.
+    default_suffix: Ovde ćeš pronaći termine, distance i praktične informacije za planiranje svoje sledeće trke.
+  browse_page_templates:
+    county:
+      title: '{label} trke | {site_name}'
+      meta_description: Pregledaj trke u {label}. Uporedi datume, distance, format trke i praktične detalje pre nego što izabereš sledeću trku.
+      h1: Trke u {label}
+      paragraph: Ova stranica okuplja trke u {label} kako bi bilo lakše da na jednom mestu uporediš datume, distance, format trke i praktične informacije.
+    city:
+      title: '{label} trke | {site_name}'
+      meta_description: Pronađi trke povezane sa {label}. Uporedi datume, distance, obližnje opcije i praktične detalje pre izbora sledeće trke.
+      h1: Trke u blizini {label}
+      paragraph: Ova gradska stranica pomaže da pregledaš trke povezane sa {label}, uključujući obližnje alternative koje imaju smisla kada planiraš trkački dan ili put.
+    month:
+      title: '{label} trke | {site_name}'
+      meta_description: Pregledaj trke u {label_lower} u {market}. Uporedi datume, distance, vrste trka i praktične detalje dok planiraš sezonu.
+      h1: Trke u {label}
+      paragraph: Ova stranica pomaže trkačima da kalendar pregledaju mesec po mesec i brže vide šta se dešava u {label_lower} pre nego što suze izbor po distanci, podlozi ili mestu.
+    race_type:
+      title: '{label} trke u {market} | {site_name}'
+      meta_description: Pregledaj {label_lower} trke u {market}. Uporedi datume, distance, lokacije i praktične detalje pre nego što izabereš trku koja ti odgovara.
+      h1: '{label} trke u {market}'
+      paragraph: Ova stranica je fokusirana na {label_lower} trke i daje jasniji pregled kada je format trke podjednako važan kao i distanca.
+    category:
+      title: '{label} trke u {market} | {site_name}'
+      meta_description: Pregledaj {label} trke u {market}. Uporedi datume, vrste trka, lokacije i praktične detalje pre izbora sledećeg događaja.
+      h1: '{label} trke u {market}'
+      paragraph: Ova stranica po distanci i kategoriji okuplja trke koje odgovaraju {label}, kako bi relevantne opcije bilo lakše uporediti na jednom mestu.
+    race_type_category:
+      title: '{label} {secondary_label} trke u {market} | {site_name}'
+      meta_description: Pregledaj {label} trke u {market} unutar vrste trke {secondary_label_lower}. Uporedi datume, lokacije i praktične detalje pre nego što izabereš sledeći događaj.
+      h1: '{label} trke u {market} ({secondary_label})'
+      paragraph: Ova stranica sužava kalendar na {label} trke unutar vrste {secondary_label_lower}, što pomaže kada izbor zavisi i od distance i od formata trke.
+    race_type_county:
+      title: '{secondary_label} trke u {label} | {site_name}'
+      meta_description: Pregledaj {secondary_label_lower} trke u {label}. Uporedi datume, distance i praktične detalje pre izbora sledeće trke.
+      h1: '{secondary_label} trke u {label}'
+      paragraph: Ova stranica je fokusirana na {secondary_label_lower} trke u {label}, pa je lakše uporediti najrelevantnije opcije u okviru istog okruga.
+    race_type_month:
+      title: '{secondary_label} trke u {label} | {site_name}'
+      meta_description: Pregledaj {secondary_label_lower} trke u {label_lower}. Uporedi datume, distance i praktične detalje dok planiraš sezonu.
+      h1: '{secondary_label} trke u {label}'
+      paragraph: Ova stranica okuplja {secondary_label_lower} trke u {label_lower} za trkače koji prvo planiraju po kalendaru.
+    race_type_city:
+      title: '{secondary_label} trke u blizini {label} | {site_name}'
+      meta_description: Pregledaj {secondary_label_lower} trke povezane sa {label}. Uporedi datume, distance i obližnje opcije pre izbora sledeće trke.
+      h1: '{secondary_label} trke u blizini {label}'
+      paragraph: Ova stranica okuplja {secondary_label_lower} trke povezane sa {label} kako bi lokalno otkrivanje trka bilo brže i jasnije za poređenje.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Pišeš evergreen SEO tekst za indeksabilne browse stranice kalendara trka. Piši prvo za ljude, a zatim za pretragu. Vraćaj samo validan JSON. Tekst mora biti bezvremenski: ne pominji trenutnu godinu, trenutne brojeve, kratkoročne poruke ni tvrdnje o svežini. Izbegavaj preterano ponavljanje ključnih reči, hype, klikbejt, superlative i neproverljive tvrdnje. Svaka stranica treba jasno da se razlikuje prema datom kontekstu rute. Koristi prirodan srpski jezik u latinici, prilagođen kalendaru trka u Srbiji. Preferiraj kratke naslove, kratke H1 naslove, meta opise oko 120-160 karaktera kada je praktično i pasus od 2-3 kratke rečenice.'
+  browse_guidance:
+    county: Korisnik traži trke u jednom okrugu.
+    city: Korisnik traži trke povezane sa jednim gradom ili obližnjim gradom.
+    month: Korisnik traži trke po mesecu.
+    race_type: Korisnik traži određenu vrstu trke.
+    category: Korisnik traži određenu distancu ili kategoriju trke.
+    race_type_category: Korisnik traži određenu distancu ili kategoriju unutar jedne vrste trke.
+    race_type_county: Korisnik traži određenu vrstu trke u jednom okrugu.
+    race_type_month: Korisnik traži određenu vrstu trke u jednom mesecu.
+    race_type_city: Korisnik traži određenu vrstu trke povezanu sa jednim gradom.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Pregledaj po kategoriji
+  helper_text: Pronađi trke kroz unapred definisane filtere i kombinacije
+  overview: Pregled
+  counties: Okrugi
+  cities: Gradovi
+  months: Meseci
+  types: Vrste trka
+  categories: Kategorije
+  neighboring: Susedne zemlje
+browse_overview:
+  title: Pregledaj sve trke
+  meta_description: Pronađi trke po okrugu, vrsti ili kategoriji.
+browse_types:
+  title: Pregledaj po vrsti trke
+  meta_description: Pronađi trke po vrsti trke.
+browse_counties:
+  title: Pregledaj po okrugu
+  meta_description: Pronađi trke u svom okrugu.
+browse_cities:
+  title: Pregledaj po gradu
+  meta_description: Pronađi trke po gradu.
+browse_categories:
+  title: Pregledaj po kategoriji
+  meta_description: Pronađi trke po distanci i kategoriji.
+browse_months:
+  title: Pregledaj po mesecu
+  meta_description: Pronađi trke po mesecu.
+auth_modal:
+  title_sign_in: Prijava
+  title_create_account: Kreiraj nalog
+  title_reset_password: Resetuj lozinku
+  auth_unavailable: Prijava još nije podešena.
+  name_placeholder: Vaše ime
+  email_placeholder: Vaš email
+  password_placeholder: Lozinka
+  submit_sign_in: Prijavi se
+  submit_create_account: Kreiraj nalog
+  submit_reset_password: Pošalji link za reset
+  create_account: Kreiraj nalog
+  forgot_password: Zaboravili ste lozinku?
+  back_to_login: Nazad na prijavu
+  error_wrong_password: Pogrešna lozinka
+  error_email_not_found: Email nije pronađen
+  prompt_reset_password: Da li želite da resetujete lozinku?
+  prompt_create_account: Da li želite da kreirate nalog sa ovim emailom?
+  already_logged_in: Već ste prijavljeni kao
+  as_email: sa email adresom
+  continue_as_user: Nastavi kao ovaj korisnik
+  logout_and_switch: Odjavi se i promeni korisnika
+  account_created: Nalog je kreiran!
+  account_created_details: Sada ste prijavljeni kao
+  verification_email_sent: Link za potvrdu poslat je na vaš email
+  please_verify: Potvrdite svoju email adresu
+  error_invalid_credential: Neispravan email ili lozinka
+  create_account_prompt: Umesto toga kreiraj nalog
+  error_too_many_requests: Previše pokušaja. Pokušajte ponovo kasnije.
+  continue_with_google: Nastavi preko Google naloga
+  continue_with_google_create: Kreiraj nalog preko Google naloga
+  google_in_progress: Nastavljamo preko Google naloga...
+  oauth_divider: ili
+auth_pages:
+  confirm_success: Vaša email adresa je potvrđena i nalog je sada aktivan.
+  confirm_ready: Sada možete da nastavite sa korišćenjem sajta.
+  confirm_error: Email adresa nije mogla da se potvrdi.
+  reset_intro: Unesite novu lozinku za svoj nalog.
+  reset_confirm_label: Potvrdite lozinku
+  reset_mismatch_error: Lozinke se ne poklapaju.
+  reset_invalid_link_error: Neispravan ili nedostajući link za oporavak.
+  reset_success: Lozinka je ažurirana. Sada možete da se prijavite.
+newsletter_popup:
+  email_placeholder: Vaša email adresa
+  submit_button: Pošalji mi novosti
+  dismiss_button: Ne sada
+  invalid_email: Unesite ispravnu email adresu.
+  submit_error: Pretplata trenutno nije mogla da se sačuva. Pokušajte ponovo.
+  submitting_text: Čuvanje...
+  success_message: Hvala! Novosti o trkama uskoro stižu u vaše sanduče.
+  privacy_note: Nove trke, promene datuma i odabrane ponude. Odjava je moguća u svakom trenutku.
+  close_aria_label: Zatvori prozor za prijavu na novosti
+  benefits:
+    new_races: Nove trke prve
+    date_changes: Promene datuma odmah
+    selected_offers: Odabrane ponude
+    similar_races: Slične trke u blizini
+    local_picks: Više obližnjih trka
+    opening_reminders: Podsetnici pre nego što mesta nestanu
+    race_updates: Novosti o ovoj trci
+    nearby_races: Prekogranične trke u blizini
+  generic:
+    eyebrow: Ne propusti sledeću trku
+    title: Dobij nove trke i promene datuma pre drugih
+    body: Prijavi se na newsletter i dobij nove trke, ažurirane datume i pažljivo odabrane preporuke u {country} direktno u sanduče.
+  race_detail:
+    eyebrow: Prati ovu trku
+    title: Želiš novosti o trci {race_name}?
+    body: Prijavi se da dobijaš novosti o trci {race_name}, sličnim trkama u {county} i važnim promenama direktno u svoje sanduče.
+  browse_category:
+    eyebrow: Više pravih trka
+    title: Ne propusti nove {category} trke
+    body: Šaljemo nove {category} trke, relevantne obližnje alternative i važne datume kako ne bi morao stalno ručno da pretražuješ.
+  browse_category_type:
+    eyebrow: Više pravih trka
+    title: Dobij više {race_type} trka u okviru {category}
+    body: Prijavi se za još {race_type} trka u okviru {category}, obližnje alternative i promene datuma direktno u svoje sanduče.
+  browse_county:
+    eyebrow: Prvo lokalne trke
+    title: Dobij više trka u {county}
+    body: Prati nove trke, promene datuma i pametne preporuke za {county} bez stalnog proveravanja kalendara.
+  browse_city:
+    eyebrow: Prvo lokalne trke
+    title: Želiš više trka u {city}?
+    body: Prijavi se i dobij nove trke, obližnje alternative i važne datume za {city} direktno u svoje sanduče.
+  browse_type:
+    eyebrow: Prava vrsta trke
+    title: Dobij više {race_type} trka u sanduče
+    body: Šaljemo nove {race_type} trke, slične alternative i ključne datume kako biste reagovali na vreme.
+  browse_month:
+    eyebrow: Planiraj sezonu
+    title: Dobij najbolje trke u {month} prve
+    body: Kada se trke u {month} otvore, pomere ili postanu posebno zanimljive, saznaćete to odmah u svom sandučetu.
+  browse_neighboring:
+    eyebrow: Proširi svoj kalendar
+    title: Dobij i trke iz susednih zemalja
+    body: Prijavi se za nove trke, pažljivo odabrane prekogranične preporuke i promene datuma iz {region} direktno u svoje sanduče.
+  browse_neighboring_country:
+    eyebrow: Proširi svoj kalendar
+    title: Dobij više trka u {region}
+    body: Šaljemo nove trke, promene datuma i relevantne obližnje alternative kada se nešto zanimljivo pojavi u {region}.
+submission_flow:
+  logged_in_as: Prijavljeni ste kao organizator
+  submitting_new_race: slanje nove trke
+  new_account_created: Da biste upravljali trkom, morate potvrditi svoju email adresu. Link za potvrdu poslat je na navedenu email adresu.
+  password_reset_sent: Reset lozinke je poslat. Proverite sanduče.
+  unexpected_error: Došlo je do greške. Pokušajte ponovo.
+  processing_submission: Obrađujemo prijavu...
+  race_exists: Trka već postoji u bazi.
+  race_submitted: Trka je poslata!
+  submission_failed: Trka nije mogla da se pošalje. Pokušajte ponovo.
+  missing_fields: Nešto nedostaje. Proverite da li su sva obavezna polja popunjena i da li je lokacija izabrana na mapi.
+race_page:
+  forum_section:
+    title: Questions & Answers
+    placeholder: Ask a question to the organizer...
+    submit_button: Send question
+    login_prompt: Log in to ask a question
+    empty_state: No questions yet. Be the first to ask a question!
+    error_message_no_login: Log in or create an account to ask a question
+map:
+  show_map: Prikaži mapu
+  show_list: Prikaži listu
+  map: Mapa
+  list: Spisak
+forum:
+  title: Forum - pričajte o trčanju u Srbiji sa drugim trkačima
+  meta_description: Pričajte o treningu, trkama, povredama, ishrani, opremi, rutama i svakodnevnom trkačkom životu sa drugim trkačima u Srbiji.
+  categories:
+  - name: Trening
+    slug: training
+    description: Diskusije o treningu i tehnici
+  - name: Trke i događaji
+    slug: races
+    description: Razgovori o predstojećim trkama
+  - name: Povrede i oporavak
+    slug: injuries
+    description: Pomoć oko povreda i povratka treningu
+  - name: Rute i mape
+    slug: routes
+    description: Razgovori o rutama i mapama
+  - name: Putovanja i trčanje
+    slug: travel
+    description: Razgovori o putovanjima i trčanju na putu
+  - name: Ishrana
+    slug: nutrition
+    description: Diskusije o ishrani i suplementaciji
+  - name: Oprema i patike
+    slug: gear
+    description: Razgovori o garderobi, patikama i opremi
+  - name: Kupovina i prodaja
+    slug: buysell
+    description: Razgovori o kupovini i prodaji trkačke opreme
+  - name: Ostalo
+    slug: misc
+    description: Sve što ne spada drugde
+  empty_category_state: Još nema tema. Pokrenite razgovor kreiranjem prve teme!
+  empty_state_thread: Još nema poruka. Budite prvi koji će napisati!
+  empty_state: Još nema poruka. Budite prvi koji će napisati!
+  reply_placeholder: Napišite odgovor...
+  submit_button: Pošalji
+  login_prompt: Prijavite se da biste učestvovali u diskusiji
+  new_thread_title_placeholder: Naslov nove teme
+  new_thread_content_placeholder: Napišite prvu poruku...
+  create_thread_button: Kreiraj novu temu
+  back_to_forum: ← Nazad na forum
+  back_to_category: '← Nazad na '
+  empty_thread_state: Još nema poruka. Budite prvi koji će napisati!
+  posts_label: poruka
+  reply_label: odgovor
+  thread_created_title: Hvala što ste otvorili novu temu!
+  thread_created_message: Vaša tema će uskoro biti pregledana i dodata na stranicu.
+  thread_created_back_link: Nazad na kategoriju
+  show_more_threads: Prikaži još tema
+  show_less_threads: Prikaži manje tema
+  create_new_thread: Kreiraj novu temu
+  reply_title: Odgovori na temu
+  showing_threads_count: Prikazano {x} od {y} tema
+about_us:
+  title: O Kalendaru trka
+  meta_description: Kalendar trka - vaš vodič za trčanje i trke u Srbiji
+  content:
+    intro: Dobrodošli na Kalendar trka - preglednije mesto za trkače u Srbiji.
+    mission: Naša misija je da trkačima olakšamo pronalaženje, poređenje i deljenje informacija o trkama, treningu i trkačkom životu u Srbiji.
+    story: Kalendar trka nastaje zahvaljujući trkačima koji su želeli jasniji i korisniji pregled drumskih i trail trka širom Srbije.
+    features:
+    - title: Fokusiran kalendar trka
+      description: Skupljamo trke iz cele Srbije na jednom mestu, od lokalnih drumskih trka do velikih trail događaja.
+    - title: Pokreće ga zajednica
+      description: Platforma postaje bolja kroz doprinose, ispravke i povratne informacije trkača i organizatora.
+    - title: Korisni besplatni alati
+      description: Tu su i praktični alati kao što su kalkulator tempa, procena vremena na cilju, planovi treninga i merenje rute.
+    closing: Nastavićemo da unapređujemo platformu na osnovu povratnih informacija. Ako primetite da nešto nedostaje ili nije tačno, javite nam se.
+contact:
+  title: Kontakt
+  meta_description: Kontaktirajte Kalendar trka i pošaljite ispravke ili predloge.
+  content:
+    intro: 'Biće nam drago da nam se javite. Evo najboljih načina da stupite u kontakt sa nama:'
+    email:
+      title: Email
+      address: hello@kalendartrka.com
+      description: Najčešće odgovaramo u roku od jednog radnog dana.
+    social:
+      title: Društvene mreže
+      description: Pratite buduća ažuriranja i nove trke preko naših društvenih kanala.
+    feedback:
+      title: Povratne informacije
+      description: Svaka povratna informacija koja pomaže da Kalendar trka bude bolji za trkače i organizatore nam znači.
+privacy_page:
+  title: Politika privatnosti
+  meta_description: Politika privatnosti i informacije o tome kako Kalendar trka obrađuje lične podatke i kolačiće.
+  last_updated_label: Poslednje ažuriranje
+  last_updated_date: 16. april 2026.
+  contact_intro: 'Za pitanja i zahteve u vezi sa privatnošću, kontaktirajte nas na:'
+  contact_email: hello@kalendartrka.com
+  sections:
+  - title: 1. Koje informacije prikupljamo
+    intro: 'Prikupljamo informacije koje nam direktno dostavite kada:'
+    bullets:
+    - Kreirate nalog
+    - Pošaljete informacije o trci
+    - Objavite poruku na forumu
+    - Kontaktirate nas
+  - title: 2. Kolačići i praćenje
+    intro: 'Kolačiće koristimo da bismo:'
+    bullets:
+    - Zapamtili vaše postavke
+    - Održali sesiju i stanje prijave
+    - Analizirali saobraćaj i korišćenje sajta
+    - Poboljšali iskustvo korišćenja sajta
+  - title: 3. Kako koristimo vaše informacije
+    intro: 'Vaše informacije nam pomažu da:'
+    bullets:
+    - Pružimo i unapredimo usluge
+    - Pošaljemo važna obaveštenja i novosti
+    - Odgovorimo na zahteve i pitanja za podršku
+    - Sprečimo zloupotrebe i prevare
+  - title: 4. Vaša prava
+    intro: 'Prema GDPR-u imate pravo da:'
+    bullets:
+    - Pristupite svojim ličnim podacima
+    - Ispravite netačne ili nepotpune podatke
+    - Zatražite brisanje podataka
+    - Prigovorite određenim obradama
+    - Zatražite prenosivost podataka
+  - title: 5. Kontakt
+    intro: Ako imate pitanja o tome kako obrađujemo lične podatke ili koristimo kolačiće, uvek nam se možete javiti.
+racetime_estimator_title: Proceni vreme na cilju
+racetime_estimator_description: Na osnovu prethodne trke možete proceniti svoje vreme na drugim distancama.
+known_distance_label: Izaberite distancu na kojoj već imate rezultat
+known_time_label: Unesite svoje vreme
+calculate_button_text: Izračunaj vremena
+predicted_times_title: Procenjena vremena
+distance_header: Distanca
+predicted_time_header: Procenjeno vreme
+hilly_course_label: Brdovita staza
+finish_time_header: Procenjeno vreme na cilju
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/milji
+flat_time_header: Vreme (ravno)
+flat_pace_per_km_header: Min/km (ravno)
+flat_pace_per_mile_header: Min/milji (ravno)
+hill_adjustment_header: Korekcija za brdovit teren
+pace_calculator_title: Kalkulator tempa
+pace_calculator_description: Jednostavan alat za pretvaranje brzine trčanja između različitih jedinica
+pace_table_header_kph: Kilometri na sat
+pace_table_header_mph: Milje na sat
+pace_table_header_min_km: Minuti po kilometru
+pace_table_header_min_mile: Minuti po milji
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Polumaraton
+pace_table_header_full: Maratonska distanca
+pace_conversion_note: 1 kilometar na sat (km/h) = 0,62 milje na sat (mph)
+measure_route_title: Izmeri rutu
+measure_route_description: Kliknite na mapu da obeležite tačke duž rute. Ukupna distanca se računa automatski.
+remove_last_point: Ukloni poslednju tačku
+clear_route: Obriši rutu
+total_distance: Ukupna distanca
+training_plans:
+  title: Planovi treninga
+  description: Kreirajte prilagođeni plan treninga prema svom cilju
+  disclaimer_text_tp_1: Naši planovi treninga generišu se uz pomoć AI-a, a zatim prilagođavaju vašim ciljevima i preferencijama. Ne možemo da garantujemo da će savršeno odgovarati svima.
+  disclaimer_link_tp: Kontaktirajte nas
+  disclaimer_text_tp_2: ako imate povratne informacije ili predloge za unapređenja.
+  form:
+    race_date_label: Datum trke
+    plan_type_label: Tip plana
+    target_distance_label: Ciljana distanca
+    target_time_label: Ciljano vreme
+    training_days_label: Broj dana treninga nedeljno
+    session_time_label: Vreme po treningu
+    is_hilly_label: Brdovit teren
+    hours_placeholder: Sati
+    minutes_placeholder: Minuti
+    seconds_placeholder: Sekunde
+    submit_button: Generiši plan treninga
+    target_distance:
+      placeholder: Izaberite distancu
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Polumaraton
+        '42195': Maratonska distanca
+    training_days:
+      placeholder: Izaberite broj dana
+      options:
+        '3': 3 dana
+        '4': 4 dana
+        '5': 5 dana
+        '6': 6 dana
+    session_time:
+      placeholder: Izaberite vreme po treningu
+      options:
+        30-45: 30-45 minuta
+        45-60: 45-60 minuta
+        60-90: 60-90 minuta
+        90+: 90+ minuta
+  results:
+    title: Vaš plan treninga
+    variations:
+      title: 'Izaberite varijantu koja vam odgovara:'
+    plan_details:
+      duration_label: 'Trajanje programa:'
+      weekly_distance_label: 'Nedeljna distanca:'
+    regenerate_button: Prikaži druge varijante
+    export_button: Izvezi u PDF
+  workout_types:
+    easy: Lagano trčanje
+    tempo: Tempo trening
+    intervals: Intervali
+    long: Dugi trening
+    rest: Odmor
+  messages:
+    weeks: nedelja
+    week_label: Nedelja
+    hilly_terrain_note: prilagođeno brdovitom terenu
+  plan_variation:
+    focus_label: Glavni cilj
+    weekly_structure_label: Nedeljna struktura
+    distribution_label: Raspodela
+    sessions_per_week: treninga nedeljno
+    select_button: Izaberi ovaj plan
+  errors:
+    loading_plans: Greška pri učitavanju planova treninga
+    required_fields: Popunite sva obavezna polja
+    no_matching_plan: Nije pronađen odgovarajući plan treninga
+    no_matching_variations: Nisu pronađene odgovarajuće varijante
+    invalid_training_days: Broj dana treninga ne odgovara zahtevima plana
+  week: Nedelja
+  weeks: nedelja
+  hilly_terrain_note: prilagođeno brdovitom terenu
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Izgradnja osnovne izdržljivosti
+        weekly_template:
+          monday:
+            type: easy
+            description: Lagano trčanje
+          wednesday:
+            type: tempo
+            description: Tempo trening
+          saturday:
+            type: long
+            description: Dugi trening
+          sunday:
+            type: recovery
+            description: Oporavak
+      build:
+        duration_percent: 40
+        focus: Povećanje intenziteta i distance
+        weekly_template:
+          monday:
+            type: easy
+            description: Lagano trčanje
+          wednesday:
+            type: intervals
+            description: Intervali
+          friday:
+            type: tempo
+            description: Tempo trening
+          sunday:
+            type: long
+            description: Dugi trening
+      peak:
+        duration_percent: 15
+        focus: Tempiranje forme i specifičan trening
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Kvalitetan trening
+          thursday:
+            type: tempo
+            description: Tempo trening
+          saturday:
+            type: long
+            description: Dugi trening
+          sunday:
+            type: recovery
+            description: Oporavak
+      taper:
+        duration_percent: 5
+        focus: Smanjenje opterećenja
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Lagano trčanje
+          thursday:
+            type: tempo
+            description: Kraći tempo trening
+          saturday:
+            type: easy
+            description: Vrlo lagano trčanje
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min laganog zagrevanja
+        cooldown: 5-10 min laganog istrčavanja
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progresivnog zagrevanja
+        cooldown: 10-15 min istrčavanja
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min uključujući vežbe i ubrzanja
+        cooldown: 10-15 min laganog istrčavanja
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min vrlo laganog trčanja
+        cooldown: 5-10 min hoda ili laganog trčanja
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min hoda
+        cooldown: 5-10 min hoda
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Zagrevanje
+    main_workout_label: Opis treninga
+    cooldown_label: Istrčavanje
+    intensity_label: Intenzitet
+    duration_label: Vreme
+  regenerate:
+    button_text: Generiši novu varijantu
+    confirmation: Da li ste sigurni da želite da generišete novu varijantu?
+  weekdays:
+    monday: Ponedeljak
+    tuesday: Utorak
+    wednesday: Sreda
+    thursday: Četvrtak
+    friday: Petak
+    saturday: Subota
+    sunday: Nedelja
+footer:
+  races_heading: Trke
+  tools_heading: Alati
+  about_heading: O Kalendaru trka
+  privacy: Politika privatnosti
+  copyright_year: '2026'
+  site_name: Kalendar trka
+  rights_text: Sva prava zadržana.
+  social_links:
+    facebook: ''
+    instagram: ''
+    youtube: ''
+    tiktok: ''
+accessibility:
+  main_navigation_label: Glavna navigacija
+  breadcrumb_label: Putanja
+  back_to_top_label: Nazad na vrh
+  social_facebook_label: Facebook stranica
+  social_instagram_label: Instagram profil
+  social_youtube_label: YouTube kanal
+  social_tiktok_label: TikTok profil
+trending_races_title: Trke koje su u trendu
+trending_races_description: Ovo su trke koje su privukle najviše pažnje trkača.
+trending_races_views_last_30_days: pregleda u poslednjih 30 dana
+trending_races_most_viewed: Najpopularnije sada
+races_views: pregleda
+recent_races_title: Nedavno dodate trke
+today: danas
+yesterday: juče
+days_ago: dana ranije
+newest_race_badge: Najnoviji unos
+races_count: trka
+popular_counties_title: Pronađi trke u svom okrugu
+popular_cities_title: Pronađi trke u svom gradu
+all_counties: Prikaži sve okruge
+all_cities: Prikaži sve gradove
+category_header_1: Trail trčanje
+category_type_1: trail
+category_1_races_sub_title_1: Trail maraton
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Trail ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail ultra 100 miles
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Drumske trke
+category_type_2: road
+category_2_races_sub_title_1: Maraton
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Polumaraton
+category_2_races_sub_ref_2: half-marathon
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Prikaži sve trke u
+tools_title: Alati za tvoju sledeću trku
+home_tools:
+  measure_route:
+    description: Izmeri ideju za rutu i brzo proceni distancu pre nego što kreneš.
+  training_plans:
+    description: Pronađi planove treninga za različite ciljeve, nivoe i trkačke distance za svoj sledeći blok.
+  racetime_estimator:
+    description: Proceni realno vreme na cilju na osnovu ranijih rezultata i uporedi različite ciljne scenarije.
+  pace_calculator:
+    description: Pretvori tempo, brzinu i vreme završetka za uobičajene trkačke distance dok planiraš trening.
+missing_race: Nedostaje trka? Dodaj je ovde!
+add_race_mp_title: Dodaj svoju trku
+neighboring_countries_title: Trke u Srbiji i susednim zemljama
+neighboring_countries_title_specific_country: Trke u {country_name}
+neighboring_countries_description: Ovde su trke iz susednih zemalja.
+neighboring_countries_description_specific_country: Ovde su trke koje se održavaju u {country_name}.
+neighboring_countries_neighbors_native: Susedne zemlje
+neighboring_countries_all_neighbors_native: Sve susedne zemlje
+section_race_card_header_nieghbors_default: Srbija i susedne zemlje
+browse_neighboring:
+  title: Pregledaj trke u susednim zemljama
+  meta_description: Pronađi trke u susednim zemljama u blizini Srbije.
+neighboring_races_title: Trke u susednim zemljama
+neighboring_countries_show_all: Prikaži sve

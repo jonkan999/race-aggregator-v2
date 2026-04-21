@@ -84,13 +84,13 @@ Equivalent: `npm run seed-races -- se --replace`.
 
 ### Map markers file
 
-Regenerate `public/markers-se.json` (committed for convenience; refresh after data changes):
+Regenerate `public/markers-se.json` (committed for convenience; useful for local dev, manual verification, or when you want the checked-in artifact refreshed):
 
 ```bash
 ./scripts/shell/export-markers.sh se
 ```
 
-Equivalent: `npm run export-markers -- se`. Without DB credentials, the script reads `data/countries/{code}/final_races.json` only.
+Equivalent: `npm run export-markers -- se`. During `npm run build`, the active market's marker JSON is regenerated automatically from the same temporary build snapshot that feeds the race-list SSG flow, so deploy builds do not rely on a separately committed marker refresh. Outside the build wrapper, the export script prefers that temporary snapshot when present; otherwise it uses Supabase when credentials are available, and finally falls back to local JSON.
 
 ### Race list: static first page + Supabase RPC for interaction
 
@@ -251,7 +251,7 @@ For each live market project in Vercel:
 5. Set `MARKET_CODE` to the market code that project owns, for example `se` or `cz`.
 6. Attach the market's custom domain to that same Vercel project.
 7. Treat `SUPABASE_SECRET_KEY` as required for release builds even though the build can technically fall back to local JSON without it. With the secret present, the build exports one fresh race snapshot per market from Supabase so static page 1 stays aligned with the live DB.
-8. Whenever map data changes, regenerate and commit `public/markers-{country}.json` for the active market before deploying.
+8. Deploy builds regenerate `public/markers-{country}.json` automatically for the active market from the temporary build snapshot, so shipping does not depend on a separately committed marker refresh. Regenerating and committing the file is still useful when you want a fresh local artifact in the repo for manual verification or non-build workflows.
 
 For the current Swedish project, reuse the existing project and switch production ownership to GitHub Actions. Disable duplicate production deploys from Vercel's Git integration once the workflow is ready, otherwise `main` can ship twice.
 

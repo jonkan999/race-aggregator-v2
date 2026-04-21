@@ -1,0 +1,1084 @@
+type_options:
+  road: Șosea
+  terrain: Teren
+  trail: Trail
+  track: Pistă
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Ștafetă
+  time: Pe timp
+  other: Altele
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Semimaraton:
+    range:
+    - 20
+    - 22
+  Maraton:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 mile:
+    range:
+    - 75
+    - 100
+  100 mile:
+    range:
+    - 150
+    - 170
+  200 mile:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 metri:
+    range:
+    - 1.5
+    - 1.5
+  3000 metri:
+    range:
+    - 3
+    - 3
+  5000 metri:
+    range:
+    - 5
+    - 5
+  10000 metri:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Pe timp
+  relay: Ștafetă
+verbose_local_distance_mapping:
+  half marathon: Semimaraton
+  marathon: Maraton
+  fallback: Distanțe mixte
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Semimaraton
+- range:
+  - 41.9
+  - 42.4
+  label: Maraton
+country_code: ro
+country_language_code: ro
+navigation:
+  main: Toate
+  race-list: Calendar alergări
+  add-race: Adaugă cursă
+  forum: Forum
+  measure-route: Măsoară traseul
+  training-plans: Planuri de antrenament
+  pace-calculator: Calculator ritm
+  racetime-estimator: Estimator timp final
+  about-us: Despre noi
+  contact: Contact
+race_list_name: Calendar alergări
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Previzualizare cursă
+  terms-of-service: Termeni de utilizare
+  privacy-policy: Politica de confidențialitate
+  about-us: Despre noi
+  contact: Contact
+  faq: Întrebări frecvente
+page_name: Calendar Alergări
+base_url: https://calendaralergari.ro/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Salut!
+    closing_salutation: Cu stimă,
+    link_fallback_intro: 'Dacă butonul nu funcționează, poți copia link-ul aici:'
+  confirm_signup:
+    body: Mulțumim pentru înregistrare pe {site_name}. Confirmă adresa ta de email pentru a-ți activa contul și a gestiona cursele trimise.
+    button_label: Confirmă adresa de email
+    ignore_note: Dacă nu ai creat contul, poți ignora acest email.
+  reset_password:
+    body: Am primit o solicitare de resetare a parolei pentru {site_name}. Apasă butonul de mai jos pentru a alege o parolă nouă.
+    button_label: Resetează parola
+    ignore_note: Dacă nu ai solicitat acest lucru, poți ignora emailul. Parola ta nu se va schimba până nu alegi una nouă.
+  change_email:
+    body: Ai solicitat schimbarea adresei de email pentru contul tău pe {site_name}. Confirmă schimbarea apăsând butonul de mai jos.
+    button_label: Confirmă noua adresă de email
+    ignore_note: Dacă nu ai solicitat această schimbare, poți ignora acest email.
+title: Totul despre alergare în
+country_native: România
+country: Romania
+meta_description: Cel mai cuprinzător calendar și cea mai activă comunitate de alergare din România
+country_language: Romanian
+local_name_for_race: cursă
+main_bullet_1: Găsește următoarea ta cursă
+main_bullet_2: ' - Sau adaug-o aici'
+main_bullet_3: Răsfoiește piața noastră
+main_bullet_4: Citește cele mai recente știri sau participă la discuții în forumul nostru
+description: Această inițiativă construită de comunitate îi ajută pe alergătorii din România să descopere curse, să compare opțiuni și să rămână conectați la scena locală de alergare. Platforma este încă în creștere, dar își propune deja să fie un loc util pentru evenimentele de alergare și informațiile practice din comunitate.
+cta_search: Găsește Cursă
+cta_add: Adaugă o Cursă
+selected_races_title: Cursuri Recomandate
+selected_races_top_title: Cursa săptămânii
+cta_all_races: Arată toate cursele
+show_local: Arată
+race_local: Cursă
+running_local: Alergare
+alt_prefix: 'Imagine pentru '
+race_list_title: Cel mai complet calendar de maratoane, semimaratoane și alte curse de alergare din România
+race_list_meta_description_1: Găsește curse de alergare și datele lor din toată România
+race_list_meta_description_2: ✔️Calendar complet de alergări ✔️Curse trail, backyard, pe șosea și maraton ✔️Evenimente din toată țara
+race_list_data_error: Imposibil de încărcat cursele. Te rugăm să încerci din nou mai târziu.
+race_list_remote_required: Pentru pagini suplimentare sau filtre, este necesară baza de date (Supabase). Adaugă PUBLIC_SUPABASE_URL și PUBLIC_SUPABASE_PUBLISHABLE_KEY în fișierul tău .env.
+race_list_empty: Nicio cursă nu corespunde filtrelor tale.
+race_list_loading: Se încarcă…
+race_card_cta_text: Mai multe informații & înregistrare
+section_race_card_category_prefix: Toate
+section_race_card_category_suffix: curse
+section_race_card_header_separator: în
+section_race_card_header_region_default: România
+section_race_card_header_date_range_from: 'de la '
+section_race_card_header_date_range_to: 'până la '
+section_race_card_header_date_range_single: 'în '
+filter_date_from: De la
+filter_date_to: Până la
+filter_county: Toate județele
+filter_race_type: Toate tipurile de curse
+filter_categories: Toate categoriile
+filter_months: Toate anii
+filter_distance: Toate distanțele
+month_mapping:
+  '01': ianuarie
+  '02': februarie
+  '03': martie
+  '04': aprilie
+  '05': mai
+  '06': iunie
+  '07': iulie
+  '08': august
+  '09': septembrie
+  '10': octombrie
+  '11': noiembrie
+  '12': decembrie
+month_mapping_short:
+  '01': ian.
+  '02': feb.
+  '03': mar.
+  '04': apr.
+  '05': mai
+  '06': iun.
+  '07': iul.
+  '08': aug.
+  '09': sept.
+  '10': oct.
+  '11': nov.
+  '12': dec.
+county_label_text: Toate județele
+county_mapping:
+  ALBA: Alba
+  ARAD: Arad
+  ARGES: Argeș
+  BACAU: Bacău
+  BIHOR: Bihor
+  BISTRITA-NASAUD: Bistrița-Năsăud
+  BOTOSANI: Botoșani
+  BRAILA: Brăila
+  BRASOV: Brașov
+  BUCURESTI: București
+  BUZAU: Buzău
+  CARAS-SEVERIN: Caraș-Severin
+  CLUJ: Cluj
+  CONSTANTA: Constanța
+  COVASNA: Covasna
+  DAMBOVITA: Dâmbovița
+  DOLJ: Dolj
+  GALATI: Galați
+  GIURGIU: Giurgiu
+  GORJ: Gorj
+  HARGHITA: Harghita
+  HUNEDOARA: Hunedoara
+  IALOMITA: Ialomița
+  IASI: Iași
+  ILFOV: Ilfov
+  MARAMURES: Maramureș
+  MEHEDINTI: Mehedinți
+  MURES: Mureș
+  NEAMT: Neamț
+  OLT: Olt
+  PRAHOVA: Prahova
+  SALAJ: Sălaj
+  SATU MARE: Satu Mare
+  SIBIU: Sibiu
+  SUCEAVA: Suceava
+  TELEORMAN: Teleorman
+  TIMIS: Timiș
+  TULCEA: Tulcea
+  VALCEA: Vâlcea
+  VASLUI: Vaslui
+  VRANCEA: Vrancea
+category_label_text: Categoria cursei
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: La pagina cursei
+map_toggle_desktop: Afișează harta
+map_toggle_desktop_active: Ascunde harta
+map_toggle_mobile: Hartă
+map_toggle_mobile_list: Listă
+map_markers_load_error: Imposibil de încărcat marcatorii hărții.
+map_not_configured: Harta nu este configurată (lipsesc cheia hărții).
+race_page_map_zoom: '{default_map_zoom}'
+pagination:
+  results_text: din
+  events_text: Curse
+  previous_text: Anterior
+  next_text: Următor
+  page_text: Pagina
+  of_text: din
+add_race_title: Adaugă o cursă nouă
+add_race_meta_description: Adaugă cursa ta în Calendar Alergări
+map_message: Plasează cursa ta făcând clic pe hartă
+mapbox_center:
+  latitude: 45.9432
+  longitude: 24.9668
+mapbox_zoom: '7'
+date_text: Data
+multi_day_toggle: Eveniment multi-zile
+end_date_text: Data de sfârșit
+type_text: Suprafață / Tip de cursă
+type_select_placeholder: Selectează suprafața / tipul de cursă
+name_label: 'Numele cursei:'
+name_placeholder: ex. Maratonul orașului
+distance_label: 'Distanțe:'
+distance_placeholder: Introduceți distanța în km
+add_distance_button: Adaugă
+half_marathon_button: Semimaraton
+marathon_button: Maraton
+backyard_ultra_button: Ultra în curte
+frontyard_ultra_button: Ultra în față
+fifty_miles_button: 50 mile
+hundred_miles_button: 100 mile
+place_label: 'Numele locației:'
+place_placeholder: ex. Parcul Herăstrău, București
+organizer_label: 'Organizator:'
+organizer_contact_placeholder: Club de alergare
+organizer_contact_label: 'Email de contact:'
+organizer_mail_placeholder: contact@calendaralergari.ro
+website_label: 'Site-ul organizatorului:'
+website_placeholder: https://example.ro/
+start_time_label: 'Ora de start:'
+start_time_placeholder: 09:00
+price_range_label: 'Interval de preț:'
+price_range_placeholder: ex. 80-250 lei
+add_race_description_label: Descrie cursa
+add_race_description_placeholder: Maratonul orașului are un traseu plat cu porțiuni lungi...
+add_race_additional_label: Informații suplimentare
+add_race_additional_placeholder: ex. locația startului și a sosirii, grupuri de start, etc.
+add_race_images_label: Încărcați imagini (se recomandă cel puțin 4)
+choose_pictures_button: Alege imagini
+drag_drop_text: Trage și plasează imaginile aici sau fă clic pentru a selecta
+add_race_remove_image_label: Șterge imaginea
+coordinates_display_prefix: Coordonatele cursei
+add_race_upload_limit_message: Poți încărca doar {count} imagini în plus.
+add_race_map_not_configured: Harta nu a putut fi încărcată acum.
+clear_images_button: Șterge imaginile
+clear_form_button: Șterge formularul
+preview_button: Previzualizare
+submit_button: Trimite
+preview_title: Previzualizare
+preview_exit_button: Închide previzualizarea
+optional_label: Opțional
+comments_suffix: Comentarii
+cta_forum: Afișează toate postările
+race_page_preview_title: Așa va arăta cursa ta
+edit_race_button: Editează
+race_page_description_label: Descrierea cursei
+race_page_course_highlights_label: Repere
+race_page_additional_label: Informații suplimentare
+race_page_detailed_info_label: Informații detaliate
+race_page_social_links_label: Urmărește cursa
+race_page_place_label: 'Locație:'
+race_page_distances_label: 'Distanțe:'
+race_page_surface_label: 'Suprafață:'
+race_page_date_label: 'Data:'
+race_page_estimated_date_label: Data estimată
+race_page_estimated_disclaimer: Nu am primit o dată oficială pentru această cursă.
+race_page_registration_link: Link de înregistrare
+race_page_registration_cta: Înscrie-te acum
+race_page_info_cta: Mai multe informații
+race_page_registration_close_label: Înscrierile se încheie
+race_page_pricing_title: Înregistrare și prețuri
+race_page_price_deadline_label: Valabil până la
+race_page_price_late_fee_label: Taxă de întârziere
+race_page_back_to_list: Înapoi la calendarul curselor
+race_page_favorites_title: Nu rata actualizările despre curse
+race_page_favorites_body: Creează un cont și salvează această cursă în favorite pentru a primi actualizări, știri și oferte selectate atunci când favoritele sunt lansate.
+race_page_favorites_cta: Salvează cursa în favorite
+race_page_similar_title: Curse similare
+race_page_similar_body: Mai multe curse cu distanță, tip sau locație apropiată.
+race_page_discover_title: Explorează mai multe curse
+race_page_discover_county_link: Toate cursele din {county}
+race_page_discover_type_link: Mai multe curse {type}
+race_page_discover_category_link: Mai multe curse {category}
+race_page_discover_type_county_link: Curse {type} în {county}
+race_page_discover_overview_link: Răsfoiește toate categoriile de curse
+disclaimer_text_1: 'Toate informațiile de pe această pagină se bazează pe date din surse deschise. Facem tot posibilul să le menținem actualizate, dar
+
+  nu putem garanta că totul este corect. Dacă observați inexactități,
+
+  '
+disclaimer_link: contactați-ne
+disclaimer_text_2: și le vom corecta cât mai curând posibil.
+disclaimer_text_3: Doriți să adăugați ceva la cursa dvs.?
+disclaimer_text_4: și vom încerca să vă ajutăm!
+race_page_visit_organizer_website: Vizitează site-ul organizatorului & înregistrarea
+race_page_folder_name: pagini-cursa
+race_page_alt_prefix: 'Imagine pentru '
+seo_county_folder_name: judete
+seo_cities_folder_name: orase
+popular_subcategories_title: Subcategorii populare
+important_keywords_racelist:
+- calendar alergări
+- calendar curse alergare
+- calendar evenimente alergare
+- curse de alergare
+- listă curse alergare
+- calendar competițional alergare
+seo_templates:
+  title_parts:
+    category: Curse {category}
+    race_type: '{race_type}'
+    location: în {location}
+    default: Toate cursele
+  paragraph_templates:
+    category_race_location: Găsește curse {category} {race_type} în {location}.
+    category_race: Explorează curse {category} {race_type} din întreaga Românie.
+    category_location: Descoperă curse {category} în {location}.
+    race_location: Vezi toate cursele {race_type} în {location}.
+    category_only: Găsește curse {category} în întreaga Românie.
+    race_only: Explorează curse {race_type} în toate regiunile.
+    location_only: Vezi toate tipurile de curse în {location}.
+    default_suffix: Aici vei găsi date, distanțe și toate informațiile de care ai nevoie pentru a-ți planifica următoarea cursă.
+  browse_page_templates:
+    county:
+      title: '{label} curse | {site_name}'
+      meta_description: Răsfoiește cursele de alergare din {label}. Compară datele, distanțele, formatul cursei și detaliile practice înainte de a-ți alege următoarea cursă.
+      h1: Curse în {label}
+      paragraph: Această pagină de destinație reunește cursele de alergare din {label} pentru a fi mai ușor să compari datele, distanțele, formatele cursei și detaliile practice într-un singur loc. Folosește-o atunci când vrei o vedere mai clară înainte de a alege următoarea cursă.
+    city:
+      title: '{label} curse | {site_name}'
+      meta_description: Găsește curse de alergare legate de {label}. Compară datele, distanțele, opțiunile din apropiere și detaliile practice înainte de a-ți alege următoarea cursă.
+      h1: Curse aproape de {label}
+      paragraph: Această pagină a orașului te ajută să navighezi printre cursele de alergare legate de {label}, inclusiv alternative din apropiere relevante atunci când planifici o zi de cursă sau o excursie. Este construită pentru a face descoperirea curselor locale mai rapidă și mai ușoară pentru comparație.
+    month:
+      title: '{label} curse | {site_name}'
+      meta_description: Răsfoiește cursele de alergare din {label} în {market}. Compară datele, distanțele, tipurile de curse și detaliile practice înainte de a-ți planifica sezonul.
+      h1: Curse în {label}
+      paragraph: Această pagină este pentru alergători care doresc o vedere lunară a calendarului și au nevoie de o modalitate mai rapidă de a compara ce se întâmplă în {label}. Te ajută să restrângi opțiunile înainte de a analiza distanțele, suprafețele și locațiile cursei.
+    race_type:
+      title: '{label} curse în {market} | {site_name}'
+      meta_description: Răsfoiește cursele {label_lower} în {market}. Compară datele, distanțele, locațiile și detaliile practice înainte de a alege o cursă care ți se potrivește.
+      h1: '{label} curse în {market}'
+      paragraph: Această pagină se concentrează pe cursele {label_lower} și îți oferă o vedere mai clară atunci când formatul cursei contează la fel de mult ca și distanța. Folosește-o pentru a compara opțiunile din regiuni, date și detalii practice fără a începe de la calendarul complet.
+    category:
+      title: '{label} curse în {market} | {site_name}'
+      meta_description: Răsfoiește cursele {label} în {market}. Compară datele, tipurile de curse, locațiile și detaliile practice înainte de a decide următorul eveniment.
+      h1: '{label} curse în {market}'
+      paragraph: Această pagină de distanță și categorie reunește curse care se potrivesc cu {label} pentru a fi mai ușor să compari opțiunile relevante într-un singur loc. Este destinată alergătorilor care doresc o cale mai rapidă de la navigarea largă la o listă scurtă de curse realiste.
+    race_type_category:
+      title: '{label} {secondary_label} curse în {market} | {site_name}'
+      meta_description: Explorează cursele {label} în {market} în cadrul tipului de cursă {secondary_label_lower}. Compară datele, locațiile și detaliile practice înainte de a-ți alege următorul eveniment.
+      h1: Curse {label} în {market} ({secondary_label})
+      paragraph: Această pagină restrânge calendarul la cursele {label} din cadrul tipului de cursă {secondary_label_lower}, ceea ce este util atunci când atât distanța, cât și formatul cursei influențează alegerea potrivită. Folosește-o pentru a compara opțiuni similare înainte de a te decide pentru o cursă.
+    race_type_county:
+      title: '{secondary_label} curse în {label} | {site_name}'
+      meta_description: Explorează cursele {secondary_label_lower} în {label}. Compară datele, distanțele și detaliile practice înainte de a-ți alege următoarea cursă.
+      h1: Curse {secondary_label} în {label}
+      paragraph: Această pagină se concentrează pe cursele {secondary_label_lower} din {label}, facilitând compararea opțiunilor relevante din aceeași regiune. Este utilă atunci când atât geografia, cât și formatul cursei influențează lista scurtă.
+    race_type_month:
+      title: '{secondary_label} curse în {label} | {site_name}'
+      meta_description: Explorează cursele {secondary_label_lower} în {label_lower}. Compară datele, distanțele și detaliile practice în timp ce îți planifici sezonul.
+      h1: Curse {secondary_label} în {label}
+      paragraph: Această pagină reunește cursele {secondary_label_lower} din {label_lower} pentru alergători care planifică în primul rând în funcție de calendar. Te ajută să compari formate de curse similare înainte de a restrânge opțiunile după loc sau distanță.
+    race_type_city:
+      title: '{secondary_label} curse aproape de {label} | {site_name}'
+      meta_description: Explorează cursele {secondary_label_lower} legate de {label}. Compară datele, distanțele și opțiunile din apropiere înainte de a-ți alege următoarea cursă.
+      h1: Curse {secondary_label} aproape de {label}
+      paragraph: Această pagină adună cursele {secondary_label_lower} conectate la {label} pentru a face descoperirea curselor locale mai rapidă și mai ușoară. Este utilă când dorești o anumită formă de cursă aproape de un oraș, fără a începe de la întregul calendar.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Scrii texte SEO evergreen pentru pagini de navigare indexabile ale curselor de alergare. Scrie mai întâi pentru oameni, apoi pentru intenția de căutare. Returnează doar JSON valid. Menține textul atemporal: nu menționa un an curent, numere curente, expresii de timp limitat sau afirmații despre prospețime. Evită umplerea cu cuvinte cheie, hype-ul, clickbait-ul, superlativele și afirmațiile neverificabile. Fiecare pagină trebuie să fie clar distinctă în funcție de contextul rutei furnizate. Folosește un engleză naturală potrivită pentru un calendar de alergare în România. Preferă titluri concise, H1-uri concise, meta descrieri de aproximativ 120-160 de caractere când este posibil, și un paragraf de 2-3 propoziții scurte.'
+  browse_guidance:
+    county: Utilizatorul dorește curse într-o regiune.
+    city: Utilizatorul dorește curse legate de un oraș sau orașe apropiate.
+    month: Utilizatorul dorește curse după lună.
+    race_type: Utilizatorul dorește un tip specific de cursă.
+    category: Utilizatorul dorește o categorie sau distanță specifică de cursă.
+    race_type_category: Utilizatorul dorește o distanță/categorie specifică în cadrul unui tip de cursă.
+    race_type_county: Utilizatorul dorește un tip de cursă specific într-o regiune.
+    race_type_month: Utilizatorul dorește un tip de cursă specific într-o lună.
+    race_type_city: Utilizatorul dorește un tip de cursă specific legat de un oraș.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Explorează după categorie
+  helper_text: Găsește curse prin filtre și combinații predefinite
+  overview: Prezentare generală
+  counties: Regiuni
+  cities: Orașe
+  months: Lună
+  types: Tipuri de curse
+  categories: Categorii
+  neighboring: Țări învecinate
+browse_overview:
+  title: Răsfoiește toate cursele
+  meta_description: Găsește curse după regiune, tip sau categorie
+browse_types:
+  title: Răsfoiește după tipul cursei
+  meta_description: Găsește curse după tipul de cursă.
+browse_counties:
+  title: Răsfoiește după regiune
+  meta_description: Găsește curse în regiunea ta.
+browse_cities:
+  title: Răsfoiește după oraș
+  meta_description: Găsește curse în orașul tău.
+browse_categories:
+  title: Răsfoiește după categorie
+  meta_description: Găsește curse după distanță și categorie.
+browse_months:
+  title: Răsfoiește după lună
+  meta_description: Găsește curse după lună.
+auth_modal:
+  title_sign_in: Autentificare
+  title_create_account: Creează cont
+  title_reset_password: Resetează parola
+  auth_unavailable: Autentificarea nu este configurată încă.
+  name_placeholder: Numele tău
+  email_placeholder: Emailul tău
+  password_placeholder: Parolă
+  submit_sign_in: Autentificare
+  submit_create_account: Creează cont
+  submit_reset_password: Trimite linkul de resetare
+  create_account: Creează cont
+  forgot_password: Ai uitat parola?
+  back_to_login: Înapoi la autentificare
+  error_wrong_password: Parolă greșită
+  error_email_not_found: Email ne găsit
+  prompt_reset_password: Vrei să-ți resetezi parola?
+  prompt_create_account: Vrei să creezi un cont cu acest email?
+  already_logged_in: Ești deja autentificat ca
+  as_email: cu emailul
+  continue_as_user: Continuă ca acest utilizator
+  logout_and_switch: Deconectează-te și schimbă utilizatorul
+  account_created: Cont creat!
+  account_created_details: Ești acum autentificat ca
+  verification_email_sent: Un link de verificare a fost trimis la emailul tău
+  please_verify: Te rugăm să verifici adresa ta de email
+  error_invalid_credential: Email sau parolă invalidă
+  create_account_prompt: Creează un cont în schimb
+  error_too_many_requests: Prea multe încercări. Te rugăm să încerci mai târziu.
+  continue_with_google: Continuă cu Google
+  continue_with_google_create: Creează cont cu Google
+  google_in_progress: Continuare cu Google...
+  oauth_divider: sau
+auth_pages:
+  confirm_success: Emailul tău a fost confirmat și contul este acum activ.
+  confirm_ready: Poți acum să continui să folosești site-ul.
+  confirm_error: Nu s-a putut confirma adresa ta de email.
+  reset_intro: Introdu o parolă nouă pentru contul tău.
+  reset_confirm_label: Confirmă parola
+  reset_mismatch_error: Parolele nu se potrivesc.
+  reset_invalid_link_error: Link de recuperare invalid sau lipsă.
+  reset_success: Parola ta a fost actualizată. Poți acum să te autentifici.
+newsletter_popup:
+  email_placeholder: Adresa ta de email
+  submit_button: Trimite-mă la noutăți
+  dismiss_button: Nu acum
+  invalid_email: Te rugăm să introduci o adresă de email validă.
+  submit_error: Nu am putut salva abonamentul dumneavoastră chiar acum. Vă rugăm să încercați din nou.
+  submitting_text: Se salvează...
+  success_message: Mulțumim! Actualizările despre curse sunt pe drum către inbox-ul dumneavoastră.
+  privacy_note: Curse noi, modificări de date și oferte selectate. Dezabonați-vă oricând doriți.
+  close_aria_label: Închide popup-ul de abonare
+  benefits:
+    new_races: Primele curse noi
+    date_changes: Modificări de dată instantanee
+    selected_offers: Oferte selectate
+    similar_races: Curse similare aproape de tine
+    local_picks: Mai multe curse în apropiere
+    opening_reminders: Memento-uri înainte ca locurile să dispară
+    race_updates: Actualizări despre această cursă
+    nearby_races: Curse transfrontaliere aproape de tine
+  generic:
+    eyebrow: Nu rata următoarea cursă
+    title: Primește curse noi și modificări de dată înaintea tuturor
+    body: Abonează-te la newsletter-ul nostru și primește curse noi, date actualizate și sfaturi alese manual în {country} direct în inbox-ul tău.
+  race_detail:
+    eyebrow: Urmărește această cursă
+    title: Vrei actualizări despre {race_name}?
+    body: Abonează-te pentru a primi actualizări despre {race_name}, curse similare în {county} și schimbări importante direct în inbox-ul tău.
+  browse_category:
+    eyebrow: Mai multe curse potrivite
+    title: Nu rata cursele noi din {category}
+    body: Trimitem curse noi din {category}, alternative relevante din apropiere și date importante pentru ca tu să nu mai fie nevoie să cauți manual.
+  browse_category_type:
+    eyebrow: Mai multe curse potrivite
+    title: Obține mai multe curse {race_type} în {category}
+    body: Abonează-te pentru mai multe curse {race_type} din {category}, alternative din apropiere și modificări de dată livrate direct în inbox-ul tău.
+  browse_county:
+    eyebrow: Curse locale primele
+    title: Obține mai multe curse în {county}
+    body: Ține pasul cu cursele noi, datele actualizate și alegerile inteligente pentru {county} fără a verifica calendarul tot timpul.
+  browse_city:
+    eyebrow: Curse locale primele
+    title: Vrei mai multe curse în {city}?
+    body: Abonează-te și primește curse noi, alternative din apropiere și date importante pentru {city} direct în inbox-ul tău.
+  browse_type:
+    eyebrow: Stilul de cursă potrivit
+    title: Obține mai multe curse {race_type} în inbox-ul tău
+    body: Trimitem curse noi {race_type}, alternative similare și date cheie pentru ca tu să poți acționa înainte ca locurile să dispară.
+  browse_month:
+    eyebrow: Planifică sezonul
+    title: Primește cele mai bune curse din {month} primele
+    body: Când cursele din {month} se deschid, se mută sau devin deosebit de interesante, vei afla imediat în inbox-ul tău.
+  browse_neighboring:
+    eyebrow: Extinde-ți calendarul
+    title: Obține curse și din țări vecine
+    body: Abonează-te pentru curse noi, alegeri inteligente transfrontaliere și modificări de dată din {region} livrate direct în inbox-ul tău.
+  browse_neighboring_country:
+    eyebrow: Extinde-ți calendarul
+    title: Obține mai multe curse în {region}
+    body: Trimitem curse noi, modificări de dată și alternative relevante din apropiere atunci când apare ceva interesant în {region}.
+submission_flow:
+  logged_in_as: Autentificat ca organizator
+  submitting_new_race: se trimite cursa nouă
+  new_account_created: Pentru a gestiona cursa, trebuie să confirmați adresa de email. Un link de confirmare a fost trimis la adresa de email furnizată.
+  password_reset_sent: Resetarea parolei a fost trimisă. Verificați-vă inbox-ul.
+  unexpected_error: A apărut o eroare. Vă rugăm să încercați din nou.
+  processing_submission: Se procesează trimiterea...
+  race_exists: Cursa există deja în bază de date.
+  race_submitted: Cursa a fost trimisă!
+  submission_failed: Nu s-a putut trimite cursa. Vă rugăm să încercați din nou.
+  missing_fields: Lipsește ceva. Asigurați-vă că toate câmpurile obligatorii sunt completate și că a fost selectată o locație pe hartă.
+race_page:
+  forum_section:
+    title: Întrebări & Răspunsuri
+    placeholder: Pune o întrebare organizatorului...
+    submit_button: Trimite întrebarea
+    login_prompt: Autentifică-te pentru a pune o întrebare
+    empty_state: Nici o întrebare încă. Fii primul care pune o întrebare!
+    error_message_no_login: Autentifică-te sau creează un cont pentru a pune o întrebare
+map:
+  show_map: Arată harta
+  show_list: Afișează lista
+  map: hartă
+  list: listă
+forum:
+  title: Forum - Discută despre alergare și viața de alergător cu alți alergători din România
+  meta_description: Discută despre alergare și viața de alergător cu alți alergători în forumul nostru. Totul despre antrenament, competiții, accidentări, nutriție, haine, echipament și multe altele.
+  categories:
+  - name: Antrenament
+    slug: antrenament
+    description: Discuții despre antrenament și tehnică
+  - name: Cursuri & Evenimente
+    slug: curse
+    description: Discută despre cursele viitoare
+  - name: Accidentări & Reabilitare
+    slug: accidentari
+    description: Ajutor pentru accidentări și recuperare
+  - name: Rute & Hărți
+    slug: rute
+    description: Discută despre rute și hărți
+  - name: Călătorii & Asocieri
+    slug: calatorii
+    description: Discută despre călătorii și alergare legată de călătorii
+  - name: Dietă & Nutriție
+    slug: nutritie
+    description: Discută despre dietă și nutriție
+  - name: Îmbrăcăminte, Pantofi & Echipament
+    slug: echipament
+    description: Discută despre îmbrăcăminte, pantofi și echipament
+  - name: Cumpără & Vinde
+    slug: cumpvinde
+    description: Discută despre cumpărarea și vânzarea produselor pentru alergători
+  - name: Diverse
+    slug: diverse
+    description: Tot restul
+  empty_category_state: Încă nu există discuții. Începe conversația creând primul fir!
+  empty_state_thread: Încă nu există postări. Fii primul care scrie!
+  empty_state: Încă nu există postări. Fii primul care scrie!
+  reply_placeholder: Scrie răspunsul tău...
+  submit_button: Trimite
+  login_prompt: Autentifică-te pentru a participa la discuție
+  new_thread_title_placeholder: Titlul noului tău fir
+  new_thread_content_placeholder: Scrie primul tău mesaj...
+  create_thread_button: Creează un fir nou
+  back_to_forum: ← Înapoi la forum
+  back_to_category: '← Înapoi la '
+  empty_thread_state: Încă nu există postări. Fii primul care scrie!
+  posts_label: postări
+  reply_label: răspuns
+  thread_created_title: Mulțumim pentru crearea unui fir nou!
+  thread_created_message: Firul tău va fi revizuit și adăugat pe pagină în curând.
+  thread_created_back_link: Înapoi la categorie
+  show_more_threads: Afișează mai multe fire
+  show_less_threads: Afișează mai puține fire
+  create_new_thread: Creează un fir nou
+  reply_title: Răspunde la fir
+  showing_threads_count: Se afișează {x} din {y} fire
+about_us:
+  title: Despre Calendar Alergări
+  meta_description: Calendar Alergări - Ghidul tău pentru alergare în România
+  content:
+    intro: Bine ai venit la Calendar Alergări - Platforma cea mai completă pentru alergători din România!
+    mission: Misiunea noastră este să facem ușor pentru alergători să găsească și să împărtășească informații despre curse, antrenamente și tot ce ține de alergare.
+    story: Calendar Alergări a fost lansat în 2023 de către alergători pentru alergători. Am văzut nevoia unei platforme moderne și prietenoase pentru comunitatea de alergare.
+    features:
+    - title: Listă completă de curse
+      description: Adunăm toate cursele din România într-un singur loc - de la curse locale mici până la evenimente internaționale mari.
+    - title: Orientat către Comunitate
+      description: Platforma noastră este condusă de alergători ca tine. Oricine poate contribui cu informații despre curse și poate participa la discuții.
+    - title: Unelte Gratuite
+      description: Oferim unelte utile precum calculatoare de ritm, programe de antrenament și planificare a traseului - complet gratuite.
+    closing: Continuăm să dezvoltăm platforma bazându-ne pe feedback-ul utilizatorilor noștri. Ai sugestii pentru îmbunătățiri? Te rugăm să ne contactezi!
+contact:
+  title: Contactează-ne
+  meta_description: Calendar de Alergări - Suntem aici să te ajutăm
+  content:
+    intro: 'Ne-ar plăcea să auzim de la tine! Iată diferite moduri de a ne contacta:'
+    email:
+      title: Email
+      address: loppkartan@gmail.com
+      description: Răspundem de obicei în 24 de ore în zilele lucrătoare.
+    social:
+      title: Rețele Sociale
+      description: 'Urmărește-ne pe rețelele sociale pentru cele mai recente noutăți și actualizări:'
+    feedback:
+      title: Feedback
+      description: Apreciem orice feedback care ne ajută să îmbunătățim Calendarul de Alergări.
+privacy_page:
+  title: Politica de Confidențialitate
+  meta_description: Politica de confidențialitate și informații despre modul în care Calendarul de Alergări gestionează datele personale și cookie-urile.
+  last_updated_label: Ultima actualizare
+  last_updated_date: 27 martie 2026
+  contact_intro: 'Pentru întrebări și solicitări legate de confidențialitate, te rugăm să ne contactezi la:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Informații pe care le colectăm
+    intro: 'Colectăm informații pe care ni le furnizezi direct atunci când:'
+    bullets:
+    - Creezi un cont
+    - Trimiti informații despre curse
+    - ' Postezi în forum'
+    - Ne contactezi
+  - title: 2. Cookie-uri și urmărire
+    intro: 'Folosim cookie-uri pentru a:'
+    bullets:
+    - Ține minte preferințele tale
+    - Menține sesiunea și starea de autentificare
+    - Analizează traficul și utilizarea site-ului
+    - Afișează publicitate relevantă și îmbunătățește experiența
+  - title: 3. Cum folosim informațiile tale
+    intro: 'Informațiile tale ne ajută să:'
+    bullets:
+    - Oferim și îmbunătățim serviciile noastre
+    - Trimitem notificări importante și actualizări
+    - Răspundem la solicitări și întrebări de suport
+    - Prevenim frauda și abuzurile
+  - title: 4. Drepturile tale
+    intro: 'Conform GDPR, ai dreptul să:'
+    bullets:
+    - Accesezi datele tale personale
+    - Corectezi datele incorecte sau incomplete
+    - Soliciti ștergerea datelor tale
+    - Te opui anumitor activități de procesare
+    - Soliciti portabilitatea datelor
+  - title: 5. Contactează-ne
+    intro: Dacă ai întrebări despre modul în care procesăm datele personale sau folosim cookie-urile, nu ezita să ne contactezi.
+racetime_estimator_title: Estimază-ți timpul de finalizare
+racetime_estimator_description: Bazat pe o cursă anterioară, poți estima timpul de finalizare pentru alte distanțe.
+known_distance_label: Selectează distanța pentru care ai un rezultat anterior
+known_time_label: Introdu timpul tău
+calculate_button_text: Calculează timpii
+predicted_times_title: Timpuri estimate
+distance_header: Distanță
+predicted_time_header: Timp estimat
+hilly_course_label: Traseu deluros
+finish_time_header: Timp estimat de finalizare
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/milă
+flat_time_header: 'Timp (plan) '
+flat_pace_per_km_header: Min/km (plat)
+flat_pace_per_mile_header: Min/milă (plat)
+hill_adjustment_header: Ajustare pentru teren accidentat
+pace_calculator_title: Convertor de ritm
+pace_calculator_description: Un instrument simplu pentru convertirea vitezei dvs. de alergare între diferite unități
+pace_table_header_kph: Kilometri pe oră
+pace_table_header_mph: Mile pe oră
+pace_table_header_min_km: Minute pe kilometru
+pace_table_header_min_mile: Minute pe milă
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Semi Maraton
+pace_table_header_full: Maraton
+pace_conversion_note: 1 kilometru pe oră (kph) = 0,62 mile pe oră (mph)
+measure_route_title: Măsoară-ți traseul
+measure_route_description: Fă clic pe hartă pentru a marca puncte de-a lungul traseului tău. Distanța totală este calculată automat.
+remove_last_point: Șterge ultimul punct
+clear_route: Șterge traseul
+total_distance: Distanța totală
+training_plans:
+  title: Planuri de antrenament
+  description: Creează un plan de antrenament personalizat bazat pe obiectivul tău
+  disclaimer_text_tp_1: Planurile noastre de antrenament sunt generate folosind AI, apoi adaptate la obiectivele și preferințele tale. Nu se garantează că programele sunt perfecte sau funcționează pentru toți.
+  disclaimer_link_tp: Contactează-ne
+  disclaimer_text_tp_2: dacă ai feedback sau sugestii pentru îmbunătățiri.
+  form:
+    race_date_label: Data cursei
+    plan_type_label: Tipul planului
+    target_distance_label: Distanța țintă
+    target_time_label: Timpul țintă
+    training_days_label: Zile de antrenament pe săptămână
+    session_time_label: Timp disponibil per sesiune
+    is_hilly_label: Teren accidentat
+    hours_placeholder: Ore
+    minutes_placeholder: Minute
+    seconds_placeholder: Secunde
+    submit_button: Generează planul de antrenament
+    target_distance:
+      placeholder: Selectează distanța
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Half Marathon
+        '42195': Marathon
+        5000: 5 km
+        10000: 10 km
+        21097: Semi Maraton
+        42195: Maraton
+    training_days:
+      placeholder: Selectează numărul de zile
+      options:
+        '3': 3 days
+        '4': 4 days
+        '5': 5 days
+        '6': 6 days
+        3: 3 zile
+        4: 4 zile
+        5: 5 zile
+        6: 6 zile
+    session_time:
+      placeholder: Selectează timpul per sesiune
+      options:
+        30-45: 30-45 minute
+        45-60: 45-60 minute
+        60-90: 60-90 minute
+        90+: 90+ minute
+  results:
+    title: Planul tău de antrenament
+    variations:
+      title: 'Alege o variantă care ți se potrivește:'
+    plan_details:
+      duration_label: 'Durata programului:'
+      weekly_distance_label: 'Distanța săptămânală:'
+    regenerate_button: Afișează alte variante
+    export_button: Exportă în PDF
+  workout_types:
+    easy: Alergare ușoară
+    tempo: Alergare tempo
+    intervals: Intervale
+    long: Alergare lungă
+    rest: Odihnă
+  messages:
+    weeks: săptămâni
+    week_label: Săptămâna
+    hilly_terrain_note: adaptat pentru teren deluros
+  plan_variation:
+    focus_label: Focalizare
+    weekly_structure_label: Structură săptămânală
+    distribution_label: Distribuție
+    sessions_per_week: sesiuni pe săptămână
+    select_button: Selectează acest plan
+  errors:
+    loading_plans: Eroare la încărcarea planurilor de antrenament
+    required_fields: Vă rugăm să completați toate câmpurile obligatorii
+    no_matching_plan: Nu a fost găsit niciun plan de antrenament corespunzător
+    no_matching_variations: Nu au fost găsite variații corespunzătoare
+    invalid_training_days: Numărul de zile de antrenament nu corespunde cerințelor planului
+  week: Săptămâna
+  weeks: săptămâni
+  hilly_terrain_note: adaptat pentru teren deluros
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Construirea rezistenței de bază
+        weekly_template:
+          monday:
+            type: ușor
+            description: Alergare ușoară pe distanță
+          wednesday:
+            type: tempo
+            description: Alergare tempo
+          saturday:
+            type: lung
+            description: Alergare lungă
+          sunday:
+            type: recuperare
+            description: Recuperare
+      build:
+        duration_percent: 40
+        focus: Intensificare și creștere a distanței
+        weekly_template:
+          monday:
+            type: ușor
+            description: Alergare ușoară pe distanță
+          wednesday:
+            type: intervale
+            description: Intervale
+          friday:
+            type: tempo
+            description: Alergare tempo
+          sunday:
+            type: lung
+            description: Alergare lungă
+      peak:
+        duration_percent: 15
+        focus: Vârf și antrenament specific
+        weekly_template:
+          tuesday:
+            type: intervale
+            description: Ședință de calitate
+          thursday:
+            type: tempo
+            description: Alergare tempo
+          saturday:
+            type: lung
+            description: Alergare lungă
+          sunday:
+            type: recuperare
+            description: Recuperare
+      taper:
+        duration_percent: 5
+        focus: Reducere progresivă
+        weekly_template:
+          tuesday:
+            type: ușor
+            description: Alergare ușoară
+          thursday:
+            type: tempo
+            description: Alergare tempo scurtă
+          saturday:
+            type: ușor
+            description: Alergare foarte ușoară
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min alergare ușoară
+        cooldown: 5-10 min alergare ușoară
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min încălzire progresivă
+        cooldown: 10-15 min răcire
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min incluzând exerciții și sprinturi
+        cooldown: 10-15 min alergare ușoară
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min alergare foarte ușoară
+        cooldown: 5-10 min mers/ușor jogging
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min mers
+        cooldown: Plimbare de 5-10 min
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Încălzire
+    main_workout_label: Descrierea sesiunii
+    cooldown_label: Cooldown
+    intensity_label: Viteză
+    duration_label: Timp
+  regenerate:
+    button_text: Generează o variantă nouă
+    confirmation: Ești sigur că vrei să generezi o variantă nouă?
+  weekdays:
+    monday: Luni
+    tuesday: Marți
+    wednesday: Miercuri
+    thursday: Joi
+    friday: Vineri
+    saturday: Sâmbătă
+    sunday: Duminică
+footer:
+  races_heading: Cursuri
+  tools_heading: Instrumente
+  about_heading: Despre Calendar Alergări
+  privacy: Politica de confidențialitate
+  copyright_year: 2023-2025
+  site_name: Calendar Alergări
+  rights_text: Toate drepturile rezervate.
+  social_links:
+    facebook: https://www.facebook.com/Calendar Alergări
+    instagram: https://www.instagram.com/Calendar Alergări
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@Calendar Alergări
+accessibility:
+  main_navigation_label: Navigare principală
+  breadcrumb_label: Breadcrumb-uri
+  back_to_top_label: Înapoi sus
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Cursuri în tendințe
+trending_races_description: Iată cursele care au primit cea mai mare atenție din partea alergătorilor.
+trending_races_views_last_30_days: vizualizări în ultimele 30 de zile
+trending_races_most_viewed: Cele mai populare în prezent
+races_views: vizualizări
+recent_races_title: Cursuri adăugate recent
+today: azi
+yesterday: ieri
+days_ago: zile în urmă
+newest_race_badge: Ultima adăugare
+races_count: curse
+popular_counties_title: Găsește curse în regiunea ta
+popular_cities_title: Găsește curse în orașul tău
+all_counties: Toate județele
+all_cities: Toate orașele
+category_header_1: Alergare pe traseu
+category_type_1: trail
+category_1_races_sub_title_1: Maraton pe traseu
+category_1_races_sub_ref_1: maraton
+category_1_races_sub_title_2: Ultra trail
+category_1_races_sub_ref_2: 50-milă
+category_1_races_sub_title_3: Ultra trail 100 mile
+category_1_races_sub_ref_3: 100-milă
+category_header_2: Cursuri pe șosea
+category_type_2: road
+category_2_races_sub_title_1: Maraton
+category_2_races_sub_ref_1: maraton
+category_2_races_sub_title_2: Semi-maraton
+category_2_races_sub_ref_2: semi-maraton
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Vezi toate cursele din
+tools_title: Unelte pentru următoarea ta cursă
+home_tools:
+  measure_route:
+    description: Măsoară o idee de traseu și obține o estimare rapidă a distanței înainte de a pleca.
+  training_plans:
+    description: Găsește planuri de antrenament pentru diferite obiective, niveluri și distanțe de cursă pentru a-ți modela următorul bloc.
+  racetime_estimator:
+    description: Estimează un timp de finalizare realist din rezultate anterioare și compară diferite scenarii de obiective.
+  pace_calculator:
+    description: Conversie ritm, viteză și timp de finalizare pentru distanțe comune de cursă în timp ce planifici antrenamentul.
+missing_race: Îți lipsește o cursă? Adaug-o aici!
+add_race_mp_title: Adaugă cursa ta
+neighboring_countries_title: Curse în România și țările vecine
+neighboring_countries_title_specific_country: Curse în {country_name}
+neighboring_countries_description: Aici sunt cursele organizate în țările vecine.
+neighboring_countries_description_specific_country: Aici listăm cursele organizate în {country_name}.
+neighboring_countries_neighbors_native: Țări vecine
+neighboring_countries_all_neighbors_native: Toate țările vecine
+section_race_card_header_nieghbors_default: România și țările vecine
+browse_neighboring:
+  title: Explorează cursele din țările vecine
+  meta_description: Găsește curse în țările vecine din apropiere. Explorează după țară pentru a descoperi evenimente de alergare peste granițe.
+neighboring_races_title: Curse în țările vecine
+neighboring_countries_show_all: Arată tot

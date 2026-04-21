@@ -70,6 +70,14 @@ export function relevantRaceDate(
   return firstComparableRaceDate(raw);
 }
 
+export function displayRaceDate(
+  raw: unknown,
+  startComparable?: string | null,
+  endComparable?: string | null,
+): string | null {
+  return relevantRaceDate(raw, startComparable, endComparable) ?? firstComparableRaceDate(raw);
+}
+
 export function nextUpcomingRaceDateWithinWindow(
   raw: unknown,
   startComparable = upcomingWindowStart(),

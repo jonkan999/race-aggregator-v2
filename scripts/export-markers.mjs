@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 /**
  * Writes public/markers-{country}.json for the map island.
- * Uses Supabase when SUPABASE_URL + SUPABASE_SECRET_KEY (or legacy SUPABASE_SERVICE_ROLE_KEY) are set;
+ * Prefers the temporary build snapshot when available so deploy builds can reuse the
+ * same single export that feeds the race-list SSG flow. Otherwise uses Supabase when
+ * SUPABASE_URL + SUPABASE_SECRET_KEY (or legacy SUPABASE_SERVICE_ROLE_KEY) are set;
  * otherwise reads the neighbor-aware data file when available (no DB required).
  */
 import { createClient } from '@supabase/supabase-js';
@@ -9,11 +11,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
+import { loadLocalEnvFiles } from './lib/load-env.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const countriesRoot = resolveCountriesRoot(root);
 const country = resolveCountryArg(process.argv[2]);
+loadLocalEnvFiles(root);
 
 function writeMarkers(markers) {
   const outDir = path.join(root, 'public');
@@ -47,6 +51,14 @@ function decorateMarker(base, supplement) {
   };
 }
 
+function translationForLocale(row, locale) {
+  if (!Array.isArray(row?.race_translations)) return null;
+  const match = row.race_translations.find(
+    (entry) => entry && typeof entry === 'object' && entry.locale === locale,
+  );
+  return match && typeof match === 'object' ? match : null;
+}
+
 function fromJsonRace(r) {
   return decorateMarker({
     id: String(r.consolidated_ids?.[0] ?? r.domain_name),
@@ -59,6 +71,31 @@ function fromJsonRace(r) {
   }, r);
 }
 
+function fromSnapshotRow(row, countryCode) {
+  const nativeTranslation = translationForLocale(row, 'sv');
+  const payload =
+    row?.payload && typeof row.payload === 'object' && !Array.isArray(row.payload) ? row.payload : {};
+  return decorateMarker(
+    {
+      id: String(row.id ?? row.domain_name),
+      domain_name: row.domain_name,
+      latitude: row.latitude,
+      longitude: row.longitude,
+      county: row.county ?? null,
+      race_type: row.race_type ?? null,
+      origin_country: row.origin_country ?? countryCode,
+    },
+    {
+      name: nativeTranslation?.name ?? payload.name ?? row.domain_name,
+      location: payload.location ?? null,
+      distance_verbose: nativeTranslation?.distance_verbose ?? payload.distance_verbose ?? null,
+      race_dates: row.race_dates ?? payload.race_dates ?? [],
+      type_local: nativeTranslation?.type_local ?? payload.type_local ?? null,
+      website: row.website ?? payload.website ?? null,
+    },
+  );
+}
+
 function readSupplementalJson() {
   const fp = fs.existsSync(path.join(countriesRoot, country, 'final_races_w_neighbors.json'))
     ? path.join(countriesRoot, country, 'final_races_w_neighbors.json')
@@ -66,6 +103,20 @@ function readSupplementalJson() {
   if (!fs.existsSync(fp)) return new Map();
   const rows = JSON.parse(fs.readFileSync(fp, 'utf8'));
   return new Map(rows.map((row) => [row.domain_name, row]));
+}
+
+function readSnapshotMarkers() {
+  const snapshotDir = process.env.RACE_LIST_BUILD_SNAPSHOT_DIR?.trim();
+  if (!snapshotDir) return null;
+
+  const snapshotPath = path.join(snapshotDir, `${country}.json`);
+  if (!fs.existsSync(snapshotPath)) return null;
+
+  const parsed = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
+  const rows = Array.isArray(parsed?.rows) ? parsed.rows : [];
+  return rows
+    .filter((row) => row?.latitude != null && row?.longitude != null)
+    .map((row) => fromSnapshotRow(row, country));
 }
 
 async function fromDatabase(supplementByDomain) {
@@ -97,6 +148,12 @@ async function fromDatabase(supplementByDomain) {
 }
 
 async function main() {
+  const snapshotMarkers = readSnapshotMarkers();
+  if (snapshotMarkers) {
+    writeMarkers(snapshotMarkers);
+    return;
+  }
+
   const supplementByDomain = readSupplementalJson();
   let markers = await fromDatabase(supplementByDomain);
   if (!markers) {

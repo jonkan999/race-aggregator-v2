@@ -34,6 +34,7 @@ import { getBrowserMarketRouteTargets, resolveRaceDetailHref } from '../lib/mark
 import { pickTranslation, type RaceListRow } from '../lib/raceListRow';
 import {
   compareRaceRowsByRelevantDate,
+  displayRaceDate,
   relevantRaceDate,
 } from '../lib/upcomingRaceWindow';
 
@@ -936,7 +937,7 @@ export default function RaceListPageIsland(props: {
         const name = pickName(row);
         const typeLocal = pickTypeLocal(row);
         const distVerbose = pickDistanceVerbose(row);
-        const rawDate = relevantRaceDate(row.race_dates, dateStartComparable, dateEndComparable);
+        const rawDate = displayRaceDate(row.race_dates, dateStartComparable, dateEndComparable);
         const distParts = splitDistanceVerbose(distVerbose).map((segment) =>
           formatDistanceSegment(segment, verboseLocalDistanceMapping),
         );
@@ -1350,7 +1351,7 @@ export default function RaceListPageIsland(props: {
               !error &&
               rows.map((r, index) => {
                 const name = pickName(r);
-                const rawDate = relevantRaceDate(r.race_dates, dateStartComparable, dateEndComparable);
+                const rawDate = displayRaceDate(r.race_dates, dateStartComparable, dateEndComparable);
                 const dateDisp = rawDate ? formatYyyymmdd(rawDate, monthMappingShort) : '';
                 const img =
                   primaryRaceImageUrl(r.payload) ?? placeholderImage(r.domain_name, r.race_type);

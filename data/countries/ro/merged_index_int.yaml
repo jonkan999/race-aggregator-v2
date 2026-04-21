@@ -1,0 +1,1076 @@
+type_options:
+  road: Road
+  terrain: Terrain
+  trail: Trail
+  track: Track
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Relay
+  time: Time-based
+  other: Other
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Half Marathon:
+    range:
+    - 20
+    - 22
+  Marathon:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 meter:
+    range:
+    - 1.5
+    - 1.5
+  3000 meter:
+    range:
+    - 3
+    - 3
+  5000 meter:
+    range:
+    - 5
+    - 5
+  10000 meter:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Time-based
+  relay: Relay
+verbose_local_distance_mapping:
+  half marathon: Half Marathon
+  marathon: Marathon
+  fallback: Mixed distance
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Half Marathon
+- range:
+  - 41.9
+  - 42.4
+  label: Marathon
+country_code: ro
+country_language_code: en
+navigation:
+  main: All
+  race-list: Race Calendar
+  add-race: Add Race
+  forum: Forum
+  measure-route: Measure Your Route
+  training-plans: Training Plans
+  pace-calculator: Pace Converter
+  racetime-estimator: Estimate Your Finish Time
+  about-us: About Us
+  contact: Contact Us
+race_list_name: Romania Race Calendar
+alternate_locale_link_text: Română
+auxiliary_pages:
+  race-page-preview: Preview Race
+  terms-of-service: Terms of Service
+  privacy-policy: Privacy Policy
+  about-us: About Us
+  contact: Contact Us
+  faq: FAQ
+page_name: Calendar Alergări
+base_url: https://calendaralergari.ro/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hello!
+    closing_salutation: Best regards,
+    link_fallback_intro: 'If the button does not work, you can copy the link here:'
+  confirm_signup:
+    body: Thank you for signing up for {site_name}. Confirm your email address to activate your account and manage your submitted races.
+    button_label: Confirm email address
+    ignore_note: If you did not create the account, you can ignore this email.
+  reset_password:
+    body: We received a request to reset your password for {site_name}. Click the button below to choose a new password.
+    button_label: Reset password
+    ignore_note: If you did not request this, you can ignore the email. Your password will not change until you choose a new one.
+  change_email:
+    body: You requested to change the email address for your account on {site_name}. Confirm the change by clicking the button below.
+    button_label: Confirm new email address
+    ignore_note: If you did not request the change, you can ignore this email.
+title: Everything about running in
+country_native: Romania
+country: Romania
+meta_description: The most comprehensive running calendar and community for races in Romania
+country_language: Romanian
+local_name_for_race: race
+main_bullet_1: Find your next race
+main_bullet_2: ' - Or add it here'
+main_bullet_3: Browse our marketplace
+main_bullet_4: Read the latest news or join the discussion in our forum
+description: This community-driven initiative helps runners across Romania discover races, compare options, and stay connected to the local running scene. The platform is still growing, but it already aims to be a practical home for Romanian running events and community knowledge.
+cta_search: Find Race
+cta_add: Add a Race
+selected_races_title: Featured Races
+selected_races_top_title: Race of the week
+cta_all_races: Show all races
+show_local: Show
+race_local: Race
+running_local: Running
+alt_prefix: 'Image for '
+race_list_title: The most complete list of marathons, half marathons, and other running races in Romania
+race_list_meta_description_1: Find running races and event dates from across Romania
+race_list_meta_description_2: ✔️Complete race calendar ✔️Trail, backyard, road, and marathon races ✔️Events from all over Romania
+race_list_data_error: Could not load races. Please try again later.
+race_list_remote_required: For more pages or filters the database (Supabase) is required. Add PUBLIC_SUPABASE_URL and PUBLIC_SUPABASE_PUBLISHABLE_KEY to your .env file.
+race_list_empty: No races matched your filters.
+race_list_loading: Loading…
+race_card_cta_text: More info & registration
+section_race_card_category_prefix: All
+section_race_card_category_suffix: races
+section_race_card_header_separator: in
+section_race_card_header_region_default: Romania
+section_race_card_header_date_range_from: 'from '
+section_race_card_header_date_range_to: 'to '
+section_race_card_header_date_range_single: 'in '
+filter_date_from: From
+filter_date_to: To
+filter_county: All counties
+filter_race_type: All race types
+filter_categories: All categories
+filter_months: All year
+filter_distance: All distances
+month_mapping:
+  '01': January
+  '02': February
+  '03': March
+  '04': April
+  '05': May
+  '06': June
+  '07': July
+  08: August
+  09: September
+  '10': October
+  '11': November
+  '12': December
+month_mapping_short:
+  '01': Jan
+  '02': Feb
+  '03': Mar
+  '04': Apr
+  '05': May
+  '06': Jun
+  '07': Jul
+  08: Aug
+  09: Sep
+  '10': Oct
+  '11': Nov
+  '12': Dec
+county_label_text: All counties
+county_mapping:
+  ALBA: Alba County
+  ARAD: Arad County
+  ARGES: Argeș County
+  BACAU: Bacău County
+  BIHOR: Bihor County
+  BISTRITA-NASAUD: Bistrița-Năsăud County
+  BOTOSANI: Botoșani County
+  BRAILA: Brăila County
+  BRASOV: Brașov County
+  BUCURESTI: Bucharest
+  BUZAU: Buzău County
+  CARAS-SEVERIN: Caraș-Severin County
+  CLUJ: Cluj County
+  CONSTANTA: Constanța County
+  COVASNA: Covasna County
+  DAMBOVITA: Dâmbovița County
+  DOLJ: Dolj County
+  GALATI: Galați County
+  GIURGIU: Giurgiu County
+  GORJ: Gorj County
+  HARGHITA: Harghita County
+  HUNEDOARA: Hunedoara County
+  IALOMITA: Ialomița County
+  IASI: Iași County
+  ILFOV: Ilfov County
+  MARAMURES: Maramureș County
+  MEHEDINTI: Mehedinți County
+  MURES: Mureș County
+  NEAMT: Neamț County
+  OLT: Olt County
+  PRAHOVA: Prahova County
+  SALAJ: Sălaj County
+  SATU MARE: Satu Mare County
+  SIBIU: Sibiu County
+  SUCEAVA: Suceava County
+  TELEORMAN: Teleorman County
+  TIMIS: Timiș County
+  TULCEA: Tulcea County
+  VALCEA: Vâlcea County
+  VASLUI: Vaslui County
+  VRANCEA: Vrancea County
+category_label_text: Race Category
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: To race page
+map_toggle_desktop: Show map
+map_toggle_desktop_active: Hide map
+map_toggle_mobile: Map
+map_toggle_mobile_list: List
+map_markers_load_error: Could not load map markers.
+map_not_configured: Map is not configured (missing map key).
+race_page_map_zoom: '{default_map_zoom}'
+pagination:
+  results_text: of
+  events_text: Races
+  previous_text: Previous
+  next_text: Next
+  page_text: Page
+  of_text: of
+add_race_title: Add a new race
+add_race_meta_description: Add your race to Calendar Alergări
+map_message: Place your race by clicking on the map
+mapbox_center:
+  latitude: 45.9432
+  longitude: 24.9668
+mapbox_zoom: '7'
+date_text: Date
+multi_day_toggle: Multi-day event
+end_date_text: End date
+type_text: Surface / Race type
+type_select_placeholder: Select surface / race type
+name_label: 'Race name:'
+name_placeholder: e.g. City Marathon
+distance_label: 'Distances:'
+distance_placeholder: Enter distance in km
+add_distance_button: Add
+half_marathon_button: Half Marathon
+marathon_button: Marathon
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Location name:'
+place_placeholder: e.g. Parcul Herăstrău, București
+organizer_label: 'Organizer:'
+organizer_contact_placeholder: Running Club
+organizer_contact_label: 'Contact email:'
+organizer_mail_placeholder: contact@calendaralergari.ro
+website_label: 'Organizer website:'
+website_placeholder: https://example.ro/
+start_time_label: 'Start time:'
+start_time_placeholder: 09:00
+price_range_label: 'Price range:'
+price_range_placeholder: e.g. 80-250 lei
+add_race_description_label: Describe the race
+add_race_description_placeholder: The City Marathon is a flat course with long stretches...
+add_race_additional_label: Additional information
+add_race_additional_placeholder: e.g. start and finish location, start groups, etc.
+add_race_images_label: Upload images (At least 4 recommended)
+choose_pictures_button: Choose images
+drag_drop_text: Drag and drop images here or click to select
+add_race_remove_image_label: Remove image
+coordinates_display_prefix: Race coordinates
+add_race_upload_limit_message: You can only upload {count} more images.
+add_race_map_not_configured: The map could not be loaded right now.
+clear_images_button: Clear images
+clear_form_button: Clear form
+preview_button: Preview
+submit_button: Submit
+preview_title: Preview
+preview_exit_button: Close preview
+optional_label: Optional
+comments_suffix: Comments
+cta_forum: Show All Posts
+race_page_preview_title: This is how your race will look
+edit_race_button: Edit
+race_page_description_label: Race description
+race_page_course_highlights_label: Highlights
+race_page_additional_label: Additional information
+race_page_detailed_info_label: Detailed information
+race_page_social_links_label: Follow the race
+race_page_place_label: 'Location:'
+race_page_distances_label: 'Distances:'
+race_page_surface_label: 'Surface:'
+race_page_date_label: 'Date:'
+race_page_estimated_date_label: Estimated date
+race_page_estimated_disclaimer: We have not received an official date for this race.
+race_page_registration_link: Registration link
+race_page_registration_cta: Register now
+race_page_info_cta: More information
+race_page_registration_close_label: Registration closes
+race_page_pricing_title: Registration and pricing
+race_page_price_deadline_label: Valid until
+race_page_price_late_fee_label: Late registration
+race_page_back_to_list: Back to race calendar
+race_page_favorites_title: Do not miss race updates
+race_page_favorites_body: Create an account and save this race to your favorites so you can receive updates, news and selected offers when favorites launch.
+race_page_favorites_cta: Save race to favorites
+race_page_similar_title: Similar races
+race_page_similar_body: More races with similar distance, type or nearby location.
+race_page_discover_title: Explore more races
+race_page_discover_county_link: All races in {county}
+race_page_discover_type_link: More {type} races
+race_page_discover_category_link: More {category} races
+race_page_discover_type_county_link: '{type} races in {county}'
+race_page_discover_overview_link: Browse all race categories
+disclaimer_text_1: 'All information on this page is based on open source data. We do our best to keep it updated but
+
+  cannot guarantee that everything is correct. If you see any inaccuracies,
+
+  '
+disclaimer_link: contact us
+disclaimer_text_2: and we will correct it as soon as possible.
+disclaimer_text_3: Something more you wish to add to your race?
+disclaimer_text_4: and we will try to help!
+race_page_visit_organizer_website: To organizer website & registration
+race_page_folder_name: race-pages
+race_page_alt_prefix: 'Image for '
+seo_county_folder_name: Counties
+seo_cities_folder_name: Cities
+popular_subcategories_title: Popular subcategories
+important_keywords_racelist:
+- race calendar
+- running calendar
+- running races
+- running events
+- race list
+- running competitions
+seo_templates:
+  title_parts:
+    category: '{category} races'
+    race_type: '{race_type}'
+    location: in {location}
+    default: All races
+  paragraph_templates:
+    category_race_location: Find {category} {race_type}races in {location}.
+    category_race: Explore {category} {race_type}races across Romania.
+    category_location: Discover {category} races in {location}.
+    race_location: See all {race_type}races in {location}.
+    category_only: Find {category} races across Romania.
+    race_only: Explore {race_type}races in all regions.
+    location_only: See all types of races in {location}.
+    default_suffix: Here you will find dates, distances and all the information you need to plan your next race.
+  browse_page_templates:
+    county:
+      title: '{label} races | {site_name}'
+      meta_description: Browse running races in {label}. Compare dates, distances, race formats and practical details before choosing your next race.
+      h1: Races in {label}
+      paragraph: This landing page gathers running races in {label} so it is easier to compare dates, distances, race formats and practical details in one place. Use it when you want a clearer overview before choosing your next race.
+    city:
+      title: '{label} races | {site_name}'
+      meta_description: Find running races linked to {label}. Compare dates, distances, nearby options and practical details before choosing your next race.
+      h1: Races near {label}
+      paragraph: This city page helps you browse running races connected to {label}, including nearby alternatives that are relevant when planning a race day or trip. It is built to make local race discovery faster and easier to compare.
+    month:
+      title: '{label} races | {site_name}'
+      meta_description: Browse running races in {label} in {market}. Compare dates, distances, race types and practical details before planning your season.
+      h1: Races in {label}
+      paragraph: This page is for runners who want a month-based view of the calendar and need a quicker way to compare what happens in {label}. It helps you narrow the field before drilling into distances, surfaces and race locations.
+    race_type:
+      title: '{label} races in {market} | {site_name}'
+      meta_description: Browse {label_lower} races in {market}. Compare dates, distances, locations and practical details before choosing a race that fits you.
+      h1: '{label} races in {market}'
+      paragraph: This page focuses on {label_lower} races and gives you a cleaner overview when the race format matters as much as the distance. Use it to compare options across regions, dates and practical details without starting from the full calendar.
+    category:
+      title: '{label} races in {market} | {site_name}'
+      meta_description: Browse {label} races in {market}. Compare dates, race types, locations and practical details before deciding on your next event.
+      h1: '{label} races in {market}'
+      paragraph: This distance and category page brings together races that match {label} so it is easier to compare relevant options in one place. It is designed for runners who want a faster path from broad browsing to a shortlist of realistic races.
+    race_type_category:
+      title: '{label} {secondary_label} races in {market} | {site_name}'
+      meta_description: Browse {label} races in {market} within the {secondary_label_lower} race type. Compare dates, locations and practical details before choosing your next event.
+      h1: '{label} races in {market} ({secondary_label})'
+      paragraph: This page narrows the calendar to {label} races within the {secondary_label_lower} race type, which is helpful when both distance and race format shape the right choice. Use it to compare like-for-like options before committing to a race.
+    race_type_county:
+      title: '{secondary_label} races in {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races in {label}. Compare dates, distances and practical details before choosing your next race.
+      h1: '{secondary_label} races in {label}'
+      paragraph: This page focuses on {secondary_label_lower} races in {label} so it is easier to compare more relevant options within the same region. It is useful when both geography and race format shape the shortlist.
+    race_type_month:
+      title: '{secondary_label} races in {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races in {label_lower}. Compare dates, distances and practical details while planning your season.
+      h1: '{secondary_label} races in {label}'
+      paragraph: This page gathers {secondary_label_lower} races in {label_lower} for runners who plan around the calendar first. It helps you compare similar race formats before narrowing further by place or distance.
+    race_type_city:
+      title: '{secondary_label} races near {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races linked to {label}. Compare dates, distances and nearby options before choosing your next race.
+      h1: '{secondary_label} races near {label}'
+      paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Romania. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
+  browse_guidance:
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Browse by category
+  helper_text: Find races through predefined filters and combinations
+  overview: Overview
+  counties: Regions
+  cities: Cities
+  months: Month
+  types: Race types
+  categories: Categories
+  neighboring: Neighboring Countries
+browse_overview:
+  title: Browse all races
+  meta_description: Find races by region, type or category
+browse_types:
+  title: Browse by race type
+  meta_description: Find races by type of race.
+browse_counties:
+  title: Browse by region
+  meta_description: Find races in your region.
+browse_cities:
+  title: Browse by city
+  meta_description: Find races in your city.
+browse_categories:
+  title: Browse by category
+  meta_description: Find races by distance and category.
+browse_months:
+  title: Browse by month
+  meta_description: Find races by month.
+auth_modal:
+  title_sign_in: Sign in
+  title_create_account: Create account
+  title_reset_password: Reset password
+  auth_unavailable: Authentication is not configured yet.
+  name_placeholder: Your name
+  email_placeholder: Your email
+  password_placeholder: Password
+  submit_sign_in: Sign in
+  submit_create_account: Create account
+  submit_reset_password: Send reset link
+  create_account: Create account
+  forgot_password: Forgot password?
+  back_to_login: Back to login
+  error_wrong_password: Wrong password
+  error_email_not_found: Email not found
+  prompt_reset_password: Do you want to reset your password?
+  prompt_create_account: Do you want to create an account with this email?
+  already_logged_in: You are already logged in as
+  as_email: with email
+  continue_as_user: Continue as this user
+  logout_and_switch: Log out and switch user
+  account_created: Account created!
+  account_created_details: You are now logged in as
+  verification_email_sent: A verification link has been sent to your email
+  please_verify: Please verify your email address
+  error_invalid_credential: Invalid email or password
+  create_account_prompt: Create account instead
+  error_too_many_requests: Too many attempts. Please try again later.
+  continue_with_google: Continue with Google
+  continue_with_google_create: Create account with Google
+  google_in_progress: Continuing with Google...
+  oauth_divider: or
+auth_pages:
+  confirm_success: Your email has been confirmed and your account is now active.
+  confirm_ready: You can now continue using the site.
+  confirm_error: Could not confirm your email address.
+  reset_intro: Enter a new password for your account.
+  reset_confirm_label: Confirm password
+  reset_mismatch_error: Passwords do not match.
+  reset_invalid_link_error: Invalid or missing recovery link.
+  reset_success: Your password has been updated. You can now sign in.
+newsletter_popup:
+  email_placeholder: Your email address
+  submit_button: Send me the updates
+  dismiss_button: Not now
+  invalid_email: Please enter a valid email address.
+  submit_error: We could not save your subscription right now. Please try again.
+  submitting_text: Saving...
+  success_message: Thanks! Race updates are on the way to your inbox.
+  privacy_note: New races, date changes and selected offers. Unsubscribe whenever you want.
+  close_aria_label: Close subscription popup
+  benefits:
+    new_races: New races first
+    date_changes: Date changes instantly
+    selected_offers: Selected offers
+    similar_races: Similar races near you
+    local_picks: More races nearby
+    opening_reminders: Reminders before spots disappear
+    race_updates: Updates about this race
+    nearby_races: Cross-border races near you
+  generic:
+    eyebrow: Do not miss the next race
+    title: Get new races and date changes before everyone else
+    body: Subscribe to our newsletter and get new races, updated dates and hand-picked tips in {country} straight to your inbox.
+  race_detail:
+    eyebrow: Follow this race
+    title: Want updates about {race_name}?
+    body: Subscribe to get updates about {race_name}, similar races in {county} and important changes sent straight to your inbox.
+  browse_category:
+    eyebrow: More of the right races
+    title: Do not miss new {category} races
+    body: We send new {category} races, relevant nearby alternatives and important dates so you do not have to keep searching manually.
+  browse_category_type:
+    eyebrow: More of the right races
+    title: Get more {race_type} races within {category}
+    body: Subscribe for more {race_type} races within {category}, nearby alternatives and date changes delivered straight to your inbox.
+  browse_county:
+    eyebrow: Local races first
+    title: Get more races in {county}
+    body: Keep up with new races, updated dates and smart picks for {county} without checking the calendar all the time.
+  browse_city:
+    eyebrow: Local races first
+    title: Want more races in {city}?
+    body: Subscribe and get new races, nearby alternatives and important dates for {city} sent straight to your inbox.
+  browse_type:
+    eyebrow: The right race style
+    title: Get more {race_type} races in your inbox
+    body: We send new {race_type} races, similar alternatives and key dates so you can act before spots disappear.
+  browse_month:
+    eyebrow: Plan the season
+    title: Get the best races in {month} first
+    body: When races in {month} open, move or become especially interesting, you hear about it right away in your inbox.
+  browse_neighboring:
+    eyebrow: Broaden your calendar
+    title: Get races from neighboring countries too
+    body: Subscribe for new races, smart cross-border picks and date changes from {region} delivered straight to your inbox.
+  browse_neighboring_country:
+    eyebrow: Broaden your calendar
+    title: Get more races in {region}
+    body: We send new races, date changes and relevant nearby alternatives when something interesting appears in {region}.
+submission_flow:
+  logged_in_as: Logged in as organizer
+  submitting_new_race: submitting new race
+  new_account_created: To manage the race, you must confirm your email address. A confirmation link has been sent to the provided email address.
+  password_reset_sent: Password reset sent. Check your inbox.
+  unexpected_error: An error occurred. Please try again.
+  processing_submission: Processing submission...
+  race_exists: The race already exists in the database.
+  race_submitted: Race has been submitted!
+  submission_failed: Could not submit the race. Please try again.
+  missing_fields: Something is missing. Make sure all required fields are filled and a location has been selected on the map.
+race_page:
+  forum_section:
+    title: Questions & Answers
+    placeholder: Ask a question to the organizer...
+    submit_button: Send question
+    login_prompt: Log in to ask a question
+    empty_state: No questions yet. Be the first to ask a question!
+    error_message_no_login: Log in or create an account to ask a question
+map:
+  show_map: Show map
+  show_list: Show list
+  map: map
+  list: list
+forum:
+  title: Forum - Talk about running and running life with other runners in Romania
+  meta_description: Talk about running and running life with other runners in our forum. Everything about training, competitions, injuries, nutrition, clothes, gear and much more.
+  categories:
+  - name: Training
+    slug: training
+    description: Discussions about training and technique
+  - name: Races & Events
+    slug: races
+    description: Discuss upcoming races
+  - name: Injuries & Rehab
+    slug: injuries
+    description: Help with injuries and recovery
+  - name: Routes & Maps
+    slug: routes
+    description: Discuss routes and maps
+  - name: Travel & Related
+    slug: travel
+    description: Discuss travel and travel-related running
+  - name: Diet & Nutrition
+    slug: nutrition
+    description: Discuss diet and nutrition
+  - name: Clothing, Shoes & Gear
+    slug: gear
+    description: Discuss clothing, shoes and gear
+  - name: Buy & Sell
+    slug: buysell
+    description: Discuss buying and selling runner products
+  - name: Miscellaneous
+    slug: misc
+    description: Everything else
+  empty_category_state: No threads yet. Get the discussion going by creating the first thread!
+  empty_state_thread: No posts yet. Be the first to write!
+  empty_state: No posts yet. Be the first to write!
+  reply_placeholder: Write your reply...
+  submit_button: Send
+  login_prompt: Log in to participate in the discussion
+  new_thread_title_placeholder: Title of your new thread
+  new_thread_content_placeholder: Write your first post...
+  create_thread_button: Create new thread
+  back_to_forum: ← Back to forum
+  back_to_category: '← Back to '
+  empty_thread_state: No posts yet. Be the first to write!
+  posts_label: posts
+  reply_label: reply
+  thread_created_title: Thank you for creating a new thread!
+  thread_created_message: Your thread will be reviewed and added to the page shortly.
+  thread_created_back_link: Back to category
+  show_more_threads: Show more threads
+  show_less_threads: Show fewer threads
+  create_new_thread: Create new thread
+  reply_title: Reply to thread
+  showing_threads_count: Showing {x} of {y} threads
+about_us:
+  title: About Calendar Alergări
+  meta_description: Calendar Alergări - Your guide to running in Romania
+  content:
+    intro: Welcome to Calendar Alergări - The most complete platform for runners in Romania!
+    mission: Our mission is to make it easy for runners to find and share information about races, training and everything related to running.
+    story: Calendar Alergări was started in 2023 by runners for runners. We saw the need for a modern and user-friendly platform where the running community could gather.
+    features:
+    - title: Complete Race List
+      description: We gather all races in Romania in one place - from small local races to large international events.
+    - title: Community-Driven
+      description: Our platform is driven by runners like you. Anyone can contribute with information about races and participate in discussions.
+    - title: Free Tools
+      description: We offer useful tools like pace calculators, training programs and route planning - completely free.
+    closing: We continue to develop the platform based on feedback from our users. Do you have suggestions for improvements? Please contact us!
+contact:
+  title: Contact Us
+  meta_description: Contact Calendar Alergări - We are here to help you
+  content:
+    intro: 'We would love to hear from you! Here are different ways to reach us:'
+    email:
+      title: Email
+      address: loppkartan@gmail.com
+      description: We normally respond within 24 hours on weekdays.
+    social:
+      title: Social Media
+      description: 'Follow us on social media for the latest news and updates:'
+    feedback:
+      title: Feedback
+      description: We appreciate all feedback that helps us improve Calendar Alergări.
+privacy_page:
+  title: Privacy Policy
+  meta_description: Privacy policy and information about how Calendar Alergări handles personal data and cookies.
+  last_updated_label: Last updated
+  last_updated_date: March 27, 2026
+  contact_intro: 'For privacy-related questions and requests, please contact us at:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Information We Collect
+    intro: 'We collect information that you provide directly to us when you:'
+    bullets:
+    - Create an account
+    - Submit race information
+    - Post in the forum
+    - Contact us
+  - title: 2. Cookies and Tracking
+    intro: 'We use cookies to:'
+    bullets:
+    - Remember your preferences
+    - Maintain your session and login state
+    - Analyze traffic and site usage
+    - Show relevant advertising and improve the experience
+  - title: 3. How We Use Your Information
+    intro: 'Your information helps us to:'
+    bullets:
+    - Provide and improve our services
+    - Send important notifications and updates
+    - Respond to requests and support questions
+    - Prevent fraud and abuse
+  - title: 4. Your Rights
+    intro: 'Under GDPR, you have the right to:'
+    bullets:
+    - Access your personal data
+    - Correct inaccurate or incomplete data
+    - Request deletion of your data
+    - Object to certain processing activities
+    - Request data portability
+  - title: 5. Contact Us
+    intro: If you have questions about how we process personal data or use cookies, you are always welcome to reach out.
+racetime_estimator_title: Estimate your finish time
+racetime_estimator_description: Based on a previous race, you can estimate your finish time for other distances.
+known_distance_label: Select distance where you have a previous result
+known_time_label: Enter your time
+calculate_button_text: Calculate times
+predicted_times_title: Estimated times
+distance_header: Distance
+predicted_time_header: Estimated time
+hilly_course_label: Hilly course
+finish_time_header: Estimated finish time
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/mile
+flat_time_header: Time (flat)
+flat_pace_per_km_header: Min/km (flat)
+flat_pace_per_mile_header: Min/mile (flat)
+hill_adjustment_header: Hilly adjustment
+pace_calculator_title: Pace Converter
+pace_calculator_description: A simple tool for converting your running speed between different units
+pace_table_header_kph: Kilometers per hour
+pace_table_header_mph: Miles per hour
+pace_table_header_min_km: Minutes per kilometer
+pace_table_header_min_mile: Minutes per mile
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Half Marathon
+pace_table_header_full: Marathon
+pace_conversion_note: 1 kilometer per hour (kph) = 0.62 mile per hour (mph)
+measure_route_title: Measure your route
+measure_route_description: Click on the map to mark points along your route. Total distance is calculated automatically.
+remove_last_point: Remove last point
+clear_route: Clear route
+total_distance: Total distance
+training_plans:
+  title: Training Plans
+  description: Create a customized training plan based on your goal
+  disclaimer_text_tp_1: Our training plans are generated using AI, and then adapted to your stated goals and preferences. The programs are not guaranteed to be perfect or work for everyone.
+  disclaimer_link_tp: Contact us
+  disclaimer_text_tp_2: if you have feedback or suggestions for improvements.
+  form:
+    race_date_label: Race date
+    plan_type_label: Plan type
+    target_distance_label: Target distance
+    target_time_label: Target time
+    training_days_label: Training days per week
+    session_time_label: Time available per session
+    is_hilly_label: Hilly terrain
+    hours_placeholder: Hours
+    minutes_placeholder: Minutes
+    seconds_placeholder: Seconds
+    submit_button: Generate training plan
+    target_distance:
+      placeholder: Select distance
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Half Marathon
+        '42195': Marathon
+    training_days:
+      placeholder: Select number of days
+      options:
+        '3': 3 days
+        '4': 4 days
+        '5': 5 days
+        '6': 6 days
+    session_time:
+      placeholder: Select time per session
+      options:
+        30-45: 30-45 minutes
+        45-60: 45-60 minutes
+        60-90: 60-90 minutes
+        90+: 90+ minutes
+  results:
+    title: Your training plan
+    variations:
+      title: 'Choose a variant that suits you:'
+    plan_details:
+      duration_label: 'Program length:'
+      weekly_distance_label: 'Weekly distance:'
+    regenerate_button: Show other variants
+    export_button: Export to PDF
+  workout_types:
+    easy: Easy run
+    tempo: Tempo run
+    intervals: Intervals
+    long: Long run
+    rest: Rest
+  messages:
+    weeks: weeks
+    week_label: Week
+    hilly_terrain_note: adapted for hilly terrain
+  plan_variation:
+    focus_label: Focus
+    weekly_structure_label: Weekly structure
+    distribution_label: Distribution
+    sessions_per_week: sessions per week
+    select_button: Select this plan
+  errors:
+    loading_plans: Error loading training plans
+    required_fields: Please fill in all required fields
+    no_matching_plan: No matching training plan found
+    no_matching_variations: No matching variations found
+    invalid_training_days: The number of training days does not match the plan requirements
+  week: Week
+  weeks: weeks
+  hilly_terrain_note: adapted for hilly terrain
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Building basic endurance
+        weekly_template:
+          monday:
+            type: easy
+            description: Easy distance run
+          wednesday:
+            type: tempo
+            description: Tempo run
+          saturday:
+            type: long
+            description: Long run
+          sunday:
+            type: recovery
+            description: Recovery
+      build:
+        duration_percent: 40
+        focus: Increased intensity and distance
+        weekly_template:
+          monday:
+            type: easy
+            description: Easy distance run
+          wednesday:
+            type: intervals
+            description: Intervals
+          friday:
+            type: tempo
+            description: Tempo run
+          sunday:
+            type: long
+            description: Long run
+      peak:
+        duration_percent: 15
+        focus: Peaking and specific training
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Quality session
+          thursday:
+            type: tempo
+            description: Tempo run
+          saturday:
+            type: long
+            description: Long run
+          sunday:
+            type: recovery
+            description: Recovery
+      taper:
+        duration_percent: 5
+        focus: Tapering
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Easy run
+          thursday:
+            type: tempo
+            description: Short tempo run
+          saturday:
+            type: easy
+            description: Very easy run
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min easy jog
+        cooldown: 5-10 min easy jog
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progressive warm-up
+        cooldown: 10-15 min cool-down
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min incl. drills and strides
+        cooldown: 10-15 min easy jog
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min very easy jog
+        cooldown: 5-10 min walk/light jog
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min walk
+        cooldown: 5-10 min walk
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Warm-up
+    main_workout_label: Session description
+    cooldown_label: Cool-down
+    intensity_label: Pace
+    duration_label: Time
+  regenerate:
+    button_text: Generate new variant
+    confirmation: Are you sure you want to generate a new variant?
+  weekdays:
+    monday: Monday
+    tuesday: Tuesday
+    wednesday: Wednesday
+    thursday: Thursday
+    friday: Friday
+    saturday: Saturday
+    sunday: Sunday
+footer:
+  races_heading: Races
+  tools_heading: Tools
+  about_heading: About Calendar Alergări
+  privacy: Privacy Policy
+  copyright_year: 2023-2025
+  site_name: Calendar Alergări
+  rights_text: All rights reserved.
+  social_links:
+    facebook: https://www.facebook.com/Calendar Alergări
+    instagram: https://www.instagram.com/Calendar Alergări
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@Calendar Alergări
+accessibility:
+  main_navigation_label: Main navigation
+  breadcrumb_label: Breadcrumbs
+  back_to_top_label: Back to top
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Trending races
+trending_races_description: Here are the races that have received the most attention from runners.
+trending_races_views_last_30_days: views in the last 30 days
+trending_races_most_viewed: Most popular right now
+races_views: views
+recent_races_title: Recently added races
+today: today
+yesterday: yesterday
+days_ago: days ago
+newest_race_badge: Latest addition
+races_count: races
+popular_counties_title: Find races in your region
+popular_cities_title: Find races in your city
+all_counties: All counties
+all_cities: All cities
+category_header_1: Trail Running
+category_type_1: trail
+category_1_races_sub_title_1: Trail Marathon
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Trail Ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail Ultra 100 miles
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Road Races
+category_type_2: road
+category_2_races_sub_title_1: Marathon
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Half Marathon
+category_2_races_sub_ref_2: half-marathon
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: View all races in
+tools_title: Tools for your next race
+home_tools:
+  measure_route:
+    description: Measure a route idea and get a quick distance estimate before you head out.
+  training_plans:
+    description: Find training plans for different goals, levels, and race distances to shape your next block.
+  racetime_estimator:
+    description: Estimate a realistic finish time from earlier results and compare different goal scenarios.
+  pace_calculator:
+    description: Convert pace, speed, and finish time across common race distances while planning training.
+missing_race: Missing a race? Add it here!
+add_race_mp_title: Add your race
+neighboring_countries_title: Races in Romania and neighboring countries
+neighboring_countries_title_specific_country: Races in {country_name}
+neighboring_countries_description: Here are races held in neighboring countries.
+neighboring_countries_description_specific_country: Here we list races held in {country_name}.
+neighboring_countries_neighbors_native: Neighboring countries
+neighboring_countries_all_neighbors_native: All neighboring countries
+section_race_card_header_nieghbors_default: Romania and neighboring countries
+browse_neighboring:
+  title: Browse Races by Neighboring Countries
+  meta_description: Find races in neighboring countries near you. Browse by country to discover running events across borders.
+neighboring_races_title: Races in neighboring countries
+neighboring_countries_show_all: Show all
