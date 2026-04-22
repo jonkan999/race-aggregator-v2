@@ -111,6 +111,15 @@ async function main() {
       description: race.description ?? null,
       type_local: race.type_local ?? null,
       distance_verbose: race.distance_verbose ?? null,
+      additional:
+        typeof race.additional === 'string'
+          ? race.additional
+          : typeof race.additional_info === 'string'
+            ? race.additional_info
+            : null,
+      course_highlights: Array.isArray(race.course_highlights)
+        ? race.course_highlights.filter((entry) => typeof entry === 'string')
+        : null,
     };
 
     const { error: svErr } = await sb.from('race_translations').upsert(sv, {
@@ -127,6 +136,15 @@ async function main() {
         description: ir.description ?? null,
         type_local: ir.type_local ?? null,
         distance_verbose: ir.distance_verbose ?? null,
+        additional:
+          typeof ir.additional === 'string'
+            ? ir.additional
+            : typeof ir.additional_info === 'string'
+              ? ir.additional_info
+              : null,
+        course_highlights: Array.isArray(ir.course_highlights)
+          ? ir.course_highlights.filter((entry) => typeof entry === 'string')
+          : null,
       };
       const { error: enErr } = await sb.from('race_translations').upsert(en, {
         onConflict: 'race_id,locale',

@@ -283,8 +283,11 @@ export function loadIndexYaml(countryCode: string, locale: Locale): IndexYaml {
 }
 
 export function raceListSlug(content: IndexYaml, countryCode: string): string {
-  const label = content.navigation?.['race-list'] ?? '';
-  return slugify(label, countryCode);
+  const primaryLabel = String(content.navigation?.['race-list'] ?? '').trim();
+  const fallbackLabel = String(content.race_list_name ?? content.page_name ?? '').trim();
+  return slugify(primaryLabel, countryCode)
+    || slugify(fallbackLabel, countryCode)
+    || 'race-calendar';
 }
 
 export function findCountryByRaceListSlug(raceList: string, locale: Locale): string | null {

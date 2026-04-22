@@ -1,0 +1,28 @@
+---
+import RaceDetailPage from '../../../components/RaceDetailPage.astro';
+import { getRaceDetailStaticPaths, loadRaceDetailRoute } from '../../../lib/raceDetailRoutePage';
+
+export async function getStaticPaths() {
+  const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+  return getRaceDetailStaticPaths(country);
+}
+
+const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+const { domain } = Astro.params;
+const result = await loadRaceDetailRoute({ countryCode: country, locale: 'native', domain: String(domain ?? '') });
+
+if ('redirectTo' in result) {
+  return Astro.redirect(result.redirectTo, 302);
+}
+---
+
+<RaceDetailPage
+  country={country}
+  locale="native"
+  content={result.content}
+  row={result.row}
+  allRows={result.allRows}
+  canonicalPath={result.canonicalPath}
+  alternateHref={result.alternateHref}
+  noindex={Astro.url.pathname !== result.canonicalPath}
+/>

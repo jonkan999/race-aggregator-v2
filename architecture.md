@@ -18,6 +18,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Production deployment registry: `config/deploy-markets.json`
 - Newsletter popup copy: `newsletter_popup` in the same per-country YAML files
 - Canonical race data: Supabase
+- Translated race-detail content such as `description`, `additional`, and `course_highlights`: `public.race_translations`
 - Anonymous race submissions: `public.race_submissions` + Storage bucket `race-submissions`
 - Newsletter popup events and subscriptions: `crm` schema in Supabase via RPC writes
 - Race-detail page views for homepage trending: `crm.race_detail_page_views` via RPC writes

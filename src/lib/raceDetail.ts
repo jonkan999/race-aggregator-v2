@@ -208,6 +208,11 @@ function payloadValue(row: RaceListRow, key: string): unknown {
   return row.payload && typeof row.payload === 'object' ? row.payload[key] : undefined;
 }
 
+function stringArrayValues(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter((entry): entry is string => typeof entry === 'string' && entry.trim().length > 0);
+}
+
 function cleanMultilineParagraphs(value: string): string[] {
   return value
     .split(/\n\s*\n+/)
@@ -449,12 +454,11 @@ export function getRaceDetailFields(
 
   const additionalPayload = payloadValue(row, 'additional');
   const additionalInfoPayload = payloadValue(row, 'additional_info');
-  const additionalValue =
-    typeof additionalPayload === 'string'
-      ? additionalPayload
-      : typeof additionalInfoPayload === 'string'
-        ? additionalInfoPayload
-        : '';
+  const additionalValue = firstNonEmptyString(
+    translation?.additional,
+    additionalPayload,
+    additionalInfoPayload,
+  );
 
   const organizer =
     typeof payloadValue(row, 'organizer') === 'string' ? String(payloadValue(row, 'organizer')).trim() : '';
@@ -474,11 +478,12 @@ export function getRaceDetailFields(
   const priceTiers = normalizePriceTierGroups(payloadValue(row, 'price_tiers'), translationLocale);
   const isSeries = payloadValue(row, 'is_series') === true;
 
-  const courseHighlights = Array.isArray(payloadValue(row, 'course_highlights'))
-    ? (payloadValue(row, 'course_highlights') as unknown[])
-        .filter((value): value is string => typeof value === 'string' && value.trim().length > 0)
-        .slice(0, 5)
-    : [];
+  const translatedCourseHighlights = stringArrayValues(translation?.course_highlights);
+  const courseHighlights = (
+    translatedCourseHighlights.length > 0
+      ? translatedCourseHighlights
+      : stringArrayValues(payloadValue(row, 'course_highlights'))
+  ).slice(0, 5);
 
   const socialLinks = [
     typeof payloadValue(row, 'fb_link') === 'string' && String(payloadValue(row, 'fb_link')).trim()

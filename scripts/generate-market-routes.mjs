@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
+import { transliterateForSlug } from '../src/lib/slugifyShared.js';
 
 const repoRoot = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const pagesDir = path.join(repoRoot, 'src', 'pages');
@@ -35,17 +36,7 @@ function loadYaml(filePath) {
 }
 
 function slugify(input, countryCode) {
-  let s = String(input ?? '').toLowerCase();
-  const cc = String(countryCode ?? '').toLowerCase();
-  if (cc === 'se') {
-    s = s.replace(/å/g, 'a').replace(/ä/g, 'a').replace(/ö/g, 'o');
-  } else if (cc === 'no' || cc === 'dk') {
-    s = s.replace(/å/g, 'a').replace(/æ/g, 'a').replace(/ø/g, 'o');
-  } else if (cc === 'fi') {
-    s = s.replace(/å/g, 'a').replace(/ä/g, 'a').replace(/ö/g, 'o');
-  } else if (cc === 'de') {
-    s = s.replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
-  }
+  let s = transliterateForSlug(input, countryCode);
   s = s.normalize('NFKD').replace(/\p{M}/gu, '');
   s = s.replace(/[^a-z0-9\s-]/g, '');
   s = s.replace(/[\s-]+/g, '-').replace(/^-|-$/g, '');
@@ -78,7 +69,7 @@ function auxiliaryLabel(content, pageKey) {
 function routeSegment(content, pageKey, locale) {
   const label = String(auxiliaryLabel(content, pageKey) ?? '').trim();
   const fallback = locale === 'en' ? englishTemplates[pageKey] : nativeTemplates[pageKey];
-  return label ? slugify(label, country) : fallback;
+  return (label ? slugify(label, country) : '') || fallback;
 }
 
 function racePageFolder(content, locale) {

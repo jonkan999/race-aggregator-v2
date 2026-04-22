@@ -4,6 +4,8 @@ export type RaceTranslationRow = {
   type_local: string | null;
   distance_verbose: string | null;
   description?: string | null;
+  additional?: string | null;
+  course_highlights?: string[] | null;
 };
 
 /** Row shape for list + SSG (matches RPC / Supabase select). */

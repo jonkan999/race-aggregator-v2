@@ -62,7 +62,7 @@ export function auxiliaryRouteSegment(
   locale: Locale,
 ): string {
   const label = auxiliaryLabel(content, pageKey);
-  return label ? slugify(label, countryCode) : fallbackAuxiliarySegment(pageKey, locale);
+  return (label ? slugify(label, countryCode) : '') || fallbackAuxiliarySegment(pageKey, locale);
 }
 
 export function localRacePageFolder(content: IndexYaml, locale: Locale): string {

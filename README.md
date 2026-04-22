@@ -47,6 +47,7 @@ From the repo root (make them executable once: `chmod +x scripts/shell/*.sh`):
 | [`scripts/shell/supabase-login.sh`](scripts/shell/supabase-login.sh) | `npx supabase login` — opens the browser and stores a personal access token |
 | [`scripts/shell/supabase-link.sh`](scripts/shell/supabase-link.sh) | `npx supabase link --project-ref <ref>` |
 | [`scripts/shell/supabase-db-push.sh`](scripts/shell/supabase-db-push.sh) | `npx supabase db push` — applies [`supabase/migrations/`](supabase/migrations/) to the linked project |
+| [`scripts/shell/test-market.sh`](scripts/shell/test-market.sh) | export race-list snapshot, rebuild browse SEO cache, export markers, build, then start `npm run dev` for one market |
 
 Example:
 
@@ -66,7 +67,7 @@ More detail: [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started
 
 ### Seed races (optional)
 
-Loads `data/countries/{code}/final_races.json` and `final_races_int.json` for the selected market. Put **`SUPABASE_SECRET_KEY`** in `.env` (or export it); the script sources `.env` when present.
+Loads `data/countries/{code}/final_races.json` and `final_races_int.json` for the selected market, including translated race-detail fields such as `description`, `additional`, and `course_highlights`. Put **`SUPABASE_SECRET_KEY`** in `.env` (or export it); the script sources `.env` when present.
 
 ```bash
 ./scripts/shell/seed-races.sh se
@@ -294,6 +295,12 @@ MARKET_CODE=cz npm run test:e2e
 ```
 
 Use the same pattern for any other market code.
+
+Or use the helper that prepares the market snapshot + markers and then starts the dev server:
+
+```bash
+./scripts/shell/test-market.sh cz
+```
 
 For local development against collector-owned market data before syncing it into this repo, set `MARKET_DATA_ROOT=/abs/path/to/race-collector-v2/data/countries` and run a separate dev server per market with the desired `MARKET_CODE`.
 

@@ -60,6 +60,7 @@ const hasEstimatedDates = detail.dateEntries.some((entry) => entry.isEstimated);
 const hasGalleryImages = detail.images.length > 0;
 const galleryImages = detail.images.slice(1);
 const hasPriceTiers = detail.priceTiers.length > 0;
+const hasMapCoordinates = row.latitude != null && row.longitude != null;
 const primaryDetailDate = detail.displayDateEntries[0] ?? detail.dateEntries[0];
 const dateSummary = detail.displayDateEntries.map((entry) => entry.label).join(', ');
 const distinctActionLinks = [
@@ -584,20 +585,24 @@ const newsletterContext = {
           ) : null
         }
 
-        <article class="race-detail-map">
-          <div class="race-detail-map__header">
-            <h2>{String(content.race_page_place_label ?? '')}</h2>
-          </div>
-          <RaceDetailMapIsland
-            client:load
-            mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
-            latitude={row.latitude}
-            longitude={row.longitude}
-            zoom={Number.parseInt(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '8'), 10) || 8}
-            markerLabel={detail.location || detail.raceName}
-            mapNotConfiguredMessage={String(content.map_not_configured ?? '')}
-          />
-        </article>
+        {
+          hasMapCoordinates ? (
+            <article class="race-detail-map">
+              <div class="race-detail-map__header">
+                <h2>{String(content.race_page_place_label ?? '')}</h2>
+              </div>
+              <RaceDetailMapIsland
+                client:load
+                mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
+                latitude={row.latitude}
+                longitude={row.longitude}
+                zoom={Number.parseInt(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '8'), 10) || 8}
+                markerLabel={detail.location || detail.raceName}
+                mapNotConfiguredMessage={String(content.map_not_configured ?? '')}
+              />
+            </article>
+          ) : null
+        }
       </div>
     </div>
 

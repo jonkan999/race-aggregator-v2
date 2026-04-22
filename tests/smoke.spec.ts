@@ -5,6 +5,7 @@ import {
   getBoostedPopularityDisplayValue,
   type HomeRaceEntry,
 } from '../src/lib/homePage';
+import { getRaceDetailFields } from '../src/lib/raceDetail';
 import type { RaceListRow } from '../src/lib/raceListRow';
 import {
   displayRaceDate,
@@ -287,6 +288,53 @@ test('buildTrendingRaces falls back to featured entries when analytics are missi
       upcomingEndComparable: upcomingWindowEnd(),
     }).map((race) => race.name),
   ).toEqual(['Featured 2', 'Featured 3']);
+});
+
+test('race detail prefers translated additional info and course highlights on English pages', () => {
+  const detail = getRaceDetailFields(
+    {
+      id: 'detail-race',
+      domain_name: 'detail-race',
+      county: 'stockholm',
+      race_type: 'road',
+      origin_country: 'se',
+      race_dates: [['20260510', '20260510']],
+      latitude: null,
+      longitude: null,
+      distance_m: [10000],
+      website: null,
+      payload: {
+        description: 'Native description',
+        additional: 'Native additional info',
+        course_highlights: ['Native climb', 'Native finish'],
+      },
+      race_translations: [
+        {
+          locale: 'sv',
+          name: 'Detaljloppet',
+          type_local: 'Landsväg',
+          distance_verbose: '10 km',
+          description: 'Native description',
+          additional: 'Native additional info',
+          course_highlights: ['Native climb', 'Native finish'],
+        },
+        {
+          locale: 'en',
+          name: 'Detail Race',
+          type_local: 'Road',
+          distance_verbose: '10 km',
+          description: 'English description',
+          additional: 'English additional info',
+          course_highlights: ['English climb', 'English finish'],
+        },
+      ],
+    },
+    loadIndexYaml('se', 'en'),
+    'en',
+  );
+
+  expect(detail.additionalInfo).toBe('English additional info');
+  expect(detail.courseHighlights).toEqual(['English climb', 'English finish']);
 });
 
 test('browse overview renders', async ({ page }) => {

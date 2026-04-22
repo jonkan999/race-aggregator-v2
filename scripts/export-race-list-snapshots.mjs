@@ -10,8 +10,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const countriesRoot = resolveCountriesRoot(root);
 
-const listSelect =
+const legacyListSelect =
   'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description )';
+
+const listSelect =
+  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description, additional, course_highlights )';
+
+function missingTranslationDetailColumns(error) {
+  if (!error || typeof error !== 'object') return false;
+  return error.code === '42703' || String(error.message ?? '').includes('race_translations_1.additional does not exist');
+}
 
 function toFiniteNumber(value) {
   if (typeof value === 'number' && Number.isFinite(value)) return value;
@@ -130,6 +138,15 @@ function loadRowsFromJson(countryCode) {
           type_local: row.type_local ?? null,
           distance_verbose: row.distance_verbose ?? null,
           description: row.description ?? null,
+          additional:
+            typeof row.additional === 'string'
+              ? row.additional
+              : typeof row.additional_info === 'string'
+                ? row.additional_info
+                : null,
+          course_highlights: Array.isArray(row.course_highlights)
+            ? row.course_highlights.filter((entry) => typeof entry === 'string')
+            : null,
         },
         ...(intRow
           ? [
@@ -139,10 +156,63 @@ function loadRowsFromJson(countryCode) {
                 type_local: intRow.type_local ?? null,
                 distance_verbose: intRow.distance_verbose ?? null,
                 description: intRow.description ?? null,
+                additional:
+                  typeof intRow.additional === 'string'
+                    ? intRow.additional
+                    : typeof intRow.additional_info === 'string'
+                      ? intRow.additional_info
+                      : null,
+                course_highlights: Array.isArray(intRow.course_highlights)
+                  ? intRow.course_highlights.filter((entry) => typeof entry === 'string')
+                  : null,
               },
             ]
           : []),
       ],
+    };
+  });
+}
+
+function mergeTranslationDetailFields(primaryRows, fallbackRows) {
+  const fallbackByDomain = new Map(fallbackRows.map((row) => [row.domain_name, row]));
+
+  return primaryRows.map((row) => {
+    const fallbackRow = fallbackByDomain.get(row.domain_name);
+    if (!fallbackRow) return row;
+
+    const translations = Array.isArray(row.race_translations) ? row.race_translations : [];
+    const fallbackTranslations = Array.isArray(fallbackRow.race_translations)
+      ? fallbackRow.race_translations
+      : [];
+    const fallbackByLocale = new Map(fallbackTranslations.map((entry) => [entry.locale, entry]));
+    const mergedTranslations = translations.map((entry) => {
+      const fallback = fallbackByLocale.get(entry.locale);
+      if (!fallback) return entry;
+
+      const currentHighlights = Array.isArray(entry.course_highlights) ? entry.course_highlights : [];
+      const fallbackHighlights = Array.isArray(fallback.course_highlights)
+        ? fallback.course_highlights
+        : null;
+
+      return {
+        ...entry,
+        additional:
+          typeof entry.additional === 'string' && entry.additional.trim().length > 0
+            ? entry.additional
+            : fallback.additional ?? null,
+        course_highlights:
+          currentHighlights.length > 0 ? currentHighlights : fallbackHighlights,
+      };
+    });
+
+    for (const fallback of fallbackTranslations) {
+      if (mergedTranslations.some((entry) => entry.locale === fallback.locale)) continue;
+      mergedTranslations.push(fallback);
+    }
+
+    return {
+      ...row,
+      race_translations: mergedTranslations,
     };
   });
 }
@@ -178,21 +248,33 @@ function resolveOutputDir() {
 }
 
 async function exportCountrySnapshot(sb, countryCode, outputDir) {
-  const { data, error } = await sb
+  let { data, error } = await sb
     .from('races')
     .select(listSelect)
     .eq('country_code', countryCode)
     .eq('published', true)
     .limit(5000);
 
+  if (error && missingTranslationDetailColumns(error)) {
+    const legacyResponse = await sb
+      .from('races')
+      .select(legacyListSelect)
+      .eq('country_code', countryCode)
+      .eq('published', true)
+      .limit(5000);
+    data = legacyResponse.data;
+    error = legacyResponse.error;
+  }
+
   if (error) throw error;
 
   const rankingData = await loadRaceDetailPageViewRankings(sb, countryCode);
 
   const jsonRows = loadRowsFromJson(countryCode);
-  const baseRows = jsonRows.length > (data ?? []).length ? jsonRows : (data ?? []);
+  const mergedDbRows = mergeTranslationDetailFields(data ?? [], jsonRows);
+  const baseRows = jsonRows.length > mergedDbRows.length ? jsonRows : mergedDbRows;
   const rows = mergeRaceDetailPageViewRankings(baseRows, rankingData ?? []);
-  const source = jsonRows.length > (data ?? []).length ? 'json' : 'supabase';
+  const source = jsonRows.length > mergedDbRows.length ? 'json' : 'supabase';
 
   const outPath = path.join(outputDir, `${countryCode}.json`);
   const body = {

@@ -1,14 +1,18 @@
+import { transliterateForSlug } from './slugifyShared.js';
+
 export function normalizeCityName(value: string): string {
-  return value
+  const normalized = transliterateForSlug(value, '')
     .trim()
     .toLowerCase()
     .replaceAll('oe', 'o')
     .replaceAll('ae', 'a')
     .replaceAll('aa', 'a')
     .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\p{M}/gu, '')
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();
+
+  return normalized;
 }
 
 export function cityNamesMatch(left: string, right: string): boolean {

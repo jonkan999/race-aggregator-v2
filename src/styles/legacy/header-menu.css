@@ -88,13 +88,9 @@
   /* Remove default margins */
 }
 .main-nav-container {
+  justify-content: flex-start;
   padding-left: 1rem;
   padding-bottom: 2rem;
-}
-@media (max-width: 59em) {
-  .main-nav-container {
-    justify-content: flex-start;
-  }
 }
 @media (max-width: 44em) {
   .main-nav-container {

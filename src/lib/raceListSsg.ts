@@ -27,6 +27,12 @@ const snapshotCache = new Map<
   }>
 >();
 
+const legacyListSelect =
+  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description )';
+
+const listSelect =
+  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description, additional, course_highlights )';
+
 export type RaceListSnapshotFilters = {
   county?: string | null;
   raceType?: string | null;
@@ -206,6 +212,15 @@ function loadAllRowsFromJson(countryCode: string): SsgRaceRow[] {
         type_local: (r.type_local as string) ?? null,
         distance_verbose: (r.distance_verbose as string) ?? null,
         description: (r.description as string) ?? null,
+        additional:
+          typeof r.additional === 'string'
+            ? r.additional
+            : typeof r.additional_info === 'string'
+              ? r.additional_info
+              : null,
+        course_highlights: Array.isArray(r.course_highlights)
+          ? r.course_highlights.filter((entry): entry is string => typeof entry === 'string')
+          : null,
       },
     ];
     if (ir) {
@@ -215,6 +230,15 @@ function loadAllRowsFromJson(countryCode: string): SsgRaceRow[] {
         type_local: ir.type_local ?? null,
         distance_verbose: ir.distance_verbose ?? null,
         description: ir.description ?? null,
+        additional:
+          typeof ir.additional === 'string'
+            ? ir.additional
+            : typeof ir.additional_info === 'string'
+              ? ir.additional_info
+              : null,
+        course_highlights: Array.isArray(ir.course_highlights)
+          ? ir.course_highlights.filter((entry): entry is string => typeof entry === 'string')
+          : null,
       });
     }
     const id = String((r.consolidated_ids as string[])?.[0] ?? domain);
@@ -253,8 +277,57 @@ function loadAllRowsFromBuildSnapshot(countryCode: string): SsgRaceRow[] | null 
   }
 }
 
-const listSelect =
-  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description )';
+function missingTranslationDetailColumns(error: unknown): boolean {
+  if (!error || typeof error !== 'object') return false;
+  const code = 'code' in error ? error.code : null;
+  const message = 'message' in error ? String(error.message) : '';
+  return code === '42703' || message.includes('race_translations_1.additional does not exist');
+}
+
+function mergeTranslationDetailFields(
+  primaryRows: SsgRaceRow[],
+  fallbackRows: SsgRaceRow[],
+): SsgRaceRow[] {
+  const fallbackByDomain = new Map(fallbackRows.map((row) => [row.domain_name, row]));
+
+  return primaryRows.map((row) => {
+    const fallbackRow = fallbackByDomain.get(row.domain_name);
+    if (!fallbackRow) return row;
+
+    const translations = row.race_translations ?? [];
+    const fallbackTranslations = fallbackRow.race_translations ?? [];
+    const fallbackByLocale = new Map(fallbackTranslations.map((entry) => [entry.locale, entry]));
+    const mergedTranslations = translations.map((entry) => {
+      const fallback = fallbackByLocale.get(entry.locale);
+      if (!fallback) return entry;
+
+      const currentHighlights = Array.isArray(entry.course_highlights) ? entry.course_highlights : [];
+      const fallbackHighlights = Array.isArray(fallback.course_highlights)
+        ? fallback.course_highlights
+        : null;
+
+      return {
+        ...entry,
+        additional:
+          typeof entry.additional === 'string' && entry.additional.trim().length > 0
+            ? entry.additional
+            : fallback.additional ?? null,
+        course_highlights:
+          currentHighlights.length > 0 ? currentHighlights : fallbackHighlights,
+      };
+    });
+
+    for (const fallback of fallbackTranslations) {
+      if (mergedTranslations.some((entry) => entry.locale === fallback.locale)) continue;
+      mergedTranslations.push(fallback);
+    }
+
+    return {
+      ...row,
+      race_translations: mergedTranslations,
+    };
+  });
+}
 
 async function loadAllRowsFromSupabase(countryCode: string): Promise<SsgRaceRow[] | null> {
   const url = process.env.SUPABASE_URL || process.env.PUBLIC_SUPABASE_URL;
@@ -264,12 +337,22 @@ async function loadAllRowsFromSupabase(countryCode: string): Promise<SsgRaceRow[
 
   try {
     const sb = createClient(url, secret);
-    const { data, error: dataErr } = await sb
+    let { data, error: dataErr } = await sb
       .from('races')
       .select(listSelect)
       .eq('country_code', countryCode)
       .eq('published', true)
       .limit(5000);
+    if (dataErr && missingTranslationDetailColumns(dataErr)) {
+      const legacyResponse = await sb
+        .from('races')
+        .select(legacyListSelect)
+        .eq('country_code', countryCode)
+        .eq('published', true)
+        .limit(5000);
+      data = legacyResponse.data;
+      dataErr = legacyResponse.error;
+    }
     if (dataErr || !data) return null;
     return [...(data as unknown as SsgRaceRow[])].sort(compareRaceRowsByDateThenDomain);
   } catch {
@@ -293,13 +376,14 @@ export async function getAllRaceListRows(countryCode: string): Promise<{
       return { rows: fromSnapshot, source: 'json' as const };
     }
 
-    const fromDb = await loadAllRowsFromSupabase(countryCode);
     const fromJson = loadAllRowsFromJson(countryCode);
+    const fromDb = await loadAllRowsFromSupabase(countryCode);
     if (fromDb && fromDb.length > 0) {
+      const mergedFromDb = mergeTranslationDetailFields(fromDb, fromJson);
       if (fromJson.length > fromDb.length) {
         return { rows: fromJson, source: 'json' as const };
       }
-      return { rows: fromDb, source: 'supabase' as const };
+      return { rows: mergedFromDb, source: 'supabase' as const };
     }
     if (fromJson.length > 0) {
       return { rows: fromJson, source: 'json' as const };
