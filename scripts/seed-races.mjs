@@ -8,7 +8,7 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
+import { getNativeLocaleForCountry, resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -18,6 +18,7 @@ const args = process.argv.slice(2);
 const flags = new Set(args.filter((value) => value.startsWith('--')));
 const positional = args.filter((value) => !value.startsWith('--'));
 const country = resolveCountryArg(positional[0]);
+const nativeLocale = getNativeLocaleForCountry(root, country);
 const replaceExisting = flags.has('--replace');
 const showHelp = flags.has('--help') || flags.has('-h');
 
@@ -106,7 +107,7 @@ async function main() {
 
     const sv = {
       race_id: raceId,
-      locale: 'sv',
+      locale: nativeLocale,
       name: race.name ?? null,
       description: race.description ?? null,
       type_local: race.type_local ?? null,
@@ -126,6 +127,15 @@ async function main() {
       onConflict: 'race_id,locale',
     });
     if (svErr) throw svErr;
+
+    if (nativeLocale !== 'sv') {
+      const { error: cleanupErr } = await sb
+        .from('race_translations')
+        .delete()
+        .eq('race_id', raceId)
+        .eq('locale', 'sv');
+      if (cleanupErr) throw cleanupErr;
+    }
 
     const ir = intByDomain.get(race.domain_name);
     if (ir) {

@@ -51,6 +51,9 @@ type PaginationToken = number | 'ellipsis';
 
 type RpcResult = { total?: number; rows?: RaceListRow[] };
 type CardTopLocation = { label: string; flagCode: string | null };
+const ORDERED_MONTH_KEYS = Array.from({ length: 12 }, (_, index) =>
+  String(index + 1).padStart(2, '0'),
+);
 
 function countryLabelForNeighbor(
   code: string,
@@ -1149,6 +1152,13 @@ export default function RaceListPageIsland(props: {
   ]);
 
   const highlightInsertionIndex = rows.length > 1 ? 1 : 0;
+  const orderedMonthEntries = useMemo(
+    () =>
+      ORDERED_MONTH_KEYS.map((monthKey) => [monthKey, monthMapping[monthKey]] as const).filter(
+        (([, label]) => typeof label === 'string' && label.length > 0),
+      ),
+    [monthMapping],
+  );
 
   return (
     <>
@@ -1194,7 +1204,7 @@ export default function RaceListPageIsland(props: {
           >
             {filterMonths}
           </button>
-          {Object.entries(monthMapping).map(([k, label]) => (
+          {orderedMonthEntries.map(([k, label]) => (
             <button
               key={k}
               type="button"

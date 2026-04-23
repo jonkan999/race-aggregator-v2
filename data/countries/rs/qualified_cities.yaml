@@ -4,4 +4,40 @@ selection_rule:
   min_eligible_races: 3
   similarity_distance_km: 40.0
   similarity_jaccard: 0.85
-cities: []
+cities:
+- name: Novi Sad
+  original_name: Novi Sad
+  population: 260438
+  latitude: 45.255134
+  longitude: 19.845176
+  nearby_race_count: 18
+- name: Užice
+  original_name: Uzice
+  population: 48539
+  latitude: 43.856496
+  longitude: 19.840273
+  nearby_race_count: 10
+- name: Beograd
+  original_name: Belgrade
+  population: 1197114
+  latitude: 44.815332
+  longitude: 20.445659
+  nearby_race_count: 9
+- name: Čačak
+  original_name: Cacak
+  population: 69598
+  latitude: 43.891433
+  longitude: 20.349162
+  nearby_race_count: 6
+- name: Kragujevac
+  original_name: Kragujevac
+  population: 146315
+  latitude: 44.013179
+  longitude: 20.919635
+  nearby_race_count: 5
+- name: Valjevo
+  original_name: Valjevo
+  population: 56145
+  latitude: 44.270872
+  longitude: 19.88633
+  nearby_race_count: 4

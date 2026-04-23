@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
+import { nativeTranslationLocale } from './content';
 import { resolveMarketDataRoot } from './market';
 import { RACE_LIST_PAGE_SIZE } from './raceListConfig';
 import { isDomesticOrigin } from './neighboringSelection';
@@ -186,6 +187,7 @@ function applySnapshotFilters(
 }
 
 function loadAllRowsFromJson(countryCode: string): SsgRaceRow[] {
+  const nativeLocale = nativeTranslationLocale(countryCode);
   const base = dataCountryDir(countryCode);
   const localPath = fs.existsSync(path.join(base, 'final_races_w_neighbors.json'))
     ? path.join(base, 'final_races_w_neighbors.json')
@@ -207,7 +209,7 @@ function loadAllRowsFromJson(countryCode: string): SsgRaceRow[] {
     const ir = intByDomain.get(domain) as Record<string, string | null | undefined> | undefined;
     const translations: RaceTranslationRow[] = [
       {
-        locale: 'sv',
+        locale: nativeLocale,
         name: (r.name as string) ?? null,
         type_local: (r.type_local as string) ?? null,
         distance_verbose: (r.distance_verbose as string) ?? null,

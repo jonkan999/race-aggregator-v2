@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { getActiveMarketCode, resolveCountriesRoot } from './lib/market-config.mjs';
+import { getActiveMarketCode, getNativeLocaleForCountry, resolveCountriesRoot } from './lib/market-config.mjs';
 import { loadLocalEnvFiles } from './lib/load-env.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -104,6 +104,7 @@ async function loadRaceDetailPageViewRankings(sb, countryCode) {
 }
 
 function loadRowsFromJson(countryCode) {
+  const nativeLocale = getNativeLocaleForCountry(root, countryCode);
   const countryDir = path.join(countriesRoot, countryCode);
   const localPath = fs.existsSync(path.join(countryDir, 'final_races_w_neighbors.json'))
     ? path.join(countryDir, 'final_races_w_neighbors.json')
@@ -133,7 +134,7 @@ function loadRowsFromJson(countryCode) {
       payload: row,
       race_translations: [
         {
-          locale: 'sv',
+          locale: nativeLocale,
           name: row.name ?? null,
           type_local: row.type_local ?? null,
           distance_verbose: row.distance_verbose ?? null,

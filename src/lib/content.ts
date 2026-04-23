@@ -282,6 +282,12 @@ export function loadIndexYaml(countryCode: string, locale: Locale): IndexYaml {
   return resolveContentPlaceholders(doc) as IndexYaml;
 }
 
+export function nativeTranslationLocale(countryCode: string): string {
+  const content = loadIndexYaml(countryCode, 'native');
+  const locale = String(content.country_language_code ?? countryCode).trim().toLowerCase();
+  return locale || countryCode;
+}
+
 export function raceListSlug(content: IndexYaml, countryCode: string): string {
   const primaryLabel = String(content.navigation?.['race-list'] ?? '').trim();
   const fallbackLabel = String(content.race_list_name ?? content.page_name ?? '').trim();

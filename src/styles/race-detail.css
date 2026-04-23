@@ -183,7 +183,7 @@ body.race-detail-page {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(28rem, 0.85fr);
   gap: 1.6rem;
-  margin-top: 1.8rem;
+  margin: 1.8rem 0;
 }
 
 .race-detail-highlights {
@@ -434,6 +434,7 @@ body.race-detail-page {
 
 .race-detail-section-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;

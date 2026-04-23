@@ -6,7 +6,8 @@ import {
   type HomeRaceEntry,
 } from '../src/lib/homePage';
 import { getRaceDetailFields } from '../src/lib/raceDetail';
-import type { RaceListRow } from '../src/lib/raceListRow';
+import { pickTranslation, type RaceListRow } from '../src/lib/raceListRow';
+import { getAllRaceListRows } from '../src/lib/raceListSsg';
 import {
   displayRaceDate,
   upcomingWindowEnd,
@@ -335,6 +336,28 @@ test('race detail prefers translated additional info and course highlights on En
 
   expect(detail.additionalInfo).toBe('English additional info');
   expect(detail.courseHighlights).toEqual(['English climb', 'English finish']);
+});
+
+test('JSON race-list fallback preserves the market native locale for non-Swedish markets', async () => {
+  const content = loadIndexYaml('bg', 'native');
+  const nativeLocale = String(content.country_language_code ?? 'bg').trim().toLowerCase();
+  const { rows } = await getAllRaceListRows('bg');
+  const row = rows.find((candidate) => {
+    if (typeof candidate.payload?.description !== 'string' || !candidate.payload.description.trim()) {
+      return false;
+    }
+    return (
+      Array.isArray(candidate.race_translations) &&
+      candidate.race_translations.some((translation) => translation.locale === 'en')
+    );
+  });
+
+  expect(row).toBeTruthy();
+  expect(row?.race_translations?.some((translation) => translation.locale === nativeLocale)).toBe(true);
+  expect(row?.race_translations?.some((translation) => translation.locale === 'sv')).toBe(false);
+  expect(pickTranslation(row?.race_translations, nativeLocale)?.description).toBe(
+    row?.payload?.description,
+  );
 });
 
 test('browse overview renders', async ({ page }) => {

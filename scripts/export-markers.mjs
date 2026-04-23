@@ -10,13 +10,14 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
+import { getNativeLocaleForCountry, resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
 import { loadLocalEnvFiles } from './lib/load-env.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const countriesRoot = resolveCountriesRoot(root);
 const country = resolveCountryArg(process.argv[2]);
+const nativeLocale = getNativeLocaleForCountry(root, country);
 loadLocalEnvFiles(root);
 
 function writeMarkers(markers) {
@@ -72,7 +73,7 @@ function fromJsonRace(r) {
 }
 
 function fromSnapshotRow(row, countryCode) {
-  const nativeTranslation = translationForLocale(row, 'sv');
+  const nativeTranslation = translationForLocale(row, nativeLocale);
   const payload =
     row?.payload && typeof row.payload === 'object' && !Array.isArray(row.payload) ? row.payload : {};
   return decorateMarker(
