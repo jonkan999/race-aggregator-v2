@@ -212,7 +212,7 @@ const toolIconViewBoxes: Record<string, string> = {
                     {trendingMostViewed && <span class="home-badge home-badge--primary">{trendingMostViewed}</span>}
                     {
                       trendingLead.popularityDisplayValue != null && trendingViewsLabel && (
-                        <span class="home-badge">{`${trendingLead.popularityDisplayValue} ${trendingViewsLabel}`}</span>
+                        <span class="home-badge home-badge--secondary">{`${trendingLead.popularityDisplayValue} ${trendingViewsLabel}`}</span>
                       )
                     }
                   </div>
@@ -296,7 +296,7 @@ const toolIconViewBoxes: Record<string, string> = {
             <div class="home-fresh-lead__body">
               <div class="home-fresh-lead__badges">
                 {newestRaceBadge && <span class="home-badge home-badge--primary">{newestRaceBadge}</span>}
-                {recentLead.typeLabel ? <span class="home-badge">{recentLead.typeLabel}</span> : null}
+                {recentLead.typeLabel ? <span class="home-badge home-badge--secondary">{recentLead.typeLabel}</span> : null}
               </div>
               <h3>{recentLead.name}</h3>
               <p class="home-fresh-lead__meta">

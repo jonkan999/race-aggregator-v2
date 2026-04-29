@@ -151,8 +151,8 @@ month_mapping:
   '05': Maj
   '06': Juni
   '07': Juli
-  08: Augusti
-  09: September
+  '08': Augusti
+  '09': September
   '10': Oktober
   '11': November
   '12': December
@@ -164,8 +164,8 @@ month_mapping_short:
   '05': maj
   '06': juni
   '07': juli
-  08: aug.
-  09: sep.
+  '08': aug.
+  '09': sep.
   '10': okt.
   '11': nov.
   '12': dec.
@@ -202,7 +202,7 @@ map_toggle_desktop: Visa karta
 map_toggle_desktop_active: Dölj karta
 map_toggle_mobile: Karta
 map_toggle_mobile_list: Lista
-race_page_map_zoom: '4'
+race_page_map_zoom: '6'
 pagination:
   results_text: av
   events_text: Lopp
@@ -878,6 +878,7 @@ browse_seo_indexing:
     - 10_km
     - half_marathon
     - marathon
+    - backyard
     - 50_km
     - 100_km
     - 50_miles
@@ -888,11 +889,13 @@ browse_seo_indexing:
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
     allowed_category_keys:
     - 5_km
     - 10_km
     - half_marathon
     - marathon
+    - backyard
     - 50_km
     - 100_km
     - 50_miles
@@ -903,18 +906,21 @@ browse_seo_indexing:
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
   race_type_month_pages:
     enabled: true
     min_race_count: 6
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
   race_type_city_pages:
     enabled: false
     min_race_count: 5
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
 auth_pages:
   confirm_success: Din e-postadress är nu bekräftad och ditt konto är aktivt.
   confirm_ready: Du kan nu fortsätta att använda Loppkartan.

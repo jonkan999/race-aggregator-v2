@@ -366,6 +366,14 @@
   color: var(--color-primary-shade);
 }
 
+.home-badge--secondary {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 1.2rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+}
+
 .home-badge--primary {
   background: var(--color-highlight);
 }
@@ -626,8 +634,8 @@
 }
 
 .home-fresh-lead {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
   padding-bottom: 1.8rem;
 }
 .home-fresh-lead h3 {
@@ -640,6 +648,13 @@
 
 .home-fresh-lead__body {
   padding: 1.8rem;
+}
+
+@media (max-width: 48em) {
+
+  .home-fresh-lead__body {
+    transform: translateY(-5rem);
+  }
 }
 
 .home-fresh-list {

@@ -171,8 +171,8 @@ month_mapping:
   '05': May
   '06': June
   '07': July
-  08: August
-  09: September
+  '08': August
+  '09': September
   '10': October
   '11': November
   '12': December
@@ -184,8 +184,8 @@ month_mapping_short:
   '05': May
   '06': Jun
   '07': Jul
-  08: Aug
-  09: Sep
+  '08': Aug
+  '09': Sep
   '10': Oct
   '11': Nov
   '12': Dec
@@ -437,6 +437,7 @@ browse_seo_indexing:
     - 10_km
     - half_marathon
     - marathon
+    - backyard
     - 50_km
     - 100_km
     - 50_miles
@@ -447,11 +448,13 @@ browse_seo_indexing:
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
     allowed_category_keys:
     - 5_km
     - 10_km
     - half_marathon
     - marathon
+    - backyard
     - 50_km
     - 100_km
     - 50_miles
@@ -462,18 +465,21 @@ browse_seo_indexing:
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
   race_type_month_pages:
     enabled: true
     min_race_count: 6
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
   race_type_city_pages:
     enabled: false
     min_race_count: 5
     allowed_race_type_keys:
     - road
     - trail
+    - backyard
 browse_by_category:
   button: Browse by category
   helper_text: Find races through predefined filters and combinations
