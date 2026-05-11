@@ -34,7 +34,9 @@ type ActivePopup = NewsletterPopupResolvedContent & {
   triggerType: NewsletterPopupTrigger;
 };
 
-type NewsletterServingStrategyId = 'standard' | 'delayed_second_page';
+const STANDARD_SERVING_STRATEGY = 'standard' as const;
+
+type NewsletterServingStrategyId = typeof STANDARD_SERVING_STRATEGY;
 
 type NewsletterSessionState = {
   pageViewCount: number;
@@ -122,22 +124,8 @@ function getOrCreateSessionId(config: NewsletterPopupConfig): string {
   return next;
 }
 
-function getOrSelectServingStrategy(config: NewsletterPopupConfig): NewsletterServingStrategyId {
-  const key = storageKey(config.siteKey, 'serving-strategy');
-  const stored = readStorage(localStorage, key);
-  if (stored === 'standard' || stored === 'delayed_second_page') {
-    return stored;
-  }
-
-  const next: NewsletterServingStrategyId =
-    Math.random() < 0.5 ? 'standard' : 'delayed_second_page';
-  writeStorage(localStorage, key, next);
-  return next;
-}
-
 function registerSessionPageView(config: NewsletterPopupConfig): NewsletterSessionState {
   const sessionId = getOrCreateSessionId(config);
-  const servingStrategyId = getOrSelectServingStrategy(config);
   const countKey = storageKey(config.siteKey, 'page-view-count');
   const lastPathKey = storageKey(config.siteKey, 'last-page-path');
   const currentPath = window.location.pathname;
@@ -159,30 +147,21 @@ function registerSessionPageView(config: NewsletterPopupConfig): NewsletterSessi
   return {
     pageViewCount,
     sessionId,
-    servingStrategyId,
+    servingStrategyId: STANDARD_SERVING_STRATEGY,
   };
 }
 
 function servingPlan(
   popup: NewsletterPopupResolvedContent,
-  sessionState: NewsletterSessionState,
 ): {
   allowAutoTrigger: boolean;
   delayMs: number;
   scrollThreshold: number;
 } {
-  if (sessionState.servingStrategyId === 'standard') {
-    return {
-      allowAutoTrigger: true,
-      delayMs: popup.triggerDelayMs,
-      scrollThreshold: popup.scrollThreshold,
-    };
-  }
-
   return {
-    allowAutoTrigger: sessionState.pageViewCount >= 2,
-    delayMs: Math.round(popup.triggerDelayMs * 1.75),
-    scrollThreshold: Math.min(0.82, popup.scrollThreshold + 0.24),
+    allowAutoTrigger: true,
+    delayMs: popup.triggerDelayMs,
+    scrollThreshold: popup.scrollThreshold,
   };
 }
 
@@ -437,7 +416,7 @@ export default function NewsletterPopup({ context }: Props) {
     if (!config || !popupDraft || !popupEnabled || !sessionState || activePopup) return;
     if (!canShowPopup(config)) return;
 
-    const plan = servingPlan(popupDraft, sessionState);
+    const plan = servingPlan(popupDraft);
     if (!plan.allowAutoTrigger) return;
 
     let triggered = false;

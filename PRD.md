@@ -44,7 +44,7 @@
 | Astro SSG | Per-market routes, YAML-driven titles/copy, **pre-rendered first page** of each list surface (see below), **ItemList JSON-LD** + visually hidden crawlable links for page-1 races. |
 | React islands | `RaceListPageIsland` (legacy-styled filters + cards + pagination + map/list toggles; page 1 unfiltered from SSG props; page 2+ and any filter via Supabase **RPC**), `RaceMapIsland` (Mapbox + clustered GeoJSON from static JSON; toolbar optional when parent supplies desktop toggle). |
 | Supabase | `races` + `race_translations` (including translated detail-page fields such as `description`, `additional`, and `course_highlights`), RLS public read for published races only; **Publishable** key in the browser, **Secret** key only in seed/export/build-snapshot scripts (no legacy JWT anon key in app code). |
-| CRM / Newsletter / Trending | Context-aware newsletter popups on list/browse/detail surfaces. Copy stays in country YAML, while eligible sessions, impressions, dismissals, subscriptions, and race-detail page views are written through RPCs into the `crm` schema for later reporting, A/B analysis, and homepage trending rankings. |
+| CRM / Newsletter / Trending | Context-aware newsletter popups on list/browse/detail surfaces. Copy stays in country YAML, while eligible sessions, impressions, dismissals, subscriptions, and race-detail page views are written through RPCs into the `crm` schema for later reporting, future serving-methodology analysis, and homepage trending rankings. |
 | Scripts | `scripts/seed-races.mjs` (JSON → DB), `scripts/export-markers.mjs` (temporary build snapshot, DB, or JSON → `public/markers-*.json`), `scripts/export-race-list-snapshots.mjs` (DB → temporary per-country build snapshot plus merged trending metrics), `scripts/build-with-race-list-snapshots.mjs` (snapshot-first build wrapper that also regenerates the active market's static markers asset from that same snapshot). Anonymous add-race submissions write directly from the browser to Supabase Storage + `public.race_submissions` via RLS-limited insert policies. |
 
 ### Market and locale routing model
@@ -91,7 +91,7 @@
 
 **Without browser Supabase keys:** Page 1 still works from the build snapshot; **Next** and **filter** are disabled or show copy from `race_list_remote_required` in YAML (no runtime fallback fetch).
 
-**Newsletter popup boundary:** newsletter capture also stays on the publishable browser client. Anonymous popup events and subscriptions must go through RLS-safe tables or security-definer RPCs only; never ship elevated keys for CRM capture.
+**Newsletter popup boundary:** newsletter capture also stays on the publishable browser client. Anonymous popup events and subscriptions must go through RLS-safe tables or security-definer RPCs only; never ship elevated keys for CRM capture. Production serving currently uses the standard popup methodology on every surface, while the CRM event model remains variant-capable for future experiments.
 
 **Trending boundary:** race-detail page-view capture must follow that same browser-key rule. Detail pages record views through a publishable-key RPC, while deployment-time builds read only aggregated rankings through a server-side key and merge them into the temporary snapshot.
 

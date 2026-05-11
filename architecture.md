@@ -41,7 +41,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 
 - Browser code may use `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 - Secret or service-role keys are only for seed scripts, marker export, and one-time build snapshot export.
-- Newsletter popups must stay inside the same browser-key boundary: anonymous capture goes through the publishable client and RPC/table boundaries only, including serving-logic A/B metrics such as eligible sessions and impressions.
+- Newsletter popups must stay inside the same browser-key boundary: anonymous capture goes through the publishable client and RPC/table boundaries only, including funnel metrics such as eligible sessions, impressions, dismissals, subscriptions, and any future serving-variant analysis.
 - Race-detail page-view tracking must stay inside that same browser-key boundary: detail pages record views through a publishable-key RPC, while deployment-time ranking export reads aggregated counts with a server-side key.
 - Public add-race submissions must work with the browser publishable key only; do not require login as part of the submission flow.
 - Map pins must remain static JSON, not live list-query output.

@@ -128,9 +128,8 @@ In the browser, **pagination** and **filters** (dates, month, distance/category,
   - `record_race_detail_page_view` for browser-side detail page hits
   - `get_race_detail_page_view_rankings` for build-time ranking export
 - The homepage ranks trending races from raw 30-day page views and displays a boosted count using `ceil(raw * 1.5)`.
-- Popup serving logic now supports A/B testing:
-  - `standard` serves with the current time/scroll heuristics
-  - `delayed_second_page` waits until page view two and uses deeper engagement thresholds
+- Popup serving currently uses the `standard` methodology for every surface because it is the more performant option in production.
+- The tracking schema still keeps `popup_variant` and `eligible_session` funnel events so future A/B tests can compare alternate serving methodologies without redesigning CRM capture.
 - Metrics are intended to be compared as a funnel by serving variant:
   - eligible sessions
   - popup impressions

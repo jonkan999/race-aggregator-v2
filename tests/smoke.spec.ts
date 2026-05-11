@@ -439,6 +439,26 @@ test('newsletter popup on race detail references the current race', async ({ pag
   await expect(dialog).toContainText(raceName);
 });
 
+test('newsletter popup tracking uses the standard serving variant', async ({ page }) => {
+  const calls: Array<Record<string, unknown>> = [];
+
+  page.on('request', (request) => {
+    if (!request.url().endsWith('/rpc/record_newsletter_popup_event')) return;
+    calls.push(request.postDataJSON() as Record<string, unknown>);
+  });
+
+  await page.goto('/loppkalender/');
+  await page.waitForFunction(() => (window as typeof window & { __raceAggregatorNewsletterPopupReady?: boolean }).__raceAggregatorNewsletterPopupReady === true);
+  await page.evaluate(() => {
+    window.dispatchEvent(new Event('race-aggregator:open-newsletter-popup'));
+  });
+
+  await expect.poll(() =>
+    calls.some((call) => call.p_event_type === 'impression' && call.p_popup_variant === 'standard'),
+  ).toBe(true);
+  expect(calls.every((call) => call.p_popup_variant === 'standard')).toBe(true);
+});
+
 test('race detail page view tracker records one hit per detail-page load', async ({ page }) => {
   const calls: Array<Record<string, unknown>> = [];
 
