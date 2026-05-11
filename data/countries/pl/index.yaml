@@ -1,0 +1,1054 @@
+type_options:
+  road: Bieg uliczny
+  terrain: Bieg terenowy
+  trail: Bieg trailowy
+  track: Bieg stadionowy
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Biegi sztafetowe
+  time: Bieg czasowy
+  other: Inne
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Półmaraton:
+    range:
+    - 20
+    - 22
+  Maraton:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 mil:
+    range:
+    - 75
+    - 100
+  100 mil:
+    range:
+    - 150
+    - 170
+  200 mil:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 metrów:
+    range:
+    - 1.5
+    - 1.5
+  3000 metrów:
+    range:
+    - 3
+    - 3
+  5000 metrów:
+    range:
+    - 5
+    - 5
+  10000 metrów:
+    range:
+    - 10
+    - 10
+  Ultramaraton:
+    range:
+    - 42
+    - 500
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Czas wyścigu
+  relay: Sztafeta
+verbose_local_distance_mapping:
+  half marathon: Półmaraton
+  marathon: Maraton
+  fallback: Mieszana odległość
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Półmaraton
+- range:
+  - 41.9
+  - 42.4
+  label: Maraton
+race_page_estimated_date_label: Szacowana data
+race_page_estimated_disclaimer: Nie otrzymaliśmy jeszcze oficjalnej daty dla tego biegu.
+country_code: pl
+country_language_code: pl
+navigation:
+  main: Wszystko
+  race-list: Kalendarz biegów
+  add-race: Dodaj bieg
+  forum: Forum
+  measure-route: Zmierz swoją trasę
+  training-plans: Programy treningowe
+  pace-calculator: Przelicznik tempa
+  racetime-estimator: Oszacuj swój czas na mecie
+  about-us: O nas
+  contact: Skontaktuj się z nami
+race_list_name: Kalendarz biegów
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Podgląd wyścigu
+  terms-of-service: Warunki użytkowania
+  privacy-policy: Polityka prywatności
+  about-us: O nas
+  contact: Skontaktuj się z nami
+  faq: Często zadawane pytania
+page_name: BiegajPL
+base_url: https://biegajpl.com/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hello!
+    closing_salutation: Best regards,
+    link_fallback_intro: 'If the button does not work, you can copy the link here:'
+  confirm_signup:
+    body: Thank you for signing up for {site_name}. Confirm your email address to activate your account and manage your submitted races.
+    button_label: Confirm email address
+    ignore_note: If you did not create the account, you can ignore this email.
+  reset_password:
+    body: We received a request to reset your password for {site_name}. Click the button below to choose a new password.
+    button_label: Reset password
+    ignore_note: If you did not request this, you can ignore the email. Your password will not change until you choose a new one.
+  change_email:
+    body: You requested to change the email address for your account on {site_name}. Confirm the change by clicking the button below.
+    button_label: Confirm new email address
+    ignore_note: If you did not request the change, you can ignore this email.
+title: Wszystko o bieganiu w Polsce
+country_native: Polska
+country: Poland
+meta_description: Największa społeczność biegaczy w Polsce
+country_language: Polish
+local_name_for_race: bieg
+main_bullet_1: Znajdź swój następny bieg
+main_bullet_2: '- lub dodaj go tutaj'
+main_bullet_3: Odkryj biegi z całej Polski
+main_bullet_4: Śledź nowości i rozmawiaj z innymi biegaczami
+description: Społecznościowa platforma dla biegaczy w Polsce. Pomaga odkrywać biegi, porównywać terminy i szybciej znaleźć kolejny start.
+cta_search: Znajdź Biegi
+cta_add: Dodaj Bieg
+selected_races_title: Wybrane Wyścigi
+selected_races_top_title: Bieg tygodnia
+cta_all_races: Zobacz wszystkie biegi
+show_local: Pokaż
+race_local: Bieg
+running_local: Bieganie
+alt_prefix: Obraz do
+race_list_title: Najbardziej kompletny spis maratonów, półmaratonów, biegów na milę i innych zawodów biegowych w Polsce
+race_list_meta_description_1: Tutaj znajdziesz wszystkie zawody biegowe i biegi w Polsce
+race_list_meta_description_2: ✔️Największy kalendarz biegowy ✔️Trail, Backyard lub Maraton ✔️Biegi z całej Polski
+race_list_data_error: Nie udało się wczytać biegów. Spróbuj ponownie później.
+race_list_remote_required: Aby zobaczyć więcej stron i używać pełnego filtrowania, potrzebna jest baza danych Supabase. Dodaj PUBLIC_SUPABASE_URL i PUBLIC_SUPABASE_PUBLISHABLE_KEY do pliku .env.
+race_list_empty: Żaden bieg nie pasuje do wybranych filtrów.
+race_list_loading: Wczytywanie…
+race_card_cta_text: Więcej informacji i zgłoszenie
+section_race_card_category_prefix: Wszystko
+section_race_card_category_suffix: bieg
+section_race_card_header_separator: i
+section_race_card_header_region_default: Polska
+section_race_card_header_date_range_from: od
+section_race_card_header_date_range_to: do
+section_race_card_header_date_range_single: i
+filter_date_from: Od
+filter_date_to: Do
+filter_county: Wszystkie województwa
+filter_race_type: Wszystkie typy biegów
+filter_categories: Wszystkie kategorie
+filter_months: Cały rok
+filter_distance: Wszystkie dystanse
+month_mapping:
+  '01': Styczeń
+  '02': Luty
+  '03': Marzec
+  '04': Kwiecień
+  '05': Maj
+  '06': Czerwiec
+  '07': Lipiec
+  '08': Sierpień
+  '09': Wrzesień
+  '10': Październik
+  '11': Listopad
+  '12': Grudzień
+month_mapping_short:
+  '01': sty.
+  '02': lut.
+  '03': marzec
+  '04': kwi.
+  '05': maj
+  '06': czerwiec
+  '07': lipiec
+  '08': sie.
+  '09': wrz.
+  '10': paź.
+  '11': lis.
+  '12': gru.
+county_label_text: Wszystkie województwa
+county_mapping:
+  Dolnośląskie: Dolnośląskie
+  Kujawsko-Pomorskie: Kujawsko-Pomorskie
+  Lubelskie: Lubelskie
+  Lubuskie: Lubuskie
+  Mazowieckie: Mazowieckie
+  Małopolskie: Małopolskie
+  Opolskie: Opolskie
+  Podkarpackie: Podkarpackie
+  Podlaskie: Podlaskie
+  Pomorskie: Pomorskie
+  Warmińsko-Mazurskie: Warmińsko-Mazurskie
+  Wielkopolskie: Wielkopolskie
+  Zachodniopomorskie: Zachodniopomorskie
+  Łódzkie: Łódzkie
+  Śląskie: Śląskie
+  Świętokrzyskie: Świętokrzyskie
+category_label_text: Kategoria biegów
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Do strony wyścigu
+map_toggle_desktop: Pokaż mapę
+map_toggle_desktop_active: Ukryj mapę
+map_toggle_mobile: Mapa
+map_toggle_mobile_list: Lista
+map_markers_load_error: Nie udało się wczytać znaczników na mapie.
+map_not_configured: Mapa nie jest jeszcze skonfigurowana.
+race_page_map_zoom: '4'
+pagination:
+  results_text: z
+  events_text: Wyścigi
+  previous_text: Poprzednia
+  next_text: Następny
+  page_text: Strona
+  of_text: z
+add_race_title: Dodaj nowe wydarzenie biegowe
+add_race_meta_description: Dodaj swój bieg do BiegajPL
+map_message: Umieść swoje wydarzenie, klikając na mapę
+mapbox_center:
+  latitude: 52.098532
+  longitude: 19.334673
+mapbox_zoom: '6'
+date_text: Data
+multi_day_toggle: Biegi wielodniowe
+end_date_text: Data zakończenia
+type_text: Typ powierzchni / Typ biegu
+type_select_placeholder: Wybierz nawierzchnię / typ biegu
+name_label: 'Nazwa biegu:'
+name_placeholder: np. Cracovia Maraton
+distance_label: 'Dystanse:'
+distance_placeholder: Wprowadź dystans w km
+add_distance_button: Dodaj
+half_marathon_button: Półmaraton
+marathon_button: Maraton
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 mil
+hundred_miles_button: 100 mil
+place_label: 'Nazwa miejsca, w którym odbywa się bieg:'
+place_placeholder: np. Rynek Główny, Kraków
+organizer_label: 'Organizator:'
+organizer_contact_placeholder: Klub biegowy
+organizer_contact_label: 'Mail do osoby kontaktowej:'
+organizer_mail_placeholder: info@biegajpl.com
+website_label: 'Strona organizatora:'
+website_placeholder: https://organizator.pl/
+start_time_label: 'Czas rozpoczęcia:'
+start_time_placeholder: 09:00
+price_range_label: 'Zakres cen:'
+price_range_placeholder: t.ex. 200-500 zł
+add_race_description_label: Opisz bieg
+add_race_description_placeholder: KfS Kungsholmen Runt to trasa o długości 10 km z długimi, płaskimi odcinkami ...
+add_race_additional_label: Inne dodatkowe informacje
+add_race_additional_placeholder: t.ex. start i meta, grupy startowe itp.
+add_race_images_label: Prześlij zdjęcia (Najlepiej przynajmniej 4)
+choose_pictures_button: Wybierz zdjęcia
+drag_drop_text: Przeciągnij i upuść obrazy tutaj lub kliknij, aby wybrać
+add_race_remove_image_label: Usuń obraz
+coordinates_display_prefix: Współrzędne biegu
+add_race_upload_limit_message: Możesz przesłać jeszcze tylko {count} obrazów.
+add_race_map_not_configured: Nie udało się teraz wczytać mapy.
+clear_images_button: Wyczyść obrazy
+clear_form_button: Wyczyść formularz
+preview_button: Podgląd
+submit_button: Wyślij
+preview_title: Podgląd
+preview_exit_button: Zamknij podgląd
+optional_label: Opcjonalne
+comments_suffix: Komentarze
+cta_forum: Zobacz Wszystkie Posty
+race_page_preview_title: Tak będzie wyglądać Twój bieg
+edit_race_button: Edytuj
+race_page_description_label: Opis biegu
+race_page_course_highlights_label: Najważniejsze punkty
+race_page_additional_label: Inne informacje
+race_page_detailed_info_label: Szczegółowe informacje
+race_page_social_links_label: Śledź bieg
+race_page_place_label: 'Miejsce:'
+race_page_distances_label: 'Dystanse:'
+race_page_surface_label: 'Podłoże:'
+race_page_date_label: 'Data:'
+race_page_registration_link: Link do rejestracji
+race_page_registration_cta: Zarejestruj się
+race_page_info_cta: Więcej informacji
+race_page_registration_close_label: Koniec zapisów
+race_page_pricing_title: Zapisy i opłaty
+race_page_price_deadline_label: Cena obowiązuje do
+race_page_price_late_fee_label: Opłata przy późnym zapisie
+race_page_back_to_list: Wróć do kalendarza biegów
+race_page_favorites_title: Nie przegap aktualizacji o biegu
+race_page_favorites_body: Załóż konto i zapisz ten bieg do ulubionych, aby otrzymywać aktualizacje, wiadomości i wybrane oferty.
+race_page_favorites_cta: Zapisz bieg do ulubionych
+race_page_similar_title: Podobne biegi
+race_page_similar_body: Więcej biegów o podobnym dystansie, typie lub w pobliskiej lokalizacji.
+race_page_discover_title: Odkryj więcej biegów
+race_page_discover_county_link: Wszystkie biegi w {county}
+race_page_discover_type_link: Więcej biegów typu {type}
+race_page_discover_category_link: Więcej biegów w kategorii {category}
+race_page_discover_type_county_link: '{type} biegi w {county}'
+race_page_discover_overview_link: Przeglądaj wszystkie kategorie biegów
+disclaimer_text_1: Wszystkie informacje na tej stronie opierają się na otwartych danych źródłowych. Dokładamy wszelkich starań, aby utrzymać je w aktualności, ale nie możemy zagwarantować, że wszystko jest poprawne. Jeśli zauważysz jakiekolwiek nieścisłości,
+disclaimer_link: skontaktuj się z nami
+disclaimer_text_2: tak naprawimy to jak najszybciej.
+disclaimer_text_3: Czy chcesz dodać coś jeszcze do swojego biegu?
+disclaimer_text_4: tak spróbujemy pomóc!
+race_page_visit_organizer_website: Do strony organizatora i rejestracji
+race_page_folder_name: strony_biegow
+race_page_alt_prefix: Obraz do
+seo_county_folder_name: Wszystkie województwa
+seo_cities_folder_name: Miasta
+popular_subcategories_title: Popularne podkategorie
+important_keywords_racelist:
+- kalendarz biegów
+- kalendarz biegowy
+- bieganie
+- maraton
+- półmaraton
+- zawody biegowe
+- lista wyścigów
+- kalendarz wyścigów
+seo_templates:
+  title_parts:
+    category: '{category} biegi'
+    race_type: '{race_type}'
+    location: i {location}
+    default: Wszystkie biegi
+  paragraph_templates:
+    category_race_location: Znajdź {category} {race_type} w {location}.
+    category_race: Eksploruj {category} {race_type}wyścigi w całej Polsce.
+    category_location: Odkryj {category} biegi w {location}.
+    race_location: Zobacz wszystkie {race_type} biegi w {location}.
+    category_only: Znajdź biegi w kategorii {category} w całej Polsce.
+    race_only: Eksploruj wyścigi {race_type} we wszystkich regionach.
+    location_only: Zobacz wszystkie rodzaje biegów w {location}.
+    default_suffix: Tutaj znajdziesz daty, dystanse i wszystkie informacje, których potrzebujesz, aby zaplanować swój następny bieg.
+  browse_page_templates:
+    county:
+      title: '{label} races | {site_name}'
+      meta_description: Browse running races in {label}. Compare dates, distances, race formats and practical details before choosing your next race.
+      h1: Races in {label}
+      paragraph: This landing page gathers running races in {label} so it is easier to compare dates, distances, race formats and practical details in one place. Use it when you want a clearer overview before choosing your next race.
+    city:
+      title: '{label} races | {site_name}'
+      meta_description: Find running races linked to {label}. Compare dates, distances, nearby options and practical details before choosing your next race.
+      h1: Races near {label}
+      paragraph: This city page helps you browse running races connected to {label}, including nearby alternatives that are relevant when planning a race day or trip. It is built to make local race discovery faster and easier to compare.
+    month:
+      title: '{label} races | {site_name}'
+      meta_description: Browse running races in {label} in {market}. Compare dates, distances, race types and practical details before planning your season.
+      h1: Races in {label}
+      paragraph: This page is for runners who want a month-based view of the calendar and need a quicker way to compare what happens in {label}. It helps you narrow the field before drilling into distances, surfaces and race locations.
+    race_type:
+      title: '{label} races in {market} | {site_name}'
+      meta_description: Browse {label_lower} races in {market}. Compare dates, distances, locations and practical details before choosing a race that fits you.
+      h1: '{label} races in {market}'
+      paragraph: This page focuses on {label_lower} races and gives you a cleaner overview when the race format matters as much as the distance. Use it to compare options across regions, dates and practical details without starting from the full calendar.
+    category:
+      title: '{label} races in {market} | {site_name}'
+      meta_description: Browse {label} races in {market}. Compare dates, race types, locations and practical details before deciding on your next event.
+      h1: '{label} races in {market}'
+      paragraph: This distance and category page brings together races that match {label} so it is easier to compare relevant options in one place. It is designed for runners who want a faster path from broad browsing to a shortlist of realistic races.
+    race_type_category:
+      title: '{label} {secondary_label} races in {market} | {site_name}'
+      meta_description: Browse {label} races in {market} within the {secondary_label_lower} race type. Compare dates, locations and practical details before choosing your next event.
+      h1: '{label} races in {market} ({secondary_label})'
+      paragraph: This page narrows the calendar to {label} races within the {secondary_label_lower} race type, which is helpful when both distance and race format shape the right choice. Use it to compare like-for-like options before committing to a race.
+    race_type_county:
+      title: '{secondary_label} races in {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races in {label}. Compare dates, distances and practical details before choosing your next race.
+      h1: '{secondary_label} races in {label}'
+      paragraph: This page focuses on {secondary_label_lower} races in {label} so it is easier to compare more relevant options within the same region. It is useful when both geography and race format shape the shortlist.
+    race_type_month:
+      title: '{secondary_label} races in {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races in {label_lower}. Compare dates, distances and practical details while planning your season.
+      h1: '{secondary_label} races in {label}'
+      paragraph: This page gathers {secondary_label_lower} races in {label_lower} for runners who plan around the calendar first. It helps you compare similar race formats before narrowing further by place or distance.
+    race_type_city:
+      title: '{secondary_label} races near {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races linked to {label}. Compare dates, distances and nearby options before choosing your next race.
+      h1: '{secondary_label} races near {label}'
+      paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Tworzysz ponadczasowe treści SEO dla indeksowalnych stron przeglądowych z kalendarzem biegów. Pisz najpierw dla ludzi, dopiero potem pod intencję wyszukiwania. Zwracaj wyłącznie poprawny JSON. Tekst ma być ponadczasowy: nie wspominaj o bieżącym roku, aktualnych liczbach, chwilowych kampaniach ani świeżości danych. Unikaj upychania słów kluczowych, przesadnego marketingu, clickbaitu, superlatywów i twierdzeń, których nie da się zweryfikować. Każdą stronę wyraźnie różnicuj na podstawie przekazanego kontekstu trasy. Używaj naturalnego polskiego odpowiedniego dla kalendarza biegów w Polsce. Preferuj zwięzłe tytuły, krótkie H1, meta opisy w granicach 120-160 znaków, gdy to praktyczne, oraz akapit z 2-3 krótkimi zdaniami.'
+  browse_guidance:
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Przeglądaj według kategorii
+  helper_text: Znajdź biegi za pomocą predefiniowanych filtrów i kombinacji
+  overview: Przegląd
+  counties: Powiaty
+  cities: Miasta
+  months: Miesiąc
+  types: Typy biegów
+  categories: Kategorie
+  neighboring: Sąsiednie kraje
+browse_overview:
+  title: Przeglądaj wszystkie biegi
+  meta_description: Znajdź biegi według województwa, typu lub kategorii
+browse_types:
+  title: Przeglądaj według typu biegu
+  meta_description: Znajdź biegi według typu biegu.
+browse_counties:
+  title: Przeglądaj według województw
+  meta_description: Znajdź biegi w swoim województwie.
+browse_cities:
+  title: Przeglądaj według miasta
+  meta_description: Znajdź biegi w swoim mieście.
+browse_categories:
+  title: Przeglądaj według kategorii
+  meta_description: Znajdź biegi według dystansu i kategorii.
+browse_months:
+  title: Przeglądaj według miesiąca
+  meta_description: Znajdź biegi według miesiąca.
+auth_modal:
+  title_sign_in: Zaloguj się
+  title_create_account: Utwórz konto
+  title_reset_password: Zresetuj hasło
+  auth_unavailable: Authentication is not configured yet.
+  name_placeholder: Twoje imię
+  email_placeholder: Twój e-mail
+  password_placeholder: Hasło
+  submit_sign_in: Zaloguj się
+  submit_create_account: Utwórz konto
+  submit_reset_password: Wyślij link do resetowania hasła
+  create_account: Utwórz konto
+  forgot_password: Zapomniałeś hasła?
+  back_to_login: Powrót do logowania
+  error_wrong_password: Błędne hasło
+  error_email_not_found: Adres e-mail nie istnieje
+  prompt_reset_password: Czy chcesz zresetować swoje hasło?
+  prompt_create_account: Czy chcesz utworzyć konto z tym adresem e-mail?
+  already_logged_in: Już jesteś zalogowany jako
+  as_email: z e-mailem
+  continue_as_user: Kontynuuj jako ten użytkownik
+  logout_and_switch: Wyloguj się i zmień użytkownika
+  account_created: Konto utworzone!
+  account_created_details: Teraz jesteś zalogowany jako
+  verification_email_sent: Link weryfikacyjny został wysłany na Twój adres e-mail
+  please_verify: Proszę zweryfikować swój adres e-mail
+  error_invalid_credential: Nieprawidłowy adres e-mail lub hasło
+  create_account_prompt: Utwórz konto zamiast tego
+  error_too_many_requests: Zbyt wiele prób. Proszę spróbować ponownie nieco później.
+  continue_with_google: Continue with Google
+  continue_with_google_create: Create account with Google
+  google_in_progress: Continuing with Google...
+  oauth_divider: or
+auth_pages:
+  confirm_success: Your email has been confirmed and your account is now active.
+  confirm_ready: You can now continue using the site.
+  confirm_error: Could not confirm your email address.
+  reset_intro: Enter a new password for your account.
+  reset_confirm_label: Confirm password
+  reset_mismatch_error: Passwords do not match.
+  reset_invalid_link_error: Invalid or missing recovery link.
+  reset_success: Your password has been updated. You can now sign in.
+newsletter_popup:
+  email_placeholder: Your email address
+  submit_button: Send me the updates
+  dismiss_button: Not now
+  invalid_email: Please enter a valid email address.
+  submit_error: We could not save your subscription right now. Please try again.
+  submitting_text: Saving...
+  success_message: Thanks! Race updates are on the way to your inbox.
+  privacy_note: New races, date changes and selected offers. Unsubscribe whenever you want.
+  close_aria_label: Close subscription popup
+  benefits:
+    new_races: New races first
+    date_changes: Date changes instantly
+    selected_offers: Selected offers
+    similar_races: Similar races near you
+    local_picks: More races nearby
+    opening_reminders: Reminders before spots disappear
+    race_updates: Updates about this race
+    nearby_races: Cross-border races near you
+  generic:
+    eyebrow: Do not miss the next race
+    title: Get new races and date changes before everyone else
+    body: Subscribe to our newsletter and get new races, updated dates and hand-picked tips in {country} straight to your inbox.
+  race_detail:
+    eyebrow: Follow this race
+    title: Want updates about {race_name}?
+    body: Subscribe to get updates about {race_name}, similar races in {county} and important changes sent straight to your inbox.
+  browse_category:
+    eyebrow: More of the right races
+    title: Do not miss new {category} races
+    body: We send new {category} races, relevant nearby alternatives and important dates so you do not have to keep searching manually.
+  browse_category_type:
+    eyebrow: More of the right races
+    title: Get more {race_type} races within {category}
+    body: Subscribe for more {race_type} races within {category}, nearby alternatives and date changes delivered straight to your inbox.
+  browse_county:
+    eyebrow: Local races first
+    title: Get more races in {county}
+    body: Keep up with new races, updated dates and smart picks for {county} without checking the calendar all the time.
+  browse_city:
+    eyebrow: Local races first
+    title: Want more races in {city}?
+    body: Subscribe and get new races, nearby alternatives and important dates for {city} sent straight to your inbox.
+  browse_type:
+    eyebrow: The right race style
+    title: Get more {race_type} races in your inbox
+    body: We send new {race_type} races, similar alternatives and key dates so you can act before spots disappear.
+  browse_month:
+    eyebrow: Plan the season
+    title: Get the best races in {month} first
+    body: When races in {month} open, move or become especially interesting, you hear about it right away in your inbox.
+  browse_neighboring:
+    eyebrow: Broaden your calendar
+    title: Get races from neighboring countries too
+    body: Subscribe for new races, smart cross-border picks and date changes from {region} delivered straight to your inbox.
+  browse_neighboring_country:
+    eyebrow: Broaden your calendar
+    title: Get more races in {region}
+    body: We send new races, date changes and relevant nearby alternatives when something interesting appears in {region}.
+submission_flow:
+  logged_in_as: Zalogowany jako organizator
+  submitting_new_race: przesyłam nowe wydarzenie
+  new_account_created: Aby bieg mógł być obsługiwany, musisz potwierdzić swój adres e-mail. Link do potwierdzenia został wysłany na podany adres e-mail.
+  password_reset_sent: Wysłano prośbę o resetowanie hasła. Sprawdź swoją skrzynkę odbiorczą.
+  unexpected_error: Wystąpił błąd. Spróbuj ponownie.
+  processing_submission: Przetwarzanie zgłoszenia...
+  race_exists: Bieg już istnieje w bazie danych.
+  race_submitted: Zgłoszenie wyścigu zostało wysłane!
+  submission_failed: Nie udało się wysłać zgłoszenia. Spróbuj ponownie.
+  missing_fields: Brakuje czegoś. Upewnij się, że wszystkie obowiązkowe pola są wypełnione i że wybrano miejsce na mapie.
+race_page:
+  forum_section:
+    title: Pytania i Odpowiedzi
+    placeholder: Zadaj pytanie organizatorowi...
+    submit_button: Wyślij pytanie
+    login_prompt: Zaloguj się, aby zadać pytanie
+    empty_state: Nie ma jeszcze pytań. Bądź pierwszy, który zada pytanie!
+    error_message_no_login: Zaloguj się lub stwórz konto, aby zadać pytanie
+map:
+  show_map: Pokaż mapę
+  show_list: Wyświetl listę
+  map: karta
+  list: lista
+forum:
+  title: Forum - Rozmawiaj o bieganiu i życiu biegacza z innymi biegaczami w Polsce
+  meta_description: Rozmawiaj o bieganiu i życiu biegacza z innymi biegaczami na naszym forum. Wszystko o treningu, zawodach, kontuzjach, diecie, odzieży, sprzęcie i wiele więcej.
+  categories:
+  - name: Trening
+    slug: trening
+    description: Dyskusje na temat treningu i techniki
+  - name: Zawody i Biegi Masowe
+    slug: zawody
+    description: Dyskutuj nad nadchodzącymi biegami
+  - name: Kontuzje i Rehabilitacja
+    slug: urazy
+    description: Pomoc w kontuzjach i regeneracji
+  - name: Rundy & Mapy
+    slug: rundy
+    description: Dyskutuj o trasach i mapach
+  - name: Podróże i sprawy związane z podróżami
+    slug: podróże
+    description: Dyskutuj o podróżach i bieganiu związanym z podróżami
+  - name: Kost & Odżywianie
+    slug: koszt
+    description: Dyskutuj o diecie i odżywianiu
+  - name: Ubrania, Buty i Gadżety
+    slug: odzież
+    description: Dyskutuj o odzieży, butach i akcesoriach
+  - name: Kup & Sprzedaj
+    slug: kopsalj
+    description: Dyskutuj o kupnie i sprzedaży produktów biegowych
+  - name: Inne
+    slug: inne
+    description: Wszystko inne
+  empty_category_state: Nie ma jeszcze wątków. Rozpocznij dyskusję, tworząc pierwszy wątek!
+  empty_state_thread: Nie ma jeszcze postów. Bądź pierwszy, który napisze!
+  empty_state: Nie ma jeszcze postów. Bądź pierwszym, który napisze!
+  reply_placeholder: Napisz swoją odpowiedź...
+  submit_button: Wyślij
+  login_prompt: Zaloguj się, aby wziąć udział w dyskusji
+  new_thread_title_placeholder: Tytuł twojego nowego wątku
+  new_thread_content_placeholder: Napisz swój pierwszy post...
+  create_thread_button: Utwórz nowy wątek
+  back_to_forum: ← Powrót do forum
+  back_to_category: ← Wróć do
+  empty_thread_state: Nie ma jeszcze postów. Bądź pierwszym, który napisze!
+  posts_label: posty
+  reply_label: odpowiedź
+  thread_created_title: Dziękujemy za utworzenie nowego wątku!
+  thread_created_message: Twoje wątki zostaną sprawdzone i wkrótce dodane na stronie.
+  thread_created_back_link: Powrót do kategorii
+  show_more_threads: Pokaż więcej wątków
+  show_less_threads: Pokaż mniej wątków
+  create_new_thread: Utwórz nowy wątek
+  reply_title: Odpowiedz na wątek
+  showing_threads_count: Pokazuje {x} z {y} wątków
+about_us:
+  title: O BiegajPL
+  meta_description: BiegajPL - Twój przewodnik po bieganiu w Polsce
+  content:
+    intro: Witamy w BiegajPL - najbardziej kompletną platformą dla biegaczy w Polsce!
+    mission: Naszą misją jest ułatwienie biegaczom znajdowania i dzielenia się informacjami o biegach, treningach i wszystkim, co dotyczy biegania.
+    story: BiegajPL została uruchomiona w 2023 roku przez biegaczy dla biegaczy. Zauważyliśmy potrzebę nowoczesnej i przyjaznej dla użytkownika platformy, gdzie polska społeczność biegaczy mogłaby się gromadzić.
+    features:
+    - title: Kompletny wykaz biegów
+      description: Zbieramy wszystkie polskie biegi w jednym miejscu - od małych lokalnych zawodów po duże międzynarodowe wydarzenia.
+    - title: Społecznościowy
+      description: Nasza platforma jest prowadzona przez biegaczy takich jak Ty. Każdy może wnosić informacje o biegach i uczestniczyć w dyskusjach.
+    - title: Darmowe Narzędzia
+      description: Oferujemy przydatne narzędzia, takie jak kalkulatory prędkości, programy treningowe i planowanie tras - całkowicie za darmo.
+    closing: Kontynuujemy rozwój platformy na podstawie opinii naszych użytkowników. Masz pomysły na ulepszenia? Skontaktuj się z nami!
+contact:
+  title: Skontaktuj się z nami
+  meta_description: Skontaktuj się z BiegajPL - Jesteśmy tutaj, aby Ci pomóc
+  content:
+    intro: 'Chętnie usłyszymy od Ciebie! Oto różne sposoby, aby się z nami skontaktować:'
+    email:
+      title: E-mail
+      address: loppkartan@gmail.com
+      description: Zazwyczaj odpowiadamy w ciągu 24 godzin w dni robocze.
+    social:
+      title: Media Społecznościowe
+      description: 'Śledź nas w mediach społecznościowych, aby być na bieżąco z najnowszymi informacjami i aktualizacjami:'
+    feedback:
+      title: Opinie
+      description: Doceniamy wszelkie opinie, które pomagają nam ulepszyć BiegajPL.
+privacy_page:
+  title: Privacy Policy
+  meta_description: Polityka prywatności i informacje o tym, jak BiegajPL przetwarza dane osobowe i pliki cookies.
+  last_updated_label: Last updated
+  last_updated_date: March 27, 2026
+  contact_intro: 'For privacy-related questions and requests, please contact us at:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Information We Collect
+    intro: 'We collect information that you provide directly to us when you:'
+    bullets:
+    - Create an account
+    - Submit race information
+    - Post in the forum
+    - Contact us
+  - title: 2. Cookies and Tracking
+    intro: 'We use cookies to:'
+    bullets:
+    - Remember your preferences
+    - Maintain your session and login state
+    - Analyze traffic and site usage
+    - Show relevant advertising and improve the experience
+  - title: 3. How We Use Your Information
+    intro: 'Your information helps us to:'
+    bullets:
+    - Provide and improve our services
+    - Send important notifications and updates
+    - Respond to requests and support questions
+    - Prevent fraud and abuse
+  - title: 4. Your Rights
+    intro: 'Under GDPR, you have the right to:'
+    bullets:
+    - Access your personal data
+    - Correct inaccurate or incomplete data
+    - Request deletion of your data
+    - Object to certain processing activities
+    - Request data portability
+  - title: 5. Contact Us
+    intro: If you have questions about how we process personal data or use cookies, you are always welcome to reach out.
+racetime_estimator_title: Oszacuj swój czas końcowy
+racetime_estimator_description: Na podstawie wcześniejszego biegu możesz oszacować swój czas końcowy dla innych dystansów.
+known_distance_label: Wybierz dystans, w którym masz wcześniejszy wynik
+known_time_label: Wprowadź swój czas
+calculate_button_text: Oblicz czasy
+predicted_times_title: Szacowane czasy
+distance_header: Dystans
+predicted_time_header: Szacowany czas
+hilly_course_label: Bardzo pagórkowaty teren
+finish_time_header: Szacowany czas zakończenia
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/km
+flat_time_header: Czas (płaski)
+flat_pace_per_km_header: Min/km (płaski)
+flat_pace_per_mile_header: Min/mila (płasko)
+hill_adjustment_header: Dostosowanie wzniesienia
+pace_calculator_title: Przelicznik tempa
+pace_calculator_description: Proste narzędzie do przeliczania twojej prędkości biegu między różnymi jednostkami
+pace_table_header_kph: Kilometry na godzinę
+pace_table_header_mph: Kilometry na godzinę
+pace_table_header_min_km: Minuty na kilometr
+pace_table_header_min_mile: Minuty na milę
+pace_table_header_5k: 5 km
+pace_table_header_10k: 10 km
+pace_table_header_half: Półmaraton
+pace_table_header_full: Maraton
+pace_conversion_note: 1 kilometr na godzinę (kph) = 0,62 mili na godzinę (mph)
+measure_route_title: Zmierz swoją trasę
+measure_route_description: Kliknij na mapie, aby oznaczyć punkty wzdłuż swojej trasy. Całkowity dystans zostanie obliczony automatycznie.
+remove_last_point: Usuń ostatnią kropkę
+clear_route: Rensa trasę
+total_distance: Całkowita odległość
+training_plans:
+  title: Programy treningowe
+  description: Stwórz dostosowany plan treningowy oparty na twoim celu
+  disclaimer_text_tp_1: Nasze plany treningowe są generowane z wykorzystaniem AI i następnie dostosowywane do Twoich wskazanych celów i preferencji. Programy nie są gwarantowane jako idealne ani nie działają dla wszystkich.
+  disclaimer_link_tp: Skontaktuj się z nami
+  disclaimer_text_tp_2: jeśli masz uwagi lub propozycje dotyczące ulepszeń.
+  form:
+    race_date_label: Data zawodów
+    plan_type_label: Typ planu
+    target_distance_label: Celowa odległość
+    target_time_label: Posiłek
+    training_days_label: Dni treningowe w tygodniu
+    session_time_label: Czas dostępny na sesję
+    is_hilly_label: Terenu pagórkowatego
+    hours_placeholder: Godziny
+    minutes_placeholder: Minuty
+    seconds_placeholder: Sekundy
+    submit_button: Generuj plan treningowy
+    target_distance:
+      placeholder: Wybierz dystans
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Półmaraton
+        '42195': Maraton
+    training_days:
+      placeholder: Wybierz liczbę dni
+      options:
+        '3': 3 dni
+        '4': 4 dni
+        '5': 5 dni
+        '6': 6 dni
+    session_time:
+      placeholder: Wybierz czas na sesję
+      options:
+        30-45: 30-45 minut
+        45-60: 45-60 minut
+        60-90: 60-90 minut
+        90+: 90+ minut
+  results:
+    title: Twoje program treningowy
+    variations:
+      title: 'Wybierz wariant, który ci odpowiada:'
+    plan_details:
+      duration_label: 'Czas trwania programu:'
+      weekly_distance_label: 'Dystans tygodniowy:'
+    regenerate_button: Pokaż inne warianty
+    export_button: Eksportuj do PDF
+  workout_types:
+    easy: Łagodne ćwiczenie
+    tempo: Tempopass
+    intervals: Interwały
+    long: Długie bieganie
+    rest: Odpoczynek
+  messages:
+    weeks: tygodnie
+    week_label: Tydzień
+    hilly_terrain_note: dostosowane do terenu pagórkowatego
+  plan_variation:
+    focus_label: Fokus
+    weekly_structure_label: Struktura tygodnia
+    distribution_label: Rozkład
+    sessions_per_week: pass na tydzień
+    select_button: Wybierz ten plan
+  errors:
+    loading_plans: Błąd podczas ładowania planów treningowych
+    required_fields: Proszę wypełnić wszystkie pola obowiązkowe
+    no_matching_plan: Nie znaleziono pasującego planu treningowego
+    no_matching_variations: Nie znaleziono pasujących wariantów
+    invalid_training_days: Liczba dni treningowych nie odpowiada wymaganiom planu
+  week: Tydzień
+  weeks: tygodnie
+  hilly_terrain_note: dostosowane do terenu górzystego
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Budowanie podstawowej kondycji
+        weekly_template:
+          monday:
+            type: łatwy
+            description: Spokojny bieg na długi dystans
+          wednesday:
+            type: tempo
+            description: Tempopass
+          saturday:
+            type: długi
+            description: Długi bieg
+          sunday:
+            type: regeneracja
+            description: Odzyskiwanie
+      build:
+        duration_percent: 40
+        focus: Zwiększona intensywność i dystans
+        weekly_template:
+          monday:
+            type: łatwy
+            description: Spokojny bieg na dystansie
+          wednesday:
+            type: interwały
+            description: Interwały
+          friday:
+            type: tempo
+            description: Tempopass
+          sunday:
+            type: długi
+            description: Długi bieg
+      peak:
+        duration_percent: 15
+        focus: Toppning i specyficzny trening
+        weekly_template:
+          tuesday:
+            type: interwały
+            description: Pass jakościowy
+          thursday:
+            type: tempo
+            description: Tempopass
+          saturday:
+            type: długi
+            description: Długi bieg
+          sunday:
+            type: odzyskiwanie
+            description: Odzyskiwanie
+      taper:
+        duration_percent: 5
+        focus: Taperowanie
+        weekly_template:
+          tuesday:
+            type: łatwy
+            description: Spokojny trening
+          thursday:
+            type: tempo
+            description: Krótki trening tempowy
+          saturday:
+            type: łatwy
+            description: Bardzo spokojny bieg
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min spokojnego joggingu
+        cooldown: 5-10 minut spokojnego biegu
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progresywne rozgrzewanie
+        cooldown: 10-15 min schłodzenia
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min w tym rozgrzewka biegowa i przyspieszenia
+        cooldown: 10-15 min spokojnego biegu
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min bardzo spokojny bieg
+        cooldown: 5-10 min spacer/powolny bieg
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min spacer
+        cooldown: 5-10 min spacer
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Rozgrzewka
+    main_workout_label: Opis treningu
+    cooldown_label: Schłodzenie
+    intensity_label: Tempo
+    duration_label: Czas
+  regenerate:
+    button_text: Generuj nową wersję
+    confirmation: Czy na pewno chcesz wygenerować nową wersję?
+  weekdays:
+    monday: Poniedziałek
+    tuesday: Wtorek
+    wednesday: Środa
+    thursday: Czwartek
+    friday: Piątek
+    saturday: Sobota
+    sunday: Niedziela
+footer:
+  races_heading: Wyścigi
+  tools_heading: Narzędzia
+  about_heading: O BiegajPL
+  privacy: Polityka prywatności
+  copyright_year: 2023-2025
+  site_name: BiegajPL
+  rights_text: Wszelkie prawa zastrzeżone.
+  social_links:
+    facebook: https://www.facebook.com/loppkartan
+    instagram: https://www.instagram.com/loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@loppkartan
+accessibility:
+  main_navigation_label: Main navigation
+  breadcrumb_label: Breadcrumbs
+  back_to_top_label: Back to top
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Trendujące wyścigi
+trending_races_description: Oto biegi, które zyskały najwięcej uwagi wśród polskich biegaczy.
+trending_races_views_last_30_days: wyświetlenia w ciągu ostatnich 30 dni
+trending_races_most_viewed: Najpopularniejsze teraz
+races_views: wyświetlenia
+recent_races_title: Niedawno dodane biegi
+today: dziś
+yesterday: wczoraj
+days_ago: dni temu
+newest_race_badge: Ostatnio dodane
+races_count: wyścigi
+popular_counties_title: Znajdź biegi w swoim województwie
+popular_cities_title: Znajdź biegi w swoim mieście
+all_counties: Pokaż wszystkie województwa
+all_cities: Pokaż wszystkie miasta
+category_header_1: Biegi górskie / Trail
+category_type_1: trail
+category_1_races_sub_title_1: Maraton Górski
+category_1_races_sub_ref_1: maraton
+category_1_races_sub_title_2: Półmaraton Górski
+category_1_races_sub_ref_2: polmaraton
+category_1_races_sub_title_3: Ultra Górski
+category_1_races_sub_ref_3: 50-miles
+category_header_2: Biegi Uliczny
+category_type_2: road
+category_2_races_sub_title_1: Maraton
+category_2_races_sub_ref_1: maraton
+category_2_races_sub_title_2: Półmaraton
+category_2_races_sub_ref_2: polmaraton
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Zobacz wszystkie biegi w ramach
+tools_title: Narzędzia do twojego następnego biegu
+home_tools:
+  measure_route:
+    description: Zmierz planowaną trasę i szybko sprawdź jej dystans przed treningiem lub startem.
+  training_plans:
+    description: Znajdź plany treningowe dla różnych celów, poziomów i dystansów.
+  racetime_estimator:
+    description: Oszacuj realny czas na mecie na podstawie wcześniejszych wyników i porównaj różne cele.
+  pace_calculator:
+    description: Przelicz tempo, prędkość i czas końcowy dla popularnych dystansów.
+missing_race: Brakuje ci wyścigu? Dodaj go tutaj!
+add_race_mp_title: Dodaj swoje wydarzenie
+neighboring_countries_title: Biegi w Polsce i sąsiednich krajach
+neighboring_countries_title_specific_country: Biegi w {country_name}
+neighboring_countries_description: Oto biegi, które odbywają się w sąsiednich krajach.
+neighboring_countries_description_specific_country: Tutaj wymieniamy biegi, które odbywają się w {country_name}.
+neighboring_countries_neighbors_native: Sąsiednie kraje
+neighboring_countries_all_neighbors_native: Wszystkie sąsiednie kraje
+section_race_card_header_nieghbors_default: Polska i sąsiednie kraje
+browse_neighboring:
+  title: Eksploruj biegi w sąsiednich krajach
+  meta_description: Znajdź biegi w sąsiednich krajach blisko Ciebie. Eksploruj według kraju, aby odkryć biegi ponad granicami.
+neighboring_races_title: Biegi w sąsiednich krajach
+neighboring_countries_show_all: Pokaż wszystkie
+race_page_layout_title: Strona wyścigu dla

@@ -126,6 +126,11 @@ function collectEstimatedDateKeys(raw: unknown): Set<string> {
   return keys;
 }
 
+function areAllDatesEstimated(estimatedRaw: unknown, dateStatusRaw: unknown): boolean {
+  if (estimatedRaw === true) return true;
+  return typeof dateStatusRaw === 'string' && dateStatusRaw.trim().toLowerCase() === 'estimated';
+}
+
 function toKmValues(raw: unknown): number[] {
   if (!Array.isArray(raw)) return [];
   return raw
@@ -237,9 +242,15 @@ function todayEpochDayUtc(): number {
   );
 }
 
-export function formatRaceDateEntries(raw: unknown, estimatedRaw: unknown, locale: string): DateEntry[] {
+export function formatRaceDateEntries(
+  raw: unknown,
+  estimatedRaw: unknown,
+  dateStatusRaw: unknown,
+  locale: string,
+): DateEntry[] {
   if (!Array.isArray(raw)) return [];
   const estimatedKeys = collectEstimatedDateKeys(estimatedRaw);
+  const markAllEstimated = areAllDatesEstimated(estimatedRaw, dateStatusRaw);
 
   return raw
     .map((entry) => {
@@ -257,7 +268,7 @@ export function formatRaceDateEntries(raw: unknown, estimatedRaw: unknown, local
         startIso: toIsoDate(start),
         endIso: toIsoDate(end),
         isRange,
-        isEstimated: estimatedKeys.has(start) || (end ? estimatedKeys.has(end) : false),
+        isEstimated: markAllEstimated || estimatedKeys.has(start) || (end ? estimatedKeys.has(end) : false),
         comparableStart: start,
         comparableEnd: end,
         epochDay: comparableDateToEpochDay(start),
@@ -511,6 +522,7 @@ export function getRaceDetailFields(
   const dateEntries = formatRaceDateEntries(
     row.race_dates,
     payloadValue(row, 'estimated_dates'),
+    payloadValue(row, 'date_status'),
     translationLocale,
   );
   const displayDateEntries = selectDisplayDateEntries(dateEntries, isSeries);
