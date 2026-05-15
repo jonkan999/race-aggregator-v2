@@ -79,6 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Маратон
+race_page_estimated_date_label: Прогнозна дата
+race_page_estimated_disclaimer: Все още нямаме потвърдена официална дата за това състезание.
 country_code: bg
 country_language_code: bg
 navigation:
@@ -101,7 +103,7 @@ auxiliary_pages:
   about-us: За нас
   contact: Контакт
   faq: Често задавани въпроси
-page_name: Календар на бяганията в България
+page_name: Календар бягане
 base_url: https://kalendarbyagane.com/
 supabase_auth_email:
   primary_color: '#00925e'
@@ -171,8 +173,8 @@ month_mapping:
   '05': май
   '06': юни
   '07': юли
-  08: август
-  09: септември
+  '08': август
+  '09': септември
   '10': октомври
   '11': ноември
   '12': декември
@@ -184,8 +186,8 @@ month_mapping_short:
   '05': май
   '06': юни
   '07': юли
-  08: авг
-  09: сеп
+  '08': авг
+  '09': сеп
   '10': окт
   '11': ное
   '12': дек
@@ -305,8 +307,6 @@ race_page_place_label: 'Място:'
 race_page_distances_label: 'Дистанции:'
 race_page_surface_label: 'Настилка:'
 race_page_date_label: 'Дата:'
-race_page_estimated_date_label: Прогнозна дата
-race_page_estimated_disclaimer: Все още нямаме потвърдена официална дата за това състезание.
 race_page_registration_link: Линк за регистрация
 race_page_registration_cta: Регистрирайте се
 race_page_info_cta: Повече информация
