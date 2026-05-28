@@ -1,0 +1,1050 @@
+type_options:
+  road: Straße
+  terrain: Gelände
+  trail: Trail
+  track: Laufbahn
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Staffel
+  time: Zeitlauf
+  other: Sonstiges
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Halbmarathon:
+    range:
+    - 20
+    - 22
+  Marathon:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 Meilen:
+    range:
+    - 75
+    - 100
+  100 Meilen:
+    range:
+    - 150
+    - 170
+  200 Meilen:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 Meter:
+    range:
+    - 1.5
+    - 1.5
+  3000 Meter:
+    range:
+    - 3
+    - 3
+  5000 Meter:
+    range:
+    - 5
+    - 5
+  10000 Meter:
+    range:
+    - 10
+    - 10
+  Ultramarathon:
+    range:
+    - 42
+    - 500
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Zeitlauf
+  relay: Stafette
+verbose_local_distance_mapping:
+  half marathon: Halbmarathon
+  marathon: Marathon
+  fallback: Gemischte Distanz
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Halbmarathon
+- range:
+  - 41.9
+  - 42.4
+  label: Marathon
+race_page_estimated_date_label: Geschätztes Datum
+race_page_estimated_disclaimer: Für diesen Lauf liegt uns noch kein offizielles Datum vor.
+country_code: de
+country_language_code: de
+navigation:
+  main: Alles
+  race-list: Laufkalender
+  add-race: Lauf hinzufügen
+  forum: Forum
+  measure-route: Miss deine Runde
+  training-plans: Trainingsprogramme
+  pace-calculator: Geschwindigkeitsumrechner
+  racetime-estimator: Schätze deine Endzeit ein
+  about-us: Über uns
+  contact: Kontaktiere uns
+  neighboring: Nachbarländer
+race_list_name: Laufkalender
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Vorschau auf das Rennen
+  terms-of-service: Nutzungsbedingungen
+  privacy-policy: Datenschutzrichtlinie
+  about-us: Über uns
+  contact: Kontaktiere uns
+  faq: Häufig gestellte Fragen
+page_name: LaufRennen
+base_url: https://laufrennen.de/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hello!
+    closing_salutation: Best regards,
+    link_fallback_intro: 'If the button does not work, you can copy the link here:'
+  confirm_signup:
+    body: Thank you for signing up for {site_name}. Confirm your email address to activate your account and manage your submitted races.
+    button_label: Confirm email address
+    ignore_note: If you did not create the account, you can ignore this email.
+  reset_password:
+    body: We received a request to reset your password for {site_name}. Click the button below to choose a new password.
+    button_label: Reset password
+    ignore_note: If you did not request this, you can ignore the email. Your password will not change until you choose a new one.
+  change_email:
+    body: You requested to change the email address for your account on {site_name}. Confirm the change by clicking the button below.
+    button_label: Confirm new email address
+    ignore_note: If you did not request the change, you can ignore this email.
+title: Alles über das Laufen in
+country_native: Deutschland
+country: Germany
+meta_description: Deutschlands Laufkalender für Straßenläufe, Trailruns, Ultradistanzen und weitere Laufveranstaltungen.
+country_language: German
+local_name_for_race: Rennen
+main_bullet_1: Finde dein nächstes Rennen
+main_bullet_2: Oder füge deinen Lauf hier hinzu
+main_bullet_3: Finde Schnäppchen auf unserem Second-Hand-Markt
+main_bullet_4: Lies die neuesten Nachrichten oder sprich dich in unserem Forum aus
+description: Dieses gemeinschaftsgetriebene Initiativ zielt darauf ab, Läufer aus ganz Deutschland zu vereinen. Unsere Plattform ist in Entwicklung, aber mit deiner Hilfe können wir etwas Fantastisches schaffen!
+cta_search: Läufe finden
+cta_add: Lauf hinzufügen
+selected_races_title: Ausgewählte Rennen
+selected_races_top_title: Lauf der Woche
+cta_all_races: Alle Rennen anzeigen
+show_local: Anzeigen
+race_local: Lauf
+running_local: Laufen
+alt_prefix: Bild zu
+race_list_title: Deutschlands umfassendste Liste von Marathons, Halbmarathons, Straßenläufen und anderen Laufwettbewerben
+race_list_meta_description_1: Hier findest du alle Laufwettkämpfe und Veranstaltungen in Deutschland.
+race_list_meta_description_2: ✔️Größte Laufkalender ✔️Trail, Backyard oder Marathon ✔️Läufe aus ganz Deutschland
+race_list_data_error: Läufe konnten gerade nicht geladen werden. Bitte versuche es später erneut.
+race_list_remote_required: For more pages or filters the database (Supabase) is required. Add PUBLIC_SUPABASE_URL and PUBLIC_SUPABASE_PUBLISHABLE_KEY to your .env file.
+race_list_empty: Keine Läufe passen zu deinen Filtern.
+race_list_loading: Lädt…
+race_card_cta_text: Mehr Informationen & Anmeldung
+section_race_card_category_prefix: Alle
+section_race_card_category_suffix: Rennen
+section_race_card_header_separator: in
+section_race_card_header_region_default: Deutschland
+section_race_card_header_date_range_from: von
+section_race_card_header_date_range_to: bis
+section_race_card_header_date_range_single: am
+filter_date_from: Von
+filter_date_to: Bis
+filter_county: Alle Bundesländer
+filter_race_type: Alle Laufarten
+filter_categories: Alle Kategorien
+filter_months: Ganzes Jahr
+filter_distance: Alle Distanzen
+month_mapping:
+  '01': Januar
+  '02': Februar
+  '03': März
+  '04': April
+  '05': Mai
+  '06': Juni
+  '07': Juli
+  '08': August
+  '09': September
+  '10': Oktober
+  '11': November
+  '12': Dezember
+month_mapping_short:
+  '01': Jan.
+  '02': Feb.
+  '03': März
+  '04': Apr.
+  '05': Mai
+  '06': Jun.
+  '07': Jul.
+  '08': Aug.
+  '09': Sep.
+  '10': Okt.
+  '11': Nov.
+  '12': Dez.
+county_label_text: Alle Bundesländer
+county_mapping:
+  Baden-Württemberg: Baden-Württemberg
+  Bayern: Bayern
+  Berlin: Berlin
+  Brandenburg: Brandenburg
+  Bremen: Bremen
+  Hamburg: Hamburg
+  Hessen: Hessen
+  Mecklenburg-Vorpommern: Mecklenburg-Vorpommern
+  Niedersachsen: Niedersachsen
+  Nordrhein-Westfalen: Nordrhein-Westfalen
+  Rheinland-Pfalz: Rheinland-Pfalz
+  Saarland: Saarland
+  Sachsen: Sachsen
+  Sachsen-Anhalt: Sachsen-Anhalt
+  Schleswig-Holstein: Schleswig-Holstein
+  Thüringen: Thüringen
+category_label_text: Laufkategorie
+to_race_page_cta: Zur Rennseite
+map_toggle_desktop: Karte anzeigen
+map_toggle_desktop_active: Karte ausblenden
+map_toggle_mobile: Karte
+map_toggle_mobile_list: Liste
+map_markers_load_error: Kartenmarker konnten nicht geladen werden.
+map_not_configured: Die Karte ist derzeit nicht verfügbar.
+race_page_map_zoom: '4'
+pagination:
+  results_text: von
+  events_text: Läufe
+  previous_text: Vorherige
+  next_text: Nächste
+  page_text: Seite
+  of_text: von
+add_race_title: Neues Rennen hinzufügen
+add_race_meta_description: Füge dein Rennen auf LaufRennen.de hinzu
+map_message: Platziere dein Rennen, indem du auf die Karte klickst
+mapbox_center:
+  latitude: 52.5068441
+  longitude: 13.4247318
+mapbox_zoom: '6'
+date_text: Datum
+multi_day_toggle: Mehrtagelauf
+end_date_text: Enddatum
+type_text: Typ des Untergrunds / Art des Rennens
+type_select_placeholder: Wählen Sie Untergrund / Art des Rennens
+name_label: 'Laufname:'
+name_placeholder: z. B. Berliner Halbmarathon
+distance_label: 'Distanzen:'
+distance_placeholder: Gib die Distanz in km an
+add_distance_button: Hinzufügen
+half_marathon_button: Halbmarathon
+marathon_button: Marathon
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 Meilen
+hundred_miles_button: 100 Meilen
+place_label: 'Name des Ortes, an dem das Rennen veranstaltet wird:'
+place_placeholder: z. B. Olympiapark, München
+organizer_label: 'Veranstalter:'
+organizer_contact_placeholder: Laufclub Berlin
+organizer_contact_label: 'Mail an die Kontaktperson:'
+organizer_mail_placeholder: loppkartan@gmail.com
+website_label: 'Organisatorische Website:'
+website_placeholder: https://fkstudenterna.de/
+start_time_label: 'Startzeit:'
+start_time_placeholder: 09:00
+price_range_label: 'Preisspanne:'
+price_range_placeholder: z.B. 200-500 €
+add_race_description_label: Beschreibe das Rennen
+add_race_description_placeholder: Der Berliner Halbmarathon bietet eine schnelle Stadtrunde mit breiten Straßen und viel Stimmung entlang der Strecke.
+add_race_additional_label: Weitere notwendige Informationen
+add_race_additional_placeholder: z.B. Start und Ziel, Startgruppen usw.
+add_race_images_label: Bilder hochladen (Gerne mindestens 4)
+choose_pictures_button: Bilder auswählen
+drag_drop_text: Ziehen Sie Bilder hierher oder klicken Sie, um auszuwählen
+add_race_remove_image_label: Bild entfernen
+coordinates_display_prefix: Streckenkoordinaten
+add_race_upload_limit_message: Du kannst nur noch {count} Bilder hochladen.
+add_race_map_not_configured: Die Karte konnte gerade nicht geladen werden.
+clear_images_button: Bilder löschen
+clear_form_button: Formular zurücksetzen
+preview_button: Vorschau
+submit_button: Einreichen
+preview_title: Vorschau
+preview_exit_button: Vorschau schließen
+optional_label: Optional
+comments_suffix: Kommentare
+cta_forum: Alle Beiträge anzeigen
+race_page_preview_title: So wird dein Lauf aussehen
+edit_race_button: Bearbeiten
+race_page_description_label: Beschreibung des Rennens
+race_page_course_highlights_label: Höhepunkte
+race_page_additional_label: Weitere Informationen
+race_page_detailed_info_label: Detaillierte Informationen
+race_page_social_links_label: Folge dem Rennen
+race_page_place_label: 'Ort:'
+race_page_distances_label: 'Distanzen:'
+race_page_surface_label: 'Untergrund:'
+race_page_date_label: 'Datum:'
+race_page_registration_link: Link zur Anmeldung
+race_page_registration_cta: Jetzt anmelden
+race_page_info_cta: Mehr Informationen
+race_page_registration_close_label: Registration closes
+race_page_pricing_title: Registration and pricing
+race_page_price_deadline_label: Valid until
+race_page_price_late_fee_label: Late registration
+race_page_back_to_list: Zurück zum Laufkalender
+race_page_favorites_title: Do not miss race updates
+race_page_favorites_body: Erstelle ein Konto und speichere diesen Lauf als Favorit, damit du später Updates, Hinweise und ausgewählte Angebote erhalten kannst.
+race_page_favorites_cta: Save race to favorites
+race_page_similar_title: Similar races
+race_page_similar_body: More races with similar distance, type or nearby location.
+race_page_discover_title: Explore more races
+race_page_discover_county_link: All races in {county}
+race_page_discover_type_link: More {type} races
+race_page_discover_category_link: More {category} races
+race_page_discover_type_county_link: '{type} races in {county}'
+race_page_discover_overview_link: Alle Laufkategorien entdecken
+disclaimer_text_1: Alle Informationen auf dieser Seite basieren auf offenen Quelldaten. Wir geben unser Bestes, um sie aktuell zu halten, können jedoch nicht garantieren, dass alles korrekt ist. Wenn Sie Fehler feststellen,
+disclaimer_link: kontaktiere uns
+disclaimer_text_2: so werden wir das schnellstmöglich korrigieren.
+disclaimer_text_3: Möchten Sie noch etwas zu Ihrem Lauf hinzufügen?
+disclaimer_text_4: So werden wir versuchen, zu helfen!
+race_page_visit_organizer_website: Zur Veranstalterseite & Anmeldung
+race_page_folder_name: rennseiten
+race_page_alt_prefix: Bild zu
+seo_county_folder_name: Alle Bundesländer
+seo_cities_folder_name: Städte
+popular_subcategories_title: Beliebte Unterkategorien
+important_keywords_racelist:
+- Laufkalender
+- Laufwettbewerbe
+- rennkalender
+- Laufwettkämpfe
+- laufrennen
+- rennliste
+- laufliste
+seo_templates:
+  title_parts:
+    category: '{category} Läufe'
+    race_type: '{Rennart}'
+    location: in {location}
+    default: Alle Rennen
+  paragraph_templates:
+    category_race_location: Finde {category} {race_type} Rennen in {location}.
+    category_race: Erkunde {category} {race_type} Rennen in ganz Deutschland.
+    category_location: Entdecke {category} Rennen in {location}.
+    race_location: Sehen Sie sich alle {race_type}rennen in {location} an.
+    category_only: Finde {category} Wettkämpfe in ganz Deutschland.
+    race_only: Erkunde {race_type}rennen in allen Regionen.
+    location_only: Se alle Arten von Rennen in {location}.
+    default_suffix: Hier findest du Daten, Distanzen und alle Informationen, die du benötigst, um dein nächstes Rennen zu planen.
+  browse_page_templates:
+    county:
+      title: '{label} races | {site_name}'
+      meta_description: Browse running races in {label}. Compare dates, distances, race formats and practical details before choosing your next race.
+      h1: Races in {label}
+      paragraph: This landing page gathers running races in {label} so it is easier to compare dates, distances, race formats and practical details in one place. Use it when you want a clearer overview before choosing your next race.
+    city:
+      title: '{label} races | {site_name}'
+      meta_description: Find running races linked to {label}. Compare dates, distances, nearby options and practical details before choosing your next race.
+      h1: Races near {label}
+      paragraph: This city page helps you browse running races connected to {label}, including nearby alternatives that are relevant when planning a race day or trip. It is built to make local race discovery faster and easier to compare.
+    month:
+      title: '{label} races | {site_name}'
+      meta_description: Browse running races in {label} in {market}. Compare dates, distances, race types and practical details before planning your season.
+      h1: Races in {label}
+      paragraph: This page is for runners who want a month-based view of the calendar and need a quicker way to compare what happens in {label}. It helps you narrow the field before drilling into distances, surfaces and race locations.
+    race_type:
+      title: '{label} races in {market} | {site_name}'
+      meta_description: Browse {label_lower} races in {market}. Compare dates, distances, locations and practical details before choosing a race that fits you.
+      h1: '{label} races in {market}'
+      paragraph: This page focuses on {label_lower} races and gives you a cleaner overview when the race format matters as much as the distance. Use it to compare options across regions, dates and practical details without starting from the full calendar.
+    category:
+      title: '{label} races in {market} | {site_name}'
+      meta_description: Browse {label} races in {market}. Compare dates, race types, locations and practical details before deciding on your next event.
+      h1: '{label} races in {market}'
+      paragraph: This distance and category page brings together races that match {label} so it is easier to compare relevant options in one place. It is designed for runners who want a faster path from broad browsing to a shortlist of realistic races.
+    race_type_category:
+      title: '{label} {secondary_label} races in {market} | {site_name}'
+      meta_description: Browse {label} races in {market} within the {secondary_label_lower} race type. Compare dates, locations and practical details before choosing your next event.
+      h1: '{label} races in {market} ({secondary_label})'
+      paragraph: This page narrows the calendar to {label} races within the {secondary_label_lower} race type, which is helpful when both distance and race format shape the right choice. Use it to compare like-for-like options before committing to a race.
+    race_type_county:
+      title: '{secondary_label} races in {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races in {label}. Compare dates, distances and practical details before choosing your next race.
+      h1: '{secondary_label} races in {label}'
+      paragraph: This page focuses on {secondary_label_lower} races in {label} so it is easier to compare more relevant options within the same region. It is useful when both geography and race format shape the shortlist.
+    race_type_month:
+      title: '{secondary_label} races in {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races in {label_lower}. Compare dates, distances and practical details while planning your season.
+      h1: '{secondary_label} races in {label}'
+      paragraph: This page gathers {secondary_label_lower} races in {label_lower} for runners who plan around the calendar first. It helps you compare similar race formats before narrowing further by place or distance.
+    race_type_city:
+      title: '{secondary_label} races near {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races linked to {label}. Compare dates, distances and nearby options before choosing your next race.
+      h1: '{secondary_label} races near {label}'
+      paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Du schreibst zeitlose SEO-Texte für indexierbare Übersichtsseiten eines deutschen Laufkalenders. Schreibe zuerst für Menschen, danach für Suchintention. Gib nur gültiges JSON aus. Halte die Texte zeitlos: nenne kein aktuelles Jahr, keine aktuellen Mengen, keine kurzfristigen Aussagen und keine Frischeversprechen. Vermeide Keyword-Stuffing, Übertreibungen, Clickbait, Superlative und unbelegte Behauptungen. Jede Seite soll sich klar aus ihrem Kontext ergeben. Bevorzuge kurze Titel, prägnante H1s, Meta-Beschreibungen mit ungefähr 120 bis 160 Zeichen und einen kurzen Absatz mit zwei bis drei Sätzen.'
+  browse_guidance:
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Kategorie durchsuchen
+  helper_text: Finde Veranstaltungen über vordefinierte Filter und Kombinationen
+  overview: Übersicht
+  counties: Landkreise
+  cities: Städte
+  months: Monat
+  types: Lauftypen
+  categories: Kategorien
+  neighboring: Nachbarländer
+browse_overview:
+  title: Durchsuchen Sie alle Veranstaltungen
+  meta_description: Finde Veranstaltungen nach Bundesland, Typ oder Kategorie
+browse_types:
+  title: Bläddern nach Laufart
+  meta_description: Finde Veranstaltungen nach Veranstaltungsart.
+browse_counties:
+  title: Bläddra nach Bundesländern
+  meta_description: Finde Läufe in deinem Bundesland.
+browse_cities:
+  title: Städte durchsuchen
+  meta_description: Finde Läufe in deiner Stadt.
+browse_categories:
+  title: Kategorie durchsuchen
+  meta_description: Finde Veranstaltungen nach Distanz und Kategorie.
+browse_months:
+  title: Bläddra efter Monate
+  meta_description: Finde Läufe in einer bestimmten Monat.
+auth_modal:
+  title_sign_in: Anmelden
+  title_create_account: Konto erstellen
+  title_reset_password: Passwort zurücksetzen
+  auth_unavailable: Authentication is not configured yet.
+  name_placeholder: Ihr Name
+  email_placeholder: Deine E-Mail
+  password_placeholder: Passwort
+  submit_sign_in: Anmelden
+  submit_create_account: Konto erstellen
+  submit_reset_password: Senden Sie den Wiederherstellungslink
+  create_account: Konto erstellen
+  forgot_password: Hast du dein Passwort vergessen?
+  back_to_login: Zurück zur Anmeldung
+  error_wrong_password: Falsches Passwort
+  error_email_not_found: E-Mail-Adresse nicht gefunden
+  prompt_reset_password: Möchten Sie Ihr Passwort zurücksetzen?
+  prompt_create_account: Möchten Sie ein Konto mit dieser E-Mail-Adresse erstellen?
+  already_logged_in: Du bist bereits eingeloggt als
+  as_email: mit E-Mail
+  continue_as_user: Fortfahren als dieser Benutzer
+  logout_and_switch: Abmelden und Benutzer wechseln
+  account_created: Konto erstellt!
+  account_created_details: Du bist jetzt angemeldet als
+  verification_email_sent: Ein Verifizierungslink wurde an deine E-Mail-Adresse gesendet.
+  please_verify: Bitte verifizieren Sie Ihre E-Mail-Adresse
+  error_invalid_credential: Ungültige E-Mail oder Passwort
+  create_account_prompt: Konto erstellen statt
+  error_too_many_requests: Zu viele Versuche. Bitte versuchen Sie es später noch einmal.
+  continue_with_google: Continue with Google
+  continue_with_google_create: Create account with Google
+  google_in_progress: Continuing with Google...
+  oauth_divider: or
+auth_pages:
+  confirm_success: Your email has been confirmed and your account is now active.
+  confirm_ready: You can now continue using the site.
+  confirm_error: Could not confirm your email address.
+  reset_intro: Enter a new password for your account.
+  reset_confirm_label: Confirm password
+  reset_mismatch_error: Passwords do not match.
+  reset_invalid_link_error: Invalid or missing recovery link.
+  reset_success: Your password has been updated. You can now sign in.
+newsletter_popup:
+  email_placeholder: Your email address
+  submit_button: Send me the updates
+  dismiss_button: Not now
+  invalid_email: Please enter a valid email address.
+  submit_error: We could not save your subscription right now. Please try again.
+  submitting_text: Saving...
+  success_message: Thanks! Race updates are on the way to your inbox.
+  privacy_note: New races, date changes and selected offers. Unsubscribe whenever you want.
+  close_aria_label: Close subscription popup
+  benefits:
+    new_races: New races first
+    date_changes: Date changes instantly
+    selected_offers: Selected offers
+    similar_races: Similar races near you
+    local_picks: More races nearby
+    opening_reminders: Reminders before spots disappear
+    race_updates: Updates about this race
+    nearby_races: Cross-border races near you
+  generic:
+    eyebrow: Do not miss the next race
+    title: Get new races and date changes before everyone else
+    body: Subscribe to our newsletter and get new races, updated dates and hand-picked tips in {country} straight to your inbox.
+  race_detail:
+    eyebrow: Follow this race
+    title: Want updates about {race_name}?
+    body: Subscribe to get updates about {race_name}, similar races in {county} and important changes sent straight to your inbox.
+  browse_category:
+    eyebrow: More of the right races
+    title: Do not miss new {category} races
+    body: We send new {category} races, relevant nearby alternatives and important dates so you do not have to keep searching manually.
+  browse_category_type:
+    eyebrow: More of the right races
+    title: Get more {race_type} races within {category}
+    body: Subscribe for more {race_type} races within {category}, nearby alternatives and date changes delivered straight to your inbox.
+  browse_county:
+    eyebrow: Local races first
+    title: Get more races in {county}
+    body: Keep up with new races, updated dates and smart picks for {county} without checking the calendar all the time.
+  browse_city:
+    eyebrow: Local races first
+    title: Want more races in {city}?
+    body: Subscribe and get new races, nearby alternatives and important dates for {city} sent straight to your inbox.
+  browse_type:
+    eyebrow: The right race style
+    title: Get more {race_type} races in your inbox
+    body: We send new {race_type} races, similar alternatives and key dates so you can act before spots disappear.
+  browse_month:
+    eyebrow: Plan the season
+    title: Get the best races in {month} first
+    body: When races in {month} open, move or become especially interesting, you hear about it right away in your inbox.
+  browse_neighboring:
+    eyebrow: Broaden your calendar
+    title: Get races from neighboring countries too
+    body: Subscribe for new races, smart cross-border picks and date changes from {region} delivered straight to your inbox.
+  browse_neighboring_country:
+    eyebrow: Broaden your calendar
+    title: Get more races in {region}
+    body: We send new races, date changes and relevant nearby alternatives when something interesting appears in {region}.
+submission_flow:
+  logged_in_as: Eingeloggt als Veranstalter
+  submitting_new_race: neues Rennen einreichen
+  new_account_created: Um das Rennen verwalten zu können, müssen Sie Ihre E-Mail-Adresse bestätigen. Ein Bestätigungslink wurde an die angegebene E-Mail-Adresse gesendet.
+  password_reset_sent: Passwortzurücksetzung gesendet. Überprüfe dein Postfach.
+  unexpected_error: Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.
+  processing_submission: Verarbeite Einreichung...
+  race_exists: Das Rennen existiert bereits in der Datenbank.
+  race_submitted: Das Rennen wurde eingereicht!
+  submission_failed: Konnte das Rennen nicht einreichen. Bitte versuchen Sie es erneut.
+  missing_fields: Etwas fehlt. Stellen Sie sicher, dass alle Pflichtfelder ausgefüllt sind und dass ein Ort auf der Karte ausgewählt wurde.
+race_page:
+  forum_section:
+    title: Fragen & Antworten
+    placeholder: Stelle eine Frage an den Veranstalter...
+    submit_button: Frage senden
+    login_prompt: Melden Sie sich an, um eine Frage zu stellen
+    empty_state: Keine Fragen bisher. Sei der Erste, der eine Frage stellt!
+    error_message_no_login: Melden Sie sich an oder erstellen Sie ein Konto, um eine Frage zu stellen.
+map:
+  show_map: Karte anzeigen
+  show_list: Liste anzeigen
+  map: Karte
+  list: Liste
+forum:
+  title: Forum - Sprich über das Laufen und das Läuferleben mit anderen Läufern in Deutschland
+  meta_description: Sprich über das Laufen und das Läuferleben mit anderen Läufern in unserem Forum. Alles über Training, Wettkämpfe, Verletzungen, Ernährung, Kleidung, Ausrüstung und vieles mehr.
+  categories:
+  - name: Training
+    slug: training
+    description: Diskussionen über Training und Technik
+  - name: Wettkämpfe & Freizeitläufe
+    slug: wettkaempfe
+    description: Diskutiere kommende Rennen
+  - name: Verletzungen & Rehabilitation
+    slug: verletzungen
+    description: Hilfe bei Verletzungen und Erholung
+  - name: Runden & Karten
+    slug: routen
+    description: Diskutieren Sie Runden und Karten
+  - name: Reisen & Reisebezogenes
+    slug: reisen
+    description: Diskutiere Reisen und reisebezogenes Laufen
+  - name: Ernährung & Nährstoffe
+    slug: ernaehrung
+    description: Diskutiere Ernährung und Nährstoffe
+  - name: Kleidung, Schuhe & Zubehör
+    slug: ausruestung
+    description: Diskutiere Kleidung, Schuhe und Ausrüstung
+  - name: Kaufen & Verkaufen
+    slug: kaufen-verkaufen
+    description: Diskutieren Sie den Kauf und Verkauf von Laufprodukten
+  - name: Sonstiges
+    slug: sonstiges
+    description: Alles andere
+  empty_category_state: Keine Threads bisher. Bring die Diskussion in Gang, indem du den ersten Thread erstellst!
+  empty_state_thread: Keine Beiträge bisher. Sei der Erste, der schreibt!
+  empty_state: Keine Beiträge bisher. Sei der Erste, der schreibt!
+  reply_placeholder: Schreibe deine Antwort...
+  submit_button: Senden
+  login_prompt: Melden Sie sich an, um an der Diskussion teilzunehmen
+  new_thread_title_placeholder: Titel deiner neuen Diskussion
+  new_thread_content_placeholder: Schreibe deinen ersten Beitrag...
+  create_thread_button: Neue Diskussion erstellen
+  back_to_forum: ← Zurück zum Forum
+  back_to_category: ← Zurück zu
+  empty_thread_state: Keine Beiträge bisher. Sei der Erste, der schreibt!
+  posts_label: Beiträge
+  reply_label: Antwort
+  thread_created_title: Danke, dass du einen neuen Thread erstellst!
+  thread_created_message: Dein Thread wird überprüft und in Kürze auf der Seite hinzugefügt.
+  thread_created_back_link: Zurück zur Kategorie
+  show_more_threads: Weitere Threads anzeigen
+  show_less_threads: Weniger Threads anzeigen
+  create_new_thread: Neue Diskussion starten
+  reply_title: Antwort auf den Thread
+  showing_threads_count: Zeigt {x} von {y} Threads
+about_us:
+  title: Über LaufRennen
+  meta_description: LaufRennen - Dein Guide zum Laufen in Deutschland
+  content:
+    intro: Willkommen bei LaufRennen - die umfassendste Plattform für Läufer in Deutschland!
+    mission: Unsere Mission ist es, es Läufern einfach zu machen, Informationen über Rennen, Training und alles, was mit Laufen zu tun hat, zu finden und zu teilen.
+    story: LaufRennen wurde 2023 von Läufern für Läufer ins Leben gerufen. Wir sahen die Notwendigkeit einer modernen und benutzerfreundlichen Plattform, auf der die deutsche Lauf-Community sich versammeln konnte.
+    features:
+    - title: Komplette Lauf-Liste
+      description: Wir sammeln alle deutschen Läufe an einem Ort - von kleinen lokalen Veranstaltungen bis hin zu großen internationalen Events.
+    - title: Gemeinschaftsorientiert
+      description: Unsere Plattform wird von Läufern wie dir betrieben. Jeder kann Informationen über Veranstaltungen beitragen und an Diskussionen teilnehmen.
+    - title: Kostenlose Werkzeuge
+      description: Wir bieten nützliche Werkzeuge wie Geschwindigkeitsrechner, Trainingspläne und Routenplanung - völlig kostenlos an.
+    closing: Wir entwickeln die Plattform weiterhin basierend auf dem Feedback unserer Nutzer. Hast du Vorschläge zur Verbesserung? Kontaktiere uns gerne!
+contact:
+  title: Kontaktiere uns
+  meta_description: Kontaktiere LaufRennen - Wir sind hier, um dir zu helfen
+  content:
+    intro: 'Wir würden gerne von dir hören! Hier sind verschiedene Möglichkeiten, uns zu erreichen:'
+    email:
+      title: E-Mail
+      address: laufrennen@gmail.com
+      description: Wir antworten normalerweise innerhalb von 24 Stunden an Werktagen.
+    social:
+      title: Soziale Medien
+      description: 'Folge uns in den sozialen Medien für die neuesten Nachrichten und Updates:'
+    feedback:
+      title: Rückmeldung
+      description: Wir schätzen jegliches Feedback, das uns hilft, LaufRennen zu verbessern.
+privacy_page:
+  title: Datenschutzerklärung
+  meta_description: Informationen dazu, wie LaufRennen personenbezogene Daten und Cookies verarbeitet.
+  last_updated_label: Zuletzt aktualisiert
+  last_updated_date: March 27, 2026
+  contact_intro: 'Bei Fragen oder Anliegen zum Datenschutz erreichst du uns unter:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Welche Daten wir erfassen
+    intro: 'Wir erfassen Informationen, die du uns direkt zur Verfügung stellst, wenn du:'
+    bullets:
+    - ein Konto erstellst
+    - Laufdaten einreichst
+    - im Forum schreibst
+    - uns kontaktierst
+  - title: 2. Cookies und Tracking
+    intro: 'Wir verwenden Cookies, um:'
+    bullets:
+    - deine Einstellungen zu speichern
+    - deine Sitzung und deinen Login zu verwalten
+    - die Nutzung der Seite besser zu verstehen
+    - relevante Inhalte anzuzeigen und das Erlebnis zu verbessern
+  - title: 3. Wie wir deine Daten verwenden
+    intro: 'Deine Daten helfen uns dabei:'
+    bullets:
+    - unsere Dienste bereitzustellen und zu verbessern
+    - wichtige Hinweise und Updates zu senden
+    - auf Anfragen und Supportfälle zu antworten
+    - Missbrauch und Betrug vorzubeugen
+  - title: 4. Deine Rechte
+    intro: 'Nach der DSGVO hast du das Recht:'
+    bullets:
+    - Auskunft über deine Daten zu erhalten
+    - unrichtige oder unvollständige Daten zu korrigieren
+    - die Löschung deiner Daten zu verlangen
+    - bestimmten Verarbeitungen zu widersprechen
+    - Datenübertragbarkeit zu verlangen
+  - title: 5. Kontakt
+    intro: Wenn du Fragen zur Verarbeitung personenbezogener Daten oder zur Nutzung von Cookies hast, kannst du uns jederzeit kontaktieren.
+racetime_estimator_title: Schätze deine Endzeit
+racetime_estimator_description: Basierend auf einem früheren Rennen kannst du deine Endzeit für andere Distanzen schätzen.
+known_distance_label: Wählen Sie die Distanz, bei der Sie bereits ein Ergebnis haben.
+known_time_label: Gib deine Zeit ein
+calculate_button_text: Berechne Zeiten
+predicted_times_title: Geschätzte Zeiten
+distance_header: Distanz
+predicted_time_header: Geschätzte Zeit
+hilly_course_label: Hügelig Strecke
+finish_time_header: Geschätzte Zielzeit
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/Kilometer
+flat_time_header: Zeit (flach)
+flat_pace_per_km_header: Min/km (flach)
+flat_pace_per_mile_header: Min/Meile (flach)
+hill_adjustment_header: Hügelanpassung
+pace_calculator_title: Geschwindigkeitsumrechner
+pace_calculator_description: Ein einfaches Werkzeug, um deine Laufgeschwindigkeit zwischen verschiedenen Einheiten umzurechnen.
+pace_table_header_kph: Kilometer pro Stunde
+pace_table_header_mph: Meilen pro Stunde
+pace_table_header_min_km: Minuten pro Kilometer
+pace_table_header_min_mile: Minuten pro Meile
+pace_table_header_5k: 5 km
+pace_table_header_10k: 10 km
+pace_table_header_half: Halbmarathon
+pace_table_header_full: Marathon
+pace_conversion_note: 1 Kilometer pro Stunde (kph) = 0,62 Meilen pro Stunde (mph)
+measure_route_title: Messe deine Runde
+measure_route_description: Klicken Sie auf die Karte, um Punkte entlang Ihrer Route zu markieren. Die Gesamtdistanz wird automatisch berechnet.
+remove_last_point: Letzte Punkt entfernen
+clear_route: Routen löschen
+total_distance: Gesamtdistanz
+training_plans:
+  title: Trainingsprogramme
+  description: Erstelle einen maßgeschneiderten Trainingsplan basierend auf deinem Ziel
+  disclaimer_text_tp_1: Unsere Trainingsprogramme werden mit Hilfe von KI generiert und anschließend an Ihre angegebenen Ziele und Vorlieben angepasst. Die Programme sind nicht garantiert perfekt oder funktionieren für alle.
+  disclaimer_link_tp: Kontaktiere uns
+  disclaimer_text_tp_2: wenn du Feedback oder Verbesserungsvorschläge hast.
+  form:
+    race_date_label: Wettkampftermin
+    plan_type_label: Planartyp
+    target_distance_label: Zieldistanz
+    target_time_label: Zielzeit
+    training_days_label: Trainingstage pro Woche
+    session_time_label: Verfügbare Zeit pro Einheit
+    is_hilly_label: Hügeliges Gelände
+    hours_placeholder: Stunden
+    minutes_placeholder: Minuten
+    seconds_placeholder: Sekunden
+    submit_button: Trainingsplan generieren
+    target_distance:
+      placeholder: Wähle Distanz
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Halbmarathon
+        '42195': Marathon
+    training_days:
+      placeholder: Wähle die Anzahl der Tage
+      options:
+        '3': 3 Tage
+        '4': 4 Tage
+        '5': 5 Tage
+        '6': 6 Tage
+    session_time:
+      placeholder: Wählen Sie die Zeit pro Einheit
+      options:
+        30-45: 30-45 Minuten
+        45-60: 45-60 Minuten
+        60-90: 60-90 Minuten
+        90+: 90+ Minuten
+  results:
+    title: Dein Trainingsprogramm
+    variations:
+      title: 'Wähle eine Variante, die zu dir passt:'
+    plan_details:
+      duration_label: 'Programmlänge:'
+      weekly_distance_label: 'Wöchentliche Distanz:'
+    regenerate_button: Andere Varianten anzeigen
+    export_button: Exportieren als PDF
+  workout_types:
+    easy: Ruhiges Training
+    tempo: Tempotraining
+    intervals: Intervalltraining
+    long: Lange Einheit
+    rest: Ruhe
+  messages:
+    weeks: Wochen
+    week_label: Woche
+    hilly_terrain_note: angepasst für hügeliges Terrain
+  plan_variation:
+    focus_label: Fokus
+    weekly_structure_label: Wochenstruktur
+    distribution_label: Verteilung
+    sessions_per_week: Einheiten pro Woche
+    select_button: Wähle diesen Plan
+  errors:
+    loading_plans: Fehler beim Laden des Trainingsprogramms
+    required_fields: Bitte füllen Sie alle Pflichtfelder aus.
+    no_matching_plan: Keine passende Trainingsplanung gefunden
+    no_matching_variations: Keine passenden Variationen gefunden
+    invalid_training_days: Die Anzahl der Trainingstage entspricht nicht den Anforderungen des Plans
+  week: Woche
+  weeks: Wochen
+  hilly_terrain_note: angepasst für hügeliges Gelände
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Aufbau der Grundausdauer
+        weekly_template:
+          monday:
+            type: einfach
+            description: Ruhiger Distanzlauf
+          wednesday:
+            type: Tempo
+            description: Tempoeinheit
+          saturday:
+            type: lang
+            description: Lange Strecke
+          sunday:
+            type: Wiederherstellung
+            description: Wiederherstellung
+      build:
+        duration_percent: 40
+        focus: Erhöhte Intensität und Distanz
+        weekly_template:
+          monday:
+            type: einfach
+            description: Ruhiges Distanztraining
+          wednesday:
+            type: Intervalle
+            description: Intervalltraining
+          friday:
+            type: Tempo
+            description: Tempoeinheit
+          sunday:
+            type: lang
+            description: Lange Strecke
+      peak:
+        duration_percent: 15
+        focus: Spitzenleistung und spezifisches Training
+        weekly_template:
+          tuesday:
+            type: Intervalltraining
+            description: Qualitätstraining
+          thursday:
+            type: Tempo
+            description: Tempoeinheit
+          saturday:
+            type: lang
+            description: Lange Strecke
+          sunday:
+            type: Erholung
+            description: Wiederherstellung
+      taper:
+        duration_percent: 5
+        focus: Formschärfung und Erholung
+        weekly_template:
+          tuesday:
+            type: einfach
+            description: Ruhiges Training
+          thursday:
+            type: Tempo
+            description: Kurzes Tempotraining
+          saturday:
+            type: einfach
+            description: Sehr ruhiges Training
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min ruhiger Jogging
+        cooldown: 5-10 min ruhiger Jogging
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progressive Aufwärmung
+        cooldown: 10-15 min Abkühlung
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 Min inkl. Lauftechniktraining und Steigerungsläufe
+        cooldown: 10-15 min ruhiges Joggen
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min sehr ruhiger Jogginglauf
+        cooldown: 5-10 min gehen/leichten joggen
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min gehen
+        cooldown: 5-10 min gehen
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Aufwärmen
+    main_workout_label: Passbeschreibung
+    cooldown_label: Abkühlung
+    intensity_label: Tempo
+    duration_label: Dauer
+  regenerate:
+    button_text: Neue Variante generieren
+    confirmation: Bist du sicher, dass du eine neue Variante generieren möchtest?
+  weekdays:
+    monday: Montag
+    tuesday: Dienstag
+    wednesday: Mittwoch
+    thursday: Donnerstag
+    friday: Freitag
+    saturday: Samstag
+    sunday: Sonntag
+footer:
+  races_heading: Rennen
+  tools_heading: Werkzeuge
+  about_heading: Über LaufRennen
+  privacy: Datenschutz
+  copyright_year: 2023-2025
+  site_name: LaufRennen
+  rights_text: Alle Rechte vorbehalten.
+  social_links:
+    facebook: https://www.facebook.com/laufrennen
+    instagram: https://www.instagram.com/laufrennen
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@laufrennen
+accessibility:
+  main_navigation_label: Hauptnavigation
+  breadcrumb_label: Breadcrumb-Navigation
+  back_to_top_label: Nach oben
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Trendende Läufe
+trending_races_description: Hier sind die Läufe, die in den letzten Wochen besonders viel Aufmerksamkeit von Läuferinnen und Läufern in Deutschland bekommen haben.
+trending_races_views_last_30_days: Ansichten der letzten 30 Tage
+trending_races_most_viewed: Aktuell am beliebtesten
+races_views: Ansichten
+recent_races_title: Kürzlich hinzugefügte Läufe
+today: heute
+yesterday: gestern
+days_ago: Tage her
+newest_race_badge: Neuestes hinzugefügt
+races_count: Läufe
+popular_counties_title: Finde Läufe in deinem Bundesland
+popular_cities_title: Finde Läufe in deiner Stadt
+all_counties: Zeige alle Bundesländer
+all_cities: Zeige alle Städte
+category_header_1: Trailläufe
+category_type_1: trail
+category_1_races_sub_title_1: Trail Marathon
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Trail Ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail Ultra 100 miles
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Straßenläufe
+category_type_2: road
+category_2_races_sub_title_1: Marathon
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Halbmarathon
+category_2_races_sub_ref_2: halbmarathon
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Zeige alle Läufe an
+tools_title: Werkzeuge für dein nächstes Rennen
+home_tools:
+  measure_route:
+    description: Miss eine geplante Runde aus und prüfe die Distanz, bevor du losläufst.
+  training_plans:
+    description: Finde Trainingspläne für verschiedene Ziele, Leistungsniveaus und Distanzen für deinen nächsten Trainingsblock.
+  racetime_estimator:
+    description: Schätze eine realistische Zielzeit auf Basis früherer Ergebnisse und vergleiche verschiedene Ziel-Szenarien.
+  pace_calculator:
+    description: Rechne Pace, Geschwindigkeit und Zielzeiten für gängige Wettkampfdistanzen um.
+missing_race: Fehlt dir ein Lauf? Füge ihn hier hinzu!
+add_race_mp_title: Füge deinen Lauf hinzu
+neighboring_countries_title: Läufe in Deutschland und Nachbarländern
+neighboring_countries_title_specific_country: Läufe in {country_name}
+neighboring_countries_description: Hier sind Läufe in Nachbarländern aufgeführt.
+neighboring_countries_description_specific_country: Hier sind Läufe in {country_name} aufgeführt.
+neighboring_countries_neighbors_native: Nachbarländer
+neighboring_countries_all_neighbors_native: Alle Nachbarländer
+section_race_card_header_nieghbors_default: Deutschland und Nachbarländer
+browse_neighboring:
+  title: Erkunde Läufe in Nachbarländern
+  meta_description: Finde Läufe in Nachbarländern in deiner Nähe. Erkunde nach Ländern, um Läufe über die Grenzen hinweg zu entdecken.
+neighboring_races_title: Läufe in Nachbarländern
+neighboring_countries_show_all: Alle anzeigen
+race_page_layout_title: Rennseite für
