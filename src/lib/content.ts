@@ -214,6 +214,9 @@ export type IndexYaml = {
 };
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+let cachedCountryCodes: string[] | null = null;
+const indexYamlCache = new Map<string, IndexYaml>();
+const raceListSlugCountryCache = new Map<Locale, Map<string, string>>();
 
 function resolveContentPlaceholders(value: unknown): unknown {
   const replacements: Record<string, string> = {
@@ -247,13 +250,15 @@ function dataCountriesDir(): string {
 }
 
 export function listCountryCodes(): string[] {
+  if (cachedCountryCodes) return [...cachedCountryCodes];
   const dir = dataCountriesDir();
   if (!fs.existsSync(dir)) return [];
-  return fs
+  cachedCountryCodes = fs
     .readdirSync(dir, { withFileTypes: true })
     .filter((d) => d.isDirectory() && d.name !== 'int')
     .map((d) => d.name)
     .filter((code) => fs.existsSync(path.join(dir, code, 'index.yaml')));
+  return [...cachedCountryCodes];
 }
 
 /** English routes use `merged_index_int.yaml` per market. */
@@ -264,6 +269,10 @@ export function hasEnglishMerge(countryCode: string): boolean {
 }
 
 export function loadIndexYaml(countryCode: string, locale: Locale): IndexYaml {
+  const cacheKey = `${countryCode}:${locale}`;
+  const cached = indexYamlCache.get(cacheKey);
+  if (cached) return cached;
+
   const base = path.join(dataCountriesDir(), countryCode);
   const file =
     locale === 'en'
@@ -279,7 +288,10 @@ export function loadIndexYaml(countryCode: string, locale: Locale): IndexYaml {
   if (!doc || typeof doc !== 'object') {
     throw new Error(`Invalid YAML: ${file}`);
   }
-  return resolveContentPlaceholders(doc) as IndexYaml;
+
+  const resolved = resolveContentPlaceholders(doc) as IndexYaml;
+  indexYamlCache.set(cacheKey, resolved);
+  return resolved;
 }
 
 export function nativeTranslationLocale(countryCode: string): string {
@@ -297,13 +309,16 @@ export function raceListSlug(content: IndexYaml, countryCode: string): string {
 }
 
 export function findCountryByRaceListSlug(raceList: string, locale: Locale): string | null {
-  for (const country of listCountryCodes()) {
-    const content = loadIndexYaml(country, locale);
-    if (raceListSlug(content, country) === raceList) {
-      return country;
+  let cache = raceListSlugCountryCache.get(locale);
+  if (!cache) {
+    cache = new Map<string, string>();
+    for (const country of listCountryCodes()) {
+      const content = loadIndexYaml(country, locale);
+      cache.set(raceListSlug(content, country), country);
     }
+    raceListSlugCountryCache.set(locale, cache);
   }
-  return null;
+  return cache.get(raceList) ?? null;
 }
 
 /**

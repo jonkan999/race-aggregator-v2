@@ -84,6 +84,33 @@ export type RaceDetailRelatedContent = {
   countyHref: string | null;
 };
 
+type RaceDetailRelatedRowMeta = {
+  row: RaceListRow;
+  countyKey: string;
+  typeKey: string;
+  category: CategoryFilterOption | null;
+  categoryKey: string;
+  dateKey: string | null;
+  dateNumber: number;
+  latitude: number | null;
+  longitude: number | null;
+};
+
+type RaceDetailRelatedIndex = {
+  translationLocale: string;
+  countyMapping: Record<string, string>;
+  typeOptions: Record<string, string>;
+  racePageFolder: string;
+  listHref: string;
+  overviewHref: string;
+  countyKeys: Set<string>;
+  marketRouteTargets: ReturnType<typeof getMarketRouteTargets>;
+  rowMetaByDomain: Map<string, RaceDetailRelatedRowMeta>;
+  rowMetas: RaceDetailRelatedRowMeta[];
+};
+
+const raceDetailRelatedIndexCache = new Map<string, Promise<RaceDetailRelatedIndex>>();
+
 function toComparableDate(raw: unknown): string | null {
   if (typeof raw !== 'string') return null;
   const normalized = raw.trim().replaceAll('-', '');
@@ -240,6 +267,63 @@ function todayEpochDayUtc(): number {
   return Math.floor(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86_400_000,
   );
+}
+
+async function getRaceDetailRelatedIndex(args: {
+  countryCode: string;
+  locale: Locale;
+  content: IndexYaml;
+  allRows: RaceListRow[];
+}): Promise<RaceDetailRelatedIndex> {
+  const { countryCode, locale, content, allRows } = args;
+  const cacheKey = `${countryCode}:${locale}`;
+  const cached = raceDetailRelatedIndexCache.get(cacheKey);
+  if (cached) return cached;
+
+  const pending = (async () => {
+    const translationLocale = locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv');
+    const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
+    const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
+    const racePageFolder = String(
+      content.race_page_folder_name ?? (locale === 'en' ? 'race-pages' : 'loppsidor'),
+    );
+    const listHref = getRaceListBaseHref(countryCode, locale, content);
+    const overviewHref = getBrowseOverviewHref(countryCode, locale, content);
+    const marketRouteTargets = getMarketRouteTargets();
+    const overviewData = await getBrowseOverviewData({ countryCode, locale, content });
+    const countyKeys = new Set(overviewData.counties.map((entry) => normalizedText(entry.key)));
+    const rowMetas = allRows.map((row) => {
+      const category = pickPrimaryCategory(row, content);
+      const dateKey = firstComparableRowDate(row);
+      return {
+        row,
+        countyKey: normalizedText(row.county),
+        typeKey: normalizedText(row.race_type),
+        category,
+        categoryKey: category?.label ?? '',
+        dateKey,
+        dateNumber: comparableDateToEpochDay(dateKey),
+        latitude: row.latitude,
+        longitude: row.longitude,
+      } satisfies RaceDetailRelatedRowMeta;
+    });
+
+    return {
+      translationLocale,
+      countyMapping,
+      typeOptions,
+      racePageFolder,
+      listHref,
+      overviewHref,
+      countyKeys,
+      marketRouteTargets,
+      rowMetas,
+      rowMetaByDomain: new Map(rowMetas.map((meta) => [meta.row.domain_name, meta])),
+    };
+  })();
+
+  raceDetailRelatedIndexCache.set(cacheKey, pending);
+  return pending;
 }
 
 export function formatRaceDateEntries(
@@ -573,16 +657,21 @@ export async function getRaceDetailRelatedContent(args: {
   allRows: RaceListRow[];
 }): Promise<RaceDetailRelatedContent> {
   const { countryCode, locale, content, currentRow, allRows } = args;
-  const translationLocale = locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv');
-  const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
-  const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
-  const racePageFolder = String(content.race_page_folder_name ?? (locale === 'en' ? 'race-pages' : 'loppsidor'));
-  const listHref = getRaceListBaseHref(countryCode, locale, content);
-  const overviewHref = getBrowseOverviewHref(countryCode, locale, content);
-  const marketRouteTargets = getMarketRouteTargets();
-  const overviewData = await getBrowseOverviewData({ countryCode, locale, content });
-  const countyKeys = new Set(overviewData.counties.map((entry) => normalizedText(entry.key)));
-  const currentCountyKey = normalizedText(currentRow.county);
+  const relatedIndex = await getRaceDetailRelatedIndex({ countryCode, locale, content, allRows });
+  const {
+    translationLocale,
+    countyMapping,
+    typeOptions,
+    racePageFolder,
+    listHref,
+    overviewHref,
+    countyKeys,
+    marketRouteTargets,
+    rowMetas,
+    rowMetaByDomain,
+  } = relatedIndex;
+  const currentMeta = rowMetaByDomain.get(currentRow.domain_name);
+  const currentCountyKey = currentMeta?.countyKey ?? normalizedText(currentRow.county);
   const currentCountyLabel = currentRow.county
     ? (countyMapping[currentRow.county] ?? currentRow.county)
     : '';
@@ -595,8 +684,8 @@ export async function getRaceDetailRelatedContent(args: {
       })
     : null;
 
-  const primaryCategory = pickPrimaryCategory(currentRow, content);
-  const typeKey = currentRow.race_type?.trim().toLowerCase() ?? '';
+  const primaryCategory = currentMeta?.category ?? pickPrimaryCategory(currentRow, content);
+  const typeKey = currentMeta?.typeKey ?? (currentRow.race_type?.trim().toLowerCase() ?? '');
   const currentTypeLabel = typeKey ? (typeOptions[typeKey] ?? typeKey) : '';
 
   const shortcutKeys = new Set<string>();
@@ -655,29 +744,29 @@ export async function getRaceDetailRelatedContent(args: {
     overviewHref,
   );
 
-  const currentDateKey = firstComparableRowDate(currentRow);
-  const currentDateNumber = comparableDateToEpochDay(currentDateKey);
+  const currentDateKey = currentMeta?.dateKey ?? firstComparableRowDate(currentRow);
+  const currentDateNumber = currentMeta?.dateNumber ?? comparableDateToEpochDay(currentDateKey);
   const todayEpochDay = todayEpochDayUtc();
-  const currentTypeKey = normalizedText(currentRow.race_type);
+  const currentTypeKey = currentMeta?.typeKey ?? normalizedText(currentRow.race_type);
   const currentCategoryKey = primaryCategory?.label ?? '';
-  const currentLatitude = currentRow.latitude;
-  const currentLongitude = currentRow.longitude;
+  const currentLatitude = currentMeta?.latitude ?? currentRow.latitude;
+  const currentLongitude = currentMeta?.longitude ?? currentRow.longitude;
 
-  const scored = allRows
-    .filter((candidate) => candidate.domain_name !== currentRow.domain_name)
-    .map((candidate) => {
-      const candidateCountyKey = normalizedText(candidate.county);
-      const candidateTypeKey = normalizedText(candidate.race_type);
-      const candidateCategory = pickPrimaryCategory(candidate, content);
-      const candidateCategoryKey = candidateCategory?.label ?? '';
+  const scored = rowMetas
+    .filter((meta) => meta.row.domain_name !== currentRow.domain_name)
+    .map((meta) => {
+      const candidate = meta.row;
+      const candidateCountyKey = meta.countyKey;
+      const candidateTypeKey = meta.typeKey;
+      const candidateCategoryKey = meta.categoryKey;
 
       let score = 0;
       if (currentCountyKey && currentCountyKey === candidateCountyKey) score += 22;
       if (currentTypeKey && currentTypeKey === candidateTypeKey) score += 28;
       if (currentCategoryKey && currentCategoryKey === candidateCategoryKey) score += 26;
 
-      const candidateDateKey = firstComparableRowDate(candidate);
-      const candidateDateNumber = comparableDateToEpochDay(candidateDateKey);
+      const candidateDateKey = meta.dateKey;
+      const candidateDateNumber = meta.dateNumber;
       if (!Number.isFinite(candidateDateNumber) || candidateDateNumber < todayEpochDay) {
         return { candidate, score: -1 };
       }
@@ -692,14 +781,14 @@ export async function getRaceDetailRelatedContent(args: {
       if (
         typeof currentLatitude === 'number' &&
         typeof currentLongitude === 'number' &&
-        typeof candidate.latitude === 'number' &&
-        typeof candidate.longitude === 'number'
+        typeof meta.latitude === 'number' &&
+        typeof meta.longitude === 'number'
       ) {
         const distanceKm = haversineDistanceKm(
           currentLatitude,
           currentLongitude,
-          candidate.latitude,
-          candidate.longitude,
+          meta.latitude,
+          meta.longitude,
         );
         score += Math.max(0, 24 - Math.min(24, distanceKm / 18));
       }

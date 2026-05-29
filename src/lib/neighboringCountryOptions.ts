@@ -9,6 +9,15 @@ import { getAllRaceListRows } from './raceListSsg';
 import { isDomesticOrigin, type NeighboringCountryOption } from './neighboringSelection';
 
 const knownCountryCodes = new Set(listCountryCodes());
+const neighboringCountryOptionsCache = new Map<
+  string,
+  Promise<{
+    label: string;
+    allLabel: string;
+    headingDefault: string;
+    countries: NeighboringCountryOption[];
+  }>
+>();
 
 function intlCountryLabel(countryCode: string, locale: Locale): string | null {
   try {
@@ -53,27 +62,36 @@ export async function getNeighboringCountryOptions(args: {
   countries: NeighboringCountryOption[];
 }> {
   const { hostCountryCode, locale, content } = args;
-  const allRows = await getAllRaceListRows(hostCountryCode);
-  const codes = new Set<string>();
+  const cacheKey = `${hostCountryCode}:${locale}`;
+  const cached = neighboringCountryOptionsCache.get(cacheKey);
+  if (cached) return cached;
 
-  for (const row of allRows.rows) {
-    const origin = row.origin_country?.trim().toLowerCase();
-    if (!origin || isDomesticOrigin(origin, hostCountryCode)) continue;
-    codes.add(origin);
-  }
+  const pending = (async () => {
+    const allRows = await getAllRaceListRows(hostCountryCode);
+    const codes = new Set<string>();
 
-  const countries = [...codes]
-    .map((code) => ({ code, label: countryLabel(code, locale) }))
-    .sort((a, b) => a.label.localeCompare(b.label, locale === 'en' ? 'en' : 'sv'));
+    for (const row of allRows.rows) {
+      const origin = row.origin_country?.trim().toLowerCase();
+      if (!origin || isDomesticOrigin(origin, hostCountryCode)) continue;
+      codes.add(origin);
+    }
 
-  return {
-    label: String(content.neighboring_countries_neighbors_native ?? ''),
-    allLabel: String(content.neighboring_countries_all_neighbors_native ?? ''),
-    headingDefault: String(
-      content.section_race_card_header_nieghbors_default ??
-        content.neighboring_countries_title ??
-        '',
-    ),
-    countries,
-  };
+    const countries = [...codes]
+      .map((code) => ({ code, label: countryLabel(code, locale) }))
+      .sort((a, b) => a.label.localeCompare(b.label, locale === 'en' ? 'en' : 'sv'));
+
+    return {
+      label: String(content.neighboring_countries_neighbors_native ?? ''),
+      allLabel: String(content.neighboring_countries_all_neighbors_native ?? ''),
+      headingDefault: String(
+        content.section_race_card_header_nieghbors_default ??
+          content.neighboring_countries_title ??
+          '',
+      ),
+      countries,
+    };
+  })();
+
+  neighboringCountryOptionsCache.set(cacheKey, pending);
+  return pending;
 }

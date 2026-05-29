@@ -89,6 +89,12 @@ export type BrowseScopedRaceTypeEntry = {
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const countriesRoot = resolveMarketDataRoot(path.join(repoRoot, 'data', 'countries'));
+const browseCategoryEntriesCache = new Map<string, Promise<BrowseCategoryEntry[]>>();
+const browseNeighboringEntriesCache = new Map<string, Promise<BrowseOverviewSectionEntry[]>>();
+const browseOverviewDataCache = new Map<string, Promise<BrowseOverviewData>>();
+const browseCityRowsCache = new Map<string, Promise<RaceListRow[]>>();
+const browseNeighboringRowsCache = new Map<string, Promise<RaceListRow[]>>();
+const qualifiedCitiesCache = new Map<string, QualifiedCity[]>();
 
 type QualifiedCitiesYaml = {
   cities?: Array<{
@@ -319,81 +325,90 @@ export async function getBrowseCategoryEntries(args: {
   content: IndexYaml;
 }): Promise<BrowseCategoryEntry[]> {
   const { countryCode, locale, content } = args;
-  const policy = getBrowseSeoIndexingPolicy(content);
-  const allRows = await getAllRaceListRows(countryCode);
-  const domesticRows = filterRowsToUpcomingWindow(
-    allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode)),
-  );
-  const options = categoryFilterOptionsFromYaml(
-    content.category_mapping,
-    content.verbose_local_distance_mapping as Record<string, unknown> | undefined,
-  );
-  const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
+  const cacheKey = `${countryCode}:${locale}`;
+  const cached = browseCategoryEntriesCache.get(cacheKey);
+  if (cached) return cached;
 
-  const entries = options
-    .map((option) => {
-      const filtered = domesticRows.filter((row) => matchesCategory(row, option));
-      if (filtered.length === 0) return null;
-      if (
-        !isBrowseStandaloneAllowed(policy, 'category', {
-          categoryKey: option.key,
-          label: option.label,
-          count: filtered.length,
-        })
-      ) {
-        return null;
-      }
+  const pending = (async () => {
+    const policy = getBrowseSeoIndexingPolicy(content);
+    const allRows = await getAllRaceListRows(countryCode);
+    const domesticRows = filterRowsToUpcomingWindow(
+      allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode)),
+    );
+    const options = categoryFilterOptionsFromYaml(
+      content.category_mapping,
+      content.verbose_local_distance_mapping as Record<string, unknown> | undefined,
+    );
+    const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
 
-      const typeCounts = new Map<string, number>();
-      for (const row of filtered) {
-        const key = row.race_type?.trim().toLowerCase();
-        if (!key) continue;
-        typeCounts.set(key, (typeCounts.get(key) ?? 0) + 1);
-      }
-
-      const slug = slugify(option.label, countryCode);
-      const href = getCategoryPageHref({
-        countryCode,
-        locale,
-        content,
-        categorySlug: slug,
-      });
-
-      const allTypes = [...typeCounts.entries()]
-        .filter(([typeKey, count]) =>
-          isBrowseCombinationAllowed(policy, 'race_type_category', {
-            raceTypeKey: typeKey,
+    const entries = options
+      .map((option) => {
+        const filtered = domesticRows.filter((row) => matchesCategory(row, option));
+        if (filtered.length === 0) return null;
+        if (
+          !isBrowseStandaloneAllowed(policy, 'category', {
             categoryKey: option.key,
             label: option.label,
+            count: filtered.length,
+          })
+        ) {
+          return null;
+        }
+
+        const typeCounts = new Map<string, number>();
+        for (const row of filtered) {
+          const key = row.race_type?.trim().toLowerCase();
+          if (!key) continue;
+          typeCounts.set(key, (typeCounts.get(key) ?? 0) + 1);
+        }
+
+        const slug = slugify(option.label, countryCode);
+        const href = getCategoryPageHref({
+          countryCode,
+          locale,
+          content,
+          categorySlug: slug,
+        });
+
+        const allTypes = [...typeCounts.entries()]
+          .filter(([typeKey, count]) =>
+            isBrowseCombinationAllowed(policy, 'race_type_category', {
+              raceTypeKey: typeKey,
+              categoryKey: option.key,
+              label: option.label,
+              count,
+            }),
+          )
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'sv'))
+          .map(([typeKey, count]) => ({
+            label: typeOptions[typeKey] ?? typeKey,
             count,
-          }),
-        )
-        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'sv'))
-        .map(([typeKey, count]) => ({
-          label: typeOptions[typeKey] ?? typeKey,
-          count,
-          href: getCategoryTypePageHref({
-            countryCode,
-            locale,
-            content,
-            categorySlug: slug,
-            raceTypeKey: typeKey,
-          }),
-        }));
+            href: getCategoryTypePageHref({
+              countryCode,
+              locale,
+              content,
+              categorySlug: slug,
+              raceTypeKey: typeKey,
+            }),
+          }));
 
-      return {
-        label: option.label,
-        slug,
-        count: filtered.length,
-        href,
-        option,
-        allTypes,
-        topTypes: allTypes.slice(0, 5),
-      } satisfies BrowseCategoryEntry;
-    })
-    .filter((entry): entry is BrowseCategoryEntry => entry !== null);
+        return {
+          label: option.label,
+          slug,
+          count: filtered.length,
+          href,
+          option,
+          allTypes,
+          topTypes: allTypes.slice(0, 5),
+        } satisfies BrowseCategoryEntry;
+      })
+      .filter((entry): entry is BrowseCategoryEntry => entry !== null);
 
-  return entries.sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv'));
+    return entries.sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv'));
+  })();
+
+  browseCategoryEntriesCache.set(cacheKey, pending);
+  return pending;
 }
 
 function firstRaceDate(row: RaceListRow): string | null {
@@ -438,6 +453,9 @@ function addEntryCount(map: Map<string, number>, key: string) {
 }
 
 function loadQualifiedCities(countryCode: string): QualifiedCity[] {
+  const cached = qualifiedCitiesCache.get(countryCode);
+  if (cached) return cached;
+
   const file = qualifiedCitiesPath(countryCode);
   if (!fs.existsSync(file)) return [];
 
@@ -445,7 +463,7 @@ function loadQualifiedCities(countryCode: string): QualifiedCity[] {
     const parsed = (yaml.load(fs.readFileSync(file, 'utf8')) as QualifiedCitiesYaml) ?? {};
     if (!Array.isArray(parsed.cities)) return [];
 
-    return parsed.cities
+    const cities = parsed.cities
       .map((entry) => {
         const label = typeof entry.name === 'string' ? entry.name.trim() : '';
         if (!label) return null;
@@ -469,6 +487,8 @@ function loadQualifiedCities(countryCode: string): QualifiedCity[] {
         } satisfies QualifiedCity;
       })
       .filter((entry): entry is QualifiedCity => entry !== null);
+    qualifiedCitiesCache.set(countryCode, cities);
+    return cities;
   } catch {
     return [];
   }
@@ -510,39 +530,48 @@ export async function getBrowseNeighboringEntries(args: {
   content: IndexYaml;
 }): Promise<BrowseOverviewSectionEntry[]> {
   const { countryCode, locale, content } = args;
-  const allRows = filterRowsToUpcomingWindow((await getAllRaceListRows(countryCode)).rows);
-  const neighboringOptions = await getNeighboringCountryOptions({
-    hostCountryCode: countryCode,
-    locale,
-    content,
-  });
+  const cacheKey = `${countryCode}:${locale}`;
+  const cached = browseNeighboringEntriesCache.get(cacheKey);
+  if (cached) return cached;
 
-  const counts = new Map<string, number>();
-  for (const row of allRows) {
-    const origin = row.origin_country?.trim().toLowerCase();
-    if (!origin || isDomesticOrigin(origin, countryCode)) continue;
-    addEntryCount(counts, origin);
-  }
+  const pending = (async () => {
+    const allRows = filterRowsToUpcomingWindow((await getAllRaceListRows(countryCode)).rows);
+    const neighboringOptions = await getNeighboringCountryOptions({
+      hostCountryCode: countryCode,
+      locale,
+      content,
+    });
 
-  return neighboringOptions.countries
-    .map((entry) => {
-      const count = counts.get(entry.code) ?? 0;
-      if (count <= 0) return null;
-      return {
-        key: entry.code,
-        label: entry.label,
-        slug: slugify(entry.code, countryCode),
-        href: getBrowseNeighboringCountryPageHref({
-          countryCode,
-          locale,
-          content,
-          neighborCountryCode: entry.code,
-        }),
-        count,
-      } satisfies BrowseOverviewSectionEntry;
-    })
-    .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
-    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, locale === 'en' ? 'en' : 'sv'));
+    const counts = new Map<string, number>();
+    for (const row of allRows) {
+      const origin = row.origin_country?.trim().toLowerCase();
+      if (!origin || isDomesticOrigin(origin, countryCode)) continue;
+      addEntryCount(counts, origin);
+    }
+
+    return neighboringOptions.countries
+      .map((entry) => {
+        const count = counts.get(entry.code) ?? 0;
+        if (count <= 0) return null;
+        return {
+          key: entry.code,
+          label: entry.label,
+          slug: slugify(entry.code, countryCode),
+          href: getBrowseNeighboringCountryPageHref({
+            countryCode,
+            locale,
+            content,
+            neighborCountryCode: entry.code,
+          }),
+          count,
+        } satisfies BrowseOverviewSectionEntry;
+      })
+      .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, locale === 'en' ? 'en' : 'sv'));
+  })();
+
+  browseNeighboringEntriesCache.set(cacheKey, pending);
+  return pending;
 }
 
 export async function getBrowseOverviewData(args: {
@@ -551,180 +580,197 @@ export async function getBrowseOverviewData(args: {
   content: IndexYaml;
 }): Promise<BrowseOverviewData> {
   const { countryCode, locale, content } = args;
-  const policy = getBrowseSeoIndexingPolicy(content);
-  const allRows = await getAllRaceListRows(countryCode);
-  const domesticRows = filterRowsToUpcomingWindow(
-    allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode)),
-  );
-  const translationLocale = translationLocaleForContent(content, locale);
-  const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
-  const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
-  const monthMapping = (content.month_mapping as Record<string, string> | undefined) ?? {};
+  const cacheKey = `${countryCode}:${locale}`;
+  const cached = browseOverviewDataCache.get(cacheKey);
+  if (cached) return cached;
 
-  const categoryEntries = await getBrowseCategoryEntries(args);
+  const pending = (async () => {
+    const policy = getBrowseSeoIndexingPolicy(content);
+    const allRows = await getAllRaceListRows(countryCode);
+    const domesticRows = filterRowsToUpcomingWindow(
+      allRows.rows.filter((row) => isDomesticOrigin(row.origin_country, countryCode)),
+    );
+    const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
+    const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
+    const monthMapping = (content.month_mapping as Record<string, string> | undefined) ?? {};
 
-  const typeCounts = new Map<string, number>();
-  const countyCounts = new Map<string, { label: string; count: number }>();
-  const monthCounts = new Map<string, number>();
-  const cityCandidateCounts = new Map<string, number>();
+    const categoryEntries = await getBrowseCategoryEntries(args);
 
-  for (const row of domesticRows) {
-    if (row.race_type) {
-      const key = row.race_type.trim().toLowerCase();
-      addEntryCount(typeCounts, key);
-    }
+    const typeCounts = new Map<string, number>();
+    const countyCounts = new Map<string, { label: string; count: number }>();
+    const monthCounts = new Map<string, number>();
+    const cityCandidateCounts = new Map<string, number>();
 
-    if (row.county) {
-      const existing = countyCounts.get(row.county);
-      if (existing) {
-        existing.count += 1;
-      } else {
-        countyCounts.set(row.county, {
-          label: countyMapping[row.county] ?? row.county,
-          count: 1,
-        });
+    for (const row of domesticRows) {
+      if (row.race_type) {
+        const key = row.race_type.trim().toLowerCase();
+        addEntryCount(typeCounts, key);
       }
+
+      if (row.county) {
+        const existing = countyCounts.get(row.county);
+        if (existing) {
+          existing.count += 1;
+        } else {
+          countyCounts.set(row.county, {
+            label: countyMapping[row.county] ?? row.county,
+            count: 1,
+          });
+        }
+      }
+
+      const date = firstRaceDate(row);
+      if (date) {
+        const monthKey = date.slice(4, 6);
+        const monthLabel = monthMapping[monthKey];
+        if (monthLabel) addEntryCount(monthCounts, monthLabel);
+      }
+
+      const cityCandidate = firstNearestCity(row);
+      if (cityCandidate) addEntryCount(cityCandidateCounts, cityCandidate);
     }
 
-    const date = firstRaceDate(row);
-    if (date) {
-      const monthKey = date.slice(4, 6);
-      const monthLabel = monthMapping[monthKey];
-      if (monthLabel) addEntryCount(monthCounts, monthLabel);
-    }
+    const neighboring = await getBrowseNeighboringEntries(args);
 
-    const cityCandidate = firstNearestCity(row);
-    if (cityCandidate) addEntryCount(cityCandidateCounts, cityCandidate);
-  }
-
-  const neighboring = await getBrowseNeighboringEntries(args);
-
-  const qualifiedCities = loadQualifiedCities(countryCode);
-  const cityEntries =
-    qualifiedCities.length > 0
-      ? qualifiedCities
-          .map((city) => {
-            const count = domesticRows.filter((row) => rowMatchesAnyCity(row, city.aliases)).length;
-            if (count === 0) return null;
-            if (
-              !isBrowseStandaloneAllowed(policy, 'city', {
+    const qualifiedCities = loadQualifiedCities(countryCode);
+    const cityEntries =
+      qualifiedCities.length > 0
+        ? qualifiedCities
+            .map((city) => {
+              const count = domesticRows.filter((row) => rowMatchesAnyCity(row, city.aliases)).length;
+              if (count === 0) return null;
+              if (
+                !isBrowseStandaloneAllowed(policy, 'city', {
+                  count,
+                  isQualifiedCity: true,
+                })
+              ) {
+                return null;
+              }
+              return {
+                key: city.label,
+                label: city.label,
+                slug: slugify(city.label, countryCode),
+                href: getBrowseCityPageHref({
+                  countryCode,
+                  locale,
+                  content,
+                  cityLabel: city.label,
+                }),
                 count,
-                isQualifiedCity: true,
-              })
-            ) {
-              return null;
-            }
-            return {
-              key: city.label,
-              label: city.label,
-              slug: slugify(city.label, countryCode),
-              href: getBrowseCityPageHref({
-                countryCode,
-                locale,
-                content,
-                cityLabel: city.label,
-              }),
-              count,
-            } satisfies BrowseOverviewSectionEntry;
-          })
-          .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
-      : [...cityCandidateCounts.keys()]
-          .map((label) => {
-            const count = domesticRows.filter((row) => rowMatchesCity(row, label)).length;
-            if (count === 0) return null;
-            if (
-              !isBrowseStandaloneAllowed(policy, 'city', {
+              } satisfies BrowseOverviewSectionEntry;
+            })
+            .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
+        : [...cityCandidateCounts.keys()]
+            .map((label) => {
+              const count = domesticRows.filter((row) => rowMatchesCity(row, label)).length;
+              if (count === 0) return null;
+              if (
+                !isBrowseStandaloneAllowed(policy, 'city', {
+                  count,
+                  isQualifiedCity: false,
+                })
+              ) {
+                return null;
+              }
+              return {
+                key: label,
+                label,
+                slug: slugify(label, countryCode),
+                href: getBrowseCityPageHref({
+                  countryCode,
+                  locale,
+                  content,
+                  cityLabel: label,
+                }),
                 count,
-                isQualifiedCity: false,
-              })
-            ) {
-              return null;
-            }
-            return {
-              key: label,
-              label,
-              slug: slugify(label, countryCode),
-              href: getBrowseCityPageHref({
-                countryCode,
-                locale,
-                content,
-                cityLabel: label,
-              }),
-              count,
-            } satisfies BrowseOverviewSectionEntry;
-          })
-          .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
-          .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv'))
-          .slice(0, BROWSE_CITY_LIMIT);
+              } satisfies BrowseOverviewSectionEntry;
+            })
+            .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
+            .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv'))
+            .slice(0, BROWSE_CITY_LIMIT);
 
-  return {
-    categories: categoryEntries.map((entry) => ({
-      key: entry.slug,
-      label: entry.label,
-      slug: entry.slug,
-      href: entry.href,
-      count: entry.count,
-    })),
-    types: [...typeCounts.entries()]
-      .filter(([key, count]) =>
-        isBrowseStandaloneAllowed(policy, 'race_type', {
-          raceTypeKey: key,
+    return {
+      categories: categoryEntries.map((entry) => ({
+        key: entry.slug,
+        label: entry.label,
+        slug: entry.slug,
+        href: entry.href,
+        count: entry.count,
+      })),
+      types: [...typeCounts.entries()]
+        .filter(([key, count]) =>
+          isBrowseStandaloneAllowed(policy, 'race_type', {
+            raceTypeKey: key,
+            count,
+          }),
+        )
+        .map(([key, count]) => ({
+          key,
+          label: typeOptions[key] ?? key,
+          slug: raceTypeSlug(countryCode, locale, content, key),
+          href: getBrowseTypePageHref({
+            countryCode,
+            locale,
+            content,
+            raceTypeKey: key,
+          }),
           count,
-        }),
-      )
-      .map(([key, count]) => ({
-        key,
-        label: typeOptions[key] ?? key,
-        slug: raceTypeSlug(countryCode, locale, content, key),
-        href: getBrowseTypePageHref({
-          countryCode,
-          locale,
-          content,
-          raceTypeKey: key,
-        }),
-        count,
-      }))
-      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
-    counties: [...countyCounts.entries()]
-      .filter(([, data]) => isBrowseStandaloneAllowed(policy, 'county', { count: data.count }))
-      .map(([key, data]) => ({
-        key,
-        label: data.label,
-        slug: slugify(data.label, countryCode),
-        href: getBrowseCountyPageHref({
-          countryCode,
-          locale,
-          content,
-          countyLabel: data.label,
-        }),
-        count: data.count,
-      }))
-      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
-    months: [...monthCounts.entries()]
-      .filter(([, count]) => isBrowseStandaloneAllowed(policy, 'month', { count }))
-      .map(([label, count]) => ({
-        key: Object.entries(monthMapping).find(([, monthLabel]) => monthLabel === label)?.[0] ?? label,
-        label,
-        slug: slugify(label, countryCode),
-        href: getBrowseMonthPageHref({
-          countryCode,
-          locale,
-          content,
-          monthLabel: label,
-        }),
-        count,
-      }))
-      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
-    cities: cityEntries,
-    neighboring,
-  };
+        }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
+      counties: [...countyCounts.entries()]
+        .filter(([, data]) => isBrowseStandaloneAllowed(policy, 'county', { count: data.count }))
+        .map(([key, data]) => ({
+          key,
+          label: data.label,
+          slug: slugify(data.label, countryCode),
+          href: getBrowseCountyPageHref({
+            countryCode,
+            locale,
+            content,
+            countyLabel: data.label,
+          }),
+          count: data.count,
+        }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
+      months: [...monthCounts.entries()]
+        .filter(([, count]) => isBrowseStandaloneAllowed(policy, 'month', { count }))
+        .map(([label, count]) => ({
+          key: Object.entries(monthMapping).find(([, monthLabel]) => monthLabel === label)?.[0] ?? label,
+          label,
+          slug: slugify(label, countryCode),
+          href: getBrowseMonthPageHref({
+            countryCode,
+            locale,
+            content,
+            monthLabel: label,
+          }),
+          count,
+        }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
+      cities: cityEntries,
+      neighboring,
+    };
+  })();
+
+  browseOverviewDataCache.set(cacheKey, pending);
+  return pending;
 }
 
 export async function getBrowseCityRows(countryCode: string, cityLabel: string): Promise<RaceListRow[]> {
-  const allRows = await getAllRaceListRows(countryCode);
-  return filterRowsToUpcomingWindow(allRows.rows).filter(
-    (row) => isDomesticOrigin(row.origin_country, countryCode) && rowMatchesCity(row, cityLabel),
-  );
+  const cacheKey = `${countryCode}:${cityLabel.trim().toLowerCase()}`;
+  const cached = browseCityRowsCache.get(cacheKey);
+  if (cached) return cached;
+
+  const pending = (async () => {
+    const allRows = await getAllRaceListRows(countryCode);
+    return filterRowsToUpcomingWindow(allRows.rows).filter(
+      (row) => isDomesticOrigin(row.origin_country, countryCode) && rowMatchesCity(row, cityLabel),
+    );
+  })();
+
+  browseCityRowsCache.set(cacheKey, pending);
+  return pending;
 }
 
 function scopedRaceTypeEntriesFromRows(args: {
@@ -790,14 +836,23 @@ export async function getBrowseNeighboringRows(
   countryCode: string,
   neighborCountryCode: string | null | undefined,
 ): Promise<RaceListRow[]> {
-  const allRows = await getAllRaceListRows(countryCode);
   const normalized = neighborCountryCode?.trim().toLowerCase() ?? '';
-  return filterRowsToUpcomingWindow(allRows.rows).filter((row) => {
-    const origin = row.origin_country?.trim().toLowerCase() ?? '';
-    if (!origin || isDomesticOrigin(origin, countryCode)) return false;
-    if (!normalized) return true;
-    return origin === normalized;
-  });
+  const cacheKey = `${countryCode}:${normalized}`;
+  const cached = browseNeighboringRowsCache.get(cacheKey);
+  if (cached) return cached;
+
+  const pending = (async () => {
+    const allRows = await getAllRaceListRows(countryCode);
+    return filterRowsToUpcomingWindow(allRows.rows).filter((row) => {
+      const origin = row.origin_country?.trim().toLowerCase() ?? '';
+      if (!origin || isDomesticOrigin(origin, countryCode)) return false;
+      if (!normalized) return true;
+      return origin === normalized;
+    });
+  })();
+
+  browseNeighboringRowsCache.set(cacheKey, pending);
+  return pending;
 }
 
 export async function getCategorySnapshot(args: {
