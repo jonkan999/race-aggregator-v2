@@ -1,0 +1,1051 @@
+type_options:
+  road: Tänavajooks
+  terrain: Maastikujooks
+  trail: Trailijooks
+  track: Rajajooks
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Teatejooks
+  time: Aja peale
+  other: Muu
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Poolmaraton:
+    range:
+    - 20
+    - 22
+  Maraton:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: tagahoov
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 meetrit:
+    range:
+    - 1.5
+    - 1.5
+  3000 meetrit:
+    range:
+    - 3
+    - 3
+  5000 meetrit:
+    range:
+    - 5
+    - 5
+  10000 meetrit:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Tagahoovi Ultra
+  time: Aja peale
+  relay: Teatejooks
+verbose_local_distance_mapping:
+  half marathon: Poolmaraton
+  marathon: Maraton
+  fallback: Segadistants
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Poolmaraton
+- range:
+  - 41.9
+  - 42.4
+  label: Maraton
+race_page_estimated_date_label: Hinnanguline kuupäev
+race_page_estimated_disclaimer: Selle võistluse ametlik kuupäev ei ole veel kinnitatud.
+country_code: ee
+country_language_code: et
+navigation:
+  main: Kõik
+  race-list: Jooksuvõistlused
+  add-race: Lisa võistlus
+  forum: Foorum
+  measure-route: Mõõda oma ringi
+  training-plans: Treeningprogrammid
+  pace-calculator: Tempo teisendaja
+  racetime-estimator: Hinda oma lõppaega
+  about-us: Meist
+  contact: Võta meiega ühendust
+  neighboring: Naaberriigid
+race_list_name: jooksuvõistlused
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Eelvaata võistlust
+  terms-of-service: Kasutustingimused
+  privacy-policy: Privaatsuspoliitika
+  about-us: Meist
+  contact: Kontaktige meid
+  faq: Tavalised küsimused
+page_name: Jooksma
+base_url: https://jooksma.ee/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Tere!
+    closing_salutation: Parimate soovidega,
+    link_fallback_intro: 'Kui nupp ei tööta, saad lingi siit kopeerida:'
+  confirm_signup:
+    body: Aitäh, et liitusid saidiga {site_name}. Kinnita oma e-posti aadress, et konto aktiveerida ja esitatud võistlusi hallata.
+    button_label: Kinnita e-posti aadress
+    ignore_note: Kui sina seda kontot ei loonud, võid seda kirja eirata.
+  reset_password:
+    body: Saime päringu sinu {site_name} konto parooli lähtestamiseks. Uue parooli valimiseks klõpsa allolevat nuppu.
+    button_label: Lähtesta parool
+    ignore_note: Kui sina seda ei taotlenud, võid kirja eirata. Parool ei muutu enne, kui valid uue.
+  change_email:
+    body: Taotlesid oma {site_name} konto e-posti aadressi muutmist. Kinnita muudatus allolevale nupule vajutades.
+    button_label: Kinnita uus e-posti aadress
+    ignore_note: Kui sina muudatust ei taotlenud, võid selle kirja eirata.
+title: Kõik jooksmisest Eestis
+country_native: Eesti
+country: Estonia
+meta_description: Eesti suurim jooksukogukond
+country_language: Estonian
+local_name_for_race: jooksuvõistlused
+main_bullet_1: Leia oma järgmine jooks
+main_bullet_2: '- Või lisa see siia'
+main_bullet_3: Osta meie kasutatud kaubaturult
+main_bullet_4: Loe viimaseid uudiseid või räägi oma muredest meie foorumis
+description: See kogukonnapõhine algatus on suunatud jooksjate kogumisele üle kogu Eesti. Meie platvorm on arendamisel, kuid sinu abiga saame luua midagi fantastilist!
+cta_search: Leia Võistlused
+cta_add: Lisa jooks
+selected_races_title: Valitud Võistlused
+selected_races_top_title: Nädala võistlus
+cta_all_races: Vaata kõiki võistlusi
+show_local: Kuva
+race_local: Jooksuvõistlus
+running_local: Jooks
+alt_prefix: Pilt {x} jaoks
+race_list_title: Eesti kõige täielikum nimekiri maratonidest, poolmaratonidest, miilivõistlustest ja teistest jooksuvõistlustest
+race_list_meta_description_1: Siit leiate kõik jooksuvõistlused ja -sündmused Eestis.
+race_list_meta_description_2: ✔️Suurim jooksukalender ✔️Trail, Backyard või Maraton ✔️Võistlused kogu Eestis
+race_list_data_error: Võistlusi ei saanud laadida. Proovi hiljem uuesti.
+race_list_remote_required: Rohkemate lehtede või filtrite kasutamiseks on vaja Supabase andmebaasi. Lisa oma .env faili PUBLIC_SUPABASE_URL ja PUBLIC_SUPABASE_PUBLISHABLE_KEY.
+race_list_empty: Ükski võistlus ei vastanud valitud filtritele.
+race_list_loading: Laadimine…
+race_card_cta_text: Rohkem teavet ja registreerimine
+section_race_card_category_prefix: Kõik
+section_race_card_category_suffix: lõpp
+section_race_card_header_separator: asukohas
+section_race_card_header_region_default: Eesti
+section_race_card_header_date_range_from: alates
+section_race_card_header_date_range_to: kuni
+section_race_card_header_date_range_single: kuupäeval
+filter_date_from: Alates
+filter_date_to: Kuni
+filter_county: Kõik maakonnad
+filter_race_type: Kõik jooksutüübid
+filter_categories: Kõik kategooriad
+filter_months: Kogu aasta
+filter_distance: Kõik distantsid
+month_mapping:
+  '01': Jaanuar
+  '02': Veebruar
+  '03': Märts
+  '04': Aprill
+  '05': Mai
+  '06': Juuni
+  '07': Juuli
+  '08': August
+  '09': September
+  '10': Oktoober
+  '11': November
+  '12': Detsember
+month_mapping_short:
+  '01': jaan.
+  '02': veebr.
+  '03': märts
+  '04': apr
+  '05': mai
+  '06': juuni
+  '07': juuli
+  '08': aug
+  '09': sept.
+  '10': okt
+  '11': nov
+  '12': dets.
+county_label_text: Kõik maakonnad
+county_mapping:
+  Harju maakond: Harju maakond
+  Hiiu maakond: Hiiu maakond
+  Ida-Viru maakond: Ida-Viru maakond
+  Järva maakond: Järva maakond
+  Jõgeva maakond: Jõgeva maakond
+  Lääne maakond: Lääne maakond
+  Lääne-Viru maakond: Lääne-Viru maakond
+  Pärnu maakond: Pärnu maakond
+  Põlva maakond: Põlva maakond
+  Rapla maakond: Rapla maakond
+  Saare maakond: Saare maakond
+  Tartu maakond: Tartu maakond
+  Valga maakond: Valga maakond
+  Viljandi maakond: Viljandi maakond
+  Võru maakond: Võru maakond
+category_label_text: Kategooria silt
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Sõidulehe juurde
+map_toggle_desktop: Näita kaarti
+map_toggle_desktop_active: Peida kaart
+map_toggle_mobile: Kaart
+map_toggle_mobile_list: Nimekiri
+map_markers_load_error: Kaardimarkereid ei saanud laadida.
+map_not_configured: Kaart ei ole seadistatud, sest kaardivõti puudub.
+race_page_map_zoom: '5'
+pagination:
+  results_text: /
+  events_text: võistlust
+  previous_text: Eelmine
+  next_text: Järgmine
+  page_text: Leht
+  of_text: /
+add_race_title: Lisa uus võistlus
+add_race_meta_description: Lisa võistlus Jooksma.ee
+map_message: Asetage oma jooks kaardile, klikkides kaardil
+mapbox_center:
+  latitude: 58.459
+  longitude: 25.340796
+mapbox_zoom: '6'
+date_text: Kuupäev
+multi_day_toggle: Mitme päeva jooks
+end_date_text: Lõppkuupäev
+type_text: Pinna tüüp / Võistluse tüüp
+type_select_placeholder: Vali pinnas / jooksu tüüp
+name_label: 'Loppe nimi:'
+name_placeholder: t ex Tallinnas ringi
+distance_label: 'Distantsid:'
+distance_placeholder: Sisestage kaugus km-des
+add_distance_button: Lisa
+half_marathon_button: Poolmaraton
+marathon_button: Maraton
+backyard_ultra_button: Tagahoovi Ultra
+frontyard_ultra_button: Esimese õue ultra
+fifty_miles_button: 50 miili
+hundred_miles_button: 100 miili
+place_label: 'Koha nimi, kus jooks korraldatakse:'
+place_placeholder: nt Kadrioru park, Tallinn
+organizer_label: 'korraldaja:'
+organizer_contact_placeholder: FK Üliõpilased
+organizer_contact_label: 'Kontakti e-post:'
+organizer_mail_placeholder: info@jooksma.ee
+website_label: 'Korraldaja koduleht:'
+website_placeholder: https://korraldaja.ee/
+start_time_label: 'Algusaeg:'
+start_time_placeholder: 09:00
+price_range_label: 'Hinnavahemik:'
+price_range_placeholder: t.ex. 200-500 €
+add_race_description_label: Kirjeldage võistlust
+add_race_description_placeholder: Tallinna Linnajooks on kiire rada mööda linna tänavaid ja parke...
+add_race_additional_label: Muud vajalikud andmed
+add_race_additional_placeholder: nt stardi- ja finišiala, stardigrupid ning ajapiirangud.
+add_race_images_label: Laadi üles pilte (Soovitavalt vähemalt 4)
+choose_pictures_button: Vali pildid
+drag_drop_text: Looge ja lohistage pilte siia või klõpsake valimiseks
+add_race_remove_image_label: Eemalda pilt
+coordinates_display_prefix: Võistluse koordinaadid
+add_race_upload_limit_message: Sa saad üles laadida veel ainult {count} pilti.
+add_race_map_not_configured: Kaarti ei saanud praegu laadida.
+clear_images_button: Kustuta pildid
+clear_form_button: Tühjenda vorm
+preview_button: Eelvaade
+submit_button: Esita
+preview_title: Eelvaade
+preview_exit_button: Sulge eelvaade
+optional_label: Valikuline
+comments_suffix: Kommentaarid
+cta_forum: Näita kõiki postitusi
+race_page_preview_title: Nii näeb välja sinu jooks
+edit_race_button: Muuda
+race_page_description_label: Raja kirjeldus
+race_page_course_highlights_label: Tipphetked
+race_page_additional_label: Lisainformatsioon
+race_page_detailed_info_label: Üksikasjalik teave
+race_page_social_links_label: Jälgi võistlust
+race_page_place_label: 'Koht:'
+race_page_distances_label: 'Distantse:'
+race_page_surface_label: 'Pind:'
+race_page_date_label: 'Kuupäev:'
+race_page_registration_link: Registreerimise link
+race_page_registration_cta: Registreeru
+race_page_info_cta: Rohkem infot
+race_page_registration_close_label: Registreerimine sulgub
+race_page_pricing_title: Registreerimine ja hinnad
+race_page_price_deadline_label: Kehtib kuni
+race_page_price_late_fee_label: Hiline registreerimine
+race_page_back_to_list: Tagasi võistluskalendrisse
+race_page_favorites_title: Ära maga võistluse uuendusi maha
+race_page_favorites_body: Loo konto ja salvesta see võistlus lemmikutesse, et saada tulevikus uuendusi, uudiseid ja valitud pakkumisi.
+race_page_favorites_cta: Salvesta lemmikutesse
+race_page_similar_title: Sarnased võistlused
+race_page_similar_body: Rohkem sarnase distantsi, tüübi või asukohaga võistlusi.
+race_page_discover_title: Avasta rohkem võistlusi
+race_page_discover_county_link: Kõik võistlused maakonnas {county}
+race_page_discover_type_link: Rohkem {type} võistlusi
+race_page_discover_category_link: Rohkem kategooria {category} võistlusi
+race_page_discover_type_county_link: '{type} võistlused maakonnas {county}'
+race_page_discover_overview_link: Sirvi kõiki võistluskategooriaid
+disclaimer_text_1: Kõik teave sellel lehel põhineb avatud andmeallikatel. Teeme oma parima, et hoida see ajakohasena, kuid ei saa garanteerida, et kõik on õige. Kui näed mingeid vigu,
+disclaimer_link: võta meiega ühendust
+disclaimer_text_2: nii parandame selle kohe.
+disclaimer_text_3: Kas soovid oma jooksule midagi veel lisada?
+disclaimer_text_4: niisiis püüame aidata!
+race_page_visit_organizer_website: Külastage korraldaja lehte ja registreerimist
+race_page_folder_name: jooksulehed
+race_page_alt_prefix: Pilt {x} jaoks
+seo_county_folder_name: Kõik maakonnad
+seo_cities_folder_name: Linnad
+popular_subcategories_title: Populaarsed alajaotused
+important_keywords_racelist:
+- jooksmine
+- jooksja
+- jooksma
+- jooksuvõistlused
+- jooksuvõistlus
+- jooksuüritused
+- jooksev kalender
+- võistluste kalender
+- saada kiiremaks jooksjaks
+seo_templates:
+  title_parts:
+    category: '{category} jooksud'
+    race_type: '{race_type}'
+    location: asukohas {location}
+    default: Kõik jooksud
+  paragraph_templates:
+    category_race_location: Leia {category} {race_type} võistlused asukohas {location}.
+    category_race: Sirvi {category} {race_type} võistlusi üle Eesti.
+    category_location: Avasta {category} võistlused asukohas {location}.
+    race_location: Vaata kõiki {race_type} võistlusi asukohas {location}.
+    category_only: Leia {category} jooksud üle kogu Eesti.
+    race_only: Sirvi {race_type} võistlusi üle kogu Eesti.
+    location_only: Vaata kõiki jooksuüritusi piirkonnas {location}.
+    default_suffix: Siit leiad kuupäevad, distantsid ja praktilise info järgmise võistluse valimiseks.
+  browse_page_templates:
+    county:
+      title: '{label} jooksud | {site_name}'
+      meta_description: Sirvi piirkonna {label} jooksuvõistlusi. Võrdle kuupäevi, distantse, formaate ja praktilist infot enne järgmise võistluse valimist.
+      h1: Jooksud piirkonnas {label}
+      paragraph: See leht koondab piirkonna {label} jooksud ühte kohta, et saaksid kuupäevi, distantse, võistluse formaati ja praktilist infot hõlpsamalt võrrelda.
+    city:
+      title: '{label} jooksud | {site_name}'
+      meta_description: Leia linnaga {label} seotud jooksud. Võrdle kuupäevi, distantse, lähedalasuvaid valikuid ja praktilist infot enne otsuse tegemist.
+      h1: Jooksud linna {label} lähedal
+      paragraph: See linnaleht aitab sirvida linnaga {label} seotud jookse, sealhulgas lähedasi alternatiive, mis on olulised võistluspäeva või reisi planeerimisel.
+    month:
+      title: '{label} jooksud | {site_name}'
+      meta_description: Sirvi kuu {label} jooksuvõistlusi turul {market}. Võrdle kuupäevi, distantse, tüüpe ja praktilist infot enne hooaja planeerimist.
+      h1: Jooksud kuus {label}
+      paragraph: See leht on mõeldud jooksjatele, kes tahavad kalendrit kuude kaupa vaadata ja kiiremini võrrelda, mis toimub kuus {label}.
+    race_type:
+      title: '{label} jooksud turul {market} | {site_name}'
+      meta_description: Sirvi tüübi {label_lower} jookse turul {market}. Võrdle kuupäevi, distantse, asukohti ja praktilist infot enne valiku tegemist.
+      h1: '{label} jooksud turul {market}'
+      paragraph: See leht keskendub tüübi {label_lower} jooksudele ja annab selgema ülevaate siis, kui võistluse formaat on sama oluline kui distants.
+    category:
+      title: '{label} jooksud turul {market} | {site_name}'
+      meta_description: Sirvi kategooria {label} jookse turul {market}. Võrdle kuupäevi, tüüpe, asukohti ja praktilist infot enne järgmise võistluse valimist.
+      h1: '{label} jooksud turul {market}'
+      paragraph: See distantsi- ja kategoorialeht toob kokku võistlused, mis vastavad kategooriale {label}, et asjakohaseid valikuid oleks lihtsam võrrelda.
+    race_type_category:
+      title: '{label} {secondary_label} jooksud turul {market} | {site_name}'
+      meta_description: Sirvi kategooria {label} jookse turul {market} võistlustüübis {secondary_label_lower}. Võrdle kuupäevi, asukohti ja praktilist infot.
+      h1: '{label} jooksud turul {market} ({secondary_label})'
+      paragraph: See leht kitsendab kalendri kategooria {label} jooksudele tüübis {secondary_label_lower}, mis aitab siis, kui nii distants kui formaat mõjutavad valikut.
+    race_type_county:
+      title: '{secondary_label} jooksud piirkonnas {label} | {site_name}'
+      meta_description: Sirvi tüübi {secondary_label_lower} jookse piirkonnas {label}. Võrdle kuupäevi, distantse ja praktilist infot enne järgmise võistluse valimist.
+      h1: '{secondary_label} jooksud piirkonnas {label}'
+      paragraph: See leht keskendub tüübi {secondary_label_lower} jooksudele piirkonnas {label}, et sama piirkonna sees oleks asjakohasemaid valikuid lihtsam võrrelda.
+    race_type_month:
+      title: '{secondary_label} jooksud kuus {label} | {site_name}'
+      meta_description: Sirvi tüübi {secondary_label_lower} jookse kuus {label_lower}. Võrdle kuupäevi, distantse ja praktilist infot hooaja planeerimisel.
+      h1: '{secondary_label} jooksud kuus {label}'
+      paragraph: See leht koondab tüübi {secondary_label_lower} jooksud kuus {label_lower} nende jaoks, kes planeerivad eelkõige kalendri järgi.
+    race_type_city:
+      title: '{secondary_label} jooksud linna {label} lähedal | {site_name}'
+      meta_description: Sirvi tüübi {secondary_label_lower} jookse, mis on seotud linnaga {label}. Võrdle kuupäevi, distantse ja lähedalasuvaid valikuid.
+      h1: '{secondary_label} jooksud linna {label} lähedal'
+      paragraph: See leht koondab tüübi {secondary_label_lower} jooksud, mis on seotud linnaga {label}, et kohalikku valikut oleks kiirem võrrelda.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Kirjutad indekseeritavatele jooksuvõistluste sirvimislehtedele ajatut SEO-teksti. Kirjuta eelkõige inimestele, alles seejärel otsingu eesmärki silmas pidades. Väljasta ainult korrektne JSON. Hoia tekst ajatu: ära maini käesolevat aastat, jooksvaid loendureid, piiratud aja sõnastust ega värskusväiteid. Väldi märksõnade kuhjamist, hüperbooli, klikipeibutust, superlatiive ja kontrollimatuid väiteid. Tee iga leht antud marsruudikonteksti põhjal selgelt eristatavaks. Kasuta loomulikku eesti keelt, mis sobib Eesti jooksukalendrile. Eelista lühikesi pealkirju, lühikesi H1-sid, võimalusel 120-160 märgi pikkuseid metakirjeldusi ja 2-3 lühikesest lausest koosnevat lõiku.'
+  browse_guidance:
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Sirvi kategooriate järgi
+  helper_text: Leia võistlusi eeldefineeritud filtrite ja kombinatsioonide kaudu
+  overview: Ülevaade
+  counties: Maakond
+  cities: Linnad
+  months: Kuu
+  types: Jooksutüübid
+  categories: Kategooriad
+  neighboring: Naaberriigid
+browse_overview:
+  title: Sirvi kõiki jooksuüritusi
+  meta_description: Leia võistlusi maakonna, tüübi või kategooria järgi
+browse_types:
+  title: Sirvi jooksutüübi järgi
+  meta_description: Leia võistlusi vastavalt võistluse tüübile.
+browse_counties:
+  title: Sirvi maakondi
+  meta_description: Leia võistlusi oma maakonnas.
+browse_cities:
+  title: Sirvi linnade järgi
+  meta_description: Leia jooksud oma linnas.
+browse_categories:
+  title: Sirvi kategooriate järgi
+  meta_description: Leia võistlusi kauguse ja kategooria järgi.
+browse_months:
+  title: Sirvi kuude järgi
+  meta_description: Leia võistlusi kuus.
+auth_modal:
+  title_sign_in: Logi sisse
+  title_create_account: Loo konto
+  title_reset_password: Paranda parool
+  auth_unavailable: Autentimine ei ole veel seadistatud.
+  name_placeholder: Teie nimi
+  email_placeholder: Teie e-post
+  password_placeholder: Salasõna
+  submit_sign_in: Logi sisse
+  submit_create_account: Loo konto
+  submit_reset_password: Saada parooli taastamise link
+  create_account: Loo konto
+  forgot_password: Unustasid parooli?
+  back_to_login: Tagasi sisselogimise juurde
+  error_wrong_password: Vale parool
+  error_email_not_found: E-posti aadress ei leidu
+  prompt_reset_password: Kas soovid oma parooli taastada?
+  prompt_create_account: Kas soovid luua konto selle e-posti aadressiga?
+  already_logged_in: Sa oled juba sisse logitud kui
+  as_email: e-posti teel
+  continue_as_user: Jätka selle kasutajana
+  logout_and_switch: Logi välja ja vaheta kasutajat
+  account_created: Konto loodud!
+  account_created_details: Oled nüüd sisse logitud kui
+  verification_email_sent: Verifitseerimislink on saadetud sinu e-posti aadressile
+  please_verify: Palun kinnitage oma e-posti aadress.
+  error_invalid_credential: Vale e-post või parool
+  create_account_prompt: Loo konto selle asemel
+  error_too_many_requests: Liiga palju katseid. Palun proovige natuke hiljem uuesti.
+  continue_with_google: Jätka Google'iga
+  continue_with_google_create: Loo konto Google'iga
+  google_in_progress: Google'iga jätkamine...
+  oauth_divider: või
+auth_pages:
+  confirm_success: Sinu e-posti aadress on kinnitatud ja konto on nüüd aktiivne.
+  confirm_ready: Nüüd saad saidi kasutamist jätkata.
+  confirm_error: E-posti aadressi ei õnnestunud kinnitada.
+  reset_intro: Sisesta oma kontole uus parool.
+  reset_confirm_label: Kinnita parool
+  reset_mismatch_error: Paroolid ei kattu.
+  reset_invalid_link_error: Taastelink on puudu või vigane.
+  reset_success: Sinu parool on uuendatud. Nüüd saad sisse logida.
+newsletter_popup:
+  email_placeholder: Sinu e-posti aadress
+  submit_button: Saada mulle uuendusi
+  dismiss_button: Mitte praegu
+  invalid_email: Palun sisesta kehtiv e-posti aadress.
+  submit_error: Tellimust ei õnnestunud praegu salvestada. Proovi uuesti.
+  submitting_text: Salvestan...
+  success_message: Aitäh! Võistluste uuendused on peagi sinu postkastis.
+  privacy_note: Uued võistlused, kuupäevamuudatused ja valitud pakkumised. Võid tellimusest igal ajal loobuda.
+  close_aria_label: Sule uudiskirja hüpikaken
+  benefits:
+    new_races: Uued võistlused esimesena
+    date_changes: Kuupäevamuudatused kohe
+    selected_offers: Valitud pakkumised
+    similar_races: Sarnased võistlused sinu lähedal
+    local_picks: Rohkem võistlusi läheduses
+    opening_reminders: Meeldetuletused enne kohtade täitumist
+    race_updates: Selle võistluse uuendused
+    nearby_races: Piiriülesed võistlused sinu lähedal
+  generic:
+    eyebrow: Ära maga järgmist võistlust maha
+    title: Saa uued võistlused ja kuupäevamuudatused enne teisi
+    body: Telli meie uudiskiri ja saa uued võistlused, uuendatud kuupäevad ning käsitsi valitud soovitused riigis {country} otse oma postkasti.
+  race_detail:
+    eyebrow: Jälgi seda võistlust
+    title: Kas soovid uuendusi võistluse {race_name} kohta?
+    body: Telli, et saada võistluse {race_name} uuendused, sarnased võistlused maakonnas {county} ja tähtsad muudatused otse postkasti.
+  browse_category:
+    eyebrow: Rohkem õigeid võistlusi
+    title: Ära maga uusi {category} võistlusi maha
+    body: Saadame uusi {category} võistlusi, sobivaid lähedalasuvaid alternatiive ja tähtsaid kuupäevi, et sa ei peaks neid käsitsi otsima.
+  browse_category_type:
+    eyebrow: Rohkem õigeid võistlusi
+    title: Saa rohkem {race_type} võistlusi kategoorias {category}
+    body: Telli, et saada rohkem {race_type} võistlusi kategoorias {category}, lähedasi alternatiive ja kuupäevamuudatusi otse postkasti.
+  browse_county:
+    eyebrow: Kohalikud võistlused esimesena
+    title: Saa rohkem võistlusi maakonnas {county}
+    body: Hoia silm peal uutel võistlustel, uuendatud kuupäevadel ja nutikatel soovitustel maakonna {county} jaoks ilma kalendrit pidevalt kontrollimata.
+  browse_city:
+    eyebrow: Kohalikud võistlused esimesena
+    title: Kas soovid rohkem võistlusi linnas {city}?
+    body: Telli ja saa uued võistlused, lähedased alternatiivid ja olulised kuupäevad linna {city} kohta otse postkasti.
+  browse_type:
+    eyebrow: Õige võistluse tüüp
+    title: Saa rohkem {race_type} võistlusi oma postkasti
+    body: Saadame uusi {race_type} võistlusi, sarnaseid alternatiive ja olulisi kuupäevi, et saaksid tegutseda enne kohtade kadumist.
+  browse_month:
+    eyebrow: Planeeri hooaega
+    title: Saa kuu {month} parimad võistlused esimesena
+    body: Kui kuu {month} võistlused avanevad, muutuvad või muutuvad eriti huvitavaks, kuuled sellest kohe oma postkastis.
+  browse_neighboring:
+    eyebrow: Laienda oma kalendrit
+    title: Saa ka naaberriikide võistlused
+    body: Telli, et saada uusi võistlusi, nutikaid piiriüleseid soovitusi ja kuupäevamuudatusi piirkonnast {region} otse postkasti.
+  browse_neighboring_country:
+    eyebrow: Laienda oma kalendrit
+    title: Saa rohkem võistlusi piirkonnas {region}
+    body: Saadame uusi võistlusi, kuupäevamuudatusi ja lähedasi asjakohaseid alternatiive, kui piirkonnas {region} ilmub midagi huvitavat.
+submission_flow:
+  logged_in_as: Sisse logitud kui korraldaja
+  submitting_new_race: saadan sisse uue võistluse
+  new_account_created: Selleks, et jooksu saaks hallata, pead kinnitama oma e-posti aadressi. Kinnituslink on saadetud antud e-posti aadressile.
+  password_reset_sent: Parooli taastamise teade saadetud. Kontrolli oma postkasti.
+  unexpected_error: Ilmnes viga. Proovige uuesti.
+  processing_submission: Töötan esitamise kallal...
+  race_exists: Võistlus on juba andmebaasis olemas.
+  race_submitted: Võistlus on esitatud!
+  submission_failed: Kliendil ei õnnestunud jooksu esitada. Proovige uuesti.
+  missing_fields: Puudub midagi. Veenduge, et kõik kohustuslikud väljad on täidetud ja et kaardilt on valitud koht.
+race_page:
+  forum_section:
+    title: Küsimused & Vastused
+    placeholder: Esita küsimus korraldajale...
+    submit_button: Saada küsimus
+    login_prompt: Logi sisse, et esitada küsimus
+    empty_state: Ei ole veel küsimusi. Ole esimene, kes küsimuse esitab!
+    error_message_no_login: Logi sisse või loo konto, et küsimus esitada
+map:
+  show_map: Näita kaarti
+  show_list: Näita nimekirja
+  map: kaart
+  list: loend
+forum:
+  title: Foorum - Räägi jooksust ja jooksja elust koos teiste jooksjatega Eestis
+  meta_description: Räägi jooksust ja jooksja elust teiste jooksjatega meie foorumis. Kõik treeningu, võistluste, vigastuste, toitumise, riiete, varustuse ja palju muu kohta.
+  categories:
+  - name: Treening
+    slug: treening
+    description: Arutelud treeningu ja tehnika üle
+  - name: Võistlused ja Liikumisjooksud
+    slug: võistlused
+    description: Arutage tulevasi võistlusi
+  - name: Traumad & Rehabilitatsioon
+    slug: vigastused
+    description: Abi vigastuste ja taastumisega
+  - name: Ringid ja Kaardid
+    slug: ringid
+    description: Arutage ringe ja kaarte
+  - name: Reisid & Reisiga seotud
+    slug: reisid
+    description: Arutage reise ja reisidega seotud jooksmist
+  - name: Toit & Toitumine
+    slug: kulud
+    description: Arutage toitumist ja toitaineid
+  - name: Riided, Kingad & Aksessuaarid
+    slug: riided
+    description: Arutage riideid, jalatseid ja tarvikuid
+  - name: Osta & Müü
+    slug: osta-ja-müü
+    description: Arutage jooksuvarustuse ostu ja müüki
+  - name: Muud
+    slug: muud
+    description: Kõik muu
+  empty_category_state: Ei ole veel teemasid. Alusta arutelu, luues esimese teema!
+  empty_state_thread: Ei mingeid postitusi veel. Ole esimene, kes kirjutab!
+  empty_state: Ei ole postitusi veel. Ole esimene, kes kirjutab!
+  reply_placeholder: Kirjuta oma vastus...
+  submit_button: Saada
+  login_prompt: Logige sisse, et arutelus osaleda
+  new_thread_title_placeholder: Uue teema pealkiri
+  new_thread_content_placeholder: Kirjuta oma esimene postitus...
+  create_thread_button: Loo uus teema
+  back_to_forum: ← Tagasi foorumisse
+  back_to_category: ← Tagasi kategooriasse
+  empty_thread_state: Ei ole veel postitusi. Ole esimene, kes kirjutab!
+  posts_label: postitus
+  reply_label: vastus
+  thread_created_title: Aitäh, et lood uut teemat!
+  thread_created_message: Teie teema vaadatakse läbi ja lisatakse lehele varsti.
+  thread_created_back_link: Tagasi kategooriasse
+  show_more_threads: Näita rohkem teemasid
+  show_less_threads: Näita vähem teemasid
+  create_new_thread: Loo uus teema
+  reply_title: Vasta teemale
+  showing_threads_count: Kuvatakse {x} {y} teemat
+about_us:
+  title: Jooksma
+  meta_description: Jooksma - Teie giid jooksmiseks Eestis
+  content:
+    intro: Tere tulemast Jooksma - Eesti kõige täielikum platvorm jooksjatele!
+    mission: Meie missioon on muuta jooksjatele lihtsaks leida ja jagada teavet võistluste, treeningute ja kõigi jooksuga seotud asjade kohta.
+    story: Jooksma.ee alustas 2023 jooksjate poolt jooksjatele. Me nägime vajadust kaasaegse ja kasutajasõbraliku platvormi järele, kus Eesti jooksjate kogukond saaks kokku tulla.
+    features:
+    - title: Täielik Jooksu Nimekiri
+      description: Kogume kõik Eesti jooksud ühte kohta - alates väikestest kohalikest jooksudest kuni suurte rahvusvaheliste üritusteni.
+    - title: Kogukonnapõhine
+      description: Meie platvormi juhivad jooksjad nagu sina. Igaüks saab anda panuse teabe jagamisse ürituste kohta ja osaleda aruteludes.
+    - title: Tasuta Tööriistad
+      description: Pakume kasulikke tööriistu, nagu kiirus kalkulaatorid, treeningprogrammid ja marsruudi planeerimine - täiesti tasuta.
+    closing: Jätkame platvormi arendamist, tuginedes meie kasutajate tagasisidele. Kas sul on ettepanekuid paranduste osas? Võta meiega ühendust!
+contact:
+  title: Kontaktige meid
+  meta_description: Võta ühendust Jooksma.ee - Me oleme siin, et sind aidata
+  content:
+    intro: 'Me tahame sinust kuulda! Siin on erinevad viisid meiega ühendust võtta:'
+    email:
+      title: E-kiri
+      address: loppkartan@gmail.com
+      description: Me vastame tavaliselt 24 tunni jooksul tööpäevadel.
+    social:
+      title: Sotsiaalmeedia
+      description: 'Jälgi meid sotsiaalmeedias, et saada uusimaid uudiseid ja uuendusi:'
+    feedback:
+      title: Tagasiside
+      description: Aitame meeleldi kõik tagasiside, mis aitab meil Jooksma.ee parandada.
+privacy_page:
+  title: Privaatsuspoliitika
+  meta_description: Privaatsuspoliitika ja teave selle kohta, kuidas Jooksma käsitleb isikuandmeid ning küpsiseid.
+  last_updated_label: Viimati uuendatud
+  last_updated_date: 27. märts 2026
+  contact_intro: 'Privaatsusega seotud küsimuste ja taotluste korral võta meiega ühendust:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Millist teavet me kogume
+    intro: 'Kogume teavet, mida annad meile otse, kui:'
+    bullets:
+    - lood konto
+    - esitad võistluse andmeid
+    - postitad foorumisse
+    - võtad meiega ühendust
+  - title: 2. Küpsised ja jälgimine
+    intro: 'Kasutame küpsiseid selleks, et:'
+    bullets:
+    - meeles pidada sinu eelistusi
+    - säilitada sinu seanssi ja sisselogitud olekut
+    - analüüsida liiklust ja saidi kasutust
+    - näidata asjakohast reklaami ja parandada kasutuskogemust
+  - title: 3. Kuidas me sinu teavet kasutame
+    intro: 'Sinu teave aitab meil:'
+    bullets:
+    - pakkuda ja parandada oma teenuseid
+    - saata olulisi teavitusi ja uuendusi
+    - vastata päringutele ja tugiküsimustele
+    - ennetada pettust ja kuritarvitusi
+  - title: 4. Sinu õigused
+    intro: 'GDPR-i alusel on sul õigus:'
+    bullets:
+    - pääseda ligi oma isikuandmetele
+    - parandada ebatäpseid või puudulikke andmeid
+    - taotleda oma andmete kustutamist
+    - vaidlustada teatud töötlemistoiminguid
+    - taotleda andmete ülekandmist
+  - title: 5. Võta meiega ühendust
+    intro: Kui sul on küsimusi selle kohta, kuidas me isikuandmeid töötleme või küpsiseid kasutame, oled alati teretulnud meiega ühendust võtma.
+racetime_estimator_title: Hinda oma lõppaege
+racetime_estimator_description: Eelneva jooksu põhjal saad sa hinnata oma lõpp-aega teiste distantside jaoks.
+known_distance_label: Vali distants, kus sul on varasem tulemus
+known_time_label: Sisesta oma aeg
+calculate_button_text: Arvuta ajad
+predicted_times_title: Hinnatud ajad
+distance_header: Distants
+predicted_time_header: Hinnanguline aeg
+hilly_course_label: Künklik rada
+finish_time_header: Hinnanguline lõpuaeg
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/km
+flat_time_header: Aeg (platt)
+flat_pace_per_km_header: Min/km (tasane)
+flat_pace_per_mile_header: Min/miil (tasane)
+hill_adjustment_header: Künkliku raja korrigeerimine
+pace_calculator_title: Tempo teisendaja
+pace_calculator_description: Lihtne tööriist, et muuta oma jooksukiirus erinevate mõõtühikute vahel.
+pace_table_header_kph: Kilomeeter tunnis
+pace_table_header_mph: Miile tunnis
+pace_table_header_min_km: Minutid kilomeetri kohta
+pace_table_header_min_mile: Minutit miili kohta
+pace_table_header_5k: 5 km
+pace_table_header_10k: 10 km
+pace_table_header_half: Poolmaraton
+pace_table_header_full: 42,2 km
+pace_conversion_note: 1 kilomeeter tunnis (kph) = 0.62 miili tunnis (mph)
+measure_route_title: Mõõda oma ringi
+measure_route_description: Klõpsa kaardil, et märkida punkte mööda oma marsruuti. Kokku kaugus arvutatakse automaatselt.
+remove_last_point: Eemalda viimane punkt
+clear_route: Tühjenda rada
+total_distance: Kokku distants
+training_plans:
+  title: Treeningplaanid
+  description: Loo kohandatud treeningprogramm, mis põhineb sinu eesmärgil.
+  disclaimer_text_tp_1: Meie treeningprogrammid genereeritakse AI abil ja kohandatakse seejärel vastavalt sinu määratud eesmärkidele ja eelistustele. Programme ei garanteerita, et need oleksid ideaalsed või töötaksid kõigile.
+  disclaimer_link_tp: Kontaktige meid
+  disclaimer_text_tp_2: kui sul on tagasisidet või ettepanekuid paranduste kohta.
+  form:
+    race_date_label: Võistluse kuupäev
+    plan_type_label: Plaani tüüp
+    target_distance_label: Sihtdistants
+    target_time_label: Sihtaeg
+    training_days_label: Treeningupäevad nädalas
+    session_time_label: Aeg, mis on saadaval iga seansi jaoks
+    is_hilly_label: Künklik maastik
+    hours_placeholder: Tunnid
+    minutes_placeholder: Minutid
+    seconds_placeholder: Sekundid
+    submit_button: Genereeri treeningplaan
+    target_distance:
+      placeholder: Vali distants
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Poolmaraton
+        '42195': 42,2 km (maraton)
+    training_days:
+      placeholder: Vali päevade arv
+      options:
+        '3': 3 päeva
+        '4': 4 päeva
+        '5': 5 päeva
+        '6': 6 päeva
+    session_time:
+      placeholder: Vali aeg ühe treeningu kohta
+      options:
+        30-45: 30-45 minutit
+        45-60: 45-60 minutit
+        60-90: 60-90 minutit
+        90+: 90+ minutit
+  results:
+    title: Teie treeningprogramm
+    variations:
+      title: 'Vali endale sobiv variant:'
+    plan_details:
+      duration_label: 'Programmi kestus:'
+      weekly_distance_label: 'Nädaladistants:'
+    regenerate_button: Näita teisi variante
+    export_button: Ekspordi PDF-ks
+  workout_types:
+    easy: Rahulik treening
+    tempo: Tempotreening
+    intervals: Intervallid
+    long: Pikad jooksud
+    rest: Taastumine
+  messages:
+    weeks: nädalad
+    week_label: Nädal
+    hilly_terrain_note: kohandatud mägisele maastikule
+  plan_variation:
+    focus_label: Fookus
+    weekly_structure_label: Nädalastruktuur
+    distribution_label: Jaotamine
+    sessions_per_week: sessioonide arv nädalas
+    select_button: Vali see plaan
+  errors:
+    loading_plans: Viga treeningprogrammide laadimisel
+    required_fields: Palun täitke kõik kohustuslikud väljad
+    no_matching_plan: Ei leitud sobivat treeningplaani
+    no_matching_variations: Ei leitud sobivaid variatsioone
+    invalid_training_days: Treeningpäevade arv ei vasta plaani nõuetele.
+  week: Nädal
+  weeks: nädalat
+  hilly_terrain_note: kohandatud mägise maastiku jaoks
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Põhikonditsiooni arendamine
+        weekly_template:
+          monday:
+            type: lihtne
+            description: Rahulik distantsjooks
+          wednesday:
+            type: tempo
+            description: Tempotreening
+          saturday:
+            type: pikad
+            description: Pikad jooksmised
+          sunday:
+            type: taastumine
+            description: Taastumine
+      build:
+        duration_percent: 40
+        focus: Suurem intensiivsus ja distants
+        weekly_template:
+          monday:
+            type: lihtne
+            description: Rahulik kauguste jooks
+          wednesday:
+            type: intervallid
+            description: Intervallid
+          friday:
+            type: tempo
+            description: Tempotreening
+          sunday:
+            type: pikem
+            description: Pikk jooks
+      peak:
+        duration_percent: 15
+        focus: Tipptasemel ja spetsiifiline treening
+        weekly_template:
+          tuesday:
+            type: intervallid
+            description: Kvaliteetne treening
+          thursday:
+            type: tempo
+            description: Tempotreening
+          saturday:
+            type: pikad
+            description: Pikk jooks
+          sunday:
+            type: taastumine
+            description: Taastumine
+      taper:
+        duration_percent: 5
+        focus: Formitippimine
+        weekly_template:
+          tuesday:
+            type: lihtne
+            description: Rahulik treening
+          thursday:
+            type: tempo
+            description: Lühike tempotreening
+          saturday:
+            type: lihtne
+            description: Väga rahulik treening
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min rahulik sörkjooks
+        cooldown: 5-10 min rahulik sörkjooks
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 minutit progressiivne soojendus
+        cooldown: 10-15 min jahtumine
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min koos jooksuharjutuste ja kiirusetappidega
+        cooldown: 10-15 min rahulik sörkjooks
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min väga rahulik sörkjooks
+        cooldown: 5-10 minutit kõndimist/kergelt sörkjooksu
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 minutit kõndimist
+        cooldown: 5-10 min jalutamine
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Soojendus
+    main_workout_label: Passi kirjeldus
+    cooldown_label: Jahtumine
+    intensity_label: Sihttempo
+    duration_label: Aeg
+  regenerate:
+    button_text: Loo uus variant
+    confirmation: Kas olete kindel, et soovite genereerida uut varianti?
+  weekdays:
+    monday: Esmaspäev
+    tuesday: Teisipäev
+    wednesday: Kolmapäev
+    thursday: Neljapäev
+    friday: Reede
+    saturday: Laupäev
+    sunday: Pühapäev
+footer:
+  races_heading: Võistlused
+  tools_heading: Tööriistad
+  about_heading: Jooksma.ee
+  privacy: Privaatsuspoliitika
+  copyright_year: 2023-2025
+  site_name: Jooksma.ee
+  rights_text: Kõik õigused kaitstud.
+  social_links:
+    facebook: https://www.facebook.com/loppkartan
+    instagram: https://www.instagram.com/loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@loppkartan
+accessibility:
+  main_navigation_label: Peamine navigeerimine
+  breadcrumb_label: Leivapuru
+  back_to_top_label: Tagasi üles
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Trendid jooksuvõistlus
+trending_races_description: Siin on jooksuvõistlus, mis on saanud enim tähelepanu eesti jooksjate hulgas.
+trending_races_views_last_30_days: vaatamisi viimase 30 päeva jooksul
+trending_races_most_viewed: Kõige populaarsem hetkel
+races_views: vaatamisi
+recent_races_title: Hiljuti lisatud jooksuvõistlus
+today: täna
+yesterday: eile
+days_ago: päeva tagasi
+newest_race_badge: Viimati lisatud
+races_count: võistlus
+popular_counties_title: Leia võistlus sinu maakonnas
+popular_cities_title: Leia võistlus sinu linnas
+all_counties: Näita kõiki maakondi
+all_cities: Näita kõiki linnu
+category_header_1: Maastiku võistlused
+category_type_1: terrain
+category_1_races_sub_title_1: Maastiku Maraton
+category_1_races_sub_ref_1: maraton
+category_1_races_sub_title_2: Maastiku Poolmaraton
+category_1_races_sub_ref_2: poolmaraton
+category_1_races_sub_title_3: Maastiku 10 km
+category_1_races_sub_ref_3: 10-km
+category_header_2: Tänava võistlused
+category_type_2: road
+category_2_races_sub_title_1: Maraton
+category_2_races_sub_ref_1: maraton
+category_2_races_sub_title_2: Poolmaraton
+category_2_races_sub_ref_2: poolmaraton
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Näita kõiki võistlus sisemalt
+tools_title: Tööriistad sinu järgmise jooksu jaoks
+home_tools:
+  measure_route:
+    description: Mõõda marsruudi idee ja saa kiire hinnang distantsile enne, kui teele asud.
+  training_plans:
+    description: Leia treeningplaanid eri eesmärkide, tasemete ja distantside jaoks.
+  racetime_estimator:
+    description: Hinda varasemate tulemuste põhjal realistlikku lõpuaega ja võrdle eri eesmärke.
+  pace_calculator:
+    description: Teisenda tempot, kiirust ja lõppaega levinud distantside vahel treeningu planeerimisel.
+missing_race: Puudub sul võistlus? Lisa see siia!
+add_race_mp_title: Lisa sinu jooksuvõistlus
+neighboring_countries_title: Jooksud Eestis ja naaberriikides
+neighboring_countries_title_specific_country: Jooksud riigis {country_name}
+neighboring_countries_description: Siit leiad naaberriikides toimuvad jooksud.
+neighboring_countries_description_specific_country: Siit leiad jooksud, mis toimuvad riigis {country_name}.
+neighboring_countries_neighbors_native: Naaberriigid
+neighboring_countries_all_neighbors_native: Kõik naaberriigid
+section_race_card_header_nieghbors_default: Eesti ja naaberriigid
+browse_neighboring:
+  title: Avasta jooksud naaberriikides
+  meta_description: Leia naaberriikides toimuvad jooksud ja sirvi neid riigi kaupa.
+neighboring_races_title: Jooksud naaberriikides
+neighboring_countries_show_all: Näita kõiki
+race_page_layout_title: 'Võistluse leht: {x}'
