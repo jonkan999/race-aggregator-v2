@@ -205,6 +205,7 @@ county_mapping:
   Põlva maakond: Põlva County
   Rapla maakond: Rapla County
   Saare maakond: Saare County
+  Saaremaa: Saaremaa
   Tartu maakond: Tartu County
   Valga maakond: Valga County
   Viljandi maakond: Viljandi County
@@ -230,7 +231,7 @@ pagination:
   page_text: Page
   of_text: of
 add_race_title: Add a new race
-add_race_meta_description: Add your race to Loppkartan
+add_race_meta_description: Add your race to Jooksma.ee
 map_message: Place your race by clicking on the map
 mapbox_center:
   latitude: 58.459
@@ -344,10 +345,10 @@ seo_templates:
     default: All races
   paragraph_templates:
     category_race_location: Find {category} {race_type}races in {location}.
-    category_race: Explore {category} {race_type}races across Sweden.
+    category_race: Explore {category} {race_type} races across Estonia.
     category_location: Discover {category} races in {location}.
     race_location: See all {race_type}races in {location}.
-    category_only: Find {category} races across Sweden.
+    category_only: Find {category} races across Estonia.
     race_only: Explore {race_type}races in all regions.
     location_only: See all types of races in {location}.
     default_suffix: Here you will find dates, distances and all the information you need to plan your next race.
@@ -399,7 +400,7 @@ seo_templates:
       paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
 seo_generation:
   browse_model: gpt-5-mini
-  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Sweden. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
+  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural English suitable for a running calendar in Estonia. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
   browse_guidance:
     county: User wants races in one region.
     city: User wants races connected to a city or nearby city.
@@ -683,22 +684,22 @@ forum:
   showing_threads_count: Showing {x} of {y} threads
 about_us:
   title: About Jooksma
-  meta_description: Loppkartan - Your guide to running in Sweden
+  meta_description: Jooksma.ee - Your guide to running in Estonia
   content:
-    intro: Welcome to Loppkartan - The most complete platform for runners in Sweden!
+    intro: Welcome to Jooksma - Estonia's most complete platform for runners.
     mission: Our mission is to make it easy for runners to find and share information about races, training and everything related to running.
-    story: Loppkartan was started in 2023 by runners for runners. We saw the need for a modern and user-friendly platform where the running community could gather.
+    story: Jooksma.ee started in 2023 as a project by runners for runners. We saw the need for a modern and user-friendly place where the Estonian running community could gather.
     features:
     - title: Complete Race List
-      description: We gather all races in Sweden in one place - from small local races to large international events.
+      description: We gather races from across Estonia in one place, from small local events to larger national race weekends.
     - title: Community-Driven
-      description: Our platform is driven by runners like you. Anyone can contribute with information about races and participate in discussions.
+      description: Our platform is shaped by runners like you. Anyone can contribute race information and take part in discussions with the wider community.
     - title: Free Tools
-      description: We offer useful tools like pace calculators, training programs and route planning - completely free.
+      description: We offer useful tools such as pace calculators, training plans and route planning, all free to use.
     closing: We continue to develop the platform based on feedback from our users. Do you have suggestions for improvements? Please contact us!
 contact:
   title: Contact Us
-  meta_description: Contact Loppkartan - We are here to help you
+  meta_description: Contact Jooksma.ee - we are here to help.
   content:
     intro: 'We would love to hear from you! Here are different ways to reach us:'
     email:
@@ -710,10 +711,10 @@ contact:
       description: 'Follow us on social media for the latest news and updates:'
     feedback:
       title: Feedback
-      description: We appreciate all feedback that helps us improve Loppkartan.
+      description: We appreciate all feedback that helps us improve Jooksma.ee.
 privacy_page:
   title: Privacy Policy
-  meta_description: Privacy policy and information about how Loppkartan handles personal data and cookies.
+  meta_description: Privacy policy and information about how Jooksma handles personal data and cookies.
   last_updated_label: Last updated
   last_updated_date: March 27, 2026
   contact_intro: 'For privacy-related questions and requests, please contact us at:'
