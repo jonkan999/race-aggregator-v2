@@ -153,11 +153,22 @@ const failures = [];
 
 for (const countryCode of countryCodes) {
   const countryDir = path.join(countriesDir, countryCode);
-  if (!fs.existsSync(countryDir) || !fs.statSync(countryDir).isDirectory() || countryCode === 'int') continue;
+  const requestedExplicitly = explicitCountries.includes(countryCode);
+  if (!fs.existsSync(countryDir) || !fs.statSync(countryDir).isDirectory() || countryCode === 'int') {
+    if (requestedExplicitly && countryCode !== 'int') {
+      failures.push(`${countryCode}: missing data/countries/${countryCode}/ (sync from race-collector-v2)`);
+    }
+    continue;
+  }
 
   const nativeFile = path.join(countryDir, 'index.yaml');
   const englishFile = path.join(countryDir, 'merged_index_int.yaml');
-  if (!fs.existsSync(nativeFile) || !fs.existsSync(englishFile)) continue;
+  if (!fs.existsSync(nativeFile) || !fs.existsSync(englishFile)) {
+    if (requestedExplicitly) {
+      failures.push(`${countryCode}: missing index.yaml and/or merged_index_int.yaml`);
+    }
+    continue;
+  }
 
   const nativeContent = loadYaml(nativeFile);
   const englishContent = loadYaml(englishFile);
