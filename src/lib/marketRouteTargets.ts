@@ -21,7 +21,8 @@ export function getMarketRouteTargets(): MarketRouteTargets {
           {
             baseUrl,
             englishRacePageFolder:
-              String(englishContent.race_page_folder_name ?? 'race-pages').trim() || 'race-pages',
+              String(englishContent.race_page_folder_name ?? 'race-pages').trim().normalize('NFC') ||
+              'race-pages',
           },
         ],
       ];

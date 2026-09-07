@@ -7,7 +7,7 @@ import { isRacePageFolderMatch } from '../../../lib/routeSegments';
 export async function getStaticPaths() {
   const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'native');
-  if (!isRacePageFolderMatch(content, 'native', 'selides-agonon')) {
+  if (!isRacePageFolderMatch(content, 'native', 'bėgimo_puslapiai')) {
     return [];
   }
   return getRaceDetailStaticPaths(country);

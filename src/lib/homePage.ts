@@ -12,6 +12,7 @@ import {
 import { getAllRaceListRows } from './raceListSsg';
 import { isDomesticOrigin } from './neighboringSelection';
 import { pickTranslation, type RaceListRow } from './raceListRow';
+import { localRacePageFolder } from './routeSegments';
 import {
   nextUpcomingRaceDateWithinWindow,
   upcomingWindowEnd,
@@ -172,9 +173,7 @@ function detailHref(
   locale: Locale,
   content: IndexYaml,
 ): string {
-  const racePageFolder = String(
-    content.race_page_folder_name ?? (locale === 'en' ? 'race-pages' : 'loppsidor'),
-  );
+  const racePageFolder = localRacePageFolder(content, locale);
   return resolveRaceDetailHref({
     hostCountryCode: countryCode,
     routeLocale: locale,

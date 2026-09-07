@@ -1,6 +1,12 @@
 import type { IndexYaml, Locale } from './content';
 import type { AuxiliaryPageKey } from './auxiliaryPages';
 import { slugify } from './slugify';
+import {
+  asciiAliasRacePageFolder,
+  preserveRacePageFolderName,
+} from './slugifyShared.js';
+
+export { asciiAliasRacePageFolder, preserveRacePageFolderName };
 
 export const NATIVE_AUXILIARY_TEMPLATE_SEGMENTS: Record<AuxiliaryPageKey, string> = {
   'add-race': 'lagg-till-lopp',
@@ -67,6 +73,17 @@ export function auxiliaryRouteSegment(
 
 export function localRacePageFolder(content: IndexYaml, locale: Locale): string {
   const fallback = locale === 'en' ? 'race-pages' : 'loppsidor';
-  const configured = String(content.race_page_folder_name ?? '').trim();
+  const configured = preserveRacePageFolderName(content.race_page_folder_name);
   return configured || fallback;
+}
+
+export function racePageFolderAliases(content: IndexYaml, locale: Locale): string[] {
+  const folder = localRacePageFolder(content, locale);
+  const alias = asciiAliasRacePageFolder(folder);
+  return alias ? [folder, alias] : [folder];
+}
+
+export function isRacePageFolderMatch(content: IndexYaml, locale: Locale, folderName: string): boolean {
+  const requested = preserveRacePageFolderName(folderName);
+  return racePageFolderAliases(content, locale).includes(requested);
 }

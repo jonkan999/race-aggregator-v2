@@ -301,7 +301,7 @@ Or use the helper that prepares the market snapshot + markers and then starts th
 ./scripts/shell/test-market.sh cz
 ```
 
-For local development against collector-owned market data before syncing it into this repo, set `MARKET_DATA_ROOT=/abs/path/to/race-collector-v2/data/countries` and run a separate dev server per market with the desired `MARKET_CODE`.
+For local development against collector-owned market data before syncing it into this repo, set `MARKET_DATA_ROOT=/abs/path/to/race-collector-v2/data/countries` and run a separate dev server per market with the desired `MARKET_CODE`. To copy a launch-ready market into `data/countries/{cc}/`, run `node scripts/sync-collector-market.mjs {cc}` with `COLLECTOR_ROOT` pointing at the collector clone.
 
 Native auxiliary route slugs are derived from the active market's synced YAML at startup/build time. That means markets can own native URLs such as `/o-nas/`, `/kontakt/`, or `/pridat-zavod/` without hand-editing route code in this repo. The generated alias routes keep the old template paths reachable for compatibility, but those alias pages should canonicalize back to the market-owned slug and stay `noindex`.
 

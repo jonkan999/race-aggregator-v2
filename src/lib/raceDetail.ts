@@ -17,6 +17,7 @@ import {
   getRaceListBaseHref,
 } from './raceBrowse';
 import { pickTranslation, type RaceListRow } from './raceListRow';
+import { localRacePageFolder } from './routeSegments';
 
 type RaceImage = {
   number?: number | null;
@@ -284,9 +285,7 @@ async function getRaceDetailRelatedIndex(args: {
     const translationLocale = locale === 'en' ? 'en' : String(content.country_language_code ?? 'sv');
     const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
     const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
-    const racePageFolder = String(
-      content.race_page_folder_name ?? (locale === 'en' ? 'race-pages' : 'loppsidor'),
-    );
+    const racePageFolder = localRacePageFolder(content, locale);
     const listHref = getRaceListBaseHref(countryCode, locale, content);
     const overviewHref = getBrowseOverviewHref(countryCode, locale, content);
     const marketRouteTargets = getMarketRouteTargets();

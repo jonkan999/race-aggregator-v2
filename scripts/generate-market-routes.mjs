@@ -1,7 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
-import { transliterateForSlug } from '../src/lib/slugifyShared.js';
+import {
+  asciiAliasRacePageFolder,
+  preserveRacePageFolderName,
+  transliterateForSlug,
+} from '../src/lib/slugifyShared.js';
 
 const repoRoot = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const pagesDir = path.join(repoRoot, 'src', 'pages');
@@ -74,7 +78,12 @@ function routeSegment(content, pageKey, locale) {
 
 function racePageFolder(content, locale) {
   const fallback = locale === 'en' ? 'race-pages' : 'loppsidor';
-  return String(content.race_page_folder_name ?? '').trim() || fallback;
+  // Collector-owned segment: keep ė and underscores. Do not slugify.
+  return preserveRacePageFolderName(content.race_page_folder_name) || fallback;
+}
+
+function isGeneratedRaceDetailRoute(filePath) {
+  return filePath.replaceAll('\\', '/').includes('/[domain]/');
 }
 
 function writeFileIfChanged(filePath, content) {
@@ -114,16 +123,25 @@ function auxiliaryWrapperContent(fromFile, templateFile) {
   return `---\nimport Page from '${wrapperImport(fromFile, templateFile)}';\n---\n\n<Page />\n`;
 }
 
-function raceDetailWrapperContent(locale) {
+function raceDetailWrapperContent(locale, folderName) {
   const componentImport = locale === 'en' ? '../../../../components/RaceDetailPage.astro' : '../../../components/RaceDetailPage.astro';
   const helperImport = locale === 'en' ? '../../../../lib/raceDetailRoutePage' : '../../../lib/raceDetailRoutePage';
+  const contentImport = locale === 'en' ? '../../../../lib/content' : '../../../lib/content';
+  const segmentsImport = locale === 'en' ? '../../../../lib/routeSegments' : '../../../lib/routeSegments';
   const localeCode = locale === 'en' ? 'en' : 'native';
+  const serializedFolder = JSON.stringify(folderName);
   return `---
 import RaceDetailPage from '${componentImport}';
+import { loadIndexYaml } from '${contentImport}';
 import { getRaceDetailStaticPaths, loadRaceDetailRoute } from '${helperImport}';
+import { isRacePageFolderMatch } from '${segmentsImport}';
 
 export async function getStaticPaths() {
   const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
+  const content = loadIndexYaml(country, '${localeCode}');
+  if (!isRacePageFolderMatch(content, '${localeCode}', ${serializedFolder})) {
+    return [];
+  }
   return getRaceDetailStaticPaths(country);
 }
 
@@ -149,11 +167,24 @@ if ('redirectTo' in result) {
 `;
 }
 
+function writeRaceDetailFolder(locale, folderName, generatedFiles) {
+  const target =
+    locale === 'en'
+      ? path.join(pagesDir, 'en', folderName, '[domain]', 'index.astro')
+      : path.join(pagesDir, folderName, '[domain]', 'index.astro');
+  writeFileIfChanged(target, raceDetailWrapperContent(locale, folderName));
+  generatedFiles.push(path.relative(repoRoot, target));
+}
+
 const nativeContent = loadYaml(path.join(countriesDir, country, 'index.yaml'));
 const englishContent = loadYaml(path.join(countriesDir, country, 'merged_index_int.yaml'));
 const generatedFiles = [];
+const previousManifest = loadPreviousManifest();
 
-for (const filePath of loadPreviousManifest()) {
+for (const filePath of previousManifest) {
+  // Keep other markets' race-detail folders (Unicode LT, jooksulehed, rennseiten, …).
+  // Auxiliary wrappers still swap per MARKET_CODE.
+  if (isGeneratedRaceDetailRoute(filePath)) continue;
   deleteFileIfExists(path.join(repoRoot, filePath));
 }
 
@@ -177,16 +208,16 @@ for (const [pageKey, templateSegment] of Object.entries(englishTemplates)) {
 
 const nativeRaceFolder = racePageFolder(nativeContent, 'native');
 if (nativeRaceFolder !== 'loppsidor') {
-  const target = path.join(pagesDir, nativeRaceFolder, '[domain]', 'index.astro');
-  writeFileIfChanged(target, raceDetailWrapperContent('native'));
-  generatedFiles.push(path.relative(repoRoot, target));
+  writeRaceDetailFolder('native', nativeRaceFolder, generatedFiles);
+  const nativeAlias = asciiAliasRacePageFolder(nativeRaceFolder);
+  if (nativeAlias) writeRaceDetailFolder('native', nativeAlias, generatedFiles);
 }
 
 const englishRaceFolder = racePageFolder(englishContent, 'en');
 if (englishRaceFolder !== 'race-pages') {
-  const target = path.join(pagesDir, 'en', englishRaceFolder, '[domain]', 'index.astro');
-  writeFileIfChanged(target, raceDetailWrapperContent('en'));
-  generatedFiles.push(path.relative(repoRoot, target));
+  writeRaceDetailFolder('en', englishRaceFolder, generatedFiles);
+  const englishAlias = asciiAliasRacePageFolder(englishRaceFolder);
+  if (englishAlias) writeRaceDetailFolder('en', englishAlias, generatedFiles);
 }
 
-saveManifest(generatedFiles);
+saveManifest([...new Set([...previousManifest.filter(isGeneratedRaceDetailRoute), ...generatedFiles])]);
