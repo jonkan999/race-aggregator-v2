@@ -53,6 +53,10 @@ function toRoutePath(relativeHtmlPath) {
   return `/${normalized.slice(0, -'.html'.length)}`;
 }
 
+function foldPath(value) {
+  return value.normalize('NFKD').replace(/\p{M}/gu, '');
+}
+
 function shouldIncludeRoute(routePath, configuredCountries) {
   if (routePath === '/404' || routePath === '/404/') return false;
   if (routePath.startsWith('/_astro/')) return false;
@@ -62,6 +66,22 @@ function shouldIncludeRoute(routePath, configuredCountries) {
   if (configuredCountries.has(firstSegment)) return false;
 
   return true;
+}
+
+function preferUnicodeCanonical(urls) {
+  const chosen = new Map();
+  for (const url of urls) {
+    const key = foldPath(url);
+    const existing = chosen.get(key);
+    if (!existing) {
+      chosen.set(key, url);
+      continue;
+    }
+    const urlIsUnicode = url !== foldPath(url);
+    const existingIsUnicode = existing !== foldPath(existing);
+    if (urlIsUnicode && !existingIsUnicode) chosen.set(key, url);
+  }
+  return [...chosen.values()];
 }
 
 function xmlEscape(value) {
@@ -96,11 +116,11 @@ function main() {
     .map((relativePath) => toRoutePath(relativePath))
     .filter((routePath) => shouldIncludeRoute(routePath, configuredCountries))
     .map((routePath) => (routePath === '/' ? `${baseUrl}/` : `${baseUrl}${routePath}`))
-    .filter((url, index, values) => values.indexOf(url) === index)
-    .sort((a, b) => a.localeCompare(b));
+    .filter((url, index, values) => values.indexOf(url) === index);
+  const canonicalUrls = preferUnicodeCanonical(urls).sort((a, b) => a.localeCompare(b));
 
-  fs.writeFileSync(sitemapPath, buildSitemapXml(urls), 'utf8');
-  console.log(`Wrote ${urls.length} sitemap URLs to ${path.relative(root, sitemapPath)}`);
+  fs.writeFileSync(sitemapPath, buildSitemapXml(canonicalUrls), 'utf8');
+  console.log(`Wrote ${canonicalUrls.length} sitemap URLs to ${path.relative(root, sitemapPath)}`);
 }
 
 main();

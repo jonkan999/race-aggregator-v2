@@ -169,3 +169,22 @@ export function transliterateForSlug(input, countryCode) {
   const accentStripped = preNormalized.normalize('NFKD').replace(/\p{M}/gu, '');
   return applyReplacements(accentStripped, POST_NORMALIZATION_COMMON_REPLACEMENTS);
 }
+
+/**
+ * Race-detail folder names are collector-owned URL segments, not slugs.
+ * Keep Unicode letters (ė) and underscores; never run slugify on them.
+ */
+export function preserveRacePageFolderName(input) {
+  return String(input ?? '').trim().normalize('NFC');
+}
+
+/**
+ * ASCII soft-fall for a race-detail folder: strip combining marks, keep underscores.
+ * `bėgimo_puslapiai` → `begimo_puslapiai`. Returns "" when there is no distinct alias.
+ */
+export function asciiAliasRacePageFolder(input) {
+  const preserved = preserveRacePageFolderName(input);
+  if (!preserved) return '';
+  const folded = preserved.normalize('NFKD').replace(/\p{M}/gu, '');
+  return folded && folded !== preserved ? folded : '';
+}
