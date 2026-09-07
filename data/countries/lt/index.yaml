@@ -1,0 +1,1041 @@
+type_options:
+  road: Kelių
+  terrain: Krosas
+  trail: Trailo
+  track: Bėgimo takas
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Estafetė
+  time: Laiko bėgimas
+  other: Kita
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Pusmaratonas:
+    range:
+    - 20
+    - 22
+  Maratonas:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 metrai:
+    range:
+    - 1.5
+    - 1.5
+  3000 metrai:
+    range:
+    - 3
+    - 3
+  5000 metrai:
+    range:
+    - 5
+    - 5
+  10000 metrai:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Laiko bėgimas
+  relay: Estafetė
+verbose_local_distance_mapping:
+  half marathon: Pusmaratonas
+  marathon: Maratonas
+  fallback: Mišri distancija
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Pusmaratonas
+- range:
+  - 41.9
+  - 42.4
+  label: Maratonas
+race_page_estimated_date_label: Estimated date
+race_page_estimated_disclaimer: We have not received an official date for this race.
+country_code: lt
+country_language_code: lt
+navigation:
+  main: Visi
+  race-list: Bėgimo kalendorius
+  add-race: Pridėti varžybas
+  forum: Forumas
+  measure-route: Išmatuok savo trasą
+  training-plans: Mokymo programos
+  pace-calculator: Greitumo keitiklis
+  racetime-estimator: Įvertinkite savo galutinį laiką
+  about-us: Apie mus
+  contact: Susisiekite su mumis
+  neighboring: Kaimyninės šalys
+race_list_name: Begimo kalendorius
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Lauko bėgimo peržiūra
+  terms-of-service: Naudotojo sąlygos
+  privacy-policy: Privatumo politika
+  about-us: Apie mus
+  contact: Susisiekite su mumis
+  faq: Dažnai užduodami klausimai
+page_name: bkmaratonas
+base_url: https://bkmaratonas.lt/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Sveiki!
+    closing_salutation: Pagarbiai,
+    link_fallback_intro: 'Jei mygtukas neveikia, nuorodą galite nukopijuoti čia:'
+  confirm_signup:
+    body: Ačiū, kad prisijungėte prie {site_name}. Patvirtinkite el. pašto adresą, kad aktyvuotumėte paskyrą ir galėtumėte valdyti pateiktas varžybas.
+    button_label: Patvirtinti el. paštą
+    ignore_note: Jei šios paskyros nekūrėte, šį laišką galite ignoruoti.
+  reset_password:
+    body: Gavome prašymą atkurti {site_name} paskyros slaptažodį. Naują slaptažodį pasirinkite paspaudę mygtuką žemiau.
+    button_label: Atkurti slaptažodį
+    ignore_note: Jei to neprašėte, laišką galite ignoruoti. Slaptažodis nepasikeis, kol nepasirinksite naujo.
+  change_email:
+    body: Prašėte pakeisti {site_name} paskyros el. pašto adresą. Patvirtinkite pakeitimą paspaudę mygtuką žemiau.
+    button_label: Patvirtinti naują el. paštą
+    ignore_note: Jei pakeitimo neprašėte, šį laišką galite ignoruoti.
+title: Visas apie bėgimą Lietuvoje
+country_native: Lietuva
+country: Lithuania
+meta_description: Išsamiausias bėgimo kalendorius ir bėgikų bendruomenė Lietuvoje
+country_language: Lithuanian
+local_name_for_race: varžybos
+main_bullet_1: Raskite savo kitą bėgimą
+main_bullet_2: '- Arba pridėkite jį čia'
+main_bullet_3: Apsipirkite mūsų antrinėje rinkoje
+main_bullet_4: Skaitykite naujienas arba kalbėkitės forume
+description: Šis bendruomenės inicijuotas projektas siekia suburti bėgikus iš visos Lietuvos. Platforma vis dar auga, tačiau su jūsų pagalba galime sukurti tvirtus namus vietos bėgimo bendruomenei.
+cta_search: Rasti bėgimą
+cta_add: Pridėti varžybas
+selected_races_title: Išrinkti bėgimai
+selected_races_top_title: Savaitės bėgimas
+cta_all_races: Visi bėgimai
+show_local: Rodyti
+race_local: Varžybos
+running_local: Bėgimas
+alt_prefix: Nuotrauka {x}
+race_list_title: Išsamiausias Lietuvos maratonų, pusmaratonių ir kitų bėgimo varžybų sąrašas
+race_list_meta_description_1: Čia rasite bėgimo varžybas ir renginius visoje Lietuvoje
+race_list_meta_description_2: ✔️Didžiausias bėgimo kalendorius ✔️Trailo, backyard ir maratono varžybos ✔️Bėgimai iš visos Lietuvos
+race_list_data_error: Nepavyko įkelti varžybų. Bandykite dar kartą vėliau.
+race_list_remote_required: Daugiau puslapių ar filtrų reikia Supabase duomenų bazės. Pridėkite PUBLIC_SUPABASE_URL ir PUBLIC_SUPABASE_PUBLISHABLE_KEY į .env failą.
+race_list_empty: Pagal pasirinktus filtrus varžybų nerasta.
+race_list_loading: Kraunama…
+race_card_cta_text: Daugiau informacijos ir registracija
+section_race_card_category_prefix: Visi
+section_race_card_category_suffix: bėgimas
+section_race_card_header_separator: vietoje
+section_race_card_header_region_default: Lietuva
+section_race_card_header_date_range_from: nuo
+section_race_card_header_date_range_to: iki
+section_race_card_header_date_range_single: ''
+filter_date_from: Nuo
+filter_date_to: Iki
+filter_county: Visos apskritys
+filter_race_type: Visos varžybų rūšys
+filter_categories: Visos kategorijos
+filter_months: Visus metus
+filter_distance: Visos distancijos
+month_mapping:
+  '01': Sausis
+  '02': Vasaris
+  '03': Kovas
+  '04': Balandis
+  '05': Gegužė
+  '06': Birželis
+  '07': Liepa
+  '08': Rugpjūtis
+  '09': Rugsėjis
+  '10': Spalis
+  '11': Lapkritis
+  '12': Gruodis
+month_mapping_short:
+  '01': saus.
+  '02': vas.
+  '03': kovas
+  '04': bal.
+  '05': geg.
+  '06': bir.
+  '07': liepa
+  '08': rug.
+  '09': rgs.
+  '10': spal.
+  '11': lap.
+  '12': gruod.
+county_label_text: Visos apskritys
+county_mapping:
+  Alytaus apskritis: Alytaus apskritis
+  Kauno apskritis: Kauno apskritis
+  Klaipėdos apskritis: Klaipėdos apskritis
+  Marijampolės apskritis: Marijampolės apskritis
+  Panevėžio apskritis: Panevėžio apskritis
+  Tauragės apskritis: Tauragės apskritis
+  Telšių apskritis: Telšių apskritis
+  Utenos apskritis: Utenos apskritis
+  Vilniaus apskritis: Vilniaus apskritis
+  Šiaulių apskritis: Šiaulių apskritis
+category_label_text: Bėgimo kategorija
+to_race_page_cta: Į varžybų puslapį
+map_toggle_desktop: Visas žemėlapis
+map_toggle_desktop_active: Slėpti žemėlapį
+map_toggle_mobile: Žemėlapis
+map_toggle_mobile_list: Sąrašas
+map_markers_load_error: Nepavyko įkelti žemėlapio žymeklių.
+map_not_configured: Žemėlapis nesukonfigūruotas (trūksta rakto).
+race_page_map_zoom: '4'
+pagination:
+  results_text: iš
+  events_text: bėgimai
+  previous_text: Ankstesnis
+  next_text: Kitas
+  page_text: Puslapis
+  of_text: iš
+add_race_title: Pridėti naują varžybą
+add_race_meta_description: Pridėkite savo varžybas prie bkmaratonas.lt
+map_message: Išdėstykite savo bėgimą, spustelėdami žemėlapį
+mapbox_center:
+  latitude: 55.48077
+  longitude: 23.901471
+mapbox_zoom: '6'
+date_text: Data
+multi_day_toggle: Daugiasavio dienų bėgimas
+end_date_text: Pabaigos data
+type_text: Paviršiaus tipas / Varžybų tipas
+type_select_placeholder: Pasirinkite paviršių / bėgimo tipą
+name_label: 'Bėgimo pavadinimas:'
+name_placeholder: t ex Vilniaus aplinkkelis
+distance_label: 'Atstumas:'
+distance_placeholder: Įveskite atstumą km
+add_distance_button: Pridėti
+half_marathon_button: Pusmaratonas
+marathon_button: Maratonas
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Vietos, kur vyksta bėgimas, pavadinimas:'
+place_placeholder: t ex Rūdninkų parkas, Vilnius
+organizer_label: 'Organizatorius:'
+organizer_contact_placeholder: FK Studentai
+organizer_contact_label: 'El. paštas kontaktiniam asmeniui:'
+organizer_mail_placeholder: loppkartan@gmail.com
+website_label: 'Organizatoriaus svetainė:'
+website_placeholder: https://bkmaratonas.lt/
+start_time_label: 'Pradžios laikas:'
+start_time_placeholder: 09:00
+price_range_label: 'Kainų intervalas:'
+price_range_placeholder: t.ex. 20-50 €
+add_race_description_label: Apibūdinkite varžybas
+add_race_description_placeholder: KfS Kungsholmen Runt yra dešimties kilometrų trasa su ilgais, lygiais tiesiais ruožais ...
+add_race_additional_label: Kita būtina informacija
+add_race_additional_placeholder: t.ex. startas ir finišas, starto grupės ir kt.
+add_race_images_label: Įkelkite nuotraukas (Pageidautina bent 4)
+choose_pictures_button: Pasirinkite nuotraukas
+drag_drop_text: Tempk ir numeskite čia nuotraukas arba spustelėkite, kad pasirinkti
+add_race_remove_image_label: Remove image
+coordinates_display_prefix: Race coordinates
+add_race_upload_limit_message: You can only upload {count} more images.
+add_race_map_not_configured: The map could not be loaded right now.
+clear_images_button: Išvalyti nuotraukas
+clear_form_button: Išvalyti formą
+preview_button: Peržiūrėti
+submit_button: Pateikti
+preview_title: Peržiūra
+preview_exit_button: Uždaryti peržiūrą
+optional_label: Pasirinktinai
+comments_suffix: Komentarai
+cta_forum: Visi Įrašai
+race_page_preview_title: Taip atrodys tavo varžybos
+edit_race_button: Redaguoti
+race_page_description_label: Bėgimo aprašymas
+race_page_course_highlights_label: Pabrėžimai
+race_page_additional_label: Kita informacija
+race_page_detailed_info_label: Išsami informacija
+race_page_social_links_label: Sekite varžybas
+race_page_place_label: 'Vieta:'
+race_page_distances_label: 'Atstumai:'
+race_page_surface_label: 'Paviršius:'
+race_page_date_label: 'Data:'
+race_page_registration_link: Registracijos nuoroda
+race_page_registration_cta: Register now
+race_page_info_cta: More information
+race_page_registration_close_label: Registration closes
+race_page_pricing_title: Registration and pricing
+race_page_price_deadline_label: Valid until
+race_page_price_late_fee_label: Late registration
+race_page_back_to_list: Back to race calendar
+race_page_favorites_title: Do not miss race updates
+race_page_favorites_body: Create an account and save this race to your favorites so you can receive updates, news and selected offers when favorites launch.
+race_page_favorites_cta: Išsaugoti mėgstamuose
+race_page_similar_title: Panašios varžybos
+race_page_similar_body: Daugiau varžybų su panašia distancija, tipu ar vieta.
+race_page_discover_title: Atraskite daugiau bėgimų
+race_page_discover_county_link: Visi bėgimai apskrityje {county}
+race_page_discover_type_link: Daugiau {type} bėgimų
+race_page_discover_category_link: Daugiau {category} bėgimų
+race_page_discover_type_county_link: '{type} bėgimai apskrityje {county}'
+race_page_discover_overview_link: Naršyti visas bėgimo kategorijas
+disclaimer_text_1: Visi šios puslapio duomenys remiasi atvira šaltinio informacija. Mes dedame visas pastangas, kad ją atnaujintume, tačiau negalime garantuoti, kad visa informacija yra teisinga. Jei pastebėjote kokių nors netikslumų,
+disclaimer_link: susisiekite su mumis
+disclaimer_text_2: taip mes tai ištaisysime kuo greičiau.
+disclaimer_text_3: Ar norite pridėti dar ką nors prie savo bėgimo?
+disclaimer_text_4: Taigi, mes pabandysime padėti!
+race_page_visit_organizer_website: Iki organizatoriaus puslapio ir registracijos
+race_page_folder_name: bėgimo_puslapiai
+race_page_alt_prefix: Paveikslėlis {x}
+seo_county_folder_name: Visi rajonai
+seo_cities_folder_name: Miestai
+popular_subcategories_title: Populiarios pakategorės
+important_keywords_racelist:
+- bėgimo kalendorius
+- varžybų kalendorius
+- bėgimo varžybos
+- bėgimo renginiai
+- bėgimų sąrašas
+- bėgimo varžybų sąrašas
+- maratonas Lietuva
+- pusmaratonis
+seo_templates:
+  title_parts:
+    category: '{category} bėgimas'
+    race_type: '{race_type}'
+    location: '{location}'
+    default: Visi bėgimai
+  paragraph_templates:
+    category_race_location: Raskite {category} {race_type} varžybas {location}.
+    category_race: Naršykite {category} {race_type} varžybas visoje Lietuvoje.
+    category_location: Atraskite {category} bėgimus {location}.
+    race_location: Peržiūrėkite visus {race_type} bėgimus {location}.
+    category_only: Raskite {category} bėgimus visoje Lietuvoje.
+    race_only: Naršykite {race_type} varžybas visuose regionuose.
+    location_only: Peržiūrėkite visų tipų bėgimus {location}.
+    default_suffix: Čia rasite datas, distancijas ir praktinę informaciją kitam bėgimui.
+  browse_page_templates:
+    county:
+      title: '{label} bėgimai | {site_name}'
+      meta_description: Naršykite bėgimo varžybas apskrityje {label}. Palyginkite datas, distancijas ir praktinę informaciją.
+      h1: Bėgimai apskrityje {label}
+      paragraph: Šiame puslapyje surinkti {label} bėgimai, kad būtų lengviau palyginti datas, distancijas ir varžybų formatą.
+    city:
+      title: '{label} bėgimai | {site_name}'
+      meta_description: Raskite bėgimus, susijusius su miestu {label}. Palyginkite datas, distancijas ir netoliese esančius variantus.
+      h1: Bėgimai prie {label}
+      paragraph: Šis miesto puslapis padeda naršyti su {label} susijusius bėgimus, įskaitant netoliese esančias alternatyvas.
+    month:
+      title: '{label} bėgimai | {site_name}'
+      meta_description: Naršykite {label} mėnesio bėgimus rinkoje {market}. Palyginkite datas, distancijas ir tipus.
+      h1: Bėgimai {label} mėnesį
+      paragraph: Šis puslapis skirtas bėgikams, kurie nori matyti kalendorių pagal mėnesį ir greičiau palyginti, kas vyksta {label}.
+    race_type:
+      title: '{label} bėgimai rinkoje {market} | {site_name}'
+      meta_description: Naršykite {label_lower} bėgimus rinkoje {market}. Palyginkite datas, distancijas ir vietas.
+      h1: '{label} bėgimai rinkoje {market}'
+      paragraph: Šis puslapis telkiasi į {label_lower} bėgimus ir padeda palyginti variantus, kai svarbus ir formatas, ir distancija.
+    category:
+      title: '{label} bėgimai rinkoje {market} | {site_name}'
+      meta_description: Naršykite {label} bėgimus rinkoje {market}. Palyginkite datas, tipus ir vietas.
+      h1: '{label} bėgimai rinkoje {market}'
+      paragraph: Šis distancijos ir kategorijos puslapis surenka varžybas, atitinkančias {label}.
+    race_type_category:
+      title: '{label} {secondary_label} bėgimai rinkoje {market} | {site_name}'
+      meta_description: Naršykite {label} bėgimus rinkoje {market} pagal tipą {secondary_label_lower}.
+      h1: '{label} bėgimai rinkoje {market} ({secondary_label})'
+      paragraph: Šis puslapis susiaurina kalendorių iki {label} varžybų {secondary_label_lower} tipe.
+    race_type_county:
+      title: '{secondary_label} bėgimai apskrityje {label} | {site_name}'
+      meta_description: Naršykite {secondary_label_lower} bėgimus apskrityje {label}.
+      h1: '{secondary_label} bėgimai apskrityje {label}'
+      paragraph: Šiame puslapyje surinkti {secondary_label_lower} bėgimai apskrityje {label}.
+    race_type_month:
+      title: '{secondary_label} races in {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races in {label_lower}. Compare dates, distances and practical details while planning your season.
+      h1: '{secondary_label} races in {label}'
+      paragraph: This page gathers {secondary_label_lower} races in {label_lower} for runners who plan around the calendar first. It helps you compare similar race formats before narrowing further by place or distance.
+    race_type_city:
+      title: '{secondary_label} races near {label} | {site_name}'
+      meta_description: Browse {secondary_label_lower} races linked to {label}. Compare dates, distances and nearby options before choosing your next race.
+      h1: '{secondary_label} races near {label}'
+      paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural Lithuanian suitable for a running calendar in Lithuania. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
+  browse_guidance:
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Naršyti pagal kategoriją
+  helper_text: Raskite varžybas naudodami iš anksto nustatytus filtrus ir kombinacijas
+  overview: Apžvalga
+  counties: Kraštas
+  cities: Miestai
+  months: Mėnuo
+  types: Bėgimo tipai
+  categories: Kategorijos
+  neighboring: Artimiausios šalys
+browse_overview:
+  title: Naršykite visus bėgimus
+  meta_description: Raskite varžybas pagal apskritis, tipą ar kategoriją
+browse_types:
+  title: Naršyti pagal bėgimo tipą
+  meta_description: Raskite bėgimus pagal bėgimo tipą.
+browse_counties:
+  title: Naršyti pagal apskritis
+  meta_description: Raskite bėgimus savo apskrityje.
+browse_cities:
+  title: Naršyti pagal miestą
+  meta_description: Raskite bėgimus savo mieste.
+browse_categories:
+  title: Naršyti pagal kategoriją
+  meta_description: Raskite bėgimus pagal atstumą ir kategoriją.
+browse_months:
+  title: Naršyti pagal mėnesį
+  meta_description: Raskite bėgimus pagal mėnesį.
+auth_modal:
+  title_sign_in: Prisijungti
+  title_create_account: Sukurti paskyrą
+  title_reset_password: Slaptažodžio atstatymas
+  auth_unavailable: Authentication is not configured yet.
+  name_placeholder: Jūsų vardas
+  email_placeholder: Tavo el. paštas
+  password_placeholder: Slaptažodis
+  submit_sign_in: Prisijungti
+  submit_create_account: Sukurti paskyrą
+  submit_reset_password: Siųsti slaptažodžio atkūrimo nuorodą
+  create_account: Sukurti paskyrą
+  forgot_password: Pamiršote slaptažodį?
+  back_to_login: Grįžti prie prisijungimo
+  error_wrong_password: Neteisingas slaptažodis
+  error_email_not_found: El. pašto adresas nerastas
+  prompt_reset_password: Ar norite atkurti savo slaptažodį?
+  prompt_create_account: Ar norite sukurti paskyrą su šiuo el. pašto adresu?
+  already_logged_in: Jūs jau esate prisijungęs kaip
+  as_email: su el. paštu
+  continue_as_user: Tęsti kaip šis vartotojas
+  logout_and_switch: Atsijungti ir keisti naudotoją
+  account_created: Konto sukurtas!
+  account_created_details: Dabar esate prisijungęs kaip
+  verification_email_sent: Patvirtinimo nuoroda buvo išsiųsta į jūsų el. paštą.
+  please_verify: Prašome patvirtinti savo el. pašto adresą
+  error_invalid_credential: Neteisingas el. paštas arba slaptažodis
+  create_account_prompt: Sukurkite paskyrą vietoj to
+  error_too_many_requests: Per daug bandymų. Prašome pabandyti vėliau.
+  continue_with_google: Continue with Google
+  continue_with_google_create: Create account with Google
+  google_in_progress: Continuing with Google...
+  oauth_divider: or
+auth_pages:
+  confirm_success: Your email has been confirmed and your account is now active.
+  confirm_ready: You can now continue using the site.
+  confirm_error: Could not confirm your email address.
+  reset_intro: Enter a new password for your account.
+  reset_confirm_label: Confirm password
+  reset_mismatch_error: Passwords do not match.
+  reset_invalid_link_error: Invalid or missing recovery link.
+  reset_success: Your password has been updated. You can now sign in.
+newsletter_popup:
+  email_placeholder: Your email address
+  submit_button: Send me the updates
+  dismiss_button: Not now
+  invalid_email: Please enter a valid email address.
+  submit_error: We could not save your subscription right now. Please try again.
+  submitting_text: Saving...
+  success_message: Thanks! Race updates are on the way to your inbox.
+  privacy_note: New races, date changes and selected offers. Unsubscribe whenever you want.
+  close_aria_label: Close subscription popup
+  benefits:
+    new_races: New races first
+    date_changes: Date changes instantly
+    selected_offers: Selected offers
+    similar_races: Similar races near you
+    local_picks: More races nearby
+    opening_reminders: Reminders before spots disappear
+    race_updates: Updates about this race
+    nearby_races: Cross-border races near you
+  generic:
+    eyebrow: Do not miss the next race
+    title: Get new races and date changes before everyone else
+    body: Subscribe to our newsletter and get new races, updated dates and hand-picked tips in {country} straight to your inbox.
+  race_detail:
+    eyebrow: Follow this race
+    title: Want updates about {race_name}?
+    body: Subscribe to get updates about {race_name}, similar races in {county} and important changes sent straight to your inbox.
+  browse_category:
+    eyebrow: More of the right races
+    title: Do not miss new {category} races
+    body: We send new {category} races, relevant nearby alternatives and important dates so you do not have to keep searching manually.
+  browse_category_type:
+    eyebrow: More of the right races
+    title: Get more {race_type} races within {category}
+    body: Subscribe for more {race_type} races within {category}, nearby alternatives and date changes delivered straight to your inbox.
+  browse_county:
+    eyebrow: Local races first
+    title: Get more races in {county}
+    body: Keep up with new races, updated dates and smart picks for {county} without checking the calendar all the time.
+  browse_city:
+    eyebrow: Local races first
+    title: Want more races in {city}?
+    body: Subscribe and get new races, nearby alternatives and important dates for {city} sent straight to your inbox.
+  browse_type:
+    eyebrow: The right race style
+    title: Get more {race_type} races in your inbox
+    body: We send new {race_type} races, similar alternatives and key dates so you can act before spots disappear.
+  browse_month:
+    eyebrow: Plan the season
+    title: Get the best races in {month} first
+    body: When races in {month} open, move or become especially interesting, you hear about it right away in your inbox.
+  browse_neighboring:
+    eyebrow: Broaden your calendar
+    title: Get races from neighboring countries too
+    body: Subscribe for new races, smart cross-border picks and date changes from {region} delivered straight to your inbox.
+  browse_neighboring_country:
+    eyebrow: Broaden your calendar
+    title: Get more races in {region}
+    body: We send new races, date changes and relevant nearby alternatives when something interesting appears in {region}.
+submission_flow:
+  logged_in_as: Prisijungęs kaip organizatorius
+  submitting_new_race: teikia naują varžybą
+  new_account_created: Norint, kad bėgimas būtų tvarkomas, turite patvirtinti savo el. pašto adresą. Patvirtinimo nuoroda buvo išsiųsta nurodytam el. pašto adresui.
+  password_reset_sent: Slaptažodžio atkūrimo nuoroda išsiųsta. Patikrink savo pašto dėžutę.
+  unexpected_error: Įvyko klaida. Bandykite dar kartą.
+  processing_submission: Apdorojama pateikimas...
+  race_exists: Renginys jau yra duomenų bazėje.
+  race_submitted: Renginys buvo pateiktas!
+  submission_failed: Negalėjome pateikti bėgimo. Bandykite dar kartą.
+  missing_fields: Trūksta kažko. Įsitikinkite, kad visi privalomi laukai yra užpildyti ir kad žemėlapyje yra pasirinkta vieta.
+race_page:
+  forum_section:
+    title: Klausimai & Atsakymai
+    placeholder: Užduokite klausimą organizatoriui...
+    submit_button: Pateikti klausimą
+    login_prompt: Prisijunkite, kad užduotumėte klausimą
+    empty_state: Nėra klausimų. Būk pirmas, kuris užduos klausimą!
+    error_message_no_login: Prisijunkite arba sukurkite paskyrą, kad galėtumėte užduoti klausimą.
+map:
+  show_map: Rodyti žemėlapį
+  show_list: Rodyti sąrašą
+  map: žemėlapis
+  list: sąrašas
+forum:
+  title: Forumas - Kalbėkite apie bėgimą ir bėgikų gyvenimą su kitais bėgikais Lietuvoje
+  meta_description: Diskutuokite apie bėgimą ir bėgikų gyvenimą su kitais bėgikais mūsų forume. Viskas apie treniruotes, varžybas, traumas, mitybą, drabužius, įrangą ir dar daugiau.
+  categories:
+  - name: Mokymas
+    slug: treniruotė
+    description: Diskusijos apie treniruotes ir techniką
+  - name: Varžybos ir bėgimo renginiai
+    slug: varžybos
+    description: Diskutuokite apie artėjančius bėgimus
+  - name: Sužeidimai ir reabilitacija
+    slug: sužalojimai
+    description: Pagalba su traumomis ir atsigavimu
+  - name: Ratlankiai & Žemėlapiai
+    slug: rateliai
+    description: Diskutuokite apie trasas ir žemėlapius
+  - name: Kelionės ir susijusios kelionės
+    slug: kelionės
+    description: Diskutuokite apie keliones ir su kelionėmis susijusį bėgimą
+  - name: Mityba & Maistingumas
+    slug: kaina
+    description: Diskutuokite apie mitybą ir maistines medžiagas
+  - name: Drabužiai, Batai & Priedai
+    slug: drabužiai
+    description: Diskutuokite apie drabužius, batus ir daiktus
+  - name: Pirk & Parduok
+    slug: pirkti-parduoti
+    description: Diskutuokite apie bėgimo produktų pirkimą ir pardavimą
+  - name: Kita
+    slug: kita
+    description: Visi kiti
+  empty_category_state: Nėra jokių temų. Pradėkite diskusiją sukurdami pirmąją temą!
+  empty_state_thread: Nėra įrašų. Būk pirmas, parašyk!
+  empty_state: Jokių pranešimų dar nėra. Būk pirmas, kuris parašys!
+  reply_placeholder: Įrašykite savo atsakymą...
+  submit_button: Siųsti
+  login_prompt: Prisijunkite, kad dalyvautumėte diskusijoje
+  new_thread_title_placeholder: Naujojo jūsų temos pavadinimas
+  new_thread_content_placeholder: Parašykite savo pirmąją žinutę...
+  create_thread_button: Sukurti naują temą
+  back_to_forum: ← Grįžti į forumą
+  back_to_category: ← Atgal į
+  empty_thread_state: Dar nėra įrašų. Būk pirmas, kuris parašys!
+  posts_label: įrašas
+  reply_label: atsakymas
+  thread_created_title: Ačiū, kad sukuri naują temą!
+  thread_created_message: Jūsų tema bus peržiūrėta ir netrukus pridėta prie puslapio.
+  thread_created_back_link: Grįžti į kategoriją
+  show_more_threads: Rodyti daugiau temų
+  show_less_threads: Visa mažiau temų
+  create_new_thread: Sukurti naują temą
+  reply_title: Atsakymas į temą
+  showing_threads_count: Rodo {x} iš {y} temų
+about_us:
+  title: Apie bkmaratonas
+  meta_description: bkmaratonas — jūsų gidas bėgimui Lietuvoje
+  content:
+    intro: Sveiki atvykę į bkmaratonas — išsamiausią bėgimo platformą Lietuvoje!
+    mission: Mūsų misija — palengvinti bėgikams rasti ir dalintis informacija apie varžybas, treniruotes ir viską, kas susiję su bėgimu.
+    story: bkmaratonas.lt pradėtas 2023 m. bėgikų bėgikams. Matėme poreikį moderniai platformai, kurioje galėtų susiburti Lietuvos bėgimo bendruomenė.
+    features:
+    - title: Išsamus bėgimų sąrašas
+      description: Renkame Lietuvos bėgimus vienoje vietoje — nuo mažų vietinių varžybų iki didelių tarptautinių renginių.
+    - title: Bendruomenės varoma
+      description: Platformą valdo bėgikai kaip jūs. Kiekvienas gali pridėti varžybų informaciją ir dalyvauti diskusijose.
+    - title: Nemokami įrankiai
+      description: Siūlome greičio skaičiuoklę, treniruočių programas ir maršruto matavimą — nemokamai.
+    closing: Toliau tobuliname platformą pagal naudotojų atsiliepimus. Turite pasiūlymų? Susisiekite su mumis!
+contact:
+  title: Susisiekite su mumis
+  meta_description: Susisiekite su bkmaratonas.lt — esame čia, kad padėtume
+  content:
+    intro: 'Norime išgirsti iš jūsų! Štai kaip su mumis susisiekti:'
+    email:
+      title: El. paštas
+      address: loppkartan@gmail.com
+      description: Paprastai atsakome per 24 valandas darbo dienomis.
+    social:
+      title: Socialiniai tinklai
+      description: 'Sekite mus socialiniuose tinkluose ir gaukite naujausią informaciją:'
+    feedback:
+      title: Atsiliepimai
+      description: Vertiname visus atsiliepimus, kurie padeda tobulinti bkmaratonas.lt.
+privacy_page:
+  title: Privatumo politika
+  meta_description: Privatumo politika ir informacija, kaip bkmaratonas tvarko asmens duomenis ir slapukus.
+  last_updated_label: Paskutinį kartą atnaujinta
+  last_updated_date: 2026 m. kovo 27 d.
+  contact_intro: 'Privatumo klausimais ir užklausoms susisiekite su mumis:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Kokią informaciją renkame
+    intro: 'Renkame informaciją, kurią pateikiate tiesiogiai, kai:'
+    bullets:
+    - sukurate paskyrą
+    - pateikiate varžybų duomenis
+    - rašote forume
+    - susisiekiate su mumis
+  - title: 2. Slapukai ir stebėjimas
+    intro: 'Slapukus naudojame tam, kad:'
+    bullets:
+    - įsimintume jūsų nustatymus
+    - išlaikytume seansą ir prisijungimo būseną
+    - analizuotume srautą ir svetainės naudojimą
+    - rodytume aktualią reklamą ir gerintume patirtį
+  - title: 3. Kaip naudojame jūsų informaciją
+    intro: 'Jūsų informacija padeda mums:'
+    bullets:
+    - teikti ir tobulinti paslaugas
+    - siųsti svarbius pranešimus
+    - atsakyti į užklausas
+    - užkirsti kelią piktnaudžiavimui
+  - title: 4. Jūsų teisės
+    intro: 'Pagal BDAR turite teisę:'
+    bullets:
+    - susipažinti su savo asmens duomenimis
+    - ištaisyti netikslius duomenis
+    - prašyti ištrinti duomenis
+    - nesutikti su tam tikru tvarkymu
+    - prašyti duomenų perkeliamumo
+  - title: 5. Susisiekite su mumis
+    intro: Jei turite klausimų, kaip tvarkome asmens duomenis ar slapukus, visada galite su mumis susisiekti.
+racetime_estimator_title: Įvertinkite savo galutinį laiką
+racetime_estimator_description: Remiantis ankstesniu bėgimu, galite įvertinti savo galutinį laiką kitoms distancijoms.
+known_distance_label: Pasirinkite atstumą, kurį jau turite rezultatą anksčiau
+known_time_label: Įveskite savo laiką
+calculate_button_text: Apskaičiuoti laikus
+predicted_times_title: Numatytos laiko vertės
+distance_header: Atstumas
+predicted_time_header: Numatomas laikas
+hilly_course_label: Kalvota trasa
+finish_time_header: Įvertinta pabaigos laikas
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/km
+flat_time_header: Laikas (plokščias)
+flat_pace_per_km_header: Min/km (lygus)
+flat_pace_per_mile_header: Min/km (lygus)
+hill_adjustment_header: Kuperavimo reguliavimas
+pace_calculator_title: Fartomatikas
+pace_calculator_description: Lengvas įrankis, skirtas paversti jūsų bėgimo greitį tarp skirtingų vienetų
+pace_table_header_kph: Kilometrai per valandą
+pace_table_header_mph: Mylios per valandą
+pace_table_header_min_km: Minutės per kilometrą
+pace_table_header_min_mile: Minutės per mylią
+pace_table_header_5k: 5 km
+pace_table_header_10k: 10 km
+pace_table_header_half: Pusmaratonas
+pace_table_header_full: Maratonas
+pace_conversion_note: 1 kilometras per valandą (kph) = 0.62 mylios per valandą (mph)
+measure_route_title: Išmatuok savo trasą
+measure_route_description: Paspauskite ant žemėlapio, kad pažymėtumėte taškus savo maršrute. Bendra atstumas apskaičiuojamas automatiškai.
+remove_last_point: Pašalinti paskutinį tašką
+clear_route: Išvalyti maršrutą
+total_distance: Bendra atstumas
+training_plans:
+  title: Treniruočių programos
+  description: Sukurkite pritaikytą treniruočių programą, atsižvelgdami į savo tikslą
+  disclaimer_text_tp_1: Mūsų treniruočių programos generuojamos naudojant dirbtinį intelektą ir vėliau pritaikomos pagal jūsų nurodytus tikslus ir pageidavimus. Programos nėra garantuotos, kad bus tobulos arba tiks visiems.
+  disclaimer_link_tp: Susisiekite su mumis
+  disclaimer_text_tp_2: jei turite atsiliepimų ar pasiūlymų dėl patobulinimų.
+  form:
+    race_date_label: Varžybų data
+    plan_type_label: Plano tipas
+    target_distance_label: Tikslo atstumas
+    target_time_label: Valgymas
+    training_days_label: Treniruotės dienos per savaitę
+    session_time_label: Laikas, prieinamas kiekvienam užsiėmimui
+    is_hilly_label: Kalvota reljefas
+    hours_placeholder: Valandos
+    minutes_placeholder: Minutės
+    seconds_placeholder: Sekundės
+    submit_button: Sukurti treniruočių planą
+    target_distance:
+      placeholder: Pasirinkite atstumą
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Pusmaratonas
+        '42195': Maratonas
+    training_days:
+      placeholder: Pasirinkite dienų skaičių
+      options:
+        '3': 3 dienos
+        '4': 4 dienos
+        '5': 5 dienos
+        '6': 6 dienos
+    session_time:
+      placeholder: Pasirinkite laiką per pamoką
+      options:
+        30-45: 30-45 minučių
+        45-60: 45-60 minučių
+        60-90: 60-90 minučių
+        90+: 90+ minučių
+  results:
+    title: Tavo treniruočių programa
+    variations:
+      title: 'Pasirinkite variantą, kuris jums tinka:'
+    plan_details:
+      duration_label: 'Programos trukmė:'
+      weekly_distance_label: 'Savaitinė distanca:'
+    regenerate_button: Visi kiti variantai
+    export_button: Eksportuoti į PDF
+  workout_types:
+    easy: Ramybės treniruotė
+    tempo: Tempo treniruotė
+    intervals: Intervai
+    long: Ilgas bėgimas
+    rest: Poilsis
+  messages:
+    weeks: savaitės
+    week_label: Savaitė
+    hilly_terrain_note: pritaikyta kalvotai teritorijai
+  plan_variation:
+    focus_label: Fokusas
+    weekly_structure_label: Savaitės struktūra
+    distribution_label: Paskirstymas
+    sessions_per_week: sesijų per savaitę
+    select_button: Pasirinkite šį planą
+  errors:
+    loading_plans: Klaida kraunant treniruočių programas
+    required_fields: Prašome užpildyti visus privalomus laukus
+    no_matching_plan: Nerasta atitinkama treniruočių programa
+    no_matching_variations: Nerasta jokių atitinkančių variantų
+    invalid_training_days: Treniruotės dienų skaičius neatitinka plano reikalavimų
+  week: Savaitė
+  weeks: savaitės
+  hilly_terrain_note: pritaikyta kalvotai teritorijai
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Pagrindinės ištvermės ugdymas
+        weekly_template:
+          monday:
+            type: lengva
+            description: Ramybės distancinis bėgimas
+          wednesday:
+            type: tempas
+            description: Tempo bėgimas
+          saturday:
+            type: ilgai
+            description: Ilgas bėgimas
+          sunday:
+            type: atsigavimas
+            description: Atstatymas
+      build:
+        duration_percent: 40
+        focus: Padidėjęs intensyvumas ir atstumas
+        weekly_template:
+          monday:
+            type: lengvas
+            description: Ramybės distancinis bėgimas
+          wednesday:
+            type: intervalai
+            description: Intervatai
+          friday:
+            type: tempas
+            description: Tempo bėgimas
+          sunday:
+            type: ilgai
+            description: Ilgas bėgimas
+      peak:
+        duration_percent: 15
+        focus: Piko ir specifinė treniruotė
+        weekly_template:
+          tuesday:
+            type: intervalai
+            description: Kokybės treniruotė
+          thursday:
+            type: tempas
+            description: Tempo bėgimas
+          saturday:
+            type: ilgai
+            description: Ilgas bėgimas
+          sunday:
+            type: atsigavimas
+            description: Atstatymas
+      taper:
+        duration_percent: 5
+        focus: Formos tobulinimas
+        weekly_template:
+          tuesday:
+            type: lengvas
+            description: Ramus treniruotė
+          thursday:
+            type: tempas
+            description: Trumpas tempas
+          saturday:
+            type: lengva
+            description: Labai ramus bėgimas
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min ramus bėgimas
+        cooldown: 5-10 min ramus bėgimas
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progresyvi apšilimas
+        cooldown: 10-15 min atvėsinimas
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min. įskaitant bėgimo mokymą ir greitėjimo bėgimą
+        cooldown: 10-15 min ramus bėgimas
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min labai ramaus bėgimo
+        cooldown: 5-10 min ėjimas/nesunkus bėgimas
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min ėjimas
+        cooldown: 5-10 min ėjimas
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Šildymas
+    main_workout_label: Treniruotės aprašymas
+    cooldown_label: Atvėsimas
+    intensity_label: Tempas
+    duration_label: Trukmė
+  regenerate:
+    button_text: Sukurti naują variantą
+    confirmation: Ar tikrai norite sugeneruoti naują variantą?
+  weekdays:
+    monday: Pirmadienis
+    tuesday: Antradienis
+    wednesday: Trečiadienis
+    thursday: Ketvirtadienis
+    friday: Penktadienis
+    saturday: Šeštadienis
+    sunday: Sekmadienis
+footer:
+  races_heading: Varžybos
+  tools_heading: Įrankiai
+  about_heading: Apie bkmaratonas
+  privacy: Privatumo politika
+  copyright_year: 2023-2026
+  site_name: bkmaratonas.lt
+  rights_text: Visos teisės saugomos.
+  social_links:
+    facebook: https://www.facebook.com/begimokalendorius
+    instagram: https://www.instagram.com/begimokalendorius
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@begimokalendorius
+accessibility:
+  main_navigation_label: Pagrindinė navigacija
+  breadcrumb_label: Naršymo kelias
+  back_to_top_label: Grįžti į viršų
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Populiarūs bėgimai
+trending_races_description: Čia yra varžybos, kurios sulaukė didžiausio dėmesio Lietuvos bėgikų.
+trending_races_views_last_30_days: peržiūros per pastarąsias 30 dienų
+trending_races_most_viewed: Populiariausi šiuo metu
+races_views: peržiūros
+recent_races_title: Neseniai pridėti bėgimai
+today: šiandien
+yesterday: vakarykštis
+days_ago: dienų prieš
+newest_race_badge: Naujausias pridėjimas
+races_count: lenktynės
+popular_counties_title: Raskite varžybas savo apskrityje
+popular_cities_title: Raskite bėgimus savo mieste
+all_counties: Visos apskritys
+all_cities: Visi miestai
+category_header_1: Trailo bėgimas
+category_type_1: trail
+category_1_races_sub_title_1: Trail maratonas
+category_1_races_sub_ref_1: maratonas
+category_1_races_sub_title_2: Trail Ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail Ultra 100 km
+category_1_races_sub_ref_3: 100-km
+category_header_2: Kelių bėgimas
+category_type_2: road
+category_2_races_sub_title_1: Maratonas
+category_2_races_sub_ref_1: maratonas
+category_2_races_sub_title_2: Pusmaratonas
+category_2_races_sub_ref_2: pusmaratonas
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Visi bėgimai šalyje
+tools_title: Įrankiai tavo kitam bėgimui
+home_tools:
+  measure_route:
+    description: Išmatuokite maršruto idėją ir greitai įvertinkite distanciją prieš išeidami.
+  training_plans:
+    description: Raskite treniruočių programas skirtingiems tikslams, lygiams ir distancijoms.
+  racetime_estimator:
+    description: Įvertinkite realų finišo laiką pagal ankstesnius rezultatus ir palyginkite tikslus.
+  pace_calculator:
+    description: Konvertuokite tempą, greitį ir finišo laiką tarp įprastų distancijų.
+missing_race: Trūksta varžybų? Pridėkite jas čia!
+add_race_mp_title: Pridėkite savo varžybas
+neighboring_countries_title: Bėgimai Lietuvoje ir kaimyninėse šalyse
+neighboring_countries_title_specific_country: Bėgimai {country_name}
+neighboring_countries_description: Čia yra varžybos, kurios vyksta kaimyninėse šalyse.
+neighboring_countries_description_specific_country: Čia pateikiame bėgimo varžybas, kurios vyksta {country_name}.
+neighboring_countries_neighbors_native: Artimi kaimynai
+neighboring_countries_all_neighbors_native: Visos kaimyninės šalys
+section_race_card_header_nieghbors_default: Lietuva ir kaimyninės šalys
+browse_neighboring:
+  title: Tyrinėkite bėgimus kaimyninėse šalyse
+  meta_description: Raskite bėgimus kaimyninėse šalyse šalia jūsų. Tyrinėkite pagal šalį, kad atrastumėte bėgimo varžybas per sienas.
+neighboring_races_title: Lenktynės kaimyninėse šalyse
+neighboring_countries_show_all: Rodyti visus
+race_page_layout_title: 'Bėgimo puslapis: {x}'
