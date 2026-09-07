@@ -172,15 +172,17 @@ export function transliterateForSlug(input, countryCode) {
 
 /**
  * Race-detail folder names are collector-owned URL segments, not slugs.
- * Keep Unicode letters (ė) and underscores; never run slugify on them.
+ * Keep letters and underscores as written; never run slugify on them.
+ * Lithuania's canonical folder is ASCII `begimo_puslapiai`.
  */
 export function preserveRacePageFolderName(input) {
   return String(input ?? '').trim().normalize('NFC');
 }
 
 /**
- * ASCII soft-fall for a race-detail folder: strip combining marks, keep underscores.
+ * Distinct ASCII alias for a race-detail folder: strip combining marks, keep underscores.
  * `bėgimo_puslapiai` → `begimo_puslapiai`. Returns "" when there is no distinct alias.
+ * LT ships the ASCII name as canonical; Unicode is a one-off 308, not a generated route.
  */
 export function asciiAliasRacePageFolder(input) {
   const preserved = preserveRacePageFolderName(input);

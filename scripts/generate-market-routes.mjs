@@ -78,7 +78,7 @@ function routeSegment(content, pageKey, locale) {
 
 function racePageFolder(content, locale) {
   const fallback = locale === 'en' ? 'race-pages' : 'loppsidor';
-  // Collector-owned segment: keep ė and underscores. Do not slugify.
+  // Collector-owned segment: keep the configured letters/underscores. Do not slugify.
   return preserveRacePageFolderName(content.race_page_folder_name) || fallback;
 }
 
@@ -182,8 +182,9 @@ const generatedFiles = [];
 const previousManifest = loadPreviousManifest();
 
 for (const filePath of previousManifest) {
-  // Keep other markets' race-detail folders (Unicode LT, jooksulehed, rennseiten, …).
+  // Keep other markets' race-detail folders (jooksulehed, rennseiten, …).
   // Auxiliary wrappers still swap per MARKET_CODE.
+  // LT Unicode /bėgimo_puslapiai is a one-off 308, not a generated route.
   if (isGeneratedRaceDetailRoute(filePath)) continue;
   deleteFileIfExists(path.join(repoRoot, filePath));
 }

@@ -68,7 +68,7 @@ function shouldIncludeRoute(routePath, configuredCountries) {
   return true;
 }
 
-function preferUnicodeCanonical(urls) {
+function preferAsciiCanonical(urls) {
   const chosen = new Map();
   for (const url of urls) {
     const key = foldPath(url);
@@ -77,9 +77,9 @@ function preferUnicodeCanonical(urls) {
       chosen.set(key, url);
       continue;
     }
-    const urlIsUnicode = url !== foldPath(url);
-    const existingIsUnicode = existing !== foldPath(existing);
-    if (urlIsUnicode && !existingIsUnicode) chosen.set(key, url);
+    const urlIsAscii = url === foldPath(url);
+    const existingIsAscii = existing === foldPath(existing);
+    if (urlIsAscii && !existingIsAscii) chosen.set(key, url);
   }
   return [...chosen.values()];
 }
@@ -117,7 +117,7 @@ function main() {
     .filter((routePath) => shouldIncludeRoute(routePath, configuredCountries))
     .map((routePath) => (routePath === '/' ? `${baseUrl}/` : `${baseUrl}${routePath}`))
     .filter((url, index, values) => values.indexOf(url) === index);
-  const canonicalUrls = preferUnicodeCanonical(urls).sort((a, b) => a.localeCompare(b));
+  const canonicalUrls = preferAsciiCanonical(urls).sort((a, b) => a.localeCompare(b));
 
   fs.writeFileSync(sitemapPath, buildSitemapXml(canonicalUrls), 'utf8');
   console.log(`Wrote ${canonicalUrls.length} sitemap URLs to ${path.relative(root, sitemapPath)}`);

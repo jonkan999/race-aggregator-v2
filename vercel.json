@@ -6,19 +6,52 @@
   "outputDirectory": "dist",
   "routes": [
     {
+      "src": "^/bėgimo_puslapiai(?:/(.*))?$",
+      "headers": {
+        "Location": "/begimo_puslapiai/$1"
+      },
+      "status": 308
+    },
+    {
+      "src": "^/b%C4%97gimo_puslapiai(?:/(.*))?$",
+      "headers": {
+        "Location": "/begimo_puslapiai/$1"
+      },
+      "status": 308
+    },
+    {
       "src": "/(.*)",
       "has": [
         {
           "type": "header",
           "key": "x-vercel-ip-country",
           "value": {
-            "inc": ["BR", "HK", "SG", "CN", "RU", "VN"]
+            "inc": [
+              "BR",
+              "HK",
+              "SG",
+              "CN",
+              "RU",
+              "VN"
+            ]
           }
         }
       ],
       "mitigate": {
         "action": "deny"
       }
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/bėgimo_puslapiai/:path*",
+      "destination": "/begimo_puslapiai/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/b%C4%97gimo_puslapiai/:path*",
+      "destination": "/begimo_puslapiai/:path*",
+      "permanent": true
     }
   ]
 }

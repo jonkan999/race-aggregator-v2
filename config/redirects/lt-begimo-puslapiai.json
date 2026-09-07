@@ -1,0 +1,17 @@
+{
+  "id": "lt-begimo-puslapiai",
+  "market": "lt",
+  "note": "LT one-off migration: Unicode race-detail folder → ASCII canonical. Hand-maintained. generate-market-routes.mjs must never write or clear these redirects.",
+  "redirects": [
+    {
+      "source": "/bėgimo_puslapiai/:path*",
+      "destination": "/begimo_puslapiai/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/b%C4%97gimo_puslapiai/:path*",
+      "destination": "/begimo_puslapiai/:path*",
+      "permanent": true
+    }
+  ]
+}
