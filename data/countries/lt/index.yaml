@@ -79,8 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Maratonas
-race_page_estimated_date_label: Estimated date
-race_page_estimated_disclaimer: We have not received an official date for this race.
+race_page_estimated_date_label: Numatoma data
+race_page_estimated_disclaimer: Oficiali šio bėgimo data dar nepaskelbta.
 country_code: lt
 country_language_code: lt
 navigation:
@@ -262,10 +262,10 @@ add_race_additional_placeholder: t.ex. startas ir finišas, starto grupės ir kt
 add_race_images_label: Įkelkite nuotraukas (Pageidautina bent 4)
 choose_pictures_button: Pasirinkite nuotraukas
 drag_drop_text: Tempk ir numeskite čia nuotraukas arba spustelėkite, kad pasirinkti
-add_race_remove_image_label: Remove image
-coordinates_display_prefix: Race coordinates
-add_race_upload_limit_message: You can only upload {count} more images.
-add_race_map_not_configured: The map could not be loaded right now.
+add_race_remove_image_label: Pašalinti nuotrauką
+coordinates_display_prefix: Varžybų koordinatės
+add_race_upload_limit_message: Galite įkelti dar tik {count} nuotraukų.
+add_race_map_not_configured: Žemėlapio šiuo metu nepavyko įkelti.
 clear_images_button: Išvalyti nuotraukas
 clear_form_button: Išvalyti formą
 preview_button: Peržiūrėti
@@ -287,15 +287,15 @@ race_page_distances_label: 'Atstumai:'
 race_page_surface_label: 'Paviršius:'
 race_page_date_label: 'Data:'
 race_page_registration_link: Registracijos nuoroda
-race_page_registration_cta: Register now
-race_page_info_cta: More information
-race_page_registration_close_label: Registration closes
-race_page_pricing_title: Registration and pricing
-race_page_price_deadline_label: Valid until
-race_page_price_late_fee_label: Late registration
-race_page_back_to_list: Back to race calendar
-race_page_favorites_title: Do not miss race updates
-race_page_favorites_body: Create an account and save this race to your favorites so you can receive updates, news and selected offers when favorites launch.
+race_page_registration_cta: Registruotis
+race_page_info_cta: Daugiau informacijos
+race_page_registration_close_label: Registracija baigiasi
+race_page_pricing_title: Registracija ir kainos
+race_page_price_deadline_label: Galioja iki
+race_page_price_late_fee_label: Vėlyva registracija
+race_page_back_to_list: Grįžti į bėgimų kalendorių
+race_page_favorites_title: Nepraleiskite bėgimo naujienų
+race_page_favorites_body: Sukurkite paskyrą ir išsaugokite šį bėgimą mėgstamuose, kad gautumėte naujienas, pranešimus ir atrinktus pasiūlymus, kai ši funkcija bus paleista.
 race_page_favorites_cta: Išsaugoti mėgstamuose
 race_page_similar_title: Panašios varžybos
 race_page_similar_body: Daugiau varžybų su panašia distancija, tipu ar vieta.
@@ -496,7 +496,7 @@ auth_modal:
   title_sign_in: Prisijungti
   title_create_account: Sukurti paskyrą
   title_reset_password: Slaptažodžio atstatymas
-  auth_unavailable: Authentication is not configured yet.
+  auth_unavailable: Prisijungimas dar nesukonfigūruotas.
   name_placeholder: Jūsų vardas
   email_placeholder: Tavo el. paštas
   password_placeholder: Slaptažodis
@@ -514,85 +514,85 @@ auth_modal:
   as_email: su el. paštu
   continue_as_user: Tęsti kaip šis vartotojas
   logout_and_switch: Atsijungti ir keisti naudotoją
-  account_created: Konto sukurtas!
+  account_created: Paskyra sukurta!
   account_created_details: Dabar esate prisijungęs kaip
   verification_email_sent: Patvirtinimo nuoroda buvo išsiųsta į jūsų el. paštą.
   please_verify: Prašome patvirtinti savo el. pašto adresą
   error_invalid_credential: Neteisingas el. paštas arba slaptažodis
   create_account_prompt: Sukurkite paskyrą vietoj to
   error_too_many_requests: Per daug bandymų. Prašome pabandyti vėliau.
-  continue_with_google: Continue with Google
-  continue_with_google_create: Create account with Google
-  google_in_progress: Continuing with Google...
-  oauth_divider: or
+  continue_with_google: Tęsti su Google
+  continue_with_google_create: Sukurti paskyrą su Google
+  google_in_progress: Jungiamasi su Google...
+  oauth_divider: arba
 auth_pages:
-  confirm_success: Your email has been confirmed and your account is now active.
-  confirm_ready: You can now continue using the site.
-  confirm_error: Could not confirm your email address.
-  reset_intro: Enter a new password for your account.
-  reset_confirm_label: Confirm password
-  reset_mismatch_error: Passwords do not match.
-  reset_invalid_link_error: Invalid or missing recovery link.
-  reset_success: Your password has been updated. You can now sign in.
+  confirm_success: Jūsų el. paštas patvirtintas ir paskyra jau aktyvi.
+  confirm_ready: Dabar galite toliau naudotis svetaine.
+  confirm_error: Nepavyko patvirtinti jūsų el. pašto adreso.
+  reset_intro: Įveskite naują paskyros slaptažodį.
+  reset_confirm_label: Patvirtinkite slaptažodį
+  reset_mismatch_error: Slaptažodžiai nesutampa.
+  reset_invalid_link_error: Atkūrimo nuoroda neteisinga arba jos nėra.
+  reset_success: Slaptažodis atnaujintas. Dabar galite prisijungti.
 newsletter_popup:
-  email_placeholder: Your email address
-  submit_button: Send me the updates
-  dismiss_button: Not now
-  invalid_email: Please enter a valid email address.
-  submit_error: We could not save your subscription right now. Please try again.
-  submitting_text: Saving...
-  success_message: Thanks! Race updates are on the way to your inbox.
-  privacy_note: New races, date changes and selected offers. Unsubscribe whenever you want.
-  close_aria_label: Close subscription popup
+  email_placeholder: Jūsų el. pašto adresas
+  submit_button: Siųskite man naujienas
+  dismiss_button: Ne dabar
+  invalid_email: Įveskite galiojantį el. pašto adresą.
+  submit_error: Šiuo metu nepavyko išsaugoti prenumeratos. Bandykite dar kartą.
+  submitting_text: Išsaugoma...
+  success_message: Ačiū! Bėgimų naujienos jau keliauja į jūsų pašto dėžutę.
+  privacy_note: Nauji bėgimai, datų pakeitimai ir atrinkti pasiūlymai. Prenumeratos galite atsisakyti bet kada.
+  close_aria_label: Uždaryti prenumeratos langą
   benefits:
-    new_races: New races first
-    date_changes: Date changes instantly
-    selected_offers: Selected offers
-    similar_races: Similar races near you
-    local_picks: More races nearby
-    opening_reminders: Reminders before spots disappear
-    race_updates: Updates about this race
-    nearby_races: Cross-border races near you
+    new_races: Nauji bėgimai pirmieji
+    date_changes: Datų pakeitimai iškart
+    selected_offers: Atrinkti pasiūlymai
+    similar_races: Panašūs bėgimai netoliese
+    local_picks: Daugiau bėgimų šalia jūsų
+    opening_reminders: Priminimai, kol dar yra vietų
+    race_updates: Naujienos apie šį bėgimą
+    nearby_races: Kaimyninių šalių bėgimai netoliese
   generic:
-    eyebrow: Do not miss the next race
-    title: Get new races and date changes before everyone else
-    body: Subscribe to our newsletter and get new races, updated dates and hand-picked tips in {country} straight to your inbox.
+    eyebrow: Nepraleiskite kito bėgimo
+    title: Gaukite naujus bėgimus ir datų pakeitimus pirmieji
+    body: Prenumeruokite naujienlaiškį ir gaukite naujus bėgimus, atnaujintas datas ir atrinktus patarimus šalyje {country} tiesiai į pašto dėžutę.
   race_detail:
-    eyebrow: Follow this race
-    title: Want updates about {race_name}?
-    body: Subscribe to get updates about {race_name}, similar races in {county} and important changes sent straight to your inbox.
+    eyebrow: Sekite šį bėgimą
+    title: Norite naujienų apie {race_name}?
+    body: Prenumeruokite ir gaukite naujienas apie {race_name}, panašius bėgimus apskrityje {county} ir svarbius pakeitimus tiesiai į pašto dėžutę.
   browse_category:
-    eyebrow: More of the right races
-    title: Do not miss new {category} races
-    body: We send new {category} races, relevant nearby alternatives and important dates so you do not have to keep searching manually.
+    eyebrow: Daugiau tinkamų bėgimų
+    title: Nepraleiskite naujų {category} bėgimų
+    body: Siunčiame naujus {category} bėgimus, tinkamas alternatyvas netoliese ir svarbias datas, kad nereikėtų ieškoti rankiniu būdu.
   browse_category_type:
-    eyebrow: More of the right races
-    title: Get more {race_type} races within {category}
-    body: Subscribe for more {race_type} races within {category}, nearby alternatives and date changes delivered straight to your inbox.
+    eyebrow: Daugiau tinkamų bėgimų
+    title: Gaukite daugiau {race_type} bėgimų kategorijoje {category}
+    body: Prenumeruokite ir gaukite daugiau {race_type} bėgimų kategorijoje {category}, netoliese esančias alternatyvas ir datų pakeitimus tiesiai į pašto dėžutę.
   browse_county:
-    eyebrow: Local races first
-    title: Get more races in {county}
-    body: Keep up with new races, updated dates and smart picks for {county} without checking the calendar all the time.
+    eyebrow: Vietiniai bėgimai pirmieji
+    title: Gaukite daugiau bėgimų apskrityje {county}
+    body: Sekite naujus bėgimus, atnaujintas datas ir atrinktus pasiūlymus apskrityje {county} be nuolatinio kalendoriaus tikrinimo.
   browse_city:
-    eyebrow: Local races first
-    title: Want more races in {city}?
-    body: Subscribe and get new races, nearby alternatives and important dates for {city} sent straight to your inbox.
+    eyebrow: Vietiniai bėgimai pirmieji
+    title: Norite daugiau bėgimų mieste {city}?
+    body: Prenumeruokite ir gaukite naujus bėgimus, netoliese esančias alternatyvas ir svarbias datas mieste {city} tiesiai į pašto dėžutę.
   browse_type:
-    eyebrow: The right race style
-    title: Get more {race_type} races in your inbox
-    body: We send new {race_type} races, similar alternatives and key dates so you can act before spots disappear.
+    eyebrow: Tinkamas bėgimo stilius
+    title: Gaukite daugiau {race_type} bėgimų į pašto dėžutę
+    body: Siunčiame naujus {race_type} bėgimus, panašias alternatyvas ir svarbias datas, kad spėtumėte registruotis, kol dar yra vietų.
   browse_month:
-    eyebrow: Plan the season
-    title: Get the best races in {month} first
-    body: When races in {month} open, move or become especially interesting, you hear about it right away in your inbox.
+    eyebrow: Planuokite sezoną
+    title: Gaukite geriausius {month} bėgimus pirmieji
+    body: Kai {month} bėgimai atveria registraciją, keičia datą ar tampa ypač įdomūs, apie tai iškart sužinosite savo pašto dėžutėje.
   browse_neighboring:
-    eyebrow: Broaden your calendar
-    title: Get races from neighboring countries too
-    body: Subscribe for new races, smart cross-border picks and date changes from {region} delivered straight to your inbox.
+    eyebrow: Praplėskite kalendorių
+    title: Gaukite ir kaimyninių šalių bėgimus
+    body: Prenumeruokite ir gaukite naujus bėgimus, atrinktus pasiūlymus užsienyje ir datų pakeitimus regione {region} tiesiai į pašto dėžutę.
   browse_neighboring_country:
-    eyebrow: Broaden your calendar
-    title: Get more races in {region}
-    body: We send new races, date changes and relevant nearby alternatives when something interesting appears in {region}.
+    eyebrow: Praplėskite kalendorių
+    title: Gaukite daugiau bėgimų regione {region}
+    body: Siunčiame naujus bėgimus, datų pakeitimus ir tinkamas netoliese esančias alternatyvas, kai regione {region} atsiranda kažkas įdomaus.
 submission_flow:
   logged_in_as: Prisijungęs kaip organizatorius
   submitting_new_race: teikia naują varžybą
@@ -781,7 +781,7 @@ training_plans:
     race_date_label: Varžybų data
     plan_type_label: Plano tipas
     target_distance_label: Tikslo atstumas
-    target_time_label: Valgymas
+    target_time_label: Tikslinis laikas
     training_days_label: Treniruotės dienos per savaitę
     session_time_label: Laikas, prieinamas kiekvienam užsiėmimui
     is_hilly_label: Kalvota reljefas
