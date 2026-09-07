@@ -97,6 +97,10 @@ jobs:
         if: ${{ matrix.configured }}
         run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
+      - name: Merge durable Vercel redirects
+        if: ${{ matrix.configured }}
+        run: node ./scripts/merge-vercel-redirects.mjs
+
       - name: Build project artifacts
         if: ${{ matrix.configured }}
         run: vercel build --prod --token="$VERCEL_TOKEN"

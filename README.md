@@ -220,6 +220,9 @@ This repo now builds one active market per deploy. Set `MARKET_CODE={cc}` so the
 - install command: `npm install`
 - build command: `npm run build`
 - output directory: `dist`
+- durable one-off redirects from [`config/redirects/`](./config/redirects/), merged by [`scripts/merge-vercel-redirects.mjs`](./scripts/merge-vercel-redirects.mjs) before `vercel build`
+
+Lithuania’s Unicode `/bėgimo_puslapiai/:path*` → ASCII `/begimo_puslapiai/:path*` 308 is an LT migration one-off in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json). `generate-market-routes.mjs` never writes that file or `vercel.json`, so the next market deploy matrix cannot wipe it.
 
 ### Production deploy model
 
@@ -270,8 +273,9 @@ The deploy flow per market is:
 2. `npm ci`
 3. `npm install --global vercel@latest`
 4. `vercel pull --yes --environment=production`
-5. `vercel build --prod`
-6. `vercel deploy --prebuilt --archive=tgz --prod`
+5. `node scripts/merge-vercel-redirects.mjs`
+6. `vercel build --prod`
+7. `vercel deploy --prebuilt --archive=tgz --prod`
 
 Each market runs in its own isolated GitHub Actions job so generated route wrappers and `.vercel/` state never leak across builds.
 

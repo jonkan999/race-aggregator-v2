@@ -172,6 +172,15 @@ for (const countryCode of countryCodes) {
 
   const nativeContent = loadYaml(nativeFile);
   const englishContent = loadYaml(englishFile);
+
+  if (countryCode === 'lt') {
+    const folder = String(nativeContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (folder !== 'begimo_puslapiai') {
+      failures.push(
+        'lt: native race_page_folder_name must be ASCII begimo_puslapiai (Unicode bėgimo_puslapiai is a one-off 308 in config/redirects/lt-begimo-puslapiai.json, not a generated route)',
+      );
+    }
+  }
   const trainingPlansAreEnabled =
     trainingPlansEnabled(nativeContent) || trainingPlansEnabled(englishContent);
 
