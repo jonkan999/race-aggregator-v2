@@ -1,6 +1,6 @@
 selection_rule:
   nearby_radius_km: 50.0
-  target_city_count: 12
+  target_city_count: 14
   min_eligible_races: 3
   similarity_distance_km: 40.0
   similarity_jaccard: 0.85
@@ -71,6 +71,18 @@ cities:
   latitude: 64.2273
   longitude: 27.7285
   nearby_race_count: 4
+- name: Kotka
+  original_name: Kotka
+  population: 54616
+  latitude: 60.4664
+  longitude: 26.9458
+  nearby_race_count: 3
+- name: Joensuu
+  original_name: Joensuu
+  population: 53388
+  latitude: 62.6012
+  longitude: 29.7632
+  nearby_race_count: 3
 - name: Ylivieska
   original_name: Ylivieska
   population: 13159
