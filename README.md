@@ -222,7 +222,7 @@ This repo now builds one active market per deploy. Set `MARKET_CODE={cc}` so the
 - output directory: `dist`
 - durable one-off redirects from [`config/redirects/`](./config/redirects/), merged by [`scripts/merge-vercel-redirects.mjs`](./scripts/merge-vercel-redirects.mjs) before `vercel build`
 
-Lithuania’s Unicode `/bėgimo_puslapiai/:path*` → ASCII `/begimo_puslapiai/:path*` 308 is an LT migration one-off in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json). `generate-market-routes.mjs` never writes that file or `vercel.json`, so the next market deploy matrix cannot wipe it.
+Lithuania’s Unicode `/bėgimo_puslapiai/:path*` → ASCII `/begimo_puslapiai/:path*` 308 is an LT migration one-off in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json). `generate-market-routes.mjs` never writes that file or `vercel.json`, so the next market deploy matrix cannot wipe it. Finland (`fi`, suomi-juoksu.fi) is registered disabled until a Vercel project exists; native race-detail URLs are ASCII `/kilpailusivut/{domain}/` with no extra redirect.
 
 ### Production deploy model
 

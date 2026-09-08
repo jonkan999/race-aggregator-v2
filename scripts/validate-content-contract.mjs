@@ -181,6 +181,14 @@ for (const countryCode of countryCodes) {
       );
     }
   }
+  if (countryCode === 'fi') {
+    const folder = String(nativeContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (folder !== 'kilpailusivut') {
+      failures.push(
+        'fi: native race_page_folder_name must be ASCII kilpailusivut (no Unicode rename or extra redirects)',
+      );
+    }
+  }
   const trainingPlansAreEnabled =
     trainingPlansEnabled(nativeContent) || trainingPlansEnabled(englishContent);
 
