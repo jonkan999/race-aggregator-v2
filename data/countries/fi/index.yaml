@@ -1,0 +1,1055 @@
+type_options:
+  road: Maantie
+  terrain: Maasto
+  trail: Polku
+  track: Juoksurata
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Viesti
+  time: Aikajuoksu
+  other: Muu
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Puolimaraton:
+    range:
+    - 20
+    - 22
+  Maraton:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 metriä:
+    range:
+    - 1.5
+    - 1.5
+  3000 metriä:
+    range:
+    - 3
+    - 3
+  5000 metriä:
+    range:
+    - 5
+    - 5
+  10000 metriä:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Aikajuoksu
+  relay: Viesti
+verbose_local_distance_mapping:
+  half marathon: Puolimaraton
+  marathon: Maraton
+  fallback: Sekoitettu matka
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Puolimaraton
+- range:
+  - 41.9
+  - 42.4
+  label: Maraton
+race_page_estimated_date_label: Arvioitu päivämäärä
+race_page_estimated_disclaimer: Emme ole saaneet virallista päivämäärää tälle kilpailulle.
+country_code: fi
+country_language_code: fi
+navigation:
+  main: Kaikki
+  race-list: Juoksukalenteri
+  add-race: Lisää kilpailu
+  forum: Foorumi
+  measure-route: Mittaa reittisi
+  training-plans: Harjoitusohjelmat
+  pace-calculator: Vauhtimuunnin
+  racetime-estimator: Arvioi juoksuaikasi
+  about-us: Tietoa meistä
+  contact: Ota yhteyttä
+  neighboring: Naapurimaat
+race_list_name: Juoksukalenteri
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Esikatselu kilpailusta
+  terms-of-service: Käyttöehdot
+  privacy-policy: Tietosuojakäytäntö
+  about-us: Tietoa meistä
+  contact: Ota meihin yhteyttä
+  faq: Usein kysytyt kysymykset
+page_name: suomi-juoksu
+base_url: https://suomi-juoksu.fi/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hei!
+    closing_salutation: Ystävällisin terveisin,
+    link_fallback_intro: 'Jos painike ei toimi, voit kopioida linkin tästä:'
+  confirm_signup:
+    body: Kiitos, että liityit {site_name}-sivustolle. Vahvista sähköpostiosoitteesi, jotta tilisi aktivoituu ja voit hallita lähettämiäsi kilpailuja.
+    button_label: Vahvista sähköpostiosoite
+    ignore_note: Jos et luonut tiliä, voit jättää tämän viestin huomiotta.
+  reset_password:
+    body: Saimme pyynnön nollata {site_name}-tilisi salasanan. Valitse uusi salasana painamalla alla olevaa painiketta.
+    button_label: Nollaa salasana
+    ignore_note: Jos et pyytänyt tätä, voit jättää viestin huomiotta. Salasana ei muutu, ennen kuin valitset uuden.
+  change_email:
+    body: Pyysit vaihtamaan {site_name}-tilisi sähköpostiosoitteen. Vahvista muutos painamalla alla olevaa painiketta.
+    button_label: Vahvista uusi sähköpostiosoite
+    ignore_note: Jos et pyytänyt muutosta, voit jättää tämän viestin huomiotta.
+title: Kaikki juoksusta Suomessa
+country_native: Suomi
+country: Finland
+meta_description: Suomen kattavin juoksukalenteri ja juoksijoiden yhteisö
+country_language: Finnish
+local_name_for_race: juoksukilpailu
+main_bullet_1: Löydä seuraava kilpailusi
+main_bullet_2: '- Tai lisää se tähän'
+main_bullet_3: Selaa käytettyjen varusteiden toria
+main_bullet_4: Lue uutiset tai keskustele foorumilla
+description: Tämä yhteisön ylläpitämä hanke kokoaa juoksijoita ympäri Suomea. Alusta kasvaa edelleen, mutta avullasi siitä voi tulla paikallisen juoksu-yhteisön koti.
+cta_search: Löydä juoksukilpailu
+cta_add: Lisää kilpailu
+selected_races_title: Valitut kilpailut
+selected_races_top_title: Viikon kilpailu
+cta_all_races: Näytä kaikki kilpailut
+show_local: Näytä
+race_local: juoksukilpailu
+running_local: Juoksu
+alt_prefix: Kuva {x}
+race_list_title: Suomen kattavin lista maratoneista, puolimaratooneista ja muista juoksukilpailuista
+race_list_meta_description_1: Täältä löydät juoksukilpailut ja tapahtumapäivämäärät ympäri Suomea.
+race_list_meta_description_2: ✔️Suurin juoksukalenteri ✔️Polku, maantie ja maraton ✔️Kisoja koko Suomesta
+race_list_data_error: Kilpailuja ei voitu ladata. Yritä myöhemmin uudelleen.
+race_list_remote_required: Lisäsivuja tai suodattimia varten tarvitaan Supabase-tietokanta. Lisää PUBLIC_SUPABASE_URL ja PUBLIC_SUPABASE_PUBLISHABLE_KEY .env-tiedostoon.
+race_list_empty: Suodattimilla ei löytynyt kilpailuja.
+race_list_loading: Ladataan…
+race_card_cta_text: Lisätietoja & ilmoittautuminen
+section_race_card_category_prefix: Kaikki
+section_race_card_category_suffix: juoksukilpailu
+section_race_card_header_separator: paikkakunnalla
+section_race_card_header_region_default: Suomi
+section_race_card_header_date_range_from: alkaen
+section_race_card_header_date_range_to: '-'
+section_race_card_header_date_range_single: null
+filter_date_from: Alkaen
+filter_date_to: Saakka
+filter_county: Kaikki maakunnat
+filter_race_type: Kaikki juoksutyypit
+filter_categories: Kaikki kategoriat
+filter_months: Koko vuosi
+filter_distance: Kaikki matkat
+month_mapping:
+  '01': Tammikuu
+  '02': Helmikuu
+  '03': Maaliskuu
+  '04': Huhtikuu
+  '05': Toukokuu
+  '06': Kesäkuu
+  '07': Heinäkuu
+  '08': Elokuu
+  '09': Syyskuu
+  '10': Lokakuu
+  '11': Marraskuu
+  '12': Joulukuu
+month_mapping_short:
+  '01': tam.
+  '02': helmi.
+  '03': maalis
+  '04': huhti.
+  '05': touko
+  '06': kesä
+  '07': heinä
+  '08': elo.
+  '09': syys.
+  '10': lok.
+  '11': marr.
+  '12': joulu.
+county_label_text: Kaikki maakunnat
+county_mapping:
+  Ahvenanmaa: Ahvenanmaa
+  Etelä-Karjala: Etelä-Karjala
+  Etelä-Pohjanmaa: Etelä-Pohjanmaa
+  Etelä-Savo: Etelä-Savo
+  Häme: Häme
+  Kainuu: Kainuu
+  Keski-Pohjanmaa: Keski-Pohjanmaa
+  Keski-Suomi: Keski-Suomi
+  Kymenlaakso: Kymenlaakso
+  Lappi: Lappi
+  Pirkanmaa: Pirkanmaa
+  Pohjanmaa: Pohjanmaa
+  Pohjois-Karjala: Pohjois-Karjala
+  Pohjois-Pohjanmaa: Pohjois-Pohjanmaa
+  Pohjois-Savo: Pohjois-Savo
+  Päijät-Häme: Päijät-Häme
+  Satakunta: Satakunta
+  Uusimaa: Uusimaa
+  Varsinais-Suomi: Varsinais-Suomi
+category_label_text: Kilpailuluokka
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Siirry kilpailusivulle
+map_toggle_desktop: Näytä kartta
+map_toggle_desktop_active: Piilota kartta
+map_toggle_mobile: Kartta
+map_toggle_mobile_list: Lista
+map_markers_load_error: Karttamerkkejä ei voitu ladata.
+map_not_configured: Karttaa ei ole määritetty (avain puuttuu).
+race_page_map_zoom: '4'
+pagination:
+  results_text: /
+  events_text: juoksukilpailu
+  previous_text: Edellinen
+  next_text: Seuraava
+  page_text: Sivu
+  of_text: /
+add_race_title: Lisää uusi kilpailu
+add_race_meta_description: Lisää kilpailusi suomi-juoksu.fi-sivustolle
+map_message: Aseta reittisi klikkaamalla karttaa
+mapbox_center:
+  latitude: 62.1452865
+  longitude: 27.6450702
+mapbox_zoom: '6'
+date_text: Päivämäärä
+multi_day_toggle: Monipäiväinen tapahtuma
+end_date_text: Lopetuspäivämäärä
+type_text: Alusta / kilpailutyyppi
+type_select_placeholder: Valitse alusta / juoksutyyppi
+name_label: 'Kilpailun nimi:'
+name_placeholder: esim. Helsingin maraton
+distance_label: 'Etäisyydet:'
+distance_placeholder: Anna etäisyys km:ssä
+add_distance_button: Lisää
+half_marathon_button: Puolimaraton
+marathon_button: Maraton
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Paikan nimi, jossa kilpailu järjestetään:'
+place_placeholder: esim. Helsinki
+organizer_label: 'Järjestäjä:'
+organizer_contact_placeholder: Järjestäjän nimi
+organizer_contact_label: 'Sähköposti yhteyshenkilölle:'
+organizer_mail_placeholder: loppkartan@gmail.com
+website_label: 'Järjestäjän kotisivu:'
+website_placeholder: https://jarjestajan-nimi.fi/
+start_time_label: 'Aloitusaika:'
+start_time_placeholder: 09:00
+price_range_label: 'Hinta-alue:'
+price_range_placeholder: esim. 20–50 €
+add_race_description_label: Kuvaile kilpailua
+add_race_description_placeholder: Helsingin ympäri on mailan mittainen rata, jossa on pitkiä, tasaisia suoria ...
+add_race_additional_label: Muu tarvittava tieto
+add_race_additional_placeholder: esim. lähtö ja maali, lähtöryhmät ym.
+add_race_images_label: Lataa kuvia (Mielellään vähintään 4)
+choose_pictures_button: Valitse kuvat
+drag_drop_text: Vedä ja pudota kuvia tänne tai napsauta valitaksesi
+add_race_remove_image_label: Poista kuva
+coordinates_display_prefix: Kilpailun koordinaatit
+add_race_upload_limit_message: Voit ladata enää {count} kuvaa.
+add_race_map_not_configured: Karttaa ei voitu ladata juuri nyt.
+clear_images_button: Tyhjennä kuvat
+clear_form_button: Tyhjennä lomake
+preview_button: Esikatselu
+submit_button: Lähetä
+preview_title: Esikatselu
+preview_exit_button: Sulje esikatselu
+optional_label: Valinnainen
+comments_suffix: Kommentit
+cta_forum: Näytä kaikki viestit
+race_page_preview_title: Näin kilpailusi tulee näyttämään
+edit_race_button: Muokkaa
+race_page_description_label: Kilpailun kuvaus
+race_page_course_highlights_label: Kohokohdat
+race_page_additional_label: Muu tieto
+race_page_detailed_info_label: Yksityiskohtaiset tiedot
+race_page_social_links_label: Seuraa kilpailua
+race_page_place_label: 'Paikka:'
+race_page_distances_label: 'Etäisyydet:'
+race_page_surface_label: 'Alustat:'
+race_page_date_label: 'Päivämäärä:'
+race_page_registration_link: Linkki rekisteröitymiseen
+race_page_registration_cta: Ilmoittaudu nyt
+race_page_info_cta: Lisätietoja
+race_page_registration_close_label: Ilmoittautuminen päättyy
+race_page_pricing_title: Ilmoittautuminen ja hinnat
+race_page_price_deadline_label: Voimassa asti
+race_page_price_late_fee_label: Myöhäinen ilmoittautuminen
+race_page_back_to_list: Takaisin juoksukalenteriin
+race_page_favorites_title: Älä missaa kilpailun uutisia
+race_page_favorites_body: Luo tili ja tallenna tämä kilpailu suosikkeihin, jotta saat uutiset, muutokset ja valitut vinkit, kun suosikit otetaan käyttöön.
+race_page_favorites_cta: Tallenna kilpailu suosikkeihin
+race_page_similar_title: Samankaltaiset kilpailut
+race_page_similar_body: Lisää kilpailuja samalla matkalla, tyypillä tai läheisellä paikkakunnalla.
+race_page_discover_title: Tutustu muihin kilpailuihin
+race_page_discover_county_link: Kaikki kilpailut maakunnassa {county}
+race_page_discover_type_link: Lisää {type}-kilpailuja
+race_page_discover_category_link: Lisää {category}-kilpailuja
+race_page_discover_type_county_link: '{type}-kilpailut maakunnassa {county}'
+race_page_discover_overview_link: Selaa kaikkia kilpailukategorioita
+disclaimer_text_1: Kaikki tiedot tällä sivulla perustuvat avoimeen lähdedataan. Teemme parhaamme pitääksemme sen ajan tasalla, mutta emme voi taata, että kaikki on oikein. Näetkö virheitä,
+disclaimer_link: ota yhteyttä meihin
+disclaimer_text_2: niin korjaamme sen mahdollisimman pian.
+disclaimer_text_3: Onko jotain muuta, mitä haluaisit lisätä juoksusi aikana?
+disclaimer_text_4: niin yritämme auttaa!
+race_page_visit_organizer_website: Siirry järjestäjän sivulle & ilmoittautumiseen
+race_page_folder_name: kilpailusivut
+race_page_alt_prefix: Kuva {x}
+seo_county_folder_name: maakunnat
+seo_cities_folder_name: Kaupungit
+popular_subcategories_title: Suositut alaluokat
+important_keywords_racelist:
+- juoksukalenteri
+- juoksukilpailut
+- juoksutapahtumat
+- kilpailukalenteri
+- juoksukilpailu
+- maraton Suomi
+- puolimaraton
+- polkujuoksu
+- ultrajuoksu
+seo_templates:
+  title_parts:
+    category: '{category} juoksukilpailu'
+    race_type: '{race_type}'
+    location: '{location}'
+    default: Kaikki juoksukilpailut
+  paragraph_templates:
+    category_race_location: Löydä {category} {race_type}kilpailu {location}.
+    category_race: Tutki {category} {race_type}kilpailuja ympäri Suomea.
+    category_location: Tutustu {category} kilpailuihin {location}.
+    race_location: Löydä {race_type}kilpailuja paikkakunnalta {location}.
+    category_only: Löydä {category} juoksukilpailut ympäri Suomea.
+    race_only: Tutki {race_type}kilpailuja kaikilla alueilla.
+    location_only: Näe kaikki kilpailutyypit {location}.
+    default_suffix: Täältä löydät päivämäärät, matkat ja kaikki tiedot, joita tarvitset seuraavan kilpailusi suunnittelemiseen.
+  browse_page_templates:
+    county:
+      title: '{label} juoksukilpailut | {site_name}'
+      meta_description: Selaa juoksukilpailuja maakunnassa {label}. Vertaa päiviä, matkoja, kilpailutyyppejä ja käytännön tietoja ennen seuraavaa kisaasi.
+      h1: Kilpailut maakunnassa {label}
+      paragraph: Tälle sivulle on koottu juoksukilpailut maakunnassa {label}, jotta päiviä, matkoja, kilpailutyyppejä ja käytännön tietoja on helpompi vertailla. Käytä sitä, kun haluat selkeämmän kokonaiskuvan ennen ilmoittautumista.
+    city:
+      title: '{label} juoksukilpailut | {site_name}'
+      meta_description: Löydä juoksukilpailuja kaupungissa {label}. Vertaa päiviä, matkoja, lähivaihtoehtoja ja käytännön tietoja.
+      h1: Kilpailut lähellä kaupunkia {label}
+      paragraph: Tämä kaupunkisivu auttaa selaamaan juoksukilpailuja, jotka liittyvät paikkaan {label}, mukaan lukien lähivaihtoehdot kisapäivän tai matkan suunnitteluun.
+    month:
+      title: '{label} juoksukilpailut | {site_name}'
+      meta_description: Selaa juoksukilpailuja kuukaudessa {label} Suomessa. Vertaa päiviä, matkoja ja kilpailutyyppejä kauden suunnitteluun.
+      h1: Kilpailut kuukaudessa {label}
+      paragraph: Tämä sivu on juoksijoille, jotka haluavat kuukausinäkymän kalenteriin ja nopeamman tavan vertailla, mitä {label}-kuussa tapahtuu.
+    race_type:
+      title: '{label} juoksukilpailut Suomessa | {site_name}'
+      meta_description: Selaa {label_lower}-kilpailuja Suomessa. Vertaa päiviä, matkoja, paikkoja ja käytännön tietoja.
+      h1: '{label} juoksukilpailut Suomessa'
+      paragraph: Tämä sivu keskittyy {label_lower}-kilpailuihin ja antaa selkeämmän kuvan, kun kilpailutyyppi on yhtä tärkeä kuin matka.
+    category:
+      title: '{label} juoksukilpailut Suomessa | {site_name}'
+      meta_description: Selaa {label}-kilpailuja Suomessa. Vertaa päiviä, kilpailutyyppejä, paikkoja ja käytännön tietoja.
+      h1: '{label} juoksukilpailut Suomessa'
+      paragraph: Tämä matka- ja kategoriasivu kokoaa {label}-kilpailut yhteen, jotta sopivia vaihtoehtoja on helpompi vertailla.
+    race_type_category:
+      title: '{label} {secondary_label} juoksukilpailut Suomessa | {site_name}'
+      meta_description: Selaa {label}-kilpailuja Suomessa tyypissä {secondary_label_lower}. Vertaa päiviä, paikkoja ja käytännön tietoja.
+      h1: '{label} juoksukilpailut Suomessa ({secondary_label})'
+      paragraph: Tämä sivu rajaa kalenterin {label}-kilpailuihin tyypissä {secondary_label_lower}, kun sekä matka että kilpailumuoto ratkaisevat valinnan.
+    race_type_county:
+      title: '{secondary_label} juoksukilpailut maakunnassa {label} | {site_name}'
+      meta_description: Selaa {secondary_label_lower}-kilpailuja maakunnassa {label}. Vertaa päiviä, matkoja ja käytännön tietoja.
+      h1: '{secondary_label} juoksukilpailut maakunnassa {label}'
+      paragraph: Tämä sivu keskittyy {secondary_label_lower}-kilpailuihin maakunnassa {label}, jotta saman alueen vaihtoehtoja on helpompi vertailla.
+    race_type_month:
+      title: '{secondary_label} juoksukilpailut kuukaudessa {label} | {site_name}'
+      meta_description: Selaa {secondary_label_lower}-kilpailuja ajankohtana {label_lower}. Vertaa päiviä, matkoja ja käytännön tietoja.
+      h1: '{secondary_label} juoksukilpailut kuukaudessa {label}'
+      paragraph: Tälle sivulle on koottu {secondary_label_lower}-kilpailut ajankohtana {label_lower} juoksijoille, jotka suunnittelevat kauden kalenterin kautta.
+    race_type_city:
+      title: '{secondary_label} juoksukilpailut lähellä kaupunkia {label} | {site_name}'
+      meta_description: Selaa {secondary_label_lower}-kilpailuja, jotka liittyvät paikkaan {label}. Vertaa päiviä, matkoja ja lähivaihtoehtoja.
+      h1: '{secondary_label} juoksukilpailut lähellä kaupunkia {label}'
+      paragraph: Tälle sivulle on koottu {secondary_label_lower}-kilpailut, jotka liittyvät paikkaan {label}, jotta paikallista kisatarjontaa on nopeampi vertailla.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural Finnish suitable for a running calendar in Finland. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
+  browse_guidance:
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Selaa kategorian mukaan
+  helper_text: Löydä juoksukilpailu esiasetettujen suodattimien ja yhdistelmien avulla
+  overview: Yleiskatsaus
+  counties: Maakunnat
+  cities: Kaupungit
+  months: Kuukausi
+  types: Juoksutyypit
+  categories: Kategoria
+  neighboring: Naapurimaat
+browse_overview:
+  title: Selaa kaikkia juoksukilpailuja
+  meta_description: Löydä juoksukilpailu alueittain, tyypeittäin tai kategorioittain
+browse_types:
+  title: Selaa juoksukilpailutyypin mukaan
+  meta_description: Löydä juoksukilpailut kilpailutyypin mukaan.
+browse_counties:
+  title: Selaa maakunnittain
+  meta_description: Löydä juoksukilpailuja omasta maakunnastasi.
+browse_cities:
+  title: Selaa kaupungeittain
+  meta_description: Löydä juoksukilpailu kaupungistasi.
+browse_categories:
+  title: Selaa kategorioittain
+  meta_description: Löydä juoksukilpailu matkan ja kategorian mukaan.
+browse_months:
+  title: Selaa kuukausia
+  meta_description: Löydä juoksukilpailuja kuukauden mukaan.
+auth_modal:
+  title_sign_in: Kirjaudu sisään
+  title_create_account: Luo tili
+  title_reset_password: Palauta salasana
+  auth_unavailable: Kirjautumista ei ole vielä määritetty.
+  name_placeholder: Nimesi
+  email_placeholder: Sähköpostisi
+  password_placeholder: Salasana
+  submit_sign_in: Kirjaudu sisään
+  submit_create_account: Luo tili
+  submit_reset_password: Lähetä palautuslinkki
+  create_account: Luo tili
+  forgot_password: Unohditko salasanan?
+  back_to_login: Takaisin kirjautumiseen
+  error_wrong_password: Virheellinen salasana
+  error_email_not_found: Sähköpostiosoitetta ei löydy
+  prompt_reset_password: Haluatko palauttaa salasanasi?
+  prompt_create_account: Haluatko luoda tilin tällä sähköpostiosoitteella?
+  already_logged_in: Olet jo kirjautunut sisään käyttäjänä
+  as_email: sähköpostilla
+  continue_as_user: Jatka tämän käyttäjänä
+  logout_and_switch: Kirjaudu ulos ja vaihda käyttäjää
+  account_created: Tili luotu!
+  account_created_details: Olet nyt kirjautuneena sisään käyttäjänä
+  verification_email_sent: Vahvistuslinkki on lähetetty sähköpostiisi
+  please_verify: Ole hyvä ja vahvista sähköpostiosoitteesi
+  error_invalid_credential: Virheellinen sähköposti tai salasana
+  create_account_prompt: Luo tili sen sijaan
+  error_too_many_requests: Liian monta yritystä. Ole hyvä ja yritä uudelleen hieman myöhemmin.
+  continue_with_google: Jatka Googlella
+  continue_with_google_create: Luo tili Googlella
+  google_in_progress: Jatketaan Googlella...
+  oauth_divider: tai
+auth_pages:
+  confirm_success: Sähköpostisi on vahvistettu ja tilisi on nyt käytössä.
+  confirm_ready: Voit jatkaa sivuston käyttöä.
+  confirm_error: Sähköpostiosoitetta ei voitu vahvistaa.
+  reset_intro: Anna tilillesi uusi salasana.
+  reset_confirm_label: Vahvista salasana
+  reset_mismatch_error: Salasanat eivät täsmää.
+  reset_invalid_link_error: Palautuslinkki on virheellinen tai puuttuu.
+  reset_success: Salasana on päivitetty. Voit nyt kirjautua sisään.
+newsletter_popup:
+  email_placeholder: Sähköpostiosoitteesi
+  submit_button: Lähetä minulle uutiset
+  dismiss_button: Ei nyt
+  invalid_email: Anna kelvollinen sähköpostiosoite.
+  submit_error: Tilausta ei voitu tallentaa juuri nyt. Yritä uudelleen.
+  submitting_text: Tallennetaan...
+  success_message: Kiitos! Juoksu-uutiset ovat matkalla sähköpostiisi.
+  privacy_note: Uudet kilpailut, päivämäärämuutokset ja valitut vinkit. Voit perua tilauksen milloin tahansa.
+  close_aria_label: Sulje tilausikkuna
+  benefits:
+    new_races: Uudet kilpailut ensimmäisenä
+    date_changes: Päivämäärämuutokset heti
+    selected_offers: Valitut vinkit
+    similar_races: Samankaltaisia kisoja lähelläsi
+    local_picks: Lisää kisoja lähistöltä
+    opening_reminders: Muistutukset, kun paikkoja on vielä
+    race_updates: Uutiset tästä kilpailusta
+    nearby_races: Naapurimaiden kisat lähelläsi
+  generic:
+    eyebrow: Älä missaa seuraavaa kisaa
+    title: Saat uudet kilpailut ja päivämäärämuutokset ensimmäisenä
+    body: Tilaa uutiskirje ja saat uudet kilpailut, päivitetyt päivämäärät ja valitut vinkit maassa {country} suoraan sähköpostiisi.
+  race_detail:
+    eyebrow: Seuraa tätä kilpailua
+    title: Haluatko uutisia kilpailusta {race_name}?
+    body: Tilaa ja saat uutiset kilpailusta {race_name}, samankaltaisia kisoja maakunnassa {county} ja tärkeät muutokset suoraan sähköpostiisi.
+  browse_category:
+    eyebrow: Lisää sopivia kilpailuja
+    title: Älä missaa uusia {category}-kilpailuja
+    body: Lähetämme uudet {category}-kilpailut, sopivat vaihtoehdot lähistöltä ja tärkeät päivämäärät, jotta sinun ei tarvitse etsiä itse.
+  browse_category_type:
+    eyebrow: Lisää sopivia kilpailuja
+    title: Saat lisää {race_type}-kilpailuja kategoriassa {category}
+    body: Tilaa ja saat lisää {race_type}-kilpailuja kategoriassa {category}, vaihtoehtoja lähistöltä ja päivämäärämuutokset suoraan sähköpostiisi.
+  browse_county:
+    eyebrow: Paikalliset kisat ensimmäisenä
+    title: Saat lisää kilpailuja maakunnassa {county}
+    body: Seuraa uusia kilpailuja, päivitettyjä päivämääriä ja valittuja vinkkejä maakunnassa {county} ilman kalenterin jatkuvaa tarkistamista.
+  browse_city:
+    eyebrow: Paikalliset kisat ensimmäisenä
+    title: Haluatko lisää kilpailuja kaupungissa {city}?
+    body: Tilaa ja saat uudet kilpailut, lähivaihtoehdot ja tärkeät päivämäärät kaupungissa {city} suoraan sähköpostiisi.
+  browse_type:
+    eyebrow: Sopiva juoksutapa
+    title: Saat lisää {race_type}-kilpailuja sähköpostiisi
+    body: Lähetämme uudet {race_type}-kilpailut, samankaltaiset vaihtoehdot ja tärkeät päivämäärät, jotta ehdit ilmoittautua ajoissa.
+  browse_month:
+    eyebrow: Suunnittele kausi
+    title: Saat parhaat {month}-kilpailut ensimmäisenä
+    body: Kun {month}-kuukauden kisat avaavat ilmoittautumisen, vaihtavat päivää tai nousevat esiin, kuulet siitä heti sähköpostiisi.
+  browse_neighboring:
+    eyebrow: Laajenna kalenteria
+    title: Saat myös naapurimaiden kilpailut
+    body: Tilaa ja saat uudet kilpailut, valitut vinkit ulkomailta ja päivämäärämuutokset alueella {region} suoraan sähköpostiisi.
+  browse_neighboring_country:
+    eyebrow: Laajenna kalenteria
+    title: Saat lisää kilpailuja alueella {region}
+    body: Lähetämme uudet kilpailut, päivämäärämuutokset ja sopivat lähivaihtoehdot, kun alueella {region} tapahtuu kiinnostavaa.
+submission_flow:
+  logged_in_as: Sisäänkirjautuneena järjestäjänä
+  submitting_new_race: lähettää uutta kilpailua
+  new_account_created: Jotta kilpailu voidaan käsitellä, sinun on vahvistettava sähköpostiosoitteesi. Vahvistuslinkki on lähetetty annettuun sähköpostiosoitteeseen.
+  password_reset_sent: Salasanan palautus lähetetty. Tarkista saapuneet.
+  unexpected_error: Tapahtui virhe. Yritä uudelleen.
+  processing_submission: Käsitellään lähetystä...
+  race_exists: Kilpailu on jo olemassa tietokannassa.
+  race_submitted: Kilpailu on lähetetty!
+  submission_failed: Lähetystä ei voitu lähettää. Yritä uudelleen.
+  missing_fields: Jotain puuttuu. Varmista, että kaikki pakolliset kentät on täytetty ja että kartalta on valittu paikka.
+race_page:
+  forum_section:
+    title: Kysymykset & Vastaukset
+    placeholder: Esitä kysymys järjestäjälle...
+    submit_button: Lähetä kysymys
+    login_prompt: Kirjaudu sisään kysyäksesi kysymyksen
+    empty_state: Ei kysymyksiä vielä. Ole ensimmäinen, joka esittää kysymyksen!
+    error_message_no_login: Kirjaudu sisään tai luo tili esittääksesi kysymyksen.
+map:
+  show_map: Näytä kartta
+  show_list: Näytä lista
+  map: kartta
+  list: lista
+forum:
+  title: Foorumi - Keskustele juoksusta ja juoksijanelämästä muiden juoksijoiden kanssa Suomessa
+  meta_description: Keskustele juoksusta ja juoksijan elämästä muiden juoksijoiden kanssa foorumissamme. Kaikki harjoittelusta, kilpailuista, vammoista, ravinnosta, vaatteista, varusteista ja paljon muusta.
+  categories:
+  - name: Harjoittelu
+    slug: harjoittelu
+    description: Keskusteluja harjoittelusta ja tekniikasta
+  - name: Kilpailut ja tapahtumat
+    slug: kilpailut
+    description: Keskustele tulevista kilpailuista
+  - name: Vammat ja palautuminen
+    slug: vammat
+    description: Apua vammoihin ja palautumiseen
+  - name: Reitit ja kartat
+    slug: reitit
+    description: Keskustele reiteistä ja kartoista
+  - name: Matkat ja kisamatkailu
+    slug: matkat
+    description: Keskustele kisamatkoista ja juoksumatkailusta
+  - name: Ravinto
+    slug: ravinto
+    description: Keskustele ravinnosta ja nesteytyksestä
+  - name: Vaatteet, kengät ja varusteet
+    slug: varusteet
+    description: Keskustele vaatteista, kengistä ja varusteista
+  - name: Osta ja myy
+    slug: tori
+    description: Keskustele juoksuvarusteiden ostamisesta ja myymisestä
+  - name: Muut
+    slug: muut
+    description: Kaikki muu
+  empty_category_state: Ei vielä keskusteluja. Aloita keskustelu luomalla ensimmäinen ketju!
+  empty_state_thread: Ei vielä viestejä. Ole ensimmäinen, joka kirjoittaa!
+  empty_state: Ei vielä viestejä. Ole ensimmäinen, joka kirjoittaa!
+  reply_placeholder: Kirjoita vastauksesi...
+  submit_button: Lähetä
+  login_prompt: Kirjaudu sisään osallistuaksesi keskusteluun
+  new_thread_title_placeholder: Uuden keskustelun otsikko
+  new_thread_content_placeholder: Kirjoita ensimmäinen viestisi...
+  create_thread_button: Luo uusi aihe
+  back_to_forum: ← Takaisin foorumille
+  back_to_category: ← Takaisin
+  empty_thread_state: Ei vielä viestejä. Ole ensimmäinen, joka kirjoittaa!
+  posts_label: viestit
+  reply_label: vastaus
+  thread_created_title: Kiitos, että luot uuden ketjun!
+  thread_created_message: Keskustelusi tarkistetaan ja lisätään sivulle pian.
+  thread_created_back_link: Takaisin kategoriaan
+  show_more_threads: Näytä lisää ketjuja
+  show_less_threads: Näytä vähemmän keskusteluketjuja
+  create_new_thread: Luo uusi keskustelu
+  reply_title: Vastaa ketjuun
+  showing_threads_count: Näyttää {x} {y} keskustelua
+about_us:
+  title: Tietoa suomi-juoksu
+  meta_description: suomi-juoksu - Opas juoksuun Suomessa
+  content:
+    intro: Tervetuloa suomi-juoksuun – Suomen kattavin alusta juoksijoille!
+    mission: Meidän missiomme on tehdä juoksijoille helppoa löytää ja jakaa tietoa kilpailuista, harjoittelusta ja kaikesta juoksuun liittyvästä.
+    story: suomi-juoksu perustettiin vuonna 2023 juoksijoiden toimesta juoksijoille. Huomasimme tarpeen modernille ja käyttäjäystävälliselle alustalle, jossa Suomen juoksuyhteisö voisi kokoontua.
+    features:
+    - title: Täydellinen Juoksukilpailukalenteri
+      description: Keräämme kaikki Suomen kilpailut yhteen paikkaan - pienistä paikallisista kilpailuista suuriin kansainvälisiin tapahtumiin.
+    - title: Yhteisön Ohjaama
+      description: Alustamme on juoksijoiden ylläpitämä, kuten sinä. Kaikki voivat osallistua tietojen jakamiseen kilpailuista ja keskusteluihin.
+    - title: Ilmaiset työkalut
+      description: Tarjoamme hyödyllisiä työkaluja, kuten vauhtimuuntimia, harjoitusohjelmia ja reittisuunnittelua – täysin ilmaiseksi.
+    closing: Jatkamme alustan kehittämistä käyttäjiemme palautteen perusteella. Onko sinulla ehdotuksia parannuksista? Ota meihin mielellään yhteyttä!
+contact:
+  title: Ota yhteyttä
+  meta_description: Ota yhteyttä suomi-juoksu.fi — autamme mielellämme
+  content:
+    intro: 'Haluamme kuulla sinusta! Tässä on eri tapoja ottaa meihin yhteyttä:'
+    email:
+      title: Sähköposti
+      address: loppkartan@gmail.com
+      description: Vastaamme normaalisti 24 tunnin sisällä arkipäivisin.
+    social:
+      title: Sosiaaliset Mediat
+      description: 'Seuraa meitä sosiaalisessa mediassa saadaksesi viimeisimmät uutiset ja päivitykset:'
+    feedback:
+      title: Palaute
+      description: Arvostamme kaikkea palautetta, joka auttaa meitä parantamaan suomi-juoksu.fi-sivustoa.
+privacy_page:
+  title: Tietosuojakäytäntö
+  meta_description: Tietosuojakäytäntö ja tiedot siitä, miten suomi-juoksu käsittelee henkilötietoja ja evästeitä.
+  last_updated_label: Päivitetty viimeksi
+  last_updated_date: 27. maaliskuuta 2026
+  contact_intro: 'Tietosuojaan liittyvissä kysymyksissä ota yhteyttä:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Keräämämme tiedot
+    intro: 'Keräämme tietoja, jotka annat suoraan, kun:'
+    bullets:
+    - luot tilin
+    - lähetät kilpailutietoja
+    - kirjoitat foorumille
+    - otat meihin yhteyttä
+  - title: 2. Evästeet ja seuranta
+    intro: 'Käytämme evästeitä, jotta voimme:'
+    bullets:
+    - muistaa asetuksesi
+    - ylläpitää istuntoa ja kirjautumista
+    - analysoida liikennettä ja käyttöä
+    - näyttää relevanttia mainontaa ja parantaa kokemusta
+  - title: 3. Miten käytämme tietojasi
+    intro: 'Tietosi auttavat meitä:'
+    bullets:
+    - tarjoamaan ja parantamaan palvelua
+    - lähettämään tärkeitä ilmoituksia
+    - vastaamaan pyyntöihin
+    - estämään väärinkäytöksiä
+  - title: 4. Oikeutesi
+    intro: 'GDPR:n mukaan sinulla on oikeus:'
+    bullets:
+    - tarkastaa henkilötietosi
+    - korjata virheelliset tiedot
+    - pyytää tietojen poistamista
+    - vastustaa tiettyä käsittelyä
+    - pyytää tietojen siirtoa
+  - title: 5. Ota yhteyttä
+    intro: Jos sinulla on kysyttävää henkilötietojen tai evästeiden käsittelystä, voit aina ottaa meihin yhteyttä.
+racetime_estimator_title: Arvioi juoksuaika
+racetime_estimator_description: Edellisen kilpailun perusteella voit arvioida muiden matkojen juoksuaika.
+known_distance_label: Valitse matka, jolla sinulla on aiempi tulos.
+known_time_label: Syötä aikasi
+calculate_button_text: Laske ajat
+predicted_times_title: Arvioidut ajat
+distance_header: Etäisyys
+predicted_time_header: Arvioitu aika
+hilly_course_label: Mäkinen reitti
+finish_time_header: Arvioitu maaliintuloaika
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/maili
+flat_time_header: Aika (tasainen)
+flat_pace_per_km_header: Min/km (tasainen)
+flat_pace_per_mile_header: Min/maili (tasainen)
+hill_adjustment_header: Mäkisyyden korjaus
+pace_calculator_title: Vauhtimuunnin
+pace_calculator_description: Yksinkertainen työkalu juoksunopeutesi muuntamiseen eri yksiköiden välillä
+pace_table_header_kph: Kilometriä tunnissa
+pace_table_header_mph: Mailia tunnissa
+pace_table_header_min_km: Minuutit per kilometri
+pace_table_header_min_mile: Minuutteja per maili
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Puolimaraton
+pace_table_header_full: Maraton
+pace_conversion_note: 1 kilometri tunnissa (kph) = 0.62 mailia tunnissa (mph)
+measure_route_title: Mittaa reittisi
+measure_route_description: Napsauta karttaa merkitäksesi pisteitä reittisi varrella. Kokonaismatka lasketaan automaattisesti.
+remove_last_point: Poista viimeinen kohta
+clear_route: Tyhjennä reitti
+total_distance: Kokonaismatka
+training_plans:
+  title: Harjoitusohjelmat
+  description: Luo mukautettu harjoitusohjelma tavoitteesi perusteella
+  disclaimer_text_tp_1: Harjoitusohjelmamme luodaan tekoälyn avulla ja mukautetaan antamiesi tavoitteiden mukaan. Ohjelmat eivät ole tae eivätkä sovi välttämättä kaikille.
+  disclaimer_link_tp: Ota meihin yhteyttä
+  disclaimer_text_tp_2: jos sinulla on palautetta tai ehdotuksia parannuksista.
+  form:
+    race_date_label: Kilpailupäivämäärä
+    plan_type_label: Suunnitelman tyyppi
+    target_distance_label: Tavoitematka
+    target_time_label: Tavoiteaika
+    training_days_label: Harjoituspäiviä viikossa
+    session_time_label: Aikaa yhtä treeniä kohden
+    is_hilly_label: Mäkinen maasto
+    hours_placeholder: Tunnit
+    minutes_placeholder: Minuutit
+    seconds_placeholder: Sekunnit
+    submit_button: Luo harjoitusohjelma
+    target_distance:
+      placeholder: Valitse matka
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Puolimaraton
+        '42195': Maraton
+    training_days:
+      placeholder: Valitse päivien määrä
+      options:
+        '3': 3 päivää
+        '4': 4 päivää
+        '5': 5 päivää
+        '6': 6 päivää
+    session_time:
+      placeholder: Valitse treenin kesto
+      options:
+        30-45: 30-45 minuuttia
+        45-60: 45-60 minuuttia
+        60-90: 60-90 minuuttia
+        90+: 90+ minuuttia
+  results:
+    title: Harjoitusohjelmasi
+    variations:
+      title: 'Valitse sinulle sopiva vaihtoehto:'
+    plan_details:
+      duration_label: 'Ohjelman kesto:'
+      weekly_distance_label: 'Viikkomatka:'
+    regenerate_button: Näytä muut vaihtoehdot
+    export_button: Vie PDF-muotoon
+  workout_types:
+    easy: Rauhallinen treeni
+    tempo: Tempojuoksu
+    intervals: Intervallit
+    long: Pitkä lenkki
+    rest: Lepo
+  messages:
+    weeks: viikkoa
+    week_label: Viikko
+    hilly_terrain_note: soveltuu mäkiselle maastolle
+  plan_variation:
+    focus_label: Painopiste
+    weekly_structure_label: Viikkorakenne
+    distribution_label: Jakauma
+    sessions_per_week: treeniä viikossa
+    select_button: Valitse tämä suunnitelma
+  errors:
+    loading_plans: Virhe lataettaessa harjoitusohjelmia
+    required_fields: Ole hyvä ja täytä kaikki pakolliset kentät.
+    no_matching_plan: Ei löytynyt vastaavaa harjoitusohjelmaa
+    no_matching_variations: Ei löytynyt yhteensopivia variaatioita.
+    invalid_training_days: Harjoituspäivien määrä ei vastaa suunnitelman vaatimuksia.
+  week: Viikko
+  weeks: viikkoa
+  hilly_terrain_note: soveltuu mäkiselle maastolle
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Peruskunnon kehittäminen
+        weekly_template:
+          monday:
+            type: helppo
+            description: Rauhallinen peruslenkki
+          wednesday:
+            type: tempo
+            description: Tempojuoksu
+          saturday:
+            type: pitkä
+            description: Pitkä lenkki
+          sunday:
+            type: toipuminen
+            description: Palautuminen
+      build:
+        duration_percent: 40
+        focus: Lisääntynyt teho ja matka
+        weekly_template:
+          monday:
+            type: helppo
+            description: Rauhallinen peruslenkki
+          wednesday:
+            type: intervallit
+            description: Intervallit
+          friday:
+            type: tempo
+            description: Tempojuoksu
+          sunday:
+            type: pitkä
+            description: Pitkä lenkki
+      peak:
+        duration_percent: 15
+        focus: Huipentuminen ja erityinen harjoittelu
+        weekly_template:
+          tuesday:
+            type: intervallit
+            description: Laatuharjoitus
+          thursday:
+            type: tempo
+            description: Tempojuoksu
+          saturday:
+            type: pitkä
+            description: Pitkä lenkki
+          sunday:
+            type: toipuminen
+            description: Palautuminen
+      taper:
+        duration_percent: 5
+        focus: Muotohuippu
+        weekly_template:
+          tuesday:
+            type: helppo
+            description: Rauhallinen treeni
+          thursday:
+            type: tempo
+            description: Lyhyt tempojuoksu
+          saturday:
+            type: helppo
+            description: Erittäin rauhallinen treeni
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min rauhallinen hölkkä
+        cooldown: 5-10 min rauhallinen hölkkä
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progressiivinen lämmittely
+        cooldown: 10-15 min jäähdyttely
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min mukaan lukien lämmittelyharjoitukset ja nopeusnostoharjoitukset
+        cooldown: 10-15 min rauhallinen hölkkä
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min erittäin rauhallinen hölkkä
+        cooldown: 5-10 min kävely/kevyt hölkkä
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min kävely
+        cooldown: 5-10 min kävely
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Lämmittely
+    main_workout_label: Treenin kuvaus
+    cooldown_label: Jäähdyttely
+    intensity_label: Tempo
+    duration_label: Kesto
+  regenerate:
+    button_text: Luo uusi variantti
+    confirmation: Oletko varma, että haluat luoda uuden variantin?
+  weekdays:
+    monday: Maanantai
+    tuesday: Tiistai
+    wednesday: Keskiviikko
+    thursday: Torstai
+    friday: Perjantai
+    saturday: Lauantai
+    sunday: Sunnuntai
+footer:
+  races_heading: Kilpailut
+  tools_heading: Työkalut
+  about_heading: Tietoa sivustosta
+  privacy: Tietosuojakäytäntö
+  copyright_year: 2023-2026
+  site_name: suomi-juoksu
+  rights_text: Kaikki oikeudet pidätetty.
+  social_links:
+    facebook: https://www.facebook.com/loppkartan
+    instagram: https://www.instagram.com/loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@loppkartan
+accessibility:
+  main_navigation_label: Päänavigaatio
+  breadcrumb_label: Murupolku
+  back_to_top_label: Takaisin ylös
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Nousussa olevat kilpailut
+trending_races_description: Nämä kilpailut ovat saaneet eniten huomiota suomalaisilta juoksijoilta.
+trending_races_views_last_30_days: näyttökertoja viimeisten 30 päivän aikana
+trending_races_most_viewed: Suosituin tällä hetkellä
+races_views: näyttökertoja
+recent_races_title: Viimeksi lisätyt kilpailut
+today: tänään
+yesterday: eilen
+days_ago: päivää sitten
+newest_race_badge: Uusin lisäys
+races_count: kilpailua
+popular_counties_title: Löydä kilpailuja maakunnastasi
+popular_cities_title: Löydä kilpailuja kaupungistasi
+all_counties: Näytä kaikki maakunnat
+all_cities: Näytä kaikki kaupungit
+category_header_1: Polkujuoksu
+category_type_1: trail
+category_1_races_sub_title_1: Polkumaraton
+category_1_races_sub_ref_1: maraton
+category_1_races_sub_title_2: Polku-ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Polku-ultra 100 mailia
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Maantiejuoksu
+category_type_2: road
+category_2_races_sub_title_1: Maraton
+category_2_races_sub_ref_1: maraton
+category_2_races_sub_title_2: Puolimaraton
+category_2_races_sub_ref_2: puolimaraton
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Näytä kaikki kilpailut
+tools_title: Työkalut seuraavaan kilpailuusi
+home_tools:
+  measure_route:
+    description: Mittaa reittiluonnos ja saat nopean matka-arvion ennen lähtöä.
+  training_plans:
+    description: Löydä harjoitusohjelmia eri tavoitteisiin, tasoihin ja matkoihin.
+  racetime_estimator:
+    description: Arvioi realistinen maaliintuloaika aiemmista tuloksista ja vertaa tavoitteita.
+  pace_calculator:
+    description: Muunna vauhti, nopeus ja maaliintuloaika yleisille kilpailumatkoille.
+missing_race: Puuttuuko kilpailu? Lisää se tästä!
+add_race_mp_title: Lisää kilpailusi
+neighboring_countries_title: Kilpailut Suomessa ja naapurimaissa
+neighboring_countries_title_specific_country: Kilpailut maassa {country_name}
+neighboring_countries_description: Tässä ovat naapurimaissa järjestettävät kilpailut.
+neighboring_countries_description_specific_country: Tässä listataan kilpailut, jotka järjestetään maassa {country_name}.
+neighboring_countries_neighbors_native: Naapurimaat
+neighboring_countries_all_neighbors_native: Kaikki naapurimaat
+section_race_card_header_nieghbors_default: Suomi ja naapurimaat
+browse_neighboring:
+  title: Tutki naapurimaiden kilpailuja
+  meta_description: Löydä kilpailuja naapurimaista läheltäsi. Selaa maittain ja löydä kisoja rajan takaa.
+neighboring_races_title: Kilpailut naapurimaissa
+neighboring_countries_show_all: Näytä kaikki
+race_page_layout_title: 'Kilpailusivu: {x}'
