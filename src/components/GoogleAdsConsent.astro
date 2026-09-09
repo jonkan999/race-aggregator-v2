@@ -1,0 +1,39 @@
+---
+import { getGoogleAdsConfig } from '../lib/googleAds';
+
+const ads = getGoogleAdsConfig();
+const fundingChoicesSrc = ads.publisherId
+  ? `https://fundingchoicesmessages.google.com/i/${ads.publisherId}.js?ers=1`
+  : '';
+const adsenseSrc = ads.client
+  ? `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ads.client}`
+  : '';
+---
+
+{
+  ads.enabled && ads.client && ads.publisherId ? (
+    <>
+      <meta name="google-adsense-account" content={ads.client} />
+      <script is:inline async src={fundingChoicesSrc}></script>
+      <script is:inline>
+        (function () {
+          function signalGooglefcPresent() {
+            if (!window.frames['googlefcPresent']) {
+              if (document.body) {
+                const iframe = document.createElement('iframe');
+                iframe.style.cssText =
+                  'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px; display: none;';
+                iframe.name = 'googlefcPresent';
+                document.body.appendChild(iframe);
+              } else {
+                setTimeout(signalGooglefcPresent, 0);
+              }
+            }
+          }
+          signalGooglefcPresent();
+        })();
+      </script>
+      <script is:inline async src={adsenseSrc} crossorigin="anonymous"></script>
+    </>
+  ) : null
+}
