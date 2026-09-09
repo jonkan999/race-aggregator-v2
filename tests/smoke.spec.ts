@@ -87,7 +87,20 @@ test('English race list shell renders', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
 });
 
+function yyyymmddOffset(days: number): string {
+  const date = new Date();
+  date.setDate(date.getDate() + days);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}${month}${day}`;
+}
+
 test('race list uses the next in-window date for card display and ordering', async ({ page }) => {
+  const pastDate = yyyymmddOffset(-120);
+  const nextDate = yyyymmddOffset(30);
+  const laterDate = yyyymmddOffset(40);
+
   await page.route(
     'https://race-aggregator-tests.supabase.co/rest/v1/rpc/get_races_list_page',
     async (route) => {
@@ -104,8 +117,8 @@ test('race list uses the next in-window date for card display and ordering', asy
               race_type: 'road',
               origin_country: 'se',
               race_dates: [
-                ['20250520', '20250520'],
-                ['20260615', '20260615'],
+                [pastDate, pastDate],
+                [nextDate, nextDate],
               ],
               latitude: null,
               longitude: null,
@@ -133,8 +146,8 @@ test('race list uses the next in-window date for card display and ordering', asy
               race_type: 'road',
               origin_country: 'se',
               race_dates: [
-                ['20250510', '20250510'],
-                ['20260620', '20260620'],
+                [pastDate, pastDate],
+                [laterDate, laterDate],
               ],
               latitude: null,
               longitude: null,
@@ -165,9 +178,9 @@ test('race list uses the next in-window date for card display and ordering', asy
 
   const cards = page.locator('#race-cards-container .race-card[data-name]');
   await expect(cards.first()).toHaveAttribute('data-name', 'Window Race');
-  await expect(cards.first()).toHaveAttribute('data-date', '20260615');
+  await expect(cards.first()).toHaveAttribute('data-date', nextDate);
   await expect(cards.nth(1)).toHaveAttribute('data-name', 'Later Race');
-  await expect(cards.nth(1)).toHaveAttribute('data-date', '20260620');
+  await expect(cards.nth(1)).toHaveAttribute('data-date', laterDate);
 });
 
 test('displayRaceDate falls back to the first known date when a race is only in the past', () => {
