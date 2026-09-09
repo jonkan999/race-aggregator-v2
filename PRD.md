@@ -34,8 +34,10 @@
 
 ## Non-goals (initial phases)
 
-- Parity for forum, Firebase auth, and ads (tracked as later phases).
+- Parity for forum and Firebase auth (tracked as later phases).
 - Replacing Firebase-hosted images in seed JSON (URLs may remain as-is in `payload`).
+
+Google Funding Choices cookie consent and AdSense Auto ads are restored for markets with `googleAdsEnabled: true` in `config/deploy-markets.json` (`fi` and `lt` only). Other markets stay ad-free.
 
 ## Architecture
 

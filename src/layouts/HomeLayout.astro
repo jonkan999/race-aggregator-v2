@@ -3,6 +3,7 @@ import '../styles/legacy/legacy-race-list.css';
 import '../styles/home.css';
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
+import GoogleAdsConsent from '../components/GoogleAdsConsent.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import type { IndexYaml } from '../lib/content';
@@ -63,6 +64,7 @@ const pageSchema = JSON.stringify({
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <GoogleAdsConsent />
     <script type="application/ld+json" set:html={pageSchema} />
     <slot name="head" />
   </head>

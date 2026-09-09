@@ -215,6 +215,17 @@ The indexing logic is now market-configurable under `browse_seo_indexing` in eac
 
 This repo now builds one active market per deploy. Set `MARKET_CODE={cc}` so the selected market owns `/` and `/en/`.
 
+### Google ads and cookie consent
+
+Funding Choices (cookie consent / Privacy & messaging) plus AdSense Auto ads are included at build time only when the active market has `googleAdsEnabled: true` in [`config/deploy-markets.json`](config/deploy-markets.json). Flip a market on or off with that boolean; omitted or `false` keeps the pipeline out of the HTML.
+
+Shared public client ID lives at the top-level `googleAdsClient` (the same `ca-pub-…` value the legacy Firebase sites already exposed in HTML). Optional overrides:
+
+- per market: `googleAdsClient` on that market entry
+- env: `PUBLIC_ADSENSE_CLIENT`
+
+Currently **on** for `fi` and `lt`, **off** for every other market. Consent UI language follows the page `lang` (native or `/en/`) plus the messages published for that site in AdSense.
+
 [`vercel.json`](./vercel.json) pins the expected Vercel behavior for this repo:
 
 - install command: `npm install`

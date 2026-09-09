@@ -4,6 +4,7 @@ import '../styles/v2-race-list-bridge.css';
 import '../styles/browse.css';
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
+import GoogleAdsConsent from '../components/GoogleAdsConsent.astro';
 import NewsletterPopupConfig from '../components/NewsletterPopupConfig.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -105,6 +106,7 @@ const breadcrumbSchema =
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <GoogleAdsConsent />
     <script is:inline set:html={`window.__MARKET_ROUTE_TARGETS__ = ${marketRouteTargetsJson};`} />
     <slot name="head" />
     <NewsletterPopupConfig country={country} locale={locale} content={content} />

@@ -74,6 +74,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - New markets should be prepared in `race-collector-v2`, synced into this repo only when launch-ready, then seeded and exported here.
 - New markets should automatically participate in the one-snapshot-per-country build flow. Do not add market-specific direct Supabase reads inside route files.
 - Only markets listed in `config/deploy-markets.json` should be deployed automatically; do not treat every folder under `data/countries/` as launch-ready.
+- Google Funding Choices + AdSense load only when the active market has `googleAdsEnabled: true` in `config/deploy-markets.json`. Do not inject those scripts for other markets.
 - Neighbor-market linking should resolve to the neighboring market's English site, using that market's own YAML-driven site configuration rather than a country-prefixed path on the current host.
 - Static race-detail routes should be generated only for domestic races in the current market snapshot. Foreign races shown in neighboring-country views should link to the origin market's English detail route when that market is configured locally.
 - Market-aware routing should discover eligible markets from `data/countries/{code}/index.yaml` so adding a new country folder expands the route graph without hardcoded country logic.

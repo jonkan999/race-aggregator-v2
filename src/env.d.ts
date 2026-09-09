@@ -4,6 +4,7 @@ interface ImportMetaEnv {
   readonly PUBLIC_SUPABASE_URL: string;
   readonly PUBLIC_SUPABASE_PUBLISHABLE_KEY: string;
   readonly PUBLIC_MAPBOX_TOKEN: string;
+  readonly PUBLIC_ADSENSE_CLIENT?: string;
 }
 
 interface ImportMeta {

@@ -3,6 +3,7 @@ import '../styles/legacy/legacy-race-list.css';
 import '../styles/auxiliary-pages.css';
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
+import GoogleAdsConsent from '../components/GoogleAdsConsent.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { localeBasePrefix, type IndexYaml } from '../lib/content';
@@ -100,6 +101,7 @@ const breadcrumbSchema =
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <GoogleAdsConsent />
     <slot name="head" />
     <script type="application/ld+json" set:html={pageSchema} />
     {breadcrumbSchema && <script type="application/ld+json" set:html={breadcrumbSchema} />}
