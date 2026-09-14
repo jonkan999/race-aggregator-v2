@@ -1,0 +1,1040 @@
+type_options:
+  road: Landevej
+  terrain: Terræn
+  trail: Trailløb
+  track: Løbebane
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Stafet
+  time: Tidsløb
+  other: Andet
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Halvmarathon:
+    range:
+    - 20
+    - 22
+  Marathon:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 meter:
+    range:
+    - 1.5
+    - 1.5
+  3000 meter:
+    range:
+    - 3
+    - 3
+  5000 meter:
+    range:
+    - 5
+    - 5
+  10000 meter:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Tidsløb
+  relay: Stafet
+verbose_local_distance_mapping:
+  half marathon: Halvmarathon
+  marathon: Marathon
+  fallback: Blandet distance
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Halvmarathon
+- range:
+  - 41.9
+  - 42.4
+  label: Marathon
+race_page_estimated_date_label: Estimeret dato
+race_page_estimated_disclaimer: Vi har ikke modtaget en officiel dato for dette løb.
+country_code: dk
+country_language_code: da
+navigation:
+  main: Alt
+  race-list: Løbekalender
+  add-race: Tilføj løb
+  forum: Forum
+  measure-route: Mål din rute
+  training-plans: Træningsprogram
+  pace-calculator: Fartomformer
+  racetime-estimator: Vurder din sluttid
+  about-us: Om os
+  contact: Kontakt os
+  neighboring: Nabolande
+race_list_name: Løbekalender
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Forhåndsvis løb
+  terms-of-service: Brugsvilkår
+  privacy-policy: Privatlivspolitik
+  about-us: Om os
+  contact: Kontakt os
+  faq: Ofte stillede spørgsmål
+page_name: Lobskalender
+base_url: https://lobskalender.dk/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hej!
+    closing_salutation: Med venlig hilsen,
+    link_fallback_intro: 'Hvis knappen ikke virker, kan du kopiere linket her:'
+  confirm_signup:
+    body: Tak fordi du tilmeldte dig {site_name}. Bekræft din e-mailadresse for at aktivere din konto og administrere de løb, du har indsendt.
+    button_label: Bekræft e-mailadresse
+    ignore_note: Hvis du ikke har oprettet kontoen, kan du ignorere denne e-mail.
+  reset_password:
+    body: Vi har modtaget en anmodning om at nulstille din adgangskode til {site_name}. Klik på knappen nedenfor for at vælge en ny adgangskode.
+    button_label: Nulstil adgangskode
+    ignore_note: Hvis du ikke har anmodet om det, kan du ignorere e-mailen. Din adgangskode ændres først, når du vælger en ny.
+  change_email:
+    body: Du har anmodet om at ændre e-mailadressen på din konto hos {site_name}. Bekræft ændringen ved at klikke på knappen nedenfor.
+    button_label: Bekræft ny e-mailadresse
+    ignore_note: Hvis du ikke har anmodet om ændringen, kan du ignorere denne e-mail.
+title: Alt om løb i Danmark
+country_native: Danmark
+country: Denmark
+meta_description: Lobskalender | Mest omfattende løbercommunity i Danmark
+country_language: Danish
+local_name_for_race: løb
+main_bullet_1: Find dit næste løb
+main_bullet_2: ' - Eller tilføj det her'
+main_bullet_3: Gå på opdagelse i vores markedsplads
+main_bullet_4: Læs de seneste nyheder, eller deltag i debatten i vores forum
+description: Dette fællesskabsdrevne initiativ samler løbere fra hele Danmark. Platformen er under udvikling, men med din hjælp kan vi skabe noget rigtig godt!
+cta_search: Find løb
+cta_add: Tilføj et løb
+selected_races_title: Udvalgte løb
+selected_races_top_title: Ugens løb
+cta_all_races: Vis alle løb
+show_local: Vis
+race_local: løb
+running_local: Løb
+alt_prefix: 'Billede til '
+race_list_title: Den mest komplette liste over marathons, halvmarathons og andre løbsarrangementer i Danmark
+race_list_meta_description_1: Find motionsløb og løbsdatoer fra hele Danmark
+race_list_meta_description_2: ✔️Komplet løbekalender ✔️Trail, backyard, landevej og marathon ✔️Løb fra hele Danmark
+race_list_data_error: Kunne ikke indlæse løb. Prøv igen senere.
+race_list_remote_required: Flere sider eller filtre kræver databasen (Supabase). Tilføj PUBLIC_SUPABASE_URL og PUBLIC_SUPABASE_PUBLISHABLE_KEY i din .env-fil.
+race_list_empty: Ingen løb matchede dine filtre.
+race_list_loading: Indlæser…
+race_card_cta_text: Mere info og tilmelding
+section_race_card_category_prefix: Alle
+section_race_card_category_suffix: løb
+section_race_card_header_separator: i
+section_race_card_header_region_default: Danmark
+section_race_card_header_date_range_from: 'fra '
+section_race_card_header_date_range_to: 'til '
+section_race_card_header_date_range_single: 'i '
+filter_date_from: Fra
+filter_date_to: Til
+filter_county: Alle regioner
+filter_race_type: Alle løbstyper
+filter_categories: Alle kategorier
+filter_months: Hele året
+filter_distance: Alle distancer
+month_mapping:
+  '01': Januar
+  '02': Februar
+  '03': Marts
+  '04': April
+  '05': Maj
+  '06': Juni
+  '07': Juli
+  '08': August
+  '09': September
+  '10': Oktober
+  '11': November
+  '12': December
+month_mapping_short:
+  '01': jan.
+  '02': feb.
+  '03': mar.
+  '04': apr.
+  '05': maj
+  '06': jun.
+  '07': jul.
+  '08': aug.
+  '09': sep.
+  '10': okt.
+  '11': nov.
+  '12': dec.
+county_label_text: Alle regioner
+county_mapping:
+  Hovedstaden: Hovedstaden
+  Midtjylland: Midtjylland
+  Nordjylland: Nordjylland
+  Sjælland: Sjælland
+  Syddanmark: Syddanmark
+category_label_text: Løbskategori
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Til løbssiden
+map_toggle_desktop: Vis kort
+map_toggle_desktop_active: Skjul kort
+map_toggle_mobile: Kort
+map_toggle_mobile_list: Liste
+map_markers_load_error: Kunne ikke indlæse kortmarkører.
+map_not_configured: Kortet er ikke konfigureret (manglende kortnøgle).
+race_page_map_zoom: '6'
+pagination:
+  results_text: af
+  events_text: Løb
+  previous_text: Forrige
+  next_text: Næste
+  page_text: Side
+  of_text: af
+add_race_title: Tilføj et nyt løb
+add_race_meta_description: Tilføj dit løb på lobskalender.dk
+map_message: Placér dit løb ved at klikke på kortet
+mapbox_center:
+  latitude: 56.2639
+  longitude: 9.5018
+mapbox_zoom: '6'
+date_text: Dato
+multi_day_toggle: Flerdagesløb
+end_date_text: Slutdato
+type_text: Underlag / løbstype
+type_select_placeholder: Vælg underlag / løbstype
+name_label: 'Løbets navn:'
+name_placeholder: f.eks. Copenhagen Marathon
+distance_label: 'Distancer:'
+distance_placeholder: Angiv distance i km
+add_distance_button: Tilføj
+half_marathon_button: Halvmarathon
+marathon_button: Marathon
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Stednavn:'
+place_placeholder: f.eks. Fælledparken, København
+organizer_label: 'Arrangør:'
+organizer_contact_placeholder: Løbeklub
+organizer_contact_label: 'Kontakt-e-mail:'
+organizer_mail_placeholder: loppkartan@gmail.com
+website_label: 'Arrangørens hjemmeside:'
+website_placeholder: https://arrangor.dk/
+start_time_label: 'Starttid:'
+start_time_placeholder: 09:00
+price_range_label: 'Prisinterval:'
+price_range_placeholder: f.eks. 100-300 kr
+add_race_description_label: Beskriv løbet
+add_race_description_placeholder: Copenhagen Marathon er en flad rute med lange strækninger...
+add_race_additional_label: Yderligere information
+add_race_additional_placeholder: f.eks. start og mål, startgrupper osv.
+add_race_images_label: Upload billeder (mindst 4 anbefales)
+choose_pictures_button: Vælg billeder
+drag_drop_text: Træk og slip billeder her, eller klik for at vælge
+add_race_remove_image_label: Fjern billede
+coordinates_display_prefix: Løbets koordinater
+add_race_upload_limit_message: Du kan kun uploade {count} billeder mere.
+add_race_map_not_configured: Kortet kunne ikke indlæses lige nu.
+clear_images_button: Ryd billeder
+clear_form_button: Ryd formular
+preview_button: Forhåndsvisning
+submit_button: Send
+preview_title: Forhåndsvisning
+preview_exit_button: Luk forhåndsvisning
+optional_label: Valgfrit
+comments_suffix: Kommentarer
+cta_forum: Vis alle indlæg
+race_page_preview_title: Sådan kommer dit løb til at se ud
+edit_race_button: Rediger
+race_page_description_label: Beskrivelse af løbet
+race_page_course_highlights_label: Højdepunkter
+race_page_additional_label: Yderligere information
+race_page_detailed_info_label: Detaljeret information
+race_page_social_links_label: Følg løbet
+race_page_place_label: 'Sted:'
+race_page_distances_label: 'Distancer:'
+race_page_surface_label: 'Underlag:'
+race_page_date_label: 'Dato:'
+race_page_registration_link: Tilmeldingslink
+race_page_registration_cta: Tilmeld dig nu
+race_page_info_cta: Mere information
+race_page_registration_close_label: Tilmelding lukker
+race_page_pricing_title: Tilmelding og priser
+race_page_price_deadline_label: Gyldig indtil
+race_page_price_late_fee_label: Sen tilmelding
+race_page_back_to_list: Tilbage til løbekalenderen
+race_page_favorites_title: Gå ikke glip af opdateringer om løbet
+race_page_favorites_body: Opret en konto, og gem dette løb som favorit, så du kan få opdateringer, nyheder og udvalgte tilbud, når favoritter lanceres.
+race_page_favorites_cta: Gem løb som favorit
+race_page_similar_title: Lignende løb
+race_page_similar_body: Flere løb med lignende distance, type eller beliggenhed i nærheden.
+race_page_discover_title: Udforsk flere løb
+race_page_discover_county_link: Alle løb i {county}
+race_page_discover_type_link: Flere {type}-løb
+race_page_discover_category_link: Flere {category}-løb
+race_page_discover_type_county_link: '{type}-løb i {county}'
+race_page_discover_overview_link: Gennemse alle løbskategorier
+disclaimer_text_1: 'Alle oplysninger på denne side er baseret på åbne kildedata. Vi gør vores bedste for at holde dem opdaterede, men kan ikke garantere, at alt er korrekt. Ser du unøjagtigheder, '
+disclaimer_link: kontakt os
+disclaimer_text_2: så retter vi det hurtigst muligt.
+disclaimer_text_3: Er der mere, du vil tilføje til dit løb?
+disclaimer_text_4: så forsøger vi at hjælpe!
+race_page_visit_organizer_website: Til arrangørens side og tilmelding
+race_page_folder_name: lobsider
+race_page_alt_prefix: 'Billede til '
+seo_county_folder_name: alle-regioner
+seo_cities_folder_name: byer
+popular_subcategories_title: Populære underkategorier
+important_keywords_racelist:
+- løbekalender
+- løb danmark
+- motionsløb
+- marathon danmark
+- halvmarathon
+- trailløb
+- ultraløb
+- løbsarrangementer
+seo_templates:
+  title_parts:
+    category: '{category}-løb'
+    race_type: '{race_type}'
+    location: i {location}
+    default: Alle løb
+  paragraph_templates:
+    category_race_location: Find {category} {race_type}løb i {location}.
+    category_race: Udforsk {category} {race_type}løb i hele Danmark.
+    category_location: Opdag {category}-løb i {location}.
+    race_location: Se alle {race_type}løb i {location}.
+    category_only: Find {category}-løb i hele Danmark.
+    race_only: Udforsk {race_type}løb i alle regioner.
+    location_only: Se alle typer løb i {location}.
+    default_suffix: Her finder du datoer, distancer og alle de oplysninger, du skal bruge for at planlægge dit næste løb.
+  browse_page_templates:
+    county:
+      title: '{label} løb | {site_name}'
+      meta_description: Gennemse motionsløb i {label}. Sammenlign datoer, distancer, løbsformater og praktiske detaljer, før du vælger dit næste løb.
+      h1: Løb i {label}
+      paragraph: Denne side samler motionsløb i {label}, så det er nemmere at sammenligne datoer, distancer, løbsformater og praktiske detaljer ét sted. Brug den, når du vil have et klarere overblik, før du vælger dit næste løb.
+    city:
+      title: '{label} løb | {site_name}'
+      meta_description: Find motionsløb med tilknytning til {label}. Sammenlign datoer, distancer, nærliggende muligheder og praktiske detaljer, før du vælger dit næste løb.
+      h1: Løb nær {label}
+      paragraph: Denne byside hjælper dig med at gennemse motionsløb knyttet til {label}, inklusive nærliggende alternativer, der er relevante, når du planlægger en løbsdag eller en tur. Den er lavet for at gøre det hurtigere at finde og sammenligne lokale løb.
+    month:
+      title: '{label} løb | {site_name}'
+      meta_description: Gennemse motionsløb i {label} i {market}. Sammenlign datoer, distancer, løbstyper og praktiske detaljer, før du planlægger din sæson.
+      h1: Løb i {label}
+      paragraph: Denne side er til løbere, der vil se kalenderen måned for måned og har brug for en hurtigere måde at sammenligne, hvad der sker i {label}. Den hjælper dig med at indsnævre feltet, før du går videre til distancer, underlag og løbssteder.
+    race_type:
+      title: '{label}-løb i {market} | {site_name}'
+      meta_description: Gennemse {label_lower}-løb i {market}. Sammenlign datoer, distancer, steder og praktiske detaljer, før du vælger et løb, der passer til dig.
+      h1: '{label}-løb i {market}'
+      paragraph: Denne side fokuserer på {label_lower}-løb og giver et klarere overblik, når løbsformatet er lige så vigtigt som distancen. Brug den til at sammenligne muligheder på tværs af regioner, datoer og praktiske detaljer uden at starte i hele kalenderen.
+    category:
+      title: '{label}-løb i {market} | {site_name}'
+      meta_description: Gennemse {label}-løb i {market}. Sammenlign datoer, løbstyper, steder og praktiske detaljer, før du beslutter dig for dit næste løb.
+      h1: '{label}-løb i {market}'
+      paragraph: Denne distance- og kategoriside samler løb, der matcher {label}, så det er nemmere at sammenligne relevante muligheder ét sted. Den er lavet til løbere, der vil gå hurtigere fra bred gennemgang til en kortliste med realistiske løb.
+    race_type_category:
+      title: '{label} {secondary_label}-løb i {market} | {site_name}'
+      meta_description: Gennemse {label}-løb i {market} inden for løbstypen {secondary_label_lower}. Sammenlign datoer, steder og praktiske detaljer, før du vælger dit næste løb.
+      h1: '{label}-løb i {market} ({secondary_label})'
+      paragraph: Denne side indsnævrer kalenderen til {label}-løb inden for løbstypen {secondary_label_lower}, hvilket er nyttigt, når både distance og løbsformat afgør det rigtige valg. Brug den til at sammenligne ensartede muligheder, før du tilmelder dig.
+    race_type_county:
+      title: '{secondary_label}-løb i {label} | {site_name}'
+      meta_description: Gennemse {secondary_label_lower}-løb i {label}. Sammenlign datoer, distancer og praktiske detaljer, før du vælger dit næste løb.
+      h1: '{secondary_label}-løb i {label}'
+      paragraph: Denne side fokuserer på {secondary_label_lower}-løb i {label}, så det er nemmere at sammenligne mere relevante muligheder i samme region. Den er nyttig, når både geografi og løbsformat former kortlisten.
+    race_type_month:
+      title: '{secondary_label}-løb i {label} | {site_name}'
+      meta_description: Gennemse {secondary_label_lower}-løb i {label_lower}. Sammenlign datoer, distancer og praktiske detaljer, mens du planlægger sæsonen.
+      h1: '{secondary_label}-løb i {label}'
+      paragraph: Denne side samler {secondary_label_lower}-løb i {label_lower} til løbere, der planlægger efter kalenderen først. Den hjælper dig med at sammenligne lignende løbsformater, før du indsnævrer yderligere efter sted eller distance.
+    race_type_city:
+      title: '{secondary_label}-løb nær {label} | {site_name}'
+      meta_description: Gennemse {secondary_label_lower}-løb knyttet til {label}. Sammenlign datoer, distancer og nærliggende muligheder, før du vælger dit næste løb.
+      h1: '{secondary_label}-løb nær {label}'
+      paragraph: Denne side samler {secondary_label_lower}-løb knyttet til {label}, så lokale løb er hurtigere at sammenligne. Den er nyttig, når du vil have et bestemt løbsformat nær én by uden at starte i hele kalenderen.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'You write evergreen SEO copy for indexable running race browse pages. Write for humans first, search intent second. Output valid JSON only. Keep the copy timeless: never mention a current year, current counts, limited-time wording, or freshness claims. Avoid keyword stuffing, hype, clickbait, superlatives, and unverifiable claims. Make each page clearly distinct based on the provided route context. Use natural Danish suitable for a running calendar in Denmark. Prefer concise titles, concise H1s, meta descriptions around 120-160 characters when practical, and a paragraph of 2-3 short sentences.'
+  browse_guidance:
+    county: Brugeren vil finde løb i én region.
+    city: Brugeren vil finde løb knyttet til en by eller en by i nærheden.
+    month: Brugeren vil finde løb efter måned.
+    race_type: Brugeren vil finde en bestemt løbstype.
+    category: Brugeren vil finde en bestemt distance eller løbskategori.
+    race_type_category: Brugeren vil finde en bestemt distance/kategori inden for én løbstype.
+    race_type_county: Brugeren vil finde en bestemt løbstype i én region.
+    race_type_month: Brugeren vil finde en bestemt løbstype i én måned.
+    race_type_city: Brugeren vil finde en bestemt løbstype knyttet til én by.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Gennemse efter kategori
+  helper_text: Find løb via foruddefinerede filtre og kombinationer
+  overview: Oversigt
+  counties: Regioner
+  cities: Byer
+  months: Måned
+  types: Løbstyper
+  categories: Kategorier
+  neighboring: Nabolande
+browse_overview:
+  title: Gennemse alle løb
+  meta_description: Find løb efter region, type eller kategori
+browse_types:
+  title: Gennemse efter løbstype
+  meta_description: Find løb efter løbstype.
+browse_counties:
+  title: Gennemse efter region
+  meta_description: Find løb i din region.
+browse_cities:
+  title: Gennemse efter by
+  meta_description: Find løb i din by.
+browse_categories:
+  title: Gennemse efter kategori
+  meta_description: Find løb efter distance og kategori.
+browse_months:
+  title: Gennemse efter måned
+  meta_description: Find løb efter måned.
+auth_modal:
+  title_sign_in: Log ind
+  title_create_account: Opret konto
+  title_reset_password: Nulstil adgangskode
+  auth_unavailable: Login er endnu ikke konfigureret.
+  name_placeholder: Dit navn
+  email_placeholder: Din e-mail
+  password_placeholder: Adgangskode
+  submit_sign_in: Log ind
+  submit_create_account: Opret konto
+  submit_reset_password: Send nulstillingslink
+  create_account: Opret konto
+  forgot_password: Glemt adgangskode?
+  back_to_login: Tilbage til log ind
+  error_wrong_password: Forkert adgangskode
+  error_email_not_found: E-mailadressen blev ikke fundet
+  prompt_reset_password: Vil du nulstille din adgangskode?
+  prompt_create_account: Vil du oprette en konto med denne e-mail?
+  already_logged_in: Du er allerede logget ind som
+  as_email: med e-mail
+  continue_as_user: Fortsæt som denne bruger
+  logout_and_switch: Log ud, og skift bruger
+  account_created: Konto oprettet!
+  account_created_details: Du er nu logget ind som
+  verification_email_sent: Et bekræftelseslink er sendt til din e-mail
+  please_verify: Bekræft venligst din e-mailadresse
+  error_invalid_credential: Ugyldig e-mail eller adgangskode
+  create_account_prompt: Opret konto i stedet
+  error_too_many_requests: For mange forsøg. Prøv igen senere.
+  continue_with_google: Fortsæt med Google
+  continue_with_google_create: Opret konto med Google
+  google_in_progress: Fortsætter med Google...
+  oauth_divider: eller
+auth_pages:
+  confirm_success: Din e-mail er bekræftet, og din konto er nu aktiv.
+  confirm_ready: Du kan nu fortsætte med at bruge siden.
+  confirm_error: Kunne ikke bekræfte din e-mailadresse.
+  reset_intro: Indtast en ny adgangskode til din konto.
+  reset_confirm_label: Bekræft adgangskode
+  reset_mismatch_error: Adgangskoderne matcher ikke.
+  reset_invalid_link_error: Ugyldigt eller manglende gendannelseslink.
+  reset_success: Din adgangskode er opdateret. Du kan nu logge ind.
+newsletter_popup:
+  email_placeholder: Din e-mailadresse
+  submit_button: Send mig opdateringerne
+  dismiss_button: Ikke nu
+  invalid_email: Indtast en gyldig e-mailadresse.
+  submit_error: Vi kunne ikke gemme din tilmelding lige nu. Prøv igen.
+  submitting_text: Gemmer...
+  success_message: Tak! Løbsopdateringer er på vej til din indbakke.
+  privacy_note: Nye løb, datoændringer og udvalgte tilbud. Afmeld når som helst.
+  close_aria_label: Luk tilmeldingsvindue
+  benefits:
+    new_races: Nye løb først
+    date_changes: Datoændringer med det samme
+    selected_offers: Udvalgte tilbud
+    similar_races: Lignende løb nær dig
+    local_picks: Flere løb i nærheden
+    opening_reminders: Påmindelser, før pladserne forsvinder
+    race_updates: Opdateringer om dette løb
+    nearby_races: Løb i nabolande nær dig
+  generic:
+    eyebrow: Gå ikke glip af det næste løb
+    title: Få nye løb og datoændringer før alle andre
+    body: Tilmeld dig vores nyhedsbrev, og få nye løb, opdaterede datoer og udvalgte tips i {country} direkte i indbakken.
+  race_detail:
+    eyebrow: Følg dette løb
+    title: Vil du have opdateringer om {race_name}?
+    body: Tilmeld dig, og få opdateringer om {race_name}, lignende løb i {county} og vigtige ændringer direkte i indbakken.
+  browse_category:
+    eyebrow: Flere af de rigtige løb
+    title: Gå ikke glip af nye {category}-løb
+    body: Vi sender nye {category}-løb, relevante alternativer i nærheden og vigtige datoer, så du ikke selv skal blive ved med at søge.
+  browse_category_type:
+    eyebrow: Flere af de rigtige løb
+    title: Få flere {race_type}-løb inden for {category}
+    body: Tilmeld dig, og få flere {race_type}-løb inden for {category}, alternativer i nærheden og datoændringer direkte i indbakken.
+  browse_county:
+    eyebrow: Lokale løb først
+    title: Få flere løb i {county}
+    body: Følg med i nye løb, opdaterede datoer og udvalgte bud til {county} uden at tjekke kalenderen hele tiden.
+  browse_city:
+    eyebrow: Lokale løb først
+    title: Vil du have flere løb i {city}?
+    body: Tilmeld dig, og få nye løb, alternativer i nærheden og vigtige datoer for {city} direkte i indbakken.
+  browse_type:
+    eyebrow: Den rigtige løbsstil
+    title: Få flere {race_type}-løb i indbakken
+    body: Vi sender nye {race_type}-løb, lignende alternativer og vigtige datoer, så du kan nå det, før pladserne forsvinder.
+  browse_month:
+    eyebrow: Planlæg sæsonen
+    title: Få de bedste løb i {month} først
+    body: Når løb i {month} åbner, flytter eller bliver særligt interessante, hører du det med det samme i indbakken.
+  browse_neighboring:
+    eyebrow: Udvid din kalender
+    title: Få også løb fra nabolande
+    body: Tilmeld dig, og få nye løb, udvalgte bud på tværs af grænsen og datoændringer fra {region} direkte i indbakken.
+  browse_neighboring_country:
+    eyebrow: Udvid din kalender
+    title: Få flere løb i {region}
+    body: Vi sender nye løb, datoændringer og relevante alternativer i nærheden, når der sker noget interessant i {region}.
+submission_flow:
+  logged_in_as: Logget ind som arrangør
+  submitting_new_race: indsender nyt løb
+  new_account_created: For at administrere løbet skal du bekræfte din e-mailadresse. Et bekræftelseslink er sendt til den angivne e-mailadresse.
+  password_reset_sent: Nulstilling af adgangskode er sendt. Tjek din indbakke.
+  unexpected_error: Der opstod en fejl. Prøv igen.
+  processing_submission: Behandler indsendelsen...
+  race_exists: Løbet findes allerede i databasen.
+  race_submitted: Løbet er indsendt!
+  submission_failed: Kunne ikke indsende løbet. Prøv igen.
+  missing_fields: Der mangler noget. Sørg for, at alle obligatoriske felter er udfyldt, og at et sted er valgt på kortet.
+race_page:
+  forum_section:
+    title: Spørgsmål og svar
+    placeholder: Stil et spørgsmål til arrangøren...
+    submit_button: Send spørgsmål
+    login_prompt: Log ind for at stille et spørgsmål
+    empty_state: Ingen spørgsmål endnu. Vær den første til at stille et spørgsmål!
+    error_message_no_login: Log ind eller opret en konto for at stille et spørgsmål
+map:
+  show_map: Vis kort
+  show_list: Vis liste
+  map: kort
+  list: liste
+forum:
+  title: Forum – Tal om løb og løbeliv med andre løbere i Danmark
+  meta_description: Tal om løb og løbeliv med andre løbere i vores forum. Alt om træning, konkurrencer, skader, kost, tøj, udstyr og meget mere.
+  categories:
+  - name: Træning
+    slug: traening
+    description: Debat om træning og teknik
+  - name: Løb og arrangementer
+    slug: loeb
+    description: Tal om kommende løb
+  - name: Skader og genoptræning
+    slug: skader
+    description: Hjælp til skader og restitution
+  - name: Ruter og kort
+    slug: ruter
+    description: Tal om ruter og kort
+  - name: Rejser
+    slug: rejser
+    description: Tal om løberejser og løbsture
+  - name: Kost og ernæring
+    slug: kost
+    description: Tal om kost og ernæring
+  - name: Tøj, sko og udstyr
+    slug: udstyr
+    description: Tal om tøj, sko og udstyr
+  - name: Køb og salg
+    slug: marked
+    description: Tal om køb og salg af løbeudstyr
+  - name: Andet
+    slug: andet
+    description: Alt det andet
+  empty_category_state: Ingen tråde endnu. Start debatten ved at oprette den første tråd!
+  empty_state_thread: Ingen indlæg endnu. Vær den første til at skrive!
+  empty_state: Ingen indlæg endnu. Vær den første til at skrive!
+  reply_placeholder: Skriv dit svar...
+  submit_button: Send
+  login_prompt: Log ind for at deltage i debatten
+  new_thread_title_placeholder: Titel på din nye tråd
+  new_thread_content_placeholder: Skriv dit første indlæg...
+  create_thread_button: Opret ny tråd
+  back_to_forum: ← Tilbage til forum
+  back_to_category: '← Tilbage til '
+  empty_thread_state: Ingen indlæg endnu. Vær den første til at skrive!
+  posts_label: indlæg
+  reply_label: svar
+  thread_created_title: Tak fordi du oprettede en ny tråd!
+  thread_created_message: Din tråd bliver gennemgået og føjet til siden inden længe.
+  thread_created_back_link: Tilbage til kategori
+  show_more_threads: Vis flere tråde
+  show_less_threads: Vis færre tråde
+  create_new_thread: Opret ny tråd
+  reply_title: Svar på tråden
+  showing_threads_count: Viser {x} af {y} tråde
+about_us:
+  title: Om Lobskalender
+  meta_description: Lobskalender – din guide til løb i Danmark
+  content:
+    intro: Velkommen til Lobskalender – den mest komplette platform for løbere i Danmark!
+    mission: Vores mission er at gøre det nemt for løbere at finde og dele information om løb, træning og alt, der har med løb at gøre.
+    story: Lobskalender blev startet i 2023 af løbere for løbere. Vi så behovet for en moderne og brugervenlig platform, hvor løbefællesskabet kunne samles.
+    features:
+    - title: Komplet løbsliste
+      description: Vi samler alle løb i Danmark ét sted – fra små lokale løb til store internationale løb.
+    - title: Drevet af fællesskabet
+      description: Vores platform drives af løbere som dig. Alle kan bidrage med information om løb og deltage i debatten.
+    - title: Gratis værktøjer
+      description: Vi tilbyder nyttige værktøjer som fartomformere, træningsprogrammer og ruteplanlægning – helt gratis.
+    closing: Vi udvikler fortsat platformen ud fra feedback fra vores brugere. Har du forslag til forbedringer? Kontakt os gerne!
+contact:
+  title: Kontakt os
+  meta_description: Kontakt Lobskalender – vi er her for at hjælpe dig
+  content:
+    intro: 'Vi vil gerne høre fra dig! Her er forskellige måder at komme i kontakt med os:'
+    email:
+      title: E-mail
+      address: loppkartan@gmail.com
+      description: Vi svarer normalt inden for 24 timer på hverdage.
+    social:
+      title: Sociale medier
+      description: 'Følg os på sociale medier for de seneste nyheder og opdateringer:'
+    feedback:
+      title: Tilbagemelding
+      description: Vi sætter pris på al feedback, der hjælper os med at forbedre Lobskalender.
+privacy_page:
+  title: Privatlivspolitik
+  meta_description: Privatlivspolitik og information om, hvordan Lobskalender behandler persondata og cookies.
+  last_updated_label: Sidst opdateret
+  last_updated_date: 27. marts 2026
+  contact_intro: 'Ved spørgsmål og anmodninger om privatliv kan du kontakte os på:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Oplysninger, vi indsamler
+    intro: 'Vi indsamler oplysninger, som du giver os direkte, når du:'
+    bullets:
+    - Opretter en konto
+    - Indsender løbsoplysninger
+    - Skriver i forummet
+    - Kontakter os
+  - title: 2. Cookies og sporing
+    intro: 'Vi bruger cookies til at:'
+    bullets:
+    - Huske dine indstillinger
+    - Opretholde din session og login-status
+    - Analysere trafik og brug af siden
+    - Vise relevant annoncering og forbedre oplevelsen
+  - title: 3. Sådan bruger vi dine oplysninger
+    intro: 'Dine oplysninger hjælper os med at:'
+    bullets:
+    - Levere og forbedre vores tjenester
+    - Sende vigtige beskeder og opdateringer
+    - Svare på henvendelser og supportspørgsmål
+    - Forebygge svindel og misbrug
+  - title: 4. Dine rettigheder
+    intro: 'Ifølge GDPR har du ret til at:'
+    bullets:
+    - Få adgang til dine persondata
+    - Rette unøjagtige eller ufuldstændige data
+    - Anmode om sletning af dine data
+    - Gøre indsigelse mod visse behandlinger
+    - Anmode om dataportabilitet
+  - title: 5. Kontakt os
+    intro: Hvis du har spørgsmål om, hvordan vi behandler persondata eller bruger cookies, er du altid velkommen til at kontakte os.
+racetime_estimator_title: Vurder din sluttid
+racetime_estimator_description: Ud fra et tidligere løb kan du vurdere din sluttid på andre distancer.
+known_distance_label: Vælg distance, hvor du har et tidligere resultat
+known_time_label: Indtast din tid
+calculate_button_text: Beregn tider
+predicted_times_title: Anslåede tider
+distance_header: Distance
+predicted_time_header: Anslået tid
+hilly_course_label: Kuperet rute
+finish_time_header: Anslået sluttid
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/mile
+flat_time_header: Tid (flad)
+flat_pace_per_km_header: Min/km (flat)
+flat_pace_per_mile_header: Min/mile (flat)
+hill_adjustment_header: Korrektion for bakker
+pace_calculator_title: Fartomformer
+pace_calculator_description: Et enkelt værktøj til at omregne din løbehastighed mellem forskellige enheder
+pace_table_header_kph: Kilometer i timen
+pace_table_header_mph: Miles i timen
+pace_table_header_min_km: Minutter pr. kilometer
+pace_table_header_min_mile: Minutter pr. mile
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Halvmarathon
+pace_table_header_full: Marathon
+pace_conversion_note: 1 kilometer i timen (kph) = 0,62 mile i timen (mph)
+measure_route_title: Mål din rute
+measure_route_description: Klik på kortet for at markere punkter langs din rute. Den samlede distance beregnes automatisk.
+remove_last_point: Fjern sidste punkt
+clear_route: Ryd rute
+total_distance: Samlet distance
+training_plans:
+  title: Træningsprogram
+  description: Opret et tilpasset træningsprogram ud fra dit mål
+  disclaimer_text_tp_1: Vores træningsprogrammer genereres med AI og tilpasses derefter dine angivne mål og ønsker. Programmerne er ikke garanteret at være perfekte eller passe til alle.
+  disclaimer_link_tp: Kontakt os
+  disclaimer_text_tp_2: hvis du har feedback eller forslag til forbedringer.
+  form:
+    race_date_label: Løbsdato
+    plan_type_label: Programtype
+    target_distance_label: Måldistance
+    target_time_label: Måltid
+    training_days_label: Træningsdage om ugen
+    session_time_label: Tid pr. pas
+    is_hilly_label: Kuperet terræn
+    hours_placeholder: Timer
+    minutes_placeholder: Minutter
+    seconds_placeholder: Sekunder
+    submit_button: Opret træningsprogram
+    target_distance:
+      placeholder: Vælg distance
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Halvmarathon
+        '42195': Marathon
+    training_days:
+      placeholder: Vælg antal dage
+      options:
+        '3': 3 dage
+        '4': 4 dage
+        '5': 5 dage
+        '6': 6 dage
+    session_time:
+      placeholder: Vælg tid pr. pas
+      options:
+        30-45: 30-45 minutter
+        45-60: 45-60 minutter
+        60-90: 60-90 minutter
+        90+: 90+ minutter
+  results:
+    title: Dit træningsprogram
+    variations:
+      title: 'Vælg en variant, der passer til dig:'
+    plan_details:
+      duration_label: 'Programlængde:'
+      weekly_distance_label: 'Ugentlig distance:'
+    regenerate_button: Vis andre varianter
+    export_button: Eksporter til PDF
+  workout_types:
+    easy: Roligt løb
+    tempo: Tempotur
+    intervals: Intervaller
+    long: Langtur
+    rest: Hvile
+  messages:
+    weeks: uger
+    week_label: Uge
+    hilly_terrain_note: tilpasset kuperet terræn
+  plan_variation:
+    focus_label: Fokus
+    weekly_structure_label: Ugestruktur
+    distribution_label: Fordeling
+    sessions_per_week: pas om ugen
+    select_button: Vælg dette program
+  errors:
+    loading_plans: Fejl ved indlæsning af træningsprogrammer
+    required_fields: Udfyld alle obligatoriske felter
+    no_matching_plan: Intet matchende træningsprogram fundet
+    no_matching_variations: Ingen matchende varianter fundet
+    invalid_training_days: Antallet af træningsdage matcher ikke programmets krav
+  week: Uge
+  weeks: uger
+  hilly_terrain_note: tilpasset kuperet terræn
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Opbygning af grundudholdenhed
+        weekly_template:
+          monday:
+            type: easy
+            description: Roligt distanceløb
+          wednesday:
+            type: tempo
+            description: Tempotur
+          saturday:
+            type: long
+            description: Langtur
+          sunday:
+            type: recovery
+            description: Restitution
+      build:
+        duration_percent: 40
+        focus: Øget intensitet og distance
+        weekly_template:
+          monday:
+            type: easy
+            description: Roligt distanceløb
+          wednesday:
+            type: intervals
+            description: Intervaller
+          friday:
+            type: tempo
+            description: Tempotur
+          sunday:
+            type: long
+            description: Langtur
+      peak:
+        duration_percent: 15
+        focus: Topning og specifik træning
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Kvalitetspas
+          thursday:
+            type: tempo
+            description: Tempotur
+          saturday:
+            type: long
+            description: Langtur
+          sunday:
+            type: recovery
+            description: Restitution
+      taper:
+        duration_percent: 5
+        focus: Udtapning
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Roligt løb
+          thursday:
+            type: tempo
+            description: Kort tempotur
+          saturday:
+            type: easy
+            description: Meget roligt løb
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min roligt jog
+        cooldown: 5-10 min roligt jog
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progressiv opvarmning
+        cooldown: 10-15 min nedkøling
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min inkl. teknik og stigningsløb
+        cooldown: 10-15 min roligt jog
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min meget roligt jog
+        cooldown: 5-10 min gang/let jog
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min gang
+        cooldown: 5-10 min gang
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Opvarmning
+    main_workout_label: Beskrivelse af passet
+    cooldown_label: Nedkøling
+    intensity_label: Tempo
+    duration_label: Tid
+  regenerate:
+    button_text: Opret ny variant
+    confirmation: Er du sikker på, at du vil oprette en ny variant?
+  weekdays:
+    monday: Mandag
+    tuesday: Tirsdag
+    wednesday: Onsdag
+    thursday: Torsdag
+    friday: Fredag
+    saturday: Lørdag
+    sunday: Søndag
+footer:
+  races_heading: Løb
+  tools_heading: Værktøjer
+  about_heading: Om Lobskalender
+  privacy: Privatlivspolitik
+  copyright_year: 2023-2026
+  site_name: Lobskalender
+  rights_text: Alle rettigheder forbeholdes.
+  social_links:
+    facebook: https://www.facebook.com/loppkartan
+    instagram: https://www.instagram.com/loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@loppkartan
+accessibility:
+  main_navigation_label: Hovednavigation
+  breadcrumb_label: Brødkrummer
+  back_to_top_label: Tilbage til toppen
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Populære løb lige nu
+trending_races_description: Her er de løb, der har fået mest opmærksomhed fra løbere.
+trending_races_views_last_30_days: visninger de seneste 30 dage
+trending_races_most_viewed: Mest populære lige nu
+races_views: visninger
+recent_races_title: Senest tilføjede løb
+today: i dag
+yesterday: i går
+days_ago: dage siden
+newest_race_badge: Seneste tilføjelse
+races_count: løb
+popular_counties_title: Find løb i din region
+popular_cities_title: Find løb i din by
+all_counties: Vis alle regioner
+all_cities: Vis alle byer
+category_header_1: Trailløb
+category_type_1: trail
+category_1_races_sub_title_1: Trailmarathon
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Trail-ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail-ultra 100 miles
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Landevejsløb
+category_type_2: road
+category_2_races_sub_title_1: Marathon
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Halvmarathon
+category_2_races_sub_ref_2: half-marathon
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Se alle løb i
+tools_title: Værktøjer til dit næste løb
+home_tools:
+  measure_route:
+    description: Mål en ruteidé, og få et hurtigt distanceestimat, før du tager afsted.
+  training_plans:
+    description: Find træningsprogrammer til forskellige mål, niveauer og løbsdistancer til din næste periode.
+  racetime_estimator:
+    description: Vurder en realistisk sluttid ud fra tidligere resultater, og sammenlign forskellige mål.
+  pace_calculator:
+    description: Omregn tempo, hastighed og sluttid på almindelige løbsdistancer, mens du planlægger træningen.
+missing_race: Mangler der et løb? Tilføj det her!
+add_race_mp_title: Tilføj dit løb
+neighboring_countries_title: Løb i Danmark og nabolande
+neighboring_countries_title_specific_country: Løb i {country_name}
+neighboring_countries_description: Her er løb, der afholdes i nabolande.
+neighboring_countries_description_specific_country: Her lister vi løb, der afholdes i {country_name}.
+neighboring_countries_neighbors_native: Nabolande
+neighboring_countries_all_neighbors_native: Alle nabolande
+section_race_card_header_nieghbors_default: Danmark og nabolande
+browse_neighboring:
+  title: Gennemse løb i nabolande
+  meta_description: Find løb i nabolande tæt på dig. Gennemse efter land, og opdag løbsarrangementer på tværs af grænsen.
+neighboring_races_title: Løb i nabolande
+neighboring_countries_show_all: Vis alle
+race_page_layout_title: 'Løbsside: {x}'
