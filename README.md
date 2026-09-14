@@ -224,7 +224,7 @@ Shared public client ID lives at the top-level `googleAdsClient` (the same `ca-p
 - per market: `googleAdsClient` on that market entry
 - env: `PUBLIC_ADSENSE_CLIENT`
 
-Currently **on** for `fi` and `lt`, **off** for every other market. Consent UI language follows the page `lang` (native or `/en/`) plus the messages published for that site in AdSense.
+Currently **on** for `fi`, `lt`, and `dk`, **off** for every other market. Consent UI language follows the page `lang` (native or `/en/`) plus the messages published for that site in AdSense.
 
 [`vercel.json`](./vercel.json) pins the expected Vercel behavior for this repo:
 
@@ -233,7 +233,7 @@ Currently **on** for `fi` and `lt`, **off** for every other market. Consent UI l
 - output directory: `dist`
 - durable one-off redirects from [`config/redirects/`](./config/redirects/), merged by [`scripts/merge-vercel-redirects.mjs`](./scripts/merge-vercel-redirects.mjs) before `vercel build`
 
-Lithuania’s Unicode `/bėgimo_puslapiai/:path*` → ASCII `/begimo_puslapiai/:path*` 308 is an LT migration one-off in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json). `generate-market-routes.mjs` never writes that file or `vercel.json`, so the next market deploy matrix cannot wipe it. Finland (`fi`, suomi-juoksu.fi) is registered disabled until a Vercel project exists; native race-detail URLs are ASCII `/kilpailusivut/{domain}/` with no extra redirect.
+Lithuania’s Unicode `/bėgimo_puslapiai/:path*` → ASCII `/begimo_puslapiai/:path*` 308 is an LT migration one-off in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json). `generate-market-routes.mjs` never writes that file or `vercel.json`, so the next market deploy matrix cannot wipe it. Finland (`fi`, suomi-juoksu.fi) native race-detail URLs are ASCII `/kilpailusivut/{domain}/` with no extra redirect. Denmark (`dk`, lobskalender.dk) is registered disabled until a Vercel project exists; native race-detail URLs are ASCII `/lobsider/{domain}/`. The live København county slug `/lobekalender/kobenhavn/:path*` is a one-off 308 to `/lobekalender/hovedstaden/:path*` in [`config/redirects/dk-kobenhavn.json`](./config/redirects/dk-kobenhavn.json).
 
 ### Production deploy model
 

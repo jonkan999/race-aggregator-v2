@@ -28,6 +28,20 @@ test('LT redirect file is a one-off 308, not a generate-market-routes output', (
   assert.ok(lt.redirects.every((redirect) => redirect.permanent === true));
 });
 
+test('DK København county slug is a one-off 308 onto Hovedstaden, not a generated route', () => {
+  const configs = loadRedirectConfigs(path.join(repoRoot, 'config/redirects'));
+  const dk = configs.find((config) => config.id === 'dk-kobenhavn');
+  assert.ok(dk, 'expected config/redirects/dk-kobenhavn.json');
+  assert.equal(dk.market, 'dk');
+  assert.deepEqual(dk.redirects, [
+    {
+      source: '/lobekalender/kobenhavn/:path*',
+      destination: '/lobekalender/hovedstaden/:path*',
+      permanent: true,
+    },
+  ]);
+});
+
 test('path-star redirects become 308 routes that preserve the rest of the path', () => {
   const route = redirectToRoute({
     source: `/${UNICODE_FOLDER}/:path*`,
@@ -38,6 +52,20 @@ test('path-star redirects become 308 routes that preserve the rest of the path',
   assert.equal(route.headers.Location, `/${ASCII_FOLDER}/$1`);
   assert.match('/bėgimo_puslapiai/vilniaus_maratonas/', new RegExp(route.src));
   assert.match('/bėgimo_puslapiai', new RegExp(route.src));
+});
+
+test('DK county path-star 308 preserves nested browse suffixes', () => {
+  const route = redirectToRoute({
+    source: '/lobekalender/kobenhavn/:path*',
+    destination: '/lobekalender/hovedstaden/:path*',
+    permanent: true,
+  });
+  assert.equal(route.status, 308);
+  assert.equal(route.headers.Location, '/lobekalender/hovedstaden/$1');
+  assert.match('/lobekalender/kobenhavn', new RegExp(route.src));
+  assert.match('/lobekalender/kobenhavn/', new RegExp(route.src));
+  assert.match('/lobekalender/kobenhavn/landsvej/', new RegExp(route.src));
+  assert.doesNotMatch('/lobekalender/kobenhavn-east', new RegExp(route.src));
 });
 
 test('merge prepends managed 308s and keeps the WAF deny route', () => {

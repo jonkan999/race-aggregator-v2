@@ -52,6 +52,7 @@ test('ASCII alias folds Unicode but is not a generic slugify policy', () => {
   assert.equal(asciiAliasRacePageFolder('jooksulehed'), '');
   assert.equal(asciiAliasRacePageFolder('strony_biegow'), '');
   assert.equal(asciiAliasRacePageFolder('kilpailusivut'), '');
+  assert.equal(asciiAliasRacePageFolder('lobsider'), '');
 });
 
 test('LT YAML canonical race folder is ASCII begimo_puslapiai', () => {
@@ -78,6 +79,20 @@ test('FI YAML-independent race folder is ASCII kilpailusivut with no Unicode ali
   assert.equal(fs.existsSync(path.join(repoRoot, 'src/pages', ASCII_FI_FOLDER, '[domain]', 'index.astro')), true);
   assert.equal(
     manifest.files.some((filePath) => filePath.includes(`src/pages/${ASCII_FI_FOLDER}/[domain]/index.astro`)),
+    true,
+  );
+});
+
+test('DK YAML-independent race folder is ASCII lobsider with no Unicode alias', () => {
+  const ASCII_DK_FOLDER = 'lobsider';
+  const content = { race_page_folder_name: ASCII_DK_FOLDER };
+  const manifest = JSON.parse(fs.readFileSync(path.join(repoRoot, 'scripts/.generated-market-routes.json'), 'utf8'));
+  assert.equal(localRacePageFolder(content, 'native'), ASCII_DK_FOLDER);
+  assert.equal(asciiAliasRacePageFolder(ASCII_DK_FOLDER), '');
+  assert.equal(isRacePageFolderMatch(content, 'native', ASCII_DK_FOLDER), true);
+  assert.equal(fs.existsSync(path.join(repoRoot, 'src/pages', ASCII_DK_FOLDER, '[domain]', 'index.astro')), true);
+  assert.equal(
+    manifest.files.some((filePath) => filePath.includes(`src/pages/${ASCII_DK_FOLDER}/[domain]/index.astro`)),
     true,
   );
 });

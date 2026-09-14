@@ -1,0 +1,12 @@
+{
+  "id": "dk-kobenhavn",
+  "market": "dk",
+  "note": "DK one-off migration: live county slug København → GeoJSON/county key Hovedstaden. Hand-maintained. generate-market-routes.mjs must never write or clear these redirects.",
+  "redirects": [
+    {
+      "source": "/lobekalender/kobenhavn/:path*",
+      "destination": "/lobekalender/hovedstaden/:path*",
+      "permanent": true
+    }
+  ]
+}
