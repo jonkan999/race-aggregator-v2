@@ -6,6 +6,13 @@
   "outputDirectory": "dist",
   "routes": [
     {
+      "src": "^/lobekalender/kobenhavn(?:/(.*))?$",
+      "headers": {
+        "Location": "/lobekalender/hovedstaden/$1"
+      },
+      "status": 308
+    },
+    {
       "src": "^/bėgimo_puslapiai(?:/(.*))?$",
       "headers": {
         "Location": "/begimo_puslapiai/$1"
@@ -43,6 +50,11 @@
     }
   ],
   "redirects": [
+    {
+      "source": "/lobekalender/kobenhavn/:path*",
+      "destination": "/lobekalender/hovedstaden/:path*",
+      "permanent": true
+    },
     {
       "source": "/bėgimo_puslapiai/:path*",
       "destination": "/begimo_puslapiai/:path*",

@@ -41,6 +41,7 @@ This repository is the Astro + Supabase migration of the live legacy project at 
 - Ensure `county_mapping` keys match the raw county labels present in `final_races.json`, and that both native and English mappings produce market-appropriate display names.
 - Run `npm run validate:content -- {code}` before calling a synced market “ready”. If validation fails on leaked source-market copy or missing county mappings, fix the collector-owned YAML before relying on the sync.
 - **Lithuania gotcha:** keep native `race_page_folder_name` as ASCII `begimo_puslapiai`. Do not reintroduce Unicode `bėgimo_puslapiai` as a generated route. The one-off 308 lives in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json) and is merged into `vercel.json` by [`scripts/merge-vercel-redirects.mjs`](./scripts/merge-vercel-redirects.mjs) before every build/deploy. `generate-market-routes.mjs` must never write or clear that file.
+- **Denmark gotcha:** keep native `race_page_folder_name` as ASCII `lobsider`. The live København county filter `/lobekalender/kobenhavn` is a one-off 308 to `/lobekalender/hovedstaden` in [`config/redirects/dk-kobenhavn.json`](./config/redirects/dk-kobenhavn.json) because the GeoJSON/county key is Hovedstaden. Do not implement that as a soft-fallback or a `generate-market-routes` output.
 
 ## Legacy Reference
 

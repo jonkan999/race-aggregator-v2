@@ -189,6 +189,14 @@ for (const countryCode of countryCodes) {
       );
     }
   }
+  if (countryCode === 'dk') {
+    const folder = String(nativeContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (folder !== 'lobsider') {
+      failures.push(
+        'dk: native race_page_folder_name must be ASCII lobsider (København → Hovedstaden is a one-off 308 in config/redirects/dk-kobenhavn.json, not a generated route)',
+      );
+    }
+  }
   const trainingPlansAreEnabled =
     trainingPlansEnabled(nativeContent) || trainingPlansEnabled(englishContent);
 
