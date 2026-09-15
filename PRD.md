@@ -55,7 +55,8 @@ Google Funding Choices cookie consent and AdSense Auto ads are restored for mark
 - The market's native site lives at `/`.
 - That same market's English site lives at `/en/`.
 - Neighboring-country browse pages are canonical at `/neighbors/` and `/neighbors/{country}/`, with English equivalents at `/en/neighbors/` and `/en/neighbors/{country}/`.
-- Neighbor-market surfaces should point at the neighboring market's English site, not a native country-prefixed path on the current host.
+- Neighbor-country SEO cards are maintained in `config/neighbor-markets.json` and filtered to enabled `config/deploy-markets.json` entries. They must link to real production race-list URLs even when the host snapshot has no foreign `origin_country` rows.
+- Neighbor-market race-detail surfaces should point at the neighboring market's English site, not a native country-prefixed path on the current host.
 - Static race-detail generation is domestic-only for each market. Foreign rows shown on neighbor-market surfaces should link to the origin market's English detail page when that market is configured locally.
 - Market-aware routing should discover configured markets from `data/countries/{code}/index.yaml` so new country folders join the routing model without code changes.
 

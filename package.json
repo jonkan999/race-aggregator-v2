@@ -17,6 +17,7 @@
     "build-auth-email-templates": "node scripts/build-supabase-auth-templates.mjs",
     "validate:content": "node scripts/validate-content-contract.mjs",
     "seed-races": "node scripts/seed-races.mjs",
+    "test:unit": "node --experimental-strip-types --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "test:e2e:legacy-ref": "PW_LEGACY_REFERENCE=1 PW_SKIP_WEB_SERVER=1 playwright test --project=legacy-reference"
   },

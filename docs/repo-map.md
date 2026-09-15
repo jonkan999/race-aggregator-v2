@@ -20,6 +20,8 @@
 - `src/lib/raceListRow.ts` — list row typing and translation selection helpers.
 - `src/lib/raceCardDisplay.ts` — race card formatting helpers.
 - `src/lib/marketRoutes.ts` / `src/lib/marketRouteTargets.ts` — market-aware detail-link resolution and configured-market discovery.
+- `src/lib/neighborMarkets.ts` / [`config/neighbor-markets.json`](../config/neighbor-markets.json) — SEO neighbor-country cards and production race-list URLs.
+- `src/lib/mapDefaults.ts` / [`config/map-defaults.json`](../config/map-defaults.json) — list/browse Mapbox center and zoom.
 - `src/lib/raceListConfig.ts` — list page size and related config.
 - `src/lib/categoryFilterOptions.ts` — category filter derivation.
 - `src/lib/supabase.ts` — browser Supabase setup.

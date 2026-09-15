@@ -25,6 +25,8 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Build-time race-list snapshot: temporary JSON under `.cache/race-list-build-snapshots/` generated once per country for each build
 - Build fallback data: `data/countries/{code}/final_races*.json`
 - Map pins: `public/markers-{country}.json`
+- Neighbor-market SEO graph: [`config/neighbor-markets.json`](config/neighbor-markets.json)
+- List/browse Mapbox center/zoom overlays: [`config/map-defaults.json`](config/map-defaults.json) (wins over YAML `mapbox_center` / `mapbox_zoom`)
 
 ## Race List Contract
 
@@ -60,6 +62,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Browse indexability rules should also be YAML-driven per market under `browse_seo_indexing`, so canonical subsets and thresholds can be tuned without route-code edits.
 - Browse SEO should distinguish between the full filter taxonomy and the smaller canonical indexable SEO surface. Use the matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md) for which category labels, race types, and combinations should actually be indexed.
 - Avoid canonical duplication across equivalent intents such as `10 km` vs `Millopp` or distance-style labels that duplicate race-type intent such as `Backyard Ultra`.
+- Browse month hubs sort in calendar order (`01`–`12`), not by race count.
 
 ## Market Expansion
 
@@ -72,11 +75,13 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Denmark race-detail URLs are ASCII `/lobsider/{domain}/`. The live county slug `/lobekalender/kobenhavn/:path*` is a one-off 308 to `/lobekalender/hovedstaden/:path*` in `config/redirects/dk-kobenhavn.json` (GeoJSON/county key is Hovedstaden).
 - If a template-era alias route remains reachable for compatibility, it should canonicalize to the market-owned slug and emit `noindex`.
 - Canonical neighboring-country browse pages belong at `/neighbors/` and `/neighbors/{country}/`, with English equivalents under `/en/neighbors/`.
+- Neighbor-country **SEO cards** (browse overview and `/neighbors/`) come from [`config/neighbor-markets.json`](config/neighbor-markets.json), filtered to enabled markets in [`config/deploy-markets.json`](config/deploy-markets.json). They link to each sibling market's production race-list URL. Do not derive that list only from `origin_country` on race rows — collector neighbor snapshots are optional and often empty (DK/SE).
+- Local `/neighbors/{code}/` pages still list foreign races from the host snapshot when those rows exist. Race-list county filters stay data-derived so empty neighbor filters are not shown.
 - New markets should be prepared in `race-collector-v2`, synced into this repo only when launch-ready, then seeded and exported here.
 - New markets should automatically participate in the one-snapshot-per-country build flow. Do not add market-specific direct Supabase reads inside route files.
 - Only markets listed in `config/deploy-markets.json` should be deployed automatically; do not treat every folder under `data/countries/` as launch-ready.
 - Google Funding Choices + AdSense load only when the active market has `googleAdsEnabled: true` in `config/deploy-markets.json`. Do not inject those scripts for other markets.
-- Neighbor-market linking should resolve to the neighboring market's English site, using that market's own YAML-driven site configuration rather than a country-prefixed path on the current host.
+- Neighbor-market **race-detail** linking should resolve to the neighboring market's English site, using that market's own YAML-driven site configuration rather than a country-prefixed path on the current host.
 - Static race-detail routes should be generated only for domestic races in the current market snapshot. Foreign races shown in neighboring-country views should link to the origin market's English detail route when that market is configured locally.
 - Market-aware routing should discover eligible markets from `data/countries/{code}/index.yaml` so adding a new country folder expands the route graph without hardcoded country logic.
 - Any change to list behavior, routing, or schema should be reflected in [`PRD.md`](./PRD.md).

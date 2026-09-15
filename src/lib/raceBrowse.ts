@@ -12,6 +12,13 @@ import {
 } from './browseSeoIndexing.js';
 import { cityNamesMatch } from './cityNames';
 import type { IndexYaml, Locale } from './content';
+import { compareBrowseMonthKeys } from './browseMonthOrder.js';
+import {
+  countUpcomingDomesticRacesFromLocalJson,
+  getNeighborMarketRaceListHref,
+  listEnabledNeighborMarketCodes,
+  neighborCountryLabel,
+} from './neighborMarkets';
 import { getNeighboringCountryOptions } from './neighboringCountryOptions';
 import { primaryRaceImageUrl } from './raceCardDisplay';
 import {
@@ -524,50 +531,119 @@ function firstNearestCity(row: RaceListRow): string | null {
   return value || null;
 }
 
-export async function getBrowseNeighboringEntries(args: {
+function localNeighboringRaceCounts(rows: RaceListRow[], hostCountryCode: string): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const row of rows) {
+    const origin = row.origin_country?.trim().toLowerCase();
+    if (!origin || isDomesticOrigin(origin, hostCountryCode)) continue;
+    addEntryCount(counts, origin);
+  }
+  return counts;
+}
+
+/**
+ * Local `/neighbors/{code}/` hubs that list foreign races in this market's snapshot.
+ * Empty when the collector did not merge neighbor races (DK/SE today).
+ */
+export async function getLocalNeighboringRaceEntries(args: {
   countryCode: string;
   locale: Locale;
   content: IndexYaml;
 }): Promise<BrowseOverviewSectionEntry[]> {
   const { countryCode, locale, content } = args;
+  const allRows = filterRowsToUpcomingWindow((await getAllRaceListRows(countryCode)).rows);
+  const neighboringOptions = await getNeighboringCountryOptions({
+    hostCountryCode: countryCode,
+    locale,
+    content,
+  });
+  const counts = localNeighboringRaceCounts(allRows, countryCode);
+
+  return neighboringOptions.countries
+    .map((entry) => {
+      const count = counts.get(entry.code) ?? 0;
+      if (count <= 0) return null;
+      return {
+        key: entry.code,
+        label: entry.label,
+        slug: slugify(entry.code, countryCode),
+        href: getBrowseNeighboringCountryPageHref({
+          countryCode,
+          locale,
+          content,
+          neighborCountryCode: entry.code,
+        }),
+        count,
+      } satisfies BrowseOverviewSectionEntry;
+    })
+    .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, locale === 'en' ? 'en' : 'sv'));
+}
+
+/**
+ * SEO neighbor cards: enabled Aggregatory sibling markets from
+ * `config/neighbor-markets.json`, plus any extra foreign origins in the
+ * snapshot. Configured markets link to their production race-list URLs.
+ */
+export async function getBrowseNeighboringEntries(args: {
+  countryCode: string;
+  locale: Locale;
+  content: IndexYaml;
+}): Promise<BrowseOverviewSectionEntry[]> {
+  const { countryCode, locale } = args;
   const cacheKey = `${countryCode}:${locale}`;
   const cached = browseNeighboringEntriesCache.get(cacheKey);
   if (cached) return cached;
 
   const pending = (async () => {
     const allRows = filterRowsToUpcomingWindow((await getAllRaceListRows(countryCode)).rows);
-    const neighboringOptions = await getNeighboringCountryOptions({
-      hostCountryCode: countryCode,
-      locale,
-      content,
-    });
+    const localCounts = localNeighboringRaceCounts(allRows, countryCode);
+    const configured = listEnabledNeighborMarketCodes(countryCode);
+    const extraFromData = [...localCounts.keys()].filter((code) => !configured.includes(code));
+    const codes = [...configured, ...extraFromData];
+    const collatorLocale = locale === 'en' ? 'en' : 'sv';
 
-    const counts = new Map<string, number>();
-    for (const row of allRows) {
-      const origin = row.origin_country?.trim().toLowerCase();
-      if (!origin || isDomesticOrigin(origin, countryCode)) continue;
-      addEntryCount(counts, origin);
-    }
+    return codes
+      .map((code) => {
+        const productionHref = getNeighborMarketRaceListHref({
+          neighborCountryCode: code,
+          locale,
+        });
+        const localCount = localCounts.get(code) ?? 0;
+        if (!productionHref && localCount <= 0) return null;
 
-    return neighboringOptions.countries
-      .map((entry) => {
-        const count = counts.get(entry.code) ?? 0;
-        if (count <= 0) return null;
+        const count = productionHref
+          ? countUpcomingDomesticRacesFromLocalJson(code)
+          : localCount;
+
         return {
-          key: entry.code,
-          label: entry.label,
-          slug: slugify(entry.code, countryCode),
-          href: getBrowseNeighboringCountryPageHref({
-            countryCode,
+          key: code,
+          label: neighborCountryLabel({
+            neighborCountryCode: code,
+            hostCountryCode: countryCode,
             locale,
-            content,
-            neighborCountryCode: entry.code,
           }),
+          slug: slugify(code, countryCode),
+          href:
+            productionHref ??
+            getBrowseNeighboringCountryPageHref({
+              countryCode,
+              locale,
+              content: args.content,
+              neighborCountryCode: code,
+            }),
           count,
         } satisfies BrowseOverviewSectionEntry;
       })
       .filter((entry): entry is BrowseOverviewSectionEntry => entry !== null)
-      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, locale === 'en' ? 'en' : 'sv'));
+      .sort((a, b) => {
+        const aConfigured = configured.indexOf(a.key);
+        const bConfigured = configured.indexOf(b.key);
+        if (aConfigured !== -1 && bConfigured !== -1) return aConfigured - bConfigured;
+        if (aConfigured !== -1) return -1;
+        if (bConfigured !== -1) return 1;
+        return b.count - a.count || a.label.localeCompare(b.label, collatorLocale);
+      });
   })();
 
   browseNeighboringEntriesCache.set(cacheKey, pending);
@@ -747,7 +823,7 @@ export async function getBrowseOverviewData(args: {
           }),
           count,
         }))
-        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'sv')),
+        .sort((a, b) => compareBrowseMonthKeys(a.key, b.key)),
       cities: cityEntries,
       neighboring,
     };

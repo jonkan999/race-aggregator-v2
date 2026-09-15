@@ -4,7 +4,7 @@ Astro + Supabase rebuild of the legacy `race-aggregator` static site: YAML-drive
 
 Public routing is market-scoped per domain: the native site lives at `/`, and the fully translated English site for that same market lives at `/en/`.
 
-Neighboring-country browse pages follow the legacy-style canonical structure at `/neighbors/` and `/en/neighbors/`. Those pages may list foreign races, but static race detail pages are generated only for the current market's domestic races. When a foreign race belongs to another configured market in `data/countries/{code}/index.yaml`, links resolve to that market's English race-detail route on its own domain automatically.
+Neighboring-country browse pages follow the legacy-style canonical structure at `/neighbors/` and `/en/neighbors/`. The **Nabolande / neighboring-countries cards** are a cross-site SEO graph: each live market lists geographically sensible Aggregatory siblings from [`config/neighbor-markets.json`](config/neighbor-markets.json), filtered to enabled entries in [`config/deploy-markets.json`](config/deploy-markets.json), and links to those sites' production race-list URLs. Local `/neighbors/{code}/` pages still list foreign races when the collector snapshot includes them. Static race detail pages are generated only for the current market's domestic races. When a foreign race belongs to another configured market, detail links resolve to that market's English race-detail route on its own domain.
 
 ## North Star
 
@@ -364,6 +364,8 @@ Mapbox is optional for smoke tests (the map shows a YAML message if `PUBLIC_MAPB
 - `data/countries/{code}/final_races*.json` — seed/export inputs (managed long-term by **race-collector-v2**).
 - `data/countries/{code}/json/training_plans_processed_{locale}.json` — collector-owned training-plan payloads. When a market exposes training plans in YAML, ship both the native-language file and `training_plans_processed_en.json` through the collector sync.
 - `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides for browse landings (county, city, month, race type, distance/category, and valid race type + category combinations). Missing entries fall back to deterministic template copy. Rebuilds prune obsolete keys, refresh stale generator versions, and rewrite current aliases so old market-seed copy cannot silently survive.
+- [`config/neighbor-markets.json`](config/neighbor-markets.json) — geographic Aggregatory neighbor graph. Edit this when adding a live market so Nabolande / neighboring-country cards stay non-empty. Enabled deploy markets only are rendered; listing `no` before Norway is enabled is fine.
+- [`config/map-defaults.json`](config/map-defaults.json) — optional per-market Mapbox center/zoom overlay for list/browse/tool maps. Wins over YAML `mapbox_*` so collector YAML syncs cannot restore a too-tight Denmark zoom.
 
 In the intended workflow, those market files are collector-owned sync artifacts. Keep launched markets here, but avoid treating this repo as the editing surface for onboarding or in-progress market content.
 

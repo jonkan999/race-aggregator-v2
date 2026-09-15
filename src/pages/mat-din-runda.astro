@@ -4,6 +4,7 @@ import AuxiliaryPageIntro from '../components/AuxiliaryPageIntro.astro';
 import MeasureRouteIsland from '../components/MeasureRouteIsland';
 import { alternateAuxiliaryPageHref, auxiliaryPageHref } from '../lib/auxiliaryPages';
 import { loadIndexYaml, type Locale } from '../lib/content';
+import { getListMapView } from '../lib/mapDefaults';
 
 const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale: Locale = 'native';
@@ -13,8 +14,9 @@ const title = [pageTitle, String(content.page_name ?? '')].filter(Boolean).join(
 const description = String(content.measure_route_description ?? '');
 const alternateHref = alternateAuxiliaryPageHref({ country, locale, pageKey: 'measure-route' });
 const canonicalPath = auxiliaryPageHref({ country, locale, content, pageKey: 'measure-route' });
-const center = (content.mapbox_center ?? {}) as { latitude?: number; longitude?: number };
-const fallbackZoom = Number.parseInt(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '6'), 10);
+const listMap = getListMapView(country, content);
+const center = { latitude: listMap.centerLat, longitude: listMap.centerLng };
+const fallbackZoom = listMap.zoom;
 ---
 
 <AuxiliaryLayout
