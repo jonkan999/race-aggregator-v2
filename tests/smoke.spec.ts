@@ -162,8 +162,8 @@ test('race list neighbor controls stay additive and link to SEO neighbor pages',
 
   const mapControl = page.getByTestId('neighboring-countries-control');
   await expect(mapControl).toHaveCount(1);
-  await mapControl.locator('#neighboring-toggle').check();
   await expect(mapControl.locator('input[data-country="dk"]')).toBeAttached();
+  await mapControl.getByRole('checkbox', { name: /visa alla/i }).click();
   await expect(page.locator('.race-card[data-name="Overlay Domestic Race"]')).toBeVisible();
   await expect(page.locator('.race-card.neighboring-race[data-origin-country="dk"]')).toBeVisible();
   await expect(page.locator('.race-card.neighboring-race .neighbor-country-badge')).toHaveText('DK');

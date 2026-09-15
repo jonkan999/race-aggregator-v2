@@ -12,7 +12,6 @@ export default function NeighboringCountriesControl(props: {
   const visible = new Set(visibleCodes.map((code) => code.trim().toLowerCase()).filter(Boolean));
   const allCodes = countries.map((entry) => entry.code);
   const allChecked = allCodes.length > 0 && allCodes.every((code) => visible.has(code));
-  const expanded = visible.size > 0;
 
   const setCodes = (codes: string[]) => {
     onChange?.(codes);
@@ -33,13 +32,13 @@ export default function NeighboringCountriesControl(props: {
           type="checkbox"
           id="neighboring-toggle"
           checked={allChecked}
-          onChange={(event) => {
-            setCodes(event.target.checked ? allCodes : []);
+          onChange={() => {
+            setCodes(allChecked ? [] : allCodes);
           }}
         />
         <span>{showAllLabel}</span>
       </label>
-      {expanded ? (
+      {allCodes.length > 0 ? (
         <div id="neighboring-countries-container" className="neighboring-countries-control__countries">
           {countries.map((entry) => {
             const flagCode = supportedFlagCode(entry.code);
@@ -55,10 +54,10 @@ export default function NeighboringCountriesControl(props: {
                   id={`country-${entry.code}`}
                   data-country={entry.code}
                   checked={checked}
-                  onChange={(event) => {
+                  onChange={() => {
                     const next = new Set(visible);
-                    if (event.target.checked) next.add(entry.code);
-                    else next.delete(entry.code);
+                    if (checked) next.delete(entry.code);
+                    else next.add(entry.code);
                     setCodes(allCodes.filter((code) => next.has(code)));
                   }}
                 />
