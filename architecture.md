@@ -24,7 +24,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Race-detail page views for homepage trending: `crm.race_detail_page_views` via RPC writes
 - Build-time race-list snapshot: temporary JSON under `.cache/race-list-build-snapshots/` generated once per country for each build
 - Build fallback data: `data/countries/{code}/final_races*.json`
-- Map pins: `public/markers-{country}.json`
+- Map pins: `public/markers-{country}.json` (includes `race_dates[]` plus a first-date `race_date` fallback so the map can apply the same any-date window as the list)
 - Neighbor-market SEO graph: [`config/neighbor-markets.json`](config/neighbor-markets.json)
 - List/browse Mapbox center/zoom overlays: [`config/map-defaults.json`](config/map-defaults.json) (wins over YAML `mapbox_center` / `mapbox_zoom`)
 

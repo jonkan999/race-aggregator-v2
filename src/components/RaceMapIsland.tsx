@@ -10,6 +10,14 @@ import {
 } from '../lib/neighboringSelection';
 import NeighboringCountriesControl from './NeighboringCountriesControl';
 import {
+  markerMatchesDateRange,
+  markerMatchesMonth,
+  normalizeMapMarker,
+  relevantMarkerDate,
+  type MapMarkerRecord,
+  type RawMapMarker,
+} from '../lib/mapMarkers';
+import {
   getBrowserMarketRouteTargets,
   type MarketRouteTargets,
   resolveRaceDetailHref,
@@ -19,27 +27,12 @@ type RaceFeatureCollection = {
   type: 'FeatureCollection';
   features: Array<{
     type: 'Feature';
-    id: string;
     geometry: { type: 'Point'; coordinates: [number, number] };
     properties: { id: string };
   }>;
 };
 
-type MarkerRecord = {
-  id: string;
-  domain_name: string;
-  latitude: number;
-  longitude: number;
-  county: string | null;
-  race_type: string | null;
-  origin_country: string | null;
-  name?: string | null;
-  location?: string | null;
-  distance_verbose?: string | null;
-  race_date?: string | null;
-  type_local?: string | null;
-  website?: string | null;
-};
+type MarkerRecord = MapMarkerRecord;
 
 export type MapRaceItem = {
   id: string;
@@ -76,7 +69,6 @@ function toFeatureCollection(races: MapRaceItem[]): RaceFeatureCollection {
     type: 'FeatureCollection',
     features: races.map((race) => ({
       type: 'Feature' as const,
-      id: race.id,
       geometry: {
         type: 'Point' as const,
         coordinates: [race.longitude, race.latitude],
@@ -90,10 +82,6 @@ function toFeatureCollection(races: MapRaceItem[]): RaceFeatureCollection {
 
 function popupBottomPadding(isMobile: boolean): number {
   return isMobile ? 230 : 180;
-}
-
-function normalizeDateInput(raw: string): string {
-  return raw.replaceAll('-', '');
 }
 
 function parseDistanceSegmentKm(segment: string): number | null {
@@ -163,6 +151,8 @@ function buildMapRaceItem(
   monthMappingShort: Record<string, string>,
   typeOptions: Record<string, string>,
   verboseLocalDistanceMapping: Record<string, string>,
+  filterDateFrom: string,
+  filterDateTo: string,
 ): MapRaceItem {
   const raceTypeKey = marker.race_type?.toLowerCase() ?? '';
   const raceTypeLabel =
@@ -170,6 +160,7 @@ function buildMapRaceItem(
     marker.type_local ??
     marker.race_type ??
     '';
+  const displayDate = relevantMarkerDate(marker, filterDateFrom, filterDateTo);
 
   return {
     id: marker.id,
@@ -184,7 +175,7 @@ function buildMapRaceItem(
     }),
     imageSrc: placeholderImage(marker.domain_name, marker.race_type),
     name: marker.name?.trim() || marker.domain_name,
-    dateLabel: marker.race_date ? formatYyyymmdd(marker.race_date, monthMappingShort) : '',
+    dateLabel: displayDate ? formatYyyymmdd(displayDate, monthMappingShort) : '',
     countyLabel: marker.county ? countyMapping[marker.county] ?? marker.county : countryNative,
     venueLabel: marker.location?.trim() ?? '',
     raceTypeLabel,
@@ -295,8 +286,6 @@ export default function RaceMapIsland(props: {
     }
 
     const effectiveRaceType = (filterRaceType || extraType || '').trim().toLowerCase();
-    const fromYmd = filterDateFrom ? normalizeDateInput(filterDateFrom) : '';
-    const toYmd = filterDateTo ? normalizeDateInput(filterDateTo) : '';
 
     const effectiveCounty = filterCounty.trim();
     const neighboringSelection = parseNeighboringSelection(effectiveCounty);
@@ -317,10 +306,10 @@ export default function RaceMapIsland(props: {
         if (effectiveRaceType && (marker.race_type ?? '').toLowerCase() !== effectiveRaceType) {
           return false;
         }
-        if ((fromYmd || toYmd || filterMonth !== 'all') && !marker.race_date) return false;
-        if (fromYmd && marker.race_date && marker.race_date < fromYmd) return false;
-        if (toYmd && marker.race_date && marker.race_date > toYmd) return false;
-        if (filterMonth !== 'all' && marker.race_date?.slice(4, 6) !== filterMonth.padStart(2, '0')) {
+        if (!markerMatchesDateRange(marker, filterDateFrom, filterDateTo)) {
+          return false;
+        }
+        if (!markerMatchesMonth(marker, filterMonth)) {
           return false;
         }
         if (minKm != null && maxKm != null && !matchesDistanceRange(marker.distance_verbose, minKm, maxKm)) {
@@ -340,6 +329,8 @@ export default function RaceMapIsland(props: {
           monthMappingShort,
           typeOptions,
           verboseLocalDistanceMapping,
+          filterDateFrom,
+          filterDateTo,
         ),
       );
   }, [
@@ -391,10 +382,14 @@ export default function RaceMapIsland(props: {
     fetch(url)
       .then((response) => {
         if (!response.ok) throw new Error(String(response.status));
-        return response.json() as Promise<{ markers?: MarkerRecord[] }>;
+        return response.json() as Promise<{ markers?: RawMapMarker[] }>;
       })
       .then((data) => {
-        setAllMarkers(data.markers ?? []);
+        setAllMarkers(
+          (data.markers ?? [])
+            .map((marker) => normalizeMapMarker(marker))
+            .filter((marker): marker is MapMarkerRecord => marker != null),
+        );
         setLoadError(null);
       })
       .catch(() => {
@@ -482,6 +477,7 @@ export default function RaceMapIsland(props: {
         cluster: true,
         clusterMaxZoom: 14,
         clusterRadius: 38,
+        generateId: true,
       });
 
       map.addLayer({
@@ -728,9 +724,16 @@ export default function RaceMapIsland(props: {
         </p>
       ) : null}
 
-      <div className="race-map-stage">
+      <div className="race-map-stage" data-filtered-marker-count={filteredRaces.length}>
+        <div
+          ref={containerRef}
+          className="race-map-canvas"
+          data-testid="race-map-canvas"
+          style={{ display: mapVisible ? 'block' : 'none' }}
+        />
         {!hideNeighborMapControl && neighboringCountries.length > 0 ? (
           <NeighboringCountriesControl
+            variant="overlay"
             title={neighboringMapTitle}
             showAllLabel={neighboringShowAllLabel}
             countries={neighboringCountries}
@@ -738,12 +741,6 @@ export default function RaceMapIsland(props: {
             onChange={onVisibleNeighborCodesChange}
           />
         ) : null}
-        <div
-          ref={containerRef}
-          className="race-map-canvas"
-          data-testid="race-map-canvas"
-          style={{ display: mapVisible ? 'block' : 'none' }}
-        />
 
         {selectedRaces.length > 0 ? (
           <div className="race-map-popup" onClick={(e) => e.stopPropagation()}>

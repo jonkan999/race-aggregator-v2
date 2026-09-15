@@ -135,7 +135,9 @@ This keeps **hot paths cheap** (CDN + optional zero DB reads) while **long tail 
 ## Map markers
 
 - **Source of truth for pin positions**: regenerated JSON, not the paginated list DOM.
-- **Regeneration**: run `npm run export-markers` (uses Supabase if `SUPABASE_SECRET_KEY` is set, otherwise `data/countries/{country}/final_races.json`).
+- **Dates**: each marker stores `race_dates` (all start dates) so the map can keep a pin when *any* occurrence falls in the current list window. Do not filter pins by only the first historical date.
+- **Layout**: the neighbor-country checkbox control overlays the map canvas (`position: absolute` within `.race-map-stage`) and must not reflow the race popup or other map UI.
+- **Regeneration**: run `npm run export-markers` (uses the temporary build snapshot when present, otherwise Supabase if `SUPABASE_SECRET_KEY` is set, otherwise neighbor-aware `final_races*.json`).
 - **Tradeoff**: pins can lag until the next export; acceptable for a race calendar. A later phase may add bounded live queries if needed.
 - **CDN:** Prefer long cache lifetimes (or versioned filenames) for `markers-*.json` when hosting behind a CDN so repeat visitors do not re-fetch large files unnecessarily.
 

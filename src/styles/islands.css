@@ -95,6 +95,8 @@
 }
 
 .race-map-shell {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   overflow: hidden;
@@ -103,13 +105,36 @@
 
 .race-map-stage {
   position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
 }
 
-.race-map-stage .neighboring-countries-control {
-  position: absolute;
+.race-map-stage > .race-map-canvas {
+  grid-area: 1 / 1;
+  width: 100%;
+}
+
+.race-map-stage > .neighboring-countries-control,
+.race-map-stage > .neighboring-countries-control--overlay {
+  grid-area: 1 / 1;
+  position: absolute !important;
   top: 10px;
   left: 10px;
   z-index: 3;
+  margin: 0;
+  float: none;
+  width: max-content;
+  max-width: min(220px, calc(100% - 20px));
+  max-height: min(300px, calc(100% - 20px));
+  justify-self: start;
+  align-self: start;
+  pointer-events: auto;
+}
+
+.race-map-stage > .race-map-popup {
+  grid-area: 1 / 1;
 }
 
 .race-map-toolbar {

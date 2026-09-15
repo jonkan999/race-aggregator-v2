@@ -161,6 +161,20 @@ test('race list neighbor controls stay additive and link to SEO neighbor pages',
 
   const mapControl = page.getByTestId('neighboring-countries-control');
   await expect(mapControl).toHaveCount(1);
+  const overlayControl = page.locator('.race-map-stage .neighboring-countries-control');
+  if ((await overlayControl.count()) > 0) {
+    const stage = page.locator('.race-map-stage');
+    const canvas = page.getByTestId('race-map-canvas');
+    const stageBox = await stage.boundingBox();
+    const canvasBox = await canvas.boundingBox();
+    const controlBox = await overlayControl.boundingBox();
+    expect(stageBox && canvasBox && controlBox).toBeTruthy();
+    expect(Math.abs((stageBox?.height ?? 0) - (canvasBox?.height ?? 0))).toBeLessThan(24);
+    expect(controlBox!.y).toBeGreaterThanOrEqual((canvasBox!.y ?? 0) - 4);
+    expect((controlBox!.y ?? 0) + (controlBox!.height ?? 0)).toBeLessThanOrEqual(
+      (canvasBox!.y ?? 0) + (canvasBox!.height ?? 0) + 4,
+    );
+  }
   const denmarkToggle = mapControl.locator('input[data-country="dk"]');
   await expect(denmarkToggle).toBeAttached();
   await denmarkToggle.click();

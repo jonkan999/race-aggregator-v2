@@ -23,30 +23,56 @@ loadLocalEnvFiles(root);
 function writeMarkers(markers) {
   const outDir = path.join(root, 'public');
   fs.mkdirSync(outDir, { recursive: true });
+  const valid = markers.filter(Boolean);
   const body = {
     generatedAt: new Date().toISOString(),
     country,
-    markers,
+    markers: valid,
   };
   const dest = path.join(outDir, `markers-${country}.json`);
   fs.writeFileSync(dest, JSON.stringify(body));
-  console.warn(`Wrote ${dest} (${markers.length} markers)`);
+  console.warn(`Wrote ${dest} (${valid.length} markers)`);
 }
 
-function firstYyyymmdd(dates) {
-  if (!Array.isArray(dates) || dates.length === 0) return null;
-  const first = dates[0];
-  if (Array.isArray(first) && typeof first[0] === 'string') return first[0];
+function toFiniteCoord(value) {
+  if (typeof value === 'number' && Number.isFinite(value)) return value;
+  if (typeof value === 'string' && value.trim()) {
+    const parsed = Number.parseFloat(value);
+    if (Number.isFinite(parsed)) return parsed;
+  }
   return null;
 }
 
+function startDatesFromRaceDates(dates) {
+  if (!Array.isArray(dates)) return [];
+  const out = [];
+  for (const entry of dates) {
+    const raw = Array.isArray(entry) ? entry[0] : entry;
+    if (typeof raw !== 'string') continue;
+    const value = raw.replaceAll('-', '').trim();
+    if (/^\d{8}$/.test(value)) out.push(value);
+  }
+  return out;
+}
+
 function decorateMarker(base, supplement) {
+  const latitude = toFiniteCoord(base.latitude);
+  const longitude = toFiniteCoord(base.longitude);
+  if (latitude == null || longitude == null) return null;
+
+  const baseDates = startDatesFromRaceDates(base.race_dates);
+  const supplementDates = startDatesFromRaceDates(supplement?.race_dates);
+  const raceDates = baseDates.length > 0 ? baseDates : supplementDates;
+
   return {
     ...base,
+    latitude,
+    longitude,
     name: supplement?.name ?? base.domain_name,
     location: supplement?.location ?? null,
     distance_verbose: supplement?.distance_verbose ?? null,
-    race_date: firstYyyymmdd(supplement?.race_dates) ?? null,
+    race_dates: raceDates,
+    race_date: raceDates[0] ?? null,
     type_local: supplement?.type_local ?? null,
     website: supplement?.website ?? null,
   };
@@ -116,8 +142,8 @@ function readSnapshotMarkers() {
   const parsed = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
   const rows = Array.isArray(parsed?.rows) ? parsed.rows : [];
   return rows
-    .filter((row) => row?.latitude != null && row?.longitude != null)
-    .map((row) => fromSnapshotRow(row, country));
+    .map((row) => fromSnapshotRow(row, country))
+    .filter(Boolean);
 }
 
 async function fromDatabase(supplementByDomain) {
@@ -128,24 +154,27 @@ async function fromDatabase(supplementByDomain) {
   const sb = createClient(url, key);
   const { data, error } = await sb
     .from('races')
-    .select('id, domain_name, latitude, longitude, county, race_type, origin_country')
+    .select('id, domain_name, latitude, longitude, county, race_type, origin_country, race_dates')
     .eq('country_code', country)
     .eq('published', true);
   if (error) throw error;
-  return (data ?? []).map((row) =>
-    decorateMarker(
-      {
-        id: String(row.id),
-        domain_name: row.domain_name,
-        latitude: row.latitude,
-        longitude: row.longitude,
-        county: row.county,
-        race_type: row.race_type,
-        origin_country: row.origin_country ?? country,
-      },
-      supplementByDomain.get(row.domain_name),
-    ),
-  );
+  return (data ?? [])
+    .map((row) =>
+      decorateMarker(
+        {
+          id: String(row.id),
+          domain_name: row.domain_name,
+          latitude: row.latitude,
+          longitude: row.longitude,
+          county: row.county,
+          race_type: row.race_type,
+          origin_country: row.origin_country ?? country,
+          race_dates: row.race_dates,
+        },
+        supplementByDomain.get(row.domain_name),
+      ),
+    )
+    .filter(Boolean);
 }
 
 async function main() {
@@ -164,8 +193,8 @@ async function main() {
       process.exit(1);
     }
     markers = Array.from(supplementByDomain.values())
-      .filter((r) => r.latitude != null && r.longitude != null)
-      .map(fromJsonRace);
+      .map(fromJsonRace)
+      .filter(Boolean);
   }
   writeMarkers(markers);
 }

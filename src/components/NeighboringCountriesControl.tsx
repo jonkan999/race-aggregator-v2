@@ -7,8 +7,9 @@ export default function NeighboringCountriesControl(props: {
   countries: NeighboringCountryOption[];
   visibleCodes: string[];
   onChange?: (codes: string[]) => void;
+  variant?: 'overlay' | 'filter';
 }) {
-  const { title, showAllLabel, countries, visibleCodes, onChange } = props;
+  const { title, showAllLabel, countries, visibleCodes, onChange, variant = 'overlay' } = props;
   const visible = new Set(visibleCodes.map((code) => code.trim().toLowerCase()).filter(Boolean));
   const allCodes = countries.map((entry) => entry.code);
   const allChecked = allCodes.length > 0 && allCodes.every((code) => visible.has(code));
@@ -19,7 +20,7 @@ export default function NeighboringCountriesControl(props: {
 
   return (
     <div
-      className="mapboxgl-ctrl mapboxgl-ctrl-group neighboring-countries-control"
+      className={`mapboxgl-ctrl mapboxgl-ctrl-group neighboring-countries-control neighboring-countries-control--${variant}`}
       data-testid="neighboring-countries-control"
     >
       {title ? (

@@ -401,10 +401,19 @@
 .neighboring-countries-control__countries {
   margin-top: 8px;
 }
+.neighboring-countries-control--overlay {
+  position: absolute !important;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  margin: 0;
+  float: none;
+}
 .filter-neighboring-countries {
   min-width: 12rem;
 }
-.filter-neighboring-countries .neighboring-countries-control {
+.filter-neighboring-countries .neighboring-countries-control,
+.neighboring-countries-control--filter {
   position: static;
   max-height: none;
   box-shadow: none !important;

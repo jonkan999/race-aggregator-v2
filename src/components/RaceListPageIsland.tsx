@@ -1333,6 +1333,7 @@ export default function RaceListPageIsland(props: {
           {!isNeighborsPage && !hasMapboxToken && neighboringCountries.length > 0 ? (
             <div className="filter-neighboring-countries">
               <NeighboringCountriesControl
+                variant="filter"
                 title={neighboringMapTitle}
                 showAllLabel={neighboringShowAllLabel}
                 countries={neighboringCountries}
