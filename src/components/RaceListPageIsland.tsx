@@ -10,6 +10,7 @@ import {
 import type mapboxgl from 'mapbox-gl';
 import NewsletterPopup from './NewsletterPopup';
 import RaceMapIsland from './RaceMapIsland';
+import NeighboringCountriesControl from './NeighboringCountriesControl';
 import HighlightedRacesStrip, { type HighlightedRaceEntry } from './HighlightedRacesStrip';
 import type { NewsletterPopupContext } from '../lib/newsletterPopup';
 import { getSupabaseBrowserClient, isSupabaseConfigured } from '../lib/supabase';
@@ -1323,6 +1324,20 @@ export default function RaceListPageIsland(props: {
               ))}
             </select>
           </div>
+          {!isNeighborsPage && !hasMapboxToken && neighboringCountries.length > 0 ? (
+            <div className="filter-neighboring-countries">
+              <NeighboringCountriesControl
+                title={neighboringMapTitle}
+                showAllLabel={neighboringShowAllLabel}
+                countries={neighboringCountries}
+                visibleCodes={visibleNeighborCodes}
+                onChange={(codes) => {
+                  setVisibleNeighborCodes(codes);
+                  setPage(1);
+                }}
+              />
+            </div>
+          ) : null}
           <div className="browse-all-filters">
             <a href={browseByCategoryHref} className="browse-link">
               <div className="browse-link-icon">
@@ -1620,7 +1635,7 @@ export default function RaceListPageIsland(props: {
                 setVisibleNeighborCodes(codes);
                 setPage(1);
               }}
-              hideNeighborMapControl={isNeighborsPage}
+              hideNeighborMapControl={isNeighborsPage || !hasMapboxToken}
               hideToolbar
               onMapInstance={handleMapInstance}
             />

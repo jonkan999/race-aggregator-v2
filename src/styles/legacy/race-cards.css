@@ -401,6 +401,17 @@
 .neighboring-countries-control__countries {
   margin-top: 8px;
 }
+.filter-neighboring-countries {
+  min-width: 12rem;
+}
+.filter-neighboring-countries .neighboring-countries-control {
+  position: static;
+  max-height: none;
+  box-shadow: none !important;
+  padding: 0.35rem 0.6rem !important;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 .race-type-list-title {
   margin-bottom: 1rem;
   font-size: 1.6rem;
