@@ -9,6 +9,7 @@ import {
   type Locale,
 } from '../../../../lib/content';
 import { slugify } from '../../../../lib/slugify';
+import { getListMapView } from '../../../../lib/mapDefaults';
 import {
   getBrowseCategoriesIndexHref,
   getBrowseNavigationJson,
@@ -85,6 +86,7 @@ const typeOptions = (content.type_options as Record<string, string> | undefined)
 const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
 const verboseLocalDistanceMapping =
   (content.verbose_local_distance_mapping as Record<string, string> | undefined) ?? {};
+const listMap = getListMapView(country, content);
 
 let title = '';
 let description = '';
@@ -319,9 +321,9 @@ if (countyEntry) {
           markersLoadError={String(content.map_markers_load_error ?? '')}
           mapNotConfiguredMessage={String(content.map_not_configured ?? '')}
           mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
-          centerLat={content.mapbox_center?.latitude ?? 59.35}
-          centerLng={content.mapbox_center?.longitude ?? 15.03}
-          zoom={parseFloat(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '6')) || 6}
+          centerLat={listMap.centerLat}
+          centerLng={listMap.centerLng}
+          zoom={listMap.zoom}
           verboseLocalDistanceMapping={verboseLocalDistanceMapping}
         />
         <BrowsePopularLinks

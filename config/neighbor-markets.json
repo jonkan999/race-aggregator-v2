@@ -1,0 +1,19 @@
+{
+  "markets": {
+    "dk": ["se", "de", "no"],
+    "se": ["dk", "fi", "no", "ee", "de", "pl"],
+    "fi": ["se", "ee", "no"],
+    "ee": ["fi", "se", "lt"],
+    "lt": ["ee", "pl", "se"],
+    "no": ["se", "dk", "fi"],
+    "de": ["dk", "pl", "cz"],
+    "pl": ["de", "cz", "sk", "lt"],
+    "cz": ["de", "pl", "sk"],
+    "sk": ["cz", "pl", "hu"],
+    "hu": ["sk", "ro", "rs"],
+    "ro": ["hu", "bg", "rs"],
+    "bg": ["ro", "gr", "rs"],
+    "rs": ["hu", "ro", "bg"],
+    "gr": ["bg"]
+  }
+}

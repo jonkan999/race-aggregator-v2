@@ -4,11 +4,12 @@ import BrowsePopularLinks from '../../../../components/BrowsePopularLinks.astro'
 import RaceListPageIsland from '../../../../components/RaceListPageIsland';
 import { loadIndexYaml } from '../../../../lib/content';
 import { getMarketRouteTargets } from '../../../../lib/marketRouteTargets';
+import { getListMapView } from '../../../../lib/mapDefaults';
 import { resolveRaceDetailHref } from '../../../../lib/marketRoutes';
 import {
   getBrowseCategoriesIndexHref,
   getBrowseNavigationJson,
-  getBrowseNeighboringEntries,
+  getLocalNeighboringRaceEntries,
   getBrowseNeighboringIndexHref,
   getBrowseNeighboringRows,
   getBrowseOverviewHref,
@@ -23,7 +24,7 @@ import { RACE_LIST_PAGE_SIZE } from '../../../../lib/raceListConfig';
 export async function getStaticPaths() {
   const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
   const content = loadIndexYaml(country, 'en');
-  const entries = await getBrowseNeighboringEntries({ countryCode: country, locale: 'en', content });
+  const entries = await getLocalNeighboringRaceEntries({ countryCode: country, locale: 'en', content });
   return entries.map((entry) => ({
     params: {
       neighbor: entry.slug,
@@ -35,7 +36,7 @@ const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
 const locale = 'en' as const;
 const { neighbor: neighborSlug } = Astro.params;
 const content = loadIndexYaml(country, locale);
-const neighboringEntries = await getBrowseNeighboringEntries({ countryCode: country, locale, content });
+const neighboringEntries = await getLocalNeighboringRaceEntries({ countryCode: country, locale, content });
 const entry = neighboringEntries.find((item) => item.slug === neighborSlug);
 
 if (!entry) {
@@ -55,6 +56,7 @@ const typeOptions = (content.type_options as Record<string, string> | undefined)
 const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
 const verboseLocalDistanceMapping =
   (content.verbose_local_distance_mapping as Record<string, string> | undefined) ?? {};
+const listMap = getListMapView(country, content);
 const seoCopy = getScopedSeoCopy({
   countryCode: country,
   locale,
@@ -93,7 +95,7 @@ const navigationJson = getBrowseNavigationJson({
 });
 const marketRouteTargets = getMarketRouteTargets();
 const alternateRaceListHref = (
-  await getBrowseNeighboringEntries({
+  await getLocalNeighboringRaceEntries({
     countryCode: country,
     locale: 'native',
     content: loadIndexYaml(country, 'native'),
@@ -199,9 +201,9 @@ const alternateRaceListHref = (
     markersLoadError={String(content.map_markers_load_error ?? '')}
     mapNotConfiguredMessage={String(content.map_not_configured ?? '')}
     mapboxToken={import.meta.env.PUBLIC_MAPBOX_TOKEN ?? ''}
-    centerLat={content.mapbox_center?.latitude ?? 59.35}
-    centerLng={content.mapbox_center?.longitude ?? 15.03}
-    zoom={parseFloat(String(content.race_page_map_zoom ?? content.mapbox_zoom ?? '6')) || 6}
+    centerLat={listMap.centerLat}
+    centerLng={listMap.centerLng}
+    zoom={listMap.zoom}
     verboseLocalDistanceMapping={verboseLocalDistanceMapping}
   />
 

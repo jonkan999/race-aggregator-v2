@@ -378,6 +378,30 @@ test('browse overview renders', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1, name: /bläddra bland alla lopp/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /10 km/i }).first()).toBeVisible();
   await expect(page.getByRole('link', { name: /närliggande länder/i })).toBeVisible();
+
+  const monthSection = page.locator('.browse-grid-section').filter({
+    has: page.getByRole('heading', { name: /^månad$/i }),
+  });
+  const monthLabels = (await monthSection.locator('.browse-card__title a').allTextContents()).map((label) =>
+    label.trim().toLowerCase(),
+  );
+  const calendarOrder = [
+    'januari',
+    'februari',
+    'mars',
+    'april',
+    'maj',
+    'juni',
+    'juli',
+    'augusti',
+    'september',
+    'oktober',
+    'november',
+    'december',
+  ];
+  const monthIndexes = monthLabels.map((label) => calendarOrder.indexOf(label));
+  expect(monthIndexes.every((index) => index >= 0)).toBe(true);
+  expect(monthIndexes).toEqual([...monthIndexes].sort((left, right) => left - right));
 });
 
 test('category landing page renders prefiltered list', async ({ page }) => {
@@ -415,6 +439,18 @@ test('neighboring browse page renders', async ({ page }) => {
   await page.goto('/neighbors/');
   await expect(page.getByRole('heading', { level: 1, name: /utforska lopp i närliggande länder/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /översikt/i }).first()).toBeVisible();
+  await expect(page.getByRole('link', { name: /danmark/i })).toHaveAttribute(
+    'href',
+    'https://lobskalender.dk/lobekalender/',
+  );
+  await expect(page.getByRole('link', { name: /finland/i })).toHaveAttribute(
+    'href',
+    'https://suomi-juoksu.fi/juoksukalenteri/',
+  );
+  await expect(page.getByRole('link', { name: /estland/i })).toHaveAttribute(
+    'href',
+    'https://jooksma.ee/jooksuvoistlused/',
+  );
 });
 
 test('newsletter popup can be opened on the Swedish race list', async ({ page }) => {
