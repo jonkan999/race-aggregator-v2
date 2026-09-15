@@ -379,11 +379,27 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
   max-height: 300px;
   overflow-y: auto;
+  max-width: 220px;
 }
 .neighboring-countries-control .language-flag {
   width: 16px;
   height: 16px;
   vertical-align: middle;
+}
+.neighboring-countries-control__header {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+.neighboring-countries-control__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.neighboring-countries-control__countries {
+  margin-top: 8px;
 }
 .race-type-list-title {
   margin-bottom: 1rem;

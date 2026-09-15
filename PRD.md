@@ -56,6 +56,7 @@ Google Funding Choices cookie consent and AdSense Auto ads are restored for mark
 - That same market's English site lives at `/en/`.
 - Neighboring-country browse pages are canonical at `/neighbors/` and `/neighbors/{country}/`, with English equivalents at `/en/neighbors/` and `/en/neighbors/{country}/`.
 - Neighbor-country SEO cards are maintained in `config/neighbor-markets.json` and filtered to enabled `config/deploy-markets.json` entries. They must link to real production race-list URLs even when the host snapshot has no foreign `origin_country` rows.
+- Main-calendar neighbor filtering is an additive map overlay (`p_neighbor_countries`), not a foreign-only county replacement. Empty `final_races_w_neighbors` files (DK/SE) need a collector re-output before those overlays list races.
 - Neighbor-market race-detail surfaces should point at the neighboring market's English site, not a native country-prefixed path on the current host.
 - Static race-detail generation is domestic-only for each market. Foreign rows shown on neighbor-market surfaces should link to the origin market's English detail page when that market is configured locally.
 - Market-aware routing should discover configured markets from `data/countries/{code}/index.yaml` so new country folders join the routing model without code changes.
@@ -70,9 +71,9 @@ Google Funding Choices cookie consent and AdSense Auto ads are restored for mark
 
 - **Layout:** [RaceListLayout.astro](src/layouts/RaceListLayout.astro) — header, footer, and **ported CSS** from the legacy site (`src/styles/legacy/`, loaded only on race list routes) plus [v2-race-list-bridge.css](src/styles/v2-race-list-bridge.css) for islands and mobile map mode.
 - **Assets:** `public/common_images/`, `public/icons/svg-sprite.svg` (copied from legacy) for cards and chrome.
-- **Filters:** Date range, month chips, distance/category chips (from YAML `category_mapping`), county + race-type selects, browse link (stub path until browse routes exist).
-- **Cards:** Legacy-style `race-card` markup, lazy-loaded placeholder images, links to `/[en/]{race_page_folder}/{domain_name}/` on the current market domain.
-- **Map:** Single `RaceMapIsland` inside `.map-placeholder`; desktop show/hide via filter-bar toggle; mobile full-screen toggle via `body.race-list-mobile-map-open` (mirrors legacy behaviour).
+- **Filters:** Date range, month chips, distance/category chips (from YAML `category_mapping`), county + race-type selects, browse link. County neighbor optgroup navigates to `/neighbors/` SEO hubs (or the sibling production calendar when the host snapshot has no foreign rows).
+- **Cards:** Legacy-style `race-card` markup, lazy-loaded placeholder images, links to `/[en/]{race_page_folder}/{domain_name}/` on the current market domain. Foreign overlay cards use `neighboring-race`, `data-origin-country`, a country badge, and origin-market English detail links when configured.
+- **Map:** Single `RaceMapIsland` inside `.map-placeholder`; desktop show/hide via filter-bar toggle; mobile full-screen toggle via `body.race-list-mobile-map-open` (mirrors legacy behaviour). Neighbor overlay checkboxes (`.neighboring-countries-control`) add selected origins to pins and the list without dropping domestic races.
 
 ## Race list: cost, speed, and SEO
 

@@ -2,10 +2,11 @@
 import BrowseLayout from '../../../../layouts/BrowseLayout.astro';
 import BrowsePopularLinks from '../../../../components/BrowsePopularLinks.astro';
 import RaceListPageIsland from '../../../../components/RaceListPageIsland';
-import { loadIndexYaml } from '../../../../lib/content';
+import { loadIndexYaml, raceListSlug } from '../../../../lib/content';
 import { getMarketRouteTargets } from '../../../../lib/marketRouteTargets';
 import { getListMapView } from '../../../../lib/mapDefaults';
 import { resolveRaceDetailHref } from '../../../../lib/marketRoutes';
+import { getNeighboringCountryOptions } from '../../../../lib/neighboringCountryOptions';
 import {
   getBrowseCategoriesIndexHref,
   getBrowseNavigationJson,
@@ -54,6 +55,11 @@ const monthMappingShort = (content.month_mapping_short as Record<string, string>
 const monthMapping = (content.month_mapping as Record<string, string> | undefined) ?? {};
 const typeOptions = (content.type_options as Record<string, string> | undefined) ?? {};
 const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
+const neighboringCountryOptions = await getNeighboringCountryOptions({
+  hostCountryCode: country,
+  locale,
+  content,
+});
 const verboseLocalDistanceMapping =
   (content.verbose_local_distance_mapping as Record<string, string> | undefined) ?? {};
 const listMap = getListMapView(country, content);
@@ -187,6 +193,13 @@ const alternateRaceListHref = (
     racePageFolder={racePageFolder}
     countryNative={String(content.country ?? '')}
     countyMapping={countyMapping}
+    neighboringCountries={neighboringCountryOptions.countries}
+    neighboringCountriesLabel={neighboringCountryOptions.label}
+    neighboringCountriesAllLabel={neighboringCountryOptions.allLabel}
+    neighboringCountriesAllHref={neighboringCountryOptions.allHref}
+    neighboringMapTitle={neighboringCountryOptions.mapTitle}
+    neighboringShowAllLabel={neighboringCountryOptions.mapShowAllLabel}
+    raceListHref={`/en/${raceListSlug(content, country)}/`}
     monthMapping={monthMapping}
     monthMappingShort={monthMappingShort}
     typeOptions={typeOptions}

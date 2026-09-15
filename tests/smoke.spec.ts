@@ -82,6 +82,27 @@ test('Swedish race list shell renders', async ({ page }) => {
   await expect(page.locator('.race-card .more-info-button').first()).toBeVisible();
 });
 
+test('race list neighbor controls stay additive and link to SEO neighbor pages', async ({ page }) => {
+  await page.goto('/loppkalender/');
+  const county = page.locator('#county');
+  await expect(county.locator('optgroup[label="Närliggande länder"]')).toBeVisible();
+  await expect(county.locator('option[data-url="/neighbors/"]')).toHaveText(/alla närliggande länder/i);
+  await expect(county.getByRole('option', { name: /^Danmark$/i })).toHaveAttribute(
+    'data-url',
+    'https://lobskalender.dk/lobekalender/',
+  );
+  await expect(county.getByRole('option', { name: /^Finland$/i })).toHaveAttribute(
+    'data-url',
+    'https://suomi-juoksu.fi/juoksukalenteri/',
+  );
+
+  const mapControl = page.getByTestId('neighboring-countries-control');
+  if ((await mapControl.count()) > 0) {
+    await expect(mapControl.getByText(/lopp i närliggande länder/i)).toBeVisible();
+    await expect(mapControl.locator('#neighboring-toggle')).toBeVisible();
+  }
+});
+
 test('English race list shell renders', async ({ page }) => {
   await page.goto('/en/race-calendar/');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();

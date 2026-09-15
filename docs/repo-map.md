@@ -21,6 +21,7 @@
 - `src/lib/raceCardDisplay.ts` — race card formatting helpers.
 - `src/lib/marketRoutes.ts` / `src/lib/marketRouteTargets.ts` — market-aware detail-link resolution and configured-market discovery.
 - `src/lib/neighborMarkets.ts` / [`config/neighbor-markets.json`](../config/neighbor-markets.json) — SEO neighbor-country cards and production race-list URLs.
+- `src/lib/neighboringCountryOptions.ts` / `src/lib/neighboringSelection.ts` — map overlay + county optgroup neighbor controls.
 - `src/lib/mapDefaults.ts` / [`config/map-defaults.json`](../config/map-defaults.json) — list/browse Mapbox center and zoom.
 - `src/lib/raceListConfig.ts` — list page size and related config.
 - `src/lib/categoryFilterOptions.ts` — category filter derivation.
