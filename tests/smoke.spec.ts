@@ -146,6 +146,7 @@ test('race list neighbor controls stay additive and link to SEO neighbor pages',
   });
 
   await page.goto('/loppkalender/');
+  await expect(page.locator('.section-filters[data-hydrated="true"]')).toBeVisible();
   const county = page.locator('#county');
   await expect(county.locator('optgroup[label="Närliggande länder"]')).toHaveCount(1);
   await expect(county.locator('option[data-url="/neighbors/"]')).toHaveText(/alla närliggande länder/i);

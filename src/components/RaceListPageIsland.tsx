@@ -488,6 +488,7 @@ export default function RaceListPageIsland(props: {
   const dateStartComparable = useMemo(() => comparableFilterDate(dateFrom), [dateFrom]);
   const dateEndComparable = useMemo(() => comparableFilterDate(dateTo), [dateTo]);
 
+  const [islandReady, setIslandReady] = useState(false);
   const [mobileMapOpen, setMobileMapOpen] = useState(false);
   const [desktopMapOpen, setDesktopMapOpen] = useState(true);
   const mapInst = useRef<mapboxgl.Map | null>(null);
@@ -513,6 +514,10 @@ export default function RaceListPageIsland(props: {
     },
     [defaultDateRange.dateFrom, defaultDateRange.dateTo],
   );
+
+  useEffect(() => {
+    setIslandReady(true);
+  }, []);
 
   useEffect(() => {
     document.body.classList.toggle('race-list-mobile-map-open', mobileMapOpen);
@@ -1180,6 +1185,7 @@ export default function RaceListPageIsland(props: {
       <section
         ref={filtersRef}
         className={`section-filters${filtersScrolled ? ' scrolled' : ''}`}
+        data-hydrated={islandReady ? 'true' : undefined}
       >
         <div className="filter-date">
           <label htmlFor="date-from">{filterDateFrom}:</label>
