@@ -3,7 +3,12 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { formatDistanceSegment, splitDistanceVerbose } from '../lib/raceCardDisplay';
 import type { CategoryFilterOption } from '../lib/categoryFilterOptions';
-import { isDomesticOrigin, parseNeighboringSelection } from '../lib/neighboringSelection';
+import {
+  parseNeighboringSelection,
+  rowMatchesNeighborAndCountyFilter,
+  type NeighboringCountryOption,
+} from '../lib/neighboringSelection';
+import NeighboringCountriesControl from './NeighboringCountriesControl';
 import {
   getBrowserMarketRouteTargets,
   type MarketRouteTargets,
@@ -217,6 +222,12 @@ export default function RaceMapIsland(props: {
   mapNotConfiguredMessage: string;
   onMapInstance?: (map: mapboxgl.Map | null) => void;
   hideToolbar?: boolean;
+  neighboringCountries?: NeighboringCountryOption[];
+  neighboringMapTitle?: string;
+  neighboringShowAllLabel?: string;
+  visibleNeighborCodes?: string[];
+  onVisibleNeighborCodesChange?: (codes: string[]) => void;
+  hideNeighborMapControl?: boolean;
 }) {
   const {
     countryCode,
@@ -246,6 +257,12 @@ export default function RaceMapIsland(props: {
     mapNotConfiguredMessage,
     onMapInstance,
     hideToolbar = false,
+    neighboringCountries = [],
+    neighboringMapTitle = '',
+    neighboringShowAllLabel = '',
+    visibleNeighborCodes = [],
+    onVisibleNeighborCodesChange,
+    hideNeighborMapControl = false,
   } = props;
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -285,15 +302,17 @@ export default function RaceMapIsland(props: {
     const neighboringSelection = parseNeighboringSelection(effectiveCounty);
     return allMarkers
       .filter((marker) => {
-        if (neighboringSelection?.kind === 'all') {
-          if (isDomesticOrigin(marker.origin_country, countryCode)) return false;
-        } else if (neighboringSelection?.kind === 'country') {
-          if ((marker.origin_country ?? '').trim().toLowerCase() !== neighboringSelection.code) {
-            return false;
-          }
-        } else {
-          if (!isDomesticOrigin(marker.origin_country, countryCode)) return false;
-          if (effectiveCounty && marker.county !== effectiveCounty) return false;
+        if (
+          !rowMatchesNeighborAndCountyFilter({
+            originCountry: marker.origin_country,
+            county: marker.county,
+            hostCountryCode: countryCode,
+            selectedCounty: neighboringSelection ? '' : effectiveCounty,
+            neighboringSelection,
+            visibleNeighborCodes,
+          })
+        ) {
+          return false;
         }
         if (effectiveRaceType && (marker.race_type ?? '').toLowerCase() !== effectiveRaceType) {
           return false;
@@ -332,6 +351,7 @@ export default function RaceMapIsland(props: {
     filterDateFrom,
     filterDateTo,
     filterMonth,
+    visibleNeighborCodes,
     routeLocale,
     countryCode,
     racePageFolder,
@@ -709,6 +729,15 @@ export default function RaceMapIsland(props: {
       ) : null}
 
       <div className="race-map-stage">
+        {!hideNeighborMapControl && neighboringCountries.length > 0 ? (
+          <NeighboringCountriesControl
+            title={neighboringMapTitle}
+            showAllLabel={neighboringShowAllLabel}
+            countries={neighboringCountries}
+            visibleCodes={visibleNeighborCodes}
+            onChange={onVisibleNeighborCodesChange}
+          />
+        ) : null}
         <div
           ref={containerRef}
           className="race-map-canvas"

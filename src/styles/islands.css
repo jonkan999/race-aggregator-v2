@@ -105,6 +105,13 @@
   position: relative;
 }
 
+.race-map-stage .neighboring-countries-control {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
 .race-map-toolbar {
   display: flex;
   flex-wrap: wrap;

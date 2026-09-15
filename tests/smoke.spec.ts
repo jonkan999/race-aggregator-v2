@@ -82,6 +82,94 @@ test('Swedish race list shell renders', async ({ page }) => {
   await expect(page.locator('.race-card .more-info-button').first()).toBeVisible();
 });
 
+test('race list neighbor controls stay additive and link to SEO neighbor pages', async ({ page }) => {
+  const nextDate = yyyymmddOffset(30);
+  await page.route('**/rest/v1/rpc/get_races_list_page', async (route) => {
+    const rawBody = route.request().postData();
+    const body = rawBody ? (JSON.parse(rawBody) as { p_neighbor_countries?: string[] | null }) : {};
+    const neighbors = Array.isArray(body.p_neighbor_countries) ? body.p_neighbor_countries : [];
+      const rows = [
+        {
+          id: 'overlay-domestic',
+          domain_name: 'overlay-domestic',
+          county: 'Stockholm',
+          race_type: 'road',
+          origin_country: 'se',
+          race_dates: [[nextDate, nextDate]],
+          latitude: null,
+          longitude: null,
+          distance_m: [10000],
+          website: null,
+          payload: { nearest_city: 'Stockholm', location: 'Stockholm' },
+          race_translations: [
+            {
+              locale: 'sv',
+              name: 'Overlay Domestic Race',
+              type_local: 'Landsväg',
+              distance_verbose: '10 km',
+              description: 'Domestic overlay race',
+            },
+          ],
+        },
+        ...(neighbors.includes('dk')
+          ? [
+              {
+                id: 'overlay-neighbor-dk',
+                domain_name: 'overlay-neighbor-dk',
+                county: 'Hovedstaden',
+                race_type: 'road',
+                origin_country: 'dk',
+                race_dates: [[nextDate, nextDate]],
+                latitude: null,
+                longitude: null,
+                distance_m: [10000],
+                website: null,
+                payload: { nearest_city: 'København', location: 'København' },
+                race_translations: [
+                  {
+                    locale: 'sv',
+                    name: 'Overlay Neighbor Race',
+                    type_local: 'Landsväg',
+                    distance_verbose: '10 km',
+                    description: 'Danish overlay race',
+                  },
+                ],
+              },
+            ]
+          : []),
+      ];
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({ total: rows.length, rows }),
+      });
+  });
+
+  await page.goto('/loppkalender/');
+  await expect(page.locator('.section-filters[data-hydrated="true"]')).toBeVisible();
+  const county = page.locator('#county');
+  await expect(county.locator('optgroup[label="Närliggande länder"]')).toHaveCount(1);
+  await expect(county.locator('option[data-url="/neighbors/"]')).toHaveText(/alla närliggande länder/i);
+  await expect(county.getByRole('option', { name: /^Danmark$/i })).toHaveAttribute(
+    'data-url',
+    'https://lobskalender.dk/lobekalender/',
+  );
+  await expect(county.getByRole('option', { name: /^Finland$/i })).toHaveAttribute(
+    'data-url',
+    'https://suomi-juoksu.fi/juoksukalenteri/',
+  );
+
+  const mapControl = page.getByTestId('neighboring-countries-control');
+  await expect(mapControl).toHaveCount(1);
+  const denmarkToggle = mapControl.locator('input[data-country="dk"]');
+  await expect(denmarkToggle).toBeAttached();
+  await denmarkToggle.click();
+  await expect(denmarkToggle).toBeChecked();
+  await expect(page.locator('.race-card[data-name="Overlay Domestic Race"]')).toBeVisible();
+  await expect(page.locator('.race-card.neighboring-race[data-origin-country="dk"]')).toBeVisible();
+  await expect(page.locator('.race-card.neighboring-race .neighbor-country-badge')).toHaveText('DK');
+});
+
 test('English race list shell renders', async ({ page }) => {
   await page.goto('/en/race-calendar/');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();

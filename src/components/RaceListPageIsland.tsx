@@ -10,6 +10,7 @@ import {
 import type mapboxgl from 'mapbox-gl';
 import NewsletterPopup from './NewsletterPopup';
 import RaceMapIsland from './RaceMapIsland';
+import NeighboringCountriesControl from './NeighboringCountriesControl';
 import HighlightedRacesStrip, { type HighlightedRaceEntry } from './HighlightedRacesStrip';
 import type { NewsletterPopupContext } from '../lib/newsletterPopup';
 import { getSupabaseBrowserClient, isSupabaseConfigured } from '../lib/supabase';
@@ -28,6 +29,7 @@ import {
   isDomesticOrigin,
   neighboringCountryValue,
   parseNeighboringSelection,
+  rowMatchesNeighborAndCountyFilter,
   type NeighboringCountryOption,
 } from '../lib/neighboringSelection';
 import { getBrowserMarketRouteTargets, resolveRaceDetailHref } from '../lib/marketRoutes';
@@ -343,6 +345,10 @@ export default function RaceListPageIsland(props: {
   neighboringCountries?: NeighboringCountryOption[];
   neighboringCountriesLabel?: string;
   neighboringCountriesAllLabel?: string;
+  neighboringCountriesAllHref?: string;
+  neighboringMapTitle?: string;
+  neighboringShowAllLabel?: string;
+  raceListHref?: string;
   monthMapping: Record<string, string>;
   monthMappingShort: Record<string, string>;
   typeOptions: Record<string, string>;
@@ -412,6 +418,10 @@ export default function RaceListPageIsland(props: {
     neighboringCountries = [],
     neighboringCountriesLabel = '',
     neighboringCountriesAllLabel = '',
+    neighboringCountriesAllHref = '',
+    neighboringMapTitle = '',
+    neighboringShowAllLabel = '',
+    raceListHref = '',
     monthMapping,
     monthMappingShort,
     typeOptions,
@@ -468,6 +478,8 @@ export default function RaceListPageIsland(props: {
   const [dateTo, setDateTo] = useState(() => defaultDateRange.dateTo);
   const [month, setMonth] = useState(initialMonth);
   const [categoryKey, setCategoryKey] = useState(initialCategoryKey);
+  const [visibleNeighborCodes, setVisibleNeighborCodes] = useState<string[]>([]);
+  const isNeighborsPage = parseNeighboringSelection(initialCounty) != null;
 
   const [rows, setRows] = useState<RaceListRow[]>(() => initialRows);
   const [total, setTotal] = useState(() => initialTotal);
@@ -476,6 +488,7 @@ export default function RaceListPageIsland(props: {
   const dateStartComparable = useMemo(() => comparableFilterDate(dateFrom), [dateFrom]);
   const dateEndComparable = useMemo(() => comparableFilterDate(dateTo), [dateTo]);
 
+  const [islandReady, setIslandReady] = useState(false);
   const [mobileMapOpen, setMobileMapOpen] = useState(false);
   const [desktopMapOpen, setDesktopMapOpen] = useState(true);
   const mapInst = useRef<mapboxgl.Map | null>(null);
@@ -501,6 +514,10 @@ export default function RaceListPageIsland(props: {
     },
     [defaultDateRange.dateFrom, defaultDateRange.dateTo],
   );
+
+  useEffect(() => {
+    setIslandReady(true);
+  }, []);
 
   useEffect(() => {
     document.body.classList.toggle('race-list-mobile-map-open', mobileMapOpen);
@@ -625,6 +642,8 @@ export default function RaceListPageIsland(props: {
       p_county: neighboringSelection ? null : county.trim() || null,
       p_origin_country: neighboringSelection?.kind === 'country' ? neighboringSelection.code : null,
       p_include_neighboring: neighboringSelection?.kind === 'all',
+      p_neighbor_countries:
+        neighboringSelection || visibleNeighborCodes.length === 0 ? null : visibleNeighborCodes,
       p_race_type: effectiveRaceType.trim() || null,
       p_date_from: dateFrom.trim() || null,
       p_date_to: dateTo.trim() || null,
@@ -632,7 +651,7 @@ export default function RaceListPageIsland(props: {
       p_distance_min_km: pMin,
       p_distance_max_km: pMax,
     };
-  }, [countryCode, page, county, raceType, dateFrom, dateTo, month, categoryKey, categoryFilterOptions]);
+  }, [countryCode, page, county, visibleNeighborCodes, raceType, dateFrom, dateTo, month, categoryKey, categoryFilterOptions]);
 
   const localResult = useMemo(() => {
     if (!localRows) return null;
@@ -650,23 +669,21 @@ export default function RaceListPageIsland(props: {
       }
     }
     const effectiveRaceType = (raceType || extraType).trim().toLowerCase();
-    const normalizedCounty = county.trim().toLowerCase();
     const neighboringSelection = parseNeighboringSelection(county);
 
     const filtered = localRows.filter((row) => {
       if (city && !rowMatchesCity(row, city)) return false;
-      const rowOriginCountry = row.origin_country?.trim().toLowerCase() ?? '';
-      const isDomestic = !rowOriginCountry || rowOriginCountry === countryCode.toLowerCase();
-      if (neighboringSelection?.kind === 'all') {
-        if (isDomestic) return false;
-      } else if (neighboringSelection?.kind === 'country') {
-        if (rowOriginCountry !== neighboringSelection.code) return false;
-      } else {
-        if (!isDomestic) return false;
-        if (normalizedCounty) {
-          const rowCounty = row.county?.trim().toLowerCase() ?? '';
-          if (!rowCounty.includes(normalizedCounty)) return false;
-        }
+      if (
+        !rowMatchesNeighborAndCountyFilter({
+          originCountry: row.origin_country,
+          county: row.county,
+          hostCountryCode: countryCode,
+          selectedCounty: neighboringSelection ? '' : county,
+          neighboringSelection,
+          visibleNeighborCodes,
+        })
+      ) {
+        return false;
       }
       if (effectiveRaceType) {
         const rowRaceType = row.race_type?.trim().toLowerCase() ?? '';
@@ -692,6 +709,7 @@ export default function RaceListPageIsland(props: {
     categoryFilterOptions,
     raceType,
     county,
+    visibleNeighborCodes,
     month,
     dateFrom,
     dateTo,
@@ -719,23 +737,21 @@ export default function RaceListPageIsland(props: {
       }
     }
     const effectiveRaceType = (raceType || extraType).trim().toLowerCase();
-    const normalizedCounty = county.trim().toLowerCase();
     const neighboringSelection = parseNeighboringSelection(county);
 
     const filtered = sourceRows.filter((row) => {
       if (city && !rowMatchesCity(row, city)) return false;
-      const rowOriginCountry = row.origin_country?.trim().toLowerCase() ?? '';
-      const isDomestic = !rowOriginCountry || rowOriginCountry === countryCode.toLowerCase();
-      if (neighboringSelection?.kind === 'all') {
-        if (isDomestic) return false;
-      } else if (neighboringSelection?.kind === 'country') {
-        if (rowOriginCountry !== neighboringSelection.code) return false;
-      } else {
-        if (!isDomestic) return false;
-        if (normalizedCounty) {
-          const rowCounty = row.county?.trim().toLowerCase() ?? '';
-          if (!rowCounty.includes(normalizedCounty)) return false;
-        }
+      if (
+        !rowMatchesNeighborAndCountyFilter({
+          originCountry: row.origin_country,
+          county: row.county,
+          hostCountryCode: countryCode,
+          selectedCounty: neighboringSelection ? '' : county,
+          neighboringSelection,
+          visibleNeighborCodes,
+        })
+      ) {
+        return false;
       }
       if (effectiveRaceType) {
         const rowRaceType = row.race_type?.trim().toLowerCase() ?? '';
@@ -758,6 +774,7 @@ export default function RaceListPageIsland(props: {
     categoryFilterOptions,
     raceType,
     county,
+    visibleNeighborCodes,
     month,
     dateFrom,
     dateTo,
@@ -777,9 +794,10 @@ export default function RaceListPageIsland(props: {
       dateTo !== initial.dateTo ||
       month !== initial.month ||
       categoryKey !== initial.categoryKey ||
+      visibleNeighborCodes.length > 0 ||
       page !== 1
     );
-  }, [localRows, county, raceType, dateFrom, dateTo, month, categoryKey, page]);
+  }, [localRows, county, raceType, dateFrom, dateTo, month, categoryKey, visibleNeighborCodes, page]);
 
   const fetchPage = useCallback(async () => {
     if (!isSupabaseConfigured()) {
@@ -1167,6 +1185,7 @@ export default function RaceListPageIsland(props: {
       <section
         ref={filtersRef}
         className={`section-filters${filtersScrolled ? ' scrolled' : ''}`}
+        data-hydrated={islandReady ? 'true' : undefined}
       >
         <div className="filter-date">
           <label htmlFor="date-from">{filterDateFrom}:</label>
@@ -1252,6 +1271,16 @@ export default function RaceListPageIsland(props: {
               name="county"
               value={county}
               onChange={(e) => {
+                const selected = e.target.selectedOptions[0];
+                const nextUrl = selected?.dataset.url?.trim();
+                if (nextUrl) {
+                  window.location.href = nextUrl;
+                  return;
+                }
+                if (isNeighborsPage && raceListHref && !parseNeighboringSelection(e.target.value)) {
+                  window.location.href = raceListHref;
+                  return;
+                }
                 setCounty(e.target.value);
                 setPage(1);
               }}
@@ -1259,11 +1288,18 @@ export default function RaceListPageIsland(props: {
               <option value="">{filterCounty}</option>
               {neighboringCountries.length > 0 ? (
                 <optgroup label={neighboringCountriesLabel}>
-                  <option value={ALL_NEIGHBORING_COUNTIES_VALUE}>
+                  <option
+                    value={ALL_NEIGHBORING_COUNTIES_VALUE}
+                    data-url={neighboringCountriesAllHref || undefined}
+                  >
                     {neighboringCountriesAllLabel}
                   </option>
                   {neighboringCountries.map((entry) => (
-                    <option key={entry.code} value={neighboringCountryValue(entry.code)}>
+                    <option
+                      key={entry.code}
+                      value={neighboringCountryValue(entry.code)}
+                      data-url={entry.href || undefined}
+                    >
                       {entry.label}
                     </option>
                   ))}
@@ -1294,6 +1330,20 @@ export default function RaceListPageIsland(props: {
               ))}
             </select>
           </div>
+          {!isNeighborsPage && !hasMapboxToken && neighboringCountries.length > 0 ? (
+            <div className="filter-neighboring-countries">
+              <NeighboringCountriesControl
+                title={neighboringMapTitle}
+                showAllLabel={neighboringShowAllLabel}
+                countries={neighboringCountries}
+                visibleCodes={visibleNeighborCodes}
+                onChange={(codes) => {
+                  setVisibleNeighborCodes(codes);
+                  setPage(1);
+                }}
+              />
+            </div>
+          ) : null}
           <div className="browse-all-filters">
             <a href={browseByCategoryHref} className="browse-link">
               <div className="browse-link-icon">
@@ -1385,12 +1435,14 @@ export default function RaceListPageIsland(props: {
                   r.race_type ??
                   '';
                 const distParts = splitDistanceVerbose(distVerbose);
+                const originCode = r.origin_country?.trim().toLowerCase() ?? '';
+                const isNeighboringRace = Boolean(originCode) && !isDomesticOrigin(originCode, countryCode);
 
                 return (
                   <Fragment key={r.id}>
                     <a
                       href={href}
-                      className="race-card"
+                      className={`race-card${isNeighboringRace ? ' neighboring-race' : ''}`}
                       data-name={name}
                       data-date={rawDate ?? ''}
                       data-county={cardTopLocation.label}
@@ -1398,7 +1450,12 @@ export default function RaceListPageIsland(props: {
                       data-distance={distVerbose}
                       data-location={venue}
                       data-description={summary}
+                      data-origin-country={originCode || undefined}
+                      data-neighbor={isNeighboringRace ? 'true' : undefined}
                     >
+                      {isNeighboringRace ? (
+                        <div className="neighbor-country-badge">{originCode.toUpperCase()}</div>
+                      ) : null}
                       <div className="race-card-upper-box background-container">
                         <picture>
                           <LazyCardImg
@@ -1576,6 +1633,15 @@ export default function RaceListPageIsland(props: {
               filterMonth={month}
               filterCategoryKey={categoryKey}
               categoryFilterOptions={categoryFilterOptions}
+              neighboringCountries={neighboringCountries}
+              neighboringMapTitle={neighboringMapTitle}
+              neighboringShowAllLabel={neighboringShowAllLabel}
+              visibleNeighborCodes={visibleNeighborCodes}
+              onVisibleNeighborCodesChange={(codes) => {
+                setVisibleNeighborCodes(codes);
+                setPage(1);
+              }}
+              hideNeighborMapControl={isNeighborsPage || !hasMapboxToken}
               hideToolbar
               onMapInstance={handleMapInstance}
             />

@@ -9,7 +9,11 @@ import { createClient } from '@supabase/supabase-js';
 import { nativeTranslationLocale } from './content';
 import { resolveMarketDataRoot } from './market';
 import { RACE_LIST_PAGE_SIZE } from './raceListConfig';
-import { isDomesticOrigin } from './neighboringSelection';
+import {
+  normalizeNeighborCountryCodes,
+  parseNeighboringSelection,
+  rowMatchesNeighborAndCountyFilter,
+} from './neighboringSelection';
 import type { RaceListRow, RaceTranslationRow } from './raceListRow';
 import { compareRaceRowsByRelevantDate } from './upcomingRaceWindow';
 
@@ -44,6 +48,7 @@ export type RaceListSnapshotFilters = {
   distanceMaxKm?: number | null;
   originCountry?: string | null;
   includeNeighboring?: boolean | null;
+  neighborCountries?: string[] | null;
 };
 
 export function todayYyyyMmDdForSsg(now = new Date()): string {
@@ -155,25 +160,28 @@ function applySnapshotFilters(
   countryCode: string,
   filters: RaceListSnapshotFilters,
 ): SsgRaceRow[] {
-  const county = filters.county?.trim().toLowerCase() ?? '';
+  const county = filters.county?.trim() ?? '';
   const raceType = filters.raceType?.trim().toLowerCase() ?? '';
   const originCountry = filters.originCountry?.trim().toLowerCase() ?? '';
   const includeNeighboring = Boolean(filters.includeNeighboring);
+  const neighboringSelection = includeNeighboring
+    ? { kind: 'all' as const }
+    : originCountry
+      ? { kind: 'country' as const, code: originCountry }
+      : parseNeighboringSelection(county);
+  const visibleNeighborCodes = normalizeNeighborCountryCodes(filters.neighborCountries);
   return rows.filter((row) => {
-    const rowOriginCountry = row.origin_country?.trim().toLowerCase() ?? '';
-    const isDomestic = isDomesticOrigin(rowOriginCountry, countryCode);
-
-    if (includeNeighboring) {
-      if (isDomestic) return false;
-    } else if (originCountry) {
-      if (rowOriginCountry !== originCountry) return false;
-    } else if (!isDomestic) {
+    if (
+      !rowMatchesNeighborAndCountyFilter({
+        originCountry: row.origin_country,
+        county: row.county,
+        hostCountryCode: countryCode,
+        selectedCounty: neighboringSelection ? '' : county,
+        neighboringSelection,
+        visibleNeighborCodes,
+      })
+    ) {
       return false;
-    }
-
-    if (county) {
-      const rowCounty = row.county?.trim().toLowerCase() ?? '';
-      if (!rowCounty.includes(county)) return false;
     }
     if (raceType) {
       const rowRaceType = row.race_type?.trim().toLowerCase() ?? '';
