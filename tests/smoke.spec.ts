@@ -84,11 +84,10 @@ test('Swedish race list shell renders', async ({ page }) => {
 
 test('race list neighbor controls stay additive and link to SEO neighbor pages', async ({ page }) => {
   const nextDate = yyyymmddOffset(30);
-  await page.route(
-    'https://race-aggregator-tests.supabase.co/rest/v1/rpc/get_races_list_page',
-    async (route) => {
-      const body = route.request().postDataJSON() as { p_neighbor_countries?: string[] | null };
-      const neighbors = Array.isArray(body.p_neighbor_countries) ? body.p_neighbor_countries : [];
+  await page.route('**/rest/v1/rpc/get_races_list_page', async (route) => {
+    const rawBody = route.request().postData();
+    const body = rawBody ? (JSON.parse(rawBody) as { p_neighbor_countries?: string[] | null }) : {};
+    const neighbors = Array.isArray(body.p_neighbor_countries) ? body.p_neighbor_countries : [];
       const rows = [
         {
           id: 'overlay-domestic',
@@ -144,8 +143,7 @@ test('race list neighbor controls stay additive and link to SEO neighbor pages',
         contentType: 'application/json',
         body: JSON.stringify({ total: rows.length, rows }),
       });
-    },
-  );
+  });
 
   await page.goto('/loppkalender/');
   const county = page.locator('#county');
@@ -162,8 +160,10 @@ test('race list neighbor controls stay additive and link to SEO neighbor pages',
 
   const mapControl = page.getByTestId('neighboring-countries-control');
   await expect(mapControl).toHaveCount(1);
-  await expect(mapControl.locator('input[data-country="dk"]')).toBeAttached();
-  await mapControl.getByRole('checkbox', { name: /visa alla/i }).click();
+  const denmarkToggle = mapControl.locator('input[data-country="dk"]');
+  await expect(denmarkToggle).toBeAttached();
+  await denmarkToggle.click();
+  await expect(denmarkToggle).toBeChecked();
   await expect(page.locator('.race-card[data-name="Overlay Domestic Race"]')).toBeVisible();
   await expect(page.locator('.race-card.neighboring-race[data-origin-country="dk"]')).toBeVisible();
   await expect(page.locator('.race-card.neighboring-race .neighbor-country-badge')).toHaveText('DK');

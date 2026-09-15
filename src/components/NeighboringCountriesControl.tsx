@@ -27,7 +27,7 @@ export default function NeighboringCountriesControl(props: {
           <strong>{title}</strong>
         </div>
       ) : null}
-      <label className="neighboring-countries-control__row" htmlFor="neighboring-toggle">
+      <label className="neighboring-countries-control__row">
         <input
           type="checkbox"
           id="neighboring-toggle"
@@ -44,11 +44,7 @@ export default function NeighboringCountriesControl(props: {
             const flagCode = supportedFlagCode(entry.code);
             const checked = visible.has(entry.code);
             return (
-              <label
-                key={entry.code}
-                className="neighboring-countries-control__row"
-                htmlFor={`country-${entry.code}`}
-              >
+              <label key={entry.code} className="neighboring-countries-control__row">
                 <input
                   type="checkbox"
                   id={`country-${entry.code}`}
