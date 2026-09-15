@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import fs from 'node:fs';
 import { loadIndexYaml } from '../src/lib/content';
 import {
   buildTrendingRaces,
@@ -82,6 +83,40 @@ test('Swedish race list shell renders', async ({ page }) => {
   await expect(page.locator('.race-card .more-info-button').first()).toBeVisible();
 });
 
+test('neighbor overlay control does not reflow the map popup', async ({ page }) => {
+  const islandsCss = fs.readFileSync(new URL('../src/styles/islands.css', import.meta.url), 'utf8');
+  const cardsCss = fs.readFileSync(new URL('../src/styles/legacy/race-cards.css', import.meta.url), 'utf8');
+  const rows = Array.from({ length: 12 }, (_, index) => {
+    return `<label class="neighboring-countries-control__row"><input type="checkbox"> Neighbor ${index}</label>`;
+  }).join('');
+  await page.setContent(`
+    <style>${islandsCss}\n${cardsCss}</style>
+    <div class="race-map-shell">
+      <div class="race-map-stage">
+        <div class="race-map-canvas" data-testid="race-map-canvas"></div>
+        <div class="mapboxgl-ctrl mapboxgl-ctrl-group neighboring-countries-control neighboring-countries-control--overlay" data-testid="neighboring-countries-control">
+          ${rows}
+        </div>
+        <div class="race-map-popup">popup</div>
+      </div>
+    </div>
+  `);
+
+  const stageBox = await page.locator('.race-map-stage').boundingBox();
+  const canvasBox = await page.getByTestId('race-map-canvas').boundingBox();
+  const controlBox = await page.getByTestId('neighboring-countries-control').boundingBox();
+  const popupBox = await page.locator('.race-map-popup').boundingBox();
+  expect(stageBox && canvasBox && controlBox && popupBox).toBeTruthy();
+  expect(Math.abs((stageBox?.height ?? 0) - (canvasBox?.height ?? 0))).toBeLessThan(24);
+  expect(controlBox!.y).toBeGreaterThanOrEqual((canvasBox!.y ?? 0) - 4);
+  expect((controlBox!.y ?? 0) + (controlBox!.height ?? 0)).toBeLessThanOrEqual(
+    (canvasBox!.y ?? 0) + (canvasBox!.height ?? 0) + 4,
+  );
+  expect((popupBox!.y ?? 0) + (popupBox!.height ?? 0)).toBeLessThanOrEqual(
+    (canvasBox!.y ?? 0) + (canvasBox!.height ?? 0) + 8,
+  );
+});
+
 test('race list neighbor controls stay additive and link to SEO neighbor pages', async ({ page }) => {
   const nextDate = yyyymmddOffset(30);
   await page.route('**/rest/v1/rpc/get_races_list_page', async (route) => {
@@ -152,11 +187,11 @@ test('race list neighbor controls stay additive and link to SEO neighbor pages',
   await expect(county.locator('option[data-url="/neighbors/"]')).toHaveText(/alla närliggande länder/i);
   await expect(county.getByRole('option', { name: /^Danmark$/i })).toHaveAttribute(
     'data-url',
-    'https://lobskalender.dk/lobekalender/',
+    '/neighbors/dk/',
   );
   await expect(county.getByRole('option', { name: /^Finland$/i })).toHaveAttribute(
     'data-url',
-    'https://suomi-juoksu.fi/juoksukalenteri/',
+    '/neighbors/fi/',
   );
 
   const mapControl = page.getByTestId('neighboring-countries-control');
