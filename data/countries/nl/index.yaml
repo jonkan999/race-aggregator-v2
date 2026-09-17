@@ -1,0 +1,1047 @@
+type_options:
+  road: Wegwedstrijd
+  terrain: Cross
+  trail: Trail
+  track: Hardloopbaan
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Estafette
+  time: Tijdloop
+  other: Overig
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Halve marathon:
+    range:
+    - 20
+    - 22
+  Marathon:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 meter:
+    range:
+    - 1.5
+    - 1.5
+  3000 meter:
+    range:
+    - 3
+    - 3
+  5000 meter:
+    range:
+    - 5
+    - 5
+  10000 meter:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Tijdloop
+  relay: Estafette
+verbose_local_distance_mapping:
+  half marathon: Halve marathon
+  marathon: Marathon
+  fallback: Gemengde afstand
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Halve marathon
+- range:
+  - 41.9
+  - 42.4
+  label: Marathon
+race_page_estimated_date_label: Geschatte datum
+race_page_estimated_disclaimer: We hebben nog geen officiële datum voor deze wedstrijd ontvangen.
+country_code: nl
+country_language_code: nl
+navigation:
+  main: Alles
+  race-list: Hardloopkalender
+  add-race: Voeg race toe
+  forum: Forum
+  measure-route: Meet je ronde
+  training-plans: Trainingsprogramma
+  pace-calculator: Snelheidsomzetter
+  racetime-estimator: Schat je eindtijd in
+  about-us: Over ons
+  contact: Neem contact met ons op
+  neighboring: Naburige landen
+race_list_name: Hardloopkalender
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Voorbeeld van wedstrijd
+  terms-of-service: Gebruiksvoorwaarden
+  privacy-policy: Privacybeleid
+  about-us: Over ons
+  contact: Neem contact met ons op
+  faq: Veelgestelde vragen
+page_name: Hardlooplijst
+base_url: https://hardlooplijst.nl/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Hallo!
+    closing_salutation: Met vriendelijke groet,
+    link_fallback_intro: 'Werkt de knop niet, kopieer dan deze link:'
+  confirm_signup:
+    body: Bedankt dat je je hebt aangemeld bij {site_name}. Bevestig je e-mailadres om je account te activeren en de wedstrijden te beheren die je hebt ingezonden.
+    button_label: Bevestig e-mailadres
+    ignore_note: Als jij dit account niet hebt aangemaakt, kun je deze e-mail negeren.
+  reset_password:
+    body: We hebben een verzoek ontvangen om je wachtwoord voor {site_name} te resetten. Klik op de knop hieronder om een nieuw wachtwoord te kiezen.
+    button_label: Wachtwoord resetten
+    ignore_note: Als jij dit niet hebt aangevraagd, kun je deze e-mail negeren. Je wachtwoord verandert pas wanneer je een nieuw wachtwoord kiest.
+  change_email:
+    body: Je hebt gevraagd om het e-mailadres van je account bij {site_name} te wijzigen. Bevestig de wijziging door op de knop hieronder te klikken.
+    button_label: Bevestig nieuw e-mailadres
+    ignore_note: Als jij deze wijziging niet hebt aangevraagd, kun je deze e-mail negeren.
+title: Alles over hardlopen in Nederland
+country_native: Nederland
+country: Netherlands
+meta_description: Hardlooplijst | De meest complete hardloopkalender en hardloopcommunity van Nederland
+country_language: Dutch
+local_name_for_race: wedstrijd
+main_bullet_1: Vind je volgende wedstrijd
+main_bullet_2: ' - Of voeg hem hier toe'
+main_bullet_3: Ontdek onze marktplaats
+main_bullet_4: Lees het laatste nieuws of doe mee in ons forum
+description: Dit community-initiatief brengt hardlopers uit heel Nederland samen. Het platform groeit nog, maar met jouw hulp maken we de complete Nederlandse hardloopkalender.
+cta_search: Vind wedstrijd
+cta_add: Voeg een wedstrijd toe
+selected_races_title: Uitgelichte wedstrijden
+selected_races_top_title: Wedstrijd van de week
+cta_all_races: Toon alle wedstrijden
+show_local: Toon
+race_local: wedstrijd
+running_local: Hardlopen
+alt_prefix: 'Afbeelding bij '
+race_list_title: De meest complete lijst van marathons, halve marathons en andere hardloopwedstrijden in Nederland
+race_list_meta_description_1: Vind hardloopwedstrijden en data uit heel Nederland
+race_list_meta_description_2: ✔️Complete hardloopkalender ✔️Trail, backyard, weg en marathon ✔️Wedstrijden uit heel Nederland
+race_list_data_error: Wedstrijden konden niet worden geladen. Probeer het later opnieuw.
+race_list_remote_required: Voor meer pagina's of filters is de database (Supabase) nodig. Voeg PUBLIC_SUPABASE_URL en PUBLIC_SUPABASE_PUBLISHABLE_KEY toe aan je .env-bestand.
+race_list_empty: Geen wedstrijden komen overeen met je filters.
+race_list_loading: Laden…
+race_card_cta_text: Meer info en inschrijven
+section_race_card_category_prefix: Alle
+section_race_card_category_suffix: wedstrijden
+section_race_card_header_separator: in
+section_race_card_header_region_default: Nederland
+section_race_card_header_date_range_from: 'van '
+section_race_card_header_date_range_to: 'tot '
+section_race_card_header_date_range_single: 'in '
+filter_date_from: Van
+filter_date_to: Tot
+filter_county: Alle provincies
+filter_race_type: Alle looptypes
+filter_categories: Alle categorieën
+filter_months: Heel jaar
+filter_distance: Alle afstanden
+month_mapping:
+  '01': Januari
+  '02': Februari
+  '03': Maart
+  '04': April
+  '05': Mei
+  '06': Juni
+  '07': Juli
+  '08': Augustus
+  '09': September
+  '10': Oktober
+  '11': November
+  '12': December
+month_mapping_short:
+  '01': jan.
+  '02': feb.
+  '03': mrt.
+  '04': apr.
+  '05': mei
+  '06': jun.
+  '07': jul.
+  '08': aug.
+  '09': sep.
+  '10': okt.
+  '11': nov.
+  '12': dec.
+county_label_text: Alle provincies
+county_mapping:
+  Groningen: Groningen
+  Drenthe: Drenthe
+  Utrecht: Utrecht
+  Flevoland: Flevoland
+  Overijssel: Overijssel
+  Noord-Holland: Noord-Holland
+  Gelderland: Gelderland
+  Zuid-Holland: Zuid-Holland
+  Fryslân: Fryslân
+  Noord-Brabant: Noord-Brabant
+  Limburg: Limburg
+  Zeeland: Zeeland
+category_label_text: Wedstrijdcategorie
+Ultra Marathon:
+  range:
+  - 42
+  - 500
+to_race_page_cta: Naar de wedstrijdpagina
+map_toggle_desktop: Toon kaart
+map_toggle_desktop_active: Verberg kaart
+map_toggle_mobile: Kaart
+map_toggle_mobile_list: Lijst
+map_markers_load_error: Kaartmarkers konden niet worden geladen.
+map_not_configured: De kaart is niet geconfigureerd (ontbrekende kaartcode).
+race_page_map_zoom: '7'
+pagination:
+  results_text: van
+  events_text: Wedstrijden
+  previous_text: Vorige
+  next_text: Volgende
+  page_text: Pagina
+  of_text: van
+add_race_title: Voeg een nieuwe wedstrijd toe
+add_race_meta_description: Voeg jouw wedstrijd toe op hardlooplijst.nl
+map_message: Plaats je wedstrijd door op de kaart te klikken
+mapbox_center:
+  latitude: 52.1326
+  longitude: 5.2913
+mapbox_zoom: '7'
+date_text: Datum
+multi_day_toggle: Meerdaagse wedstrijd
+end_date_text: Einddatum
+type_text: Ondergrond / looptype
+type_select_placeholder: Kies ondergrond / looptype
+name_label: 'Naam van de wedstrijd:'
+name_placeholder: bijv. Rotterdam Marathon
+distance_label: 'Afstanden:'
+distance_placeholder: Vul de afstand in km in
+add_distance_button: Toevoegen
+half_marathon_button: Halve marathon
+marathon_button: Marathon
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Plaatsnaam:'
+place_placeholder: bijv. Kralingse Bos, Rotterdam
+organizer_label: 'Organisator:'
+organizer_contact_placeholder: Hardloopvereniging
+organizer_contact_label: 'Contact-e-mail:'
+organizer_mail_placeholder: loppkartan@gmail.com
+website_label: 'Website van de organisator:'
+website_placeholder: https://organisator.nl/
+start_time_label: 'Starttijd:'
+start_time_placeholder: 09:00
+price_range_label: 'Prijsindicatie:'
+price_range_placeholder: bijv. 15-40 euro
+add_race_description_label: Beschrijf de wedstrijd
+add_race_description_placeholder: De Rotterdam Marathon is een vlak parcours door de stad...
+add_race_additional_label: Aanvullende informatie
+add_race_additional_placeholder: bijv. start en finish, startgroepen enz.
+add_race_images_label: Upload afbeeldingen (minstens 4 aanbevolen)
+choose_pictures_button: Kies afbeeldingen
+drag_drop_text: Sleep afbeeldingen hierheen of klik om te kiezen
+add_race_remove_image_label: Verwijder afbeelding
+coordinates_display_prefix: Coördinaten van de wedstrijd
+add_race_upload_limit_message: Je kunt nog maar {count} afbeeldingen uploaden.
+add_race_map_not_configured: De kaart kon nu niet worden geladen.
+clear_images_button: Wis afbeeldingen
+clear_form_button: Wis formulier
+preview_button: Voorbeeld
+submit_button: Versturen
+preview_title: Voorbeeld
+preview_exit_button: Sluit voorbeeld
+optional_label: Optioneel
+comments_suffix: Reacties
+cta_forum: Toon alle berichten
+race_page_preview_title: Zo komt jouw wedstrijd eruit te zien
+edit_race_button: Bewerken
+race_page_description_label: Beschrijving van de wedstrijd
+race_page_course_highlights_label: Hoogtepunten
+race_page_additional_label: Aanvullende informatie
+race_page_detailed_info_label: Gedetailleerde informatie
+race_page_social_links_label: Volg de wedstrijd
+race_page_place_label: 'Plaats:'
+race_page_distances_label: 'Afstanden:'
+race_page_surface_label: 'Ondergrond:'
+race_page_date_label: 'Datum:'
+race_page_registration_link: Inschrijflink
+race_page_registration_cta: Schrijf je nu in
+race_page_info_cta: Meer informatie
+race_page_registration_close_label: Inschrijving sluit
+race_page_pricing_title: Inschrijving en prijzen
+race_page_price_deadline_label: Geldig tot
+race_page_price_late_fee_label: Late inschrijving
+race_page_back_to_list: Terug naar de hardloopkalender
+race_page_favorites_title: Mis geen updates over de wedstrijd
+race_page_favorites_body: Maak een account en bewaar deze wedstrijd als favoriet, zodat je updates, nieuws en geselecteerde aanbiedingen kunt krijgen wanneer favorieten live gaan.
+race_page_favorites_cta: Bewaar wedstrijd als favoriet
+race_page_similar_title: Vergelijkbare wedstrijden
+race_page_similar_body: Meer wedstrijden met vergelijkbare afstand, type of locatie in de buurt.
+race_page_discover_title: Ontdek meer wedstrijden
+race_page_discover_county_link: Alle wedstrijden in {county}
+race_page_discover_type_link: Meer {type}-wedstrijden
+race_page_discover_category_link: Meer {category}-wedstrijden
+race_page_discover_type_county_link: '{type}-wedstrijden in {county}'
+race_page_discover_overview_link: Bekijk alle wedstrijdcategorieën
+disclaimer_text_1: 'Alle informatie op deze pagina is gebaseerd op open brondata. We doen ons best om die actueel te houden, maar kunnen niet garanderen dat alles klopt. Zie je onjuistheden, '
+disclaimer_link: neem contact met ons op
+disclaimer_text_2: dan corrigeren we het zo snel mogelijk.
+disclaimer_text_3: Wil je nog iets toevoegen aan jouw wedstrijd?
+disclaimer_text_4: dan proberen we te helpen!
+race_page_visit_organizer_website: Naar de website van de organisator en inschrijven
+race_page_folder_name: looppaginas
+race_page_alt_prefix: 'Afbeelding bij '
+seo_county_folder_name: alle-provincies
+seo_cities_folder_name: steden
+popular_subcategories_title: Populaire subcategorieën
+important_keywords_racelist:
+- hardloopkalender
+- hardloopwedstrijden
+- loopevenementen
+- wedstrijdkalender
+- marathon Nederland
+- halve marathon Nederland
+- trailrun Nederland
+- ultraloop
+seo_templates:
+  title_parts:
+    category: '{category}-wedstrijden'
+    race_type: '{race_type}'
+    location: in {location}
+    default: Alle wedstrijden
+  paragraph_templates:
+    category_race_location: Vind {category} {race_type}wedstrijden in {location}.
+    category_race: Ontdek {category} {race_type}wedstrijden in heel Nederland.
+    category_location: Ontdek {category}-wedstrijden in {location}.
+    race_location: Bekijk alle {race_type}wedstrijden in {location}.
+    category_only: Vind {category}-wedstrijden in heel Nederland.
+    race_only: Ontdek {race_type}wedstrijden in alle provincies.
+    location_only: Bekijk alle soorten wedstrijden in {location}.
+    default_suffix: Hier vind je data, afstanden en alle informatie die je nodig hebt om je volgende wedstrijd te plannen.
+  browse_page_templates:
+    county:
+      title: '{label} wedstrijden | {site_name}'
+      meta_description: Bekijk hardloopwedstrijden in {label}. Vergelijk data, afstanden, loopvormen en praktische details voordat je je volgende wedstrijd kiest.
+      h1: Wedstrijden in {label}
+      paragraph: Deze pagina verzamelt hardloopwedstrijden in {label}, zodat je data, afstanden, loopvormen en praktische details op één plek kunt vergelijken. Gebruik hem als je een duidelijker overzicht wilt voordat je je volgende wedstrijd kiest.
+    city:
+      title: '{label} wedstrijden | {site_name}'
+      meta_description: Vind hardloopwedstrijden rond {label}. Vergelijk data, afstanden, nabije opties en praktische details voordat je je volgende wedstrijd kiest.
+      h1: Wedstrijden bij {label}
+      paragraph: Deze stedenpagina helpt je hardloopwedstrijden rond {label} te bekijken, inclusief nabije alternatieven die relevant zijn als je een wedstrijddag of een uitstap plant. Zo vergelijk je lokale wedstrijden sneller.
+    month:
+      title: '{label} wedstrijden | {site_name}'
+      meta_description: Bekijk hardloopwedstrijden in {label} in {market}. Vergelijk data, afstanden, looptypes en praktische details voordat je je seizoen plant.
+      h1: Wedstrijden in {label}
+      paragraph: Deze pagina is voor hardlopers die de kalender per maand willen zien en sneller willen vergelijken wat er in {label} gebeurt. Zo beperk je de keuze voordat je verder filtert op afstand, ondergrond en locatie.
+    race_type:
+      title: '{label}-wedstrijden in {market} | {site_name}'
+      meta_description: Bekijk {label_lower}-wedstrijden in {market}. Vergelijk data, afstanden, locaties en praktische details voordat je een wedstrijd kiest die bij je past.
+      h1: '{label}-wedstrijden in {market}'
+      paragraph: Deze pagina richt zich op {label_lower}-wedstrijden en geeft een duidelijker overzicht wanneer het looptype even belangrijk is als de afstand. Gebruik hem om opties in provincies, data en praktische details te vergelijken.
+    category:
+      title: '{label}-wedstrijden in {market} | {site_name}'
+      meta_description: Bekijk {label}-wedstrijden in {market}. Vergelijk data, looptypes, locaties en praktische details voordat je je volgende wedstrijd kiest.
+      h1: '{label}-wedstrijden in {market}'
+      paragraph: Deze afstand- en categoriepagina verzamelt wedstrijden die bij {label} passen, zodat je relevante opties op één plek vergelijkt. Hij is bedoeld voor lopers die sneller van een breed overzicht naar een korte lijst willen.
+    race_type_category:
+      title: '{label} {secondary_label}-wedstrijden in {market} | {site_name}'
+      meta_description: Bekijk {label}-wedstrijden in {market} binnen het looptype {secondary_label_lower}. Vergelijk data, locaties en praktische details voordat je je volgende wedstrijd kiest.
+      h1: '{label}-wedstrijden in {market} ({secondary_label})'
+      paragraph: Deze pagina beperkt de kalender tot {label}-wedstrijden binnen het looptype {secondary_label_lower}, wat handig is als zowel afstand als loopvorm de keuze bepalen. Gebruik hem om vergelijkbare opties te bekijken voordat je je inschrijft.
+    race_type_county:
+      title: '{secondary_label}-wedstrijden in {label} | {site_name}'
+      meta_description: Bekijk {secondary_label_lower}-wedstrijden in {label}. Vergelijk data, afstanden en praktische details voordat je je volgende wedstrijd kiest.
+      h1: '{secondary_label}-wedstrijden in {label}'
+      paragraph: Deze pagina richt zich op {secondary_label_lower}-wedstrijden in {label}, zodat je relevantere opties in dezelfde provincie vergelijkt. Handig wanneer zowel de regio als het looptype je shortlist bepalen.
+    race_type_month:
+      title: '{secondary_label}-wedstrijden in {label} | {site_name}'
+      meta_description: Bekijk {secondary_label_lower}-wedstrijden in {label_lower}. Vergelijk data, afstanden en praktische details terwijl je je seizoen plant.
+      h1: '{secondary_label}-wedstrijden in {label}'
+      paragraph: Deze pagina verzamelt {secondary_label_lower}-wedstrijden in {label_lower} voor lopers die eerst op de kalender plannen. Zo vergelijk je vergelijkbare loopvormen voordat je verder filtert op plaats of afstand.
+    race_type_city:
+      title: '{secondary_label}-wedstrijden bij {label} | {site_name}'
+      meta_description: Bekijk {secondary_label_lower}-wedstrijden rond {label}. Vergelijk data, afstanden en nabije opties voordat je je volgende wedstrijd kiest.
+      h1: '{secondary_label}-wedstrijden bij {label}'
+      paragraph: Deze pagina verzamelt {secondary_label_lower}-wedstrijden rond {label}, zodat lokale wedstrijden sneller te vergelijken zijn. Handig als je een bepaald looptype bij één stad wilt zonder de hele kalender te openen.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Je schrijft tijdloze SEO-teksten voor indexeerbare hardloopkalender-pagina''s. Schrijf eerst voor mensen, daarna voor zoekintentie. Geef alleen geldige JSON. Houd de tekst tijdloos: noem nooit een huidig jaar, aantallen, tijdelijke claims of versheid. Vermijd keyword stuffing, hype, clickbait, superlatieven en niet-verifieerbare claims. Maak elke pagina duidelijk onderscheidend op basis van de routecontext. Gebruik natuurlijk Nederlands dat past bij een hardloopkalender in Nederland. Kies beknopte titels en H1''s, metabeschrijvingen van ongeveer 120-160 tekens en een alinea van 2-3 korte zinnen.'
+  browse_guidance:
+    county: De gebruiker wil wedstrijden in één provincie.
+    city: De gebruiker wil wedstrijden rond een stad of een stad in de buurt.
+    month: De gebruiker wil wedstrijden per maand.
+    race_type: De gebruiker wil een bepaald looptype.
+    category: De gebruiker wil een bepaalde afstand of wedstrijdcategorie.
+    race_type_category: De gebruiker wil een bepaalde afstand/categorie binnen één looptype.
+    race_type_county: De gebruiker wil een bepaald looptype in één provincie.
+    race_type_month: De gebruiker wil een bepaald looptype in één maand.
+    race_type_city: De gebruiker wil een bepaald looptype rond één stad.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Bladeren op categorie
+  helper_text: Vind wedstrijden via vooraf ingestelde filters en combinaties
+  overview: Overzicht
+  counties: Provincies
+  cities: Steden
+  months: Maand
+  types: Looptypes
+  categories: Categorieën
+  neighboring: Naburige landen
+browse_overview:
+  title: Bekijk alle wedstrijden
+  meta_description: Vind wedstrijden per provincie, type of categorie
+browse_types:
+  title: Bladeren op looptype
+  meta_description: Vind wedstrijden per looptype.
+browse_counties:
+  title: Bladeren op provincie
+  meta_description: Vind wedstrijden in jouw provincie.
+browse_cities:
+  title: Bladeren op stad
+  meta_description: Vind wedstrijden in jouw stad.
+browse_categories:
+  title: Bladeren op categorie
+  meta_description: Vind wedstrijden op afstand en categorie.
+browse_months:
+  title: Bladeren op maand
+  meta_description: Vind wedstrijden per maand.
+auth_modal:
+  title_sign_in: Inloggen
+  title_create_account: Account aanmaken
+  title_reset_password: Wachtwoord resetten
+  auth_unavailable: Inloggen is nog niet geconfigureerd.
+  name_placeholder: Jouw naam
+  email_placeholder: Jouw e-mail
+  password_placeholder: Wachtwoord
+  submit_sign_in: Inloggen
+  submit_create_account: Account aanmaken
+  submit_reset_password: Stuur resetlink
+  create_account: Account aanmaken
+  forgot_password: Wachtwoord vergeten?
+  back_to_login: Terug naar inloggen
+  error_wrong_password: Onjuist wachtwoord
+  error_email_not_found: E-mailadres niet gevonden
+  prompt_reset_password: Wil je je wachtwoord resetten?
+  prompt_create_account: Wil je een account aanmaken met dit e-mailadres?
+  already_logged_in: Je bent al ingelogd als
+  as_email: met e-mail
+  continue_as_user: Ga verder als deze gebruiker
+  logout_and_switch: Uitloggen en van gebruiker wisselen
+  account_created: Account aangemaakt!
+  account_created_details: Je bent nu ingelogd als
+  verification_email_sent: Er is een bevestigingslink naar je e-mail gestuurd
+  please_verify: Bevestig je e-mailadres
+  error_invalid_credential: Ongeldig e-mailadres of wachtwoord
+  create_account_prompt: Maak in plaats daarvan een account aan
+  error_too_many_requests: Te veel pogingen. Probeer het later opnieuw.
+  continue_with_google: Doorgaan met Google
+  continue_with_google_create: Account aanmaken met Google
+  google_in_progress: Doorgaan met Google...
+  oauth_divider: of
+auth_pages:
+  confirm_success: Je e-mail is bevestigd en je account is nu actief.
+  confirm_ready: Je kunt de site nu verder gebruiken.
+  confirm_error: Je e-mailadres kon niet worden bevestigd.
+  reset_intro: Voer een nieuw wachtwoord in voor je account.
+  reset_confirm_label: Bevestig wachtwoord
+  reset_mismatch_error: De wachtwoorden komen niet overeen.
+  reset_invalid_link_error: Ongeldige of ontbrekende herstellink.
+  reset_success: Je wachtwoord is bijgewerkt. Je kunt nu inloggen.
+newsletter_popup:
+  email_placeholder: Jouw e-mailadres
+  submit_button: Stuur mij de updates
+  dismiss_button: Niet nu
+  invalid_email: Vul een geldig e-mailadres in.
+  submit_error: We konden je aanmelding nu niet opslaan. Probeer het opnieuw.
+  submitting_text: Opslaan...
+  success_message: Bedankt! Wedstrijdupdates zijn onderweg naar je inbox.
+  privacy_note: Nieuwe wedstrijden, datumwijzigingen en geselecteerde aanbiedingen. Je kunt je altijd afmelden.
+  close_aria_label: Sluit aanmeldvenster
+  benefits:
+    new_races: Nieuwe wedstrijden als eerste
+    date_changes: Datumwijzigingen meteen
+    selected_offers: Geselecteerde aanbiedingen
+    similar_races: Vergelijkbare wedstrijden bij jou in de buurt
+    local_picks: Meer wedstrijden in de buurt
+    opening_reminders: Herinneringen voordat de plaatsen vol zijn
+    race_updates: Updates over deze wedstrijd
+    nearby_races: Wedstrijden in buurlanden bij jou in de buurt
+  generic:
+    eyebrow: Mis je volgende wedstrijd niet
+    title: Ontvang nieuwe wedstrijden en datumwijzigingen als eerste
+    body: Meld je aan voor onze nieuwsbrief en ontvang nieuwe wedstrijden, bijgewerkte data en geselecteerde tips in {country} direct in je inbox.
+  race_detail:
+    eyebrow: Volg deze wedstrijd
+    title: Wil je updates over {race_name}?
+    body: Meld je aan en ontvang updates over {race_name}, vergelijkbare wedstrijden in {county} en belangrijke wijzigingen direct in je inbox.
+  browse_category:
+    eyebrow: Meer van de juiste wedstrijden
+    title: Mis geen nieuwe {category}-wedstrijden
+    body: We sturen nieuwe {category}-wedstrijden, relevante alternatieven in de buurt en belangrijke data, zodat je niet zelf hoeft te blijven zoeken.
+  browse_category_type:
+    eyebrow: Meer van de juiste wedstrijden
+    title: Ontvang meer {race_type}-wedstrijden binnen {category}
+    body: Meld je aan en ontvang meer {race_type}-wedstrijden binnen {category}, alternatieven in de buurt en datumwijzigingen direct in je inbox.
+  browse_county:
+    eyebrow: Lokale wedstrijden eerst
+    title: Ontvang meer wedstrijden in {county}
+    body: Blijf op de hoogte van nieuwe wedstrijden, bijgewerkte data en geselecteerde tips voor {county} zonder steeds de kalender te checken.
+  browse_city:
+    eyebrow: Lokale wedstrijden eerst
+    title: Wil je meer wedstrijden in {city}?
+    body: Meld je aan en ontvang nieuwe wedstrijden, alternatieven in de buurt en belangrijke data voor {city} direct in je inbox.
+  browse_type:
+    eyebrow: De juiste loopstijl
+    title: Ontvang meer {race_type}-wedstrijden in je inbox
+    body: We sturen nieuwe {race_type}-wedstrijden, vergelijkbare alternatieven en belangrijke data, zodat je erbij bent voordat de plaatsen vol zijn.
+  browse_month:
+    eyebrow: Plan je seizoen
+    title: Ontvang de beste wedstrijden in {month} als eerste
+    body: Als wedstrijden in {month} openen, verplaatsen of extra interessant worden, hoor je het meteen in je inbox.
+  browse_neighboring:
+    eyebrow: Breid je kalender uit
+    title: Ontvang ook wedstrijden uit buurlanden
+    body: Meld je aan en ontvang nieuwe wedstrijden, geselecteerde tips over de grens en datumwijzigingen uit {region} direct in je inbox.
+  browse_neighboring_country:
+    eyebrow: Breid je kalender uit
+    title: Ontvang meer wedstrijden in {region}
+    body: We sturen nieuwe wedstrijden, datumwijzigingen en relevante alternatieven in de buurt wanneer er iets interessants gebeurt in {region}.
+submission_flow:
+  logged_in_as: Ingelogd als organisator
+  submitting_new_race: stuurt een nieuwe wedstrijd in
+  new_account_created: Om de wedstrijd te beheren moet je je e-mailadres bevestigen. Er is een bevestigingslink naar het opgegeven e-mailadres gestuurd.
+  password_reset_sent: Wachtwoordreset is verstuurd. Controleer je inbox.
+  unexpected_error: Er is een fout opgetreden. Probeer het opnieuw.
+  processing_submission: Inzending wordt verwerkt...
+  race_exists: De wedstrijd staat al in de database.
+  race_submitted: De wedstrijd is ingezonden!
+  submission_failed: De wedstrijd kon niet worden ingezonden. Probeer het opnieuw.
+  missing_fields: Er ontbreekt iets. Zorg dat alle verplichte velden zijn ingevuld en dat er een plaats op de kaart is gekozen.
+race_page:
+  forum_section:
+    title: Vragen en antwoorden
+    placeholder: Stel een vraag aan de organisator...
+    submit_button: Verstuur vraag
+    login_prompt: Log in om een vraag te stellen
+    empty_state: Nog geen vragen. Wees de eerste die een vraag stelt!
+    error_message_no_login: Log in of maak een account aan om een vraag te stellen
+map:
+  show_map: Toon kaart
+  show_list: Toon lijst
+  map: kaart
+  list: lijst
+forum:
+  title: Forum – Praat over hardlopen en hardloopleven met andere lopers in Nederland
+  meta_description: Praat over hardlopen en hardloopleven met andere lopers in ons forum. Alles over training, wedstrijden, blessures, voeding, kleding, materiaal en meer.
+  categories:
+  - name: Training
+    slug: training
+    description: Gesprek over training en techniek
+  - name: Wedstrijden en evenementen
+    slug: wedstrijden
+    description: Praat over aankomende wedstrijden
+  - name: Blessures en revalidatie
+    slug: blessures
+    description: Hulp bij blessures en herstel
+  - name: Routes en kaarten
+    slug: routes
+    description: Praat over routes en kaarten
+  - name: Reizen
+    slug: reizen
+    description: Praat over hardloopreizen en wedstrijdtrips
+  - name: Voeding
+    slug: voeding
+    description: Praat over voeding en voedingsadvies
+  - name: Kleding, schoenen en materiaal
+    slug: materiaal
+    description: Praat over kleding, schoenen en materiaal
+  - name: Kopen en verkopen
+    slug: markt
+    description: Praat over kopen en verkopen van hardloopmateriaal
+  - name: Overig
+    slug: overig
+    description: Al het andere
+  empty_category_state: Nog geen threads. Start het gesprek door de eerste thread te maken!
+  empty_state_thread: Nog geen berichten. Wees de eerste die schrijft!
+  empty_state: Nog geen berichten. Wees de eerste die schrijft!
+  reply_placeholder: Schrijf je antwoord...
+  submit_button: Versturen
+  login_prompt: Log in om mee te praten
+  new_thread_title_placeholder: Titel van je nieuwe thread
+  new_thread_content_placeholder: Schrijf je eerste bericht...
+  create_thread_button: Nieuwe thread maken
+  back_to_forum: ← Terug naar forum
+  back_to_category: '← Terug naar '
+  empty_thread_state: Nog geen berichten. Wees de eerste die schrijft!
+  posts_label: berichten
+  reply_label: antwoord
+  thread_created_title: Bedankt voor het starten van een nieuwe thread!
+  thread_created_message: Je thread wordt beoordeeld en binnenkort aan de pagina toegevoegd.
+  thread_created_back_link: Terug naar categorie
+  show_more_threads: Toon meer threads
+  show_less_threads: Toon minder threads
+  create_new_thread: Nieuwe thread maken
+  reply_title: Reageer op de thread
+  showing_threads_count: Toont {x} van {y} threads
+about_us:
+  title: Over Hardlooplijst
+  meta_description: Hardlooplijst – jouw gids voor hardlopen in Nederland
+  content:
+    intro: Welkom bij Hardlooplijst – het meest complete platform voor hardlopers in Nederland!
+    mission: Onze missie is om het makkelijk te maken voor hardlopers om informatie over wedstrijden, training en alles rond hardlopen te vinden en te delen.
+    story: Hardlooplijst is in 2023 gestart door hardlopers voor hardlopers. We zagen behoefte aan een modern, gebruiksvriendelijk platform waar de hardloopcommunity samenkomt.
+    features:
+    - title: Complete wedstrijdlijst
+      description: We verzamelen alle wedstrijden in Nederland op één plek – van kleine lokale loops tot grote internationale evenementen.
+    - title: Gedreven door de community
+      description: Ons platform wordt gedreven door hardlopers zoals jij. Iedereen kan informatie over wedstrijden toevoegen en meedoen in het gesprek.
+    - title: Gratis tools
+      description: We bieden nuttige tools zoals tempo-omrekenaars, trainingsprogramma's en routeplanning – helemaal gratis.
+    closing: We blijven het platform ontwikkelen op basis van feedback van gebruikers. Heb je verbeterideeën? Neem gerust contact met ons op!
+contact:
+  title: Neem contact met ons op
+  meta_description: Neem contact op met Hardlooplijst – we helpen je graag
+  content:
+    intro: 'We horen graag van je! Zo kun je contact met ons opnemen:'
+    email:
+      title: E-mail
+      address: loppkartan@gmail.com
+      description: Op werkdagen reageren we meestal binnen 24 uur.
+    social:
+      title: Sociale media
+      description: 'Volg ons op sociale media voor het laatste nieuws en updates:'
+    feedback:
+      title: Feedback
+      description: We waarderen alle feedback die Hardlooplijst beter maakt.
+privacy_page:
+  title: Privacybeleid
+  meta_description: Privacybeleid en informatie over hoe Hardlooplijst persoonsgegevens en cookies verwerkt.
+  last_updated_label: Laatst bijgewerkt
+  last_updated_date: 27 maart 2026
+  contact_intro: 'Voor vragen en verzoeken over privacy kun je contact met ons opnemen via:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Gegevens die we verzamelen
+    intro: 'We verzamelen gegevens die je rechtstreeks aan ons geeft wanneer je:'
+    bullets:
+    - Een account aanmaakt
+    - Wedstrijdinformatie instuurt
+    - In het forum schrijft
+    - Contact met ons opneemt
+  - title: 2. Cookies en tracking
+    intro: 'We gebruiken cookies om:'
+    bullets:
+    - Je instellingen te onthouden
+    - Je sessie en inlogstatus te bewaren
+    - Verkeer en gebruik van de site te analyseren
+    - Relevante advertenties te tonen en de ervaring te verbeteren
+  - title: 3. Hoe we je gegevens gebruiken
+    intro: 'Je gegevens helpen ons om:'
+    bullets:
+    - Onze diensten te leveren en te verbeteren
+    - Belangrijke berichten en updates te sturen
+    - Op vragen en support te reageren
+    - Fraude en misbruik te voorkomen
+  - title: 4. Jouw rechten
+    intro: 'Volgens de AVG heb je het recht om:'
+    bullets:
+    - Toegang tot je persoonsgegevens te krijgen
+    - Onjuiste of onvolledige gegevens te laten corrigeren
+    - Verwijdering van je gegevens te vragen
+    - Bezwaar te maken tegen bepaalde verwerkingen
+    - Gegevensoverdraagbaarheid te vragen
+  - title: 5. Neem contact met ons op
+    intro: Heb je vragen over hoe we persoonsgegevens verwerken of cookies gebruiken, neem dan gerust contact met ons op.
+racetime_estimator_title: Schat je eindtijd in
+racetime_estimator_description: Op basis van een eerdere wedstrijd kun je je eindtijd op andere afstanden inschatten.
+known_distance_label: Kies de afstand waarop je een eerder resultaat hebt
+known_time_label: Vul je tijd in
+calculate_button_text: Bereken tijden
+predicted_times_title: Geschatte tijden
+distance_header: Afstand
+predicted_time_header: Geschatte tijd
+hilly_course_label: Heuvelachtig parcours
+finish_time_header: Geschatte eindtijd
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/mile
+flat_time_header: Tijd (vlak)
+flat_pace_per_km_header: Min/km (vlak)
+flat_pace_per_mile_header: Min/mile (vlak)
+hill_adjustment_header: Correctie voor heuvels
+pace_calculator_title: Snelheidsomzetter
+pace_calculator_description: Een eenvoudige tool om je loopsnelheid tussen verschillende eenheden om te rekenen
+pace_table_header_kph: Kilometer per uur
+pace_table_header_mph: Miles per uur
+pace_table_header_min_km: Minuten per kilometer
+pace_table_header_min_mile: Minuten per mile
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Halve marathon
+pace_table_header_full: Marathon
+pace_conversion_note: 1 kilometer per uur (kph) = 0,62 mile per uur (mph)
+measure_route_title: Meet je ronde
+measure_route_description: Klik op de kaart om punten langs je route te markeren. De totale afstand wordt automatisch berekend.
+remove_last_point: Verwijder laatste punt
+clear_route: Wis route
+total_distance: Totale afstand
+training_plans:
+  title: Trainingsprogramma
+  description: Maak een trainingsprogramma op basis van je doel
+  disclaimer_text_tp_1: Onze trainingsprogramma's worden met AI gegenereerd en daarna afgestemd op jouw doelen en wensen. Ze zijn niet gegarandeerd perfect of voor iedereen geschikt.
+  disclaimer_link_tp: Neem contact met ons op
+  disclaimer_text_tp_2: als je feedback of verbeterideeën hebt.
+  form:
+    race_date_label: Wedstrijddatum
+    plan_type_label: Programmatype
+    target_distance_label: Doelafstand
+    target_time_label: Doeltijd
+    training_days_label: Trainingsdagen per week
+    session_time_label: Tijd per training
+    is_hilly_label: Heuvelachtig terrein
+    hours_placeholder: Uren
+    minutes_placeholder: Minuten
+    seconds_placeholder: Seconden
+    submit_button: Maak trainingsprogramma
+    target_distance:
+      placeholder: Kies afstand
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Halve marathon
+        '42195': Marathon
+    training_days:
+      placeholder: Kies aantal dagen
+      options:
+        '3': 3 dagen
+        '4': 4 dagen
+        '5': 5 dagen
+        '6': 6 dagen
+    session_time:
+      placeholder: Kies tijd per training
+      options:
+        30-45: 30-45 minuten
+        45-60: 45-60 minuten
+        60-90: 60-90 minuten
+        90+: 90+ minuten
+  results:
+    title: Jouw trainingsprogramma
+    variations:
+      title: 'Kies een variant die bij je past:'
+    plan_details:
+      duration_label: 'Programmalengte:'
+      weekly_distance_label: 'Wekelijkse afstand:'
+    regenerate_button: Toon andere varianten
+    export_button: Exporteer naar PDF
+  workout_types:
+    easy: Rustige loop
+    tempo: Tempoloop
+    intervals: Intervallen
+    long: Duurloop
+    rest: Rust
+  messages:
+    weeks: weken
+    week_label: Week
+    hilly_terrain_note: aangepast aan heuvelachtig terrein
+  plan_variation:
+    focus_label: Focus
+    weekly_structure_label: Weekstructuur
+    distribution_label: Verdeling
+    sessions_per_week: trainingen per week
+    select_button: Kies dit programma
+  errors:
+    loading_plans: Fout bij het laden van trainingsprogramma's
+    required_fields: Vul alle verplichte velden in
+    no_matching_plan: Geen passend trainingsprogramma gevonden
+    no_matching_variations: Geen passende varianten gevonden
+    invalid_training_days: Het aantal trainingsdagen komt niet overeen met het programma
+  week: Week
+  weeks: weken
+  hilly_terrain_note: aangepast aan heuvelachtig terrein
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Opbouw van basisuithoudingsvermogen
+        weekly_template:
+          monday:
+            type: easy
+            description: Rustige duurloop
+          wednesday:
+            type: tempo
+            description: Tempoloop
+          saturday:
+            type: long
+            description: Duurloop
+          sunday:
+            type: recovery
+            description: Herstel
+      build:
+        duration_percent: 40
+        focus: Meer intensiteit en afstand
+        weekly_template:
+          monday:
+            type: easy
+            description: Rustige duurloop
+          wednesday:
+            type: intervals
+            description: Intervallen
+          friday:
+            type: tempo
+            description: Tempoloop
+          sunday:
+            type: long
+            description: Duurloop
+      peak:
+        duration_percent: 15
+        focus: Pieken en specifieke training
+        weekly_template:
+          tuesday:
+            type: intervals
+            description: Kwaliteitstraining
+          thursday:
+            type: tempo
+            description: Tempoloop
+          saturday:
+            type: long
+            description: Duurloop
+          sunday:
+            type: recovery
+            description: Herstel
+      taper:
+        duration_percent: 5
+        focus: Afstemmen
+        weekly_template:
+          tuesday:
+            type: easy
+            description: Rustige loop
+          thursday:
+            type: tempo
+            description: Korte tempoloop
+          saturday:
+            type: easy
+            description: Zeer rustige loop
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min rustig joggen
+        cooldown: 5-10 min rustig joggen
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min progressieve warming-up
+        cooldown: 10-15 min cooling-down
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min incl. oefeningen en versnellingen
+        cooldown: 10-15 min rustig joggen
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min heel rustig joggen
+        cooldown: 5-10 min wandelen/licht joggen
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min wandelen
+        cooldown: 5-10 min wandelen
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Warming-up
+    main_workout_label: Beschrijving van de training
+    cooldown_label: Cooling-down
+    intensity_label: Tempo
+    duration_label: Tijd
+  regenerate:
+    button_text: Maak nieuwe variant
+    confirmation: Weet je zeker dat je een nieuwe variant wilt maken?
+  weekdays:
+    monday: Maandag
+    tuesday: Dinsdag
+    wednesday: Woensdag
+    thursday: Donderdag
+    friday: Vrijdag
+    saturday: Zaterdag
+    sunday: Zondag
+footer:
+  races_heading: Wedstrijden
+  tools_heading: Tools
+  about_heading: Over Hardlooplijst
+  privacy: Privacybeleid
+  copyright_year: 2023-2026
+  site_name: Hardlooplijst
+  rights_text: Alle rechten voorbehouden.
+  social_links:
+    facebook: https://www.facebook.com/loppkartan
+    instagram: https://www.instagram.com/loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@loppkartan
+accessibility:
+  main_navigation_label: Hoofdnavigatie
+  breadcrumb_label: Kruimelpad
+  back_to_top_label: Terug naar boven
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Populaire wedstrijden nu
+trending_races_description: Dit zijn de wedstrijden die de meeste aandacht van hardlopers kregen.
+trending_races_views_last_30_days: weergaven in de afgelopen 30 dagen
+trending_races_most_viewed: Nu het populairst
+races_views: weergaven
+recent_races_title: Laatst toegevoegde wedstrijden
+today: vandaag
+yesterday: gisteren
+days_ago: dagen geleden
+newest_race_badge: Nieuwste toevoeging
+races_count: wedstrijden
+popular_counties_title: Vind wedstrijden in jouw provincie
+popular_cities_title: Vind wedstrijden in jouw stad
+all_counties: Toon alle provincies
+all_cities: Toon alle steden
+category_header_1: Trailwedstrijden
+category_type_1: trail
+category_1_races_sub_title_1: Trailmarathon
+category_1_races_sub_ref_1: marathon
+category_1_races_sub_title_2: Trail-ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Trail-ultra 100 miles
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Wegwedstrijden
+category_type_2: road
+category_2_races_sub_title_1: Marathon
+category_2_races_sub_ref_1: marathon
+category_2_races_sub_title_2: Halve marathon
+category_2_races_sub_ref_2: half-marathon
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Bekijk alle wedstrijden in
+tools_title: Tools voor je volgende wedstrijd
+home_tools:
+  measure_route:
+    description: Meet een route-idee en krijg snel een afstandsindicatie voordat je op pad gaat.
+  training_plans:
+    description: Vind trainingsprogramma's voor verschillende doelen, niveaus en wedstrijdafstanden voor je volgende periode.
+  racetime_estimator:
+    description: Schat een realistische eindtijd op basis van eerdere resultaten en vergelijk verschillende doelen.
+  pace_calculator:
+    description: Reken tempo, snelheid en eindtijd om op gangbare wedstrijdafstanden terwijl je je training plant.
+missing_race: Mist er een wedstrijd? Voeg hem hier toe!
+add_race_mp_title: Voeg jouw wedstrijd toe
+neighboring_countries_title: Wedstrijden in Nederland en buurlanden
+neighboring_countries_title_specific_country: Wedstrijden in {country_name}
+neighboring_countries_description: Hier staan wedstrijden die in buurlanden plaatsvinden.
+neighboring_countries_description_specific_country: Hier zetten we wedstrijden op een rij die in {country_name} plaatsvinden.
+neighboring_countries_neighbors_native: Naburige landen
+neighboring_countries_all_neighbors_native: Alle buurlanden
+section_race_card_header_nieghbors_default: Nederland en buurlanden
+browse_neighboring:
+  title: Bekijk wedstrijden in buurlanden
+  meta_description: Vind wedstrijden in buurlanden bij jou in de buurt. Blader per land en ontdek loopevenementen over de grens.
+neighboring_races_title: Wedstrijden in buurlanden
+neighboring_countries_show_all: Toon alle
+race_page_layout_title: 'Wedstrijdpagina: {x}'
