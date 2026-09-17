@@ -4,24 +4,20 @@ import { getGoogleAdsConfig } from '../src/lib/googleAds';
 test('google ads stay off for Sweden and other non-flagged markets', () => {
   expect(getGoogleAdsConfig('se').enabled).toBe(false);
   expect(getGoogleAdsConfig('cz').enabled).toBe(false);
-  expect(getGoogleAdsConfig('ee').enabled).toBe(false);
+  expect(getGoogleAdsConfig('gr').enabled).toBe(false);
+  expect(getGoogleAdsConfig('nl').enabled).toBe(false);
   expect(getGoogleAdsConfig('se').client).toBeNull();
 });
 
-test('google ads are on for Finland, Lithuania, and Denmark with the shared public client', () => {
-  const fi = getGoogleAdsConfig('fi');
-  const lt = getGoogleAdsConfig('lt');
-  const dk = getGoogleAdsConfig('dk');
+test('google ads are on for flagged markets with the shared public client', () => {
+  const flagged = ['fi', 'lt', 'dk', 'ee', 'de', 'pl'] as const;
 
-  expect(fi.enabled).toBe(true);
-  expect(lt.enabled).toBe(true);
-  expect(dk.enabled).toBe(true);
-  expect(fi.client).toBe('ca-pub-7076760775175370');
-  expect(lt.client).toBe('ca-pub-7076760775175370');
-  expect(dk.client).toBe('ca-pub-7076760775175370');
-  expect(fi.publisherId).toBe('pub-7076760775175370');
-  expect(lt.publisherId).toBe('pub-7076760775175370');
-  expect(dk.publisherId).toBe('pub-7076760775175370');
+  for (const code of flagged) {
+    const ads = getGoogleAdsConfig(code);
+    expect(ads.enabled, code).toBe(true);
+    expect(ads.client, code).toBe('ca-pub-7076760775175370');
+    expect(ads.publisherId, code).toBe('pub-7076760775175370');
+  }
 });
 
 test('Swedish built pages do not include the Google ads or consent pipeline', async ({ page }) => {
