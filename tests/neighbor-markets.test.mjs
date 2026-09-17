@@ -96,3 +96,13 @@ test('Norway stays configured but is omitted until it is an enabled deploy marke
   assert.ok(loadJson('config/neighbor-markets.json').markets.dk.includes('no'));
   assert.ok(!liveNeighbors('dk').includes('no'));
 });
+
+test('Netherlands lists Germany as a live neighbor and keeps Belgium until it is enabled', () => {
+  const neighbors = loadJson('config/neighbor-markets.json').markets;
+  assert.deepEqual(neighbors.nl, ['de', 'be']);
+  assert.ok(neighbors.de.includes('nl'));
+  assert.deepEqual(neighbors.be, ['nl', 'de']);
+  assert.deepEqual(liveNeighbors('nl'), ['de']);
+  assert.ok(!liveNeighbors('nl').includes('be'));
+  assert.ok(!liveNeighbors('de').includes('nl'));
+});

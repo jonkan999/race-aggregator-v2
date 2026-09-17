@@ -5,12 +5,12 @@ test('google ads stay off for Sweden and other non-flagged markets', () => {
   expect(getGoogleAdsConfig('se').enabled).toBe(false);
   expect(getGoogleAdsConfig('cz').enabled).toBe(false);
   expect(getGoogleAdsConfig('gr').enabled).toBe(false);
-  expect(getGoogleAdsConfig('nl').enabled).toBe(false);
+  expect(getGoogleAdsConfig('be').enabled).toBe(false);
   expect(getGoogleAdsConfig('se').client).toBeNull();
 });
 
 test('google ads are on for flagged markets with the shared public client', () => {
-  const flagged = ['fi', 'lt', 'dk', 'ee', 'de', 'pl'] as const;
+  const flagged = ['fi', 'lt', 'dk', 'ee', 'de', 'pl', 'nl'] as const;
 
   for (const code of flagged) {
     const ads = getGoogleAdsConfig(code);

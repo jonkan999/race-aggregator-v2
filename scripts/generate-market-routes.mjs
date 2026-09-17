@@ -182,10 +182,11 @@ const generatedFiles = [];
 const previousManifest = loadPreviousManifest();
 
 for (const filePath of previousManifest) {
-  // Keep other markets' race-detail folders (jooksulehed, rennseiten, lobsider, …).
+  // Keep other markets' race-detail folders (jooksulehed, rennseiten, lobsider, looppaginas, …).
   // Auxiliary wrappers still swap per MARKET_CODE.
   // LT Unicode /bėgimo_puslapiai is a one-off 308, not a generated route.
   // DK /lobekalender/kobenhavn is a one-off 308 onto /lobekalender/hovedstaden, not a generated route.
+  // NL Fryslân county slug is ASCII fryslan (live already), not a generated redirect.
   if (isGeneratedRaceDetailRoute(filePath)) continue;
   deleteFileIfExists(path.join(repoRoot, filePath));
 }
