@@ -53,6 +53,7 @@ test('ASCII alias folds Unicode but is not a generic slugify policy', () => {
   assert.equal(asciiAliasRacePageFolder('strony_biegow'), '');
   assert.equal(asciiAliasRacePageFolder('kilpailusivut'), '');
   assert.equal(asciiAliasRacePageFolder('lobsider'), '');
+  assert.equal(asciiAliasRacePageFolder('looppaginas'), '');
 });
 
 test('LT YAML canonical race folder is ASCII begimo_puslapiai', () => {
@@ -95,6 +96,26 @@ test('DK YAML-independent race folder is ASCII lobsider with no Unicode alias', 
     manifest.files.some((filePath) => filePath.includes(`src/pages/${ASCII_DK_FOLDER}/[domain]/index.astro`)),
     true,
   );
+});
+
+test('NL YAML-independent race folder is ASCII looppaginas with no Unicode alias', () => {
+  const ASCII_NL_FOLDER = 'looppaginas';
+  const content = { race_page_folder_name: ASCII_NL_FOLDER };
+  const manifest = JSON.parse(fs.readFileSync(path.join(repoRoot, 'scripts/.generated-market-routes.json'), 'utf8'));
+  assert.equal(localRacePageFolder(content, 'native'), ASCII_NL_FOLDER);
+  assert.equal(asciiAliasRacePageFolder(ASCII_NL_FOLDER), '');
+  assert.equal(isRacePageFolderMatch(content, 'native', ASCII_NL_FOLDER), true);
+  assert.equal(fs.existsSync(path.join(repoRoot, 'src/pages', ASCII_NL_FOLDER, '[domain]', 'index.astro')), true);
+  assert.equal(
+    manifest.files.some((filePath) => filePath.includes(`src/pages/${ASCII_NL_FOLDER}/[domain]/index.astro`)),
+    true,
+  );
+});
+
+test('NL Fryslân county slug is ASCII fryslan, not friesland', () => {
+  assert.equal(slugify('Fryslân', 'nl'), 'fryslan');
+  assert.equal(slugify('Fryslan', 'nl'), 'fryslan');
+  assert.notEqual(slugify('Friesland', 'nl'), 'fryslan');
 });
 
 test('folder match still accepts a Unicode canonical plus ASCII alias', () => {

@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 import { getActiveMarketCode, resolveCountriesRoot } from './lib/market-config.mjs';
+import { transliterateForSlug } from '../src/lib/slugifyShared.js';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const countriesDir = resolveCountriesRoot(repoRoot);
@@ -95,6 +96,14 @@ function collectTextLeaves(value, prefix = '', result = []) {
 
 function textValue(value) {
   return String(value ?? '').trim();
+}
+
+function slugify(input, countryCode) {
+  let s = transliterateForSlug(input, countryCode);
+  s = s.normalize('NFKD').replace(/\p{M}/gu, '');
+  s = s.replace(/[^a-z0-9\s-]/g, '');
+  s = s.replace(/[\s-]+/g, '-').replace(/^-|-$/g, '');
+  return s;
 }
 
 function trainingPlansEnabled(content) {
@@ -195,6 +204,60 @@ for (const countryCode of countryCodes) {
       failures.push(
         'dk: native race_page_folder_name must be ASCII lobsider (København → Hovedstaden is a one-off 308 in config/redirects/dk-kobenhavn.json, not a generated route)',
       );
+    }
+  }
+  if (countryCode === 'nl') {
+    const folder = String(nativeContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (folder !== 'looppaginas') {
+      failures.push(
+        'nl: native race_page_folder_name must be ASCII looppaginas (live hardlooplijst.nl race-detail folder; no Unicode rename or extra redirects)',
+      );
+    }
+
+    const englishFolder = String(englishContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (englishFolder && englishFolder !== 'race-pages') {
+      failures.push('nl: English race_page_folder_name must be race-pages');
+    }
+
+    const nativeListSlug = slugify(
+      textValue(nativeContent.navigation?.['race-list']) ||
+        textValue(nativeContent.race_list_name) ||
+        textValue(nativeContent.page_name),
+      'nl',
+    );
+    if (nativeListSlug && nativeListSlug !== 'hardloopkalender') {
+      failures.push(`nl: native race list slug must be hardloopkalender, got ${nativeListSlug}`);
+    }
+
+    const englishListSlug = slugify(
+      textValue(englishContent.navigation?.['race-list']) ||
+        textValue(englishContent.race_list_name) ||
+        textValue(englishContent.page_name),
+      'nl',
+    );
+    if (englishListSlug && englishListSlug !== 'race-calendar') {
+      failures.push(`nl: English race list slug must be race-calendar, got ${englishListSlug}`);
+    }
+
+    const citiesSlug = slugify(
+      textValue(nativeContent.seo_cities_folder_name) ||
+        textValue(nativeContent.browse_by_category?.cities),
+      'nl',
+    );
+    if (citiesSlug && citiesSlug !== 'steden') {
+      failures.push(`nl: native cities folder slug must be steden, got ${citiesSlug}`);
+    }
+
+    const countyMapping = nativeContent?.county_mapping ?? {};
+    for (const [raw, mapped] of Object.entries(countyMapping)) {
+      const label = textValue(mapped) || textValue(raw);
+      if (!/frysl|friesland/i.test(`${raw} ${label}`)) continue;
+      const countySlug = slugify(label, 'nl');
+      if (countySlug !== 'fryslan') {
+        failures.push(
+          `nl: Fryslân county slug must be ASCII fryslan (do not map the label to Friesland), got ${countySlug} from "${label}"`,
+        );
+      }
     }
   }
   const trainingPlansAreEnabled =

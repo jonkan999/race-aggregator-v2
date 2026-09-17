@@ -224,7 +224,7 @@ Shared public client ID lives at the top-level `googleAdsClient` (the same `ca-p
 - per market: `googleAdsClient` on that market entry
 - env: `PUBLIC_ADSENSE_CLIENT`
 
-Currently **on** for `fi`, `lt`, `dk`, `ee`, `de`, and `pl`, **off** for every other market. Consent UI language follows the page `lang` (native or `/en/`) plus the messages published for that site in AdSense.
+Currently **on** for `fi`, `lt`, `dk`, `ee`, `de`, `pl`, and `nl`, **off** for every other market. Consent UI language follows the page `lang` (native or `/en/`) plus the messages published for that site in AdSense.
 
 [`vercel.json`](./vercel.json) pins the expected Vercel behavior for this repo:
 
@@ -233,7 +233,7 @@ Currently **on** for `fi`, `lt`, `dk`, `ee`, `de`, and `pl`, **off** for every o
 - output directory: `dist`
 - durable one-off redirects from [`config/redirects/`](./config/redirects/), merged by [`scripts/merge-vercel-redirects.mjs`](./scripts/merge-vercel-redirects.mjs) before `vercel build`
 
-Lithuania’s Unicode `/bėgimo_puslapiai/:path*` → ASCII `/begimo_puslapiai/:path*` 308 is an LT migration one-off in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json). `generate-market-routes.mjs` never writes that file or `vercel.json`, so the next market deploy matrix cannot wipe it. Finland (`fi`, suomi-juoksu.fi) native race-detail URLs are ASCII `/kilpailusivut/{domain}/` with no extra redirect. Denmark (`dk`, lobskalender.dk) is registered disabled until a Vercel project exists; native race-detail URLs are ASCII `/lobsider/{domain}/`. The live København county slug `/lobekalender/kobenhavn/:path*` is a one-off 308 to `/lobekalender/hovedstaden/:path*` in [`config/redirects/dk-kobenhavn.json`](./config/redirects/dk-kobenhavn.json).
+Lithuania’s Unicode `/bėgimo_puslapiai/:path*` → ASCII `/begimo_puslapiai/:path*` 308 is an LT migration one-off in [`config/redirects/lt-begimo-puslapiai.json`](./config/redirects/lt-begimo-puslapiai.json). `generate-market-routes.mjs` never writes that file or `vercel.json`, so the next market deploy matrix cannot wipe it. Finland (`fi`, suomi-juoksu.fi) native race-detail URLs are ASCII `/kilpailusivut/{domain}/` with no extra redirect. Denmark (`dk`, lobskalender.dk) is registered disabled until a Vercel project exists; native race-detail URLs are ASCII `/lobsider/{domain}/`. The live København county slug `/lobekalender/kobenhavn/:path*` is a one-off 308 to `/lobekalender/hovedstaden/:path*` in [`config/redirects/dk-kobenhavn.json`](./config/redirects/dk-kobenhavn.json). Netherlands (`nl`, hardlooplijst.nl) is registered disabled until a Vercel project exists; native race-detail URLs are ASCII `/looppaginas/{domain}/`. Live listing is `/hardloopkalender/`, cities `/hardloopkalender/steden/`, English `/en/race-calendar/` and `/en/race-pages/`. Fryslân county URLs stay ASCII `/hardloopkalender/fryslan`. Apex-only (www 404s on live). Collector YAML sync is a Mac follow-up (private `race-collector-v2` PR #8 / `cursor/nl-onboarding-8fe0`).
 
 ### Production deploy model
 
@@ -364,7 +364,7 @@ Mapbox is optional for smoke tests (the map shows a YAML message if `PUBLIC_MAPB
 - `data/countries/{code}/final_races*.json` — seed/export inputs (managed long-term by **race-collector-v2**).
 - `data/countries/{code}/json/training_plans_processed_{locale}.json` — collector-owned training-plan payloads. When a market exposes training plans in YAML, ship both the native-language file and `training_plans_processed_en.json` through the collector sync.
 - `data/countries/{code}/seo_content_cache*.json` — cached SEO title/meta/H1/intro overrides for browse landings (county, city, month, race type, distance/category, and valid race type + category combinations). Missing entries fall back to deterministic template copy. Rebuilds prune obsolete keys, refresh stale generator versions, and rewrite current aliases so old market-seed copy cannot silently survive.
-- [`config/neighbor-markets.json`](config/neighbor-markets.json) — geographic Aggregatory neighbor graph. Edit this when adding a live market so Nabolande / neighboring-country cards stay non-empty. Enabled deploy markets only are rendered; listing `no` before Norway is enabled is fine.
+- [`config/neighbor-markets.json`](config/neighbor-markets.json) — geographic Aggregatory neighbor graph. Edit this when adding a live market so Nabolande / neighboring-country cards stay non-empty. Enabled deploy markets only are rendered; listing `no` before Norway is enabled, or `be` before Belgium, is fine.
 - Collector-owned `data/countries/{code}/final_races_w_neighbors.json` (+ `_int.json`) should include nearby foreign races from `config.neighbors`, using each neighbor's English `final_races_int.json`, clipped by `neighbor_distance_threshold_km`, with `origin_country` set. If that file is identical to domestic-only `final_races.json` (DK and SE today), map/list neighbor overlays have nothing to show until **race-collector-v2** re-runs `pipeline/output/neighbors.py` / `final_assembler.py` and this repo re-syncs + re-seeds.
 - [`config/map-defaults.json`](config/map-defaults.json) — optional per-market Mapbox center/zoom overlay for list/browse/tool maps. Wins over YAML `mapbox_*` so collector YAML syncs cannot restore a too-tight Denmark zoom.
 
