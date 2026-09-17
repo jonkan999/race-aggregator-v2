@@ -224,7 +224,7 @@ Shared public client ID lives at the top-level `googleAdsClient` (the same `ca-p
 - per market: `googleAdsClient` on that market entry
 - env: `PUBLIC_ADSENSE_CLIENT`
 
-Currently **on** for `fi`, `lt`, and `dk`, **off** for every other market. Consent UI language follows the page `lang` (native or `/en/`) plus the messages published for that site in AdSense.
+Currently **on** for `fi`, `lt`, `dk`, `ee`, `de`, and `pl`, **off** for every other market. Consent UI language follows the page `lang` (native or `/en/`) plus the messages published for that site in AdSense.
 
 [`vercel.json`](./vercel.json) pins the expected Vercel behavior for this repo:
 

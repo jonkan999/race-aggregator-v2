@@ -37,7 +37,7 @@
 - Parity for forum and Firebase auth (tracked as later phases).
 - Replacing Firebase-hosted images in seed JSON (URLs may remain as-is in `payload`).
 
-Google Funding Choices cookie consent and AdSense Auto ads are restored for markets with `googleAdsEnabled: true` in `config/deploy-markets.json` (`fi`, `lt`, and `dk`). Other markets stay ad-free.
+Google Funding Choices cookie consent and AdSense Auto ads are restored for markets with `googleAdsEnabled: true` in `config/deploy-markets.json` (`fi`, `lt`, `dk`, `ee`, `de`, and `pl`). Other markets stay ad-free.
 
 ## Architecture
 
