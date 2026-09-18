@@ -16,6 +16,7 @@ import {
 } from './neighboringSelection';
 import type { RaceListRow, RaceTranslationRow } from './raceListRow';
 import { compareRaceRowsByRelevantDate } from './upcomingRaceWindow';
+import { resolveRaceDistanceMeters, rowMatchesDistanceRange } from './raceDistances.js';
 
 export type SsgRaceRow = RaceListRow;
 
@@ -139,20 +140,7 @@ function raceHasDistanceInRange(
   maxKm: number | null | undefined,
 ): boolean {
   if (minKm == null && maxKm == null) return true;
-  if (!Array.isArray(row.distance_m) || row.distance_m.length === 0) return false;
-  return row.distance_m.some((value) => {
-    const meters =
-      typeof value === 'number'
-        ? value
-        : typeof value === 'string'
-          ? Number.parseFloat(value)
-          : Number.NaN;
-    if (!Number.isFinite(meters)) return false;
-    const km = meters / 1000;
-    if (minKm != null && km < minKm) return false;
-    if (maxKm != null && km > maxKm) return false;
-    return true;
-  });
+  return rowMatchesDistanceRange(row, minKm ?? null, maxKm ?? null);
 }
 
 function applySnapshotFilters(
@@ -261,7 +249,12 @@ function loadAllRowsFromJson(countryCode: string): SsgRaceRow[] {
       race_dates: r.race_dates ?? [],
       latitude: (r.latitude as number) ?? null,
       longitude: (r.longitude as number) ?? null,
-      distance_m: r.distance_m ?? null,
+      distance_m: (() => {
+        const recorded = Array.isArray(r.distance_m) ? r.distance_m : [];
+        if (recorded.length > 0) return recorded;
+        const resolved = resolveRaceDistanceMeters(r);
+        return resolved.length > 0 ? resolved : recorded;
+      })(),
       website: (r.website as string) ?? null,
       payload: r as Record<string, unknown>,
       race_translations: translations,
@@ -270,6 +263,18 @@ function loadAllRowsFromJson(countryCode: string): SsgRaceRow[] {
 
   rows.sort(compareRaceRowsByDateThenDomain);
   return rows;
+}
+
+function hydrateRaceDistances(row: SsgRaceRow): SsgRaceRow {
+  const recorded = Array.isArray(row.distance_m) ? row.distance_m : [];
+  if (recorded.length > 0) return row;
+  const resolved = resolveRaceDistanceMeters(row);
+  if (resolved.length === 0) return row;
+  return { ...row, distance_m: resolved };
+}
+
+function hydrateRaceDistanceRows(rows: SsgRaceRow[]): SsgRaceRow[] {
+  return rows.map(hydrateRaceDistances);
 }
 
 function loadAllRowsFromBuildSnapshot(countryCode: string): SsgRaceRow[] | null {
@@ -383,7 +388,7 @@ export async function getAllRaceListRows(countryCode: string): Promise<{
   const pending = (async () => {
     const fromSnapshot = loadAllRowsFromBuildSnapshot(countryCode);
     if (fromSnapshot && fromSnapshot.length > 0) {
-      return { rows: fromSnapshot, source: 'json' as const };
+      return { rows: hydrateRaceDistanceRows(fromSnapshot), source: 'json' as const };
     }
 
     const fromJson = loadAllRowsFromJson(countryCode);
@@ -391,12 +396,12 @@ export async function getAllRaceListRows(countryCode: string): Promise<{
     if (fromDb && fromDb.length > 0) {
       const mergedFromDb = mergeTranslationDetailFields(fromDb, fromJson);
       if (fromJson.length > fromDb.length) {
-        return { rows: fromJson, source: 'json' as const };
+        return { rows: hydrateRaceDistanceRows(fromJson), source: 'json' as const };
       }
-      return { rows: mergedFromDb, source: 'supabase' as const };
+      return { rows: hydrateRaceDistanceRows(mergedFromDb), source: 'supabase' as const };
     }
     if (fromJson.length > 0) {
-      return { rows: fromJson, source: 'json' as const };
+      return { rows: hydrateRaceDistanceRows(fromJson), source: 'json' as const };
     }
     return { rows: [], source: 'empty' as const };
   })();

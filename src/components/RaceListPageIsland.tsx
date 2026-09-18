@@ -34,6 +34,7 @@ import {
 } from '../lib/neighboringSelection';
 import { getBrowserMarketRouteTargets, resolveRaceDetailHref } from '../lib/marketRoutes';
 import { pickTranslation, type RaceListRow } from '../lib/raceListRow';
+import { rowMatchesDistanceRange } from '../lib/raceDistances.js';
 import {
   compareRaceRowsByRelevantDate,
   displayRaceDate,
@@ -240,28 +241,6 @@ function rowMatchesDateRange(row: RaceListRow, dateFrom: string, dateTo: string)
     if (!/^\d{8}$/.test(value)) return false;
     if (from && value < from) return false;
     if (to && value > to) return false;
-    return true;
-  });
-}
-
-function rowMatchesDistanceRange(
-  row: RaceListRow,
-  minKm: number | null,
-  maxKm: number | null,
-): boolean {
-  if (minKm == null && maxKm == null) return true;
-  if (!Array.isArray(row.distance_m) || row.distance_m.length === 0) return false;
-  return row.distance_m.some((value) => {
-    const meters =
-      typeof value === 'number'
-        ? value
-        : typeof value === 'string'
-          ? Number.parseFloat(value)
-          : Number.NaN;
-    if (!Number.isFinite(meters)) return false;
-    const km = meters / 1000;
-    if (minKm != null && km < minKm) return false;
-    if (maxKm != null && km > maxKm) return false;
     return true;
   });
 }

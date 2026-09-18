@@ -18,6 +18,7 @@ import {
 } from './raceBrowse';
 import { pickTranslation, type RaceListRow } from './raceListRow';
 import { localRacePageFolder } from './routeSegments';
+import { rowMatchesDistanceRange } from './raceDistances.js';
 
 type RaceImage = {
   number?: number | null;
@@ -159,20 +160,6 @@ function areAllDatesEstimated(estimatedRaw: unknown, dateStatusRaw: unknown): bo
   return typeof dateStatusRaw === 'string' && dateStatusRaw.trim().toLowerCase() === 'estimated';
 }
 
-function toKmValues(raw: unknown): number[] {
-  if (!Array.isArray(raw)) return [];
-  return raw
-    .map((value) => {
-      if (typeof value === 'number') return value / 1000;
-      if (typeof value === 'string') {
-        const parsed = Number.parseFloat(value);
-        return Number.isFinite(parsed) ? parsed / 1000 : Number.NaN;
-      }
-      return Number.NaN;
-    })
-    .filter((value) => Number.isFinite(value));
-}
-
 function firstComparableRowDate(row: RaceListRow): string | null {
   if (!Array.isArray(row.race_dates)) return null;
   for (const entry of row.race_dates) {
@@ -187,9 +174,7 @@ function rowMatchesCategory(row: RaceListRow, option: CategoryFilterOption): boo
   if (option.kind === 'type') {
     return (row.race_type?.trim().toLowerCase() ?? '') === option.raceType.trim().toLowerCase();
   }
-
-  const distancesKm = toKmValues(row.distance_m);
-  return distancesKm.some((km) => km >= option.minKm && km <= option.maxKm);
+  return rowMatchesDistanceRange(row, option.minKm, option.maxKm);
 }
 
 function optionPriority(option: CategoryFilterOption): number {
