@@ -5,83 +5,95 @@ selection_rule:
   similarity_distance_km: 14.0
   similarity_jaccard: 0.85
 cities:
-- name: Almere
-  original_name: Almere
-  population: 223000
-  latitude: 52.3508
-  longitude: 5.2647
-  nearby_race_count: 101
-- name: Utrecht
-  original_name: Utrecht
-  population: 370000
-  latitude: 52.0907
-  longitude: 5.1214
-  nearby_race_count: 100
 - name: Amsterdam
   original_name: Amsterdam
   population: 920000
   latitude: 52.3676
   longitude: 4.9041
-  nearby_race_count: 99
+  nearby_race_count: 104
+- name: Utrecht
+  original_name: Utrecht
+  population: 370000
+  latitude: 52.0907
+  longitude: 5.1214
+  nearby_race_count: 104
+- name: Almere
+  original_name: Almere
+  population: 223000
+  latitude: 52.3508
+  longitude: 5.2647
+  nearby_race_count: 104
 - name: Leiden
   original_name: Leiden
   population: 127000
   latitude: 52.1601
   longitude: 4.497
-  nearby_race_count: 98
+  nearby_race_count: 102
 - name: Haarlem
   original_name: Haarlem
   population: 165000
   latitude: 52.3874
   longitude: 4.6462
-  nearby_race_count: 80
+  nearby_race_count: 82
 - name: Ede
   original_name: Ede
   population: 120000
   latitude: 52.0402
   longitude: 5.6649
-  nearby_race_count: 78
+  nearby_race_count: 82
 - name: Amersfoort
   original_name: Amersfoort
   population: 160000
   latitude: 52.1561
   longitude: 5.3878
-  nearby_race_count: 72
-- name: Dordrecht
-  original_name: Dordrecht
-  population: 121000
-  latitude: 51.8133
-  longitude: 4.6901
-  nearby_race_count: 69
+  nearby_race_count: 77
 - name: Tiel
   original_name: Tiel
   population: 42000
   latitude: 51.8867
   longitude: 5.4294
-  nearby_race_count: 69
+  nearby_race_count: 73
+- name: Dordrecht
+  original_name: Dordrecht
+  population: 121000
+  latitude: 51.8133
+  longitude: 4.6901
+  nearby_race_count: 72
 - name: Den Haag
   original_name: The Hague
   population: 560000
   latitude: 52.0705
   longitude: 4.3007
-  nearby_race_count: 61
+  nearby_race_count: 63
 - name: Harderwijk
   original_name: Harderwijk
   population: 49000
   latitude: 52.3417
   longitude: 5.6208
-  nearby_race_count: 61
-- name: Alkmaar
-  original_name: Alkmaar
-  population: 111000
-  latitude: 52.6324
-  longitude: 4.7534
-  nearby_race_count: 59
+  nearby_race_count: 63
 - name: Rotterdam
   original_name: Rotterdam
   population: 670000
   latitude: 51.9244
   longitude: 4.4777
+  nearby_race_count: 60
+- name: Alkmaar
+  original_name: Alkmaar
+  population: 111000
+  latitude: 52.6324
+  longitude: 4.7534
+  nearby_race_count: 60
+- name: Oss
+  original_name: Oss
+  population: 93000
+  latitude: 51.7647
+  longitude: 5.518
+  nearby_race_count: 57
+- name: Nissewaard
+  original_name: Nissewaard
+  population: 85000
+  latitude: 51.832
+  longitude: 4.275
   nearby_race_count: 57
 - name: '''s-Hertogenbosch'
   original_name: Den Bosch
@@ -89,71 +101,65 @@ cities:
   latitude: 51.6978
   longitude: 5.3037
   nearby_race_count: 55
-- name: Oss
-  original_name: Oss
-  population: 93000
-  latitude: 51.7647
-  longitude: 5.518
-  nearby_race_count: 55
-- name: Nissewaard
-  original_name: Nissewaard
-  population: 85000
-  latitude: 51.832
-  longitude: 4.275
-  nearby_race_count: 55
-- name: Arnhem
-  original_name: Arnhem
-  population: 165000
-  latitude: 51.9851
-  longitude: 5.8987
-  nearby_race_count: 47
 - name: Hoorn
   original_name: Hoorn
   population: 75000
   latitude: 52.6425
   longitude: 5.0597
-  nearby_race_count: 47
+  nearby_race_count: 50
+- name: Arnhem
+  original_name: Arnhem
+  population: 165000
+  latitude: 51.9851
+  longitude: 5.8987
+  nearby_race_count: 48
 - name: Tilburg
   original_name: Tilburg
   population: 227000
   latitude: 51.5555
   longitude: 5.0913
-  nearby_race_count: 45
+  nearby_race_count: 46
 - name: Weert
   original_name: Weert
   population: 50000
   latitude: 51.2515
   longitude: 5.7064
-  nearby_race_count: 43
+  nearby_race_count: 45
 - name: Eindhoven
   original_name: Eindhoven
   population: 240000
   latitude: 51.4416
   longitude: 5.4697
-  nearby_race_count: 39
+  nearby_race_count: 40
 - name: Nijmegen
   original_name: Nijmegen
   population: 180000
   latitude: 51.8126
   longitude: 5.8372
-  nearby_race_count: 38
+  nearby_race_count: 40
 - name: Deventer
   original_name: Deventer
   population: 102000
   latitude: 52.2552
   longitude: 6.1639
-  nearby_race_count: 38
+  nearby_race_count: 40
 - name: Breda
   original_name: Breda
   population: 185000
   latitude: 51.5719
   longitude: 4.7683
-  nearby_race_count: 37
+  nearby_race_count: 38
 - name: Drachten
   original_name: Drachten
   population: 45000
   latitude: 53.1125
   longitude: 6.0989
+  nearby_race_count: 36
+- name: Doetinchem
+  original_name: Doetinchem
+  population: 58000
+  latitude: 51.9654
+  longitude: 6.2889
   nearby_race_count: 35
 - name: Lelystad
   original_name: Lelystad
@@ -161,41 +167,41 @@ cities:
   latitude: 52.5185
   longitude: 5.4714
   nearby_race_count: 34
-- name: Doetinchem
-  original_name: Doetinchem
-  population: 58000
-  latitude: 51.9654
-  longitude: 6.2889
-  nearby_race_count: 33
 - name: Roermond
   original_name: Roermond
   population: 59000
   latitude: 51.1942
   longitude: 5.9875
-  nearby_race_count: 30
+  nearby_race_count: 32
 - name: Zwolle
   original_name: Zwolle
   population: 132000
   latitude: 52.5168
   longitude: 6.083
   nearby_race_count: 29
-- name: Groningen
-  original_name: Groningen
-  population: 238000
-  latitude: 53.2194
-  longitude: 6.5665
-  nearby_race_count: 27
 - name: Sittard-Geleen
   original_name: Sittard-Geleen
   population: 92000
   latitude: 50.998
   longitude: 5.8694
-  nearby_race_count: 27
+  nearby_race_count: 29
+- name: Groningen
+  original_name: Groningen
+  population: 238000
+  latitude: 53.2194
+  longitude: 6.5665
+  nearby_race_count: 28
 - name: Assen
   original_name: Assen
   population: 69000
   latitude: 52.9926
   longitude: 6.5642
+  nearby_race_count: 28
+- name: Venlo
+  original_name: Venlo
+  population: 102000
+  latitude: 51.3704
+  longitude: 6.1724
   nearby_race_count: 27
 - name: Roosendaal
   original_name: Roosendaal
@@ -203,30 +209,24 @@ cities:
   latitude: 51.5306
   longitude: 4.4653
   nearby_race_count: 26
-- name: Venlo
-  original_name: Venlo
-  population: 102000
-  latitude: 51.3704
-  longitude: 6.1724
-  nearby_race_count: 25
 - name: Heerenveen
   original_name: Heerenveen
   population: 51000
   latitude: 52.9592
   longitude: 5.9189
-  nearby_race_count: 24
+  nearby_race_count: 25
 - name: Enschede
   original_name: Enschede
   population: 160000
   latitude: 52.2215
   longitude: 6.8937
-  nearby_race_count: 23
+  nearby_race_count: 24
 - name: Hoogeveen
   original_name: Hoogeveen
   population: 56000
   latitude: 52.7225
   longitude: 6.4901
-  nearby_race_count: 22
+  nearby_race_count: 23
 - name: Den Helder
   original_name: Den Helder
   population: 56000
@@ -244,7 +244,7 @@ cities:
   population: 122000
   latitude: 50.8514
   longitude: 5.691
-  nearby_race_count: 17
+  nearby_race_count: 18
 - name: Sneek
   original_name: Sneek
   population: 34000
@@ -256,7 +256,7 @@ cities:
   population: 107000
   latitude: 52.7792
   longitude: 6.9069
-  nearby_race_count: 14
+  nearby_race_count: 15
 - name: Terneuzen
   original_name: Terneuzen
   population: 55000
