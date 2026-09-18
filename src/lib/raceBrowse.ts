@@ -22,9 +22,7 @@ import {
 import { getNeighboringCountryOptions } from './neighboringCountryOptions';
 import { primaryRaceImageUrl } from './raceCardDisplay';
 import {
-  defaultUpcomingRaceListFilters,
   getAllRaceListRows,
-  getRaceListSnapshot,
   type RaceListSnapshotFilters,
 } from './raceListSsg';
 import { getMarketRouteTargets } from './marketRouteTargets';
@@ -37,6 +35,7 @@ import { isDomesticOrigin } from './neighboringSelection';
 import { pickTranslation, type RaceListRow } from './raceListRow';
 import { filterRowsToUpcomingWindow } from './upcomingRaceWindow';
 import { localeBasePrefix, raceListSlug, slugify } from './content';
+import { rowMatchesDistanceRange } from './raceDistances.js';
 
 export const BROWSE_CATEGORIES_SEGMENT = 'categories';
 export const BROWSE_TYPES_SEGMENT = 'types';
@@ -302,18 +301,7 @@ function matchesCategory(row: RaceListRow, option: CategoryFilterOption): boolea
   if (option.kind === 'type') {
     return (row.race_type?.trim().toLowerCase() ?? '') === option.raceType.trim().toLowerCase();
   }
-  if (!Array.isArray(row.distance_m) || row.distance_m.length === 0) return false;
-  return row.distance_m.some((value) => {
-    const meters =
-      typeof value === 'number'
-        ? value
-        : typeof value === 'string'
-          ? Number.parseFloat(value)
-          : Number.NaN;
-    if (!Number.isFinite(meters)) return false;
-    const km = meters / 1000;
-    return km >= option.minKm && km <= option.maxKm;
-  });
+  return rowMatchesDistanceRange(row, option.minKm, option.maxKm);
 }
 
 function categoryFiltersForOption(option: CategoryFilterOption): RaceListSnapshotFilters {
@@ -936,10 +924,18 @@ export async function getCategorySnapshot(args: {
   category: BrowseCategoryEntry;
 }) {
   const { countryCode, category } = args;
-  return getRaceListSnapshot(countryCode, {
-    ...defaultUpcomingRaceListFilters(),
-    ...categoryFiltersForOption(category.option),
-  });
+  const allRows = await getAllRaceListRows(countryCode);
+  const rows = filterRowsToUpcomingWindow(
+    allRows.rows.filter(
+      (row) =>
+        isDomesticOrigin(row.origin_country, countryCode) && matchesCategory(row, category.option),
+    ),
+  );
+  return {
+    rows,
+    total: rows.length,
+    source: allRows.source,
+  };
 }
 
 export function getCategoryFilters(category: BrowseCategoryEntry): RaceListSnapshotFilters {

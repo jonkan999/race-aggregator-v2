@@ -17,6 +17,7 @@ import {
   getBrowseOverviewHref,
   getCategoryItemListJson,
   getCategorySiblingNavigationEntries,
+  getCategorySnapshot,
   getRaceListBaseHref,
 } from '../../../../../lib/raceBrowse';
 import { categoryFilterOptionsFromYaml } from '../../../../../lib/categoryFilterOptions';
@@ -25,7 +26,7 @@ import {
   getRaceTypeCategorySeoCacheKeys,
 } from '../../../../../lib/seoPageCopy';
 import { pickTranslation } from '../../../../../lib/raceListRow';
-import { defaultUpcomingRaceListFilters, getRaceListSnapshot } from '../../../../../lib/raceListSsg';
+import { RACE_LIST_PAGE_SIZE } from '../../../../../lib/raceListConfig';
 
 export async function getStaticPaths() {
   const country = (process.env.MARKET_CODE ?? 'se').trim().toLowerCase();
@@ -85,16 +86,14 @@ if (!raceTypeEntry) {
 }
 
 const [raceTypeKey, raceTypeLabel] = raceTypeEntry;
-const snapshot = await getRaceListSnapshot(country, {
-  ...defaultUpcomingRaceListFilters(),
-  raceType: raceTypeKey,
-  ...(category.option.kind === 'distance'
-    ? {
-        distanceMinKm: category.option.minKm,
-        distanceMaxKm: category.option.maxKm,
-      }
-    : {}),
-});
+const categorySnapshot = await getCategorySnapshot({ countryCode: country, category });
+const rows = categorySnapshot.rows.filter(
+  (row) => (row.race_type?.trim().toLowerCase() ?? '') === raceTypeKey,
+);
+const snapshot = {
+  rows: rows.slice(0, RACE_LIST_PAGE_SIZE),
+  total: rows.length,
+};
 
 const seoCopy = getBrowsePageSeoCopy({
   countryCode: country,
@@ -187,6 +186,7 @@ const alternateRaceListHref = hasEnglishMerge(country)
     translationLocale={translationLocale}
     initialRows={snapshot.rows}
     initialTotal={snapshot.total}
+    localRows={rows}
     initialCategoryKey={category.label}
     initialRaceType={raceTypeKey}
     autoPopulateDateRange={true}

@@ -60,6 +60,7 @@ Race Aggregator v2 replaces the legacy static Jinja site with an SEO-first Astro
 - Deterministic browse fallback copy should be YAML-driven per market under `seo_templates.browse_page_templates`, so the generator and page-level fallback share the same content source.
 - SEO cache rebuilds should be self-healing: prune obsolete keys, rewrite all current aliases, and prefer fresh generated copy when available while falling back to the market’s current native/English templates.
 - Browse indexability rules should also be YAML-driven per market under `browse_seo_indexing`, so canonical subsets and thresholds can be tuned without route-code edits.
+- Browse distance categories should match `distance_m` first, then collector fallbacks (`distances`, keywords, verbose labels, and explicit km/marathon cues in names). Do not leave the category hub empty when `distance_m` is stubbed.
 - Browse SEO should distinguish between the full filter taxonomy and the smaller canonical indexable SEO surface. Use the matrix in [`docs/browse-seo-matrix.md`](./docs/browse-seo-matrix.md) for which category labels, race types, and combinations should actually be indexed.
 - Avoid canonical duplication across equivalent intents such as `10 km` vs `Millopp` or distance-style labels that duplicate race-type intent such as `Backyard Ultra`.
 - Browse month hubs sort in calendar order (`01`–`12`), not by race count.

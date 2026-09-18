@@ -401,8 +401,9 @@ if (cityEntry) {
   return Astro.redirect(getRaceListBaseHref(country, locale, content), 302);
 }
 
+const useLocalRows = isCity || isNeighboring || Boolean(categoryEntry);
 itemListJson = getCategoryItemListJson({
-  rows: isCity || isNeighboring ? rows.slice(0, RACE_LIST_PAGE_SIZE) : rows,
+  rows: useLocalRows ? rows.slice(0, RACE_LIST_PAGE_SIZE) : rows,
   total: initialTotal,
   countryCode: country,
   locale,
@@ -420,7 +421,7 @@ popularEntries = getScopedPopularNavigationEntries({
 });
 navigationJson = getBrowseNavigationJson({ entries: popularEntries, content, locale });
 
-const initialRows = isCity || isNeighboring ? rows.slice(0, RACE_LIST_PAGE_SIZE) : rows;
+const initialRows = useLocalRows ? rows.slice(0, RACE_LIST_PAGE_SIZE) : rows;
 const alternateRaceListHref = hasEnglishMerge(country)
   ? `${localeBasePrefix(country, 'en')}${raceListSlug(loadIndexYaml(country, 'en'), country)}/`
   : undefined;
@@ -466,7 +467,7 @@ const alternateRaceListHref = hasEnglishMerge(country)
     translationLocale={translationLocale}
     initialRows={initialRows}
     initialTotal={initialTotal}
-    localRows={isCity || isNeighboring ? rows : undefined}
+    localRows={isCity || isNeighboring || Boolean(categoryEntry) ? rows : undefined}
     initialCounty={initialCounty}
     initialRaceType={initialRaceType}
     initialCategoryKey={initialCategoryKey}

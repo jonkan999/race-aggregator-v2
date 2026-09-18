@@ -10,6 +10,7 @@ import {
   isBrowseCombinationAllowed,
   isBrowseStandaloneAllowed,
 } from '../src/lib/browseSeoIndexing.js';
+import { rowMatchesDistanceRange } from '../src/lib/raceDistances.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.join(__dirname, '..');
@@ -300,18 +301,15 @@ function rowMatchesCategory(row, option) {
   if (option.kind === 'type') {
     return row.raceType.toLowerCase() === option.raceType.trim().toLowerCase();
   }
-  if (!Array.isArray(row.distanceM) || row.distanceM.length === 0) return false;
-  return row.distanceM.some((value) => {
-    const meters =
-      typeof value === 'number'
-        ? value
-        : typeof value === 'string'
-          ? Number.parseFloat(value)
-          : Number.NaN;
-    if (!Number.isFinite(meters)) return false;
-    const km = meters / 1000;
-    return km >= option.minKm && km <= option.maxKm;
-  });
+  return rowMatchesDistanceRange(
+    {
+      distance_m: row.distanceM,
+      race_type: row.raceType,
+      payload: row.payload,
+    },
+    option.minKm,
+    option.maxKm,
+  );
 }
 
 function uniqueStrings(values) {
