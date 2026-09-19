@@ -1,0 +1,30 @@
+.git
+.vercel
+node_modules
+.astro
+dist
+playwright-report
+test-results
+tests
+**/*.test.mjs
+.env
+.env.*
+# Bulk race detail JSON sidecars (build uses final_races*_w_neighbors + index.yaml)
+data/countries/*/json
+# Non-neighbor markets (keep nl + de/dk/be/lu/fr/uk if present)
+data/countries/ba
+data/countries/bg
+data/countries/cz
+data/countries/ee
+data/countries/fi
+data/countries/gr
+data/countries/hr
+data/countries/hu
+data/countries/int
+data/countries/lt
+data/countries/no
+data/countries/pl
+data/countries/ro
+data/countries/rs
+data/countries/se
+data/countries/sk
