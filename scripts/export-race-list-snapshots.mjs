@@ -248,23 +248,53 @@ function resolveOutputDir() {
   return dir;
 }
 
-async function exportCountrySnapshot(sb, countryCode, outputDir) {
-  let { data, error } = await sb
-    .from('races')
-    .select(listSelect)
-    .eq('country_code', countryCode)
-    .eq('published', true)
-    .limit(5000);
+const SNAPSHOT_PAGE_SIZE = Math.max(
+  50,
+  Number.parseInt(process.env.RACE_LIST_SNAPSHOT_PAGE_SIZE ?? '', 10) || 400,
+);
+const SNAPSHOT_MAX_ROWS = 20000;
 
-  if (error && missingTranslationDetailColumns(error)) {
-    const legacyResponse = await sb
+function isStatementTimeout(error) {
+  return Boolean(error) && (error.code === '57014' || String(error.message ?? '').includes('statement timeout'));
+}
+
+// Fetch every published row for a market in id-ordered pages. A single unbounded
+// select with embedded translations + payload jsonb exceeded the PostgREST
+// statement_timeout on the largest markets (PL, code 57014), so we page through
+// the result and halve the page size on a timeout instead of failing the build.
+async function fetchPublishedRacesPaged(sb, countryCode, select) {
+  const rows = [];
+  let pageSize = SNAPSHOT_PAGE_SIZE;
+  let offset = 0;
+  while (offset < SNAPSHOT_MAX_ROWS) {
+    const { data, error } = await sb
       .from('races')
-      .select(legacyListSelect)
+      .select(select)
       .eq('country_code', countryCode)
       .eq('published', true)
-      .limit(5000);
-    data = legacyResponse.data;
-    error = legacyResponse.error;
+      .order('id', { ascending: true })
+      .range(offset, offset + pageSize - 1);
+    if (error) {
+      if (isStatementTimeout(error) && pageSize > 25) {
+        pageSize = Math.floor(pageSize / 2);
+        console.warn(`Snapshot ${countryCode}: statement timeout at offset ${offset}; retrying with page size ${pageSize}`);
+        continue;
+      }
+      return { data: null, error };
+    }
+    const batch = data ?? [];
+    rows.push(...batch);
+    if (batch.length < pageSize) break;
+    offset += batch.length;
+  }
+  return { data: rows, error: null };
+}
+
+async function exportCountrySnapshot(sb, countryCode, outputDir) {
+  let { data, error } = await fetchPublishedRacesPaged(sb, countryCode, listSelect);
+
+  if (error && missingTranslationDetailColumns(error)) {
+    ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect));
   }
 
   if (error) throw error;

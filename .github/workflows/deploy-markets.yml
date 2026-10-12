@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Nightly rebuild so the build-time calendar snapshot (first page = races on or
+    # after the build day) never goes stale. 01:23 UTC = 03:23 Stockholm (CEST).
+    - cron: "23 1 * * *"
   workflow_dispatch:
     inputs:
       marketCode:
@@ -13,6 +17,10 @@ on:
 
 permissions:
   contents: read
+
+concurrency:
+  group: deploy-markets-${{ github.event.inputs.marketCode || 'all' }}
+  cancel-in-progress: false
 
 jobs:
   resolve-markets:

@@ -344,6 +344,40 @@ function mergeTranslationDetailFields(
   });
 }
 
+// PostgREST caps a single response (max-rows) and the large markets hit the
+// statement timeout on one unbounded select, so page through by id.
+async function fetchPublishedRacesPaged(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  sb: any,
+  countryCode: string,
+  select: string,
+): Promise<{ data: unknown[] | null; error: unknown }> {
+  const rows: unknown[] = [];
+  let pageSize = 400;
+  let offset = 0;
+  while (offset < 20000) {
+    const { data, error } = await sb
+      .from('races')
+      .select(select)
+      .eq('country_code', countryCode)
+      .eq('published', true)
+      .order('id', { ascending: true })
+      .range(offset, offset + pageSize - 1);
+    if (error) {
+      if ((error as { code?: string }).code === '57014' && pageSize > 25) {
+        pageSize = Math.floor(pageSize / 2);
+        continue;
+      }
+      return { data: null, error };
+    }
+    const batch = (data ?? []) as unknown[];
+    rows.push(...batch);
+    if (batch.length < pageSize) break;
+    offset += batch.length;
+  }
+  return { data: rows, error: null };
+}
+
 async function loadAllRowsFromSupabase(countryCode: string): Promise<SsgRaceRow[] | null> {
   const url = process.env.SUPABASE_URL || process.env.PUBLIC_SUPABASE_URL;
   const secret =
@@ -352,21 +386,9 @@ async function loadAllRowsFromSupabase(countryCode: string): Promise<SsgRaceRow[
 
   try {
     const sb = createClient(url, secret);
-    let { data, error: dataErr } = await sb
-      .from('races')
-      .select(listSelect)
-      .eq('country_code', countryCode)
-      .eq('published', true)
-      .limit(5000);
+    let { data, error: dataErr } = await fetchPublishedRacesPaged(sb, countryCode, listSelect);
     if (dataErr && missingTranslationDetailColumns(dataErr)) {
-      const legacyResponse = await sb
-        .from('races')
-        .select(legacyListSelect)
-        .eq('country_code', countryCode)
-        .eq('published', true)
-        .limit(5000);
-      data = legacyResponse.data;
-      dataErr = legacyResponse.error;
+      ({ data, error: dataErr } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect));
     }
     if (dataErr || !data) return null;
     return [...(data as unknown as SsgRaceRow[])].sort(compareRaceRowsByDateThenDomain);
