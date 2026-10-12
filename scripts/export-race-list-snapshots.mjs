@@ -84,11 +84,25 @@ function mergeRaceDetailPageViewRankings(rows, rankings) {
 }
 
 async function loadRaceDetailPageViewRankings(sb, countryCode) {
-  const { data, error } = await sb.rpc('get_race_detail_page_view_rankings', {
-    p_country_code: countryCode,
-    p_days: 30,
-    p_limit: 5000,
-  });
+  // The rankings RPC takes ~1.5s on big markets; with all markets building at
+  // once it can hit the anon statement_timeout. Retry, then build without
+  // rankings rather than failing the deploy (rankings only affect ordering).
+  let data;
+  let error;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    ({ data, error } = await sb.rpc('get_race_detail_page_view_rankings', {
+      p_country_code: countryCode,
+      p_days: 30,
+      p_limit: 5000,
+    }));
+    if (!isStatementTimeout(error)) break;
+    console.warn(`Rankings ${countryCode}: statement timeout (attempt ${attempt}/3)`);
+    if (attempt < 3) await new Promise((r) => setTimeout(r, 5000 * attempt));
+  }
+  if (isStatementTimeout(error)) {
+    console.warn(`Skipping race-detail rankings for ${countryCode}: still timing out after retries.`);
+    return [];
+  }
 
   if (error) {
     if (error.code === 'PGRST202') {
