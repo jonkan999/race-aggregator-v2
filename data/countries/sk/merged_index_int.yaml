@@ -79,6 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Marathon
+race_page_estimated_date_label: Estimated date
+race_page_estimated_disclaimer: We have not received an official date for this race.
 country_code: sk
 country_language_code: en
 navigation:
@@ -171,8 +173,8 @@ month_mapping:
   '05': May
   '06': June
   '07': July
-  08: August
-  09: September
+  '08': August
+  '09': September
   '10': October
   '11': November
   '12': December
@@ -184,8 +186,8 @@ month_mapping_short:
   '05': May
   '06': Jun
   '07': Jul
-  08: Aug
-  09: Sep
+  '08': Aug
+  '09': Sep
   '10': Oct
   '11': Nov
   '12': Dec
@@ -285,8 +287,6 @@ race_page_place_label: 'Location:'
 race_page_distances_label: 'Distances:'
 race_page_surface_label: 'Surface:'
 race_page_date_label: 'Date:'
-race_page_estimated_date_label: Estimated date
-race_page_estimated_disclaimer: We have not received an official date for this race.
 race_page_registration_link: Registration link
 race_page_registration_cta: Register now
 race_page_info_cta: More information
@@ -695,7 +695,7 @@ contact:
     intro: 'We would love to hear from you! Here are different ways to reach us:'
     email:
       title: Email
-      address: info@terminovkabehov.com
+      address: loppkartan@gmail.com
       description: We normally respond within 24 hours on weekdays.
     social:
       title: Social Media
@@ -709,7 +709,7 @@ privacy_page:
   last_updated_label: Last updated
   last_updated_date: March 27, 2026
   contact_intro: 'For privacy-related questions and requests, please contact us at:'
-  contact_email: info@terminovkabehov.com
+  contact_email: loppkartan@gmail.com
   sections:
   - title: 1. Information We Collect
     intro: 'We collect information that you provide directly to us when you:'

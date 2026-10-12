@@ -79,6 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Maraton
+race_page_estimated_date_label: Procenjeni datum
+race_page_estimated_disclaimer: Za ovu trku još nemamo potvrđen zvanični datum.
 country_code: rs
 country_language_code: sr
 navigation:
@@ -171,8 +173,8 @@ month_mapping:
   '05': maj
   '06': jun
   '07': jul
-  08: avgust
-  09: septembar
+  '08': avgust
+  '09': septembar
   '10': oktobar
   '11': novembar
   '12': decembar
@@ -184,8 +186,8 @@ month_mapping_short:
   '05': maj.
   '06': jun
   '07': jul
-  08: avg
-  09: sep
+  '08': avg
+  '09': sep
   '10': okt
   '11': nov
   '12': dec
@@ -302,8 +304,6 @@ race_page_place_label: 'Mesto:'
 race_page_distances_label: 'Distance trke:'
 race_page_surface_label: 'Podloga:'
 race_page_date_label: 'Datum trke:'
-race_page_estimated_date_label: Procenjeni datum
-race_page_estimated_disclaimer: Za ovu trku još nemamo potvrđen zvanični datum.
 race_page_registration_link: Link za prijavu
 race_page_registration_cta: Prijavi se sada
 race_page_info_cta: Više informacija

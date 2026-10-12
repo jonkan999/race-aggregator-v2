@@ -79,6 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Maratón
+race_page_estimated_date_label: Odhadovaný dátum
+race_page_estimated_disclaimer: Pre tento pretek zatiaľ nemáme potvrdený oficiálny dátum.
 country_code: sk
 country_language_code: sk
 navigation:
@@ -147,8 +149,8 @@ month_mapping:
   '05': Máj
   '06': Jún
   '07': Júl
-  08: August
-  09: September
+  '08': August
+  '09': September
   '10': Október
   '11': November
   '12': December
@@ -160,8 +162,8 @@ month_mapping_short:
   '05': máj
   '06': jún
   '07': júl
-  08: aug
-  09: sep
+  '08': aug
+  '09': sep
   '10': okt
   '11': nov
   '12': dec
@@ -255,8 +257,6 @@ race_page_place_label: 'Miesto:'
 race_page_distances_label: 'Vzdialenosti:'
 race_page_surface_label: 'Povrch:'
 race_page_date_label: 'Dátum:'
-race_page_estimated_date_label: Odhadovaný dátum
-race_page_estimated_disclaimer: Pre tento pretek zatiaľ nemáme potvrdený oficiálny dátum.
 race_page_registration_link: Odkaz na registráciu
 disclaimer_text_1: 'Všetky informácie na tejto stránke vychádzajú z verejne dostupných zdrojov. Robíme maximum pre ich aktuálnosť, ale
 
@@ -503,7 +503,7 @@ contact:
     intro: 'Radi sa vám ozveme! Tu sú rôzne spôsoby, ako nás kontaktovať:'
     email:
       title: E-mail
-      address: info@terminovkabehov.com
+      address: loppkartan@gmail.com
       description: Zvyčajne odpovedáme do 24 hodín počas pracovných dní.
     social:
       title: Sociálne siete
@@ -979,7 +979,7 @@ privacy_page:
   last_updated_label: Naposledy aktualizované
   last_updated_date: 27. marca 2026
   contact_intro: 'V prípade otázok týkajúcich sa súkromia a osobných údajov nás môžete kontaktovať na:'
-  contact_email: info@terminovkabehov.com
+  contact_email: loppkartan@gmail.com
   sections:
   - title: 1. Aké informácie zhromažďujeme
     intro: 'Zhromažďujeme informácie, ktoré nám priamo poskytujete, keď:'

@@ -79,6 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Maraton
+race_page_estimated_date_label: Odhadované datum
+race_page_estimated_disclaimer: Pro tento závod zatím nemáme potvrzené oficiální datum.
 country_code: cz
 country_language_code: cs
 navigation:
@@ -147,8 +149,8 @@ month_mapping:
   '05': květen
   '06': červen
   '07': červenec
-  08: srpen
-  09: září
+  '08': srpen
+  '09': září
   '10': říjen
   '11': listopad
   '12': prosinec
@@ -160,8 +162,8 @@ month_mapping_short:
   '05': kvě
   '06': čvn
   '07': čvc
-  08: srp
-  09: zář
+  '08': srp
+  '09': zář
   '10': říj
   '11': lis
   '12': pro
@@ -261,8 +263,6 @@ race_page_place_label: 'Místo:'
 race_page_distances_label: 'Vzdálenosti:'
 race_page_surface_label: 'Povrch:'
 race_page_date_label: 'Datum:'
-race_page_estimated_date_label: Odhadované datum
-race_page_estimated_disclaimer: Pro tento závod zatím nemáme potvrzené oficiální datum.
 race_page_registration_link: Odkaz na registraci
 disclaimer_text_1: 'Všechny informace na této stránce vycházejí z veřejně dostupných zdrojů. Děláme maximum pro jejich aktuálnost, ale
 
@@ -509,7 +509,7 @@ contact:
     intro: 'Rádi od vás uslyšíme. Tady jsou způsoby, jak se s námi spojit:'
     email:
       title: E-mail
-      address: info@bezeckykalendar.com
+      address: loppkartan@gmail.com
       description: Ve všední dny obvykle odpovídáme do 24 hodin.
     social:
       title: Sociální sítě
@@ -985,7 +985,7 @@ privacy_page:
   last_updated_label: Naposledy aktualizováno
   last_updated_date: 27. března 2026
   contact_intro: 'S dotazy týkajícími se soukromí a osobních údajů nás můžete kontaktovat na:'
-  contact_email: info@bezeckykalendar.com
+  contact_email: loppkartan@gmail.com
   sections:
   - title: 1. Jaké informace shromažďujeme
     intro: 'Shromažďujeme informace, které nám přímo poskytujete, když:'

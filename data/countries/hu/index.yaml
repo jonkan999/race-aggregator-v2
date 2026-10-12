@@ -79,6 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Maraton
+race_page_estimated_date_label: Becsült dátum
+race_page_estimated_disclaimer: Ehhez a versenyhez még nem kaptunk hivatalos dátumot.
 country_code: hu
 country_language_code: hu
 navigation:
@@ -171,8 +173,8 @@ month_mapping:
   '05': május
   '06': június
   '07': július
-  08: augusztus
-  09: szeptember
+  '08': augusztus
+  '09': szeptember
   '10': október
   '11': november
   '12': december
@@ -184,8 +186,8 @@ month_mapping_short:
   '05': máj
   '06': jún
   '07': júl
-  08: aug
-  09: szept
+  '08': aug
+  '09': szept
   '10': okt
   '11': nov
   '12': dec
@@ -297,8 +299,6 @@ race_page_place_label: 'Helyszín:'
 race_page_distances_label: 'Távok:'
 race_page_surface_label: 'Borítás:'
 race_page_date_label: 'Dátum:'
-race_page_estimated_date_label: Becsült dátum
-race_page_estimated_disclaimer: Ehhez a versenyhez még nem kaptunk hivatalos dátumot.
 race_page_registration_link: Nevezési link
 race_page_registration_cta: Nevezz most
 race_page_info_cta: További információ
@@ -709,7 +709,7 @@ contact:
     intro: 'Örömmel hallunk felőled! Itt többféleképpen is elérhetsz minket:'
     email:
       title: E-mail
-      address: hello@futasnaptar.com
+      address: loppkartan@gmail.com
       description: Hétköznapokon általában 24 órán belül válaszolunk.
     social:
       title: Közösségi média
@@ -723,7 +723,7 @@ privacy_page:
   last_updated_label: Utolsó frissítés
   last_updated_date: 2026. március 27.
   contact_intro: 'Adatvédelemmel kapcsolatos kérdések vagy kérések esetén írj nekünk ide:'
-  contact_email: hello@futasnaptar.com
+  contact_email: loppkartan@gmail.com
   sections:
   - title: 1. Milyen adatokat gyűjtünk
     intro: 'Azokat az információkat gyűjtjük, amelyeket közvetlenül te adsz meg nekünk, amikor:'

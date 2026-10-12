@@ -79,6 +79,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Maraton
+race_page_estimated_date_label: Data estimată
+race_page_estimated_disclaimer: Nu am primit o dată oficială pentru această cursă.
 country_code: ro
 country_language_code: ro
 navigation:
@@ -171,8 +173,8 @@ month_mapping:
   '05': mai
   '06': iunie
   '07': iulie
-  08: august
-  09: septembrie
+  '08': august
+  '09': septembrie
   '10': octombrie
   '11': noiembrie
   '12': decembrie
@@ -184,8 +186,8 @@ month_mapping_short:
   '05': mai
   '06': iun.
   '07': iul.
-  08: aug.
-  09: sept.
+  '08': aug.
+  '09': sept.
   '10': oct.
   '11': nov.
   '12': dec.
@@ -319,8 +321,6 @@ race_page_place_label: 'Locație:'
 race_page_distances_label: 'Distanțe:'
 race_page_surface_label: 'Suprafață:'
 race_page_date_label: 'Data:'
-race_page_estimated_date_label: Data estimată
-race_page_estimated_disclaimer: Nu am primit o dată oficială pentru această cursă.
 race_page_registration_link: Link de înregistrare
 race_page_registration_cta: Înscrie-te acum
 race_page_info_cta: Mai multe informații
