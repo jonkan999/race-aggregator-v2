@@ -83,6 +83,8 @@ distance_units:
   - 41.9
   - 42.4
   label: Marathon
+race_page_estimated_date_label: Estimerat datum
+race_page_estimated_disclaimer: Vi har inte fått något officiellt datum för detta lopp.
 country_code: se
 country_language_code: sv
 navigation:
@@ -272,8 +274,6 @@ race_page_place_label: 'Plats:'
 race_page_distances_label: 'Distanser:'
 race_page_surface_label: 'Underlag:'
 race_page_date_label: 'Datum:'
-race_page_estimated_date_label: Estimerat datum
-race_page_estimated_disclaimer: Vi har inte fått något officiellt datum för detta lopp.
 race_page_registration_link: Länk till anmälan
 disclaimer_text_1: 'All info på den här sidan är baserat på öppen källdata. Vi gör vårt bästa för att hålla den uppdaterad men
 
@@ -938,7 +938,7 @@ newsletter_popup:
   submit_error: Det gick inte att spara din prenumeration just nu. Försök igen.
   submitting_text: Sparar...
   success_message: Tack! Du får snart loppuppdateringar i inkorgen.
-  privacy_note: Nya lopp, datumändringar och utvalda erbjudanden. Avsluta när du vill. 
+  privacy_note: Nya lopp, datumändringar och utvalda erbjudanden. Avsluta när du vill.
   close_aria_label: Stäng prenumerationsruta
   benefits:
     new_races: Nya lopp först

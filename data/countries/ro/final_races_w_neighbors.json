@@ -7571,6 +7571,176 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "forest_run",
+    "name": "Forest Run",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260530",
+        "20260530"
+      ],
+      [
+        "20261101",
+        "20261101"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Băneasa Forest, Cluj-Napoca, Cluj County, Romania",
+    "latitude": 46.7674617,
+    "longitude": 23.5856341,
+    "county": "CLUJ",
+    "nearest_city": "Cluj-Napoca",
+    "nearby_cities": [
+      "Cluj-Napoca"
+    ],
+    "distances": "[\"21\", \"11\", \"6.5\", \"3\"]",
+    "distance_m": [
+      21000,
+      11000,
+      6500,
+      3000
+    ],
+    "distance_keywords": [
+      "Semimaraton",
+      "10 km",
+      "3000 metri"
+    ],
+    "distance_verbose": "Semimaraton, 10 km, 6.5 km, 3000 metri",
+    "organizer": "Baneasa Forest Run team",
+    "contact": null,
+    "website": "https://baneasaforestrun.ro/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "Semimaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "99 RON",
+            "deadline": "20260331",
+            "description": "Taxă de participare semimaraton - Early bird"
+          },
+          {
+            "label": "tier_2",
+            "price": "129 RON",
+            "deadline": "20260515",
+            "description": "Taxă de participare semimaraton - Standard"
+          }
+        ],
+        "late_fee": {
+          "price": "149 RON",
+          "deadline": "20260529"
+        }
+      },
+      {
+        "distance": "Cros 11 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "79 RON",
+            "deadline": "20260331",
+            "description": "Taxă de participare cros 11 km - Early bird"
+          },
+          {
+            "label": "tier_2",
+            "price": "99 RON",
+            "deadline": "20260515",
+            "description": "Taxă de participare cros 11 km - Standard"
+          }
+        ],
+        "late_fee": {
+          "price": "119 RON",
+          "deadline": "20260529"
+        }
+      },
+      {
+        "distance": "Alergare 6 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "59 RON",
+            "deadline": "20260331",
+            "description": "Taxă de participare alergare 6 km - Early bird"
+          },
+          {
+            "label": "tier_2",
+            "price": "79 RON",
+            "deadline": "20260515",
+            "description": "Taxă de participare alergare 6 km - Standard"
+          }
+        ],
+        "late_fee": {
+          "price": "99 RON",
+          "deadline": "20260529"
+        }
+      },
+      {
+        "distance": "Family Run 3 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "49 RON",
+            "deadline": "20260515",
+            "description": "Taxă de participare Family Run 3 km"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20260529",
+    "registration_url": "https://baneasaforestrun.ro/inscrie-te/",
+    "race_info_url": "https://baneasaforestrun.ro/despre-baneasa-forest-run/",
+    "presumed_organizer_email": "alerg@baneasaforestrun.ro",
+    "website_emails_found": [
+      "alerg@baneasaforestrun.ro"
+    ],
+    "description": "Baneasa Forest Run este o cursă de alergare 100% trail în Pădurea Băneasa, Cluj-Napoca, care oferă o experiență autentică în natură. Evenimentul include patru probe: semimaraton, cros de 11 km, alergare rapidă de 6 km și Family Run de 3 km, necompetitivă, pentru familii. Cursa este dedicată tuturor nivelurilor de alergători, de la începători la avansați, și pune accent pe bucuria alergării în pădure. Organizat de o echipă pasionată, evenimentul oferă și planuri de antrenament și antrenamente de grup pentru pregătire optimă.",
+    "course_highlights": [
+      "Trasee 100% trail în Pădurea Băneasa",
+      "Patru probe: semimaraton, 11 km, 6 km și Family Run 3 km",
+      "Antrenamente de grup cu ritmuri diferite și coordonatori"
+    ],
+    "additional": "Antrenamente de grup cu ritmuri diferite și coordonatori. Planuri de antrenament pentru toate nivelurile. Family Run este o cursă necompetitivă pentru familii. Evenimentul susține cauze sociale prin Asociația Magic și Zi de Bine. Traseu de trail cu teren accidentat, rădăcini, drumuri de pământ și poteci forestiere; opțiuni pentru curse de familie și copii; sesiuni de antrenament disponibile.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.active-hub.ro/forest-run-2025"
+    ],
+    "consolidated_ids": [
+      "9de89ce3-f44e-4ef0-b02c-fbd0c86eedb2"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:49:30.258637+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://baneasaforestrun.ro/): 2026-11-01 — \"Băneasa Forest Run — 1 noiembrie 2026\" (was estimated 2027-06-05)",
+        "website_url": "https://baneasaforestrun.ro/",
+        "evidence_url": "https://baneasaforestrun.ro/",
+        "evidence_quote": "Băneasa Forest Run — 1 noiembrie 2026",
+        "previous_estimated_date": "2027-06-05",
+        "confirmed_date": "2026-11-01",
+        "model_confidence": 0.97
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "vertes_expressz",
     "name": "VÉRTES EXPRESSZ",
     "type": "other",
@@ -7803,6 +7973,174 @@
     "created_date": "20260415",
     "editors_uid": [],
     "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "thermal_trail_race_alearga_in_capitala_apelor_termale",
+    "name": "THERMAL TRAIL RACE Aleargă în capitala apelor termale",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260509",
+        "20260509"
+      ],
+      [
+        "20261107",
+        "20261107"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Băile 1 Mai, Bihor, Romania",
+    "latitude": 46.996533,
+    "longitude": 21.996222,
+    "county": "BIHOR",
+    "nearest_city": "Oradea",
+    "nearby_cities": [
+      "Oradea"
+    ],
+    "distances": "[\"14\", \"7\"]",
+    "distance_m": [
+      14000,
+      7000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "14 km, 7 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "http://www.thermaltrailrace.com/"
+    ],
+    "consolidated_ids": [
+      "2d3a444c-f971-46ec-9533-10dbdd5b34ed"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:56:20.061423+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (http://www.thermaltrailrace.com/race-info-felix-trail-run): 2026-11-07 — \"Sambata 7 Noiembrie (Pista de alergare din padurea Baile Felix)\" (was estimated 2027-05-15)",
+        "website_url": "http://www.thermaltrailrace.com/",
+        "evidence_url": "http://www.thermaltrailrace.com/race-info-felix-trail-run",
+        "evidence_quote": "Sambata 7 Noiembrie (Pista de alergare din padurea Baile Felix)",
+        "previous_estimated_date": "2027-05-15",
+        "confirmed_date": "2026-11-07",
+        "model_confidence": 0.94
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "zarnesti_challenge",
+    "name": "Zărnești Challenge",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20260718",
+        "20260718"
+      ],
+      [
+        "20261107",
+        "20261107"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Zărnești, Brașov County, Romania",
+    "latitude": 45.5607357,
+    "longitude": 25.3169333,
+    "county": "BRASOV",
+    "nearest_city": "Braşov",
+    "nearby_cities": [
+      "Braşov"
+    ],
+    "distances": "[\"16\", \"8\", \"3\"]",
+    "distance_m": [
+      16000,
+      8000,
+      3000
+    ],
+    "distance_keywords": [
+      "3000 metri"
+    ],
+    "distance_verbose": "16 km, 8 km, 3000 metri",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://zarnestichallenge.ro/",
+      "https://www.zarnestichallenge.ro"
+    ],
+    "consolidated_ids": [
+      "c59b76fa-af2d-427b-9e44-f157946c5c41"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:57:30.724957+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://zarnestichallenge.ro/semimaraton/): 2026-11-07 — \"📅 7 Noiembrie 2026 ne vedem la ZĂRNEȘTI CHALLENGE !\" (was estimated 2027-07-24)",
+        "website_url": "https://zarnestichallenge.ro/",
+        "evidence_url": "https://zarnestichallenge.ro/semimaraton/",
+        "evidence_quote": "📅 7 Noiembrie 2026 ne vedem la ZĂRNEȘTI CHALLENGE !",
+        "previous_estimated_date": "2027-07-24",
+        "confirmed_date": "2026-11-07",
+        "model_confidence": 0.86
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -15858,6 +16196,160 @@
     ]
   },
   {
+    "domain_name": "uphill_running_championship_urc_etapa_2_make_it_back",
+    "name": "UPHILL RUNNING CHAMPIONSHIP (URC). Etapa 2. Make it Back!",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20250412",
+        "20250412"
+      ],
+      [
+        "20270313",
+        "20270313"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Bencecul de Jos, Jud. Timiș",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://urc.run/"
+    ],
+    "consolidated_ids": [
+      "463eab47-9051-4ffd-810d-cb2ec588a405"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260415",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:40:18.967408+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://urc.run/): 2027-03-13 — \"Sâmbătă, 13 martie 2027 (ediția a 3-a)\" (was estimated 2026-04-18)",
+        "website_url": "https://urc.run/",
+        "evidence_url": "https://urc.run/",
+        "evidence_quote": "Sâmbătă, 13 martie 2027 (ediția a 3-a)",
+        "previous_estimated_date": "2026-04-18",
+        "confirmed_date": "2027-03-13",
+        "model_confidence": 0.99
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "uphill_running_championship_urc_etapa_3_make_it_back_liga_fire",
+    "name": "UPHILL RUNNING CHAMPIONSHIP (URC). Etapa 3. Make it Back! (liga Fire)",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20250503",
+        "20250503"
+      ],
+      [
+        "20270313",
+        "20270313"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Bencecul de Jos, Jud. Timiș",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://urc.run/"
+    ],
+    "consolidated_ids": [
+      "d053a2fd-5f4f-4194-9754-d93e24227e5f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260415",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:40:24.358835+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://urc.run/): 2027-03-13 — \"Sâmbătă, 13 martie 2027 (ediția a 3-a)\" (was estimated 2026-05-09)",
+        "website_url": "https://urc.run/",
+        "evidence_url": "https://urc.run/",
+        "evidence_quote": "Sâmbătă, 13 martie 2027 (ediția a 3-a)",
+        "previous_estimated_date": "2026-05-09",
+        "confirmed_date": "2027-03-13",
+        "model_confidence": 0.99
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "avala_trail_race",
     "name": "Avala trail race",
     "type": "trail",
@@ -16145,6 +16637,95 @@
       "Huşi",
       "Mioveni"
     ]
+  },
+  {
+    "domain_name": "ttr_backyard_ultra_2026",
+    "name": "TTR BACKYARD ULTRA ~ 2026",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20260417",
+        "20260417"
+      ],
+      [
+        "20270327",
+        "20270327"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "14:00",
+    "location": "Satul Roșu, Chiajna, Ilfov County, Romania",
+    "latitude": 44.4496467,
+    "longitude": 26.0054649,
+    "county": "ILFOV",
+    "nearest_city": "Bucharest",
+    "nearby_cities": [
+      "Bucharest"
+    ],
+    "distances": "[\"6.7\"]",
+    "distance_m": [
+      6700
+    ],
+    "distance_keywords": [
+      "Backyard Ultra"
+    ],
+    "distance_verbose": "6.7 km, Backyard Ultra",
+    "organizer": "Time Trial Running",
+    "contact": null,
+    "website": "https://timetrialrunning.ro/ttr-backyard-ultra-2026-informatii/",
+    "fb_link": "https://www.facebook.com/TimeTrialRunning",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": "20260325",
+    "registration_url": null,
+    "race_info_url": "https://timetrialrunning.ro/ttr-backyard-ultra-2026-informatii/",
+    "presumed_organizer_email": "info@timetrialrunning.ro",
+    "website_emails_found": [
+      "info@timetrialrunning.ro"
+    ],
+    "description": "TTR BACKYARD ULTRA 2026 este o competiție oficială de alergare de anduranță organizată de comunitatea TIME TRIAL RUNNING, susținută de Primăria Chiajna și parohiile locale. Evenimentul are loc în satul Roșu, comuna Chiajna, pe 17 aprilie 2026, cu startul la ora 14:00, la Sala de Sport a Liceului Tehnologic „Doamna Chiajna”. Este o cursă unică de tip Backyard Ultra, cu o singură probă pe o distanță de 6,706 km, alternând două trasee diferite, unul de zi și unul de noapte. Provocarea este să parcurgi traseul în mai puțin de 60 de minute și să fii prezent la fiecare start orar, iar ultimul concurent rămas în cursă este declarat câștigător.",
+    "course_highlights": [
+      "Distanță unică de 6,706 km cu două trasee diferite parcurse alternativ",
+      "Traseu de zi pe digul/latura vestică a Lacului Morii",
+      "Traseu de noapte pe străzile din satul Roșu și Promenada comunei Chiajna"
+    ],
+    "additional": "Startul se dă la oră fixă, în fiecare oră, iar participanții trebuie să parcurgă traseul în mai puțin de 60 de minute pentru a continua. Tabăra de bază include spații interioare (Sala de Sport cu vestiare și toalete) și spații exterioare (parcul cu iarbă sintetică). Punct de alimentare și hidratare este disponibil în zona de start/sosire, iar mese calde vor fi oferite conform programului. Se premiază câștigătorul (Last One Standing), locul 2 (Assist) și cea mai bine clasată fată (Last Woman Standing). Fiecare participant primește un trofeu personalizat la final. Evenimentul include trasee pe malul lacului Morii și pe promenada din Chiajna, cu participare limitată la 100 de concurenți, și oferă mese calde și trofee personalizate.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://calendar.sportic.ro/events/view?hash=e948d62b279db951c8ab6c833e951f2e60f25121"
+    ],
+    "consolidated_ids": [
+      "91f6a928-109b-4bc1-b301-995a8a8cb8ba"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:43:20.152365+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://timetrialrunning.ro/inscrieri-deschise-pentru-ttr-backyard-ultra-2027-rosu-chiajna/): 2027-03-27 — \"Editia a II-a a TTR BACKYARD ULTRA ( Rosu , Chiajna) va avea loc Sâmbătă, 27 Martie 2027!\" (was estimated 2027-04-23)",
+        "website_url": "https://timetrialrunning.ro/ttr-backyard-ultra-2026-informatii/",
+        "evidence_url": "https://timetrialrunning.ro/inscrieri-deschise-pentru-ttr-backyard-ultra-2027-rosu-chiajna/",
+        "evidence_quote": "Editia a II-a a TTR BACKYARD ULTRA ( Rosu , Chiajna) va avea loc Sâmbătă, 27 Martie 2027!",
+        "previous_estimated_date": "2027-04-23",
+        "confirmed_date": "2027-03-27",
+        "model_confidence": 1.0
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
   },
   {
     "domain_name": "fedrid_csaszta_trail",
@@ -19172,8 +19753,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Pădurea Băneasa, București, Romania",
     "latitude": 44.5303607,
@@ -19319,7 +19900,20 @@
     "supplied_at": null,
     "created_date": "20260415",
     "editors_uid": [],
-    "pipeline_log": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:43:05.669610+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://baneasaforestrun.ro/): 2027-04-11 — \"Băneasa Forest Run — 11 aprilie 2027 Înscrieri în curând!\" (was estimated 2027-04-11)",
+        "website_url": "https://baneasaforestrun.ro/",
+        "evidence_url": "https://baneasaforestrun.ro/",
+        "evidence_quote": "Băneasa Forest Run — 11 aprilie 2027 Înscrieri în curând!",
+        "previous_estimated_date": "2027-04-11",
+        "confirmed_date": "2027-04-11",
+        "model_confidence": 0.98
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -19615,6 +20209,299 @@
     "created_date": "20260415",
     "editors_uid": [],
     "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "la_petrovaselo_in_vie",
+    "name": "La Petrovaselo în vie",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260425",
+        "20260425"
+      ],
+      [
+        "20270417",
+        "20270417"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "09:00",
+    "location": "Bulevardul Unirii 22, București, Romania",
+    "latitude": 44.4254182,
+    "longitude": 26.1103025,
+    "county": "BUCURESTI",
+    "nearest_city": "Bucharest",
+    "nearby_cities": [
+      "Bucharest"
+    ],
+    "distances": "[\"28\", \"14\", \"5\"]",
+    "distance_m": [
+      28000,
+      14000,
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "28 km, 14 km, 5 km",
+    "organizer": "Petro Vaselo Winery",
+    "contact": null,
+    "website": "https://lapetrovaseloinvie.ro/",
+    "fb_link": "https://www.facebook.com/trailrunpetrovaselo/?locale=ro_RO",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "Bendis (5 km)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "249 lei",
+            "deadline": "20260419",
+            "description": "Taxă de participare pentru Bendis (5 km) până la 19 aprilie 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "350 lei",
+          "deadline": "20260419"
+        }
+      },
+      {
+        "distance": "Ovas (14 km)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "249 lei",
+            "deadline": "20260419",
+            "description": "Taxă de participare pentru Ovas (14 km) până la 19 aprilie 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "350 lei",
+          "deadline": "20260419"
+        }
+      },
+      {
+        "distance": "PV Grand Cru (28 km)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "249 lei",
+            "deadline": "20260419",
+            "description": "Taxă de participare pentru PV Grand Cru (28 km) până la 19 aprilie 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "350 lei",
+          "deadline": "20260419"
+        }
+      }
+    ],
+    "registration_close_date": "20260419",
+    "registration_url": "https://lapetrovaseloinvie.ro/inscriere/",
+    "race_info_url": "https://lapetrovaseloinvie.ro/despre-eveniment/",
+    "presumed_organizer_email": "mail@alergotura.ro",
+    "website_emails_found": [
+      "mail@alergotura.ro"
+    ],
+    "description": "La Petrovaselo în vie este un eveniment sportiv dedicat alergării în natură, organizat pentru a promova un stil de viață sănătos și pentru a crește numărul practicanților de alergare în aer liber. Evenimentul, organizat de Clubul Sportiv Asociația Alergotura în parteneriat cu Petro Vaselo Winery, oferă trei curse de alergare cu distanțe variate, desfășurate pe trasee pitorești în zona viei Petro Vaselo. Participanții se pot bucura de o experiență sportivă în natură, cu trasee bine marcate și puncte de alimentare, într-un cadru prietenos și organizat. După cursă, participanții sunt invitați să se relaxeze cu gulaș și vin, oferite pe baza numărului de concurs.",
+    "course_highlights": [
+      "Trasee de alergare în natură prin vie, cu distanțe de 5 km, 14 km și 28 km",
+      "Traseul de 28 km constă în parcurgerea de două ori a traseului de 14 km, a doua buclă fiind în sens invers",
+      "Traseele sunt semnalizate cu bandă și indicatoare, cu voluntari la punctele de schimbare a direcției"
+    ],
+    "additional": "Participanții trebuie să ajungă cu cel puțin 30 de minute înainte de start la Crama Petrovaselo. Startul curselor de 14 km și 28 km este la 09:00, iar cursa de 5 km începe la 09:15. Există limită de timp pentru finish pentru fiecare cursă (5 km - 10:15, 14 km - 11:05, 28 km - 13:00). După cursă, participanții primesc gulaș și vin pe baza numărului de concurs. Traseele pot avea zone cu noroi în funcție de condițiile meteo. Transferul între curse este permis înainte de start, în limita locurilor disponibile. Participanții pot înscrie și verifica lista participanților online; evenimentul combină sportul cu peisajele viticole din zona Recaș.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://lapetrovaseloinvie.ro/"
+    ],
+    "consolidated_ids": [
+      "eeffe318-e423-45c4-968c-d6ec4442aa8c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:43:53.152237+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://lapetrovaseloinvie.ro/): 2027-04-17 — \"Ne revedem pe 17 aprilie 2027\" (was estimated 2027-05-01)",
+        "website_url": "https://lapetrovaseloinvie.ro/",
+        "evidence_url": "https://lapetrovaseloinvie.ro/",
+        "evidence_quote": "Ne revedem pe 17 aprilie 2027",
+        "previous_estimated_date": "2027-05-01",
+        "confirmed_date": "2027-04-17",
+        "model_confidence": 0.99
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "la_petrovaselo_in_vie_2026",
+    "name": "La Petrovaselo in vie! 2026",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260425",
+        "20260425"
+      ],
+      [
+        "20270417",
+        "20270417"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "09:00",
+    "location": "Petrovaselo, Recaș, Timiș County, Romania",
+    "latitude": 45.8160446,
+    "longitude": 21.5811852,
+    "county": "TIMIS",
+    "nearest_city": "Timişoara",
+    "nearby_cities": [
+      "Timişoara",
+      "Lugoj"
+    ],
+    "distances": "[\"28\", \"14\", \"5\"]",
+    "distance_m": [
+      28000,
+      14000,
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "28 km, 14 km, 5 km",
+    "organizer": "Petro Vaselo Winery și Alergotura",
+    "contact": null,
+    "website": "https://lapetrovaseloinvie.ro/",
+    "fb_link": "https://www.facebook.com/trailrunpetrovaselo/?locale=ro_RO",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "Bendis (5 km)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "249 lei",
+            "deadline": "20260131",
+            "description": "Taxa de participare până la 31 ianuarie 2026"
+          },
+          {
+            "label": "tier_2",
+            "price": "299 lei",
+            "deadline": "20260419",
+            "description": "Taxa de participare până la 19 aprilie 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "350 lei",
+          "deadline": "20260419"
+        }
+      },
+      {
+        "distance": "Ovas (14 km)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "249 lei",
+            "deadline": "20260131",
+            "description": "Taxa de participare până la 31 ianuarie 2026"
+          },
+          {
+            "label": "tier_2",
+            "price": "299 lei",
+            "deadline": "20260419",
+            "description": "Taxa de participare până la 19 aprilie 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "350 lei",
+          "deadline": "20260419"
+        }
+      },
+      {
+        "distance": "PV Grand Cru (28 km)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "249 lei",
+            "deadline": "20260131",
+            "description": "Taxa de participare până la 31 ianuarie 2026"
+          },
+          {
+            "label": "tier_2",
+            "price": "299 lei",
+            "deadline": "20260419",
+            "description": "Taxa de participare până la 19 aprilie 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "350 lei",
+          "deadline": "20260419"
+        }
+      }
+    ],
+    "registration_close_date": "20260419",
+    "registration_url": "https://lapetrovaseloinvie.ro/inscriere/",
+    "race_info_url": "https://lapetrovaseloinvie.ro/despre-eveniment/",
+    "presumed_organizer_email": "mail@alergotura.ro",
+    "website_emails_found": [
+      "mail@alergotura.ro"
+    ],
+    "description": "La Petrovaselo în vie este un eveniment sportiv dedicat alergării în natură, organizat pentru a promova un stil de viață sănătos și pentru a crește numărul alergătorilor în aer liber. Evenimentul are loc în Recaș, România, și cuprinde trei curse de alergare pe trasee pitorești în vie, cu distanțe de 5 km, 14 km și 28 km. Participanții se bucură de o atmosferă prietenoasă, susținută de comunitate și parteneri locali, cu puncte de alimentare și o socializare plăcută după cursă. Traseele sunt bine marcate și adaptate pentru confort și siguranță, iar evenimentul este organizat cu sprijinul autorităților locale și al sponsorilor.",
+    "course_highlights": [
+      "Trasee în natură prin vie, cu distanțe de 5 km, 14 km și 28 km",
+      "Traseul de 28 km constă în parcurgerea de două ori a traseului de 14 km, a doua buclă fiind în sens invers",
+      "Traseele sunt semnalizate cu bandă și indicatoare, cu voluntari la punctele de schimbare a direcției"
+    ],
+    "additional": "Participanții trebuie să ajungă cu cel puțin 30 de minute înainte de start la Crama Petrovaselo. Kiturile de participare sunt limitate la 1000 în total, cu alocări specifice pe curse. După cursă, participanții pot savura gulaș și vin pe baza numărului de concurs. Traseele pot avea zone cu noroi în funcție de condițiile meteo. Transferul între curse este permis înainte de start, în limita locurilor disponibile. Evenimentul include activități de trail și curse culturale, cu participare deschisă pentru toate nivelurile de alergători. Înscrierile și detaliile despre curse sunt disponibile online.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://321start.run/eveniment/la-petrovaselo-in-vie-2026"
+    ],
+    "consolidated_ids": [
+      "6e7612dd-7bbf-4c4f-ad99-b286790ce6fc"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:45:01.695186+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://lapetrovaseloinvie.ro/): 2027-04-17 — \"Ne revedem pe 17 aprilie 2027\" (was estimated 2027-05-01)",
+        "website_url": "https://lapetrovaseloinvie.ro/",
+        "evidence_url": "https://lapetrovaseloinvie.ro/",
+        "evidence_quote": "Ne revedem pe 17 aprilie 2027",
+        "previous_estimated_date": "2027-05-01",
+        "confirmed_date": "2027-04-17",
+        "model_confidence": 0.99
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -20453,82 +21340,6 @@
     ]
   },
   {
-    "domain_name": "ttr_backyard_ultra_2026",
-    "name": "TTR BACKYARD ULTRA ~ 2026",
-    "type": "other",
-    "type_local": "Altele",
-    "race_dates": [
-      [
-        "20260417",
-        "20260417"
-      ],
-      [
-        "20270423",
-        "20270423"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "14:00",
-    "location": "Satul Roșu, Chiajna, Ilfov County, Romania",
-    "latitude": 44.4496467,
-    "longitude": 26.0054649,
-    "county": "ILFOV",
-    "nearest_city": "Bucharest",
-    "nearby_cities": [
-      "Bucharest"
-    ],
-    "distances": "[\"6.7\"]",
-    "distance_m": [
-      6700
-    ],
-    "distance_keywords": [
-      "Backyard Ultra"
-    ],
-    "distance_verbose": "6.7 km, Backyard Ultra",
-    "organizer": "Time Trial Running",
-    "contact": null,
-    "website": "https://timetrialrunning.ro/ttr-backyard-ultra-2026-informatii/",
-    "fb_link": "https://www.facebook.com/TimeTrialRunning",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20260325",
-    "registration_url": null,
-    "race_info_url": "https://timetrialrunning.ro/ttr-backyard-ultra-2026-informatii/",
-    "presumed_organizer_email": "info@timetrialrunning.ro",
-    "website_emails_found": [
-      "info@timetrialrunning.ro"
-    ],
-    "description": "TTR BACKYARD ULTRA 2026 este o competiție oficială de alergare de anduranță organizată de comunitatea TIME TRIAL RUNNING, susținută de Primăria Chiajna și parohiile locale. Evenimentul are loc în satul Roșu, comuna Chiajna, pe 17 aprilie 2026, cu startul la ora 14:00, la Sala de Sport a Liceului Tehnologic „Doamna Chiajna”. Este o cursă unică de tip Backyard Ultra, cu o singură probă pe o distanță de 6,706 km, alternând două trasee diferite, unul de zi și unul de noapte. Provocarea este să parcurgi traseul în mai puțin de 60 de minute și să fii prezent la fiecare start orar, iar ultimul concurent rămas în cursă este declarat câștigător.",
-    "course_highlights": [
-      "Distanță unică de 6,706 km cu două trasee diferite parcurse alternativ",
-      "Traseu de zi pe digul/latura vestică a Lacului Morii",
-      "Traseu de noapte pe străzile din satul Roșu și Promenada comunei Chiajna"
-    ],
-    "additional": "Startul se dă la oră fixă, în fiecare oră, iar participanții trebuie să parcurgă traseul în mai puțin de 60 de minute pentru a continua. Tabăra de bază include spații interioare (Sala de Sport cu vestiare și toalete) și spații exterioare (parcul cu iarbă sintetică). Punct de alimentare și hidratare este disponibil în zona de start/sosire, iar mese calde vor fi oferite conform programului. Se premiază câștigătorul (Last One Standing), locul 2 (Assist) și cea mai bine clasată fată (Last Woman Standing). Fiecare participant primește un trofeu personalizat la final. Evenimentul include trasee pe malul lacului Morii și pe promenada din Chiajna, cu participare limitată la 100 de concurenți, și oferă mese calde și trofee personalizate.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://calendar.sportic.ro/events/view?hash=e948d62b279db951c8ab6c833e951f2e60f25121"
-    ],
-    "consolidated_ids": [
-      "91f6a928-109b-4bc1-b301-995a8a8cb8ba"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "alergaras_in_fagaras",
     "name": "Alergăraș în Făgăraș",
     "type": "trail",
@@ -20890,6 +21701,95 @@
     "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "maratonul_vinului_powered_by_omv_petrom",
+    "name": "Maratonul Vinului powered by OMV Petrom",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20260425",
+        "20260425"
+      ],
+      [
+        "20270424",
+        "20270424"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "09:00",
+    "location": "Urlați, Prahova, Romania",
+    "latitude": 44.9894922,
+    "longitude": 26.2346216,
+    "county": "PRAHOVA",
+    "nearest_city": "Ploieşti",
+    "nearby_cities": [
+      "Ploieşti"
+    ],
+    "distances": "[\"50\", \"30\", \"18\"]",
+    "distance_m": [
+      50000,
+      30000,
+      18000
+    ],
+    "distance_keywords": [
+      "50 km"
+    ],
+    "distance_verbose": "50 km, 30 km, 18 km",
+    "organizer": "WeAreSports",
+    "contact": null,
+    "website": "https://maratonulvinului.ro/",
+    "fb_link": "https://www.facebook.com/Maratonulvinului/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://maratonulvinului.ro/inscriere/",
+    "race_info_url": "https://maratonulvinului.ro/curse/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Maratonul Vinului powered by OMV Petrom este primul concurs de Mountain Bike cu scop caritabil din România, ajuns la a 14-a ediție. Evenimentul se desfășoară în localitatea Urlați, județul Prahova, pe 25 aprilie 2026, printre dealurile, podgoriile și cramele din zonă. Participanții pot alege între mai multe trasee adaptate nivelului lor, de la 4 km pentru copii până la 50 km pentru cicliști experimentați. Concursul promovează ciclismul ca stil de viață sănătos și susține cauze sociale importante.",
+    "course_highlights": [
+      "Traseu de 50 km pentru cicliști experimentați",
+      "Traseu de 30 km pentru amatori și juniori",
+      "Traseu de 18 km recomandat cicliștilor mai puțin experimentați"
+    ],
+    "additional": "Startul pentru copii (4 și 8 km) este la ora 09:00, pentru traseele de 18, 30 și 50 km la 10:35, iar pentru plimbarea Family la 10:45. Ridicarea pachetelor se face în București și la fața locului în intervale orare specifice. Participanții de la Tura Family nu primesc kit de concurs și pot merge direct la start. Ceremonia de premiere este programată la ora 15:00, iar timpul limită de sosire este 16:30. Evenimentul include și activități pentru familii și copii, precum și sprijin pentru cauze sociale și educaționale, promovând cultura vinului și turismul local.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://calendar.sportic.ro/events/view?hash=96d8db73ba3a87c8bf4e8500bff29bb7afae8e2e"
+    ],
+    "consolidated_ids": [
+      "496c0d49-5b5e-412c-a2fb-c4fe56dd3881"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:44:51.925585+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://maratonulvinului.ro/): 2027-04-24 — \"In acest an MARVIN va avea loc pe 24 aprilie 2027 în localitatea Urlaţi\" (was estimated 2027-05-01)",
+        "website_url": "https://maratonulvinului.ro/",
+        "evidence_url": "https://maratonulvinului.ro/",
+        "evidence_quote": "In acest an MARVIN va avea loc pe 24 aprilie 2027 în localitatea Urlaţi",
+        "previous_estimated_date": "2027-05-01",
+        "confirmed_date": "2027-04-24",
+        "model_confidence": 0.99
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -23038,130 +23938,6 @@
     ]
   },
   {
-    "domain_name": "la_petrovaselo_in_vie",
-    "name": "La Petrovaselo în vie",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260425",
-        "20260425"
-      ],
-      [
-        "20270501",
-        "20270501"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "09:00",
-    "location": "Bulevardul Unirii 22, București, Romania",
-    "latitude": 44.4254182,
-    "longitude": 26.1103025,
-    "county": "BUCURESTI",
-    "nearest_city": "Bucharest",
-    "nearby_cities": [
-      "Bucharest"
-    ],
-    "distances": "[\"28\", \"14\", \"5\"]",
-    "distance_m": [
-      28000,
-      14000,
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "28 km, 14 km, 5 km",
-    "organizer": "Petro Vaselo Winery",
-    "contact": null,
-    "website": "https://lapetrovaseloinvie.ro/",
-    "fb_link": "https://www.facebook.com/trailrunpetrovaselo/?locale=ro_RO",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Bendis (5 km)",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 lei",
-            "deadline": "20260419",
-            "description": "Taxă de participare pentru Bendis (5 km) până la 19 aprilie 2026"
-          }
-        ],
-        "late_fee": {
-          "price": "350 lei",
-          "deadline": "20260419"
-        }
-      },
-      {
-        "distance": "Ovas (14 km)",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 lei",
-            "deadline": "20260419",
-            "description": "Taxă de participare pentru Ovas (14 km) până la 19 aprilie 2026"
-          }
-        ],
-        "late_fee": {
-          "price": "350 lei",
-          "deadline": "20260419"
-        }
-      },
-      {
-        "distance": "PV Grand Cru (28 km)",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 lei",
-            "deadline": "20260419",
-            "description": "Taxă de participare pentru PV Grand Cru (28 km) până la 19 aprilie 2026"
-          }
-        ],
-        "late_fee": {
-          "price": "350 lei",
-          "deadline": "20260419"
-        }
-      }
-    ],
-    "registration_close_date": "20260419",
-    "registration_url": "https://lapetrovaseloinvie.ro/inscriere/",
-    "race_info_url": "https://lapetrovaseloinvie.ro/despre-eveniment/",
-    "presumed_organizer_email": "mail@alergotura.ro",
-    "website_emails_found": [
-      "mail@alergotura.ro"
-    ],
-    "description": "La Petrovaselo în vie este un eveniment sportiv dedicat alergării în natură, organizat pentru a promova un stil de viață sănătos și pentru a crește numărul practicanților de alergare în aer liber. Evenimentul, organizat de Clubul Sportiv Asociația Alergotura în parteneriat cu Petro Vaselo Winery, oferă trei curse de alergare cu distanțe variate, desfășurate pe trasee pitorești în zona viei Petro Vaselo. Participanții se pot bucura de o experiență sportivă în natură, cu trasee bine marcate și puncte de alimentare, într-un cadru prietenos și organizat. După cursă, participanții sunt invitați să se relaxeze cu gulaș și vin, oferite pe baza numărului de concurs.",
-    "course_highlights": [
-      "Trasee de alergare în natură prin vie, cu distanțe de 5 km, 14 km și 28 km",
-      "Traseul de 28 km constă în parcurgerea de două ori a traseului de 14 km, a doua buclă fiind în sens invers",
-      "Traseele sunt semnalizate cu bandă și indicatoare, cu voluntari la punctele de schimbare a direcției"
-    ],
-    "additional": "Participanții trebuie să ajungă cu cel puțin 30 de minute înainte de start la Crama Petrovaselo. Startul curselor de 14 km și 28 km este la 09:00, iar cursa de 5 km începe la 09:15. Există limită de timp pentru finish pentru fiecare cursă (5 km - 10:15, 14 km - 11:05, 28 km - 13:00). După cursă, participanții primesc gulaș și vin pe baza numărului de concurs. Traseele pot avea zone cu noroi în funcție de condițiile meteo. Transferul între curse este permis înainte de start, în limita locurilor disponibile. Participanții pot înscrie și verifica lista participanților online; evenimentul combină sportul cu peisajele viticole din zona Recaș.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://lapetrovaseloinvie.ro/"
-    ],
-    "consolidated_ids": [
-      "eeffe318-e423-45c4-968c-d6ec4442aa8c"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "the_color_run_bucuresti",
     "name": "The Color Run București",
     "type": "road",
@@ -23622,82 +24398,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "maratonul_vinului_powered_by_omv_petrom",
-    "name": "Maratonul Vinului powered by OMV Petrom",
-    "type": "other",
-    "type_local": "Altele",
-    "race_dates": [
-      [
-        "20260425",
-        "20260425"
-      ],
-      [
-        "20270501",
-        "20270501"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "09:00",
-    "location": "Urlați, Prahova, Romania",
-    "latitude": 44.9894922,
-    "longitude": 26.2346216,
-    "county": "PRAHOVA",
-    "nearest_city": "Ploieşti",
-    "nearby_cities": [
-      "Ploieşti"
-    ],
-    "distances": "[\"50\", \"30\", \"18\"]",
-    "distance_m": [
-      50000,
-      30000,
-      18000
-    ],
-    "distance_keywords": [
-      "50 km"
-    ],
-    "distance_verbose": "50 km, 30 km, 18 km",
-    "organizer": "WeAreSports",
-    "contact": null,
-    "website": "https://maratonulvinului.ro/",
-    "fb_link": "https://www.facebook.com/Maratonulvinului/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://maratonulvinului.ro/inscriere/",
-    "race_info_url": "https://maratonulvinului.ro/curse/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Maratonul Vinului powered by OMV Petrom este primul concurs de Mountain Bike cu scop caritabil din România, ajuns la a 14-a ediție. Evenimentul se desfășoară în localitatea Urlați, județul Prahova, pe 25 aprilie 2026, printre dealurile, podgoriile și cramele din zonă. Participanții pot alege între mai multe trasee adaptate nivelului lor, de la 4 km pentru copii până la 50 km pentru cicliști experimentați. Concursul promovează ciclismul ca stil de viață sănătos și susține cauze sociale importante.",
-    "course_highlights": [
-      "Traseu de 50 km pentru cicliști experimentați",
-      "Traseu de 30 km pentru amatori și juniori",
-      "Traseu de 18 km recomandat cicliștilor mai puțin experimentați"
-    ],
-    "additional": "Startul pentru copii (4 și 8 km) este la ora 09:00, pentru traseele de 18, 30 și 50 km la 10:35, iar pentru plimbarea Family la 10:45. Ridicarea pachetelor se face în București și la fața locului în intervale orare specifice. Participanții de la Tura Family nu primesc kit de concurs și pot merge direct la start. Ceremonia de premiere este programată la ora 15:00, iar timpul limită de sosire este 16:30. Evenimentul include și activități pentru familii și copii, precum și sprijin pentru cauze sociale și educaționale, promovând cultura vinului și turismul local.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://calendar.sportic.ro/events/view?hash=96d8db73ba3a87c8bf4e8500bff29bb7afae8e2e"
-    ],
-    "consolidated_ids": [
-      "496c0d49-5b5e-412c-a2fb-c4fe56dd3881"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "rotarun_2026",
     "name": "RotaRun 2026",
     "type": "road",
@@ -23780,225 +24480,6 @@
     ],
     "consolidated_ids": [
       "3b5fedac-675c-45d3-972f-0d808bcec4c8"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "la_petrovaselo_in_vie_2026",
-    "name": "La Petrovaselo in vie! 2026",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260425",
-        "20260425"
-      ],
-      [
-        "20270501",
-        "20270501"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "09:00",
-    "location": "Petrovaselo, Recaș, Timiș County, Romania",
-    "latitude": 45.8160446,
-    "longitude": 21.5811852,
-    "county": "TIMIS",
-    "nearest_city": "Timişoara",
-    "nearby_cities": [
-      "Timişoara",
-      "Lugoj"
-    ],
-    "distances": "[\"28\", \"14\", \"5\"]",
-    "distance_m": [
-      28000,
-      14000,
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "28 km, 14 km, 5 km",
-    "organizer": "Petro Vaselo Winery și Alergotura",
-    "contact": null,
-    "website": "https://lapetrovaseloinvie.ro/",
-    "fb_link": "https://www.facebook.com/trailrunpetrovaselo/?locale=ro_RO",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Bendis (5 km)",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 lei",
-            "deadline": "20260131",
-            "description": "Taxa de participare până la 31 ianuarie 2026"
-          },
-          {
-            "label": "tier_2",
-            "price": "299 lei",
-            "deadline": "20260419",
-            "description": "Taxa de participare până la 19 aprilie 2026"
-          }
-        ],
-        "late_fee": {
-          "price": "350 lei",
-          "deadline": "20260419"
-        }
-      },
-      {
-        "distance": "Ovas (14 km)",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 lei",
-            "deadline": "20260131",
-            "description": "Taxa de participare până la 31 ianuarie 2026"
-          },
-          {
-            "label": "tier_2",
-            "price": "299 lei",
-            "deadline": "20260419",
-            "description": "Taxa de participare până la 19 aprilie 2026"
-          }
-        ],
-        "late_fee": {
-          "price": "350 lei",
-          "deadline": "20260419"
-        }
-      },
-      {
-        "distance": "PV Grand Cru (28 km)",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 lei",
-            "deadline": "20260131",
-            "description": "Taxa de participare până la 31 ianuarie 2026"
-          },
-          {
-            "label": "tier_2",
-            "price": "299 lei",
-            "deadline": "20260419",
-            "description": "Taxa de participare până la 19 aprilie 2026"
-          }
-        ],
-        "late_fee": {
-          "price": "350 lei",
-          "deadline": "20260419"
-        }
-      }
-    ],
-    "registration_close_date": "20260419",
-    "registration_url": "https://lapetrovaseloinvie.ro/inscriere/",
-    "race_info_url": "https://lapetrovaseloinvie.ro/despre-eveniment/",
-    "presumed_organizer_email": "mail@alergotura.ro",
-    "website_emails_found": [
-      "mail@alergotura.ro"
-    ],
-    "description": "La Petrovaselo în vie este un eveniment sportiv dedicat alergării în natură, organizat pentru a promova un stil de viață sănătos și pentru a crește numărul alergătorilor în aer liber. Evenimentul are loc în Recaș, România, și cuprinde trei curse de alergare pe trasee pitorești în vie, cu distanțe de 5 km, 14 km și 28 km. Participanții se bucură de o atmosferă prietenoasă, susținută de comunitate și parteneri locali, cu puncte de alimentare și o socializare plăcută după cursă. Traseele sunt bine marcate și adaptate pentru confort și siguranță, iar evenimentul este organizat cu sprijinul autorităților locale și al sponsorilor.",
-    "course_highlights": [
-      "Trasee în natură prin vie, cu distanțe de 5 km, 14 km și 28 km",
-      "Traseul de 28 km constă în parcurgerea de două ori a traseului de 14 km, a doua buclă fiind în sens invers",
-      "Traseele sunt semnalizate cu bandă și indicatoare, cu voluntari la punctele de schimbare a direcției"
-    ],
-    "additional": "Participanții trebuie să ajungă cu cel puțin 30 de minute înainte de start la Crama Petrovaselo. Kiturile de participare sunt limitate la 1000 în total, cu alocări specifice pe curse. După cursă, participanții pot savura gulaș și vin pe baza numărului de concurs. Traseele pot avea zone cu noroi în funcție de condițiile meteo. Transferul între curse este permis înainte de start, în limita locurilor disponibile. Evenimentul include activități de trail și curse culturale, cu participare deschisă pentru toate nivelurile de alergători. Înscrierile și detaliile despre curse sunt disponibile online.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://321start.run/eveniment/la-petrovaselo-in-vie-2026"
-    ],
-    "consolidated_ids": [
-      "6e7612dd-7bbf-4c4f-ad99-b286790ce6fc"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "140_bpm_25_aprilie_2026",
-    "name": "140 BPM - 25 aprilie 2026",
-    "type": "terrain",
-    "type_local": "Teren",
-    "race_dates": [
-      [
-        "20260425",
-        "20260425"
-      ],
-      [
-        "20270501",
-        "20270501"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Parcul Regele Mihai I (Herăstrău), București, Romania",
-    "latitude": 44.47020149999999,
-    "longitude": 26.0827527,
-    "county": "BUCURESTI",
-    "nearest_city": "Bucharest",
-    "nearby_cities": [
-      "Bucharest"
-    ],
-    "distances": "[\"6\", \"3\"]",
-    "distance_m": [
-      6000,
-      3000
-    ],
-    "distance_keywords": [
-      "5 km",
-      "3000 metri"
-    ],
-    "distance_verbose": "5 km, 3000 metri",
-    "organizer": null,
-    "contact": null,
-    "website": "https://sites.google.com/baneasarace.ro/140bpm/info-eveniment",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://sites.google.com/baneasarace.ro/140bpm/înscrie-te",
-    "race_info_url": "https://sites.google.com/baneasarace.ro/140bpm/info-eveniment",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "140 BPM este o cursă de alergare organizată în Parcul Regele Mihai I (Herăstrău) din București, programată pentru 25 aprilie 2026. Evenimentul oferă trasee adaptate pentru toate vârstele, inclusiv curse pentru copii și adulți, pe distanțe de 3 km și 6 km. Traseele sunt concepute pentru a fi accesibile și plăcute, desfășurându-se pe aleile parcului, oferind o experiență recreativă și competitivă în aer liber. Participanții se pot bucura de o atmosferă prietenoasă și de facilități dedicate alergătorilor.",
-    "course_highlights": [
-      "Traseu de 3 km pentru copii (Melci / Iepurași) - o tură de 1,5 km dus-întors",
-      "Traseu de 6 km pentru adulți (Țestoase) - o tură de 6 km",
-      "Locația în Parcul Regele Mihai I (Herăstrău), un cadru natural urban atractiv"
-    ],
-    "additional": "Cursa copiilor este pe un traseu scurt, 1,5 km dus-întors, iar cursa pentru adulți este o tură de 6 km. Evenimentul are o tradiție cu ediții anterioare în același parc, cu galerii foto și rezultate disponibile online. Evenimentul include și rezultate și galerii foto din edițiile anterioare, fiind o oportunitate de a socializa și de a promova un stil de viață activ.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://calendar.sportic.ro/events/view?hash=b5a86e67374c1044901a54f265503081b02afa22"
-    ],
-    "consolidated_ids": [
-      "a2f0c3f8-3d78-42e2-a7d6-266089d4c592"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -28959,6 +29440,89 @@
     ]
   },
   {
+    "domain_name": "wings_for_life_world_app_run_oradea",
+    "name": "Wings for Life World App Run : Oradea",
+    "type": "road",
+    "type_local": "Șosea",
+    "race_dates": [
+      [
+        "20260510",
+        "20260510"
+      ],
+      [
+        "20270509",
+        "20270509"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "14:00",
+    "location": "Timișoara, Timiș County, Romania",
+    "latitude": 45.7557559,
+    "longitude": 21.2322208,
+    "county": "TIMIS",
+    "nearest_city": "Timişoara",
+    "nearby_cities": [
+      "Timişoara"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": "Wings for Life Foundation",
+    "contact": null,
+    "website": "https://www.wingsforlifeworldrun.com/en/locations/oradea",
+    "fb_link": "https://www.facebook.com/WingsforLifeWorldRun",
+    "ig_link": "https://www.instagram.com/wingsforlifeworldrun",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.wingsforlifeworldrun.com/en/login/register",
+    "race_info_url": "https://www.wingsforlifeworldrun.com/en/locations/oradea",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Wings for Life World Run este o cursă globală unică pentru alergători și participanți în scaun cu rotile, unde nu există o linie de sosire fixă. Participanții aleargă pentru a rămâne înaintea Mașinii Virtuale de Capturare, care pornește la 30 de minute după start și crește treptat viteza până când toți sunt prinși. Evenimentul din Oradea, România, pe 10 mai 2026, se desfășoară pe un circuit asfaltat de 1,7 km în inima fabricii Nokian Tyres. Toate taxele de înscriere și donațiile merg integral către cercetarea leziunilor măduvei spinării.",
+    "course_highlights": [
+      "Circuit asfaltat de 1,7 km în interiorul fabricii Nokian Tyres",
+      "Participare deschisă alergătorilor și utilizatorilor de scaune cu rotile",
+      "Mașina Virtuală de Capturare pornește la 30 de minute după start și crește viteza progresiv"
+    ],
+    "additional": "Eveniment accesibil pentru participanții în scaun cu rotile. Startul este simultan la nivel mondial, iar Mașina Virtuală de Capturare începe urmărirea la 30 de minute după start cu o viteză inițială de 14 km/h, crescând progresiv. 100% din taxele de înscriere și donații sunt direcționate către proiecte de cercetare a leziunilor măduvei spinării. Evenimentul suportă participarea pe oricât distanță, fără o linie de sosire fixă, și include înscrierea prin aplicație. Participanții pot alerga individual sau în grup, iar toate fondurile strânse sunt direcționate către cercetarea leziunilor medulare.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.wingsforlifeworldrun.com/en"
+    ],
+    "consolidated_ids": [
+      "e8a9afc7-f6bf-4beb-8e28-45d3e160c1fd"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:45:56.166974+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://www.wingsforlifeworldrun.com/en): 2027-05-09 — \"May 9, 2027 at 11:00 AM your time\" (was estimated 2027-05-16)",
+        "website_url": "https://www.wingsforlifeworldrun.com/en/locations/oradea",
+        "evidence_url": "https://www.wingsforlifeworldrun.com/en",
+        "evidence_quote": "May 9, 2027 at 11:00 AM your time",
+        "previous_estimated_date": "2027-05-16",
+        "confirmed_date": "2027-05-09",
+        "model_confidence": 0.91
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "24_ontulszarnyalas_maraton",
     "name": "24. Öntúlszárnyalás maraton",
     "type": "terrain",
@@ -31311,75 +31875,6 @@
     ],
     "consolidated_ids": [
       "ddd8b87e-eddc-46cd-a496-6a977e2b3eab"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "thermal_trail_race_alearga_in_capitala_apelor_termale",
-    "name": "THERMAL TRAIL RACE Aleargă în capitala apelor termale",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260509",
-        "20260509"
-      ],
-      [
-        "20270515",
-        "20270515"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Băile 1 Mai, Bihor, Romania",
-    "latitude": 46.996533,
-    "longitude": 21.996222,
-    "county": "BIHOR",
-    "nearest_city": "Oradea",
-    "nearby_cities": [
-      "Oradea"
-    ],
-    "distances": "[\"14\", \"7\"]",
-    "distance_m": [
-      14000,
-      7000
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "14 km, 7 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "http://www.thermaltrailrace.com/"
-    ],
-    "consolidated_ids": [
-      "2d3a444c-f971-46ec-9533-10dbdd5b34ed"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -34366,76 +34861,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260415",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "wings_for_life_world_app_run_oradea",
-    "name": "Wings for Life World App Run : Oradea",
-    "type": "road",
-    "type_local": "Șosea",
-    "race_dates": [
-      [
-        "20260510",
-        "20260510"
-      ],
-      [
-        "20270516",
-        "20270516"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "14:00",
-    "location": "Timișoara, Timiș County, Romania",
-    "latitude": 45.7557559,
-    "longitude": 21.2322208,
-    "county": "TIMIS",
-    "nearest_city": "Timişoara",
-    "nearby_cities": [
-      "Timişoara"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Distanțe mixte",
-    "organizer": "Wings for Life Foundation",
-    "contact": null,
-    "website": "https://www.wingsforlifeworldrun.com/en/locations/oradea",
-    "fb_link": "https://www.facebook.com/WingsforLifeWorldRun",
-    "ig_link": "https://www.instagram.com/wingsforlifeworldrun",
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.wingsforlifeworldrun.com/en/login/register",
-    "race_info_url": "https://www.wingsforlifeworldrun.com/en/locations/oradea",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Wings for Life World Run este o cursă globală unică pentru alergători și participanți în scaun cu rotile, unde nu există o linie de sosire fixă. Participanții aleargă pentru a rămâne înaintea Mașinii Virtuale de Capturare, care pornește la 30 de minute după start și crește treptat viteza până când toți sunt prinși. Evenimentul din Oradea, România, pe 10 mai 2026, se desfășoară pe un circuit asfaltat de 1,7 km în inima fabricii Nokian Tyres. Toate taxele de înscriere și donațiile merg integral către cercetarea leziunilor măduvei spinării.",
-    "course_highlights": [
-      "Circuit asfaltat de 1,7 km în interiorul fabricii Nokian Tyres",
-      "Participare deschisă alergătorilor și utilizatorilor de scaune cu rotile",
-      "Mașina Virtuală de Capturare pornește la 30 de minute după start și crește viteza progresiv"
-    ],
-    "additional": "Eveniment accesibil pentru participanții în scaun cu rotile. Startul este simultan la nivel mondial, iar Mașina Virtuală de Capturare începe urmărirea la 30 de minute după start cu o viteză inițială de 14 km/h, crescând progresiv. 100% din taxele de înscriere și donații sunt direcționate către proiecte de cercetare a leziunilor măduvei spinării. Evenimentul suportă participarea pe oricât distanță, fără o linie de sosire fixă, și include înscrierea prin aplicație. Participanții pot alerga individual sau în grup, iar toate fondurile strânse sunt direcționate către cercetarea leziunilor medulare.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.wingsforlifeworldrun.com/en"
-    ],
-    "consolidated_ids": [
-      "e8a9afc7-f6bf-4beb-8e28-45d3e160c1fd"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -42350,87 +42775,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "semimaratonul_eroilor_invictus",
-    "name": "Semimaratonul Eroilor Invictus",
-    "type": "road",
-    "type_local": "Șosea",
-    "race_dates": [
-      [
-        "20260523",
-        "20260523"
-      ],
-      [
-        "20270529",
-        "20270529"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Bistrița, Năsăud, Bistrița-Năsăud, Romania",
-    "latitude": 47.2486107,
-    "longitude": 24.5322814,
-    "county": "BISTRITA-NASAUD",
-    "nearest_city": "Bistriţa",
-    "nearby_cities": [
-      "Bistriţa"
-    ],
-    "distances": "[\"21\", \"5.2\", \"5\", \"2\"]",
-    "distance_m": [
-      21000,
-      5200,
-      5000,
-      2000
-    ],
-    "distance_keywords": [
-      "Semimaraton",
-      "5 km"
-    ],
-    "distance_verbose": "Semimaraton, 5 km, 5 km, 2 km",
-    "organizer": "Asociația Voluntarilor Invictus - Filiala Bistrița",
-    "contact": null,
-    "website": "https://semimaratonuleroilor.ro/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "donație pentru tricou (detalii pe site)",
-    "price_tiers": [],
-    "registration_close_date": "20260501",
-    "registration_url": "https://semimaratonuleroilor.ro/regulament/",
-    "race_info_url": "https://semimaratonuleroilor.ro/regulament/",
-    "presumed_organizer_email": "invictusbistrita@outlook.com",
-    "website_emails_found": [
-      "invictusbistrita@outlook.com"
-    ],
-    "description": "Semimaratonul Eroilor Invictus, care va avea loc pe 23 mai 2026 în Bistrița, este un eveniment sportiv dedicat comemorării Zilei Eroilor și promovării activităților sportive de masă. Evenimentul aduce împreună comunitatea locală și sportivii amatori, oferind o cursă de semimaraton și alte probe sportive. Traseul pornește din Piața Centrală și străbate principalele artere ale orașului, fiind organizat sub patronajul Principelui Radu și cu sprijinul mai multor instituții și asociații locale. Participanții sunt încurajați să citească regulamentul, să se înscrie și să doneze pentru susținerea cauzei.",
-    "course_highlights": [
-      "Traseu urban cu start și sosire în Piața Centrală din Bistrița",
-      "Parcurge principalele străzi ale orașului: Str. Dornei, Str. Șincai, Str. Mihai Eminescu, B-dul Republicii, Str. Barbu Șt. Delavrancea",
-      "Eveniment dedicat comemorării Zilei Eroilor și promovării sportului de masă"
-    ],
-    "additional": "Înscrierile online se validează până la 1 mai 2026; evenimentul este organizat de Asociația Voluntarilor Invictus - Filiala Bistrița, sub Înaltul Patronaj al Principelui Radu; participanții pot obține tricoul oficial Invictus și merch-ul aferent; evenimentul include și alte probe sportive pe lângă semimaraton; se recomandă citirea regulamentului pentru detalii despre echipament, cronometrare și premii. 4 trasee diferite, înscriere simplificată, implică donație pentru tricou, eveniment pentru toate vârstele, activități de solidaritate și recunoștință",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "http://semimaratonuleroilor.ro/",
-      "https://semimaratonuleroilor.ro/"
-    ],
-    "consolidated_ids": [
-      "eeb7bbc2-ffd2-40f6-b849-dfd9688cf16a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "obciniada_night_run",
     "name": "Obciniada Night Run",
     "type": "trail",
@@ -42902,6 +43246,156 @@
     "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "transylvania_100k",
+    "name": "TRANSYLVANIA 100K",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260524",
+        "20260524"
+      ],
+      [
+        "20270529",
+        "20270529"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Castelul Bran, Bran, Brașov, Romania",
+    "latitude": 45.51490219999999,
+    "longitude": 25.3671637,
+    "county": "BRASOV",
+    "nearest_city": "Braşov",
+    "nearby_cities": [
+      "Braşov"
+    ],
+    "distances": "[\"100\"]",
+    "distance_m": [
+      100000
+    ],
+    "distance_keywords": [
+      "50 mile"
+    ],
+    "distance_verbose": "50 mile",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.transylvania100k.com/",
+    "fb_link": "https://www.facebook.com/transylvania100/",
+    "ig_link": "https://www.instagram.com/transylvania100k/",
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "100k",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "120 eur",
+            "deadline": null,
+            "description": "100k - 120 eur"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "80k",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "115 eur",
+            "deadline": null,
+            "description": "80k - 115 eur"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "50k",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "90 eur",
+            "deadline": null,
+            "description": "50k - 90 eur"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "30k",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "80 eur",
+            "deadline": null,
+            "description": "30k - 80 eur"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "20k",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "70 eur",
+            "deadline": null,
+            "description": "20k- 70 eur"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20260505",
+    "registration_url": "https://www.transylvania100k.com/registration",
+    "race_info_url": "https://www.transylvania100k.com/info",
+    "presumed_organizer_email": "registration@transylvania100k.com",
+    "website_emails_found": [
+      "registration@transylvania100k.com"
+    ],
+    "description": "Transylvania 100 este un eveniment montan de ultramaraton care se desfășoară în sălbăticia Munților Bucegi, traversând trasee de mare altitudine. Evenimentul include cinci curse diferite, de la semimaraton la ultramaraton de 100 km, toate pornind și terminând în apropierea Castelului Bran, cunoscut drept Castelul lui Dracula. Traseele oferă o combinație de poteci înguste, păduri străvechi, platouri montane și creste expuse, oferind o experiență unică alergătorilor pasionați de munte. Curse sunt deschise concurenților solo, cu premii pe categorii și suveniruri speciale pentru cei care termină în limitele de timp.",
+    "course_highlights": [
+      "Trasee de munte cu poteci înguste și păduri străvechi",
+      "Parcurs pe platouri montane și creste expuse în Munții Bucegi",
+      "Start și sosire în apropierea Castelului Bran, simbol iconic"
+    ],
+    "additional": "Pentru înscriere este necesară experiență anterioară pe trasee montane, cu cerințe diferite în funcție de distanță. După 1 mai 2026, tricourile tehnice SportHG vor fi înlocuite cu căciulițe de gât. Locurile sunt limitate, iar înscrierile se validează după plata online și verificarea experienței anterioare. Evenimentul include și alte curse montane, precum skyrace și semi-maraton, și oferă premii și memento-uri pentru finisheri.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.transylvania100k.com/"
+    ],
+    "consolidated_ids": [
+      "ffee1fc7-372d-4846-8eb4-36978d9c08da"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:48:44.101721+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://www.transylvania100k.com/): 2027-05-29 — \"Transylvania 100 - 12th edition - May 29th 2027.\" (was estimated 2027-05-30)",
+        "website_url": "https://www.transylvania100k.com/",
+        "evidence_url": "https://www.transylvania100k.com/",
+        "evidence_quote": "Transylvania 100 - 12th edition - May 29th 2027.",
+        "previous_estimated_date": "2027-05-30",
+        "confirmed_date": "2027-05-29",
+        "model_confidence": 0.98
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -44654,143 +45148,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "transylvania_100k",
-    "name": "TRANSYLVANIA 100K",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260524",
-        "20260524"
-      ],
-      [
-        "20270530",
-        "20270530"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Castelul Bran, Bran, Brașov, Romania",
-    "latitude": 45.51490219999999,
-    "longitude": 25.3671637,
-    "county": "BRASOV",
-    "nearest_city": "Braşov",
-    "nearby_cities": [
-      "Braşov"
-    ],
-    "distances": "[\"100\"]",
-    "distance_m": [
-      100000
-    ],
-    "distance_keywords": [
-      "50 mile"
-    ],
-    "distance_verbose": "50 mile",
-    "organizer": null,
-    "contact": null,
-    "website": "https://www.transylvania100k.com/",
-    "fb_link": "https://www.facebook.com/transylvania100/",
-    "ig_link": "https://www.instagram.com/transylvania100k/",
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "100k",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "120 eur",
-            "deadline": null,
-            "description": "100k - 120 eur"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "80k",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "115 eur",
-            "deadline": null,
-            "description": "80k - 115 eur"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "50k",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "90 eur",
-            "deadline": null,
-            "description": "50k - 90 eur"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "30k",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "80 eur",
-            "deadline": null,
-            "description": "30k - 80 eur"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "20k",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "70 eur",
-            "deadline": null,
-            "description": "20k- 70 eur"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20260505",
-    "registration_url": "https://www.transylvania100k.com/registration",
-    "race_info_url": "https://www.transylvania100k.com/info",
-    "presumed_organizer_email": "registration@transylvania100k.com",
-    "website_emails_found": [
-      "registration@transylvania100k.com"
-    ],
-    "description": "Transylvania 100 este un eveniment montan de ultramaraton care se desfășoară în sălbăticia Munților Bucegi, traversând trasee de mare altitudine. Evenimentul include cinci curse diferite, de la semimaraton la ultramaraton de 100 km, toate pornind și terminând în apropierea Castelului Bran, cunoscut drept Castelul lui Dracula. Traseele oferă o combinație de poteci înguste, păduri străvechi, platouri montane și creste expuse, oferind o experiență unică alergătorilor pasionați de munte. Curse sunt deschise concurenților solo, cu premii pe categorii și suveniruri speciale pentru cei care termină în limitele de timp.",
-    "course_highlights": [
-      "Trasee de munte cu poteci înguste și păduri străvechi",
-      "Parcurs pe platouri montane și creste expuse în Munții Bucegi",
-      "Start și sosire în apropierea Castelului Bran, simbol iconic"
-    ],
-    "additional": "Pentru înscriere este necesară experiență anterioară pe trasee montane, cu cerințe diferite în funcție de distanță. După 1 mai 2026, tricourile tehnice SportHG vor fi înlocuite cu căciulițe de gât. Locurile sunt limitate, iar înscrierile se validează după plata online și verificarea experienței anterioare. Evenimentul include și alte curse montane, precum skyrace și semi-maraton, și oferă premii și memento-uri pentru finisheri.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.transylvania100k.com/"
-    ],
-    "consolidated_ids": [
-      "ffee1fc7-372d-4846-8eb4-36978d9c08da"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "sh4h_concursul_international_de_alergare_de_anduranta",
     "name": "SH4H Concursul internaţional de alergare de anduranţă",
     "type": "road",
@@ -45958,163 +46315,6 @@
     ],
     "consolidated_ids": [
       "72c17a68-56ba-4095-a0ac-74efdbba0a33"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "forest_run",
-    "name": "Forest Run",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260530",
-        "20260530"
-      ],
-      [
-        "20270605",
-        "20270605"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Băneasa Forest, Cluj-Napoca, Cluj County, Romania",
-    "latitude": 46.7674617,
-    "longitude": 23.5856341,
-    "county": "CLUJ",
-    "nearest_city": "Cluj-Napoca",
-    "nearby_cities": [
-      "Cluj-Napoca"
-    ],
-    "distances": "[\"21\", \"11\", \"6.5\", \"3\"]",
-    "distance_m": [
-      21000,
-      11000,
-      6500,
-      3000
-    ],
-    "distance_keywords": [
-      "Semimaraton",
-      "10 km",
-      "3000 metri"
-    ],
-    "distance_verbose": "Semimaraton, 10 km, 6.5 km, 3000 metri",
-    "organizer": "Baneasa Forest Run team",
-    "contact": null,
-    "website": "https://baneasaforestrun.ro/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Semimaraton",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "99 RON",
-            "deadline": "20260331",
-            "description": "Taxă de participare semimaraton - Early bird"
-          },
-          {
-            "label": "tier_2",
-            "price": "129 RON",
-            "deadline": "20260515",
-            "description": "Taxă de participare semimaraton - Standard"
-          }
-        ],
-        "late_fee": {
-          "price": "149 RON",
-          "deadline": "20260529"
-        }
-      },
-      {
-        "distance": "Cros 11 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "79 RON",
-            "deadline": "20260331",
-            "description": "Taxă de participare cros 11 km - Early bird"
-          },
-          {
-            "label": "tier_2",
-            "price": "99 RON",
-            "deadline": "20260515",
-            "description": "Taxă de participare cros 11 km - Standard"
-          }
-        ],
-        "late_fee": {
-          "price": "119 RON",
-          "deadline": "20260529"
-        }
-      },
-      {
-        "distance": "Alergare 6 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "59 RON",
-            "deadline": "20260331",
-            "description": "Taxă de participare alergare 6 km - Early bird"
-          },
-          {
-            "label": "tier_2",
-            "price": "79 RON",
-            "deadline": "20260515",
-            "description": "Taxă de participare alergare 6 km - Standard"
-          }
-        ],
-        "late_fee": {
-          "price": "99 RON",
-          "deadline": "20260529"
-        }
-      },
-      {
-        "distance": "Family Run 3 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "49 RON",
-            "deadline": "20260515",
-            "description": "Taxă de participare Family Run 3 km"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20260529",
-    "registration_url": "https://baneasaforestrun.ro/inscrie-te/",
-    "race_info_url": "https://baneasaforestrun.ro/despre-baneasa-forest-run/",
-    "presumed_organizer_email": "alerg@baneasaforestrun.ro",
-    "website_emails_found": [
-      "alerg@baneasaforestrun.ro"
-    ],
-    "description": "Baneasa Forest Run este o cursă de alergare 100% trail în Pădurea Băneasa, Cluj-Napoca, care oferă o experiență autentică în natură. Evenimentul include patru probe: semimaraton, cros de 11 km, alergare rapidă de 6 km și Family Run de 3 km, necompetitivă, pentru familii. Cursa este dedicată tuturor nivelurilor de alergători, de la începători la avansați, și pune accent pe bucuria alergării în pădure. Organizat de o echipă pasionată, evenimentul oferă și planuri de antrenament și antrenamente de grup pentru pregătire optimă.",
-    "course_highlights": [
-      "Trasee 100% trail în Pădurea Băneasa",
-      "Patru probe: semimaraton, 11 km, 6 km și Family Run 3 km",
-      "Antrenamente de grup cu ritmuri diferite și coordonatori"
-    ],
-    "additional": "Antrenamente de grup cu ritmuri diferite și coordonatori. Planuri de antrenament pentru toate nivelurile. Family Run este o cursă necompetitivă pentru familii. Evenimentul susține cauze sociale prin Asociația Magic și Zi de Bine. Traseu de trail cu teren accidentat, rădăcini, drumuri de pământ și poteci forestiere; opțiuni pentru curse de familie și copii; sesiuni de antrenament disponibile.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.active-hub.ro/forest-run-2025"
-    ],
-    "consolidated_ids": [
-      "9de89ce3-f44e-4ef0-b02c-fbd0c86eedb2"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -50706,6 +50906,100 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "semimaratonul_eroilor_invictus",
+    "name": "Semimaratonul Eroilor Invictus",
+    "type": "road",
+    "type_local": "Șosea",
+    "race_dates": [
+      [
+        "20260523",
+        "20260523"
+      ],
+      [
+        "20270612",
+        "20270612"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Bistrița, Năsăud, Bistrița-Năsăud, Romania",
+    "latitude": 47.2486107,
+    "longitude": 24.5322814,
+    "county": "BISTRITA-NASAUD",
+    "nearest_city": "Bistriţa",
+    "nearby_cities": [
+      "Bistriţa"
+    ],
+    "distances": "[\"21\", \"5.2\", \"5\", \"2\"]",
+    "distance_m": [
+      21000,
+      5200,
+      5000,
+      2000
+    ],
+    "distance_keywords": [
+      "Semimaraton",
+      "5 km"
+    ],
+    "distance_verbose": "Semimaraton, 5 km, 5 km, 2 km",
+    "organizer": "Asociația Voluntarilor Invictus - Filiala Bistrița",
+    "contact": null,
+    "website": "https://semimaratonuleroilor.ro/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "donație pentru tricou (detalii pe site)",
+    "price_tiers": [],
+    "registration_close_date": "20260501",
+    "registration_url": "https://semimaratonuleroilor.ro/regulament/",
+    "race_info_url": "https://semimaratonuleroilor.ro/regulament/",
+    "presumed_organizer_email": "invictusbistrita@outlook.com",
+    "website_emails_found": [
+      "invictusbistrita@outlook.com"
+    ],
+    "description": "Semimaratonul Eroilor Invictus, care va avea loc pe 23 mai 2026 în Bistrița, este un eveniment sportiv dedicat comemorării Zilei Eroilor și promovării activităților sportive de masă. Evenimentul aduce împreună comunitatea locală și sportivii amatori, oferind o cursă de semimaraton și alte probe sportive. Traseul pornește din Piața Centrală și străbate principalele artere ale orașului, fiind organizat sub patronajul Principelui Radu și cu sprijinul mai multor instituții și asociații locale. Participanții sunt încurajați să citească regulamentul, să se înscrie și să doneze pentru susținerea cauzei.",
+    "course_highlights": [
+      "Traseu urban cu start și sosire în Piața Centrală din Bistrița",
+      "Parcurge principalele străzi ale orașului: Str. Dornei, Str. Șincai, Str. Mihai Eminescu, B-dul Republicii, Str. Barbu Șt. Delavrancea",
+      "Eveniment dedicat comemorării Zilei Eroilor și promovării sportului de masă"
+    ],
+    "additional": "Înscrierile online se validează până la 1 mai 2026; evenimentul este organizat de Asociația Voluntarilor Invictus - Filiala Bistrița, sub Înaltul Patronaj al Principelui Radu; participanții pot obține tricoul oficial Invictus și merch-ul aferent; evenimentul include și alte probe sportive pe lângă semimaraton; se recomandă citirea regulamentului pentru detalii despre echipament, cronometrare și premii. 4 trasee diferite, înscriere simplificată, implică donație pentru tricou, eveniment pentru toate vârstele, activități de solidaritate și recunoștință",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "http://semimaratonuleroilor.ro/",
+      "https://semimaratonuleroilor.ro/"
+    ],
+    "consolidated_ids": [
+      "eeb7bbc2-ffd2-40f6-b849-dfd9688cf16a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:47:32.714579+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://semimaratonuleroilor.ro/regulament/): 2027-06-12 — \"Evenimentul are loc în orașul Bistrița, în data de 12 iunie 2027\" (was estimated 2027-05-29)",
+        "website_url": "https://semimaratonuleroilor.ro/",
+        "evidence_url": "https://semimaratonuleroilor.ro/regulament/",
+        "evidence_quote": "Evenimentul are loc în orașul Bistrița, în data de 12 iunie 2027",
+        "previous_estimated_date": "2027-05-29",
+        "confirmed_date": "2027-06-12",
+        "model_confidence": 0.99
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "msg_maraton_apuseni",
     "name": "msg Maraton Apuseni",
     "type": "trail",
@@ -51695,6 +51989,234 @@
     "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "maraton_maramures",
+    "name": "Maraton Maramureș",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260613",
+        "20260613"
+      ],
+      [
+        "20270612",
+        "20270612"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Baia Mare, Maramureș County, Romania",
+    "latitude": 47.6567387,
+    "longitude": 23.5849881,
+    "county": "MARAMURES",
+    "nearest_city": "Baia Mare",
+    "nearby_cities": [
+      "Baia Mare"
+    ],
+    "distances": "[\"42.2\", \"21.1\", \"13\"]",
+    "distance_m": [
+      42200,
+      21100,
+      13000
+    ],
+    "distance_keywords": [
+      "Maraton",
+      "Semimaraton"
+    ],
+    "distance_verbose": "Maraton, Semimaraton, 13 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://maratonmaramures.ro/",
+    "fb_link": "https://www.facebook.com/maratonmaramures.ro/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://maratonmaramures.ro/#register",
+    "race_info_url": "https://maratonmaramures.ro/#curse",
+    "presumed_organizer_email": "clubsportivamm@gmail.com",
+    "website_emails_found": [
+      "clubsportivamm@gmail.com",
+      "jane@untitled.tld"
+    ],
+    "description": "Maraton Maramureș este o cursă montană ce se desfășoară în peisajele pitorești din Baia Mare și împrejurimi, pe 13 iunie 2026. Traseele includ o alergare și drumeție de 13 km, un semimaraton montan de 21 km și un maraton complet de 42 km, fiecare oferind provocări și priveliști spectaculoase. Participanții vor parcurge urcări susținute, poteci pe malul barajului Firiza și zone cu panorame impresionante asupra vârfurilor locale. Evenimentul este potrivit atât pentru alergători montani experimentați, cât și pentru cei care doresc o experiență de trail running în natură.",
+    "course_highlights": [
+      "Urcare susținută de 7-8 km cu diferență de nivel de 560 metri",
+      "Panoramă asupra barajului Firiza și vârfului Igniș",
+      "Potecă spectaculoasă pe malul barajului cu priveliști memorabile"
+    ],
+    "additional": "Traseele au fișiere GPX disponibile pentru descărcare. Traseul maratonului include o buclă de 21 km prin zone pitorești precum Limpedea, Groapele Chiuzbăii și Fântâna cu borcut. Există puncte de alimentare și control pe traseu, iar traseele sunt marcate cu semne distinctive. Voluntarii ghidează concurenții pe traseele comune și ramificate. Traseele de trail includ teren montan, poteci tehnice și urcări pe munți, cu accent pe frumusețea naturală a zonei. Participarea include materiale oficiale și acces la facilitățile evenimentului.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://maratonmaramures.ro/"
+    ],
+    "consolidated_ids": [
+      "0fe79aa5-9f36-4c83-8874-0e6db22df659"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:51:34.744077+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://maratonmaramures.ro/): 2027-06-12 — \"12 iunie 2027\" (was estimated 2027-06-19)",
+        "website_url": "https://maratonmaramures.ro/",
+        "evidence_url": "https://maratonmaramures.ro/",
+        "evidence_quote": "12 iunie 2027",
+        "previous_estimated_date": "2027-06-19",
+        "confirmed_date": "2027-06-12",
+        "model_confidence": 0.98
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "maraton_tarcau",
+    "name": "Maraton Tarcău",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260613",
+        "20260613"
+      ],
+      [
+        "20270612",
+        "20270612"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "08:15",
+    "location": "Tarcău, Neamț, Romania",
+    "latitude": 46.8902149,
+    "longitude": 26.1327373,
+    "county": "NEAMT",
+    "nearest_city": "Miercurea-Ciuc",
+    "nearby_cities": [],
+    "distances": "[\"42.2\", \"21.1\", \"10.55\"]",
+    "distance_m": [
+      42200,
+      21100,
+      10550
+    ],
+    "distance_keywords": [
+      "Maraton",
+      "Semimaraton",
+      "10 km"
+    ],
+    "distance_verbose": "Maraton, Semimaraton, 10 km",
+    "organizer": "Asociația Victoria Tarcău",
+    "contact": null,
+    "website": "https://maraton-tarcau.ro/",
+    "fb_link": "https://www.facebook.com/p/Maraton-Tarc%C4%83u-100090512883067/",
+    "ig_link": "https://www.instagram.com/popular/maraton-tarcau/",
+    "price_range": "lei 150 - lei 250",
+    "price_tiers": [
+      {
+        "distance": "Maraton/Semimaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "180 lei",
+            "deadline": "20260430",
+            "description": "APRILIE"
+          },
+          {
+            "label": "tier_2",
+            "price": "200 lei",
+            "deadline": "20260531",
+            "description": "MAI"
+          }
+        ],
+        "late_fee": {
+          "price": "250 lei",
+          "deadline": "20260613"
+        }
+      },
+      {
+        "distance": "Cros",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "150 lei",
+            "deadline": "20260430",
+            "description": "APRILIE"
+          },
+          {
+            "label": "tier_2",
+            "price": "180 lei",
+            "deadline": "20260531",
+            "description": "MAI"
+          }
+        ],
+        "late_fee": {
+          "price": "200 lei",
+          "deadline": "20260613"
+        }
+      }
+    ],
+    "registration_close_date": "20260613",
+    "registration_url": "https://maraton-tarcau.ro/inscriere/",
+    "race_info_url": "https://maraton-tarcau.ro/informatii-uitile/",
+    "presumed_organizer_email": "maratontarcau@gmail.com",
+    "website_emails_found": [
+      "maratontarcau@gmail.com",
+      "john@gmail.com"
+    ],
+    "description": "Maraton Tarcău este o competiție anuală desfășurată în peisajul natural al zonei Tarcău, Neamț, care oferă probe de maraton, semimaraton și cros. Evenimentul pune accent pe pregătirea fizică și echipamentul adecvat, asigurând o experiență sportivă completă și sigură. Participanții pot beneficia de kitul de participare oferit cu o zi înainte de concurs și trebuie să respecte regulamentul oficial al competiției. Timpurile limită pentru parcurgerea traseelor sunt bine stabilite pentru fiecare probă, asigurând un ritm competitiv și organizat.",
+    "course_highlights": [
+      "Trasee de maraton, semimaraton și cros în zona Tarcău, Neamț",
+      "Timp limită de parcurgere: 7 ore pentru maraton, 4 ore pentru semimaraton, 2 ore pentru cros",
+      "Kit de participare oferit cu o zi înaintea concursului"
+    ],
+    "additional": "Kitul de participare se oferă vineri, 12 iunie 2026, iar participanții trebuie să semneze declarația pe propria răspundere. Există ședință tehnică înaintea startului. Timpurile limită pentru parcurgerea traseelor sunt: 7 ore pentru maraton (start 9:00), 4 ore pentru semimaraton (start 10:00), 2 ore pentru cros (start 11:00). Înscrierea se face pe 12 iunie, cu kit de participare și declarație pe propria răspundere; curse cu limite de timp; trasee montane spectaculoase",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://maraton-tarcau.ro/"
+    ],
+    "consolidated_ids": [
+      "3c54f576-3e85-4024-b650-4c1c6a59b853"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:51:49.375898+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://maraton-tarcau.ro/): 2027-06-12 — \"Maraton Tarcau 12 IUNIE 2027\" (was estimated 2027-06-19)",
+        "website_url": "https://maraton-tarcau.ro/",
+        "evidence_url": "https://maraton-tarcau.ro/",
+        "evidence_quote": "Maraton Tarcau 12 IUNIE 2027",
+        "previous_estimated_date": "2027-06-19",
+        "confirmed_date": "2027-06-12",
+        "model_confidence": 0.99
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -53992,6 +54514,104 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "sports_festival_alergam_pentru_cluj",
+    "name": "SPORTS FESTIVAL Alergăm pentru Cluj!",
+    "type": "road",
+    "type_local": "Șosea",
+    "race_dates": [
+      [
+        "20260614",
+        "20260614"
+      ],
+      [
+        "20270613",
+        "20270613"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Cluj-Napoca, Cluj County, Romania",
+    "latitude": 46.7712101,
+    "longitude": 23.6236353,
+    "county": "CLUJ",
+    "nearest_city": "Cluj-Napoca",
+    "nearby_cities": [
+      "Cluj-Napoca"
+    ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
+    "organizer": "Movement Team SRL",
+    "contact": null,
+    "website": "https://www.sportsfestival.com",
+    "fb_link": "https://www.facebook.com/photo.php?fbid=1454107099416581&set=a.719116786248953&type=3",
+    "ig_link": "https://instagram.com/sportsfestival",
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "Crosul Supereroilor 5 km și 10 km",
+        "tiers": [],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.sportsfestival.com/crosul-supereroilor/",
+    "presumed_organizer_email": "contact@sportsfestival.com",
+    "website_emails_found": [
+      "contact@sportsfestival.com",
+      "pepe@sportsfestival.com"
+    ],
+    "description": "Sports Festival este cel mai mare eveniment multi-sportiv din România, desfășurat la Cluj-Napoca între 11 și 14 iunie 2026. Festivalul combină competiții sportive, activități de inițiere, demonstrații, concerte și evenimente educaționale, oferind o experiență unică de sport și divertisment pentru toate vârstele. Crosul Supereroilor, o cursă de 5 km și 10 km, este o componentă importantă a festivalului, motivând participanții să alerge pentru o cauză socială, susținând comunitatea Via Transilvanica. Evenimentul aduce împreună campioni, suporterii și pasionații de sport într-un cadru festiv și prietenos.",
+    "course_highlights": [
+      "Crosul Supereroilor: curse de 5 km și 10 km pe trasee dedicate",
+      "Traseul Via Transilvanica, un drum turistic de lungă distanță cu marcaje și borne sculptate",
+      "Evenimente sportive și demonstrative în Parcul Sportiv Prof Dr. Iuliu Hațieganu"
+    ],
+    "additional": "Participarea la Crosul Supereroilor susține proiectul social Via Transilvanica, cu o parte din taxa de participare donată comunității. Festivalul include zone dedicate copiilor, food zone cu meniuri sănătoase, concerte și demonstrații de dans. Kitul de concurs este oferit participanților, iar evenimentul promovează sportul ca mod de viață și implicare socială. Evenimentul include activități pentru toate vârstele, competiții sportive, și sprijin pentru cauze sociale.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.sportsfestival.com/"
+    ],
+    "consolidated_ids": [
+      "1f7efebb-6d96-433f-b693-a807810b5c98"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:52:12.085063+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://www.sportsfestival.com/crosul-supereroilor/): 2027-06-13 — \"Supereroii se aliniază din nou la start, în 13 iunie 2027!\" (was estimated 2027-06-20)",
+        "website_url": "https://www.sportsfestival.com",
+        "evidence_url": "https://www.sportsfestival.com/crosul-supereroilor/",
+        "evidence_quote": "Supereroii se aliniază din nou la start, în 13 iunie 2027!",
+        "previous_estimated_date": "2027-06-20",
+        "confirmed_date": "2027-06-13",
+        "model_confidence": 0.99
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "31_aldi_noi_futogala",
     "name": "31. ALDI Női Futógála",
     "type": "road",
@@ -56270,208 +56890,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "maraton_maramures",
-    "name": "Maraton Maramureș",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260613",
-        "20260613"
-      ],
-      [
-        "20270619",
-        "20270619"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Baia Mare, Maramureș County, Romania",
-    "latitude": 47.6567387,
-    "longitude": 23.5849881,
-    "county": "MARAMURES",
-    "nearest_city": "Baia Mare",
-    "nearby_cities": [
-      "Baia Mare"
-    ],
-    "distances": "[\"42.2\", \"21.1\", \"13\"]",
-    "distance_m": [
-      42200,
-      21100,
-      13000
-    ],
-    "distance_keywords": [
-      "Maraton",
-      "Semimaraton"
-    ],
-    "distance_verbose": "Maraton, Semimaraton, 13 km",
-    "organizer": null,
-    "contact": null,
-    "website": "https://maratonmaramures.ro/",
-    "fb_link": "https://www.facebook.com/maratonmaramures.ro/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://maratonmaramures.ro/#register",
-    "race_info_url": "https://maratonmaramures.ro/#curse",
-    "presumed_organizer_email": "clubsportivamm@gmail.com",
-    "website_emails_found": [
-      "clubsportivamm@gmail.com",
-      "jane@untitled.tld"
-    ],
-    "description": "Maraton Maramureș este o cursă montană ce se desfășoară în peisajele pitorești din Baia Mare și împrejurimi, pe 13 iunie 2026. Traseele includ o alergare și drumeție de 13 km, un semimaraton montan de 21 km și un maraton complet de 42 km, fiecare oferind provocări și priveliști spectaculoase. Participanții vor parcurge urcări susținute, poteci pe malul barajului Firiza și zone cu panorame impresionante asupra vârfurilor locale. Evenimentul este potrivit atât pentru alergători montani experimentați, cât și pentru cei care doresc o experiență de trail running în natură.",
-    "course_highlights": [
-      "Urcare susținută de 7-8 km cu diferență de nivel de 560 metri",
-      "Panoramă asupra barajului Firiza și vârfului Igniș",
-      "Potecă spectaculoasă pe malul barajului cu priveliști memorabile"
-    ],
-    "additional": "Traseele au fișiere GPX disponibile pentru descărcare. Traseul maratonului include o buclă de 21 km prin zone pitorești precum Limpedea, Groapele Chiuzbăii și Fântâna cu borcut. Există puncte de alimentare și control pe traseu, iar traseele sunt marcate cu semne distinctive. Voluntarii ghidează concurenții pe traseele comune și ramificate. Traseele de trail includ teren montan, poteci tehnice și urcări pe munți, cu accent pe frumusețea naturală a zonei. Participarea include materiale oficiale și acces la facilitățile evenimentului.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://maratonmaramures.ro/"
-    ],
-    "consolidated_ids": [
-      "0fe79aa5-9f36-4c83-8874-0e6db22df659"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "maraton_tarcau",
-    "name": "Maraton Tarcău",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260613",
-        "20260613"
-      ],
-      [
-        "20270619",
-        "20270619"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "08:15",
-    "location": "Tarcău, Neamț, Romania",
-    "latitude": 46.8902149,
-    "longitude": 26.1327373,
-    "county": "NEAMT",
-    "nearest_city": "Miercurea-Ciuc",
-    "nearby_cities": [],
-    "distances": "[\"42.2\", \"21.1\", \"10.55\"]",
-    "distance_m": [
-      42200,
-      21100,
-      10550
-    ],
-    "distance_keywords": [
-      "Maraton",
-      "Semimaraton",
-      "10 km"
-    ],
-    "distance_verbose": "Maraton, Semimaraton, 10 km",
-    "organizer": "Asociația Victoria Tarcău",
-    "contact": null,
-    "website": "https://maraton-tarcau.ro/",
-    "fb_link": "https://www.facebook.com/p/Maraton-Tarc%C4%83u-100090512883067/",
-    "ig_link": "https://www.instagram.com/popular/maraton-tarcau/",
-    "price_range": "lei 150 - lei 250",
-    "price_tiers": [
-      {
-        "distance": "Maraton/Semimaraton",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "180 lei",
-            "deadline": "20260430",
-            "description": "APRILIE"
-          },
-          {
-            "label": "tier_2",
-            "price": "200 lei",
-            "deadline": "20260531",
-            "description": "MAI"
-          }
-        ],
-        "late_fee": {
-          "price": "250 lei",
-          "deadline": "20260613"
-        }
-      },
-      {
-        "distance": "Cros",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "150 lei",
-            "deadline": "20260430",
-            "description": "APRILIE"
-          },
-          {
-            "label": "tier_2",
-            "price": "180 lei",
-            "deadline": "20260531",
-            "description": "MAI"
-          }
-        ],
-        "late_fee": {
-          "price": "200 lei",
-          "deadline": "20260613"
-        }
-      }
-    ],
-    "registration_close_date": "20260613",
-    "registration_url": "https://maraton-tarcau.ro/inscriere/",
-    "race_info_url": "https://maraton-tarcau.ro/informatii-uitile/",
-    "presumed_organizer_email": "maratontarcau@gmail.com",
-    "website_emails_found": [
-      "maratontarcau@gmail.com",
-      "john@gmail.com"
-    ],
-    "description": "Maraton Tarcău este o competiție anuală desfășurată în peisajul natural al zonei Tarcău, Neamț, care oferă probe de maraton, semimaraton și cros. Evenimentul pune accent pe pregătirea fizică și echipamentul adecvat, asigurând o experiență sportivă completă și sigură. Participanții pot beneficia de kitul de participare oferit cu o zi înainte de concurs și trebuie să respecte regulamentul oficial al competiției. Timpurile limită pentru parcurgerea traseelor sunt bine stabilite pentru fiecare probă, asigurând un ritm competitiv și organizat.",
-    "course_highlights": [
-      "Trasee de maraton, semimaraton și cros în zona Tarcău, Neamț",
-      "Timp limită de parcurgere: 7 ore pentru maraton, 4 ore pentru semimaraton, 2 ore pentru cros",
-      "Kit de participare oferit cu o zi înaintea concursului"
-    ],
-    "additional": "Kitul de participare se oferă vineri, 12 iunie 2026, iar participanții trebuie să semneze declarația pe propria răspundere. Există ședință tehnică înaintea startului. Timpurile limită pentru parcurgerea traseelor sunt: 7 ore pentru maraton (start 9:00), 4 ore pentru semimaraton (start 10:00), 2 ore pentru cros (start 11:00). Înscrierea se face pe 12 iunie, cu kit de participare și declarație pe propria răspundere; curse cu limite de timp; trasee montane spectaculoase",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://maraton-tarcau.ro/"
-    ],
-    "consolidated_ids": [
-      "3c54f576-3e85-4024-b650-4c1c6a59b853"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "maraton_scaunul_domnului_deda",
     "name": "Maraton Scaunul Domnului (Deda)",
     "type": "trail",
@@ -58527,91 +58945,6 @@
     ],
     "consolidated_ids": [
       "8a3d2c27-aa5f-41c2-aa98-2682f90a8538"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "sports_festival_alergam_pentru_cluj",
-    "name": "SPORTS FESTIVAL Alergăm pentru Cluj!",
-    "type": "road",
-    "type_local": "Șosea",
-    "race_dates": [
-      [
-        "20260614",
-        "20260614"
-      ],
-      [
-        "20270620",
-        "20270620"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Cluj-Napoca, Cluj County, Romania",
-    "latitude": 46.7712101,
-    "longitude": 23.6236353,
-    "county": "CLUJ",
-    "nearest_city": "Cluj-Napoca",
-    "nearby_cities": [
-      "Cluj-Napoca"
-    ],
-    "distances": "[\"10\", \"5\"]",
-    "distance_m": [
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": "Movement Team SRL",
-    "contact": null,
-    "website": "https://www.sportsfestival.com",
-    "fb_link": "https://www.facebook.com/photo.php?fbid=1454107099416581&set=a.719116786248953&type=3",
-    "ig_link": "https://instagram.com/sportsfestival",
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Crosul Supereroilor 5 km și 10 km",
-        "tiers": [],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.sportsfestival.com/crosul-supereroilor/",
-    "presumed_organizer_email": "contact@sportsfestival.com",
-    "website_emails_found": [
-      "contact@sportsfestival.com",
-      "pepe@sportsfestival.com"
-    ],
-    "description": "Sports Festival este cel mai mare eveniment multi-sportiv din România, desfășurat la Cluj-Napoca între 11 și 14 iunie 2026. Festivalul combină competiții sportive, activități de inițiere, demonstrații, concerte și evenimente educaționale, oferind o experiență unică de sport și divertisment pentru toate vârstele. Crosul Supereroilor, o cursă de 5 km și 10 km, este o componentă importantă a festivalului, motivând participanții să alerge pentru o cauză socială, susținând comunitatea Via Transilvanica. Evenimentul aduce împreună campioni, suporterii și pasionații de sport într-un cadru festiv și prietenos.",
-    "course_highlights": [
-      "Crosul Supereroilor: curse de 5 km și 10 km pe trasee dedicate",
-      "Traseul Via Transilvanica, un drum turistic de lungă distanță cu marcaje și borne sculptate",
-      "Evenimente sportive și demonstrative în Parcul Sportiv Prof Dr. Iuliu Hațieganu"
-    ],
-    "additional": "Participarea la Crosul Supereroilor susține proiectul social Via Transilvanica, cu o parte din taxa de participare donată comunității. Festivalul include zone dedicate copiilor, food zone cu meniuri sănătoase, concerte și demonstrații de dans. Kitul de concurs este oferit participanților, iar evenimentul promovează sportul ca mod de viață și implicare socială. Evenimentul include activități pentru toate vârstele, competiții sportive, și sprijin pentru cauze sociale.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.sportsfestival.com/"
-    ],
-    "consolidated_ids": [
-      "1f7efebb-6d96-433f-b693-a807810b5c98"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -68932,6 +69265,95 @@
     ]
   },
   {
+    "domain_name": "buila_trail_race_discover_oltenia_de_sub_munte",
+    "name": "BUILA TRAIL RACE Discover Oltenia de sub munte!",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260718",
+        "20260718"
+      ],
+      [
+        "20270717",
+        "20270717"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Bărbătești, Vâlcea, Romania",
+    "latitude": 45.1625794,
+    "longitude": 24.1174596,
+    "county": "VALCEA",
+    "nearest_city": "Râmnicu Vâlcea",
+    "nearby_cities": [
+      "Râmnicu Vâlcea"
+    ],
+    "distances": "[\"36\", \"18\", \"11\"]",
+    "distance_m": [
+      36000,
+      18000,
+      11000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "36 km, 18 km, 10 km",
+    "organizer": "Asociația Sport fără Limite Vâlcea",
+    "contact": null,
+    "website": "https://sportfaralimite.ro/",
+    "fb_link": "https://www.facebook.com/groups/378052742663226/",
+    "ig_link": "https://www.instagram.com/p/DJwkvmOOJ5s/",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://sportfaralimite.ro/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Buila Trail Race 2026 este un concurs de alergare montană organizat de Asociația Sport fără Limite Vâlcea, ce promovează frumusețea Parcului Național Buila-Vânturarița. Evenimentul se desfășoară în data de 18 iulie 2026, în localitatea Bărbătești, Vâlcea, și oferă probe variate pentru toate vârstele și nivelurile de pregătire. Participanții pot alege între curse pentru copii, crosuri și trasee montane de 11, 18 și 36 km, toate cu peisaje spectaculoase și provocări montane autentice.",
+    "course_highlights": [
+      "Trasee montane în Parcul Național Buila-Vânturarița",
+      "Peisaje spectaculoase și natură protejată",
+      "Probe variate: copii, cros 11 km, trasee de 18 km și 36 km"
+    ],
+    "additional": "Evenimentul promovează turismul ecologic, natura și cultura locală, fiind o oportunitate pentru pasionații de trail running și drumeții montane.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://builatrailrace.ro/"
+    ],
+    "consolidated_ids": [
+      "775f7c08-46ed-4c0e-9321-5b08aa67eb1c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:54:07.364406+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://sportfaralimite.ro/): 2027-07-17 — \"Competiția va avea loc pe 17 iulie 2027\" (was estimated 2027-07-24)",
+        "website_url": "https://sportfaralimite.ro/",
+        "evidence_url": "https://sportfaralimite.ro/",
+        "evidence_quote": "Competiția va avea loc pe 17 iulie 2027",
+        "previous_estimated_date": "2027-07-24",
+        "confirmed_date": "2027-07-17",
+        "model_confidence": 0.98
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "discover_valea_doftanei",
     "name": "Discover Valea Doftanei",
     "type": "other",
@@ -70656,82 +71078,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "buila_trail_race_discover_oltenia_de_sub_munte",
-    "name": "BUILA TRAIL RACE Discover Oltenia de sub munte!",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260718",
-        "20260718"
-      ],
-      [
-        "20270724",
-        "20270724"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Bărbătești, Vâlcea, Romania",
-    "latitude": 45.1625794,
-    "longitude": 24.1174596,
-    "county": "VALCEA",
-    "nearest_city": "Râmnicu Vâlcea",
-    "nearby_cities": [
-      "Râmnicu Vâlcea"
-    ],
-    "distances": "[\"36\", \"18\", \"11\"]",
-    "distance_m": [
-      36000,
-      18000,
-      11000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "36 km, 18 km, 10 km",
-    "organizer": "Asociația Sport fără Limite Vâlcea",
-    "contact": null,
-    "website": "https://sportfaralimite.ro/",
-    "fb_link": "https://www.facebook.com/groups/378052742663226/",
-    "ig_link": "https://www.instagram.com/p/DJwkvmOOJ5s/",
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://sportfaralimite.ro/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Buila Trail Race 2026 este un concurs de alergare montană organizat de Asociația Sport fără Limite Vâlcea, ce promovează frumusețea Parcului Național Buila-Vânturarița. Evenimentul se desfășoară în data de 18 iulie 2026, în localitatea Bărbătești, Vâlcea, și oferă probe variate pentru toate vârstele și nivelurile de pregătire. Participanții pot alege între curse pentru copii, crosuri și trasee montane de 11, 18 și 36 km, toate cu peisaje spectaculoase și provocări montane autentice.",
-    "course_highlights": [
-      "Trasee montane în Parcul Național Buila-Vânturarița",
-      "Peisaje spectaculoase și natură protejată",
-      "Probe variate: copii, cros 11 km, trasee de 18 km și 36 km"
-    ],
-    "additional": "Evenimentul promovează turismul ecologic, natura și cultura locală, fiind o oportunitate pentru pasionații de trail running și drumeții montane.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://builatrailrace.ro/"
-    ],
-    "consolidated_ids": [
-      "775f7c08-46ed-4c0e-9321-5b08aa67eb1c"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "burduf_challenge_alergam_pentru_branza_si_colibe",
     "name": "BURDUF CHALLENGE Alergăm pentru brânză și colibe!",
     "type": "trail",
@@ -70848,14 +71194,18 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "zarnesti_challenge",
-    "name": "Zărnești Challenge",
-    "type": "other",
-    "type_local": "Altele",
+    "domain_name": "bucovina_ultra_rocks",
+    "name": "Bucovina Ultra Rocks",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
-        "20260718",
-        "20260718"
+        "20260724",
+        "20260724"
+      ],
+      [
+        "20260726",
+        "20260726"
       ],
       [
         "20270724",
@@ -70863,27 +71213,123 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Zărnești, Brașov County, Romania",
-    "latitude": 45.5607357,
-    "longitude": 25.3169333,
-    "county": "BRASOV",
-    "nearest_city": "Braşov",
-    "nearby_cities": [
-      "Braşov"
-    ],
-    "distances": "[\"16\", \"8\", \"3\"]",
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "23:59",
+    "location": "Campulung Moldovenesc, Suceava, Romania",
+    "latitude": 47.52952579999999,
+    "longitude": 25.5585629,
+    "county": "SUCEAVA",
+    "nearest_city": "Botoşani",
+    "nearby_cities": [],
+    "distances": "[\"114\", \"15\"]",
     "distance_m": [
-      16000,
-      8000,
-      3000
+      114000,
+      15000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "114 km, 15 km",
+    "organizer": "UTMB",
+    "contact": null,
+    "website": "https://bucovina.utmb.world/",
+    "fb_link": "https://www.facebook.com/bucovinaultrarocksbyUTMB/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": "20260705",
+    "registration_url": "https://bucovina.utmb.world/registration-conditions",
+    "race_info_url": "https://bucovina.utmb.world/races",
+    "presumed_organizer_email": "bucovina@service.utmb.world",
+    "website_emails_found": [
+      "bucovina@service.utmb.world"
+    ],
+    "description": "Bucovina Ultra Rocks by UTMB te invită să explorezi inima sălbatică a Carpaților Orientali, una dintre ultimele regiuni sălbatice autentice din Europa. Cu șase curse ce variază de la o alergare rapidă de 15 km până la o provocare de 114 km, traseele străbat creste stâncoase, păduri neatinse de UNESCO, stâne medievale și peisaje naturale impresionante precum Cheile Moara Dracului și Pietrele Doamnei. Așteaptă-te la urcări abrupte, poteci tehnice și condiții montane autentice, fiecare kilometru oferind o experiență unică în sălbăticia europeană.",
+    "course_highlights": [
+      "Trasee prin pădurea Slătioara, candidată UNESCO",
+      "Urcări abrupte și poteci tehnice în munții Carpați",
+      "Peisaje naturale spectaculoase: Cheile Moara Dracului și Pietrele Doamnei"
+    ],
+    "additional": "Startul cursei Ultra Rocks (114 km) este chiar înainte de miezul nopții, din Câmpulung Moldovenesc. Traseul include o buclă inițială prin oraș, urmată de parcurgerea unor zone sălbatice și puncte de control cu facilități precum Live Cooking. Evenimentul se desfășoară în Ultra Trail Village din Platoul Central Campulung Moldovenesc, lângă Primărie. Multiple distanțe de curse montane, trasee tehnice, locație în România, detalii despre înscriere și reguli disponibile pe site-uri și rețelele sociale.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://bucovinaultra.rocks/"
+    ],
+    "consolidated_ids": [
+      "a0c8e2c1-e0eb-4170-82ab-13e9a9e2e1a7"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:54:19.353405+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://bucovina.utmb.world/discover/event-schedule): 2027-07-24 — \"H2: SATURDAY - 24.07.27\" (was estimated 2027-08-01)",
+        "website_url": "https://bucovina.utmb.world/",
+        "evidence_url": "https://bucovina.utmb.world/discover/event-schedule",
+        "evidence_quote": "H2: SATURDAY - 24.07.27",
+        "previous_estimated_date": "2027-08-01",
+        "confirmed_date": "2027-07-24",
+        "model_confidence": 0.93
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "cindrel_in_alergare_legenda_revine",
+    "name": "CINDREL IN ALERGARE Legenda revine",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20250726",
+        "20250726"
+      ],
+      [
+        "20260801",
+        "20260801"
+      ],
+      [
+        "20260725",
+        "20260725"
+      ],
+      [
+        "20270724",
+        "20270724"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Păltiniș, Sibiu County, Romania",
+    "latitude": 45.6550977,
+    "longitude": 23.9300174,
+    "county": "SIBIU",
+    "nearest_city": "Sibiu",
+    "nearby_cities": [
+      "Sibiu"
+    ],
+    "distances": "[\"105\", \"42\", \"21\"]",
+    "distance_m": [
+      105000,
+      42000,
+      21000
     ],
     "distance_keywords": [
-      "3000 metri"
+      "100 km",
+      "Maraton",
+      "Semimaraton"
     ],
-    "distance_verbose": "16 km, 8 km, 3000 metri",
+    "distance_verbose": "100 km, Maraton, Semimaraton",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -70906,17 +71352,29 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://zarnestichallenge.ro/",
-      "https://www.zarnestichallenge.ro"
+      "https://www.inalergare.ro/"
     ],
     "consolidated_ids": [
-      "c59b76fa-af2d-427b-9e44-f157946c5c41"
+      "5b7c2b5d-057a-470f-9e68-41bcb4d65a13"
     ],
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
     "editors_uid": [],
-    "pipeline_log": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:55:40.687517+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://www.inalergare.ro/): 2027-07-24 — \"Ne revedem pe sâmbătă, 24 iulie 2027.\" (was estimated 2027-07-31)",
+        "website_url": "https://www.inalergare.ro/",
+        "evidence_url": "https://www.inalergare.ro/",
+        "evidence_quote": "Ne revedem pe sâmbătă, 24 iulie 2027.",
+        "previous_estimated_date": "2027-07-31",
+        "confirmed_date": "2027-07-24",
+        "model_confidence": 0.99
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -71733,22 +72191,14 @@
     ]
   },
   {
-    "domain_name": "cindrel_in_alergare_legenda_revine",
-    "name": "CINDREL IN ALERGARE Legenda revine",
+    "domain_name": "mogosa_everesting",
+    "name": "Mogoșa Everesting",
     "type": "other",
     "type_local": "Altele",
     "race_dates": [
       [
-        "20250726",
-        "20250726"
-      ],
-      [
         "20260801",
         "20260801"
-      ],
-      [
-        "20260725",
-        "20260725"
       ],
       [
         "20270731",
@@ -71756,61 +72206,259 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
-    "location": "Păltiniș, Sibiu County, Romania",
-    "latitude": 45.6550977,
-    "longitude": 23.9300174,
-    "county": "SIBIU",
-    "nearest_city": "Sibiu",
+    "location": "Lacul Mogoșa, Maramureș, Romania",
+    "latitude": 47.6727354,
+    "longitude": 23.7725921,
+    "county": "MARAMURES",
+    "nearest_city": "Baia Mare",
     "nearby_cities": [
-      "Sibiu"
+      "Baia Mare"
     ],
-    "distances": "[\"105\", \"42\", \"21\"]",
+    "distances": "[\"76\", \"4.2\"]",
     "distance_m": [
-      105000,
-      42000,
-      21000
+      76000,
+      4200
     ],
     "distance_keywords": [
-      "100 km",
-      "Maraton",
-      "Semimaraton"
+      "50 mile",
+      "5 km"
     ],
-    "distance_verbose": "100 km, Maraton, Semimaraton",
-    "organizer": null,
+    "distance_verbose": "50 mile, 5 km",
+    "organizer": "Asociația Club Sportiv de Alergare Montană Maramureș",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://mogosaeveresting.ro/",
+    "fb_link": "https://www.facebook.com/mogosaeveresting/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "140 Lei - 220 Lei, cu reduceri pentru copii și juniori",
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "140 Lei",
+            "deadline": "20260228",
+            "description": "Preț 28 Ianuarie 2026 - 28 Februarie 2026 140 Lei"
+          },
+          {
+            "label": "tier_2",
+            "price": "160 Lei",
+            "deadline": "20260430",
+            "description": "1 Martie 2026 - 30 Aprilie 2026 160 Lei"
+          },
+          {
+            "label": "tier_3",
+            "price": "180 Lei",
+            "deadline": "20260630",
+            "description": "1 Mai 2026 - 30 Iunie 2026 180 Lei"
+          },
+          {
+            "label": "tier_4",
+            "price": "200 Lei",
+            "deadline": "20260726",
+            "description": "1 Iulie 2026 - 26 Iulie 2026 200 Lei"
+          }
+        ],
+        "late_fee": {
+          "price": "220 Lei",
+          "deadline": "20260726"
+        }
+      },
+      {
+        "distance": "Copii și juniori sub 18 ani",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "120 Lei",
+            "deadline": "20260726",
+            "description": "Copii și juniori sub 18 ani 120 Lei"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20260801",
+    "registration_url": "https://mogosaeveresting.ro/#register",
+    "race_info_url": "https://mogosaeveresting.ro/#cursa",
+    "presumed_organizer_email": "clubsportivamm@gmail.com",
+    "website_emails_found": [
+      "clubsportivamm@gmail.com",
+      "jane@untitled.tld"
+    ],
+    "description": "Mogoșa Everesting este o competiție de alergare montană ce se desfășoară pe 1 august 2026 la Lacul Mogoșa, Maramureș, România. Participanții pot concura individual sau în echipe, acumulând ture pe traseul montan pentru a atinge o înălțime totală de Everesting. Evenimentul este organizat de Asociația Club Sportiv de Alergare Montană Maramureș și oferă o experiență provocatoare și comunitară, cu categorii pentru juniori și echipe. Taxele de participare sunt accesibile, iar înscrierile sunt deschise până în limita locurilor disponibile.",
+    "course_highlights": [
+      "Traseu montan cu acumulare de înălțime tip Everesting",
+      "Posibilitatea de a concura individual sau în echipe",
+      "Locație pitorească la Lacul Mogoșa, Maramureș"
+    ],
+    "additional": "Participanții pot concura atât individual, cât și în echipe (minimum 5 membri). Clasamentul pe echipe se face prin însumarea numărului de ture parcurse de toți membrii. Taxele de participare nu se returnează. Confirmarea înscrierii se trimite imediat după procesarea plății pe email. Există tricou oficial și parteneriate pentru susținerea participanților. Eveniment de ciclism de anduranță, cu program pe 31 iulie și 1 august 2026, taxe de participare, regulament și rezultate disponibile pe site",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
-      "https://www.inalergare.ro/"
+      "https://mogosaeveresting.ro/"
     ],
     "consolidated_ids": [
-      "5b7c2b5d-057a-470f-9e68-41bcb4d65a13"
+      "da4c048b-24fa-479f-8562-0b1c73224556"
     ],
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
     "editors_uid": [],
-    "pipeline_log": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:54:43.945144+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://mogosaeveresting.ro/): 2027-07-31 — \"31 Iulie 2027\" (was estimated 2027-08-07)",
+        "website_url": "https://mogosaeveresting.ro/",
+        "evidence_url": "https://mogosaeveresting.ro/",
+        "evidence_quote": "31 Iulie 2027",
+        "previous_estimated_date": "2027-08-07",
+        "confirmed_date": "2027-07-31",
+        "model_confidence": 0.87
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "mogosa_everesting_mogosa",
+    "name": "MOGOȘA EVERESTING",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260801",
+        "20260801"
+      ],
+      [
+        "20270731",
+        "20270731"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Mogoșa, Maramureș, Romania",
+    "latitude": 47.6571353,
+    "longitude": 23.7862372,
+    "county": "MARAMURES",
+    "nearest_city": "Baia Mare",
+    "nearby_cities": [
+      "Baia Mare"
+    ],
+    "distances": "[\"8.8\"]",
+    "distance_m": [
+      8800
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "8.8 km",
+    "organizer": "Asociația Club Sportiv de Alergare Montană Maramureș",
+    "contact": null,
+    "website": "https://mogosaeveresting.ro/",
+    "fb_link": "https://www.facebook.com/mogosaeveresting/",
+    "ig_link": null,
+    "price_range": "140 Lei - 220 Lei",
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "140 Lei",
+            "deadline": "20260228",
+            "description": "Preț 28 Ianuarie 2026 - 28 Februarie 2026"
+          },
+          {
+            "label": "tier_2",
+            "price": "160 Lei",
+            "deadline": "20260430",
+            "description": "1 Martie 2026 - 30 Aprilie 2026"
+          },
+          {
+            "label": "tier_3",
+            "price": "180 Lei",
+            "deadline": "20260630",
+            "description": "1 Mai 2026 - 30 Iunie 2026"
+          },
+          {
+            "label": "tier_4",
+            "price": "200 Lei",
+            "deadline": "20260726",
+            "description": "1 Iulie 2026 - 26 Iulie 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "220 Lei",
+          "deadline": "20260726"
+        }
+      },
+      {
+        "distance": "Copii și juniori sub 18 ani",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "120 Lei",
+            "deadline": "20260726",
+            "description": "Copii și juniori sub 18 ani"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20260801",
+    "registration_url": "https://mogosaeveresting.ro/#register",
+    "race_info_url": "https://mogosaeveresting.ro/#cursa",
+    "presumed_organizer_email": "clubsportivamm@gmail.com",
+    "website_emails_found": [
+      "clubsportivamm@gmail.com",
+      "jane@untitled.tld"
+    ],
+    "description": "Mogoșa Everesting este o competiție de alergare montană ce se desfășoară în data de 1 august 2026 în Mogoșa, Maramureș. Participanții pot concura individual sau în echipe, iar clasamentul pe echipe se face prin însumarea numărului de ture parcurse de toți membrii. Evenimentul este organizat de Asociația Club Sportiv de Alergare Montană Maramureș și oferă o experiență de alergare montană autentică, cu accent pe efort și spirit de echipă. Taxele de participare sunt accesibile și există o categorie specială pentru copii și juniori sub 18 ani.",
+    "course_highlights": [
+      "Alergare montană pe traseu cu ture multiple",
+      "Clasament pe echipe bazat pe numărul total de ture parcurse",
+      "Participare individuală și pe echipe (minim 5 membri)"
+    ],
+    "additional": "Participanții primesc kitul participantului. După 26 iulie înscrierile se fac în limita locurilor disponibile. Echipele trebuie să aibă minimum 5 membri înscriși oficial cu același nume de echipă. Confirmarea înscrierii se trimite imediat după procesarea plății prin email. Taxele de participare nu se returnează. Participarea include kit și tricou oficial, evenimentul are categorii multiple și se desfășoară pe teren montan cu urcări repetate; taxele de înscriere variază în funcție de dată.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://mogosaeveresting.ro/"
+    ],
+    "consolidated_ids": [
+      "3923a412-9971-48e7-aa7e-d7a5afa8bd0d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:54:48.455621+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://mogosaeveresting.ro/): 2027-07-31 — \"31 Iulie 2027\" (was estimated 2027-08-07)",
+        "website_url": "https://mogosaeveresting.ro/",
+        "evidence_url": "https://mogosaeveresting.ro/",
+        "evidence_quote": "31 Iulie 2027",
+        "previous_estimated_date": "2027-08-07",
+        "confirmed_date": "2027-07-31",
+        "model_confidence": 0.9
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -72862,83 +73510,6 @@
     ]
   },
   {
-    "domain_name": "bucovina_ultra_rocks",
-    "name": "Bucovina Ultra Rocks",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260724",
-        "20260724"
-      ],
-      [
-        "20260726",
-        "20260726"
-      ],
-      [
-        "20270801",
-        "20270801"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "23:59",
-    "location": "Campulung Moldovenesc, Suceava, Romania",
-    "latitude": 47.52952579999999,
-    "longitude": 25.5585629,
-    "county": "SUCEAVA",
-    "nearest_city": "Botoşani",
-    "nearby_cities": [],
-    "distances": "[\"114\", \"15\"]",
-    "distance_m": [
-      114000,
-      15000
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "114 km, 15 km",
-    "organizer": "UTMB",
-    "contact": null,
-    "website": "https://bucovina.utmb.world/",
-    "fb_link": "https://www.facebook.com/bucovinaultrarocksbyUTMB/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20260705",
-    "registration_url": "https://bucovina.utmb.world/registration-conditions",
-    "race_info_url": "https://bucovina.utmb.world/races",
-    "presumed_organizer_email": "bucovina@service.utmb.world",
-    "website_emails_found": [
-      "bucovina@service.utmb.world"
-    ],
-    "description": "Bucovina Ultra Rocks by UTMB te invită să explorezi inima sălbatică a Carpaților Orientali, una dintre ultimele regiuni sălbatice autentice din Europa. Cu șase curse ce variază de la o alergare rapidă de 15 km până la o provocare de 114 km, traseele străbat creste stâncoase, păduri neatinse de UNESCO, stâne medievale și peisaje naturale impresionante precum Cheile Moara Dracului și Pietrele Doamnei. Așteaptă-te la urcări abrupte, poteci tehnice și condiții montane autentice, fiecare kilometru oferind o experiență unică în sălbăticia europeană.",
-    "course_highlights": [
-      "Trasee prin pădurea Slătioara, candidată UNESCO",
-      "Urcări abrupte și poteci tehnice în munții Carpați",
-      "Peisaje naturale spectaculoase: Cheile Moara Dracului și Pietrele Doamnei"
-    ],
-    "additional": "Startul cursei Ultra Rocks (114 km) este chiar înainte de miezul nopții, din Câmpulung Moldovenesc. Traseul include o buclă inițială prin oraș, urmată de parcurgerea unor zone sălbatice și puncte de control cu facilități precum Live Cooking. Evenimentul se desfășoară în Ultra Trail Village din Platoul Central Campulung Moldovenesc, lângă Primărie. Multiple distanțe de curse montane, trasee tehnice, locație în România, detalii despre înscriere și reguli disponibile pe site-uri și rețelele sociale.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://bucovinaultra.rocks/"
-    ],
-    "consolidated_ids": [
-      "a0c8e2c1-e0eb-4170-82ab-13e9a9e2e1a7"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "semimaraton_tara_de_piatra",
     "name": "SEMIMARATON TARA DE PIATRĂ",
     "type": "road",
@@ -73329,551 +73900,6 @@
       "Dej",
       "Lupeni"
     ]
-  },
-  {
-    "domain_name": "fagaras_rocks",
-    "name": "FAGARAS ROCKS!",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260729",
-        "20260729"
-      ],
-      [
-        "20270804",
-        "20270804"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "02:30",
-    "location": "Berivoi, Făgăraș, Brașov, Romania",
-    "latitude": 45.82116603047017,
-    "longitude": 24.96959334375416,
-    "county": "BRASOV",
-    "nearest_city": "Făgăraș",
-    "nearby_cities": [
-      "Făgăraș"
-    ],
-    "distances": "[\"180\", \"70\", \"35\", \"20\", \"10\"]",
-    "distance_m": [
-      180000,
-      70000,
-      35000,
-      20000,
-      10000
-    ],
-    "distance_keywords": [
-      "Semimaraton",
-      "10 km"
-    ],
-    "distance_verbose": "180 km, 70 km, 35 km, Semimaraton, 10 km",
-    "organizer": "A C U M - Asociația Copiii universului Magic și ACS Sport Verde",
-    "contact": null,
-    "website": "https://fagarasrocks.ro/",
-    "fb_link": "https://www.facebook.com/fagarasrocks/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "#TheWildTruth",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 lei",
-            "deadline": "20260131",
-            "description": "Early bird până la 31 ianuarie"
-          },
-          {
-            "label": "tier_2",
-            "price": "299 lei",
-            "deadline": "20260417",
-            "description": "Preț standard până la 17 aprilie"
-          }
-        ],
-        "late_fee": {
-          "price": "349 lei",
-          "deadline": "20260715"
-        }
-      },
-      {
-        "distance": "#DaraUltraSkyrace",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "199 lei",
-            "deadline": "20260131",
-            "description": "Early bird până la 31 ianuarie"
-          },
-          {
-            "label": "tier_2",
-            "price": "249 lei",
-            "deadline": "20260417",
-            "description": "Preț standard până la 17 aprilie"
-          }
-        ],
-        "late_fee": {
-          "price": "299 lei",
-          "deadline": "20260715"
-        }
-      },
-      {
-        "distance": "#FăgărașSkyrace",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "149 lei",
-            "deadline": "20260131",
-            "description": "Early bird până la 31 ianuarie"
-          },
-          {
-            "label": "tier_2",
-            "price": "199 lei",
-            "deadline": "20260417",
-            "description": "Preț standard până la 17 aprilie"
-          }
-        ],
-        "late_fee": {
-          "price": "249 lei",
-          "deadline": "20260715"
-        }
-      },
-      {
-        "distance": "#BerivoiRace",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "99 lei",
-            "deadline": "20260131",
-            "description": "Early bird până la 31 ianuarie"
-          },
-          {
-            "label": "tier_2",
-            "price": "149 lei",
-            "deadline": "20260417",
-            "description": "Preț standard până la 17 aprilie"
-          }
-        ],
-        "late_fee": {
-          "price": "199 lei",
-          "deadline": "20260715"
-        }
-      },
-      {
-        "distance": "#ChemareaMuntelui",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "79 lei",
-            "deadline": "20260131",
-            "description": "Early bird până la 31 ianuarie"
-          },
-          {
-            "label": "tier_2",
-            "price": "99 lei",
-            "deadline": "20260417",
-            "description": "Preț standard până la 17 aprilie"
-          }
-        ],
-        "late_fee": {
-          "price": "129 lei",
-          "deadline": "20260715"
-        }
-      },
-      {
-        "distance": "#JuniorRocks",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "49 lei",
-            "deadline": "20260131",
-            "description": "Early bird până la 31 ianuarie"
-          },
-          {
-            "label": "tier_2",
-            "price": "69 lei",
-            "deadline": "20260417",
-            "description": "Preț standard până la 17 aprilie"
-          }
-        ],
-        "late_fee": {
-          "price": "89 lei",
-          "deadline": "20260715"
-        }
-      },
-      {
-        "distance": "#MiniRocks",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "39 lei",
-            "deadline": "20260131",
-            "description": "Early bird până la 31 ianuarie"
-          },
-          {
-            "label": "tier_2",
-            "price": "49 lei",
-            "deadline": "20260417",
-            "description": "Preț standard până la 17 aprilie"
-          }
-        ],
-        "late_fee": {
-          "price": "59 lei",
-          "deadline": "20260715"
-        }
-      }
-    ],
-    "registration_close_date": "20260715",
-    "registration_url": "https://fagarasrocks.ro/urlea-super-vertical/inscriere-urleasupervertical/",
-    "race_info_url": "https://fagarasrocks.ro/info-program/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Făgăraș Rocks! este un eveniment montan de alergare care oferă o experiență unică pe trasee spectaculoase în Munții Făgăraș, cu peisaje maiestuoase și panorame impresionante. Traseele însumează aproximativ 184 km, cu multiple vârfuri de peste 2500 m și peste 50 km de alergare la altitudini de peste 2000 m, desfășurându-se în regim de semiautonomie. Evenimentul include mai multe curse cu distanțe variate, adresate atât alergătorilor experimentați, cât și celor mai tineri sau amatori, oferind o atmosferă prietenoasă și activități conexe pentru participanți și familiile lor. Organizatorii pun la dispoziție facilități precum puncte de alimentare, asistență medicală, masă caldă pe traseu, medalii de finisher și premii în bani pentru cursele montane.",
-    "course_highlights": [
-      "Aproximativ 184 km de trasee amenajate în Munții Făgăraș",
-      "4 vârfuri de peste 2500 m și 15 vârfuri de peste 2200 m",
-      "50 km de alergare la altitudini de peste 2000 m"
-    ],
-    "additional": "Participanții primesc număr de concurs personalizat (după 15 iulie număr nepersonalizat), urmărire live prin satelit pentru #TheWildTruth, masă caldă pe traseu pentru #TheWildTruth, medalii de finisher din piatră gravată, maiou tehnic superlight pentru primii 300 înscriși la cursele principale, punctaj ITRA & UTMB pentru finish-eri, sesiuni de Q&A și ateliere tematice, puncte de alimentare și hidratare, asistență medicală, albume foto cu identificare prin selfie, parcare pentru 360 de automobile, corturi de masaj și feedback post-cursă. Multiple categorii de trasee, informații despre camping și parcare, evenimentul include ultra și skyrace.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://fagarasrocks.ro/"
-    ],
-    "consolidated_ids": [
-      "fc91332a-d771-4eb9-83fd-3dc03690e183"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "fagaras_rocks_2026",
-    "name": "Fagaras Rocks ~ 2026",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260729",
-        "20260729"
-      ],
-      [
-        "20270804",
-        "20270804"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "02:30",
-    "location": "Făgăraș, Brașov, Romania",
-    "latitude": 45.84164029999999,
-    "longitude": 24.9730954,
-    "county": "BRASOV",
-    "nearest_city": "Făgăraș",
-    "nearby_cities": [
-      "Făgăraș"
-    ],
-    "distances": "[\"180\"]",
-    "distance_m": [
-      180000
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "180 km",
-    "organizer": "ACUM - Asociația Copiii universului Magic și ACS Sport Verde",
-    "contact": null,
-    "website": "https://fagarasrocks.ro/",
-    "fb_link": "https://www.facebook.com/fagarasrocks/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://fagarasrocks.ro/urlea-super-vertical/inscriere-urleasupervertical/",
-    "race_info_url": "https://fagarasrocks.ro/info-program/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Făgăraș Rocks! este un eveniment montan de alergare în regim de semiautonomie, ce oferă o experiență unică pe trasee spectaculoase din Munții Făgăraș, cu peisaje maiestuoase și panorame impresionante. Traseele însumează aproximativ 184 km, atingând vârfuri de peste 2500 m și oferind 50 km de alergare la altitudini de peste 2000 m. Evenimentul include mai multe curse cu diferite distanțe și dificultăți, adresate atât alergătorilor experimentați, cât și celor mai tineri sau amatori. Participanții beneficiază de un pachet complet de înscriere, cu servicii și facilități dedicate pentru o experiență completă și sigură.",
-    "course_highlights": [
-      "Aproximativ 184 km de trasee amenajate în Munții Făgăraș",
-      "4 vârfuri de peste 2500 m și 15 vârfuri de peste 2200 m",
-      "50 km de alergare la altitudini de peste 2000 m"
-    ],
-    "additional": "Pachetul de participare include număr de concurs personalizat (pentru înscrierile până în 15 iulie), urmărire live prin satelit pentru cursa #TheWildTruth, premii în bani pentru cursele montane, masă caldă pe traseu pentru #TheWildTruth, medalie de finisher gravată în piatră, maiou tehnic superlight pentru primii 300 înscriși la cursele principale, punctaj ITRA & UTMB pentru finish-eri, sesiuni de Q&A și ateliere tematice, asistență medicală, puncte de alimentare și hidratare, parcare pentru 360 de automobile, corturi de masaj și feedback post-cursă. Evenimentul include camping, parcare și detalii despre programul competiției, fiind o oportunitate de a experimenta aventura în munți și de a descoperi frumusețea naturală a zonei.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://calendar.sportic.ro/events/view?hash=9a95759096d26bd6f92bb15ef4200568f993f865"
-    ],
-    "consolidated_ids": [
-      "067de20a-a203-4a32-85f4-bb2e1317267c"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "mogosa_everesting",
-    "name": "Mogoșa Everesting",
-    "type": "other",
-    "type_local": "Altele",
-    "race_dates": [
-      [
-        "20260801",
-        "20260801"
-      ],
-      [
-        "20270807",
-        "20270807"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Lacul Mogoșa, Maramureș, Romania",
-    "latitude": 47.6727354,
-    "longitude": 23.7725921,
-    "county": "MARAMURES",
-    "nearest_city": "Baia Mare",
-    "nearby_cities": [
-      "Baia Mare"
-    ],
-    "distances": "[\"76\", \"4.2\"]",
-    "distance_m": [
-      76000,
-      4200
-    ],
-    "distance_keywords": [
-      "50 mile",
-      "5 km"
-    ],
-    "distance_verbose": "50 mile, 5 km",
-    "organizer": "Asociația Club Sportiv de Alergare Montană Maramureș",
-    "contact": null,
-    "website": "https://mogosaeveresting.ro/",
-    "fb_link": "https://www.facebook.com/mogosaeveresting/",
-    "ig_link": null,
-    "price_range": "140 Lei - 220 Lei, cu reduceri pentru copii și juniori",
-    "price_tiers": [
-      {
-        "distance": "all",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "140 Lei",
-            "deadline": "20260228",
-            "description": "Preț 28 Ianuarie 2026 - 28 Februarie 2026 140 Lei"
-          },
-          {
-            "label": "tier_2",
-            "price": "160 Lei",
-            "deadline": "20260430",
-            "description": "1 Martie 2026 - 30 Aprilie 2026 160 Lei"
-          },
-          {
-            "label": "tier_3",
-            "price": "180 Lei",
-            "deadline": "20260630",
-            "description": "1 Mai 2026 - 30 Iunie 2026 180 Lei"
-          },
-          {
-            "label": "tier_4",
-            "price": "200 Lei",
-            "deadline": "20260726",
-            "description": "1 Iulie 2026 - 26 Iulie 2026 200 Lei"
-          }
-        ],
-        "late_fee": {
-          "price": "220 Lei",
-          "deadline": "20260726"
-        }
-      },
-      {
-        "distance": "Copii și juniori sub 18 ani",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "120 Lei",
-            "deadline": "20260726",
-            "description": "Copii și juniori sub 18 ani 120 Lei"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20260801",
-    "registration_url": "https://mogosaeveresting.ro/#register",
-    "race_info_url": "https://mogosaeveresting.ro/#cursa",
-    "presumed_organizer_email": "clubsportivamm@gmail.com",
-    "website_emails_found": [
-      "clubsportivamm@gmail.com",
-      "jane@untitled.tld"
-    ],
-    "description": "Mogoșa Everesting este o competiție de alergare montană ce se desfășoară pe 1 august 2026 la Lacul Mogoșa, Maramureș, România. Participanții pot concura individual sau în echipe, acumulând ture pe traseul montan pentru a atinge o înălțime totală de Everesting. Evenimentul este organizat de Asociația Club Sportiv de Alergare Montană Maramureș și oferă o experiență provocatoare și comunitară, cu categorii pentru juniori și echipe. Taxele de participare sunt accesibile, iar înscrierile sunt deschise până în limita locurilor disponibile.",
-    "course_highlights": [
-      "Traseu montan cu acumulare de înălțime tip Everesting",
-      "Posibilitatea de a concura individual sau în echipe",
-      "Locație pitorească la Lacul Mogoșa, Maramureș"
-    ],
-    "additional": "Participanții pot concura atât individual, cât și în echipe (minimum 5 membri). Clasamentul pe echipe se face prin însumarea numărului de ture parcurse de toți membrii. Taxele de participare nu se returnează. Confirmarea înscrierii se trimite imediat după procesarea plății pe email. Există tricou oficial și parteneriate pentru susținerea participanților. Eveniment de ciclism de anduranță, cu program pe 31 iulie și 1 august 2026, taxe de participare, regulament și rezultate disponibile pe site",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://mogosaeveresting.ro/"
-    ],
-    "consolidated_ids": [
-      "da4c048b-24fa-479f-8562-0b1c73224556"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "mogosa_everesting_mogosa",
-    "name": "MOGOȘA EVERESTING",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260801",
-        "20260801"
-      ],
-      [
-        "20270807",
-        "20270807"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Mogoșa, Maramureș, Romania",
-    "latitude": 47.6571353,
-    "longitude": 23.7862372,
-    "county": "MARAMURES",
-    "nearest_city": "Baia Mare",
-    "nearby_cities": [
-      "Baia Mare"
-    ],
-    "distances": "[\"8.8\"]",
-    "distance_m": [
-      8800
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "8.8 km",
-    "organizer": "Asociația Club Sportiv de Alergare Montană Maramureș",
-    "contact": null,
-    "website": "https://mogosaeveresting.ro/",
-    "fb_link": "https://www.facebook.com/mogosaeveresting/",
-    "ig_link": null,
-    "price_range": "140 Lei - 220 Lei",
-    "price_tiers": [
-      {
-        "distance": "all",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "140 Lei",
-            "deadline": "20260228",
-            "description": "Preț 28 Ianuarie 2026 - 28 Februarie 2026"
-          },
-          {
-            "label": "tier_2",
-            "price": "160 Lei",
-            "deadline": "20260430",
-            "description": "1 Martie 2026 - 30 Aprilie 2026"
-          },
-          {
-            "label": "tier_3",
-            "price": "180 Lei",
-            "deadline": "20260630",
-            "description": "1 Mai 2026 - 30 Iunie 2026"
-          },
-          {
-            "label": "tier_4",
-            "price": "200 Lei",
-            "deadline": "20260726",
-            "description": "1 Iulie 2026 - 26 Iulie 2026"
-          }
-        ],
-        "late_fee": {
-          "price": "220 Lei",
-          "deadline": "20260726"
-        }
-      },
-      {
-        "distance": "Copii și juniori sub 18 ani",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "120 Lei",
-            "deadline": "20260726",
-            "description": "Copii și juniori sub 18 ani"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20260801",
-    "registration_url": "https://mogosaeveresting.ro/#register",
-    "race_info_url": "https://mogosaeveresting.ro/#cursa",
-    "presumed_organizer_email": "clubsportivamm@gmail.com",
-    "website_emails_found": [
-      "clubsportivamm@gmail.com",
-      "jane@untitled.tld"
-    ],
-    "description": "Mogoșa Everesting este o competiție de alergare montană ce se desfășoară în data de 1 august 2026 în Mogoșa, Maramureș. Participanții pot concura individual sau în echipe, iar clasamentul pe echipe se face prin însumarea numărului de ture parcurse de toți membrii. Evenimentul este organizat de Asociația Club Sportiv de Alergare Montană Maramureș și oferă o experiență de alergare montană autentică, cu accent pe efort și spirit de echipă. Taxele de participare sunt accesibile și există o categorie specială pentru copii și juniori sub 18 ani.",
-    "course_highlights": [
-      "Alergare montană pe traseu cu ture multiple",
-      "Clasament pe echipe bazat pe numărul total de ture parcurse",
-      "Participare individuală și pe echipe (minim 5 membri)"
-    ],
-    "additional": "Participanții primesc kitul participantului. După 26 iulie înscrierile se fac în limita locurilor disponibile. Echipele trebuie să aibă minimum 5 membri înscriși oficial cu același nume de echipă. Confirmarea înscrierii se trimite imediat după procesarea plății prin email. Taxele de participare nu se returnează. Participarea include kit și tricou oficial, evenimentul are categorii multiple și se desfășoară pe teren montan cu urcări repetate; taxele de înscriere variază în funcție de dată.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://mogosaeveresting.ro/"
-    ],
-    "consolidated_ids": [
-      "3923a412-9971-48e7-aa7e-d7a5afa8bd0d"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
   },
   {
     "domain_name": "lateral_mures_24h_2026",
@@ -75553,6 +75579,91 @@
     ]
   },
   {
+    "domain_name": "fagaras_rocks_2026",
+    "name": "Fagaras Rocks ~ 2026",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260729",
+        "20260729"
+      ],
+      [
+        "20270813",
+        "20270813"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "02:30",
+    "location": "Făgăraș, Brașov, Romania",
+    "latitude": 45.84164029999999,
+    "longitude": 24.9730954,
+    "county": "BRASOV",
+    "nearest_city": "Făgăraș",
+    "nearby_cities": [
+      "Făgăraș"
+    ],
+    "distances": "[\"180\"]",
+    "distance_m": [
+      180000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "180 km",
+    "organizer": "ACUM - Asociația Copiii universului Magic și ACS Sport Verde",
+    "contact": null,
+    "website": "https://fagarasrocks.ro/",
+    "fb_link": "https://www.facebook.com/fagarasrocks/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://fagarasrocks.ro/urlea-super-vertical/inscriere-urleasupervertical/",
+    "race_info_url": "https://fagarasrocks.ro/info-program/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Făgăraș Rocks! este un eveniment montan de alergare în regim de semiautonomie, ce oferă o experiență unică pe trasee spectaculoase din Munții Făgăraș, cu peisaje maiestuoase și panorame impresionante. Traseele însumează aproximativ 184 km, atingând vârfuri de peste 2500 m și oferind 50 km de alergare la altitudini de peste 2000 m. Evenimentul include mai multe curse cu diferite distanțe și dificultăți, adresate atât alergătorilor experimentați, cât și celor mai tineri sau amatori. Participanții beneficiază de un pachet complet de înscriere, cu servicii și facilități dedicate pentru o experiență completă și sigură.",
+    "course_highlights": [
+      "Aproximativ 184 km de trasee amenajate în Munții Făgăraș",
+      "4 vârfuri de peste 2500 m și 15 vârfuri de peste 2200 m",
+      "50 km de alergare la altitudini de peste 2000 m"
+    ],
+    "additional": "Pachetul de participare include număr de concurs personalizat (pentru înscrierile până în 15 iulie), urmărire live prin satelit pentru cursa #TheWildTruth, premii în bani pentru cursele montane, masă caldă pe traseu pentru #TheWildTruth, medalie de finisher gravată în piatră, maiou tehnic superlight pentru primii 300 înscriși la cursele principale, punctaj ITRA & UTMB pentru finish-eri, sesiuni de Q&A și ateliere tematice, asistență medicală, puncte de alimentare și hidratare, parcare pentru 360 de automobile, corturi de masaj și feedback post-cursă. Evenimentul include camping, parcare și detalii despre programul competiției, fiind o oportunitate de a experimenta aventura în munți și de a descoperi frumusețea naturală a zonei.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://calendar.sportic.ro/events/view?hash=9a95759096d26bd6f92bb15ef4200568f993f865"
+    ],
+    "consolidated_ids": [
+      "067de20a-a203-4a32-85f4-bb2e1317267c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:54:39.489677+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://fagarasrocks.ro/info-program/): 2027-08-13 — \"vineri – 13 august ... 02:30 START pentru cursa #TheWildTruth – 127k\" (was estimated 2027-08-04)",
+        "website_url": "https://fagarasrocks.ro/",
+        "evidence_url": "https://fagarasrocks.ro/info-program/",
+        "evidence_quote": "vineri – 13 august ... 02:30 START pentru cursa #TheWildTruth – 127k",
+        "previous_estimated_date": "2027-08-04",
+        "confirmed_date": "2027-08-13",
+        "model_confidence": 0.99
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "retezat_mountain_run",
     "name": "Retezat Mountain Run",
     "type": "trail",
@@ -75735,6 +75846,246 @@
     "created_date": "20260415",
     "editors_uid": [],
     "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "fagaras_rocks",
+    "name": "FAGARAS ROCKS!",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260729",
+        "20260729"
+      ],
+      [
+        "20270814",
+        "20270814"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "02:30",
+    "location": "Berivoi, Făgăraș, Brașov, Romania",
+    "latitude": 45.82116603047017,
+    "longitude": 24.96959334375416,
+    "county": "BRASOV",
+    "nearest_city": "Făgăraș",
+    "nearby_cities": [
+      "Făgăraș"
+    ],
+    "distances": "[\"180\", \"70\", \"35\", \"20\", \"10\"]",
+    "distance_m": [
+      180000,
+      70000,
+      35000,
+      20000,
+      10000
+    ],
+    "distance_keywords": [
+      "Semimaraton",
+      "10 km"
+    ],
+    "distance_verbose": "180 km, 70 km, 35 km, Semimaraton, 10 km",
+    "organizer": "A C U M - Asociația Copiii universului Magic și ACS Sport Verde",
+    "contact": null,
+    "website": "https://fagarasrocks.ro/",
+    "fb_link": "https://www.facebook.com/fagarasrocks/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "#TheWildTruth",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "249 lei",
+            "deadline": "20260131",
+            "description": "Early bird până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "299 lei",
+            "deadline": "20260417",
+            "description": "Preț standard până la 17 aprilie"
+          }
+        ],
+        "late_fee": {
+          "price": "349 lei",
+          "deadline": "20260715"
+        }
+      },
+      {
+        "distance": "#DaraUltraSkyrace",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "199 lei",
+            "deadline": "20260131",
+            "description": "Early bird până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "249 lei",
+            "deadline": "20260417",
+            "description": "Preț standard până la 17 aprilie"
+          }
+        ],
+        "late_fee": {
+          "price": "299 lei",
+          "deadline": "20260715"
+        }
+      },
+      {
+        "distance": "#FăgărașSkyrace",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "149 lei",
+            "deadline": "20260131",
+            "description": "Early bird până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "199 lei",
+            "deadline": "20260417",
+            "description": "Preț standard până la 17 aprilie"
+          }
+        ],
+        "late_fee": {
+          "price": "249 lei",
+          "deadline": "20260715"
+        }
+      },
+      {
+        "distance": "#BerivoiRace",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "99 lei",
+            "deadline": "20260131",
+            "description": "Early bird până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "149 lei",
+            "deadline": "20260417",
+            "description": "Preț standard până la 17 aprilie"
+          }
+        ],
+        "late_fee": {
+          "price": "199 lei",
+          "deadline": "20260715"
+        }
+      },
+      {
+        "distance": "#ChemareaMuntelui",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "79 lei",
+            "deadline": "20260131",
+            "description": "Early bird până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "99 lei",
+            "deadline": "20260417",
+            "description": "Preț standard până la 17 aprilie"
+          }
+        ],
+        "late_fee": {
+          "price": "129 lei",
+          "deadline": "20260715"
+        }
+      },
+      {
+        "distance": "#JuniorRocks",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "49 lei",
+            "deadline": "20260131",
+            "description": "Early bird până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "69 lei",
+            "deadline": "20260417",
+            "description": "Preț standard până la 17 aprilie"
+          }
+        ],
+        "late_fee": {
+          "price": "89 lei",
+          "deadline": "20260715"
+        }
+      },
+      {
+        "distance": "#MiniRocks",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "39 lei",
+            "deadline": "20260131",
+            "description": "Early bird până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "49 lei",
+            "deadline": "20260417",
+            "description": "Preț standard până la 17 aprilie"
+          }
+        ],
+        "late_fee": {
+          "price": "59 lei",
+          "deadline": "20260715"
+        }
+      }
+    ],
+    "registration_close_date": "20260715",
+    "registration_url": "https://fagarasrocks.ro/urlea-super-vertical/inscriere-urleasupervertical/",
+    "race_info_url": "https://fagarasrocks.ro/info-program/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Făgăraș Rocks! este un eveniment montan de alergare care oferă o experiență unică pe trasee spectaculoase în Munții Făgăraș, cu peisaje maiestuoase și panorame impresionante. Traseele însumează aproximativ 184 km, cu multiple vârfuri de peste 2500 m și peste 50 km de alergare la altitudini de peste 2000 m, desfășurându-se în regim de semiautonomie. Evenimentul include mai multe curse cu distanțe variate, adresate atât alergătorilor experimentați, cât și celor mai tineri sau amatori, oferind o atmosferă prietenoasă și activități conexe pentru participanți și familiile lor. Organizatorii pun la dispoziție facilități precum puncte de alimentare, asistență medicală, masă caldă pe traseu, medalii de finisher și premii în bani pentru cursele montane.",
+    "course_highlights": [
+      "Aproximativ 184 km de trasee amenajate în Munții Făgăraș",
+      "4 vârfuri de peste 2500 m și 15 vârfuri de peste 2200 m",
+      "50 km de alergare la altitudini de peste 2000 m"
+    ],
+    "additional": "Participanții primesc număr de concurs personalizat (după 15 iulie număr nepersonalizat), urmărire live prin satelit pentru #TheWildTruth, masă caldă pe traseu pentru #TheWildTruth, medalii de finisher din piatră gravată, maiou tehnic superlight pentru primii 300 înscriși la cursele principale, punctaj ITRA & UTMB pentru finish-eri, sesiuni de Q&A și ateliere tematice, puncte de alimentare și hidratare, asistență medicală, albume foto cu identificare prin selfie, parcare pentru 360 de automobile, corturi de masaj și feedback post-cursă. Multiple categorii de trasee, informații despre camping și parcare, evenimentul include ultra și skyrace.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://fagarasrocks.ro/"
+    ],
+    "consolidated_ids": [
+      "fc91332a-d771-4eb9-83fd-3dc03690e183"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:54:32.869734+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://fagarasrocks.ro/info-program/): 2027-08-14 — \"sâmbătă – 14 august ... 4:00 START pentru cursa #DaraUltraSkyrace – 70k\" (was estimated 2027-08-04)",
+        "website_url": "https://fagarasrocks.ro/",
+        "evidence_url": "https://fagarasrocks.ro/info-program/",
+        "evidence_quote": "sâmbătă – 14 august ... 4:00 START pentru cursa #DaraUltraSkyrace – 70k",
+        "previous_estimated_date": "2027-08-04",
+        "confirmed_date": "2027-08-14",
+        "model_confidence": 0.98
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -98094,6 +98445,99 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "140_bpm_25_aprilie_2026",
+    "name": "140 BPM - 25 aprilie 2026",
+    "type": "terrain",
+    "type_local": "Teren",
+    "race_dates": [
+      [
+        "20260425",
+        "20260425"
+      ],
+      [
+        "20261003",
+        "20261003"
+      ],
+      [
+        "20271009",
+        "20271009"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Parcul Regele Mihai I (Herăstrău), București, Romania",
+    "latitude": 44.47020149999999,
+    "longitude": 26.0827527,
+    "county": "BUCURESTI",
+    "nearest_city": "Bucharest",
+    "nearby_cities": [
+      "Bucharest"
+    ],
+    "distances": "[\"6\", \"3\"]",
+    "distance_m": [
+      6000,
+      3000
+    ],
+    "distance_keywords": [
+      "5 km",
+      "3000 metri"
+    ],
+    "distance_verbose": "5 km, 3000 metri",
+    "organizer": null,
+    "contact": null,
+    "website": "https://sites.google.com/baneasarace.ro/140bpm/info-eveniment",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://sites.google.com/baneasarace.ro/140bpm/înscrie-te",
+    "race_info_url": "https://sites.google.com/baneasarace.ro/140bpm/info-eveniment",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "140 BPM este o cursă de alergare organizată în Parcul Regele Mihai I (Herăstrău) din București, programată pentru 25 aprilie 2026. Evenimentul oferă trasee adaptate pentru toate vârstele, inclusiv curse pentru copii și adulți, pe distanțe de 3 km și 6 km. Traseele sunt concepute pentru a fi accesibile și plăcute, desfășurându-se pe aleile parcului, oferind o experiență recreativă și competitivă în aer liber. Participanții se pot bucura de o atmosferă prietenoasă și de facilități dedicate alergătorilor.",
+    "course_highlights": [
+      "Traseu de 3 km pentru copii (Melci / Iepurași) - o tură de 1,5 km dus-întors",
+      "Traseu de 6 km pentru adulți (Țestoase) - o tură de 6 km",
+      "Locația în Parcul Regele Mihai I (Herăstrău), un cadru natural urban atractiv"
+    ],
+    "additional": "Cursa copiilor este pe un traseu scurt, 1,5 km dus-întors, iar cursa pentru adulți este o tură de 6 km. Evenimentul are o tradiție cu ediții anterioare în același parc, cu galerii foto și rezultate disponibile online. Evenimentul include și rezultate și galerii foto din edițiile anterioare, fiind o oportunitate de a socializa și de a promova un stil de viață activ.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://calendar.sportic.ro/events/view?hash=b5a86e67374c1044901a54f265503081b02afa22"
+    ],
+    "consolidated_ids": [
+      "1308b073-11ec-479d-a6ce-aa3a0d6b78b1"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261013",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:45:06.877986+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://sites.google.com/baneasarace.ro/140bpm/info-eveniment): 2026-10-03 — \"140 BPM | 3 octombrie 2026 - Parcul Alexandru Ioan Cuza ( IOR ) - Program\" (was estimated 2027-05-01)",
+        "website_url": "https://sites.google.com/baneasarace.ro/140bpm/info-eveniment",
+        "evidence_url": "https://sites.google.com/baneasarace.ro/140bpm/info-eveniment",
+        "evidence_quote": "140 BPM | 3 octombrie 2026 - Parcul Alexandru Ioan Cuza ( IOR ) - Program",
+        "previous_estimated_date": "2027-05-01",
+        "confirmed_date": "2026-10-03",
+        "model_confidence": 0.97
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "jaszfenyszarui_futofesztival",
     "name": "JÁSZFÉNYSZARUI FUTÓFESZTIVÁL",
     "type": "road",
@@ -100784,6 +101228,83 @@
     "created_date": "20260415",
     "editors_uid": [],
     "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "rogaining_roza_vanturilor_iii",
+    "name": "ROGAINING - ROZA VANTURILOR III",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20250906",
+        "20250906"
+      ],
+      [
+        "20261011",
+        "20261011"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Poiana Brasov, Jud Brasov",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://csbabarunca.ro/"
+    ],
+    "consolidated_ids": [
+      "455d0ff8-c813-45c3-a85f-a0a63af98ba5"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260415",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:41:27.354665+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://csbabarunca.ro/dashboard/): 2026-10-11 — \"Roza Vanturilor Rogaining et 4 Poiana Brașov — 11.10.2026\" (was estimated 2026-09-12)",
+        "website_url": "https://csbabarunca.ro/",
+        "evidence_url": "https://csbabarunca.ro/dashboard/",
+        "evidence_quote": "Roza Vanturilor Rogaining et 4 Poiana Brașov — 11.10.2026",
+        "previous_estimated_date": "2026-09-12",
+        "confirmed_date": "2026-10-11",
+        "model_confidence": 0.98
+      }
+    ],
     "origin_country": null,
     "nearby_foreign_cities": null
   },

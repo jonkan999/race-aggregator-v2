@@ -245,8 +245,8 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://beh.sk/pretek/podvihorlatsky-kros-3/",
-      "https://www.terminovka.sk/podujatie/podvihorlatsky-kros"
+      "https://www.terminovka.sk/podujatie/podvihorlatsky-kros",
+      "https://beh.sk/pretek/podvihorlatsky-kros-3/"
     ],
     "consolidated_ids": [
       "a8b9f9af-2efb-4fe2-acfd-572052ebe5cb"
@@ -343,9 +343,9 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://beh.sk/pretek/oscadnica-extrem-maraton-6/",
-      "https://itra.run/Races/RaceDetails/Extrem.Maraton.Oscadnica.VII..ročník.Extrém.Maratón.Oscadnica/2026/113103",
       "https://www.bezeckypretek.sk/extrem-maraton-oscadnica-2026/",
+      "https://itra.run/Races/RaceDetails/Extrem.Maraton.Oscadnica.VII..ročník.Extrém.Maratón.Oscadnica/2026/113103",
+      "https://beh.sk/pretek/oscadnica-extrem-maraton-6/",
       "https://www.terminovka.sk/podujatie/extrem-maraton-oscadnica"
     ],
     "consolidated_ids": [
@@ -448,8 +448,8 @@
     "max_description_relevance": 0.9,
     "sources": [
       "https://www.terminovka.sk/podujatie/rozhanovska-dvanastka",
-      "https://www.bezeckypretek.sk/rozhanovska-dvanastka-rozhanovce-2026/",
-      "https://beh.sk/pretek/rozhanovska-dvanastka-4/"
+      "https://beh.sk/pretek/rozhanovska-dvanastka-4/",
+      "https://www.bezeckypretek.sk/rozhanovska-dvanastka-rozhanovce-2026/"
     ],
     "consolidated_ids": [
       "afac4513-0e49-4112-805b-fc76c444dfbb"
@@ -674,16 +674,23 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Muráň, Okres Revúca, Banskobystrický kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
+    "location": "Muráň, Revúca District, Banská Bystrica Region, Slovakia",
+    "latitude": 48.7401583,
+    "longitude": 20.047015,
+    "county": "Region of Banská Bystrica",
+    "nearest_city": "Poprad",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "distances": "[\"10\", \"5\", \"4\"]",
+    "distance_m": [
+      10000,
+      5000,
+      4000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -706,9 +713,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://beh.sk/pretek/beh-na-muransky-hrad-2-2/",
+      "https://www.terminovka.sk/podujatie/beh-na-muransky-hrad",
       "https://www.bezeckypretek.sk/beh-na-muransky-hrad-2026/",
-      "https://www.terminovka.sk/podujatie/beh-na-muransky-hrad"
+      "https://beh.sk/pretek/beh-na-muransky-hrad-2-2/"
     ],
     "consolidated_ids": [
       "62519001-4113-4333-94d7-42d392bbfb74"
@@ -724,8 +731,8 @@
   {
     "domain_name": "stefanik_urban_trail_devin",
     "name": "Štefánik urban trail",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261017",
@@ -736,16 +743,28 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Devín, Okres Bratislava IV, Bratislavský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Devín, Bratislava IV, Bratislava Region, Slovakia",
+    "latitude": 48.173339,
+    "longitude": 16.9865884,
+    "county": "Region of Bratislava",
+    "nearest_city": "Bratislava",
+    "nearby_cities": [
+      "Bratislava"
+    ],
+    "distances": "[\"51\", \"23\", \"11\", \"10\", \"5\"]",
+    "distance_m": [
+      51000,
+      23000,
+      11000,
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "50 km",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "50 km, 23 km, 10 km, 10 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -768,10 +787,10 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://beh.sk/pretek/stefanik-urban-trail-2/",
-      "https://www.bezeckypretek.sk/stefanik-urban-trail-devin-2026/",
       "https://itra.run/Races/RaceDetails/STEFANIK.URBAN.TRAIL.SUT.2.RELAY.51./2026/121907",
-      "https://www.terminovka.sk/podujatie/stefanik-urban-trail"
+      "https://beh.sk/pretek/stefanik-urban-trail-2/",
+      "https://www.terminovka.sk/podujatie/stefanik-urban-trail",
+      "https://www.bezeckypretek.sk/stefanik-urban-trail-devin-2026/"
     ],
     "consolidated_ids": [
       "bb22908d-bbe4-4f55-8c02-aaa6c17947fc"
@@ -799,16 +818,22 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Gajary, Okres Malacky, Bratislavský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
+    "location": "Gajary, Malacky District, Bratislava Region, Slovakia",
+    "latitude": 48.4657825,
+    "longitude": 16.9253847,
+    "county": "Region of Bratislava",
+    "nearest_city": "Bratislava",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -859,16 +884,29 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Soblahov, Okres Trenčín, Trenčiansky kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Soblahov, Trenčín District, Trenčín Region, Slovakia",
+    "latitude": 48.8637883,
+    "longitude": 18.0781219,
+    "county": "Region of Trenčín",
+    "nearest_city": "Trenčín",
+    "nearby_cities": [
+      "Trenčín"
+    ],
+    "distances": "[\"36.6\", \"29\", \"26\", \"10.6\", \"10\", \"9.72\", \"5\"]",
+    "distance_m": [
+      36600,
+      29000,
+      26000,
+      10600,
+      10000,
+      9720,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "36.6 km, 29 km, 26 km, 10 km, 10 km, 10 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -895,6 +933,73 @@
     ],
     "consolidated_ids": [
       "04afb091-1558-40ba-bbfb-7790b13efdaf"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "psotkov_memorial_aktuality_memorial_jozefa_psotku",
+    "name": "Psotkov memoriál",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261017",
+        "20261017"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Slovak High Tatras, Slovakia",
+    "latitude": 49.1556982,
+    "longitude": 20.0442995,
+    "county": "Region of Prešov",
+    "nearest_city": "Poprad",
+    "nearby_cities": [
+      "Poprad"
+    ],
+    "distances": "[\"38\", \"26\", \"25\"]",
+    "distance_m": [
+      38000,
+      26000,
+      25000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "38 km, 26 km, 25 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://psotkovmemorial.sk",
+      "https://itra.run/Races/RaceDetails/Psotkov.memorial.EXTREME/2026/117301"
+    ],
+    "consolidated_ids": [
+      "4f5d7669-e183-4a11-be06-028fd3543a74"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -1264,16 +1369,29 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Bratislava, Okres Bratislava, Bratislavský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Bratislava, Slovakia",
+    "latitude": 48.1477745,
+    "longitude": 17.1071553,
+    "county": "Region of Bratislava",
+    "nearest_city": "Bratislava",
+    "nearby_cities": [
+      "Bratislava"
+    ],
+    "distances": "[\"42.2\", \"16\", \"10\", \"5\", \"3.2\", \"3.2\"]",
+    "distance_m": [
+      42200,
+      16000,
+      10000,
+      5000,
+      3200,
+      3200
+    ],
+    "distance_keywords": [
+      "Maratón",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Maratón, 16 km, 10 km, 5 km, 3.2 km, 3.2 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -1380,6 +1498,7 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
+      "https://beh-hrebenom-cergova.webnode.sk",
       "https://beh.sk/pretek/beh-hrebenom-cergova-9/",
       "https://itra.run/Races/RaceDetails/Beh.hrebeňom.Čergova.32k/2026/123228"
     ],
@@ -1417,10 +1536,22 @@
     "nearby_cities": [
       "Žilina"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "distances": "[\"13.7\", \"10\", \"8.3\", \"6\", \"5\", \"4.5\", \"3.2\", \"1\"]",
+    "distance_m": [
+      13700,
+      10000,
+      8300,
+      6000,
+      5000,
+      4500,
+      3200,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "13.7 km, 10 km, 8.3 km, 5 km, 5 km, 5 km, 3.2 km, 1 km",
     "organizer": "Maratón klub Rajec",
     "contact": null,
     "website": "https://www.rajeckymaraton.sk/?h=rd&v=1&m=rd010",
@@ -1568,8 +1699,8 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.bezeckypretek.sk/beh-vinicami-bojniciek-bojnicky-2026/",
-      "https://beh.sk/pretek/beh-vinicami-bojniciek-a-hlohovca-13/"
+      "https://beh.sk/pretek/beh-vinicami-bojniciek-a-hlohovca-13/",
+      "https://www.bezeckypretek.sk/beh-vinicami-bojniciek-bojnicky-2026/"
     ],
     "consolidated_ids": [
       "6bcaba62-478c-4212-a9dd-47f7231d20f4"
@@ -1714,16 +1845,23 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Brezová pod Bradlom, Okres Myjava, Trenčiansky kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
+    "location": "Brezová pod Bradlom, Myjava District, Trenčín Region, Slovakia",
+    "latitude": 48.66499899999999,
+    "longitude": 17.5401983,
+    "county": "Region of Trenčín",
+    "nearest_city": "Trenčín",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "distances": "[\"10\", \"6.2\", \"5\"]",
+    "distance_m": [
+      10000,
+      6200,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 6.2 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -1774,16 +1912,28 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Bratislava, Okres Bratislava, Bratislavský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Bratislava, Bratislava District, Bratislava Region, Slovakia",
+    "latitude": 48.1477745,
+    "longitude": 17.1071553,
+    "county": "Region of Bratislava",
+    "nearest_city": "Bratislava",
+    "nearby_cities": [
+      "Bratislava"
+    ],
+    "distances": "[\"42.2\", \"16\", \"10\", \"5\", \"3.2\"]",
+    "distance_m": [
+      42200,
+      16000,
+      10000,
+      5000,
+      3200
+    ],
+    "distance_keywords": [
+      "Maratón",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Maratón, 16 km, 10 km, 5 km, 3.2 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -2213,16 +2363,30 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Žilina, Okres Žilina, Žilinský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Žilina, Okres Žilina, Žilinský kraj, Slovakia",
+    "latitude": 49.21944980000001,
+    "longitude": 18.7408001,
+    "county": "Region of Žilina",
+    "nearest_city": "Žilina",
+    "nearby_cities": [
+      "Žilina"
+    ],
+    "distances": "[\"13.7\", \"10\", \"8.3\", \"6\", \"5\", \"4.5\", \"3.2\", \"1\"]",
+    "distance_m": [
+      13700,
+      10000,
+      8300,
+      6000,
+      5000,
+      4500,
+      3200,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "13.7 km, 10 km, 8.3 km, 5 km, 5 km, 5 km, 3.2 km, 1 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -2273,16 +2437,25 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Kováčová, Okres Zvolen, Banskobystrický kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Kováčová, Zvolen District, Banská Bystrica Region, Slovakia",
+    "latitude": 48.60175170000001,
+    "longitude": 19.1043192,
+    "county": "Region of Banská Bystrica",
+    "nearest_city": "Banská Bystrica",
+    "nearby_cities": [
+      "Banská Bystrica"
+    ],
+    "distances": "[\"10\", \"5.3\", \"5\"]",
+    "distance_m": [
+      10000,
+      5300,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -2548,6 +2721,72 @@
     ],
     "consolidated_ids": [
       "defb42fe-a347-4a6c-a144-9b50b9fe9e27"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "beh_na_mincol_behnamincol",
+    "name": "Beh na Minčol",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Minčol, Slovakia",
+    "latitude": 49.1240578,
+    "longitude": 18.8272405,
+    "county": "Region of Žilina",
+    "nearest_city": "Žilina",
+    "nearby_cities": [
+      "Žilina"
+    ],
+    "distances": "[\"6\"]",
+    "distance_m": [
+      6000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://behnamincol.sk"
+    ],
+    "consolidated_ids": [
+      "3343fd78-cdd3-4b57-8ddb-1ecd89191f28"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -3641,16 +3880,30 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Lietava, Okres Žilina, Žilinský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Lietava Castle, Lietava, Žilina District, Žilina Region, Slovakia",
+    "latitude": 49.16063639999999,
+    "longitude": 18.6845348,
+    "county": "Region of Žilina",
+    "nearest_city": "Žilina",
+    "nearby_cities": [
+      "Žilina"
+    ],
+    "distances": "[\"13.7\", \"10\", \"8.3\", \"6\", \"5\", \"4.5\", \"3.2\", \"1\"]",
+    "distance_m": [
+      13700,
+      10000,
+      8300,
+      6000,
+      5000,
+      4500,
+      3200,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "13.7 km, 10 km, 8.3 km, 5 km, 5 km, 5 km, 3.2 km, 1 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -3778,16 +4031,29 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Bratislava - Rača, Okres Bratislava, Bratislavský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Rača, Bratislava, Slovakia",
+    "latitude": 48.21202840000001,
+    "longitude": 17.1546065,
+    "county": "Region of Bratislava",
+    "nearest_city": "Bratislava",
+    "nearby_cities": [
+      "Bratislava"
+    ],
+    "distances": "[\"42.2\", \"16\", \"10\", \"9.5\", \"5\", \"3.2\"]",
+    "distance_m": [
+      42200,
+      16000,
+      10000,
+      9500,
+      5000,
+      3200
+    ],
+    "distance_keywords": [
+      "Maratón",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Maratón, 16 km, 10 km, 10 km, 5 km, 3.2 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -3929,8 +4195,8 @@
   {
     "domain_name": "nitrianska_24_hodinovka_memorial_alexandra_bogiho_nitra",
     "name": "Nitrianska 24 hodinovka – Memoriál Alexandra Bögiho",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "time",
+    "type_local": "Časový pretek",
     "race_dates": [
       [
         "20270320",
@@ -3941,16 +4207,24 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Nitra, Okres Nitra, Nitriansky kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "location": "Nitra, Okres Nitra, Nitriansky kraj, Slovakia",
+    "latitude": 48.3061414,
+    "longitude": 18.076376,
+    "county": "Region of Nitra",
+    "nearest_city": "Nitra",
+    "nearby_cities": [
+      "Nitra"
+    ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -4948,9 +5222,6 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://beh.sk/pretek/csob-bratislava-marathon-17/",
-      "https://beh.sk/pretek/csob-bratislava-marathon-desiatka-minimaraton-deti-lezuni-14/",
-      "https://www.bezeckypretek.sk/csob-bratislava-marathon-2026-4/",
       "https://www.bezeckypretek.sk/csob-bratislava-marathon-2027/"
     ],
     "consolidated_ids": [
@@ -5506,9 +5777,7 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.bezeckypretek.sk/ultramaraton-kosice-2027/",
-      "https://beh.sk/pretek/kosice-miskolc-ultramaraton-8/",
-      "https://www.bezeckypretek.sk/ultramaraton-kosice-2026/"
+      "https://www.bezeckypretek.sk/ultramaraton-kosice-2027/"
     ],
     "consolidated_ids": [
       "3f2a9b92-2002-493e-b240-78ad7b7ab7e3"
@@ -8975,7 +9244,6 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://beh.sk/pretek/joma-varinsky-lesny-beh-2/",
       "https://www.bezeckypretek.sk/joma-varinsky-lesny-2027/"
     ],
     "consolidated_ids": [
@@ -20323,7 +20591,6 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.skyrunkubinska.sk",
       "https://www.bezeckypretek.sk/skyshort-kubinska-kubinska-hola-2027/"
     ],
     "consolidated_ids": [
@@ -27061,16 +27328,24 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Senica, Okres Senica, Trnavský kraj",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
+    "location": "Pamätník SNP u Rehušov, Prietrž, Senica District, Trnava Region, Slovakia",
+    "latitude": 48.6616665,
+    "longitude": 17.4845545,
+    "county": "Region of Trnava",
+    "nearest_city": "Trenčín",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
+    "distances": "[\"11.1\", \"10\", \"8\", \"5\"]",
+    "distance_m": [
+      11100,
+      10000,
+      8000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "11.1 km, 10 km, 8 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
