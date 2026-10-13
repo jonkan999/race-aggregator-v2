@@ -1,4 +1,6 @@
 ---
+import SeoHead from '../components/SeoHead.astro';
+import { fitMetaDescription } from '../lib/seoMeta.js';
 import '../styles/legacy/legacy-race-list.css';
 import '../styles/home.css';
 import Analytics from '@vercel/analytics/astro';
@@ -45,6 +47,7 @@ const pageSchema = JSON.stringify({
   url: currentUrl,
   inLanguage: lang,
 });
+const metaDescription = fitMetaDescription(description, [title, String(content.page_name ?? '')]);
 ---
 
 <!doctype html>
@@ -52,15 +55,10 @@ const pageSchema = JSON.stringify({
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     <link rel="icon" href="/common_images/logo.svg" type="image/svg+xml" />
     <title>{title}</title>
-    {!disableCanonical && baseUrl && <link rel="canonical" href={currentUrl} />}
-    {
-      alternateUrl && (
-        <link rel="alternate" hreflang={locale === 'en' ? 'sv' : 'en'} href={alternateUrl} />
-      )
-    }
+    <SeoHead country={country} locale={locale} content={content} title={title} description={metaDescription} currentUrl={currentUrl} alternateUrl={alternateUrl} disableCanonical={disableCanonical} />
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

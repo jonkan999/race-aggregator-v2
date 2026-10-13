@@ -31,12 +31,12 @@ jobs:
       selected_market_codes: ${{ steps.resolve.outputs.selected_market_codes }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Resolve enabled markets
         id: resolve
@@ -56,12 +56,12 @@ jobs:
       MARKET_CODE: ${{ matrix.marketCode }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - name: Skip unconfigured market
@@ -72,6 +72,10 @@ jobs:
       - name: Install dependencies
         if: ${{ matrix.configured }}
         run: npm ci
+
+      - name: Unit tests
+        if: ${{ matrix.configured }}
+        run: npm run test:unit
 
       - name: Validate synced market content
         if: ${{ matrix.configured }}

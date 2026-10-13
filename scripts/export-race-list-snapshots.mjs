@@ -277,21 +277,33 @@ function isStatementTimeout(error) {
 // statement_timeout on the largest markets (PL, code 57014), so we page through
 // the result and halve the page size on a timeout instead of failing the build.
 async function fetchPublishedRacesPaged(sb, countryCode, select) {
+  // Keyset pagination (id > last id) keeps each page O(page size) instead of
+  // OFFSET scans that get slower deeper into big markets.
   const rows = [];
   let pageSize = SNAPSHOT_PAGE_SIZE;
-  let offset = 0;
-  while (offset < SNAPSHOT_MAX_ROWS) {
-    const { data, error } = await sb
+  let lastId = null;
+  let transientFailures = 0;
+  while (rows.length < SNAPSHOT_MAX_ROWS) {
+    let query = sb
       .from('races')
       .select(select)
       .eq('country_code', countryCode)
       .eq('published', true)
       .order('id', { ascending: true })
-      .range(offset, offset + pageSize - 1);
+      .limit(pageSize);
+    if (lastId) query = query.gt('id', lastId);
+    const { data, error } = await query;
     if (error) {
       if (isStatementTimeout(error) && pageSize > 25) {
         pageSize = Math.floor(pageSize / 2);
-        console.warn(`Snapshot ${countryCode}: statement timeout at offset ${offset}; retrying with page size ${pageSize}`);
+        console.warn(`Snapshot ${countryCode}: statement timeout after id ${lastId ?? '-'}; retrying with page size ${pageSize}`);
+        continue;
+      }
+      if ((isStatementTimeout(error) || isTransientError(error)) && transientFailures < 4) {
+        transientFailures += 1;
+        const waitMs = 3000 * transientFailures;
+        console.warn(`Snapshot ${countryCode}: ${error.code ?? 'error'} ${error.message ?? ''}; retry ${transientFailures}/4 in ${waitMs}ms`);
+        await new Promise((r) => setTimeout(r, waitMs));
         continue;
       }
       return { data: null, error };
@@ -299,9 +311,15 @@ async function fetchPublishedRacesPaged(sb, countryCode, select) {
     const batch = data ?? [];
     rows.push(...batch);
     if (batch.length < pageSize) break;
-    offset += batch.length;
+    lastId = batch[batch.length - 1].id;
   }
   return { data: rows, error: null };
+}
+
+function isTransientError(error) {
+  const message = String(error?.message ?? '');
+  return /fetch failed|ECONNRESET|ETIMEDOUT|socket hang up|502|503|504|Bad Gateway|Service Unavailable/i.test(message)
+    || ['PGRST000', 'PGRST001', 'PGRST002', '08000', '08006', '53300', '57P01'].includes(String(error?.code ?? ''));
 }
 
 async function exportCountrySnapshot(sb, countryCode, outputDir) {
@@ -311,7 +329,13 @@ async function exportCountrySnapshot(sb, countryCode, outputDir) {
     ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect));
   }
 
-  if (error) throw error;
+  const jsonFallbackRows = error ? loadRowsFromJson(countryCode) : null;
+  if (error && jsonFallbackRows.length === 0) throw error;
+  if (error) {
+    // Last resort: the committed market JSON is a complete (if slightly older) snapshot.
+    console.warn(`::warning title=Snapshot fallback::${countryCode}: Supabase export failed (${error.code ?? ''} ${error.message ?? ''}); building from committed JSON instead.`);
+    data = [];
+  }
 
   const rankingData = await loadRaceDetailPageViewRankings(sb, countryCode);
 

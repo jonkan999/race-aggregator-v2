@@ -12,6 +12,7 @@ import {
 import type { IndexYaml, Locale } from '../lib/content';
 import type { RaceListRow } from '../lib/raceListRow';
 import { deriveSiteIdentity } from '../lib/siteIdentity';
+import { fitMetaDescription, marketCurrency, parsePriceAmount } from '../lib/seoMeta.js';
 
 interface Props {
   country: string;
@@ -51,7 +52,7 @@ const countyLabel = detail.county
   ? ((content.county_mapping as Record<string, string> | undefined)?.[detail.county] ?? detail.county)
   : String(content.country_native ?? '');
 const title = detail.raceName;
-const description = detail.description || detail.additionalInfo || `${detail.raceName} ${countyLabel}`.trim();
+const rawDescription = detail.description || detail.additionalInfo || '';
 const descriptionParagraphs = raceDetailParagraphs(detail.description);
 const additionalParagraphs = raceDetailParagraphs(detail.additionalInfo);
 const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
@@ -63,6 +64,31 @@ const hasPriceTiers = detail.priceTiers.length > 0;
 const hasMapCoordinates = row.latitude != null && row.longitude != null;
 const primaryDetailDate = detail.displayDateEntries[0] ?? detail.dateEntries[0];
 const dateSummary = detail.displayDateEntries.map((entry) => entry.label).join(', ');
+const description = fitMetaDescription(rawDescription || `${detail.raceName} ${countyLabel}`.trim(), [
+  [dateSummary, detail.location || countyLabel].filter(Boolean).join(', '),
+  detail.distanceLabels.join(', '),
+  detail.raceTypeLabel,
+  siteName,
+]);
+const offerUrl = detail.registrationUrl || detail.raceInfoUrl || detail.website || undefined;
+// Prices of an estimated edition are last year's; only publish offers for confirmed dates
+// and drop tiers whose deadline has already passed.
+const todayIso = new Date().toISOString().slice(0, 10);
+const offers = (hasEstimatedDates ? [] : detail.priceTiers).flatMap((group) =>
+  group.tiers.flatMap((tier) => {
+    const amount = parsePriceAmount(tier.price);
+    if (amount == null) return [];
+    if (tier.deadlineIso && tier.deadlineIso < todayIso) return [];
+    return [{
+      '@type': 'Offer',
+      name: [group.distance, tier.description].filter(Boolean).join(' – ') || undefined,
+      price: amount,
+      priceCurrency: marketCurrency(country),
+      url: offerUrl,
+      validThrough: tier.deadlineIso || undefined,
+    }];
+  }),
+);
 const distinctActionLinks = [
   detail.registrationUrl
     ? {
@@ -124,6 +150,7 @@ const eventJson = JSON.stringify({
         url: detail.website || undefined,
       }
     : undefined,
+  offers: offers.length > 0 ? offers : undefined,
   url: toAbsoluteUrl(canonicalPath) ?? canonicalPath,
 });
 
@@ -167,6 +194,7 @@ const newsletterContext = {
   content={content}
   alternateHref={alternateHref}
   canonicalUrl={toAbsoluteUrl(canonicalPath)}
+  ogImage={toAbsoluteUrl(detail.images[0]?.src) ?? null}
   disableCanonical={disableCanonical}
   noindex={noindex}
 >

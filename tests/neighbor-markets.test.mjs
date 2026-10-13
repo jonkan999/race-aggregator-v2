@@ -104,5 +104,5 @@ test('Netherlands lists Germany as a live neighbor and keeps Belgium until it is
   assert.deepEqual(neighbors.be, ['nl', 'de']);
   assert.deepEqual(liveNeighbors('nl'), ['de']);
   assert.ok(!liveNeighbors('nl').includes('be'));
-  assert.ok(!liveNeighbors('de').includes('nl'));
+  assert.ok(liveNeighbors('de').includes('nl')); // DE lists NL (config/neighbor-markets.json)
 });

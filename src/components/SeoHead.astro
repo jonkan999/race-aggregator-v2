@@ -1,0 +1,43 @@
+---
+// Shared canonical / hreflang / Open Graph / Twitter tags for every layout.
+import { loadIndexYaml, type IndexYaml, type Locale } from '../lib/content';
+import { buildHreflangLinks } from '../lib/seoMeta.js';
+
+interface Props {
+  country: string;
+  locale: Locale;
+  content: IndexYaml;
+  title: string;
+  description?: string;
+  currentUrl?: string;
+  alternateUrl?: string;
+  disableCanonical?: boolean;
+  image?: string | null;
+  ogType?: string;
+}
+
+const { country, locale, content, title, description = '', currentUrl, alternateUrl, disableCanonical = false, image, ogType = 'website' } = Astro.props;
+const nativeContent = locale === 'en' ? loadIndexYaml(country, 'native') : content;
+const nativeLang = String(nativeContent.country_language_code ?? country).trim() || country;
+const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
+const absoluteCurrent = currentUrl && /^https?:/.test(currentUrl) ? currentUrl : undefined;
+const absoluteAlternate = alternateUrl && /^https?:/.test(alternateUrl) ? alternateUrl : undefined;
+const hreflangs = disableCanonical ? [] : buildHreflangLinks({ locale, nativeLang, currentUrl: absoluteCurrent, alternateUrl: absoluteAlternate });
+const fallbackImage = baseUrl ? `${baseUrl}/common_images/logo100px.jpg` : undefined;
+const ogImage = image ? (/^https?:/.test(image) ? image : `${baseUrl}${image.startsWith('/') ? '' : '/'}${image}`) : fallbackImage;
+const siteName = String(nativeContent.page_name ?? '').trim();
+const ogLocale = locale === 'en' ? 'en_GB' : `${nativeLang}_${country.toUpperCase()}`;
+---
+{!disableCanonical && absoluteCurrent && <link rel="canonical" href={absoluteCurrent} />}
+{hreflangs.map((entry) => <link rel="alternate" hreflang={entry.hreflang} href={entry.href} />)}
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={title} />
+{description && <meta property="og:description" content={description} />}
+{absoluteCurrent && <meta property="og:url" content={absoluteCurrent} />}
+{siteName && <meta property="og:site_name" content={siteName} />}
+<meta property="og:locale" content={ogLocale} />
+{ogImage && <meta property="og:image" content={ogImage} />}
+<meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:title" content={title} />
+{description && <meta name="twitter:description" content={description} />}
+{ogImage && <meta name="twitter:image" content={ogImage} />}

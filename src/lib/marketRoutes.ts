@@ -104,6 +104,10 @@ export function resolveRaceDetailHref(args: {
 }
 
 export function getBrowserMarketRouteTargets(): MarketRouteTargets {
-  if (typeof window === 'undefined') return {};
-  return window.__MARKET_ROUTE_TARGETS__ ?? {};
+  // During SSR/SSG there is no window; getMarketRouteTargets() (server-only) publishes the
+  // targets on globalThis so islands render cross-market hrefs instead of local 404 paths.
+  const scope = (typeof window === 'undefined' ? globalThis : window) as {
+    __MARKET_ROUTE_TARGETS__?: MarketRouteTargets;
+  };
+  return scope.__MARKET_ROUTE_TARGETS__ ?? {};
 }

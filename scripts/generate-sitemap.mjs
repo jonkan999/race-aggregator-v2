@@ -27,7 +27,21 @@ function loadDefaultBaseUrl() {
   if (!doc || typeof doc !== 'object' || typeof doc.base_url !== 'string') {
     throw new Error(`Missing base_url in ${indexPath}`);
   }
-  return doc.base_url.replace(/\/+$/, '');
+  return toServingBaseUrl(doc.base_url);
+}
+
+// Every production apex 308-redirects to www, so canonical URLs use the www host.
+export function toServingBaseUrl(value) {
+  const url = new URL(String(value).trim());
+  if (!url.hostname.startsWith('www.') && url.hostname.split('.').length === 2) {
+    url.hostname = `www.${url.hostname}`;
+  }
+  return `${url.protocol}//${url.host}`;
+}
+
+function isNoindexHtml(filePath) {
+  const html = fs.readFileSync(filePath, 'utf8');
+  return /<meta\s+name="robots"\s+content="[^"]*noindex/i.test(html);
 }
 
 function walkHtmlFiles(dir, files = []) {
@@ -112,6 +126,7 @@ function main() {
   const configuredCountries = new Set(listConfiguredCountries());
   const baseUrl = loadDefaultBaseUrl();
   const urls = walkHtmlFiles(distDir)
+    .filter((filePath) => !isNoindexHtml(filePath))
     .map((filePath) => path.relative(distDir, filePath))
     .map((relativePath) => toRoutePath(relativePath))
     .filter((routePath) => shouldIncludeRoute(routePath, configuredCountries))
@@ -121,6 +136,12 @@ function main() {
 
   fs.writeFileSync(sitemapPath, buildSitemapXml(canonicalUrls), 'utf8');
   console.log(`Wrote ${canonicalUrls.length} sitemap URLs to ${path.relative(root, sitemapPath)}`);
+
+  const robots = ['User-agent: *', 'Allow: /', 'Disallow: /auth/', 'Disallow: /en/auth/', '', `Sitemap: ${baseUrl}/sitemap.xml`, ''];
+  fs.writeFileSync(path.join(distDir, 'robots.txt'), robots.join('\n'), 'utf8');
+  console.log('Wrote dist/robots.txt');
 }
 
-main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main();
+}

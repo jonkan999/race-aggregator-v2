@@ -9,6 +9,7 @@ import {
   splitDistanceVerbose,
 } from './raceCardDisplay';
 import {
+  getBrowseCategoryEntries,
   getBrowseCountyPageHref,
   getBrowseOverviewData,
   getBrowseOverviewHref,
@@ -717,10 +718,17 @@ export async function getRaceDetailRelatedContent(args: {
       content,
       categorySlug: slugify(primaryCategory.label, countryCode),
     });
-    addShortcut(
-      interpolateTemplate(categoryTemplate, { category: primaryCategory.label }),
-      categoryHref,
+    // Only link category pages that are actually built (small categories such as
+    // 1500 m / 3000 m are below the browse indexing threshold and would 404).
+    const builtCategoryHrefs = new Set(
+      (await getBrowseCategoryEntries({ countryCode, locale, content })).map((entry) => entry.href),
     );
+    if (builtCategoryHrefs.has(categoryHref)) {
+      addShortcut(
+        interpolateTemplate(categoryTemplate, { category: primaryCategory.label }),
+        categoryHref,
+      );
+    }
   }
 
   addShortcut(

@@ -29,5 +29,6 @@ export function getMarketRouteTargets(): MarketRouteTargets {
     }),
   );
 
+  (globalThis as { __MARKET_ROUTE_TARGETS__?: MarketRouteTargets }).__MARKET_ROUTE_TARGETS__ = cachedTargets;
   return cachedTargets;
 }

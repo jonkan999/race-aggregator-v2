@@ -290,6 +290,9 @@ export function loadIndexYaml(countryCode: string, locale: Locale): IndexYaml {
   }
 
   const resolved = resolveContentPlaceholders(doc) as IndexYaml;
+  if (typeof resolved.base_url === 'string' && resolved.base_url.trim()) {
+    resolved.base_url = toServingBaseUrl(resolved.base_url);
+  }
   indexYamlCache.set(cacheKey, resolved);
   return resolved;
 }
@@ -338,3 +341,20 @@ export function localeBasePrefix(countryCode: string, locale: Locale): string {
 }
 
 export { slugify };
+
+/**
+ * Production apex domains 308-redirect to www, so every absolute URL we emit
+ * (canonical, hreflang, OG, schema, cross-market links) uses the www host.
+ * Returns the URL with a trailing slash, matching the YAML convention.
+ */
+export function toServingBaseUrl(value: string): string {
+  try {
+    const url = new URL(value.trim());
+    if (!url.hostname.startsWith('www.') && url.hostname.split('.').length === 2) {
+      url.hostname = `www.${url.hostname}`;
+    }
+    return `${url.protocol}//${url.host}/`;
+  } catch {
+    return value;
+  }
+}

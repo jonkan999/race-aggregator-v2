@@ -47,6 +47,20 @@
       "mitigate": {
         "action": "deny"
       }
+    },
+    {
+      "src": "^/(common_images|icons)/(.*)$",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/markers-[a-z]{2}\\.json$",
+      "headers": {
+        "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400"
+      },
+      "continue": true
     }
   ],
   "redirects": [

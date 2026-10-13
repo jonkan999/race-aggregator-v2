@@ -23,7 +23,8 @@ loadLocalEnvFiles(root);
 function writeMarkers(markers) {
   const outDir = path.join(root, 'public');
   fs.mkdirSync(outDir, { recursive: true });
-  const valid = markers.filter(Boolean);
+  // Only upcoming races belong on the map; past editions made the file 3-4x larger.
+  const valid = filterUpcomingMarkers(markers.filter(Boolean));
   const body = {
     generatedAt: new Date().toISOString(),
     country,
@@ -32,6 +33,18 @@ function writeMarkers(markers) {
   const dest = path.join(outDir, `markers-${country}.json`);
   fs.writeFileSync(dest, JSON.stringify(body));
   console.warn(`Wrote ${dest} (${valid.length} markers)`);
+}
+
+export function todayComparable(now = new Date()) {
+  return `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}`;
+}
+
+export function filterUpcomingMarkers(markers, today = todayComparable()) {
+  return markers.flatMap((marker) => {
+    const dates = Array.isArray(marker.race_dates) ? marker.race_dates.filter((d) => typeof d === 'string' && d >= today) : [];
+    if (dates.length === 0) return [];
+    return [{ ...marker, race_dates: dates, race_date: dates[0] }];
+  });
 }
 
 function toFiniteCoord(value) {
@@ -199,7 +212,9 @@ async function main() {
   writeMarkers(markers);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
