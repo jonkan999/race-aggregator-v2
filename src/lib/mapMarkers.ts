@@ -15,7 +15,11 @@ export type MapMarkerRecord = {
   website?: string | null;
 };
 
-export type RawMapMarker = Omit<MapMarkerRecord, 'latitude' | 'longitude'> & {
+export type RawMapMarker = Omit<MapMarkerRecord, 'latitude' | 'longitude' | 'id' | 'county' | 'race_type' | 'origin_country'> & {
+  id?: string;
+  county?: string | null;
+  race_type?: string | null;
+  origin_country?: string | null;
   latitude: unknown;
   longitude: unknown;
 };
@@ -93,12 +97,16 @@ export function relevantMarkerDate(
   return inWindow ?? dates[0] ?? null;
 }
 
-export function normalizeMapMarker(raw: RawMapMarker): MapMarkerRecord | null {
+export function normalizeMapMarker(raw: RawMapMarker, marketCode?: string): MapMarkerRecord | null {
   const latitude = toFiniteCoord(raw.latitude);
   const longitude = toFiniteCoord(raw.longitude);
   if (latitude == null || longitude == null) return null;
   return {
     ...raw,
+    id: raw.id ?? raw.domain_name,
+    county: raw.county ?? null,
+    race_type: raw.race_type ?? null,
+    origin_country: raw.origin_country ?? marketCode ?? null,
     latitude,
     longitude,
     race_dates: markerStartDates(raw),

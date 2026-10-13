@@ -28,11 +28,30 @@ function writeMarkers(markers) {
   const body = {
     generatedAt: new Date().toISOString(),
     country,
-    markers: valid,
+    markers: valid.map((m) => compactMarker(m, country)),
   };
   const dest = path.join(outDir, `markers-${country}.json`);
   fs.writeFileSync(dest, JSON.stringify(body));
   console.warn(`Wrote ${dest} (${valid.length} markers)`);
+}
+
+/**
+ * Map payload only: drop fields the island never reads (website, race_date, uuid id;
+ * id falls back to the per-market-unique domain_name), nulls, the market's own
+ * origin_country, and coordinate noise beyond ~1 m.
+ */
+export function compactMarker(marker, marketCode) {
+  const out = {};
+  for (const [key, value] of Object.entries(marker)) {
+    if (value == null || value === '' || key === 'website' || key === 'race_date' || key === 'id') continue;
+    if (key === 'origin_country' && value === marketCode) continue;
+    if (key === 'latitude' || key === 'longitude') {
+      out[key] = Math.round(value * 1e5) / 1e5;
+      continue;
+    }
+    out[key] = value;
+  }
+  return out;
 }
 
 export function todayComparable(now = new Date()) {

@@ -56,3 +56,11 @@ test('markers keep only upcoming dates', () => {
   );
   assert.deepEqual(out, [{ id: 2, race_dates: ['20261020'], race_date: '20261020' }]);
 });
+
+test('compactMarker drops unused fields and the market origin', async () => {
+  const { compactMarker } = await import('../scripts/export-markers.mjs');
+  const out = compactMarker({ id: 'uuid', domain_name: 'x', latitude: 52.123456789, longitude: 9.1, county: null,
+    race_type: 'road', origin_country: 'de', website: 'https://a', race_date: '20261101', race_dates: ['20261101'] }, 'de');
+  assert.deepEqual(out, { domain_name: 'x', latitude: 52.12346, longitude: 9.1, race_type: 'road', race_dates: ['20261101'] });
+  assert.equal(compactMarker({ domain_name: 'y', origin_country: 'pl' }, 'de').origin_country, 'pl');
+});

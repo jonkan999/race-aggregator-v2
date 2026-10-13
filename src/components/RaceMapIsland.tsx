@@ -387,7 +387,7 @@ export default function RaceMapIsland(props: {
       .then((data) => {
         setAllMarkers(
           (data.markers ?? [])
-            .map((marker) => normalizeMapMarker(marker))
+            .map((marker) => normalizeMapMarker(marker, countryCode.toLowerCase()))
             .filter((marker): marker is MapMarkerRecord => marker != null),
         );
         setLoadError(null);

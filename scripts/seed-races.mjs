@@ -166,6 +166,29 @@ async function main() {
     if (n % 200 === 0) console.warn(`Upserted ${n} races…`);
   }
 
+  // Drop rows for slugs merged away as duplicates (they 308 to the survivor via
+  // config/redirects/merged-duplicate-races.json). Plain upserts never remove them.
+  const redirectsPath = path.join(__dirname, '..', 'config', 'redirects', 'merged-duplicate-races.json');
+  if (fs.existsSync(redirectsPath)) {
+    const seeded = new Set(fallbackLocalRaces.map((r) => r.domain_name));
+    const merged = new Set();
+    for (const r of JSON.parse(fs.readFileSync(redirectsPath, 'utf8')).redirects ?? []) {
+      const slug = String(r.source ?? '').split('/').filter(Boolean).at(-2);
+      if (slug && !seeded.has(slug)) merged.add(slug);
+    }
+    const stale = [...merged];
+    for (let i = 0; i < stale.length; i += 200) {
+      const { data: gone, error: pruneErr } = await sb
+        .from('races')
+        .delete()
+        .eq('country_code', country)
+        .in('domain_name', stale.slice(i, i + 200))
+        .select('domain_name');
+      if (pruneErr) throw pruneErr;
+      if (gone?.length) console.warn(`Pruned ${gone.length} merged duplicate rows for ${country}.`);
+    }
+  }
+
   console.warn(`Done. Upserted ${n} races for ${country}.`);
 }
 
