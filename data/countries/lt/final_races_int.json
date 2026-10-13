@@ -78,16 +78,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -177,16 +177,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -282,17 +282,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -733,22 +733,24 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "ranking_bridge"
+      "ranking_bridge",
+      "https://www.facebook.com/Krosobegimas",
+      "https://www.lbma.lt/index.php?kalendorius&year=2026"
     ],
     "consolidated_ids": [
       "40c3f894-acf6-4339-8980-8849d77acdf7"
@@ -757,83 +759,6 @@
       "9a4db09e-313f-41e1-be46-c3e8e2bb9235"
     ],
     "supplied_at": "20260906",
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "krosas_juodsiliu_ruduo_juodsiliai",
-    "name": "Krosas „Juodšilių ruduo“",
-    "type": "trail",
-    "type_local": "Trailo",
-    "race_dates": [
-      [
-        "20261024",
-        "20261024"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Juodšiliai, Vilniaus rajonas, Lithuania",
-    "latitude": 54.57659899999999,
-    "longitude": 25.2671879,
-    "county": "Vilniaus apskritis",
-    "nearest_city": "Vilnius",
-    "nearby_cities": [
-      "Vilnius"
-    ],
-    "distances": "[\"12\", \"4\", \"0.6\"]",
-    "distance_m": [
-      12000,
-      4000,
-      600
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "12 km, 5 km, 0.6 km",
-    "organizer": "Sporto renginiai",
-    "contact": null,
-    "website": "https://sportorenginiai.lt/lt/juodsiliu-krosas/",
-    "fb_link": "https://www.facebook.com/Krosobegimas/?locale=lt_LT",
-    "ig_link": null,
-    "price_range": "10 EUR (ankstyvoji registracija iki 2026-09-30)",
-    "price_tiers": [],
-    "registration_close_date": "20261024",
-    "registration_url": "https://sportorenginiai.lt/registracija/123",
-    "race_info_url": "https://sportorenginiai.lt/lt/juodsiliu-krosas/",
-    "presumed_organizer_email": "info@sportorenginiai.lt",
-    "website_emails_found": [
-      "info@sportorenginiai.lt",
-      "vidmantas@lbma.lt",
-      "evaldas@sportorenginiai.lt"
-    ],
-    "description": "The Juodšiliai Cross-Country Race is a sports celebration in Vilnius District, held on October 24 in Juodšiliai. The event is organized by the association „Sporto renginiai“ together with the Juodšiliai Eldership of Vilnius District Municipality. The race encourages the local community to be active and promotes athletics and running in Lithuania. Anyone may take part, and the event promotes a healthy lifestyle and identifies athletes across different age groups.",
-    "course_highlights": [
-      "The course is in the town of Juodšiliai, Mokyklos g. 9",
-      "Events: 600 m, 4 km and 12 km cross-country distances",
-      "Participants must wear their race numbers on the front of their shirts"
-    ],
-    "additional": "Race-number collection and registration take place from 10:00 to 11:30. Participants may not transfer their number to another participant, use personal assistance, or bring animals onto the course. Participants must follow the course and officials’ instructions. Protests must be submitted in writing within 30 minutes after the race and are subject to a 30 EUR fee. Changing to a shorter event incurs a 6 EUR fee; changing to a longer event requires payment of the additional entry fee. Event location: Juodšiliai, Vilnius District; events: 600 m, 4 km, 12 km; registration from 10:00 to 11:30; participation is open, subject to special conditions and fees.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.facebook.com/Krosobegimas",
-      "https://www.lbma.lt/index.php?kalendorius&year=2026"
-    ],
-    "consolidated_ids": [
-      "b15ef00b-56a6-41c1-a27a-4a36152a0744"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
     "created_date": "20260906",
     "editors_uid": [],
     "pipeline_log": [],
@@ -983,15 +908,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1163,17 +1088,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1340,16 +1265,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1440,16 +1365,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1525,17 +1450,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1695,17 +1620,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1771,16 +1696,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1876,17 +1801,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1959,16 +1884,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2128,17 +2053,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2214,16 +2139,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2312,16 +2237,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2387,15 +2312,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2463,17 +2388,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2541,17 +2466,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2650,17 +2575,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2672,89 +2597,6 @@
     ],
     "supplied_ids": [
       "ccba804b-c79a-42cd-8f96-9172b9c555a3"
-    ],
-    "supplied_at": "20260906",
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "kaledinis_begimas_3",
-    "name": "Kalėdinis bėgimas",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20261219",
-        "20261219"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Vilnius",
-    "latitude": 54.6871555,
-    "longitude": 25.2796514,
-    "county": "Vilniaus apskritis",
-    "nearest_city": "Vilnius",
-    "nearby_cities": [
-      "Vilnius"
-    ],
-    "distances": "[\"12\", \"6\", \"3\"]",
-    "distance_m": [
-      12000,
-      6000,
-      3000
-    ],
-    "distance_keywords": [
-      "5 km",
-      "3000 metrai"
-    ],
-    "distance_verbose": "12 km, 5 km, 3000 metrai",
-    "organizer": null,
-    "contact": "info@kaledinisbegimas.lt",
-    "website": "https://kaledinisbegimas.lt/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "The Christmas Run is the most beautiful evening run of winter—a chance to welcome Christmas and enjoy unforgettable emotions and the captivating energy of running! This year, we’ll run on December 7 in Vilnius, where participants can enjoy the festive atmosphere and run after dark, as the capital’s streets reveal their true, sparkling Christmas spirit. We invite you to prepare not only Christmas costumes but also glowing accessories that will turn our group of runners into a truly magical Christmas spectacle!",
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
-      "name",
-      "website"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "8482b86b-0ba1-46d1-a5d2-8239b63ad502"
-    ],
-    "supplied_ids": [
-      "9d970407-0a95-424f-97dd-1c36c0166514"
     ],
     "supplied_at": "20260906",
     "created_date": "20260906",
@@ -2943,17 +2785,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3048,16 +2890,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3151,16 +2993,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3229,17 +3071,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3380,17 +3222,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3561,16 +3403,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3657,16 +3499,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3681,6 +3523,83 @@
       "b9418595-cac8-4c24-bbec-006cbf20f076"
     ],
     "supplied_at": "20260906",
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "xxv_begimas_laisves_gyneju_dienai_pamineti",
+    "name": "XXV bėgimas Laisvės gynėjų dienai paminėti",
+    "type": "road",
+    "type_local": "Kelių",
+    "race_dates": [
+      [
+        "20260112",
+        "20260112"
+      ],
+      [
+        "20270111",
+        "20270111"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "20:00",
+    "location": "Klaipėda, Klaipėda County, Lithuania",
+    "latitude": 55.70329479999999,
+    "longitude": 21.1442794,
+    "county": "Klaipėdos apskritis",
+    "nearest_city": "Klaipėda",
+    "nearby_cities": [
+      "Klaipėda"
+    ],
+    "distances": "[\"8\", \"3\"]",
+    "distance_m": [
+      8000,
+      3000
+    ],
+    "distance_keywords": [
+      "3000 metrai"
+    ],
+    "distance_verbose": "8 km, 3000 metrai",
+    "organizer": "Klaipedos sporto renginiai",
+    "contact": null,
+    "website": "https://klaipedossportorenginiai.lt/event/xxv-begimas-laisves-gyneju-dienai-pamineti-klaipedoje/",
+    "fb_link": "https://facebook.com/klaipedossportorenginiai",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": "20270110",
+    "registration_url": "https://forms.gle/YTE9FaifeU9yqbqd7",
+    "race_info_url": "https://klaipedossportorenginiai.lt/event/xxv-begimas-laisves-gyneju-dienai-pamineti-klaipedoje/",
+    "presumed_organizer_email": "renginiai@klaipedoslam.lt",
+    "website_emails_found": [
+      "renginiai@klaipedoslam.lt"
+    ],
+    "description": "The XXV Run Commemorating Freedom Defenders’ Day in Klaipėda is a traditional running event held to honour those who died and fought for Lithuania’s freedom. The event brings together the city’s community and visitors and takes place in Klaipėda on January 18. Participants can choose between two distances: the main 8 km course and a shorter 3 km course for schoolchildren, seniors and anyone who finds the longer course too challenging. The event starts in the evening, and the routes pass through scenic parts of the city, including a cycle path and the Summer Amphitheatre.",
+    "course_highlights": [
+      "The 8 km course follows a cycle path past Klaipėda Summer Amphitheatre, Liepojos Street and H. Manto Street",
+      "Finish near Klaipėda City Municipality (Liepų St. 11)",
+      "The 3 km course starts near Klaipėda Summer Amphitheatre and is intended for schoolchildren and seniors"
+    ],
+    "additional": "Race bibs have an external timing chip. Picking up race bibs in advance is recommended to avoid queues on event day. Bib pickup for 8 km runners is on a bus near the Rotušė, and for 3 km runners it is near the Summer Amphitheatre. Buses depart for the start locations at 19:00. Individual warm-up: 19:45–19:55. The course closes at 21:20. Medals are awarded to the first 900 finishers. The event is organised with buses and community participation; the start is at the Klaipėda Giruliai Radio and TV Tower.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-01-12_XXV_begimas_Laisves_gyneju_dienai_pamineti_rezultatai.xlsx"
+    ],
+    "consolidated_ids": [
+      "4f4a2e72-5721-4f9b-817f-8de3f827a2df"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
     "created_date": "20260906",
     "editors_uid": [],
     "pipeline_log": [],
@@ -3738,17 +3657,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3816,15 +3735,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3845,83 +3764,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "xxv_begimas_laisves_gyneju_dienai_pamineti",
-    "name": "XXV bėgimas Laisvės gynėjų dienai paminėti",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20260112",
-        "20260112"
-      ],
-      [
-        "20270118",
-        "20270118"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "20:00",
-    "location": "Klaipėda, Klaipėda County, Lithuania",
-    "latitude": 55.70329479999999,
-    "longitude": 21.1442794,
-    "county": "Klaipėdos apskritis",
-    "nearest_city": "Klaipėda",
-    "nearby_cities": [
-      "Klaipėda"
-    ],
-    "distances": "[\"8\", \"3\"]",
-    "distance_m": [
-      8000,
-      3000
-    ],
-    "distance_keywords": [
-      "3000 metrai"
-    ],
-    "distance_verbose": "8 km, 3000 metrai",
-    "organizer": "Klaipedos sporto renginiai",
-    "contact": null,
-    "website": "https://klaipedossportorenginiai.lt/event/xxv-begimas-laisves-gyneju-dienai-pamineti-klaipedoje/",
-    "fb_link": "https://facebook.com/klaipedossportorenginiai",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20270110",
-    "registration_url": "https://forms.gle/YTE9FaifeU9yqbqd7",
-    "race_info_url": "https://klaipedossportorenginiai.lt/event/xxv-begimas-laisves-gyneju-dienai-pamineti-klaipedoje/",
-    "presumed_organizer_email": "renginiai@klaipedoslam.lt",
-    "website_emails_found": [
-      "renginiai@klaipedoslam.lt"
-    ],
-    "description": "The XXV Run Commemorating Freedom Defenders’ Day in Klaipėda is a traditional running event held to honour those who died and fought for Lithuania’s freedom. The event brings together the city’s community and visitors and takes place in Klaipėda on January 18. Participants can choose between two distances: the main 8 km course and a shorter 3 km course for schoolchildren, seniors and anyone who finds the longer course too challenging. The event starts in the evening, and the routes pass through scenic parts of the city, including a cycle path and the Summer Amphitheatre.",
-    "course_highlights": [
-      "The 8 km course follows a cycle path past Klaipėda Summer Amphitheatre, Liepojos Street and H. Manto Street",
-      "Finish near Klaipėda City Municipality (Liepų St. 11)",
-      "The 3 km course starts near Klaipėda Summer Amphitheatre and is intended for schoolchildren and seniors"
-    ],
-    "additional": "Race bibs have an external timing chip. Picking up race bibs in advance is recommended to avoid queues on event day. Bib pickup for 8 km runners is on a bus near the Rotušė, and for 3 km runners it is near the Summer Amphitheatre. Buses depart for the start locations at 19:00. Individual warm-up: 19:45–19:55. The course closes at 21:20. Medals are awarded to the first 900 finishers. The event is organised with buses and community participation; the start is at the Klaipėda Giruliai Radio and TV Tower.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.lbma.lt/files/races/2026-01-12_XXV_begimas_Laisves_gyneju_dienai_pamineti_rezultatai.xlsx"
-    ],
-    "consolidated_ids": [
-      "4f4a2e72-5721-4f9b-817f-8de3f827a2df"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "vi_utenos_sporto_arenos_maratonas",
     "name": "VI Utenos sporto arenos maratonas",
     "type": "other",
@@ -3932,8 +3774,8 @@
         "20260201"
       ],
       [
-        "20270207",
-        "20270207"
+        "20270131",
+        "20270131"
       ]
     ],
     "upcoming_dates": [],
@@ -4009,8 +3851,8 @@
         "20260208"
       ],
       [
-        "20270214",
-        "20270214"
+        "20270207",
+        "20270207"
       ]
     ],
     "upcoming_dates": [],
@@ -4086,8 +3928,8 @@
         "20260215"
       ],
       [
-        "20270221",
-        "20270221"
+        "20270214",
+        "20270214"
       ]
     ],
     "upcoming_dates": [],
@@ -4222,8 +4064,8 @@
         "20260216"
       ],
       [
-        "20270222",
-        "20270222"
+        "20270215",
+        "20270215"
       ]
     ],
     "upcoming_dates": [],
@@ -4299,8 +4141,8 @@
         "20260216"
       ],
       [
-        "20270222",
-        "20270222"
+        "20270215",
+        "20270215"
       ]
     ],
     "upcoming_dates": [],
@@ -4406,8 +4248,8 @@
         "20260222"
       ],
       [
-        "20270228",
-        "20270228"
+        "20270221",
+        "20270221"
       ]
     ],
     "upcoming_dates": [],
@@ -4484,8 +4326,8 @@
         "20260311"
       ],
       [
-        "20270317",
-        "20270317"
+        "20270310",
+        "20270310"
       ]
     ],
     "upcoming_dates": [],
@@ -4559,8 +4401,8 @@
         "20260311"
       ],
       [
-        "20270317",
-        "20270317"
+        "20270310",
+        "20270310"
       ]
     ],
     "upcoming_dates": [],
@@ -4656,8 +4498,8 @@
         "20260311"
       ],
       [
-        "20270317",
-        "20270317"
+        "20270310",
+        "20270310"
       ]
     ],
     "upcoming_dates": [],
@@ -4774,8 +4616,8 @@
         "20260315"
       ],
       [
-        "20270321",
-        "20270321"
+        "20270314",
+        "20270314"
       ]
     ],
     "upcoming_dates": [],
@@ -4850,8 +4692,8 @@
         "20260321"
       ],
       [
-        "20270327",
-        "20270327"
+        "20270320",
+        "20270320"
       ]
     ],
     "upcoming_dates": [],
@@ -4930,8 +4772,8 @@
         "20260321"
       ],
       [
-        "20270327",
-        "20270327"
+        "20270320",
+        "20270320"
       ]
     ],
     "upcoming_dates": [],
@@ -5015,8 +4857,8 @@
         "20260328"
       ],
       [
-        "20270403",
-        "20270403"
+        "20270327",
+        "20270327"
       ]
     ],
     "upcoming_dates": [],
@@ -5092,8 +4934,8 @@
         "20260329"
       ],
       [
-        "20270404",
-        "20270404"
+        "20270328",
+        "20270328"
       ]
     ],
     "upcoming_dates": [],
@@ -5249,8 +5091,8 @@
         "20260404"
       ],
       [
-        "20270410",
-        "20270410"
+        "20270403",
+        "20270403"
       ]
     ],
     "upcoming_dates": [],
@@ -5332,8 +5174,8 @@
         "20260411"
       ],
       [
-        "20270417",
-        "20270417"
+        "20270410",
+        "20270410"
       ]
     ],
     "upcoming_dates": [],
@@ -5405,8 +5247,8 @@
         "20260418"
       ],
       [
-        "20270424",
-        "20270424"
+        "20270417",
+        "20270417"
       ]
     ],
     "upcoming_dates": [],
@@ -5476,198 +5318,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "swampman_backyard_ultra_6_by_trailo_kalve",
-    "name": "SwampMan Backyard ultra 6 by Trailo Kalvė",
-    "type": "trail",
-    "type_local": "Trailo",
-    "race_dates": [
-      [
-        "20260501",
-        "20260501"
-      ],
-      [
-        "20270430",
-        "20270430"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Dailidės ežeras, Alytus, Lithuania",
-    "latitude": 54.3859834,
-    "longitude": 24.0765075,
-    "county": "Alytaus apskritis",
-    "nearest_city": "Alytus",
-    "nearby_cities": [
-      "Alytus"
-    ],
-    "distances": "[\"6.7\"]",
-    "distance_m": [
-      6700
-    ],
-    "distance_keywords": [
-      "Backyard Ultra"
-    ],
-    "distance_verbose": "6.7 km, Backyard Ultra",
-    "organizer": "Trailo Kalvė",
-    "contact": null,
-    "website": "https://www.trailokalve.lt/event-details/swampman-backyard-ultra-6-by-trailo-kalve",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "50,00 €",
-    "price_tiers": [
-      {
-        "distance": "SwampMan backyard ultra by TK",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "50,00 €",
-            "deadline": null,
-            "description": "Last one standing wins"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.trailokalve.lt/event-details/swampman-backyard-ultra-6-by-trailo-kalve",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "SwampMan Backyard Ultra 6 by Trailo Kalvė is a unique endurance race in Alytus, near Lake Dailidė. The event invites runners to test their limits on a Backyard Ultra course, a format that makes it easier to reach the 100-mile distance. There will be only one winner, and the challenge is demanding—things seem easy only up to a certain point. It is a great opportunity to experience the true spirit of endurance running and earn DNF status with honour.",
-    "course_highlights": [
-      "Trail run around Lake Dailidė",
-      "Backyard Ultra endurance format, designed for reaching 100 miles",
-      "Race venue in Alytus, on the slopes of Vidzgiris"
-    ],
-    "additional": "The race regulations are available in PDF format. The event takes place in Alytus, near Lake Dailidė. More than 120 participants. The race follows the Backyard Ultra format, in which the winner is the last runner remaining. The event venue is Lake Dailidė in Alytus; the course is approximately 6.7 km long, with wooded and paved sections. Participants may bring their own tent. Car and camper parking is available outside the start area. Food and drinks are available during the event.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.lbma.lt/files/races/2026-05-01_SwampMan_Backyard_ultra_6_by_Trailo_Kalve_rezultatai.pdf"
-    ],
-    "consolidated_ids": [
-      "11678042-e1b0-459e-888f-6ffb02faffa5"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [
-      {
-        "at": "2026-10-12T19:36:39.172381+00:00",
-        "source": "audit_job",
-        "kind": "date_confirmed_from_website",
-        "message": "New race date found on official site (https://www.trailokalve.lt): 2027-04-30 — \"SwampMan Backyard ultra 7 by Trailo Kalvė 04-30, pn Alytus\" (was estimated 2027-05-07)",
-        "website_url": "https://www.trailokalve.lt/event-details/swampman-backyard-ultra-6-by-trailo-kalve",
-        "evidence_url": "https://www.trailokalve.lt",
-        "evidence_quote": "SwampMan Backyard ultra 7 by Trailo Kalvė 04-30, pn Alytus",
-        "previous_estimated_date": "2027-05-07",
-        "confirmed_date": "2027-04-30",
-        "model_confidence": 0.95
-      }
-    ],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "vilnius_trail_run_2026",
-    "name": "Vilnius trail run 2026",
-    "type": "trail",
-    "type_local": "Trailo",
-    "race_dates": [
-      [
-        "20260509",
-        "20260509"
-      ],
-      [
-        "20270501",
-        "20270501"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Vilnius, Vilnius County, Lithuania",
-    "latitude": 54.6871555,
-    "longitude": 25.2796514,
-    "county": "Vilniaus apskritis",
-    "nearest_city": "Vilnius",
-    "nearby_cities": [
-      "Vilnius"
-    ],
-    "distances": "[\"109\", \"108\", \"73\", \"70\", \"42\", \"42\", \"22\", \"21\", \"15\", \"15\", \"4\", \"1.8\"]",
-    "distance_m": [
-      109000,
-      108000,
-      73000,
-      70000,
-      42000,
-      42000,
-      22000,
-      21000,
-      15000,
-      15000,
-      4000,
-      1800
-    ],
-    "distance_keywords": [
-      "100 km",
-      "Maratonas",
-      "Pusmaratonas",
-      "5 km"
-    ],
-    "distance_verbose": "100 km, 100 km, 73 km, 70 km, Maratonas, Maratonas, Pusmaratonas, Pusmaratonas, 15 km, 15 km, 5 km, 1.8 km",
-    "organizer": "VšĮ Vilnius Trail Run",
-    "contact": null,
-    "website": "https://www.vilniustrailrun.lt/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.vilniustrailrun.lt/registracija",
-    "race_info_url": "https://www.vilniustrailrun.lt/trasos/",
-    "presumed_organizer_email": "info@vilniustrailrun.lt",
-    "website_emails_found": [
-      "info@vilniustrailrun.lt"
-    ],
-    "description": "Vilnius Trail Run 2027 invites runners to experience a unique variety of courses in Vilnius’s natural surroundings and urban environment. The event offers routes ranging from 15+ km for beginners to a challenging 108 km course around Vilnius. Participants can enjoy varied terrain, including forest trails, mountain roads, and scenic viewpoints offering unforgettable views of the Lithuanian landscape. It is a great opportunity to test your endurance and discover the city’s nature and culture while running.",
-    "course_highlights": [
-      "Unique routes in Vilnius from 15+ km to 108 km",
-      "Varied terrain: forest trails and mountain roads",
-      "Scenic viewpoints with views of the Lithuanian landscape"
-    ],
-    "additional": "The event takes place at Kalnų Park Stadium, T. Kosciuškos g. 5, Vilnius. The number of participants exceeds 1,000. Organizer: VšĮ, address: Balžio g. 21C-5, Vilnius, telephone: +370 610 24484. The event offers courses featuring forest trails, mountain tracks, and scenic viewpoints; participants can choose from various distances and age groups, including an ultramarathon and children’s races.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.facebook.com/events/949550857905229/",
-      "https://www.lbma.lt/files/races/2026-05-09_Vilnius_trail_run_2026_rezultatai.xlsx",
-      "https://itra.run/Races/RaceDetails/Vilnius.Trail.Run.108KM/2027/119046"
-    ],
-    "consolidated_ids": [
-      "4ff92e3c-9223-4973-8a79-8f0e2ecf8365"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "tradicinis_begimas_baltoji_voke_rudininkai_baltoji_voke",
     "name": "Tradicinis bėgimas Baltoji Vokė - Rūdininkai - Baltoji Vokė",
     "type": "other",
@@ -5678,8 +5328,8 @@
         "20260425"
       ],
       [
-        "20270501",
-        "20270501"
+        "20270424",
+        "20270424"
       ]
     ],
     "upcoming_dates": [],
@@ -5756,8 +5406,8 @@
         "20260426"
       ],
       [
-        "20270502",
-        "20270502"
+        "20270425",
+        "20270425"
       ]
     ],
     "upcoming_dates": [],
@@ -5924,8 +5574,8 @@
         "20260426"
       ],
       [
-        "20270502",
-        "20270502"
+        "20270425",
+        "20270425"
       ]
     ],
     "upcoming_dates": [],
@@ -5998,6 +5648,106 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "swampman_backyard_ultra_6_by_trailo_kalve",
+    "name": "SwampMan Backyard ultra 6 by Trailo Kalvė",
+    "type": "trail",
+    "type_local": "Trailo",
+    "race_dates": [
+      [
+        "20260501",
+        "20260501"
+      ],
+      [
+        "20270430",
+        "20270430"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "10:00",
+    "location": "Dailidės ežeras, Alytus, Lithuania",
+    "latitude": 54.3859834,
+    "longitude": 24.0765075,
+    "county": "Alytaus apskritis",
+    "nearest_city": "Alytus",
+    "nearby_cities": [
+      "Alytus"
+    ],
+    "distances": "[\"6.7\"]",
+    "distance_m": [
+      6700
+    ],
+    "distance_keywords": [
+      "Backyard Ultra"
+    ],
+    "distance_verbose": "6.7 km, Backyard Ultra",
+    "organizer": "Trailo Kalvė",
+    "contact": null,
+    "website": "https://www.trailokalve.lt/event-details/swampman-backyard-ultra-6-by-trailo-kalve",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "50,00 €",
+    "price_tiers": [
+      {
+        "distance": "SwampMan backyard ultra by TK",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "50,00 €",
+            "deadline": null,
+            "description": "Last one standing wins"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.trailokalve.lt/event-details/swampman-backyard-ultra-6-by-trailo-kalve",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "SwampMan Backyard Ultra 6 by Trailo Kalvė is a unique endurance race in Alytus, near Lake Dailidė. The event invites runners to test their limits on a Backyard Ultra course, a format that makes it easier to reach the 100-mile distance. There will be only one winner, and the challenge is demanding—things seem easy only up to a certain point. It is a great opportunity to experience the true spirit of endurance running and earn DNF status with honour.",
+    "course_highlights": [
+      "Trail run around Lake Dailidė",
+      "Backyard Ultra endurance format, designed for reaching 100 miles",
+      "Race venue in Alytus, on the slopes of Vidzgiris"
+    ],
+    "additional": "The race regulations are available in PDF format. The event takes place in Alytus, near Lake Dailidė. More than 120 participants. The race follows the Backyard Ultra format, in which the winner is the last runner remaining. The event venue is Lake Dailidė in Alytus; the course is approximately 6.7 km long, with wooded and paved sections. Participants may bring their own tent. Car and camper parking is available outside the start area. Food and drinks are available during the event.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-05-01_SwampMan_Backyard_ultra_6_by_Trailo_Kalve_rezultatai.pdf"
+    ],
+    "consolidated_ids": [
+      "11678042-e1b0-459e-888f-6ffb02faffa5"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [
+      {
+        "at": "2026-10-12T19:36:39.172381+00:00",
+        "source": "audit_job",
+        "kind": "date_confirmed_from_website",
+        "message": "New race date found on official site (https://www.trailokalve.lt): 2027-04-30 — \"SwampMan Backyard ultra 7 by Trailo Kalvė 04-30, pn Alytus\" (was estimated 2027-05-07)",
+        "website_url": "https://www.trailokalve.lt/event-details/swampman-backyard-ultra-6-by-trailo-kalve",
+        "evidence_url": "https://www.trailokalve.lt",
+        "evidence_quote": "SwampMan Backyard ultra 7 by Trailo Kalvė 04-30, pn Alytus",
+        "previous_estimated_date": "2027-05-07",
+        "confirmed_date": "2027-04-30",
+        "model_confidence": 0.95
+      }
+    ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "63_asis_tradicinis_begimas_anyksciai_puntuko_akmuo_anyksciai",
     "name": "63-asis tradicinis bėgimas „Anykščiai - Puntuko akmuo - Anykščiai“",
     "type": "trail",
@@ -6008,8 +5758,8 @@
         "20260501"
       ],
       [
-        "20270507",
-        "20270507"
+        "20270430",
+        "20270430"
       ]
     ],
     "upcoming_dates": [],
@@ -6125,8 +5875,8 @@
         "20260501"
       ],
       [
-        "20270507",
-        "20270507"
+        "20270430",
+        "20270430"
       ]
     ],
     "upcoming_dates": [],
@@ -6194,6 +5944,96 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "vilnius_trail_run_2026",
+    "name": "Vilnius trail run 2026",
+    "type": "trail",
+    "type_local": "Trailo",
+    "race_dates": [
+      [
+        "20260509",
+        "20260509"
+      ],
+      [
+        "20270501",
+        "20270501"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Vilnius, Vilnius County, Lithuania",
+    "latitude": 54.6871555,
+    "longitude": 25.2796514,
+    "county": "Vilniaus apskritis",
+    "nearest_city": "Vilnius",
+    "nearby_cities": [
+      "Vilnius"
+    ],
+    "distances": "[\"109\", \"108\", \"73\", \"70\", \"42\", \"22\", \"21\", \"15\", \"4\", \"1.8\"]",
+    "distance_m": [
+      109000,
+      108000,
+      73000,
+      70000,
+      42000,
+      22000,
+      21000,
+      15000,
+      4000,
+      1800
+    ],
+    "distance_keywords": [
+      "100 km",
+      "Maratonas",
+      "Pusmaratonas",
+      "5 km"
+    ],
+    "distance_verbose": "100 km, 100 km, 73 km, 70 km, Maratonas, Pusmaratonas, Pusmaratonas, 15 km, 5 km, 1.8 km",
+    "organizer": "VšĮ Vilnius Trail Run",
+    "contact": null,
+    "website": "https://www.vilniustrailrun.lt/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.vilniustrailrun.lt/registracija",
+    "race_info_url": "https://www.vilniustrailrun.lt/trasos/",
+    "presumed_organizer_email": "info@vilniustrailrun.lt",
+    "website_emails_found": [
+      "info@vilniustrailrun.lt"
+    ],
+    "description": "Vilnius Trail Run 2027 invites runners to experience a unique variety of courses in Vilnius’s natural surroundings and urban environment. The event offers routes ranging from 15+ km for beginners to a challenging 108 km course around Vilnius. Participants can enjoy varied terrain, including forest trails, mountain roads, and scenic viewpoints offering unforgettable views of the Lithuanian landscape. It is a great opportunity to test your endurance and discover the city’s nature and culture while running.",
+    "course_highlights": [
+      "Unique routes in Vilnius from 15+ km to 108 km",
+      "Varied terrain: forest trails and mountain roads",
+      "Scenic viewpoints with views of the Lithuanian landscape"
+    ],
+    "additional": "The event takes place at Kalnų Park Stadium, T. Kosciuškos g. 5, Vilnius. The number of participants exceeds 1,000. Organizer: VšĮ, address: Balžio g. 21C-5, Vilnius, telephone: +370 610 24484. The event offers courses featuring forest trails, mountain tracks, and scenic viewpoints; participants can choose from various distances and age groups, including an ultramarathon and children’s races.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.facebook.com/events/949550857905229/",
+      "https://www.lbma.lt/files/races/2026-05-09_Vilnius_trail_run_2026_rezultatai.xlsx",
+      "https://itra.run/Races/RaceDetails/Vilnius.Trail.Run.108KM/2027/119046"
+    ],
+    "consolidated_ids": [
+      "4ff92e3c-9223-4973-8a79-8f0e2ecf8365"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "vilniaus_pavasario_maratonas",
     "name": "Vilniaus pavasario maratonas",
     "type": "road",
@@ -6204,8 +6044,8 @@
         "20260502"
       ],
       [
-        "20270508",
-        "20270508"
+        "20270501",
+        "20270501"
       ]
     ],
     "upcoming_dates": [],
@@ -6281,8 +6121,8 @@
         "20260509"
       ],
       [
-        "20270515",
-        "20270515"
+        "20270508",
+        "20270508"
       ]
     ],
     "upcoming_dates": [],
@@ -6365,8 +6205,8 @@
         "20260510"
       ],
       [
-        "20270516",
-        "20270516"
+        "20270509",
+        "20270509"
       ]
     ],
     "upcoming_dates": [],
@@ -6435,8 +6275,8 @@
         "20260510"
       ],
       [
-        "20270516",
-        "20270516"
+        "20270509",
+        "20270509"
       ]
     ],
     "upcoming_dates": [],
@@ -6543,8 +6383,8 @@
         "20260510"
       ],
       [
-        "20270516",
-        "20270516"
+        "20270509",
+        "20270509"
       ]
     ],
     "upcoming_dates": [],
@@ -6618,8 +6458,8 @@
         "20260515"
       ],
       [
-        "20270521",
-        "20270521"
+        "20270514",
+        "20270514"
       ]
     ],
     "upcoming_dates": [],
@@ -6740,8 +6580,8 @@
         "20260516"
       ],
       [
-        "20270522",
-        "20270522"
+        "20270515",
+        "20270515"
       ]
     ],
     "upcoming_dates": [],
@@ -6816,8 +6656,8 @@
         "20260519"
       ],
       [
-        "20270525",
-        "20270525"
+        "20270518",
+        "20270518"
       ]
     ],
     "upcoming_dates": [],
@@ -6896,8 +6736,8 @@
         "20260520"
       ],
       [
-        "20270526",
-        "20270526"
+        "20270519",
+        "20270519"
       ]
     ],
     "upcoming_dates": [],
@@ -6971,8 +6811,8 @@
         "20260522"
       ],
       [
-        "20270528",
-        "20270528"
+        "20270521",
+        "20270521"
       ]
     ],
     "upcoming_dates": [],
@@ -7046,8 +6886,8 @@
         "20260523"
       ],
       [
-        "20270529",
-        "20270529"
+        "20270522",
+        "20270522"
       ]
     ],
     "upcoming_dates": [],
@@ -7125,8 +6965,8 @@
         "20260523"
       ],
       [
-        "20270529",
-        "20270529"
+        "20270522",
+        "20270522"
       ]
     ],
     "upcoming_dates": [],
@@ -7201,8 +7041,8 @@
         "20260523"
       ],
       [
-        "20270529",
-        "20270529"
+        "20270522",
+        "20270522"
       ]
     ],
     "upcoming_dates": [],
@@ -7279,8 +7119,8 @@
         "20260524"
       ],
       [
-        "20270530",
-        "20270530"
+        "20270523",
+        "20270523"
       ]
     ],
     "upcoming_dates": [],
@@ -7339,6 +7179,158 @@
     ],
     "consolidated_ids": [
       "d37f1a2d-c72b-4c9e-8314-487ec8e0328a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "begimas_kutaliai_kaltinenai",
+    "name": "Bėgimas „Kutaliai – Kaltinėnai“",
+    "type": "trail",
+    "type_local": "Trailo",
+    "race_dates": [
+      [
+        "20260527",
+        "20260527"
+      ],
+      [
+        "20270526",
+        "20270526"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Kaltinėnai, Šilalės rajonas, Lithuania",
+    "latitude": 55.56482399999999,
+    "longitude": 22.454554,
+    "county": "Tauragės apskritis",
+    "nearest_city": "Šiauliai",
+    "nearby_cities": [],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": "Kaltinėnų Aleksandro Stulginskio gimnazija",
+    "contact": null,
+    "website": "https://www.lbmaregistracija.lt/kaltinenai/nuostatai/",
+    "fb_link": "https://www.facebook.com/stulginskieciai/posts/kaip-ir-kasmet-gegu%C5%BE%C4%97s-viduryje-min%C4%97dami-steigiamojo-seimo-dien%C4%85-ir-pagerbdami-p",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": "20260525",
+    "registration_url": "https://www.lbmaregistracija.lt/kaltinenai/",
+    "race_info_url": "https://www.lbmaregistracija.lt/kaltinenai/nuostatai/",
+    "presumed_organizer_email": "info@lbmaregistracija.lt",
+    "website_emails_found": [
+      "info@lbmaregistracija.lt"
+    ],
+    "description": "The “Kutaliai–Kaltinėnai” Run is a traditional cross-country race held to commemorate the 141st anniversary of the birth of Aleksandras Stulginskis, President of the Republic of Lithuania, and Constituent Assembly Day. The competition takes place in hilly terrain, promoting physical activity and respect for sport. The start is in Kutaliai village, and the finish is at the stadium of Aleksandras Stulginskis Gymnasium in Kaltinėnai, Šilalė District. The event is intended for school athletes from cities and districts, as well as anyone else who meets the health requirements.",
+    "course_highlights": [
+      "Start in Kutaliai village; finish at Kaltinėnai Gymnasium stadium",
+      "Cross-country race over hilly terrain",
+      "Held in memory of Aleksandras Stulginskis, President of the Republic of Lithuania"
+    ],
+    "additional": "Registration is open until 9:30 a.m. on race day at Aleksandras Stulginskis Gymnasium in Kaltinėnai. Participants must provide a doctor’s certificate or an entry form with a doctor’s approval. All participants receive commemorative medals, and the group winners receive medals for first, second, and third place. Athletes of various ages take part in the event; registration and health checks are required, and winners and participants are awarded.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-05-27_Begimas_Kutaliai_Kaltinenai_rezultatai.xlsx"
+    ],
+    "consolidated_ids": [
+      "1c2bb92c-6a2f-4285-8c6f-62cda866938d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "vilties_begimas",
+    "name": "„Vilties bėgimas“",
+    "type": "road",
+    "type_local": "Kelių",
+    "race_dates": [
+      [
+        "20260530",
+        "20260530"
+      ],
+      [
+        "20270529",
+        "20270529"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "09:00",
+    "location": "Klaipėdos senamiestis ir Tiltų g. 26, Klaipėda, Lithuania",
+    "latitude": 55.70726029999999,
+    "longitude": 21.137867,
+    "county": "Klaipėdos apskritis",
+    "nearest_city": "Klaipėda",
+    "nearby_cities": [
+      "Klaipėda"
+    ],
+    "distances": "[\"42.2\", \"21.1\"]",
+    "distance_m": [
+      42200,
+      21100
+    ],
+    "distance_keywords": [
+      "Maratonas",
+      "Pusmaratonas"
+    ],
+    "distance_verbose": "Maratonas, Pusmaratonas",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.viltiesbegimas.lt/",
+    "fb_link": "https://www.facebook.com/viltiesbegimas/?locale=lt_LT",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.viltiesbegimas.lt/svarbu/kaip-registruotis/",
+    "race_info_url": "https://www.viltiesbegimas.lt/apie-mus/",
+    "presumed_organizer_email": "viltiesbegimas@gmail.com",
+    "website_emails_found": [
+      "viltiesbegimas@gmail.com"
+    ],
+    "description": "The Run of Hope is a civic initiative dedicated to fostering a culture of solidarity and hope in support of people with cancer and their loved ones. The event takes place in Klaipėda Old Town and offers distances ranging from 0.2 km for children to the full marathon of 42.195 km. The race follows looped courses, allowing participants to enjoy city views while contributing to an important social mission. This traditional event brings athletes and the community together for a shared goal.",
+    "course_highlights": [
+      "Looped courses in Klaipėda Old Town",
+      "Marathon: 8 laps; half marathon: 4 laps",
+      "Distances for everyone, from children’s races to the marathon"
+    ],
+    "additional": "Participant registration takes place online until May 29 at 9 p.m. Early registration and race-pack pickup are available in Klaipėda from May 28–30. The event includes special courses for children, seniors, people with disabilities, and their supporters. The start and finish are at Tiltų g. 26, Klaipėda. The event will take place on June 5, 2027, in Klaipėda; the start location is the Church of St. Francis of Assisi in Klaipėda. Participants can register online and on site, and the event also includes other activities related to health and social well-being.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-05-30_Vilties_begimas_rezultatai.xlsx"
+    ],
+    "consolidated_ids": [
+      "369b44ce-0a44-4e68-8e24-18ef96eda960"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -7453,80 +7445,6 @@
     ],
     "consolidated_ids": [
       "a5f682d3-22d3-42c0-ab83-803805da3275"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "begimas_kutaliai_kaltinenai",
-    "name": "Bėgimas „Kutaliai – Kaltinėnai“",
-    "type": "trail",
-    "type_local": "Trailo",
-    "race_dates": [
-      [
-        "20260527",
-        "20260527"
-      ],
-      [
-        "20270602",
-        "20270602"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "10:00",
-    "location": "Kaltinėnai, Šilalės rajonas, Lithuania",
-    "latitude": 55.56482399999999,
-    "longitude": 22.454554,
-    "county": "Tauragės apskritis",
-    "nearest_city": "Šiauliai",
-    "nearby_cities": [],
-    "distances": "[\"10\"]",
-    "distance_m": [
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": "Kaltinėnų Aleksandro Stulginskio gimnazija",
-    "contact": null,
-    "website": "https://www.lbmaregistracija.lt/kaltinenai/nuostatai/",
-    "fb_link": "https://www.facebook.com/stulginskieciai/posts/kaip-ir-kasmet-gegu%C5%BE%C4%97s-viduryje-min%C4%97dami-steigiamojo-seimo-dien%C4%85-ir-pagerbdami-p",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20260525",
-    "registration_url": "https://www.lbmaregistracija.lt/kaltinenai/",
-    "race_info_url": "https://www.lbmaregistracija.lt/kaltinenai/nuostatai/",
-    "presumed_organizer_email": "info@lbmaregistracija.lt",
-    "website_emails_found": [
-      "info@lbmaregistracija.lt"
-    ],
-    "description": "The “Kutaliai–Kaltinėnai” Run is a traditional cross-country race held to commemorate the 141st anniversary of the birth of Aleksandras Stulginskis, President of the Republic of Lithuania, and Constituent Assembly Day. The competition takes place in hilly terrain, promoting physical activity and respect for sport. The start is in Kutaliai village, and the finish is at the stadium of Aleksandras Stulginskis Gymnasium in Kaltinėnai, Šilalė District. The event is intended for school athletes from cities and districts, as well as anyone else who meets the health requirements.",
-    "course_highlights": [
-      "Start in Kutaliai village; finish at Kaltinėnai Gymnasium stadium",
-      "Cross-country race over hilly terrain",
-      "Held in memory of Aleksandras Stulginskis, President of the Republic of Lithuania"
-    ],
-    "additional": "Registration is open until 9:30 a.m. on race day at Aleksandras Stulginskis Gymnasium in Kaltinėnai. Participants must provide a doctor’s certificate or an entry form with a doctor’s approval. All participants receive commemorative medals, and the group winners receive medals for first, second, and third place. Athletes of various ages take part in the event; registration and health checks are required, and winners and participants are awarded.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.lbma.lt/files/races/2026-05-27_Begimas_Kutaliai_Kaltinenai_rezultatai.xlsx"
-    ],
-    "consolidated_ids": [
-      "1c2bb92c-6a2f-4285-8c6f-62cda866938d"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -7742,84 +7660,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "vilties_begimas",
-    "name": "„Vilties bėgimas“",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20260530",
-        "20260530"
-      ],
-      [
-        "20270605",
-        "20270605"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "09:00",
-    "location": "Klaipėdos senamiestis ir Tiltų g. 26, Klaipėda, Lithuania",
-    "latitude": 55.70726029999999,
-    "longitude": 21.137867,
-    "county": "Klaipėdos apskritis",
-    "nearest_city": "Klaipėda",
-    "nearby_cities": [
-      "Klaipėda"
-    ],
-    "distances": "[\"42.2\", \"21.1\"]",
-    "distance_m": [
-      42200,
-      21100
-    ],
-    "distance_keywords": [
-      "Maratonas",
-      "Pusmaratonas"
-    ],
-    "distance_verbose": "Maratonas, Pusmaratonas",
-    "organizer": null,
-    "contact": null,
-    "website": "https://www.viltiesbegimas.lt/",
-    "fb_link": "https://www.facebook.com/viltiesbegimas/?locale=lt_LT",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.viltiesbegimas.lt/svarbu/kaip-registruotis/",
-    "race_info_url": "https://www.viltiesbegimas.lt/apie-mus/",
-    "presumed_organizer_email": "viltiesbegimas@gmail.com",
-    "website_emails_found": [
-      "viltiesbegimas@gmail.com"
-    ],
-    "description": "The Run of Hope is a civic initiative dedicated to fostering a culture of solidarity and hope in support of people with cancer and their loved ones. The event takes place in Klaipėda Old Town and offers distances ranging from 0.2 km for children to the full marathon of 42.195 km. The race follows looped courses, allowing participants to enjoy city views while contributing to an important social mission. This traditional event brings athletes and the community together for a shared goal.",
-    "course_highlights": [
-      "Looped courses in Klaipėda Old Town",
-      "Marathon: 8 laps; half marathon: 4 laps",
-      "Distances for everyone, from children’s races to the marathon"
-    ],
-    "additional": "Participant registration takes place online until May 29 at 9 p.m. Early registration and race-pack pickup are available in Klaipėda from May 28–30. The event includes special courses for children, seniors, people with disabilities, and their supporters. The start and finish are at Tiltų g. 26, Klaipėda. The event will take place on June 5, 2027, in Klaipėda; the start location is the Church of St. Francis of Assisi in Klaipėda. Participants can register online and on site, and the event also includes other activities related to health and social well-being.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.lbma.lt/files/races/2026-05-30_Vilties_begimas_rezultatai.xlsx"
-    ],
-    "consolidated_ids": [
-      "369b44ce-0a44-4e68-8e24-18ef96eda960"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "olimpines_dienos_begimo_renginiai",
     "name": "Olimpinės dienos bėgimo renginiai",
     "type": "other",
@@ -7830,8 +7670,8 @@
         "20260606"
       ],
       [
-        "20270612",
-        "20270612"
+        "20270605",
+        "20270605"
       ]
     ],
     "upcoming_dates": [],
@@ -7904,8 +7744,8 @@
         "20260607"
       ],
       [
-        "20270613",
-        "20270613"
+        "20270606",
+        "20270606"
       ]
     ],
     "upcoming_dates": [],
@@ -7978,8 +7818,8 @@
         "20260607"
       ],
       [
-        "20270613",
-        "20270613"
+        "20270606",
+        "20270606"
       ]
     ],
     "upcoming_dates": [],
@@ -8110,8 +7950,8 @@
         "20260613"
       ],
       [
-        "20270619",
-        "20270619"
+        "20270612",
+        "20270612"
       ]
     ],
     "upcoming_dates": [],
@@ -8203,85 +8043,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "mano_mama_juda_gelgaudiskio_trail_spalvu_begimas_2026",
-    "name": "Mano MAMA juda – Gelgaudiškio TRAIL spalvų bėgimas 2026",
-    "type": "trail",
-    "type_local": "Trailo",
-    "race_dates": [
-      [
-        "20260621",
-        "20260621"
-      ],
-      [
-        "20270620",
-        "20270620"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Gelgaudiškis, Šakių r., Lithuania",
-    "latitude": 55.079978,
-    "longitude": 22.97751,
-    "county": "Marijampolės apskritis",
-    "nearest_city": "Kaunas",
-    "nearby_cities": [],
-    "distances": "[\"10\", \"5\", \"0.4\"]",
-    "distance_m": [
-      10000,
-      5000,
-      400
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km, 0.4 km",
-    "organizer": "Asociacija „Mano MAMA juda“",
-    "contact": null,
-    "website": "https://www.lbmaregistracija.lt/manomamajuda/",
-    "fb_link": "https://www.facebook.com/events/gelgaudiskis/-mano-mama-juda-gelgaudi%C5%A1kio-trail-spalv%C5%B3-b%C4%97gimas-2026-/26331563759849311/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20260621",
-    "registration_url": "https://www.lbmaregistracija.lt/manomamajuda/",
-    "race_info_url": "https://www.lbmaregistracija.lt/manomamajuda/nuostatai/",
-    "presumed_organizer_email": "manomamajuda@gmail.com",
-    "website_emails_found": [
-      "info@lbmaregistracija.lt",
-      "manomamajuda@gmail.com"
-    ],
-    "description": "Mano MAMA juda - Gelgaudiškio TRAIL Color Run 2026 is an event for families and running enthusiasts, held in Gelgaudiškis Manor Park and the surrounding area. The event aims to promote running in the Šakiai District and encourage physical activity. The course includes forest trails and asphalt, while color stations along the route add extra fun for participants. The event takes place on June 21 and offers a 400 m children’s run and 5 km and 10 km distances.",
-    "course_highlights": [
-      "The 5 km loop is mainly on forest trails",
-      "The 10 km distance consists of two 5 km loops",
-      "Course surface: forest trails and asphalt"
-    ],
-    "additional": "Race bibs are distributed from 9:00 to 10:00. The 400 m children’s run starts at 10:00, and the 5 km and 10 km distances start at 10:30. The awards ceremony is scheduled for 12:00. Minors must have written consent from a parent or guardian. Participants agree that organizers may use photos and video footage taken during the event for marketing purposes. The event includes a color run, various distances, challenges, and varied terrain. Participants’ results are recorded using a professional timing system, but the most important things are the experience and emotions.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.lbma.lt/files/races/2026-06-21_Mano_MAMA_juda_Gelgaudiskio_TRAIL_spalvu_begimas_2026_rezultatai.xlsx",
-      "https://www.lbma.lt/index.php?kalendorius&year=2027"
-    ],
-    "consolidated_ids": [
-      "1141720c-71f1-462d-88b0-41408cfa834b"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "alytaus_maratonas_2026",
     "name": "Alytaus maratonas 2026",
     "type": "road",
@@ -8292,8 +8053,8 @@
         "20260614"
       ],
       [
-        "20270620",
-        "20270620"
+        "20270613",
+        "20270613"
       ]
     ],
     "upcoming_dates": [],
@@ -8370,8 +8131,8 @@
         "20260616"
       ],
       [
-        "20270622",
-        "20270622"
+        "20270615",
+        "20270615"
       ]
     ],
     "upcoming_dates": [],
@@ -8450,8 +8211,8 @@
         "20260620"
       ],
       [
-        "20270626",
-        "20270626"
+        "20270619",
+        "20270619"
       ]
     ],
     "upcoming_dates": [],
@@ -8531,8 +8292,8 @@
         "20260620"
       ],
       [
-        "20270626",
-        "20270626"
+        "20270619",
+        "20270619"
       ]
     ],
     "upcoming_dates": [],
@@ -8602,6 +8363,85 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "mano_mama_juda_gelgaudiskio_trail_spalvu_begimas_2026",
+    "name": "Mano MAMA juda – Gelgaudiškio TRAIL spalvų bėgimas 2026",
+    "type": "trail",
+    "type_local": "Trailo",
+    "race_dates": [
+      [
+        "20260621",
+        "20260621"
+      ],
+      [
+        "20270620",
+        "20270620"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "10:00",
+    "location": "Gelgaudiškis, Šakių r., Lithuania",
+    "latitude": 55.079978,
+    "longitude": 22.97751,
+    "county": "Marijampolės apskritis",
+    "nearest_city": "Kaunas",
+    "nearby_cities": [],
+    "distances": "[\"10\", \"5\", \"0.4\"]",
+    "distance_m": [
+      10000,
+      5000,
+      400
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 0.4 km",
+    "organizer": "Asociacija „Mano MAMA juda“",
+    "contact": null,
+    "website": "https://www.lbmaregistracija.lt/manomamajuda/",
+    "fb_link": "https://www.facebook.com/events/gelgaudiskis/-mano-mama-juda-gelgaudi%C5%A1kio-trail-spalv%C5%B3-b%C4%97gimas-2026-/26331563759849311/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": "20260621",
+    "registration_url": "https://www.lbmaregistracija.lt/manomamajuda/",
+    "race_info_url": "https://www.lbmaregistracija.lt/manomamajuda/nuostatai/",
+    "presumed_organizer_email": "manomamajuda@gmail.com",
+    "website_emails_found": [
+      "info@lbmaregistracija.lt",
+      "manomamajuda@gmail.com"
+    ],
+    "description": "Mano MAMA juda - Gelgaudiškio TRAIL Color Run 2026 is an event for families and running enthusiasts, held in Gelgaudiškis Manor Park and the surrounding area. The event aims to promote running in the Šakiai District and encourage physical activity. The course includes forest trails and asphalt, while color stations along the route add extra fun for participants. The event takes place on June 21 and offers a 400 m children’s run and 5 km and 10 km distances.",
+    "course_highlights": [
+      "The 5 km loop is mainly on forest trails",
+      "The 10 km distance consists of two 5 km loops",
+      "Course surface: forest trails and asphalt"
+    ],
+    "additional": "Race bibs are distributed from 9:00 to 10:00. The 400 m children’s run starts at 10:00, and the 5 km and 10 km distances start at 10:30. The awards ceremony is scheduled for 12:00. Minors must have written consent from a parent or guardian. Participants agree that organizers may use photos and video footage taken during the event for marketing purposes. The event includes a color run, various distances, challenges, and varied terrain. Participants’ results are recorded using a professional timing system, but the most important things are the experience and emotions.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-06-21_Mano_MAMA_juda_Gelgaudiskio_TRAIL_spalvu_begimas_2026_rezultatai.xlsx",
+      "https://www.lbma.lt/index.php?kalendorius&year=2027"
+    ],
+    "consolidated_ids": [
+      "1141720c-71f1-462d-88b0-41408cfa834b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "55_asis_begimas_puse_maratono_aplink_elektrenu_marias",
     "name": "55-asis bėgimas – pusė maratono „Aplink Elektrėnų marias“",
     "type": "road",
@@ -8612,8 +8452,8 @@
         "20260621"
       ],
       [
-        "20270627",
-        "20270627"
+        "20270620",
+        "20270620"
       ]
     ],
     "upcoming_dates": [],
@@ -8686,8 +8526,8 @@
         "20260622"
       ],
       [
-        "20270628",
-        "20270628"
+        "20270621",
+        "20270621"
       ]
     ],
     "upcoming_dates": [],
@@ -8762,8 +8602,8 @@
         "20260623"
       ],
       [
-        "20270629",
-        "20270629"
+        "20270622",
+        "20270622"
       ]
     ],
     "upcoming_dates": [],
@@ -8849,8 +8689,8 @@
         "20260706"
       ],
       [
-        "20270712",
-        "20270712"
+        "20270705",
+        "20270705"
       ]
     ],
     "upcoming_dates": [],
@@ -8960,8 +8800,8 @@
         "20260712"
       ],
       [
-        "20270718",
-        "20270718"
+        "20270711",
+        "20270711"
       ]
     ],
     "upcoming_dates": [],
@@ -9043,8 +8883,8 @@
         "20260715"
       ],
       [
-        "20270721",
-        "20270721"
+        "20270714",
+        "20270714"
       ]
     ],
     "upcoming_dates": [],
@@ -9117,8 +8957,8 @@
         "20260718"
       ],
       [
-        "20270724",
-        "20270724"
+        "20270717",
+        "20270717"
       ]
     ],
     "upcoming_dates": [],
@@ -9196,8 +9036,8 @@
         "20260726"
       ],
       [
-        "20270801",
-        "20270801"
+        "20270725",
+        "20270725"
       ]
     ],
     "upcoming_dates": [],
@@ -9284,8 +9124,8 @@
         "20260726"
       ],
       [
-        "20270801",
-        "20270801"
+        "20270725",
+        "20270725"
       ]
     ],
     "upcoming_dates": [],
@@ -9366,8 +9206,8 @@
         "20260808"
       ],
       [
-        "20270814",
-        "20270814"
+        "20270807",
+        "20270807"
       ]
     ],
     "upcoming_dates": [],
@@ -9443,8 +9283,8 @@
         "20260808"
       ],
       [
-        "20270814",
-        "20270814"
+        "20270807",
+        "20270807"
       ]
     ],
     "upcoming_dates": [],
@@ -9520,8 +9360,8 @@
         "20260808"
       ],
       [
-        "20270814",
-        "20270814"
+        "20270807",
+        "20270807"
       ]
     ],
     "upcoming_dates": [],
@@ -9609,8 +9449,8 @@
         "20260809"
       ],
       [
-        "20270815",
-        "20270815"
+        "20270808",
+        "20270808"
       ]
     ],
     "upcoming_dates": [],
@@ -9689,8 +9529,8 @@
         "20260812"
       ],
       [
-        "20270818",
-        "20270818"
+        "20270811",
+        "20270811"
       ]
     ],
     "upcoming_dates": [],
@@ -9766,8 +9606,8 @@
         "20260815"
       ],
       [
-        "20270821",
-        "20270821"
+        "20270814",
+        "20270814"
       ]
     ],
     "upcoming_dates": [],
@@ -9845,8 +9685,8 @@
         "20260821"
       ],
       [
-        "20270827",
-        "20270827"
+        "20270820",
+        "20270820"
       ]
     ],
     "upcoming_dates": [],
@@ -9923,8 +9763,8 @@
         "20260822"
       ],
       [
-        "20270828",
-        "20270828"
+        "20270821",
+        "20270821"
       ]
     ],
     "upcoming_dates": [],
@@ -10000,8 +9840,8 @@
         "20260828"
       ],
       [
-        "20270903",
-        "20270903"
+        "20270827",
+        "20270827"
       ]
     ],
     "upcoming_dates": [],
@@ -10080,8 +9920,8 @@
         "20260829"
       ],
       [
-        "20270904",
-        "20270904"
+        "20270828",
+        "20270828"
       ]
     ],
     "upcoming_dates": [],
@@ -10226,8 +10066,8 @@
         "20260829"
       ],
       [
-        "20270904",
-        "20270904"
+        "20270828",
+        "20270828"
       ]
     ],
     "upcoming_dates": [],
@@ -10307,8 +10147,8 @@
         "20260830"
       ],
       [
-        "20270905",
-        "20270905"
+        "20270829",
+        "20270829"
       ]
     ],
     "upcoming_dates": [],
@@ -10385,8 +10225,8 @@
         "20260902"
       ],
       [
-        "20270908",
-        "20270908"
+        "20270901",
+        "20270901"
       ]
     ],
     "upcoming_dates": [],
@@ -10449,8 +10289,8 @@
         "20260903"
       ],
       [
-        "20270909",
-        "20270909"
+        "20270902",
+        "20270902"
       ]
     ],
     "upcoming_dates": [],
@@ -10513,8 +10353,8 @@
         "20260903"
       ],
       [
-        "20270909",
-        "20270909"
+        "20270902",
+        "20270902"
       ]
     ],
     "upcoming_dates": [],
@@ -10580,8 +10420,8 @@
         "20260905"
       ],
       [
-        "20270911",
-        "20270911"
+        "20270904",
+        "20270904"
       ]
     ],
     "upcoming_dates": [],
@@ -10646,8 +10486,8 @@
         "20260905"
       ],
       [
-        "20270911",
-        "20270911"
+        "20270904",
+        "20270904"
       ]
     ],
     "upcoming_dates": [],
@@ -10717,8 +10557,8 @@
         "20260905"
       ],
       [
-        "20270911",
-        "20270911"
+        "20270904",
+        "20270904"
       ]
     ],
     "upcoming_dates": [],
@@ -10783,8 +10623,8 @@
         "20260906"
       ],
       [
-        "20270912",
-        "20270912"
+        "20270905",
+        "20270905"
       ]
     ],
     "upcoming_dates": [],
@@ -10856,8 +10696,8 @@
         "20260909"
       ],
       [
-        "20270915",
-        "20270915"
+        "20270908",
+        "20270908"
       ]
     ],
     "upcoming_dates": [],
@@ -10931,8 +10771,8 @@
         "20260913"
       ],
       [
-        "20270919",
-        "20270919"
+        "20270912",
+        "20270912"
       ]
     ],
     "upcoming_dates": [],
@@ -11014,8 +10854,8 @@
         "20260913"
       ],
       [
-        "20270919",
-        "20270919"
+        "20270912",
+        "20270912"
       ]
     ],
     "upcoming_dates": [],
@@ -11090,8 +10930,8 @@
         "20260919"
       ],
       [
-        "20270925",
-        "20270925"
+        "20270918",
+        "20270918"
       ]
     ],
     "upcoming_dates": [],
@@ -11166,8 +11006,8 @@
         "20260919"
       ],
       [
-        "20270925",
-        "20270925"
+        "20270918",
+        "20270918"
       ]
     ],
     "upcoming_dates": [],
@@ -11325,8 +11165,8 @@
         "20260920"
       ],
       [
-        "20270926",
-        "20270926"
+        "20270919",
+        "20270919"
       ]
     ],
     "upcoming_dates": [],
@@ -11419,8 +11259,8 @@
         "20260925"
       ],
       [
-        "20271001",
-        "20271001"
+        "20270924",
+        "20270924"
       ]
     ],
     "upcoming_dates": [],
@@ -11499,8 +11339,8 @@
         "20260925"
       ],
       [
-        "20271001",
-        "20271001"
+        "20270924",
+        "20270924"
       ]
     ],
     "upcoming_dates": [],
@@ -11577,8 +11417,8 @@
         "20260926"
       ],
       [
-        "20271002",
-        "20271002"
+        "20270925",
+        "20270925"
       ]
     ],
     "upcoming_dates": [],
@@ -11654,8 +11494,8 @@
         "20260926"
       ],
       [
-        "20271002",
-        "20271002"
+        "20270925",
+        "20270925"
       ]
     ],
     "upcoming_dates": [],
@@ -11729,8 +11569,8 @@
         "20260926"
       ],
       [
-        "20271002",
-        "20271002"
+        "20270925",
+        "20270925"
       ]
     ],
     "upcoming_dates": [],
@@ -11852,8 +11692,8 @@
         "20260926"
       ],
       [
-        "20271002",
-        "20271002"
+        "20270925",
+        "20270925"
       ]
     ],
     "upcoming_dates": [],
@@ -11932,8 +11772,8 @@
         "20260930"
       ],
       [
-        "20271006",
-        "20271006"
+        "20270929",
+        "20270929"
       ]
     ],
     "upcoming_dates": [],
@@ -12026,8 +11866,8 @@
         "20261003"
       ],
       [
-        "20271009",
-        "20271009"
+        "20271002",
+        "20271002"
       ]
     ],
     "upcoming_dates": [],
@@ -12094,125 +11934,6 @@
     ],
     "consolidated_ids": [
       "4d9aba27-f17e-4be5-b805-a2866fad3828"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "pink_run_su_anteja_kaunas",
-    "name": "PINK RUN su Antėja",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20261004",
-        "20261004"
-      ],
-      [
-        "20271010",
-        "20271010"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "11:00",
-    "location": "Kauno muzikinio teatro parkas, Kaunas, Lithuania",
-    "latitude": 54.896824,
-    "longitude": 23.9059079,
-    "county": "Kauno apskritis",
-    "nearest_city": "Kaunas",
-    "nearby_cities": [
-      "Kaunas"
-    ],
-    "distances": "[\"10\", \"5\", \"0.6\"]",
-    "distance_m": [
-      10000,
-      5000,
-      600
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km, 0.6 km",
-    "organizer": "Pink Run su Antėja",
-    "contact": null,
-    "website": "https://pinkrun.lt/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "24 € - 30 €",
-    "price_tiers": [
-      {
-        "distance": "600 m vaikų bėgimas",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "12 €",
-            "deadline": null,
-            "description": "Distancijos kaina"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "5 km distancija",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "30 €",
-            "deadline": null,
-            "description": "Distancijos kaina"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "10 km distancija",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "30 €",
-            "deadline": null,
-            "description": "Distancijos kaina"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": "https://pinkrun.lt/puslapis/distancijos",
-    "race_info_url": "https://pinkrun.lt/",
-    "presumed_organizer_email": "info@kmk.lt",
-    "website_emails_found": [
-      "info@kmk.lt",
-      "registracija@kmk.lt"
-    ],
-    "description": "Pink Run with Antėja is an annual charity pink-ribbon run in Kaunas, dedicated to fighting breast cancer and preventing the disease. The event takes place at the Kaunas Musical Theatre park and along Laisvės Avenue, offering courses of various lengths for both professionals and recreational runners. It is a joyful, positive sporting celebration where participants run for the women they love, dressed in pink costumes and adorned with pink paint and balloons. The funds raised support women with cancer. The event invites everyone to join and support this important mission.",
-    "course_highlights": [
-      "600 m children's run in the city park",
-      "5 km and 10 km courses along Kaunas’s Laisvės Avenue",
-      "Joyful atmosphere with pink costumes, paint and balloons"
-    ],
-    "additional": "Race bib collection takes place on Friday and Saturday from 11:00 to 19:00, and on event day from 9:00 until 30 minutes before the start. The bib collection venue is at I. Kanto St. 25, next to the KAVALIERIUS café. Several start times are scheduled for event day: 5 km starts at 11:00 and 12:00; 10 km starts at 13:00 and 14:30. Award ceremonies and a contest for the most original participant costume take place after the runs. Registration takes place at I. Kanto St. 25 in Kaunas; queues for bib collection may form on event day. The event programme includes warm-ups, award ceremonies and the costume contest.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.lbma.lt/index.php?kalendorius&year=2026",
-      "https://pinkrun.lt",
-      "http://bkmaratonas.fweb.lt/begimai"
-    ],
-    "consolidated_ids": [
-      "058d14b2-0503-4118-945c-e21aa6d2f9a5"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -12293,17 +12014,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12392,16 +12113,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12494,17 +12215,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12596,17 +12317,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13046,17 +12767,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13146,15 +12867,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13245,17 +12966,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13345,16 +13066,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13450,17 +13171,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13560,16 +13281,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "name",
+      "longitude",
       "county",
       "distances",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
       "type",
+      "latitude",
       "description",
-      "name",
-      "website"
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13661,17 +13382,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13767,17 +13488,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13870,17 +13591,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13975,17 +13696,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14077,17 +13798,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14187,17 +13908,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14290,17 +14011,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14398,22 +14119,25 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
-      "distances",
-      "contact",
-      "longitude",
-      "latitude",
-      "location",
-      "race_dates",
-      "type",
-      "description",
       "name",
-      "website"
+      "longitude",
+      "county",
+      "contact",
+      "distances",
+      "type",
+      "latitude",
+      "description",
+      "website",
+      "race_dates",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "ranking_bridge"
+      "ranking_bridge",
+      "https://www.lbma.lt/index.php?kalendorius&year=2026",
+      "https://pinkrun.lt",
+      "http://bkmaratonas.fweb.lt/begimai"
     ],
     "consolidated_ids": [
       "103b0e29-fef9-4014-8755-d6cb4ee0beb7"
