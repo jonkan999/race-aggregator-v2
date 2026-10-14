@@ -1089,16 +1089,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
-      "contact"
+      "distances",
+      "contact",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -49924,127 +49924,6 @@
     ]
   },
   {
-    "domain_name": "aastajooks_2",
-    "name": "Aastajooks",
-    "type": "other",
-    "type_local": "Muu",
-    "race_dates": [
-      [
-        "20260625",
-        "20260625"
-      ],
-      [
-        "20270624",
-        "20270624"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "18:30",
-    "location": "Vallikäär, Pärnu, Estonia",
-    "latitude": 58.38349170000001,
-    "longitude": 24.4948525,
-    "county": "Pärnu maakond",
-    "nearest_city": "Pärnu",
-    "nearby_cities": [
-      "Pärnu"
-    ],
-    "distances": "[\"3\", \"0.5\"]",
-    "distance_m": [
-      3000,
-      500
-    ],
-    "distance_keywords": [
-      "3000 meetrit"
-    ],
-    "distance_verbose": "3000 meetrit, 0.5 km",
-    "organizer": "Spordiklubi Pärnu Kahe Silla Klubi MTÜ",
-    "contact": null,
-    "website": "https://www.2silda.ee/parnu-aastajooksud/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Hooajapilet",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "249 kr",
-            "deadline": "20251020",
-            "description": "Hooajapilet* eelregistreerimisel"
-          },
-          {
-            "label": "tier_2",
-            "price": "299 kr",
-            "deadline": "20260131",
-            "description": "Hooajapilet* 1. etapil kohapeal"
-          }
-        ],
-        "late_fee": {
-          "price": "349 kr",
-          "deadline": "20260417"
-        }
-      },
-      {
-        "distance": "Üks etapp",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "49 kr",
-            "deadline": "20251020",
-            "description": "Üks etapp eelregistreerimisel"
-          },
-          {
-            "label": "tier_2",
-            "price": "59 kr",
-            "deadline": "20260131",
-            "description": "Üks etapp kohapeal registreerides"
-          }
-        ],
-        "late_fee": {
-          "price": "69 kr",
-          "deadline": "20260417"
-        }
-      }
-    ],
-    "registration_close_date": "20260417",
-    "registration_url": "https://www.2silda.ee/parnu-aastajooksud/stardimaksud/",
-    "race_info_url": "https://www.2silda.ee/parnu-aastajooksud/",
-    "presumed_organizer_email": "info@2silda.ee",
-    "website_emails_found": [
-      "info@2silda.ee",
-      "kaidy@2silda.ee"
-    ],
-    "description": "Pärnu aastajooksud on 1985. aastal alguse saanud jooksusarja traditsioon, mis on inspireeritud idamaade kalendrist ja pühendatud igal aastal vastava aasta sümbolloomale. 2026. aasta jooksusarjas on kavas tulihobuse aasta jooks, mis koosneb üheksast etapist, mis toimuvad kolmes erinevas asukohas Pärnus: Vallikäär, Pärnu rand ja Reiu-Raeküla terviserada. Igas asukohas toimub kolm etappi, pakkudes jooksjatele mitmekesist ja huvitavat kogemust. Sarja jooksul saavad osalejad nautida erinevaid maastikke ja Pärnu kauneid vaateid.",
-    "course_highlights": [
-      "Üheksa etappi jaotatud kolme stardipaiga vahel: Pärnu Vallikäär, Pärnu rand ja Reiu-Raeküla terviserada",
-      "Mitmekesine maastik ja kaunid vaated Pärnu linnas ja rannaalal",
-      "Igas asukohas kolm jooksu, mis annavad võimaluse kogeda erinevaid jooksuelamusi"
-    ],
-    "additional": "Sarja kuulub üheksa etappi, mis toimuvad kolmes erinevas stardipaigas, kus igas toimub kolm jooksu. Stardid algavad tavaliselt kell 18:30. Osalejatele on võimalik soetada hooajapilet või registreeruda üksikutele etappidele. Korraldajaks on Pärnu Kahe Silla Klubi. Võistlus toimub suvehooajal Pärnus. Üritus toimub Pärnus ning hõlmab erinevaid etappe ja lapsesõbralikke tegevusi; registreerimine ja täpsem ajakava on kättesaadavad organisatsiooni veebilehel.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://marathon100.com/kalender/eesti/yritus/aastajooks-2026-3-km-43812"
-    ],
-    "consolidated_ids": [
-      "60eeb1fc-d811-4fa6-954f-a6d012e95120"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "nuuksio_backyard_ultra",
     "name": "Nuuksio Backyard Ultra",
     "type": "backyard",
@@ -53543,6 +53422,10 @@
       [
         "20270707",
         "20270707"
+      ],
+      [
+        "20270616",
+        "20270616"
       ]
     ],
     "upcoming_dates": [],
@@ -56981,6 +56864,10 @@
       [
         "20270720",
         "20270720"
+      ],
+      [
+        "20270624",
+        "20270624"
       ]
     ],
     "upcoming_dates": [],
@@ -57086,88 +56973,6 @@
     ],
     "consolidated_ids": [
       "9c5227be-ea41-4d1d-96c6-783799066fb4"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "parnu_aasta_jooksud_7_etapp_reiu_raekula_liikumisrajad_ja_joulinnak",
-    "name": "Pärnu Aasta jooksud 7 etapp",
-    "type": "trail",
-    "type_local": "Trailijooks",
-    "race_dates": [
-      [
-        "20260721",
-        "20260721"
-      ],
-      [
-        "20270720",
-        "20270720"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Reiu-Raeküla liikumisrajad ja jõulinnak, Pärnu, Pärnu County, Estonia",
-    "latitude": 58.35746760000001,
-    "longitude": 24.5777797,
-    "county": "Pärnu maakond",
-    "nearest_city": "Pärnu",
-    "nearby_cities": [
-      "Pärnu"
-    ],
-    "distances": "[\"21.1\", \"10\", \"5\"]",
-    "distance_m": [
-      21100,
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "Poolmaraton",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Poolmaraton, 10 km, 5 km",
-    "organizer": "Pärnumaa Spordiliit",
-    "contact": null,
-    "website": "https://www.psl.ee/sundmus/parnu-aasta-jooksud-7-etapp/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.psl.ee/sundmus/parnu-aasta-jooksud-7-etapp/",
-    "presumed_organizer_email": "info@psl.ee",
-    "website_emails_found": [
-      "info@2silda.ee",
-      "info@psl.ee",
-      "sekretariaat@firmasport.ee"
-    ],
-    "description": "Pärnu Aasta jooksud 7 etapp on osa Pärnumaa Spordiliidu rahvaspordisarjast, mis toimub Reiu-Raeküla liikumisradadel ja jõulinnakus. See jooksuüritus pakub võimalust nautida sportlikku liikumist kaunis looduses ning sobib erineva tasemega jooksjatele. Sarja eesmärk on edendada tervislikke eluviise ja kogukonna aktiivsust. Osalejad saavad kogeda mõnusat võistlusõhkkonda ning nautida Pärnumaa spordikultuuri traditsioone.",
-    "course_highlights": [
-      "Reiu-Raeküla liikumisrajad ja jõulinnak",
-      "Mitmekesine maastik sobib erineva tasemega jooksjatele",
-      "Osalemine Pärnumaa rahvaspordisarjas"
-    ],
-    "additional": "Sündmus on osa jooksusarjast ning pakub osalejatele võimalust nautida sporti ja loodust ning osaleda kogukonnaüritusel.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.sportos.eu/ee/et/parnu-aasta-jooksud-7-etapp/"
-    ],
-    "consolidated_ids": [
-      "ec6f8767-7b68-4089-90ee-8f292a8258bf"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -57342,111 +57147,6 @@
     ],
     "consolidated_ids": [
       "2870bd7c-ee3b-4cb1-b234-2d2e71343cda"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "kohila_pikamaajooksude_sari_2026_vi_etapp_1000m_kohila_spordikeskuse_staadion",
-    "name": "Kohila pikamaajooksude sari 2026 VI etapp 1000m",
-    "type": "track",
-    "type_local": "Rajajooks",
-    "race_dates": [
-      [
-        "20260708",
-        "20260708"
-      ],
-      [
-        "20260715",
-        "20260715"
-      ],
-      [
-        "20260722",
-        "20260722"
-      ],
-      [
-        "20270721",
-        "20270721"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "19:00",
-    "location": "Kohila Spordikeskuse staadion, Kohila, Kohila vald, Estonia",
-    "latitude": 59.1672606,
-    "longitude": 24.7549624,
-    "county": "Rapla maakond",
-    "nearest_city": "Tallinna",
-    "nearby_cities": [
-      "Tallinna"
-    ],
-    "distances": "[\"1\"]",
-    "distance_m": [
-      1000
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "1 km",
-    "organizer": "Kohila Spordikeskus",
-    "contact": null,
-    "website": "https://kohilasport.ee/sundmus/2233",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "8 eurot, kuni 19a ja pensionärid 5 eurot",
-    "price_tiers": [
-      {
-        "distance": "1000m etapp",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "8 eurot",
-            "deadline": "20260722",
-            "description": "Stardimaks 8 eurot, kuni 19a ja pensionärid 5 eurot"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20260722",
-    "registration_url": "http://www.kohilaseeriajooksud.ee",
-    "race_info_url": "https://kohilasport.ee/sundmus/2233#main-content",
-    "presumed_organizer_email": "spordikeskus@kohila.ee",
-    "website_emails_found": [
-      "spordikeskus@kohila.ee",
-      "liinazumba@gmail.com",
-      "kaido@kohilajk.ee",
-      "juripritsin@gmail.com",
-      "kohilavorkpalliklubi@gmail.com",
-      "madis201@hotmail.com",
-      "info@raplajudo.ee",
-      "bumdiclap@gmail.com",
-      "lillemae123@gmail.com"
-    ],
-    "description": "Kohila pikamaajooksude sari 2026 on mõeldud kõigile jooksuhuvilistele ning toimub Kohila Spordikeskuse staadionil. Sarja raames toimub kümme etappi erinevatel distantsidel, kus osalejad saavad võistelda vanusegruppides ning koguda punkte. Sarja eesmärk on pakkuda mitmekesist ja motiveerivat jooksukogemust ning toetada tervisespordi harrastamist. Osalemine on avatud nii noortele kui ka veteranidele ning auhinnad antakse sarja lõpus parimatele jooksjatele.",
-    "course_highlights": [
-      "Toimumiskoht Kohila Spordikeskuse staadionil, millel on 4-rajaline 400m jooksuring ja 6-rajaline sprindisirge",
-      "Tartaankattega rajad ja kaasaegne elektrifotofinišisüsteem FinishLynx",
-      "Vanusegrupid alates noortest kuni veteranideni, punktiarvestus sarja jooksul"
-    ],
-    "additional": "Eelregistreerimine lõppeb võistluspäeval kell 16.30, hilisemad registreerujad paigutatakse tagumistesse jooksudesse. Kohapeal registreerimine lõppeb 18.30. Stardimaks tasutakse sularahas kohapeal. Sarja võitjate autasustamine toimub peale viimast võistlust, auhinnalisele kohale tulemiseks on vaja osaleda vähemalt neljal etapil. Stardimaks tasutakse sularahas, eelregistreerimine lõppeb võistluspäeval kell 16.30, vanuseklassid ja punktiarvestus on kirjas lehel.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.sportos.eu/ee/et/kohila-pikamaajooksude-sari-2026-vii-etapp-800m/",
-      "https://www.sportos.eu/ee/et/kohila-pikamaajooksude-sari-2026-viii-etapp-600m/",
-      "https://www.sportos.eu/ee/et/kohila-pikamaajooksude-sari-2026-vi-etapp-1000m/"
-    ],
-    "consolidated_ids": [
-      "63e80664-9903-42ce-a0a1-437cfb0b40ac"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -62413,6 +62113,10 @@
       [
         "20270811",
         "20270811"
+      ],
+      [
+        "20270721",
+        "20270721"
       ]
     ],
     "upcoming_dates": [],
@@ -78242,6 +77946,10 @@
       [
         "20270929",
         "20270929"
+      ],
+      [
+        "20270908",
+        "20270908"
       ]
     ],
     "upcoming_dates": [],
@@ -80266,11 +79974,15 @@
       [
         "20261007",
         "20261007"
+      ],
+      [
+        "20271006",
+        "20271006"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Rava järv, Rava, Järvamaa, Estonia",
     "latitude": 59.1232103,
@@ -80364,11 +80076,11 @@
       "https://www.sportos.eu/ee/et/liikumissari-8-jarvamaa-jarvede-jooksud-11-etapp-m-pirksaareturi-tehisjarve-jooks/"
     ],
     "consolidated_ids": [
-      "ddcd9cbd-69ae-4c32-899d-8007dae85721"
+      "107bbcb2-7ea6-444c-9f77-965a9cbe1525"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260529",
+    "created_date": "20261013",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -80669,19 +80381,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "race_dates",
-      "type",
-      "website",
-      "start_time",
-      "distances",
-      "additional",
-      "organizer",
       "longitude",
+      "organizer",
+      "description",
       "location",
-      "latitude",
+      "race_dates",
       "contact",
-      "description"
+      "distances",
+      "type",
+      "name",
+      "additional",
+      "start_time",
+      "latitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -80749,17 +80461,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "race_dates",
-      "type",
-      "website",
-      "start_time",
-      "distances",
-      "location",
       "longitude",
-      "latitude",
+      "description",
+      "location",
+      "race_dates",
       "contact",
-      "description"
+      "distances",
+      "type",
+      "name",
+      "start_time",
+      "latitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89203,17 +88915,17 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "price_range",
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
-      "contact"
+      "distances",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89377,20 +89089,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
       "price_range",
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "additional",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89473,18 +89185,18 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "price_range",
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89561,16 +89273,16 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "price_range",
-      "description",
       "latitude",
-      "location",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
-      "contact"
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89657,18 +89369,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89747,17 +89459,17 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "price_range",
-      "description",
       "latitude",
-      "location",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89840,18 +89552,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -89947,20 +89659,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
       "price_range",
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "additional",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90050,19 +89762,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
       "price_range",
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
-      "contact"
+      "distances",
+      "additional",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.7,
@@ -90145,18 +89857,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90236,17 +89948,17 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "price_range",
-      "description",
       "latitude",
-      "location",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90359,16 +90071,16 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "description",
-      "race_dates",
-      "location",
-      "website",
-      "name",
-      "type",
-      "organizer",
       "latitude",
       "longitude",
-      "contact"
+      "description",
+      "race_dates",
+      "contact",
+      "website",
+      "organizer",
+      "location",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90459,16 +90171,16 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "price_range",
-      "description",
       "latitude",
-      "location",
-      "website",
-      "name",
-      "type",
-      "race_dates",
       "longitude",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90555,18 +90267,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90649,20 +90361,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
       "price_range",
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "organizer",
-      "race_dates",
       "longitude",
+      "distances",
+      "additional",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90735,19 +90447,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "description",
-      "distances",
-      "location",
-      "race_dates",
       "latitude",
-      "name",
-      "type",
-      "organizer",
-      "website",
       "longitude",
+      "distances",
+      "additional",
+      "contact",
+      "race_dates",
+      "description",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90825,20 +90537,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
       "price_range",
-      "description",
-      "distances",
-      "location",
-      "race_dates",
       "latitude",
-      "name",
-      "type",
-      "organizer",
-      "website",
       "longitude",
+      "distances",
+      "additional",
+      "contact",
+      "race_dates",
+      "description",
+      "website",
+      "organizer",
+      "location",
       "start_time",
-      "contact"
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90938,16 +90650,16 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "price_range",
-      "description",
-      "distances",
-      "location",
       "latitude",
-      "website",
-      "name",
-      "type",
-      "race_dates",
       "longitude",
-      "contact"
+      "distances",
+      "contact",
+      "description",
+      "race_dates",
+      "website",
+      "location",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
