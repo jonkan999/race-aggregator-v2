@@ -55,8 +55,12 @@ test('SE marker JSON upcoming window is in the same ballpark as any-date list fi
   const markersPath = path.join(repoRoot, 'public', 'markers-se.json');
   const parsed = JSON.parse(fs.readFileSync(markersPath, 'utf8'));
   const markers = Array.isArray(parsed.markers) ? parsed.markers : [];
-  const fromYmd = upcomingWindowStart();
-  const toYmd = upcomingWindowEnd();
+  // Anchor the window to the snapshot's generation date so the assertion does not
+  // drift as wall-clock time passes the committed snapshot.
+  const referenceDate = new Date(parsed.generatedAt ?? '2026-09-15T12:00:00Z');
+  assert.ok(!Number.isNaN(referenceDate.getTime()), 'markers-se.json generatedAt must be a valid date');
+  const fromYmd = upcomingWindowStart(referenceDate);
+  const toYmd = upcomingWindowEnd(referenceDate);
   const fromIso = `${fromYmd.slice(0, 4)}-${fromYmd.slice(4, 6)}-${fromYmd.slice(6, 8)}`;
   const toIso = `${toYmd.slice(0, 4)}-${toYmd.slice(4, 6)}-${toYmd.slice(6, 8)}`;
 

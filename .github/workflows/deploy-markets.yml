@@ -42,12 +42,32 @@ jobs:
         id: resolve
         run: node ./scripts/resolve-deploy-markets.mjs --market="${{ github.event.inputs.marketCode || '' }}"
 
+  unit-tests:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Unit tests
+        run: npm run test:unit
+
   deploy:
     name: Deploy ${{ matrix.marketCode }} to ${{ matrix.productionDomain }}
-    needs: resolve-markets
+    needs: [resolve-markets, unit-tests]
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      max-parallel: 8
       matrix: ${{ fromJson(needs.resolve-markets.outputs.matrix) }}
     env:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -72,10 +92,6 @@ jobs:
       - name: Install dependencies
         if: ${{ matrix.configured }}
         run: npm ci
-
-      - name: Unit tests
-        if: ${{ matrix.configured }}
-        run: npm run test:unit
 
       - name: Validate synced market content
         if: ${{ matrix.configured }}

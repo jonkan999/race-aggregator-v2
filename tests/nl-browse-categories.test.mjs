@@ -7,12 +7,14 @@ import { categoryFilterOptionsFromYaml } from '../src/lib/categoryFilterOptions.
 import { rowMatchesDistanceRange } from '../src/lib/raceDistances.js';
 import { getBrowseSeoIndexingPolicy, isBrowseStandaloneAllowed } from '../src/lib/browseSeoIndexing.js';
 
+// Fixed reference date (matches the committed data snapshot) so results don't drift with wall-clock time.
+const REFERENCE_DATE = new Date('2026-09-15T12:00:00Z');
 const upcomingStart = (() => {
-  const now = new Date();
+  const now = new Date(REFERENCE_DATE);
   return `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}`;
 })();
 const upcomingEnd = (() => {
-  const end = new Date();
+  const end = new Date(REFERENCE_DATE);
   end.setDate(end.getDate() + 365);
   return `${end.getFullYear()}${String(end.getMonth() + 1).padStart(2, '0')}${String(end.getDate()).padStart(2, '0')}`;
 })();
