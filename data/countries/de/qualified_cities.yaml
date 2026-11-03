@@ -10,25 +10,31 @@ cities:
   population: 650000
   latitude: 50.1155
   longitude: 8.68417
-  nearby_race_count: 96
+  nearby_race_count: 95
 - name: Hannover
   original_name: Hannover
   population: 515140
   latitude: 52.3705
   longitude: 9.73322
-  nearby_race_count: 63
+  nearby_race_count: 60
 - name: Stuttgart
   original_name: Stuttgart
   population: 589793
   latitude: 48.7823
   longitude: 9.17702
-  nearby_race_count: 62
+  nearby_race_count: 58
 - name: Hamburg
   original_name: Hamburg
   population: 1739117
   latitude: 53.5753
   longitude: 10.0153
-  nearby_race_count: 54
+  nearby_race_count: 52
+- name: Köln
+  original_name: Koeln
+  population: 963395
+  latitude: 50.9333
+  longitude: 6.95
+  nearby_race_count: 49
 - name: Essen
   original_name: Essen
   population: 593085
@@ -40,42 +46,30 @@ cities:
   population: 194501
   latitude: 51.3167
   longitude: 9.5
-  nearby_race_count: 48
-- name: Köln
-  original_name: Koeln
-  population: 963395
-  latitude: 50.9333
-  longitude: 6.95
   nearby_race_count: 47
-- name: Berlin
-  original_name: Berlin
-  population: 3426354
-  latitude: 52.5244
-  longitude: 13.4105
-  nearby_race_count: 40
 - name: Bielefeld
   original_name: Bielefeld
   population: 331906
   latitude: 52.0333
   longitude: 8.53333
-  nearby_race_count: 40
-- name: Karlsruhe
-  original_name: Karlsruhe
-  population: 283799
-  latitude: 49.0094
-  longitude: 8.40444
-  nearby_race_count: 40
+  nearby_race_count: 36
 - name: Mannheim
   original_name: Mannheim
   population: 307960
   latitude: 49.4891
   longitude: 8.46694
   nearby_race_count: 36
-- name: Trier
-  original_name: Trier
-  population: 100129
-  latitude: 49.7556
-  longitude: 6.63935
+- name: Berlin
+  original_name: Berlin
+  population: 3426354
+  latitude: 52.5244
+  longitude: 13.4105
+  nearby_race_count: 35
+- name: Karlsruhe
+  original_name: Karlsruhe
+  population: 283799
+  latitude: 49.0094
+  longitude: 8.40444
   nearby_race_count: 35
 - name: Koblenz
   original_name: Koblenz
@@ -83,35 +77,35 @@ cities:
   latitude: 50.3536
   longitude: 7.57883
   nearby_race_count: 33
+- name: Trier
+  original_name: Trier
+  population: 100129
+  latitude: 49.7556
+  longitude: 6.63935
+  nearby_race_count: 33
 - name: Münster
   original_name: Muenster
   population: 270184
   latitude: 51.9624
   longitude: 7.62571
   nearby_race_count: 31
-- name: Aachen
-  original_name: Aachen
-  population: 265208
-  latitude: 50.7766
-  longitude: 6.08342
-  nearby_race_count: 30
 - name: Nürnberg
   original_name: Nuernberg
   population: 499237
   latitude: 49.4542
   longitude: 11.0775
   nearby_race_count: 29
+- name: Aachen
+  original_name: Aachen
+  population: 265208
+  latitude: 50.7766
+  longitude: 6.08342
+  nearby_race_count: 28
 - name: Bremen
   original_name: Bremen
   population: 546501
   latitude: 53.0752
   longitude: 8.80777
-  nearby_race_count: 27
-- name: Saarbrücken
-  original_name: Saarbruecken
-  population: 181227
-  latitude: 49.2326
-  longitude: 7.00982
   nearby_race_count: 27
 - name: Braunschweig
   original_name: Braunschweig
@@ -125,12 +119,24 @@ cities:
   latitude: 52.2726
   longitude: 8.0498
   nearby_race_count: 24
+- name: Saarbrücken
+  original_name: Saarbruecken
+  population: 181227
+  latitude: 49.2326
+  longitude: 7.00982
+  nearby_race_count: 22
 - name: München
   original_name: Munich
   population: 1260391
   latitude: 48.1374
   longitude: 11.5755
-  nearby_race_count: 22
+  nearby_race_count: 21
+- name: Oldenburg
+  original_name: Oldenburg
+  population: 159218
+  latitude: 53.1412
+  longitude: 8.21467
+  nearby_race_count: 21
 - name: Marburg an der Lahn
   original_name: Marburg an der Lahn
   population: 78895
@@ -143,30 +149,24 @@ cities:
   latitude: 47.9959
   longitude: 7.85222
   nearby_race_count: 20
-- name: Oldenburg
-  original_name: Oldenburg
-  population: 159218
-  latitude: 53.1412
-  longitude: 8.21467
-  nearby_race_count: 20
 - name: Kiel
   original_name: Kiel
   population: 232758
   latitude: 54.3213
   longitude: 10.1349
   nearby_race_count: 19
-- name: Lübeck
-  original_name: Luebeck
-  population: 212207
-  latitude: 53.8689
-  longitude: 10.6873
-  nearby_race_count: 16
 - name: Aalen
   original_name: Aalen
   population: 67085
   latitude: 48.8378
   longitude: 10.0933
   nearby_race_count: 16
+- name: Lübeck
+  original_name: Luebeck
+  population: 212207
+  latitude: 53.8689
+  longitude: 10.6873
+  nearby_race_count: 15
 - name: Bremerhaven
   original_name: Bremerhaven
   population: 117446
@@ -197,18 +197,6 @@ cities:
   latitude: 53.3675
   longitude: 7.20778
   nearby_race_count: 13
-- name: Halberstadt
-  original_name: Halberstadt
-  population: 39729
-  latitude: 51.8956
-  longitude: 11.0562
-  nearby_race_count: 13
-- name: Magdeburg
-  original_name: Magdeburg
-  population: 229826
-  latitude: 52.1277
-  longitude: 11.6292
-  nearby_race_count: 12
 - name: Würzburg
   original_name: Wuerzburg
   population: 133731
@@ -227,6 +215,12 @@ cities:
   latitude: 50.2594
   longitude: 10.9638
   nearby_race_count: 12
+- name: Magdeburg
+  original_name: Magdeburg
+  population: 229826
+  latitude: 52.1277
+  longitude: 11.6292
+  nearby_race_count: 11
 - name: Siegen
   original_name: Siegen
   population: 107242
@@ -251,6 +245,12 @@ cities:
   latitude: 51.5018
   longitude: 10.7957
   nearby_race_count: 10
+- name: Halberstadt
+  original_name: Halberstadt
+  population: 39729
+  latitude: 51.8956
+  longitude: 11.0562
+  nearby_race_count: 10
 - name: Ulm
   original_name: Ulm
   population: 120451
@@ -268,6 +268,12 @@ cities:
   population: 504971
   latitude: 51.3396
   longitude: 12.3713
+  nearby_race_count: 8
+- name: Erfurt
+  original_name: Erfurt
+  population: 203254
+  latitude: 50.9787
+  longitude: 11.0328
   nearby_race_count: 8
 - name: Rostock
   original_name: Rostock
@@ -287,12 +293,6 @@ cities:
   latitude: 49.4429
   longitude: 11.8627
   nearby_race_count: 8
-- name: Erfurt
-  original_name: Erfurt
-  population: 203254
-  latitude: 50.9787
-  longitude: 11.0328
-  nearby_race_count: 7
 - name: Fulda
   original_name: Fulda
   population: 63760

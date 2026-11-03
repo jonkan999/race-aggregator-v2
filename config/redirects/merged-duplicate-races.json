@@ -253,6 +253,16 @@
       "permanent": true
     },
     {
+      "source": "/stranky-zavodu/revirni_poho_beh/:path*",
+      "destination": "/stranky-zavodu/revirni_poho_beh_karvina/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/revirni_poho_beh/:path*",
+      "destination": "/en/race-pages/revirni_poho_beh_karvina/:path*",
+      "permanent": true
+    },
+    {
       "source": "/stranky-zavodu/rychlebsky_maraton_trisov/:path*",
       "destination": "/stranky-zavodu/rychlebsky_maraton/:path*",
       "permanent": true
@@ -313,6 +323,16 @@
       "permanent": true
     },
     {
+      "source": "/rennseiten/21_citylauf/:path*",
+      "destination": "/rennseiten/21_citylauf_nordhausen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/21_citylauf/:path*",
+      "destination": "/en/race-pages/21_citylauf_nordhausen/:path*",
+      "permanent": true
+    },
+    {
       "source": "/rennseiten/augsburger_aok_winterlaufserie_sudring/:path*",
       "destination": "/rennseiten/augsburger_aok_winterlaufserie_sudring_86161_augsburg/:path*",
       "permanent": true
@@ -343,6 +363,16 @@
       "permanent": true
     },
     {
+      "source": "/rennseiten/eckernforder_winterlaufserie_24340_eckernforde/:path*",
+      "destination": "/rennseiten/eckernforder_winterlaufserie/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/eckernforder_winterlaufserie_24340_eckernforde/:path*",
+      "destination": "/en/race-pages/eckernforder_winterlaufserie/:path*",
+      "permanent": true
+    },
+    {
       "source": "/rennseiten/enorm_in_form_in_steckenborn/:path*",
       "destination": "/rennseiten/enorm_in_form_in_steckenborn_52152_simmerath/:path*",
       "permanent": true
@@ -350,6 +380,26 @@
     {
       "source": "/en/race-pages/enorm_in_form_in_steckenborn/:path*",
       "destination": "/en/race-pages/enorm_in_form_in_steckenborn_52152_simmerath/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/rennseiten/hamelner_cross_winterlaufserie_2/:path*",
+      "destination": "/rennseiten/hamelner_cross_winterlaufserie_31787_hameln/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/hamelner_cross_winterlaufserie_2/:path*",
+      "destination": "/en/race-pages/hamelner_cross_winterlaufserie_31787_hameln/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/rennseiten/ipf_ries_halbmarathon_73441_bopfingen/:path*",
+      "destination": "/rennseiten/ipf_ries_halbmarathon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/ipf_ries_halbmarathon_73441_bopfingen/:path*",
+      "destination": "/en/race-pages/ipf_ries_halbmarathon/:path*",
       "permanent": true
     },
     {
@@ -363,6 +413,16 @@
       "permanent": true
     },
     {
+      "source": "/rennseiten/lichterlauf_in_steckenborn/:path*",
+      "destination": "/rennseiten/lichterlauf_in_steckenborn_52152_simmerath/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/lichterlauf_in_steckenborn/:path*",
+      "destination": "/en/race-pages/lichterlauf_in_steckenborn_52152_simmerath/:path*",
+      "permanent": true
+    },
+    {
       "source": "/rennseiten/nordholzer_windmuhlenlauf/:path*",
       "destination": "/rennseiten/nordholzer_windmuhlenlauf_27639_wurster_nordseekuste/:path*",
       "permanent": true
@@ -370,6 +430,16 @@
     {
       "source": "/en/race-pages/nordholzer_windmuhlenlauf/:path*",
       "destination": "/en/race-pages/nordholzer_windmuhlenlauf_27639_wurster_nordseekuste/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/rennseiten/nospa_winterstrassenlaufserie_25853_drelsdorf/:path*",
+      "destination": "/rennseiten/nospa_winterstrassenlaufserie/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/nospa_winterstrassenlaufserie_25853_drelsdorf/:path*",
+      "destination": "/en/race-pages/nospa_winterstrassenlaufserie/:path*",
       "permanent": true
     },
     {
@@ -413,23 +483,43 @@
       "permanent": true
     },
     {
+      "source": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil/:path*",
+      "destination": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil/:path*",
+      "destination": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
+      "permanent": true
+    },
+    {
       "source": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil_2/:path*",
-      "destination": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil/:path*",
+      "destination": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
       "permanent": true
     },
     {
       "source": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil_2/:path*",
-      "destination": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil/:path*",
+      "destination": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
       "permanent": true
     },
     {
       "source": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
-      "destination": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil/:path*",
+      "destination": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
       "permanent": true
     },
     {
       "source": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
-      "destination": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil/:path*",
+      "destination": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_1_teil_26349_jaderberg/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_2_teil_26349_jaderberg/:path*",
+      "destination": "/rennseiten/winterlauf_wanderserie_tus_jaderberg_2_teil/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_2_teil_26349_jaderberg/:path*",
+      "destination": "/en/race-pages/winterlauf_wanderserie_tus_jaderberg_2_teil/:path*",
       "permanent": true
     },
     {
@@ -443,6 +533,16 @@
       "permanent": true
     },
     {
+      "source": "/rennseiten/winterlaufserie_2/:path*",
+      "destination": "/rennseiten/winterlaufserie_31655_stadthagen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterlaufserie_2/:path*",
+      "destination": "/en/race-pages/winterlaufserie_31655_stadthagen/:path*",
+      "permanent": true
+    },
+    {
       "source": "/rennseiten/winterlaufserie_der_hildener_at/:path*",
       "destination": "/rennseiten/winterlaufserie_der_hildener_at_40724_hilden/:path*",
       "permanent": true
@@ -450,6 +550,76 @@
     {
       "source": "/en/race-pages/winterlaufserie_der_hildener_at/:path*",
       "destination": "/en/race-pages/winterlaufserie_der_hildener_at_40724_hilden/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/rennseiten/winterserie_des_lsv_porz_1_lauf_51145_koln_porz_eil/:path*",
+      "destination": "/rennseiten/winterserie_des_lsv_porz_1_lauf/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterserie_des_lsv_porz_1_lauf_51145_koln_porz_eil/:path*",
+      "destination": "/en/race-pages/winterserie_des_lsv_porz_1_lauf/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/rennseiten/winterserie_psv_rot_gold_lehrte_26_27_2/:path*",
+      "destination": "/rennseiten/winterserie_psv_rot_gold_lehrte_26_27/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterserie_psv_rot_gold_lehrte_26_27_2/:path*",
+      "destination": "/en/race-pages/winterserie_psv_rot_gold_lehrte_26_27/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/rennseiten/winterserie_psv_rot_gold_lehrte_26_27_3/:path*",
+      "destination": "/rennseiten/winterserie_psv_rot_gold_lehrte_26_27_31275_lehrte/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterserie_psv_rot_gold_lehrte_26_27_3/:path*",
+      "destination": "/en/race-pages/winterserie_psv_rot_gold_lehrte_26_27_31275_lehrte/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/lobsider/esbjerg_night_trail_2026_2027_3/:path*",
+      "destination": "/lobsider/esbjerg_night_trail_2026_2027/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/esbjerg_night_trail_2026_2027_3/:path*",
+      "destination": "/en/race-pages/esbjerg_night_trail_2026_2027/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/lobsider/esbjerg_night_trail_2026_2027_4/:path*",
+      "destination": "/lobsider/esbjerg_night_trail_2026_2027_esbjerg_n/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/esbjerg_night_trail_2026_2027_4/:path*",
+      "destination": "/en/race-pages/esbjerg_night_trail_2026_2027_esbjerg_n/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/lobsider/night_trail_afd_1_2026_hojbjerg/:path*",
+      "destination": "/lobsider/night_trail_afd_1_2026/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/night_trail_afd_1_2026_hojbjerg/:path*",
+      "destination": "/en/race-pages/night_trail_afd_1_2026/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/lobsider/night_trail_afd_4_2027_hojbjerg/:path*",
+      "destination": "/lobsider/night_trail_afd_4_2027/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/night_trail_afd_4_2027_hojbjerg/:path*",
+      "destination": "/en/race-pages/night_trail_afd_4_2027/:path*",
       "permanent": true
     },
     {
@@ -483,6 +653,16 @@
       "permanent": true
     },
     {
+      "source": "/jooksulehed/ambla_sk_sv_suusatajate_seeriajooks_kepikond_kangrumae/:path*",
+      "destination": "/jooksulehed/ambla_sk_sv_suusatajate_seeriajooks_kepikond/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/ambla_sk_sv_suusatajate_seeriajooks_kepikond_kangrumae/:path*",
+      "destination": "/en/race-pages/ambla_sk_sv_suusatajate_seeriajooks_kepikond/:path*",
+      "permanent": true
+    },
+    {
       "source": "/jooksulehed/kohila_pikamaajooksude_sari_2026_vi_etapp_1000m_kohila_spordikeskuse_staadion/:path*",
       "destination": "/jooksulehed/kohila_pikamaajooksude_sari_2026_vi_etapp_1000m/:path*",
       "permanent": true
@@ -500,6 +680,26 @@
     {
       "source": "/en/race-pages/parnu_aasta_jooksud_7_etapp_reiu_raekula_liikumisrajad_ja_joulinnak/:path*",
       "destination": "/en/race-pages/parnu_aasta_jooksud_7_etapp/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/jooksulehed/swedbanki_tallinna_maraton/:path*",
+      "destination": "/jooksulehed/swedbanki_tallinna_maraton_tallinn/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/swedbanki_tallinna_maraton/:path*",
+      "destination": "/en/race-pages/swedbanki_tallinna_maraton_tallinn/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/kilpailusivut/hiidenkierros_mikkeli/:path*",
+      "destination": "/kilpailusivut/hiidenkierros/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/hiidenkierros_mikkeli/:path*",
+      "destination": "/en/race-pages/hiidenkierros/:path*",
       "permanent": true
     },
     {
@@ -533,6 +733,16 @@
       "permanent": true
     },
     {
+      "source": "/selides-agonon/1o_chios_night_run/:path*",
+      "destination": "/selides-agonon/1o_chios_night_run_kome_khiou/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/1o_chios_night_run/:path*",
+      "destination": "/en/race-pages/1o_chios_night_run_kome_khiou/:path*",
+      "permanent": true
+    },
+    {
       "source": "/selides-agonon/sfakia_sky_marathon_sphakia/:path*",
       "destination": "/selides-agonon/sfakia_sky_marathon/:path*",
       "permanent": true
@@ -553,6 +763,16 @@
       "permanent": true
     },
     {
+      "source": "/futoversenyek/9_pink_futas_es_seta_gyor/:path*",
+      "destination": "/futoversenyek/9_pink_futas_es_seta/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/9_pink_futas_es_seta_gyor/:path*",
+      "destination": "/en/race-pages/9_pink_futas_es_seta/:path*",
+      "permanent": true
+    },
+    {
       "source": "/futoversenyek/clear_97_alpokalja_business_run_szombathely_csonakazo_to/:path*",
       "destination": "/futoversenyek/clear_97_alpokalja_business_run/:path*",
       "permanent": true
@@ -560,6 +780,26 @@
     {
       "source": "/en/race-pages/clear_97_alpokalja_business_run_szombathely_csonakazo_to/:path*",
       "destination": "/en/race-pages/clear_97_alpokalja_business_run/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/futoversenyek/columbia_triton_trail/:path*",
+      "destination": "/futoversenyek/columbia_triton_trail_nagyborzsony_ifjusagi_tabor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/columbia_triton_trail/:path*",
+      "destination": "/en/race-pages/columbia_triton_trail_nagyborzsony_ifjusagi_tabor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/futoversenyek/feldwar_trail_1_5_10_17_23_dunafoldvar/:path*",
+      "destination": "/futoversenyek/feldwar_trail_1_5_10_17_23/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/feldwar_trail_1_5_10_17_23_dunafoldvar/:path*",
+      "destination": "/en/race-pages/feldwar_trail_1_5_10_17_23/:path*",
       "permanent": true
     },
     {
@@ -593,6 +833,26 @@
       "permanent": true
     },
     {
+      "source": "/futoversenyek/ii_del_balatoni_csillago_trail_kotcse/:path*",
+      "destination": "/futoversenyek/ii_del_balatoni_csillago_trail/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/ii_del_balatoni_csillago_trail_kotcse/:path*",
+      "destination": "/en/race-pages/ii_del_balatoni_csillago_trail/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/futoversenyek/ii_szegvari_osz_futoverseny_szegvar/:path*",
+      "destination": "/futoversenyek/ii_szegvari_osz_futoverseny/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/ii_szegvari_osz_futoverseny_szegvar/:path*",
+      "destination": "/en/race-pages/ii_szegvari_osz_futoverseny/:path*",
+      "permanent": true
+    },
+    {
       "source": "/begimo_puslapiai/kaledinis_begimas_3/:path*",
       "destination": "/begimo_puslapiai/kaledinis_begimas/:path*",
       "permanent": true
@@ -613,6 +873,16 @@
       "permanent": true
     },
     {
+      "source": "/begimo_puslapiai/naujametinis_ruoniu_maratonas_diliausku_k/:path*",
+      "destination": "/begimo_puslapiai/naujametinis_ruoniu_maratonas/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/naujametinis_ruoniu_maratonas_diliausku_k/:path*",
+      "destination": "/en/race-pages/naujametinis_ruoniu_maratonas/:path*",
+      "permanent": true
+    },
+    {
       "source": "/begimo_puslapiai/pink_run_su_anteja_kaunas/:path*",
       "destination": "/begimo_puslapiai/pink_run_su_anteja/:path*",
       "permanent": true
@@ -620,6 +890,16 @@
     {
       "source": "/en/race-pages/pink_run_su_anteja_kaunas/:path*",
       "destination": "/en/race-pages/pink_run_su_anteja/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/begimo_puslapiai/sporto_svente_juodsiliu_ruduo_vilniaus_r/:path*",
+      "destination": "/begimo_puslapiai/sporto_svente_juodsiliu_ruduo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/sporto_svente_juodsiliu_ruduo_vilniaus_r/:path*",
+      "destination": "/en/race-pages/sporto_svente_juodsiliu_ruduo/:path*",
       "permanent": true
     },
     {
@@ -653,6 +933,16 @@
       "permanent": true
     },
     {
+      "source": "/looppaginas/boekeldercross_1_aalten/:path*",
+      "destination": "/looppaginas/boekeldercross_1/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/boekeldercross_1_aalten/:path*",
+      "destination": "/en/race-pages/boekeldercross_1/:path*",
+      "permanent": true
+    },
+    {
       "source": "/looppaginas/bosbaanrun/:path*",
       "destination": "/looppaginas/bosbaanrun_2/:path*",
       "permanent": true
@@ -680,6 +970,16 @@
     {
       "source": "/en/race-pages/devil_s_trail_schiermonnikoog_schiermonnikoog/:path*",
       "destination": "/en/race-pages/devil_s_trail_schiermonnikoog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/looppaginas/energie_barendrecht_1e_van_6_marathon_trainingslopen_barendrecht/:path*",
+      "destination": "/looppaginas/energie_barendrecht_1e_van_6_marathon_trainingslopen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/energie_barendrecht_1e_van_6_marathon_trainingslopen_barendrecht/:path*",
+      "destination": "/en/race-pages/energie_barendrecht_1e_van_6_marathon_trainingslopen/:path*",
       "permanent": true
     },
     {
@@ -720,6 +1020,16 @@
     {
       "source": "/en/race-pages/kanonsloop/:path*",
       "destination": "/en/race-pages/kanonsloop_groenlo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/looppaginas/kerkpolderloop_delft/:path*",
+      "destination": "/looppaginas/kerkpolderloop/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/kerkpolderloop_delft/:path*",
+      "destination": "/en/race-pages/kerkpolderloop/:path*",
       "permanent": true
     },
     {
@@ -823,6 +1133,16 @@
       "permanent": true
     },
     {
+      "source": "/looppaginas/spiridon_zomeravondlopen_i_rijen/:path*",
+      "destination": "/looppaginas/spiridon_zomeravondlopen_i/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/spiridon_zomeravondlopen_i_rijen/:path*",
+      "destination": "/en/race-pages/spiridon_zomeravondlopen_i/:path*",
+      "permanent": true
+    },
+    {
       "source": "/looppaginas/sri_chinmoy_6_uursloop_amsterdam/:path*",
       "destination": "/looppaginas/sri_chinmoy_6_uursloop/:path*",
       "permanent": true
@@ -893,13 +1213,23 @@
       "permanent": true
     },
     {
+      "source": "/strony_biegow/44_strzelinski_rogaining/:path*",
+      "destination": "/strony_biegow/44_strzelinski_rogaining_lagiewniki/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/44_strzelinski_rogaining/:path*",
+      "destination": "/en/race-pages/44_strzelinski_rogaining_lagiewniki/:path*",
+      "permanent": true
+    },
+    {
       "source": "/strony_biegow/44_strzelinski_rogaining_lagiewniki/:path*",
-      "destination": "/strony_biegow/44_strzelinski_rogaining/:path*",
+      "destination": "/strony_biegow/44_strzelinski_rogaining_lagiewniki/:path*",
       "permanent": true
     },
     {
       "source": "/en/race-pages/44_strzelinski_rogaining_lagiewniki/:path*",
-      "destination": "/en/race-pages/44_strzelinski_rogaining/:path*",
+      "destination": "/en/race-pages/44_strzelinski_rogaining_lagiewniki/:path*",
       "permanent": true
     },
     {
@@ -923,6 +1253,66 @@
       "permanent": true
     },
     {
+      "source": "/strony_biegow/742_21_smak_maraton_warszawa/:path*",
+      "destination": "/strony_biegow/742_21_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/742_21_smak_maraton_warszawa/:path*",
+      "destination": "/en/race-pages/742_21_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/770_49_smak_maraton_warszawa/:path*",
+      "destination": "/strony_biegow/770_49_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/770_49_smak_maraton_warszawa/:path*",
+      "destination": "/en/race-pages/770_49_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/772_51_smak_maraton_warszawa/:path*",
+      "destination": "/strony_biegow/772_51_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/772_51_smak_maraton_warszawa/:path*",
+      "destination": "/en/race-pages/772_51_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/781_60_smak_maraton_warszawa/:path*",
+      "destination": "/strony_biegow/781_60_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/781_60_smak_maraton_warszawa/:path*",
+      "destination": "/en/race-pages/781_60_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/792_71_smak_maraton_warszawa/:path*",
+      "destination": "/strony_biegow/792_71_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/792_71_smak_maraton_warszawa/:path*",
+      "destination": "/en/race-pages/792_71_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/802_81_smak_maraton_warszawa/:path*",
+      "destination": "/strony_biegow/802_81_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/802_81_smak_maraton_warszawa/:path*",
+      "destination": "/en/race-pages/802_81_smak_maraton/:path*",
+      "permanent": true
+    },
+    {
       "source": "/strony_biegow/9_bieg_sladami_zubra_pszczyna/:path*",
       "destination": "/strony_biegow/9_bieg_sladami_zubra/:path*",
       "permanent": true
@@ -933,13 +1323,73 @@
       "permanent": true
     },
     {
+      "source": "/strony_biegow/9_x_kopa_cwila_2/:path*",
+      "destination": "/strony_biegow/9_x_kopa_cwila/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila_2/:path*",
+      "destination": "/en/race-pages/9_x_kopa_cwila/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/9_x_kopa_cwila_3/:path*",
+      "destination": "/strony_biegow/9_x_kopa_cwila_warszawa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila_3/:path*",
+      "destination": "/en/race-pages/9_x_kopa_cwila_warszawa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/ace_battle_run_ace_battle_mile_indywidualni_zawody_rankingowe_na_dystan_warszawa/:path*",
+      "destination": "/strony_biegow/ace_battle_run_ace_battle_mile_indywidualni_zawody_rankingowe_na_dystan/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/ace_battle_run_ace_battle_mile_indywidualni_zawody_rankingowe_na_dystan_warszawa/:path*",
+      "destination": "/en/race-pages/ace_battle_run_ace_battle_mile_indywidualni_zawody_rankingowe_na_dystan/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/bieg_do_herbacianego_domku_346_warszawa/:path*",
+      "destination": "/strony_biegow/bieg_do_herbacianego_domku_346/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/bieg_do_herbacianego_domku_346_warszawa/:path*",
+      "destination": "/en/race-pages/bieg_do_herbacianego_domku_346/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/bieg_szlakiem_pluderskich_stawow/:path*",
+      "destination": "/strony_biegow/bieg_szlakiem_pluderskich_stawow_pludry/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/bieg_szlakiem_pluderskich_stawow/:path*",
+      "destination": "/en/race-pages/bieg_szlakiem_pluderskich_stawow_pludry/:path*",
+      "permanent": true
+    },
+    {
       "source": "/strony_biegow/bieg_szlakiem_pluderskich_stawow_pludry/:path*",
-      "destination": "/strony_biegow/bieg_szlakiem_pluderskich_stawow/:path*",
+      "destination": "/strony_biegow/bieg_szlakiem_pluderskich_stawow_pludry/:path*",
       "permanent": true
     },
     {
       "source": "/en/race-pages/bieg_szlakiem_pluderskich_stawow_pludry/:path*",
-      "destination": "/en/race-pages/bieg_szlakiem_pluderskich_stawow/:path*",
+      "destination": "/en/race-pages/bieg_szlakiem_pluderskich_stawow_pludry/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/bieg_tropem_wilczym_rabsztyn/:path*",
+      "destination": "/strony_biegow/bieg_tropem_wilczym/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/bieg_tropem_wilczym_rabsztyn/:path*",
+      "destination": "/en/race-pages/bieg_tropem_wilczym/:path*",
       "permanent": true
     },
     {
@@ -973,6 +1423,26 @@
       "permanent": true
     },
     {
+      "source": "/strony_biegow/grand_prix_powiatu_koscierskiego_grzybowski_mlyn/:path*",
+      "destination": "/strony_biegow/grand_prix_powiatu_koscierskiego/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/grand_prix_powiatu_koscierskiego_grzybowski_mlyn/:path*",
+      "destination": "/en/race-pages/grand_prix_powiatu_koscierskiego/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/herbatka_u_tadka_350_warszawa/:path*",
+      "destination": "/strony_biegow/herbatka_u_tadka_350/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/herbatka_u_tadka_350_warszawa/:path*",
+      "destination": "/en/race-pages/herbatka_u_tadka_350/:path*",
+      "permanent": true
+    },
+    {
       "source": "/strony_biegow/herbatka_u_tadka_czyli_bieg_do_herbacia_warszawa/:path*",
       "destination": "/strony_biegow/herbatka_u_tadka_czyli_bieg_do_herbacia/:path*",
       "permanent": true
@@ -980,6 +1450,16 @@
     {
       "source": "/en/race-pages/herbatka_u_tadka_czyli_bieg_do_herbacia_warszawa/:path*",
       "destination": "/en/race-pages/herbatka_u_tadka_czyli_bieg_do_herbacia/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/iii_kornicki_bieg_zamoyskiego/:path*",
+      "destination": "/strony_biegow/iii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/iii_kornicki_bieg_zamoyskiego/:path*",
+      "destination": "/en/race-pages/iii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza/:path*",
       "permanent": true
     },
     {
@@ -1010,6 +1490,16 @@
     {
       "source": "/en/race-pages/iv_zimowy_bieg_chrzaszcza/:path*",
       "destination": "/en/race-pages/iv_zimowy_bieg_chrzaszcza_szczebrzeszyn/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/kmk_maraton_kadyny/:path*",
+      "destination": "/strony_biegow/kmk_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/kmk_maraton_kadyny/:path*",
+      "destination": "/en/race-pages/kmk_maraton/:path*",
       "permanent": true
     },
     {
@@ -1073,6 +1563,16 @@
       "permanent": true
     },
     {
+      "source": "/strony_biegow/wtorki_biegowe_maraton_na_raty_siemianowice_slaskie/:path*",
+      "destination": "/strony_biegow/wtorki_biegowe_maraton_na_raty/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/wtorki_biegowe_maraton_na_raty_siemianowice_slaskie/:path*",
+      "destination": "/en/race-pages/wtorki_biegowe_maraton_na_raty/:path*",
+      "permanent": true
+    },
+    {
       "source": "/strony_biegow/wzgorzowa_trzynastka_proszkow/:path*",
       "destination": "/strony_biegow/wzgorzowa_trzynastka/:path*",
       "permanent": true
@@ -1103,23 +1603,43 @@
       "permanent": true
     },
     {
+      "source": "/strony_biegow/xrun_wielki_final/:path*",
+      "destination": "/strony_biegow/xrun_wielki_final_muszyna/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/xrun_wielki_final/:path*",
+      "destination": "/en/race-pages/xrun_wielki_final_muszyna/:path*",
+      "permanent": true
+    },
+    {
       "source": "/strony_biegow/xrun_wielki_final_muszyna/:path*",
-      "destination": "/strony_biegow/xrun_wielki_final/:path*",
+      "destination": "/strony_biegow/xrun_wielki_final_muszyna/:path*",
       "permanent": true
     },
     {
       "source": "/en/race-pages/xrun_wielki_final_muszyna/:path*",
-      "destination": "/en/race-pages/xrun_wielki_final/:path*",
+      "destination": "/en/race-pages/xrun_wielki_final_muszyna/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/strony_biegow/xrun_wyspowy_trail/:path*",
+      "destination": "/strony_biegow/xrun_wyspowy_trail_limanowa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/xrun_wyspowy_trail/:path*",
+      "destination": "/en/race-pages/xrun_wyspowy_trail_limanowa/:path*",
       "permanent": true
     },
     {
       "source": "/strony_biegow/xrun_wyspowy_trail_limanowa/:path*",
-      "destination": "/strony_biegow/xrun_wyspowy_trail/:path*",
+      "destination": "/strony_biegow/xrun_wyspowy_trail_limanowa/:path*",
       "permanent": true
     },
     {
       "source": "/en/race-pages/xrun_wyspowy_trail_limanowa/:path*",
-      "destination": "/en/race-pages/xrun_wyspowy_trail/:path*",
+      "destination": "/en/race-pages/xrun_wyspowy_trail_limanowa/:path*",
       "permanent": true
     },
     {
@@ -1143,13 +1663,63 @@
       "permanent": true
     },
     {
+      "source": "/pagini-cursa/alergarea_de_sambata_calarasi_parcul_central/:path*",
+      "destination": "/pagini-cursa/alergarea_de_sambata_calarasi/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/alergarea_de_sambata_calarasi_parcul_central/:path*",
+      "destination": "/en/race-pages/alergarea_de_sambata_calarasi/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pagini-cursa/budureasa_mountain_running/:path*",
+      "destination": "/pagini-cursa/budureasa_mountain_running_budureasa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/budureasa_mountain_running/:path*",
+      "destination": "/en/race-pages/budureasa_mountain_running_budureasa/:path*",
+      "permanent": true
+    },
+    {
       "source": "/pagini-cursa/budureasa_mountain_running_budureasa/:path*",
-      "destination": "/pagini-cursa/budureasa_mountain_running/:path*",
+      "destination": "/pagini-cursa/budureasa_mountain_running_budureasa/:path*",
       "permanent": true
     },
     {
       "source": "/en/race-pages/budureasa_mountain_running_budureasa/:path*",
-      "destination": "/en/race-pages/budureasa_mountain_running/:path*",
+      "destination": "/en/race-pages/budureasa_mountain_running_budureasa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pagini-cursa/casoaia_ultra_zarand_517072_casoaia/:path*",
+      "destination": "/pagini-cursa/casoaia_ultra_zarand/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/casoaia_ultra_zarand_517072_casoaia/:path*",
+      "destination": "/en/race-pages/casoaia_ultra_zarand/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pagini-cursa/cheile_turzii_race_cheia_cj/:path*",
+      "destination": "/pagini-cursa/cheile_turzii_race/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/cheile_turzii_race_cheia_cj/:path*",
+      "destination": "/en/race-pages/cheile_turzii_race/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pagini-cursa/hateg_royal_trail_hateg/:path*",
+      "destination": "/pagini-cursa/hateg_royal_trail/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/hateg_royal_trail_hateg/:path*",
+      "destination": "/en/race-pages/hateg_royal_trail/:path*",
       "permanent": true
     },
     {
@@ -1223,6 +1793,26 @@
       "permanent": true
     },
     {
+      "source": "/pagini-cursa/urme_pe_play/:path*",
+      "destination": "/pagini-cursa/urme_pe_play_rasinari/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/urme_pe_play/:path*",
+      "destination": "/en/race-pages/urme_pe_play_rasinari/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pagini-cursa/via_bacovia_trail_2/:path*",
+      "destination": "/pagini-cursa/via_bacovia_trail_luizi_calugara/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/via_bacovia_trail_2/:path*",
+      "destination": "/en/race-pages/via_bacovia_trail_luizi_calugara/:path*",
+      "permanent": true
+    },
+    {
       "source": "/stranice-trka/povlen_trail_valjevo/:path*",
       "destination": "/stranice-trka/povlen_trail/:path*",
       "permanent": true
@@ -1230,6 +1820,26 @@
     {
       "source": "/en/race-pages/povlen_trail_valjevo/:path*",
       "destination": "/en/race-pages/povlen_trail/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/a_stadsloppet/:path*",
+      "destination": "/loppsidor/a_stadsloppet_tybblelundshallen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/a_stadsloppet/:path*",
+      "destination": "/en/race-pages/a_stadsloppet_tybblelundshallen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/arc_x_copperhill_loop/:path*",
+      "destination": "/loppsidor/arc_x_copperhill_loop_copperhill_mountain_lodge/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/arc_x_copperhill_loop/:path*",
+      "destination": "/en/race-pages/arc_x_copperhill_loop_copperhill_mountain_lodge/:path*",
       "permanent": true
     },
     {
@@ -1253,6 +1863,46 @@
       "permanent": true
     },
     {
+      "source": "/loppsidor/blodomloppet_kristianstad/:path*",
+      "destination": "/loppsidor/blodomloppet_kristianstad_kristianstad/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/blodomloppet_kristianstad/:path*",
+      "destination": "/en/race-pages/blodomloppet_kristianstad_kristianstad/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/blodomloppet_linkoping/:path*",
+      "destination": "/loppsidor/blodomloppet_linkoping_linkoping/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/blodomloppet_linkoping/:path*",
+      "destination": "/en/race-pages/blodomloppet_linkoping_linkoping/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/blodomloppet_sundsvall_sundsvall/:path*",
+      "destination": "/loppsidor/blodomloppet_sundsvall/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/blodomloppet_sundsvall_sundsvall/:path*",
+      "destination": "/en/race-pages/blodomloppet_sundsvall/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/blodomloppet_uddevalla/:path*",
+      "destination": "/loppsidor/blodomloppet_uddevalla_uddevalla/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/blodomloppet_uddevalla/:path*",
+      "destination": "/en/race-pages/blodomloppet_uddevalla_uddevalla/:path*",
+      "permanent": true
+    },
+    {
       "source": "/loppsidor/fjallvindenterrangen_hemavan/:path*",
       "destination": "/loppsidor/fjallvindenterrangen/:path*",
       "permanent": true
@@ -1273,6 +1923,16 @@
       "permanent": true
     },
     {
+      "source": "/loppsidor/iron_backbone_ultra_hultet/:path*",
+      "destination": "/loppsidor/iron_backbone_ultra/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/iron_backbone_ultra_hultet/:path*",
+      "destination": "/en/race-pages/iron_backbone_ultra/:path*",
+      "permanent": true
+    },
+    {
       "source": "/loppsidor/iron_backbone_ultra_kristinehamn/:path*",
       "destination": "/loppsidor/iron_backbone_ultra/:path*",
       "permanent": true
@@ -1290,6 +1950,36 @@
     {
       "source": "/en/race-pages/ljungskileslingan_uddevalla_s/:path*",
       "destination": "/en/race-pages/ljungskileslingan/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/loparfesten/:path*",
+      "destination": "/loppsidor/loparfesten_falsterbo_horse_show/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/loparfesten/:path*",
+      "destination": "/en/race-pages/loparfesten_falsterbo_horse_show/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/olands_kyrkstafett/:path*",
+      "destination": "/loppsidor/olands_kyrkstafett_farjestaden/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/olands_kyrkstafett/:path*",
+      "destination": "/en/race-pages/olands_kyrkstafett_farjestaden/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/pasksmallen_enhorna/:path*",
+      "destination": "/loppsidor/pasksmallen_sodertalje/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/pasksmallen_enhorna/:path*",
+      "destination": "/en/race-pages/pasksmallen_sodertalje/:path*",
       "permanent": true
     },
     {
@@ -1320,6 +2010,66 @@
     {
       "source": "/en/race-pages/stadionloppet_stockholm/:path*",
       "destination": "/en/race-pages/stadionloppet/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/stafettvarvet_2/:path*",
+      "destination": "/loppsidor/stafettvarvet/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/stafettvarvet_2/:path*",
+      "destination": "/en/race-pages/stafettvarvet/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/strandmilen/:path*",
+      "destination": "/loppsidor/strandmilen_hultsfred/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/strandmilen/:path*",
+      "destination": "/en/race-pages/strandmilen_hultsfred/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/varberg_halvmarathon_traslov/:path*",
+      "destination": "/loppsidor/varberg_halvmarathon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/varberg_halvmarathon_traslov/:path*",
+      "destination": "/en/race-pages/varberg_halvmarathon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/vaxjoloppet/:path*",
+      "destination": "/loppsidor/vaxjoloppet_vaxjo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/vaxjoloppet/:path*",
+      "destination": "/en/race-pages/vaxjoloppet_vaxjo/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/vretaloppet_vretaloppet/:path*",
+      "destination": "/loppsidor/vretaloppet/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/vretaloppet_vretaloppet/:path*",
+      "destination": "/en/race-pages/vretaloppet/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/loppsidor/yddingeloppet_svedala/:path*",
+      "destination": "/loppsidor/yddingeloppet/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/yddingeloppet_svedala/:path*",
+      "destination": "/en/race-pages/yddingeloppet/:path*",
       "permanent": true
     },
     {
@@ -1363,6 +2113,46 @@
       "permanent": true
     },
     {
+      "source": "/stranky-pretekov/beh_na_scob_stropkov/:path*",
+      "destination": "/stranky-pretekov/beh_na_scob/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/beh_na_scob_stropkov/:path*",
+      "destination": "/en/race-pages/beh_na_scob/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/beh_oslobodenia_mesta_strazske_strazske/:path*",
+      "destination": "/stranky-pretekov/beh_oslobodenia_mesta_strazske/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/beh_oslobodenia_mesta_strazske_strazske/:path*",
+      "destination": "/en/race-pages/beh_oslobodenia_mesta_strazske/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/beh_rematskou_dolinou_handlova/:path*",
+      "destination": "/stranky-pretekov/beh_rematskou_dolinou/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/beh_rematskou_dolinou_handlova/:path*",
+      "destination": "/en/race-pages/beh_rematskou_dolinou/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/beh_vinicami_bojniciek_a_hlohovca_bojnicky/:path*",
+      "destination": "/stranky-pretekov/beh_vinicami_bojniciek_a_hlohovca/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/beh_vinicami_bojniciek_a_hlohovca_bojnicky/:path*",
+      "destination": "/en/race-pages/beh_vinicami_bojniciek_a_hlohovca/:path*",
+      "permanent": true
+    },
+    {
       "source": "/stranky-pretekov/beh_za_a_tra_ktivny_bardejov_bardejov/:path*",
       "destination": "/stranky-pretekov/beh_za_a_tra_ktivny_bardejov/:path*",
       "permanent": true
@@ -1370,6 +2160,36 @@
     {
       "source": "/en/race-pages/beh_za_a_tra_ktivny_bardejov_bardejov/:path*",
       "destination": "/en/race-pages/beh_za_a_tra_ktivny_bardejov/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/challenge_airport_run_2/:path*",
+      "destination": "/stranky-pretekov/challenge_airport_run_presov/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/challenge_airport_run_2/:path*",
+      "destination": "/en/race-pages/challenge_airport_run_presov/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/horsky_beh_smolnik_smolnik/:path*",
+      "destination": "/stranky-pretekov/horsky_beh_smolnik/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/horsky_beh_smolnik_smolnik/:path*",
+      "destination": "/en/race-pages/horsky_beh_smolnik/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/jesenny_cani_cross_fatransky_vlcko_turcianske_jaseno/:path*",
+      "destination": "/stranky-pretekov/jesenny_cani_cross_fatransky_vlcko/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/jesenny_cani_cross_fatransky_vlcko_turcianske_jaseno/:path*",
+      "destination": "/en/race-pages/jesenny_cani_cross_fatransky_vlcko/:path*",
       "permanent": true
     },
     {
@@ -1383,6 +2203,16 @@
       "permanent": true
     },
     {
+      "source": "/stranky-pretekov/kosickopolianska_desiatka_kosicka_polianka/:path*",
+      "destination": "/stranky-pretekov/kosickopolianska_desiatka/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/kosickopolianska_desiatka_kosicka_polianka/:path*",
+      "destination": "/en/race-pages/kosickopolianska_desiatka/:path*",
+      "permanent": true
+    },
+    {
       "source": "/stranky-pretekov/kovacovska_desiatka/:path*",
       "destination": "/stranky-pretekov/kovacovska_desiatka_kovacova/:path*",
       "permanent": true
@@ -1393,6 +2223,26 @@
       "permanent": true
     },
     {
+      "source": "/stranky-pretekov/mikulassky_beh_na_tancovu_bytca/:path*",
+      "destination": "/stranky-pretekov/mikulassky_beh_na_tancovu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/mikulassky_beh_na_tancovu_bytca/:path*",
+      "destination": "/en/race-pages/mikulassky_beh_na_tancovu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/nitrianska_24_hodinovka_memorial_alexandra_bogiho/:path*",
+      "destination": "/stranky-pretekov/nitrianska_24_hodinovka_memorial_alexandra_bogiho_nitra/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/nitrianska_24_hodinovka_memorial_alexandra_bogiho/:path*",
+      "destination": "/en/race-pages/nitrianska_24_hodinovka_memorial_alexandra_bogiho_nitra/:path*",
+      "permanent": true
+    },
+    {
       "source": "/stranky-pretekov/psotkov_memorial_aktuality_memorial_jozefa_psotku/:path*",
       "destination": "/stranky-pretekov/psotkov_memorial/:path*",
       "permanent": true
@@ -1400,6 +2250,66 @@
     {
       "source": "/en/race-pages/psotkov_memorial_aktuality_memorial_jozefa_psotku/:path*",
       "destination": "/en/race-pages/psotkov_memorial/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/raciansky_kros_jesen_bratislava/:path*",
+      "destination": "/stranky-pretekov/raciansky_kros_jesen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/raciansky_kros_jesen_bratislava/:path*",
+      "destination": "/en/race-pages/raciansky_kros_jesen/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/silvestrovsky_beh_senica/:path*",
+      "destination": "/stranky-pretekov/silvestrovsky_beh/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/silvestrovsky_beh_senica/:path*",
+      "destination": "/en/race-pages/silvestrovsky_beh/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/slepcianska_patnastka_slepcany/:path*",
+      "destination": "/stranky-pretekov/slepcianska_patnastka/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/slepcianska_patnastka_slepcany/:path*",
+      "destination": "/en/race-pages/slepcianska_patnastka/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/sninsky_cross_snina/:path*",
+      "destination": "/stranky-pretekov/sninsky_cross/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/sninsky_cross_snina/:path*",
+      "destination": "/en/race-pages/sninsky_cross/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/stefanik_urban_trail/:path*",
+      "destination": "/stranky-pretekov/stefanik_urban_trail_devin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/stefanik_urban_trail/:path*",
+      "destination": "/en/race-pages/stefanik_urban_trail_devin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/sutrovsky_bezecky_maraton_ivanka_pri_dunaji/:path*",
+      "destination": "/stranky-pretekov/sutrovsky_bezecky_maraton/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/sutrovsky_bezecky_maraton_ivanka_pri_dunaji/:path*",
+      "destination": "/en/race-pages/sutrovsky_bezecky_maraton/:path*",
       "permanent": true
     },
     {
@@ -1420,6 +2330,16 @@
     {
       "source": "/en/race-pages/trojkralovy_beh_na_hrad_lietava/:path*",
       "destination": "/en/race-pages/trojkralovy_beh_na_hrad_lietava_lietava/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stranky-pretekov/zemplinsky_extrem_beh_v_muzeu_michalovce/:path*",
+      "destination": "/stranky-pretekov/zemplinsky_extrem_beh_v_muzeu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/zemplinsky_extrem_beh_v_muzeu_michalovce/:path*",
+      "destination": "/en/race-pages/zemplinsky_extrem_beh_v_muzeu/:path*",
       "permanent": true
     }
   ]

@@ -10,25 +10,25 @@ cities:
   population: 664046
   latitude: 37.98376
   longitude: 23.72784
-  nearby_race_count: 85
+  nearby_race_count: 84
 - name: Kateríni
   original_name: Katerini
   population: 53293
   latitude: 40.26956
   longitude: 22.50608
   nearby_race_count: 19
-- name: Thessaloníki
-  original_name: Thessaloniki
-  population: 317778
-  latitude: 40.64072
-  longitude: 22.93493
-  nearby_race_count: 18
 - name: Kalamata
   original_name: Kalamata
   population: 54100
   latitude: 37.03913
   longitude: 22.11265
-  nearby_race_count: 18
+  nearby_race_count: 17
+- name: Thessaloníki
+  original_name: Thessaloniki
+  population: 317778
+  latitude: 40.64072
+  longitude: 22.93493
+  nearby_race_count: 15
 - name: Agrínio
   original_name: Agrinio
   population: 46899
@@ -40,19 +40,13 @@ cities:
   population: 26561
   latitude: 37.50959
   longitude: 22.37883
-  nearby_race_count: 15
+  nearby_race_count: 14
 - name: Lamía
   original_name: Lamia
   population: 52006
   latitude: 38.89947
   longitude: 22.4335
   nearby_race_count: 12
-- name: Irákleion
-  original_name: Irakleion
-  population: 137154
-  latitude: 35.32787
-  longitude: 25.14341
-  nearby_race_count: 10
 - name: Ioánnina
   original_name: Ioannina
   population: 65574
@@ -71,17 +65,11 @@ cities:
   latitude: 38.2462
   longitude: 21.73508
   nearby_race_count: 9
-- name: Tríkala
-  original_name: Trikala
-  population: 61653
-  latitude: 39.55493
-  longitude: 21.76837
-  nearby_race_count: 9
-- name: Sérres
-  original_name: Serres
-  population: 58287
-  latitude: 41.08499
-  longitude: 23.54757
+- name: Irákleion
+  original_name: Irakleion
+  population: 137154
+  latitude: 35.32787
+  longitude: 25.14341
   nearby_race_count: 8
 - name: Chaniá
   original_name: Chania
@@ -100,6 +88,18 @@ cities:
   population: 86048
   latitude: 39.36923
   longitude: 22.94769
+  nearby_race_count: 7
+- name: Tríkala
+  original_name: Trikala
+  population: 61653
+  latitude: 39.55493
+  longitude: 21.76837
+  nearby_race_count: 7
+- name: Sérres
+  original_name: Serres
+  population: 58287
+  latitude: 41.08499
+  longitude: 23.54757
   nearby_race_count: 7
 - name: Kozáni
   original_name: Kozani
@@ -125,18 +125,6 @@ cities:
   latitude: 35.36555
   longitude: 24.48232
   nearby_race_count: 6
-- name: Árta
-  original_name: Arta
-  population: 21895
-  latitude: 39.16014
-  longitude: 20.98561
-  nearby_race_count: 6
-- name: Chalkída
-  original_name: Chalkida
-  population: 59125
-  latitude: 38.46354
-  longitude: 23.60284
-  nearby_race_count: 5
 - name: Xánthi
   original_name: Xanthi
   population: 48221
@@ -155,18 +143,24 @@ cities:
   latitude: 39.62847
   longitude: 22.42112
   nearby_race_count: 4
+- name: Chalkída
+  original_name: Chalkida
+  population: 59125
+  latitude: 38.46354
+  longitude: 23.60284
+  nearby_race_count: 4
 - name: Mytilene
   original_name: Mytilene
   population: 28322
   latitude: 39.10772
   longitude: 26.55529
   nearby_race_count: 4
-- name: Alexandroupoli
-  original_name: Alexandroupoli
-  population: 52979
-  latitude: 40.84995
-  longitude: 25.87644
-  nearby_race_count: 3
+- name: Árta
+  original_name: Arta
+  population: 21895
+  latitude: 39.16014
+  longitude: 20.98561
+  nearby_race_count: 4
 - name: Corfu
   original_name: Corfu
   population: 40047
