@@ -617,7 +617,8 @@ const newsletterContext = {
           hasMapCoordinates ? (
             <article class="race-detail-map">
               <div class="race-detail-map__header">
-                <h2>{String(content.race_page_place_label ?? '')}</h2>
+                <h2>{String(content.race_page_place_label ?? '').trim().replace(/:$/, '')}</h2>
+                {detail.location ? <p class="race-detail-map__location">{detail.location}</p> : null}
               </div>
               <RaceDetailMapIsland
                 client:load
