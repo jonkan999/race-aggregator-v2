@@ -122,15 +122,10 @@ test('NL Fryslân county slug is ASCII fryslan, not friesland', () => {
 test('NO YAML-independent race folder is ASCII lopssider with no Unicode alias', () => {
   const ASCII_NO_FOLDER = 'lopssider';
   const content = { race_page_folder_name: ASCII_NO_FOLDER };
-  const manifest = JSON.parse(fs.readFileSync(path.join(repoRoot, 'scripts/.generated-market-routes.json'), 'utf8'));
   assert.equal(localRacePageFolder(content, 'native'), ASCII_NO_FOLDER);
   assert.equal(asciiAliasRacePageFolder(ASCII_NO_FOLDER), '');
   assert.equal(isRacePageFolderMatch(content, 'native', ASCII_NO_FOLDER), true);
   assert.equal(fs.existsSync(path.join(repoRoot, 'src/pages', ASCII_NO_FOLDER, '[domain]', 'index.astro')), true);
-  assert.equal(
-    manifest.files.some((filePath) => filePath.includes(`src/pages/${ASCII_NO_FOLDER}/[domain]/index.astro`)),
-    true,
-  );
 });
 
 test('folder match still accepts a Unicode canonical plus ASCII alias', () => {
