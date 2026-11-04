@@ -625,7 +625,7 @@ export async function getHomePageData(args: {
   ].filter((stat) => stat.value && stat.label);
 
   return {
-    title: `${String(content.title ?? '').trim()} ${String(content.country_native ?? content.country ?? '').trim()}`.trim(),
+    title: homeTitle(content),
     description: String(content.meta_description ?? ''),
     raceListHref,
     addRaceHref,
@@ -640,4 +640,12 @@ export async function getHomePageData(args: {
     categoryPanels,
     toolLinks,
   };
+}
+
+/** Index title plus country name, unless the title already ends with it (avoids "i Norge Norge"). */
+export function homeTitle(content: Record<string, unknown>): string {
+  const base = String(content.title ?? '').trim();
+  const country = String(content.country_native ?? content.country ?? '').trim();
+  if (!country || base.toLowerCase().endsWith(country.toLowerCase())) return base;
+  return `${base} ${country}`.trim();
 }
