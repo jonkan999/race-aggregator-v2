@@ -79,6 +79,8 @@ export type RaceDetailRelatedRace = {
   distanceLabels: string[];
   imageSrc: string;
   imageAlt: string;
+  /** Set for races from a neighboring market (shown after domestic races, labelled). */
+  neighborCountryLabel?: string | null;
 };
 
 export type RaceDetailRelatedContent = {
@@ -748,7 +750,7 @@ export async function getRaceDetailRelatedContent(args: {
   const currentLatitude = currentMeta?.latitude ?? currentRow.latitude;
   const currentLongitude = currentMeta?.longitude ?? currentRow.longitude;
 
-  const scored = rowMetas
+  const scoredAll = rowMetas
     .filter((meta) => meta.row.domain_name !== currentRow.domain_name)
     .map((meta) => {
       const candidate = meta.row;
@@ -792,8 +794,27 @@ export async function getRaceDetailRelatedContent(args: {
       return { candidate, score };
     })
     .filter((entry) => entry.score > 0)
-    .sort((left, right) => right.score - left.score)
-    .slice(0, 8);
+    .sort((left, right) => right.score - left.score);
+
+  // Domestic races always come first; neighbor-market races only fill the
+  // remaining slots and are labelled with their country.
+  const isNeighborRow = (row: RaceListRow) =>
+    Boolean(row.origin_country) && row.origin_country!.toLowerCase() !== countryCode.toLowerCase();
+  const scored = [
+    ...scoredAll.filter(({ candidate }) => !isNeighborRow(candidate)),
+    ...scoredAll.filter(({ candidate }) => isNeighborRow(candidate)),
+  ].slice(0, 8);
+  let regionNames: Intl.DisplayNames | null = null;
+  try {
+    regionNames = new Intl.DisplayNames([String(translationLocale)], { type: 'region' });
+  } catch {
+    regionNames = null;
+  }
+  const neighborCountryLabel = (row: RaceListRow): string | null => {
+    if (!isNeighborRow(row)) return null;
+    const code = row.origin_country!.toUpperCase();
+    return regionNames?.of(code) ?? code;
+  };
 
   const similarRaces = scored.map(({ candidate }) => {
     const candidateDetail = getRaceDetailFields(candidate, content, locale);
@@ -819,6 +840,7 @@ export async function getRaceDetailRelatedContent(args: {
       distanceLabels: candidateDetail.distanceLabels,
       imageSrc: candidateDetail.images[0]?.src ?? fallbackRaceImage(candidate.domain_name, candidate.race_type),
       imageAlt: candidateDetail.images[0]?.alt ?? candidateTranslation?.name ?? candidate.domain_name,
+      neighborCountryLabel: neighborCountryLabel(candidate),
     } satisfies RaceDetailRelatedRace;
   });
 

@@ -996,7 +996,7 @@ export function getCategoryItemListJson(args: {
             (typeof row.payload?.description === 'string' ? row.payload.description : ''),
           url: absoluteUrl(baseUrl, href),
           image: rowPrimaryImage(row) ?? undefined,
-          sport: `Löpning${typeLocal ? `, ${typeLocal}` : ''}`,
+          sport: `Running${typeLocal ? `, ${typeLocal}` : ''}`,
           eventStatus: 'https://schema.org/EventScheduled',
           startDate: formatSchemaDate(rawDate) ?? undefined,
           location: {
@@ -1004,15 +1004,12 @@ export function getCategoryItemListJson(args: {
             name: locationName,
             address: {
               '@type': 'PostalAddress',
-              addressCountry: countryCode,
+              addressCountry: String(row.origin_country ?? countryCode).toUpperCase(),
               addressLocality:
                 typeof row.payload?.nearest_city === 'string' ? row.payload.nearest_city : undefined,
               addressRegion: row.county ?? undefined,
             },
           },
-          distance:
-            translation?.distance_verbose ??
-            (typeof row.payload?.distance_verbose === 'string' ? row.payload.distance_verbose : ''),
         },
       };
     }),

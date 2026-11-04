@@ -113,21 +113,21 @@ base_url: https://laufrennen.de/
 supabase_auth_email:
   primary_color: '#00925e'
   shared:
-    greeting: Hello!
-    closing_salutation: Best regards,
-    link_fallback_intro: 'If the button does not work, you can copy the link here:'
+    greeting: Hallo!
+    closing_salutation: Viele Grüße,
+    link_fallback_intro: 'Falls der Button nicht funktioniert, kannst du diesen Link kopieren:'
   confirm_signup:
-    body: Thank you for signing up for {site_name}. Confirm your email address to activate your account and manage your submitted races.
-    button_label: Confirm email address
-    ignore_note: If you did not create the account, you can ignore this email.
+    body: Danke für deine Registrierung bei {site_name}. Bestätige deine E-Mail-Adresse, um dein Konto zu aktivieren und deine eingereichten Läufe zu verwalten.
+    button_label: E-Mail-Adresse bestätigen
+    ignore_note: Falls du kein Konto erstellt hast, kannst du diese E-Mail ignorieren.
   reset_password:
-    body: We received a request to reset your password for {site_name}. Click the button below to choose a new password.
-    button_label: Reset password
-    ignore_note: If you did not request this, you can ignore the email. Your password will not change until you choose a new one.
+    body: Wir haben eine Anfrage erhalten, dein Passwort für {site_name} zurückzusetzen. Klicke auf den Button unten, um ein neues Passwort zu wählen.
+    button_label: Passwort zurücksetzen
+    ignore_note: Falls du das nicht angefordert hast, kannst du diese E-Mail ignorieren. Dein Passwort bleibt unverändert, bis du ein neues wählst.
   change_email:
-    body: You requested to change the email address for your account on {site_name}. Confirm the change by clicking the button below.
-    button_label: Confirm new email address
-    ignore_note: If you did not request the change, you can ignore this email.
+    body: Du möchtest die E-Mail-Adresse deines Kontos bei {site_name} ändern. Bestätige die Änderung über den Button unten.
+    button_label: Neue E-Mail-Adresse bestätigen
+    ignore_note: Falls du die Änderung nicht angefordert hast, kannst du diese E-Mail ignorieren.
 title: Alles über das Laufen in
 country_native: Deutschland
 country: Germany
@@ -152,7 +152,7 @@ race_list_title: Deutschlands umfassendste Liste von Marathons, Halbmarathons, S
 race_list_meta_description_1: Hier findest du alle Laufwettkämpfe und Veranstaltungen in Deutschland.
 race_list_meta_description_2: ✔️Größte Laufkalender ✔️Trail, Backyard oder Marathon ✔️Läufe aus ganz Deutschland
 race_list_data_error: Läufe konnten gerade nicht geladen werden. Bitte versuche es später erneut.
-race_list_remote_required: For more pages or filters the database (Supabase) is required. Add PUBLIC_SUPABASE_URL and PUBLIC_SUPABASE_PUBLISHABLE_KEY to your .env file.
+race_list_remote_required: Für weitere Seiten oder Filter wird die Datenbank benötigt. Bitte versuche es später erneut.
 race_list_empty: Keine Läufe passen zu deinen Filtern.
 race_list_loading: Lädt…
 race_card_cta_text: Mehr Informationen & Anmeldung
@@ -299,21 +299,21 @@ race_page_date_label: 'Datum:'
 race_page_registration_link: Link zur Anmeldung
 race_page_registration_cta: Jetzt anmelden
 race_page_info_cta: Mehr Informationen
-race_page_registration_close_label: Registration closes
-race_page_pricing_title: Registration and pricing
-race_page_price_deadline_label: Valid until
-race_page_price_late_fee_label: Late registration
+race_page_registration_close_label: Anmeldeschluss
+race_page_pricing_title: Anmeldung und Preise
+race_page_price_deadline_label: Gültig bis
+race_page_price_late_fee_label: Nachmeldung
 race_page_back_to_list: Zurück zum Laufkalender
-race_page_favorites_title: Do not miss race updates
+race_page_favorites_title: Verpasse keine Updates zu diesem Lauf
 race_page_favorites_body: Erstelle ein Konto und speichere diesen Lauf als Favorit, damit du später Updates, Hinweise und ausgewählte Angebote erhalten kannst.
-race_page_favorites_cta: Save race to favorites
-race_page_similar_title: Similar races
-race_page_similar_body: More races with similar distance, type or nearby location.
-race_page_discover_title: Explore more races
-race_page_discover_county_link: All races in {county}
-race_page_discover_type_link: More {type} races
-race_page_discover_category_link: More {category} races
-race_page_discover_type_county_link: '{type} races in {county}'
+race_page_favorites_cta: Lauf als Favorit speichern
+race_page_similar_title: Ähnliche Läufe
+race_page_similar_body: Weitere Läufe mit ähnlicher Distanz, ähnlichem Typ oder in der Nähe.
+race_page_discover_title: Weitere Läufe entdecken
+race_page_discover_county_link: Alle Läufe in {county}
+race_page_discover_type_link: Weitere {type}
+race_page_discover_category_link: Weitere Läufe über {category}
+race_page_discover_type_county_link: '{type} in {county}'
 race_page_discover_overview_link: Alle Laufkategorien entdecken
 disclaimer_text_1: Alle Informationen auf dieser Seite basieren auf offenen Quelldaten. Wir geben unser Bestes, um sie aktuell zu halten, können jedoch nicht garantieren, dass alles korrekt ist. Wenn Sie Fehler feststellen,
 disclaimer_link: kontaktiere uns
@@ -351,50 +351,50 @@ seo_templates:
     default_suffix: Hier findest du Daten, Distanzen und alle Informationen, die du benötigst, um dein nächstes Rennen zu planen.
   browse_page_templates:
     county:
-      title: '{label} races | {site_name}'
-      meta_description: Browse running races in {label}. Compare dates, distances, race formats and practical details before choosing your next race.
-      h1: Races in {label}
-      paragraph: This landing page gathers running races in {label} so it is easier to compare dates, distances, race formats and practical details in one place. Use it when you want a clearer overview before choosing your next race.
+      title: Laufveranstaltungen in {label} | {site_name}
+      meta_description: Alle Laufveranstaltungen in {label} im Überblick. Vergleiche Termine, Distanzen, Formate und praktische Details, bevor du deinen nächsten Lauf wählst.
+      h1: Läufe in {label}
+      paragraph: Auf dieser Seite findest du Laufveranstaltungen in {label} gesammelt, damit du Termine, Distanzen und Formate leichter vergleichen kannst. So behältst du den Überblick, bevor du dich für deinen nächsten Lauf entscheidest.
     city:
-      title: '{label} races | {site_name}'
-      meta_description: Find running races linked to {label}. Compare dates, distances, nearby options and practical details before choosing your next race.
-      h1: Races near {label}
-      paragraph: This city page helps you browse running races connected to {label}, including nearby alternatives that are relevant when planning a race day or trip. It is built to make local race discovery faster and easier to compare.
+      title: Läufe in und um {label} | {site_name}
+      meta_description: Finde Laufveranstaltungen in und um {label}. Vergleiche Termine, Distanzen, Läufe in der Nähe und praktische Details für deinen nächsten Wettkampf.
+      h1: Läufe in und um {label}
+      paragraph: Diese Seite zeigt Laufveranstaltungen in {label} und in der Umgebung, die für deinen nächsten Wettkampftag oder eine Laufreise interessant sein können. So findest du lokale Läufe schneller und kannst sie einfach vergleichen.
     month:
-      title: '{label} races | {site_name}'
-      meta_description: Browse running races in {label} in {market}. Compare dates, distances, race types and practical details before planning your season.
-      h1: Races in {label}
-      paragraph: This page is for runners who want a month-based view of the calendar and need a quicker way to compare what happens in {label}. It helps you narrow the field before drilling into distances, surfaces and race locations.
+      title: Läufe im {label} | {site_name}
+      meta_description: Alle Laufveranstaltungen im {label} in {market}. Vergleiche Termine, Distanzen, Laufarten und praktische Details für deine Saisonplanung.
+      h1: Läufe im {label}
+      paragraph: Diese Seite zeigt den Laufkalender für {label}, damit du schneller siehst, was in diesem Monat ansteht. Danach kannst du nach Distanz, Untergrund und Ort weiter eingrenzen.
     race_type:
-      title: '{label} races in {market} | {site_name}'
-      meta_description: Browse {label_lower} races in {market}. Compare dates, distances, locations and practical details before choosing a race that fits you.
-      h1: '{label} races in {market}'
-      paragraph: This page focuses on {label_lower} races and gives you a cleaner overview when the race format matters as much as the distance. Use it to compare options across regions, dates and practical details without starting from the full calendar.
+      title: '{label} in {market} | {site_name}'
+      meta_description: Alle Veranstaltungen der Kategorie {label} in {market}. Vergleiche Termine, Distanzen, Orte und praktische Details und finde den passenden Lauf.
+      h1: '{label} in {market}'
+      paragraph: Diese Seite konzentriert sich auf {label} und gibt dir einen klaren Überblick, wenn das Format genauso wichtig ist wie die Distanz. Vergleiche Regionen, Termine und Details, ohne den ganzen Kalender durchsuchen zu müssen.
     category:
-      title: '{label} races in {market} | {site_name}'
-      meta_description: Browse {label} races in {market}. Compare dates, race types, locations and practical details before deciding on your next event.
-      h1: '{label} races in {market}'
-      paragraph: This distance and category page brings together races that match {label} so it is easier to compare relevant options in one place. It is designed for runners who want a faster path from broad browsing to a shortlist of realistic races.
+      title: '{label} Läufe in {market} | {site_name}'
+      meta_description: Alle Läufe über {label} in {market}. Vergleiche Termine, Laufarten, Orte und praktische Details, bevor du dich für deinen nächsten Wettkampf entscheidest.
+      h1: '{label} Läufe in {market}'
+      paragraph: Hier findest du Läufe über {label} an einem Ort, damit du passende Veranstaltungen leichter vergleichen kannst. So kommst du schneller von der groben Suche zu einer realistischen Auswahl.
     race_type_category:
-      title: '{label} {secondary_label} races in {market} | {site_name}'
-      meta_description: Browse {label} races in {market} within the {secondary_label_lower} race type. Compare dates, locations and practical details before choosing your next event.
-      h1: '{label} races in {market} ({secondary_label})'
-      paragraph: This page narrows the calendar to {label} races within the {secondary_label_lower} race type, which is helpful when both distance and race format shape the right choice. Use it to compare like-for-like options before committing to a race.
+      title: '{label} {secondary_label} in {market} | {site_name}'
+      meta_description: Läufe über {label} in {market} in der Kategorie {secondary_label}. Vergleiche Termine, Orte und praktische Details, bevor du deinen nächsten Lauf wählst.
+      h1: '{label} in {market} ({secondary_label})'
+      paragraph: Diese Seite zeigt Läufe über {label} in der Kategorie {secondary_label}, hilfreich wenn Distanz und Format beide passen müssen. So vergleichst du gleichwertige Angebote, bevor du dich anmeldest.
     race_type_county:
-      title: '{secondary_label} races in {label} | {site_name}'
-      meta_description: Browse {secondary_label_lower} races in {label}. Compare dates, distances and practical details before choosing your next race.
-      h1: '{secondary_label} races in {label}'
-      paragraph: This page focuses on {secondary_label_lower} races in {label} so it is easier to compare more relevant options within the same region. It is useful when both geography and race format shape the shortlist.
+      title: '{secondary_label} in {label} | {site_name}'
+      meta_description: Alle Veranstaltungen der Kategorie {secondary_label} in {label}. Vergleiche Termine, Distanzen und praktische Details für deinen nächsten Lauf.
+      h1: '{secondary_label} in {label}'
+      paragraph: Diese Seite zeigt {secondary_label} in {label}, damit du passende Angebote in derselben Region leichter vergleichen kannst. Praktisch, wenn Region und Format deine Auswahl bestimmen.
     race_type_month:
-      title: '{secondary_label} races in {label} | {site_name}'
-      meta_description: Browse {secondary_label_lower} races in {label_lower}. Compare dates, distances and practical details while planning your season.
-      h1: '{secondary_label} races in {label}'
-      paragraph: This page gathers {secondary_label_lower} races in {label_lower} for runners who plan around the calendar first. It helps you compare similar race formats before narrowing further by place or distance.
+      title: '{secondary_label} im {label} | {site_name}'
+      meta_description: Alle Veranstaltungen der Kategorie {secondary_label} im {label}. Vergleiche Termine, Distanzen und praktische Details für deine Saisonplanung.
+      h1: '{secondary_label} im {label}'
+      paragraph: Hier findest du {secondary_label} im {label} für alle, die ihre Saison nach dem Kalender planen. So vergleichst du ähnliche Formate, bevor du nach Ort oder Distanz weiter eingrenzt.
     race_type_city:
-      title: '{secondary_label} races near {label} | {site_name}'
-      meta_description: Browse {secondary_label_lower} races linked to {label}. Compare dates, distances and nearby options before choosing your next race.
-      h1: '{secondary_label} races near {label}'
-      paragraph: This page gathers {secondary_label_lower} races connected to {label} to make local race discovery faster to compare. It is useful when you want a specific race format near one city without starting from the full calendar.
+      title: '{secondary_label} in und um {label} | {site_name}'
+      meta_description: Veranstaltungen der Kategorie {secondary_label} in und um {label}. Vergleiche Termine, Distanzen und Läufe in der Nähe für deinen nächsten Wettkampf.
+      h1: '{secondary_label} in und um {label}'
+      paragraph: Diese Seite sammelt {secondary_label} in und um {label}, damit du lokale Läufe schneller vergleichen kannst. Praktisch, wenn du ein bestimmtes Format in der Nähe einer Stadt suchst.
 seo_generation:
   browse_model: gpt-5-mini
   browse_system_prompt: 'Du schreibst zeitlose SEO-Texte für indexierbare Übersichtsseiten eines deutschen Laufkalenders. Schreibe zuerst für Menschen, danach für Suchintention. Gib nur gültiges JSON aus. Halte die Texte zeitlos: nenne kein aktuelles Jahr, keine aktuellen Mengen, keine kurzfristigen Aussagen und keine Frischeversprechen. Vermeide Keyword-Stuffing, Übertreibungen, Clickbait, Superlative und unbelegte Behauptungen. Jede Seite soll sich klar aus ihrem Kontext ergeben. Bevorzuge kurze Titel, prägnante H1s, Meta-Beschreibungen mit ungefähr 120 bis 160 Zeichen und einen kurzen Absatz mit zwei bis drei Sätzen.'
@@ -530,78 +530,78 @@ auth_modal:
   error_invalid_credential: Ungültige E-Mail oder Passwort
   create_account_prompt: Konto erstellen statt
   error_too_many_requests: Zu viele Versuche. Bitte versuchen Sie es später noch einmal.
-  continue_with_google: Continue with Google
-  continue_with_google_create: Create account with Google
-  google_in_progress: Continuing with Google...
-  oauth_divider: or
+  continue_with_google: Weiter mit Google
+  continue_with_google_create: Konto mit Google erstellen
+  google_in_progress: Weiter mit Google...
+  oauth_divider: oder
 auth_pages:
-  confirm_success: Your email has been confirmed and your account is now active.
-  confirm_ready: You can now continue using the site.
-  confirm_error: Could not confirm your email address.
-  reset_intro: Enter a new password for your account.
-  reset_confirm_label: Confirm password
-  reset_mismatch_error: Passwords do not match.
-  reset_invalid_link_error: Invalid or missing recovery link.
-  reset_success: Your password has been updated. You can now sign in.
+  confirm_success: Deine E-Mail-Adresse wurde bestätigt und dein Konto ist jetzt aktiv.
+  confirm_ready: Du kannst die Seite jetzt weiter nutzen.
+  confirm_error: Deine E-Mail-Adresse konnte nicht bestätigt werden.
+  reset_intro: Gib ein neues Passwort für dein Konto ein.
+  reset_confirm_label: Passwort bestätigen
+  reset_mismatch_error: Die Passwörter stimmen nicht überein.
+  reset_invalid_link_error: Ungültiger oder fehlender Wiederherstellungslink.
+  reset_success: Dein Passwort wurde aktualisiert. Du kannst dich jetzt anmelden.
 newsletter_popup:
-  email_placeholder: Your email address
-  submit_button: Send me the updates
-  dismiss_button: Not now
-  invalid_email: Please enter a valid email address.
-  submit_error: We could not save your subscription right now. Please try again.
-  submitting_text: Saving...
-  success_message: Thanks! Race updates are on the way to your inbox.
-  privacy_note: New races, date changes and selected offers. Unsubscribe whenever you want.
-  close_aria_label: Close subscription popup
+  email_placeholder: Deine E-Mail-Adresse
+  submit_button: Updates erhalten
+  dismiss_button: Jetzt nicht
+  invalid_email: Bitte gib eine gültige E-Mail-Adresse ein.
+  submit_error: Dein Abo konnte gerade nicht gespeichert werden. Bitte versuche es erneut.
+  submitting_text: Wird gespeichert...
+  success_message: Danke! Die Lauf-Updates sind auf dem Weg in dein Postfach.
+  privacy_note: Neue Läufe, Terminänderungen und ausgewählte Angebote. Jederzeit abbestellbar.
+  close_aria_label: Newsletter-Fenster schließen
   benefits:
-    new_races: New races first
-    date_changes: Date changes instantly
-    selected_offers: Selected offers
-    similar_races: Similar races near you
-    local_picks: More races nearby
-    opening_reminders: Reminders before spots disappear
-    race_updates: Updates about this race
-    nearby_races: Cross-border races near you
+    new_races: Neue Läufe zuerst
+    date_changes: Terminänderungen sofort
+    selected_offers: Ausgewählte Angebote
+    similar_races: Ähnliche Läufe in deiner Nähe
+    local_picks: Weitere Läufe in der Nähe
+    opening_reminders: Erinnerungen, bevor die Startplätze weg sind
+    race_updates: Updates zu diesem Lauf
+    nearby_races: Grenznahe Läufe in deiner Nähe
   generic:
-    eyebrow: Do not miss the next race
-    title: Get new races and date changes before everyone else
-    body: Subscribe to our newsletter and get new races, updated dates and hand-picked tips in {country} straight to your inbox.
+    eyebrow: Verpasse keinen Lauf
+    title: Neue Läufe und Terminänderungen als Erste erfahren
+    body: Abonniere unseren Newsletter und erhalte neue Läufe, aktualisierte Termine und ausgewählte Tipps in {country} direkt in dein Postfach.
   race_detail:
-    eyebrow: Follow this race
-    title: Want updates about {race_name}?
-    body: Subscribe to get updates about {race_name}, similar races in {county} and important changes sent straight to your inbox.
+    eyebrow: Diesem Lauf folgen
+    title: Updates zu {race_name} erhalten?
+    body: Abonniere Updates zu {race_name}, ähnlichen Läufen in {county} und wichtigen Änderungen direkt in dein Postfach.
   browse_category:
-    eyebrow: More of the right races
-    title: Do not miss new {category} races
-    body: We send new {category} races, relevant nearby alternatives and important dates so you do not have to keep searching manually.
+    eyebrow: Mehr passende Läufe
+    title: Keine neuen Läufe über {category} verpassen
+    body: Wir senden dir neue Läufe über {category}, passende Alternativen in der Nähe und wichtige Termine, damit du nicht ständig selbst suchen musst.
   browse_category_type:
-    eyebrow: More of the right races
-    title: Get more {race_type} races within {category}
-    body: Subscribe for more {race_type} races within {category}, nearby alternatives and date changes delivered straight to your inbox.
+    eyebrow: Mehr passende Läufe
+    title: Mehr {race_type} über {category}
+    body: Abonniere weitere {race_type} über {category}, Alternativen in der Nähe und Terminänderungen direkt in dein Postfach.
   browse_county:
-    eyebrow: Local races first
-    title: Get more races in {county}
-    body: Keep up with new races, updated dates and smart picks for {county} without checking the calendar all the time.
+    eyebrow: Lokale Läufe zuerst
+    title: Mehr Läufe in {county}
+    body: Bleib bei neuen Läufen, aktualisierten Terminen und Tipps für {county} auf dem Laufenden, ohne ständig den Kalender prüfen zu müssen.
   browse_city:
-    eyebrow: Local races first
-    title: Want more races in {city}?
-    body: Subscribe and get new races, nearby alternatives and important dates for {city} sent straight to your inbox.
+    eyebrow: Lokale Läufe zuerst
+    title: Mehr Läufe in {city}?
+    body: Abonniere neue Läufe, Alternativen in der Nähe und wichtige Termine für {city} direkt in dein Postfach.
   browse_type:
-    eyebrow: The right race style
-    title: Get more {race_type} races in your inbox
-    body: We send new {race_type} races, similar alternatives and key dates so you can act before spots disappear.
+    eyebrow: Das passende Format
+    title: Mehr {race_type} in dein Postfach
+    body: Wir senden dir neue {race_type}, ähnliche Alternativen und wichtige Termine, damit du rechtzeitig einen Startplatz bekommst.
   browse_month:
-    eyebrow: Plan the season
-    title: Get the best races in {month} first
-    body: When races in {month} open, move or become especially interesting, you hear about it right away in your inbox.
+    eyebrow: Plane deine Saison
+    title: Die besten Läufe im {month} zuerst
+    body: Wenn Läufe im {month} öffnen, sich verschieben oder besonders spannend werden, erfährst du es sofort per E-Mail.
   browse_neighboring:
-    eyebrow: Broaden your calendar
-    title: Get races from neighboring countries too
-    body: Subscribe for new races, smart cross-border picks and date changes from {region} delivered straight to your inbox.
+    eyebrow: Erweitere deinen Kalender
+    title: Auch Läufe aus den Nachbarländern erhalten
+    body: Abonniere neue Läufe, grenzüberschreitende Tipps und Terminänderungen aus {region} direkt in dein Postfach.
   browse_neighboring_country:
-    eyebrow: Broaden your calendar
-    title: Get more races in {region}
-    body: We send new races, date changes and relevant nearby alternatives when something interesting appears in {region}.
+    eyebrow: Erweitere deinen Kalender
+    title: Mehr Läufe in {region}
+    body: Wir senden dir neue Läufe, Terminänderungen und passende Alternativen, sobald es in {region} etwas Neues gibt.
 submission_flow:
   logged_in_as: Eingeloggt als Veranstalter
   submitting_new_race: neues Rennen einreichen

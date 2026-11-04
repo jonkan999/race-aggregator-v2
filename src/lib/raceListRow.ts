@@ -1,3 +1,5 @@
+import { ENGLISH_RACE_LABELS } from './englishRaceLabels.generated';
+
 export type RaceTranslationRow = {
   locale: string;
   name: string | null;
@@ -24,12 +26,29 @@ export type RaceListRow = {
   race_translations: RaceTranslationRow[] | null;
 };
 
+/** Map a native race label (type or one distance segment) to English. */
+export function englishRaceLabel(value: string | null | undefined): string | null {
+  if (value == null) return null;
+  return ENGLISH_RACE_LABELS[value.trim().toLowerCase()] ?? value;
+}
+
+/** English rows can still carry native type / distance labels; translate them. */
+export function englishizeTranslation(row: RaceTranslationRow): RaceTranslationRow {
+  const distance = row.distance_verbose
+    ? row.distance_verbose
+        .split(',')
+        .map((part) => englishRaceLabel(part.trim()) ?? part.trim())
+        .filter(Boolean)
+        .join(', ')
+    : row.distance_verbose;
+  return { ...row, type_local: englishRaceLabel(row.type_local), distance_verbose: distance };
+}
+
 export function pickTranslation(
   rows: RaceTranslationRow[] | null | undefined,
   locale: string,
 ): RaceTranslationRow | undefined {
   const tr = rows ?? [];
-  return (
-    tr.find((t) => t.locale === locale) ?? tr.find((t) => t.locale === 'en') ?? tr[0]
-  );
+  const picked = tr.find((t) => t.locale === locale) ?? tr.find((t) => t.locale === 'en') ?? tr[0];
+  return picked && locale === 'en' ? englishizeTranslation(picked) : picked;
 }

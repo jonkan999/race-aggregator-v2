@@ -74,21 +74,33 @@ const offerUrl = detail.registrationUrl || detail.raceInfoUrl || detail.website 
 // Prices of an estimated edition are last year's; only publish offers for confirmed dates
 // and drop tiers whose deadline has already passed.
 const todayIso = new Date().toISOString().slice(0, 10);
-const offers = (hasEstimatedDates ? [] : detail.priceTiers).flatMap((group) =>
-  group.tiers.flatMap((tier) => {
+const createdRaw = String((row.payload as Record<string, unknown> | null | undefined)?.created_date ?? '');
+const listedSinceIso = /^\d{8}$/.test(createdRaw)
+  ? `${createdRaw.slice(0, 4)}-${createdRaw.slice(4, 6)}-${createdRaw.slice(6, 8)}`
+  : undefined;
+const offers = (hasEstimatedDates ? [] : detail.priceTiers).flatMap((group) => {
+  // Tiers are sequential: each tier is valid from the day after the previous deadline.
+  let previousDeadline: string | undefined;
+  return group.tiers.flatMap((tier) => {
     const amount = parsePriceAmount(tier.price);
+    const validFrom = previousDeadline
+      ? new Date(Date.parse(`${previousDeadline}T00:00:00Z`) + 86400000).toISOString().slice(0, 10)
+      : listedSinceIso;
+    if (tier.deadlineIso) previousDeadline = tier.deadlineIso;
     if (amount == null) return [];
     if (tier.deadlineIso && tier.deadlineIso < todayIso) return [];
     return [{
       '@type': 'Offer',
-      name: [group.distance, tier.description].filter(Boolean).join(' – ') || undefined,
+      name: [group.distance, tier.description].filter(Boolean).join(', ') || undefined,
       price: amount,
       priceCurrency: marketCurrency(country),
+      availability: 'https://schema.org/InStock',
       url: offerUrl,
+      validFrom: validFrom && validFrom <= todayIso ? validFrom : listedSinceIso ?? todayIso,
       validThrough: tier.deadlineIso || undefined,
     }];
-  }),
-);
+  });
+});
 const distinctActionLinks = [
   detail.registrationUrl
     ? {
@@ -138,8 +150,12 @@ const eventJson = JSON.stringify({
     address: countyLabel
       ? {
           '@type': 'PostalAddress',
+          addressLocality:
+            String(detail.location ?? '').split(',')[0].replace(/^\d{4,5}\s+/, '').trim() ||
+            (typeof row.payload?.nearest_city === 'string' ? row.payload.nearest_city.trim() : '') ||
+            undefined,
           addressRegion: countyLabel,
-          addressCountry: String(content.country_native ?? content.country ?? country).trim(),
+          addressCountry: String(row.origin_country ?? country).trim().toUpperCase(),
         }
       : undefined,
   },
@@ -172,6 +188,8 @@ const saveBody = String(content.race_page_favorites_body ?? '');
 const saveCta = String(content.race_page_favorites_cta ?? '');
 const similarTitle = String(content.race_page_similar_title ?? '');
 const similarBody = String(content.race_page_similar_body ?? '');
+const NEIGHBOR_PREFIX: Record<string, string> = { en: 'Neighboring country: ', de: 'Nachbarland: ' };
+const similarNeighborPrefix = locale === 'en' ? NEIGHBOR_PREFIX.en : NEIGHBOR_PREFIX[country] ?? '';
 const discoverTitle = String(content.race_page_discover_title ?? '');
 const backToListLabel = String(content.race_page_back_to_list ?? content.navigation?.['race-list'] ?? '');
 const sliderCta = String(content.to_race_page_cta ?? '');
@@ -678,6 +696,11 @@ const newsletterContext = {
                   <div class="race-detail-related-card__meta">
                     {entry.dateLabel ? <span>{entry.dateLabel}</span> : null}
                     {entry.locationLabel ? <span>{entry.locationLabel}</span> : null}
+                    {entry.neighborCountryLabel ? (
+                      <span class="race-detail-related-card__neighbor">
+                        {similarNeighborPrefix}{entry.neighborCountryLabel}
+                      </span>
+                    ) : null}
                   </div>
                 </div>
                 <div class="race-detail-related-card__body">

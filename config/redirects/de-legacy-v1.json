@@ -1,0 +1,18 @@
+{
+  "id": "de-legacy-v1",
+  "market": "de",
+  "note": "DE migration from Firebase v1 laufrennen.de. v1 used /Rennseiten/ (capitalised), /laufkalender/<region>/<type>/<distance> with alle-laufarten and Swedish slugs (halvmarathon), and /race-calendar/ for English. Explicit 308 for the case change; fallbackRoutes run after the filesystem so they only catch URLs v2 does not build: removed or past race pages and thin browse combinations walk up to the nearest built parent. Sources: v1 build logs in race-aggregator, live 404 probes. Wayback CDX was offline (503) on 2026-11-04.",
+  "redirects": [
+    { "source": "/Rennseiten/:path*", "destination": "/rennseiten/:path*", "permanent": true }
+  ],
+  "fallbackRoutes": [
+    { "src": "^/rennseiten/.+$", "destination": "/laufkalender/" },
+    { "src": "^/race-pages/(.+?)/?$", "destination": "/en/race-pages/$1/" },
+    { "src": "^/race-calendar(?:/.*)?$", "destination": "/en/race-calendar/" },
+    { "src": "^/laufkalender/([^/]+)/alle-laufarten/?$", "destination": "/laufkalender/$1/" },
+    { "src": "^/laufkalender/([^/]+)/alle-laufarten/(.+?)/?$", "destination": "/laufkalender/$1/$2/" },
+    { "src": "^/laufkalender/(.*)halvmarathon/?$", "destination": "/laufkalender/$1halbmarathon/" },
+    { "src": "^/laufkalender/(.+)/[^/]+/?$", "destination": "/laufkalender/$1/" },
+    { "src": "^/laufkalender/[^/]+/?$", "destination": "/laufkalender/" }
+  ]
+}
