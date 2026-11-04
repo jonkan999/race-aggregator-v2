@@ -260,6 +260,14 @@ for (const countryCode of countryCodes) {
       }
     }
   }
+  if (countryCode === 'no') {
+    const folder = String(nativeContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (folder !== 'lopssider') {
+      failures.push(
+        'no: native race_page_folder_name must be the live ASCII lopssider (legacy race slugs keep underscores; past races are one-off 308s in config/redirects/no-legacy-race-pages.json)',
+      );
+    }
+  }
   const trainingPlansAreEnabled =
     trainingPlansEnabled(nativeContent) || trainingPlansEnabled(englishContent);
 

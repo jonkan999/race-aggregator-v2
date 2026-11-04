@@ -10,7 +10,7 @@ test('google ads stay off for Sweden and other non-flagged markets', () => {
 });
 
 test('google ads are on for flagged markets with the shared public client', () => {
-  const flagged = ['fi', 'lt', 'dk', 'ee', 'de', 'pl', 'nl'] as const;
+  const flagged = ['fi', 'lt', 'dk', 'ee', 'de', 'pl', 'nl', 'no'] as const;
 
   for (const code of flagged) {
     const ads = getGoogleAdsConfig(code);

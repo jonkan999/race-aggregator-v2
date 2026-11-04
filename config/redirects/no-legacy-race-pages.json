@@ -1,0 +1,58 @@
+{
+  "id": "no-legacy-race-pages",
+  "market": "no",
+  "note": "NO one-off migration from Firebase lopskalender.com. Hand-maintained. Explicit 308s for retired aux paths; fallbackRoutes run after the filesystem, so they only catch legacy URLs v2 does not build: past race pages and thin browse combinations walk up to the nearest built parent.",
+  "redirects": [
+    {
+      "source": "/forhandsvis-lop",
+      "destination": "/legg-til-lop/",
+      "permanent": true
+    },
+    {
+      "source": "/forhandsvis-lop/",
+      "destination": "/legg-til-lop/",
+      "permanent": true
+    },
+    {
+      "source": "/en/preview-race",
+      "destination": "/en/add-race/",
+      "permanent": true
+    },
+    {
+      "source": "/en/preview-race/",
+      "destination": "/en/add-race/",
+      "permanent": true
+    },
+    {
+      "source": "/forum/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "fallbackRoutes": [
+    {
+      "src": "^/lopssider(?:/.*)?$",
+      "destination": "/terminliste/"
+    },
+    {
+      "src": "^/en/race-pages/.+$",
+      "destination": "/en/race-calendar/"
+    },
+    {
+      "src": "^/terminliste/(.+)/[^/]+/?$",
+      "destination": "/terminliste/$1/"
+    },
+    {
+      "src": "^/terminliste/[^/]+/?$",
+      "destination": "/terminliste/"
+    },
+    {
+      "src": "^/en/race-calendar/(.+)/[^/]+/?$",
+      "destination": "/en/race-calendar/$1/"
+    },
+    {
+      "src": "^/en/race-calendar/[^/]+/?$",
+      "destination": "/en/race-calendar/"
+    }
+  ]
+}

@@ -37,6 +37,7 @@ export function loadRedirectConfigs(dir = redirectsDir) {
       id: String(parsed.id ?? path.basename(filePath, '.json')),
       market: parsed.market ? String(parsed.market).toLowerCase() : '',
       redirects: Array.isArray(parsed.redirects) ? parsed.redirects : [],
+      fallbackRoutes: Array.isArray(parsed.fallbackRoutes) ? parsed.fallbackRoutes : [],
     };
   });
 }
@@ -71,6 +72,16 @@ export function redirectToRoute(redirect) {
     };
   }
 
+  if (source.endsWith(pathStar)) {
+    // Collapse-style redirect: any path under the prefix goes to one fixed destination.
+    const sourceBase = source.slice(0, -pathStar.length);
+    return {
+      src: `^${escapeRegex(sourceBase)}(?:/(.*))?$`,
+      headers: { Location: destination },
+      status,
+    };
+  }
+
   return {
     src: `^${escapeRegex(source)}$`,
     headers: { Location: destination },
@@ -82,16 +93,38 @@ function isManagedRedirectRoute(route) {
   return Boolean(route && MANAGED_REDIRECT_STATUSES.has(route.status) && route.headers?.Location);
 }
 
+/**
+ * Fallback routes run after `{ handle: 'filesystem' }`, so they only fire when
+ * no built page matches (e.g. legacy browse combinations that v2 does not
+ * build). `src` is a raw regex; `destination` may use $1 captures.
+ */
+export function fallbackRoutesFromConfigs(configs) {
+  return configs.flatMap((config) =>
+    (config.fallbackRoutes ?? []).map((route) => ({
+      src: String(route.src),
+      headers: { Location: String(route.destination) },
+      status: route.permanent === false ? 307 : 308,
+    })),
+  );
+}
+
 export function mergeVercelConfig(vercelJson, configs) {
   const redirects = vercelRedirectsFromConfigs(configs);
   const redirectRoutes = redirects.map(redirectToRoute);
   const existingRoutes = Array.isArray(vercelJson.routes) ? vercelJson.routes : [];
-  const preservedRoutes = existingRoutes.filter((route) => !isManagedRedirectRoute(route));
+  const fsIndex = existingRoutes.findIndex((route) => route && route.handle === 'filesystem');
+  const beforeFilesystem = fsIndex === -1 ? existingRoutes : existingRoutes.slice(0, fsIndex);
+  const preservedRoutes = beforeFilesystem.filter((route) => !isManagedRedirectRoute(route));
+  const fallbackRoutes = fallbackRoutesFromConfigs(configs);
 
   return {
     ...vercelJson,
     redirects,
-    routes: [...redirectRoutes, ...preservedRoutes],
+    routes: [
+      ...redirectRoutes,
+      ...preservedRoutes,
+      ...(fallbackRoutes.length ? [{ handle: 'filesystem' }, ...fallbackRoutes] : []),
+    ],
   };
 }
 

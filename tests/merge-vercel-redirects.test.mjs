@@ -139,3 +139,17 @@ test('merge is idempotent and does not drop existing WAF routes', () => {
   assert.equal(parsed.routes.filter((route) => route.status === 308).length, 2);
   assert.equal(parsed.routes.at(-1).mitigate.action, 'deny');
 });
+
+test('fallbackRoutes go after the filesystem handle and collapse :path* sources', async () => {
+  const { mergeVercelConfig, redirectToRoute } = await import('../scripts/merge-vercel-redirects.mjs');
+  const collapse = redirectToRoute({ source: '/old/x/:path*', destination: '/list/' });
+  assert.equal(collapse.src, '^/old/x(?:/(.*))?$');
+  assert.equal(collapse.headers.Location, '/list/');
+  const base = { routes: [{ src: '/(.*)', mitigate: { action: 'deny' } }, { handle: 'filesystem' }, { src: '^/stale$', headers: { Location: '/' }, status: 308 }] };
+  const cfg = [{ id: 'x', redirects: [], fallbackRoutes: [{ src: '^/a/(.+)/[^/]+/?$', destination: '/a/$1/' }] }];
+  const merged = mergeVercelConfig(base, cfg);
+  const fs = merged.routes.findIndex((r) => r.handle === 'filesystem');
+  assert.equal(merged.routes.filter((r) => r.handle === 'filesystem').length, 1);
+  assert.deepEqual(merged.routes.slice(fs + 1), [{ src: '^/a/(.+)/[^/]+/?$', headers: { Location: '/a/$1/' }, status: 308 }]);
+  assert.deepEqual(mergeVercelConfig(merged, cfg), merged);
+});

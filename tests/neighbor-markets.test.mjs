@@ -70,8 +70,8 @@ test('every enabled deploy market has at least one enabled neighbor', () => {
   }
 });
 
-test('Denmark lists Sweden and Germany as live neighbors', () => {
-  assert.deepEqual(liveNeighbors('dk'), ['se', 'de']);
+test('Denmark lists Sweden, Germany, and Norway as live neighbors', () => {
+  assert.deepEqual(liveNeighbors('dk'), ['se', 'de', 'no']);
 });
 
 test('Nordic/Baltic live markets cross-link each other', () => {
@@ -92,9 +92,11 @@ test('neighbor race-list hrefs use production domains and market-owned slugs', (
   assert.ok(productionHref('ee', 'native').startsWith('https://jooksma.ee/'));
 });
 
-test('Norway stays configured but is omitted until it is an enabled deploy market', () => {
+test('Norway is an enabled deploy market and cross-links its Nordic neighbors', () => {
   assert.ok(loadJson('config/neighbor-markets.json').markets.dk.includes('no'));
-  assert.ok(!liveNeighbors('dk').includes('no'));
+  assert.ok(liveNeighbors('dk').includes('no'));
+  assert.equal(productionHref('no', 'native'), 'https://lopskalender.com/terminliste/');
+  assert.deepEqual(liveNeighbors('no'), ['se', 'dk', 'fi']);
 });
 
 test('Netherlands lists Germany as a live neighbor and keeps Belgium until it is enabled', () => {
