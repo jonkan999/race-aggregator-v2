@@ -3891,6 +3891,18 @@
       "market": "no"
     },
     {
+      "source": "/lopssider/vossaton_voss_idrettsplass/:path*",
+      "destination": "/lopssider/vossaton/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/vossaton_voss_idrettsplass/:path*",
+      "destination": "/en/race-pages/vossaton/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
       "source": "/lopssider/yttersia_skyrace_senja_1787_bergsfjordveien_skaland/:path*",
       "destination": "/lopssider/yttersia_skyrace_senja/:path*",
       "permanent": true,
