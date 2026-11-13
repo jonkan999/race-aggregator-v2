@@ -153,3 +153,40 @@ test('fallbackRoutes go after the filesystem handle and collapse :path* sources'
   assert.deepEqual(merged.routes.slice(fs + 1), [{ src: '^/a/(.+)/[^/]+/?$', headers: { Location: '/a/$1/' }, status: 308 }]);
   assert.deepEqual(mergeVercelConfig(merged, cfg), merged);
 });
+
+test('market filter keeps only that market redirects plus unscoped ones', async () => {
+  const { filterConfigsForMarket } = await import('../scripts/merge-vercel-redirects.mjs');
+  const configs = [
+    { id: 'global', market: '', redirects: [{ source: '/a', destination: '/b' }], fallbackRoutes: [] },
+    { id: 'de-only', market: 'de', redirects: [{ source: '/x', destination: '/y' }], fallbackRoutes: [{ src: '^/z$', destination: '/' }] },
+    {
+      id: 'merged',
+      market: '',
+      redirects: [
+        { source: '/loppsidor/a/:path*', destination: '/loppsidor/b/:path*', market: 'se' },
+        { source: '/lopsider/c/:path*', destination: '/lopsider/d/:path*', market: 'no' },
+      ],
+      fallbackRoutes: [],
+    },
+  ];
+  const se = filterConfigsForMarket(configs, 'SE');
+  assert.deepEqual(se.map((c) => c.id), ['global', 'merged']);
+  assert.deepEqual(se.find((c) => c.id === 'merged').redirects.map((r) => r.market), ['se']);
+  assert.equal(filterConfigsForMarket(configs, '').length, 3);
+});
+
+test('real config stays under the Vercel 2048 route limit for every market', async () => {
+  const { filterConfigsForMarket } = await import('../scripts/merge-vercel-redirects.mjs');
+  const vercelJson = JSON.parse(fs.readFileSync(path.join(repoRoot, 'vercel.json'), 'utf8'));
+  const all = loadRedirectConfigs(path.join(repoRoot, 'config/redirects'));
+  const markets = JSON.parse(fs.readFileSync(path.join(repoRoot, 'config/deploy-markets.json'), 'utf8'));
+  const codes = (Array.isArray(markets) ? markets : markets.markets ?? Object.keys(markets)).map((m) =>
+    typeof m === 'string' ? m : m.marketCode ?? m.code,
+  );
+  assert.ok(codes.length > 0);
+  for (const code of codes) {
+    const merged = mergeVercelConfig(vercelJson, filterConfigsForMarket(all, code));
+    const total = merged.routes.length + merged.redirects.length;
+    assert.ok(total < 2048, `${code}: ${total} routes`);
+  }
+});

@@ -42,6 +42,28 @@ export function loadRedirectConfigs(dir = redirectsDir) {
   });
 }
 
+/**
+ * Keep only redirects that belong to the market being built. A config (or a single
+ * redirect entry) with a `market` applies to that market only; entries without one
+ * apply everywhere. Every market used to get every market's redirects, which pushed
+ * vercel.json past Vercel's 2048-route limit once merged-duplicate redirects grew.
+ */
+export function filterConfigsForMarket(configs, market) {
+  const code = String(market ?? '').trim().toLowerCase();
+  if (!code) return configs;
+  return configs
+    .filter((config) => !config.market || config.market === code)
+    .map((config) => ({
+      ...config,
+      redirects: config.redirects.filter(
+        (redirect) => !redirect.market || String(redirect.market).toLowerCase() === code,
+      ),
+      fallbackRoutes: (config.fallbackRoutes ?? []).filter(
+        (route) => !route.market || String(route.market).toLowerCase() === code,
+      ),
+    }));
+}
+
 export function vercelRedirectsFromConfigs(configs) {
   return configs.flatMap((config) =>
     config.redirects.map((redirect) => ({
@@ -141,7 +163,8 @@ export function mergeVercelRedirects(args = {}) {
   const target = args.vercelPath ?? path.join(root, 'vercel.json');
   const dir = args.redirectsDir ?? path.join(root, 'config', 'redirects');
   const vercelJson = JSON.parse(fs.readFileSync(target, 'utf8'));
-  const configs = loadRedirectConfigs(dir);
+  const market = args.market ?? process.env.MARKET_CODE ?? '';
+  const configs = filterConfigsForMarket(loadRedirectConfigs(dir), market);
   const merged = mergeVercelConfig(vercelJson, configs);
   const changed = writeJsonIfChanged(target, merged);
   return { changed, redirectCount: merged.redirects.length, configs };
