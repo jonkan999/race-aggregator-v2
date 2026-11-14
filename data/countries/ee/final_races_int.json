@@ -126,19 +126,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "website",
-      "organizer",
       "location",
-      "description",
-      "price_range",
-      "distances",
+      "website",
       "race_dates",
-      "longitude",
-      "name",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "start_time",
+      "distances",
+      "price_range",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -221,14 +221,142 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "prangli_seiklusjooks",
+    "name": "Prangli seiklusjooks",
+    "type": "other",
+    "type_local": "Muu",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Prangli Island, Viimsi Parish, Estonia",
+    "latitude": 59.62535409999999,
+    "longitude": 25.0105801,
+    "county": "Harju maakond",
+    "nearest_city": "Tallinna",
+    "nearby_cities": [
+      "Tallinna"
+    ],
+    "distances": "[\"12\"]",
+    "distance_m": [
+      12000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "12 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://marathon100.com/kalender/eesti/yritus/prangli-seiklusjooks-2026-12-km"
+    ],
+    "consolidated_ids": [
+      "f0d0afa9-a036-40fd-b176-51637800e7ac"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "treeningpluss_vaana_joesuu_jooks_matk",
+    "name": "TreeningPluss Vääna jõesuu jooks-matk",
+    "type": "trail",
+    "type_local": "Trailijooks",
+    "race_dates": [
+      [
+        "20261122",
+        "20261122"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Vääna-Jõesuu, Harku Parish, Harju County, Estonia",
+    "latitude": 59.43352350000001,
+    "longitude": 24.3672188,
+    "county": "Harju maakond",
+    "nearest_city": "Tallinna",
+    "nearby_cities": [
+      "Tallinna"
+    ],
+    "distances": "[\"14\"]",
+    "distance_m": [
+      14000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "14 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://marathon100.com/kalender/eesti/yritus/treeningpluss-vaana-joesuu-jooks-matk-2026-25-km"
+    ],
+    "consolidated_ids": [
+      "918feb7a-8ca0-432e-a064-9aa751d9f883"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "kadrina_kadripaeva_kadrijooks",
     "name": "Kadrina kadripäeva kadrijooks",
     "type": "road",
     "type_local": "Tänavajooks",
     "race_dates": [
       [
-        "20261123",
-        "20261123"
+        "20261128",
+        "20261128"
       ]
     ],
     "upcoming_dates": [],
@@ -276,11 +404,11 @@
       "https://marathon100.com/kalender/eesti/yritus/kadrina-kadripaeva-kadrijooks-2026-5-km"
     ],
     "consolidated_ids": [
-      "319149b9-d3a1-4b37-be53-9be213d40845"
+      "9ba36cba-bde9-4e22-8770-c2c5987bd60d"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261012",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -379,10 +507,16 @@
     "nearby_cities": [
       "Tallinna"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
+    "distances": "[\"3\", \"0.8\", \"0.2\"]",
+    "distance_m": [
+      3000,
+      800,
+      200
+    ],
+    "distance_keywords": [
+      "3000 meetrit"
+    ],
+    "distance_verbose": "3000 meetrit, 0.8 km, 0.2 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -483,6 +617,74 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "treeningpluss_muraste_jooks_matk",
+    "name": "TreeningPluss Muraste jooks-matk",
+    "type": "trail",
+    "type_local": "Trailijooks",
+    "race_dates": [
+      [
+        "20261213",
+        "20261213"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Muraste, Harku Parish, Harju County, Estonia",
+    "latitude": 59.45422309999999,
+    "longitude": 24.4444292,
+    "county": "Harju maakond",
+    "nearest_city": "Tallinna",
+    "nearby_cities": [
+      "Tallinna"
+    ],
+    "distances": "[\"25\", \"20\", \"14\"]",
+    "distance_m": [
+      25000,
+      20000,
+      14000
+    ],
+    "distance_keywords": [
+      "Poolmaraton"
+    ],
+    "distance_verbose": "25 km, Poolmaraton, 14 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://marathon100.com/kalender/eesti/yritus/treeningpluss-muraste-jooks-matk-2026-25-km"
+    ],
+    "consolidated_ids": [
+      "76cb07ac-394f-4d82-81a7-b070aa426b8f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -772,19 +974,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "website",
-      "organizer",
       "location",
-      "description",
-      "price_range",
-      "distances",
+      "website",
       "race_dates",
-      "longitude",
-      "name",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "start_time",
+      "distances",
+      "price_range",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1368,10 +1570,12 @@
     "nearby_cities": [
       "Tallinna"
     ],
-    "distances": "[]",
-    "distance_m": [],
+    "distances": "[\"7\"]",
+    "distance_m": [
+      7000
+    ],
     "distance_keywords": [],
-    "distance_verbose": "Segadistants",
+    "distance_verbose": "7 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -3296,10 +3500,15 @@
     "nearby_cities": [
       "Pärnu"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
+    "distances": "[\"3\", \"0.4\"]",
+    "distance_m": [
+      3000,
+      400
+    ],
+    "distance_keywords": [
+      "3000 meetrit"
+    ],
+    "distance_verbose": "3000 meetrit, 0.4 km",
     "organizer": null,
     "contact": null,
     "website": "https://www.psl.ee/sundmus/parnu-aasta-jooksud-4-etapp/",
@@ -5188,10 +5397,16 @@
       "Viljandi",
       "Valga"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
+    "distances": "[\"4.4\", \"0.7\", \"0.3\"]",
+    "distance_m": [
+      4400,
+      700,
+      300
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km, 0.7 km, 0.3 km",
     "organizer": "Mulgi valla sport",
     "contact": null,
     "website": "https://www.facebook.com/events/karksi-nuia-lossim%C3%A4ed/49jaanijooks-%C3%BCmber-karksi-nuia-paisj%C3%A4rve/959892586871672/",
@@ -7157,10 +7372,16 @@
       "Rakvere",
       "Kohtla-Järve"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
+    "distances": "[\"10\", \"2.8\", \"0.6\"]",
+    "distance_m": [
+      10000,
+      2800,
+      600
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km, 2.8 km, 0.6 km",
     "organizer": null,
     "contact": null,
     "website": "https://jooksusari.ee/etapid-2022/",
@@ -10661,10 +10882,16 @@
     "nearby_cities": [
       "Tallinna"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
+    "distances": "[\"42.195\", \"21.1\"]",
+    "distance_m": [
+      42195,
+      21100
+    ],
+    "distance_keywords": [
+      "Maraton",
+      "Poolmaraton"
+    ],
+    "distance_verbose": "Maraton, Poolmaraton",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -12523,11 +12750,10 @@
     "is_series": false,
     "max_description_relevance": 0.87,
     "sources": [
-      "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-c12478/",
       "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-2026/",
       "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-c12477/",
-      "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-c12479/",
-      "https://marathon100.com/kalender/eesti/yritus/suusatajate-seeriajooks-2026-5-km-26639"
+      "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-c12478/",
+      "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-c12479/"
     ],
     "consolidated_ids": [
       "0b986dab-ccbd-4c5e-b8fe-6af15b01b24c"
@@ -12885,7 +13111,6 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://marathon100.com/kalender/eesti/yritus/reinpauli-maastikujooks-2026-10-km-8897",
       "https://www.sportos.eu/ee/et/reinpauli-xxiv-maastikujooks/"
     ],
     "consolidated_ids": [
@@ -13044,11 +13269,15 @@
       [
         "20261107",
         "20261107"
+      ],
+      [
+        "20271106",
+        "20271106"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Vooremäe, Tartumaa, Estonia",
     "latitude": 58.2815327,
@@ -13145,15 +13374,80 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.sportos.eu/ee/et/seiklushunt-trailhunt-voistlused/",
-      "https://marathon100.com/kalender/eesti/yritus/trailhunt-vooremae1000-2026-42-km"
+      "https://www.sportos.eu/ee/et/seiklushunt-trailhunt-voistlused/"
     ],
     "consolidated_ids": [
-      "8fb2e81e-30fd-47fe-b087-8d0932a9edc6"
+      "111555a2-4c45-4556-86c3-adafa95a9199"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260529",
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "audru_sildade_jooks",
+    "name": "Audru Sildade Jooks",
+    "type": "other",
+    "type_local": "Muu",
+    "race_dates": [
+      [
+        "20261107",
+        "20261107"
+      ],
+      [
+        "20271106",
+        "20271106"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Audru, Pärnu, Estonia",
+    "latitude": 58.41460919999999,
+    "longitude": 24.3218542,
+    "county": "Pärnu maakond",
+    "nearest_city": "Pärnu",
+    "nearby_cities": [
+      "Pärnu"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Segadistants",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportos.eu/ee/et/audru-sildade-jooks-2026/"
+    ],
+    "consolidated_ids": [
+      "3d555ed3-55a0-457f-8e95-2e2489d01b65"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -13217,19 +13511,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "website",
-      "organizer",
-      "additional",
-      "description",
       "location",
-      "distances",
+      "website",
       "race_dates",
-      "longitude",
-      "name",
+      "additional",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "start_time",
+      "distances",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13244,66 +13538,6 @@
     ],
     "supplied_at": "20260310",
     "created_date": "20260530",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "audru_sildade_jooks",
-    "name": "Audru Sildade Jooks",
-    "type": "other",
-    "type_local": "Muu",
-    "race_dates": [
-      [
-        "20261107",
-        "20261107"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Audru vald",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.sportos.eu/ee/et/audru-sildade-jooks-2026/"
-    ],
-    "consolidated_ids": [
-      "a5b74138-3037-4a4e-9ae0-495ff95a8b82"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -13417,17 +13651,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "website",
       "location",
-      "description",
-      "distances",
+      "website",
       "race_dates",
-      "longitude",
-      "name",
       "latitude",
-      "type"
+      "longitude",
+      "description",
+      "start_time",
+      "distances",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13559,16 +13793,16 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "organizer",
       "location",
-      "description",
       "race_dates",
-      "longitude",
-      "name",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "start_time",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -13741,19 +13975,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "website",
-      "organizer",
-      "additional",
-      "description",
       "location",
-      "price_range",
-      "distances",
+      "website",
       "race_dates",
-      "longitude",
-      "name",
+      "additional",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "distances",
+      "price_range",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -13850,19 +14084,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "website",
-      "organizer",
-      "additional",
-      "description",
       "location",
-      "price_range",
+      "website",
       "race_dates",
-      "longitude",
-      "name",
+      "additional",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "start_time",
+      "price_range",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13954,19 +14188,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "website",
-      "organizer",
-      "additional",
-      "description",
       "location",
-      "price_range",
+      "website",
       "race_dates",
-      "longitude",
-      "name",
+      "additional",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "start_time",
+      "price_range",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13998,8 +14232,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": "",
     "location": "Tallinn",
     "latitude": 59.4335653000129,
@@ -14073,25 +14307,25 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "website",
-      "organizer",
       "location",
+      "website",
+      "race_dates",
+      "latitude",
+      "organizer",
+      "longitude",
       "description",
       "distances",
-      "race_dates",
-      "longitude",
       "name",
-      "latitude",
-      "type"
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "supplied",
-      "https://www.sportos.eu/ee/et/swedbanki-tallinna-maraton-42195-km/",
       "https://www.sportos.eu/ee/et/swedbanki-tallinna-maraton-poolmaraton-211-km-2027/",
       "https://www.sportos.eu/ee/et/swedbanki-tallinna-maraton-teatemaraton-42195-km/",
+      "supplied",
+      "https://www.sportos.eu/ee/et/swedbanki-tallinna-maraton-42195-km/",
       "https://www.sportos.eu/ee/et/tallinna-maraton/"
     ],
     "consolidated_ids": [
@@ -14158,18 +14392,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "contact",
-      "start_time",
-      "organizer",
-      "additional",
-      "description",
       "location",
-      "distances",
       "race_dates",
-      "longitude",
-      "name",
+      "additional",
       "latitude",
-      "type"
+      "organizer",
+      "longitude",
+      "description",
+      "start_time",
+      "distances",
+      "name",
+      "type",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
