@@ -4695,6 +4695,18 @@
       "market": "pl"
     },
     {
+      "source": "/strony_biegow/xi_zadyszka/:path*",
+      "destination": "/strony_biegow/xi_zadyszka_gminy_belchhatow/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/xi_zadyszka/:path*",
+      "destination": "/en/race-pages/xi_zadyszka_gminy_belchhatow/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
       "source": "/strony_biegow/xii_bieg_mikolajkowy/:path*",
       "destination": "/strony_biegow/ii_bieg_mikolajkowy/:path*",
       "permanent": true,
