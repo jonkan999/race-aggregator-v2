@@ -71,16 +71,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -95,6 +95,73 @@
     ],
     "supplied_at": "20260906",
     "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "begimas_taurostos_ruduo",
+    "name": "Bėgimas Taurostos ruduo",
+    "type": "other",
+    "type_local": "Kita",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Jonava, Lithuania",
+    "latitude": 55.0727223,
+    "longitude": 24.2794638,
+    "county": "Kauno apskritis",
+    "nearest_city": "Kaunas",
+    "nearby_cities": [],
+    "distances": "[\"21.1\", \"7\", \"1\"]",
+    "distance_m": [
+      21100,
+      7000,
+      1000
+    ],
+    "distance_keywords": [
+      "Pusmaratonas"
+    ],
+    "distance_verbose": "Pusmaratonas, 7 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-11-14_Begimas_Taurostos_ruduo_nuostatai.pdf",
+      "http://bkmaratonas.fweb.lt/begimai"
+    ],
+    "consolidated_ids": [
+      "4f96637d-7b7c-4440-96cf-6b5b15c287b0"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -171,25 +238,25 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
       "http://bkmaratonas.fweb.lt/begimai",
       "https://www.lbma.lt/index.php?kalendorius&year=2026",
-      "ranking_bridge",
+      "https://www.lbma.lt/files/races/2026-11-15_Begimas_skirtas_Lietuvos_kariu_dienai_pamineti_nuostatai.pdf",
       "https://www.facebook.com/events/2934177060255574/",
-      "https://www.lbma.lt/files/races/2026-11-15_Begimas_skirtas_Lietuvos_kariu_dienai_pamineti_nuostatai.pdf"
+      "ranking_bridge"
     ],
     "consolidated_ids": [
       "37052fc0-9cfd-4314-979b-f474f002c6f6"
@@ -329,17 +396,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -423,7 +490,8 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://itra.run/Races/RaceDetails/VC.TRAIL.2026.11.21.FINALINIS.ETAPAS.21KM/2026/123089"
+      "https://itra.run/Races/RaceDetails/VC.TRAIL.2026.11.21.FINALINIS.ETAPAS.21KM/2026/123089",
+      "http://bkmaratonas.fweb.lt/begimai"
     ],
     "consolidated_ids": [
       "75c7872a-b6c1-4a92-9985-a00ac44b7add"
@@ -431,6 +499,72 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "tiesiog_maratonas_11_vilnius",
+    "name": "Tiesiog maratonas#11 (Vilnius",
+    "type": "other",
+    "type_local": "Kita",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Vilnius, Lithuania",
+    "latitude": 54.6871555,
+    "longitude": 25.2796514,
+    "county": "Vilniaus apskritis",
+    "nearest_city": "Vilnius",
+    "nearby_cities": [
+      "Vilnius"
+    ],
+    "distances": "[\"42.2\"]",
+    "distance_m": [
+      42200
+    ],
+    "distance_keywords": [
+      "Maratonas"
+    ],
+    "distance_verbose": "Maratonas",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "http://bkmaratonas.fweb.lt/begimai"
+    ],
+    "consolidated_ids": [
+      "9cf0ede2-7645-409f-8ba5-de59ac547244"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -499,17 +633,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -575,16 +709,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
-      "longitude",
-      "description",
-      "contact",
-      "website",
+      "type",
       "race_dates",
       "county",
+      "contact",
+      "name",
+      "longitude",
+      "description",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -680,17 +814,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -763,16 +897,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -932,25 +1066,25 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
       "http://bkmaratonas.fweb.lt/begimai",
       "https://www.lbma.lt/index.php?kalendorius&year=2026",
-      "ranking_bridge",
-      "https://kaledinisbegimas.lt/"
+      "https://kaledinisbegimas.lt/",
+      "ranking_bridge"
     ],
     "consolidated_ids": [
       "9b718d06-a4f4-4637-b16c-12bf6f53f5d3"
@@ -1018,16 +1152,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1116,16 +1250,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
-      "longitude",
-      "description",
-      "contact",
-      "website",
+      "type",
       "race_dates",
       "county",
+      "contact",
+      "name",
+      "longitude",
+      "description",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1191,15 +1325,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1267,17 +1401,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1345,21 +1479,22 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://www.lbma.lt/index.php?kalendorius&year=2026",
       "ranking_bridge"
     ],
     "consolidated_ids": [
@@ -1503,6 +1638,68 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "druskininku_kaledinis_begimas",
+    "name": "Druskininkų Kalėdinis bėgimas",
+    "type": "other",
+    "type_local": "Kita",
+    "race_dates": [
+      [
+        "20261219",
+        "20261219"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Druskininkai, Lithuania",
+    "latitude": 54.00490689999999,
+    "longitude": 23.9864279,
+    "county": "Alytaus apskritis",
+    "nearest_city": "Druskininkai",
+    "nearby_cities": [
+      "Druskininkai"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mišri distancija",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "http://bkmaratonas.fweb.lt/begimai"
+    ],
+    "consolidated_ids": [
+      "31653878-a0bf-4d17-b3ca-07365cfe5173"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "panevezio_kaledinis_begimas",
     "name": "Panevėžio Kalėdinis Bėgimas",
     "type": "other",
@@ -1555,17 +1752,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1722,16 +1919,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
-      "longitude",
-      "description",
-      "contact",
-      "website",
+      "type",
       "race_dates",
       "county",
+      "contact",
+      "name",
+      "longitude",
+      "description",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1825,16 +2022,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1903,17 +2100,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2055,17 +2252,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2236,16 +2433,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2398,17 +2595,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2477,15 +2674,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4737,9 +4934,9 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.lbma.lt/files/races/2026-05-09_Vilnius_trail_run_2026_rezultatai.xlsx",
       "https://www.facebook.com/events/949550857905229/",
-      "https://itra.run/Races/RaceDetails/Vilnius.Trail.Run.108KM/2027/119046"
+      "https://itra.run/Races/RaceDetails/Vilnius.Trail.Run.108KM/2027/119046",
+      "https://www.lbma.lt/files/races/2026-05-09_Vilnius_trail_run_2026_rezultatai.xlsx"
     ],
     "consolidated_ids": [
       "4ff92e3c-9223-4973-8a79-8f0e2ecf8365"
@@ -4850,6 +5047,10 @@
       [
         "20270508",
         "20270508"
+      ],
+      [
+        "20270508",
+        "20270508"
       ]
     ],
     "upcoming_dates": [],
@@ -4897,11 +5098,11 @@
       "https://www.lbma.lt/files/races/2026-05-09_RASA_Druskininku_maratonas_rezultatai.xlsx"
     ],
     "consolidated_ids": [
-      "4942014a-9b3a-4edb-a6bf-9232f2530eaa"
+      "407fdf34-32b3-46ad-811d-834c3903bff5"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -5988,6 +6189,10 @@
       [
         "20270526",
         "20270526"
+      ],
+      [
+        "20270526",
+        "20270526"
       ]
     ],
     "upcoming_dates": [],
@@ -6029,11 +6234,11 @@
       "https://www.lbma.lt/files/races/2026-05-27_Begimas_Kutaliai_Kaltinenai_rezultatai.xlsx"
     ],
     "consolidated_ids": [
-      "c96635f1-f92e-4d31-9c64-852c50969957"
+      "bf4c0e8c-274c-4227-b366-e5b3fe987c05"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -6048,6 +6253,10 @@
       [
         "20260530",
         "20260530"
+      ],
+      [
+        "20270529",
+        "20270529"
       ],
       [
         "20270529",
@@ -6107,11 +6316,11 @@
       "https://www.lbma.lt/files/races/2026-05-30_Vilties_begimas_rezultatai.xlsx"
     ],
     "consolidated_ids": [
-      "ff13f49c-b7b2-45d0-b3cd-6b862fa6d3da"
+      "ea61b3b8-8b68-4cf4-949c-b3b9971efba1"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -6213,11 +6422,11 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.lbma.lt/files/races/2026-05-30_Vilnius_5_in_5_4_diena_rezultatai.xlsx",
       "https://www.lbma.lt/files/races/2026-05-27_Vilnius_5_in_5_1_diena_rezultatai.xlsx",
+      "https://www.lbma.lt/files/races/2026-05-30_Vilnius_5_in_5_4_diena_rezultatai.xlsx",
       "https://www.lbma.lt/files/races/2026-05-29_Vilnius_5_in_5_3_diena_rezultatai.xlsx",
-      "https://www.lbma.lt/files/races/2026-05-31_Vilnius_5_in_5_5_diena_rezultatai.xlsx",
       "https://www.facebook.com/events/2615453722166391/",
+      "https://www.lbma.lt/files/races/2026-05-31_Vilnius_5_in_5_5_diena_rezultatai.xlsx",
       "https://www.lbma.lt/files/races/2026-05-28_Vilnius_5_in_5_2_diena_rezultatai.xlsx"
     ],
     "consolidated_ids": [
@@ -7239,6 +7448,10 @@
       [
         "20270620",
         "20270620"
+      ],
+      [
+        "20270620",
+        "20270620"
       ]
     ],
     "upcoming_dates": [],
@@ -7284,11 +7497,11 @@
       "https://www.lbma.lt/files/races/2026-06-21_55-asis_begimas_puse_maratono_Aplink_Elektrenu_marias_nuostatai.pdf"
     ],
     "consolidated_ids": [
-      "7bdd380a-e883-4774-9163-b5c12edcac95"
+      "a93401a8-7cc5-4453-a068-a254fbd85564"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -7303,6 +7516,10 @@
       [
         "20260621",
         "20260621"
+      ],
+      [
+        "20270620",
+        "20270620"
       ],
       [
         "20270620",
@@ -7362,11 +7579,11 @@
       "https://www.lbma.lt/files/races/2026-06-21_Panemunes_pusmaratonis_2026_nuostatai.pdf"
     ],
     "consolidated_ids": [
-      "99485c63-ea53-46dd-8e56-36c14258d3ca"
+      "6c292ff8-0aba-4e1a-9c7f-f7828e9ba2cf"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -10533,6 +10750,10 @@
       [
         "20270529",
         "20270529"
+      ],
+      [
+        "20270529",
+        "20270529"
       ]
     ],
     "upcoming_dates": [],
@@ -10576,11 +10797,11 @@
       "https://www.lbma.lt/files/races/2026-05-30_Kauno_rajono_begimas_2026_rezultatai.xlsx"
     ],
     "consolidated_ids": [
-      "c60fde87-2ed8-4e5f-9523-12e1ceb5400e"
+      "55645ac4-cae2-4967-ad99-db3fa642c396"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [
       {
@@ -11518,113 +11739,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "panevezio_maratonas",
-    "name": "Panevėžio maratonas",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20261107",
-        "20261107"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Panevėžys",
-    "latitude": 55.7347915,
-    "longitude": 24.3574773,
-    "county": "Panevėžio apskritis",
-    "nearest_city": "Panevėžys",
-    "nearby_cities": [
-      "Panevėžys"
-    ],
-    "distances": "[\"10\", \"5\", \"2.8\"]",
-    "distance_m": [
-      10000,
-      5000,
-      2800
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km, 2.8 km",
-    "organizer": null,
-    "contact": "ab.ernestas@gmail.com",
-    "website": "https://my.raceresult.com/316914/info",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "The Panevėžys Marathon 2024 will take place in Panevėžys, Lithuania, and registration will open on September 13, 2024. Anyone who has registered and had a health check may participate. Participants can choose from various distances: a 400 m walk, 2.8 km, 5 km, 10 km, half marathon, and marathon, with different age requirements.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_1.webp?alt=media",
-        "alt_text": "Bėgikai Panevėžio maratono trasoje."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_2.webp?alt=media",
-        "alt_text": "Bėgikas kerta finišo liniją Panevėžio maratone, džiaugdamasis pergale."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_3.webp?alt=media",
-        "alt_text": "Bėgikas Panevėžio maratone, gauna vandens."
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_4.webp?alt=media",
-        "alt_text": "Bėgikas šoka džiaugsmingai po lenktynių."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
-      "latitude",
-      "type"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "http://bkmaratonas.fweb.lt/begimai",
-      "https://www.facebook.com/events/26010537045197703/",
-      "ranking_bridge",
-      "https://www.lbma.lt/files/races/2026-11-07_Panevezio_maratonas_2026_nuostatai.pdf"
-    ],
-    "consolidated_ids": [
-      "b5d24a1b-a607-4657-af7b-180794e92dd3"
-    ],
-    "supplied_ids": [
-      "03586913-5289-4ec9-809b-85e30f93117a"
-    ],
-    "supplied_at": "20260906",
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "xvii_asis_begimas_varnutes_ruduo",
     "name": "XVII-asis bėgimas „Varnutės ruduo“",
     "type": "road",
@@ -11633,11 +11747,15 @@
       [
         "20261107",
         "20261107"
+      ],
+      [
+        "20271106",
+        "20271106"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Jonava, Jonava District Municipality, Lithuania",
     "latitude": 55.0727223,
@@ -11681,16 +11799,80 @@
     "is_series": false,
     "max_description_relevance": 0.7,
     "sources": [
-      "https://www.lbma.lt/files/races/2026-11-07_XVII_begimas_Varnutes_ruduo_2026_nuostatai.pdf",
-      "http://bkmaratonas.fweb.lt/begimai",
-      "https://www.lbma.lt/"
+      "https://www.lbma.lt/files/races/2026-11-07_XVII_begimas_Varnutes_ruduo_2026_rezultatai.xlsx"
     ],
     "consolidated_ids": [
-      "0ff37085-deed-4ad6-a2f7-a6711a08e6d9"
+      "fcfb27c7-a3be-45ab-8256-f9d4df8d2a44"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260906",
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "trailo_kalves_s5e1_smertkalnis",
+    "name": "Trailo kalvės S5E1. Smertkalnis",
+    "type": "other",
+    "type_local": "Kita",
+    "race_dates": [
+      [
+        "20261107",
+        "20261107"
+      ],
+      [
+        "20271106",
+        "20271106"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Kaunas, Lithuania",
+    "latitude": 54.8985207,
+    "longitude": 23.9035965,
+    "county": "Kauno apskritis",
+    "nearest_city": "Kaunas",
+    "nearby_cities": [
+      "Kaunas"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mišri distancija",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-11-07_Trailo_kalves_S5E1._Smertkalnis_rezultatai.xlsx"
+    ],
+    "consolidated_ids": [
+      "65dcaec7-94ef-4e23-a0d9-3c0d0cfbbca9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -11764,24 +11946,22 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "ranking_bridge",
-      "http://bkmaratonas.fweb.lt/begimai",
-      "https://www.lbma.lt/files/races/2026-09-02_Jonavos_begimo_taure_-_2026_5_finalinis_etapas_nuostatai.pdf"
+      "https://www.lbma.lt/files/races/2026-09-02_Jonavos_begimo_taure_-_2026_5_finalinis_etapas_rezultatai.xlsx"
     ],
     "consolidated_ids": [
       "058f6c60-7d97-4b46-a220-ff8447aa8329"
@@ -11865,15 +12045,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -11964,17 +12144,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12061,16 +12241,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
-      "longitude",
-      "description",
-      "contact",
-      "website",
+      "type",
       "race_dates",
       "county",
+      "contact",
+      "name",
+      "longitude",
+      "description",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12166,23 +12346,21 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "ranking_bridge",
-      "http://bkmaratonas.fweb.lt/begimai",
       "https://www.lbma.lt/files/races/2026-09-20_Begimas_Moletai_bega-2026_rezultatai.xlsx"
     ],
     "consolidated_ids": [
@@ -12277,22 +12455,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "ranking_bridge",
-      "http://bkmaratonas.fweb.lt/begimai",
       "https://www.lbma.lt/files/races/2026-09-13_Swedbank_Vilniaus_maratonas_2026_rezultatai.xlsx"
     ],
     "consolidated_ids": [
@@ -12379,17 +12555,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12485,17 +12661,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12588,23 +12764,21 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "ranking_bridge",
-      "http://bkmaratonas.fweb.lt/begimai",
       "https://www.lbma.lt/index.php?kalendorius&year=2026"
     ],
     "consolidated_ids": [
@@ -12694,17 +12868,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12796,17 +12970,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12906,23 +13080,21 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "ranking_bridge",
-      "http://bkmaratonas.fweb.lt/begimai",
       "https://www.lbma.lt/files/races/2026-10-03_VII-asis_Utenos_hipodromo_maratonas_rezultatai.xlsx"
     ],
     "consolidated_ids": [
@@ -13010,17 +13182,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13032,114 +13204,6 @@
     ],
     "supplied_ids": [
       "1892ea53-2339-45fa-9857-ac86ce33e1db"
-    ],
-    "supplied_at": "20260906",
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "pink_run_su_anteja",
-    "name": "PINK RUN su Antėja",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20261004",
-        "20261004"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Laisvės alėja",
-    "latitude": 54.8969783,
-    "longitude": 23.9205158,
-    "county": "Kauno apskritis",
-    "nearest_city": "Kaunas",
-    "nearby_cities": [
-      "Kaunas"
-    ],
-    "distances": "[\"10\", \"5\"]",
-    "distance_m": [
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
-    "contact": "info@kmk.lt",
-    "website": "https://pinkrun.lt/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "PINK RUN with Antėja is an annual pink ribbon charity run dedicated to the fight against breast cancer and the prevention of this disease. Join our event in the heart of Kaunas—Laisvės Avenue—and run for the women you love. Support the fight against breast cancer by taking part in runs of various distances for both professionals and amateurs. Pink Run with Antėja is more than a run; it is a message that we love them.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_1.webp?alt=media",
-        "alt_text": "Pink, dainininkė, rožinis fonas, susijęs su Pink Run su Antėja."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_2.webp?alt=media",
-        "alt_text": "Moteris su rožiniu kaspinėliu plaukuose."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_3.webp?alt=media",
-        "alt_text": "Rožinis kaspinas, susijęs su krūties vėžio sąmoningumu."
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_4.webp?alt=media",
-        "alt_text": "Rožinis fonas."
-      },
-      {
-        "number": 5,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_5.webp?alt=media",
-        "alt_text": "Rožinis fonas su mažais baltais taškais."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
-      "latitude",
-      "type"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.lbma.lt/files/races/2026-10-04_PINK_RUN_su_Anteja_rezultatai.xlsx"
-    ],
-    "consolidated_ids": [
-      "103b0e29-fef9-4014-8755-d6cb4ee0beb7"
-    ],
-    "supplied_ids": [
-      "d57593ea-b492-4c08-9931-8c985ce9a82b"
     ],
     "supplied_at": "20260906",
     "created_date": "20261012",
@@ -13219,17 +13283,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13318,16 +13382,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13420,17 +13484,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13522,17 +13586,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13631,24 +13695,21 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.facebook.com/events/3064681233718609/",
-      "ranking_bridge",
       "https://itra.run/Races/RaceDetails/Trail.Kursiu.Nerija..TKN.104.KM/2027/125939",
-      "https://itra.run/Races/RaceDetails/Trail.Kursiu.Nerija..TKN.104.KM/2026/110850",
       "https://www.lbma.lt/files/races/2026-10-17_Trail_Kursiu_Nerija_TKN2026_rezultatai.xlsx"
     ],
     "consolidated_ids": [
@@ -13733,16 +13794,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "distances",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13836,17 +13897,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13861,67 +13922,6 @@
     ],
     "supplied_at": "20260906",
     "created_date": "20261024",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "trailo_kalves_s5e1_smertkalnis",
-    "name": "Trailo kalvės S5E1. Smertkalnis",
-    "type": "other",
-    "type_local": "Kita",
-    "race_dates": [
-      [
-        "20261107",
-        "20261107"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Kaunas",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mišri distancija",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "http://bkmaratonas.fweb.lt/begimai",
-      "https://www.lbma.lt/files/races/2026-11-07_Trailo_kalves_S5E1._Smertkalnis_nuostatai.pdf"
-    ],
-    "consolidated_ids": [
-      "dc424018-cca5-4689-b42a-faebe0b5b435"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261030",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -14061,17 +14061,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
       "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
       "longitude",
       "description",
-      "contact",
-      "website",
-      "distances",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14158,15 +14158,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
+      "race_dates",
       "location",
+      "type",
+      "county",
+      "name",
       "longitude",
       "description",
-      "website",
-      "race_dates",
-      "county",
       "latitude",
-      "type"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14181,6 +14181,218 @@
     ],
     "supplied_at": "20260906",
     "created_date": "20261103",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "panevezio_maratonas",
+    "name": "Panevėžio maratonas",
+    "type": "road",
+    "type_local": "Kelių",
+    "race_dates": [
+      [
+        "20261107",
+        "20261107"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Panevėžys",
+    "latitude": 55.7347915,
+    "longitude": 24.3574773,
+    "county": "Panevėžio apskritis",
+    "nearest_city": "Panevėžys",
+    "nearby_cities": [
+      "Panevėžys"
+    ],
+    "distances": "[\"10\", \"5\", \"2.8\"]",
+    "distance_m": [
+      10000,
+      5000,
+      2800
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 2.8 km",
+    "organizer": null,
+    "contact": "ab.ernestas@gmail.com",
+    "website": "https://my.raceresult.com/316914/info",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "The Panevėžys Marathon 2024 will take place in Panevėžys, Lithuania, and registration will open on September 13, 2024. Anyone who has registered and had a health check may participate. Participants can choose from various distances: a 400 m walk, 2.8 km, 5 km, 10 km, half marathon, and marathon, with different age requirements.",
+    "course_highlights": [],
+    "additional": null,
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_1.webp?alt=media",
+        "alt_text": "Bėgikai Panevėžio maratono trasoje."
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_2.webp?alt=media",
+        "alt_text": "Bėgikas kerta finišo liniją Panevėžio maratone, džiaugdamasis pergale."
+      },
+      {
+        "number": 3,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_3.webp?alt=media",
+        "alt_text": "Bėgikas Panevėžio maratone, gauna vandens."
+      },
+      {
+        "number": 4,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpanevezio_maratonas%2Fpanevezio_maratonas_4.webp?alt=media",
+        "alt_text": "Bėgikas šoka džiaugsmingai po lenktynių."
+      }
+    ],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
+      "longitude",
+      "description",
+      "latitude",
+      "website"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-11-07_Panevezio_maratonas_2026_rezultatai.xlsx"
+    ],
+    "consolidated_ids": [
+      "c9b8447d-abf1-451c-b136-d519b5b7d0a4"
+    ],
+    "supplied_ids": [
+      "03586913-5289-4ec9-809b-85e30f93117a"
+    ],
+    "supplied_at": "20260906",
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "pink_run_su_anteja",
+    "name": "PINK RUN su Antėja",
+    "type": "road",
+    "type_local": "Kelių",
+    "race_dates": [
+      [
+        "20261004",
+        "20261004"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Laisvės alėja",
+    "latitude": 54.8969783,
+    "longitude": 23.9205158,
+    "county": "Kauno apskritis",
+    "nearest_city": "Kaunas",
+    "nearby_cities": [
+      "Kaunas"
+    ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
+    "organizer": null,
+    "contact": "info@kmk.lt",
+    "website": "https://pinkrun.lt/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "PINK RUN with Antėja is an annual pink ribbon charity run dedicated to the fight against breast cancer and the prevention of this disease. Join our event in the heart of Kaunas—Laisvės Avenue—and run for the women you love. Support the fight against breast cancer by taking part in runs of various distances for both professionals and amateurs. Pink Run with Antėja is more than a run; it is a message that we love them.",
+    "course_highlights": [],
+    "additional": null,
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_1.webp?alt=media",
+        "alt_text": "Pink, dainininkė, rožinis fonas, susijęs su Pink Run su Antėja."
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_2.webp?alt=media",
+        "alt_text": "Moteris su rožiniu kaspinėliu plaukuose."
+      },
+      {
+        "number": 3,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_3.webp?alt=media",
+        "alt_text": "Rožinis kaspinas, susijęs su krūties vėžio sąmoningumu."
+      },
+      {
+        "number": 4,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_4.webp?alt=media",
+        "alt_text": "Rožinis fonas."
+      },
+      {
+        "number": 5,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fpink_run_su_anteja%2Fpink_run_su_anteja_5.webp?alt=media",
+        "alt_text": "Rožinis fonas su mažais baltais taškais."
+      }
+    ],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "location",
+      "type",
+      "race_dates",
+      "distances",
+      "county",
+      "contact",
+      "name",
+      "longitude",
+      "description",
+      "latitude",
+      "website"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.lbma.lt/files/races/2026-10-04_PINK_RUN_su_Anteja_rezultatai.xlsx"
+    ],
+    "consolidated_ids": [
+      "137663e9-6fdc-4645-9886-eb2cbe363cb2"
+    ],
+    "supplied_ids": [
+      "d57593ea-b492-4c08-9931-8c985ce9a82b"
+    ],
+    "supplied_at": "20260906",
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
