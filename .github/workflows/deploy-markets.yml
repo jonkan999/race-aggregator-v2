@@ -32,15 +32,34 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+        with:
+          # Full history without file contents, so a push can be diffed against its
+          # previous head cheaply. Only pushes use the diff.
+          fetch-depth: 0
+          filter: blob:none
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 24
 
+      # Pushes that only touch data/countries/<market>/ (except index.yaml and
+      # merged_index_int.yaml) and market-tagged entries in config/redirects/*.json
+      # deploy just those markets. Code, other config, shared data,
+      # the nightly schedule and manual runs without a market deploy every enabled
+      # market. If the diff cannot be computed the script deploys every market.
       - name: Resolve enabled markets
         id: resolve
-        run: node ./scripts/resolve-deploy-markets.mjs --market="${{ github.event.inputs.marketCode || '' }}"
+        env:
+          REQUESTED_MARKET: ${{ github.event.inputs.marketCode || '' }}
+          PUSH_BASE_SHA: ${{ github.event.before || '' }}
+          PUSH_HEAD_SHA: ${{ github.sha }}
+        run: >-
+          node ./scripts/resolve-deploy-markets.mjs
+          --market="$REQUESTED_MARKET"
+          --event="$GITHUB_EVENT_NAME"
+          --base="$PUSH_BASE_SHA"
+          --head="$PUSH_HEAD_SHA"
 
   unit-tests:
     name: Unit tests
