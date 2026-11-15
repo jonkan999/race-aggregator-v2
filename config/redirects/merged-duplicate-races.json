@@ -3387,6 +3387,18 @@
       "market": "no"
     },
     {
+      "source": "/lopssider/blodomlopet_akershus/:path*",
+      "destination": "/lopssider/blodomlopet_2027/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/blodomlopet_akershus/:path*",
+      "destination": "/en/race-pages/blodomlopet_2027/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
       "source": "/lopssider/chicken_race_bootcamp_survivor/:path*",
       "destination": "/lopssider/chicken_race_bootcamp_survivor_helgelandsmoen/:path*",
       "permanent": true,
@@ -3712,13 +3724,13 @@
     },
     {
       "source": "/lopssider/jessheim_vintermaraton_ullensaker/:path*",
-      "destination": "/lopssider/vintermaraton_2027/:path*",
+      "destination": "/lopssider/jessheim_vintermaraton/:path*",
       "permanent": true,
       "market": "no"
     },
     {
       "source": "/en/race-pages/jessheim_vintermaraton_ullensaker/:path*",
-      "destination": "/en/race-pages/vintermaraton_2027/:path*",
+      "destination": "/en/race-pages/jessheim_vintermaraton/:path*",
       "permanent": true,
       "market": "no"
     },
@@ -3815,6 +3827,18 @@
     {
       "source": "/en/race-pages/konradlopet_2027/:path*",
       "destination": "/en/race-pages/konradlopet_2027_sykkylven/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/ledenlopet_favang_oyer_2027/:path*",
+      "destination": "/lopssider/ledenlopet_favang_oyer/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/ledenlopet_favang_oyer_2027/:path*",
+      "destination": "/en/race-pages/ledenlopet_favang_oyer/:path*",
       "permanent": true,
       "market": "no"
     },
@@ -4019,6 +4043,30 @@
     {
       "source": "/en/race-pages/nordmarka_skogsmaraton_2027/:path*",
       "destination": "/en/race-pages/nordmarka_skogsmaraton_2027_sognsvann_kringsja/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/norgestesten/:path*",
+      "destination": "/lopssider/norgestesten_2027_1/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/norgestesten/:path*",
+      "destination": "/en/race-pages/norgestesten_2027_1/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/norgestesten_ullensaker/:path*",
+      "destination": "/lopssider/norgestesten_2027_2/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/norgestesten_ullensaker/:path*",
+      "destination": "/en/race-pages/norgestesten_2027_2/:path*",
       "permanent": true,
       "market": "no"
     },
@@ -4330,6 +4378,18 @@
     },
     {
       "source": "/en/race-pages/vintermaraton_2026/:path*",
+      "destination": "/en/race-pages/jessheim_vintermaraton/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/vintermaraton_2027/:path*",
+      "destination": "/lopssider/jessheim_vintermaraton/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/vintermaraton_2027/:path*",
       "destination": "/en/race-pages/jessheim_vintermaraton/:path*",
       "permanent": true,
       "market": "no"
@@ -4719,14 +4779,26 @@
       "market": "pl"
     },
     {
+      "source": "/strony_biegow/gdynia_ultra_way_winter_race/:path*",
+      "destination": "/strony_biegow/gdynia_ultra_way_winter_race_stary_wilk/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/gdynia_ultra_way_winter_race/:path*",
+      "destination": "/en/race-pages/gdynia_ultra_way_winter_race_stary_wilk/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
       "source": "/strony_biegow/gdynia_ultra_way_winter_race_stary_wilk/:path*",
-      "destination": "/strony_biegow/gdynia_ultra_way_winter_race/:path*",
+      "destination": "/strony_biegow/gdynia_ultra_way_winter_race_stary_wilk/:path*",
       "permanent": true,
       "market": "pl"
     },
     {
       "source": "/en/race-pages/gdynia_ultra_way_winter_race_stary_wilk/:path*",
-      "destination": "/en/race-pages/gdynia_ultra_way_winter_race/:path*",
+      "destination": "/en/race-pages/gdynia_ultra_way_winter_race_stary_wilk/:path*",
       "permanent": true,
       "market": "pl"
     },
@@ -4738,6 +4810,18 @@
     },
     {
       "source": "/en/race-pages/gorlicki_bieg_gorski_radocyna/:path*",
+      "destination": "/en/race-pages/gorlicki_bieg_gorski/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/gorlicki_bieg_gorski_sekowa/:path*",
+      "destination": "/strony_biegow/gorlicki_bieg_gorski/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/gorlicki_bieg_gorski_sekowa/:path*",
       "destination": "/en/race-pages/gorlicki_bieg_gorski/:path*",
       "permanent": true,
       "market": "pl"
@@ -5075,6 +5159,18 @@
     {
       "source": "/en/race-pages/tropem_wilczym_tczew/:path*",
       "destination": "/en/race-pages/tropem_wilczym/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/ultramaraton_jaga_kora_rymanow_zdroj/:path*",
+      "destination": "/strony_biegow/ultramaraton_jaga_kora/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/ultramaraton_jaga_kora_rymanow_zdroj/:path*",
+      "destination": "/en/race-pages/ultramaraton_jaga_kora/:path*",
       "permanent": true,
       "market": "pl"
     },
