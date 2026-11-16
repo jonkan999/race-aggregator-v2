@@ -115,7 +115,7 @@ test('Latvia is wired to the Baltic neighbors and is linked once it is an enable
   assert.ok(neighbors.ee.includes('lv'));
   assert.ok(neighbors.lt.includes('lv'));
   const lv = loadJson('config/deploy-markets.json').markets.find((entry) => entry.marketCode === 'lv');
-  assert.equal(lv.productionDomain, 'skrejienukalendars.com');
+  assert.equal(lv.productionDomain, 'www.skrejienukalendars.com');
   assert.equal(lv.enabled, true);
   assert.ok(liveNeighbors('ee').includes('lv'));
   assert.ok(liveNeighbors('lt').includes('lv'));

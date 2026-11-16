@@ -105,7 +105,7 @@ auxiliary_pages:
   contact: Sazinies ar mums
   faq: BUJ
 page_name: Skrējienu kalendārs
-base_url: https://skrejienukalendars.com/
+base_url: https://www.skrejienukalendars.com/
 supabase_auth_email:
   primary_color: '#00925e'
   shared:
@@ -156,9 +156,9 @@ section_race_card_category_prefix: Visi
 section_race_card_category_suffix: skrējieni
 section_race_card_header_separator: 'reģionā:'
 section_race_card_header_region_default: Latvija
-section_race_card_header_date_range_from: 'no '
-section_race_card_header_date_range_to: 'līdz '
-section_race_card_header_date_range_single: 'periodā: '
+section_race_card_header_date_range_from: ''
+section_race_card_header_date_range_to: '– '
+section_race_card_header_date_range_single: ''
 filter_date_from: 'No'
 filter_date_to: Līdz
 filter_county: Visi novadi
@@ -180,19 +180,26 @@ month_mapping:
   '11': Novembris
   '12': Decembris
 month_mapping_short:
-  '01': Jan
-  '02': Feb
-  '03': Mar
-  '04': Apr
-  '05': Mai
-  '06': Jūn
-  '07': Jūl
-  '08': Aug
-  '09': Sep
-  '10': Okt
-  '11': Nov
-  '12': Dec
+  '01': janv.
+  '02': febr.
+  '03': marts
+  '04': apr.
+  '05': maijs
+  '06': jūn.
+  '07': jūl.
+  '08': aug.
+  '09': sept.
+  '10': okt.
+  '11': nov.
+  '12': dec.
 county_label_text: Visi novadi
+location_country_names:
+  Estonia: Igaunija
+  Lithuania: Lietuva
+  Finland: Somija
+  Sweden: Zviedrija
+  Poland: Polija
+  Denmark: Dānija
 county_mapping:
   Aizkraukles novads: Aizkraukles novads
   Alūksnes novads: Alūksnes novads
