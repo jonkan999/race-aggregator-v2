@@ -260,6 +260,34 @@ for (const countryCode of countryCodes) {
       }
     }
   }
+  if (countryCode === 'lv') {
+    const folder = String(nativeContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (folder !== 'skrejiena_lapas') {
+      failures.push('lv: native race_page_folder_name must be ASCII skrejiena_lapas (skrejienukalendars.com; no Unicode folder)');
+    }
+    const englishFolder = String(englishContent.race_page_folder_name ?? '').trim().normalize('NFC');
+    if (englishFolder && englishFolder !== 'race-pages') {
+      failures.push('lv: English race_page_folder_name must be race-pages');
+    }
+    const nativeListSlug = slugify(
+      textValue(nativeContent.navigation?.['race-list']) ||
+        textValue(nativeContent.race_list_name) ||
+        textValue(nativeContent.page_name),
+      'lv',
+    );
+    if (nativeListSlug !== 'skrejienu-kalendars') {
+      failures.push(`lv: native race list slug must be skrejienu-kalendars, got ${nativeListSlug}`);
+    }
+    const englishListSlug = slugify(
+      textValue(englishContent.navigation?.['race-list']) ||
+        textValue(englishContent.race_list_name) ||
+        textValue(englishContent.page_name),
+      'lv',
+    );
+    if (englishListSlug && englishListSlug !== 'race-calendar') {
+      failures.push(`lv: English race list slug must be race-calendar, got ${englishListSlug}`);
+    }
+  }
   if (countryCode === 'no') {
     const folder = String(nativeContent.race_page_folder_name ?? '').trim().normalize('NFC');
     if (folder !== 'lopssider') {

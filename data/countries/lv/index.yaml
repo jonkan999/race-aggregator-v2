@@ -1,0 +1,1077 @@
+type_options:
+  road: Šoseja
+  terrain: Kross
+  trail: Taka
+  track: Stadions
+  backyard: Backyard Ultra
+  frontyard: Frontyard Ultra
+  relay: Stafete
+  time: Laika skrējiens
+  other: Cits
+category_mapping:
+  5 km:
+    range:
+    - 4
+    - 6
+  10 km:
+    range:
+    - 9
+    - 11
+  Pusmaratons:
+    range:
+    - 20
+    - 22
+  Maratons:
+    range:
+    - 40
+    - 44
+  Backyard Ultra: backyard
+  50 miles:
+    range:
+    - 75
+    - 100
+  100 miles:
+    range:
+    - 150
+    - 170
+  200 miles:
+    range:
+    - 300
+    - 500
+  50 km:
+    range:
+    - 45
+    - 55
+  100 km:
+    range:
+    - 90
+    - 110
+  1500 metri:
+    range:
+    - 1.5
+    - 1.5
+  3000 metri:
+    range:
+    - 3
+    - 3
+  5000 metri:
+    range:
+    - 5
+    - 5
+  10000 metri:
+    range:
+    - 10
+    - 10
+distance_mapping:
+  backyard: Backyard Ultra
+  time: Laika skrējiens
+  relay: Stafete
+verbose_local_distance_mapping:
+  half marathon: Pusmaratons
+  marathon: Maratons
+  fallback: Jaukta distance
+distance_units:
+- range:
+  - 20.9
+  - 21.3
+  label: Pusmaratons
+- range:
+  - 41.9
+  - 42.4
+  label: Maratons
+race_page_estimated_date_label: Paredzamais datums
+race_page_estimated_disclaimer: Mums vēl nav oficiāla datuma šīm sacensībām.
+country_code: lv
+country_language_code: lv
+navigation:
+  main: Visi
+  race-list: Skrējienu kalendārs
+  add-race: Pievienot skrējienu
+  forum: Forums
+  measure-route: Izmēri savu maršrutu
+  training-plans: Treniņu plāni
+  pace-calculator: Tempa konvertētājs
+  racetime-estimator: Aprēķini savu finiša laiku
+  about-us: Par mums
+  contact: Sazinies ar mums
+  neighboring: Kaimiņvalstis
+race_list_name: Skrējienu kalendārs
+alternate_locale_link_text: English
+auxiliary_pages:
+  race-page-preview: Apskati skrējienu
+  terms-of-service: Lietošanas noteikumi
+  privacy-policy: Privātuma politika
+  about-us: Par mums
+  contact: Sazinies ar mums
+  faq: BUJ
+page_name: Skrējienu kalendārs
+base_url: https://skrejienukalendars.com/
+supabase_auth_email:
+  primary_color: '#00925e'
+  shared:
+    greeting: Sveiks!
+    closing_salutation: Ar cieņu,
+    link_fallback_intro: 'Ja poga nestrādā, vari nokopēt saiti šeit:'
+  confirm_signup:
+    body: Paldies, ka reģistrējies vietnē {site_name}. Apstiprini savu e-pasta adresi, lai aktivizētu kontu un pārvaldītu savus pievienotos skrējienus.
+    button_label: Apstiprināt e-pastu
+    ignore_note: Ja tu neizveidoji šo kontu, šo ziņu vari ignorēt.
+  reset_password:
+    body: Mēs saņēmām pieprasījumu atiestatīt tavu paroli vietnē {site_name}. Nospied pogu zemāk, lai izvēlētos jaunu paroli.
+    button_label: Atiestatīt paroli
+    ignore_note: Ja tu neesi pieprasījis šo darbību, vari ignorēt šo e-pastu. Tava parole netiks mainīta, kamēr neizvēlēsies jaunu.
+  change_email:
+    body: Tu pieprasīji mainīt e-pasta adresi savam kontam vietnē {site_name}. Apstiprini izmaiņas, nospiežot pogu zemāk.
+    button_label: Apstiprināt jauno e-pasta adresi
+    ignore_note: Ja tu neesi pieprasījis šo izmaiņu, šo e-pastu vari ignorēt.
+title: 'Viss par skriešanu:'
+country_native: Latvija
+country: Latvia
+meta_description: Visaptverošākais skrējienu kalendārs un skriešanas kopiena Latvijā
+country_language: Latvian
+local_name_for_race: skrējiens
+main_bullet_1: Atrodi savu nākamo skrējienu
+main_bullet_2: ' - Vai pievieno to šeit'
+main_bullet_3: Pārlūko mūsu tirgu
+main_bullet_4: Lasi jaunākās ziņas vai piedalies diskusijās forumā
+description: Šī kopienas iniciatīva apvieno skrējējus no visas Latvijas. Platforma vēl aug, bet ar tavu palīdzību tā var kļūt par lielisku vietu vietējai skriešanas kopienai.
+cta_search: Meklēt skrējienu
+cta_add: Pievienot skrējienu
+selected_races_title: Izcili skrējieni
+selected_races_top_title: Nedēļas skrējiens
+cta_all_races: Rādīt visus skrējienus
+show_local: Rādīt
+race_local: Skrējiens
+running_local: Skriešana
+alt_prefix: 'Attēls: '
+race_list_title: Vispilnīgākais maratonu, pusmaratonu un citu skriešanas sacensību saraksts Latvijā
+race_list_meta_description_1: Atrodi skrējienus un sacensību datumus visā Latvijā
+race_list_meta_description_2: ✔️Plašs skrējienu kalendārs ✔️Taku, backyard un maratona sacensības ✔️Skrējieni no visas Latvijas
+race_list_data_error: Neizdevās ielādēt skrējienus. Lūdzu, mēģini vēlāk.
+race_list_remote_required: Lai iegūtu vairāk lapu vai filtrus, nepieciešama datubāze (Supabase). Pievieno PUBLIC_SUPABASE_URL un PUBLIC_SUPABASE_PUBLISHABLE_KEY savā .env failā.
+race_list_empty: Nav skrējienu, kas atbilstu taviem filtriem.
+race_list_loading: Notiek ielāde…
+race_card_cta_text: Vairāk info un reģistrācija
+section_race_card_category_prefix: Visi
+section_race_card_category_suffix: skrējieni
+section_race_card_header_separator: 'reģionā:'
+section_race_card_header_region_default: Latvija
+section_race_card_header_date_range_from: 'no '
+section_race_card_header_date_range_to: 'līdz '
+section_race_card_header_date_range_single: 'periodā: '
+filter_date_from: 'No'
+filter_date_to: Līdz
+filter_county: Visi novadi
+filter_race_type: Visi sacensību veidi
+filter_categories: Visas kategorijas
+filter_months: Visa gada garumā
+filter_distance: Visi distanču garumi
+month_mapping:
+  '01': Janvāris
+  '02': Februāris
+  '03': Marts
+  '04': Aprīlis
+  '05': Maijs
+  '06': Jūnijs
+  '07': Jūlijs
+  '08': Augusts
+  '09': Septembris
+  '10': Oktobris
+  '11': Novembris
+  '12': Decembris
+month_mapping_short:
+  '01': Jan
+  '02': Feb
+  '03': Mar
+  '04': Apr
+  '05': Mai
+  '06': Jūn
+  '07': Jūl
+  '08': Aug
+  '09': Sep
+  '10': Okt
+  '11': Nov
+  '12': Dec
+county_label_text: Visi novadi
+county_mapping:
+  Aizkraukles novads: Aizkraukles novads
+  Alūksnes novads: Alūksnes novads
+  Augšdaugavas novads: Augšdaugavas novads
+  Balvu novads: Balvu novads
+  Bauskas novads: Bauskas novads
+  Cēsu novads: Cēsu novads
+  Dienvidkurzemes novads: Dienvidkurzemes novads
+  Dobeles novads: Dobeles novads
+  Gulbenes novads: Gulbenes novads
+  Jelgavas novads: Jelgavas novads
+  Jelgavas pilsēta: Jelgavas pilsēta
+  Jēkabpils novads: Jēkabpils novads
+  Jūrmalas pilsēta: Jūrmalas pilsēta
+  Krāslavas novads: Krāslavas novads
+  Kuldīgas novads: Kuldīgas novads
+  Liepājas pilsēta: Liepājas pilsēta
+  Limbažu novads: Limbažu novads
+  Ludzas novads: Ludzas novads
+  Līvānu novads: Līvānu novads
+  Madonas novads: Madonas novads
+  Mārupes novads: Mārupes novads
+  Ogres novads: Ogres novads
+  Olaines novads: Olaines novads
+  Preiļu novads: Preiļu novads
+  Ropažu novads: Ropažu novads
+  Rēzeknes novads: Rēzeknes novads
+  Rēzeknes pilsēta: Rēzeknes pilsēta
+  Rīgas pilsēta: Rīgas pilsēta
+  Salaspils novads: Salaspils novads
+  Saldus novads: Saldus novads
+  Saulkrastu novads: Saulkrastu novads
+  Siguldas novads: Siguldas novads
+  Smiltenes novads: Smiltenes novads
+  Talsu novads: Talsu novads
+  Tukuma novads: Tukuma novads
+  Valkas novads: Valkas novads
+  Valmieras novads: Valmieras novads
+  Varakļānu novads: Varakļānu novads
+  Ventspils novads: Ventspils novads
+  Ventspils pilsēta: Ventspils pilsēta
+  Ādažu novads: Ādažu novads
+  Ķekavas novads: Ķekavas novads
+category_label_text: Sacensību kategorija
+to_race_page_cta: Uz sacensību lapu
+map_toggle_desktop: Rādīt karti
+map_toggle_desktop_active: Slēpt karti
+map_toggle_mobile: Karte
+map_toggle_mobile_list: Saraksts
+map_markers_load_error: Neizdevās ielādēt kartes marķierus.
+map_not_configured: Karte nav konfigurēta (trūkst kartes atslēgas).
+race_page_map_zoom: '{default_map_zoom}'
+pagination:
+  results_text: 'no'
+  events_text: Sacensības
+  previous_text: Iepriekšējā
+  next_text: Nākamā
+  page_text: Lapa
+  of_text: 'no'
+add_race_title: Pievienot jaunas sacensības
+add_race_meta_description: Pievieno savas sacensības skrejienukalendars.com
+map_message: Novieto savas sacensības, uzklikšķinot kartē
+mapbox_center:
+  latitude: 56.6581855
+  longitude: 24.8113687
+mapbox_zoom: '6'
+date_text: Datums
+multi_day_toggle: Vairāku dienu pasākums
+end_date_text: Beigu datums
+type_text: Segums / sacensību veids
+type_select_placeholder: Izvēlies segumu / sacensību veidu
+name_label: 'Sacensību nosaukums:'
+name_placeholder: Piemēram, Pilsētas maratons
+distance_label: 'Distances:'
+distance_placeholder: Ievadi distanci kilometros
+add_distance_button: Pievienot
+half_marathon_button: Pusmaratons
+marathon_button: Maratons
+backyard_ultra_button: Backyard Ultra
+frontyard_ultra_button: Frontyard Ultra
+fifty_miles_button: 50 miles
+hundred_miles_button: 100 miles
+place_label: 'Vietas nosaukums:'
+place_placeholder: Piemēram, Mežaparks, Rīga
+organizer_label: 'Organizators:'
+organizer_contact_placeholder: Skriešanas klubs
+organizer_contact_label: 'Kontakta e-pasts:'
+organizer_mail_placeholder: loppkartan@gmail.com
+website_label: 'Organizatora mājaslapa:'
+website_placeholder: https://organizer.com/
+start_time_label: 'Starta laiks:'
+start_time_placeholder: 09:00
+price_range_label: 'Cena:'
+price_range_placeholder: Piemēram, 20-50 EUR
+add_race_description_label: Apraksti sacensības
+add_race_description_placeholder: Pilsētas maratons ir līdzena trase ar garām taisnēm...
+add_race_additional_label: Papildu informācija
+add_race_additional_placeholder: Piemēram, starta un finiša vieta, starta grupas utt.
+add_race_images_label: Augšupielādē attēlus (ieteicams vismaz 4)
+choose_pictures_button: Izvēlies attēlus
+drag_drop_text: Velc un nomet attēlus šeit vai klikšķini, lai izvēlētos
+add_race_remove_image_label: Noņemt attēlu
+coordinates_display_prefix: Sacensību koordinātas
+add_race_upload_limit_message: 'Vēl vari augšupielādēt attēlus: {count}.'
+add_race_map_not_configured: Kartes ielāde šobrīd nav iespējama.
+clear_images_button: Notīrīt attēlus
+clear_form_button: Notīrīt formu
+preview_button: Priekšskatījums
+submit_button: Iesniegt
+preview_title: Priekšskatījums
+preview_exit_button: Aizvērt priekšskatījumu
+optional_label: Pēc izvēles
+comments_suffix: Komentāri
+cta_forum: Rādīt visus ierakstus
+race_page_preview_title: Tā izskatīsies tava sacensība
+edit_race_button: Rediģēt
+race_page_description_label: Sacensību apraksts
+race_page_course_highlights_label: Izceltie momenti
+race_page_additional_label: Papildu informācija
+race_page_detailed_info_label: Detalizēta informācija
+race_page_social_links_label: Sekot sacensībām
+race_page_place_label: 'Vieta:'
+race_page_distances_label: 'Distances:'
+race_page_surface_label: 'Segums:'
+race_page_date_label: 'Datums:'
+race_page_registration_link: Reģistrācijas saite
+race_page_registration_cta: Reģistrējies tagad
+race_page_info_cta: Vairāk informācijas
+race_page_registration_close_label: Reģistrācija beidzas
+race_page_pricing_title: Reģistrācija un cenas
+race_page_price_deadline_label: Derīgs līdz
+race_page_price_late_fee_label: Vēlā reģistrācija
+race_page_back_to_list: Atpakaļ uz skrējienu kalendāru
+race_page_favorites_title: Nepalaid garām sacensību jaunākās ziņas
+race_page_favorites_body: Izveido kontu un saglabā šo skrējienu favorītos, lai saņemtu atjauninājumus, ziņas un izvēlētos piedāvājumus, kad favorīti tiks palaisti.
+race_page_favorites_cta: Saglabāt sacensības favorītos
+race_page_similar_title: Līdzīgi skrējieni
+race_page_similar_body: Vairāk skrējienu ar līdzīgu distanci, veidu vai tuvumā esošu vietu.
+race_page_discover_title: Izpēti vairāk skrējienu
+race_page_discover_county_link: 'Visi skrējieni: {county}'
+race_page_discover_type_link: 'Vairāk skrējienu: {type}'
+race_page_discover_category_link: 'Vairāk skrējienu: {category}'
+race_page_discover_type_county_link: '{type}: skrējieni, {county}'
+race_page_discover_overview_link: Pārlūkot visas skrējienu kategorijas
+disclaimer_text_1: 'Visa šīs lapas informācija balstās uz atvērtā koda datiem. Mēs cenšamies to uzturēt atjauninātu, bet
+
+  nevaram garantēt, ka viss ir pareizi. Ja pamani kādas kļūdas,
+
+  '
+disclaimer_link: sazinies ar mums
+disclaimer_text_2: un mēs tās labosim pēc iespējas ātrāk.
+disclaimer_text_3: Vēlies pievienot kaut ko vairāk par savu skrējienu?
+disclaimer_text_4: un mēs centīsimies palīdzēt!
+race_page_visit_organizer_website: Uz organizatora mājaslapu un reģistrāciju
+race_page_folder_name: skrejiena_lapas
+race_page_alt_prefix: 'Attēls: '
+seo_county_folder_name: Visi novadi
+seo_cities_folder_name: Pilsētas
+popular_subcategories_title: Populāras apakškategorijas
+important_keywords_racelist:
+- skrējienu kalendārs
+- sacensību kalendārs
+- skriešanas sacensības
+- skriešanas pasākumi
+- skrējienu saraksts
+- skriešanas sacensību kalendārs
+- maratons Latvijā
+- pusmaratons
+seo_templates:
+  title_parts:
+    category: '{category} skrējieni'
+    race_type: '{race_type}'
+    location: '{location}'
+    default: Visi skrējieni
+  paragraph_templates:
+    category_race_location: 'Atrodi skrējienus (kategorija: {category}, veids: {race_type}). Vieta: {location}.'
+    category_race: 'Izpēti skrējienus visā Latvijā (kategorija: {category}, veids: {race_type}).'
+    category_location: 'Atrodi skrējienus kategorijā {category}. Vieta: {location}.'
+    race_location: 'Skati visus skrējienus (veids: {race_type}). Vieta: {location}.'
+    category_only: Atrodi skrējienus kategorijā {category} visā Latvijā.
+    race_only: 'Izpēti skrējienus (veids: {race_type}) visos Latvijas novados.'
+    location_only: 'Skati visu veidu skrējienus. Vieta: {location}.'
+    default_suffix: Šeit atradīsi datumus, distances un visu nepieciešamo informāciju, lai plānotu nākamo skrējienu.
+  browse_page_templates:
+    county:
+      title: 'Skrējieni: {label} | {site_name}'
+      meta_description: 'Skrējieni: {label}. Salīdzini datumus, distances, formātus un praktiskās detaļas, pirms izvēlies nākamo skrējienu.'
+      h1: 'Skrējieni: {label}'
+      paragraph: 'Šajā lapā apkopoti skrējieni, kas notiek šeit: {label}. Salīdzini datumus, distances, formātus un praktiskās detaļas vienuviet un saplāno nākamo skrējienu.'
+    city:
+      title: 'Skrējieni: {label} un apkārtne | {site_name}'
+      meta_description: 'Skrējieni: {label} un apkārtne. Salīdzini datumus, distances un tuvākās iespējas, pirms izvēlies nākamo skrējienu.'
+      h1: 'Skrējieni: {label} un apkārtne'
+      paragraph: Šī pilsētas lapa palīdz atrast skrējienus, kas saistīti ar pilsētu {label}, kā arī tuvumā esošas alternatīvas, kas noder, plānojot sacensību dienu vai braucienu.
+    month:
+      title: 'Skrējieni: {label} | {site_name}'
+      meta_description: 'Skrējieni Latvijā, mēnesis: {label}. Salīdzini datumus, distances, skrējienu veidus un praktiskās detaļas, plānojot sezonu.'
+      h1: 'Skrējieni: {label}'
+      paragraph: Šī lapa domāta skrējējiem, kuri plāno pa mēnešiem. Tā palīdz ātri salīdzināt šī mēneša skrējienus, pirms iedziļinies distancēs, segumos un norises vietās.
+    race_type:
+      title: '{label}: skrējieni Latvijā | {site_name}'
+      meta_description: 'Skrējieni Latvijā, veids: {label_lower}. Salīdzini datumus, distances, vietas un praktiskās detaļas, pirms izvēlies sev piemērotāko.'
+      h1: '{label}: skrējieni Latvijā'
+      paragraph: Šī lapa apkopo vienu skrējienu veidu, kad formāts ir tikpat svarīgs kā distance. Salīdzini iespējas pa novadiem, datumiem un praktiskajām detaļām, nesākot no pilnā kalendāra.
+    category:
+      title: '{label}: skrējieni Latvijā | {site_name}'
+      meta_description: 'Skrējieni Latvijā, distance: {label}. Salīdzini datumus, skrējienu veidus, vietas un praktiskās detaļas, pirms izvēlies nākamo startu.'
+      h1: '{label}: skrējieni Latvijā'
+      paragraph: Šī distances lapa apkopo skrējienus, kas atbilst kategorijai {label}, lai piemērotās iespējas varētu salīdzināt vienuviet. Tā palīdz ātrāk tikt no plaša saraksta līdz dažiem reāliem variantiem.
+    race_type_category:
+      title: '{label}, {secondary_label}: skrējieni Latvijā | {site_name}'
+      meta_description: 'Skrējieni Latvijā: {label}, veids: {secondary_label_lower}. Salīdzini datumus, vietas un praktiskās detaļas, pirms izvēlies nākamo startu.'
+      h1: '{label}, {secondary_label}: skrējieni Latvijā'
+      paragraph: Šī lapa sašaurina kalendāru līdz vienai distancei un vienam skrējiena veidam. Tas noder, ja izvēli nosaka gan distance, gan formāts.
+    race_type_county:
+      title: '{secondary_label}: skrējieni, {label} | {site_name}'
+      meta_description: 'Skrējieni ({secondary_label_lower}): {label}. Salīdzini datumus, distances un praktiskās detaļas, lai izvēlētos nākamo skrējienu.'
+      h1: '{secondary_label}: skrējieni, {label}'
+      paragraph: Šī lapa apkopo viena veida skrējienus vienā novadā, lai būtu vieglāk salīdzināt piemērotākās iespējas, ja izvēli nosaka gan atrašanās vieta, gan formāts.
+    race_type_month:
+      title: '{secondary_label}: skrējieni, {label} | {site_name}'
+      meta_description: 'Skrējieni ({secondary_label_lower}), mēnesis: {label_lower}. Salīdzini datumus, distances un praktiskās detaļas, plānojot sezonu.'
+      h1: '{secondary_label}: skrējieni, {label}'
+      paragraph: Šī lapa apkopo viena veida skrējienus vienā mēnesī skrējējiem, kuri vispirms plāno pēc kalendāra. Tā palīdz salīdzināt līdzīgus formātus, pirms izvēlies vietu vai distanci.
+    race_type_city:
+      title: '{secondary_label}: skrējieni, {label} un apkārtne | {site_name}'
+      meta_description: 'Skrējieni ({secondary_label_lower}): {label} un apkārtne. Salīdzini datumus, distances un tuvākās iespējas, pirms izvēlies nākamo skrējienu.'
+      h1: '{secondary_label}: skrējieni, {label} un apkārtne'
+      paragraph: Šī lapa apkopo viena veida skrējienus pie pilsētas {label}, lai vietējos skrējienus varētu salīdzināt ātrāk, nesākot no pilnā kalendāra.
+seo_generation:
+  browse_model: gpt-5-mini
+  browse_system_prompt: 'Tu raksti nemainīgu SEO tekstu indeksējamām skrējienu pārlūkošanas lapām. Raksti vispirms cilvēkiem, pēc tam meklēšanas nolūkam. Izvadi tikai derīgu JSON. Teksts ir laika ziņā nemainīgs: nekad nepiemin pašreizējo gadu, skaitļus, ierobežota laika piedāvājumus vai svaiguma apgalvojumus. Izvairies no atslēgvārdu pārblīvējuma, pārspīlējumiem, klikšķu pievilināšanas, pārāk lieliem apgalvojumiem un neapstiprināmiem datiem. Katru lapu padari skaidri atšķirīgu, balstoties uz dotā maršruta kontekstu. Izmanto dabiski latviešu valodu, piemērotu Latvijas skrējienu kalendāram. Dod priekšroku kodolīgiem virsrakstiem, kodolīgiem H1, meta aprakstiem aptuveni 120-160 rakstzīmju garumā, ja iespējams, un 2-3 īsu teikumu rindkopai.'
+  browse_guidance:
+    county: User wants races in one region.
+    city: User wants races connected to a city or nearby city.
+    month: User wants races by month.
+    race_type: User wants a specific race type.
+    category: User wants a specific distance or race category.
+    race_type_category: User wants a specific distance/category inside one race type.
+    race_type_county: User wants a specific race type in one region.
+    race_type_month: User wants a specific race type in one month.
+    race_type_city: User wants a specific race type connected to one city.
+browse_seo_indexing:
+  county_pages:
+    min_race_count: 5
+  city_pages:
+    min_race_count: 5
+    require_qualified_city: true
+  month_pages:
+    min_race_count: 8
+  race_type_pages:
+    min_race_count: 8
+    allowed_race_type_keys:
+    - road
+    - trail
+    - terrain
+    - backyard
+  category_pages:
+    min_race_count: 8
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_category_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+    allowed_category_keys:
+    - 5_km
+    - 10_km
+    - half_marathon
+    - marathon
+    - backyard
+    - 50_km
+    - 100_km
+    - 50_miles
+    - 100_miles
+  race_type_county_pages:
+    enabled: true
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_month_pages:
+    enabled: true
+    min_race_count: 6
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+  race_type_city_pages:
+    enabled: false
+    min_race_count: 5
+    allowed_race_type_keys:
+    - road
+    - trail
+    - backyard
+browse_by_category:
+  button: Pārlūkot pēc kategorijas
+  helper_text: Atrodi sacensības ar iepriekš definētiem filtriem un kombinācijām
+  overview: Pārskats
+  counties: Novadi
+  cities: Pilsētas
+  months: Mēnesis
+  types: Sacensību veidi
+  categories: Kategorijas
+  neighboring: Kaimiņvalstis
+browse_overview:
+  title: Pārlūkot visas sacensības
+  meta_description: Atrodi sacensības pēc novada, veida vai kategorijas
+browse_types:
+  title: Pārlūkot pēc sacensību veida
+  meta_description: Atrodi sacensības pēc sacensību veida.
+browse_counties:
+  title: Pārlūkot pēc novada
+  meta_description: Atrodi sacensības savā novadā.
+browse_cities:
+  title: Pārlūkot pēc pilsētas
+  meta_description: Atrodi sacensības savā pilsētā.
+browse_categories:
+  title: Pārlūkot pēc kategorijas
+  meta_description: Atrodi sacensības pēc distances un kategorijas.
+browse_months:
+  title: Pārlūkot pēc mēneša
+  meta_description: Atrodi sacensības pēc mēneša.
+auth_modal:
+  title_sign_in: Pierakstīties
+  title_create_account: Izveidot kontu
+  title_reset_password: Atiestatīt paroli
+  auth_unavailable: Autentifikācija vēl nav konfigurēta.
+  name_placeholder: Tavs vārds
+  email_placeholder: Tavs e-pasts
+  password_placeholder: Parole
+  submit_sign_in: Pierakstīties
+  submit_create_account: Izveidot kontu
+  submit_reset_password: Nosūtīt paroles atiestatīšanas saiti
+  create_account: Izveidot kontu
+  forgot_password: Aizmirsi paroli?
+  back_to_login: Atpakaļ uz pierakstīšanos
+  error_wrong_password: Nepareiza parole
+  error_email_not_found: E-pasts nav atrasts
+  prompt_reset_password: Vai vēlies atiestatīt savu paroli?
+  prompt_create_account: Vai vēlies izveidot kontu ar šo e-pastu?
+  already_logged_in: Tu jau esi pierakstījies kā
+  as_email: ar e-pastu
+  continue_as_user: Turpināt kā šis lietotājs
+  logout_and_switch: Izrakstīties un nomainīt lietotāju
+  account_created: Konts izveidots!
+  account_created_details: Tu tagad esi pierakstījies kā
+  verification_email_sent: Uz tavu e-pastu nosūtīta apstiprinājuma saite
+  please_verify: Lūdzu, apstiprini savu e-pasta adresi
+  error_invalid_credential: Nederīgs e-pasts vai parole
+  create_account_prompt: Tā vietā izveido kontu
+  error_too_many_requests: Pārāk daudz mēģinājumu. Lūdzu, pamēģini vēlāk.
+  continue_with_google: Turpināt ar Google
+  continue_with_google_create: Izveidot kontu ar Google
+  google_in_progress: Turpinu ar Google...
+  oauth_divider: vai
+auth_pages:
+  confirm_success: Tavs e-pasts ir apstiprināts un konts tagad aktīvs.
+  confirm_ready: Tagad vari turpināt izmantot vietni.
+  confirm_error: Neizdevās apstiprināt tavu e-pasta adresi.
+  reset_intro: Ievadi jaunu paroli savam kontam.
+  reset_confirm_label: Apstiprini paroli
+  reset_mismatch_error: Paroles nesakrīt.
+  reset_invalid_link_error: Nederīga vai trūkstoša atkopšanas saite.
+  reset_success: Tava parole ir atjaunināta. Tagad vari pieslēgties.
+newsletter_popup:
+  email_placeholder: Tava e-pasta adrese
+  submit_button: Sūtīt man atjauninājumus
+  dismiss_button: Ne tagad
+  invalid_email: Lūdzu, ievadi derīgu e-pasta adresi.
+  submit_error: Pašlaik neizdevās saglabāt tavu abonementu. Lūdzu, mēģini vēlreiz.
+  submitting_text: Saglabā...
+  success_message: Paldies! Skrējienu atjauninājumi drīz nonāks tavā e-pastā.
+  privacy_note: Jauni skrējieni, datumu izmaiņas un izvēlēti piedāvājumi. Abonementu vari atcelt jebkurā brīdī.
+  close_aria_label: Aizvērt abonēšanas logu
+  benefits:
+    new_races: Jaunākie skrējieni vispirms
+    date_changes: Datumu izmaiņas uzreiz
+    selected_offers: Izvēlēti piedāvājumi
+    similar_races: Līdzīgi skrējieni tev tuvumā
+    local_picks: Vairāk skrējienu tuvumā
+    opening_reminders: Atgādinājumi pirms vietu izsīkšanas
+    race_updates: Atjauninājumi par šo skrējienu
+    nearby_races: Pierobežas skrējieni tev tuvumā
+  generic:
+    eyebrow: Nepalaid garām nākamo skrējienu
+    title: Saņem jaunus skrējienus un datumu izmaiņas ātrāk par citiem
+    body: Abonē jaunumus un saņem jaunus skrējienus, datumu izmaiņas un atlasītus ieteikumus tieši savā e-pastā.
+  race_detail:
+    eyebrow: Sekot šim skrējienam
+    title: Vēlies atjauninājumus par {race_name}?
+    body: Abonē, lai saņemtu jaunumus par {race_name}, līdzīgiem skrējieniem tuvumā un svarīgām izmaiņām tieši savā e-pastā.
+  browse_category:
+    eyebrow: Vairāk pareizo skrējienu
+    title: 'Nepalaid garām jaunus skrējienus: {category}'
+    body: Mēs sūtām jaunus skrējienus šajā kategorijā ({category}), piemērotas alternatīvas tuvumā un svarīgus datumus, lai tev nebūtu viss jāmeklē pašam.
+  browse_category_type:
+    eyebrow: Vairāk pareizo skrējienu
+    title: 'Saņem vairāk skrējienu: {race_type}, {category}'
+    body: Abonē, lai saņemtu jaunus skrējienus ({race_type}, {category}), tuvākās alternatīvas un datumu izmaiņas tieši savā e-pastā.
+  browse_county:
+    eyebrow: Vietējie skrējieni vispirms
+    title: 'Saņem vairāk skrējienu: {county}'
+    body: Seko jauniem skrējieniem, datumu izmaiņām un ieteikumiem ({county}), nepārbaudot kalendāru katru dienu.
+  browse_city:
+    eyebrow: Vietējie skrējieni vispirms
+    title: 'Vēlies vairāk skrējienu: {city}?'
+    body: Abonē un saņem jaunus skrējienus, tuvākās alternatīvas un svarīgus datumus ({city}) tieši savā e-pastā.
+  browse_type:
+    eyebrow: Pareizais skrējiena stils
+    title: Saņem vairāk skrējienu ({race_type}) savā e-pastā
+    body: Mēs sūtām jaunus skrējienus ({race_type}), līdzīgas alternatīvas un svarīgākos datumus, lai paspētu pieteikties, pirms vietas beidzas.
+  browse_month:
+    eyebrow: Plāno sezonu
+    title: 'Uzzini par labākajiem skrējieniem pirmais: {month}'
+    body: Kad šī mēneša ({month}) skrējieniem atveras reģistrācija vai mainās datumi, tu to uzzini uzreiz savā e-pastā.
+  browse_neighboring:
+    eyebrow: Paplašini savu kalendāru
+    title: Saņem arī skrējienus no kaimiņvalstīm
+    body: Abonē jaunus skrējienus, atlasītus piedāvājumus kaimiņvalstīs un datumu izmaiņas ({region}) tieši savā e-pastā.
+  browse_neighboring_country:
+    eyebrow: Paplašini savu kalendāru
+    title: 'Saņem vairāk skrējienu: {region}'
+    body: Mēs sūtām jaunus skrējienus, datumu izmaiņas un piemērotas alternatīvas, kad šeit ({region}) parādās kaut kas interesants.
+submission_flow:
+  logged_in_as: Pieslēdzies kā organizators
+  submitting_new_race: iesniedz jaunu skrējienu
+  new_account_created: Lai pārvaldītu skrējienu, tev jāapstiprina e-pasta adrese. Apstiprinājuma saite ir nosūtīta uz norādīto e-pasta adresi.
+  password_reset_sent: Paroles atiestatīšana nosūtīta. Pārbaudi savu e-pastu.
+  unexpected_error: Radās kļūda. Lūdzu, mēģini vēlreiz.
+  processing_submission: Apstrādā iesniegumu...
+  race_exists: Skrējiens jau eksistē datubāzē.
+  race_submitted: Skrējiens ir iesniegts!
+  submission_failed: Neizdevās iesniegt skrējienu. Lūdzu, mēģini vēlreiz.
+  missing_fields: Kaut kas trūkst. Pārliecinies, ka visi obligātie lauki ir aizpildīti un kartē ir izvēlēta vieta.
+race_page:
+  forum_section:
+    title: Jautājumi un atbildes
+    placeholder: Uzdod jautājumu organizatoram...
+    submit_button: Nosūtīt jautājumu
+    login_prompt: Pieslēdzies, lai uzdotu jautājumu
+    empty_state: Vēl nav neviena jautājuma. Esi pirmais, kas uzdod jautājumu!
+    error_message_no_login: Pieslēdzies vai izveido kontu, lai uzdotu jautājumu
+map:
+  show_map: Rādīt karti
+  show_list: Rādīt sarakstu
+  map: karte
+  list: saraksts
+forum:
+  title: Forums - runā par skriešanu un skrējēju dzīvi kopā ar citiem skrējējiem Latvijā
+  meta_description: Runā par skriešanu un skrējēju dzīvi mūsu forumā. Viss par treniņiem, sacensībām, traumām, uzturu, apģērbu, inventāru un daudz ko citu.
+  categories:
+  - name: Treniņi
+    slug: treniņi
+    description: Diskusijas par treniņiem un tehniku
+  - name: Sacensības un pasākumi
+    slug: sacensības
+    description: Diskutē par gaidāmajām sacensībām
+  - name: Traumas un atveseļošanās
+    slug: traumas
+    description: Palīdzība traumās un atveseļošanās procesā
+  - name: Maršruti un kartes
+    slug: maršruti
+    description: Diskutē par maršrutiem un kartēm
+  - name: Ceļojumi un saistītās tēmas
+    slug: ceļojumi
+    description: Diskutē par ceļojumiem un ar skriešanu saistītiem ceļojumiem
+  - name: Uzturs un diēta
+    slug: uzturs
+    description: Diskutē par uzturu un diētu
+  - name: Apģērbs, apavi un inventārs
+    slug: inventārs
+    description: Diskutē par apģērbu, apaviem un inventāru
+  - name: Pērk un pārdod
+    slug: pērk-pārdod
+    description: Diskutē par skrējēju preču pirkšanu un pārdošanu
+  - name: Dažādi
+    slug: dažādi
+    description: Viss pārējais
+  empty_category_state: Vēl nav nevienas tēmas. Sāc diskusiju, izveidojot pirmo tēmu!
+  empty_state_thread: Vēl nav neviena ieraksta. Esi pirmais, kas raksta!
+  empty_state: Vēl nav neviena ieraksta. Esi pirmais, kas raksta!
+  reply_placeholder: Raksti savu atbildi...
+  submit_button: Sūtīt
+  login_prompt: Pieslēdzies, lai piedalītos diskusijā
+  new_thread_title_placeholder: Tava jaunās tēmas virsraksts
+  new_thread_content_placeholder: Raksti savu pirmo ierakstu...
+  create_thread_button: Izveidot jaunu tēmu
+  back_to_forum: ← Atpakaļ uz forumu
+  back_to_category: '← Atpakaļ uz '
+  empty_thread_state: Vēl nav neviena ieraksta. Esi pirmais, kas raksta!
+  posts_label: ieraksti
+  reply_label: atbilde
+  thread_created_title: Paldies, ka izveidoji jaunu tēmu!
+  thread_created_message: Tava tēma drīzumā tiks pārskatīta un pievienota lapai.
+  thread_created_back_link: Atpakaļ uz kategoriju
+  show_more_threads: Rādīt vēl tēmas
+  show_less_threads: Rādīt mazāk pavedienu
+  create_new_thread: Izveidot jaunu pavedienu
+  reply_title: Atbildēt pavedienā
+  showing_threads_count: Rādīti {x} no {y} pavedieniem
+about_us:
+  title: Par Skrējienu kalendāru
+  meta_description: 'Skrējienu kalendārs: tavs ceļvedis skrējieniem Latvijā'
+  content:
+    intro: Laipni lūgts skrejienukalendars.com, Latvijas skrējienu kalendārā.
+    mission: Mūsu misija ir atvieglot skrējējiem sacensību, treniņu un visu ar skriešanu saistīto informācijas atrašanu un dalīšanos ar to.
+    story: Skrejienukalendars.com veido skrējēji skrējējiem. Mēs vēlamies vienu aktuālu vietu, kur Latvijas skriešanas kopiena var atrast nākamo skrējienu.
+    features:
+    - title: Pilns skrējienu saraksts
+      description: Mēs apkopojam Latvijas skrējienus vienuviet, no maziem vietējiem pasākumiem līdz lielām starptautiskām sacensībām.
+    - title: Kopienas veidota
+      description: Platformu veido skrējēji kā tu. Ikviens var pievienot informāciju par skrējieniem un iesaistīties diskusijā.
+    - title: Bezmaksas rīki
+      description: Piedāvājam tempu kalkulatoru, treniņu plānus un distanču mērīšanu, viss pilnīgi bez maksas.
+    closing: Mēs pastāvīgi uzlabojam platformu, balstoties uz lietotāju atsauksmēm. Ir ierosinājums? Sazinies ar mums!
+contact:
+  title: Sazinies ar mums
+  meta_description: Sazinies ar skrejienukalendars.com. Mēs esam šeit, lai palīdzētu
+  content:
+    intro: 'Mēs labprāt dzirdam no tevis! Šeit ir dažādi veidi, kā sazināties ar mums:'
+    email:
+      title: E-pasts
+      address: loppkartan@gmail.com
+      description: Parasti atbildam 24 stundu laikā darba dienās.
+    social:
+      title: Sociālie tīkli
+      description: 'Seko mums sociālajos tīklos, lai uzzinātu jaunākās ziņas un atjauninājumus:'
+    feedback:
+      title: Atsauksmes
+      description: Mēs novērtējam visas atsauksmes, kas palīdz uzlabot skrejienukalendars.com.
+privacy_page:
+  title: Privātuma politika
+  meta_description: Privātuma politika un informācija par to, kā Skrējienu kalendārs apstrādā personas datus un sīkdatnes.
+  last_updated_label: Pēdējoreiz atjaunots
+  last_updated_date: 2026. gada 16. novembris
+  contact_intro: 'Privātuma jautājumos un pieprasījumos, lūdzu, sazinies ar mums:'
+  contact_email: loppkartan@gmail.com
+  sections:
+  - title: 1. Informācija, ko mēs vācam
+    intro: 'Mēs vācam informāciju, ko tu mums tieši sniedz, kad tu:'
+    bullets:
+    - Izveido kontu
+    - Iesniedz informāciju par skrējienu
+    - Publicē forumā
+    - Sazinies ar mums
+  - title: 2. Sīkdatnes un izsekošana
+    intro: 'Mēs izmantojam sīkdatnes, lai:'
+    bullets:
+    - Atcerētos tavas preferences
+    - Uzturētu tavu sesiju un pieteikšanās stāvokli
+    - Analizētu trafiku un vietnes lietošanu
+    - Rādītu atbilstošu reklāmu un uzlabotu pieredzi
+  - title: 3. Kā mēs izmantojam tavu informāciju
+    intro: 'Tava informācija palīdz mums:'
+    bullets:
+    - Nodrošināt un uzlabot mūsu pakalpojumus
+    - Sūtīt svarīgas paziņojumus un atjauninājumus
+    - Atbildēt uz pieprasījumiem un atbalsta jautājumiem
+    - Novērst krāpšanu un ļaunprātīgu izmantošanu
+  - title: 4. Tavas tiesības
+    intro: 'Saskaņā ar GDPR tev ir tiesības:'
+    bullets:
+    - Piekļūt saviem personas datiem
+    - Labot neprecīzus vai nepilnīgus datus
+    - Pieprasīt datu dzēšanu
+    - Iebilst pret noteiktām datu apstrādes darbībām
+    - Pieprasīt datu pārnesamību
+  - title: 5. Sazinies ar mums
+    intro: Ja tev ir jautājumi par to, kā mēs apstrādājam personas datus vai izmantojam sīkdatnes, vienmēr laipni aicināti sazināties.
+racetime_estimator_title: Aprēķini savu finiša laiku
+racetime_estimator_description: Pamatojoties uz iepriekšējo skrējienu, tu vari aprēķināt savu finiša laiku citām distancēm.
+known_distance_label: Izvēlies distanci, kurai tev ir iepriekšējs rezultāts
+known_time_label: Ievadi savu laiku
+calculate_button_text: Aprēķināt laikus
+predicted_times_title: Aptuvenie laikietilpības
+distance_header: Distance
+predicted_time_header: Aptuvenais laiks
+hilly_course_label: Kalnains maršruts
+finish_time_header: Aptuvenais finiša laiks
+pace_per_km_header: Min/km
+pace_per_mile_header: Min/mile
+flat_time_header: Laiks (līkumā)
+flat_pace_per_km_header: Min/km (līkumā)
+flat_pace_per_mile_header: Minjūdzēs (līkumā)
+hill_adjustment_header: Kalnainuma korekcija
+pace_calculator_title: Ātruma konvertētājs
+pace_calculator_description: Vienkāršs rīks, lai pārvērstu savu skriešanas ātrumu starp dažādām mērvienībām
+pace_table_header_kph: Kilometri stundā
+pace_table_header_mph: Jūdzes stundā
+pace_table_header_min_km: Minūtes kilometrā
+pace_table_header_min_mile: Minūtes jūdzē
+pace_table_header_5k: 5k
+pace_table_header_10k: 10k
+pace_table_header_half: Pusmaratons
+pace_table_header_full: Maratons
+pace_conversion_note: 1 kilometrs stundā (kph) = 0.62 jūdzes stundā (mph)
+measure_route_title: Izmēri savu maršrutu
+measure_route_description: Noklikšķini uz kartes, lai atzīmētu punktus pa maršrutu. Kopējā distance tiek aprēķināta automātiski.
+remove_last_point: Noņemt pēdējo punktu
+clear_route: Notīrīt maršrutu
+total_distance: Kopējā distance
+training_plans:
+  title: Treniņu plāni
+  description: Izveido pielāgotu treniņu plānu, balstoties uz savu mērķi
+  disclaimer_text_tp_1: Mūsu treniņu plānus ģenerē mākslīgais intelekts, pēc tam tos pielāgo taviem norādītajiem mērķiem un vēlmēm. Programmas nevar garantēt perfektu rezultātu vai piemērotību visiem.
+  disclaimer_link_tp: Sazinies ar mums
+  disclaimer_text_tp_2: ja tev ir atsauksmes vai ieteikumi uzlabojumiem.
+  form:
+    race_date_label: Sacensību datums
+    plan_type_label: Plāna veids
+    target_distance_label: Mērķa distance
+    target_time_label: Mērķa laiks
+    training_days_label: Treniņu dienas nedēļā
+    session_time_label: Laiks pieejams vienā treniņā
+    is_hilly_label: Kalnaina reljefa
+    hours_placeholder: Stundas
+    minutes_placeholder: Minūtes
+    seconds_placeholder: Sekundes
+    submit_button: Ģenerēt treniņu plānu
+    target_distance:
+      placeholder: Izvēlies distanci
+      options:
+        '5000': 5 km
+        '10000': 10 km
+        '21097': Pusmaratons
+        '42195': Maratons
+    training_days:
+      placeholder: Izvēlies dienu skaitu
+      options:
+        '3': 3 dienas
+        '4': 4 dienas
+        '5': 5 dienas
+        '6': 6 dienas
+    session_time:
+      placeholder: Izvēlies laiku vienā treniņā
+      options:
+        30-45: 30-45 minūtes
+        45-60: 45-60 minūtes
+        60-90: 60-90 minūtes
+        90+: Vairāk nekā 90 minūtes
+  results:
+    title: Tavs treniņu plāns
+    variations:
+      title: 'Izvēlies variantu, kas tev piemērots:'
+    plan_details:
+      duration_label: 'Programmas ilgums:'
+      weekly_distance_label: 'Nedēļas distance:'
+    regenerate_button: Rādīt citas variācijas
+    export_button: Eksportēt uz PDF
+  workout_types:
+    easy: Viegls skrējiens
+    tempo: Tempa skrējiens
+    intervals: Intervāli
+    long: Garais skrējiens
+    rest: Atpūta
+  messages:
+    weeks: nedēļas
+    week_label: Nedēļa
+    hilly_terrain_note: pielāgots kalnainam reljefam
+  plan_variation:
+    focus_label: Fokuss
+    weekly_structure_label: Nedēļas struktūra
+    distribution_label: Izplatījums
+    sessions_per_week: treniņi nedēļā
+    select_button: Izvēlēties šo plānu
+  errors:
+    loading_plans: Kļūda ielādējot treniņu plānus
+    required_fields: Lūdzu, aizpildi visus obligātos laukus
+    no_matching_plan: Atbilstošs treniņu plāns nav atrasts
+    no_matching_variations: Atbilstošas variācijas nav atrastas
+    invalid_training_days: Treniņu dienu skaits nesakrīt ar plāna prasībām
+  week: Nedēļa
+  weeks: nedēļas
+  hilly_terrain_note: pielāgots kalnainam reljefam
+  plan_structure:
+    phases:
+      base:
+        duration_percent: 40
+        focus: Pamata izturības veidošana
+        weekly_template:
+          monday:
+            type: viegls
+            description: Viegls distanču skrējiens
+          wednesday:
+            type: temps
+            description: Tempa skrējiens
+          saturday:
+            type: garš
+            description: Garais skrējiens
+          sunday:
+            type: atjaunošanās
+            description: Atjaunošanās
+      build:
+        duration_percent: 40
+        focus: Palielināta intensitāte un distance
+        weekly_template:
+          monday:
+            type: viegls
+            description: Viegls distanču skrējiens
+          wednesday:
+            type: intervāli
+            description: Intervāli
+          friday:
+            type: temps
+            description: Tempa skrējiens
+          sunday:
+            type: garš
+            description: Garais skrējiens
+      peak:
+        duration_percent: 15
+        focus: Maksimālā sagatavotība un specifiski treniņi
+        weekly_template:
+          tuesday:
+            type: intervāli
+            description: Kvalitatīvs treniņš
+          thursday:
+            type: temps
+            description: Tempa skrējiens
+          saturday:
+            type: garš
+            description: Garais skrējiens
+          sunday:
+            type: atjaunošanās
+            description: Atjaunošanās
+      taper:
+        duration_percent: 5
+        focus: Samazināta slodze
+        weekly_template:
+          tuesday:
+            type: viegls
+            description: Viegls skrējiens
+          thursday:
+            type: temps
+            description: Īss tempa skrējiens
+          saturday:
+            type: viegls
+            description: Ļoti viegls skrējiens
+    session_types:
+      easy:
+        intensity_adjustment: 60
+        duration_range:
+          min: 30
+          max: 60
+        warmup: 10-15 min viegla skriešana
+        cooldown: 5-10 min viegla skriešana
+      tempo:
+        intensity_adjustment: -20
+        duration_range:
+          min: 40
+          max: 70
+        warmup: 15-20 min pakāpeniska iesildīšanās
+        cooldown: 10-15 min atdzišana
+      intervals:
+        intensity_adjustment: -30
+        duration_range:
+          min: 45
+          max: 75
+        warmup: 20 min ieskaitot vingrinājumus un ātruma gabalus
+        cooldown: 10-15 min viegla skrējiena temps
+      long:
+        intensity_adjustment: 30
+        duration_range:
+          min: 60
+          max: 180
+        warmup: 10-15 min ļoti viegls skrējiens
+        cooldown: 5-10 min pastaiga/viegls skrējiens
+      recovery:
+        intensity_adjustment: 90
+        duration_range:
+          min: 30
+          max: 45
+        warmup: 5-10 min pastaiga
+        cooldown: 5-10 min pastaiga
+    terrain_adjustment: 15
+  workout_components:
+    warmup_label: Sasildīšanās
+    main_workout_label: Treniņa apraksts
+    cooldown_label: Atsildīšanās
+    intensity_label: Temps
+    duration_label: Laiks
+  regenerate:
+    button_text: Ģenerēt jaunu variantu
+    confirmation: Vai tiešām vēlies ģenerēt jaunu variantu?
+  weekdays:
+    monday: Pirmdiena
+    tuesday: Otrdiena
+    wednesday: Trešdiena
+    thursday: Ceturtdiena
+    friday: Piektdiena
+    saturday: Sestdiena
+    sunday: Svētdiena
+footer:
+  races_heading: Skrējieni
+  tools_heading: Rīki
+  about_heading: Par Skrējienu kalendāru
+  privacy: Privātuma politika
+  copyright_year: '2026'
+  site_name: skrejienukalendars.com
+  rights_text: Visas tiesības aizsargātas.
+  social_links:
+    facebook: https://www.facebook.com/Loppkartan
+    instagram: https://www.instagram.com/Loppkartan
+    youtube: https://www.youtube.com/channel/UCL6666666666666666
+    tiktok: https://www.tiktok.com/@Loppkartan
+accessibility:
+  main_navigation_label: Galvenā navigācija
+  breadcrumb_label: Ceļš uz lapas sākumu
+  back_to_top_label: Atpakaļ uz sākumu
+  social_facebook_label: Facebook
+  social_instagram_label: Instagram
+  social_youtube_label: YouTube
+  social_tiktok_label: TikTok
+trending_races_title: Populārākie skrējieni
+trending_races_description: Šeit ir skrējieni, kas ir guvuši vislielāko skrējēju interesi.
+trending_races_views_last_30_days: skatījumi pēdējo 30 dienu laikā
+trending_races_most_viewed: Pašreiz vispopulārākie
+races_views: skatījumi
+recent_races_title: Nesen pievienotie skrējieni
+today: šodien
+yesterday: vakar
+days_ago: dienas atpakaļ
+newest_race_badge: Pēdējais pievienojums
+races_count: skrējieni
+popular_counties_title: Atrast skrējienus tavā novadā
+popular_cities_title: Atrast skrējienus tavā pilsētā
+all_counties: Rādīt visus novadus
+all_cities: Rādīt visas pilsētas
+category_header_1: Taku skrējieni
+category_type_1: trail
+category_1_races_sub_title_1: Taku maratons
+category_1_races_sub_ref_1: maratons
+category_1_races_sub_title_2: Taku ultra
+category_1_races_sub_ref_2: 50-miles
+category_1_races_sub_title_3: Taku ultra 100 jūdzes
+category_1_races_sub_ref_3: 100-miles
+category_header_2: Šosejas skrējieni
+category_type_2: road
+category_2_races_sub_title_1: Maratons
+category_2_races_sub_ref_1: maratons
+category_2_races_sub_title_2: Pusmaratons
+category_2_races_sub_ref_2: pusmaratons
+category_2_races_sub_title_3: 10 km
+category_2_races_sub_ref_3: 10-km
+view_all_races: Skatīt visus skrējienus valstī
+tools_title: Rīki tavām nākamajām sacensībām
+home_tools:
+  measure_route:
+    description: Izmēri maršruta ideju un ātri iegūsti aptuvenu distanci pirms došanās ceļā.
+  training_plans:
+    description: Atrodi treniņu plānus dažādiem mērķiem, līmeņiem un distancēm, lai izveidotu nākamo treniņu posmu.
+  racetime_estimator:
+    description: Novērtē reālistisku finiša laiku no iepriekšējiem rezultātiem un salīdzini dažādus mērķu scenārijus.
+  pace_calculator:
+    description: Pārveido tempu, ātrumu un finiša laiku dažādās populārās sacensību distancēs, plānojot treniņus.
+missing_race: Trūkst skrējiena? Pievieno to šeit!
+add_race_mp_title: Pievienot savu skrējienu
+neighboring_countries_title: Skrējieni Latvijā un kaimiņvalstīs
+neighboring_countries_title_specific_country: 'Skrējieni: {country_name}'
+neighboring_countries_description: Šeit ir skrējieni, kas notiek kaimiņvalstīs.
+neighboring_countries_description_specific_country: 'Šeit apkopoti skrējieni šajā valstī: {country_name}.'
+neighboring_countries_neighbors_native: Kaimiņvalstis
+neighboring_countries_all_neighbors_native: Visas kaimiņvalstis
+section_race_card_header_nieghbors_default: Latvija un kaimiņvalstis
+browse_neighboring:
+  title: Pārlūkot skrējienus pa kaimiņvalstīm
+  meta_description: Atrodi skrējienus kaimiņvalstīs tuvumā. Pārlūko pa valstīm, lai atklātu skrējienus pāri robežām.
+neighboring_races_title: Skrējieni kaimiņvalstīs
+neighboring_countries_show_all: Rādīt visus
+race_page_layout_title: 'Skrējiena lapa: {x}'

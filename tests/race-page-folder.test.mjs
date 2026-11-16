@@ -55,6 +55,7 @@ test('ASCII alias folds Unicode but is not a generic slugify policy', () => {
   assert.equal(asciiAliasRacePageFolder('lobsider'), '');
   assert.equal(asciiAliasRacePageFolder('lopssider'), '');
   assert.equal(asciiAliasRacePageFolder('looppaginas'), '');
+  assert.equal(asciiAliasRacePageFolder('skrejiena_lapas'), '');
 });
 
 test('LT YAML canonical race folder is ASCII begimo_puslapiai', () => {
@@ -126,6 +127,26 @@ test('NO YAML-independent race folder is ASCII lopssider with no Unicode alias',
   assert.equal(asciiAliasRacePageFolder(ASCII_NO_FOLDER), '');
   assert.equal(isRacePageFolderMatch(content, 'native', ASCII_NO_FOLDER), true);
   assert.equal(fs.existsSync(path.join(repoRoot, 'src/pages', ASCII_NO_FOLDER, '[domain]', 'index.astro')), true);
+});
+
+test('LV YAML-independent race folder is ASCII skrejiena_lapas with no Unicode alias', () => {
+  const ASCII_LV_FOLDER = 'skrejiena_lapas';
+  const content = { race_page_folder_name: ASCII_LV_FOLDER };
+  const manifest = JSON.parse(fs.readFileSync(path.join(repoRoot, 'scripts/.generated-market-routes.json'), 'utf8'));
+  assert.equal(localRacePageFolder(content, 'native'), ASCII_LV_FOLDER);
+  assert.equal(asciiAliasRacePageFolder(ASCII_LV_FOLDER), '');
+  assert.equal(isRacePageFolderMatch(content, 'native', ASCII_LV_FOLDER), true);
+  assert.equal(fs.existsSync(path.join(repoRoot, 'src/pages', ASCII_LV_FOLDER, '[domain]', 'index.astro')), true);
+  assert.equal(
+    manifest.files.some((filePath) => filePath.includes(`src/pages/${ASCII_LV_FOLDER}/[domain]/index.astro`)),
+    true,
+  );
+});
+
+test('LV listing slug folds Latvian diacritics to skrejienu-kalendars', () => {
+  assert.equal(slugify('Skrējienu kalendārs', 'lv'), 'skrejienu-kalendars');
+  assert.equal(slugify('Rīgas pilsēta', 'lv'), 'rigas-pilseta');
+  assert.equal(slugify('Ķekavas novads', 'lv'), 'kekavas-novads');
 });
 
 test('folder match still accepts a Unicode canonical plus ASCII alias', () => {
