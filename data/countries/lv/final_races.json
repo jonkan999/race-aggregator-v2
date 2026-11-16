@@ -150,7 +150,7 @@
     "latitude": 56.5099129,
     "longitude": 27.3328284,
     "county": "Rēzeknes pilsēta",
-    "nearest_city": "Valmiera",
+    "nearest_city": "Daugavpils",
     "nearby_cities": [],
     "distances": "[\"4.4\"]",
     "distance_m": [
@@ -460,6 +460,74 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "test_race",
+    "name": "Test race",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20261118",
+        "20261118"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Riga, Latvija",
+    "latitude": 56.9676941,
+    "longitude": 24.1056221,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"42\", \"21\"]",
+    "distance_m": [
+      42000,
+      21000
+    ],
+    "distance_keywords": [
+      "Maratons",
+      "Pusmaratons"
+    ],
+    "distance_verbose": "Maratons, Pusmaratons",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://runbaltic.com/lv/races/test-race-2026"
+    ],
+    "consolidated_ids": [
+      "a207c3d2-2551-4a3d-aa05-a88eb0b11a6a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "noskrien_ziemu_1_posms_ropazos",
     "name": "Noskrien Ziemu 1. posms Ropažos",
     "type": "trail",
@@ -639,7 +707,7 @@
     "latitude": 56.6485682,
     "longitude": 25.4367334,
     "county": "Aizkraukles novads",
-    "nearest_city": "Rīga",
+    "nearest_city": "Jēkabpils",
     "nearby_cities": [],
     "distances": "[\"20\", \"10\"]",
     "distance_m": [
@@ -980,12 +1048,16 @@
     "latitude": 56.8843399,
     "longitude": 25.3415133,
     "county": "Ogres novads",
-    "nearest_city": "Valmiera",
+    "nearest_city": "Jēkabpils",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Jaukta distance",
+    "distances": "[\"42.195\"]",
+    "distance_m": [
+      42195
+    ],
+    "distance_keywords": [
+      "Maratons"
+    ],
+    "distance_verbose": "Maratons",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -1404,8 +1476,10 @@
     "latitude": 56.5027578,
     "longitude": 25.8675147,
     "county": "Jēkabpils novads",
-    "nearest_city": "Valmiera",
-    "nearby_cities": [],
+    "nearest_city": "Jēkabpils",
+    "nearby_cities": [
+      "Jēkabpils"
+    ],
     "distances": "[]",
     "distance_m": [],
     "distance_keywords": [],
@@ -1754,8 +1828,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/ropazu-novada-retro-skriesanas-svetki-2027"
+      "https://runbaltic.com/lv/races/ropazu-novada-retro-skriesanas-svetki-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/"
     ],
     "consolidated_ids": [
       "441e63a7-d5a7-4c78-b9f4-365f9bb23588"
@@ -1850,8 +1924,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.sportlat.lv/kalendars/viss",
       "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2027/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/skrejiensolojums-riga-valmiera-2027"
     ],
     "consolidated_ids": [
@@ -1946,8 +2021,10 @@
     "latitude": 56.3538262,
     "longitude": 26.1761923,
     "county": "Līvānu novads",
-    "nearest_city": "Valmiera",
-    "nearby_cities": [],
+    "nearest_city": "Jēkabpils",
+    "nearby_cities": [
+      "Jēkabpils"
+    ],
     "distances": "[\"10\", \"1.609\"]",
     "distance_m": [
       10000,
@@ -1979,11 +2056,74 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/livenhofas-skrejiens-2027"
+      "https://runbaltic.com/lv/races/livenhofas-skrejiens-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/"
     ],
     "consolidated_ids": [
       "1113be37-0006-4faf-8b52-6db3a16e2782"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "latvijas_cempionats_judzes_1609m_skrejiena",
+    "name": "Latvijas čempionāts jūdzes 1609m skrējienā",
+    "type": "track",
+    "type_local": "Stadions",
+    "race_dates": [
+      [
+        "20270504",
+        "20270504"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Līvāni, Latvija",
+    "latitude": 56.3538262,
+    "longitude": 26.1761923,
+    "county": "Līvānu novads",
+    "nearest_city": "Jēkabpils",
+    "nearby_cities": [
+      "Jēkabpils"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://ultrataka.lv/pasakumu-kalendars/"
+    ],
+    "consolidated_ids": [
+      "ac343df9-59b0-4c7b-b13e-375549e20826"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -2002,6 +2142,10 @@
       [
         "20270516",
         "20270516"
+      ],
+      [
+        "20270515",
+        "20270515"
       ]
     ],
     "upcoming_dates": [],
@@ -2109,8 +2253,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/rimi-rigas-maratons-2027/"
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://www.noskrien.lv/kalendars/rimi-rigas-maratons-2027/",
+      "https://ultrataka.lv/pasakumu-kalendars/"
     ],
     "consolidated_ids": [
       "d66dad8a-9347-44f2-a48e-f7a9eaa7e080"
@@ -2938,6 +3083,68 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "46_skrejiens_apkart_vaidavas_ezeram",
+    "name": "46. skrējiens \"Apkārt Vaidavas ezeram\"",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20270619",
+        "20270619"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Vaidava, Valmiera Municipality, Latvija",
+    "latitude": 57.42937360000001,
+    "longitude": 25.2853716,
+    "county": "Valmieras novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [
+      "Valmiera"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportlat.lv/kalendars/viss"
+    ],
+    "consolidated_ids": [
+      "95070e0b-ea3f-4c76-b5ec-abbdac7551f4"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "saulgriezu_nakts_stirnu_buks",
     "name": "Saulgriežu nakts Stirnu buks",
     "type": "trail",
@@ -3705,9 +3912,9 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
+      "https://runbaltic.com/lv/races/kuldigas-22-pusmaratons-2027",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/22-kuldigas-pusmaratons-2027/",
-      "https://runbaltic.com/lv/races/kuldigas-22-pusmaratons-2027"
+      "https://www.noskrien.lv/kalendars/22-kuldigas-pusmaratons-2027/"
     ],
     "consolidated_ids": [
       "c8e1471c-eae7-4bdb-915c-a213837bb11f"
@@ -3739,7 +3946,7 @@
     "latitude": 56.5650754,
     "longitude": 24.9271867,
     "county": "Bauskas novads",
-    "nearest_city": "Rīga",
+    "nearest_city": "Jēkabpils",
     "nearby_cities": [],
     "distances": "[\"50\", \"21\"]",
     "distance_m": [
@@ -4198,10 +4405,14 @@
     "county": "Siguldas novads",
     "nearest_city": "Rīga",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Jaukta distance",
+    "distances": "[\"42.195\"]",
+    "distance_m": [
+      42195
+    ],
+    "distance_keywords": [
+      "Maratons"
+    ],
+    "distance_verbose": "Maratons",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -4228,6 +4439,68 @@
     ],
     "consolidated_ids": [
       "dba9e6c9-308b-4ec1-8ca1-21536c98782e"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "62_daugavpils_skrejiens_daugavpils_mezciems",
+    "name": "62. Daugavpils skrējiens \"Daugavpils-Mežciems\"",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20270925",
+        "20270925"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Daugavpils, Latvija",
+    "latitude": 55.88261259999999,
+    "longitude": 26.5464985,
+    "county": "Augšdaugavas novads",
+    "nearest_city": "Daugavpils",
+    "nearby_cities": [
+      "Daugavpils"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportlat.lv/kalendars/viss"
+    ],
+    "consolidated_ids": [
+      "ce751dd0-f6a9-4a96-a512-262fa6efd37b"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -4324,7 +4597,7 @@
     "latitude": 56.89580849999999,
     "longitude": 25.6308931,
     "county": "Madonas novads",
-    "nearest_city": "Valmiera",
+    "nearest_city": "Jēkabpils",
     "nearby_cities": [],
     "distances": "[\"84\", \"42\", \"21\"]",
     "distance_m": [
@@ -4635,8 +4908,10 @@
     "latitude": 55.88261259999999,
     "longitude": 26.5464985,
     "county": "Augšdaugavas novads",
-    "nearest_city": "Rīga",
-    "nearby_cities": [],
+    "nearest_city": "Daugavpils",
+    "nearby_cities": [
+      "Daugavpils"
+    ],
     "distances": "[]",
     "distance_m": [],
     "distance_keywords": [],
@@ -4667,6 +4942,69 @@
     ],
     "consolidated_ids": [
       "060b21d2-278c-45ff-b633-0b5be8311f3b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "latvijas_cempionats_krosa_skrejiena",
+    "name": "Latvijas čempionāts krosa skrējienā",
+    "type": "terrain",
+    "type_local": "Kross",
+    "race_dates": [
+      [
+        "20271010",
+        "20271010"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Daugavpils, Latvija",
+    "latitude": 55.88261259999999,
+    "longitude": 26.5464985,
+    "county": "Augšdaugavas novads",
+    "nearest_city": "Daugavpils",
+    "nearby_cities": [
+      "Daugavpils"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://ultrataka.lv/pasakumu-kalendars/"
+    ],
+    "consolidated_ids": [
+      "fa1e9cf9-7abd-4fdf-9e9a-e0bff4a0b844"
     ],
     "supplied_ids": [],
     "supplied_at": null,
