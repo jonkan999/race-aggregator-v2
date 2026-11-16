@@ -4888,13 +4888,25 @@
     },
     {
       "source": "/strony_biegow/grand_prix_city_trail_warszawa/:path*",
-      "destination": "/strony_biegow/grand_prix_city_trail_wroclaw/:path*",
+      "destination": "/strony_biegow/grand_prix_city_trail_warszawa/:path*",
       "permanent": true,
       "market": "pl"
     },
     {
       "source": "/en/race-pages/grand_prix_city_trail_warszawa/:path*",
-      "destination": "/en/race-pages/grand_prix_city_trail_wroclaw/:path*",
+      "destination": "/en/race-pages/grand_prix_city_trail_warszawa/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/grand_prix_city_trail_wroclaw/:path*",
+      "destination": "/strony_biegow/grand_prix_city_trail_warszawa/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/grand_prix_city_trail_wroclaw/:path*",
+      "destination": "/en/race-pages/grand_prix_city_trail_warszawa/:path*",
       "permanent": true,
       "market": "pl"
     },
