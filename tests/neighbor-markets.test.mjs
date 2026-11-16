@@ -109,15 +109,14 @@ test('Netherlands lists Germany as a live neighbor and keeps Belgium until it is
   assert.ok(liveNeighbors('de').includes('nl')); // DE lists NL (config/neighbor-markets.json)
 });
 
-test('Latvia is wired to the Baltic neighbors and stays hidden until it is an enabled deploy market', () => {
+test('Latvia is wired to the Baltic neighbors and is linked once it is an enabled deploy market', () => {
   const neighbors = loadJson('config/neighbor-markets.json').markets;
   assert.deepEqual(neighbors.lv, ['ee', 'lt', 'fi', 'se']);
   assert.ok(neighbors.ee.includes('lv'));
   assert.ok(neighbors.lt.includes('lv'));
   const lv = loadJson('config/deploy-markets.json').markets.find((entry) => entry.marketCode === 'lv');
   assert.equal(lv.productionDomain, 'skrejienukalendars.com');
-  if (lv.enabled === false) {
-    assert.ok(!liveNeighbors('ee').includes('lv'));
-    assert.ok(!liveNeighbors('lt').includes('lv'));
-  }
+  assert.equal(lv.enabled, true);
+  assert.ok(liveNeighbors('ee').includes('lv'));
+  assert.ok(liveNeighbors('lt').includes('lv'));
 });
