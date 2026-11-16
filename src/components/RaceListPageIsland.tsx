@@ -35,6 +35,7 @@ import {
 import { getBrowserMarketRouteTargets, resolveRaceDetailHref } from '../lib/marketRoutes';
 import { pickTranslation, type RaceListRow } from '../lib/raceListRow';
 import { rowMatchesDistanceRange } from '../lib/raceDistances.js';
+import { locationForLocale } from '../lib/locationLabel.js';
 import {
   compareRaceRowsByRelevantDate,
   displayRaceDate,
@@ -886,10 +887,13 @@ export default function RaceListPageIsland(props: {
     [translationLocale],
   );
 
-  const pickVenueLocation = useCallback((r: RaceListRow) => {
-    const loc = r.payload?.location;
-    return typeof loc === 'string' ? loc.trim() : '';
-  }, []);
+  const pickVenueLocation = useCallback(
+    (r: RaceListRow) => {
+      const loc = r.payload?.location;
+      return typeof loc === 'string' ? locationForLocale(loc, routeLocale) : '';
+    },
+    [routeLocale],
+  );
 
   const countyLabel = useCallback(
     (r: RaceListRow) => {
@@ -907,7 +911,7 @@ export default function RaceListPageIsland(props: {
         const nearestCity =
           typeof r.payload?.nearest_city === 'string' ? r.payload.nearest_city.trim() : '';
         const fallbackLocation =
-          typeof r.payload?.location === 'string' ? r.payload.location.trim() : '';
+          typeof r.payload?.location === 'string' ? locationForLocale(r.payload.location, routeLocale) : '';
         return {
           label: nearestCity || fallbackLocation || countryLabelForNeighbor(originCode, neighboringCountries),
           flagCode: supportedFlagCode(originCode),
@@ -919,7 +923,7 @@ export default function RaceListPageIsland(props: {
         flagCode: null,
       };
     },
-    [countryCode, countyLabel, neighboringCountries],
+    [countryCode, countyLabel, neighboringCountries, routeLocale],
   );
 
   const highlightedEntries = useMemo<HighlightedRaceEntry[]>(() => {

@@ -36,6 +36,7 @@ import { pickTranslation, type RaceListRow } from './raceListRow';
 import { filterRowsToUpcomingWindow } from './upcomingRaceWindow';
 import { localeBasePrefix, raceListSlug, slugify } from './content';
 import { rowMatchesDistanceRange } from './raceDistances.js';
+import { locationForLocale } from './locationLabel.js';
 
 export const BROWSE_CATEGORIES_SEGMENT = 'categories';
 export const BROWSE_TYPES_SEGMENT = 'types';
@@ -979,7 +980,7 @@ export function getCategoryItemListJson(args: {
       const rawDate = firstRaceDate(row);
       const locationName =
         typeof row.payload?.location === 'string' && row.payload.location.trim()
-          ? row.payload.location.trim()
+          ? locationForLocale(row.payload.location, locale)
           : typeof row.payload?.nearest_city === 'string' && row.payload.nearest_city.trim()
             ? row.payload.nearest_city.trim()
             : row.county ?? '';

@@ -20,7 +20,7 @@ import {
 import { pickTranslation, type RaceListRow } from './raceListRow';
 import { localRacePageFolder } from './routeSegments';
 import { rowMatchesDistanceRange } from './raceDistances.js';
-import { stripDomesticCountry } from './locationLabel.js';
+import { locationForLocale, stripDomesticCountry } from './locationLabel.js';
 
 type RaceImage = {
   number?: number | null;
@@ -554,10 +554,13 @@ export function getRaceDetailFields(
     typeof payloadValue(row, 'start_time') === 'string' ? String(payloadValue(row, 'start_time')).trim() : '';
   const priceRange =
     typeof payloadValue(row, 'price_range') === 'string' ? String(payloadValue(row, 'price_range')).trim() : '';
-  const location = stripDomesticCountry(
-    typeof payloadValue(row, 'location') === 'string' ? String(payloadValue(row, 'location')).trim() : '',
-    String(content.country_code ?? ''),
-    row.origin_country ?? undefined,
+  const location = locationForLocale(
+    stripDomesticCountry(
+      typeof payloadValue(row, 'location') === 'string' ? String(payloadValue(row, 'location')).trim() : '',
+      String(content.country_code ?? ''),
+      row.origin_country ?? undefined,
+    ),
+    locale,
   );
   const county = typeof row.county === 'string' ? row.county.trim() : '';
   const registrationCloseDate = formatOptionalDateLabel(payloadValue(row, 'registration_close_date'), translationLocale);

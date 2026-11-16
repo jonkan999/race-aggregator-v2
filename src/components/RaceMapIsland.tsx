@@ -22,6 +22,7 @@ import {
   type MarketRouteTargets,
   resolveRaceDetailHref,
 } from '../lib/marketRoutes';
+import { locationForLocale } from '../lib/locationLabel.js';
 
 type RaceFeatureCollection = {
   type: 'FeatureCollection';
@@ -177,7 +178,7 @@ function buildMapRaceItem(
     name: marker.name?.trim() || marker.domain_name,
     dateLabel: displayDate ? formatYyyymmdd(displayDate, monthMappingShort) : '',
     countyLabel: marker.county ? countyMapping[marker.county] ?? marker.county : countryNative,
-    venueLabel: marker.location?.trim() ?? '',
+    venueLabel: locationForLocale(marker.location ?? '', routeLocale),
     raceTypeLabel,
     distanceLabels: splitDistanceVerbose(marker.distance_verbose ?? '')
       .slice(0, 4)

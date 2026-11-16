@@ -135,7 +135,7 @@ function formatShortDate(raw: string | null, content: IndexYaml, locale: Locale)
   }
 
   const iso = `${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}`;
-  const formatter = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'sv-SE', {
+  const formatter = new Intl.DateTimeFormat(translationLocale(content, locale), {
     day: 'numeric',
     month: 'short',
     timeZone: 'UTC',
@@ -159,7 +159,7 @@ function formatRecentMeta(createdAt: string | null, content: IndexYaml, locale: 
     return `${diffDays} ${String(content.days_ago ?? (locale === 'en' ? 'days ago' : 'dagar sedan'))}`;
   }
 
-  return new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'sv-SE', {
+  return new Intl.DateTimeFormat(translationLocale(content, locale), {
     day: 'numeric',
     month: 'short',
     year: 'numeric',
