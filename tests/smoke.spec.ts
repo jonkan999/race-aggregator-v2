@@ -590,6 +590,19 @@ test('neighboring browse page renders', async ({ page }) => {
   );
 });
 
+test('newsletter popup can be opened on the homepage', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForFunction(() => (window as typeof window & { __raceAggregatorNewsletterPopupReady?: boolean }).__raceAggregatorNewsletterPopupReady === true);
+  await page.evaluate(() => {
+    window.dispatchEvent(new Event('race-aggregator:open-newsletter-popup'));
+  });
+
+  const dialog = page.getByRole('dialog');
+  await expect(dialog).toBeVisible();
+  await expect(dialog.getByPlaceholder(/din e-postadress/i)).toBeVisible();
+  await expect(dialog.getByRole('button', { name: /ge mig uppdateringarna/i })).toBeVisible();
+});
+
 test('newsletter popup can be opened on the Swedish race list', async ({ page }) => {
   await page.goto('/loppkalender/');
   await page.waitForFunction(() => (window as typeof window & { __raceAggregatorNewsletterPopupReady?: boolean }).__raceAggregatorNewsletterPopupReady === true);

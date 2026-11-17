@@ -27,12 +27,146 @@
       "source": "/forum/:path*",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/en/terminliste",
+      "destination": "/en/race-calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/en/terminliste/",
+      "destination": "/en/race-calendar/",
+      "permanent": true
+    },
+    {
+      "source": "/narliggende-land",
+      "destination": "/neighbors/",
+      "permanent": true
+    },
+    {
+      "source": "/narliggende-land/",
+      "destination": "/neighbors/",
+      "permanent": true
+    },
+    {
+      "source": "/brukervilkar",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/brukervilkar/",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/om-loppkartan",
+      "destination": "/om-oss/",
+      "permanent": true
+    },
+    {
+      "source": "/om-loppkartan/",
+      "destination": "/om-oss/",
+      "permanent": true
+    },
+    {
+      "source": "/om-lopskalender",
+      "destination": "/om-oss/",
+      "permanent": true
+    },
+    {
+      "source": "/om-lopskalender/",
+      "destination": "/om-oss/",
+      "permanent": true
+    },
+    {
+      "source": "/personvern",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/personvern/",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/integritet",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/integritet/",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/training",
+      "destination": "/treningsprogram/",
+      "permanent": true
+    },
+    {
+      "source": "/training/",
+      "destination": "/treningsprogram/",
+      "permanent": true
+    },
+    {
+      "source": "/treningsplaner",
+      "destination": "/treningsprogram/",
+      "permanent": true
+    },
+    {
+      "source": "/treningsplaner/",
+      "destination": "/treningsprogram/",
+      "permanent": true
+    },
+    {
+      "source": "/lopssider/begby_joggen",
+      "destination": "/lopssider/begbyjoggen/",
+      "permanent": true
+    },
+    {
+      "source": "/lopssider/begby_joggen/",
+      "destination": "/lopssider/begbyjoggen/",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/begby_joggen",
+      "destination": "/en/race-pages/begbyjoggen/",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/begby_joggen/",
+      "destination": "/en/race-pages/begbyjoggen/",
+      "permanent": true
+    },
+    {
+      "source": "/lopssider/winterrun_oslo",
+      "destination": "/lopssider/brooks_winterrun_oslo/",
+      "permanent": true
+    },
+    {
+      "source": "/lopssider/winterrun_oslo/",
+      "destination": "/lopssider/brooks_winterrun_oslo/",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterrun_oslo",
+      "destination": "/en/race-pages/brooks_winterrun_oslo/",
+      "permanent": true
+    },
+    {
+      "source": "/en/race-pages/winterrun_oslo/",
+      "destination": "/en/race-pages/brooks_winterrun_oslo/",
+      "permanent": true
     }
   ],
   "fallbackRoutes": [
     {
       "src": "^/lopssider(?:/.*)?$",
       "destination": "/terminliste/"
+    },
+    {
+      "src": "^/en/terminliste(?:/.*)?$",
+      "destination": "/en/race-calendar/"
     },
     {
       "src": "^/en/race-pages/.+$",
