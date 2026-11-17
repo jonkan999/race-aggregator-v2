@@ -9,6 +9,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getNativeLocaleForCountry, resolveCountriesRoot, resolveCountryArg } from './lib/market-config.mjs';
+import { raceColumns, raceTranslations } from './lib/race-rows.mjs';
+import { loadSeedState, planSeed, saveSeedState, SEED_STATE_VERSION, seedStatePath } from './lib/seed-plan.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -20,6 +22,8 @@ const positional = args.filter((value) => !value.startsWith('--'));
 const country = resolveCountryArg(positional[0]);
 const nativeLocale = getNativeLocaleForCountry(root, country);
 const replaceExisting = flags.has('--replace');
+const forceAll = flags.has('--force') || replaceExisting;
+const BATCH_SIZE = 100;
 const showHelp = flags.has('--help') || flags.has('-h');
 
 if (showHelp) {
@@ -27,6 +31,9 @@ if (showHelp) {
 
 Options:
   --replace   Delete existing races for the selected country before seeding
+  --force     Rewrite every race even if unchanged since the last seed
+              (unchanged races are otherwise skipped; a full rewrite still
+              happens automatically at least every 7 days)
   --help      Show this help message`);
   process.exit(0);
 }
@@ -53,21 +60,68 @@ function loadJson(name) {
 function racePayload(race) {
   return {
     country_code: country,
-    domain_name: race.domain_name,
-    latitude: race.latitude ?? null,
-    longitude: race.longitude ?? null,
-    race_dates: race.race_dates ?? [],
-    county: race.county ?? null,
-    race_type: race.type ?? null,
-    distance_m: race.distance_m ?? null,
-    website: race.website ?? null,
-    organizer: race.organizer ?? null,
-    contact: race.contact ?? null,
-    origin_country: race.origin_country ?? null,
+    ...raceColumns(race),
     payload: race,
     published: true,
     updated_at: new Date().toISOString(),
   };
+}
+
+async function loadDbPublishedByDomain() {
+  const byDomain = new Map();
+  let lastId = null;
+  for (;;) {
+    let query = sb
+      .from('races')
+      .select('id, domain_name, published')
+      .eq('country_code', country)
+      .order('id', { ascending: true })
+      .limit(1000);
+    if (lastId) query = query.gt('id', lastId);
+    const { data, error } = await query;
+    if (error) throw error;
+    if (!data || data.length === 0) break;
+    for (const row of data) byDomain.set(row.domain_name, row.published === true);
+    lastId = data[data.length - 1].id;
+  }
+  return byDomain;
+}
+
+async function writeBatch(batch, intByDomain) {
+  const { data: upserted, error: upErr } = await sb
+    .from('races')
+    .upsert(batch.map(racePayload), { onConflict: 'country_code,domain_name' })
+    .select('id, domain_name');
+  if (upErr) throw upErr;
+  const idByDomain = new Map((upserted ?? []).map((row) => [row.domain_name, row.id]));
+  const missing = batch.filter((race) => !idByDomain.has(race.domain_name));
+  if (missing.length > 0) throw new Error(`Upsert returned no id for ${missing.map((r) => r.domain_name).join(', ')}`);
+
+  const nativeRows = [];
+  const enRows = [];
+  for (const race of batch) {
+    const raceId = idByDomain.get(race.domain_name);
+    const [native, en] = raceTranslations(race, intByDomain.get(race.domain_name), nativeLocale);
+    nativeRows.push({ race_id: raceId, ...native });
+    if (en) enRows.push({ race_id: raceId, ...en });
+  }
+
+  const { error: svErr } = await sb.from('race_translations').upsert(nativeRows, { onConflict: 'race_id,locale' });
+  if (svErr) throw svErr;
+
+  if (nativeLocale !== 'sv') {
+    const { error: cleanupErr } = await sb
+      .from('race_translations')
+      .delete()
+      .in('race_id', [...idByDomain.values()])
+      .eq('locale', 'sv');
+    if (cleanupErr) throw cleanupErr;
+  }
+
+  if (enRows.length > 0) {
+    const { error: enErr } = await sb.from('race_translations').upsert(enRows, { onConflict: 'race_id,locale' });
+    if (enErr) throw enErr;
+  }
 }
 
 async function main() {
@@ -84,7 +138,6 @@ async function main() {
     process.exit(1);
   }
 
-  let n = 0;
   console.warn(
     `Seeding ${country} from ${sourceLocal} + ${sourceInt}${replaceExisting ? ' (replace mode)' : ''}`,
   );
@@ -95,76 +148,52 @@ async function main() {
     console.warn(`Deleted existing races for ${country}.`);
   }
 
-  for (const race of fallbackLocalRaces) {
-    const row = racePayload(race);
-    const { data: upserted, error: upErr } = await sb
-      .from('races')
-      .upsert(row, { onConflict: 'country_code,domain_name' })
-      .select('id')
-      .single();
-    if (upErr) throw upErr;
-    const raceId = upserted.id;
+  const statePath = seedStatePath(root, country);
+  const previousState = loadSeedState(statePath);
+  const dbPublishedByDomain = await loadDbPublishedByDomain();
+  const plan = planSeed({
+    races: fallbackLocalRaces,
+    intByDomain,
+    nativeLocale,
+    state: previousState,
+    dbPublishedByDomain,
+    force: forceAll,
+  });
+  console.warn(
+    `${plan.full ? 'Full' : 'Incremental'} seed: ${plan.toWrite.length} to write, ${plan.skipped} unchanged skipped (${plan.unique.length} unique races).`,
+  );
 
-    const sv = {
-      race_id: raceId,
-      locale: nativeLocale,
-      name: race.name ?? null,
-      description: race.description ?? null,
-      type_local: race.type_local ?? null,
-      distance_verbose: race.distance_verbose ?? null,
-      additional:
-        typeof race.additional === 'string'
-          ? race.additional
-          : typeof race.additional_info === 'string'
-            ? race.additional_info
-            : null,
-      course_highlights: Array.isArray(race.course_highlights)
-        ? race.course_highlights.filter((entry) => typeof entry === 'string')
-        : null,
-    };
-
-    const { error: svErr } = await sb.from('race_translations').upsert(sv, {
-      onConflict: 'race_id,locale',
-    });
-    if (svErr) throw svErr;
-
-    if (nativeLocale !== 'sv') {
-      const { error: cleanupErr } = await sb
-        .from('race_translations')
-        .delete()
-        .eq('race_id', raceId)
-        .eq('locale', 'sv');
-      if (cleanupErr) throw cleanupErr;
+  // Keep fingerprints only for races written now or skipped as unchanged.
+  const entries = {};
+  if (!plan.full) {
+    for (const race of plan.unique) {
+      const fp = plan.fingerprints.get(race.domain_name);
+      if (previousState?.entries?.[race.domain_name] === fp) entries[race.domain_name] = fp;
     }
-
-    const ir = intByDomain.get(race.domain_name);
-    if (ir) {
-      const en = {
-        race_id: raceId,
-        locale: 'en',
-        name: ir.name ?? null,
-        description: ir.description ?? null,
-        type_local: ir.type_local ?? null,
-        distance_verbose: ir.distance_verbose ?? null,
-        additional:
-          typeof ir.additional === 'string'
-            ? ir.additional
-            : typeof ir.additional_info === 'string'
-              ? ir.additional_info
-              : null,
-        course_highlights: Array.isArray(ir.course_highlights)
-          ? ir.course_highlights.filter((entry) => typeof entry === 'string')
-          : null,
-      };
-      const { error: enErr } = await sb.from('race_translations').upsert(en, {
-        onConflict: 'race_id,locale',
-      });
-      if (enErr) throw enErr;
-    }
-
-    n += 1;
-    if (n % 200 === 0) console.warn(`Upserted ${n} races…`);
   }
+  const persist = (completedFull) =>
+    saveSeedState(statePath, {
+      version: SEED_STATE_VERSION,
+      country,
+      fullSeedAt: completedFull ? new Date().toISOString() : (plan.full ? null : previousState?.fullSeedAt ?? null),
+      updatedAt: new Date().toISOString(),
+      entries,
+    });
+
+  let n = 0;
+  try {
+    for (let i = 0; i < plan.toWrite.length; i += BATCH_SIZE) {
+      const batch = plan.toWrite.slice(i, i + BATCH_SIZE);
+      await writeBatch(batch, intByDomain);
+      for (const race of batch) entries[race.domain_name] = plan.fingerprints.get(race.domain_name);
+      n += batch.length;
+      if (n % 1000 < BATCH_SIZE) console.warn(`Upserted ${n} races…`);
+    }
+  } catch (err) {
+    persist(false);
+    throw err;
+  }
+  persist(plan.full);
 
   // Unpublish rows for slugs merged away as duplicates (they 308 to the survivor via
   // config/redirects/merged-duplicate-races.json). Plain upserts never touch them.
@@ -191,7 +220,7 @@ async function main() {
     }
   }
 
-  console.warn(`Done. Upserted ${n} races for ${country}.`);
+  console.warn(`Done. Upserted ${n} races for ${country} (${plan.skipped} unchanged skipped).`);
 }
 
 main().catch((e) => {

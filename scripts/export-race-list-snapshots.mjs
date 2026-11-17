@@ -5,6 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getActiveMarketCode, getNativeLocaleForCountry, resolveCountriesRoot } from './lib/market-config.mjs';
 import { loadLocalEnvFiles } from './lib/load-env.mjs';
+import { diffSnapshotRows, snapshotRowFromJson, spreadSample } from './lib/race-rows.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -115,6 +116,20 @@ async function loadRaceDetailPageViewRankings(sb, countryCode) {
   }
 
   return Array.isArray(data) ? data : [];
+}
+
+function loadJsonSources(countryCode) {
+  const countryDir = path.join(countriesRoot, countryCode);
+  const localPath = fs.existsSync(path.join(countryDir, 'final_races_w_neighbors.json'))
+    ? path.join(countryDir, 'final_races_w_neighbors.json')
+    : path.join(countryDir, 'final_races.json');
+  if (!fs.existsSync(localPath)) return { local: [], intByDomain: new Map() };
+  const local = JSON.parse(fs.readFileSync(localPath, 'utf8'));
+  const intPath = fs.existsSync(path.join(countryDir, 'final_races_w_neighbors_int.json'))
+    ? path.join(countryDir, 'final_races_w_neighbors_int.json')
+    : path.join(countryDir, 'final_races_int.json');
+  const intRows = fs.existsSync(intPath) ? JSON.parse(fs.readFileSync(intPath, 'utf8')) : [];
+  return { local: Array.isArray(local) ? local : [], intByDomain: new Map(intRows.map((row) => [row.domain_name, row])) };
 }
 
 function loadRowsFromJson(countryCode) {
@@ -322,11 +337,159 @@ function isTransientError(error) {
     || ['PGRST000', 'PGRST001', 'PGRST002', '08000', '08006', '53300', '57P01'].includes(String(error?.code ?? ''));
 }
 
-async function exportCountrySnapshot(sb, countryCode, outputDir) {
-  let { data, error } = await fetchPublishedRacesPaged(sb, countryCode, listSelect);
+// Columns needed to decide which rows are live and to keep Supabase ids and
+// stored coordinates. Everything else (payload jsonb + translations, ~95% of the
+// bytes) is identical to the committed final_races*.json that seed-races.mjs
+// uploaded, so we rebuild those rows locally instead of downloading them again
+// on every deploy (Supabase egress).
+const LIGHT_SELECT = 'id, domain_name, latitude, longitude';
+const LIGHT_PAGE_SIZE = 1000;
+const VERIFY_SAMPLE_SIZE = 20;
+const FULL_FETCH_CHUNK = 100;
 
-  if (error && missingTranslationDetailColumns(error)) {
-    ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect));
+async function fetchLightPublishedRows(sb, countryCode) {
+  const rows = [];
+  let lastId = null;
+  let transientFailures = 0;
+  // Stop on an empty page (not a short one) so a lower PostgREST max-rows can
+  // never silently truncate the market.
+  while (rows.length < SNAPSHOT_MAX_ROWS * 2) {
+    let query = sb
+      .from('races')
+      .select(LIGHT_SELECT)
+      .eq('country_code', countryCode)
+      .eq('published', true)
+      .order('id', { ascending: true })
+      .limit(LIGHT_PAGE_SIZE);
+    if (lastId) query = query.gt('id', lastId);
+    const { data, error } = await query;
+    if (error) {
+      if ((isStatementTimeout(error) || isTransientError(error)) && transientFailures < 4) {
+        transientFailures += 1;
+        await new Promise((r) => setTimeout(r, 3000 * transientFailures));
+        continue;
+      }
+      return { data: null, error };
+    }
+    const batch = data ?? [];
+    if (batch.length === 0) break;
+    rows.push(...batch);
+    lastId = batch[batch.length - 1].id;
+  }
+  return { data: rows, error: null };
+}
+
+async function fetchFullRowsByIds(sb, ids, select) {
+  const rows = [];
+  for (let i = 0; i < ids.length; i += FULL_FETCH_CHUNK) {
+    const chunk = ids.slice(i, i + FULL_FETCH_CHUNK);
+    let attempt = 0;
+    for (;;) {
+      const { data, error } = await sb.from('races').select(select).in('id', chunk);
+      if (!error) {
+        rows.push(...(data ?? []));
+        break;
+      }
+      attempt += 1;
+      if ((isStatementTimeout(error) || isTransientError(error)) && attempt <= 3) {
+        await new Promise((r) => setTimeout(r, 3000 * attempt));
+        continue;
+      }
+      return { data: null, error };
+    }
+  }
+  return { data: rows, error: null };
+}
+
+async function fetchFullRowsByIdsWithLegacyFallback(sb, ids) {
+  let result = await fetchFullRowsByIds(sb, ids, listSelect);
+  if (result.error && missingTranslationDetailColumns(result.error)) {
+    result = await fetchFullRowsByIds(sb, ids, legacyListSelect);
+  }
+  return result;
+}
+
+/**
+ * Same rows as fetchPublishedRacesPaged(listSelect), but only rows missing from
+ * the committed JSON are downloaded in full. A small sample of JSON-backed rows
+ * is fetched in full and compared; any mismatch falls back to the full export.
+ * Returns { data, error, mode } where mode is 'hybrid', 'json-wins' or 'full'.
+ */
+async function fetchPublishedRacesHybrid(sb, countryCode, jsonRows) {
+  const nativeLocale = getNativeLocaleForCountry(root, countryCode);
+  const { local, intByDomain } = loadJsonSources(countryCode);
+  if (local.length === 0) return { data: null, error: null, mode: 'no-json' };
+
+  const light = await fetchLightPublishedRows(sb, countryCode);
+  if (light.error) return { data: null, error: light.error, mode: 'hybrid' };
+  const lightRows = light.data;
+
+  // Unchanged rule from before: if the committed JSON has more rows than are
+  // published in Supabase, the build uses the JSON as-is.
+  if (jsonRows.length > lightRows.length) {
+    return { data: lightRows, error: null, mode: 'json-wins' };
+  }
+
+  const jsonByDomain = new Map(local.map((race) => [race.domain_name, race]));
+  const rebuilt = new Map();
+  const missingIds = [];
+  for (const dbRow of lightRows) {
+    const race = jsonByDomain.get(dbRow.domain_name);
+    if (race) {
+      rebuilt.set(dbRow.id, snapshotRowFromJson(race, intByDomain.get(dbRow.domain_name), nativeLocale, dbRow));
+    } else {
+      missingIds.push(dbRow.id);
+    }
+  }
+
+  const sampleIds = spreadSample([...rebuilt.keys()], VERIFY_SAMPLE_SIZE);
+  const sample = await fetchFullRowsByIdsWithLegacyFallback(sb, sampleIds);
+  if (sample.error) return { data: null, error: sample.error, mode: 'hybrid' };
+  const mismatches = [];
+  for (const dbRow of sample.data) {
+    const diffs = diffSnapshotRows(dbRow, rebuilt.get(dbRow.id));
+    if (diffs.length > 0) mismatches.push(`${dbRow.domain_name}: ${diffs.join(', ')}`);
+  }
+  if (mismatches.length > 0 || sample.data.length !== sampleIds.length) {
+    console.warn(
+      `Snapshot ${countryCode}: committed JSON differs from Supabase (${mismatches.slice(0, 3).join(' | ') || 'sample rows missing'}); using full Supabase export.`,
+    );
+    let full = await fetchPublishedRacesPaged(sb, countryCode, listSelect);
+    if (full.error && missingTranslationDetailColumns(full.error)) {
+      full = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect);
+    }
+    return { ...full, mode: 'full' };
+  }
+
+  const extra = await fetchFullRowsByIdsWithLegacyFallback(sb, missingIds);
+  if (extra.error) return { data: null, error: extra.error, mode: 'hybrid' };
+  const extraById = new Map(extra.data.map((row) => [row.id, row]));
+
+  const rows = [];
+  for (const dbRow of lightRows) {
+    const row = rebuilt.get(dbRow.id) ?? extraById.get(dbRow.id);
+    if (row) rows.push(row);
+  }
+  console.warn(
+    `Snapshot ${countryCode}: ${rebuilt.size} rows from committed JSON, ${extra.data.length} fetched in full (not in JSON), ${sample.data.length} verified against Supabase.`,
+  );
+  return { data: rows, error: null, mode: 'hybrid' };
+}
+
+async function exportCountrySnapshot(sb, countryCode, outputDir) {
+  const jsonRowsForDecision = loadRowsFromJson(countryCode);
+  let data;
+  let error;
+  let mode = 'full';
+  if (process.env.RACE_LIST_SNAPSHOT_FULL_FETCH !== '1' && jsonRowsForDecision.length > 0) {
+    ({ data, error, mode } = await fetchPublishedRacesHybrid(sb, countryCode, jsonRowsForDecision));
+    if (mode === 'no-json') mode = 'full';
+  }
+  if (mode === 'full' && data == null && !error) {
+    ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, listSelect));
+    if (error && missingTranslationDetailColumns(error)) {
+      ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect));
+    }
   }
 
   const jsonFallbackRows = error ? loadRowsFromJson(countryCode) : null;
