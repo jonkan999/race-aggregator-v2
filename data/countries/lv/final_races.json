@@ -58,7 +58,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://runbaltic.com/lv/races/apkaimju-brivibas-skrejiens-2026"
+      "https://runbaltic.com/lv/races/apkaimju-brivibas-skrejiens-2026",
+      "https://tautassports.lv/pasakumi/apkaimju-brivibas-skrejiens-2026/"
     ],
     "consolidated_ids": [
       "91ad9aed-87b8-4485-aac5-b188d2e96677"
@@ -92,10 +93,16 @@
     "county": "Ogres novads",
     "nearest_city": "Rīga",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Jaukta distance",
+    "distances": "[\"11\", \"3\"]",
+    "distance_m": [
+      11000,
+      3000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "3000 metri"
+    ],
+    "distance_verbose": "11 km, 3000 metri",
     "organizer": null,
     "contact": null,
     "website": "https://www.bulta.lv/rembatesaplis/",
@@ -118,6 +125,7 @@
     "is_series": false,
     "max_description_relevance": 0.36,
     "sources": [
+      "https://tautassports.lv/pasakumi/rembates-aplis-2026/",
       "https://runbaltic.com/lv/races/rembates-aplis-2026"
     ],
     "consolidated_ids": [
@@ -468,6 +476,66 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "svinam_kopa_latvijai_108",
+    "name": "Svinam kopā Latvijai 108",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20261118",
+        "20261118"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Piltene",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://tautassports.lv/pasakumi/svinam-kopa-latvijai-108-2026/"
+    ],
+    "consolidated_ids": [
+      "bef67f1f-1b45-40ef-addb-73e8ce7c3920"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "test_race",
     "name": "Test race",
     "type": "other",
@@ -615,8 +683,9 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/noskrien-ziemu-1-posms-ropazi/",
-      "https://runbaltic.com/lv/races/noskrien-ziemu-stage-1-2026"
+      "https://tautassports.lv/pasakumi/noskrien-ziemu-ropazi/",
+      "https://runbaltic.com/lv/races/noskrien-ziemu-stage-1-2026",
+      "https://www.noskrien.lv/kalendars/noskrien-ziemu-1-posms-ropazi/"
     ],
     "consolidated_ids": [
       "3a381f38-0aed-4b8e-8420-8244dbe1225d"
@@ -686,6 +755,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://tautassports.lv/pasakumi/skriesanas-serials-ugale-2026-3-posms/",
       "https://runbaltic.com/lv/races/skriesanas-serials-ugale-iii-posms-2026"
     ],
     "consolidated_ids": [
@@ -705,6 +775,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20251214",
+        "20251214"
+      ],
       [
         "20261213",
         "20261213"
@@ -754,9 +828,10 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/noskrien-ziemu-2-posms-koknese-2026/",
-      "https://runbaltic.com/lv/races/noskrien-ziemu-2-posms-2026"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://runbaltic.com/lv/races/noskrien-ziemu-2-posms-2026",
+      "https://tautassports.lv/pasakumi/noskrien-ziemu-koknese/"
     ],
     "consolidated_ids": [
       "cef06a1a-1e1f-415f-a4ca-d5a2ce6faf35"
@@ -775,6 +850,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260110",
+        "20260110"
+      ],
       [
         "20270109",
         "20270109"
@@ -819,7 +898,9 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/noskrien-ziemu-3-posms-tumsas-posms-2027"
+      "https://tautassports.lv/pasakumi/noskrien-ziemu-smiltene/",
+      "https://runbaltic.com/lv/races/noskrien-ziemu-3-posms-tumsas-posms-2027",
+      "https://www.noskrien.lv/kalendars/noskrien-ziemu-3-posms-sigulda/"
     ],
     "consolidated_ids": [
       "26d2fc46-9dec-4ae3-aee9-58e7eec9dbfe"
@@ -838,6 +919,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260208",
+        "20260208"
+      ],
       [
         "20270207",
         "20270207"
@@ -887,7 +972,9 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/noskrien-ziemu-4-posms-2027"
+      "https://tautassports.lv/pasakumi/noskrien-ziemu-salacgriva/",
+      "https://runbaltic.com/lv/races/noskrien-ziemu-4-posms-2027",
+      "https://www.noskrien.lv/kalendars/noskrien-ziemu-4-posms-laudona/"
     ],
     "consolidated_ids": [
       "cac66f7b-1ea9-4879-82a2-65467ab57d4d"
@@ -906,6 +993,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260301",
+        "20260301"
+      ],
       [
         "20270307",
         "20270307"
@@ -956,7 +1047,9 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/noskrien-ziemu-5-posms-2027"
+      "https://runbaltic.com/lv/races/noskrien-ziemu-5-posms-2027",
+      "https://tautassports.lv/pasakumi/noskrien-ziemu-liepaja/",
+      "https://www.noskrien.lv/kalendars/noskrien-ziemu-5-posms-talsi/"
     ],
     "consolidated_ids": [
       "adaa38f1-082e-471d-a04c-85a52b9d4d02"
@@ -970,11 +1063,102 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "pagalma_superskrejiens",
+    "name": "Pagalma superskrējiens",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
+    "race_dates": [
+      [
+        "20260314",
+        "20260314"
+      ],
+      [
+        "20270313",
+        "20270313"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Teika, Riga, Latvija",
+    "latitude": 56.97294669999999,
+    "longitude": 24.1656945,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"6.706\"]",
+    "distance_m": [
+      6706
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "6.71 km",
+    "organizer": "Latvijas Bērnu atbalsta fonds",
+    "contact": null,
+    "website": "https://lbaf.lv/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "Pagalma superskrējiens",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "30 EUR",
+            "deadline": null,
+            "description": "Dalība “Pagalma superskrējienā” ir minimālais ziedojums 30 eiro apmērā Latvijas Bērnu atbalsta fondam (LBAF)."
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": "https://ej.uz/superskrejiens26",
+    "race_info_url": "https://lbaf.lv/superskrejiens/",
+    "presumed_organizer_email": "info@lbaf.lv",
+    "website_emails_found": [
+      "info@lbaf.lv"
+    ],
+    "description": "Pagalma superskrējiens ir unikāls skriešanas notikums, kas apvieno izturību, kopības sajūtu un labdarību. Dalībniekiem katru stundu jāveic 6,7 km garš skrējiens, un katrs pats izvēlas, cik skrējienus veikt - no viena līdz pat divpadsmit, sasniedzot maksimālo distanci 80,4 km dienas laikā. Pasākums notiek Teikā, un visi starti ir vienlaikus plkst. 10:00, ar nākamajiem startiem ik pēc stundas. Pēc finiša dalībnieki saņem īpašu sporta kreklu ar Latvijas bērnu zīmētiem supervaroņiem, un visi līdzekļi tiek ziedoti Latvijas Bērnu atbalsta fondam.",
+    "course_highlights": [
+      "Katru stundu jāveic 6,7 km skrējiens",
+      "Dalībnieks var veikt no 1 līdz 12 skrējieniem, līdz 80,4 km dienā",
+      "Starts vienlaikus plkst. 10:00, nākamie starti ik pēc stundas"
+    ],
+    "additional": "Reģistrācija pasākuma dienā sākas plkst. 8:30. Dalībnieki, kas veic vienu skrējienu, kļūst par Sprīdīti, bet tie, kas veic visus 12 skrējienus, iegūst Lāčplēša titulu. Sporta kreklus nodrošina Mizuno sadarbībā ar Sporta punktu.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.45,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/pagalma-superskrejiens/"
+    ],
+    "consolidated_ids": [
+      "554952e4-e25d-4e38-835b-67bed483dba9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "skrejiens_rozentalam_pa_pedam",
     "name": "Skrējiens “Rozentālam pa pēdām”",
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260322",
+        "20260322"
+      ],
       [
         "20270321",
         "20270321"
@@ -1033,7 +1217,9 @@
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/skrejiens-rozentalam-pa-pedam-2027"
+      "https://runbaltic.com/lv/races/skrejiens-rozentalam-pa-pedam-2027",
+      "https://www.sportlat.lv/files/1198/Rozentalam_pa_pedam_2026_NOLIKUMS_apstiprinats.docx",
+      "https://www.noskrien.lv/kalendars/apvidus-skrejiens-rozentalam-pa-pedam-2026/"
     ],
     "consolidated_ids": [
       "7aebc821-524e-4840-8b3b-c267f5804b54"
@@ -1052,6 +1238,10 @@
     "type": "other",
     "type_local": "Cits",
     "race_dates": [
+      [
+        "20260403",
+        "20260403"
+      ],
       [
         "20270326",
         "20270326"
@@ -1097,7 +1287,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/taurupes-stacijas-xvi-maratons/"
     ],
     "consolidated_ids": [
       "3957f8e7-f2d3-4c5b-89ac-fa86a6b99cdb"
@@ -1116,6 +1307,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260328",
+        "20260328"
+      ],
       [
         "20270327",
         "20270327"
@@ -1339,7 +1534,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/latvijas-valsts-mezu-stirnu-buks-2027"
+      "https://runbaltic.com/lv/races/latvijas-valsts-mezu-stirnu-buks-2027",
+      "https://www.noskrien.lv/kalendars/lvm-tervetes-stirnu-buks-2026-1/"
     ],
     "consolidated_ids": [
       "e3e27259-c113-4b45-abbd-b91a710c5439"
@@ -1358,6 +1554,10 @@
     "type": "other",
     "type_local": "Cits",
     "race_dates": [
+      [
+        "20260411",
+        "20260411"
+      ],
       [
         "20270403",
         "20270403"
@@ -1466,6 +1666,206 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "6_12_stundu_skrejiens_parspej_sevi",
+    "name": "6/12 stundu skrējiens “Pārspēj sevi”",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260411",
+        "20260411"
+      ],
+      [
+        "20270410",
+        "20270410"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Māras dīķis, Rīga, Latvija",
+    "latitude": 56.9316893,
+    "longitude": 24.0808674,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"1.355\"]",
+    "distance_m": [
+      1355
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "1.35 km",
+    "organizer": "Šrī Činmoja Maratona komanda; Biedrība “Rīgas Šrī Činmoja centrs”",
+    "contact": null,
+    "website": "https://lv.srichinmoyraces.org/12-hour-race",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "12 stundu skrējiens un 6 stundu stafete",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "40 EUR",
+            "deadline": "20270322",
+            "description": "40 EUR (until 22.03.)"
+          },
+          {
+            "label": "tier_2",
+            "price": "50 EUR",
+            "deadline": "20270405",
+            "description": "50 EUR (23.03. - 5.04.)"
+          },
+          {
+            "label": "tier_3",
+            "price": "60 EUR",
+            "deadline": "20270408",
+            "description": "60 EUR (6.04.-8.04.)"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "6 stundu stafete",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "45 EUR",
+            "deadline": "20270322",
+            "description": "45 EUR (until 22.03.)"
+          },
+          {
+            "label": "tier_2",
+            "price": "60 EUR",
+            "deadline": "20270405",
+            "description": "60 EUR (23.03. - 5.04.)"
+          },
+          {
+            "label": "tier_3",
+            "price": "75 EUR",
+            "deadline": "20270408",
+            "description": "75 EUR (6.04. - 8.04.)"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270408",
+    "registration_url": null,
+    "race_info_url": "https://lv.srichinmoyraces.org/12-hour-race#main-content",
+    "presumed_organizer_email": "riga@srichinmoyraces.org",
+    "website_emails_found": [
+      "riga@srichinmoyraces.org"
+    ],
+    "description": "6 un 12 stundu skrējiens \"Pārspēj sevi\" notiek ap Māras dīķi Rīgā, piedāvājot dalībniekiem iespēju pārvarēt savus ierobežojumus un piedzīvot pašizaugsmi. Sacensību trase ir sertificēta un tās garums ir 1,355 km, kas ļauj skrējējiem koncentrēties uz ilgstošu izturību un ritmu. Pasākumu organizē Šri Činmoja Maratona komanda, kas jau gandrīz 50 gadus kalpo skriešanas kopienai, iedvesmojot sportistus fiziskai un garīgai attīstībai. Reģistrācija notiek, rakstot uz norādīto e-pastu, un dalības maksa ir atkarīga no iemaksas datuma. Sacensību dalībniekiem tiek nodrošināti numuri sacensību dienā.",
+    "course_highlights": [
+      "Sertificēta trase ar garumu 1,355 km ap Māras dīķi",
+      "Ilgstošs izturības skrējiens ar 6 un 12 stundu distancēm",
+      "Pasākums ar gandrīz 50 gadu tradīciju un garīgu iedvesmu"
+    ],
+    "additional": "Dalībnieku skaits ir ierobežots, tāpēc ieteicams pieteikties laikus. Dalības maksa ir atkarīga no maksājuma datuma, nevis pieteikšanās datuma. Sacensību numuri tiek izsniegti sacensību dienā. Reģistrācija notiek, rakstot uz e-pastu, norādot nepieciešamo informāciju. Nav atmaksas gadījumā, ja dalībnieks nepiedalās.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.82,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/6-12-stundu-skrejiens-parspej-sevi-2026/"
+    ],
+    "consolidated_ids": [
+      "88957683-6ca4-469a-b061-161af5a344b2"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "skrejiens_un_solosana_pa_preilu_ielam_cirulputenis",
+    "name": "Skrējiens un soļošana pa Preiļu ielām “Cīruļputenis”",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260411",
+        "20260411"
+      ],
+      [
+        "20270410",
+        "20270410"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Preiļi, Preiļu novads, Latvija",
+    "latitude": 56.29399220000001,
+    "longitude": 26.724779,
+    "county": "Preiļu novads",
+    "nearest_city": "Daugavpils",
+    "nearby_cities": [],
+    "distances": "[\"8\", \"6\", \"4\", \"2\"]",
+    "distance_m": [
+      8000,
+      6000,
+      4000,
+      2000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "8 km, 6 km, 4 km, 2 km",
+    "organizer": "Preiļu novada Bērnu un jauniešu sporta skola",
+    "contact": null,
+    "website": "https://pbjss.edu.lv/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://pbjss.edu.lv/",
+    "presumed_organizer_email": "preilubjss@preili.lv",
+    "website_emails_found": [
+      "preilubjss@preili.lv"
+    ],
+    "description": "Skrējiens un soļošana pa Preiļu ielām “Cīruļputenis” ir tradicionāls pavasara skrējiens un soļošanas sacensības Preiļu pilsētā, kas pulcē dažādu vecumu sportistus un aktīvus iedzīvotājus. Pasākums norisinās pilsētas ielās, piedāvājot iespēju izbaudīt skriešanu un soļošanu draudzīgā un sportiskā atmosfērā. Sacensības organizē Preiļu novada bērnu un jauniešu sporta skola, nodrošinot profesionālu atbalstu un drošu vidi dalībniekiem. Pasākums ir lieliska iespēja gan iesācējiem, gan pieredzējušiem sportistiem pārbaudīt savas spējas un izbaudīt aktīvu dienu kopā ar citiem sporta entuziastiem.",
+    "course_highlights": [
+      "Skrējiens un soļošana pa Preiļu pilsētas ielām",
+      "Draudzīga un sportiska atmosfēra visām vecuma grupām",
+      "Organizē Preiļu novada bērnu un jauniešu sporta skola"
+    ],
+    "additional": "Iepriekšējo gadu sacensības sākušās pie Preiļu novada domes vai Raiņa bulvārī.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.83,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/skrejiens-un-solosana-pa-preilu-ielam-cirulputenis-2026/"
+    ],
+    "consolidated_ids": [
+      "db8c9bb3-2aa3-4a32-acf1-515a47cd4693"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "siguldas_apli",
     "name": "Siguldas apļi",
     "type": "other",
@@ -1559,6 +1959,10 @@
     "type_local": "Taka",
     "race_dates": [
       [
+        "20260418",
+        "20260418"
+      ],
+      [
         "20270417",
         "20270417"
       ]
@@ -1575,10 +1979,15 @@
     "nearby_cities": [
       "Jēkabpils"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Jaukta distance",
+    "distances": "[\"107\", \"6.71\"]",
+    "distance_m": [
+      107000,
+      6710
+    ],
+    "distance_keywords": [
+      "100 km"
+    ],
+    "distance_verbose": "107 km, 6.71 km",
     "organizer": null,
     "contact": null,
     "website": "https://racetiming.lv/musu-sacensibas/2027-2/back-yard-ultra-2027/",
@@ -1621,7 +2030,10 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/backyard-ultra-lusa-pedas-2027"
+      "https://tautassports.lv/pasakumi/byu-lusa-pedas-2027/",
+      "https://runbaltic.com/lv/races/backyard-ultra-lusa-pedas-2027",
+      "https://tautassports.lv/pasakumi/byu-lusa-pedas-2026/",
+      "https://www.noskrien.lv/kalendars/backyard-ultra-lusa-pedas-2026/"
     ],
     "consolidated_ids": [
       "456099ec-3532-4d8f-abc2-25d6644ee841"
@@ -1635,11 +2047,171 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "aizkraukles_novada_12_pusmaratons",
+    "name": "Aizkraukles novada 12. pusmaratons",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260418",
+        "20260418"
+      ],
+      [
+        "20270417",
+        "20270417"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Aizkraukle, Aizkraukle Municipality, Latvija",
+    "latitude": 56.5992679,
+    "longitude": 25.2510258,
+    "county": "Aizkraukles novads",
+    "nearest_city": "Jēkabpils",
+    "nearby_cities": [],
+    "distances": "[\"21\", \"5.3\", \"1\", \"0.5\", \"0.3\"]",
+    "distance_m": [
+      21000,
+      5300,
+      1000,
+      500,
+      300
+    ],
+    "distance_keywords": [
+      "Pusmaratons",
+      "5 km"
+    ],
+    "distance_verbose": "Pusmaratons, 5.3 km, 1 km, 0.5 km, 0.3 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.sportlat.lv/kalendars/arhivs/2026",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.sportlat.lv/registracija",
+    "race_info_url": "https://www.sportlat.lv/rezultati/1891/aizkraukles-novada-12-pusmaratons",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Aizkraukles novada 12. pusmaratons ir tradicionāls skriešanas pasākums, kas piedāvā pusmaratona distanci un tautas skrējienu. Sacensības notiek Aizkrauklē un pulcē dažāda līmeņa skrējējus, piedāvājot arī bērnu skrējienus. Pasākums ir piemērots gan sportistiem, gan ģimenēm, kas vēlas aktīvi pavadīt laiku svaigā gaisā un izbaudīt skriešanas prieku.",
+    "course_highlights": [
+      "Pusmaratona distance 21,097 km",
+      "Tautas skrējiens 5,3 km ar nelielu kāpumu (300 m)",
+      "Bērnu skrējieni 500 m un 1000 m"
+    ],
+    "additional": "Sacensībās ir pieejami dažādi skrējieni, tostarp bērnu distances, kas padara pasākumu piemērotu ģimenēm. Reģistrācija notiek tiešsaistē portālā sportlat.lv, kur dalībnieki var izveidot profilu un izmantot personalizētas iespējas.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportlat.lv/files/1197/NOLIKUMS_Aizkraukles_Pusmaratons_2026.pdf",
+      "https://www.noskrien.lv/kalendars/aizkraukles-novada-12-pusmaratons-2026/",
+      "https://runbaltic.com/lv/races/aizkraukles-novada-12-pusmaratons-2026"
+    ],
+    "consolidated_ids": [
+      "ce3b518a-cfa2-4443-b1af-f280ae2a1053"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "rudes_maratons_un_kulturas_festivals",
+    "name": "Rudes Maratons un Kultūras festivāls",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260418",
+        "20260418"
+      ],
+      [
+        "20270417",
+        "20270417"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Rude, Rojas pagasts, Talsi Municipality, Latvija",
+    "latitude": 57.49102809999999,
+    "longitude": 22.7278492,
+    "county": "Talsu novads",
+    "nearest_city": "Ventspils",
+    "nearby_cities": [],
+    "distances": "[\"43\", \"21\", \"5.7\", \"1.8\"]",
+    "distance_m": [
+      43000,
+      21000,
+      5700,
+      1800
+    ],
+    "distance_keywords": [
+      "Maratons",
+      "Pusmaratons",
+      "5 km"
+    ],
+    "distance_verbose": "43 km, Pusmaratons, 5.7 km, 1.8 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.plotaroute.com/route/3238671?units=km",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.plotaroute.com/route/3238671",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Rudes Maratons un Kultūras festivāls piedāvā skriešanas maršrutu Rudes apkārtnē, kas ir salīdzinoši plakans un aptuveni 1.8 km garš. Šis aplis ved pa ceļiem, nodrošinot vieglu un pieejamu distanci gan iesācējiem, gan pieredzējušiem skrējējiem. Pasākums apvieno sporta aktivitātes ar kultūras festivāla atmosfēru, radot draudzīgu un kopienai veltītu vidi.",
+    "course_highlights": [
+      "Relatīvi plakans aplis",
+      "Maršruts ved pa ceļiem",
+      "Aptuveni 1.8 km garš"
+    ],
+    "additional": "Maršruta profils un augstuma dati ir pieejami lejupielādei. Maršruts ir piemērots arī pārgājieniem un ir viegli pieejams ar dažādām maršruta plānošanas un navigācijas iespējām, izmantojot plotaroute.com rīkus.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/rudes-maratons-un-kulturas-festivals-2026/"
+    ],
+    "consolidated_ids": [
+      "690183ac-efdb-4e32-a979-ee8faa843c73"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "pilsettakas_stirnu_buks",
     "name": "Pilsēttakas Stirnu buks",
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260425",
+        "20260425"
+      ],
       [
         "20270424",
         "20270424"
@@ -1862,7 +2434,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/pilsettakas-stirnu-buks-2027"
+      "https://runbaltic.com/lv/races/pilsettakas-stirnu-buks-2027",
+      "https://www.noskrien.lv/kalendars/tukuma-pilsettakas-stirnu-buks-2026-2/"
     ],
     "consolidated_ids": [
       "014c4492-3fec-4f45-8f4e-98dbf2081f94"
@@ -1882,6 +2455,10 @@
     "type_local": "Cits",
     "race_dates": [
       [
+        "20260501",
+        "20260501"
+      ],
+      [
         "20270501",
         "20270501"
       ]
@@ -1889,42 +2466,59 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "09:00",
     "location": "Vecā Kangaru stacija, Ropaži Municipality, Latvija",
     "latitude": 56.9408939,
     "longitude": 24.6120507,
     "county": "Ropažu novads",
     "nearest_city": "Rīga",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Jaukta distance",
-    "organizer": null,
+    "distances": "[\"8.2\", \"4.1\", \"0.82\"]",
+    "distance_m": [
+      8200,
+      4100,
+      820
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "8.2 km, 4.1 km, 0.82 km",
+    "organizer": "Ropažu novada pašvaldība",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.ropazi.lv/lv/notikums/retro-skriesanas-svetki-2026",
+    "fb_link": "https://www.facebook.com/ropazusports/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.ropazi.lv/lv/notikums/retro-skriesanas-svetki-2026#content-area",
     "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "website_emails_found": [
+      "rolands.linejs@ropazi.lv",
+      "aina.bernharde@ropazi.lv",
+      "marita.fedjanina@ropazi.lv",
+      "novada.dome@ropazi.lv"
+    ],
+    "description": "Ropažu novada Retro skriešanas svētki ir ikgadējs sporta pasākums, kas notiek 1. maijā Kangaru stacijas apkārtnē. Šie svētki aicina ikvienu piedalīties un pavadīt svētku dienu aktīvi, baudot skriešanu un kopības sajūtu. Pasākums ir piemērots dažāda vecuma un sagatavotības dalībniekiem, veicinot veselīgu dzīvesveidu un sportisku atmosfēru novadā.",
+    "course_highlights": [
+      "Starts un finišs Vecās Kangaru stacijas apkārtnē",
+      "Dažādas distanču iespējas visām vecuma grupām",
+      "Draudzīga un svinīga atmosfēra ar retro tematiku"
+    ],
+    "additional": "Pasākums notiek no plkst. 9:00 līdz 14:30, piedāvājot dažādas aktivitātes un iespējas visiem dalībniekiem. Nav norādītas reģistrācijas maksas vai tiešas reģistrācijas saites. Organizatori aicina sekot jaunumiem pašvaldības mājaslapā.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.75,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/ropazu-novada-retro-skriesanas-svetki-2027",
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://tautassports.lv/pasakumi/ropazu-novada-retro-skriesanas-svetki-2026-2/",
+      "https://www.sportlat.lv/files/1213/Nolikums_skriesanassvetki_Kangari_2026.pdf.pdf"
     ],
     "consolidated_ids": [
       "441e63a7-d5a7-4c78-b9f4-365f9bb23588"
@@ -1943,6 +2537,10 @@
     "type": "road",
     "type_local": "Šoseja",
     "race_dates": [
+      [
+        "20260502",
+        "20260502"
+      ],
       [
         "20270501",
         "20270501"
@@ -2019,10 +2617,12 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportlat.lv/kalendars/viss",
       "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2027/",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/skrejiensolojums-riga-valmiera-2027"
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://tautassports.lv/pasakumi/skrejiensolojums-riga-valmiera-107-km-2027/",
+      "https://runbaltic.com/lv/races/skrejiensolojums-riga-valmiera-2027",
+      "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2026/"
     ],
     "consolidated_ids": [
       "9e9ced22-4a85-49d1-8058-16c004ae35da"
@@ -2042,6 +2642,10 @@
     "type_local": "Cits",
     "race_dates": [
       [
+        "20260509",
+        "20260509"
+      ],
+      [
         "20270502",
         "20270502"
       ]
@@ -2050,9 +2654,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Liepāja, Latvija",
-    "latitude": 56.5384577,
-    "longitude": 21.0538204,
+    "location": "Daugavas Stadium, Liepāja, Latvija",
+    "latitude": 56.5029447,
+    "longitude": 20.9953334,
     "county": "Liepājas pilsēta",
     "nearest_city": "Liepāja",
     "nearby_cities": [
@@ -2062,16 +2666,98 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Jaukta distance",
+    "organizer": "Sergejs Juhno",
+    "contact": null,
+    "website": "https://ritmaskrejiens.lv/",
+    "fb_link": "https://www.facebook.com/61580553132544/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://ritmaskrejiens.lv/",
+    "presumed_organizer_email": "born2winrunningclub@gmail.com",
+    "website_emails_found": [
+      "born2winrunningclub@gmail.com"
+    ],
+    "description": "“Ritma skrējiens” Liepājā aicina skriet katram savā tempā - ātri vai lēni, ar smaidu vai sacensību garā. Pasākums pulcē dažāda vecuma un sagatavotības skrējējus, piedāvājot vairākas distances, tostarp bērnu skrējienus. Skrējiens sākas “Daugavas” stadionā, un tā atmosfēru papildina mūzika, pozitīva enerģija un kopā būšanas prieks.",
+    "course_highlights": [
+      "Starts “Daugavas” stadionā Liepājā.",
+      "Trase ved cauri Liepājas pilsētas ainavām un apkārtnei.",
+      "Iepriekšējos pasākuma aprakstos minētas distances no bērnu skrējieniem līdz 21 km."
+    ],
+    "additional": "Pasākuma moto aicina skriet ātri vai lēni - galvenais, savā ritmā.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.68,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.sportlat.lv/files/1215/RitmaSkrejiens_nolikums_2026.docx",
+      "https://www.noskrien.lv/kalendars/ritma-skrejiens-2026/",
+      "https://runbaltic.com/lv/races/ritma-skrejiens-2026"
+    ],
+    "consolidated_ids": [
+      "586db531-c2d6-47d7-9462-dbadb487e80f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "apkart_cesim",
+    "name": "Apkārt Cēsīm",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260503",
+        "20260503"
+      ],
+      [
+        "20270502",
+        "20270502"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Pils parks, Cēsis, Latvija",
+    "latitude": 57.3136051,
+    "longitude": 25.2692678,
+    "county": "Cēsu novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [
+      "Valmiera"
+    ],
+    "distances": "[\"10\", \"5\", \"0.5\"]",
+    "distance_m": [
+      10000,
+      5000,
+      500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 0.5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "http://www.xn--sk-aais-tqb.lv./",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "http://www.xn--sk-aais-tqb.lv./",
     "presumed_organizer_email": null,
     "website_emails_found": [],
     "description": null,
@@ -2084,14 +2770,96 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://www.noskrien.lv/kalendars/apkart-cesim-2026/"
     ],
     "consolidated_ids": [
-      "586db531-c2d6-47d7-9462-dbadb487e80f"
+      "13667240-67e3-46ae-9681-5b4ddfcab216"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261116",
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "jurmalas_skriesanas_svetki",
+    "name": "Jūrmalas skriešanas svētki",
+    "type": "terrain",
+    "type_local": "Kross",
+    "race_dates": [
+      [
+        "20260504",
+        "20260504"
+      ],
+      [
+        "20270503",
+        "20270503"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Majori Beach, Jūrmala, Latvija",
+    "latitude": 56.97709099999999,
+    "longitude": 23.798246,
+    "county": "Jūrmalas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"10\", \"5\", \"1\", \"0.5\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000,
+      500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km, 0.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://tautassports.lv/events/jurmalas-skriesanas-svetki-2026/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://tautassports.lv/events/jurmalas-skriesanas-svetki-2026/",
+    "race_info_url": "https://tautassports.lv/events/jurmalas-skriesanas-svetki-2026/",
+    "presumed_organizer_email": "info@baltijasmaratoni.lv",
+    "website_emails_found": [
+      "info@baltijasmaratoni.lv",
+      "vards@pasts.lv",
+      "janis@pasts.lv"
+    ],
+    "description": "Jūrmalas skriešanas svētki ir skrējienu un nūjošanas svētki, kas notiek Majoru pludmalē, Jūrmalas piekrastē, ar smilšu trasēm. Pasākums piedāvā distances visiem vecumiem un līmeņiem, sākot no bērnu skrējiena līdz 21 km nūjošanai sporta klasē. 10 km un 5 km skrējienu dalībnieki startē kopā ar mūziķi Ozolu, radot īpašu atmosfēru. Pasākums ir draudzīgs gan iesācējiem, gan pieredzējušiem sportistiem, nodrošinot medaļas un dzirdināšanas punktus finišā.",
+    "course_highlights": [
+      "Smilšu trases Majoru pludmalē",
+      "Distances bērniem, iesācējiem un pieredzējušiem sportistiem",
+      "10 km un 5 km skrējieni kopā ar mūziķi Ozolu"
+    ],
+    "additional": "Reģistrācija un numuru izsniegšana no plkst. 9:00 sacensību dienā. Numurus var saņemt iepriekš T/c “Riga Plaza” 2. un 3. maijā no plkst. 10:00 līdz 19:00. Dalības maksā iekļauts numurs ar laika uzskaites čipu, dzirdināšanas punkts finišā un medaļa finišētājiem laika limitā. Sistēmas apkalpošanas maksa 1,21 EUR.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/jurmalas-skriesanas-svetki-2026/"
+    ],
+    "consolidated_ids": [
+      "1db3ab2c-7196-4b32-af0a-7e59c2d24c02"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -2168,8 +2936,8 @@
   {
     "domain_name": "latvijas_cempionats_judzes_1609m_skrejiena",
     "name": "Latvijas čempionāts jūdzes 1609m skrējienā",
-    "type": "track",
-    "type_local": "Stadions",
+    "type": "other",
+    "type_local": "Cits",
     "race_dates": [
       [
         "20270504",
@@ -2188,12 +2956,96 @@
     "nearby_cities": [
       "Jēkabpils"
     ],
-    "distances": "[\"1.609\"]",
+    "distances": "[\"10\", \"5\", \"1.61\", \"0.6\", \"0.4\", \"0.2\"]",
     "distance_m": [
-      1609
+      10000,
+      5000,
+      1610,
+      600,
+      400,
+      200
     ],
-    "distance_keywords": [],
-    "distance_verbose": "1.61 km",
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1.61 km, 0.6 km, 0.4 km, 0.2 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.sportlat.lv/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.sportlat.lv/registracija",
+    "race_info_url": "https://www.sportlat.lv/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Latvijas čempionāts jūdzes 1609m skrējienā ir prestižs skriešanas pasākums, kas pulcē labākos Latvijas skrējējus. Sacensības notiek Līvānos un piedāvā iespēju sacensties īsā, intensīvā distancē, kas prasa ātrumu un izturību. Pasākums ir daļa no Latvijas sporta kalendāra un veicina skriešanas tradīciju attīstību valstī.",
+    "course_highlights": [
+      "Distances garums ir precīzi 1609 metri jeb viena jūdze",
+      "Sacensības notiek Līvānu pilsētas teritorijā",
+      "Ātrs un intensīvs skrējiens ar iespēju pārbaudīt savu ātrumu"
+    ],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.39,
+    "sources": [
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://tautassports.lv/pasakumi/livenhofas-skrejiens-2027/",
+      "https://runbaltic.com/lv/races/livenhofas-skrejiens-2027"
+    ],
+    "consolidated_ids": [
+      "ac343df9-59b0-4c7b-b13e-375549e20826"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "backyard_race",
+    "name": "Backyard Race",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
+    "race_dates": [
+      [
+        "20260510",
+        "20260510"
+      ],
+      [
+        "20270509",
+        "20270509"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Latvija",
+    "latitude": 56.879635,
+    "longitude": 24.603189,
+    "county": "Ogres novads",
+    "nearest_city": "Rīga",
+    "nearby_cities": [],
+    "distances": "[\"3\", \"2\"]",
+    "distance_m": [
+      3000,
+      2000
+    ],
+    "distance_keywords": [
+      "3000 metri"
+    ],
+    "distance_verbose": "3000 metri, 2 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -2216,15 +3068,90 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportlat.lv/kalendars/viss",
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://tautassports.lv/pasakumi/backyard-race-2026/"
     ],
     "consolidated_ids": [
-      "ac343df9-59b0-4c7b-b13e-375549e20826"
+      "c2206a14-d503-4bca-9272-983fa8cf7467"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261116",
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "wings_for_life_world_run_valmiera",
+    "name": "Wings for Life World Run (Valmiera)",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260510",
+        "20260510"
+      ],
+      [
+        "20270509",
+        "20270509"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Valmiera, Latvija",
+    "latitude": 57.53125290000001,
+    "longitude": 25.4083677,
+    "county": "Valmieras novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [
+      "Valmiera"
+    ],
+    "distances": "[\"20\", \"15\", \"10\", \"5\"]",
+    "distance_m": [
+      20000,
+      15000,
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "Pusmaratons",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "20 km, 15 km, 10 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://tautassports.lv/pasakumi/wings-for-life-world-run-2026/",
+      "https://ultrataka.lv/pasakumu-kalendars/"
+    ],
+    "consolidated_ids": [
+      "d679e03d-d669-46b3-952c-1998d3b5362b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -2237,12 +3164,20 @@
     "type_local": "Šoseja",
     "race_dates": [
       [
-        "20270516",
-        "20270516"
+        "20260516",
+        "20260516"
+      ],
+      [
+        "20260517",
+        "20260517"
       ],
       [
         "20270515",
         "20270515"
+      ],
+      [
+        "20270516",
+        "20270516"
       ]
     ],
     "upcoming_dates": [],
@@ -2350,9 +3285,11 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportlat.lv/kalendars/viss",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/rimi-rigas-maratons-2027/",
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://www.noskrien.lv/kalendars/rrm-2026-dpd-judze-un-bernu-diena/",
+      "https://www.noskrien.lv/kalendars/rimi-rigas-maratons-2026/"
     ],
     "consolidated_ids": [
       "d66dad8a-9347-44f2-a48e-f7a9eaa7e080"
@@ -2371,6 +3308,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260523",
+        "20260523"
+      ],
       [
         "20270522",
         "20270522"
@@ -2592,7 +3533,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/mezonigas-vidzemes-stirnu-buks-2027"
+      "https://runbaltic.com/lv/races/mezonigas-vidzemes-stirnu-buks-2027",
+      "https://www.noskrien.lv/kalendars/mezonigas-vidzemes-stirnu-buks-2026-3/"
     ],
     "consolidated_ids": [
       "62319835-b4ba-4b09-9c07-f5456a4550d7"
@@ -2606,11 +3548,87 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "mizojam_ka_prieks",
+    "name": "“Mizojam, ka prieks”",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260524",
+        "20260524"
+      ],
+      [
+        "20270523",
+        "20270523"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Zeltiņi, Latvija",
+    "latitude": 57.3606831,
+    "longitude": 26.7715233,
+    "county": "Alūksnes novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [],
+    "distances": "[\"2\", \"1.5\", \"1\", \"0.6\", \"0.3\"]",
+    "distance_m": [
+      2000,
+      1500,
+      1000,
+      600,
+      300
+    ],
+    "distance_keywords": [
+      "1500 metri"
+    ],
+    "distance_verbose": "2 km, 1500 metri, 1 km, 0.6 km, 0.3 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/mizojam-ka-prieks-2026-1-posms/"
+    ],
+    "consolidated_ids": [
+      "fec2bed6-53db-4a6b-ba87-59a84ace5e1f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "rojas_24h_12h_6h_un_maratona_skrejieni",
     "name": "Rojas 24h, 12h, 6h un maratona skrējieni",
     "type": "time",
     "type_local": "Laika skrējiens",
     "race_dates": [
+      [
+        "20260529",
+        "20260529"
+      ],
       [
         "20270528",
         "20270528"
@@ -2791,7 +3809,9 @@
     "sources": [
       "https://www.sportlat.lv/sacensibas/1922/24h-roja-ultramarathon-festival-2027-latvijas-cempionats-24h-skrejiena/nolikums",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/24h-roja-ultramarathon-festival-2027"
+      "https://runbaltic.com/lv/races/24h-roja-ultramarathon-festival-2027",
+      "https://www.sportlat.lv/sacensibas/1849/24h-roja-ultramarathon-festival-2026-latvijas-cempionats-24h-skrejiena/nolikums",
+      "https://www.noskrien.lv/kalendars/24h-roja-ultramarathon-festival-2026/"
     ],
     "consolidated_ids": [
       "7463e044-f1d3-4515-b741-79cf99ef7fb8"
@@ -2805,11 +3825,91 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "izskrien_rigu_1_posms_uzvaras_parks",
+    "name": "Izskrien Rīgu 1. posms – Uzvaras parks",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260604",
+        "20260604"
+      ],
+      [
+        "20270603",
+        "20270603"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Uzvaras parks, Riga, Latvija",
+    "latitude": 56.9365721,
+    "longitude": 24.0868505,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"10\", \"5\", \"1\", \"0.6\", \"0.3\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000,
+      600,
+      300
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km, 0.6 km, 0.3 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/izskrien-rigu-2026-1-uzvaras-parks/"
+    ],
+    "consolidated_ids": [
+      "898b164c-5887-48d9-a178-71f3957f00a7"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "vilkacu_maratons",
     "name": "Vilkaču maratons",
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260606",
+        "20260606"
+      ],
       [
         "20270605",
         "20270605"
@@ -2862,7 +3962,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/vilkacu-maratons-2027"
+      "https://runbaltic.com/lv/races/vilkacu-maratons-2027",
+      "https://www.noskrien.lv/kalendars/10-vilkacu-maratons-2026/"
     ],
     "consolidated_ids": [
       "23beea28-93c9-43f8-b837-033005d08564"
@@ -2876,11 +3977,81 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "sieviesu_skrejiens",
+    "name": "Sieviešu skrējiens",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260606",
+        "20260606"
+      ],
+      [
+        "20270605",
+        "20270605"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Riga, Latvija",
+    "latitude": 56.9676941,
+    "longitude": 24.1056221,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/"
+    ],
+    "consolidated_ids": [
+      "68c141f9-f6ab-4310-a0ca-83868d7aa86d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "ventspils_pusmaratons",
     "name": "Ventspils pusmaratons",
     "type": "road",
     "type_local": "Šoseja",
     "race_dates": [
+      [
+        "20260607",
+        "20260607"
+      ],
       [
         "20270606",
         "20270606"
@@ -3038,7 +4209,9 @@
     "sources": [
       "https://www.sportlat.lv/sacensibas/1915/ventspils-pusmaratons-2027/nolikums",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/ventspils-half-marathon-2027"
+      "https://runbaltic.com/lv/races/ventspils-half-marathon-2027",
+      "https://www.sportlat.lv/sacensibas/1845/ventspils-pusmaratons-2026/nolikums",
+      "https://www.noskrien.lv/kalendars/15-ventspils-pusmaratons-2026/"
     ],
     "consolidated_ids": [
       "e5c4d134-72fb-4dc1-b137-cdd32b9513ab"
@@ -3054,9 +4227,13 @@
   {
     "domain_name": "vertikalais_kilometrs_vk_sigulda",
     "name": "Vertikālais kilometrs (VK) Siguldā",
-    "type": "other",
-    "type_local": "Cits",
+    "type": "trail",
+    "type_local": "Taka",
     "race_dates": [
+      [
+        "20260627",
+        "20260627"
+      ],
       [
         "20270611",
         "20270611"
@@ -3076,27 +4253,34 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Jaukta distance",
-    "organizer": null,
+    "organizer": "Sporta klubs \"Siguldas Takas\"",
     "contact": null,
-    "website": null,
+    "website": "https://siguldastakas.lv/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://siguldastakas.lv/",
+    "presumed_organizer_email": "kasparsrunning@gmail.com",
+    "website_emails_found": [
+      "kasparsrunning@gmail.com",
+      "valdisj@gmail.com"
+    ],
+    "description": "Vertikālais kilometrs Siguldā ir izaicinošs kalnu skrējiens, kas piedāvā iespēju pārbaudīt spēkus un izturību, kāpjot pa Siguldas kalnu takām. Sacensības ir piemērotas gan iesācējiem, gan pieredzējušiem skrējējiem, kuri vēlas pārvarēt 1000 augstummetrus. Pasākums ir daļa no Siguldas skriešanas seriāla, kas pulcē sportistus un aktīvus cilvēkus no visas Latvijas. Skrējiens notiek skaistā dabas vidē ar elpu aizraujošiem skatiem un izaicinošiem reljefa posmiem.",
+    "course_highlights": [
+      "Izaicinošs kāpiens ar 1000 augstummetriem",
+      "Skrējiens pa Siguldas pilsētas un apkārtnes kalnu takām",
+      "Elpu aizraujoši skati un dabas ainavas"
+    ],
+    "additional": "Dalībnieku numuru un čipu izsniegšana paredzēta starta vietā.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.57,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/"
     ],
@@ -3118,6 +4302,10 @@
     "type_local": "Šoseja",
     "race_dates": [
       [
+        "20260613",
+        "20260613"
+      ],
+      [
         "20270612",
         "20270612"
       ]
@@ -3134,39 +4322,61 @@
     "nearby_cities": [
       "Rīga"
     ],
-    "distances": "[\"21\"]",
+    "distances": "[\"21.1\", \"10.55\", \"5.27\", \"0.75\"]",
     "distance_m": [
-      21000
+      21100,
+      10550,
+      5270,
+      750
     ],
     "distance_keywords": [
-      "Pusmaratons"
+      "Pusmaratons",
+      "10 km",
+      "5 km"
     ],
-    "distance_verbose": "Pusmaratons",
-    "organizer": null,
+    "distance_verbose": "Pusmaratons, 10.55 km, 5.27 km, 0.75 km",
+    "organizer": "Salaspils novada pašvaldība",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.salaspilssporto.lv/galvena/2026-02-24/ezerkaulini-salaspils-pilsetas-pusmaratons-2026",
+    "fb_link": "https://www.facebook.com/Salaspilsnovadapasvaldiba/posts/-12-ezerkauli%C5%86i-salaspils-pils%C4%93tas-pusmaratons-2026-13-j%C5%ABnij%C4%81/1328692975951383/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.salaspilssporto.lv/galvena/2026-02-24/ezerkaulini-salaspils-pilsetas-pusmaratons-2026",
+    "presumed_organizer_email": "andris.umbrasko@salaspils.lv",
+    "website_emails_found": [
+      "andris.umbrasko@salaspils.lv",
+      "dace.kalversa@salaspils.lv",
+      "laura.pirktina@salaspils.lv",
+      "linda.lankovska@salaspils.lv",
+      "jekaterina.smirnova@salaspils.lv",
+      "nikita.gzegozevskis@salaspils.lv",
+      "olegs.gzegozevskis@salaspils.lv",
+      "artis.dauksts@salaspils.lv",
+      "sporta.nams@salaspils.lv"
+    ],
+    "description": "“Ezerkauliņi” Salaspils pilsētas pusmaratons pulcē skriešanas entuziastus, salaspiliešus un pilsētas viesus uz sportiskiem svētkiem Salaspilī. Dalībnieki var izvēlēties pusmaratonu, 10,55 km skrējienu vai nūjošanu, 5,27 km tautas skrējienu vai 0,75 km bērnu skrējienu. Trase ved pa Salaspils ielām, un pasākums aicina baudīt kopīgu kustību un pilsētas atmosfēru.",
+    "course_highlights": [
+      "Pilsētas trase ved pa Salaspils ielām.",
+      "Pieejama pusmaratona distance 21,097 km.",
+      "10,55 km distancē var piedalīties arī nūjojot."
+    ],
+    "additional": "Pieejams arī 0,75 km bērnu skrējiens.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/13-ezerkaulini-salaspils-pilsetas-pusmaratons-2027"
+      "https://runbaltic.com/lv/races/13-ezerkaulini-salaspils-pilsetas-pusmaratons-2027",
+      "https://tautassports.lv/pasakumi/13-ezerkaulini-salaspils-pilsetas-pusmaratons-2027/",
+      "https://www.sportlat.lv/files/1193/Nolikums_12.Salaspils_pusmaratons_2026.docx",
+      "https://www.noskrien.lv/kalendars/12-ezerkaulinu-salaspils-pusmaratons-2026/"
     ],
     "consolidated_ids": [
       "16c41252-cec0-469f-8346-35156a73b846"
@@ -3182,9 +4392,13 @@
   {
     "domain_name": "46_skrejiens_apkart_vaidavas_ezeram",
     "name": "46. skrējiens \"Apkārt Vaidavas ezeram\"",
-    "type": "other",
-    "type_local": "Cits",
+    "type": "road",
+    "type_local": "Šoseja",
     "race_dates": [
+      [
+        "20260705",
+        "20260705"
+      ],
       [
         "20270619",
         "20270619"
@@ -3202,33 +4416,41 @@
     "nearby_cities": [
       "Valmiera"
     ],
-    "distances": "[]",
-    "distance_m": [],
+    "distances": "[\"11.7\"]",
+    "distance_m": [
+      11700
+    ],
     "distance_keywords": [],
-    "distance_verbose": "Jaukta distance",
+    "distance_verbose": "11.7 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.sportlat.lv/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_close_date": "20270701",
+    "registration_url": "https://www.sportlat.lv/registracija",
+    "race_info_url": "https://www.sportlat.lv/zinas/informacija-par-45-skrejienu-apkart-vaidavas-ezeram-3096",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Skrējiens \"Apkārt Vaidavas ezeram\" ir tradicionāls skriešanas pasākums, kas notiek Vaidavas apkārtnē. Dalībnieki var piedalīties 11,7 km distancē vai pārgājienā, baudot skaistu dabu un labi sagatavotu trasi. Pasākums ir populārs un pulcē daudz dalībnieku, piedāvājot arī laika kontroli un servisa punktus. Dalībniekiem tiek nodrošinātas piemiņas medaļas, taču to skaits ir ierobežots un tiek piešķirts pēc reģistrācijas secības. Skrējiens ir piemērots gan sportistiem, gan aktīvās atpūtas cienītājiem.",
+    "course_highlights": [
+      "11,7 km skriešanas distance apkārt Vaidavas ezeram",
+      "Pārgājiens pa skaistu un labi sagatavotu trasi",
+      "Servisa punkti un laika kontroles čips skrējiena dalībniekiem"
+    ],
+    "additional": "Piemiņas medaļu skaits ir ierobežots un tiek nodrošināts dalībniekiem pēc reģistrācijas secības: medaļas saņem 11,7 km skrējiena dalībnieki ar reģistrācijas numuru līdz 340 un pārgājiena dalībnieki ar numuru līdz 100. Dalībnieki, kas reģistrēsies pēc limita sasniegšanas, saņems pilnvērtīgu dalības paketi bez medaļas.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.62,
     "sources": [
-      "https://www.sportlat.lv/kalendars/viss"
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://www.noskrien.lv/kalendars/45-skrejiens-apkart-vaidavas-ezeram-2026/",
+      "https://runbaltic.com/lv/races/45-skrejiens-apkart-vaidavas-ezeram-2026"
     ],
     "consolidated_ids": [
       "95070e0b-ea3f-4c76-b5ec-abbdac7551f4"
@@ -3247,6 +4469,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260620",
+        "20260620"
+      ],
       [
         "20270620",
         "20270620"
@@ -3471,7 +4697,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/saulgriezu-nakts-stirnu-buks-2027"
+      "https://runbaltic.com/lv/races/saulgriezu-nakts-stirnu-buks-2027",
+      "https://www.noskrien.lv/kalendars/saulgriezu-nakts-stirnu-buks-2026-4/"
     ],
     "consolidated_ids": [
       "9cd40fd2-6bfb-45d9-be87-072a82096781"
@@ -3485,11 +4712,243 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "skrejiens_janis_un_janitis",
+    "name": "Skrējiens “Jānis un Jānītis”",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260623",
+        "20260623"
+      ],
+      [
+        "20270622",
+        "20270622"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Cēsis, Cēsis Municipality, Latvija",
+    "latitude": 57.3090115,
+    "longitude": 25.2676773,
+    "county": "Cēsu novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [
+      "Valmiera"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ej.uz/jj2026nolikums"
+    ],
+    "consolidated_ids": [
+      "2a9689ae-1b90-4e97-b34d-9aa902aedeba"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "ligo_skrejiens_ozolos_liezeres_pag",
+    "name": "Līgo skrējiens Ozolos, Liezēres pag.",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260623",
+        "20260623"
+      ],
+      [
+        "20270622",
+        "20270622"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "11:00",
+    "location": "Liezēres pagasts, Madonas novads, Latvija",
+    "latitude": 57.03367609999999,
+    "longitude": 26.0523604,
+    "county": "Madonas novads",
+    "nearest_city": "Jēkabpils",
+    "nearby_cities": [],
+    "distances": "[\"9\", \"6\", \"3\", \"1\", \"0.5\"]",
+    "distance_m": [
+      9000,
+      6000,
+      3000,
+      1000,
+      500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km",
+      "3000 metri"
+    ],
+    "distance_verbose": "9 km, 6 km, 3000 metri, 1 km, 0.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://madonasrings.lv/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://madonasrings.lv/index.php/lv/sacens-bas",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Līgo skrējiens Ozolos ir ikgadējs skriešanas pasākums, kas notiek Liezēres pagastā Madonas novadā. Sacensību mērķis ir popularizēt skriešanu un nūjošanu kā veselīgu un aktīvu dzīvesveidu, kā arī veicināt kopā būšanu un sportisku atmosfēru Līgo dienā. Trase ir apļveida un marķēta, piedāvājot dažādas distances gan bērniem, gan pieaugušajiem, tostarp tautas skrējienu un nūjošanas distanci. Pasākums ir piemērots dažāda vecuma un sagatavotības dalībniekiem, un tas tiek organizēts sadarbībā ar Liezēres pagasta pārvaldi.",
+    "course_highlights": [
+      "Apļveida trase ar 3 km apli un bērnu 500 m apli",
+      "Dažādas distances bērniem un pieaugušajiem, tostarp 3 km, 6 km un 9 km distanču varianti",
+      "Marķēta trase visā tās garumā"
+    ],
+    "additional": "Sacensības notiek Ozolos, Liezēres pagastā, Madonas novadā, stāvlaukumā pretī veikalam. Pasākums norisinās no plkst. 11:00 līdz 16:00. Dalībnieki tiek sadalīti vecuma grupās un dzimuma kategorijās. Organizators ir biedrība „Madonas rings” sadarbībā ar Liezēres pagasta pārvaldi.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportlat.lv/sacensibas/1913/ligo-skrejiens-ozolos-2026-liezeres-pag/nolikums",
+      "https://runbaltic.com/lv/races/ligo-skrejiens-ozolos-2026"
+    ],
+    "consolidated_ids": [
+      "14eba827-c805-4d1a-88ac-9dbdb36d9c42"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "izskrien_rigu_2_posms_mezaparks",
+    "name": "Izskrien Rīgu 2. posms – Mežaparks",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260625",
+        "20260625"
+      ],
+      [
+        "20270624",
+        "20270624"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "18:30",
+    "location": "Mežaparks, Rīga, Latvija",
+    "latitude": 57.0051339,
+    "longitude": 24.1569502,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"10\", \"5\", \"1\", \"0.6\", \"0.3\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000,
+      600,
+      300
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km, 0.6 km, 0.3 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://athletics.lv/lv/event/41546/izskrien-rigu-2posms",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://athletics.lv/lv/event/41546/competitions",
+    "presumed_organizer_email": "lvs@athletics.lv",
+    "website_emails_found": [
+      "lvs@athletics.lv",
+      "xevents@xevents.lv"
+    ],
+    "description": "Izskrien Rīgu 2. posms ir daļa no populārā Rīgas skriešanas seriāla, kas piedāvā skriešanas prieku visai ģimenei skaistajā Mežaparka apkārtnē. Šis posms ir viens no pieciem unikāliem skrējieniem, kas notiek dažādās Rīgas vietās, piedāvājot līdzenas un gleznainas trases. Pasākums pulcē gan profesionālus skrējējus, gan amatierus, nodrošinot draudzīgu un sportisku atmosfēru. Tradicionāli sacensības notiek vakarā, ļaujot izbaudīt skriešanu pilsētas parkā.",
+    "course_highlights": [
+      "Skrējiens Mežaparka teritorijā ar līdzenām un gleznainām takām",
+      "Trase ved apkārt dīķim un cauri Māras dārzam",
+      "Skriešana Rīgas skaistākajos parku apkaimēs"
+    ],
+    "additional": "Sacensības tradicionāli notiek vakarā plkst. 18:30. Pasākums ir daļa no piecu posmu seriāla, kas notiek dažādos Rīgas parkos un apkārtnēs. Dalībniekiem ir iespēja piedalīties gan individuāli, gan ģimenes lokā. Pasākuma noslēgumā parasti notiek apbalvošana un dažādas aktivitātes.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/izskrien-rigu-2026-2-mezaparks/"
+    ],
+    "consolidated_ids": [
+      "45375dc1-d72d-4f3d-85d7-0d5c12596657"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "rojas_pusmaratona_festivals",
     "name": "Rojas pusmaratona festivāls",
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260711",
+        "20260711"
+      ],
       [
         "20270710",
         "20270710"
@@ -3546,7 +5005,9 @@
     "sources": [
       "https://www.sportlat.lv/sacensibas/1925/rojas-pusmaratona-festivals-2027/nolikums",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/roja-half-marathon-festival-2027"
+      "https://runbaltic.com/lv/races/roja-half-marathon-festival-2027",
+      "https://www.sportlat.lv/sacensibas/1852/rojas-pusmaratona-festivals-2026/nolikums",
+      "https://www.noskrien.lv/kalendars/rojas-pusmaratona-festivals-2026/"
     ],
     "consolidated_ids": [
       "be0116ee-3215-4a44-8e30-4ee17a50ecbf"
@@ -3560,11 +5021,167 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "liepajas_pusmaratons_juras_svetki",
+    "name": "Liepājas pusmaratons (Jūras svētki)",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260711",
+        "20260711"
+      ],
+      [
+        "20260712",
+        "20260712"
+      ],
+      [
+        "20270711",
+        "20270711"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Liepāja, Latvija",
+    "latitude": 56.5384577,
+    "longitude": 21.0538204,
+    "county": "Liepājas pilsēta",
+    "nearest_city": "Liepāja",
+    "nearby_cities": [
+      "Liepāja"
+    ],
+    "distances": "[\"21\", \"10\", \"5\", \"1.609\", \"1\"]",
+    "distance_m": [
+      21000,
+      10000,
+      5000,
+      1609,
+      1000
+    ],
+    "distance_keywords": [
+      "Pusmaratons",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Pusmaratons, 10 km, 5 km, 1.61 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://athletics.lv/lv/event/41725/latvijas-cempionats-5km",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://athletics.lv/lv/event/41725/competitions",
+    "presumed_organizer_email": "lvs@athletics.lv",
+    "website_emails_found": [
+      "lvs@athletics.lv"
+    ],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://tautassports.lv/pasakumi/liepajas-pusmaratons-2026-juras-svetki/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/14-liepajas-pusmaratons-2026/",
+      "https://runbaltic.com/lv/races/liepajas-juras-svetku-pusmaratons-2026",
+      "https://distantrace.com/lv/sacensibas/liepajas-pusmaratons-2026/rezultati/?distance_id=675"
+    ],
+    "consolidated_ids": [
+      "557d275a-c2bf-4ea3-a472-396d67753282"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "izskrien_rigu_3_posms_bikernieku_trase",
+    "name": "Izskrien Rīgu 3.posms Biķernieku trase",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260716",
+        "20260716"
+      ],
+      [
+        "20270715",
+        "20270715"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Biķernieku trase, Riga, Latvija",
+    "latitude": 56.9638536,
+    "longitude": 24.2297683,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/"
+    ],
+    "consolidated_ids": [
+      "788ecead-dd00-4695-831b-f8e5d43213dc"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "ozolkalna_vk",
     "name": "Ozolkalna VK",
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260717",
+        "20260717"
+      ],
       [
         "20270716",
         "20270716"
@@ -3614,9 +5231,11 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/ozolkalna-vk-2027/",
-      "https://runbaltic.com/lv/races/ozolkalns-vertical-kilometer-2027"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://runbaltic.com/lv/races/ozolkalns-vertical-kilometer-2027",
+      "https://tautassports.lv/pasakumi/ozolkalna-vk-2027/",
+      "https://www.noskrien.lv/kalendars/ozolkalna-vk-2026/"
     ],
     "consolidated_ids": [
       "609cc201-662f-4072-be12-acd89a771f36"
@@ -3632,9 +5251,13 @@
   {
     "domain_name": "12_skrejiens_piltene",
     "name": "12. skrējiens Piltene",
-    "type": "other",
-    "type_local": "Cits",
+    "type": "road",
+    "type_local": "Šoseja",
     "race_dates": [
+      [
+        "20260718",
+        "20260718"
+      ],
       [
         "20270717",
         "20270717"
@@ -3652,41 +5275,48 @@
     "nearby_cities": [
       "Ventspils"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\", \"5\", \"1.6\"]",
     "distance_m": [
       10000,
-      5000
+      5000,
+      1600
     ],
     "distance_keywords": [
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km, 5 km, 1.6 km",
+    "organizer": "Skrējiens Piltene",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.sportlat.lv/",
+    "fb_link": "https://www.facebook.com/p/Skr%C4%93jiens-Piltene-100064711475359/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://www.sportlat.lv/registracija",
+    "race_info_url": "https://www.sportlat.lv/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "Skrējiens Piltene ir ikgadējs skriešanas pasākums Piltenē, kas pulcē dažāda vecuma un sagatavotības dalībniekus. Iepriekšējo sacensību programmā bijušas 10 km un 5 km distances, kā arī īsāki un nūjošanas starti. Pasākuma mērķis ir veicināt aktīvu un veselīgu dzīvesveidu un popularizēt skriešanu.",
+    "course_highlights": [
+      "Sacensību centrā ir 10 km šosejas skrējiens.",
+      "Programmā iepriekš iekļauts arī 5 km skrējiens.",
+      "Dalībniekiem piedāvāti arī jūdzes un 5 km nūjošanas starti."
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.67,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/12-skrejiens-piltene-2027"
+      "https://runbaltic.com/lv/races/12-skrejiens-piltene-2027",
+      "https://www.sportlat.lv/files/1232/Nolikums_Piltene_2026.docx",
+      "https://www.noskrien.lv/kalendars/skrejiens-piltene-2026-latvijas-cempionats-10-km-soseja/"
     ],
     "consolidated_ids": [
       "905fe3b5-0f82-4c82-a67e-1f486eb39e3e"
@@ -3705,6 +5335,10 @@
     "type": "road",
     "type_local": "Šoseja",
     "race_dates": [
+      [
+        "20260905",
+        "20260905"
+      ],
       [
         "20270724",
         "20270724"
@@ -3785,7 +5419,9 @@
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/jelgavas-nakts-pusmaratons-2027"
+      "https://runbaltic.com/lv/races/jelgavas-nakts-pusmaratons-2027",
+      "https://jelgavaspusmaratons.lv/",
+      "https://www.noskrien.lv/kalendars/10-jelgavas-nakts-pusmaratons-2026/"
     ],
     "consolidated_ids": [
       "bada620f-d831-452f-8ffb-c8abafcacbb8"
@@ -3793,6 +5429,89 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "izskrien_rigu_4_posms_lucavsala",
+    "name": "Izskrien Rīgu 4. posms – Lucavsala",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260730",
+        "20260730"
+      ],
+      [
+        "20270729",
+        "20270729"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "18:30",
+    "location": "Lucavsala, Rīga, Latvija",
+    "latitude": 56.9241667,
+    "longitude": 24.1183333,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"10\", \"5\", \"1\", \"0.6\", \"0.3\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000,
+      600,
+      300
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km, 0.6 km, 0.3 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://athletics.lv/event/41548/izskrien-rigu-4posms",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://athletics.lv/lv/event/41548/izskrien-rigu-4posms",
+    "presumed_organizer_email": "lvs@athletics.lv",
+    "website_emails_found": [
+      "lvs@athletics.lv",
+      "xevents@xevents.lv"
+    ],
+    "description": "Izskrien Rīgu 4. posms ir daļa no populārā skriešanas seriāla Rīgas parkos un apkaimēs, kas paredzēts visai ģimenei. Šis posms norisināsies Lucavsalā, piedāvājot dalībniekiem iespēju izbaudīt skriešanu skaistā un zaļā pilsētas vidē. Seriāls ir pazīstams ar draudzīgu atmosfēru un iespēju sacensties gan profesionāļiem, gan amatieriem. Pasākuma noslēgumā tradicionāli tiek godināti ātrākie skrējēji un sezonas kopvērtējuma līderi.",
+    "course_highlights": [
+      "Skriešana pa Lucavsalas parku un apkārtni",
+      "Zaļš un līdzenas reljefs piemērots visiem skriešanas līmeņiem",
+      "Draudzīga atmosfēra un iespēja sacensties visai ģimenei"
+    ],
+    "additional": "Pasākuma noslēgumā tradicionāli tiek organizēts koncerts un ballīte, kas papildina sportisko pieredzi. Dalībniekiem ir iespēja atzīmēties līdz pusdienlaikam sacensību dienā. Seriāls pulcē ap diviem tūkstošiem dalībnieku katrā posmā.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/izskrien-rigu-2026-4-lucavsala/"
+    ],
+    "consolidated_ids": [
+      "a41422cc-7f77-49d0-a2b9-c5210303a97f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -3958,6 +5677,10 @@
     "type_local": "Šoseja",
     "race_dates": [
       [
+        "20260808",
+        "20260808"
+      ],
+      [
         "20270814",
         "20270814"
       ]
@@ -4008,10 +5731,14 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportlat.lv/kalendars/viss",
-      "https://runbaltic.com/lv/races/kuldigas-22-pusmaratons-2027",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/22-kuldigas-pusmaratons-2027/"
+      "https://runbaltic.com/lv/races/kuldigas-22-pusmaratons-2027",
+      "https://tautassports.lv/pasakumi/kuldigas-22-pusmaratons-2027/",
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://www.noskrien.lv/kalendars/22-kuldigas-pusmaratons-2027/",
+      "https://www.sportlat.lv/sacensibas/1842/kuldigas-21-pusmaratons/nolikums",
+      "https://www.noskrien.lv/kalendars/21-kuldigas-pusmaratons-2026/",
+      "https://runbaltic.com/lv/races/kuldigas-21-pusmaratons-2026"
     ],
     "consolidated_ids": [
       "c8e1471c-eae7-4bdb-915c-a213837bb11f"
@@ -4025,11 +5752,240 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "kazdangas_pils_maratons",
+    "name": "Kazdangas pils maratons",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260815",
+        "20260815"
+      ],
+      [
+        "20270814",
+        "20270814"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Kazdanga, Dienvidkurzeme Municipality, Latvija",
+    "latitude": 56.7298534,
+    "longitude": 21.7325041,
+    "county": "Dienvidkurzemes novads",
+    "nearest_city": "Liepāja",
+    "nearby_cities": [],
+    "distances": "[\"42\", \"21\"]",
+    "distance_m": [
+      42000,
+      21000
+    ],
+    "distance_keywords": [
+      "Maratons",
+      "Pusmaratons"
+    ],
+    "distance_verbose": "Maratons, Pusmaratons",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/6-kazdangas-pils-maratons-2026/"
+    ],
+    "consolidated_ids": [
+      "9f5a0323-cc80-4865-8cc6-1fa6e5c7149d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "izskrien_rigu_5_posms_maras_dikis",
+    "name": "Izskrien Rīgu 5. posms – Māras dīķis",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260820",
+        "20260820"
+      ],
+      [
+        "20270819",
+        "20270819"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "18:30",
+    "location": "Māras dīķis, Rīga, Latvija",
+    "latitude": 56.9316893,
+    "longitude": 24.0808674,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"10\", \"5\", \"1\", \"0.6\", \"0.3\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000,
+      600,
+      300
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km, 0.6 km, 0.3 km",
+    "organizer": null,
+    "contact": null,
+    "website": "http://izskrienrigu.lv",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://izskrienrigu.lv/registracija/",
+    "race_info_url": "https://izskrienrigu.lv/izskrien-rigu-5-posma-pirmsstarta-informacija/",
+    "presumed_organizer_email": "xevents@xevents.lv",
+    "website_emails_found": [
+      "xevents@xevents.lv",
+      "janis@example.com",
+      "vecaks@example.com"
+    ],
+    "description": "Izskrien Rīgu ir Rīgas skriešanas seriāls visai ģimenei, kas notiek piecās unikālās Rīgas vietās, piedāvājot neaizmirstamus skrējienus. 5. posms norisināsies pie Māras dīķa, kur dalībnieki skries pa gleznainu, līdzenas reljefa trasi apkārt dīķim un cauri Māras dārzam. Pasākums ir piemērots gan aktīviem skrējējiem, gan iesācējiem, piedāvājot dažādas distances un iespēju piedalīties veselības skrējienā. Noslēgumā tradicionāli tiek sveikti ātrākie un sezonas kopvērtējuma uzvarētāji, kā arī notiek koncerts un ballīte.",
+    "course_highlights": [
+      "Trase apkārt Māras dīķim un cauri Māras dārzam",
+      "Līdzenas reljefs, piemērots ātrumam un izbaudīšanai",
+      "Skrējiens notiek Rīgas parkā ar skaistiem dabas skatiem"
+    ],
+    "additional": "Numuru izņemšana sākas plkst. 18:00. Bērnu distancēm dalītie starti notiek plkst. 18:30. Mantām var nodot tikai somas ar speciālu birku, ko saņem reģistrācijā kopā ar dalībnieka numuru. Sabiedriskais transports ir ieteicamākais nokļūšanas veids, jo autostāvvietu skaits apkārtnē ir ierobežots. 5 km distance sastāv no 3 apļiem pa 1.52 km garu trasi.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/izskrien-rigu-2026-5-maras-dikis/"
+    ],
+    "consolidated_ids": [
+      "e6db1349-5aad-47db-8b17-e0be551d2d42"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "jurmalas_krasu_skrejiens",
+    "name": "Jūrmalas krāsu skrējiens",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260823",
+        "20260823"
+      ],
+      [
+        "20270822",
+        "20270822"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Jūrmala, Latvija",
+    "latitude": 56.9684476,
+    "longitude": 23.7737546,
+    "county": "Jūrmalas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"5\", \"4.5\"]",
+    "distance_m": [
+      5000,
+      4500
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km, 4.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://tautassports.lv/pasakumi/jurmalas-krasu-skrejiens-2026/"
+    ],
+    "consolidated_ids": [
+      "7b12d587-7160-4138-851c-e63ef90734ab"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "taurlandia_taurkalne",
     "name": "Taurlandia Taurkalnē",
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260829",
+        "20260829"
+      ],
       [
         "20270828",
         "20270828"
@@ -4124,7 +6080,9 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/taurlandia-2027"
+      "https://runbaltic.com/lv/races/taurlandia-2027",
+      "https://tautassports.lv/pasakumi/taurlandia-2027-taur-50-21/",
+      "https://www.noskrien.lv/kalendars/taurlandia-2026/"
     ],
     "consolidated_ids": [
       "bd1487d4-d908-43b7-a51f-99b08d0dc48b"
@@ -4138,11 +6096,100 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "valmieras_skrejiens",
+    "name": "Valmieras skrējiens",
+    "type": "road",
+    "type_local": "Šoseja",
+    "race_dates": [
+      [
+        "20260906",
+        "20260906"
+      ],
+      [
+        "20270905",
+        "20270905"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Valmiera, Latvija",
+    "latitude": 57.53125290000001,
+    "longitude": 25.4083677,
+    "county": "Valmieras novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [
+      "Valmiera"
+    ],
+    "distances": "[\"10\", \"5\", \"1\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://athletics.lv/lv/about-us/course-measurement",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://athletics.lv/lv/events",
+    "presumed_organizer_email": "lvs@athletics.lv",
+    "website_emails_found": [
+      "lvs@athletics.lv",
+      "arturs.onzuls@gmail.com",
+      "juris_belinskis@inbox.lv",
+      "ivars.lapins@sportlat.lv",
+      "craigandrewrose@gmail.com"
+    ],
+    "description": "Valmieras skrējiens ir ikgadējs skriešanas pasākums Valmierā, kas piedāvā dažādas distances, tostarp pusmaratonu un 10 km skrējienus. Sacensības notiek pa sertificētām trasēm, kas nodrošina precīzu distanču mērījumu un augstu sacensību kvalitāti. Pasākums ir piemērots gan pieredzējušiem skrējējiem, gan iesācējiem, piedāvājot iespēju izbaudīt skriešanu skaistā pilsētas vidē. Valmieras skrējiens ir daļa no Latvijas vieglatlētikas kalendāra un piesaista dalībniekus no visas Latvijas.",
+    "course_highlights": [
+      "Sertificētas distances pusmaratons un 10 km",
+      "Skrējiens notiek Valmieras pilsētas teritorijā",
+      "Precīzi mērītas trases ar A līmeņa sertifikātu"
+    ],
+    "additional": "Trases sertificētas līdz 31.12.2027. ar A līmeņa sertifikātu, ko izsniedzis Arturs Onzuls. Sacensības ir daļa no Latvijas Vieglatlētikas savienības kalendāra un tiek organizētas saskaņā ar LVS noteikumiem.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://valmierasskrejiens.lv/pages/valmieras-skrejiens-2026-nolikums",
+      "https://www.noskrien.lv/kalendars/valmieras-skrejiens-2026/",
+      "https://runbaltic.com/lv/races/valmieras-skrejiens-2026"
+    ],
+    "consolidated_ids": [
+      "cda5bd17-4bdb-49f0-9dd9-96178a047092"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "zilo_kalnu_stirnu_buks",
     "name": "Zilo kalnu Stirnu buks",
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20260912",
+        "20260912"
+      ],
       [
         "20270911",
         "20270911"
@@ -4365,7 +6412,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/zilo-kalnu-stirnu-buks-2027"
+      "https://runbaltic.com/lv/races/zilo-kalnu-stirnu-buks-2027",
+      "https://www.noskrien.lv/kalendars/zilo-kalnu-stirnu-buks-2/"
     ],
     "consolidated_ids": [
       "b0199ad7-78d9-4fbe-9a02-72fcd36c7141"
@@ -4384,6 +6432,10 @@
     "type": "road",
     "type_local": "Šoseja",
     "race_dates": [
+      [
+        "20260919",
+        "20260919"
+      ],
       [
         "20270918",
         "20270918"
@@ -4468,7 +6520,11 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/we-run-riga-2027"
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://runbaltic.com/lv/races/we-run-riga-2027",
+      "https://tautassports.lv/pasakumi/we-run-riga-2027/",
+      "https://werunriga.lv/#sakums",
+      "https://www.noskrien.lv/kalendars/we-run-riga-2026/"
     ],
     "consolidated_ids": [
       "ad21ed73-bb7e-41dc-a3f2-be0a8207c71d"
@@ -4488,6 +6544,10 @@
     "type_local": "Taka",
     "race_dates": [
       [
+        "20260926",
+        "20260926"
+      ],
+      [
         "20270925",
         "20270925"
       ]
@@ -4495,44 +6555,50 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "10:00",
     "location": "Sigulda, Latvija",
     "latitude": 57.15402899999999,
     "longitude": 24.8543364,
     "county": "Siguldas novads",
     "nearest_city": "Rīga",
     "nearby_cities": [],
-    "distances": "[\"42.195\"]",
+    "distances": "[\"70\", \"35\"]",
     "distance_m": [
-      42195
+      70000,
+      35000
     ],
-    "distance_keywords": [
-      "Maratons"
-    ],
-    "distance_verbose": "Maratons",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "70 km, 35 km",
+    "organizer": "Biedrība Kalnkāpēju sporta centrs sadarbībā ar IK Adventure Company",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.raid.lv/lv/",
+    "fb_link": "https://www.facebook.com/raid.lv",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.raid.lv/lv/raid-lv-2026-gada-sacikstes/siguldas-kalnu-maratons-2026/",
+    "presumed_organizer_email": "info@raid.lv",
+    "website_emails_found": [
+      "info@raid.lv"
+    ],
+    "description": "Siguldas kalnu maratons (SKM) ir kalnainākais taku skrējiens Latvijā, kas norisinās Siguldas apvidū ar stāviem kalniem un skaistiem Gaujas Nacionālā parka skatiem. Sacensības piedāvā trīs distances: pilno maratonu aptuveni 70 km garumā ar 3000 kāpuma metriem, pusmaratonu 35 km garumā un kalnu krosa distanci 10+ km, kas piemērota arī pastaigas tempā. SKM izaicina gan fizisko, gan psiholoģisko sagatavotību, un maratona distance ir Latvijas čempionāts taku skriešanā. Dalībnieki saņem unikālas finiša medaļas, un trase tiek regulāri atjaunota, lai saglabātu aizraujošu un izaicinošu raksturu.",
+    "course_highlights": [
+      "Siguldas kalnu stāvie slaloma nogāžu augstuma starpība līdz 80 metriem",
+      "Trase ietver Gaujas Nacionālā parka takas ar trepēm un iespaidīgiem skatiem",
+      "Pilnā maratona distance aptuveni 70 km ar 3000 kāpuma un krituma metriem"
+    ],
+    "additional": "Pilnā maratona distances veicēji saņem unikālu kalēja Jāņa Bankas kaltu finiša medaļu. 35 km un 70 km distances ir novērtētas ar ITRA punktiem (2 un 3 punkti). Trase tiek regulāri koriģēta un tīrīta, lai nodrošinātu labākos apstākļus, ņemot vērā dabas apstākļus un vētras postījumus. 10+ km kalnu krosa distance ir piemērota arī pastaigas tempā un nav paredzēta apbalvošana. 2026. gada programmā bija aptuveni 70 km, 35 km un īsāka distance. Garākajās trasēs dalībnieki varēja iegūt ITRA punktus.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.77,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/siguldas-kalnu-maratons-2026/"
     ],
     "consolidated_ids": [
       "dba9e6c9-308b-4ec1-8ca1-21536c98782e"
@@ -4552,6 +6618,10 @@
     "type_local": "Šoseja",
     "race_dates": [
       [
+        "20260926",
+        "20260926"
+      ],
+      [
         "20270925",
         "20270925"
       ]
@@ -4568,6 +6638,85 @@
     "nearby_cities": [
       "Daugavpils"
     ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://daugavpilsmezciems.lv/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://daugavpilsmezciems.lv/nolikums-2026/",
+    "race_info_url": "https://daugavpilsmezciems.lv/nolikums-2026/",
+    "presumed_organizer_email": "ivars.caune@ip.daugavpils.lv",
+    "website_emails_found": [
+      "ivars.caune@ip.daugavpils.lv",
+      "sportlat@sportlat.lv",
+      "dati@daugavpils.lv"
+    ],
+    "description": "Daugavpils skrējiens \"Daugavpils-Mežciems\" ir tradicionāls skrējiens, kas popularizē veselīgu dzīvesveidu un skriešanu kā tautas sportu Daugavpilī un Latvijā. Sacensības notiek Daugavpils Vienības laukumā, piedāvājot dažādas distances, tostarp 10 km, 5 km tautas skrējienu un bērnu skrējienus. Trase ir līdzena ar nelieliem kāpumiem, segums galvenokārt asfaltēts un bruģēts, ar nelieliem grants posmiem. Pasākums ir atvērts visiem interesentiem, ievērojot vecuma ierobežojumus, un nodrošina numuru izņemšanu iepriekšējā dienā un sacensību dienā.",
+    "course_highlights": [
+      "10 km trase veidota kā viens aplis ar asfaltu un bruģakmeni",
+      "5 km tautas skrējiens un nūjošana vienā 5 km aplī",
+      "Reljefs līdzens ar nelieliem, lēzeniem kāpumiem"
+    ],
+    "additional": "Numuru izņemšana notiek 25. septembrī no plkst. 14:00 līdz 19:00 un 26. septembrī no plkst. 9:00 Daugavpils pilsētas Tūrisma informācijas centrā (Rīgas iela 22). Sacensību dienā reģistrācija nav iespējama. Dalībnieku rezultātu apstrādi nodrošina SIA “MANI APĻI”. Sacensībās tiek vērtēti 10 km un 5 km skrējienu rezultāti vīriešiem un sievietēm.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.79,
+    "sources": [
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://runbaltic.com/lv/races/61-daugavpils-mezciems-2026"
+    ],
+    "consolidated_ids": [
+      "ce751dd0-f6a9-4a96-a512-262fa6efd37b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "skrejiens_apkart_lielezeram",
+    "name": "Skrējiens “Apkārt Lielezeram”",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260926",
+        "20260926"
+      ],
+      [
+        "20270925",
+        "20270925"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Lielezers, Limbaži, Latvija",
+    "latitude": 57.4872401,
+    "longitude": 24.7000751,
+    "county": "Limbažu novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [],
     "distances": "[]",
     "distance_m": [],
     "distance_keywords": [],
@@ -4591,17 +6740,17 @@
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
-    "is_series": true,
+    "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportlat.lv/kalendars/viss"
+      "https://www.sportlat.lv/sacensibas/1926/skrejiens-apkart-lielezeram-2026/nolikums"
     ],
     "consolidated_ids": [
-      "ce751dd0-f6a9-4a96-a512-262fa6efd37b"
+      "a915f8ba-5d16-42c2-abfc-c238ed815d02"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261116",
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -4610,9 +6759,13 @@
   {
     "domain_name": "izskrien_ogri",
     "name": "Izskrien Ogri",
-    "type": "other",
-    "type_local": "Cits",
+    "type": "road",
+    "type_local": "Šoseja",
     "race_dates": [
+      [
+        "20260927",
+        "20260927"
+      ],
       [
         "20270926",
         "20270926"
@@ -4621,48 +6774,125 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Ogre, Ogre Municipality, Latvija",
-    "latitude": 56.8138328,
-    "longitude": 24.6060417,
+    "start_time": "11:00",
+    "location": "Bērzu alejas skvērs, Ogre, Latvija",
+    "latitude": 56.8162631,
+    "longitude": 24.6073321,
     "county": "Ogres novads",
     "nearest_city": "Rīga",
     "nearby_cities": [],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\", \"5\", \"0.5\"]",
     "distance_m": [
       10000,
-      5000
+      5000,
+      500
     ],
     "distance_keywords": [
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km, 5 km, 0.5 km",
+    "organizer": "Ogres novada sporta centrs sadarbībā ar Ogres novada pašvaldību un biedrību “Sporta klubs SportLat”",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://ogressportacentrs.lv/events/izskrien-ogri-2026-1",
+    "fb_link": "https://www.facebook.com/OgresNSC/posts/izskrien-ogri-2026-jau-27septembr%C4%AB-aicin%C4%81m-lielus-un-mazus-skrie%C5%A1anas-entuziastu/1564716115666911/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "5 km un 10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 EUR",
+            "deadline": "20270914",
+            "description": "Līdz 14. septembrim dalības maksa 5 km un 10 km distancēm ir 10 eiro"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Bērnu skrējiens ~500 m",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3 EUR",
+            "deadline": "20270914",
+            "description": "Līdz 14. septembrim dalības maksa bērnu skrējienam – 3 eiro"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270926",
+    "registration_url": "https://www.sportlat.lv/sacensibas/1920/izskrien-ogri-2026-10km-un-5km-sosejas-skrejiens/registracija",
+    "race_info_url": "https://ogressportacentrs.lv/events/izskrien-ogri-2026-1",
+    "presumed_organizer_email": "dzirkstite.zindiga@ogresnovads.lv",
+    "website_emails_found": [
+      "kapsanassiena@ogresnovads.lv",
+      "arenaogre@ogresnovads.lv",
+      "dzirkstite.zindiga@ogresnovads.lv",
+      "ilva.ivaskina-novika@ogresnovads.lv",
+      "janis.abolins@ogresnovads.lv",
+      "kristine.platace@ogresnovads.lv",
+      "kristine.tobiase@ogresnovads.lv",
+      "diana.grinberga@ogresnovads.lv",
+      "madara.mikelsone-pobiarzena@ogresnovads.lv",
+      "linda.abelite@ogresnovads.lv",
+      "simona.laterere@ogresnovads.lv",
+      "marita.steinberga@ogresnovads.lv",
+      "sandra.lapina@ogresnovads.lv",
+      "laura.poga@ogresnovads.lv",
+      "agita.kalva@ogresnovads.lv",
+      "rolans.klavins@ogresnovads.lv",
+      "olita.rudzite@madlienas-vidusskola.lv",
+      "ainars.pukitis@gmail.com",
+      "edgars.silins@ogresnovads.lv",
+      "zigurds.kincis@ogresnovads.lv",
+      "arturs.prizevoits@ogresnovads.lv",
+      "kristine.ludborza@ogresnovads.lv",
+      "karims.ali@ogresnovads.lv",
+      "agnese.pastare@ogresnovads.lv",
+      "raivis.rubins@ogresnovads.lv",
+      "patriks.malvess@ogresnovads.lv",
+      "marcis.bormanis@ogresnovads.lv",
+      "deniss.ostrovskis@ogresnovads.lv",
+      "leo.ritvars.dalbins@ogresnovads.lv",
+      "janis.grants@ogresnovads.lv",
+      "linards.roberts.paviska@ogresnovads.lv",
+      "iveta.holcmane@ogresnovads.lv",
+      "nauris.neimanis@ogresnovads.lv",
+      "haralds.lukins@ogresnovads.lv",
+      "artis.dobulis@ogresnovads.lv",
+      "ruta.dabolina@ogresnovads.lv",
+      "tatjana.stepulane@ogresnovads.lv",
+      "nellija.zvigule@ogresnovads.lv",
+      "santa.stepulane@ogresnovads.lv",
+      "andris.sosnars@ogresnovads.lv",
+      "arina.roga@ogresnovads.lv",
+      "juris.apters@ogresnovads.lv",
+      "gints.veinbergs@ogresnovads.lv",
+      "vladimirs.kukjans@ogresnovads.lv",
+      "oveseliba@ogresnovads.lv"
+    ],
+    "description": "Izskrien Ogri ir ikgadējs skrējiens, kas notiek Ogrē, Bērzu alejas skvērā, pulcējot gan pieredzējušus skrējējus, gan ģimenes ar bērniem un aktīva dzīvesveida cienītājus. Dalībniekiem ir iespēja izvēlēties starp 5 km un 10 km distancēm, kā arī bērnu skrējienu aptuveni 500 metru garumā. Sacensības ir draudzīgas un piemērotas dažāda vecuma un sagatavotības dalībniekiem, nodrošinot sportisku atmosfēru un iespēju izbaudīt skriešanu pilsētas vidē. Pasākumu organizē Ogres novada sporta centrs sadarbībā ar Ogres novada pašvaldību un biedrību “Sporta klubs SportLat”.",
+    "course_highlights": [
+      "Starts un finišs Bērzu alejas skvērā",
+      "Distances 5 km un 10 km pa pilsētas ielām un parkiem",
+      "Īss bērnu skrējiens aptuveni 500 metru garumā"
+    ],
+    "additional": "Sacensību dienā reģistrācija bērnu skrējieniem pieejama no plkst. 9:00 līdz 10:30, bet 5 km un 10 km distancēm līdz plkst. 11:30.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.79,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/izskrien-ogri-2027"
+      "https://runbaltic.com/lv/races/izskrien-ogri-2027",
+      "https://www.sportlat.lv/sacensibas/1920/izskrien-ogri-2026-10km-un-5km-sosejas-skrejiens/nolikums"
     ],
     "consolidated_ids": [
       "9f2653da-ce1e-4fd9-9a44-67eb71cc2966"
@@ -4676,11 +6906,87 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "kazdangas_taku_maratons",
+    "name": "Kazdangas taku maratons",
+    "type": "trail",
+    "type_local": "Taka",
+    "race_dates": [
+      [
+        "20260927",
+        "20260927"
+      ],
+      [
+        "20270926",
+        "20270926"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Kazdanga, Aizpute Municipality, Latvija",
+    "latitude": 56.7298534,
+    "longitude": 21.7325041,
+    "county": "Dienvidkurzemes novads",
+    "nearest_city": "Liepāja",
+    "nearby_cities": [],
+    "distances": "[\"42.195\"]",
+    "distance_m": [
+      42195
+    ],
+    "distance_keywords": [
+      "Maratons"
+    ],
+    "distance_verbose": "Maratons",
+    "organizer": null,
+    "contact": null,
+    "website": "https://racetiming.lv/wp-content/uploads/2026/07/nol.maratons-2.docx",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://racetiming.lv/wp-content/uploads/2026/07/nol.maratons-2.docx",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.noskrien.lv/kalendars/kazdangas-taku-maratons-2026/"
+    ],
+    "consolidated_ids": [
+      "321bf244-3235-4893-8f25-3334cf4a4b50"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "dubultmaratons_taisnais_erglu_stacija",
     "name": "Dubultmaratons Taisnais Ērgļu stacijā",
-    "type": "other",
-    "type_local": "Cits",
+    "type": "trail",
+    "type_local": "Taka",
     "race_dates": [
+      [
+        "20261002",
+        "20261002"
+      ],
+      [
+        "20261003",
+        "20261003"
+      ],
       [
         "20271002",
         "20271002"
@@ -4689,25 +6995,105 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Ērgļu dzelzceļa stacija, Ērgļi, Latvija",
-    "latitude": 56.89580849999999,
-    "longitude": 25.6308931,
-    "county": "Madonas novads",
-    "nearest_city": "Jēkabpils",
-    "nearby_cities": [],
-    "distances": "[\"84\", \"42\", \"21\"]",
+    "start_time": "06:00",
+    "location": "Sauriešu dzelzceļa stacija, Saurieši, Ropaži Municipality, Latvija",
+    "latitude": 56.9166803,
+    "longitude": 24.3623232,
+    "county": "Ropažu novads",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"84.4\"]",
     "distance_m": [
-      84000,
-      42000,
-      21000
+      84400
     ],
     "distance_keywords": [
-      "50 miles",
-      "Maratons",
-      "Pusmaratons"
+      "50 miles"
     ],
-    "distance_verbose": "84 km, Maratons, Pusmaratons",
+    "distance_verbose": "84.4 km",
+    "organizer": "Biedrība „Taisnais”",
+    "contact": null,
+    "website": "http://www.taisnais.lv/taisnais-2026/",
+    "fb_link": "https://www.facebook.com/visitergli/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "http://www.taisnais.lv/registracija/",
+    "race_info_url": "http://www.taisnais.lv/nolikums/",
+    "presumed_organizer_email": "info@taisnais.lv",
+    "website_emails_found": [
+      "info@taisnais.lv"
+    ],
+    "description": "Dubultmaratons Taisnais ir izturības sacensības, kas ved pa bijušās dzelzceļa līnijas Saurieši - Ērgļi uzbērumu. Distances ir marķētas un labi redzamas, tās var veikt skrienot, nūjojot vai pastaigājoties, baudot skaistos Latvijas dabas skatus. Sacensības notiek trīs distancēs: dubultmaratons (84,4 km), maratons (42,195 km) un pusmaratons (21,0975 km), un tās organizē biedrība „Taisnais” sadarbībā ar Ogres un Madonas novadu pašvaldībām. Starts un finišs ir dzelzceļa stacijās, un sacensību mērķis ir popularizēt veselīgu dzīvesveidu un noteikt izturīgākos garo distanču skrējējus un nūjotājus Latvijā.",
+    "course_highlights": [
+      "Distance ved pa bijušās dzelzceļa līnijas Saurieši - Ērgļi uzbērumu",
+      "Līdzens smilšu ceļš bez kāpumiem, šķērsojot mežu biezokņus, klajumus un upju tiltus",
+      "Starts un finišs dzelzceļa stacijās ar labi marķētu un redzamu trasi"
+    ],
+    "additional": "Sacensībās atļauts piedalīties dalībniekiem no 18 gadu vecuma. Līdzjutēji var pavadīt dalībniekus kājām vai ar velosipēdu, netraucējot citiem, bet nedrīkst palīdzēt pārvietoties pa distanci. Finiša laiki atšķiras skrējējiem un nūjotājiem katrā distancē.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.75,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://tautassports.lv/pasakumi/dubultmaratons-taisnais-2026/",
+      "https://www.noskrien.lv/kalendars/dubultmaratons-taisnais-2026/"
+    ],
+    "consolidated_ids": [
+      "2fa2b69c-9121-444a-8bcb-46e80f24ddc9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "noker_veju",
+    "name": "Noķer vēju",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20261003",
+        "20261003"
+      ],
+      [
+        "20271002",
+        "20271002"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Doles sala, Salaspils Municipality, Latvija",
+    "latitude": 56.84999999999999,
+    "longitude": 24.25,
+    "county": "Salaspils novads",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[\"21\", \"10\", \"5\"]",
+    "distance_m": [
+      21000,
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "Pusmaratons",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Pusmaratons, 10 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -4730,14 +7116,159 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://www.sportlat.lv/files/1233/Nolikums_Noker_veju_2026.docx",
+      "https://runbaltic.com/lv/races/noker-veju-2026"
     ],
     "consolidated_ids": [
-      "2fa2b69c-9121-444a-8bcb-46e80f24ddc9"
+      "85d41ad2-7538-44b2-9e1a-a196c456ab5b"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261116",
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "lacplesu_kross_rigas_mezaparka",
+    "name": "Lāčplēšu kross Rīgas Mežaparkā",
+    "type": "terrain",
+    "type_local": "Kross",
+    "race_dates": [
+      [
+        "20261003",
+        "20261003"
+      ],
+      [
+        "20271002",
+        "20271002"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Mežaparks, Riga, Latvija",
+    "latitude": 57.0051339,
+    "longitude": 24.1569502,
+    "county": "Rīgas pilsēta",
+    "nearest_city": "Rīga",
+    "nearby_cities": [
+      "Rīga"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": "http://lacplesukross.lv",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "http://lacplesukross.lv/registracija/",
+    "race_info_url": "http://lacplesukross.lv/informacija-dalibniekiem/",
+    "presumed_organizer_email": "xevents@xevents.lv",
+    "website_emails_found": [
+      "xevents@xevents.lv",
+      "matiss@xevents.lv"
+    ],
+    "description": "Lāčplēšu kross ir patriotisks taku un šķēršļu skrējiens, kas norisinās Rīgas Mežaparkā. Sacensības piedāvā dažādas distances gan bērniem, gan pieaugušajiem, kurās jāveic marķēta trase ar dabīgiem un mākslīgiem šķēršļiem. Pasākums pulcē dažāda vecuma un sagatavotības dalībniekus, tostarp arī titulētus sportistus, un veicina patriotisma un vienotības sajūtu caur sportiskām aktivitātēm. Pēc finiša visi dalībnieki saņem piemiņas medaļas, un galvenajās distancēs tiek apbalvoti ātrākie skrējēji ar naudas balvām.",
+    "course_highlights": [
+      "Marķēta trase Mežaparka takās un pļavās",
+      "Dabiski šķēršļi - smilšu klajumi, saknes, meža reljefs",
+      "Mākslīgi šķēršļi dažādās distancēs"
+    ],
+    "additional": "Sacensību centrs atrodas Mežaparka Lielajā pļavā. Pasākuma laikā jaunākie dalībnieki var piedalīties rokdarbu darbnīcās, loka šaušanā un bruņinieku paraugdemonstrējumos. Ir arī interaktīvas spēles par atkritumu šķirošanu un zaļu dzīvesveidu. Pēc sacensībām notiek apbalvošana un loterija ar vērtīgām balvām. Dalībnieki var iegādāties ēdienus un dzērienus sacensību centrā.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ultrataka.lv/pasakumu-kalendars/"
+    ],
+    "consolidated_ids": [
+      "726b8c62-e72d-4a86-b02c-6b68076591f3"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "piebalgas_zelta_skrejiens_pargajiens",
+    "name": "Piebalgas ZELTA skrējiens/pārgājiens",
+    "type": "trail",
+    "type_local": "Taka",
+    "race_dates": [
+      [
+        "20261004",
+        "20261004"
+      ],
+      [
+        "20271003",
+        "20271003"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Vecpiebalgas pagasts, Cēsis Municipality, Latvija",
+    "latitude": 57.0824386,
+    "longitude": 25.7778641,
+    "county": "Cēsu novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [],
+    "distances": "[\"25\", \"12\", \"1.5\"]",
+    "distance_m": [
+      25000,
+      12000,
+      1500
+    ],
+    "distance_keywords": [
+      "1500 metri"
+    ],
+    "distance_verbose": "25 km, 12 km, 1500 metri",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://docs.google.com/document/d/1CsnSztSIs5nsbovgwgwFCEO55vPGGLtwy2G5H-DJ6Zs/edit?tab=t.0",
+      "https://www.noskrien.lv/kalendars/piebalgas-zelta-skrejienspargajiens-2026/"
+    ],
+    "consolidated_ids": [
+      "c95aeb41-615f-46f2-87af-6c51403f3fab"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -4749,6 +7280,10 @@
     "type": "trail",
     "type_local": "Taka",
     "race_dates": [
+      [
+        "20261010",
+        "20261010"
+      ],
       [
         "20271009",
         "20271009"
@@ -4973,7 +7508,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/liela-finala-stirnu-buks-2027"
+      "https://runbaltic.com/lv/races/liela-finala-stirnu-buks-2027",
+      "https://www.noskrien.lv/kalendars/priekulu-liela-finala-stirnu-buks-2026-6/"
     ],
     "consolidated_ids": [
       "f2c77672-c034-4ded-bd52-bc5abe6ce0f1"
@@ -5055,6 +7591,10 @@
     "type_local": "Kross",
     "race_dates": [
       [
+        "20261011",
+        "20261011"
+      ],
+      [
         "20271010",
         "20271010"
       ]
@@ -5071,6 +7611,78 @@
     "nearby_cities": [
       "Daugavpils"
     ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": "https://athletics.lv/lv/event/41653/latvijas-cempionats-krosa",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://athletics.lv/lv/event/41653/latvijas-cempionats-krosa",
+    "presumed_organizer_email": "lvs@athletics.lv",
+    "website_emails_found": [
+      "lvs@athletics.lv"
+    ],
+    "description": "Latvijas čempionāts krosa skrējienā ir prestižas sacensības, kurās piedalās dažādu vecuma grupu sportisti, sākot no jauniešiem līdz vecmeistariem. Sacensības notiek dažādās distancēs un ir nozīmīgs notikums Latvijas vieglatlētikas kalendārā. Pasākums pulcē gan profesionālus sportistus, gan amatierus, piedāvājot izaicinājumu un iespēju sacensties Latvijas čempiona tituliem. Tradicionāli sacensības norisinās oktobrī un tiek organizētas Latvijas Vieglatlētikas savienības vadībā.",
+    "course_highlights": [
+      "Sacensības notiek dažādās distancēs dažādām vecuma grupām",
+      "Norisinās krosa trasēs ar dažādu segumu un reljefu",
+      "Iespēja sacensties par Latvijas čempiona tituliem"
+    ],
+    "additional": "Sacensībās piedalās vecuma grupas U12, U14, U16, U18, U20, pieaugušie un vecmeistari. Pasākums tiek organizēts Latvijas Vieglatlētikas savienības vadībā. Iepriekšējās sacensības notikušas Carnikavā, bet 2027. gada sacensības plānotas Daugavpilī.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.12,
+    "sources": [
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/latvijas-cempionats-krosa-2026/"
+    ],
+    "consolidated_ids": [
+      "fa1e9cf9-7abd-4fdf-9e9a-e0bff4a0b844"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "sigulda_nurmizi_sigulda_21km",
+    "name": "Sigulda – Nurmiži – Sigulda (21km)",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20261025",
+        "20261025"
+      ],
+      [
+        "20271024",
+        "20271024"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Sigulda, Sigulda Municipality, Latvija",
+    "latitude": 57.15402899999999,
+    "longitude": 24.8543364,
+    "county": "Siguldas novads",
+    "nearest_city": "Rīga",
+    "nearby_cities": [],
     "distances": "[]",
     "distance_m": [],
     "distance_keywords": [],
@@ -5097,15 +7709,233 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/"
     ],
     "consolidated_ids": [
-      "fa1e9cf9-7abd-4fdf-9e9a-e0bff4a0b844"
+      "c4d760bf-652a-4ca0-92c3-91eae39633da"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261116",
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "fiz_kul_ture",
+    "name": "Fiz-Kul-Tūre",
+    "type": "trail",
+    "type_local": "Taka",
+    "race_dates": [
+      [
+        "20261104",
+        "20261104"
+      ],
+      [
+        "20271103",
+        "20271103"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Valmiera, Valmiera Municipality, Latvija",
+    "latitude": 57.53125290000001,
+    "longitude": 25.4083677,
+    "county": "Valmieras novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [
+      "Valmiera"
+    ],
+    "distances": "[\"6\", \"3\"]",
+    "distance_m": [
+      6000,
+      3000
+    ],
+    "distance_keywords": [
+      "5 km",
+      "3000 metri"
+    ],
+    "distance_verbose": "6 km, 3000 metri",
+    "organizer": null,
+    "contact": null,
+    "website": "https://sports.valmierasnovads.lv/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://sports.valmierasnovads.lv/norises-2/",
+    "presumed_organizer_email": "sports@valmierasnovads.lv",
+    "website_emails_found": [
+      "sports@valmierasnovads.lv",
+      "kristine.barona@valmierasnovads.lv",
+      "elina.karlivane@valmierasnovads.lv",
+      "ruta.lapina@valmierasnovads.lv",
+      "diana.krastina@valmierasnovads.lv",
+      "gundars.putnins@valmierasnovads.lv"
+    ],
+    "description": "Fiz-Kul-Tūre ir Valmieras novada skriešanas un nūjošanas seriāls, kas norisinās vairākos posmos dažādās vietās, tostarp Valmierā un Rencēnos. Rudens posmi piedāvā dalībniekiem iespēju izbaudīt skriešanu un nūjošanu dabiskā vidē, patīkamā rudens atmosfērā. Pasākums ir draudzīgs gan iesācējiem, gan pieredzējušiem sportistiem, un noslēgumā tiek apbalvoti labākie dalībnieki sezonas kopvērtējumā. Fiz-Kul-Tūre veicina aktīvu un veselīgu dzīvesveidu Valmieras novadā.",
+    "course_highlights": [
+      "Trases Valmieras novada dabiskā vidē",
+      "Skriešana un nūjošana dažādos posmos",
+      "Draudzīga atmosfēra un sezonas kopvērtējuma apbalvošana"
+    ],
+    "additional": "Fiz-Kul-Tūre sezonas noslēgums notiek vēlā rudens vakarā ar pozitīvām emocijām. Posmi notiek dažādās vietās Valmieras novadā, piemēram, Valmierā un Rencēnos. Dalībnieki var piedalīties gan skriešanā, gan nūjošanā.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://runbaltic.com/lv/races/fiz-kul-ture-2026"
+    ],
+    "consolidated_ids": [
+      "cb2404f7-f40b-4456-a3b6-9073a3ef869e"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "jana_dalina_pieminas_skrejiens_un_solojums",
+    "name": "Jāņa Daliņa piemiņas skrējiens un soļojums",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20261107",
+        "20261107"
+      ],
+      [
+        "20271106",
+        "20271106"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Valmiera, Latvija",
+    "latitude": 57.53125290000001,
+    "longitude": 25.4083677,
+    "county": "Valmieras novads",
+    "nearest_city": "Valmiera",
+    "nearby_cities": [
+      "Valmiera"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": "https://sports.valmierasnovads.lv/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://sports.valmierasnovads.lv/",
+    "presumed_organizer_email": "sports@valmierasnovads.lv",
+    "website_emails_found": [
+      "sports@valmierasnovads.lv",
+      "kristine.barona@valmierasnovads.lv",
+      "elina.karlivane@valmierasnovads.lv",
+      "ruta.lapina@valmierasnovads.lv",
+      "diana.krastina@valmierasnovads.lv",
+      "gundars.putnins@valmierasnovads.lv"
+    ],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://runbaltic.com/lv/races/jana-dalina-pieminas-skrejiens-un-solojums-2026"
+    ],
+    "consolidated_ids": [
+      "d35b2338-9050-4375-a5ea-d745e2ebbec9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "patriots_mangalos_lozmetejkalna",
+    "name": "Patriots Mangaļos Ložmetējkalnā",
+    "type": "trail",
+    "type_local": "Taka",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Valgunde",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://tautassports.lv/pasakumi/patriots-mangalos-2026/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/skrejiens-patriots-2026/",
+      "https://runbaltic.com/lv/races/patriots-trail-run-2026"
+    ],
+    "consolidated_ids": [
+      "b8e81948-a1a4-4385-8ef5-433ed3b83e77"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
