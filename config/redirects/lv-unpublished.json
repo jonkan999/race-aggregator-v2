@@ -1,0 +1,43 @@
+{
+  "id": "lv-unpublished",
+  "market": "lv",
+  "note": "Unpublished LV races kept in Supabase (published=false, never deleted). 308 the retired page to the calendar listing. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated).",
+  "redirects": [
+    {
+      "source": "/skrejiena_lapas/test_race",
+      "destination": "/skrejienu-kalendars/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/skrejiena_lapas/test_race/",
+      "destination": "/skrejienu-kalendars/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/skrejiena_lapas/test_race/:path*",
+      "destination": "/skrejienu-kalendars/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/en/race-pages/test_race",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/en/race-pages/test_race/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/en/race-pages/test_race/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "lv"
+    }
+  ]
+}

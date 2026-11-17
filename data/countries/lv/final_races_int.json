@@ -59,6 +59,7 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://runbaltic.com/lv/races/apkaimju-brivibas-skrejiens-2026",
+      "https://atgazene.lv/apkaimju-brivibas-skrejiens/",
       "https://tautassports.lv/pasakumi/apkaimju-brivibas-skrejiens-2026/"
     ],
     "consolidated_ids": [
@@ -126,7 +127,8 @@
     "max_description_relevance": 0.36,
     "sources": [
       "https://tautassports.lv/pasakumi/rembates-aplis-2026/",
-      "https://runbaltic.com/lv/races/rembates-aplis-2026"
+      "https://runbaltic.com/lv/races/rembates-aplis-2026",
+      "https://www.ogresnovads.lv/lv/notikums/rembates-aplim-40"
     ],
     "consolidated_ids": [
       "aee1530a-fcaa-4634-8109-afff40a2862a"
@@ -462,7 +464,9 @@
     "is_series": false,
     "max_description_relevance": 0.91,
     "sources": [
-      "https://runbaltic.com/lv/races/latvijas-konturas-skrejiens-2026"
+      "https://runbaltic.com/lv/races/latvijas-konturas-skrejiens-2026",
+      "https://tautassports.lv/pasakumi/latvijas-konturskrejiens-2026/",
+      "https://www.noskrien.lv/kalendars/latvijas-konturas-skrejiens-ar-pulsometrs-lv-2026/"
     ],
     "consolidated_ids": [
       "85f22bae-a9fc-4439-b95c-71744de2b005"
@@ -530,77 +534,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261117",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "test_race",
-    "name": "Test race",
-    "type": "other",
-    "type_local": "Cits",
-    "race_dates": [
-      [
-        "20261118",
-        "20261118"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Riga, Latvia",
-    "latitude": 56.9676941,
-    "longitude": 24.1056221,
-    "county": "Rīgas pilsēta",
-    "nearest_city": "Rīga",
-    "nearby_cities": [
-      "Rīga"
-    ],
-    "distances": "[\"42\", \"21\"]",
-    "distance_m": [
-      42000,
-      21000
-    ],
-    "distance_keywords": [
-      "Maratons",
-      "Pusmaratons"
-    ],
-    "distance_verbose": "Maratons, Pusmaratons",
-    "organizer": null,
-    "contact": null,
-    "website": "http://www.riga.lv/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "http://www.riga.lv/",
-    "presumed_organizer_email": "iksd@riga.lv",
-    "website_emails_found": [
-      "iksd@riga.lv",
-      "riga@riga.lv"
-    ],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://runbaltic.com/lv/races/test-race-2026"
-    ],
-    "consolidated_ids": [
-      "a207c3d2-2551-4a3d-aa05-a88eb0b11a6a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261116",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -682,10 +615,11 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://tautassports.lv/pasakumi/noskrien-ziemu-ropazi/",
+      "https://noskrienziemu.lv",
+      "https://www.noskrien.lv/kalendars/noskrien-ziemu-1-posms-ropazi/",
       "https://runbaltic.com/lv/races/noskrien-ziemu-stage-1-2026",
-      "https://www.noskrien.lv/kalendars/noskrien-ziemu-1-posms-ropazi/"
+      "https://ultrataka.lv/pasakumu-kalendars/"
     ],
     "consolidated_ids": [
       "3a381f38-0aed-4b8e-8420-8244dbe1225d"
@@ -755,8 +689,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://runbaltic.com/lv/races/skriesanas-serials-ugale-iii-posms-2026",
       "https://tautassports.lv/pasakumi/skriesanas-serials-ugale-2026-3-posms/",
-      "https://runbaltic.com/lv/races/skriesanas-serials-ugale-iii-posms-2026"
+      "https://athletics.lv/lv/event/42071/ventspils-novada-bjss-skriesanas-serials-ugale-2026-iii-posms"
     ],
     "consolidated_ids": [
       "78897dbf-f442-4e3e-af86-84dc06f3f67c"
@@ -982,6 +917,70 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "ventspils_ziemas_sacensibas_senioriem",
+    "name": "Ventspils ziemas sacensības senioriem",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260221",
+        "20260221"
+      ],
+      [
+        "20270220",
+        "20270220"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.lvva.lv"
+    ],
+    "consolidated_ids": [
+      "1aad70f0-4b3e-49d5-a16f-f13833e5b87d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -1219,7 +1218,8 @@
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/skrejiens-rozentalam-pa-pedam-2027",
       "https://www.sportlat.lv/files/1198/Rozentalam_pa_pedam_2026_NOLIKUMS_apstiprinats.docx",
-      "https://www.noskrien.lv/kalendars/apvidus-skrejiens-rozentalam-pa-pedam-2026/"
+      "https://www.noskrien.lv/kalendars/apvidus-skrejiens-rozentalam-pa-pedam-2026/",
+      "https://www.sportlat.lv"
     ],
     "consolidated_ids": [
       "7aebc821-524e-4840-8b3b-c267f5804b54"
@@ -2435,7 +2435,8 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/pilsettakas-stirnu-buks-2027",
-      "https://www.noskrien.lv/kalendars/tukuma-pilsettakas-stirnu-buks-2026-2/"
+      "https://www.noskrien.lv/kalendars/tukuma-pilsettakas-stirnu-buks-2026-2/",
+      "https://Stirnubuks.lv"
     ],
     "consolidated_ids": [
       "014c4492-3fec-4f45-8f4e-98dbf2081f94"
@@ -2518,7 +2519,8 @@
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/ropazu-novada-retro-skriesanas-svetki-2027",
       "https://tautassports.lv/pasakumi/ropazu-novada-retro-skriesanas-svetki-2026-2/",
-      "https://www.sportlat.lv/files/1213/Nolikums_skriesanassvetki_Kangari_2026.pdf.pdf"
+      "https://www.sportlat.lv/files/1213/Nolikums_skriesanassvetki_Kangari_2026.pdf.pdf",
+      "https://www.sportlat.lv"
     ],
     "consolidated_ids": [
       "441e63a7-d5a7-4c78-b9f4-365f9bb23588"
@@ -2622,7 +2624,8 @@
       "https://www.sportlat.lv/kalendars/viss",
       "https://tautassports.lv/pasakumi/skrejiensolojums-riga-valmiera-107-km-2027/",
       "https://runbaltic.com/lv/races/skrejiensolojums-riga-valmiera-2027",
-      "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2026/"
+      "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2026/",
+      "https://www.sportlat.lv"
     ],
     "consolidated_ids": [
       "9e9ced22-4a85-49d1-8058-16c004ae35da"
@@ -2852,7 +2855,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.noskrien.lv/kalendars/jurmalas-skriesanas-svetki-2026/"
+      "https://www.noskrien.lv/kalendars/jurmalas-skriesanas-svetki-2026/",
+      "https://baltijasmaratoni.lv/"
     ],
     "consolidated_ids": [
       "1db3ab2c-7196-4b32-af0a-7e59c2d24c02"
@@ -3013,6 +3017,70 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "lsvs_pasvaldibu_63_sporta_spelu_finalsacensibas_vieglatletikas_krosa",
+    "name": "LSVS Pašvaldību 63. sporta spēļu finālsacensības vieglatlētikas krosā",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260509",
+        "20260509"
+      ],
+      [
+        "20270508",
+        "20270508"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Jēkabpils",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.lvva.lv"
+    ],
+    "consolidated_ids": [
+      "a8081f15-5279-4060-86f0-449cbfa94faf"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "backyard_race",
     "name": "Backyard Race",
     "type": "backyard",
@@ -3148,6 +3216,70 @@
     ],
     "consolidated_ids": [
       "d679e03d-d669-46b3-952c-1998d3b5362b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "kross_balozu_bizons_1_posms",
+    "name": "Kross Baložu Bizons 1.posms",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260511",
+        "20260511"
+      ],
+      [
+        "20270510",
+        "20270510"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://sports.kekava.lv/balozubizons"
+    ],
+    "consolidated_ids": [
+      "a6c8c925-45eb-4dd8-8922-ada1057fc418"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -3542,6 +3674,134 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "kross_olaines_apli",
+    "name": "Kross Olaines apļi",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260523",
+        "20260523"
+      ],
+      [
+        "20270522",
+        "20270522"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://skriesim.lv/calendar/list?year=2026&country=latvia"
+    ],
+    "consolidated_ids": [
+      "29934496-e082-41f1-abba-6e5e6df333f6"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "skrejiens_apkart_busenieku_ezeram",
+    "name": "Skrējiens Apkārt Bušenieku ezeram",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20260523",
+        "20260523"
+      ],
+      [
+        "20270522",
+        "20270522"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://racetiming.lv/musu-sacensibas/2026-2/skrejiens-apkart-busnieku-ezeram-2026/"
+    ],
+    "consolidated_ids": [
+      "b51d982b-130b-4ea8-b8dd-3b3499f51853"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -6679,7 +6939,8 @@
     "max_description_relevance": 0.79,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
-      "https://runbaltic.com/lv/races/61-daugavpils-mezciems-2026"
+      "https://runbaltic.com/lv/races/61-daugavpils-mezciems-2026",
+      "https://Sportlat.lv"
     ],
     "consolidated_ids": [
       "ce751dd0-f6a9-4a96-a512-262fa6efd37b"
@@ -7261,7 +7522,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://docs.google.com/document/d/1CsnSztSIs5nsbovgwgwFCEO55vPGGLtwy2G5H-DJ6Zs/edit?tab=t.0",
-      "https://www.noskrien.lv/kalendars/piebalgas-zelta-skrejienspargajiens-2026/"
+      "https://www.noskrien.lv/kalendars/piebalgas-zelta-skrejienspargajiens-2026/",
+      "https://Sportlat.lv"
     ],
     "consolidated_ids": [
       "c95aeb41-615f-46f2-87af-6c51403f3fab"
@@ -7645,7 +7907,8 @@
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/latvijas-cempionats-krosa-2026/"
+      "https://www.noskrien.lv/kalendars/latvijas-cempionats-krosa-2026/",
+      "https://athletics.lv/lv/event/41653/latvijas-cempionats-krosa"
     ],
     "consolidated_ids": [
       "fa1e9cf9-7abd-4fdf-9e9a-e0bff4a0b844"
@@ -7713,6 +7976,70 @@
     ],
     "consolidated_ids": [
       "c4d760bf-652a-4ca0-92c3-91eae39633da"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "ventspils_novada_skriesanas_serials_ugale_i_posms",
+    "name": "Ventspils novada Skriešanas seriāls \"Ugāle\" I posms",
+    "type": "other",
+    "type_local": "Cits",
+    "race_dates": [
+      [
+        "20261101",
+        "20261101"
+      ],
+      [
+        "20271031",
+        "20271031"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Ugāles manēža",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Jaukta distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://athletics.lv/lv/event/42069/ventspils-novada-skriesanas-serials-ugale-2026-i-posms"
+    ],
+    "consolidated_ids": [
+      "9a6356d4-67d0-45f1-a7e1-5af2644db593"
     ],
     "supplied_ids": [],
     "supplied_at": null,
