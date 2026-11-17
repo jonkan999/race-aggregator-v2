@@ -1,67 +1,5 @@
 [
   {
-    "domain_name": "coop_tartu_jooksuohtud_2026_vi_etapp",
-    "name": "Coop Tartu jooksuõhtud 2026 VI etapp",
-    "type": "other",
-    "type_local": "Muu",
-    "race_dates": [
-      [
-        "20261116",
-        "20261116"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Tähtvere Dendropark, Tartu, Estonia",
-    "latitude": 58.39238700000001,
-    "longitude": 26.7032652,
-    "county": "Tartu maakond",
-    "nearest_city": "Tartu",
-    "nearby_cities": [
-      "Tartu"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.sportos.eu/ee/et/coop-tartu-jooksuohtud-2026-vi-etapp/"
-    ],
-    "consolidated_ids": [
-      "2b58c04c-7de1-44ce-9079-11e44a5a2414"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "prangli_seiklusjooks",
     "name": "Prangli seiklusjooks",
     "type": "other",
@@ -269,8 +207,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Vändra, Pärnu County, Estonia",
+    "start_time": "11:00",
+    "location": "Vändra Stadium, Vändra, Pärnu County, Estonia",
     "latitude": 58.65268749999999,
     "longitude": 25.0320869,
     "county": "Pärnu maakond",
@@ -279,38 +217,104 @@
       "Pärnu",
       "Viljandi"
     ],
-    "distances": "[\"42\", \"21\", \"14.06\"]",
+    "distances": "[\"42.2\", \"21.1\", \"14\", \"7\"]",
     "distance_m": [
-      42000,
-      21000,
-      14060
+      42200,
+      21100,
+      14000,
+      7000
     ],
     "distance_keywords": [
       "Maraton",
       "Poolmaraton"
     ],
-    "distance_verbose": "Maraton, Poolmaraton, 14.06 km",
-    "organizer": null,
+    "distance_verbose": "Maraton, Poolmaraton, 14 km, 7 km",
+    "organizer": "Terviseklubi MISPO",
     "contact": null,
-    "website": null,
+    "website": "http://www.mispo.ee/Mispo-Maraton",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "price_range": "7 km: 12–20 €; 14 km: 15–25 €; poolmaraton: 20–30 €; maraton: 25–35 €",
+    "price_tiers": [
+      {
+        "distance": "Maraton 42 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "35 €",
+            "deadline": "20261204",
+            "description": "alates 1.10.2026 35 €"
+          }
+        ],
+        "late_fee": {
+          "price": "40 €",
+          "deadline": "20261205"
+        }
+      },
+      {
+        "distance": "Poolmaraton 21 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "30 €",
+            "deadline": "20261204",
+            "description": "alates 1.10.2026 30 €"
+          }
+        ],
+        "late_fee": {
+          "price": "35 €",
+          "deadline": "20261205"
+        }
+      },
+      {
+        "distance": "Jooks/tervisekõnd 14 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "25 €",
+            "deadline": "20261204",
+            "description": "alates 1.10.2026 25 €"
+          }
+        ],
+        "late_fee": {
+          "price": "30 €",
+          "deadline": "20261205"
+        }
+      },
+      {
+        "distance": "Jooks/tervisekõnd 7 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "20 €",
+            "deadline": "20261204",
+            "description": "alates 1.10.2026 20 €"
+          }
+        ],
+        "late_fee": {
+          "price": "25 €",
+          "deadline": "20261205"
+        }
+      }
+    ],
+    "registration_close_date": "20261205",
+    "registration_url": "http://www.mispo.ee/Registreerimine",
+    "race_info_url": "http://www.mispo.ee/Mispo-Maraton",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Mispo Talvemaraton on traditsiooniline talvine jooksuvõistlus, mis toimub Vändra staadionil. Võistlusel on neli distantsi: maraton (42,195 km), poolmaraton (21,097 km), ning kaks tervisekõnni/jooksu distantsi (14 km ja 7 km). Start antakse kell 11.00 ning finišis ootavad kõiki osalejaid joogid, toit, saun, diplom ja medal. Võistlus on mõeldud nii kogenud jooksjatele kui ka harrastajatele, pakkudes talvist väljakutset ja sõbralikku atmosfääri.",
+    "course_highlights": [
+      "Talvine maastikuvõistlus Vändra staadionilt",
+      "Neli distantsi: maraton, poolmaraton, 14 km ja 7 km jooks/kõnd",
+      "Finišis ootavad saun, toit, jook, diplom ja medal"
+    ],
+    "additional": "Sekretariaat avatakse kell 9.00 stardi päeval. Stardi päeval on osalustasu 5 € kallim. Osalejatele on finišis saun, toit, jook, diplom ja medal. Osalustasu saab kanda pangas Terviseklubi MISPO kontole. Võistluspäeval registreerudes lisandub osalustasule 5 €. Kõigile lõpetajatele on ette nähtud söök, jook, saun, diplom ja medal.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/mispo-talvemaraton-2026-42-km"
     ],
@@ -328,8 +332,8 @@
   {
     "domain_name": "omega_kiirus",
     "name": "Omega kiirus",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "track",
+    "type_local": "Rajajooks",
     "race_dates": [
       [
         "20261206",
@@ -340,7 +344,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Lasnamäe Kergejõustikuhall, Lasnamäe, Tallinn, Estonia",
+    "location": "Lasnamäe Kergejõustikuhall, Tallinn, Estonia",
     "latitude": 59.4361405,
     "longitude": 24.8390584,
     "county": "Harju maakond",
@@ -358,27 +362,31 @@
       "3000 meetrit"
     ],
     "distance_verbose": "3000 meetrit, 0.8 km, 0.2 km",
-    "organizer": null,
+    "organizer": "Eesti Kergejõustikuveteranide Assotsiatsioon",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://omegakiirus.ee/",
+    "fb_link": "https://www.facebook.com/p/Omega-kiirus-100087858475761/?locale=et_EE",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
+    "registration_close_date": "20261201",
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://omegakiirus.ee/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "Omega kiirus on siseruumides toimuv sprint- ja keskmise distantsi võistlus, mis ühendab erinevas vanuses osalejad põnevas põlvkondade vastasseisus. Võistlus toimub Lasnamäe Kergejõustikuhallis Tallinnas ning pakub dünaamilist ja kaasahaaravat kogemust kõigile vanusegruppidele. Registreerimine on avatud kuni 1. detsembrini 2026.",
+    "course_highlights": [
+      "Siseruumides toimuv sprint- ja keskmise distantsi võistlus",
+      "Vanusepõhine põlvkondade vastasseis",
+      "Toimumiskoht Lasnamäe Kergejõustikuhall Tallinnas"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.sportos.eu/ee/et/omega-kiirus/",
       "https://marathon100.com/kalender/eesti/yritus/omega-kiirus-2026-3000-m"
@@ -779,19 +787,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "price_range",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "distances",
+      "organizer",
       "longitude",
       "website",
+      "price_range",
       "type",
-      "description",
-      "organizer",
+      "location",
+      "race_dates",
       "latitude",
-      "contact",
-      "distances"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -814,8 +822,8 @@
   {
     "domain_name": "kondimootor_30_50_70_lahemaa_lumine",
     "name": "Kondimootor 30/50/70: Lahemaa Lumine",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "trail",
+    "type_local": "Trailijooks",
     "race_dates": [
       [
         "20270130",
@@ -834,31 +842,49 @@
     "nearby_cities": [
       "Rakvere"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
+    "distances": "[\"70\", \"50\", \"30\"]",
+    "distance_m": [
+      70000,
+      50000,
+      30000
+    ],
+    "distance_keywords": [
+      "50 km"
+    ],
+    "distance_verbose": "70 km, 50 km, 30 km",
+    "organizer": "Kondimootor",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://liigume.ee/events/kondimootor-305070-lahemaa-lumine/",
+    "fb_link": "https://www.facebook.com/events/1116318380953358",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://liigume.ee/en/events/kondimootor-305070-lahemaa-lumine/",
+    "presumed_organizer_email": "info@liigume.ee",
+    "website_emails_found": [
+      "info@liigume.ee",
+      "tafisa-member@2x.png",
+      "maiu@liigume.ee",
+      "renna@liigume.ee",
+      "kertu@liigume.ee",
+      "kaili@liigume.ee",
+      "liina@liigume.ee"
+    ],
+    "description": "Kondimootor 30/50/70: Lahemaa Lumine on kestvusmatkade ja ultramaratonide sari, mis toimub Eestimaa kaunis looduses Lahemaa Rahvuspargis. See pakub võimalust läbida erinevaid matkaradu, nautida orienteerumist ja jalatööd ning kogeda eneseületust. Matkad sobivad kõigile, kes soovivad vabas õhkkonnas liikuda, kohtuda uute inimestega ja nautida väikest võistlusmoment. Tule pane ennast proovile ja naudi liikumist Eesti looduses!",
+    "course_highlights": [
+      "Suur kilometraaž ja kestvusmatkad",
+      "Orienteerumine ja jalatöö Lahemaa Rahvuspargi radadel",
+      "Vabas õhkkonnas liikumine ja sotsiaalne kogemus"
+    ],
+    "additional": "Spordialad: jooksmine, käimine, kepikõnd, matkamine, seiklemine. Üritus on osa Kondimootori sarjast, mis rõhutab eneseületust ja liikumise positiivset mõju vaimsele tervisele. Algus on kell 08.00. Rajal on joogi- ja snäkipunktid ning suurem toidupunkt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://www.sportos.eu/ee/et/kondimootor-305070-lahemaa-lumine/"
     ],
@@ -1287,8 +1313,8 @@
   {
     "domain_name": "lhv_maijooks_7_km",
     "name": "LHV Maijooks - 7 km",
-    "type": "road",
-    "type_local": "Tänavajooks",
+    "type": "other",
+    "type_local": "Muu",
     "race_dates": [
       [
         "20270515",
@@ -1302,7 +1328,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "13:00",
     "location": "Tallinna Lauluväljak, Tallinn, Estonia",
     "latitude": 59.44416099999999,
     "longitude": 24.8071063,
@@ -1319,25 +1345,80 @@
     "distance_verbose": "7 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.jooks.ee/et/maijooks",
+    "fb_link": "https://www.facebook.com/lhvmaijooks/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "20–35 €",
+    "price_tiers": [
+      {
+        "distance": "7 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "25 €",
+            "deadline": "20261231",
+            "description": "7 km ajavõtuga jooks/käimine 25 €"
+          },
+          {
+            "label": "tier_2",
+            "price": "30 €",
+            "deadline": "20270430",
+            "description": "7 km ajavõtuga jooks/käimine 30 €"
+          },
+          {
+            "label": "tier_3",
+            "price": "35 €",
+            "deadline": "20270515",
+            "description": "7 km ajavõtuga jooks/käimine 35 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "7 km ajavõtuta",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "20 €",
+            "deadline": "20261231",
+            "description": "7 km ajavõtuta jooks/käimine 20 €"
+          },
+          {
+            "label": "tier_2",
+            "price": "25 €",
+            "deadline": "20270430",
+            "description": "7 km ajavõtuta jooks/käimine 25 €"
+          },
+          {
+            "label": "tier_3",
+            "price": "30 €",
+            "deadline": "20270515",
+            "description": "7 km ajavõtuta jooks/käimine 30 €"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270515",
+    "registration_url": "https://www.jooks.ee/et/maijooks/lhv-maijooks-distantsid-7km",
+    "race_info_url": "https://www.jooks.ee/et/maijooks/informatsioon",
+    "presumed_organizer_email": "jooks@jooks.ee",
+    "website_emails_found": [
+      "jooks@jooks.ee"
+    ],
+    "description": "LHV Maijooks on Eesti ja Baltimaade suurim naiste liikumis- ja spordisündmus, mis toimub juba 40. korda. See on pühendatud ainult naistele ning pakub võimalust joosta, kõndida või teha kepikõndi kaunil 7 km pikkusel rajal läbi Tallinna looduse ja ikoonilise Lauluväljaku. Sündmus on mõeldud kogu perele, pakkudes lisaks naiste jooksule ka lastejooksu ja meelelahutust. Osalejatele on tagatud eksklusiivne medal, kingikott ning kevadkontsert, mis loob unikaalse atmosfääri.",
+    "course_highlights": [
+      "7 km pikkune rada läbi Tallinna looduse",
+      "Start ja finish Tallinna Lauluväljakul",
+      "Rajale sobib jooksmine, kõndimine ja kepikõnd"
+    ],
+    "additional": "Seenioridele (60+) ja noortele (alla 20 a) kehtib 7 km distantsil 20% soodustus. Grupisoodustus 10% kehtib vähemalt 10-liikmelistele tiimidele. Osalejatele on tagatud eksklusiivne medal, kingikott, sooduskoodid partneritelt ning kevadkontsert ja tervisemess Tallinna Lauluväljakul. Saadaval on nii ajavõtuga kui ajavõtuta osalemine. 60-aastastele ja vanematele ning alla 20-aastastele kehtib 20% soodustus; vähemalt 10-liikmelistele gruppidele 10% soodustus.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.97,
     "sources": [
       "https://www.sportos.eu/ee/et/lhv-maijooks-poolmaraton-211-km-2027/",
       "https://www.sportos.eu/ee/et/lhv-maijooks-3x7-km-teatejooks/",
@@ -1439,7 +1520,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "10:00",
     "location": "Tartu linn, Tartu County, Estonia",
     "latitude": 58.3853276,
     "longitude": 26.6179497,
@@ -1452,27 +1533,35 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Segadistants",
-    "organizer": null,
+    "organizer": "Elamus Pluss",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.elamuspluss.ee/reisikalender/seiklus-tartu",
+    "fb_link": "https://www.facebook.com/events/tartu/seiklus-x-tartu/4388334174810486/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.elamuspluss.ee/reisikalender/seiklus-tartu",
+    "presumed_organizer_email": "kaarel@elamuspluss.ee",
+    "website_emails_found": [
+      "kaarel@elamuspluss.ee",
+      "kuslaphannes@gmail.com",
+      "info@elamuspluss.ee"
+    ],
+    "description": "Seiklus x Tartu on seiklusvõistluste sarja viies etapp, mis toimub Tartu linnas. Tegemist on ühepäevase seiklusvõistlusega, kus kolmeliikmelised tiimid orienteeruvad maastikul, liikudes jalgsi, kanuuga ja rattaga. Võistlus sobib nii tõsiseks võistluseks kui ka aktiivseks ajaveetmiseks sõpradega kaunis Eestimaa looduses. Rajal on erineva raskusastmega distantsid, sealhulgas jõukohane lühirada kõigile.",
+    "course_highlights": [
+      "Rajale tuleb liikuda jalgsi, kanuuga ja rattaga",
+      "Lühirada on tehniliselt lihtne ja jõukohane igaühele",
+      "Rajal on mitu teeninduspunkti snäkkide ja joogiga"
+    ],
+    "additional": "Võistluskeskus avatakse kell 9.00, kus toimub registreerimine ja võistlusmaterjalide jagamine. Rajal on snäki- ja joogipunktid ning finišis pakutakse sooja toitu ja teed. Korraldatud transporti ega ametlikku ööbimist ei ole, soovitatakse kasutada isiklikku transporti ja majutust leida ise. Rada on ringikujuline, start ja finiš samas kohas. Võistelda saab kolmeliikmelistes mees-, nais- ja segatiimides ning osaleda on võimalik ka individuaalselt. Lühirada on tehniliselt lihtne. Võistluskeskus avatakse kell 9.00 ja start antakse kell 10.00; finišis pakutakse sooja toitu ja teed.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.sportos.eu/ee/et/seiklus-x-tartu/"
     ],
@@ -2829,13 +2918,13 @@
     "organizer": null,
     "contact": null,
     "website": "https://www.facebook.com/events/kose-lauluv%C3%A4ljak/heategevuslik-jooksusari-m%C3%A4rgatud-laps-jooksmas/1587876689304795/",
-    "fb_link": null,
+    "fb_link": "https://www.facebook.com/events/kose-lauluv%C3%A4ljak/heategevuslik-jooksusari-m%C3%A4rgatud-laps-jooksmas/1587876689304795/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.facebook.com/events/kose-lauluv%C3%A4ljak/heategevuslik-jooksusari-m%C3%A4rgatud-laps-jooksmas/1587876689304795/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
     "description": null,
@@ -2846,7 +2935,7 @@
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.08,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/margatud-laps-jooksmas-2026-1-5-km"
     ],
@@ -3259,11 +3348,18 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "https://www.psl.ee/sundmus/parnu-aasta-jooksud-4-etapp/",
+    "presumed_organizer_email": "info@psl.ee",
+    "website_emails_found": [
+      "info@2silda.ee",
+      "info@psl.ee"
+    ],
+    "description": "Pärnu Aasta jooksud 4 etapp on osa Pärnumaa rahvaspordisarjast, mis kutsub kõiki jooksuhuvilisi osalema mitmekülgsetel jooksuvõistlustel. Võistlus toimub Pärnu rannas, pakkudes osalejatele meeldivat ja sportlikku keskkonda. Üritus on hea võimalus nii harrastajatele kui ka kogenud jooksjatele nautida liikumist ja võistlusmomenti maakonna spordiliidu korraldusel.",
+    "course_highlights": [
+      "Jooksud toimuvad Pärnu rannas",
+      "Rahvaspordisari ühendab erinevad liikumisüritused Pärnumaal",
+      "Sobib nii harrastajatele kui ka kogenud jooksjatele"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
@@ -3482,9 +3578,11 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
+    "race_info_url": "http://www.jarvasport.ee?id=10",
+    "presumed_organizer_email": "piret.maaring@jarvasport.ee",
+    "website_emails_found": [
+      "piret.maaring@jarvasport.ee"
+    ],
     "description": null,
     "course_highlights": [],
     "additional": null,
@@ -4645,16 +4743,16 @@
       "Maraton"
     ],
     "distance_verbose": "Maraton",
-    "organizer": null,
+    "organizer": "Janne Harakka",
     "contact": null,
-    "website": "https://facebook.com/events/s/maraton-igas-linnas-paide/1776528516645878/",
-    "fb_link": null,
+    "website": "https://www.facebook.com/events/kaevu-paide-72713-j%C3%A4rva-maakond-eesti/maraton-igas-linnas-paide/1776528516645878/",
+    "fb_link": "https://www.facebook.com/events/kaevu-paide-72713-j%C3%A4rva-maakond-eesti/maraton-igas-linnas-paide/1776528516645878/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.facebook.com/events/1776528516645878/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
     "description": null,
@@ -4665,7 +4763,7 @@
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.32,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/maraton-igas-linnas-paide-2026-42-km"
     ],
@@ -4860,27 +4958,30 @@
       "5 km"
     ],
     "distance_verbose": "9 km, 4.5 km, 2 km",
-    "organizer": null,
+    "organizer": "Kõrgessaare Vaba Aja Keskus TERKA ja Hiiumaa Spordiliit",
     "contact": null,
-    "website": "https://kttiming.ee/",
-    "fb_link": null,
+    "website": "https://kttiming.ee/2026-korgessaare-jaanijooks/",
+    "fb_link": "https://www.facebook.com/events/t%C3%B6%C3%B6stuse-tee-25-92201/k%C3%B5rgessaare-jaanijooks-2026/964706312613140/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
+    "registration_url": "https://kttiming.ee/registreerimine/",
+    "race_info_url": "https://kttiming.ee/2026-korgessaare-jaanijooks/#content",
+    "presumed_organizer_email": "info@kttiming.ee",
+    "website_emails_found": [
+      "info@kttiming.ee",
+      "kaja.remmelgas@gmail.com"
+    ],
+    "description": "Kõrgessaare jaanijooks on Hiiumaal Kõrgessaares toimuv jaaniaegne jooksuvõistlus. Jooks pakub võimalust veeta suve alguse püha sportlikult ning osaleda kohaliku kogukonna spordisündmusel.",
     "course_highlights": [],
-    "additional": null,
+    "additional": "Jooks on kuulunud Hiiumaa Liigub sarja.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.7,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/korgessaare-jaanijooks-2026-9-km"
     ],
@@ -5492,31 +5593,46 @@
     "nearby_cities": [
       "Tallinna"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
+    "distances": "[\"10\", \"4\", \"1\", \"0.2\"]",
+    "distance_m": [
+      10000,
+      4000,
+      1000,
+      200
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 4 km, 1 km, 0.2 km",
+    "organizer": "MTÜ Rakvere Maraton",
     "contact": null,
-    "website": null,
+    "website": "https://eestimaraton.ee/et/sundmused?competition_id=65",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://eestimaraton.ee/et/sundmused?competition_id=65&action=registered",
+    "race_info_url": "https://eestimaraton.ee/et/sundmused?competition_id=65",
+    "presumed_organizer_email": "info@eestimaraton.ee",
+    "website_emails_found": [
+      "info@eestimaraton.ee",
+      "info@ulemiste.ee"
+    ],
+    "description": "KFC Südasuve Challenge - Pirita 2027 on mitmekülgne jooksuvõistlus, mis toimub Pirita kaunis looduses. Võistlus pakub erinevaid distantsivalikuid, sobides nii algajatele kui ka kogenud jooksjatele. Rajad kulgevad maalilisel Pirita piirkonnal, pakkudes osalejatele meeldivat jooksuelamust ja suvist sportlikku väljakutset. Üritus on avatud kõigile ja loob hea võimaluse nautida aktiivset vaba aega koos pere ja sõpradega.",
+    "course_highlights": [
+      "Maaliline Pirita piirkond",
+      "Mitmekesised distantsid erineva tasemega jooksjatele",
+      "Suviselt meeldiv jooksukeskkond"
+    ],
+    "additional": "Registreerunute nimekiri uuendatakse kord tunnis. Võistlusel on laste- ja perejooksud ning erinevad distantsid kuni 10 km. Ürituse korraldab MTÜ Rakvere Maraton.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.82,
     "sources": [
       "https://www.sportos.eu/ee/et/sudasuve-challenge-tallinn/"
     ],
@@ -7219,9 +7335,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Tallinn, Estonia",
-    "latitude": 59.43696079999999,
-    "longitude": 24.7535746,
+    "location": "Õismäe tiik, Tallinn, Estonia",
+    "latitude": 59.41542750000001,
+    "longitude": 24.6465652,
     "county": "Harju maakond",
     "nearest_city": "Tallinna",
     "nearby_cities": [
@@ -7239,27 +7355,29 @@
       "5 km"
     ],
     "distance_verbose": "Maraton, Poolmaraton, 4 km",
-    "organizer": null,
+    "organizer": "Marathon100",
     "contact": null,
     "website": "https://www.facebook.com/events/õismäe-tiik/sõõrikujooks/1282078939529711/?locale=et_EE",
-    "fb_link": null,
+    "fb_link": "https://www.facebook.com/events/%C3%B5ism%C3%A4e-tiik/2-s%C3%B5%C3%B5rikujooks/641425501663312/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.facebook.com/events/1282078939529711/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "Sõõrikujooks on Tallinnas Õismäe tiigi juures toimuv jooksusündmus, mille korraldab Marathon100. Oodatud on jooksusõbrad nautima mõnusat liikumist ja ühist jooksupäeva.",
+    "course_highlights": [
+      "Stardi- ja sündmuspaik asub Õismäe tiigi juures."
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.39,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/soorikujooks-2026-42-km"
     ],
@@ -9117,8 +9235,8 @@
   {
     "domain_name": "liikumissari_8_jarvamaa_jarvede_jooksud_vii_etapp_karu_jarve_jooks",
     "name": "Liikumissari 8.Järvamaa Järvede jooksud VII etapp /Käru järve jooks",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "terrain",
+    "type_local": "Maastikujooks",
     "race_dates": [
       [
         "20260820",
@@ -9132,38 +9250,51 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Käru, Türi Parish, Järva County, Estonia",
-    "latitude": 58.83041730000001,
-    "longitude": 25.1385137,
-    "county": "Rapla maakond",
-    "nearest_city": "Viljandi",
-    "nearby_cities": [],
+    "start_time": "14:00",
+    "location": "Käru järv, Käru, Estonia",
+    "latitude": 58.15014859999999,
+    "longitude": 26.6678172,
+    "county": "Põlva maakond",
+    "nearest_city": "Tartu",
+    "nearby_cities": [
+      "Tartu",
+      "Võru"
+    ],
     "distances": "[]",
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Segadistants",
-    "organizer": null,
+    "organizer": "Käru Kultuurimaja ja Järvamaa Spordiliit",
     "contact": null,
-    "website": "https://sportkoigile.ee/et/sundmused?calendar=1&m=8&y=2026",
+    "website": "https://www.paidesport.ee/index.php?mid=0&id=588",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.paidesport.ee/index.php?mid=11",
+    "race_info_url": "https://www.paidesport.ee/index.php?mid=0&id=588",
+    "presumed_organizer_email": "info@paidesport.ee",
+    "website_emails_found": [
+      "info@paidesport.ee",
+      "margit@paidesport.ee",
+      "rein@paidesport.ee",
+      "marge@paidesport.ee",
+      "spordihall@paidesport.ee"
+    ],
+    "description": "Liikumissari 8. Järvamaa Järvede jooksud VII etapp ehk Käru järve jooks on osa Järvamaa jooksusarjast, mis ühendab tervislikke eluviise väärtustavaid jooksuhuvilisi. Võistlus toimub Käru järve ääres ning on individuaalne jooksusarja etapp, kus arvestatakse erinevaid vanuseklasse. Sarja eesmärk on julgustada liikumisharrastust ja pakkuda võimalust osaleda mitmetel jooksudel üle Järvamaa. Iga etapi parimatele jooksjatele on välja pandud auhinnad ning hooaja kokkuvõttes tunnustatakse vanuseklasside esikolmikuid ja aktiivsemaid peresid.",
+    "course_highlights": [
+      "Jooks toimub Käru järve ümbruses",
+      "Sarjas on erinevad vanuseklassid alates mudilastest kuni vanemaealisteni",
+      "Tulemused avaldatakse Järvamaa Spordiliidu veebilehel"
+    ],
+    "additional": "Jooksusarjas arvestatakse punktitabeli alusel, kus paremusjärjestus selgitatakse punktide põhjal. Sarja tulemuste arvestamisel lähevad arvesse 9 parema jooksu punktid. Hooaja kokkuvõttes loositakse auhindu kõikides jooksudes osalenute vahel.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.53,
     "sources": [
       "https://www.sportos.eu/ee/et/liikumissari-8-jarvamaa-jarvede-jooksud-vii-etapp-karu-jarve-jooks/"
     ],
@@ -9521,6 +9652,85 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "sony_center_maardu_city_run_2026",
+    "name": "Sony Center Maardu City Run 2026",
+    "type": "road",
+    "type_local": "Tänavajooks",
+    "race_dates": [
+      [
+        "20260830",
+        "20260830"
+      ],
+      [
+        "20270829",
+        "20270829"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Maardu Vaba Aja Keskus, Maardu, Estonia",
+    "latitude": 59.4771113,
+    "longitude": 25.0186855,
+    "county": "Harju maakond",
+    "nearest_city": "Tallinna",
+    "nearby_cities": [
+      "Tallinna"
+    ],
+    "distances": "[\"10\", \"5\", \"2.5\"]",
+    "distance_m": [
+      10000,
+      5000,
+      2500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 2.5 km",
+    "organizer": "Eesti Ööjooks - Night Run Estonia",
+    "contact": null,
+    "website": "https://www.facebook.com/events/maardu-linn/sony-center-maardu-city-run-2026/2985665501615722/",
+    "fb_link": "https://www.facebook.com/events/maardu-linn/sony-center-maardu-city-run-2026/2985665501615722/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.facebook.com/events/2985665501615722/",
+    "presumed_organizer_email": "info@stebby.eu",
+    "website_emails_found": [
+      "info@stebby.eu"
+    ],
+    "description": "Sony Center Maardu City Run 2026 on sportlik üritus Maardus, mis toob kokku jooksuhuvilised erinevatest vanuse- ja tasemekategooriatest. Võistlus toimub Maardu Vaba Aja Keskuse ümbruses ning pakub võimalust nautida linnamaastikke ja aktiivset liikumist sõprade ja perega. Üritust korraldab Eesti Ööjooks - Night Run Estonia koostöös teiste partneritega, pakkudes meeldivat ja motiveerivat jooksukogemust.",
+    "course_highlights": [
+      "Jooks Maardu Vaba Aja Keskuse ümbruses",
+      "Linnamaastikud ja kergliiklusteed",
+      "Mitmekesine rada sobib erinevatele tasemetele"
+    ],
+    "additional": "Registreerimisvaates nimetatakse Maardu Vaba Aja Keskust võistluspaigana.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.72,
+    "sources": [
+      "https://www.sportos.eu/ee/et/maardu-city-run/"
+    ],
+    "consolidated_ids": [
+      "0b930445-d8db-4a8e-9602-26483802f691"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260529",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "9_kristiine_rahvajooks",
     "name": "9. Kristiine Rahvajooks",
     "type": "other",
@@ -9742,7 +9952,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "17:45",
     "location": "Toila SPA Hotell, Toila, Estonia",
     "latitude": 59.4250193,
     "longitude": 27.5141769,
@@ -9752,31 +9962,55 @@
       "Kohtla-Järve",
       "Narva"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
+    "distances": "[\"7\", \"4\", \"2\", \"0.3\"]",
+    "distance_m": [
+      7000,
+      4000,
+      2000,
+      300
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "7 km, 4 km, 2 km, 0.3 km",
+    "organizer": "Ida-Virumaa Spordiliit",
     "contact": null,
-    "website": "https://sportiv.ee",
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://sportiv.ee/jooksusari2026",
+    "fb_link": "https://www.facebook.com/idavirujooksusari",
+    "ig_link": "https://www.instagram.com/idavirujooksusari",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://sportiv.ee/jooksusari2026/",
+    "presumed_organizer_email": "info@sportiv.ee",
+    "website_emails_found": [
+      "info@sportiv.ee",
+      "helen.piirsalu@sportiv.ee",
+      "hiie@sportiv.ee",
+      "avo.sambla@gmail.com",
+      "dmitri.lett@gmail.com",
+      "helen@joud.ee",
+      "henrikaseloo@gmail.com",
+      "imre.liiv@narva-joesuu.ee",
+      "olga.bortsova@narva.ee",
+      "susanna.apri@lyganuse.ee",
+      "timojuursalu@gmail.com",
+      "uljana.zagrabov@kjlv.ee"
+    ],
+    "description": "Toila Rahvajooks on osa Ida-Viru jooksusarjast, mis toimub Toila SPA hotellis. See rahvaspordiüritus pakub võimalust nautida kaunist loodust ja sportlikku seltskonda. Jooks toimub septembri alguses ning on sobilik erineva tasemega jooksjatele. Üritus on traditsiooniline ja kogub osalejaid kogu piirkonnast.",
+    "course_highlights": [
+      "Rajad kulgevad Toila SPA ümbruses",
+      "Kaunid vaated merele ja loodusele",
+      "Sobib nii harrastajatele kui ka kogenud jooksjatele"
+    ],
+    "additional": "Toila Rahvajooks on Ida-Viru jooksusarja 7. etapp. Üritus toimub reedel ning algab kell 17:45. Toimumiskoht on Toila SPA hotell. Sarjas on kokku 8 etappi, mis toimuvad erinevates Ida-Viru piirkondades.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.sportos.eu/ee/et/toila-rahvajooks-2026/"
     ],
@@ -10125,8 +10359,8 @@
   {
     "domain_name": "31_joosu_jarvejooksu_sarja_6_etapp",
     "name": "31. Joosu Järvejooksu sarja 6. etapp",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "trail",
+    "type_local": "Trailijooks",
     "race_dates": [
       [
         "20260910",
@@ -10140,7 +10374,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "17:00",
     "location": "Viljandi Lake trail, Viljandi, Estonia",
     "latitude": 58.3508039,
     "longitude": 25.5939661,
@@ -10155,25 +10389,62 @@
     "distance_verbose": "Segadistants",
     "organizer": null,
     "contact": null,
-    "website": "https://tskjoosu.weebly.com/kalender.html",
+    "website": "https://spordiliit.viljandimaa.ee/et/kalender?calendar=1&m=9&y=2026",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "http://tskjoosu.weebly.com",
+    "presumed_organizer_email": "spordiliit@viljandimaa.ee",
+    "website_emails_found": [
+      "spordiliit@viljandimaa.ee",
+      "tennis@tennis.ee",
+      "hele.saareoks@olustverepk.edu.ee",
+      "kedivalba@gmail.com",
+      "pilleriin@sjg.edu.ee",
+      "mallberginfo@gmail.com",
+      "tarmo.turk@gmail.com",
+      "varikaune@gmail.com",
+      "siljetohvri@gmail.com",
+      "liina@leksi44.ee",
+      "gaspar.varv@holstrepolli.ee",
+      "janeojala@gmail.com",
+      "sirli.mandma@gmail.com",
+      "kati-riin@olustverela.edu.ee",
+      "ott.pluum@stebby.eu",
+      "kristiine.ilves@paistukool.ee",
+      "spordiklubi@viljandihaigla.ee",
+      "laanasoa@gmail.com",
+      "astra.jamnes@lasteaedkarlsson.ee",
+      "liina.nikonorova@kirivere.edu.ee",
+      "moisakylalasteaed@mulgivald.ee",
+      "signe@jaagu.ee",
+      "klubi@wellrun.ee",
+      "marekuur@hot.ee",
+      "arutiit@gmail.com",
+      "ketlinsalla87@gmail.com",
+      "martvingissar@gmail.com",
+      "leho.estorn1@gmail.com",
+      "kairi.peters@viiratsilasteaed.ee",
+      "hallistelasteaed@mulgivald.ee",
+      "sirjenaar@gmail.com",
+      "info@uisukool.ee"
+    ],
+    "description": "31. Joosu Järvejooksu sarja 6. etapp on jooksu- ja kepikõnniüritus, mis toimub Tervise- ja suusarajal ümber Viljandi järve. See sarjaetapp pakub osalejatele võimalust nautida kaunist järveäärset maastikku ning tervisesporti meeldivas seltskonnas. Üritus on osa traditsioonilisest jooksusarjast, mis ühendab Viljandimaa jooksuhuvilisi.",
+    "course_highlights": [
+      "Tervise- ja suusarada ümber Viljandi järve",
+      "Kaunis järveäärne maastik",
+      "Sobib nii jooksjatele kui kepikõndijatele"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.63,
     "sources": [
       "https://www.sportos.eu/ee/et/31-jarvejooksu-6-etapp/"
     ],
@@ -10704,6 +10975,78 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "energizer_baltic_beach_run_2026",
+    "name": "ENERGIZER Baltic Beach Run 2026",
+    "type": "terrain",
+    "type_local": "Maastikujooks",
+    "race_dates": [
+      [
+        "20260920",
+        "20260920"
+      ],
+      [
+        "20270919",
+        "20270919"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Narva-Jõesuu, Estonia",
+    "latitude": 59.463032,
+    "longitude": 28.0421073,
+    "county": "Ida-Viru maakond",
+    "nearest_city": "Narva",
+    "nearby_cities": [
+      "Narva",
+      "Kohtla-Järve"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Segadistants",
+    "organizer": "Eesti Ööjooks – Night Run Estonia",
+    "contact": null,
+    "website": "https://www.facebook.com/events/narva-j%C3%B5esuu-beach/energizer-baltic-beach-run-2026/3496119803877264/",
+    "fb_link": "https://www.facebook.com/events/narva-j%C3%B5esuu-beach/energizer-baltic-beach-run-2026/3496119803877264/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.facebook.com/events/3496119803877264/",
+    "presumed_organizer_email": "info@stebby.eu",
+    "website_emails_found": [
+      "info@stebby.eu"
+    ],
+    "description": "ENERGIZER Baltic Beach Run toob jooksjad ja käijad Narva-Jõesuu rannikulinnakesse. 2026. aasta üritus oli kavandatud 20. septembriks ning kavas olid jooksmine ja käimine. Tegemist on rannajooksu nime kandva liikumisüritusega, mis kutsub osalema nii jooksu- kui ka kõnnirajal.",
+    "course_highlights": [
+      "Narva-Jõesuu rannikupiirkond",
+      "Jooksmise ja käimise võimalus"
+    ],
+    "additional": "see ei ühti päringus antud kuupäevaga 19.09.2027.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.61,
+    "sources": [
+      "https://www.sportos.eu/ee/et/narva-joesuu-jooksufestival/"
+    ],
+    "consolidated_ids": [
+      "7f2a4234-ddb6-485b-a328-282ab7bd3104"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260529",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -12094,11 +12437,15 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://tartusuusaklubi.ee/jooksuohtud/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "Coop Tartu jooksuõhtud on Tartu Suusaklubi korraldatud jooksusarja neljas etapp, mis toimub Raadi pargis. See on meeldiv ja sportlik üritus, mis kutsub jooksuhuvilisi nautima sügisest loodust ja aktiivset liikumist. Sarja raames on võimalik osaleda erinevatel distantsidel ning kogeda sõbralikku võistlusõhkkonda.",
+    "course_highlights": [
+      "Jooksud toimuvad Raadi pargi kaunites ja mitmekesistes maastikes",
+      "Rajad sobivad nii algajatele kui ka kogenud jooksjatele",
+      "Võimalus nautida sügisest loodust ja värsket õhku"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
@@ -12239,12 +12586,12 @@
       "5 km"
     ],
     "distance_verbose": "5 km, 2.5 km, 1.2 km",
-    "organizer": "Ambla SK SV",
+    "organizer": null,
     "contact": null,
     "website": "https://liigume.ee/events/ambla-sk-sv-suusatajate-seeriajookskepikond-9/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "Lapsed 2 €, noored 2 €, täiskasvanud 3 €",
+    "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
@@ -12254,25 +12601,24 @@
       "info@liigume.ee",
       "tafisa-member@2x.png",
       "maiu@liigume.ee",
-      "henek@liigume.ee",
       "renna@liigume.ee",
       "kertu@liigume.ee",
       "kaili@liigume.ee",
       "liina@liigume.ee"
     ],
-    "description": "Ambla SK SV Skiers’ Series Run + Nordic Walking is a multi-stage running and Nordic walking series held at Kangrumägi in Järva County. The competition consists of five stages: the first four are time trials, and the final stage is a mass-start run. The results of the best four stages count toward the series standings, and prizes are awarded by age group. The competition is intended for runners using ski poles, which can be borrowed if needed. Special prizes are awarded to those who complete the series.",
+    "description": "Ambla SK SV suusatajate seeriajooks+kepikõnd on mitmeetapiline jooksu- ja kepikõnni võistlussari, mis toimub Kangrumäel Järva maakonnas. Võistlus koosneb viiest etapist, kus neli esimest toimuvad eraldistardiga ja viimane ühisstardiga. Arvesse läheb nelja parima etapi tulemus ning osalejad jagunevad erinevatesse vanusegruppidesse. Võistlus on mõeldud suusakeppidega jooksjatele ning pakub vajadusel ka suusakeppide laenutust. Iga viie etapi läbinu saab eriauhinna.",
     "course_highlights": [
-      "Five stages: the first four are time trials, and the final stage is a mass-start run",
-      "Held at Kangrumägi in Järva County",
-      "Only runners using ski poles are included in the competition standings"
+      "Viis etappi: neli eraldistarti ja viimane ühisstart",
+      "Võistlus toimub Kangrumäel Järva maakonnas",
+      "Võistlusarvestus ainult suusakeppidega jooksjate vahel"
     ],
-    "additional": "Only runners using ski poles are included in the competition standings. Ski poles can be borrowed if needed. Every runner or Nordic walker who completes all five stages receives a special prize. Age groups range from age 6 to 55+. Points are awarded as follows: 1st place 30 points, 2nd place 27 points, 3rd place 25 points, and so on. In the event of a tie, the placing in the final stage decides. The fifth stage is scheduled for 8 November 2026, starting at 12:00. The best four stage results count toward the series standings.",
+    "additional": "Võistlusel on vanusegrupid alates 6. eluaastast kuni 55+ aastastele. Vajadusel on võimalik suusakeppe laenutada.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.87,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-2026/",
       "https://www.sportos.eu/ee/et/ambla-sk-sv-suusatajate-seeriajookskepikond-c12477/",
@@ -12441,9 +12787,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Pärnu Rannastaadion, Pärnu, Estonia",
-    "latitude": 58.37412510000001,
-    "longitude": 24.5029118,
+    "location": "Pärnu Beach, Pärnu, Estonia",
+    "latitude": 58.37201520000001,
+    "longitude": 24.5025953,
     "county": "Pärnu maakond",
     "nearest_city": "Pärnu",
     "nearby_cities": [
@@ -12459,34 +12805,143 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": "Pärnu Kahe Silla Klubi",
+    "organizer": null,
     "contact": null,
     "website": "https://www.2silda.ee/parnu-rannajooks/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.2silda.ee/parnu-rannajooks/stardimaksud/",
+    "price_tiers": [
+      {
+        "distance": "10 km ajavõtuga jooks ja retk",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15 €",
+            "deadline": "20270331",
+            "description": "10 km ajavõtuga jooks ja retk I voor"
+          },
+          {
+            "label": "tier_2",
+            "price": "20 €",
+            "deadline": "20270630",
+            "description": "10 km ajavõtuga jooks ja retk II voor"
+          },
+          {
+            "label": "tier_3",
+            "price": "25 €",
+            "deadline": "20271023",
+            "description": "10 km ajavõtuga jooks ja retk III voor"
+          }
+        ],
+        "late_fee": {
+          "price": "30 €",
+          "deadline": "20271024"
+        }
+      },
+      {
+        "distance": "10 km ajavõtuta retk",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": "20270331",
+            "description": "10 km ajavõtuta retk I voor"
+          },
+          {
+            "label": "tier_2",
+            "price": "15 €",
+            "deadline": "20270630",
+            "description": "10 km ajavõtuta retk II voor"
+          },
+          {
+            "label": "tier_3",
+            "price": "20 €",
+            "deadline": "20271023",
+            "description": "10 km ajavõtuta retk III voor"
+          }
+        ],
+        "late_fee": {
+          "price": "25 €",
+          "deadline": "20271024"
+        }
+      },
+      {
+        "distance": "5 km ajavõtuga jooks",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": "20270331",
+            "description": "5 km ajavõtuga jooks, I voor"
+          },
+          {
+            "label": "tier_2",
+            "price": "15 €",
+            "deadline": "20270630",
+            "description": "5 km ajavõtuga jooks, II voor"
+          },
+          {
+            "label": "tier_3",
+            "price": "20 €",
+            "deadline": "20271023",
+            "description": "5 km ajavõtuga jooks, III voor"
+          }
+        ],
+        "late_fee": {
+          "price": "25 €",
+          "deadline": "20271024"
+        }
+      },
+      {
+        "distance": "5 km ajavõtuta jooks/kõnd",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "5 €",
+            "deadline": "20270331",
+            "description": "5 km ajavõtuta jooks/kõnd, I voor"
+          },
+          {
+            "label": "tier_2",
+            "price": "10 €",
+            "deadline": "20270630",
+            "description": "5 km ajavõtuta jooks/kõnd, II voor"
+          },
+          {
+            "label": "tier_3",
+            "price": "15 €",
+            "deadline": "20271023",
+            "description": "5 km ajavõtuta jooks/kõnd, III voor"
+          }
+        ],
+        "late_fee": {
+          "price": "20 €",
+          "deadline": "20271024"
+        }
+      }
+    ],
+    "registration_close_date": "20271024",
+    "registration_url": "https://www.2silda.ee/reg/",
     "race_info_url": "https://www.2silda.ee/parnu-rannajooks/",
     "presumed_organizer_email": "info@2silda.ee",
     "website_emails_found": [
       "info@2silda.ee",
       "kaidy@2silda.ee"
     ],
-    "description": "Pärnu Beach Run is the season-ending race and final event in the Pärnu Two Bridges Club’s three-event series. It takes place at Pärnu Beach Stadium. Participants can choose between 5 km and 10 km distances, which can be completed by running or walking with or without Nordic walking poles. The course runs through the beautiful Pärnu beach area, offering natural scenery and architectural landmarks characteristic of the city, including the seaside promenade. The event is suitable for recreational and experienced runners alike and offers an enjoyable sporting experience.",
+    "description": "Pärnu Rannajooks on hooaja lõpetav jooksu- ja kepikõnnisündmus, mis toimub Pärnu kaunis rannapiirkonnas. Osalejad saavad valida 5 või 10 kilomeetri distantsi vahel, mis kulgeb mereäärse promenaadi ja linnale iseloomulike arhitektuurimälestiste vahel. Rada pakub kauneid loodusvaateid ning sobib nii jooksjatele kui ka kepikõndijatele. Lisaks on kavas lastejooksud ja virtuaaljooksud, mis võimaldavad osaleda ka kodust.",
     "course_highlights": [
-      "5 km and 10 km distances, available for running or walking with or without Nordic walking poles",
-      "Course through Pärnu’s beach area, with beautiful natural scenery and architectural landmarks",
-      "Seaside promenade with views of the sea"
+      "Rada kulgeb Pärnu rannapiirkonnas mereäärsel promenaadil",
+      "Kaunid loodusvaated ja linnale omased arhitektuurimälestised",
+      "Distantsivalikus 5 ja 10 kilomeetrit, sobib jooksjatele ja kepikõndijatele"
     ],
-    "additional": "The distance options are 5 km and 10 km, which can be completed by running or walking with or without Nordic walking poles. The race is part of the Pärnu Two Bridges Club’s three-event series. Children’s races and virtual race distances are also planned. The event includes virtual races and children’s races and takes place at Pärnu Beach Stadium, offering a chance to enjoy sport and nature together.",
+    "additional": "Distantsid on võimalik läbida jooksu või kepikõndimise vormis. Lisaks toimuvad lastejooksud ja virtuaaljooksud. Rada viib osalejad ka rannapromenaadile, pakkudes merevaadet.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://www.sportos.eu/ee/et/parnu-rannajooks-2026/"
     ],
@@ -12803,9 +13258,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Vooremäe, Tartumaa, Estonia",
-    "latitude": 58.2815327,
-    "longitude": 26.8906974,
+    "location": "Vooremäe terviserajad, Kastre Parish, Tartu County, Estonia",
+    "latitude": 58.2847071,
+    "longitude": 26.8911923,
     "county": "Tartu maakond",
     "nearest_city": "Tartu",
     "nearby_cities": [
@@ -12821,39 +13276,81 @@
       "Maraton"
     ],
     "distance_verbose": "Maraton, 28 km, 14 km",
-    "organizer": "Seiklushunt",
+    "organizer": null,
     "contact": null,
     "website": "https://seiklushunt.ee/uritus/th-vooremae-1000/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "20€ - 30€",
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "14 km matk",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15€",
+            "deadline": "20271006",
+            "description": "14 km matk 15€ -06.10"
+          },
+          {
+            "label": "tier_2",
+            "price": "20€",
+            "deadline": "20271103",
+            "description": "14 km matk 20€ -03.11"
+          }
+        ],
+        "late_fee": {
+          "price": "25€",
+          "deadline": "20271106"
+        }
+      },
+      {
+        "distance": "14 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "20€",
+            "deadline": "20271006",
+            "description": "14 km 20€ -06.10"
+          },
+          {
+            "label": "tier_2",
+            "price": "25€",
+            "deadline": "20271103",
+            "description": "14 km 25€ -03.11"
+          }
+        ],
+        "late_fee": {
+          "price": "35€",
+          "deadline": "20271106"
+        }
+      }
+    ],
+    "registration_close_date": "20271106",
     "registration_url": "https://reg.seiklushunt.ee",
-    "race_info_url": "https://seiklushunt.ee/uritus/th-vooremae-1000-2026/",
+    "race_info_url": "https://seiklushunt.ee/uritus/th-vooremae-1000/",
     "presumed_organizer_email": "sekretariaat@seiklushunt.ee",
     "website_emails_found": [
       "info@seiklushunt.ee",
       "sekretariaat@seiklushunt.ee",
       "arvi@seiklushunt.ee",
-      "dora@seiklushunt.ee",
       "lenne.lotta@seiklushunt.ee",
       "marili@seiklushunt.ee",
-      "arved@seiklushunt.ee"
+      "ketlin@seiklushunt.ee"
     ],
-    "description": "TrailHunt Vooremäe 1000+ is a trail race among the beautiful hiking trails and forests of Vooremäe in Tartu County. The race highlights challenges such as 1,000 metres of elevation gain in a single run, giving participants the chance to test their abilities and enjoy the positive energy of running on forest trails. The race centre is next to the new service building, with convenient shower facilities and a place to change clothes. There is a staffed aid station on the course, and timing uses a contactless SPORTIdent system. Distances range from a 14 km hike to a marathon of over 42 km, with marathon runners completing exactly three 14.1 km laps.",
+    "description": "TrailHunt Vooremäe 1000+ on maastikujooks Vooremäe terviseradadel, mis pakub osalejatele väljakutseid metsaradadel ja tõusumeetritega. Võistlus toimub 14 km pikkusel ringil, kus maratoni distants koosneb kolmest ringist. Võistluskeskus asub Vooremäe uue teenindushoone juures, kus on võimalus peale võistlust pesta ja riideid vahetada. Rajal on üks mehitatud toitlustuspunkt ning ajavõtt toimub puutevaba SPORTIdent süsteemiga. Võistlusklassid on eraldi meestele ja naistele ning matkaklass ilma ajavõtuta.",
     "course_highlights": [
-      "A 14.1 km lap following the direction of travel on Vooremäe’s large loop",
-      "More than 1,000 metres of total elevation gain on the marathon distance",
-      "A staffed aid station on the course, passed multiple times"
+      "14 km pikkune ring, maraton koosneb kolmest ringist",
+      "Üks mehitatud toitlustuspunkt rajal, mida läbitakse neli korda",
+      "Ajavõtt puutevaba SPORTIdent (SI AIR) süsteemiga"
     ],
-    "additional": "Race numbers can be found before the event in the start list on the Seiklushunt website. Timing uses the contactless SPORTIdent (SI AIR) system, with the chip attached to the wrist. Participants can shower and change clothes at the race centre after the event. There is one staffed aid station on the course, offering water, Coca-Cola and light snacks. On-site registration is not available. Transfers and other changes can be made only by email. Trail running, hilly terrain, registration via Stebby, aid stations, finisher medals, awards ceremony",
+    "additional": "Stardinumber leitav enne võistlust Seiklushundi kodulehel stardiprotokollist. Stardimaterjalide väljastamine toimub võistluskeskuse sekretariaadist. Rajal on 1-2 kontrollpunkti, kus SPORTIdent kiip registreerib läbimise. Võistluskeskuses on võimalik peale võistlust pesta ja riideid vahetada. Kohapeal registreerimist ei toimu.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://www.sportos.eu/ee/et/seiklushunt-trailhunt-voistlused/"
     ],
@@ -12954,15 +13451,23 @@
     "estimated_dates": true,
     "start_time": null,
     "location": "Rapla",
-    "latitude": null,
-    "longitude": null,
-    "county": null,
-    "nearest_city": null,
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
+    "latitude": 59.0001145,
+    "longitude": 24.8046698,
+    "county": "Rapla maakond",
+    "nearest_city": "Tallinna",
+    "nearby_cities": [
+      "Tallinna"
+    ],
+    "distances": "[\"5\", \"3\"]",
+    "distance_m": [
+      5000,
+      3000
+    ],
+    "distance_keywords": [
+      "5 km",
+      "3000 meetrit"
+    ],
+    "distance_verbose": "5 km, 3000 meetrit",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -13056,19 +13561,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "additional",
+      "distances",
+      "organizer",
       "longitude",
       "website",
       "type",
-      "description",
-      "organizer",
-      "additional",
+      "location",
+      "race_dates",
       "latitude",
-      "contact",
-      "distances"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13149,19 +13654,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "price_range",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "distances",
+      "organizer",
       "longitude",
       "website",
+      "price_range",
       "type",
-      "description",
-      "organizer",
+      "location",
+      "race_dates",
       "latitude",
-      "contact",
-      "distances"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13175,6 +13680,68 @@
       "3c59151f-1392-4267-9d3d-b08ecf5df4c8"
     ],
     "supplied_at": "20261023",
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "coop_tartu_jooksuohtud_2026_vi_etapp",
+    "name": "Coop Tartu jooksuõhtud 2026 VI etapp",
+    "type": "other",
+    "type_local": "Muu",
+    "race_dates": [
+      [
+        "20261116",
+        "20261116"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Tähtvere Dendropark, Tartu, Estonia",
+    "latitude": 58.39238700000001,
+    "longitude": 26.7032652,
+    "county": "Tartu maakond",
+    "nearest_city": "Tartu",
+    "nearby_cities": [
+      "Tartu"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Segadistants",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportos.eu/ee/et/coop-tartu-jooksuohtud-2026-vi-etapp/"
+    ],
+    "consolidated_ids": [
+      "2b58c04c-7de1-44ce-9079-11e44a5a2414"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
     "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
@@ -13229,17 +13796,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "distances",
       "longitude",
       "website",
       "type",
-      "description",
+      "location",
+      "race_dates",
       "latitude",
-      "contact",
-      "distances"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13371,16 +13938,16 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "organizer",
       "longitude",
       "type",
-      "description",
-      "organizer",
+      "location",
+      "race_dates",
       "latitude",
-      "contact"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -13553,19 +14120,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "price_range",
       "name",
-      "race_dates",
+      "contact",
+      "additional",
+      "distances",
+      "organizer",
       "longitude",
       "website",
+      "price_range",
       "type",
-      "description",
-      "organizer",
-      "additional",
+      "location",
+      "race_dates",
       "latitude",
-      "contact",
-      "distances"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -13662,19 +14229,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "price_range",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "additional",
+      "organizer",
       "longitude",
       "website",
+      "price_range",
       "type",
-      "description",
-      "organizer",
-      "additional",
+      "location",
+      "race_dates",
       "latitude",
-      "contact"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13766,19 +14333,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "price_range",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "additional",
+      "organizer",
       "longitude",
       "website",
+      "price_range",
       "type",
-      "description",
-      "organizer",
-      "additional",
+      "location",
+      "race_dates",
       "latitude",
-      "contact"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13885,17 +14452,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
       "name",
-      "race_dates",
+      "contact",
+      "distances",
+      "organizer",
       "longitude",
       "website",
       "type",
-      "description",
-      "organizer",
+      "location",
+      "race_dates",
       "latitude",
-      "contact",
-      "distances"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13970,18 +14537,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "name",
       "start_time",
-      "race_dates",
+      "name",
+      "contact",
+      "additional",
+      "distances",
+      "organizer",
       "longitude",
       "type",
-      "description",
-      "organizer",
-      "additional",
+      "location",
+      "race_dates",
       "latitude",
-      "contact",
-      "distances"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,

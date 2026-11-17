@@ -16,7 +16,7 @@ cities:
   population: 589793
   latitude: 48.7823
   longitude: 9.17702
-  nearby_race_count: 98
+  nearby_race_count: 97
 - name: Hannover
   original_name: Hannover
   population: 515140
@@ -34,7 +34,7 @@ cities:
   population: 593085
   latitude: 51.4566
   longitude: 7.01228
-  nearby_race_count: 58
+  nearby_race_count: 60
 - name: Berlin
   original_name: Berlin
   population: 3426354
@@ -58,7 +58,7 @@ cities:
   population: 283799
   latitude: 49.0094
   longitude: 8.40444
-  nearby_race_count: 48
+  nearby_race_count: 49
 - name: Saarbrücken
   original_name: Saarbruecken
   population: 181227
@@ -70,13 +70,13 @@ cities:
   population: 331906
   latitude: 52.0333
   longitude: 8.53333
-  nearby_race_count: 44
+  nearby_race_count: 45
 - name: Trier
   original_name: Trier
   population: 100129
   latitude: 49.7556
   longitude: 6.63935
-  nearby_race_count: 44
+  nearby_race_count: 45
 - name: Mannheim
   original_name: Mannheim
   population: 307960
@@ -94,7 +94,7 @@ cities:
   population: 270184
   latitude: 51.9624
   longitude: 7.62571
-  nearby_race_count: 34
+  nearby_race_count: 35
 - name: Bremen
   original_name: Bremen
   population: 546501
@@ -118,19 +118,19 @@ cities:
   population: 1260391
   latitude: 48.1374
   longitude: 11.5755
-  nearby_race_count: 28
+  nearby_race_count: 29
 - name: Braunschweig
   original_name: Braunschweig
   population: 244715
   latitude: 52.2659
   longitude: 10.5267
-  nearby_race_count: 28
+  nearby_race_count: 29
 - name: Aalen
   original_name: Aalen
   population: 67085
   latitude: 48.8378
   longitude: 10.0933
-  nearby_race_count: 28
+  nearby_race_count: 29
 - name: Osnabrück
   original_name: Osnabrueck
   population: 166462
@@ -154,7 +154,7 @@ cities:
   population: 78895
   latitude: 50.809
   longitude: 8.77069
-  nearby_race_count: 24
+  nearby_race_count: 23
 - name: Freiburg
   original_name: Freiburg
   population: 215966
@@ -245,6 +245,12 @@ cities:
   latitude: 48.4738
   longitude: 7.94495
   nearby_race_count: 13
+- name: Flensburg
+  original_name: Flensburg
+  population: 85838
+  latitude: 54.7843
+  longitude: 9.43961
+  nearby_race_count: 12
 - name: Bayreuth
   original_name: Bayreuth
   population: 75061
@@ -257,12 +263,6 @@ cities:
   latitude: 50.2594
   longitude: 10.9638
   nearby_race_count: 12
-- name: Flensburg
-  original_name: Flensburg
-  population: 85838
-  latitude: 54.7843
-  longitude: 9.43961
-  nearby_race_count: 11
 - name: Nordhausen
   original_name: Nordhausen
   population: 43912
@@ -275,17 +275,17 @@ cities:
   latitude: 47.615
   longitude: 7.66457
   nearby_race_count: 10
-- name: Leipzig
-  original_name: Leipzig
-  population: 504971
-  latitude: 51.3396
-  longitude: 12.3713
-  nearby_race_count: 8
 - name: Rostock
   original_name: Rostock
   population: 198293
   latitude: 54.0887
   longitude: 12.1405
+  nearby_race_count: 8
+- name: Ingolstadt
+  original_name: Ingolstadt
+  population: 120658
+  latitude: 48.7651
+  longitude: 11.4237
   nearby_race_count: 8
 - name: Amberg
   original_name: Amberg
@@ -293,11 +293,11 @@ cities:
   latitude: 49.4429
   longitude: 11.8627
   nearby_race_count: 8
-- name: Ingolstadt
-  original_name: Ingolstadt
-  population: 120658
-  latitude: 48.7651
-  longitude: 11.4237
+- name: Leipzig
+  original_name: Leipzig
+  population: 504971
+  latitude: 51.3396
+  longitude: 12.3713
   nearby_race_count: 7
 - name: Fulda
   original_name: Fulda
