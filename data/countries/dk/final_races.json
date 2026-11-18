@@ -138,15 +138,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -180,10 +180,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Bramming, Esbjerg Municipality, Danmark",
-    "latitude": 55.46917699999999,
-    "longitude": 8.701654999999999,
+    "start_time": "11:00",
+    "location": "Bramming Fjernvarme, Grønningen 7, Bramming, Danmark",
+    "latitude": 55.476757,
+    "longitude": 8.699071,
     "county": "Syddanmark",
     "nearest_city": "Esbjerg",
     "nearby_cities": [
@@ -199,27 +199,33 @@
       "5 km"
     ],
     "distance_verbose": "7.5 km, 5 km, 2.5 km",
-    "organizer": null,
+    "organizer": "Brørup Løbeklub, Billund Løbeklub, Bramming IF Motion, Byparken Running Brørup, Varde Løbemotion, SGI Løb, Sdr. Omme Atletik og Motion og Blåbjerg Gå- og Løbemotion",
     "contact": null,
-    "website": null,
+    "website": "https://lobeklubben.dk/run-events/sydvest-crossloeb-2026-27-afd-3-bramming/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20261121",
+    "registration_url": "https://lobeklubben.dk/tilmeld-lob/",
+    "race_info_url": "https://lobeklubben.dk/run-events/sydvest-crossloeb-2026-27-afd-3-bramming/",
+    "presumed_organizer_email": "kontakt@xn--lbeklubben-0cb.dk",
+    "website_emails_found": [
+      "kontakt@xn--lbeklubben-0cb.dk"
+    ],
+    "description": "Sydvest Crossløb 2026/27 - afd. 3 i Bramming er en del af en vinterløbsserie, der byder på korte og overskuelige distancer for både løbere og walkere. Løbet afvikles ved Bramming Fjernvarme og tilbyder distancerne 2,5 km, 5 km og 7,5 km samt walk på 2,5 km og 5 km. Walkere kan vælge at gå en eller to omgange på 2,5 km-ruten, og der tages tid på walk-ruterne for at registrere deltagelse til holdkonkurrencen. Deltagere kan tilmelde sig enkeltstående afdelinger eller vælge en samlet cup-tilmelding med krav om deltagelse i mindst fem afdelinger for præmier.",
+    "course_highlights": [
+      "Kort og overskuelig vinterafdeling med distancer på 2,5 km, 5 km og 7,5 km",
+      "Start ved Bramming Fjernvarme, Grønningen 7",
+      "Walkere kan vælge 1 eller 2 omgange på 2,5 km-ruten med tidtagning"
+    ],
+    "additional": "Der er tidtagning af både løbere og walkere, primært for at registrere antal deltagere til holdkonkurrencen. Man kan tilmelde sig enkeltstående afdelinger eller vælge samlet cup-tilmelding, hvor mindst 5 afdelinger skal gennemføres for at være med i præmiekampen. På 2,5 km-walkruten kan du vælge én eller to omgange. Du kan tilmelde dig Bramming-afdelingen alene eller hele cupserien; deltagelse i mindst fem afdelinger kræves for at være med i præmiekampen.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.sportstiming.dk/event/18951"
     ],
@@ -237,8 +243,8 @@
   {
     "domain_name": "sonderjysk_crosslob_2026_27_afd_3_sonderborg",
     "name": "Sønderjysk Crossløb 2026/27 - afd. 3 - Sønderborg",
-    "type": "road",
-    "type_local": "Landevej",
+    "type": "trail",
+    "type_local": "Trailløb",
     "race_dates": [
       [
         "20261122",
@@ -248,10 +254,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Sønderborg, Danmark",
-    "latitude": 54.913811,
-    "longitude": 9.792178,
+    "start_time": "10:30",
+    "location": "Kær Vestermark, Sønderborg, Danmark",
+    "latitude": 54.9390605,
+    "longitude": 9.766961199999999,
     "county": "Syddanmark",
     "nearest_city": "Sønderborg",
     "nearby_cities": [
@@ -269,27 +275,53 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 7.5 km, 5 km, 2.5 km",
-    "organizer": null,
+    "organizer": "DGI og Vidar Motion",
     "contact": null,
-    "website": null,
+    "website": "https://motionskalender.dk/events/soenderjysk-crossloeb-2026-27-3-afdeling-i-soenderborg/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_range": "Fra 70 kr. for 5 km",
+    "price_tiers": [
+      {
+        "distance": "alle distancer",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "70 kr.",
+            "deadline": "20261120",
+            "description": "5 km: 70 kr. til og med 20. november"
+          },
+          {
+            "label": "tier_2",
+            "price": "85 kr.",
+            "deadline": "20261122",
+            "description": "derefter 85 kr."
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261122",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://motionskalender.dk/events/soenderjysk-crossloeb-2026-27-3-afdeling-i-soenderborg/",
+    "presumed_organizer_email": "kontakt@motionskalender.dk",
+    "website_emails_found": [
+      "kontakt@motionskalender.dk",
+      "john@example.com"
+    ],
+    "description": "Sønderjysk Crossløb 2026/27 - 3. afdeling i Sønderborg er et vinterløb for motionister, børn og konkurrenceløbere, der afvikles ved Kær Vestermark. Løbet byder på en afmærket crossrute på 2,5 km, hvor deltagerne kan vælge at løbe en, to, tre eller fire omgange, svarende til distancerne 2,5 km, 5 km, 7,5 km og 10 km. Arrangementet er en del af en cup med otte løb, hvor deltagere kan konkurrere om præmier ved at gennemføre mindst fem afdelinger. Løbet afvikles af DGI og Vidar Motion og byder på en hyggelig og udfordrende oplevelse i naturskønne omgivelser.",
+    "course_highlights": [
+      "Afmærket crossrute på 2,5 km med mulighed for flere omgange",
+      "Vinterløb ved Kær Vestermark i Sønderborg",
+      "Ingen tidsgrænse for 5 km og 10 km har tidsgrænse på henholdsvis 1 time og 1 time 10 minutter"
+    ],
+    "additional": "Løbet starter i flere puljer: 2,5 km kl. 10:30, 7,5 km og 10 km kl. 11:00, og 5 km kl. 11:05. Online tilmelding lukker på løbsdagen kl. 12:00. Cupdeltagere skal gennemføre mindst fem afdelinger for at konkurrere om præmier. Deltagere, der er tilmeldt cuppen og gennemfører mindst fem afdelinger, kan være med i præmiekonkurrencen. Starttider: 2,5 km kl. 10.30, 7,5 og 10 km kl. 11.00 samt 5 km kl. 11.05.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.89,
     "sources": [
       "https://www.sportstiming.dk/event/19016"
     ],
@@ -307,8 +339,8 @@
   {
     "domain_name": "trails_flyvestationen_2026",
     "name": "TRAILS - Flyvestationen 2026",
-    "type": "road",
-    "type_local": "Landevej",
+    "type": "trail",
+    "type_local": "Trailløb",
     "race_dates": [
       [
         "20261122",
@@ -318,10 +350,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Flyvestationen Værløse, Værløse, Danmark",
-    "latitude": 55.7652972,
-    "longitude": 12.3218841,
+    "start_time": "16:00",
+    "location": "Shelter 214, Flyvestationen, Værløse, Danmark",
+    "latitude": 55.7708558,
+    "longitude": 12.3409949,
     "county": "Hovedstaden",
     "nearest_city": "København",
     "nearby_cities": [
@@ -338,27 +370,47 @@
       "5 km"
     ],
     "distance_verbose": "15 km, 10 km, 5 km",
-    "organizer": null,
+    "organizer": "Ultra ApS (TRAILS by Nordic Race)",
     "contact": null,
-    "website": null,
+    "website": "https://trailsbynordic.dk/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "195-225 kr. + gebyr",
+    "price_tiers": [
+      {
+        "distance": "5 / 10 / 15 km + hundeheat",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "225 kr. + håndteringsgebyr",
+            "deadline": null,
+            "description": "225 kr. + håndteringsgebyr"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://trailsbynordic.dk/kontakt/",
+    "race_info_url": "https://trailsbynordic.dk/flyvestationen/",
+    "presumed_organizer_email": "support@trailsbynordic.dk",
+    "website_emails_found": [
+      "support@trailsbynordic.dk",
+      "din@email.dk"
+    ],
+    "description": "TRAILS Flyvestationen 2026 er et unikt trailløb i mørke, der finder sted i naturskønne og historiske omgivelser i Værløse. Løbet byder på en ca. 5 km rundstrækning, som kan løbes 1, 2 eller 3 gange, og ruten er markeret med knæklys for at sikre god vejledning i mørket. Det er en stemningsfuld og anderledes oplevelse, hvor deltagerne kan nyde kuperede stier, åbne vidder og en særlig atmosfære under pandelampens lys. Der er også et hundeheat, og alle deltagere får en unik medalje ved målstregen.",
+    "course_highlights": [
+      "Ruten kombinerer åbne vidder, kuperede stier og historiske omgivelser",
+      "Løbet foregår i mørke med ruten markeret af knæklys",
+      "Ca. 5 km rundstrækning, som kan løbes 1, 2 eller 3 gange"
+    ],
+    "additional": "Check-in og udlevering af startnumre åbner kl. 15.00. Sidste løbere skal være i mål senest kl. 18.15. Start og mål er ved Shelter 214 med parkeringsmuligheder ved Sandet 77, 3500 Værløse. Pandelampe anbefales, men er ikke påkrævet. Engangschip er indbygget i startnummeret. Der er snackbar og drikkevarer ved målstregen. Der er ikke bemandet bagageområde, så deltagere anbefales at efterlade ting i bilen eller medbringe plastsæk til opbevaring. Hundeheat starter kl. 16.00, 15 km kl. 16.10, 10 km kl. 16.13 og 5 km kl. 16.16. Alle distancer starter og slutter ved Shelter 214. Der er chip-tidtagning, og løbet har live-tracking.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.sportstiming.dk/event/17471"
     ],
@@ -392,7 +444,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Aalborg Zoo, Aalborg, Danmark",
+    "location": "Aalborg Zoo, Faunavej, Aalborg, Danmark",
     "latitude": 57.0370298,
     "longitude": 9.8980439,
     "county": "Nordjylland",
@@ -400,42 +452,58 @@
     "nearby_cities": [
       "Aalborg"
     ],
-    "distances": "[\"21.1\", \"10.6\", \"10\", \"5.3\", \"5\", \"1.75\"]",
+    "distances": "[\"21.1\", \"10.6\", \"5.3\"]",
     "distance_m": [
       21100,
       10600,
-      10000,
-      5300,
-      5000,
-      1750
+      5300
     ],
     "distance_keywords": [
       "Halvmarathon",
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "Halvmarathon, 10.6 km, 10 km, 5.3 km, 5 km, 1.75 km",
-    "organizer": null,
+    "distance_verbose": "Halvmarathon, 10.6 km, 5.3 km",
+    "organizer": "Aalborg Zoo i samarbejde med BridgeRunner",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://aalborgzoo.dk/begivenheder/juleloebet/",
+    "fb_link": "https://www.facebook.com/events/aalborg-zoo/julel%C3%B8bet-i-aalborg-zoo-2026/1618708456267797/",
     "ig_link": null,
-    "price_range": null,
+    "price_range": "100-200 kr. + gebyr",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://aalborgzoo.dk/begivenheder/juleloebet/",
+    "presumed_organizer_email": "info@aalborgzoo.dk",
+    "website_emails_found": [
+      "info@aalborgzoo.dk",
+      "tkl@aalborgzoo.dk",
+      "lmb@aalborgzoo.dk",
+      "hda@aalborgzoo.dk",
+      "tlf@aalborgzoo.dk",
+      "sara@aalborgzoo.dk",
+      "thj@aalborgzoo.dk",
+      "ss@aalborgzoo.dk",
+      "fwh@aalborgzoo.dk",
+      "skovbakken@aalborgzoo.dk",
+      "loho@aalborgzoo.dk",
+      "jl@aalborgzoo.dk",
+      "emry@aalborgzoo.dk",
+      "solskov@aalborgzoo.dk"
+    ],
+    "description": "Juleløbet i Aalborg Zoo er en stemningsfuld løbe- og gåbegivenhed, der afholdes i november med tusindvis af lys, julemusik og magiske julelandskaber. Deltagerne kan nyde en ny og forbedret rute, et festligt målområde og hele Jul i Zoo-oplevelsen, som inkluderer adgang til haven før og efter løbet. Starten går fra Faunavej gennem et spektakulært julelandskab, og startnummer samt T-shirt udleveres i Klatreparken. Arrangementet er velegnet for familier, venner og løbemakkere, og der er fokus på både bevægelse og julestemning.",
+    "course_highlights": [
+      "Ny og forbedret rute gennem julelandskab uden for Zoo",
+      "Start fra Faunavej med julemusik og lys fra LejeDisco",
+      "Målområde i Klatreparken med adgang til hele Jul i Zoo-oplevelsen"
+    ],
+    "additional": "Billet inkluderer adgang til hele Jul i Zoo-oplevelsen med åbent zoo hele aftenen. Arrangementet foregår over to aftener, og der er mulighed for at købe mad i Zoo. FIGHT PTSD-maskotten (Jule)Trofast deltager og spreder julestemning blandt børn. Startnummer og T-shirt afhentes i Klatreparken. Deltagergebyret inkluderer julemedalje, juledepot og vand ved mål.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.sportstiming.dk/event/19454"
     ],
@@ -646,13 +714,15 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Fjerritslev, Jammerbugt Municipality, Danmark",
-    "latitude": 57.08864,
-    "longitude": 9.263244,
+    "start_time": "17:00",
+    "location": "HUI Clubhouse, Slettestrand, Danmark",
+    "latitude": 57.15538230000001,
+    "longitude": 9.367521499999999,
     "county": "Nordjylland",
     "nearest_city": "Aalborg",
-    "nearby_cities": [],
+    "nearby_cities": [
+      "Aalborg"
+    ],
     "distances": "[\"21.1\", \"14\", \"7\"]",
     "distance_m": [
       21100,
@@ -663,27 +733,33 @@
       "Halvmarathon"
     ],
     "distance_verbose": "Halvmarathon, 14 km, 7 km",
-    "organizer": null,
+    "organizer": "Hjortdal Ungdoms- og Idrætsforening",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://lobeklubben.dk/run-events/dgi-nordjysk-trail-cup-2026-2027-svinkloev-night-trail/",
+    "fb_link": "https://www.facebook.com/nordjysktrailcup/?locale=da_DK",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://lobeklubben.dk/tilmeld-lob/",
+    "race_info_url": "https://lobeklubben.dk/run-events/dgi-nordjysk-trail-cup-2026-2027-svinkloev-night-trail/",
+    "presumed_organizer_email": "kontakt@xn--lbeklubben-0cb.dk",
+    "website_emails_found": [
+      "kontakt@xn--lbeklubben-0cb.dk"
+    ],
+    "description": "DGI Nordjysk Trail Cup 2026/2027 - Svinkløv Night Trail er et aften- og nattrailløb, der finder sted i Slettestrand med start og mål ved HUI klubhuset. Løbet byder på en teknisk udfordrende 7 km trailrute, som løbes én, to eller tre gange afhængigt af distancen. Ruten er karakteriseret ved gode højdemeter og en rå, våd og hyggelig stemning. Efter løbet tilbydes varm suppe og mulighed for et kort varmt bad ved klubhuset, hvilket skaber en god afslutning på løbsoplevelsen.",
+    "course_highlights": [
+      "Teknisk udfordrende 7 km trailrute med cirka 130 højdemeter pr. omgang",
+      "Rå, våd og hyggelig natur på ruten",
+      "Start og mål ved HUI klubhuset med depot og hygge"
+    ],
+    "additional": "Cutoff tid på 3 timer for alle distancer. Distancerne er 7 km, 14 km og 21,1 km, hvor ruten løbes 1, 2 eller 3 gange. Varm suppe er inkluderet i tilmeldingsprisen, og der er mulighed for et kort varmt bad efter løbet. Der er en tidsgrænse på 3 timer for alle distancer.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.sportstiming.dk/event/18809"
     ],
@@ -817,15 +893,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -895,15 +971,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -942,14 +1018,14 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "North Jutland, Danmark",
-    "latitude": 56.8307416,
-    "longitude": 9.4930528,
+    "start_time": "18:30",
+    "location": "Restaurant Bones, Østergade, Hjørring, Danmark",
+    "latitude": 57.4581635,
+    "longitude": 9.991264,
     "county": "Nordjylland",
-    "nearest_city": "Aalborg",
+    "nearest_city": "Hjørring",
     "nearby_cities": [
-      "Aalborg"
+      "Hjørring"
     ],
     "distances": "[\"21.1\", \"10.6\", \"5.3\"]",
     "distance_m": [
@@ -963,27 +1039,64 @@
       "5 km"
     ],
     "distance_verbose": "Halvmarathon, 10.6 km, 5.3 km",
-    "organizer": null,
+    "organizer": "Coast2Coast og Restaurant Bones Hjørring",
     "contact": null,
-    "website": null,
+    "website": "https://lobeklubben.dk/run-events/nordjysk-jule-loeb-magisk-jul-i-hjoerring-2026/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "135-200 kr.",
+    "price_tiers": [
+      {
+        "distance": "Halvmarathon",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "175 kr.",
+            "deadline": "20261125",
+            "description": "Halvmarathon: 175 kr.; fra den 25. november kl. 12.00 stiger prisen til 200 kr."
+          }
+        ],
+        "late_fee": {
+          "price": "200 kr.",
+          "deadline": "20261203"
+        }
+      },
+      {
+        "distance": "5,3 og 10,6 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "135 kr.",
+            "deadline": "20261125",
+            "description": "5,3 og 10,6 km: 135 kr.; fra den 25. november kl. 12.00 stiger prisen til 160 kr."
+          }
+        ],
+        "late_fee": {
+          "price": "160 kr.",
+          "deadline": "20261203"
+        }
+      }
+    ],
+    "registration_close_date": "20261203",
+    "registration_url": "https://lobeklubben.dk/tilmeld-lob/",
+    "race_info_url": "https://lobeklubben.dk/run-events/nordjysk-jule-loeb-magisk-jul-i-hjoerring-2026/",
+    "presumed_organizer_email": "kontakt@xn--lbeklubben-0cb.dk",
+    "website_emails_found": [
+      "kontakt@xn--lbeklubben-0cb.dk"
+    ],
+    "description": "Nordjysk Jule Løb i Hjørring afholdes den 3. december 2026 med start og mål ved Restaurant Bones i Østergade. Løbet foregår på en 5,3 km rundstrækning gennem Hjørrings juleudsmykkede gader som en del af Magisk Jul. Der tilbydes distancer på 5,3 km, 10,6 km samt halvmarathon, som består af fire omgange. Ruten er tydeligt markeret, og der er fokus på sikkerhed med krav om refleksvest trods gadebelysning. Efter løbet serveres sandwich eller wrap med drikkelse, og alle deltagere får medalje og diplom ved gennemførelse.",
+    "course_highlights": [
+      "Rundstrækning på 5,3 kilometer gennem juleudsmykkede gader i Hjørring",
+      "Halvmarathon består af fire omgange på samme rute",
+      "Ruten markeret med kegler, pileskilte og pink flag"
+    ],
+    "additional": "Startnummerudlevering fra kl. 18.00. Arrangementet slutter kl. 21.30. Forplejning under og efter løbet inkluderer vand, saft, cola, banan, chips, slik og chokolade. Der er toilet ved start og mål, men ingen bademuligheder. Mammutpladsen bag Spar Nord anbefales som parkeringsmulighed. Startnumre udleveres ved Restaurant Bones fra kl. 18.00. Der er elektronisk chiptidtagning samt medalje og diplom ved gennemførelse. Husk refleksvest.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.sportstiming.dk/event/17616"
     ],
@@ -1460,15 +1573,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1753,14 +1866,14 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1966,15 +2079,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2194,15 +2307,15 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2640,15 +2753,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3263,15 +3376,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3353,15 +3466,15 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9188,20 +9301,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "additional",
       "type",
-      "race_dates",
-      "location",
+      "start_time",
       "price_range",
-      "organizer",
+      "additional",
+      "location",
       "contact",
-      "description",
-      "website",
-      "longitude",
-      "name",
       "latitude",
-      "start_time"
+      "organizer",
+      "description",
+      "race_dates",
+      "name",
+      "distances",
+      "website",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -15567,20 +15680,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "additional",
       "type",
-      "race_dates",
-      "location",
+      "start_time",
       "price_range",
-      "organizer",
+      "additional",
+      "location",
       "contact",
-      "description",
-      "website",
-      "longitude",
-      "name",
       "latitude",
-      "start_time"
+      "organizer",
+      "description",
+      "race_dates",
+      "name",
+      "distances",
+      "website",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -18618,18 +18731,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
+      "county",
       "price_range",
-      "location",
-      "race_dates",
       "contact",
+      "location",
+      "latitude",
       "description",
-      "website",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "website",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -18853,20 +18966,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "additional",
       "type",
+      "start_time",
       "price_range",
+      "additional",
       "location",
-      "race_dates",
-      "organizer",
       "contact",
-      "description",
-      "website",
-      "longitude",
-      "name",
       "latitude",
-      "start_time"
+      "organizer",
+      "description",
+      "race_dates",
+      "name",
+      "distances",
+      "website",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22097,15 +22210,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22181,15 +22294,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22465,15 +22578,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22540,14 +22653,14 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22620,15 +22733,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22699,15 +22812,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22780,15 +22893,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22864,15 +22977,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22946,15 +23059,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23031,15 +23144,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23113,15 +23226,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23197,15 +23310,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23276,15 +23389,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23353,15 +23466,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23429,15 +23542,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23503,14 +23616,14 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23582,15 +23695,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23665,15 +23778,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23743,15 +23856,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23818,14 +23931,14 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23900,15 +24013,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23980,15 +24093,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24062,15 +24175,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24138,14 +24251,14 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24220,15 +24333,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24299,15 +24412,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24376,15 +24489,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24476,20 +24589,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "additional",
       "type",
-      "race_dates",
-      "location",
+      "start_time",
       "price_range",
-      "organizer",
+      "additional",
+      "location",
       "contact",
-      "description",
-      "website",
-      "longitude",
-      "name",
       "latitude",
-      "start_time"
+      "organizer",
+      "description",
+      "race_dates",
+      "name",
+      "distances",
+      "website",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24646,15 +24759,15 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24726,15 +24839,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24808,15 +24921,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24889,15 +25002,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24967,15 +25080,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -25047,15 +25160,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "county",
       "type",
-      "race_dates",
+      "county",
       "location",
+      "latitude",
       "description",
-      "longitude",
+      "race_dates",
       "name",
-      "latitude"
+      "distances",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,

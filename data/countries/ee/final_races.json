@@ -787,19 +787,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "distances",
-      "organizer",
       "longitude",
       "website",
+      "description",
+      "contact",
+      "name",
+      "organizer",
       "price_range",
-      "type",
+      "distances",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3578,20 +3578,23 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "http://www.jarvasport.ee?id=10",
+    "race_info_url": "http://www.jarvasport.ee",
     "presumed_organizer_email": "piret.maaring@jarvasport.ee",
     "website_emails_found": [
       "piret.maaring@jarvasport.ee"
     ],
-    "description": null,
-    "course_highlights": [],
+    "description": "Paide tehisjärve jooks on liikumissarja „8. Järvamaa järvede jooksud“ V etapp. Jooks toimub Paide tehisjärve juures ning kutsub osalejaid avastama Järvamaa järvede ümbrust liikudes.",
+    "course_highlights": [
+      "Start ja jooksupaik asuvad Paide tehisjärve juures.",
+      "Etapp kuulub Järvamaa järvede jooksude sarja."
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.56,
     "sources": [
       "https://www.sportos.eu/ee/et/liikumissari-8-jarvamaa-jarvede-jooksud-v-etapp-paide-tehisjarve-jooks/",
       "https://marathon100.com/kalender/eesti/yritus/paide-tehisjarve-jooks-2026-2-km"
@@ -9383,8 +9386,8 @@
   {
     "domain_name": "telliskivi_5000",
     "name": "Telliskivi 5000",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "road",
+    "type_local": "Tänavajooks",
     "race_dates": [
       [
         "20270827",
@@ -9394,40 +9397,50 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Telliskivi, Tallinn, Eesti",
-    "latitude": 59.4377079,
-    "longitude": 24.7239326,
+    "start_time": "16:00",
+    "location": "Telliskivi Loomelinnak, Tallinn, Eesti",
+    "latitude": 59.43984080000001,
+    "longitude": 24.7289874,
     "county": "Harju maakond",
     "nearest_city": "Tallinna",
     "nearby_cities": [
       "Tallinna"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": "Buns Run Club ja Telliskivi Loomelinnak",
     "contact": null,
-    "website": null,
+    "website": "https://www.telliskivi5000.ee/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/telliskivi5000/",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.telliskivi5000.ee/",
+    "presumed_organizer_email": "hej@telliskivi5000.ee",
+    "website_emails_found": [
+      "hej@telliskivi5000.ee"
+    ],
+    "description": "Telliskivi 5000 on 5-kilomeetrine jooks, mis toimub Tallinnas Telliskivi Loomelinnakus ja selle ümbruses. Rada on lauge ja kiire, läbides erinevaid Põhja-Tallinna piirkondi, pakkudes jooksjatele nii sportlikku väljakutset kui ka meelelahutuslikku elamust raja ääres. Üritus ühendab spordi ja kultuuri, pakkudes enne ja pärast jooksu mitmekesist programmi ning lõpetades lõbusa finišipeoga. Kõik finišeerijad saavad erikujundusega medali, mis on loodud Telliskivi 5000 identiteedist inspireerituna.",
+    "course_highlights": [
+      "Lauge ja kiire 5 km jooksurada läbi Põhja-Tallinna piirkondade",
+      "Rada kulgeb Krulli kvartalis, Telliskivi Loomelinnakus ja väiksematel tänavatel",
+      "Raja ääres mitmekesine meelelahutus DJ-dest muusikute ja koorideni"
+    ],
+    "additional": "Kõik osalejad saavad finišis erikujundusega medali. Rajal on mitmed kaasaelamispunktid koostöös Red Bulli, Bolti ja Nikega. Pärast jooksu on külm finišijook ning võimalus nautida meeleolukat programmi Loomelinnakus ja mitmetes kohalikus baarides. Lisaks on võimalik osaleda DIY-tegevustes, näiteks kulinaid tegemas või võistlussärki trükkimas. Fotonurk jäädvustab jooksjate emotsioonid. Osalemine on mõeldud vähemalt 18-aastastele. Distantsi läbimiseks on aega kuni 60 minutit ning kõndimine on lubatud. Rajal joogipunkti ega tualette pole; need on olemas finišialas. Pakihoid asub Von Krahli teatri ruumides ja on valveta.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://www.sportos.eu/ee/et/telliskivi-5000/"
     ],
@@ -10308,7 +10321,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "10:40",
     "location": "Sportland Kõrvemaa Matka- ja Suusakeskus, Anija Parish, Eesti",
     "latitude": 59.31758430000001,
     "longitude": 25.6526681,
@@ -10317,31 +10330,130 @@
     "nearby_cities": [
       "Rakvere"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
+    "distances": "[\"21\", \"10\", \"5\"]",
+    "distance_m": [
+      21000,
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "Poolmaraton",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Poolmaraton, 10 km, 5 km",
+    "organizer": "MTÜ Baltic Events Estonia",
     "contact": null,
-    "website": null,
+    "website": "https://sport.sportlandkorvemaa.ee/metsajooks/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "20–45 €",
+    "price_tiers": [
+      {
+        "distance": "21 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "30 €",
+            "deadline": "20270827",
+            "description": "Kuni 27.08.2027"
+          },
+          {
+            "label": "tier_2",
+            "price": "35 €",
+            "deadline": "20270903",
+            "description": "28.08-03.09.2027"
+          }
+        ],
+        "late_fee": {
+          "price": "45 €",
+          "deadline": "20270905"
+        }
+      },
+      {
+        "distance": "10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "25 €",
+            "deadline": "20270827",
+            "description": "Kuni 27.08.2027"
+          },
+          {
+            "label": "tier_2",
+            "price": "30 €",
+            "deadline": "20270903",
+            "description": "28.08-03.09.2027"
+          }
+        ],
+        "late_fee": {
+          "price": "40 €",
+          "deadline": "20270905"
+        }
+      },
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "20 €",
+            "deadline": "20270827",
+            "description": "Kuni 27.08.2027"
+          },
+          {
+            "label": "tier_2",
+            "price": "25 €",
+            "deadline": "20270903",
+            "description": "28.08-03.09.2027"
+          }
+        ],
+        "late_fee": {
+          "price": "30 €",
+          "deadline": "20270905"
+        }
+      },
+      {
+        "distance": "5 km noortejooks",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15 €",
+            "deadline": "20270827",
+            "description": "Kuni 27.08.2027"
+          },
+          {
+            "label": "tier_2",
+            "price": "15 €",
+            "deadline": "20270903",
+            "description": "28.08-03.09.2027"
+          }
+        ],
+        "late_fee": {
+          "price": "20 €",
+          "deadline": "20270905"
+        }
+      }
+    ],
+    "registration_close_date": "20270905",
+    "registration_url": "https://iseteenindus.sportlandkorvemaa.ee",
+    "race_info_url": "https://sport.sportlandkorvemaa.ee/metsajooks/juhend/",
+    "presumed_organizer_email": "sport@korvemaa.ee",
+    "website_emails_found": [
+      "sport@korvemaa.ee"
+    ],
+    "description": "Sportland Kõrvemaa Metsajooks on rahvaspordivõistlus, mis toimub ürgses looduskaitsealal Kõrvemaal. Rajad kulgevad vahelduvalt metsateedel ja kruusateedel, pakkudes osalejatele kauneid vaateid ning mõõdukat tõusumeetrit. Võistlus sobib kogu perele, pakkudes lisaks põhivõistlustele ka lastejookse ja noortejooksu. Võistluskeskus asub mugavalt Tallinna lähedal ning pakub osalejatele sooja suppi, sauna ja kümblustünni. Kõik lõpetajad saavad uhke medali ja kingitused, võitjaid autasustatakse Sportlandi kinkekupongidega.",
+    "course_highlights": [
+      "21 km rada kulgeb metsateedel ja kruusateedel, kogudes umbes 260 tõusumeetrit",
+      "10 km rada on mõõdukalt laineline, sisaldades mitmeid tõuse ja langusi ning kruusateed avatud liiklusega",
+      "5 km rada on vahelduv ja laineline, peamiselt laial metsateel, sisaldades kolme pikemat tõusu"
+    ],
+    "additional": "Lastejooksud on tasuta ja toimuvad ajavõtuta, registreerimine kohapeal. Noortejooks 5 km algab kell 12:30 koos täiskasvanute 5 km jooksuga, osavõtutasu 15 € eelregistreerides. Võistluskeskuses on avatud Sportlandi pop-up pood jooksuvarustuse täiendamiseks. Kõik osalejad saavad sooja supi, sauna ja kümblustünni kasutamise võimaluse alates kella 13-st. Võistlusel on ajavõtt 21 km, 10 km ja 5 km distantsidel kiibiga. Võistluskeskus avatakse kell 10:00, registreerimine ja numbrite väljastamine algab samal ajal. Jooksudistantsidel 21 km, 10 km ja 5 km toimub ajavõtt. Osalejaid ootavad finišis medal, jook ja batoon; kõigile osalejatele pakutakse suppi ning avatud on saun ja kümblustünnid.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://www.sportos.eu/ee/et/korvemaa-metsajooks/"
     ],
@@ -11799,40 +11911,54 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Raekoja plats, Tartu, Eesti",
-    "latitude": 58.3802863,
-    "longitude": 26.723824,
+    "start_time": "09:30",
+    "location": "Vabaduse puiestee, Tartu, Eesti",
+    "latitude": 58.381033,
+    "longitude": 26.7247896,
     "county": "Tartu maakond",
     "nearest_city": "Tartu",
     "nearby_cities": [
       "Tartu"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
+    "distances": "[\"42\", \"21\", \"10\"]",
+    "distance_m": [
+      42000,
+      21000,
+      10000
+    ],
+    "distance_keywords": [
+      "Maraton",
+      "Poolmaraton",
+      "10 km"
+    ],
+    "distance_verbose": "Maraton, Poolmaraton, 10 km",
+    "organizer": "Tartu Maraton",
     "contact": null,
-    "website": null,
+    "website": "https://tartumaraton.ee/et/tartu-linnamaraton-2027",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20271001",
+    "registration_url": "https://tartumaraton.ee/et/registreerimine?id=10",
+    "race_info_url": "https://tartumaraton.ee/et/tartu-linnamaraton-2027/juhend",
+    "presumed_organizer_email": "tartumaraton@tartumaraton.ee",
+    "website_emails_found": [
+      "tartumaraton@tartumaraton.ee"
+    ],
+    "description": "16. Tartu Linnamaraton on traditsiooniline sügisene jooksuvõistlus, mis toimub Tartus Vabaduse puiesteel ja lõpeb Raekoja platsil. Võistlus hõlmab kolme distantsi: täismaraton (42 km), poolmaraton (21 km) ja 10 km jooks, mis sobivad nii jooksjatele kui ka kõndijatele. Rajad läbivad Tartu linna ning pakuvad vaheajavõtupunkte ja tugevat korraldust, sealhulgas katkestajate transporti. Osalejatele on tagatud medalid, nimelised diplomid ning 42 km lõpetajatele ka finišeri T-särk. Üritus on osa Tartu Maratoni Klassiku sarjast ja pakub lisaks põhiüritusele ka virtuaaljooksu võimalust.",
+    "course_highlights": [
+      "Start ja finiš Tartu kesklinnas: Vabaduse puiestee ja Raekoja plats",
+      "Vaheajavõtupunktid maratonil 10 km, 21,1 km ja 30 km juures",
+      "Rajad sobivad nii jooksjatele kui ka kõndijatele, eraldi stardigrupid kepikõndijatele"
+    ],
+    "additional": "Osavõtutasu ei tagastata, kuid arstitõendi esitamisel hiljemalt 01.10.27 kell 17.00 kantakse pool osavõtutasust osaleja kasutajakontole krediidiks. 30% soodustus Eesti Vabariigi pensionäridele ja kuni 18-aastastele noortele, 10% soodustus gruppidele (vähemalt 10 inimest). Võistluspäeva hommikul soodustused ei kehti. Kõikide distantside ajavõtt algab stardipaugust, tulemused avaldatakse jooksjate ja kõndijate kohta koos. Katkestajate transport finišisse. 42 km distantsi lõpetajatele finišeri T-särk. Võistluskeskus avatud Raekoja platsil, kus toimub stardinumbrite väljastamine ja spordikaupade müük. Osalejad saavad medali ja nimelise diplomi; 42 km distantsi lõpetajaid ootab finišerisärk.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.89,
     "sources": [
       "https://www.sportos.eu/ee/et/16-tartu-linnamaraton/"
     ],
@@ -13561,19 +13687,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "additional",
-      "distances",
-      "organizer",
       "longitude",
       "website",
-      "type",
+      "description",
+      "contact",
+      "name",
+      "organizer",
+      "distances",
+      "additional",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13654,19 +13780,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "distances",
-      "organizer",
       "longitude",
       "website",
+      "description",
+      "contact",
+      "name",
+      "organizer",
       "price_range",
-      "type",
+      "distances",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13796,17 +13922,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "distances",
       "longitude",
       "website",
-      "type",
+      "description",
+      "contact",
+      "name",
+      "distances",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13938,16 +14064,16 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "organizer",
       "longitude",
-      "type",
+      "description",
+      "contact",
+      "name",
+      "organizer",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -14120,19 +14246,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "contact",
-      "additional",
-      "distances",
-      "organizer",
       "longitude",
-      "website",
+      "description",
+      "contact",
+      "name",
+      "organizer",
       "price_range",
-      "type",
+      "distances",
+      "additional",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -14229,19 +14355,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "additional",
-      "organizer",
       "longitude",
       "website",
+      "description",
+      "contact",
+      "name",
+      "organizer",
       "price_range",
-      "type",
+      "additional",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14333,19 +14459,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "additional",
-      "organizer",
       "longitude",
       "website",
+      "description",
+      "contact",
+      "name",
+      "organizer",
       "price_range",
-      "type",
+      "additional",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14452,17 +14578,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "contact",
-      "distances",
-      "organizer",
       "longitude",
-      "website",
-      "type",
+      "description",
+      "contact",
+      "name",
+      "organizer",
+      "distances",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14537,18 +14663,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "start_time",
-      "name",
-      "contact",
-      "additional",
-      "distances",
-      "organizer",
       "longitude",
-      "type",
+      "description",
+      "contact",
+      "name",
+      "organizer",
+      "distances",
+      "additional",
       "location",
       "race_dates",
+      "type",
       "latitude",
-      "description"
+      "start_time"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,

@@ -291,6 +291,18 @@
       "market": "cz"
     },
     {
+      "source": "/stranky-zavodu/jizerun_praha/:path*",
+      "destination": "/stranky-zavodu/jizerun/:path*",
+      "permanent": true,
+      "market": "cz"
+    },
+    {
+      "source": "/en/race-pages/jizerun_praha/:path*",
+      "destination": "/en/race-pages/jizerun/:path*",
+      "permanent": true,
+      "market": "cz"
+    },
+    {
       "source": "/stranky-zavodu/kolem_koupaliste/:path*",
       "destination": "/stranky-zavodu/beh_kolem_koupaliste/:path*",
       "permanent": true,
@@ -5351,6 +5363,18 @@
     {
       "source": "/en/race-pages/xiii_smolecka_za_dyszka_wroclaw/:path*",
       "destination": "/en/race-pages/xiii_smolecka_za_dyszka/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/xiv_bieg_niepodleglosci/:path*",
+      "destination": "/strony_biegow/xiv_bieg_niepodleglosci_kalety/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/xiv_bieg_niepodleglosci/:path*",
+      "destination": "/en/race-pages/xiv_bieg_niepodleglosci_kalety/:path*",
       "permanent": true,
       "market": "pl"
     },

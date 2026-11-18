@@ -460,15 +460,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -545,15 +545,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -576,8 +576,8 @@
   {
     "domain_name": "zwarte_dennen_cross",
     "name": "Zwarte Dennen Cross",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261121",
@@ -588,9 +588,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Punthorst",
-    "latitude": 52.61140770000001,
-    "longitude": 6.2810459,
+    "location": "Parking lot south of De Zwarte Dennen, Staphorst, Nederland",
+    "latitude": 52.6244427,
+    "longitude": 6.2788436,
     "county": "Overijssel",
     "nearest_city": "Zwolle",
     "nearby_cities": [
@@ -609,27 +609,33 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km, 1.25 km, 0.9 km",
-    "organizer": null,
+    "organizer": "Bos Bedden Loopgroep AG ’85",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.ag85.nl/zwarte-dennen-cross",
+    "fb_link": "https://www.facebook.com/zwartedennencross/?locale=nl_NL",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.ag85.nl/onze-wedstrijden/zwarte-dennen-cross/inschrijven",
+    "race_info_url": "https://www.ag85.nl/onze-wedstrijden/zwarte-dennen-cross/info",
+    "presumed_organizer_email": "zwartedennencross@ag85.nl",
+    "website_emails_found": [
+      "zwartedennencross@ag85.nl"
+    ],
+    "description": "De Zwarte Dennen Cross is een uitdagende crossloop die plaatsvindt in het bosrijke gebied van De Zwarte Dennen nabij Staphorst. De wedstrijd wordt georganiseerd door Loopgroep AG '85 en maakt deel uit van de Vechtdal Crosscompetitie. De route voert over gevarieerd terrein met natuurlijke hindernissen, wat zorgt voor een dynamische en spannende loopervaring. De start en finish zijn gelegen bij de parkeerplaats aan de zuidkant van De Zwarte Dennen. De wedstrijd trekt zowel recreatieve als competitieve lopers uit de regio.",
+    "course_highlights": [
+      "Gevarieerd bos- en zandpad terrein",
+      "Natuurlijke hindernissen en uitdagende ondergrond",
+      "Start en finish bij de parkeerplaats aan de zuidkant van De Zwarte Dennen"
+    ],
+    "additional": "De Zwarte Dennen Cross maakt deel uit van de Vechtdal Crosscompetitie. Er is tijdregistratie aanwezig. Er zijn kleedruimtes beschikbaar. Parkeren kan bij de startlocatie aan de zuidkant van De Zwarte Dennen. Er gelden gedragsregels onder het motto S(up)port for Nature om het natuurgebied te beschermen. Afstanden: 900 meter, 1.250 meter, 5 kilometer en 10 kilometer. Er zijn jeugdcategorieën voor jongens en meisjes van 10 - 12 en 13 - 15 jaar. Voor iedere deelnemer doneert de organisatie aan Staatsbosbeheer Staphorst voor de renovatie van het Belevingspad.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://uitslagen.nl/evenement.php?id=2026112100861",
       "https://runphy.nl/events/zwarte-dennen-cross/2026-11-21",
@@ -649,8 +655,8 @@
   {
     "domain_name": "moore_drv_beach_run",
     "name": "Moore DRV Beach Run",
-    "type": "road",
-    "type_local": "Wegwedstrijd",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261121",
@@ -660,10 +666,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Monster",
-    "latitude": 52.02395449999999,
-    "longitude": 4.1731144,
+    "start_time": "14:00",
+    "location": "Sporthal De Wielepet, Monster, Nederland",
+    "latitude": 52.02818809999999,
+    "longitude": 4.1687084,
     "county": "Zuid-Holland",
     "nearest_city": "Den Haag",
     "nearby_cities": [
@@ -672,39 +678,52 @@
       "Rotterdam",
       "Leiden"
     ],
-    "distances": "[\"21.1\", \"10.3\", \"5.7\"]",
+    "distances": "[\"21.1\"]",
     "distance_m": [
-      21100,
-      10300,
-      5700
+      21100
     ],
     "distance_keywords": [
-      "Halve marathon",
-      "10 km",
-      "5 km"
+      "Halve marathon"
     ],
-    "distance_verbose": "Halve marathon, 10.3 km, 5.7 km",
+    "distance_verbose": "Halve marathon",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://halvevanmonster.nl/informatie/moore-drv-beach-run",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "price_tiers": [
+      {
+        "distance": "Moore DRV Beach Run (halve marathon)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "16,00 €",
+            "deadline": "20261121",
+            "description": "€ 16,00 minimum leeftijd 18 jaar"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261121",
+    "registration_url": "https://halvevanmonster.nl/informatie/inschrijven",
+    "race_info_url": "https://halvevanmonster.nl/informatie/moore-drv-beach-run",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "De Moore DRV Beach Run is een halve marathon van 21,1 km die start en finisht bij Sporthal De Wielepet in Monster. Het parcours voert door de duinen en over het strand, langs Ter Heijde, het Schelpenpad, Kijkduin en de zandmotor tot Vluchtenburg, met enkele extra lussen en een klim over een nieuw fietspad. Tijdens de loop zijn er meerdere verzorgingsposten en na afloop ontvangen deelnemers vers fruit, sportdrank, water, erwtensoep en een consumptiebon. De minimumleeftijd voor deelname is 18 jaar.",
+    "course_highlights": [
+      "Parcours door duinen en over het strand langs de zandmotor",
+      "Extra lus bij Kijkduin en klim over nieuw fietspad",
+      "Start en finish bij Sporthal De Wielepet in Monster"
+    ],
+    "additional": "Er is geen na-inschrijving mogelijk; online inschrijven kan tot 11:00 uur op de dag van de wedstrijd. Het inschrijfgeld is exclusief een herbruikbare SAW-chip van €4,50, die na afloop kan worden ingeleverd voor een consumptie of bewaard voor andere wedstrijden. Na de finish is er een prijsuitreiking in sporthal De Wielepet. Door deelname wordt een goed doel ondersteund. De start is om 14.00 uur. Deelnemers moeten minimaal 18 jaar zijn; de tijdslimiet is 2,5 uur en er zijn hazen beschikbaar.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.hardlopen.nl/evenementen/52063-moore-drv-beach-run/",
       "https://uitslagen.nl/evenement.php?id=2026112108226"
@@ -2890,15 +2909,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2977,15 +2996,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4857,15 +4876,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4942,15 +4961,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6270,15 +6289,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7107,15 +7126,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7191,15 +7210,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7374,8 +7393,8 @@
   {
     "domain_name": "turfveld_wintercross_texel_den_burg",
     "name": "Turfveld Wintercross, Texel",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261206",
@@ -7385,47 +7404,85 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Den Burg",
-    "latitude": 53.0546266,
-    "longitude": 4.7997253,
+    "start_time": "10:30",
+    "location": "Fazantenlaan and Heidvlakweg, De Dennen, Texel, Nederland",
+    "latitude": 53.0634926,
+    "longitude": 4.7475118,
     "county": "Noord-Holland",
     "nearest_city": "Den Helder",
     "nearby_cities": [
       "Den Helder"
     ],
-    "distances": "[\"8\", \"6\", \"4\", \"0.8\"]",
+    "distances": "[\"8\", \"6\", \"4\", \"2\", \"0.75\"]",
     "distance_m": [
       8000,
       6000,
       4000,
-      800
+      2000,
+      750
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "8 km, 6 km, 4 km, 0.8 km",
-    "organizer": null,
+    "distance_verbose": "8 km, 6 km, 4 km, 2 km, 0.75 km",
+    "organizer": "AV Texel",
     "contact": null,
-    "website": null,
+    "website": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3.00 €",
+            "deadline": null,
+            "description": "Per keer abonnement senioren € 3.00"
+          },
+          {
+            "label": "tier_2",
+            "price": "12.00 €",
+            "deadline": null,
+            "description": "€ 12.00 AV Texel  leden"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.00 €",
+            "deadline": null,
+            "description": "Kinderen t/m 16 jr € 2.00"
+          },
+          {
+            "label": "tier_4",
+            "price": "1.00 €",
+            "deadline": null,
+            "description": "AV Texel  kinderen € 1.00"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
+    "presumed_organizer_email": "secretaris@avtexel.nl",
+    "website_emails_found": [
+      "secretaris@avtexel.nl"
+    ],
+    "description": "De Turfveld Wintercross is een uitdagende crossloop die plaatsvindt in het bosgebied De Dennen op Texel, nabij het Bospaviljoen 't Turfveld. De wedstrijd wordt gehouden op een parcours met kronkelige paadjes en biedt een echte uitdaging voor hardlopers van alle niveaus. Er zijn verschillende afstanden, waaronder een jeugdronde van 750 meter en meerdere rondes van 2 tot 8 kilometer voor volwassenen. De cross is onderdeel van een competitie waarbij deelname aan minimaal drie van de vijf crossen vereist is voor het klassement.",
+    "course_highlights": [
+      "Beschut parcours in het bos De Dennen met kronkelige paadjes",
+      "Ronde van 2 km, met opties voor 2, 3 of 4 rondes (tot 8 km)",
+      "Jeugdronde van 750 meter, ingedeeld in leeftijdscategorieën"
+    ],
+    "additional": "Inschrijven is mogelijk vanaf 9:45 uur bij het Bospaviljoen 't Turfveld, Nattevlakweg 2. Er is mogelijkheid tot betaling met gepast geld of via een Tikkie. De jeugd start om 10:30 uur, de overige deelnemers om 10:50 uur. Voor het klassement moet je minimaal 3 van de 5 crossen meedoen. De cross is open voor leden en niet-leden. Inschrijven vanaf 9:45 uur bij Bospaviljoen ’t Turfveld, Nattevlakweg 2. De jeugd start om 10:30 uur en overige deelnemers om 10:50 uur. De start is bij de hoek van de Fazantenlaan en Heidvlakweg.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://www.hardlopen.nl/evenementen/50740-turfveld-wintercross-texel/"
     ],
@@ -8606,15 +8663,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -8688,15 +8745,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -8976,15 +9033,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9062,15 +9119,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9147,15 +9204,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9234,15 +9291,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -10774,15 +10831,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -10861,15 +10918,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12724,15 +12781,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13496,15 +13553,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -15539,15 +15596,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -15625,15 +15682,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -15710,15 +15767,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -17158,15 +17215,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -19290,15 +19347,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -19379,15 +19436,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -19462,15 +19519,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -19774,15 +19831,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22130,15 +22187,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22219,15 +22276,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23325,15 +23382,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24501,15 +24558,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24585,15 +24642,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -27141,8 +27198,8 @@
   {
     "domain_name": "turfveld_wintercross_texel_2",
     "name": "Turfveld Wintercross, Texel",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270117",
@@ -27152,47 +27209,85 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Den Burg",
-    "latitude": 53.0546266,
-    "longitude": 4.7997253,
+    "start_time": "10:30",
+    "location": "Fazantenlaan and Heidvlakweg, De Dennen, Texel, Nederland",
+    "latitude": 53.0634926,
+    "longitude": 4.7475118,
     "county": "Noord-Holland",
     "nearest_city": "Den Helder",
     "nearby_cities": [
       "Den Helder"
     ],
-    "distances": "[\"8\", \"6\", \"4\", \"0.8\"]",
+    "distances": "[\"8\", \"6\", \"4\", \"2\", \"0.75\"]",
     "distance_m": [
       8000,
       6000,
       4000,
-      800
+      2000,
+      750
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "8 km, 6 km, 4 km, 0.8 km",
-    "organizer": null,
+    "distance_verbose": "8 km, 6 km, 4 km, 2 km, 0.75 km",
+    "organizer": "AV Texel",
     "contact": null,
-    "website": null,
+    "website": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3.00 €",
+            "deadline": null,
+            "description": "Per keer abonnement senioren € 3.00"
+          },
+          {
+            "label": "tier_2",
+            "price": "12.00 €",
+            "deadline": null,
+            "description": "€ 12.00 AV Texel  leden"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.00 €",
+            "deadline": null,
+            "description": "Kinderen t/m 16 jr € 2.00"
+          },
+          {
+            "label": "tier_4",
+            "price": "1.00 €",
+            "deadline": null,
+            "description": "AV Texel  kinderen € 1.00"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270117",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
+    "presumed_organizer_email": "secretaris@avtexel.nl",
+    "website_emails_found": [
+      "secretaris@avtexel.nl"
+    ],
+    "description": "De Turfveld Wintercross is een gezellige en uitdagende crossloopserie die plaatsvindt in het bosrijke gebied De Dennen op Texel. De wedstrijden worden gehouden op een gevarieerd parcours met natuurlijke ondergrond, waarbij deelnemers meerdere ronden van 2 km kunnen lopen, variërend van 750 meter voor de jeugd tot 8 km voor volwassenen. De crossen zijn toegankelijk voor zowel leden als niet-leden en bieden een competitie met klassementen voor verschillende leeftijdscategorieën. De startlocatie is bij het Bospaviljoen 't Turfveld, met een sfeervolle en sportieve ambiance.",
+    "course_highlights": [
+      "Natuurlijk bosparcours met afwisselende ondergrond",
+      "Ronden van 2 km, met afstanden van 750 m tot 8 km",
+      "Startlocatie bij Bospaviljoen 't Turfveld, hoek Fazantenlaan-Heidvlakweg"
+    ],
+    "additional": "Inschrijven kan vanaf 9:45 uur bij het Bospaviljoen Turfveld, met mogelijkheid tot contante betaling of online via Tikkie. De jeugd tot en met 12 jaar loopt 750 meter, start om 10:30 uur; de overige deelnemers starten om 10:50 uur. Voor het klassement moet je minimaal 3 van de 5 crossen meedoen. Het parcours bestaat uit meerdere ronden van 2 km, waarbij 1 tot 4 ronden gelopen kunnen worden. Start en finish zijn bij de hoek van de Fazantenlaan en de Heidvlakweg. Aanmelden kan vanaf 9:45 uur bij Bospaviljoen ’t Turfveld, Nattevlakweg 2, Den Burg. De wintercrosscompetitie bestaat uit vijf wedstrijden; voor een klassement moet je er minstens drie lopen.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.hardlopen.nl/evenementen/50741-turfveld-wintercross-texel/"
     ],
@@ -30119,30 +30214,30 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Fdry_ranuary_run_supplied%2Fdry_ranuary_run_1.webp?alt=media",
-        "alt_text": "Groep mensen die samen plastic bekers met drankjes heffen aan een tafel buiten."
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Fdry_ranuary_run_supplied%2Fdry_ranuary_run_2.webp?alt=media",
-        "alt_text": "Groep hardlopers rent op een bospaadje tijdens een hardloopevenement in de winter."
+        "alt_text": "Failed to generate alt text"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "price_range",
-      "organizer",
-      "distances",
+      "location",
       "website",
-      "description",
-      "additional",
-      "race_dates",
       "contact",
       "longitude",
-      "location",
+      "organizer",
+      "description",
+      "name",
+      "additional",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -35050,8 +35145,8 @@
   {
     "domain_name": "turfveld_wintercross_texel_3",
     "name": "Turfveld Wintercross, Texel",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270214",
@@ -35061,47 +35156,91 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Den Burg",
-    "latitude": 53.0546266,
-    "longitude": 4.7997253,
+    "start_time": "10:30",
+    "location": "Fazantenlaan and Heidvlakweg, De Dennen, Texel, Nederland",
+    "latitude": 53.0634926,
+    "longitude": 4.7475118,
     "county": "Noord-Holland",
     "nearest_city": "Den Helder",
     "nearby_cities": [
       "Den Helder"
     ],
-    "distances": "[\"8\", \"6\", \"4\", \"0.8\"]",
+    "distances": "[\"8\", \"6\", \"4\", \"2\", \"0.75\"]",
     "distance_m": [
       8000,
       6000,
       4000,
-      800
+      2000,
+      750
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "8 km, 6 km, 4 km, 0.8 km",
-    "organizer": null,
+    "distance_verbose": "8 km, 6 km, 4 km, 2 km, 0.75 km",
+    "organizer": "AV Texel",
     "contact": null,
-    "website": null,
+    "website": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3.00 €",
+            "deadline": null,
+            "description": "Per keer abonnement senioren € 3.00"
+          },
+          {
+            "label": "tier_2",
+            "price": "12.00 €",
+            "deadline": null,
+            "description": "abonnement senioren € 12.00"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.00 €",
+            "deadline": null,
+            "description": "AV Texel leden € 2.00"
+          },
+          {
+            "label": "tier_4",
+            "price": "2.00 €",
+            "deadline": null,
+            "description": "Kinderen t/m 16 jr € 2.00"
+          },
+          {
+            "label": "tier_5",
+            "price": "1.00 €",
+            "deadline": null,
+            "description": "AV Texel kinderen € 1.00"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
+    "presumed_organizer_email": "secretaris@avtexel.nl",
+    "website_emails_found": [
+      "secretaris@avtexel.nl"
+    ],
+    "description": "De Turfveld Wintercross is een uitdagende crossloop die plaatsvindt in het bosgebied De Dennen op Texel, nabij het Bospaviljoen 't Turfveld. Het parcours bestaat uit kronkelige paadjes en biedt een beschutte omgeving, ideaal voor hardlopers die van een bosrijke en natuurlijke ondergrond houden. De wedstrijd is toegankelijk voor zowel leden als niet-leden en kent verschillende afstanden, waaronder een jeugdronde van 750 meter en meerdere rondes van 2 tot 8 kilometer. De startlocatie is bij de hoek Fazantenlaan-Heidvlakweg, met starttijden om 10:30 uur voor de jeugd en 10:50 uur voor de overige deelnemers.",
+    "course_highlights": [
+      "Bosrijke omgeving met kronkelige paadjes",
+      "Beschutte startlocatie nabij Bospaviljoen 't Turfveld",
+      "Rondes van 2 km per lus, met opties voor 2, 3 of 4 ronden"
+    ],
+    "additional": "Inschrijven is mogelijk vanaf 9:45 uur bij het Bospaviljoen Turfveld, met voorkeur voor gepast geld of online betaling via Tikkie. De competitie bestaat uit vijf crossen, waarbij deelname aan minimaal drie crossen vereist is voor het klassement. Er zijn aparte categorieën voor jeugd en volwassenen, met leeftijdscategorieën en mogelijkheid om in een hogere leeftijdscategorie mee te doen. De start en finish zijn bij de hoek van de Fazantenlaan en Heidvlakweg. Inschrijven kan vanaf 9:45 uur bij Bospaviljoen ’t Turfveld, Nattevlakweg 2. De jeugd start om 10:30 uur en overige deelnemers om 10:50 uur. Deelname aan minstens drie van de vijf crossen telt mee voor het klassement.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.hardlopen.nl/evenementen/50742-turfveld-wintercross-texel/"
     ],
@@ -36141,46 +36280,46 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Ftrb_nighttrail_supplied%2Ftrb_nighttrail_1.webp?alt=media",
-        "alt_text": "Twee lopers met hoofdlampen rennen 's nachts over een bospaadje tijdens een trailrun."
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Ftrb_nighttrail_supplied%2Ftrb_nighttrail_2.webp?alt=media",
-        "alt_text": "Nachtelijke trailrun met lopers die hoofdlampen dragen in een bosrijke omgeving"
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Ftrb_nighttrail_supplied%2Ftrb_nighttrail_3.webp?alt=media",
-        "alt_text": "Verlichte trailmarkering in donker bos tijdens nachttrailwedstrijd"
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Ftrb_nighttrail_supplied%2Ftrb_nighttrail_4.webp?alt=media",
-        "alt_text": "Nachtelijke trailmarkering met afstanden 12 km en 18 km in bosrijke omgeving"
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 5,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Ftrb_nighttrail_supplied%2Ftrb_nighttrail_5.webp?alt=media",
-        "alt_text": "Groep hardlopers rent 's nachts over een verlicht bospad tijdens een trailrun."
+        "alt_text": "Failed to generate alt text"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "price_range",
-      "organizer",
-      "distances",
+      "location",
       "website",
+      "contact",
+      "longitude",
       "description",
+      "organizer",
+      "name",
+      "start_time",
       "additional",
       "race_dates",
-      "contact",
-      "start_time",
-      "location",
-      "longitude",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -98985,10 +99124,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Rotterdam",
-    "latitude": 51.9244201,
-    "longitude": 4.4777325,
+    "start_time": "09:30",
+    "location": "Parkkade, Rotterdam, Nederland",
+    "latitude": 51.9035218,
+    "longitude": 4.4715397,
     "county": "Zuid-Holland",
     "nearest_city": "Rotterdam",
     "nearby_cities": [
@@ -99007,27 +99146,34 @@
       "10 km"
     ],
     "distance_verbose": "10 km, 1 km",
-    "organizer": null,
+    "organizer": "EPIC Sports & Business",
     "contact": null,
-    "website": null,
+    "website": "https://www.epicruns.nl/maastunnelloop/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.epicruns.nl/maastunnelloop/info/",
+    "presumed_organizer_email": "info@epicsb.nl",
+    "website_emails_found": [
+      "info@epicsb.nl",
+      "rob@epicsb.nl"
+    ],
+    "description": "De Inofec Maastunnelloop is een hardloopevenement dat plaatsvindt op 7 november 2027 in Rotterdam, met start en finish op de Parkkade. Deelnemers kunnen kiezen uit verschillende afstanden, waaronder een 1 KM Familieloop door Het Park bij de Euromast en diverse 10 KM routes die langs iconische Rotterdamse locaties zoals de Maastunnel, Erasmusbrug, Hotel New York, ss Rotterdam en Maassilo voeren. Het evenement combineert sportiviteit met een sociaal doel, waarbij de opbrengst wordt besteed aan voorzieningen voor kinderen met een beperking via Stichting Vrienden van Rijndam. Naast de sportieve uitdaging is er een sfeervol evenemententerrein met foodtrucks en activiteiten.",
+    "course_highlights": [
+      "1 KM Familieloop door Het Park bij de Euromast",
+      "10 KM parcours langs de Maastunnel, Erasmusbrug, Hotel New York, ss Rotterdam en Maassilo",
+      "Start en finish op de Parkkade met diverse faciliteiten"
+    ],
+    "additional": "Er zijn kleedruimtes en lockers beschikbaar (€8 per locker). Tijdregistratie met chip is aanwezig voor de 10 KM loop en Powerwalk. Er zijn waterposten bij de finish en op het 5 KM punt. EHBO is aanwezig met vaste post en mobiel team. Digitale finish- en parcoursfoto's worden gemaakt, maar niet gegarandeerd. De 10 KM Powerwalk heeft een prijsuitreiking. Het evenemententerrein is bereikbaar met het openbaar vervoer via Rotterdam Centraal en metrolijnen. De 10 km Bedrijvenloop is bedoeld voor teams van vier deelnemers. Ouders die meelopen met de Familieloop moeten zich ook inschrijven.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://runphy.nl/events/maastunnelloop/2026-11-08",
       "https://runphy.nl/events/maastunnelloop/2027-11-07",
@@ -101333,18 +101479,18 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Zoetermeer",
-    "latitude": 52.060669,
-    "longitude": 4.494025,
+    "start_time": "10:30",
+    "location": "Atletiekvereniging ILION, Van der Hagenstraat, Zoetermeer, Nederland",
+    "latitude": 52.04819939999999,
+    "longitude": 4.5262894,
     "county": "Zuid-Holland",
     "nearest_city": "Leiden",
     "nearby_cities": [
       "Leiden",
-      "Den Haag",
       "Rotterdam",
-      "Nissewaard",
+      "Den Haag",
       "Dordrecht",
+      "Nissewaard",
       "Haarlem"
     ],
     "distances": "[\"15\", \"10\", \"5\", \"1\", \"0.5\"]",
@@ -101360,27 +101506,37 @@
       "5 km"
     ],
     "distance_verbose": "15 km, 10 km, 5 km, 1 km, 0.5 km",
-    "organizer": null,
+    "organizer": "Atletiekvereniging ILION",
     "contact": null,
-    "website": null,
+    "website": "https://www.ilion.nl/index.php?page=Klaverbladloop",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.inschrijven.nl",
+    "race_info_url": "https://www.ilion.nl/index.php?page=KBL_Informatie&sid=1",
+    "presumed_organizer_email": "klaverbladloop@ilion.nl",
+    "website_emails_found": [
+      "info@ilion.nl",
+      "klaverbladloop@ilion.nl",
+      "sponsoring@ilion.nl",
+      "media@ilion.nl",
+      "webmaster@ilion.nl"
+    ],
+    "description": "De Klaverbladloop is een sfeervol hardloopevenement georganiseerd door atletiekvereniging ILION in Zoetermeer. Het evenement biedt diverse afstanden, waaronder jeugdloopjes van 500 meter en 1 kilometer, prestatielopen van 5 en 10 kilometer, en een 15 kilometer wegwedstrijd. De start en finish vinden plaats op het atletiekcomplex van ILION, met een parcours dat door het Bentwoud en langs de Benthuizerplas voert. De loop trekt jaarlijks veel deelnemers en toeschouwers en wordt mede mogelijk gemaakt door ruim 100 vrijwilligers.",
+    "course_highlights": [
+      "Start en finish op het atletiekcomplex van ILION in Zoetermeer",
+      "Parcours gaat via het ecoduct over de Australieweg langs het Heemkanaal",
+      "10 en 15 km lopen door het Bentwoud, 15 km rondom de Benthuizerplas"
+    ],
+    "additional": "Startnummers liggen klaar op de wedstrijddag vanaf 09:00 uur en bevatten de naam van de loper. Er is een gratis tassenbewaarservice in de hal. Voor alle deelnemers is er een medaille. Er worden pacers ingezet op de 5 km, 10 km en 15 km met verschillende eindtijdgaranties. Er is geen na-inschrijving op de wedstrijddag. Groepen van minimaal 10 lopers krijgen 20% korting via aanmelding per e-mail. De jeugdlopen zijn bedoeld voor kinderen van 4 tot en met 12 jaar.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.runinfo.nl/loopagenda.htm",
       "https://www.hardlopen.nl/evenementen/52116-klaverbladloop-zoetermeer/",
@@ -101416,10 +101572,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Hoorn",
-    "latitude": 52.6423654,
-    "longitude": 5.0602124,
+    "start_time": "10:25",
+    "location": "HRTC Cycling Track, Holenweg 14D, Hoorn, Nederland",
+    "latitude": 52.6518587,
+    "longitude": 5.073891300000001,
     "county": "Noord-Holland",
     "nearest_city": "Hoorn",
     "nearby_cities": [
@@ -101428,12 +101584,11 @@
       "Lelystad",
       "Amsterdam",
       "Almere",
-      "Haarlem"
+      "Den Helder"
     ],
-    "distances": "[\"16.1\", \"16\", \"10\", \"5\", \"1.2\"]",
+    "distances": "[\"16.1\", \"10\", \"5\", \"1.2\"]",
     "distance_m": [
       16100,
-      16000,
       10000,
       5000,
       1200
@@ -101442,28 +101597,80 @@
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "16.1 km, 16 km, 10 km, 5 km, 1.2 km",
-    "organizer": null,
+    "distance_verbose": "16.1 km, 10 km, 5 km, 1.2 km",
+    "organizer": "Loopgroep Hoorn",
     "contact": null,
-    "website": null,
+    "website": "https://www.loopgroephoorn.nl/eenhoornloop",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Jeugdloop 1,2 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3,50 €",
+            "deadline": "20271107",
+            "description": "Voorinschrijving"
+          }
+        ],
+        "late_fee": {
+          "price": "3,50 €",
+          "deadline": "20271108"
+        }
+      },
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "9,00 €",
+            "deadline": "20271107",
+            "description": "Voorinschrijving"
+          }
+        ],
+        "late_fee": {
+          "price": "10,00 €",
+          "deadline": "20271108"
+        }
+      },
+      {
+        "distance": "10 km en 16,1 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10,00 €",
+            "deadline": "20271107",
+            "description": "Voorinschrijving"
+          }
+        ],
+        "late_fee": {
+          "price": "11,00 €",
+          "deadline": "20271108"
+        }
+      }
+    ],
+    "registration_close_date": "20271108",
+    "registration_url": "https://www.loopgroephoorn.nl/lid-worden/inschrijven",
+    "race_info_url": "https://www.loopgroephoorn.nl/eenhoornloop",
+    "presumed_organizer_email": "info@loopgroephoorn.nl",
+    "website_emails_found": [
+      "info@loopgroephoorn.nl"
+    ],
+    "description": "De Eenhoornloop is dé sfeervolle najaarsklassieker van West-Friesland, georganiseerd door Loopgroep Hoorn. De loop start en finisht op de baan van Loopgroep Hoorn aan de Holenweg en biedt afstanden voor jong en oud. De jeugdloop en 5 km vinden plaats rond de baan, terwijl de 10 km en 16,1 km via de IJsselmeerdijk naar Schellinkhout leiden met een prachtig uitzicht over het Markermeer en de stad Hoorn. Het parcours is verkeersluw en goed geregeld met verkeersregelaars, waardoor het een veilige en gezellige loopervaring is.",
+    "course_highlights": [
+      "Jeugdloop en 5 km rond de baan van Loopgroep Hoorn",
+      "10 km en 16,1 km via IJsselmeerdijk naar Schellinkhout met uitzicht over Markermeer en Hoorn",
+      "Verkeersluw parcours met verkeersregelaars op belangrijke kruisingen"
+    ],
+    "additional": "Startnummers kunnen vanaf 9:45 uur worden opgehaald bij de startlocatie. Er zijn verzorgingsposten na elke 5 km met water, banaan en sinaasappel. EHBO is aanwezig op het parcours en bij start/finish. Tijdregistratie wordt handmatig uitgevoerd door een ervaren team. Langs het parcours is volop ruimte voor toeschouwers. De start en finish zijn bij de wielerbaan van HRTC aan de Holenweg 14D in Hoorn.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.86,
     "sources": [
       "https://www.runinfo.nl/loopagenda.htm",
       "https://www.hardlopen.nl/evenementen/53250-27e-eenhoornloop/",
@@ -101573,43 +101780,54 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "turfveld_wintercross_texel",
-    "name": "Turfveld Wintercross, Texel",
-    "type": "terrain",
-    "type_local": "Cross",
+    "domain_name": "intensieve_hazenloop_45",
+    "name": "intensieve hazenloop 45'",
+    "type": "road",
+    "type_local": "Wegwedstrijd",
     "race_dates": [
       [
-        "20261115",
-        "20261115"
+        "20261021",
+        "20261021"
       ],
       [
-        "20271114",
-        "20271114"
+        "20261028",
+        "20261028"
+      ],
+      [
+        "20261104",
+        "20261104"
+      ],
+      [
+        "20261111",
+        "20261111"
+      ],
+      [
+        "20271110",
+        "20271110"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Den Burg",
-    "latitude": 53.0546266,
-    "longitude": 4.7997253,
+    "location": "Amsterdam, Nederland",
+    "latitude": 52.3675734,
+    "longitude": 4.9041389,
     "county": "Noord-Holland",
-    "nearest_city": "Den Helder",
+    "nearest_city": "Amsterdam",
     "nearby_cities": [
-      "Den Helder"
+      "Amsterdam",
+      "Haarlem",
+      "Almere",
+      "Alkmaar",
+      "Hoorn",
+      "Utrecht",
+      "Leiden"
     ],
-    "distances": "[\"8\", \"6\", \"4\", \"0.8\"]",
-    "distance_m": [
-      8000,
-      6000,
-      4000,
-      800
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "8 km, 6 km, 4 km, 0.8 km",
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Gemengde afstand",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -101631,6 +101849,124 @@
     "supplied_fields": [],
     "is_series": false,
     "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.hardlopen.nl/evenementen/60594-intensieve-hazenloop-45/",
+      "https://www.hardlopen.nl/evenementen/60595-intensieve-hazenloop-45/"
+    ],
+    "consolidated_ids": [
+      "6ce890d4-abe4-46d0-98cc-39be1b135059"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261118",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "turfveld_wintercross_texel",
+    "name": "Turfveld Wintercross, Texel",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261115",
+        "20261115"
+      ],
+      [
+        "20271114",
+        "20271114"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "10:30",
+    "location": "Bospaviljoen 't Turfveld, Fazantenlaan and Heidvlakweg, De Dennen, Texel, Nederland",
+    "latitude": 53.0634926,
+    "longitude": 4.7475118,
+    "county": "Noord-Holland",
+    "nearest_city": "Den Helder",
+    "nearby_cities": [
+      "Den Helder"
+    ],
+    "distances": "[\"8\", \"6\", \"4\", \"2\", \"0.75\"]",
+    "distance_m": [
+      8000,
+      6000,
+      4000,
+      2000,
+      750
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "8 km, 6 km, 4 km, 2 km, 0.75 km",
+    "organizer": "AV Texel",
+    "contact": null,
+    "website": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3.00 €",
+            "deadline": null,
+            "description": "Per keer abonnement senioren € 3.00"
+          },
+          {
+            "label": "tier_2",
+            "price": "12.00 €",
+            "deadline": null,
+            "description": "abonnement senioren € 12.00"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.00 €",
+            "deadline": null,
+            "description": "AV Texel leden € 2.00"
+          },
+          {
+            "label": "tier_4",
+            "price": "2.00 €",
+            "deadline": null,
+            "description": "Kinderen t/m 16 jr € 2.00"
+          },
+          {
+            "label": "tier_5",
+            "price": "1.00 €",
+            "deadline": null,
+            "description": "AV Texel kinderen € 1.00"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.avtexel.nl/atletiek/wedstrijden/12/300/turfveld_wintercross.htm",
+    "presumed_organizer_email": "secretaris@avtexel.nl",
+    "website_emails_found": [
+      "secretaris@avtexel.nl"
+    ],
+    "description": "De Turfveld Wintercross is een jaarlijkse crossloop op Texel, gehouden bij het Bospaviljoen 't Turfveld. De wedstrijd is toegankelijk voor zowel leden als niet-leden en biedt verschillende afstanden, waaronder een jeugdronde van 750 meter en langere rondes van 2 tot 8 kilometer. De startlocatie bevindt zich bij de hoek Fazantenlaan-Heidvlakweg, met een uitdagend parcours door het bos en over het Turfveld. De cross is onderdeel van een competitie waarbij deelname aan minimaal drie van de vijf crossen vereist is voor het klassement. De sfeer is informeel en uitnodigend, met inschrijving ter plaatse en de mogelijkheid tot online betaling via Tikkie.",
+    "course_highlights": [
+      "Parcours door bosrijke omgeving en het Turfveld",
+      "Rondes van 2 km, met opties voor 2, 3 of 4 rondes (tot 8 km)",
+      "Jeugdronde van 750 meter, onderverdeeld in leeftijdscategorieën"
+    ],
+    "additional": "Inschrijven kan vanaf 9:45 uur bij 't Bospaviljoen Turfveld, Nattevlakweg 2. Er is een mogelijkheid om online via Tikkie te betalen. De jeugd start om 10:30 uur, de overige deelnemers om 10:50 uur. Voor het klassement moet je minimaal 3 van de 5 crossen meedoen. Startlocatie bij de hoek van de Fazantenlaan en Heidvlakweg, nabij Bospaviljoen ’t Turfveld.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.75,
     "sources": [
       "https://www.hardlopen.nl/evenementen/49371-turfveld-wintercross-texel/",
       "https://www.hardlopen.nl/evenementen/50756-turfveld-wintercross-texel/"
@@ -101852,15 +102188,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -101939,15 +102275,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102021,15 +102357,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102099,15 +102435,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102188,15 +102524,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102276,15 +102612,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102357,15 +102693,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102442,15 +102778,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102532,15 +102868,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102620,15 +102956,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102705,15 +103041,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -102793,15 +103129,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -104129,19 +104465,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "price_range",
-      "organizer",
-      "distances",
+      "location",
       "website",
-      "description",
-      "additional",
-      "race_dates",
       "contact",
       "longitude",
-      "location",
+      "organizer",
+      "description",
+      "name",
+      "additional",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -104439,87 +104775,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "intensieve_hazenloop_45",
-    "name": "intensieve hazenloop 45'",
-    "type": "road",
-    "type_local": "Wegwedstrijd",
-    "race_dates": [
-      [
-        "20261021",
-        "20261021"
-      ],
-      [
-        "20261028",
-        "20261028"
-      ],
-      [
-        "20261104",
-        "20261104"
-      ],
-      [
-        "20261111",
-        "20261111"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Amsterdam, Nederland",
-    "latitude": 52.3675734,
-    "longitude": 4.9041389,
-    "county": "Noord-Holland",
-    "nearest_city": "Amsterdam",
-    "nearby_cities": [
-      "Amsterdam",
-      "Haarlem",
-      "Almere",
-      "Alkmaar",
-      "Hoorn",
-      "Utrecht",
-      "Leiden"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemengde afstand",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.hardlopen.nl/evenementen/60594-intensieve-hazenloop-45/",
-      "https://www.hardlopen.nl/evenementen/60595-intensieve-hazenloop-45/"
-    ],
-    "consolidated_ids": [
-      "5be81847-d5ac-4f8f-aee6-09eda2f5bf32"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "run2day_vlinderloop_houten",
     "name": "Run2Day Vlinderloop",
     "type": "other",
@@ -104717,15 +104972,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -104798,15 +105053,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -104885,15 +105140,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -104967,15 +105222,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105057,15 +105312,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105145,15 +105400,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105235,15 +105490,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105323,15 +105578,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105411,15 +105666,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105499,15 +105754,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105584,15 +105839,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105671,15 +105926,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105885,15 +106140,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -105973,15 +106228,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
       "location",
       "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106061,15 +106316,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106148,15 +106403,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106235,15 +106490,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106327,15 +106582,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106413,15 +106668,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106497,15 +106752,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106581,15 +106836,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106669,15 +106924,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106756,15 +107011,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106844,15 +107099,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -106926,15 +107181,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107011,15 +107266,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107092,15 +107347,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107182,15 +107437,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107267,15 +107522,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107353,15 +107608,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107436,15 +107691,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107527,15 +107782,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107617,15 +107872,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107708,15 +107963,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107800,15 +108055,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107890,15 +108145,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -107978,15 +108233,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108064,15 +108319,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108144,15 +108399,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108233,15 +108488,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108317,15 +108572,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108474,15 +108729,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108555,15 +108810,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108640,15 +108895,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108718,36 +108973,36 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Fdom_verdan_trail_supplied%2Fdom_verdan_trail_1.webp?alt=media",
-        "alt_text": "Twee hardlopers rennen over een bospaadje tijdens de Dom Verdan Trail"
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Fdom_verdan_trail_supplied%2Fdom_verdan_trail_2.webp?alt=media",
-        "alt_text": "Bord met Dom Verdan Loop en mensen bij een overdekte buitenruimte met eten en drinken"
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Fdom_verdan_trail_supplied%2Fdom_verdan_trail_3.webp?alt=media",
-        "alt_text": "Een hardloper op een groen bospad tijdens de Dom Verdan Trail loop."
+        "alt_text": "Failed to generate alt text"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fnl%2Fdom_verdan_trail_supplied%2Fdom_verdan_trail_4.webp?alt=media",
-        "alt_text": "Groep hardlopers rent over een bospaadje tijdens een hardloopevenement in de natuur"
+        "alt_text": "Failed to generate alt text"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
+      "location",
       "website",
-      "description",
-      "race_dates",
       "contact",
       "longitude",
-      "location",
+      "description",
+      "name",
+      "race_dates",
       "type",
-      "name"
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108829,15 +109084,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
       "location",
-      "name",
       "longitude",
-      "type"
+      "description",
+      "name",
+      "county",
+      "race_dates",
+      "type",
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -108919,15 +109174,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -109003,15 +109258,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -109085,15 +109340,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "distances",
-      "description",
-      "race_dates",
-      "county",
-      "longitude",
       "location",
+      "longitude",
+      "description",
+      "name",
+      "county",
+      "race_dates",
       "type",
-      "name"
+      "distances",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,

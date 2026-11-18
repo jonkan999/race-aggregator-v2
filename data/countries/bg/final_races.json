@@ -1498,19 +1498,21 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "8.5 km, 1.1 km, 1 km",
-    "organizer": null,
+    "organizer": "Община Ямбол",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://yambol.bg/news/-yambol-ran-2026-sabira-atleti-i-lyubiteli-na-sporta-v-grada",
+    "fb_link": "https://www.facebook.com/Yambol5kmrun/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
+    "race_info_url": "https://yambol.bg/news/-yambol-ran-2026-sabira-atleti-i-lyubiteli-na-sporta-v-grada",
+    "presumed_organizer_email": "yambol@yambol.bg",
+    "website_emails_found": [
+      "yambol@yambol.bg"
+    ],
+    "description": "Ямбол Рън е спортно събитие, което събира атлети и любители на спорта в град Ямбол. Състезанието включва различни възрастови групи и инициативи за деца, като цели да насърчи активния начин на живот и спортната култура в общността. Събитието се провежда под егидата на Община Ямбол и предлага възможност за участие на всички желаещи да се включат в спортната проява.",
     "course_highlights": [],
     "additional": null,
     "images": [],
@@ -1518,7 +1520,7 @@
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://runbulgaria.org/event/yambol-ran-yambol-run/"
     ],
@@ -4807,8 +4809,8 @@
   {
     "domain_name": "mezhdunaroden_turnir_plovdiv",
     "name": "Международен турнир \"Пловдив\"",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "track",
+    "type_local": "Писта",
     "race_dates": [
       [
         "20260523",
@@ -4822,42 +4824,55 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Plovdiv, България",
-    "latitude": 42.1354079,
-    "longitude": 24.7452904,
+    "start_time": "13:00",
+    "location": "Stadium Plovdiv, Plovdiv, България",
+    "latitude": 42.1497263,
+    "longitude": 24.7197798,
     "county": "Plovdiv",
     "nearest_city": "Пловдив",
     "nearby_cities": [
       "Пловдив"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Смесени дистанции",
-    "organizer": null,
+    "distances": "[\"1.5\", \"0.8\", \"0.4\", \"0.2\", \"0.1\"]",
+    "distance_m": [
+      1500,
+      800,
+      400,
+      200,
+      100
+    ],
+    "distance_keywords": [
+      "1500 метра"
+    ],
+    "distance_verbose": "1500 метра, 0.8 km, 0.4 km, 0.2 km, 0.1 km",
+    "organizer": "СКЛА „Ботев“ Пловдив",
     "contact": null,
-    "website": "https://bul-swimming.org/",
+    "website": "https://sportenkalendar.bg/sybitie/mezdunaroden-turnir-plovdiv-4798",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
+    "registration_close_date": "20270505",
     "registration_url": null,
-    "race_info_url": "https://bul-swimming.org/kalendar",
-    "presumed_organizer_email": "bulswimm@gmail.com",
+    "race_info_url": "https://sportenkalendar.bg/sybitie/mezdunaroden-turnir-plovdiv-4798",
+    "presumed_organizer_email": "stsonova@abv.bg",
     "website_emails_found": [
-      "bulswimm@gmail.com"
+      "stsonova@abv.bg",
+      "kolodruma@plovdiv.bg"
     ],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Международният турнир \"Пловдив\" е лекоатлетическо състезание, организирано от СК по лека атлетика \"Ботев\" Пловдив с подкрепата на Община Пловдив. Състезанието цели популяризиране на леката атлетика в региона и привлича състезатели от България и чужбина. Програмата включва разнообразни дисциплини като спринтови бягания, скокове и овчарски скок, провеждани на стадион \"Пловдив\". Турнирът е традиционно събитие, което събира атлети и фенове на спорта в един динамичен и приятелски дух.",
+    "course_highlights": [
+      "Състезания на стадион \"Пловдив\" с модерни условия",
+      "Дисциплини включват 100 м, 200 м, 400 м, 800 м, 1500 м, скок дължина, скок височина, троен скок и овчарски скок",
+      "Максимум 2 серии бегови дисциплини с приоритет за чуждестранни състезатели и клуба организатор"
+    ],
+    "additional": "В техническите дисциплини участват до 8 състезатели според личните им постижения за 2023/24 г. Беговите дисциплини са максимум 2 серии с до 16 състезатели. Лице за контакт: Стойко Цонов, телефон 0876117789.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.36,
     "sources": [
       "http://www.bfla.org/"
     ],
@@ -8733,10 +8748,10 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Zemen, Kyustendil Province, България",
-    "latitude": 42.288743,
-    "longitude": 22.6965091,
-    "county": "Kyustendil",
+    "location": "Центърът на Земен, Земен, България",
+    "latitude": 42.4779376,
+    "longitude": 22.7471341,
+    "county": "Pernik",
     "nearest_city": "София",
     "nearby_cities": [],
     "distances": "[\"15\", \"5\", \"1\"]",
@@ -8749,27 +8764,33 @@
       "5 km"
     ],
     "distance_verbose": "15 km, 5 km, 1 km",
-    "organizer": null,
+    "organizer": "Списание АТЛЕТИКА",
     "contact": null,
-    "website": "https://www.runbulgaria.org",
-    "fb_link": null,
+    "website": "https://racetimingbg.com/event/%D0%B7%D0%B5%D0%BC%D0%B5%D0%BD-%D1%80%D1%8A%D0%BD-23-08-2026/",
+    "fb_link": "https://www.facebook.com/events/%D0%B7%D0%B5%D0%BC%D0%B5%D0%BD/%D0%B7%D0%B5%D0%BC%D0%B5%D0%BD-%D1%80%D1%8A%D0%BD-2026/1363284885368691/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.runbulgaria.org",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "registration_url": "https://racetimingbg.com/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/",
+    "race_info_url": "https://racetimingbg.com/event/%D0%B7%D0%B5%D0%BC%D0%B5%D0%BD-%D1%80%D1%8A%D0%BD-23-08-2026/",
+    "presumed_organizer_email": "office@racetimingbg.com",
+    "website_emails_found": [
+      "office@racetimingbg.com"
+    ],
+    "description": "„Земен рън“ е лекоатлетическо състезание в Земен с дистанции за различни възможности - от кратко детско и начинаещо бягане до по-дълго предизвикателство. Основната дистанция съчетава шосейно и планинско бягане и отвежда участниците през красивия район около града. Стартът и финалът са в центъра на Земен, а състезанието е част от веригата „Рън България“.",
+    "course_highlights": [
+      "Основното трасе е около 15 км и съчетава шосейни и планински участъци.",
+      "Маршрутът преминава между Земенския и Пещерския манастир.",
+      "Има и по-къси дистанции от около 5 км и 1 км."
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.73,
     "sources": [
       "https://runbulgaria.org/",
       "https://runbulgaria.org/event/zemen-ran-zemen-run/"
@@ -8932,8 +8953,8 @@
   {
     "domain_name": "vitosha_run",
     "name": "VITOSHA RUN",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "trail",
+    "type_local": "Трейл",
     "race_dates": [
       [
         "20260830",
@@ -8948,43 +8969,47 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Vitosha Mountain, Sofia, България",
-    "latitude": 42.55,
-    "longitude": 23.25,
-    "county": "Pernik",
+    "location": "National Palace of Culture, Sofia, България",
+    "latitude": 42.6851948,
+    "longitude": 23.3190206,
+    "county": "Sofia City",
     "nearest_city": "София",
     "nearby_cities": [
       "София"
     ],
-    "distances": "[\"18\"]",
+    "distances": "[\"17.3\"]",
     "distance_m": [
-      18000
+      17300
     ],
     "distance_keywords": [],
-    "distance_verbose": "18 km",
-    "organizer": null,
+    "distance_verbose": "17.3 km",
+    "organizer": "Сдружение Маратон",
     "contact": null,
-    "website": "https://www.facebook.com/skibg",
-    "fb_link": "https://www.facebook.com/skibg",
-    "ig_link": null,
+    "website": "https://itra.run/Races/RaceDetails/123373",
+    "fb_link": "https://www.facebook.com/events/sofia-bulgaria/%D0%B2%D0%B8%D1%82%D0%BE%D1%88%D0%B0-%D1%80%D1%8A%D0%BD-2026-vitosha-run-2026/1610815813340805/?locale=bg_BG",
+    "ig_link": "https://www.instagram.com/vitosha.run.club/?hl=bg",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.facebook.com/skibg",
-    "presumed_organizer_email": "info@ski.bg",
+    "registration_url": "https://itra.run/Account/Manage/Registration",
+    "race_info_url": "https://itra.run/Races/RaceDetails/Vitosha.Run.Vitosha.Run/2026/123373",
+    "presumed_organizer_email": null,
     "website_emails_found": [
-      "info@ski.bg"
+      "medical@mutuaide.fr"
     ],
-    "description": null,
-    "course_highlights": [],
+    "description": "Витоша рън е ежегодно състезание по планинско бягане в София, организирано от Сдружение Маратон. Трасето е изкачващо с дължина 17.3 км и денивелация 1734 м, започващо от Националния дворец на културата в центъра на София и завършващо на Черни връх, най-високият връх на Витоша. Състезанието е отворено за участници на възраст от 15 до 75 години с категории за мъже, жени, младежи до 20 години и ветерани над 45 години.",
+    "course_highlights": [
+      "Изкачващо планинско трасе с 1734 м денивелация",
+      "Старт от Национален дворец на културата в София",
+      "Финал на Черни връх, най-високият връх на Витоша"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "http://marathon.bg/"
     ],
@@ -9002,8 +9027,8 @@
   {
     "domain_name": "beli_isk_r_r_n",
     "name": "Бели Искър рън",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "road",
+    "type_local": "Шосейно бягане",
     "race_dates": [
       [
         "20260830",
@@ -9018,7 +9043,7 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Бели Искър, Самоков Municipality, България",
+    "location": "Стадион, село Бели Искър, България",
     "latitude": 42.2750625,
     "longitude": 23.5380024,
     "county": "Sofia",
@@ -9026,33 +9051,41 @@
     "nearby_cities": [
       "Самоков"
     ],
-    "distances": "[\"8\"]",
+    "distances": "[\"16\", \"5\", \"2\"]",
     "distance_m": [
-      8000
+      16000,
+      5000,
+      2000
     ],
-    "distance_keywords": [],
-    "distance_verbose": "8 km",
-    "organizer": null,
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "16 km, 5 km, 2 km",
+    "organizer": "RUN BULGARIA, община Самоков и Българска федерация лека атлетика",
     "contact": null,
-    "website": "https://www.facebook.com/events/%D0%B1%D0%B5%D0%BB%D0%B8-%D0%B8%D1%81%D0%BA%D1%8A%D1%80/%D0%B1%D0%B5%D0%BB%D0%B8-%D0%B8%D1%81%D0%BA%D1%8A%D1%80-%D1%80%D1%8A%D0%BD-2026/3898043337167611/",
-    "fb_link": "https://www.facebook.com/events/3898043337167611/",
+    "website": "https://www.runbulgaria.org",
+    "fb_link": "https://www.facebook.com/events/%D0%B1%D0%B5%D0%BB%D0%B8-%D0%B8%D1%81%D0%BA%D1%8A%D1%80/%D0%B1%D0%B5%D0%BB%D0%B8-%D0%B8%D1%81%D0%BA%D1%8A%D1%80-%D1%80%D1%8A%D0%BD-2026/3898043337167611/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://www.facebook.com/events/3898043337167611/",
+    "race_info_url": "https://www.runbulgaria.org",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "„Бели Искър Рън“ е състезание от веригата RUN BULGARIA, което събира бегачи в село Бели Искър. Участниците могат да избират между дистанции от 16 км и 5 км, а за деца и любители има масов старт на 2 км. Стартът и финалът са на стадиона в селото, а състезанието е част от спортно-културната програма на Лунния фестивал.",
+    "course_highlights": [
+      "Избор между 16 км, 5 км и масова дистанция от 2 км.",
+      "Старт-финал на стадиона в село Бели Искър.",
+      "Дистанцията от 2 км е подходяща за деца и любители."
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://runbulgaria.org/event/beli-iskar-ran-beli-iskar-run/"
     ],
@@ -9840,33 +9873,41 @@
     "nearby_cities": [
       "Велико Търново"
     ],
-    "distances": "[\"13\"]",
+    "distances": "[\"2\", \"0.8\", \"0.3\"]",
     "distance_m": [
-      13000
+      2000,
+      800,
+      300
     ],
     "distance_keywords": [],
-    "distance_verbose": "13 km",
-    "organizer": null,
+    "distance_verbose": "2 km, 0.8 km, 0.3 km",
+    "organizer": "Община Дряново",
     "contact": null,
-    "website": "https://www.facebook.com/p/%D0%A1%D0%9A-%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BA%D0%B0-%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B0-%D0%95%D0%92%D0%9A%D0%A0-%D0%B3%D1%80-%D0%92%D0%90%D0%A0%D0%9D%D0%90-100034738132600/",
-    "fb_link": "https://www.facebook.com/p/%D0%A1%D0%9A-%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BA%D0%B0-%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B0-%D0%95%D0%92%D0%9A%D0%A0-%D0%B3%D1%80-%D0%92%D0%90%D0%A0%D0%9D%D0%90-100034738132600/",
+    "website": "https://www.dryanovo.bg/bg/article/6544/57-shoseen-lekoatleticheski-probeg-kolyu-ficheto",
+    "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://www.facebook.com/p/%D0%A1%D0%9A-%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BA%D0%B0-%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B0-%D0%95%D0%92%D0%9A%D0%A0-%D0%B3%D1%80-%D0%92%D0%90%D0%A0%D0%9D%D0%90-100034738132600/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "https://www.dryanovo.bg/bg/article/6544/57-shoseen-lekoatleticheski-probeg-kolyu-ficheto",
+    "presumed_organizer_email": "dryanovo@dryanovo.bg",
+    "website_emails_found": [
+      "dryanovo@dryanovo.bg"
+    ],
+    "description": "57-ми шосеен лекоатлетически пробег „Колю Фичето“ в Дряново е традиционно състезание, което събира любители на бягането от региона. Събитието се провежда в живописната околност на града, като предлага възможност за спортна активност и социални контакти сред природата и историческите забележителности на района. Пробегът е част от спортния календар на община Дряново и се организира с подкрепата на местната администрация.",
+    "course_highlights": [
+      "Стартове на дистанции 300 м, 800 м и 2000 м.",
+      "Състезателни категории за различни възрастови групи.",
+      "Провежда се по шосе в Дряново."
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "http://www.bfla.org/"
     ],
@@ -12860,18 +12901,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "type",
-      "contact",
-      "website",
-      "description",
       "longitude",
       "latitude",
-      "location",
-      "race_dates",
+      "contact",
+      "organizer",
+      "distances",
       "name",
+      "location",
+      "type",
+      "description",
+      "race_dates",
       "price_range",
-      "organizer"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
