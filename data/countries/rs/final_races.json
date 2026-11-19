@@ -726,10 +726,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Belgrade, Srbija",
-    "latitude": 44.8125449,
-    "longitude": 20.46123,
+    "start_time": "10:00",
+    "location": "Savsko šetalište, Belgrade, Srbija",
+    "latitude": 44.7841945,
+    "longitude": 20.3918985,
     "county": "Belgrade",
     "nearest_city": "Beograd",
     "nearby_cities": [
@@ -745,27 +745,71 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Sportsko udruženje SINGIDUNUM RUNNERS",
     "contact": null,
-    "website": null,
+    "website": "https://novogodisnjimrazaton.com/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/novogodisnji_mrazaton/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Novogodišnja petica",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "1.800 RSD",
+            "deadline": "20261125",
+            "description": "standardni prijavni rok"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.000 RSD",
+            "deadline": "20261217",
+            "description": "kasni prijavni rok"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Novogodišnja desetka",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "2.100 RSD",
+            "deadline": "20261125",
+            "description": "standardni prijavni rok"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.300 RSD",
+            "deadline": "20261217",
+            "description": "kasni prijavni rok"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261217",
+    "registration_url": "https://novogodisnjimrazaton.com/#prijava",
+    "race_info_url": "https://novogodisnjimrazaton.com/#trke",
+    "presumed_organizer_email": "novogodisnji.mrazaton@gmail.com",
+    "website_emails_found": [
+      "novogodisnji.mrazaton@gmail.com",
+      "singidunum.runners@gmail.com"
+    ],
+    "description": "Novogodišnji Mrazaton je praznična trka Deda Mrazova u Beogradu, održava se na Savskom šetalištu i namenjena je rekreativcima i sportistima u prazničnoj atmosferi. Učesnici trče u crvenim Deda Mraz i Baba Mraz odelima koja dobijaju u startnim paketima, stvarajući jedinstvenu i veselu atmosferu. Ovaj događaj ima humanitarni i ekološki karakter, sa akcijama prikupljanja paketića za decu i podizanjem svesti o očuvanju životne sredine. Trka je limitirana na 700 učesnika i predstavlja jedan od najmasovnijih zimskih sportskih događaja u Srbiji.",
+    "course_highlights": [
+      "Trka se održava na Savskom šetalištu, jednom od najlepših mesta za rekreaciju u Beogradu",
+      "Dve seniorske trke na 5 km i 10 km",
+      "Svi učesnici trče u autentičnim Deda Mraz i Baba Mraz kostimima iz startnih paketa"
+    ],
+    "additional": "Svi učesnici dobijaju crvena Deda Mraz i Baba Mraz odela u startnim paketima. Broj učesnika je ograničen na 700. Organizator ističe humanitarni karakter trke sa akcijom \"Slatkiši za slatkiše\" i ekološku svest. Očekuje se preko 1000 posetilaca uključujući navijače i volontere. Učesnici dobijaju Deda Mrazovo odelo u startnom paketu; navedeni su i kostimi Baka Mrazice. Najavljena je humanitarna akcija „Slatkiši za slatkiše“, a medicinska podrška je obezbeđena na stazi i u cilju.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.trcanje.rs/event/novogodisnji-mrazaton-2/"
     ],
@@ -2896,7 +2940,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "13:30",
     "location": "Belgrade, Srbija",
     "latitude": 44.8125449,
     "longitude": 20.46123,
@@ -2920,25 +2964,29 @@
     "distance_verbose": "Polumaraton, 10 km, 5 km, 1 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://onerun.rs/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://onerun.rs/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "One Run je međunarodni trkački događaj koji se održava već osam godina i okuplja trkače iz više zemalja i kontinenata istog dana. Trka je poznata po tome što je dva puta upisana u Ginisovu knjigu rekorda kao najveći polumaraton sa sinhronizovanim startom na svetu. Ove godine trka se održava u Srbiji, kao i u nekoliko drugih zemalja, a učesnici mogu birati između četiri distance: 1 km, 5 km, 10 km i 21 km. Događaj je otvoren za sve, bilo da trče ili hodaju, i promoviše zdravlje, pristupačnost i zajedništvo kroz sport.",
+    "course_highlights": [
+      "Četiri dostupne distance: 1 km, 5 km, 10 km i 21 km",
+      "Sinhronizovani start u više zemalja istog dana",
+      "Događaj upisan dva puta u Ginisovu knjigu rekorda"
+    ],
+    "additional": "Start i registracija su na Žitnom trgu u Velikom Gradištu. Registracija traje od 08:00 do 11:30. Priprema za start trke na 1 km je u 12:45, a start trka na 5 km, 10 km i 21 km je u 13:30. Nakon trke sledi proglašenje pobednika i dodela priznanja u 15:30. Startni paket uključuje startni broj sa čipom, poklone sponzora i medalju.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.42,
     "sources": [
       "https://trka.rs/events/977-onerun-2027/"
     ],
@@ -6628,9 +6676,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Niš, Srbija",
-    "latitude": 43.320926,
-    "longitude": 21.8954069,
+    "location": "Niš Fortress, Niš, Srbija",
+    "latitude": 43.32516870000001,
+    "longitude": 21.8963883,
     "county": "Nisava District",
     "nearest_city": "Niš",
     "nearby_cities": [
@@ -6644,27 +6692,34 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Udruženje Budite uz nas",
     "contact": null,
-    "website": "https://trka.rs",
+    "website": "https://buditeuznas.rs/trka-za-zivot/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://trka.rs/accounts/signup/",
-    "race_info_url": "https://trka.rs/about/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://buditeuznas.rs/trka-za-zivot/#prijava",
+    "race_info_url": "https://buditeuznas.rs/trka-za-zivot/#content",
+    "presumed_organizer_email": "info@buditeuznas.rs",
+    "website_emails_found": [
+      "info@buditeuznas.rs",
+      "buditeuznas@gmail.com"
+    ],
+    "description": "Trka za život je humanitarna manifestacija u Nišu posvećena podršci ženama obolelim od karcinoma, sa ciljem podizanja svesti o ranom otkrivanju bolesti i osnaživanju pacijentkinja. Učesnici trke simbolično izražavaju solidarnost i nadu kroz zajednički pokret i edukativne sadržaje na cilju. Ovaj događaj okuplja pojedince, porodice i organizacije u duhu zajedništva i humanosti, kombinujući sport, edukaciju i humanitarni angažman u inspirativnom danu.",
+    "course_highlights": [
+      "Start na tvrđavi Niš sa pozitivnom energijom i zajedništvom",
+      "Inspirativne poruke i edukativni materijali na kontrolnim tačkama",
+      "Prostor na cilju sa savetima o prevenciji i podršci"
+    ],
+    "additional": "Svaki učesnik trke započinje trku simboličnim zagrljajem podrške. Manifestacija se završava zajedničkom ceremonijom i prikupljanjem sredstava za pomoć obolelima. Na cilju je edukativni kutak sa savetima lekara, psihologa i radiologa. Trka je humanitarna akcija udruženja Budite uz nas, koje pruža kontinuiranu podršku ženama obolelim od karcinoma. Učešćem se prikupljaju sredstva za aktivnosti podrške obolelima, zdravstvene ustanove i nabavku opreme i suplemenata.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://www.trcanje.rs/event/trka-za-zivot/"
     ],

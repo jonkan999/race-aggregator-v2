@@ -694,8 +694,8 @@
   {
     "domain_name": "beh_svateho_andreja_rajecke_teplice",
     "name": "Beh svätého Andreja",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261128",
@@ -705,52 +705,75 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Rajecké Teplice, Žilina District, Žilina Region, Slovakia",
-    "latitude": 49.1282666,
-    "longitude": 18.6827411,
+    "start_time": "16:50",
+    "location": "Námestie SNP, Rajecké Teplice, Slovakia",
+    "latitude": 49.1279792,
+    "longitude": 18.6823848,
     "county": "Region of Žilina",
     "nearest_city": "Žilina",
     "nearby_cities": [
       "Žilina"
     ],
-    "distances": "[\"13.7\", \"10\", \"8.3\", \"6\", \"5\", \"4.5\", \"3.2\", \"1\"]",
+    "distances": "[\"4.5\"]",
     "distance_m": [
-      13700,
-      10000,
-      8300,
-      6000,
-      5000,
-      4500,
-      3200,
-      1000
+      4500
     ],
     "distance_keywords": [
-      "10 km",
       "5 km"
     ],
-    "distance_verbose": "13.7 km, 10 km, 8.3 km, 6 km, 5 km, 4.5 km, 3.2 km, 1 km",
-    "organizer": null,
+    "distance_verbose": "4.5 km",
+    "organizer": "Občianske združenie ŠRT v spolupráci s Mestom Rajecké Teplice",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.rajecke-teplice.info/pages/beh-svateho-andreja-2026",
+    "fb_link": "https://www.facebook.com/100063442250596/posts/%EF%B8%8F-beh-sv%C3%A4t%C3%A9ho-andreja-2025-%EF%B8%8Frajeck%C3%A9-teplice-n%C3%A1mestie-snp29112025srde%C4%8Dne-v%C3%A1s-poz%C3%BD/1225689149555815/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "Detský beh zdarma; hlavný beh 15 € online",
+    "price_tiers": [
+      {
+        "distance": "Hlavný beh",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15 €",
+            "deadline": null,
+            "description": "Štartovné: 15 € pri online registrácii"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Detský beh Malý Caesar",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné: zdarma"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://casomierapt.com",
+    "race_info_url": "https://www.rajecke-teplice.info/pages/beh-svateho-andreja-2026",
+    "presumed_organizer_email": "primator@rajecke-teplice.sk",
+    "website_emails_found": [
+      "primator@rajecke-teplice.sk"
+    ],
+    "description": "The 2026 Saint Andrew’s Run in Rajecké Teplice is a sporting event organized by the ŠRT civic association in cooperation with the City of Rajecké Teplice. The main race follows a 4.5 km asphalt course and starts at SNP Square. The event also includes a Firefighters category and the free Little Caesar children’s run for the youngest athletes. Alongside the sporting events, participants can enjoy a competition for the best-decorated Christmas stroller, adding to the pre-Christmas atmosphere.",
+    "course_highlights": [
+      "4.5 km asphalt course for the main race",
+      "Start and finish at SNP Square in Rajecké Teplice",
+      "Winter edition of the Little Caesar children’s run for ages 1–3, 4–6, and 7–9"
+    ],
+    "additional": "Registration for the main race is open from 14:30 to 16:30. Registration for the children’s run opens at 14:00 in the lobby of the Municipal Office. The children’s run starts at 16:00. The competition for the best-decorated Christmas stroller is part of the event. The main race starts at 16:50 and the children’s run at 16:00. Sign up for the main race at casomierapt.com. The event also includes a competition for the best-decorated Christmas stroller.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.bezeckypretek.sk/beh-svateho-andreja-rajecke-teplice-2026/",
       "https://beh.sk/pretek/beh-svataho-andreja-6/"
@@ -2134,51 +2157,75 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Kuchajda, Bratislava, Slovakia",
-    "latitude": 48.1691036,
-    "longitude": 17.1446742,
+    "start_time": "10:00",
+    "location": "Park Ostredky or Kuchajda swimming pool grounds, Bratislava, Slovakia",
+    "latitude": 48.161595,
+    "longitude": 17.1712325,
     "county": "Region of Bratislava",
     "nearest_city": "Bratislava",
     "nearby_cities": [
       "Bratislava"
     ],
-    "distances": "[\"42.2\", \"16\", \"11.6\", \"10\", \"5\", \"3.2\"]",
+    "distances": "[\"3.22\", \"0.2\"]",
     "distance_m": [
-      42200,
-      16000,
-      11600,
-      10000,
-      5000,
-      3200
+      3220,
+      200
     ],
-    "distance_keywords": [
-      "Maratón",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Maratón, 16 km, 11.6 km, 10 km, 5 km, 3.2 km",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "3.22 km, 0.2 km",
+    "organizer": "Sri Chinmoy Marathon Team",
     "contact": null,
-    "website": null,
+    "website": "https://vsetkybehy.sk/seria/beh-2-mile-bratislava",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "2 míle",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné zdarma"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Detské behy",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné zdarma"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/seria/beh-2-mile-bratislava",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The 2 Miles Run Bratislava is a running series organized by the Sri Chinmoy Marathon Team, held in Bratislava at Park Ostredky and the Kuchajda swimming pool grounds. The race is run on a paved road course measuring 2 miles (3.22 km), and also includes children’s races. The series features a points competition for a perpetual trophy, with points awarded in each round based on participation and placing. Entry is free, allowing the general public to take part without financial burden. Check-in and registration take place on site before the races.",
+    "course_highlights": [
+      "A 2-mile (3.22 km) course on paved roads",
+      "The races take place in the pleasant surroundings of Park Ostredky and the Kuchajda swimming pool grounds",
+      "Children’s races are also held: 200 m for children under 13"
+    ],
+    "additional": "Check-in and registration take place on site behind Komunitné námestie from 9:30. Parking is available in the large car park on Sputniková Street or near OC Budúcnosť. The nearest public transport stops are Súmračná, Clementisova and Maximiliána Hella. There are no public toilets in the park.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.58,
     "sources": [
       "https://www.bezeckypretek.sk/beh-2-mile-bratislava-2026-12/"
     ],
@@ -3858,8 +3905,8 @@
   {
     "domain_name": "trojkralovy_beh_na_hrad_lietava_lietava",
     "name": "Trojkráľový beh na Hrad Lietava",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270109",
@@ -3869,10 +3916,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Lietava Castle, Lietava, Žilina District, Žilina Region, Slovakia",
-    "latitude": 49.16063639999999,
-    "longitude": 18.6845348,
+    "start_time": "10:00",
+    "location": "Základná škola Lietava, Lietava, Slovakia",
+    "latitude": 49.17140329999999,
+    "longitude": 18.6672995,
     "county": "Region of Žilina",
     "nearest_city": "Žilina",
     "nearby_cities": [
@@ -3894,27 +3941,50 @@
       "5 km"
     ],
     "distance_verbose": "13.7 km, 10 km, 8.3 km, 6 km, 5 km, 4.5 km, 3.2 km, 1 km",
-    "organizer": null,
+    "organizer": "o100dušu Lietava – bežecký klub o.z.",
     "contact": null,
-    "website": null,
+    "website": "https://vsetkybehy.sk/podujatie/trojkralovy-beh-na-hrad-lietava-2027",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_range": "12–15 €",
+    "price_tiers": [
+      {
+        "distance": "Hlavný beh",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12 €",
+            "deadline": null,
+            "description": "Online registrácia 12 €"
+          }
+        ],
+        "late_fee": {
+          "price": "15 €",
+          "deadline": "20270109"
+        }
+      }
+    ],
+    "registration_close_date": "20270109",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/podujatie/trojkralovy-beh-na-hrad-lietava-2027#main-content",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The Three Kings Run to Lietava Castle is a mountain trail race with 367 metres of elevation gain, running from the grounds of the primary school in Lietava to the upper courtyard of Lietava Castle. The course is 8.3 km long, with approximately 1 km on asphalt and the rest on marked forest trails and meadows. The race is open to adults and younger runners with parental consent, and mountain insurance is required. Each participant receives a race pack with a bag, a baguette and presents, as well as a finisher’s medal at the finish. The race results and prize-giving will take place after all participants have finished.",
+    "course_highlights": [
+      "367 metres of elevation gain",
+      "Approximately 1 km on asphalt, with the rest on forest trails and meadows",
+      "Finish in the upper courtyard of Lietava Castle"
+    ],
+    "additional": "Race check-in and bib collection take place on 9 January 2027 from 08:00 to 09:30 in the primary school building in Lietava. On-site registration is possible only if places are available, for €15 in cash. There is space to change and a storage area for personal belongings on the school grounds. The time limit for completing the course is 2 hours. Race check-in and bib distribution take place on the grounds of Lietava Primary School. Mountain insurance covering mountain rescue intervention is compulsory.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.bezeckypretek.sk/trojkralovy-beh-na-lietava-2027/",
       "https://beh.sk/pretek/trojkralovy-beh-na-hrad-lietava-2/"
@@ -4502,8 +4572,8 @@
   {
     "domain_name": "raciansky_kros_zima",
     "name": "Račiansky kros ZIMA",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270207",
@@ -4514,50 +4584,50 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Rača, Bratislava, Slovakia",
-    "latitude": 48.21202840000001,
-    "longitude": 17.1546065,
+    "location": "Amfiteáter, Knižkova dolina, Rača, Bratislava, Slovakia",
+    "latitude": 48.2139548,
+    "longitude": 17.1452778,
     "county": "Region of Bratislava",
     "nearest_city": "Bratislava",
     "nearby_cities": [
       "Bratislava"
     ],
-    "distances": "[\"42.2\", \"16\", \"10\", \"9.5\", \"5\", \"3.2\"]",
+    "distances": "[\"16\", \"9.5\"]",
     "distance_m": [
-      42200,
       16000,
-      10000,
-      9500,
-      5000,
-      3200
+      9500
     ],
     "distance_keywords": [
-      "Maratón",
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "Maratón, 16 km, 10 km, 9.5 km, 5 km, 3.2 km",
-    "organizer": null,
+    "distance_verbose": "16 km, 9.5 km",
+    "organizer": "OZ PERUN",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.racianskykros.sk/zima/",
+    "fb_link": "https://www.facebook.com/racianskykros/?locale=sk_SK",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.racianskykros.sk/zima/",
+    "presumed_organizer_email": "racianskykros@gmail.com",
+    "website_emails_found": [
+      "racianskykros@gmail.com"
+    ],
+    "description": "Račiansky kros ZIMA is a forest run in Rača, Bratislava, along paths in the Little Carpathians. The start and finish are in Knižkova dolina, near the amphitheatre. Runners can choose between two courses, 9.5 km and 16 km long. The event is organised by OZ PERUN.",
+    "course_highlights": [
+      "Forest paths in the Little Carpathians",
+      "Two courses: 9.5 km and 16 km",
+      "Start and finish near the amphitheatre in Knižkova dolina"
+    ],
+    "additional": "Timing is provided by an RFID chip system.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://www.bezeckypretek.sk/raciansky-kros-zima-bratislava-raca-2027/",
       "https://www.terminovka.sk/podujatie/raciansky-kros-zima",
@@ -27254,35 +27324,50 @@
     "nearby_cities": [
       "Košice"
     ],
-    "distances": "[\"21.098\"]",
+    "distances": "[\"21.1\"]",
     "distance_m": [
-      21098
+      21100
     ],
     "distance_keywords": [
       "Polmaratón"
     ],
     "distance_verbose": "Polmaratón",
-    "organizer": null,
+    "organizer": "Slovenský atletický zväz",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.kosicemarathon.com/",
+    "fb_link": "https://www.facebook.com/atletikasvk/posts/-m-sr-2026-v-polmarat%C3%B3ne-d%C3%B4le%C5%BEit%C3%BD-oznam-%C5%A1portovo-technick%C3%A9ho-deleg%C3%A1ta%E2%84%B9-na-majstr/1425337913016237/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.kosicemarathon.com/propozicie-mmm/",
+    "race_info_url": "https://www.kosicemarathon.com/propozicie-mmm/",
+    "presumed_organizer_email": "info@kosicemarathon.com",
+    "website_emails_found": [
+      "KMSR-MMM2026_1280x757-300x177@2x.jpg",
+      "Tromso-AIMS2026_1280x757-300x177@2x.jpg",
+      "1-rok-MarathonPointu-MMM2026_1280x757-300x177@2x.jpg",
+      "KPHM2026-vysledky_1280x757-300x177@2x.jpg",
+      "info@kosicemarathon.com",
+      "BAUERNEBLOV-DOM-foto_1280x757-300x177@2x.jpg",
+      "progress@progress.sk",
+      "MMM_foto_1280x757-300x177@2x.jpg",
+      "KPHM-2026-plagat-210x300@2x.png",
+      "PROGRAM-MMM-2015-foto_1280x757-300x177@2x.jpg"
+    ],
+    "description": "The Slovak Republic Championships in the Men’s and Women’s Half Marathon are part of the Košice Peace Marathon, held in Košice. The half-marathon course is fast, with few sharp turns and a favourable elevation profile, allowing runners to achieve excellent times. The start and finish are on Hlavná Street in the city centre, creating a pleasant atmosphere for runners and spectators alike. The event is organised with an emphasis on professional preparation and support for the running community.",
+    "course_highlights": [
+      "A fast course with few sharp turns",
+      "A favourable elevation profile suited to fast times",
+      "Start and finish on Hlavná Street in Košice"
+    ],
+    "additional": "The start of all events is on Hlavná Street, between the DoubleTree by Hilton hotel and the Dargov department store. The MMM relays consist of four runners, with legs of 12 km, 9 km and 12 km. The organiser awards age categories for the marathon and half marathon. Registration is available online only through the official website.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.67,
     "sources": [
       "https://www.kosicemarathon.com/wp-content/uploads/docs/msr/MSR-PM-2026.pdf"
     ],
@@ -34154,6 +34239,72 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "topolcianska_bezecka_liga_2026_12_kolo",
+    "name": "Topoľčianska bežecká liga 2026 – 12. kolo",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261112",
+        "20261112"
+      ],
+      [
+        "20271111",
+        "20271111"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Park Tovarníky, Odbojárov Street, Topoľčany, Slovakia",
+    "latitude": 48.5646803,
+    "longitude": 18.1458711,
+    "county": "Region of Nitra",
+    "nearest_city": "Nitra",
+    "nearby_cities": [
+      "Nitra"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Zmiešané vzdialenosti",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/topolcianska-bezecka-liga-2026-12-kolo/"
+    ],
+    "consolidated_ids": [
+      "8d7ddb51-4ec3-4114-a887-11e2eb49b566"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261119",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "zemplinsky_extrem_beh_v_muzeu",
     "name": "Zemplínsky extrém – Beh v múzeu",
     "type": "terrain",
@@ -34444,68 +34595,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260411",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "topolcianska_bezecka_liga_2026_12_kolo",
-    "name": "Topoľčianska bežecká liga 2026 – 12. kolo",
-    "type": "other",
-    "type_local": "Ostatné",
-    "race_dates": [
-      [
-        "20261112",
-        "20261112"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Park Tovarníky, Odbojárov Street, Topoľčany, Slovakia",
-    "latitude": 48.5646803,
-    "longitude": 18.1458711,
-    "county": "Region of Nitra",
-    "nearest_city": "Nitra",
-    "nearby_cities": [
-      "Nitra"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://beh.sk/pretek/topolcianska-bezecka-liga-2026-12-kolo/"
-    ],
-    "consolidated_ids": [
-      "2f180913-b1ee-4fe7-a3d5-e348b54ce851"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -35442,19 +35531,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "organizer",
-      "description",
-      "price_range",
-      "name",
-      "latitude",
-      "start_time",
-      "distances",
-      "longitude",
       "location",
+      "distances",
+      "type",
+      "price_range",
       "contact",
       "website",
+      "description",
+      "longitude",
       "race_dates",
-      "type"
+      "start_time",
+      "latitude",
+      "organizer",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,

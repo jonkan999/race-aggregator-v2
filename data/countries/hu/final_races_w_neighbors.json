@@ -1950,8 +1950,8 @@
   {
     "domain_name": "beh_svateho_andreja_rajecke_teplice",
     "name": "Beh svätého Andreja",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261128",
@@ -1961,52 +1961,75 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Rajecké Teplice, Žilina District, Žilina Region, Slovakia",
-    "latitude": 49.1282666,
-    "longitude": 18.6827411,
+    "start_time": "16:50",
+    "location": "Námestie SNP, Rajecké Teplice, Slovakia",
+    "latitude": 49.1279792,
+    "longitude": 18.6823848,
     "county": "Region of Žilina",
     "nearest_city": "Žilina",
     "nearby_cities": [
       "Žilina"
     ],
-    "distances": "[\"13.7\", \"10\", \"8.3\", \"6\", \"5\", \"4.5\", \"3.2\", \"1\"]",
+    "distances": "[\"4.5\"]",
     "distance_m": [
-      13700,
-      10000,
-      8300,
-      6000,
-      5000,
-      4500,
-      3200,
-      1000
+      4500
     ],
     "distance_keywords": [
-      "10 km",
       "5 km"
     ],
-    "distance_verbose": "13.7 km, 10 km, 8.3 km, 6 km, 5 km, 4.5 km, 3.2 km, 1 km",
-    "organizer": null,
+    "distance_verbose": "4.5 km",
+    "organizer": "Občianske združenie ŠRT v spolupráci s Mestom Rajecké Teplice",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.rajecke-teplice.info/pages/beh-svateho-andreja-2026",
+    "fb_link": "https://www.facebook.com/100063442250596/posts/%EF%B8%8F-beh-sv%C3%A4t%C3%A9ho-andreja-2025-%EF%B8%8Frajeck%C3%A9-teplice-n%C3%A1mestie-snp29112025srde%C4%8Dne-v%C3%A1s-poz%C3%BD/1225689149555815/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "Detský beh zdarma; hlavný beh 15 € online",
+    "price_tiers": [
+      {
+        "distance": "Hlavný beh",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15 €",
+            "deadline": null,
+            "description": "Štartovné: 15 € pri online registrácii"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Detský beh Malý Caesar",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné: zdarma"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://casomierapt.com",
+    "race_info_url": "https://www.rajecke-teplice.info/pages/beh-svateho-andreja-2026",
+    "presumed_organizer_email": "primator@rajecke-teplice.sk",
+    "website_emails_found": [
+      "primator@rajecke-teplice.sk"
+    ],
+    "description": "The 2026 Saint Andrew’s Run in Rajecké Teplice is a sporting event organized by the ŠRT civic association in cooperation with the City of Rajecké Teplice. The main race follows a 4.5 km asphalt course and starts at SNP Square. The event also includes a Firefighters category and the free Little Caesar children’s run for the youngest athletes. Alongside the sporting events, participants can enjoy a competition for the best-decorated Christmas stroller, adding to the pre-Christmas atmosphere.",
+    "course_highlights": [
+      "4.5 km asphalt course for the main race",
+      "Start and finish at SNP Square in Rajecké Teplice",
+      "Winter edition of the Little Caesar children’s run for ages 1–3, 4–6, and 7–9"
+    ],
+    "additional": "Registration for the main race is open from 14:30 to 16:30. Registration for the children’s run opens at 14:00 in the lobby of the Municipal Office. The children’s run starts at 16:00. The competition for the best-decorated Christmas stroller is part of the event. The main race starts at 16:50 and the children’s run at 16:00. Sign up for the main race at casomierapt.com. The event also includes a competition for the best-decorated Christmas stroller.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.bezeckypretek.sk/beh-svateho-andreja-rajecke-teplice-2026/",
       "https://beh.sk/pretek/beh-svataho-andreja-6/"
@@ -7905,51 +7928,75 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Kuchajda, Bratislava, Slovakia",
-    "latitude": 48.1691036,
-    "longitude": 17.1446742,
+    "start_time": "10:00",
+    "location": "Park Ostredky or Kuchajda swimming pool grounds, Bratislava, Slovakia",
+    "latitude": 48.161595,
+    "longitude": 17.1712325,
     "county": "Region of Bratislava",
     "nearest_city": "Bratislava",
     "nearby_cities": [
       "Bratislava"
     ],
-    "distances": "[\"42.2\", \"16\", \"11.6\", \"10\", \"5\", \"3.2\"]",
+    "distances": "[\"3.22\", \"0.2\"]",
     "distance_m": [
-      42200,
-      16000,
-      11600,
-      10000,
-      5000,
-      3200
+      3220,
+      200
     ],
-    "distance_keywords": [
-      "Maratón",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Maratón, 16 km, 11.6 km, 10 km, 5 km, 3.2 km",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "3.22 km, 0.2 km",
+    "organizer": "Sri Chinmoy Marathon Team",
     "contact": null,
-    "website": null,
+    "website": "https://vsetkybehy.sk/seria/beh-2-mile-bratislava",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "2 míle",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné zdarma"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Detské behy",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné zdarma"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/seria/beh-2-mile-bratislava",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The 2 Miles Run Bratislava is a running series organized by the Sri Chinmoy Marathon Team, held in Bratislava at Park Ostredky and the Kuchajda swimming pool grounds. The race is run on a paved road course measuring 2 miles (3.22 km), and also includes children’s races. The series features a points competition for a perpetual trophy, with points awarded in each round based on participation and placing. Entry is free, allowing the general public to take part without financial burden. Check-in and registration take place on site before the races.",
+    "course_highlights": [
+      "A 2-mile (3.22 km) course on paved roads",
+      "The races take place in the pleasant surroundings of Park Ostredky and the Kuchajda swimming pool grounds",
+      "Children’s races are also held: 200 m for children under 13"
+    ],
+    "additional": "Check-in and registration take place on site behind Komunitné námestie from 9:30. Parking is available in the large car park on Sputniková Street or near OC Budúcnosť. The nearest public transport stops are Súmračná, Clementisova and Maximiliána Hella. There are no public toilets in the park.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.58,
     "sources": [
       "https://www.bezeckypretek.sk/beh-2-mile-bratislava-2026-12/"
     ],
@@ -11845,13 +11892,13 @@
     "website_emails_found": [
       "ultra.zarand.arad@gmail.com"
     ],
-    "description": "Ultra Zărand Series este o cursă de ultra-trail organizată în Munții Zarand, în apropierea localității Cășoaia din județul Arad, România. Evenimentul are loc în perioada 11-13 decembrie 2026 și oferă trasee de lungă distanță prin peisaje pitorești, promovând turismul local și patrimoniul natural și cultural al regiunii. Participanții pot alege între diferite distanțe, inclusiv ultramaraton, și se bucură de o experiență de trail running în mijlocul naturii montane. Organizatorii, ACS ULTRA PANA LA CAPAT, invită alergătorii experimentați să descopere frumusețea zonei Zarand în cadrul acestui eveniment deosebit.",
+    "description": "Ultra Zărand Series is an ultra-trail race held in the Zarand Mountains, near the village of Cășoaia in Arad County, Romania. The event takes place from 11 to 13 December 2026 and offers long-distance routes through scenic landscapes, promoting local tourism and the region’s natural and cultural heritage. Participants can choose from various distances, including an ultramarathon, and enjoy a trail-running experience amid mountain nature. The organizers, ACS ULTRA PANA LA CAPAT, invite experienced runners to discover the beauty of the Zarand area at this special event.",
     "course_highlights": [
-      "Trasee montane pitorești în Munții Zarand",
-      "Distanțe variate, inclusiv ultramaraton",
-      "Promovarea patrimoniului natural și cultural al regiunii"
+      "Scenic mountain routes in the Zarand Mountains",
+      "Various distances, including an ultramarathon",
+      "Promotes the region’s natural and cultural heritage"
     ],
-    "additional": "Distanțe disponibile: Ultra; Traseele traversează munții Zarand, regiune pitorească pentru trail running de iarnă.",
+    "additional": "Available distances: Ultra; The routes cross the Zarand Mountains, a scenic region for winter trail running.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -16405,10 +16452,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Belgrade, Serbia",
-    "latitude": 44.8125449,
-    "longitude": 20.46123,
+    "start_time": "10:00",
+    "location": "Savsko šetalište, Belgrade, Serbia",
+    "latitude": 44.7841945,
+    "longitude": 20.3918985,
     "county": "Belgrade",
     "nearest_city": "Beograd",
     "nearby_cities": [
@@ -16424,27 +16471,71 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Sportsko udruženje SINGIDUNUM RUNNERS",
     "contact": null,
-    "website": null,
+    "website": "https://novogodisnjimrazaton.com/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/novogodisnji_mrazaton/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Novogodišnja petica",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "1.800 RSD",
+            "deadline": "20261125",
+            "description": "standardni prijavni rok"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.000 RSD",
+            "deadline": "20261217",
+            "description": "kasni prijavni rok"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Novogodišnja desetka",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "2.100 RSD",
+            "deadline": "20261125",
+            "description": "standardni prijavni rok"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.300 RSD",
+            "deadline": "20261217",
+            "description": "kasni prijavni rok"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261217",
+    "registration_url": "https://novogodisnjimrazaton.com/#prijava",
+    "race_info_url": "https://novogodisnjimrazaton.com/#trke",
+    "presumed_organizer_email": "novogodisnji.mrazaton@gmail.com",
+    "website_emails_found": [
+      "novogodisnji.mrazaton@gmail.com",
+      "singidunum.runners@gmail.com"
+    ],
+    "description": "The New Year’s Santa Run is a festive race for Santas in Belgrade, held on the Sava Promenade and open to recreational runners and athletes in a holiday atmosphere. Participants run in red Santa and Mrs. Claus outfits provided in their race packs, creating a unique and cheerful atmosphere. The event has a charitable and environmental focus, with initiatives to collect gift packages for children and raise awareness about protecting the environment. The race is limited to 700 participants and is one of Serbia’s largest winter sporting events.",
+    "course_highlights": [
+      "The race takes place on the Sava Promenade, one of Belgrade’s most beautiful places for recreation",
+      "Two adult races: 5 km and 10 km",
+      "All participants run in authentic Santa and Mrs. Claus costumes provided in their race packs"
+    ],
+    "additional": "All participants receive red Santa and Mrs. Claus outfits in their race packs. The number of participants is limited to 700. The organizer highlights the race’s charitable focus through the “Sweets for Sweets” initiative and its environmental awareness. More than 1,000 visitors, including spectators and volunteers, are expected. Participants receive a Santa outfit in their race pack; Mrs. Claus costumes are also mentioned. The “Sweets for Sweets” charity initiative has been announced, and medical support will be available on the course and at the finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.trcanje.rs/event/novogodisnji-mrazaton-2/"
     ],
@@ -19006,8 +19097,8 @@
   {
     "domain_name": "trojkralovy_beh_na_hrad_lietava_lietava",
     "name": "Trojkráľový beh na Hrad Lietava",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270109",
@@ -19017,10 +19108,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Lietava Castle, Lietava, Žilina District, Žilina Region, Slovakia",
-    "latitude": 49.16063639999999,
-    "longitude": 18.6845348,
+    "start_time": "10:00",
+    "location": "Základná škola Lietava, Lietava, Slovakia",
+    "latitude": 49.17140329999999,
+    "longitude": 18.6672995,
     "county": "Region of Žilina",
     "nearest_city": "Žilina",
     "nearby_cities": [
@@ -19042,27 +19133,50 @@
       "5 km"
     ],
     "distance_verbose": "13.7 km, 10 km, 8.3 km, 6 km, 5 km, 4.5 km, 3.2 km, 1 km",
-    "organizer": null,
+    "organizer": "o100dušu Lietava – bežecký klub o.z.",
     "contact": null,
-    "website": null,
+    "website": "https://vsetkybehy.sk/podujatie/trojkralovy-beh-na-hrad-lietava-2027",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_range": "12–15 €",
+    "price_tiers": [
+      {
+        "distance": "Hlavný beh",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12 €",
+            "deadline": null,
+            "description": "Online registrácia 12 €"
+          }
+        ],
+        "late_fee": {
+          "price": "15 €",
+          "deadline": "20270109"
+        }
+      }
+    ],
+    "registration_close_date": "20270109",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/podujatie/trojkralovy-beh-na-hrad-lietava-2027#main-content",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The Three Kings Run to Lietava Castle is a mountain trail race with 367 metres of elevation gain, running from the grounds of the primary school in Lietava to the upper courtyard of Lietava Castle. The course is 8.3 km long, with approximately 1 km on asphalt and the rest on marked forest trails and meadows. The race is open to adults and younger runners with parental consent, and mountain insurance is required. Each participant receives a race pack with a bag, a baguette and presents, as well as a finisher’s medal at the finish. The race results and prize-giving will take place after all participants have finished.",
+    "course_highlights": [
+      "367 metres of elevation gain",
+      "Approximately 1 km on asphalt, with the rest on forest trails and meadows",
+      "Finish in the upper courtyard of Lietava Castle"
+    ],
+    "additional": "Race check-in and bib collection take place on 9 January 2027 from 08:00 to 09:30 in the primary school building in Lietava. On-site registration is possible only if places are available, for €15 in cash. There is space to change and a storage area for personal belongings on the school grounds. The time limit for completing the course is 2 hours. Race check-in and bib distribution take place on the grounds of Lietava Primary School. Mountain insurance covering mountain rescue intervention is compulsory.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.bezeckypretek.sk/trojkralovy-beh-na-lietava-2027/",
       "https://beh.sk/pretek/trojkralovy-beh-na-hrad-lietava-2/"
@@ -21466,13 +21580,13 @@
     "race_info_url": "https://gerar.ro/info-participanti/traseu/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Semimaraton Gerar este un eveniment tradițional de alergare în România, desfășurat în campusul Universității Politehnica din București. Competiția promovează alergarea în aer liber și spiritul de echipă, fiind adresată atât alergătorilor individuali, cât și echipelor de trei persoane. Traseul constă într-o buclă de aproximativ 3.6 km, parcurgându-se mai multe ture în funcție de distanța aleasă. Evenimentul are loc în ultimul weekend din ianuarie și atrage peste 850 de participanți activi.",
+    "description": "The Gerar Half Marathon is a traditional running event in Romania, held on the campus of the Polytechnic University of Bucharest. The competition promotes outdoor running and team spirit, welcoming both individual runners and teams of three. The course is an approximately 3.6 km loop, completed multiple times depending on the chosen distance. The event takes place on the last weekend of January and attracts more than 850 active participants.",
     "course_highlights": [
-      "Traseu compus dintr-o buclă de 3.6 km în campusul Universității Politehnica",
-      "Start/finish în fața Facultății de Transporturi",
-      "Semimaratonul se desfășoară pe 6 ture pentru distanța de 21.8 km"
+      "A 3.6 km loop on the Polytechnic University campus",
+      "Start/finish in front of the Faculty of Transport",
+      "The half marathon covers 6 loops for a distance of 21.8 km"
     ],
-    "additional": "Ridicarea kiturilor se face în clădirea Rectorat - corp AN în campusul Universității Politehnica București, vineri 29 ianuarie 2027 între 17:00 și 20:00 și sâmbătă 30 ianuarie 2027 în intervale diferite pentru fiecare cursă. Accesul auto în campus este interzis în ziua cursei. Există limită de 200 de echipe pentru semimaraton, iar plata pentru semimaraton se face cumulativ pentru toți membrii echipei. Accesul auto în campus este interzis în ziua cursei; sunt disponibile informații despre transportul public și parcările din apropiere.",
+    "additional": "Race kits can be collected at the Rectorate building – AN wing, on the campus of the Polytechnic University of Bucharest, on Friday, January 29, 2027, from 17:00 to 20:00, and on Saturday, January 30, 2027, at different times for each race. Car access to campus is prohibited on race day. The half marathon is limited to 200 teams, and the half marathon fee is paid collectively for all team members. Car access to campus is prohibited on race day; information is available about public transport and nearby parking.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -22175,13 +22289,13 @@
     "website_emails_found": [
       "contact@fagetwinterrace.ro"
     ],
-    "description": "Faget Winter Race este un eveniment de alergare montană organizat în Pădurea Făget, Cluj-Napoca, ajuns la a 12-a ediție. Concursul oferă trei probe: 7 km, 15 km și semimaraton, desfășurate pe trasee marcate ce includ urcări și coborâri pe poteci forestiere și drumuri turistice. Participanții se bucură de puncte de alimentare și revitalizare pe traseu, asistență medicală și premii pentru categorii. Evenimentul este deschis alergătorilor cu vârsta de peste 18 ani, cu posibilitatea participării minorilor cu aprobări speciale.",
+    "description": "Faget Winter Race is a mountain running event held in Faget Forest, Cluj-Napoca, now in its 12th edition. The competition offers three distances: 7 km, 15 km, and a half marathon, on marked routes featuring climbs and descents along forest trails and tourist paths. Participants can use refreshment and aid stations along the course, access medical assistance, and compete for category prizes. The event is open to runners over 18, with minors permitted to participate with special approvals.",
     "course_highlights": [
-      "Trasee montane marcate cu diferențe de nivel de 243 m (7 km) și 688 m (15 km)",
-      "Puncte de alimentare și revitalizare pe traseu la kilometri cheie",
-      "Traseul trece prin pădure, zone cu poieni deschise și poteci turistice marcate"
+      "Marked mountain routes with elevation gains of 243 m (7 km) and 688 m (15 km)",
+      "Refreshment and aid stations at key points along the course",
+      "The route passes through forest, open clearings, and marked tourist trails"
     ],
-    "additional": "Startul se dă la Baza Sportivă Unirea; semimaratonul începe la 10:00, crosul de 15 km la 10:30, iar crosul de 7 km la 11:00. Kitul de participare se ridică doar personal și include număr obligatoriu de purtat vizibil, diplomă electronică și premii în produse/vouchere. Echipamentul obligatoriu include pantofi de alergare cu talpă montană, haine de protecție și bidon/pahar reutilizabil. Participarea este limitată la 500 de concurenți, iar înscrierile se fac exclusiv online.",
+    "additional": "The start is at Unirea Sports Base; the half marathon starts at 10:00, the 15 km race at 10:30, and the 7 km race at 11:00. Race kits must be collected in person and include a race number that must be worn visibly, an electronic certificate, and product/voucher prizes. Mandatory equipment includes trail running shoes, protective clothing, and a reusable bottle/cup. Participation is limited to 500 competitors, and registration is online only.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -22584,8 +22698,8 @@
   {
     "domain_name": "raciansky_kros_zima",
     "name": "Račiansky kros ZIMA",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270207",
@@ -22596,50 +22710,50 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Rača, Bratislava, Slovakia",
-    "latitude": 48.21202840000001,
-    "longitude": 17.1546065,
+    "location": "Amfiteáter, Knižkova dolina, Rača, Bratislava, Slovakia",
+    "latitude": 48.2139548,
+    "longitude": 17.1452778,
     "county": "Region of Bratislava",
     "nearest_city": "Bratislava",
     "nearby_cities": [
       "Bratislava"
     ],
-    "distances": "[\"42.2\", \"16\", \"10\", \"9.5\", \"5\", \"3.2\"]",
+    "distances": "[\"16\", \"9.5\"]",
     "distance_m": [
-      42200,
       16000,
-      10000,
-      9500,
-      5000,
-      3200
+      9500
     ],
     "distance_keywords": [
-      "Maratón",
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "Maratón, 16 km, 10 km, 9.5 km, 5 km, 3.2 km",
-    "organizer": null,
+    "distance_verbose": "16 km, 9.5 km",
+    "organizer": "OZ PERUN",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.racianskykros.sk/zima/",
+    "fb_link": "https://www.facebook.com/racianskykros/?locale=sk_SK",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.racianskykros.sk/zima/",
+    "presumed_organizer_email": "racianskykros@gmail.com",
+    "website_emails_found": [
+      "racianskykros@gmail.com"
+    ],
+    "description": "Račiansky kros ZIMA is a forest run in Rača, Bratislava, along paths in the Little Carpathians. The start and finish are in Knižkova dolina, near the amphitheatre. Runners can choose between two courses, 9.5 km and 16 km long. The event is organised by OZ PERUN.",
+    "course_highlights": [
+      "Forest paths in the Little Carpathians",
+      "Two courses: 9.5 km and 16 km",
+      "Start and finish near the amphitheatre in Knižkova dolina"
+    ],
+    "additional": "Timing is provided by an RFID chip system.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://www.bezeckypretek.sk/raciansky-kros-zima-bratislava-raca-2027/",
       "https://www.terminovka.sk/podujatie/raciansky-kros-zima",
@@ -23138,13 +23252,13 @@
     "website_emails_found": [
       "contact@fagetwinterrace.ro"
     ],
-    "description": "Făget Winter Race este un eveniment de alergare montană ce se desfășoară în pădurea Făget din Cluj-Napoca, ajuns la a 12-a ediție. Pe 23 ianuarie 2027, concurenții pot participa la trei probe: 7 km, 15 km și semimaraton. Traseele sunt variate, cu diferențe de nivel semnificative, oferind o experiență provocatoare și scenică în natură. Evenimentul este deschis alergătorilor cu vârsta de peste 18 ani, dar și minorilor cu aprobări speciale, iar organizatorii asigură puncte de alimentare și asistență medicală pe traseu.",
+    "description": "Făget Winter Race is a mountain running event held in Făget Forest in Cluj-Napoca, now in its 12th edition. On January 23, 2027, participants can choose from three events: 7 km, 15 km, and a half marathon. The varied routes feature significant elevation changes, offering a challenging and scenic experience in nature. The event is open to runners over 18, as well as minors with special approval. The organizers provide aid stations and medical assistance along the course.",
     "course_highlights": [
-      "Trasee montane marcate cu diferențe de nivel de 243 m (7 km) și 688 m (15 km)",
-      "Puncte de alimentare pe traseu la distanțe cheie (3.4 km, 6.4 km, 9.3 km)",
-      "Traseul trece prin pădure, zone cu poieni deschise și poteci turistice marcate"
+      "Marked mountain routes with elevation gains of 243 m (7 km) and 688 m (15 km)",
+      "Aid stations at key points along the route (3.4 km, 6.4 km, 9.3 km)",
+      "The route passes through forest, open clearings, and marked hiking trails"
     ],
-    "additional": "Limita de participanți este de 500. Kitul de participare se ridică doar personal și include număr obligatoriu de purtat vizibil, diplomă electronică și premii în produse/vouchere. Echipamentul obligatoriu include pantofi de alergare cu talpă montană, haină de ploaie/vânt/bluză cu mânecă lungă și bidon de apă sau pahar reutilizabil. Se recomandă și batoane sau geluri energizante și telefon mobil încărcat. Alergarea cu animale de companie este interzisă. Traseele sunt pe potecile pădurii și sunt semnalizate. La probele de 15 km și 8 km sunt prevăzute puncte de hidratare pe traseu și la sosire.",
+    "additional": "The participant limit is 500. Race kits must be collected in person and include a race bib that must be worn visibly, an electronic diploma, and prizes in the form of products/vouchers. Mandatory equipment includes trail running shoes, a rain/wind jacket or long-sleeved top, and a water bottle or reusable cup. Energy bars or gels and a charged mobile phone are also recommended. Running with pets is prohibited. The routes follow forest trails and are marked. Hydration points are provided along the route and at the finish for the 15 km and 8 km events.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -23265,13 +23379,13 @@
     "website_emails_found": [
       "race@skvb.ro"
     ],
-    "description": "SKV Vertical Race este o competiție de alergare montană de iarnă organizată în zona Brașovului, cu trasee ce pornesc din zona Tâmpa. Semimaratonul de 21 km include o urcare pe serpentinele Tâmpei, urmată de coborâri și parcurgeri pe trasee marcate cu diferite simboluri, oferind o experiență montană autentică și provocatoare. Evenimentul este deschis atât amatorilor, cât și profesioniștilor, și se desfășoară în condiții de iarnă, necesitând experiență montană și pregătire fizică adecvată. Organizatorii asigură măsuri de siguranță și semnalizare pe traseu, iar participanții primesc kituri personalizate.",
+    "description": "SKV Vertical Race is a winter mountain-running competition held in the Brașov area, with courses starting in the Tâmpa area. The 21 km half marathon includes a climb up Tâmpa’s switchbacks, followed by descents and sections on trails marked with different symbols, offering an authentic and challenging mountain experience. The event is open to both amateurs and professionals and takes place in winter conditions, requiring mountain experience and adequate physical preparation. The organizers provide safety measures and course markings, and participants receive personalized kits.",
     "course_highlights": [
-      "Traseu semimaraton 21 km cu diferență de nivel de 1.128 m",
-      "Urcare pe serpentinele de pe Tâmpa și coborâri pe trasee marcate (Bandă Albastră, Bandă Galbenă, Triunghi Albastru, Cruce Albastră)",
-      "Parcurgere în condiții de iarnă, cu obstacole naturale și teren montan variat"
+      "21 km half-marathon course with 1,128 m of elevation gain",
+      "Climb up Tâmpa’s switchbacks and descents on marked trails (Blue Stripe, Yellow Stripe, Blue Triangle, Blue Cross)",
+      "Run in winter conditions, with natural obstacles and varied mountain terrain"
     ],
-    "additional": "Kit de participare personalizat garantat pentru înscrierile în perioadele Early Bird și Special Promo. Evenimentul include și o cursă de alergare montană de noapte (Night Run) cu start la 17:30 în ziua anterioară semimaratonului. Ridicarea kiturilor se face în zona Promenada Tâmpa, cu posibilitatea de a le ridica cu o zi înainte sau în ziua concursului. Festivitățile de premiere au loc după încheierea curselor.",
+    "additional": "A personalized race kit is guaranteed for registrations during the Early Bird and Special Promo periods. The event also includes a night mountain-running race (Night Run), starting at 17:30 on the day before the half marathon. Kits can be collected in the Promenada Tâmpa area, either the day before or on race day. The awards ceremonies take place after the races finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -24098,7 +24212,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "11:10",
     "location": "Felsőcsatár, Vas County, Hungary",
     "latitude": 47.2121988,
     "longitude": 16.4442598,
@@ -24107,40 +24221,47 @@
     "nearby_cities": [
       "Szombathely"
     ],
-    "distances": "[\"20\", \"10\", \"5\", \"2\"]",
+    "distances": "[\"20\", \"10\", \"5\", \"2\", \"0.4\"]",
     "distance_m": [
       20000,
       10000,
       5000,
-      2000
+      2000,
+      400
     ],
     "distance_keywords": [
       "Félmaraton",
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "20 km, 10 km, 5 km, 2 km",
-    "organizer": null,
+    "distance_verbose": "20 km, 10 km, 5 km, 2 km, 0.4 km",
+    "organizer": "Alpokalja SK",
     "contact": null,
-    "website": null,
+    "website": "https://www.vasiterepfuto.hu/pinka-extreme/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "2 500–8 000 Ft; a 400 m-es gyerekfutam ingyenes",
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270227",
+    "registration_url": "https://korimtiming.hu",
+    "race_info_url": "https://www.vasiterepfuto.hu/pinka-extreme/",
+    "presumed_organizer_email": "info@vasiterepfuto.hu",
+    "website_emails_found": [
+      "info@vasiterepfuto.hu"
+    ],
+    "description": "A Pinka EXTREME a 2027-es Vasi Terepfutó Sorozat harmadik és egyben döntő futama, amely Felsőcsatáron, a Gyermeküdülő környékén kerül megrendezésre. Ez a terepfutó verseny extrém kihívást jelent a résztvevőknek, meredek szakaszokkal és változatos tereppel, ahol kötelek segítik a feljutást. A verseny barátságos, családias hangulatban zajlik, és a kategóriák első három helyezettje értékes ajándékokat kap. A futam után díjazzák a sorozat összetett győzteseit is.",
+    "course_highlights": [
+      "Extrém terep meredek szakaszokkal és kötéllel segített feljutással",
+      "Változatos terep Felsőcsatár környékén, a Pinka-szurdokban",
+      "Elektronikus időmérés KORIM rendszerrel, élő eredménykövetéssel"
+    ],
+    "additional": "Rajtszám és chip átvétel 9:30-10:50 között, helyszíni nevezés lehetséges. A rajtszám erős, szakadásálló papírból készül. A nevezés során befutóérem rendelhető 2000 Ft extra díjért, limitált darabszámmal (120 db versenyenként). A chipeket a verseny után vissza kell adni, elvesztésük 20 000 Ft kártérítést von maga után. Parkolás egyénileg a Gyermeküdülőhöz vezető út mentén, kérik a helyi lakosok útjának szabadon hagyását. A távok: 400 m gyerekfutam, 2 km Mini-run, körülbelül 5 km-es S-táv, 10 km-es M-táv és 20 km-es L-táv. A nevezés a korimtiming.hu oldalon történik; chipes időmérés és ingyenesen letölthető versenyfotók várják a résztvevőket. Befutóérem külön, 2 000 Ft-ért rendelhető.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://www.vasiterepfuto.hu/pinka-extreme/"
     ],
@@ -24955,46 +25076,119 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Șiria, Arad County, Romania",
-    "latitude": 46.2637994,
-    "longitude": 21.635684,
+    "start_time": "09:00",
+    "location": "Casa de Cultură „Ioan Slavici”, Șiria, Arad County, Romania",
+    "latitude": 46.2558787,
+    "longitude": 21.6237162,
     "county": "ARAD",
     "nearest_city": "Arad",
     "nearby_cities": [
       "Arad"
     ],
-    "distances": "[\"24\", \"15\", \"6\"]",
+    "distances": "[\"21\", \"10\", \"6\"]",
     "distance_m": [
-      24000,
-      15000,
+      21000,
+      10000,
       6000
     ],
     "distance_keywords": [
+      "Semimaraton",
+      "10 km",
       "5 km"
     ],
-    "distance_verbose": "24 km, 15 km, 6 km",
-    "organizer": null,
+    "distance_verbose": "Semimaraton, 10 km, 6 km",
+    "organizer": "Asociația Turistică „În Amonte”",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://clubatia.com/siria-winter-trail-2027-editia-a-6-a/regulament-siria-winter-trail-2027/",
+    "fb_link": "https://www.facebook.com/siriawintertrail/",
+    "ig_link": "https://www.instagram.com/p/Dfyw0JjtK66/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Mini Cross 6 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "70 lei",
+            "deadline": "20270131",
+            "description": "Taxă de participare până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "90 lei",
+            "deadline": "20270215",
+            "description": "Taxă de participare până la 15 februarie"
+          }
+        ],
+        "late_fee": {
+          "price": "110 lei",
+          "deadline": "20270219"
+        }
+      },
+      {
+        "distance": "Cross 10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "90 lei",
+            "deadline": "20270131",
+            "description": "Taxă de participare până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "110 lei",
+            "deadline": "20270215",
+            "description": "Taxă de participare până la 15 februarie"
+          }
+        ],
+        "late_fee": {
+          "price": "130 lei",
+          "deadline": "20270219"
+        }
+      },
+      {
+        "distance": "Semimaraton 21 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "110 lei",
+            "deadline": "20270131",
+            "description": "Taxă de participare până la 31 ianuarie"
+          },
+          {
+            "label": "tier_2",
+            "price": "130 lei",
+            "deadline": "20270215",
+            "description": "Taxă de participare până la 15 februarie"
+          }
+        ],
+        "late_fee": {
+          "price": "150 lei",
+          "deadline": "20270219"
+        }
+      }
+    ],
+    "registration_close_date": "20270219",
+    "registration_url": "https://42km.ro/inscrieri/siria-winter-trail-2027",
+    "race_info_url": "https://clubatia.com/siria-winter-trail-2027-editia-a-6-a/regulament-siria-winter-trail-2027/",
+    "presumed_organizer_email": "asoc.inamonte@gmail.com",
+    "website_emails_found": [
+      "asoc.inamonte@gmail.com",
+      "asoc.inamote@gmail.com"
+    ],
+    "description": "Șiria Winter Trail is a mountain running competition for both amateur and professional runners, promoting short- and middle-distance running in the Zărand Mountains, Arad County. The event combines sport and tourism, following routes that include historical and natural landmarks such as Șiria Fortress, Feredeu Monastery, and Feredeu Hermitage. The competition features three easy- and moderate-difficulty races on varied, marked routes, with the start and finish at the “Ioan Slavici” House of Culture in Șiria. It is a challenge suited to trained, experienced runners with appropriate equipment.",
+    "course_highlights": [
+      "Mountain routes featuring historical landmarks: Șiria Fortress, Feredeu Monastery, and Feredeu Hermitage",
+      "Routes consist of marked hiking trails, forest roads, and paved roads",
+      "Elevation gains ranging from 365 m to 1070 m across distances of 6 km, 10 km, and 21 km"
+    ],
+    "additional": "The race kit includes a sweatshirt, a hat, and gloves; these must be reserved when registering. There are hydration and fueling stations along the routes. The mandatory equipment includes a race bib. Recommended equipment includes trekking poles, energy gels, gloves, a water bottle, and clothing suitable for winter conditions. The routes are marked with tape and arrows, and participants must pass through all checkpoints to avoid disqualification. The start and finish are at the “Ioan Slavici” House of Culture in Șiria. The routes include hiking and local trails, forest roads, and paved sections; participants must provide their own food and hydration.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://clubatia.com/swt23/",
       "https://www.facebook.com/photo/?fbid=1289560226549231&set=a.565432002295394",
@@ -25256,33 +25450,38 @@
     "county": "CLUJ",
     "nearest_city": "Zalău",
     "nearby_cities": [],
-    "distances": "[\"15\"]",
+    "distances": "[\"17\", \"15\"]",
     "distance_m": [
+      17000,
       15000
     ],
     "distance_keywords": [],
-    "distance_verbose": "15 km",
+    "distance_verbose": "17 km, 15 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.facebook.com/vladeasawintertrail/",
+    "fb_link": "https://www.facebook.com/vladeasawintertrail/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.facebook.com/vladeasawintertrail/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "Vlădeasa Winter Trail is a mountain running race held in the Rogojel area, in the heart of the Vlădeasa Mountains. The event is known for its friendly atmosphere and challenging courses, which offer runners an authentic winter experience in nature. Participants can enjoy spectacular scenery and event organization dedicated to trail running enthusiasts. The competition attracts both experienced runners and amateurs eager to discover the beauty of mountain running in the cold season.",
+    "course_highlights": [
+      "Mountain courses in the Vlădeasa Mountains with winter scenery",
+      "Varied difficulty, suitable for runners of all levels",
+      "Friendly atmosphere and organization dedicated to trail running enthusiasts"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.7,
     "sources": [
       "https://vladeasa.wintertrail.ro/"
     ],
@@ -25355,7 +25554,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "09:00",
     "location": "Poiana Mărului, Caraș-Severin, Romania",
     "latitude": 45.399563,
     "longitude": 22.5421706,
@@ -25372,25 +25571,92 @@
     "distance_verbose": "5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.scoriloskyrace.ro/",
+    "fb_link": "https://www.facebook.com/PoianaMaruluiCaras/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "Tarcu Maraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "180 RON",
+            "deadline": null,
+            "description": "Tarcu Maraton 45 km +2633 m 180 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Muntele Mic Semimaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "160 RON",
+            "deadline": null,
+            "description": "Muntele Mic Semimaraton 26 km +1100 m 160 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Crosul La Mesteceni",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "140 RON",
+            "deadline": null,
+            "description": "Crosul La Mesteceni 12 km +576 m 140 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Kids Race",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "90 RON",
+            "deadline": null,
+            "description": "Kids Race TBA +20 m 90 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Family Run",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "90 RON",
+            "deadline": null,
+            "description": "Family Run 0.8 km +20 m 90 RON"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.scoriloskyrace.ro/register",
+    "race_info_url": "https://www.scoriloskyrace.ro/events/ssr#curse",
+    "presumed_organizer_email": "contact@scoriloskyrace.ro",
+    "website_emails_found": [
+      "contact@scoriloskyrace.ro"
+    ],
+    "description": "Scorilo Winter Trail is a mountain running competition held in Poiana Mărului, Caraș-Severin, offering varied courses for runners of all levels. The event includes races with significant elevation gain and spectacular scenery, such as the Scorila rock formations and the mountain peaks of the Țarcu area. Participants can choose from several distances, from a mountain marathon to races for children and families, all organized to internationally recognized standards. It is an experience that combines athletic challenge with natural beauty and community spirit.",
+    "course_highlights": [
+      "Mountain course with up to 2,653 m of elevation gain at Țarcu Marathon",
+      "Passing the Scorila rock formation, which is associated with a Dacian legend",
+      "Running over the Brusturu and Căleanu peaks, with alpine sections and technical terrain"
+    ],
+    "additional": "Race kits can be collected at Pine Hill cabin in the Start/Finish area. Each race has time limits (cutoffs), and participants who exceed them are stopped. The event provides official T-shirts and medals for participants. There are races for children and families, as well as races with significant elevation gain for experienced runners.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.16,
     "sources": [
       "https://www.scoriloskyrace.ro"
     ],
@@ -25805,7 +26071,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "06:30",
     "location": "Felsőtárkány, Borsod-Abaúj-Zemplén County, Hungary",
     "latitude": 48.2939401,
     "longitude": 20.6934113,
@@ -25822,27 +26088,107 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "66.4 km, 35.6 km, 14.2 km",
-    "organizer": null,
+    "organizer": "Bükk Trails",
     "contact": null,
-    "website": null,
+    "website": "https://bukkikilatasok.hu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Hard",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "2490 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "2990 Ft",
+            "deadline": "20270228",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "3490 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "FunRun",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "1990 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "2490 Ft",
+            "deadline": "20270228",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "2990 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "Sprint",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "1490 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "1990 Ft",
+            "deadline": "20270228",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "2490 Ft",
+          "deadline": "20270306"
+        }
+      }
+    ],
+    "registration_close_date": "20270306",
+    "registration_url": "https://bukkikilatasok.hu/nevezes.html",
+    "race_info_url": "https://bukkikilatasok.hu/trail.html",
+    "presumed_organizer_email": "veres.imre.esp@gmail.com",
+    "website_emails_found": [
+      "veres.imre.esp@gmail.com",
+      "bozso.zoltan.esp@gmail.com",
+      "fekete.zoltan.esp@gmail.com",
+      "o.zoltan.esp@gmail.com",
+      "commail@gpse.res.imever",
+      "commail@gpse.anzolt.ozsob",
+      "commail@gpse.anzolt.ketefe",
+      "com.il@gma.espnolta.zozsob",
+      "bozso.zoltan.esp@gmail.co",
+      "comil@gmaspre.eimes.ver",
+      "comil@gmaspan.elt.zoketefe"
+    ],
+    "description": "A Bükki Kilátások Trail egy kihívást jelentő terepfutó verseny Felsőtárkányban, amely változatos távokon kínál lehetőséget a természet szerelmeseinek. A versenyzőknek hegyi jártassággal kell rendelkezniük, és a pálya mentén frissítőpontok segítik a teljesítést. A rendezvény szigorú szabályokkal biztosítja a fair versenyt és a természet védelmét, miközben egyedi díjazással is ösztönzi a résztvevőket. A verseny különböző távjain egyedi rajtszámokat és díjazást kapnak a sikeres teljesítők, valamint külön díjak járnak a leggyorsabb felfutóknak is.",
+    "course_highlights": [
+      "Hegyi terep és változatos szintemelkedés",
+      "Frissítőpontok a pálya mentén",
+      "Külön díjazás a leggyorsabb férfi és női felfutóknak a Hard és FunRun távokon"
+    ],
+    "additional": "A versenyen kötelező felszerelés ellenőrzés zajlik, hiányos felszerelés esetén azonnali kizárás történik. A rajtszámok egyediek, névre szólóak. A versenyzők a frissítőpontokon vehetnek igénybe segítséget, külső támogatás kizárt. A versenyzők számára meleg étel is rendelhető a célban. A távokhoz kötelező felszerelés tartozik, és a versenyzőktől hegyi jártasságot várnak el. GPX-fájlok a pályákhoz letölthetők.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://bukkikilatasok.hu/index.html",
       "http://www.bukktrail.hu/bukki-kilatasok/",
@@ -25862,8 +26208,8 @@
   {
     "domain_name": "fuss_neki_futofesztival",
     "name": "FUSS NEKI FUTÓFESZTIVÁL",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "road",
+    "type_local": "Országúti futás",
     "race_dates": [
       [
         "20260307",
@@ -25881,49 +26227,123 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Móló utca, Balatonlelle, Hungary",
-    "latitude": 46.7895581,
-    "longitude": 17.6929821,
+    "start_time": "09:00",
+    "location": "Balatonlelle Harbor, Balatonlelle, Hungary",
+    "latitude": 46.7842192,
+    "longitude": 17.6967856,
     "county": "Somogy",
     "nearest_city": "Kaposvár",
     "nearby_cities": [],
-    "distances": "[\"31\", \"21\", \"10\", \"5\", \"2\", \"1.1\"]",
+    "distances": "[\"42.2\", \"31\", \"21.1\", \"10\", \"5\", \"1.5\", \"0.8\"]",
     "distance_m": [
+      42200,
       31000,
-      21000,
+      21100,
       10000,
       5000,
-      2000,
-      1100
+      1500,
+      800
     ],
     "distance_keywords": [
+      "Maraton",
       "Félmaraton",
       "10 km",
-      "5 km"
+      "5 km",
+      "1500 meter"
     ],
-    "distance_verbose": "31 km, Félmaraton, 10 km, 5 km, 2 km, 1.1 km",
+    "distance_verbose": "Maraton, 31 km, Félmaraton, 10 km, 5 km, 1500 meter, 0.8 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://fussneki.hu/tavasz/",
+    "fb_link": "https://www.facebook.com/fussneki",
+    "ig_link": "https://www.instagram.com/fussneki",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Mini / Kutyabarát / Apróka futam",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "2490 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "2990 Ft",
+            "deadline": "20270305",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "3490 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "5 km / 10,5 km / 21,1 km / 31,5 km / 42,2 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "4990 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "5990 Ft",
+            "deadline": "20270305",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "6990 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "Nordic walking 5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "2990 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "3490 Ft",
+            "deadline": "20270305",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "3990 Ft",
+          "deadline": "20270306"
+        }
+      }
+    ],
+    "registration_close_date": "20270306",
+    "registration_url": "https://korido.hu/fussneki",
+    "race_info_url": "https://fussneki.hu/tavasz/",
+    "presumed_organizer_email": "hello@fussneki.hu",
+    "website_emails_found": [
+      "hello@domained.hu",
+      "hello@fussneki.hu"
+    ],
+    "description": "A XI. Fuss Neki futófesztivál 2027. március 6-án kerül megrendezésre Balatonlelle kikötőjénél, közvetlenül a Balaton-parton. A rendezvény 7 távval és 12 kategóriával várja a futókat, a legkisebbektől a tapasztalt maratonistákig, köztük kutyabarát és nordic walking távokkal is. A verseny hangulatát családias, fesztivál jellegű élmény jellemzi, egyedi befutóéremmel és választható technikai vagy prémium pólóval. A versenyközpont gazdag szolgáltatásokat kínál, többek között chipes időmérést, frissítőpontokat, digitális oklevelet és egyéni befutó videót.",
+    "course_highlights": [
+      "Több kilométeren keresztül közvetlenül a Balaton-parton vezető útvonalak",
+      "Lenyűgöző balatoni környezet és panoráma",
+      "Családias, baráti fesztivál hangulat egyedi befutóéremmel"
+    ],
+    "additional": "Rajtcsomag pénteken 12:00-16:00 között is átvehető. A versenyközpontban öltöző sátrak, csomagmegőrző, rajtszámátvételi sátor és kiállítói standok várják a résztvevőket. A rajtcsomagfelvétel a rajt előtt 30 perccel zár. A versenyen chipes időmérés és abszolút helyezések díjazása biztosított. A rendezvényen közös, zenés bemelegítések is lesznek. A félmaraton és a maraton váltóban is teljesíthető; az 1,5 kilométeres táv kutyabarát.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://fussneki.hu/"
     ],
@@ -26322,27 +26742,56 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Distanțe mixte",
-    "organizer": null,
+    "organizer": "Alergotura",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.teamupandrun.ro/",
+    "fb_link": "https://www.facebook.com/events/iulius-town-timisoara/team-up-and-run-2026/686050600540672/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "price_tiers": [
+      {
+        "distance": "Împreuna",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "450 lei",
+            "deadline": "20270222",
+            "description": "Taxa de participare pentru o echipă de 3 persoane"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Ștafeta",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "450 lei",
+            "deadline": "20270222",
+            "description": "Taxa de participare pentru o echipă de 3 persoane"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270222",
+    "registration_url": "https://www.teamupandrun.ro/formular-de-inscriere/",
+    "race_info_url": "https://www.teamupandrun.ro/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Team Up & Run is a dynamic team running competition combining speed, endurance, and athletic skill challenges, including stair climbing. The event emphasizes coordination and mutual support among team members, making it ideal for friends, colleagues, or family. Participants form teams of three and can enjoy an energetic, challenging team-building experience. Everyone who finishes the race receives a medal, and the winning teams are awarded trophies.",
+    "course_highlights": [
+      "Course consisting of three sections",
+      "Includes climbing and descending stairs, slopes, and ramps",
+      "The event combines running with fitness and athletic skill challenges"
+    ],
+    "additional": "The maximum number of teams is limited to 60, divided equally between the two races. Registration is exclusively online, and payment can be made by card or bank transfer. The minimum age for participation is 16. Medals are awarded to all participants who finish the race. Participants must be at least 16 years old. The “Together” and “Relay” races are mentioned.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.teamupandrun.ro/",
       "https://calendar.sportic.ro/events/view?hash=556ed36d-b294-47b4-bca2-a0bbc587c48d"
@@ -26420,7 +26869,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "11:00",
     "location": "București, Romania",
     "latitude": 44.4267674,
     "longitude": 26.1025384,
@@ -26435,25 +26884,32 @@
     "distance_verbose": "Distanțe mixte",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://rubicon.run/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://rubicon.run/ro/about#route",
+    "presumed_organizer_email": "event@sporter.md",
+    "website_emails_found": [
+      "event@sporter.md",
+      "privacy@simpals.com"
+    ],
+    "description": "Rubicon is a unique ultramarathon held along the Bucharest–Chișinău route, divided into 46 stages crossing Romania’s counties and the regions of the Republic of Moldova. Participants can choose how many stages to complete and create their own race strategy, with no restrictions on the number of stages. For each stage completed in a county, runners receive a medal bearing that county’s coat of arms, and the winner receives a special shield for the badges collected. The event promotes the sport, culture, and history of the regions along the route and is open to both amateurs and professionals.",
+    "course_highlights": [
+      "The route is divided into 46 stages, with each county having between 1 and 10 stages",
+      "Medals bearing each county’s coat of arms are awarded for every stage completed",
+      "The route crosses regions of Romania and the Republic of Moldova, promoting local culture and history"
+    ],
+    "additional": "The official race start is in Bucharest, and participants can request transport by special bus from the “Arcul de Triumf” Stadium. The race follows the eastern route through Romania and the Republic of Moldova. The organizer is A.O. Clubul sportiv \"Sporter\". To receive a region’s medal, participants must complete at least one stage in that region.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.79,
     "sources": [
       "https://rubicon.run"
     ],
@@ -26476,8 +26932,8 @@
   {
     "domain_name": "crosul_divelor",
     "name": "Crosul Divelor",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20260307",
@@ -26491,10 +26947,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Cluj-Napoca, Romania",
-    "latitude": 46.7712101,
-    "longitude": 23.6236353,
+    "start_time": "10:00",
+    "location": "Platoul Sălii Sporturilor Horia Demian, Cluj-Napoca, Romania",
+    "latitude": 46.7655398,
+    "longitude": 23.5649284,
     "county": "CLUJ",
     "nearest_city": "Cluj-Napoca",
     "nearby_cities": [
@@ -26510,27 +26966,55 @@
       "5 km"
     ],
     "distance_verbose": "6 km, 2 km, 1 km",
-    "organizer": null,
+    "organizer": "Asociația Club Sportiv Runners Club",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://runnersclub.ro/crosul-divelor/",
+    "fb_link": "https://www.facebook.com/events/sala-sporturilor-horia-demian/11crosul-divelor-powered-by-8x8-7-martie-2026/1138910301656515/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Crosul Divelor",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "50 RON",
+            "deadline": "20270215",
+            "description": "Taxă de participare Early Bird"
+          },
+          {
+            "label": "tier_2",
+            "price": "70 RON",
+            "deadline": "20270305",
+            "description": "Taxă de participare standard"
+          }
+        ],
+        "late_fee": {
+          "price": "90 RON",
+          "deadline": "20270306"
+        }
+      }
+    ],
+    "registration_close_date": "20270306",
+    "registration_url": "https://runnersclub.ro/crosul-divelor/#fw-form-inscrieri",
+    "race_info_url": "https://runnersclub.ro/crosul-divelor/#content",
+    "presumed_organizer_email": "office@runnersclub.ro",
+    "website_emails_found": [
+      "office@runnersclub.ro"
+    ],
+    "description": "Crosul Divelor powered by 8x8 is the first running race in Cluj-Napoca dedicated exclusively to women and girls. The event offers a friendly, fun atmosphere, inviting participants to run and enjoy being active in a special setting. It takes place at the Horia Demian Sports Hall Esplanade and is part of the Runners Club event series, known for organizing a variety of appealing races. The race also supports a charitable cause, adding extra meaning to taking part.",
+    "course_highlights": [
+      "A race dedicated exclusively to women",
+      "Central location: Horia Demian Sports Hall Esplanade",
+      "Friendly, fun atmosphere"
+    ],
+    "additional": "A registration kit is provided to participants. The event supports a charitable cause, Run for Alex Mâță. The organizer offers free group training sessions for the local running community. The event is charitable; the announced cause is “Run for Alex Mâță!”.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.86,
     "sources": [
       "https://calendar.sportic.ro/events/view?hash=e1c09d30-8f85-47c4-a0b0-f87b60019b2d",
       "https://runnersclub.ro/crosul-divelor/"
@@ -38174,13 +38658,13 @@
       "asoc.inamote@gmail.com",
       "asoc.inamonte@gmail.com"
     ],
-    "description": "Medieval Trail Race este o competiție de alergare montană ce se desfășoară în județul Arad, România, pe poteci turistice din Munții Zărandului, între localitățile Șoimoș și Șiria. Evenimentul leagă în alergare două cetăți istorice importante, Cetatea Șoimoș și Cetatea Șiria, promovând patrimoniul natural și istoric al zonei. Traseele oferă o experiență de aventură și peisaje deosebite de primăvară, fiind potrivite atât pentru amatori cât și pentru profesioniști. Competiția face parte din calendarul ITRA National League și UTMB Index și este organizată de Asociația Turistică În Amonte.",
+    "description": "Medieval Trail Race is a mountain running competition held in Arad County, Romania, on hiking trails in the Zărand Mountains, between the towns of Șoimoș and Șiria. The event connects two important historic fortresses, Șoimoș Fortress and Șiria Fortress, promoting the area’s natural and historic heritage. The routes offer an adventurous experience and outstanding spring scenery, and are suitable for both amateurs and professionals. The competition is part of the ITRA National League and UTMB Index calendars and is organized by the În Amonte Tourism Association.",
     "course_highlights": [
-      "Trasee montane cu diferențe de nivel între 445 m și 2075 m",
-      "Trecerea prin obiective istorice: Cetatea Șoimoș, Cetatea Șiria, Mănăstirea Feredeu și Schitul Feredeu",
-      "Poteci turistice marcate, drumuri forestiere și asfaltate, semnalizate cu benzi și săgeți"
+      "Mountain routes with elevation gains ranging from 445 m to 2075 m",
+      "Passes historic landmarks: Șoimoș Fortress, Șiria Fortress, Feredeu Monastery, and Feredeu Hermitage",
+      "Marked hiking trails, forest roads, and paved roads, indicated with ribbons and arrows"
     ],
-    "additional": "Kitul de participant este garantat doar pentru înscrierile făcute până la 12 aprilie. Traseele au puncte de hidratare și alimentare, iar competiția beneficiază de asistență medicală și monitorizare Salvamont. Înscrierile la fața locului sunt posibile doar pentru cros 9km și semimaraton 22km, în limita locurilor disponibile și fără garanția kitului.",
+    "additional": "The participant kit is guaranteed only for registrations made by April 12. The routes have hydration and refreshment stations, and the competition has medical assistance and Salvamont monitoring. On-site registration is available only for the 9 km cross-country race and the 22 km half marathon, subject to availability and without a guaranteed kit.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -42497,13 +42981,13 @@
     "website_emails_found": [
       "clubproracers@gmail.com"
     ],
-    "description": "Maratonul Codrului este un eveniment MTB și Trail Run organizat de Club Sportiv Pro Racers și Federația Română de Ciclism, destinat atât amatorilor, cât și profesioniștilor. Traseele spectaculoase traversează păduri și oferă provocări pentru toate nivelurile de pregătire, cu opțiuni noi și mai atractive pentru probele MTB și Trail Run. Evenimentul include și curse pentru copii, pachete de start, puncte de hidratare, asistență medicală, cronometrare și o medalie de finisher pentru toți participanții. Este un eveniment dedicat comunității și familiilor, cu o atmosferă prietenoasă și susținere completă pentru alergători.",
+    "description": "Codrului Marathon is an MTB and trail running event organized by Pro Racers Sports Club and the Romanian Cycling Federation, for both amateurs and professionals. The spectacular routes cross forests and offer challenges for all fitness levels, with new and more appealing options for the MTB and trail running events. The event also includes races for children, race packs, hydration stations, medical assistance, timing, and a finisher medal for all participants. It is an event for the community and families, with a friendly atmosphere and comprehensive support for runners.",
     "course_highlights": [
-      "Trasee MTB noi, mai provocatoare, fără partea de șosea din ultimii 5 km",
-      "Trasee Trail Run variate, cu opțiuni hobby de 6 și 13 km",
-      "Urcări semnificative pe trasee cu diferențe de nivel între 250 m și 1150 m"
+      "New, more challenging MTB routes, excluding the road section from the last 5 km",
+      "Varied trail running routes, with 6 km and 13 km hobby options",
+      "Significant climbs on routes with elevation gains ranging from 250 m to 1,150 m"
     ],
-    "additional": "Evenimentul oferă pachete de start cu număr de concurs și produse ale sponsorilor (limită 250 pachete), fotografii de pe traseu, puncte de hidratare pe traseu și la finish, asistență medicală și Salvamont, cronometrare, pasta party și medalii finisher. Sunt disponibile tricouri tehnice oficiale de top marca SPORT HG, model 2026, opțional. Programul include mai multe starturi pe categorii și o cursă pentru copii, cu festivitate de premiere la ora 14:30.",
+    "additional": "The event offers race packs with a race number and sponsor products (limited to 250 packs), photos from the course, hydration stations along the course and at the finish, medical assistance and Mountain Rescue, timing, a pasta party, and finisher medals. Official SPORT HG technical tops, model 2026, are available as an optional purchase. The schedule includes multiple category starts and a children’s race, with the awards ceremony at 14:30.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -42627,13 +43111,13 @@
       "catalin.blindu@kickoff.ro",
       "gdpr@kickoff.ro"
     ],
-    "description": "The Color Run București este o cursă necronometrată de 5 kilometri, cunoscută drept \"Happiest 5k on the Planet\", care celebrează sănătatea, bucuria și originalitatea printr-o experiență plină de culoare și energie. Participanții aleargă, dansează și se bucură de o atmosferă de festival, fiind colorați cu pudră la fiecare kilometru parcurs. Evenimentul se încheie cu o petrecere vibrantă, unde toți alergătorii sunt acoperiți în culori și primesc medalii și tatuaje temporare. Este o sărbătoare a mișcării și a comunității, deschisă tuturor vârstelor și nivelurilor de pregătire fizică.",
+    "description": "The Color Run București is an untimed 5-kilometer race, known as the “Happiest 5k on the Planet,” celebrating health, joy, and originality through a colorful, energetic experience. Participants run, dance, and enjoy a festival atmosphere, getting covered in powder at every kilometer. The event ends with a vibrant party, where all runners are covered in colors and receive medals and temporary tattoos. It is a celebration of movement and community, open to all ages and fitness levels.",
     "course_highlights": [
-      "Traseu de aproximativ 5 km, necronometrat",
-      "Puncte de colorare cu pudră la fiecare kilometru",
-      "Petrecere post-cursă cu nor de pudră colorată și muzică"
+      "Approximately 5 km, untimed course",
+      "Powder color stations at every kilometer",
+      "Post-race party with a cloud of colored powder and music"
     ],
-    "additional": "Evenimentul are mai multe starturi succesive la interval de 5 minute, iar accesul în zona de eveniment se face pe baza numărului de concurs și a tricoului din kit. Kitul de participare include tricou, număr de concurs, tatuaje temporare, bandană, medalie și pudră colorată. Nu există spațiu de depozitare bagaje. Pentru copiii 0-6 ani există opțiunea de acces gratuit cu număr de concurs, medalie și pudră, dar fără tricou.",
+    "additional": "The event has several consecutive start waves, five minutes apart. Entry to the event area requires a race number and the T-shirt from the race kit. The participation kit includes a T-shirt, race number, temporary tattoos, bandana, medal, and colored powder. There is no baggage storage area. Children aged 0–6 can enter for free with a race number, medal, and powder, but without a T-shirt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -42724,13 +43208,13 @@
     "website_emails_found": [
       "contact@runforfreedom.ro"
     ],
-    "description": "Forest Race Marghita este o competiție de alergare pe traseu accidentat, cu dificultate medie, desfășurată în pădurea foioasă din apropierea orașului Marghita. Evenimentul este organizat de Clubul Sportiv Run For Freedom împreună cu Clubul Sportiv XTERRA Sport Bihor și oferă patru trasee adaptate diferitelor niveluri de alergători: Semimaraton (21.6 km), Cross (10.8 km), Speedy (5.4 km) și Mini (1 km). Startul și finish-ul sunt în Parcul de Aventură Freedom, iar traseele sunt marcate corespunzător pentru siguranța participanților. Concursul promovează un stil de viață sănătos și respectul pentru mediul înconjurător.",
+    "description": "Forest Race Marghita is a trail-running race of moderate difficulty, held in the deciduous forest near the town of Marghita. The event is organized by Run For Freedom Sports Club together with XTERRA Sport Bihor Sports Club and offers four routes suited to different levels of runners: Half Marathon (21.6 km), Cross (10.8 km), Speedy (5.4 km), and Mini (1 km). The start and finish are at Freedom Adventure Park, and the routes are appropriately marked for participants’ safety. The race promotes a healthy lifestyle and respect for the environment.",
     "course_highlights": [
-      "Trasee pe drumuri forestiere marcate în pădurea foioasă din Marghita",
-      "Diferențe de nivel moderate: +460 m pentru semimaraton, +230 m pentru cross, +20 m pentru mini",
-      "Start și finish în Parcul de Aventură Freedom"
+      "Routes on marked forest roads in the deciduous forest of Marghita",
+      "Moderate elevation gain: +460 m for the half marathon, +230 m for the cross, +20 m for the mini",
+      "Start and finish at Freedom Adventure Park"
     ],
-    "additional": "Tricoul oficial nu este inclus în preț și nu se poate comanda prin concurs. Participanții sub 18 ani trebuie să prezinte adeverință medicală și acord scris de la părinți sau tutori. Organizatorii pot exclude participanții aflați în stare de ebrietate sau fără echipament corespunzător. Înscrierile se fac exclusiv prin webshopul oficial.",
+    "additional": "The official T-shirt is not included in the price and cannot be ordered through the race. Participants under 18 must provide a medical certificate and written consent from a parent or guardian. The organizers may exclude participants who are intoxicated or do not have appropriate equipment. Registration is exclusively through the official webshop.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -51612,7 +52096,7 @@
       "redactie@reper24.ro",
       "publicitate@reper24.ro"
     ],
-    "description": "Ciudanovița în Mișcare este un eveniment dedicat promovării sănătății, naturii și comunității, organizat în comuna Ciudanovița. Evenimentul are loc în aer liber, oferind participanților oportunitatea de a se bucura de peisajele naturale și de a petrece timp activ în mijlocul comunității locale. Este o invitație deschisă tuturor celor care doresc să îmbine mișcarea cu socializarea și aprecierea mediului înconjurător.",
+    "description": "Ciudanovița in Motion is an event dedicated to promoting health, nature, and community, organized in the commune of Ciudanovița. The event takes place outdoors, giving participants the opportunity to enjoy the natural scenery and spend active time with the local community. It is an open invitation to everyone who wants to combine exercise with socializing and appreciating the surrounding environment.",
     "course_highlights": [],
     "additional": null,
     "images": [],
@@ -51931,13 +52415,13 @@
     "race_info_url": "https://trtn.ro/regulament/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Trail Run în Țara Năsăudului este un eveniment de alergare în natură destinat tuturor categoriilor de vârstă și nivelurilor de experiență, desfășurat în jurul Casutelor din Plai, Valea Caselor, Năsăud. Participanții pot alege între trei trasee marcate și semnalizate, cu teren mixt, urcări și coborâri, adaptate pentru copii, familii și alergători experimentați. Evenimentul promovează un stil de viață sănătos și conexiunea cu natura, oferind o atmosferă de susținere, socializare și fair-play. După cursă, distracția continuă cu afterparty și povești de pe traseu.",
+    "description": "Trail Run in Țara Năsăudului is a trail-running event for all age groups and experience levels, held around Casuțele din Plai, Valea Caselor, Năsăud. Participants can choose from three marked and signposted routes featuring mixed terrain, climbs and descents, adapted for children, families and experienced runners. The event promotes a healthy lifestyle and a connection with nature, offering a supportive atmosphere focused on socializing and fair play. After the race, the fun continues with an afterparty and stories from the trails.",
     "course_highlights": [
-      "Trasee marcate și semnalizate cu urcări, coborâri și teren mixt",
-      "Peisaje pitorești și priveliști spectaculoase asupra dealurilor din jurul Năsăudului",
-      "Start și finish la Casutele din Plai, cu acces organizat prin microbuze de la parcarea capelei orașului Năsăud"
+      "Marked and signposted routes with climbs, descents and mixed terrain",
+      "Picturesque scenery and spectacular views of the hills around Năsăud",
+      "Start and finish at Casuțele din Plai, with organized minibus transport from the parking area by the Năsăud town chapel"
     ],
-    "additional": "Participanții la traseul 10K Challenge primesc tricoul oficial și medalia de participare, iar câștigătorii locului I la 10K Challenge primesc și 2 nopți de cazare la Casutele din Plai. Traseul 2K este destinat copiilor și familiilor, fiind un traseu de aproximativ 1.700 metri. Accesul cu mașina la start este interzis, transportul fiind asigurat cu microbuze de la punctul de întâlnire. După cursă există zonă de socializare, podcast, BBQ și chill zone.",
+    "additional": "Participants in the 10K Challenge receive the official T-shirt and a participation medal, while first-place winners in the 10K Challenge also receive two nights’ accommodation at Casuțele din Plai. The 2K route is intended for children and families and is approximately 1,700 metres long. Cars are not permitted at the start; transport is provided by minibus from the meeting point. After the race, there is a socializing area, a podcast, a BBQ and a chill zone.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -53814,13 +54298,13 @@
     "race_info_url": "https://www.wingsforlifeworldrun.com/en/locations/oradea",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Wings for Life World Run este un eveniment global de alergare în care toți participanții încep simultan în întreaga lume, alergând împotriva unei mașini urmăritoare numită Catcher Car. Nu există o linie de sosire fixă; alergătorii continuă să alerge până când sunt ajunși de Catcher Car. Toate taxele de înscriere sunt donate pentru cercetarea leziunilor măduvei spinării, susținând astfel o cauză nobilă. Evenimentul este deschis tuturor, indiferent de nivelul de pregătire, și promovează solidaritatea și susținerea celor care nu pot alerga.",
+    "description": "Wings for Life World Run is a global running event in which all participants start simultaneously around the world, running ahead of a pursuing vehicle called the Catcher Car. There is no fixed finish line; runners keep going until they are caught by the Catcher Car. All entry fees are donated to spinal cord injury research, supporting a worthy cause. The event is open to everyone, regardless of fitness level, and promotes solidarity and support for those who cannot run.",
     "course_highlights": [
-      "Start simultan la nivel mondial pentru toți participanții",
-      "Fără linie de sosire fixă, alergătorii sunt urmăriți de Catcher Car",
-      "Taxele de înscriere sunt 100% donate pentru cercetarea leziunilor măduvei spinării"
+      "A simultaneous worldwide start for all participants",
+      "No fixed finish line; runners are pursued by the Catcher Car",
+      "100% of entry fees are donated to spinal cord injury research"
     ],
-    "additional": "Evenimentul include participare prin aplicație mobilă (App Run) care permite alergarea oriunde. Catcher Car începe urmărirea la 30 de minute după start. Evenimentul este deschis alergătorilor, participanților în scaun cu rotile și începătorilor. Există suport audio în aplicație pentru o experiență de cursă îmbunătățită.",
+    "additional": "The event includes participation via a mobile app (App Run), which lets you run anywhere. The Catcher Car begins its pursuit 30 minutes after the start. The event is open to runners, wheelchair participants, and beginners. The app also offers audio support for an enhanced race experience.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -53959,13 +54443,13 @@
     "website_emails_found": [
       "contact@muresrunners.ro"
     ],
-    "description": "VW Mureș Half Marathon este o cursă de alergare care te poartă prin inima Transilvaniei, traversând centrul orașului Târgu Mureș și punctele turistice reprezentative ale acestuia. Evenimentul oferă trasee variate de 21 km, 10 km, 5 km, o ștafetă 4×5 km și o cursă pentru copii, toate cu startul și sosirea în zona centrală, ideală pentru susținerea de către familie și prieteni. Participanții primesc medalii, premii și un kit complet cu tricou, număr de concurs și cip de cronometrare. Este o experiență vibrantă de primăvară, care marchează începutul sezonului de alergare în Mureș.",
+    "description": "VW Mureș Half Marathon is a running race that takes you through the heart of Transylvania, crossing the center of Târgu Mureș and its prominent tourist attractions. The event offers a variety of races: 21 km, 10 km, 5 km, a 4×5 km relay, and a children’s race, all starting and finishing in the central area, ideal for support from family and friends. Participants receive medals, prizes, and a complete kit with a T-shirt, race number, and timing chip. It is a vibrant spring experience that marks the start of the running season in Mureș.",
     "course_highlights": [
-      "Trasee prin centrul orașului Târgu Mureș și punctele turistice reprezentative",
-      "Start și sosire în Piața Teatrului, zona centrală a orașului",
-      "Varietate de probe: semimaraton 21 km, 10 km, 5 km, ștafetă 4×5 km și cursă copii"
+      "Routes through the center of Târgu Mureș and its prominent tourist attractions",
+      "Start and finish in Piața Teatrului, in the city center",
+      "A variety of events: half marathon 21 km, 10 km, 5 km, 4×5 km relay, and children’s race"
     ],
-    "additional": "Pachetul de înscriere include tricou oficial, număr de concurs, cip de cronometrare de unică folosință, medalie de finisher, broșuri ale sponsorilor, diplome descărcabile online, fotografii oficiale și acces la punctele de hidratare și alimentare. Marimea tricoului se alege la înscriere, dar poate varia în funcție de producător. Este obligatoriu echipamentul sportiv și numărul de concurs vizibil pe tot parcursul cursei.",
+    "additional": "The entry package includes an official T-shirt, race number, single-use timing chip, finisher’s medal, sponsors’ brochures, diplomas downloadable online, official photos, and access to hydration and refreshment points. The T-shirt size is selected during registration but may vary depending on the manufacturer. Sportswear is mandatory, and the race number must be visible throughout the race.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -58610,13 +59094,13 @@
     "race_info_url": "https://visitvrancea.ro/semimaratonul-siretului-in-memoriam-ilie-rosu",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Semimaratonul Siretului - In memoriam Ilie Roșu este o cursă de alergare organizată la Adjudu Vechi, în județul Vrancea, în memoria maratonistului Ilie Roșu. Proba de semimaraton îi invită pe alergători să ia parte la o competiție dedicată alergării și comemorării. Startul este anunțat la Biserica din Adjudu Vechi.",
+    "description": "The Siret Half Marathon – In Memoriam Ilie Roșu is a running race held in Adjudu Vechi, Vrancea County, in memory of marathon runner Ilie Roșu. The half marathon invites runners to take part in a competition dedicated to running and remembrance. The start is announced at the church in Adjudu Vechi.",
     "course_highlights": [
-      "Start lângă Biserica din Adjudu Vechi.",
-      "Semimaraton desfășurat în zona Adjudului, în județul Vrancea.",
-      "Cursă organizată în memoria maratonistului Ilie Roșu."
+      "Start near the church in Adjudu Vechi.",
+      "Half marathon held in the Adjud area, in Vrancea County.",
+      "Race held in memory of marathon runner Ilie Roșu."
     ],
-    "additional": "Startul este programat la ora 9:00.",
+    "additional": "The start is scheduled for 9:00.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -61792,13 +62276,13 @@
       "castel-300x285@2x.jpg",
       "castel-60x60@2x.jpg"
     ],
-    "description": "Jidvei Weinland Trails este un eveniment sportiv unic desfășurat pe domeniul Castelului Bethlen-Haller, în inima Transilvaniei. Concursul combină alergarea și ciclismul pe trasee spectaculoase printre vii și păduri seculare, oferind participanților o experiență autentică în Țara Vinului. Evenimentul include curse pentru toate nivelurile de pregătire, activități pentru copii și momente oenogastronomice, creând o zi memorabilă pentru sportivi și însoțitori deopotrivă. Este o sărbătoare a sportului, naturii și culturii locale, cu un puternic spirit comunitar și susținere pentru proiecte culturale.",
+    "description": "Jidvei Weinland Trails is a unique sporting event held on the Bethlen-Haller Castle estate, in the heart of Transylvania. The competition combines running and cycling on spectacular routes through vineyards and ancient forests, offering participants an authentic experience in Wine Country. The event includes races for all fitness levels, activities for children, and food and wine experiences, creating a memorable day for athletes and their companions alike. It is a celebration of sport, nature, and local culture, with a strong community spirit and support for cultural projects.",
     "course_highlights": [
-      "Trasee de alergare și ciclism prin podgoriile și pădurile din domeniul Castelului Bethlen-Haller",
-      "Peisaje superbe în inima Transilvaniei, cu trasee variate pentru toate nivelurile de pregătire",
-      "Evenimentul include curse de trail, maraton MTB/XCM și curse pentru copii, toate în mijlocul naturii și culturii locale"
+      "Running and cycling routes through the vineyards and forests of the Bethlen-Haller Castle estate",
+      "Stunning scenery in the heart of Transylvania, with varied routes for all fitness levels",
+      "The event includes trail races, MTB/XCM marathons, and children’s races, all set amid nature and local culture"
     ],
-    "additional": "Evenimentul include activități speciale pentru copii cu jocuri și ateliere creative într-un cadru sigur. Sunt disponibile experiențe oenogastronomice și tururi la Castelul Bethlen-Haller și Crama Jidvei contra cost. Cursa MTB are variante pentru echipe familie și curse E-BIKE necompetitive. Premii speciale pentru cei mai mici alergători în cursele de 1 km și 2 km.",
+    "additional": "The event includes special activities for children, with games and creative workshops in a safe setting. Food and wine experiences and tours of Bethlen-Haller Castle and the Jidvei Winery are available for an additional fee. The MTB race offers family-team options and non-competitive E-BIKE races. Special prizes are awarded to the youngest runners in the 1 km and 2 km races.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -61913,13 +62397,13 @@
     "website_emails_found": [
       "contact@obciniada.ro"
     ],
-    "description": "Obciniada Night Run este o competiție de alergare nocturnă în Bucovina, care oferă trasee spectaculoase și o atmosferă de festival sub stele. Participanții pot alege între mai multe curse, de la semimaraton la curse pentru copii, toate desfășurate pe trasee montane cu peisaje impresionante. Evenimentul promovează un stil de viață sănătos și implicarea comunității locale, fiind organizat cu scopul de a susține educația copiilor defavorizați. Participanții beneficiază de cronometrare cu cip, premii în bani, acces la puncte de hidratare și o masă caldă la final.",
+    "description": "Obciniada Night Run is a night-running competition in Bucovina, offering spectacular routes and a festival atmosphere under the stars. Participants can choose from several races, from a half marathon to children’s races, all held on mountain trails with impressive scenery. The event promotes a healthy lifestyle and local community involvement, and is organized to support the education of disadvantaged children. Participants benefit from chip timing, cash prizes, access to hydration stations, and a hot meal at the finish.",
     "course_highlights": [
-      "Trasee montane cu diferențe de nivel semnificative (până la 1050m pentru semimaraton)",
-      "Puncte de control și alimentare pe traseu, inclusiv la Vârful Toaca",
-      "Atmosferă de festival cu acces general și activități conexe"
+      "Mountain trails with significant elevation gain (up to 1050m for the half marathon)",
+      "Checkpoints and aid stations along the route, including at Vârful Toaca",
+      "Festival atmosphere with general admission and related activities"
     ],
-    "additional": "Înscrierile online se închid joi la ora 18:00, iar înscrierile la fața locului sunt posibile până sâmbătă la ora 20:00. Există un echipament obligatoriu pentru participanți. Clasament în timp real și diplomă electronică sunt oferite. Premii în bani vor fi anunțate la începutul anului 2027. Participanții primesc brățară de acces în zona festivalului și o masă caldă la finish.",
+    "additional": "Online registration closes Thursday at 18:00, and on-site registration is available until Saturday at 20:00. Participants are required to carry specific equipment. Live rankings and an electronic certificate are provided. Cash prizes will be announced at the beginning of 2027. Participants receive a wristband granting access to the festival area and a hot meal at the finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -62017,13 +62501,13 @@
     "website_emails_found": [
       "office@eke.ro"
     ],
-    "description": "Tour de Tur este o competiție anuală de mountain bike și trail running care se desfășoară în zona Lacului Mujdeni, Comuna Orașu Nou, județul Satu Mare. Evenimentul oferă trasee variate pentru toate nivelurile de pregătire, de la curse scurte și recreative până la probe de anduranță mai solicitante. Participanții se bucură de peisaje naturale frumoase și de o atmosferă prietenoasă, fiind așteptați cu drag să ia parte la ediția a XX-a a competiției. Organizatorii pun accent pe siguranță și respectarea regulamentelor specifice fiecărei probe. Tour de Tur este o oportunitate excelentă pentru iubitorii de natură și sport să se întâlnească și să concureze într-un cadru natural deosebit.",
+    "description": "Tour de Tur is an annual mountain biking and trail running competition held in the area of Lake Mujdeni, Orașu Nou Commune, Satu Mare County. The event offers varied courses for all fitness levels, from short, recreational races to more demanding endurance events. Participants can enjoy beautiful natural scenery and a friendly atmosphere, and are warmly invited to take part in the competition’s 20th edition. The organizers emphasize safety and compliance with the rules specific to each event. Tour de Tur is an excellent opportunity for nature and sports enthusiasts to meet and compete in a remarkable natural setting.",
     "course_highlights": [
-      "Trasee variate pentru mountain bike: Fun Ride (13 km, 385 m diferență de nivel), Race (34 km, 930 m diferență de nivel), Maraton (44 km, 1180 m diferență de nivel)",
-      "Trasee pentru trail running: Fun Run (6 km, 184 m diferență de nivel), Cross (12 km, 390 m diferență de nivel), Semimaraton (25 km, 990 m diferență de nivel)",
-      "Locația evenimentului este Lacul Mujdeni, oferind un cadru natural pitoresc pentru competiție"
+      "Varied mountain bike courses: Fun Ride (13 km, 385 m elevation gain), Race (34 km, 930 m elevation gain), Marathon (44 km, 1,180 m elevation gain)",
+      "Trail running courses: Fun Run (6 km, 184 m elevation gain), Cross (12 km, 390 m elevation gain), Half Marathon (25 km, 990 m elevation gain)",
+      "The event takes place at Lake Mujdeni, providing a picturesque natural setting for the competition"
     ],
-    "additional": "Evenimentul include mai multe categorii și distanțe atât pentru mountain bike, cât și pentru trail running, cu diferențe de nivel variate. Organizatorul este Societatea Carpatină Ardeleană - Satu Mare. Locația exactă este Lacul Mujdeni, Comuna Orașu Nou, județul Satu Mare. Telefon de contact: +40-743-419443.",
+    "additional": "The event includes several categories and distances for both mountain biking and trail running, with varying elevation gains. The organizer is the Transylvanian Carpathian Society - Satu Mare. The exact location is Lake Mujdeni, Orașu Nou Commune, Satu Mare County. Contact phone: +40-743-419443.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -62532,7 +63016,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "13:30",
     "location": "Belgrade, Serbia",
     "latitude": 44.8125449,
     "longitude": 20.46123,
@@ -62556,25 +63040,29 @@
     "distance_verbose": "Polumaraton, 10 km, 5 km, 1 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://onerun.rs/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://onerun.rs/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "One Run is an international running event that has been held for eight years, bringing together runners from several countries and continents on the same day. The race is known for being entered twice in the Guinness World Records as the world's largest half marathon with a synchronized start. This year, the race is taking place in Serbia as well as several other countries, and participants can choose from four distances: 1 km, 5 km, 10 km, and 21 km. The event is open to everyone, whether they run or walk, and promotes health, accessibility, and community through sport.",
+    "course_highlights": [
+      "Four distances available: 1 km, 5 km, 10 km, and 21 km",
+      "Synchronized start in several countries on the same day",
+      "Event entered twice in the Guinness World Records"
+    ],
+    "additional": "The start and registration are at Žitni trg in Veliko Gradište. Registration is open from 08:00 to 11:30. The warm-up for the 1 km race begins at 12:45, and the 5 km, 10 km, and 21 km races start at 13:30. The award ceremony and presentation of prizes follow the race at 15:30. The race packet includes a bib with a chip, sponsor gifts, and a medal.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.42,
     "sources": [
       "https://trka.rs/events/977-onerun-2027/"
     ],
@@ -72024,13 +72512,13 @@
     "website_emails_found": [
       "contact@festivalulsporturilor.ro"
     ],
-    "description": "Festivalul Sporturilor Iași este un eveniment sportiv dedicat tuturor, de la începători la competitori avansați, oferind o varietate de probe precum alergare pe potecă, mountain bike, orientare sportivă și alergare pe șosea. Evenimentul se desfășoară pe trasee din orașul Iași și zonele limitrofe, cu start și finish la Hotel La Castel și Palatul Culturii. Participanții pot concura individual sau în mai multe probe pentru a obține reduceri și pot încerca provocarea Trofeul Multisport, care cuprinde patru probe în două zile. Festivalul promovează mișcarea pentru toată lumea, inclusiv familii și persoane cu abilități speciale, oferind o experiență completă și prietenoasă.",
+    "description": "Iași Sports Festival is a sporting event for everyone, from beginners to advanced competitors, offering a variety of events such as trail running, mountain biking, orienteering, and road running. The event takes place on routes in the city of Iași and the surrounding areas, with starts and finishes at Hotel La Castel and the Palace of Culture. Participants can compete individually or in multiple events to receive discounts, and can take on the Multisport Trophy challenge, which includes four events over two days. The festival promotes physical activity for everyone, including families and people with special abilities, offering a complete and welcoming experience.",
     "course_highlights": [
-      "Trasee variate în orașul Iași și zonele limitrofe, inclusiv poteci prin vii și pădurea Breazu",
-      "Puncte de alimentare și hidratare pe traseele de alergare pe potecă",
-      "Cronometraj electronic live și premii cash la categoriile Open"
+      "Varied routes in the city of Iași and surrounding areas, including trails through vineyards and Breazu Forest",
+      "Aid and hydration stations along the trail-running routes",
+      "Live electronic timing and cash prizes in the Open categories"
     ],
-    "additional": "Start/finish la Hotel La Castel - Green View Salon (sâmbătă) și Palatul Culturii (duminică). Participanții trebuie să prezinte buletinul original și să semneze o declarație pe proprie răspundere la ridicarea kitului. Competiția se desfășoară indiferent de condițiile meteo, cu excepția fenomenelor extreme. Cronometrajul este fără cip, iar clasamentul este disponibil live pe site în timpul cursei. Există categorii Open cu premii cash și categorii de vârstă detaliate în regulament. Timpi limită pentru probe: 11 km alergare potecă - 2 ore, 21 km semimaraton - 3 ore.",
+    "additional": "Start/finish at Hotel La Castel - Green View Salon (Saturday) and the Palace of Culture (Sunday). Participants must present their original identity card and sign a declaration of responsibility when collecting their race kit. The competition takes place regardless of weather conditions, except in extreme conditions. Timing is chip-free, and the standings are available live on the website during the race. There are Open categories with cash prizes and age categories detailed in the regulations. Time limits for events: 11 km trail run - 2 hours; 21 km half marathon - 3 hours.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -72124,13 +72612,13 @@
     "website_emails_found": [
       "contact@maratonapuseni.ro"
     ],
-    "description": "Maraton Apuseni este un eveniment de alergare montană care oferă trasee variate pentru toate nivelurile de pregătire, desfășurându-se în peisajele pitorești ale Munților Apuseni. Participanții pot alege între ultramaraton, maraton, semimaraton, cros și probe pentru familie, alergând prin păduri dese, creste spectaculoase și sate tradiționale. Evenimentul este organizat anual la Buscat Resort, Cluj, și pune accent pe experiența autentică în natură, cu o atmosferă de festival. Traseele sunt atent marcate și dotate cu puncte de alimentare, iar fiecare alergător primește un kit de participare cu echipament oficial și alte beneficii.",
+    "description": "Maraton Apuseni is a mountain running event offering varied courses for all fitness levels, set amid the picturesque landscapes of the Apuseni Mountains. Participants can choose from an ultramarathon, marathon, half marathon, cross-country race, and family events, running through dense forests, spectacular ridgelines, and traditional villages. The event is held annually at Buscat Resort, Cluj, and emphasizes an authentic nature experience with a festival atmosphere. The courses are carefully marked and equipped with aid stations, and each runner receives a participation kit with official gear and other benefits.",
     "course_highlights": [
-      "Trasee prin păduri dese și creste spectaculoase ale Munților Apuseni",
-      "Parcurgerea rezervației Scărița-Belioara și zona alpină a Muntelui Mare",
-      "Trasee care includ sate tradiționale și pajiști alpine"
+      "Courses through the dense forests and spectacular ridgelines of the Apuseni Mountains",
+      "Passing through the Scărița-Belioara Nature Reserve and the alpine area of Muntele Mare",
+      "Courses that include traditional villages and alpine meadows"
     ],
-    "additional": "Kitul de participare include echipament oficial, cip de cronometrare, număr de concurs, medalie de finisher, acces la punctele de alimentare și afterparty, precum și energizante în funcție de probă. Ultramaratonul are echipament obligatoriu specific, iar traseele sunt atent marcate și dotate cu puncte de alimentare. Există o probă No Limits dedicată persoanelor cu dizabilități. Startul ultramaratonului este la ora 05:00, iar timpii limită sunt stabiliți pentru punctele de control pe traseu.",
+    "additional": "The participation kit includes official gear, a timing chip, a race bib, a finisher’s medal, access to aid stations and the afterparty, as well as energy drinks depending on the event. The ultramarathon has specific mandatory gear, and the courses are carefully marked and equipped with aid stations. There is a No Limits event dedicated to people with disabilities. The ultramarathon starts at 05:00, and cutoff times are set for checkpoints along the course.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -72251,13 +72739,13 @@
     "website_emails_found": [
       "inscrieri@romanatirun.ro"
     ],
-    "description": "Romanați Trail Run este o cursă vibrantă de alergare montană ce transformă Caracal în capitala trail running-ului pentru o zi. Evenimentul oferă trei trasee provocatoare, potrivite pentru toate nivelurile de alergători, cu o atmosferă prietenoasă și o comunitate pasionată de mișcare. Deviza evenimentului încurajează concurenții să alerge împotriva limitelor proprii și să se bucure de traseu. Organizarea este atentă, iar participarea susține și un scop caritabil.",
+    "description": "Romanați Trail Run is a vibrant trail-running race that transforms Caracal into the trail-running capital for a day. The event offers three challenging courses suitable for runners of all levels, with a friendly atmosphere and a community passionate about exercise. The event’s motto encourages competitors to run beyond their own limits and enjoy the course. The event is carefully organized, and participation also supports a charitable cause.",
     "course_highlights": [
-      "Trei trasee provocatoare pentru toate nivelurile",
-      "Startul semimaratonului și crosului de 12 km în Parcul Constantin Poroineanu, zona Monumentului 1848",
-      "Traseul semimaratonului are o lungime de aproximativ 22,9 km"
+      "Three challenging courses for all levels",
+      "The half-marathon and 12 km race start in Constantin Poroineanu Park, near the 1848 Monument",
+      "The half-marathon course is approximately 22.9 km long"
     ],
-    "additional": "Înscrierea pentru cursa copiilor se face la fața locului în ziua concursului între orele 07:00 și 09:30 prin completarea unui formular pus la dispoziție de organizator. Plata contribuției se face prin virament bancar în termen de 3 zile lucrătoare de la înscriere, iar neplata duce la anularea înscrierii. Startul semimaratonului și crosului de 12 km este comun, în Parcul Constantin Poroineanu, zona Monumentului 1848.",
+    "additional": "Registration for the children’s race takes place on site on race day between 07:00 and 09:30 by completing a form provided by the organizer. The contribution must be paid by bank transfer within 3 business days of registration; failure to pay will result in cancellation of the registration. The half-marathon and 12 km race share a start in Constantin Poroineanu Park, near the 1848 Monument.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -76691,13 +77179,13 @@
     "race_info_url": "https://carpatrace.ro/atinge-omu/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Atinge Omu este un concurs de alergare montană ce se desfășoară în prima decadă a lunii iunie, pe traseul Peștera - Vf. Omu și retur. Evenimentul oferă alergătorilor o experiență intensă în mijlocul peisajelor spectaculoase ale Bucegilor, când culmile sunt înroșite de rododendron. La final, participanții sunt răsplătiți cu bulz perpelit pe jar și jintiță, într-o atmosferă prietenoasă și tradițională.",
+    "description": "Atinge Omu is a mountain running race held in the first ten days of June, along the Peștera–Omu Peak route and back. The event offers runners an intense experience amid the spectacular scenery of the Bucegi Mountains, when the ridges are tinged red with rhododendron. At the finish, participants are rewarded with bulz grilled over embers and jintiță, in a friendly, traditional atmosphere.",
     "course_highlights": [
-      "Traseu montan Peștera - Vf. Omu - Peștera",
-      "Peisaje spectaculoase cu flori de rododendron pe culmile Bucegilor",
-      "Startul se dă de la Telecabina Peștera"
+      "Mountain route: Peștera–Omu Peak–Peștera",
+      "Spectacular views of rhododendron flowers on the ridges of the Bucegi Mountains",
+      "The race starts at the Peștera Cable Car"
     ],
-    "additional": "Zona de start este la Telecabina Peștera. La finalul cursei se oferă bulz perpelit pe jar și jintiță pentru toți participanții.",
+    "additional": "The start area is at the Peștera Cable Car. At the finish, bulz grilled over embers and jintiță are served to all participants.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -76808,13 +77296,13 @@
       "invictusbistrita@outlook.com",
       "nume@exemplu.ro"
     ],
-    "description": "Semimaratonul Eroilor Invictus este un eveniment sportiv anual organizat în Bistrița, dedicat comemorării Zilei Eroilor și promovării sănătății prin sport. Evenimentul reunește atât sportivi amatori, cât și elite, oferind o experiență de alergare pe un traseu special amenajat în oraș. Organizatorii pun accent pe respectarea memoriei eroilor și pe implicarea comunității locale. Participanții beneficiază de kit de participare cu număr de concurs și cip de cronometrare.",
+    "description": "The Invictus Heroes Half Marathon is an annual sporting event held in Bistrița, dedicated to commemorating Heroes’ Day and promoting health through sport. The event brings together amateur and elite athletes, offering a running experience on a specially designed city course. The organizers emphasize honoring the memory of the heroes and involving the local community. Participants receive a race kit with a bib number and timing chip.",
     "course_highlights": [
-      "Traseu urban în orașul Bistrița",
-      "Start și sosire în Piața Centrală",
-      "Eveniment dedicat Zilei Eroilor, 10 iunie"
+      "Urban course in the city of Bistrița",
+      "Start and finish in Piața Centrală",
+      "Event dedicated to Heroes’ Day, June 10"
     ],
-    "additional": "Participanții primesc număr de concurs și cip de cronometrare. Evenimentul este organizat sub Înaltul Patronaj al Principelui Radu și implică numeroși parteneri și colaboratori locali. Există posibilitatea de a obține tricoul oficial Invictus și alte produse merch.",
+    "additional": "Participants receive a race bib and timing chip. The event is organized under the High Patronage of Prince Radu and involves numerous local partners and collaborators. Participants can obtain the official Invictus T-shirt and other merchandise.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -76950,13 +77438,13 @@
       "Asset-1@4x.png",
       "info@maratonscaunuldomnului.ro"
     ],
-    "description": "Maraton Scaunul Domnului este o cursă montană provocatoare ce se desfășoară în Rezervația Naturală Scaunul Domnului, oferind trasee de 42 km, 21 km și 10 km. Participanții pot descoperi peisaje spectaculoase vulcanice și pot experimenta o alergare pe trasee variate, cu diferențe semnificative de nivel. Evenimentul este organizat cu atenție la siguranța concurenților, cu puncte de control și hidratare bine amplasate. Atmosfera este completată de festivități de premiere și activități sociale după cursă.",
+    "description": "Scaunul Domnului Marathon is a challenging mountain race held in the Scaunul Domnului Nature Reserve, offering 42 km, 21 km, and 10 km routes. Participants can discover spectacular volcanic landscapes and experience running on varied trails with significant elevation changes. The event is organized with a focus on runner safety, with well-placed checkpoints and hydration stations. The atmosphere is rounded out by an awards ceremony and post-race social activities.",
     "course_highlights": [
-      "Traseu de 42 km cu diferență de nivel pozitivă de 2100 m",
-      "Peisaje spectaculoase către Creasta Călimanilor și zone cu belvedere cu risc de cădere",
-      "Puncte multiple de control, hidratare și alimentare pe traseu"
+      "42 km route with 2,100 m of positive elevation gain",
+      "Spectacular views towards the Călimani Ridge and lookout areas with a risk of falling",
+      "Multiple checkpoints, hydration stations, and refreshment points along the route"
     ],
-    "additional": "Ridicarea kit-urilor se face vineri 12 iunie între 17:00-23:00 și sâmbătă 13 iunie între 6:00-8:00 pentru cursele principale. Verificarea echipamentului obligatoriu se face înainte de start. Există timpi limită pentru fiecare cursă și puncte intermediare de control. Parcarea concurenților este organizată pe o zonă special amenajată lângă drumul forestier Blidăreasa, accesibilă de pe Valea Bistrei.",
+    "additional": "Race kits can be picked up on Friday, June 12, from 17:00 to 23:00 and Saturday, June 13, from 6:00 to 8:00 for the main races. Mandatory equipment checks take place before the start. Each race has time limits and intermediate checkpoints. Competitor parking is arranged in a designated area beside the Blidăreasa forest road, accessible from the Bistra Valley.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -77070,13 +77558,13 @@
       "catalin.blindu@kickoff.ro",
       "gdpr@kickoff.ro"
     ],
-    "description": "The Color Run Iași este o cursă necronometrată de 5 kilometri, cunoscută drept \"Happiest 5k on the Planet\", care celebrează sănătatea, bucuria și originalitatea printr-o experiență plină de culoare și energie. Participanții aleargă, dansează și se bucură de o atmosferă festivă, fiind colorați cu pudră vibrantă la fiecare kilometru parcurs. Evenimentul este deschis tuturor vârstelor și promovează un stil de viață activ și distractiv, culminând cu o petrecere colorată după cursă. The Color Run este o sărbătoare a comunității și a mișcării, oferind o zi memorabilă pentru toți participanții.",
+    "description": "The Color Run Iași is an untimed 5-kilometer race, known as the “Happiest 5k on the Planet,” celebrating health, joy, and originality through a colorful, high-energy experience. Participants run, dance, and enjoy a festive atmosphere, getting covered in vibrant powder at every kilometer. The event is open to all ages and promotes an active, fun lifestyle, culminating in a colorful post-race party. The Color Run is a celebration of community and movement, offering a memorable day for all participants.",
     "course_highlights": [
-      "Cursă necronometrată de 5 km cu pudră colorată aplicată la fiecare kilometru",
-      "Atmosferă festivă cu muzică și petrecere post-cursă cu norul de pudră colorată",
-      "Eveniment deschis tuturor vârstelor, fără limită superioară sau inferioară"
+      "Untimed 5 km race with colored powder at every kilometer",
+      "Festive atmosphere with music and a post-race party featuring a cloud of colored powder",
+      "Open to all ages, with no minimum or maximum age limit"
     ],
-    "additional": "Copiii între 0 și 6 ani pot participa gratuit cu număr de concurs, medalie și pudră colorată, dar trebuie să fie însoțiți de un adult. Kitul standard include tricou, număr de concurs, tatuaje temporare, bandană, medalie și pudră colorată. Participanții cu dizabilități și însoțitorii acestora beneficiază de acces gratuit conform legislației. Înscrierile se fac online, iar taxa de participare variază în funcție de perioada de înregistrare. Evenimentul promovează respectul față de mediu și sportivitate pe toată durata cursei.",
+    "additional": "Children aged 0 to 6 can participate for free and receive a race bib, medal, and colored powder, but must be accompanied by an adult. The standard kit includes a T-shirt, race bib, temporary tattoos, bandana, medal, and colored powder. Participants with disabilities and their companions receive free access in accordance with the law. Registration is online, and the entry fee varies depending on the registration period. The event promotes respect for the environment and sportsmanship throughout the race.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -77167,13 +77655,13 @@
     "website_emails_found": [
       "contact@peniel.ro"
     ],
-    "description": "Peniel Trail Run este un eveniment de alergare în natură, desfășurat pe trasee de trail din zona Bistrița, care promovează sănătatea prin mișcare, comunitate și adevăr. Evenimentul combină efortul fizic cu un mesaj profund despre viața trăită deplin pentru trup, minte și duh, adresându-se celor care caută mai mult decât o competiție, ci o experiență autentică ce apropie oamenii și îi îndreaptă spre Hristos. Numele Peniel înseamnă „locul întâlnirii”, simbolizând o conexiune vie cu Dumnezeu și o schimbare personală. Traseele oferă o experiență variată, alergabilă și frumoasă, potrivită atât pentru începători, cât și pentru alergători avansați.",
+    "description": "Peniel Trail Run is a nature running event held on trail routes in the Bistrița area, promoting health through movement, community, and truth. The event combines physical effort with a profound message about living life to the fullest in body, mind, and spirit. It is for those seeking more than a competition: an authentic experience that brings people together and points them toward Christ. The name Peniel means “place of meeting,” symbolizing a living connection with God and personal transformation. The routes offer a varied, runnable, and beautiful experience, suitable for both beginners and advanced runners.",
     "course_highlights": [
-      "Traseul de semimaraton (21 km) cu aproximativ 650 m diferență de nivel, cu porțiuni comune cu traseul de 10 km și o buclă scenică în zona Tărpiu",
-      "Traseul de 10 km rapid, ușor și foarte alergabil, cu o elevație de aproximativ 270 m, pe un traseu rar folosit în competiții",
-      "Traseul de 5 km accesibil, cu două urcări scurte, inclusiv printr-o pădure de brazi, potrivit pentru începători și alergători competitivi"
+      "The half-marathon route (21 km) has approximately 650 m of elevation gain, shares sections with the 10 km route, and includes a scenic loop in the Tărpiu area.",
+      "The 10 km route is fast, easy, and very runnable, with approximately 270 m of elevation gain, on a route rarely used for competitions.",
+      "The accessible 5 km route has two short climbs, including one through a fir forest, and is suitable for beginners and competitive runners."
     ],
-    "additional": "Evenimentul include o cursă Kids Cross pentru copii, promovând distracția și mișcarea pentru cei mici. Tricoul oficial al evenimentului este oferit participanților. Traseele pot suferi mici modificări până la eveniment, iar organizatorii promovează un stil de viață sănătos, echilibrat, cu accent pe comunitate și credință.",
+    "additional": "The event includes a Kids Cross race for children, promoting fun and exercise for the little ones. The official event T-shirt is provided to participants. Routes may undergo minor changes before the event, and the organizers promote a healthy, balanced lifestyle centered on community and faith.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -78609,13 +79097,13 @@
     "website_emails_found": [
       "register@runinbucharest.com"
     ],
-    "description": "Run for Heroes este o cursă caritabilă anuală care aduce împreună alergători de toate vârstele și familiile lor, inclusiv animalele de companie, pentru a susține servicii gratuite de psihoterapie. Evenimentul are loc în Parcul Herăstrău din București și oferă trasee accesibile și dinamice, potrivite pentru amatori, familii și persoane cu dizabilități. Participanții primesc costume de supererou și kituri tematice, iar fiecare kilometru alergat contribuie la o cauză nobilă. Atmosfera este plină de energie, distracție și solidaritate comunitară.",
+    "description": "Run for Heroes is an annual charity race that brings together runners of all ages and their families, including pets, to support free psychotherapy services. The event takes place in Herăstrău Park in Bucharest and offers accessible, dynamic courses suitable for amateurs, families, and people with disabilities. Participants receive superhero costumes and themed kits, and every kilometer run contributes to a noble cause. The atmosphere is full of energy, fun, and community solidarity.",
     "course_highlights": [
-      "Trasee urbane, plate și complet marcate, potrivite pentru toate nivelurile de alergători",
-      "Traseu special accesibil persoanelor cu dizabilități",
-      "Participare cu animale de companie și zone dedicate pentru familii și copii"
+      "Flat, fully marked urban courses suitable for runners of all levels",
+      "A special course accessible to people with disabilities",
+      "Pets are welcome, with dedicated areas for families and children"
     ],
-    "additional": "Participanții primesc tricoul oficial, pelerină de supererou, accesorii tematice, săculeț cu surprize, număr de participare și medalie. Sunt asigurate puncte de hidratare, asistență medicală, securitate și garderobă securizată. Evenimentul include premii pentru primele 3 locuri la cursele de 7 km și 3 km.",
+    "additional": "Participants receive the official T-shirt, a superhero cape, themed accessories, a surprise bag, a race number, and a medal. Hydration stations, medical assistance, security, and secure baggage storage are provided. The event includes prizes for the top 3 finishers in the 7 km and 3 km races.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -80770,13 +81258,13 @@
     "race_info_url": "https://fagarasrocks.ro/urlea-super-vertical/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Urlea Super Vertical este o cursă montană extremă și inovatoare, desfășurată în zona Breaza, în Munții Făgăraș. Este cea mai provocatoare cursă verticală din România, cu o distanță de 12 km și o diferență de nivel de 1833 m, ajungând până la 2474 m altitudine. Formatul unic include o ștafetă sus-jos, unde un partener urcă și celălalt coboară, oferind o experiență intensă și spectaculoasă. Cursa pune accent pe adrenalina verticală și pe spectacolul montan, fiind o premieră în alergarea montană românească.",
+    "description": "Urlea Super Vertical is an extreme and innovative mountain race held in the Breaza area of the Făgăraș Mountains. It is Romania’s most challenging vertical race, covering a distance of 12 km with 1,833 m of elevation gain and reaching an altitude of 2,474 m. Its unique format includes an up-and-down relay, where one partner climbs and the other descends, offering an intense and spectacular experience. The race focuses on vertical adrenaline and mountain spectacle, and is a first for Romanian mountain running.",
     "course_highlights": [
-      "12 km cu 1833 m diferență de nivel, până la 2474 m altitudine",
-      "Format ștafetă SUS + JOS, cu un partener care urcă și celălalt care coboară",
-      "Traseu pe drum forestier, drum de taf, poteci prin păduri de foioase și conifere, și pășune alpină"
+      "12 km with 1,833 m of elevation gain, reaching an altitude of 2,474 m",
+      "UP + DOWN relay format, with one partner climbing and the other descending",
+      "Route along a forest road and logging road, through deciduous and coniferous forests, and across alpine pasture"
     ],
-    "additional": "Plata se face exclusiv cu card bancar, iar înscrierea este validă doar după plata integrală. Participanții primesc număr de concurs personalizat (cei înscriși după 15 iulie primesc număr nepersonalizat). Se oferă medalii de finisher din piatră gravată și tricou tehnic superlight HG pentru primii 300 înscriși. Sunt asigurate puncte de alimentare și hidratare pe traseu, masă caldă pe traseu, asistență medicală, albume foto cu identificare prin selfie, parcare pentru 360 de automobile și sesiuni de Q&A și ateliere tematice.",
+    "additional": "Payment is accepted exclusively by bank card, and registration is valid only after full payment. Participants receive a personalized race bib (those who register after 15 July receive a non-personalized bib). Engraved stone finisher medals and an HG superlight technical T-shirt are provided to the first 300 registrants. Aid and hydration stations along the route, a hot meal on the route, medical assistance, photo albums with selfie identification, parking for 360 cars, and Q&A sessions and themed workshops are provided.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -80890,13 +81378,13 @@
       "contact@maratonultarnavei.ro",
       "info@racehub.ro"
     ],
-    "description": "Maratonul Târnavei este un eveniment de trail running organizat în Târnaveni, județul Mureș, care promovează un stil de viață sănătos și respectul față de natură. Ajuns la a 10-a ediție, maratonul oferă o experiență în aer liber, înconjurată de peisaje naturale din regiunea Transilvania. Startul și finish-ul au loc în incinta companiei Ruck Ventilatoare, iar competiția include mai multe trasee de alergare pentru toate vârstele și nivelurile de pregătire. Evenimentul reunește o comunitate de sportivi pasionați și susține educația ecologică și beneficiile alergării în natură.",
+    "description": "The Târnava Marathon is a trail running event held in Târnăveni, Mureș County, promoting a healthy lifestyle and respect for nature. Now in its 10th edition, the marathon offers an outdoor experience surrounded by the natural landscapes of the Transylvania region. The start and finish take place on the premises of Ruck Ventilatoare, and the competition includes several running routes for all ages and fitness levels. The event brings together a community of passionate athletes and supports environmental education and the benefits of running in nature.",
     "course_highlights": [
-      "Start și finish în incinta companiei Ruck Ventilatoare",
-      "Trasee de trail running variate: semimaraton 21 km, cros 10 km, cros 4 km și Kids Trail Running",
-      "Peisaje naturale din regiunea Transilvania, în județul Mureș"
+      "Start and finish on the premises of Ruck Ventilatoare",
+      "A variety of trail running routes: half marathon 21 km, cross-country 10 km, cross-country 4 km, and Kids Trail Running",
+      "Natural landscapes in the Transylvania region, in Mureș County"
     ],
-    "additional": "Ridicarea kit-urilor se face în ziua precedentă între orele 18:00-21:00 și în ziua cursei între 07:00-09:30. Există încălzire susținută de instructor fitness înainte de start. Sunt organizate curse pentru copii pe categorii de vârstă. După competiție are loc un Gulaș Party, concert și festivitatea de premiere.",
+    "additional": "Race kits can be picked up the day before the event between 18:00 and 21:00 and on race day between 07:00 and 09:30. A fitness instructor leads a warm-up before the start. Races for children are organized by age group. After the competition, there is a Goulash Party, a concert, and the awards ceremony.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -81009,13 +81497,13 @@
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Traversare Igniș este o competiție de alergare montană cu tradiție, ajunsă la ediția a 17-a, care aduce împreună alergători și iubitori ai muntelui din întreaga regiune. Evenimentul propune două probe desfășurate într-un cadru montan autentic, cu diferență de nivel reală și peisaje spectaculoase. Traseele sunt marcate și oferă puncte de hidratare, iar finishul are loc la Pensiunea Mountain Pearl, partener principal al evenimentului. Participanții primesc kit de participare cu număr de concurs, tricou (până la 2 iunie), medalie, acces la puncte de alimentare și asistență medicală.",
+    "description": "Traversare Igniș is a traditional mountain running competition, now in its 17th edition, bringing together runners and mountain lovers from across the region. The event offers two races in an authentic mountain setting, with substantial elevation gain and spectacular scenery. The routes are marked and have hydration points, and the finish is at Pensiunea Mountain Pearl, the event’s main partner. Participants receive a race kit with a race bib, a T-shirt (if registered by June 2), a medal, access to refreshment points, and medical assistance.",
     "course_highlights": [
-      "Traseu Cros: 14 km cu 1000 m diferență pozitivă de nivel, cu urcări susținute și coborâri tehnice",
-      "Traseu Semimaraton: aprox. 23 km cu 1450 m diferență pozitivă de nivel, pentru o provocare suplimentară",
-      "Pe traseu sunt amenajate puncte de hidratare (2 pentru Cros, 4 pentru Semimaraton)"
+      "Cross route: 14 km with 1,000 m of positive elevation gain, featuring sustained climbs and technical descents",
+      "Half Marathon route: approx. 23 km with 1,450 m of positive elevation gain, for an extra challenge",
+      "Hydration points are set up along the routes (2 for the Cross, 4 for the Half Marathon)"
     ],
-    "additional": "Startul are loc la Podul Berdu, cartierul Ferneziu, la baza Lacului Firiza, accesibil cu autobuzul nr. 1. Kitul de participare include număr cu cip, tricou (disponibil doar până pe 2 iunie), medalie, acces la puncte de alimentare și asistență medicală. Finishul este la Pensiunea Mountain Pearl. Traseele sunt marcate cu panglici și săgeți.",
+    "additional": "The start is at Podul Berdu, in the Ferneziu neighborhood, at the foot of Lake Firiza, accessible by bus no. 1. The race kit includes a chip-timed bib, a T-shirt (available only until June 2), a medal, access to refreshment points, and medical assistance. The finish is at Pensiunea Mountain Pearl. The routes are marked with ribbons and arrows.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -87914,13 +88402,13 @@
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Legendele Nemirei este un concurs de alergare montană desfășurat în Slănic Moldova, Bacău, care oferă trasee spectaculoase prin păduri răcoroase și pe culmile masivului Nemira. Participanții pot alege între semimaraton și cros, ambele cu diferențe de nivel semnificative și trasee bine marcate. Evenimentul pune accent pe experiența montană, promovând turismul activ și ecoturismul în zonă, într-un cadru natural sălbatic și frumos. Organizarea este apreciată pentru marcajele clare, voluntarii dedicați și atmosfera prietenoasă.",
+    "description": "Legendele Nemirei is a mountain running race held in Slănic Moldova, Bacău, offering spectacular routes through cool forests and along the ridges of the Nemira massif. Participants can choose between a half marathon and a cross-country race, both featuring significant elevation gain and well-marked routes. The event emphasizes the mountain experience and promotes active tourism and ecotourism in the area, amid beautiful, unspoiled nature. The event is praised for its clear markings, dedicated volunteers, and friendly atmosphere.",
     "course_highlights": [
-      "Trasee prin păduri umbroase și zone alpine cu peisaje naturale nealterate",
-      "Semimaraton de aproximativ 25 km cu diferență pozitivă de nivel de 1100 m",
-      "Cros de aproximativ 14 km cu diferență pozitivă de nivel de 700 m, cu porțiuni de asfalt și drum forestier alergabil"
+      "Routes through shady forests and alpine areas with unspoiled natural scenery",
+      "Approximately 25 km half marathon with 1,100 m of positive elevation gain",
+      "Approximately 14 km cross-country race with 700 m of positive elevation gain, including sections of asphalt and runnable forest road"
     ],
-    "additional": "Traseele sunt marcate în proporție de 90% cu marcaj turistic și completate cu benzi de plastic și indicatoare acolo unde este necesar. Participanții trebuie să aibă experiență montană și să fie pregătiți pentru porțiuni dificile, inclusiv pasaje cu corzi fixe. Startul se face din Parcul Central al stațiunii Slănic Moldova. Organizatorii recomandă rezervarea din timp a cazării, deoarece stațiunea are o capacitate limitată în sezonul plin.",
+    "additional": "The routes are marked 90% with hiking trail markings, supplemented by plastic tape and signs where needed. Participants should have mountain experience and be prepared for difficult sections, including passages with fixed ropes. The start is in the Central Park of the Slănic Moldova resort. The organizers recommend booking accommodation early, as the resort has limited capacity during peak season.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -91012,13 +91500,13 @@
     "race_info_url": "http://www.hospice.ro/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "„Aleargă TU pentru Ei” este un eveniment de alergare organizat de HOSPICE Casa Speranței în Brașov, cu scopul de a susține activitatea organizației. Edițiile anterioare au inclus probe pentru niveluri diferite, de la curse scurte pentru copii și începători până la distanțe de 20 km. Evenimentul din 2027 este anunțat pentru 11 iulie, în zona Aleea Tiberiu Brediceanu.",
+    "description": "“Run YOU for Them” is a running event organized by HOSPICE Casa Speranței in Brașov to support the organization’s work. Previous editions have featured races for different ability levels, from short races for children and beginners to distances of 20 km. The 2027 event is scheduled for July 11 in the Aleea Tiberiu Brediceanu area.",
     "course_highlights": [
-      "Locație în zona Aleea Tiberiu Brediceanu, Brașov",
-      "Edițiile anterioare au oferit distanțe de la 900 m la 20 km",
-      "Eveniment cu scop caritabil, organizat de HOSPICE Casa Speranței"
+      "Located in the Aleea Tiberiu Brediceanu area of Brașov",
+      "Previous editions offered distances from 900 m to 20 km",
+      "Charity event organized by HOSPICE Casa Speranței"
     ],
-    "additional": "Edițiile anterioare au inclus probe de 900 m, 2 km, 4 km, 6 km, 10 km, 18 km și 20 km.",
+    "additional": "Previous editions have included races of 900 m, 2 km, 4 km, 6 km, 10 km, 18 km, and 20 km.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -109026,7 +109514,7 @@
     "race_info_url": "https://www.oradearunfest.ro/save-the-date/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Oradea Run Fest revine cu a doua ediție pe 12 septembrie în Piața Unirii, Oradea. Evenimentul promite o experiență plină de energie, mișcare și voie bună, reunind pasionați de sport, sănătate și comunitate. Organizatorii pregătesc o ediție spectaculoasă cu surprize și momente speciale pentru participanți.",
+    "description": "Oradea Run Fest returns for its second edition on September 12 in Piața Unirii, Oradea. The event promises an experience full of energy, movement and good cheer, bringing together people passionate about sport, health and community. The organizers are preparing a spectacular edition with surprises and special moments for participants.",
     "course_highlights": [],
     "additional": null,
     "images": [],
@@ -121757,13 +122245,13 @@
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Last Man Standing este o cursă de anduranță unică în cadrul Zalău Ultra Trail, care testează limitele fizice și mentale ale participanților. Formatul constă în alergarea repetată a unui traseu de aproximativ 6,7 km, cu start la fiecare oră fixă, iar cei care nu termină tura în timp util sunt eliminați. Cursa continuă până când rămâne un singur alergător în picioare, făcând din aceasta o provocare extremă de rezistență, voință și strategie.",
+    "description": "Last Man Standing is a unique endurance race within Zalău Ultra Trail that tests participants’ physical and mental limits. The format involves repeatedly running a course of approximately 6.7 km, with a start at the top of every hour; participants who do not finish the lap in time are eliminated. The race continues until only one runner remains, making it an extreme challenge of endurance, willpower, and strategy. The event takes place in Poienița Aghireș and is part of the ZUT series, which promotes connection between athletes, the community, and nature.",
     "course_highlights": [
-      "Traseu de aproximativ 6,7 km pe bucle succesive",
-      "Start la fiecare oră fixă, cu un timp limită de 59 minute și 30 secunde pe buclă",
-      "Formatul eliminatoriu continuă până rămâne un singur alergător în picioare"
+      "Approximately 6.7 km course run in successive loops",
+      "Starts at the top of every hour, with a time limit of 59 minutes and 30 seconds per loop",
+      "Elimination format continues until only one runner remains"
     ],
-    "additional": "Participanții trebuie să finalizeze fiecare tură în mai puțin de o oră pentru a continua în cursă. Cursa are un caracter extrem de solicitant, eliminând orice întârziere sau abandon. Organizatorul recomandă pregătirea atentă și respectarea strictă a regulamentului pentru siguranță și fair-play.",
+    "additional": "Participants must complete each lap in under an hour to continue in the race. The race is extremely demanding, eliminating anyone who is late or withdraws. The organizer recommends careful preparation and strict adherence to the rules for safety and fair play.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -121882,13 +122370,13 @@
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Veverița Night Run este un concurs de alergare montană nocturnă în Bucovina, desfășurat în Vatra Dornei, cu două curse de dificultate medie pe distanțe de 12 km și 22 km. Traseele sunt preponderent pe poteci montane, cu porțiuni de pădure și pajiști deschise, pornind și terminând la baza pârtiei Veverița, ajungând până la Vârful Diecilor. Evenimentul oferă puncte de hidratare și alimentare, precum și asistență medicală prin echipa Salvamont Vatra Dornei. Participanții trebuie să fie pregătiți pentru alergare montană și să aibă echipamentul necesar pentru condiții nocturne și de munte.",
+    "description": "Veverița Night Run is a nighttime mountain running race in Bucovina, held in Vatra Dornei, with two medium-difficulty races over 12 km and 22 km. The routes are mainly on mountain trails, with sections through forest and open meadows, starting and finishing at the base of the Veverița ski slope and reaching Diecilor Peak. The event provides hydration and food stations, as well as medical assistance from the Vatra Dornei Mountain Rescue team. Participants should be prepared for mountain running and bring the equipment needed for nighttime and mountain conditions.",
     "course_highlights": [
-      "Traseu de 12 km cu 95% potecă montană și 5% drum asfaltat",
-      "Traseu de 22 km 100% potecă montană, cu 1161 m diferență de nivel",
-      "Start și finish la baza pârtiei Veverița, cu punct culminant la Vârful Diecilor (1301 m)"
+      "12 km route with 95% mountain trail and 5% paved road",
+      "22 km route entirely on mountain trails, with 1161 m of elevation gain",
+      "Start and finish at the base of the Veverița ski slope, with the highest point at Diecilor Peak (1301 m)"
     ],
-    "additional": "Înscrierea copiilor se face la fața locului. Participanții trebuie să aibă lanternă frontală cu baterii încărcate și de rezervă, telefon mobil cu baterie încărcată, numărul de concurs vizibil pe toată durata cursei și echipament adecvat pentru condiții meteo nefavorabile. Asistența medicală este asigurată de Salvamont Vatra Dornei, fără ambulanță staționată la start/finish.",
+    "additional": "Children can register on-site. Participants must have a headlamp with charged and spare batteries, a mobile phone with a charged battery, their race number visible throughout the race, and suitable equipment for adverse weather conditions. Medical assistance is provided by Vatra Dornei Mountain Rescue; no ambulance will be stationed at the start/finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -121997,13 +122485,13 @@
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Harvest Run este un eveniment sportiv care promovează alergarea ca mijloc de sănătate, solidaritate și comunitate. Evenimentul susține cauze sociale și încurajează un stil de viață activ, adunând alergători de toate nivelurile pentru a sprijini comunitatea locală.",
+    "description": "Harvest Run is a sporting event that promotes running as a way to support health, solidarity, and community. In Vladimirescu, Arad, participants of all ages are invited to take part in a range of races, from the half-marathon to children’s races, in a friendly and inclusive atmosphere. The event supports social causes and encourages an active lifestyle, bringing together runners of all levels to support the local community.",
     "course_highlights": [
-      "Trasee variate: semimaraton 21 km, sprint 10 km, super sport 5 km, cursa family 1 km și curse pentru copii",
-      "Eveniment pentru toate vârstele, de la copii la adulți și seniori",
-      "Atmosferă comunitară și susținere pentru cauze sociale locale"
+      "Varied routes: half-marathon 21 km, sprint 10 km, super sport 5 km, family race 1 km, and children’s races",
+      "An event for all ages, from children to adults and seniors",
+      "A community atmosphere and support for local social causes"
     ],
-    "additional": "Comunitatea se adună în fiecare marți la ora 18:00 pentru antrenamente comune, cu traseul de la Sala Polivalentă Arad până la Stadionul Gloria. Evenimentul include proiectul „MAI DEPARTE” dedicat începătorilor și celor care doresc să adopte un stil de viață sănătos. Vârste minime pentru curse: 18 ani pentru semimaraton, 14 ani pentru sprint, 12 ani pentru super sport, fără limită pentru cursa family, iar curse speciale pentru copii între 6 și 12 ani.",
+    "additional": "The community meets every Tuesday at 18:00 for group training, on a route from Sala Polivalentă Arad to Stadionul Gloria. The event includes the “MAI DEPARTE” project, dedicated to beginners and those who want to adopt a healthy lifestyle. Minimum ages for the races: 18 for the half-marathon, 14 for the sprint, 12 for super sport, no age limit for the family race, and special races for children aged 6 to 12.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -122914,35 +123402,50 @@
     "nearby_cities": [
       "Košice"
     ],
-    "distances": "[\"21.098\"]",
+    "distances": "[\"21.1\"]",
     "distance_m": [
-      21098
+      21100
     ],
     "distance_keywords": [
       "Polmaratón"
     ],
     "distance_verbose": "Polmaratón",
-    "organizer": null,
+    "organizer": "Slovenský atletický zväz",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.kosicemarathon.com/",
+    "fb_link": "https://www.facebook.com/atletikasvk/posts/-m-sr-2026-v-polmarat%C3%B3ne-d%C3%B4le%C5%BEit%C3%BD-oznam-%C5%A1portovo-technick%C3%A9ho-deleg%C3%A1ta%E2%84%B9-na-majstr/1425337913016237/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.kosicemarathon.com/propozicie-mmm/",
+    "race_info_url": "https://www.kosicemarathon.com/propozicie-mmm/",
+    "presumed_organizer_email": "info@kosicemarathon.com",
+    "website_emails_found": [
+      "KMSR-MMM2026_1280x757-300x177@2x.jpg",
+      "Tromso-AIMS2026_1280x757-300x177@2x.jpg",
+      "1-rok-MarathonPointu-MMM2026_1280x757-300x177@2x.jpg",
+      "KPHM2026-vysledky_1280x757-300x177@2x.jpg",
+      "info@kosicemarathon.com",
+      "BAUERNEBLOV-DOM-foto_1280x757-300x177@2x.jpg",
+      "progress@progress.sk",
+      "MMM_foto_1280x757-300x177@2x.jpg",
+      "KPHM-2026-plagat-210x300@2x.png",
+      "PROGRAM-MMM-2015-foto_1280x757-300x177@2x.jpg"
+    ],
+    "description": "The Slovak Republic Championships in the Men’s and Women’s Half Marathon are part of the Košice Peace Marathon, held in Košice. The half-marathon course is fast, with few sharp turns and a favourable elevation profile, allowing runners to achieve excellent times. The start and finish are on Hlavná Street in the city centre, creating a pleasant atmosphere for runners and spectators alike. The event is organised with an emphasis on professional preparation and support for the running community.",
+    "course_highlights": [
+      "A fast course with few sharp turns",
+      "A favourable elevation profile suited to fast times",
+      "Start and finish on Hlavná Street in Košice"
+    ],
+    "additional": "The start of all events is on Hlavná Street, between the DoubleTree by Hilton hotel and the Dargov department store. The MMM relays consist of four runners, with legs of 12 km, 9 km and 12 km. The organiser awards age categories for the marathon and half marathon. Registration is available online only through the official website.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.67,
     "sources": [
       "https://www.kosicemarathon.com/wp-content/uploads/docs/msr/MSR-PM-2026.pdf"
     ],
@@ -124584,11 +125087,11 @@
     "website_emails_found": [
       "medical@mutuaide.fr"
     ],
-    "description": "Hercules Maraton este un eveniment sportiv de alergare montană organizat în Valea Cernei, Băile Herculane, de către Clubul Sportiv Alternative Timișoara. Concursul include probe de Maraton (44 km) și Semimaraton (22 km) desfășurate pe trasee montane care traversează Munții Cernei și leagă cele 39 de cătune din zonă. Este o competiție în aer liber ce pune în valoare frumusețea naturală a regiunii și provocările terenului montan.",
+    "description": "Hercules Marathon is a mountain running event held in the Cerna Valley, Băile Herculane, organized by Alternative Timișoara Sports Club. The race includes Marathon (44 km) and Half Marathon (22 km) events on mountain trails that cross the Cerna Mountains and connect the area's 39 hamlets. This outdoor competition showcases the region's natural beauty and the challenges of mountain terrain.",
     "course_highlights": [
-      "Trasee montane ce străbat Munții Cernei",
-      "Legătura între 39 de cătune din zona Valea Cernei",
-      "Probe de Maraton (44 km) și Semimaraton (22 km)"
+      "Mountain trails crossing the Cerna Mountains",
+      "Connecting 39 hamlets in the Cerna Valley area",
+      "Marathon (44 km) and Half Marathon (22 km) events"
     ],
     "additional": null,
     "images": [],
@@ -125273,9 +125776,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Niš, Serbia",
-    "latitude": 43.320926,
-    "longitude": 21.8954069,
+    "location": "Niš Fortress, Niš, Serbia",
+    "latitude": 43.32516870000001,
+    "longitude": 21.8963883,
     "county": "Nisava District",
     "nearest_city": "Niš",
     "nearby_cities": [
@@ -125289,27 +125792,34 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Udruženje Budite uz nas",
     "contact": null,
-    "website": "https://trka.rs",
+    "website": "https://buditeuznas.rs/trka-za-zivot/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://trka.rs/accounts/signup/",
-    "race_info_url": "https://trka.rs/about/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://buditeuznas.rs/trka-za-zivot/#prijava",
+    "race_info_url": "https://buditeuznas.rs/trka-za-zivot/#content",
+    "presumed_organizer_email": "info@buditeuznas.rs",
+    "website_emails_found": [
+      "info@buditeuznas.rs",
+      "buditeuznas@gmail.com"
+    ],
+    "description": "The Race for Life is a charity event in Niš dedicated to supporting women with cancer. It aims to raise awareness of early detection and empower patients. Participants express solidarity and hope through moving together and taking part in educational activities at the finish. The event brings individuals, families, and organizations together in a spirit of community and compassion, combining sport, education, and charitable engagement in an inspiring day.",
+    "course_highlights": [
+      "Start at Niš Fortress, with positive energy and a sense of community",
+      "Inspiring messages and educational materials at the checkpoints",
+      "A finish area with advice on prevention and support"
+    ],
+    "additional": "Each participant starts the race with a symbolic hug of support. The event concludes with a group ceremony and fundraising to help people affected by cancer. At the finish, an educational corner offers advice from doctors, psychologists, and radiologists. The race is a charity initiative by the Budite uz nas association, which provides ongoing support to women with cancer. Participation raises funds for support activities for people affected by cancer, healthcare institutions, and the purchase of equipment and supplements.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://www.trcanje.rs/event/trka-za-zivot/"
     ],
@@ -125332,6 +125842,7 @@
       "Kaposvár",
       "Békéscsaba",
       "Hódmezővásárhely",
+      "Szigetszentmiklós",
       "Cegléd",
       "Baja",
       "Szekszárd",
@@ -130592,13 +131103,13 @@
     "website_emails_found": [
       "contact@semimaratonulcraiovei.ro"
     ],
-    "description": "Semimaratonul Craiovei este un eveniment anual de alergare cu strângere de fonduri pentru cauze comunitare, organizat de Asociația Română a Tinerilor cu Inițiativă (A.R.T.I.) în colaborare cu SightRunning.ro. Evenimentul include curse cronometrate de semimaraton, 14 km și 7 km, precum și curse necronometrate și activități pentru toate vârstele și categorii, inclusiv persoane cu dizabilități și animale de companie. Traseul este urban, cu start și sosire la Esplanada Stadionului „Ion Oblemenco” din Craiova, constând în bucle de 7 km, cu o diferență de nivel de 58 m. Participanții susțin proiecte caritabile în domeniile educației, sănătății și incluziunii sociale.",
+    "description": "The Craiova Half Marathon is an annual running and fundraising event for community causes, organized by the Romanian Association of Young People with Initiative (A.R.T.I.) in collaboration with SightRunning.ro. The event includes timed half-marathon, 14 km and 7 km races, as well as untimed races and activities for all ages and categories, including people with disabilities and pets. The course is urban, starting and finishing at the Ion Oblemenco Stadium Esplanade in Craiova, and consists of 7 km loops with an elevation gain of 58 m. Participants support charitable projects in education, health and social inclusion.",
     "course_highlights": [
-      "Traseu urban cu start și finish la Esplanada Stadionului Ion Oblemenco",
-      "Bucle de 7 km: 3 pentru semimaraton, 2 pentru 14 km, 1 pentru 7 km",
-      "Puncte de hidratare și asistență medicală pe traseu"
+      "Urban course starting and finishing at the Ion Oblemenco Stadium Esplanade",
+      "7 km loops: 3 for the half marathon, 2 for the 14 km race and 1 for the 7 km race",
+      "Hydration stations and medical assistance along the course"
     ],
-    "additional": "Ridicarea kit-urilor se face la Electroputere Mall în zilele premergătoare și în ziua evenimentului la Esplanada Stadionului Ion Oblemenco. Evenimentul include curse speciale pentru persoane în fotolii rulante și sport adaptat, precum și curse necronometrate și activități conexe. Măsuri de siguranță includ prezența forțelor de ordine, voluntari și ambulanță cu medic pe traseu.",
+    "additional": "Race kits can be collected at Electroputere Mall in the days before the event and on event day at the Ion Oblemenco Stadium Esplanade. The event includes special races for wheelchair users and adaptive sports, as well as untimed races and related activities. Safety measures include law enforcement, volunteers and an ambulance with a doctor along the course.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -139822,13 +140333,13 @@
     "website_emails_found": [
       "lazafmarcel@gmail.com"
     ],
-    "description": "Beiuș Running Day este un eveniment anual de alergare care oferă curse pentru toate vârstele și nivelurile de experiență, desfășurate în orașul Beiuș. Traseele includ o cursă pentru copii gratuită, o cursă de 2 km pentru începători și familii, o cursă de 10 km pentru alergători amatori și semi-profesioniști, precum și un semimaraton de 21,1 km pentru alergători experimentați. Evenimentul are loc în Parcul Mihai Eminescu și pe străzile din Beiuș, cu trasee sigure și bine marcate, oferind o experiență plăcută și competitivă. Participanții beneficiază de premii, medalii și surprize, iar cursele pentru copii sunt organizate cu măsuri speciale de siguranță și supraveghere.",
+    "description": "Beiuș Running Day is an annual running event offering races for all ages and experience levels, held in the town of Beiuș. The courses include a free children’s race, a 2 km race for beginners and families, a 10 km race for amateur and semi-professional runners, and a 21.1 km half marathon for experienced runners. The event takes place in Mihai Eminescu Park and on the streets of Beiuș, with safe, well-marked courses that offer an enjoyable and competitive experience. Participants receive prizes, medals, and surprises, while the children’s races are organized with special safety and supervision measures.",
     "course_highlights": [
-      "Trasee forestiere cu cărări naturale și străzi asfaltate în Beiuș",
-      "Cursă pentru copii complet sigură, pe traseu plat și închis traficului auto",
-      "Premii și medalii pentru toate categoriile de vârstă și distanțe"
+      "Forest trails with natural paths and paved streets in Beiuș",
+      "A completely safe children’s race on a flat course closed to vehicle traffic",
+      "Prizes and medals for all age groups and distances"
     ],
-    "additional": "Cursa Copiilor are startul la ora 11:30, este organizată pe categorii de vârstă între 4 și 13 ani, cu traseu complet sigur și închis traficului auto. Participarea copiilor este gratuită, iar părinții sau tutorii trebuie să fie prezenți pe toată durata cursei. Traseele pentru adulți încep la ora 11:00 în Parcul Mihai Eminescu. Sunt disponibile premii pentru podium și medalii pentru toți participanții care termină cursa.",
+    "additional": "The Children’s Race starts at 11:30 and is organized by age categories for children aged 4 to 13, on a completely safe course closed to vehicle traffic. Children participate for free, and parents or guardians must be present throughout the race. The adult races start at 11:00 in Mihai Eminescu Park. Prizes are available for podium finishers, and all participants who complete the race receive medals.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -139943,13 +140454,13 @@
       "contact@hategroyaltrail.ro",
       "contact@zmbr.ro"
     ],
-    "description": "Hațeg Royal Trail este un eveniment de alergare ce oferă trasee variate în jurul Cetății Regale Hațeg, combinând peisaje naturale cu elemente istorice. Participanții pot alege între maraton, semimaraton, cros de 12 km, cursa de 6 km, cursa copiilor și family run, toate desfășurate pe trasee bine marcate și tehnice, cu urcări și coborâri care pun la încercare atât începătorii, cât și alergătorii avansați. Evenimentul este apreciat pentru organizarea atentă, atmosfera prietenoasă și premiile atractive. Este recomandat să fii în formă și să ai echipament sportiv adecvat pentru a te bucura pe deplin de această experiență.",
+    "description": "Hațeg Royal Trail is a running event offering a variety of routes around the Hațeg Royal Fortress, combining natural scenery with historical features. Participants can choose between the marathon, half marathon, 12 km cross-country race, 6 km race, children’s race, and family run. All races follow well-marked, technical routes with climbs and descents that challenge both beginners and advanced runners. The event is appreciated for its careful organization, friendly atmosphere, and attractive prizes. Participants are advised to be fit and have suitable sports gear to fully enjoy the experience.",
     "course_highlights": [
-      "Trasee bine marcate și curate, cu urcări și coborâri tehnice pe dealuri și pădure",
-      "Trecere prin Cetatea Regală Hațeg și zone naturale precum Lunca de Jos și pajiștea Subcetate",
-      "Diversitate de curse: maraton, semimaraton, cros 12 km, cursa de 6 km, cursa copiilor și family run"
+      "Well-marked, clean routes with technical climbs and descents through hills and forest",
+      "Passage through the Hațeg Royal Fortress and natural areas such as Lunca de Jos and the Subcetate meadow",
+      "A range of races: marathon, half marathon, 12 km cross-country race, 6 km race, children’s race, and family run"
     ],
-    "additional": "Nu se fac înscrieri la fața locului, cu excepția categoriilor Kids și Family, limitate la 100 locuri. Participanții trebuie să prezinte echipament sportiv adecvat și echipamentul obligatoriu poate fi verificat la start și pe traseu. Există o cursă dedicată persoanelor cu abilități speciale „Și eu POT!”.",
+    "additional": "On-site registration is not available, except for the Kids and Family categories, which are limited to 100 places. Participants must have suitable sports gear, and mandatory equipment may be checked at the start and along the route. There is a dedicated race for people with special abilities, “Și eu POT!”.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -142882,13 +143393,13 @@
     "website_emails_found": [
       "contact@istritaxscape.ro"
     ],
-    "description": "istritaXscape este un eveniment de alergare montană organizat de Asociația Club Sportiv Legendary Sports, desfășurat pe dealurile, potecile și drumurile forestiere din zona dealului Istrița și a stațiunii Sărata-Monteoru. Traseele oferă o experiență unică, combinând natura cu istoria milenară a zonei, inclusiv urme dacice, romane și preistorice. Sunt disponibile trei curse: Fun Run, Half Marathon și Marathon, fiecare cu peisaje spectaculoase și provocări montane. Participanții se bucură de o atmosferă prietenoasă și de facilități precum puncte de revitalizare și cronometrare individuală.",
+    "description": "IstritaXscape is a mountain running event organized by the Legendary Sports Sports Club Association, held on the hills, trails, and forest roads around Istrița Hill and the Sărata-Monteoru resort. The routes offer a unique experience, combining nature with the area’s millennia-old history, including Dacian, Roman, and prehistoric traces. Three races are available: Fun Run, Half Marathon, and Marathon, each featuring spectacular scenery and mountain challenges. Participants enjoy a friendly atmosphere and amenities such as refreshment stations and individual timing.",
     "course_highlights": [
-      "Trasee pe dealurile și potecile din zona Istrița și Sărata-Monteoru",
-      "Peisaje cu priveliști asupra stațiunii Monteoru și orașului Buzău",
-      "Urcări și coborâri pe drumuri forestiere și poteci marcate"
+      "Routes across the hills and trails around Istrița and Sărata-Monteoru",
+      "Scenic views of the Monteoru resort and the city of Buzău",
+      "Ascents and descents on forest roads and marked trails"
     ],
-    "additional": "Participanții primesc pachet de start cu număr de concurs, cronometrare individuală, medalie la finalizarea cursei, puncte de revitalizare și suport pe traseu, băuturi izotonice la start/sosire, clasament și diplomă electronică, precum și materiale foto și video.",
+    "additional": "Participants receive a race pack with a race number, individual timing, a finisher’s medal, refreshment stations and on-course support, isotonic drinks at the start/finish, results and an electronic certificate, as well as photo and video materials.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -144705,6 +145216,112 @@
     ]
   },
   {
+    "domain_name": "topolcianska_bezecka_liga_2026_12_kolo",
+    "name": "Topoľčianska bežecká liga 2026 – 12. kolo",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261112",
+        "20261112"
+      ],
+      [
+        "20271111",
+        "20271111"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Park Tovarníky, Odbojárov Street, Topoľčany, Slovakia",
+    "latitude": 48.5646803,
+    "longitude": 18.1458711,
+    "county": "Region of Nitra",
+    "nearest_city": "Nitra",
+    "nearby_cities": [
+      "Nitra"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Zmiešané vzdialenosti",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/topolcianska-bezecka-liga-2026-12-kolo/"
+    ],
+    "consolidated_ids": [
+      "8d7ddb51-4ec3-4114-a887-11e2eb49b566"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261119",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
     "domain_name": "tanuhegyek_trail_7_21_42",
     "name": "Tanúhegyek Trail 7 / 21 / 42",
     "type": "trail",
@@ -145765,108 +146382,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260411",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "sk",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
-      "Jászberény"
-    ]
-  },
-  {
-    "domain_name": "topolcianska_bezecka_liga_2026_12_kolo",
-    "name": "Topoľčianska bežecká liga 2026 – 12. kolo",
-    "type": "other",
-    "type_local": "Ostatné",
-    "race_dates": [
-      [
-        "20261112",
-        "20261112"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Park Tovarníky, Odbojárov Street, Topoľčany, Slovakia",
-    "latitude": 48.5646803,
-    "longitude": 18.1458711,
-    "county": "Region of Nitra",
-    "nearest_city": "Nitra",
-    "nearby_cities": [
-      "Nitra"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://beh.sk/pretek/topolcianska-bezecka-liga-2026-12-kolo/"
-    ],
-    "consolidated_ids": [
-      "2f180913-b1ee-4fe7-a3d5-e348b54ce851"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": "sk",
@@ -147363,19 +147878,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "organizer",
-      "description",
-      "price_range",
-      "name",
-      "latitude",
-      "start_time",
-      "distances",
-      "longitude",
       "location",
+      "distances",
+      "type",
+      "price_range",
       "contact",
       "website",
+      "description",
+      "longitude",
       "race_dates",
-      "type"
+      "start_time",
+      "latitude",
+      "organizer",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,

@@ -13170,7 +13170,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "11:10",
     "location": "Felsőcsatár, Vas County, Hungary",
     "latitude": 47.2121988,
     "longitude": 16.4442598,
@@ -13179,40 +13179,47 @@
     "nearby_cities": [
       "Szombathely"
     ],
-    "distances": "[\"20\", \"10\", \"5\", \"2\"]",
+    "distances": "[\"20\", \"10\", \"5\", \"2\", \"0.4\"]",
     "distance_m": [
       20000,
       10000,
       5000,
-      2000
+      2000,
+      400
     ],
     "distance_keywords": [
       "Félmaraton",
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "20 km, 10 km, 5 km, 2 km",
-    "organizer": null,
+    "distance_verbose": "20 km, 10 km, 5 km, 2 km, 0.4 km",
+    "organizer": "Alpokalja SK",
     "contact": null,
-    "website": null,
+    "website": "https://www.vasiterepfuto.hu/pinka-extreme/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "2 500–8 000 Ft; a 400 m-es gyerekfutam ingyenes",
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270227",
+    "registration_url": "https://korimtiming.hu",
+    "race_info_url": "https://www.vasiterepfuto.hu/pinka-extreme/",
+    "presumed_organizer_email": "info@vasiterepfuto.hu",
+    "website_emails_found": [
+      "info@vasiterepfuto.hu"
+    ],
+    "description": "PINKA EXTREME is the third and final race in the 2027 Vasi Trail Running Series, held in Felsőcsatár near the Children’s Holiday Camp. This trail race offers participants an extreme challenge, with steep sections and varied terrain where ropes help runners climb. The event has a friendly, family atmosphere, and the top three finishers in each category receive valuable gifts. The overall winners of the series will also be awarded after the race.",
+    "course_highlights": [
+      "Extreme terrain with steep sections and rope-assisted climbs",
+      "Varied terrain around Felsőcsatár, in the Pinka Gorge",
+      "Electronic timing using the KORIM system, with live results tracking"
+    ],
+    "additional": "Bib and timing chip collection is from 9:30 to 10:50; on-site registration is available. Bibs are made of strong, tear-resistant paper. A finisher’s medal can be ordered during registration for an extra fee of 2,000 Ft; quantities are limited (120 per race). Chips must be returned after the race; losing one incurs compensation of 20,000 Ft. Parking is on an individual basis along the road leading to the Children’s Holiday Camp; please keep the road used by local residents clear. Distances: 400 m children’s race, 2 km Mini-run, approximately 5 km S distance, 10 km M distance, and 20 km L distance. Registration is via korimtiming.hu; participants can enjoy chip timing and free downloadable race photos. A finisher’s medal can also be ordered separately for 2,000 Ft.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://www.vasiterepfuto.hu/pinka-extreme/"
     ],
@@ -14122,7 +14129,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "06:30",
     "location": "Felsőtárkány, Borsod-Abaúj-Zemplén County, Hungary",
     "latitude": 48.2939401,
     "longitude": 20.6934113,
@@ -14139,27 +14146,107 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "66.4 km, 35.6 km, 14.2 km",
-    "organizer": null,
+    "organizer": "Bükk Trails",
     "contact": null,
-    "website": null,
+    "website": "https://bukkikilatasok.hu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Hard",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "2490 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "2990 Ft",
+            "deadline": "20270228",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "3490 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "FunRun",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "1990 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "2490 Ft",
+            "deadline": "20270228",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "2990 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "Sprint",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "1490 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "1990 Ft",
+            "deadline": "20270228",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "2490 Ft",
+          "deadline": "20270306"
+        }
+      }
+    ],
+    "registration_close_date": "20270306",
+    "registration_url": "https://bukkikilatasok.hu/nevezes.html",
+    "race_info_url": "https://bukkikilatasok.hu/trail.html",
+    "presumed_organizer_email": "veres.imre.esp@gmail.com",
+    "website_emails_found": [
+      "veres.imre.esp@gmail.com",
+      "bozso.zoltan.esp@gmail.com",
+      "fekete.zoltan.esp@gmail.com",
+      "o.zoltan.esp@gmail.com",
+      "commail@gpse.res.imever",
+      "commail@gpse.anzolt.ozsob",
+      "commail@gpse.anzolt.ketefe",
+      "com.il@gma.espnolta.zozsob",
+      "bozso.zoltan.esp@gmail.co",
+      "comil@gmaspre.eimes.ver",
+      "comil@gmaspan.elt.zoketefe"
+    ],
+    "description": "Bükki Kilátások Trail is a challenging trail-running race in Felsőtárkány, offering nature lovers a choice of varied distances. Competitors are expected to have mountain experience, and aid stations along the course help them complete the race. Strict rules ensure fair competition and protect the natural environment, while unique awards provide additional motivation. Successful finishers on the different distances receive unique race bibs and awards, and special prizes are also awarded to the fastest uphill runners.",
+    "course_highlights": [
+      "Mountain terrain and varied elevation gain",
+      "Aid stations along the course",
+      "Special awards for the fastest male and female uphill runners on the Hard and FunRun distances"
+    ],
+    "additional": "Mandatory equipment checks are conducted at the race; competitors with incomplete equipment are immediately disqualified. Race bibs are unique and personalized. Competitors may receive assistance at aid stations; outside support is prohibited. Hot meals can also be ordered for competitors at the finish. Each distance has mandatory equipment requirements, and competitors are expected to have mountain experience. GPX files for the courses are available to download.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://bukkikilatasok.hu/index.html",
       "http://www.bukktrail.hu/bukki-kilatasok/",
@@ -14179,8 +14266,8 @@
   {
     "domain_name": "fuss_neki_futofesztival",
     "name": "FUSS NEKI FUTÓFESZTIVÁL",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "road",
+    "type_local": "Országúti futás",
     "race_dates": [
       [
         "20260307",
@@ -14198,49 +14285,123 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Móló utca, Balatonlelle, Hungary",
-    "latitude": 46.7895581,
-    "longitude": 17.6929821,
+    "start_time": "09:00",
+    "location": "Balatonlelle Harbor, Balatonlelle, Hungary",
+    "latitude": 46.7842192,
+    "longitude": 17.6967856,
     "county": "Somogy",
     "nearest_city": "Kaposvár",
     "nearby_cities": [],
-    "distances": "[\"31\", \"21\", \"10\", \"5\", \"2\", \"1.1\"]",
+    "distances": "[\"42.2\", \"31\", \"21.1\", \"10\", \"5\", \"1.5\", \"0.8\"]",
     "distance_m": [
+      42200,
       31000,
-      21000,
+      21100,
       10000,
       5000,
-      2000,
-      1100
+      1500,
+      800
     ],
     "distance_keywords": [
+      "Maraton",
       "Félmaraton",
       "10 km",
-      "5 km"
+      "5 km",
+      "1500 meter"
     ],
-    "distance_verbose": "31 km, Félmaraton, 10 km, 5 km, 2 km, 1.1 km",
+    "distance_verbose": "Maraton, 31 km, Félmaraton, 10 km, 5 km, 1500 meter, 0.8 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://fussneki.hu/tavasz/",
+    "fb_link": "https://www.facebook.com/fussneki",
+    "ig_link": "https://www.instagram.com/fussneki",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Mini / Kutyabarát / Apróka futam",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "2490 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "2990 Ft",
+            "deadline": "20270305",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "3490 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "5 km / 10,5 km / 21,1 km / 31,5 km / 42,2 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "4990 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "5990 Ft",
+            "deadline": "20270305",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "6990 Ft",
+          "deadline": "20270306"
+        }
+      },
+      {
+        "distance": "Nordic walking 5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "2990 Ft",
+            "deadline": "20270131",
+            "description": "Korai nevezési díj"
+          },
+          {
+            "label": "tier_2",
+            "price": "3490 Ft",
+            "deadline": "20270305",
+            "description": "Normál nevezési díj"
+          }
+        ],
+        "late_fee": {
+          "price": "3990 Ft",
+          "deadline": "20270306"
+        }
+      }
+    ],
+    "registration_close_date": "20270306",
+    "registration_url": "https://korido.hu/fussneki",
+    "race_info_url": "https://fussneki.hu/tavasz/",
+    "presumed_organizer_email": "hello@fussneki.hu",
+    "website_emails_found": [
+      "hello@domained.hu",
+      "hello@fussneki.hu"
+    ],
+    "description": "The 11th Fuss Neki Running Festival will take place on March 6, 2027, by the harbor in Balatonlelle, right on the shore of Lake Balaton. The event offers 7 distances and 12 categories for runners of all ages and experience levels, from the youngest participants to seasoned marathoners, including dog-friendly and Nordic walking distances. The race has a friendly, family-oriented festival atmosphere, with a unique finisher’s medal and a choice of technical or premium T-shirt. The race center offers a range of services, including chip timing, aid stations, a digital certificate, and a personalized finish-line video.",
+    "course_highlights": [
+      "Routes that run right along the shore of Lake Balaton for several kilometers",
+      "Breathtaking lakeside scenery and panoramic views",
+      "A friendly, family-oriented festival atmosphere with a unique finisher’s medal"
+    ],
+    "additional": "Race packs can also be collected on Friday between 12:00 and 16:00. The race center offers changing tents, baggage storage, a race-number collection tent, and exhibitor booths. Race-pack collection closes 30 minutes before the start. The event offers chip timing and awards for overall placings. There will also be group warm-ups with music. The half marathon and marathon can be completed as relays; the 1.5-kilometer distance is dog-friendly.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://fussneki.hu/"
     ],

@@ -726,10 +726,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Belgrade, Serbia",
-    "latitude": 44.8125449,
-    "longitude": 20.46123,
+    "start_time": "10:00",
+    "location": "Savsko šetalište, Belgrade, Serbia",
+    "latitude": 44.7841945,
+    "longitude": 20.3918985,
     "county": "Belgrade",
     "nearest_city": "Beograd",
     "nearby_cities": [
@@ -745,27 +745,71 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Sportsko udruženje SINGIDUNUM RUNNERS",
     "contact": null,
-    "website": null,
+    "website": "https://novogodisnjimrazaton.com/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/novogodisnji_mrazaton/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Novogodišnja petica",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "1.800 RSD",
+            "deadline": "20261125",
+            "description": "standardni prijavni rok"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.000 RSD",
+            "deadline": "20261217",
+            "description": "kasni prijavni rok"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Novogodišnja desetka",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "2.100 RSD",
+            "deadline": "20261125",
+            "description": "standardni prijavni rok"
+          },
+          {
+            "label": "tier_3",
+            "price": "2.300 RSD",
+            "deadline": "20261217",
+            "description": "kasni prijavni rok"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261217",
+    "registration_url": "https://novogodisnjimrazaton.com/#prijava",
+    "race_info_url": "https://novogodisnjimrazaton.com/#trke",
+    "presumed_organizer_email": "novogodisnji.mrazaton@gmail.com",
+    "website_emails_found": [
+      "novogodisnji.mrazaton@gmail.com",
+      "singidunum.runners@gmail.com"
+    ],
+    "description": "The New Year’s Santa Run is a festive race for Santas in Belgrade, held on the Sava Promenade and open to recreational runners and athletes in a holiday atmosphere. Participants run in red Santa and Mrs. Claus outfits provided in their race packs, creating a unique and cheerful atmosphere. The event has a charitable and environmental focus, with initiatives to collect gift packages for children and raise awareness about protecting the environment. The race is limited to 700 participants and is one of Serbia’s largest winter sporting events.",
+    "course_highlights": [
+      "The race takes place on the Sava Promenade, one of Belgrade’s most beautiful places for recreation",
+      "Two adult races: 5 km and 10 km",
+      "All participants run in authentic Santa and Mrs. Claus costumes provided in their race packs"
+    ],
+    "additional": "All participants receive red Santa and Mrs. Claus outfits in their race packs. The number of participants is limited to 700. The organizer highlights the race’s charitable focus through the “Sweets for Sweets” initiative and its environmental awareness. More than 1,000 visitors, including spectators and volunteers, are expected. Participants receive a Santa outfit in their race pack; Mrs. Claus costumes are also mentioned. The “Sweets for Sweets” charity initiative has been announced, and medical support will be available on the course and at the finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.trcanje.rs/event/novogodisnji-mrazaton-2/"
     ],
@@ -2896,7 +2940,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "13:30",
     "location": "Belgrade, Serbia",
     "latitude": 44.8125449,
     "longitude": 20.46123,
@@ -2920,25 +2964,29 @@
     "distance_verbose": "Polumaraton, 10 km, 5 km, 1 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://onerun.rs/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://onerun.rs/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "One Run is an international running event that has been held for eight years, bringing together runners from several countries and continents on the same day. The race is known for being entered twice in the Guinness World Records as the world's largest half marathon with a synchronized start. This year, the race is taking place in Serbia as well as several other countries, and participants can choose from four distances: 1 km, 5 km, 10 km, and 21 km. The event is open to everyone, whether they run or walk, and promotes health, accessibility, and community through sport.",
+    "course_highlights": [
+      "Four distances available: 1 km, 5 km, 10 km, and 21 km",
+      "Synchronized start in several countries on the same day",
+      "Event entered twice in the Guinness World Records"
+    ],
+    "additional": "The start and registration are at Žitni trg in Veliko Gradište. Registration is open from 08:00 to 11:30. The warm-up for the 1 km race begins at 12:45, and the 5 km, 10 km, and 21 km races start at 13:30. The award ceremony and presentation of prizes follow the race at 15:30. The race packet includes a bib with a chip, sponsor gifts, and a medal.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.42,
     "sources": [
       "https://trka.rs/events/977-onerun-2027/"
     ],
@@ -6628,9 +6676,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Niš, Serbia",
-    "latitude": 43.320926,
-    "longitude": 21.8954069,
+    "location": "Niš Fortress, Niš, Serbia",
+    "latitude": 43.32516870000001,
+    "longitude": 21.8963883,
     "county": "Nisava District",
     "nearest_city": "Niš",
     "nearby_cities": [
@@ -6644,27 +6692,34 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Udruženje Budite uz nas",
     "contact": null,
-    "website": "https://trka.rs",
+    "website": "https://buditeuznas.rs/trka-za-zivot/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://trka.rs/accounts/signup/",
-    "race_info_url": "https://trka.rs/about/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://buditeuznas.rs/trka-za-zivot/#prijava",
+    "race_info_url": "https://buditeuznas.rs/trka-za-zivot/#content",
+    "presumed_organizer_email": "info@buditeuznas.rs",
+    "website_emails_found": [
+      "info@buditeuznas.rs",
+      "buditeuznas@gmail.com"
+    ],
+    "description": "The Race for Life is a charity event in Niš dedicated to supporting women with cancer. It aims to raise awareness of early detection and empower patients. Participants express solidarity and hope through moving together and taking part in educational activities at the finish. The event brings individuals, families, and organizations together in a spirit of community and compassion, combining sport, education, and charitable engagement in an inspiring day.",
+    "course_highlights": [
+      "Start at Niš Fortress, with positive energy and a sense of community",
+      "Inspiring messages and educational materials at the checkpoints",
+      "A finish area with advice on prevention and support"
+    ],
+    "additional": "Each participant starts the race with a symbolic hug of support. The event concludes with a group ceremony and fundraising to help people affected by cancer. At the finish, an educational corner offers advice from doctors, psychologists, and radiologists. The race is a charity initiative by the Budite uz nas association, which provides ongoing support to women with cancer. Participation raises funds for support activities for people affected by cancer, healthcare institutions, and the purchase of equipment and supplements.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://www.trcanje.rs/event/trka-za-zivot/"
     ],
