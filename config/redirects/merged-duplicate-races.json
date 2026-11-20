@@ -2043,6 +2043,18 @@
       "market": "hu"
     },
     {
+      "source": "/futoversenyek/kek_run/:path*",
+      "destination": "/futoversenyek/kek_run_orczy_park/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/en/race-pages/kek_run/:path*",
+      "destination": "/en/race-pages/kek_run_orczy_park/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
       "source": "/futoversenyek/kekes_csucsfutas/:path*",
       "destination": "/futoversenyek/29_kekes_csucsfutas/:path*",
       "permanent": true,
@@ -2051,6 +2063,18 @@
     {
       "source": "/en/race-pages/kekes_csucsfutas/:path*",
       "destination": "/en/race-pages/29_kekes_csucsfutas/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/futoversenyek/ludovika_15_kek_run/:path*",
+      "destination": "/futoversenyek/kek_run_orczy_park/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/en/race-pages/ludovika_15_kek_run/:path*",
+      "destination": "/en/race-pages/kek_run_orczy_park/:path*",
       "permanent": true,
       "market": "hu"
     },
