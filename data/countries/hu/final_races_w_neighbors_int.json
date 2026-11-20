@@ -3202,7 +3202,6 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://mountain-race.rs/trka/zapad-fruske-gore/2026",
       "https://mountain-race.rs/trka/zapad-fruske-gore/2026/"
     ],
     "consolidated_ids": [
@@ -8383,8 +8382,8 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://mountain-race.rs/trka/gucevo-winter-trail/2026/",
-      "https://mountain-race.rs/trka/gucevo-winter-trail/2026"
+      "https://mountain-race.rs/trka/gucevo-winter-trail/2026",
+      "https://mountain-race.rs/trka/gucevo-winter-trail/2026/"
     ],
     "consolidated_ids": [
       "6f97ebf0-6e83-465b-9f20-faf91a7ed217"
@@ -8424,6 +8423,112 @@
       "Cegléd",
       "Baja",
       "Vác",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "8_kolo_vojvodanske_treking_lige_2026",
+    "name": "8. Kolo Vojvođanske Treking Lige 2026",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261206",
+        "20261206"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Čardak, Deliblato Sands, Serbia",
+    "latitude": 44.8386625,
+    "longitude": 21.0411852,
+    "county": "South Banat District",
+    "nearest_city": "Beograd",
+    "nearby_cities": [],
+    "distances": "[\"20.6\", \"10.9\"]",
+    "distance_m": [
+      20600,
+      10900
+    ],
+    "distance_keywords": [
+      "Polumaraton",
+      "10 km"
+    ],
+    "distance_verbose": "20.6 km, 10.9 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://mountain-race.rs/trka/deliblatska-pescara/2026/"
+    ],
+    "consolidated_ids": [
+      "fdd51237-b075-4505-b660-f715e80bc6aa"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "rs",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
       "Gödöllő",
       "Szekszárd",
       "Hajdúböszörmény",
@@ -10189,7 +10294,8 @@
     "max_description_relevance": 0.9,
     "sources": [
       "https://321start.run/eveniment/ultra-zarand-everesting-2026",
-      "https://www.facebook.com/photo?fbid=1554165966109035&set=a.606580650867576"
+      "https://www.facebook.com/photo?fbid=1554165966109035&set=a.606580650867576",
+      "https://itra.run/Races/RaceDetails/Ultra.Zarand.Everesting.10k/2026/127190"
     ],
     "consolidated_ids": [
       "cb64a086-6b26-49b7-9abd-07c3296344b4"
@@ -12212,7 +12318,6 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://mountain-race.rs/trka/deliblatska-pescara/2026",
       "https://mountain-race.rs/trka/deliblatska-pescara/2026/"
     ],
     "consolidated_ids": [
@@ -12477,8 +12582,8 @@
   {
     "domain_name": "futapest_terepfutas_5",
     "name": "FUTAPEST TEREPFUTÁS",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261215",
@@ -12489,46 +12594,50 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Vácrátót, Pest County, Hungary",
-    "latitude": 47.7105493,
-    "longitude": 19.2354337,
+    "location": "Vácrátóti Sportcsarnok, Petőfi tér 6, Vácrátót, Hungary",
+    "latitude": 47.7100805,
+    "longitude": 19.2329295,
     "county": "Pest",
     "nearest_city": "Budapest",
     "nearby_cities": [
       "Budapest"
     ],
-    "distances": "[\"13.4\", \"10\", \"5\"]",
+    "distances": "[\"13.4\", \"5\"]",
     "distance_m": [
       13400,
-      10000,
       5000
     ],
     "distance_keywords": [
-      "10 km",
       "5 km"
     ],
-    "distance_verbose": "13.4 km, 10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "13.4 km, 5 km",
+    "organizer": "Futapest",
     "contact": null,
-    "website": null,
+    "website": "https://www.futapest.hu/kiiras/ratot_2026.htm",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.futapest.hu/kiirasok.htm",
+    "presumed_organizer_email": "futapestklub@gmail.com",
+    "website_emails_found": [
+      "futapestklub@gmail.com"
+    ],
+    "description": "The FUTAPEST Trail Run in Vácrátót is an exciting trail-running race held near the Vácrátót Sports Hall. The event offers runners a chance to enjoy nature and varied terrain, making it an ideal choice for both recreational and competitive runners. It is traditionally organized by Futapest Club, which aims to promote cross-country and trail running in Hungary. The race has a friendly, welcoming atmosphere and offers an opportunity to enjoy an active outing in nature.",
+    "course_highlights": [
+      "Varied terrain around the Vácrátót Sports Hall",
+      "A running course close to nature",
+      "Sections of varying difficulty for trail runners"
+    ],
+    "additional": "The start and event center are at the Vácrátót Sports Hall, at Petőfi tér 6.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.futapest.hu/kiiras/ratot_2027.htm"
     ],
@@ -13795,6 +13904,76 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "santacros_2026",
+    "name": "SantaCROS 2026",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20261219",
+        "20261219"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Bacău, Bacău County, Romania",
+    "latitude": 46.5692207,
+    "longitude": 26.9108498,
+    "county": "BACAU",
+    "nearest_city": "Bacău",
+    "nearby_cities": [
+      "Bacău"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://calendar.sportic.ro/events/view?hash=1c51680e30a75a95d831f1edbbad92fffd11c22d"
+    ],
+    "consolidated_ids": [
+      "cc064f98-97cf-462b-b3bf-b278adac129a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "ro",
+    "nearby_foreign_cities": [
+      "Debrecen",
+      "Miskolc",
+      "Nyíregyháza",
+      "Békéscsaba",
+      "Hajdúböszörmény",
+      "Gyula",
+      "Orosháza"
+    ]
+  },
+  {
     "domain_name": "forralt_bor_futas_12",
     "name": "FORRALT BOR FUTÁS (12.)",
     "type": "other",
@@ -14059,8 +14238,8 @@
   {
     "domain_name": "zimny_beh_v_puchove",
     "name": "Zimný beh v Púchove",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261220",
@@ -14070,7 +14249,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "11:00",
     "location": "Čerpacia stanica Orlen pri Váhu, oproti firme Continental, Púchov, Slovakia",
     "latitude": 49.1235654,
     "longitude": 18.3241203,
@@ -14085,27 +14264,50 @@
       "5 km"
     ],
     "distance_verbose": "6 km",
-    "organizer": null,
+    "organizer": "OZ Klub bežcov a priateľov športu v Púchove",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://vsetkybehy.sk/podujatie/zimny-beh-v-puchove-2026",
+    "fb_link": "https://www.facebook.com/p/OZ-Klub-be%C5%BEcov-a-priate%C4%BEov-%C5%A1portu-P%C3%BAchov-100064689848897/?locale=sk_SK",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_range": "13–15 €",
+    "price_tiers": [
+      {
+        "distance": "6 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "13 €",
+            "deadline": "20261216",
+            "description": "Online registrácia do 16. decembra 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "15 €",
+          "deadline": "20261220"
+        }
+      }
+    ],
+    "registration_close_date": "20261220",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/podujatie/zimny-beh-v-puchove-2026",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The Winter Run in Púchov is a running event taking place on December 20, 2026, in Púchov. The race is run on a 6 km course, mostly on asphalt (70%) and partly on trails (30%). The start is at 11:00 by the Orlen gas station opposite the Continental company. The event is organized by OZ Klub bežcov a priateľov športu v Púchove. Online registration is available until December 16, or in person on race day.",
+    "course_highlights": [
+      "6 km course with 70% asphalt and 30% trail surface",
+      "Start by the Orlen gas station opposite the Continental company in Púchov",
+      "Age categories for men and women, from juniors to veterans"
+    ],
+    "additional": "Race check-in begins at 9:30. The entry fee is paid at check-in on race day. On-site registration is available for €15.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.92,
     "sources": [
       "https://beh.sk/pretek/zimny-beh-v-puchove-7/"
     ],
@@ -17465,7 +17667,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "11:00",
     "location": "Mestský štadión Dubnica nad Váhom, Dubnica nad Váhom, Slovakia",
     "latitude": 48.9576571,
     "longitude": 18.1656735,
@@ -17482,27 +17684,50 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Jogging klub Dubnica nad Váhom, Únia behov do vrchu Dubnica nad Váhom a Mesto Dubnica nad Váhom",
     "contact": null,
-    "website": null,
+    "website": "https://vsetkybehy.sk/podujatie/silvestrovsky-beh-na-tartane-2026",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_range": "7-10 €",
+    "price_tiers": [
+      {
+        "distance": "Silvestrovský beh 5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "7 €",
+            "deadline": "20261228",
+            "description": "Online registrácia do 28. decembra 2026 7 €"
+          }
+        ],
+        "late_fee": {
+          "price": "10 €",
+          "deadline": "20261230"
+        }
+      }
+    ],
+    "registration_close_date": "20261230",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/podujatie/silvestrovsky-beh-na-tartane-2026",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The Silvester Run on the Track – Pavol Rajec Memorial is a traditional 5 km race held on the tartan track at the Municipal Stadium in Dubnica nad Váhom. Runners compete in categories by age and gender and can look forward to refreshments at the finish. The event is organized by Jogging Club Dubnica nad Váhom together with the Mountain Running Union and the City of Dubnica nad Váhom. Registration is available online or at the starting area, with cash prizes for the top three in each category.",
+    "course_highlights": [
+      "5 km course on the tartan track at the Municipal Stadium",
+      "Finish-line refreshments: bread with lard and onion, and drinks",
+      "Categories by age and gender, with cash prizes for the winners"
+    ],
+    "additional": "Runner check-in takes place in the main stand of the Municipal Stadium. On-site registration is available until 10:45. Changing rooms are available in the main stand. Check-in and changing rooms are in the stadium’s main stand. Refreshments are served at the finish, and the top three in each category receive cash prizes.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://beh.sk/pretek/silvestrovsky-beh-na-tartane-17/"
     ],
@@ -17560,8 +17785,8 @@
   {
     "domain_name": "silvestrovsky_beh_piestany",
     "name": "Silvestrovský beh Piešťany",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261230",
@@ -17571,7 +17796,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "14:00",
     "location": "Kúpeľný ostrov, Piešťany, Slovakia",
     "latitude": 48.5904944,
     "longitude": 17.8454905,
@@ -17588,27 +17813,34 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Atletický oddiel TJ Družba Piešťany",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://silvestrovskybeh.sk/",
+    "fb_link": "https://www.facebook.com/silvestrovskybehPN/?locale=sk_SK",
+    "ig_link": "https://www.instagram.com/silvestrovskybehpn",
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20261230",
+    "registration_url": "https://silvestrovskybeh.sk/propozicie-behu/",
+    "race_info_url": "https://silvestrovskybeh.sk/propozicie-behu/",
+    "presumed_organizer_email": "info@silvestrovskybeh.sk",
+    "website_emails_found": [
+      "info@silvestrovskybeh.sk",
+      "organizator@silvestrovskybeh.sk"
+    ],
+    "description": "The Piešťany New Year’s Eve Run is one of the oldest races in Slovakia and has been held annually since 1965. It takes place on Spa Island in Piešťany, where participants run around the entire island in a beautiful New Year’s Eve atmosphere. The event offers various categories for children, schoolchildren and adults, and every runner receives a participant’s medal. Registration takes place at the Esplanade Ensana Health Spa Hotel, and showers, changing rooms and an outdoor thermal pool are available. The event features a live broadcast and is hosted by Peter Mano Tomič.",
+    "course_highlights": [
+      "A 2,580 m loop for the main categories, completed 2 or 4 times",
+      "An approximately 500 m loop for the schoolchildren’s categories, completed 1 or 2 times",
+      "A 100 m course for the youngest runners in the HappyMove Run category"
+    ],
+    "additional": "Runner registration takes place at the Esplanade Ensana Health Spa Hotel, ALAMEDA wing. Changing rooms, showers and the outdoor thermal pool at Eva swimming pool are available. The children’s races are organized in cooperation with HappyMove. Participation limit: 500 runners for the 5 km and 10 km races, and 20 relay teams in the relay category. Registration and collection of race numbers take place at the Esplanade Ensana Hotel, Alameda wing. Changing rooms, showers and the outdoor thermal pool at Eva swimming pool are available to runners; the event is broadcast live.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://beh.sk/pretek/silvestrovsky-beh-medzi-mostami-piestany-18/"
     ],
@@ -26589,18 +26821,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "longitude",
-      "start_time",
-      "contact",
-      "type",
+      "race_dates",
       "location",
       "name",
+      "latitude",
       "organizer",
       "website",
+      "contact",
+      "distances",
       "description",
-      "race_dates",
-      "distances"
+      "start_time",
+      "type",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -27285,45 +27517,51 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Piliscsaba football field, Piliscsaba, Hungary",
-    "latitude": 47.6356691,
-    "longitude": 18.8335907,
+    "location": "Piliscsaba focipálya klubház, Piliscsaba, Hungary",
+    "latitude": 47.6358754,
+    "longitude": 18.8303257,
     "county": "Pest",
     "nearest_city": "Budapest",
     "nearby_cities": [
       "Budapest"
     ],
-    "distances": "[\"53.3\", \"22.7\", \"12.3\"]",
+    "distances": "[\"50.9\", \"24.2\", \"12.8\"]",
     "distance_m": [
-      53300,
-      22700,
-      12300
+      50900,
+      24200,
+      12800
     ],
     "distance_keywords": [
       "50 km"
     ],
-    "distance_verbose": "53.3 km, 22.7 km, 12.3 km",
-    "organizer": null,
+    "distance_verbose": "50.9 km, 24.2 km, 12.8 km",
+    "organizer": "Pilisi Terepfutók Baráti Köre",
     "contact": null,
-    "website": null,
+    "website": "https://pilistrail.hu",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://pilistrail.hu/versenyszabalyzat_v2/",
+    "presumed_organizer_email": "pilisiterepfutok@gmail.com",
+    "website_emails_found": [
+      "pilisiterepfutok@gmail.com"
+    ],
+    "description": "Pilis Trail is a traditional trail-running race in the Pilis Mountains, organized by the Pilisi Terepfutók Baráti Köre since 2013. The race offers several distances, from the half marathon to the ultramarathon, and its night runs offer a special experience, with runners exploring the Pilis’s mystical locations by headlamp. Participants can enjoy the beauty and challenges of nature while becoming part of an active, enthusiastic running community. The forests and rocks of the Pilis are not merely the setting—they are the stars of the race.",
+    "course_highlights": [
+      "Run through the forests and among the rocks of the Pilis Mountains",
+      "Night running by headlamp through mystical locations",
+      "Distances ranging from the half marathon to the ultramarathon"
+    ],
+    "additional": "The race may be completed only on foot, either walking or running. No mandatory equipment is required, but a water bottle, cup or hydration pack, suitable clothing, mobile phone, photo ID and cash are recommended. Entries may be transferred during the registration period, but refunds are not available. Photos and videos may be taken at the race, and the organizers reserve the right to change the route or cancel the race in the event of force majeure. The start is at the clubhouse by the Piliscsaba football pitch. Participants can expect online-tracked timing, refreshment and checkpoint stations, a medal and a hot meal.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.67,
     "sources": [
       "http://pilistrail.hu"
     ],
@@ -27360,7 +27598,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "11:00",
     "location": "Verseny utca 11, Pécs, Hungary",
     "latitude": 46.0641684,
     "longitude": 18.2251513,
@@ -27369,33 +27607,42 @@
     "nearby_cities": [
       "Pécs"
     ],
-    "distances": "[\"25.6\"]",
+    "distances": "[\"25.6\", \"9.1\", \"8.3\", \"8.2\"]",
     "distance_m": [
-      25600
+      25600,
+      9100,
+      8300,
+      8200
     ],
-    "distance_keywords": [],
-    "distance_verbose": "25.6 km",
-    "organizer": null,
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "25.6 km, 9.1 km, 8.3 km, 8.2 km",
+    "organizer": "PVSK Atlétikai Szakosztály",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://pvsk.hu/szakosztaly/atletika-szakosztaly/dokumentumok/",
+    "fb_link": "https://www.facebook.com/groups/1708572109668756",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://pvsk.hu/szakosztaly/atletika-szakosztaly/oldal/pecs-harkany/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "The Pécs–Harkány Running Race is the region’s oldest traditional road race, and will be held for the 43rd time in 2027. The race aims to promote running and provide an opportunity to assess winter training over a distance of 25.6 kilometres. It offers an excellent opportunity for participants in recreational, competitive and corporate sport, and plays an important role in building community. The event attracts runners from across Hungary and beyond its borders, and is also significant for tourism, showcasing the sights of Pécs and Harkány.",
+    "course_highlights": [
+      "Road race with an individual distance of 25.6 km",
+      "Relay race with legs of 8.2 km, 9.1 km and 8.3 km",
+      "The race runs between Pécs and Harkány, showcasing local sights"
+    ],
+    "additional": "The race is traditionally held on the first Sunday in March. Participants can enter the individual and relay categories. The race’s official Facebook group shares ongoing updates and photos taken at the finish. The listed start time is 11:00. According to the 2026 race information, the entry fee included admission to the baths.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.84,
     "sources": [
       "https://pvsk.hu/szakosztaly/atletika-szakosztaly/oldal/pecs-harkany/",
       "https://pvsk.hu/document-files/2026/01/16/42-pecs-harkany-versenykiiras-0116.pdf"
@@ -27414,8 +27661,8 @@
   {
     "domain_name": "verteskozma_rock_and_roll_futas",
     "name": "VÉRTESKOZMA ROCK AND ROLL FUTÁS",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "road",
+    "type_local": "Országúti futás",
     "race_dates": [
       [
         "20260308",
@@ -27438,46 +27685,90 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Vérteskozma, Gánt, Fejér County, Hungary",
-    "latitude": 47.4541569,
-    "longitude": 18.436853,
+    "location": "Erdészház, Gánt, Fejér County, Hungary",
+    "latitude": 47.389511,
+    "longitude": 18.387211,
     "county": "Fejér",
     "nearest_city": "Tatabánya",
     "nearby_cities": [
       "Tatabánya",
       "Székesfehérvár"
     ],
-    "distances": "[\"15\", \"5\", \"1\"]",
+    "distances": "[\"21.1\", \"10\", \"5\", \"1\"]",
     "distance_m": [
-      15000,
+      21100,
+      10000,
       5000,
       1000
     ],
     "distance_keywords": [
+      "Félmaraton",
+      "10 km",
       "5 km"
     ],
-    "distance_verbose": "15 km, 5 km, 1 km",
+    "distance_verbose": "Félmaraton, 10 km, 5 km, 1 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://futoversenyinfo.hu/futoverseny/22-verteskozma-rock-n-roll-felmaraton-2027-03-21",
+    "fb_link": "https://futoversenyinfo.hu/futoverseny/22-verteskozma-rock-n-roll-felmaraton-2027-03-21/tovabb/facebook",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "price_range": "9 500 Ft-tól",
+    "price_tiers": [
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "9500 Ft",
+            "deadline": "20261231",
+            "description": "Nevezz december 31-ig tavalyi áron!"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "9500 Ft",
+            "deadline": "20261231",
+            "description": "Nevezz december 31-ig tavalyi áron!"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "21,1 km félmaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "9500 Ft",
+            "deadline": "20261231",
+            "description": "Nevezz december 31-ig tavalyi áron!"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270321",
+    "registration_url": "https://futoversenyinfo.hu/futoverseny/22-verteskozma-rock-n-roll-felmaraton-2027-03-21/tovabb/nevezes",
+    "race_info_url": "https://futoversenyinfo.hu/futoverseny/22-verteskozma-rock-n-roll-felmaraton-2027-03-21#main-content",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "The 22nd Vérteskozma Rock ’n Roll Half Marathon is a running race held in a beautiful forest setting in Gánt, Fejér County. Participants can choose from distances of 1 km, 5 km, 10 km and 21.1 km, running on a hilly, paved forest road closed to traffic. Runners are welcomed with aid stations and a valuable race pack. Prizes are also awarded to the top male and female finishers in the 21 km, 10 km and 5 km events. The event is part of the Ötpróba program, so participants can earn points by completing it.",
+    "course_highlights": [
+      "Hilly, paved forest road closed to traffic",
+      "Aid stations on the 21 km course at 5 km, 10.5 km and 15 km",
+      "Strictly protected natural area; only participants wearing a race bib may be on the course"
+    ],
+    "additional": "The race pack contains a Vérteskozma Rock ’n Roll T-shirt, a clay medal, Zámoly craft beer at the finish, Kometa chocolate salami and a 10% discount at SPURI Running Shop. Registration is not required for the 1 km fun run. The race is open to online pre-registration only; there is no on-site registration. The race takes place in a strictly protected natural area, so only participants wearing a race bib may be on the course. The event is part of the Ötpróba program, so participants can earn points and receive a discount with a voucher. Online pre-registration is required for the 5 km, 10 km and 21.1 km distances; there is no on-site registration, and places are limited. Registration is not required for the 1 km fun run.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.facebook.com/events/1165699741697218",
       "https://docs.google.com/forms/d/e/1FAIpQLSfV8PBACfDz4iAroxjrPeeBYHpK-WrzO3t1Yn2ZdkuuPCzS_A/viewform"
@@ -27999,10 +28290,12 @@
     "nearby_cities": [
       "Valjevo"
     ],
-    "distances": "[]",
-    "distance_m": [],
+    "distances": "[\"13\"]",
+    "distance_m": [
+      13000
+    ],
     "distance_keywords": [],
-    "distance_verbose": "Kombinovane distance",
+    "distance_verbose": "13 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -28025,6 +28318,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://itra.run/Races/RaceDetails/Divča.Winter.Trail.Red.Race/2027/127270",
       "https://mountain-race.rs/trka/divca-winter-trail/2027/"
     ],
     "consolidated_ids": [
@@ -29176,8 +29470,8 @@
   {
     "domain_name": "futapest_terepfutas_vacratot",
     "name": "FUTAPEST TEREPFUTÁS",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260315",
@@ -29196,9 +29490,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Vácrátót, Pest County, Hungary",
-    "latitude": 47.7105493,
-    "longitude": 19.2354337,
+    "location": "Sportcsarnok, Petőfi tér 6., Vácrátót, Hungary",
+    "latitude": 47.7100805,
+    "longitude": 19.2329295,
     "county": "Pest",
     "nearest_city": "Budapest",
     "nearby_cities": [
@@ -29213,27 +29507,33 @@
       "5 km"
     ],
     "distance_verbose": "13.4 km, 5 km",
-    "organizer": null,
+    "organizer": "Futapest",
     "contact": null,
-    "website": null,
+    "website": "https://www.futapest.hu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.futapest.hu/",
+    "presumed_organizer_email": "futapestklub@gmail.com",
+    "website_emails_found": [
+      "futapestklub@gmail.com"
+    ],
+    "description": "FUTAPEST Trail Running is a traditional trail-running series held on varied and exciting forest and hilly terrain at locations across Hungary. The races aim to share the experience of running close to nature, while allowing participants to test their strength over different distances. The events are organized by Futapest Klub, which has supported the promotion of trail running and community building for many years. The races have a friendly atmosphere, are open to all age groups, and offer runners a range of challenges.",
+    "course_highlights": [
+      "Varied forest and hilly terrain",
+      "Running close to nature at locations across Hungary",
+      "Different distances and difficulty levels"
+    ],
+    "additional": "Race locations include Csömör, Várgesztes, Iklad, and other towns close to nature. Futapest Klub provides the competition rules and membership information on its website. Results and race announcements are regularly available on the website. Race headquarters address: Vácrátót, Petőfi tér 6., Sports Hall.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.77,
     "sources": [
       "https://www.futapest.hu/kiiras/ratot_2027.htm",
       "https://www.futapest.hu/kiiras/ratot_2026.htm"
@@ -33978,6 +34278,10 @@
       [
         "20270410",
         "20270410"
+      ],
+      [
+        "20270411",
+        "20270411"
       ]
     ],
     "upcoming_dates": [],
@@ -34029,7 +34333,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://maraton-cluj.ro/",
-      "https://321start.run/eveniment/wizz-air-cluj-napoca-marathon-2027"
+      "https://321start.run/eveniment/wizz-air-cluj-napoca-marathon-2027",
+      "https://calendar.sportic.ro/events/view?hash=dc8a12af8d4639a5fcb6325bb3b7a06f7b67c3a0"
     ],
     "consolidated_ids": [
       "729e4279-8324-45ef-b675-a446eb9a100b"
@@ -35673,27 +35978,33 @@
       "50 km"
     ],
     "distance_verbose": "50.9 km, 24.2 km, 12.8 km",
-    "organizer": null,
+    "organizer": "Pilisi Terepfutók Baráti Köre",
     "contact": null,
-    "website": null,
+    "website": "https://pilistrail.hu",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://pilistrail.hu/versenyszabalyzat_v2/",
+    "race_info_url": "https://pilistrail.hu/versenyszabalyzat_v2/",
+    "presumed_organizer_email": "pilisiterepfutok@gmail.com",
+    "website_emails_found": [
+      "pilisiterepfutok@gmail.com"
+    ],
+    "description": "Pilis Trail is a traditional trail running race in the Pilis Mountains, organized by the Pilisi Terepfutók Baráti Köre since 2013. The race offers a variety of distances, from half-marathon to ultramarathon, as well as night runs that put the forests and rocks of the Pilis in the spotlight. Runners become part of a friendly community while enjoying the beauty and challenges of nature. Pilis Trail offers a special experience for both beginners and experienced trail runners.",
+    "course_highlights": [
+      "Run through the forests and over the rocks of the Pilis Mountains",
+      "Night running with a headlamp in atmospheric locations",
+      "A variety of distances, from half-marathon to ultramarathon"
+    ],
+    "additional": "There is no mandatory equipment for the race, but a flask or hydration bladder, appropriate clothing, a switched-on mobile phone, photo ID, and cash are recommended. Runners must pass through every checkpoint; missing one means their result will not be evaluated. Entry is possible only through advance registration, and entry fees can be refunded only during the registration period. The course may be changed or canceled in the event of bad weather or other hazards. The courses have elevation gains of 425 m, 798 m, and 1,734 m, respectively. Participants can expect aid stations and checkpoints, online race tracking, a medal, and a hot meal.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "http://pilistrail.hu"
     ],
@@ -36362,8 +36673,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://calendar.sportic.ro/events/view?hash=bb299bb5-e232-463d-8e84-72e8b5165333",
-      "https://baneasaforestrun.ro/"
+      "https://baneasaforestrun.ro/",
+      "https://calendar.sportic.ro/events/view?hash=bb299bb5-e232-463d-8e84-72e8b5165333"
     ],
     "consolidated_ids": [
       "5424fd1d-7d8a-457d-b737-cd8329496f82"
@@ -38625,8 +38936,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Șiria, Arad County, Romania",
     "latitude": 46.2637994,
@@ -38738,10 +39049,10 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://321start.run/eveniment/medieval-trail-race-2027",
       "https://clubatia.com/mtr/",
       "https://www.facebook.com/story.php?story_fbid=969019619049528&id=100078244955085",
-      "https://www.facebook.com/photo/?fbid=1289560226549231&set=a.565432002295394",
-      "https://321start.run/eveniment/medieval-trail-race-2027"
+      "https://www.facebook.com/photo/?fbid=1289560226549231&set=a.565432002295394"
     ],
     "consolidated_ids": [
       "4847ec35-1828-44a5-baf7-19ccf7246f42"
@@ -42845,8 +43156,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://itra.run/Races/RaceDetails/MusaiSpectaculos.Maratonu..de.pe.Ardeal/2027/120749",
-      "https://calendar.sportic.ro/events/view?hash=f6d342e8-b47b-4277-bffd-0da72d1f1cb9"
+      "https://321start.run/eveniment/musai-spectaculos-2027",
+      "https://calendar.sportic.ro/events/view?hash=f6d342e8-b47b-4277-bffd-0da72d1f1cb9",
+      "https://itra.run/Races/RaceDetails/MusaiSpectaculos.Maratonu..de.pe.Ardeal/2027/120749"
     ],
     "consolidated_ids": [
       "137e69dd-50b0-47b1-ab35-e96cf4a6d6ba"
@@ -43705,11 +44017,15 @@
       [
         "20270424",
         "20270424"
+      ],
+      [
+        "20270425",
+        "20270425"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Bebica Luka",
     "latitude": 44.016521,
@@ -43752,6 +44068,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://itra.run/Races/RaceDetails/Jablanik.Trail.Red.Race/2027/127271",
       "https://trka.rs/events/799-jablanik-trail/"
     ],
     "consolidated_ids": [
@@ -44779,10 +45096,10 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://321start.run/eveniment/urme-pe-play-2027",
-      "https://itra.run/Races/RaceDetails/Urme.Pe.Play.UPP.Ultra/2027/120839",
       "https://www.urmepeplay.ro/",
-      "https://calendar.sportic.ro/events/view?hash=f3f5fd3e-7e2a-49a4-a998-63b4b27f36f7"
+      "https://itra.run/Races/RaceDetails/Urme.Pe.Play.UPP.Ultra/2027/120839",
+      "https://calendar.sportic.ro/events/view?hash=f3f5fd3e-7e2a-49a4-a998-63b4b27f36f7",
+      "https://321start.run/eveniment/urme-pe-play-2027"
     ],
     "consolidated_ids": [
       "4eadd541-4da4-49b5-bdfd-92ce31413eff"
@@ -47291,6 +47608,7 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://calendar.sportic.ro/events/view?hash=17737eeb-0de2-4fdc-b7dc-d590b8df462e",
+      "https://321start.run/eveniment/chindia-city-race-2027",
       "https://carpatrace.ro/chindia-city-race-2/"
     ],
     "consolidated_ids": [
@@ -51696,8 +52014,9 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
+      "https://www.bucuresti21km.ro/",
       "https://runbi21km.ro/",
-      "https://www.bucuresti21km.ro/"
+      "https://321start.run/eveniment/omv-petrom-bucharest-half-marathon-2027"
     ],
     "consolidated_ids": [
       "a85f89bd-2b59-40e0-acc8-d1a6b17f31d2"
@@ -51786,9 +52105,9 @@
     "is_series": true,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://subcarpatitrailrun.ro/",
+      "https://itra.run/Races/RaceDetails/Subcarpati.Trail.Run.Ultramaraton.STR.75K/2027/126795",
       "https://calendar.sportic.ro/events/view?hash=5726459534ebb82a694269461e8dae76eaf9e507",
-      "https://itra.run/Races/RaceDetails/Subcarpati.Trail.Run.Ultramaraton.STR.75K/2027/126795"
+      "https://subcarpatitrailrun.ro/"
     ],
     "consolidated_ids": [
       "8dbc7fc4-389e-4cc2-8e9e-c5f93dfbdb30"
@@ -51870,8 +52189,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://calendar.sportic.ro/events/view?hash=82cab36e-0511-4752-a8d3-fc6e10a44390",
-      "https://www.facebook.com/photo/?fbid=122256037778253911&set=a.122109803540253911"
+      "https://www.facebook.com/photo/?fbid=122256037778253911&set=a.122109803540253911",
+      "https://calendar.sportic.ro/events/view?hash=82cab36e-0511-4752-a8d3-fc6e10a44390"
     ],
     "consolidated_ids": [
       "b29ca36b-6a60-4bd1-b68f-c4f4a4fbedf6"
@@ -51962,9 +52281,10 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://www.facebook.com/events/s/%F0%9D%99%8F%F0%9D%99%9D%F0%9D%99%9A%F0%9D%99%A7%F0%9D%99%A2%F0%9D%99%96%F0%9D%99%A1-%F0%9D%99%8F%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%9E%F0%9D%99%A1-%F0%9D%99%8D%F0%9D%99%96%F0%9D%99%98%F0%9D%99%9A-%F0%9D%98%BC%F0%9D%99%A1%F0%9D%99%9A%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%9C%F0%9D%99%96-%F0%9D%99%9E%F0%9D%99%A3-/2268382540364216/",
       "https://calendar.sportic.ro/events/view?hash=9eb58fb9-59ed-4796-ad99-69c0a232c57b",
       "http://www.thermaltrailrace.com/",
-      "https://www.facebook.com/events/s/%F0%9D%99%8F%F0%9D%99%9D%F0%9D%99%9A%F0%9D%99%A7%F0%9D%99%A2%F0%9D%99%96%F0%9D%99%A1-%F0%9D%99%8F%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%9E%F0%9D%99%A1-%F0%9D%99%8D%F0%9D%99%96%F0%9D%99%98%F0%9D%99%9A-%F0%9D%98%BC%F0%9D%99%A1%F0%9D%99%9A%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%9C%F0%9D%99%96-%F0%9D%99%9E%F0%9D%99%A3-/2268382540364216/"
+      "https://321start.run/eveniment/thermal-trail-race-2027"
     ],
     "consolidated_ids": [
       "d25a1888-6f4d-4db1-83a4-b3880862ef2a"
@@ -52279,8 +52599,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://calendar.sportic.ro/events/view?hash=0fd3c9f3-46f2-417d-9c14-26e1f7e5a4d7",
-      "https://www.maratonscaunuldomnului.ro/"
+      "https://www.maratonscaunuldomnului.ro/",
+      "https://calendar.sportic.ro/events/view?hash=0fd3c9f3-46f2-417d-9c14-26e1f7e5a4d7"
     ],
     "consolidated_ids": [
       "701cd5c7-ac10-4c66-ac0b-57869c26934d"
@@ -62108,7 +62428,7 @@
     "latitude": 46.2329985,
     "longitude": 27.6611829,
     "county": "VASLUI",
-    "nearest_city": "Focșani",
+    "nearest_city": "Bacău",
     "nearby_cities": [],
     "distances": "[\"11\"]",
     "distance_m": [
@@ -73439,6 +73759,112 @@
     ]
   },
   {
+    "domain_name": "tara_ultra_trail_mitrovac",
+    "name": "Tara Ultra Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20270605",
+        "20270605"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Mitrovac, Bajina Bašta, Serbia",
+    "latitude": 43.9209639,
+    "longitude": 19.4239434,
+    "county": "Zlatibor District",
+    "nearest_city": "Užice",
+    "nearby_cities": [],
+    "distances": "[\"68\", \"21\", \"12\"]",
+    "distance_m": [
+      68000,
+      21000,
+      12000
+    ],
+    "distance_keywords": [
+      "Polumaraton"
+    ],
+    "distance_verbose": "68 km, Polumaraton, 12 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://itra.run/Races/RaceDetails/Tara.Ultra.Trail.TUT.69/2027/126933"
+    ],
+    "consolidated_ids": [
+      "bf4e654e-09bb-4272-bb9a-964cf0387f5a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "rs",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
     "domain_name": "31_aldi_noi_futogala",
     "name": "31. ALDI Női Futógála",
     "type": "other",
@@ -77024,7 +77450,7 @@
     "latitude": 46.27770659999999,
     "longitude": 26.6181847,
     "county": "BACAU",
-    "nearest_city": "Miercurea-Ciuc",
+    "nearest_city": "Bacău",
     "nearby_cities": [],
     "distances": "[\"30\", \"21\", \"10\"]",
     "distance_m": [
@@ -77857,6 +78283,123 @@
       "Kiskunfélegyháza",
       "Gyula",
       "Orosháza"
+    ]
+  },
+  {
+    "domain_name": "vidra_gradac_trail",
+    "name": "Vidra Gradac Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260614",
+        "20260614"
+      ],
+      [
+        "20270612",
+        "20270612"
+      ],
+      [
+        "20270613",
+        "20270613"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Valjevo",
+    "latitude": 44.2741532,
+    "longitude": 19.8836559,
+    "county": "Kolubara District",
+    "nearest_city": "Valjevo",
+    "nearby_cities": [
+      "Valjevo"
+    ],
+    "distances": "[\"19\", \"10\"]",
+    "distance_m": [
+      19000,
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "19 km, 10 km",
+    "organizer": "West Serbia Trails",
+    "contact": null,
+    "website": "https://westserbiatrails.com/portfolio-item/vidra-gradac-trail/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Vidra Gradac Trail offers a unique running experience along the Gradac River, known for its unspoiled nature and crystal-clear water. The course winds through a canyon rich in wildlife and varied terrain, including forest trails, rocky riverbanks, and stream crossings. This race combines natural beauty and adventure, making it ideal for runners who want to experience trail running at its most scenic. It takes place in Valjevo, Serbia, and is part of the West Serbia Trails series, which connects the mountains, rivers, and valleys of western Serbia.",
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.trcanje.rs/event/vidra-gradac-trail/",
+      "https://trka.rs/events/800-vidra-gradac-trail/",
+      "https://itra.run/Races/RaceDetails/Vidra.Gradac.Trail.Red.Race/2027/127272"
+    ],
+    "consolidated_ids": [
+      "df406c10-df85-4389-af9f-54a838240a2f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "rs",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
     ]
   },
   {
@@ -79255,118 +79798,6 @@
     ],
     "consolidated_ids": [
       "8d3fe02f-7331-45a9-b526-2428f466e328"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "rs",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
-      "Jászberény"
-    ]
-  },
-  {
-    "domain_name": "vidra_gradac_trail",
-    "name": "Vidra Gradac Trail",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260614",
-        "20260614"
-      ],
-      [
-        "20270613",
-        "20270613"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Valjevo",
-    "latitude": 44.2741532,
-    "longitude": 19.8836559,
-    "county": "Kolubara District",
-    "nearest_city": "Valjevo",
-    "nearby_cities": [
-      "Valjevo"
-    ],
-    "distances": "[\"19\", \"10\"]",
-    "distance_m": [
-      19000,
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "19 km, 10 km",
-    "organizer": "West Serbia Trails",
-    "contact": null,
-    "website": "https://westserbiatrails.com/portfolio-item/vidra-gradac-trail/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Vidra Gradac Trail offers a unique running experience along the Gradac River, known for its unspoiled nature and crystal-clear water. The course winds through a canyon rich in wildlife and varied terrain, including forest trails, rocky riverbanks, and stream crossings. This race combines natural beauty and adventure, making it ideal for runners who want to experience trail running at its most scenic. It takes place in Valjevo, Serbia, and is part of the West Serbia Trails series, which connects the mountains, rivers, and valleys of western Serbia.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.trcanje.rs/event/vidra-gradac-trail/",
-      "https://trka.rs/events/800-vidra-gradac-trail/"
-    ],
-    "consolidated_ids": [
-      "df406c10-df85-4389-af9f-54a838240a2f"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -87629,8 +88060,8 @@
   {
     "domain_name": "ix_holdfeny_ejszakai_felmaraton_es_csaladi_sportnap",
     "name": "IX. Holdfény Éjszakai Félmaraton és Családi Sportnap",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "road",
+    "type_local": "Országúti futás",
     "race_dates": [
       [
         "20260703",
@@ -87649,17 +88080,18 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Szeged, Népkert sor, 6726 Magyarország",
-    "latitude": 46.2498224,
-    "longitude": 20.1616323,
+    "location": "Erzsébet Liget, Szeged, Hungary",
+    "latitude": 46.24807699999999,
+    "longitude": 20.1626966,
     "county": "Csongrád",
     "nearest_city": "Szeged",
     "nearby_cities": [
       "Szeged"
     ],
-    "distances": "[\"21\", \"7\", \"4\", \"3\"]",
+    "distances": "[\"21\", \"14\", \"7\", \"4\", \"3\"]",
     "distance_m": [
       21000,
+      14000,
       7000,
       4000,
       3000
@@ -87669,22 +88101,26 @@
       "5 km",
       "3000 meter"
     ],
-    "distance_verbose": "Félmaraton, 7 km, 4 km, 3000 meter",
-    "organizer": "ProgRun",
+    "distance_verbose": "Félmaraton, 14 km, 7 km, 4 km, 3000 meter",
+    "organizer": null,
     "contact": null,
     "website": "https://www.facebook.com/progrun/posts/k%C3%B6sz%C3%B6nj%C3%BCk-hogy-t%C3%B6bb-mint-1100-an-vettetek-r%C3%A9szt-a-ix-szegedi-j%C3%B3t%C3%A9konys%C3%A1gi-f%C3%A9lmar/1056062593198659/",
-    "fb_link": null,
+    "fb_link": "https://www.facebook.com/progrun/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.facebook.com/progrun/posts/k%C3%B6sz%C3%B6nj%C3%BCk-hogy-t%C3%B6bb-mint-1100-an-vettetek-r%C3%A9szt-a-ix-szegedi-j%C3%B3t%C3%A9konys%C3%A1gi-f%C3%A9lmar/1056062593198659/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "The 9th Moonlight Night Half Marathon and Family Sports Day is a charity running race in Szeged, welcoming runners for a night half-marathon. The event also serves as a family-friendly sports day where participants can enjoy exercising together. It takes place on Népkert sor, an ideal setting for both running and family activities. The event is traditionally very popular, attracting more than 1,100 participants.",
-    "course_highlights": [],
-    "additional": null,
+    "description": "The IX. Moonlight Night Half Marathon and Family Sports Day is a charity running race in Erzsébet Liget, Szeged. The event includes a night half marathon and family sports activities, supported by more than 1,100 participants. It is a lively community event focused on bringing sport and charity together.",
+    "course_highlights": [
+      "Night half marathon in Erzsébet Liget, Szeged",
+      "The race is accompanied by a family sports day",
+      "Charity event with more than 1,100 participants"
+    ],
+    "additional": "Race results are available on the Facebook page. The event is community-focused and charitable, with family activities.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -91160,8 +91596,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Divčibare, Serbia",
     "latitude": 44.1047194,
@@ -91171,10 +91607,15 @@
     "nearby_cities": [
       "Valjevo"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Kombinovane distance",
+    "distances": "[\"15\", \"10\"]",
+    "distance_m": [
+      15000,
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "15 km, 10 km",
     "organizer": null,
     "contact": null,
     "website": "https://divcibareinfo.com/prijavi-se-za-sova-night-trail/",
@@ -91187,21 +91628,22 @@
     "race_info_url": "https://divcibareinfo.com/prijavi-se-za-sova-night-trail/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Sova Night Trail is a night race held on Mount Divčibare, known for its clean air and beautiful viewpoints. The race offers a unique opportunity to enjoy adventure tourism and the natural beauty of this mountain region. The course runs through forested areas and mountain peaks, providing a challenge and an unforgettable experience for all participants.",
+    "description": "Sova Night Trail is a night race held on Mount Divčibare, known for its clean air and beautiful viewpoints. The race offers a unique opportunity to enjoy adventure tourism and the natural beauty of the area, with trails winding through forest scenery and mountain landscapes. The event brings together running and nature enthusiasts, offering an unforgettable experience beneath the starry sky.",
     "course_highlights": [
-      "The race takes place at night on the forest trails of Divčibare",
-      "Beautiful viewpoints and mountain landscapes",
-      "Clean air and nature reserves near the course"
+      "The race takes place on the mountain trails of Divčibare",
+      "A night race with a distinctive atmosphere and lighting",
+      "Beautiful viewpoints and unspoiled nature along the route"
     ],
-    "additional": null,
+    "additional": "The race package includes a bib number, refreshments on the course, and a finisher’s medal. An accompanying program is planned after the race.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.79,
     "sources": [
-      "https://www.trcanje.rs/event/sova-night-trail/"
+      "https://www.trcanje.rs/event/sova-night-trail/",
+      "https://itra.run/Races/RaceDetails/Sova.Night.Trail.Red.Race/2027/127273"
     ],
     "consolidated_ids": [
       "7ecbf0ac-b502-4ab0-9d22-c5046600a60d"
@@ -98987,6 +99429,108 @@
       "Kiskunfélegyháza",
       "Gyula",
       "Orosháza",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "bobija_trail",
+    "name": "Bobija Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20270814",
+        "20270814"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Tornik, Zlatibor, Serbia",
+    "latitude": 43.72011819999999,
+    "longitude": 19.6956194,
+    "county": "Zlatibor District",
+    "nearest_city": "Užice",
+    "nearby_cities": [
+      "Užice"
+    ],
+    "distances": "[\"16\"]",
+    "distance_m": [
+      16000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "16 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://itra.run/Races/RaceDetails/Bobija.Trail.Red.Race/2027/127274"
+    ],
+    "consolidated_ids": [
+      "7683ebe5-4898-48d0-822d-e4c054e0c411"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "rs",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
       "Jászberény"
     ]
   },
@@ -115536,8 +116080,10 @@
     "latitude": 46.4021003,
     "longitude": 26.9426591,
     "county": "BACAU",
-    "nearest_city": "Focșani",
-    "nearby_cities": [],
+    "nearest_city": "Bacău",
+    "nearby_cities": [
+      "Bacău"
+    ],
     "distances": "[\"10\", \"5\"]",
     "distance_m": [
       10000,
@@ -118785,6 +119331,110 @@
       "Gödöllő",
       "Szekszárd",
       "Hajdúböszörmény",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "divca_trail",
+    "name": "Divča Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20270925",
+        "20270925"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Divčibare, Serbia",
+    "latitude": 44.1047194,
+    "longitude": 19.9915601,
+    "county": "Kolubara District",
+    "nearest_city": "Valjevo",
+    "nearby_cities": [
+      "Valjevo"
+    ],
+    "distances": "[\"18\"]",
+    "distance_m": [
+      18000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "18 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://itra.run/Races/RaceDetails/Divča.Trail.Red.Race/2027/127278"
+    ],
+    "consolidated_ids": [
+      "fab7f713-d7a8-40d9-bf72-86718d458f77"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "rs",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
       "Kiskunfélegyháza",
       "Gyula",
       "Orosháza",
@@ -122772,7 +123422,7 @@
     "latitude": 46.9313838,
     "longitude": 26.3734062,
     "county": "NEAMT",
-    "nearest_city": "Miercurea-Ciuc",
+    "nearest_city": "Bacău",
     "nearby_cities": [],
     "distances": "[\"11\", \"3.5\"]",
     "distance_m": [
@@ -126481,8 +127131,8 @@
   {
     "domain_name": "beh_do_vrchu_banske_mlacky",
     "name": "Beh do vrchu Banské – Mlačky",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261011",
@@ -126496,42 +127146,57 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Kultúrny dom, Banské, Vranov nad Topľou District, Slovakia",
-    "latitude": 48.8260142,
-    "longitude": 21.6320444,
+    "start_time": "11:00",
+    "location": "Kultúrny dom, Banské, Slovakia",
+    "latitude": 48.8288471,
+    "longitude": 21.5749804,
     "county": "Region of Prešov",
     "nearest_city": "Michalovce",
     "nearby_cities": [
-      "Michalovce"
+      "Michalovce",
+      "Košice"
     ],
-    "distances": "[\"6.4\"]",
+    "distances": "[\"6.4\", \"0.8\", \"0.5\", \"0.3\", \"0.2\", \"0.1\", \"0.05\"]",
     "distance_m": [
-      6400
+      6400,
+      800,
+      500,
+      300,
+      200,
+      100,
+      50
     ],
     "distance_keywords": [],
-    "distance_verbose": "6.4 km",
-    "organizer": null,
+    "distance_verbose": "6.4 km, 0.8 km, 0.5 km, 0.3 km, 0.2 km, 0.1 km, 0.05 km",
+    "organizer": "Športový klub Banské a Obecný úrad Banské",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://racetime.sk/preteky/beh-do-vrchu-banske-mlacky-2026",
+    "fb_link": "https://www.facebook.com/bancanska10/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://racetime.sk/reg/beh-do-vrchu-banske-mlacky-2026",
+    "race_info_url": "https://racetime.sk/preteky/beh-do-vrchu-banske-mlacky-2026",
+    "presumed_organizer_email": "skbanske1995@gmail.com",
+    "website_emails_found": [
+      "michalivanco@gmail.com",
+      "info@racetime.sk",
+      "skbanske1995@gmail.com"
+    ],
+    "description": "The Banské–Mláčky uphill run is a traditional mountain race on a 6.4 km course with 326 metres of elevation gain, running from the Cultural Centre in Banské to the summit of Mláčky. The race is part of the Bančanský Cup and the Eastern Slovak Uphill Running League, with categories for men, women, juniors and children. The race starts directly in front of the Cultural Centre and the course runs mainly on asphalt through the village of Banské towards Košice. The organisers are Športový klub Banské and the Banské Municipal Office, which also provide facilities at the Cultural Centre.",
+    "course_highlights": [
+      "6.4 km asphalt course with 326 m of elevation gain",
+      "Climb from the Cultural Centre in Banské to the summit of Mláčky",
+      "Part of the Eastern Slovak Uphill Running League and the Bančanský Cup"
+    ],
+    "additional": "Race registration opens at 7:30 at the Cultural Centre. Children’s races start at 9:00 and the main race at 11:00. The awards ceremony takes place at 15:45 at the Cultural Centre. Competitors must register at least 30 minutes before the start of their category. Changing rooms and race packs are available for those registered online. Children’s courses are 50, 100, 200, 300, 500 and 800 m long.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://beh.sk/pretek/beh-do-vrchu-banske-mlacky-18/"
     ],
@@ -126589,8 +127254,8 @@
   {
     "domain_name": "beh_prveho_nadychu",
     "name": "Beh prvého nádychu",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261011",
@@ -126604,8 +127269,8 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Trnavský amfiteáter, Halenárska 20, Trnava, Slovakia",
+    "start_time": "09:15",
+    "location": "Trnavský amfiteáter, Trnava, Slovakia",
     "latitude": 48.3749043,
     "longitude": 17.593617,
     "county": "Region of Trnava",
@@ -126618,27 +127283,33 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "7.8 km, 3.9 km",
-    "organizer": null,
+    "organizer": "OZ Šišky",
     "contact": null,
-    "website": null,
+    "website": "https://behprvehonadychu.sk",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://behprvehonadychu.sk/registracia/",
+    "race_info_url": "https://behprvehonadychu.sk#trasa",
+    "presumed_organizer_email": "kontakt@behprvehonadychu.sk",
+    "website_emails_found": [
+      "kontakt@behprvehonadychu.sk"
+    ],
+    "description": "The First Breath Run is a charity run in Trnava supporting the Neonatal Department of the University Hospital Trnava. Runners can choose between a 3.9 km or 7.8 km route, with the shorter loop available to complete twice. The event offers a medal, refreshments at the finish, and an accompanying programme including music and dance performances. Its goal is to improve conditions for new mothers and their babies while creating a welcoming community atmosphere.",
+    "course_highlights": [
+      "A 3.9 km loop in Bela IV Park, which can be completed twice",
+      "Refreshments and support from the Trnava Slávia basketball players along the route",
+      "An accompanying programme with music, a warm-up and a dance performance"
+    ],
+    "additional": "Race bib collection from 8:30. The first three men and women in the categories will receive small prizes from partners. An accompanying programme and refreshments are planned after the run. Volunteers over 18 are needed at the start and along the route. Refreshments will be available at the finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.68,
     "sources": [
       "https://beh.sk/pretek/beh-prveho-nadychu/"
     ],
@@ -126696,8 +127367,8 @@
   {
     "domain_name": "beh_okolo_sidorova",
     "name": "Beh okolo Sidorova",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261011",
@@ -126711,7 +127382,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "10:30",
     "location": "Hotel Áčko, Hrabovská cesta 34, Ružomberok, Slovakia",
     "latitude": 49.081468,
     "longitude": 19.281447,
@@ -126729,27 +127400,83 @@
       "5 km"
     ],
     "distance_verbose": "13 km, 4.8 km",
-    "organizer": null,
+    "organizer": "Bežecký spolok Ruža Ružomberok a Centrum voľného času Elán Ružomberok",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://vsetkybehy.sk/podujatie/beh-okolo-sidorova-2026",
+    "fb_link": "https://www.facebook.com/p/Beh-okolo-Sidorova-100066470777288/?locale=sk_SK",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "4,8 km Trail",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "6 €",
+            "deadline": null,
+            "description": "Štartovné; platba pri prezentácii 6 €"
+          },
+          {
+            "label": "tier_2",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Dorastenecké a juniorské kategórie a muži a ženy nad 70 rokov 0 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "13 km Trail",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "6 €",
+            "deadline": null,
+            "description": "Štartovné; platba pri prezentácii 6 €"
+          },
+          {
+            "label": "tier_2",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Juniorská kategória 0 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Detské a žiacke behy",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Detské a žiacke kategórie 0 €"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/podujatie/beh-okolo-sidorova-2026",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "Beh okolo Sidorova is a running event in Ružomberok, offering 4.8 km and 13 km routes that follow forest trails and partly run along roads. The event also includes free children’s and school-age races for various age groups. Competitors take part at their own risk, and the organizer does not provide insurance. The event is part of the Liptov Running League and takes place in pleasant surroundings. Race materials can be collected at Hotel Áčko on race day.",
+    "course_highlights": [
+      "The routes follow forest trails and partly run along roads",
+      "Children’s and school-age races from 50 m to 1.5 km, with medals for all participants",
+      "Cash prizes and prizes in kind for winners in various age groups"
+    ],
+    "additional": "Registration and collection of race materials take place at Hotel Áčko on race day from 08:00. Registration closes 15 minutes before the start of the relevant category. On-site registration is available on race day from 08:00 to 09:00 in some categories. The top three in children’s categories 3 and 4, and in the younger and older school-age categories, receive diplomas and medals. Cash prizes are awarded in the overall standings and in the masters categories, provided there are enough competitors. A prize of 30 € is offered for breaking the course record.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.89,
     "sources": [
       "https://beh.sk/pretek/beh-okolo-sidorova-18/"
     ],
@@ -137454,8 +138181,10 @@
     "latitude": 46.5319397,
     "longitude": 26.8434864,
     "county": "BACAU",
-    "nearest_city": "Miercurea-Ciuc",
-    "nearby_cities": [],
+    "nearest_city": "Bacău",
+    "nearby_cities": [
+      "Bacău"
+    ],
     "distances": "[\"21.5\", \"12.5\", \"7\"]",
     "distance_m": [
       21500,
@@ -143557,9 +144286,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://runforlife.ro/wonderland/",
       "https://runforlife.ro/",
-      "https://321start.run/eveniment/run-for-life-wonderland-2026"
+      "https://runforlife.ro/wonderland/"
     ],
     "consolidated_ids": [
       "5c4b7821-5f65-48e3-ac38-cef873f11d04"
@@ -145263,8 +145991,7 @@
     "max_description_relevance": 0.9,
     "sources": [
       "https://21k.ro/",
-      "https://21k.ro/portfolio/bucharest-21k/",
-      "https://321start.run/eveniment/bucharest21k-2026"
+      "https://21k.ro/portfolio/bucharest-21k/"
     ],
     "consolidated_ids": [
       "164d4c54-0439-46dd-a8ca-476d448f322c"
@@ -145346,6 +146073,219 @@
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "vecerny_beh_obcou_velke_uherce",
+    "name": "Večerný beh obcou Veľké Uherce",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261113",
+        "20261113"
+      ],
+      [
+        "20271112",
+        "20271112"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Veľké Uherce, Partizánske District, Trenčín Region, Slovakia",
+    "latitude": 48.6076436,
+    "longitude": 18.4362299,
+    "county": "Region of Trenčín",
+    "nearest_city": "Nitra",
+    "nearby_cities": [],
+    "distances": "[\"7\", \"3.5\"]",
+    "distance_m": [
+      7000,
+      3500
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "7 km, 3.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/vecerny-beh-obcou-velke-uherce-10/"
+    ],
+    "consolidated_ids": [
+      "9728f2f4-f920-4f13-9bbf-f6f37ac2d996"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "24_de_ore_pentru_un_zambet",
+    "name": "24 de ore pentru un zâmbet",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20261113",
+        "20261113"
+      ],
+      [
+        "20271112",
+        "20271112"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Oradea, Romania",
+    "latitude": 47.04650050000001,
+    "longitude": 21.9189438,
+    "county": "BIHOR",
+    "nearest_city": "Oradea",
+    "nearby_cities": [
+      "Oradea"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://xterrasport.ro/caritate/ro/"
+    ],
+    "consolidated_ids": [
+      "613b7058-6ad9-4fe1-8db0-7e974c59e84d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "ro",
     "nearby_foreign_cities": [
       "Budapest",
       "Debrecen",
@@ -147035,109 +147975,6 @@
     ]
   },
   {
-    "domain_name": "vecerny_beh_obcou_velke_uherce",
-    "name": "Večerný beh obcou Veľké Uherce",
-    "type": "other",
-    "type_local": "Ostatné",
-    "race_dates": [
-      [
-        "20261113",
-        "20261113"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Veľké Uherce, Partizánske District, Trenčín Region, Slovakia",
-    "latitude": 48.6076436,
-    "longitude": 18.4362299,
-    "county": "Region of Trenčín",
-    "nearest_city": "Nitra",
-    "nearby_cities": [],
-    "distances": "[\"7\", \"3.5\"]",
-    "distance_m": [
-      7000,
-      3500
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "7 km, 3.5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://beh.sk/pretek/vecerny-beh-obcou-velke-uherce-10/"
-    ],
-    "consolidated_ids": [
-      "29a6065d-a754-4e35-b4f6-06dddda7afc4"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "sk",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
-      "Jászberény"
-    ]
-  },
-  {
     "domain_name": "fercekovska_desiatka",
     "name": "Ferčekovská desiatka",
     "type": "other",
@@ -147944,19 +148781,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
-      "distances",
-      "type",
       "price_range",
-      "contact",
-      "website",
-      "description",
-      "longitude",
-      "race_dates",
       "start_time",
+      "contact",
+      "longitude",
+      "type",
+      "race_dates",
       "latitude",
+      "name",
       "organizer",
-      "name"
+      "distances",
+      "location",
+      "description",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -148666,7 +149503,8 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://321start.run/eveniment/crosul-de-noapte-2026",
+      "https://runnersclub.ro/crosuldenoapte/",
+      "https://runnersclub.ro/crosuldenoapte/",
       "https://runnersclub.ro/crosuldenoapte/"
     ],
     "consolidated_ids": [

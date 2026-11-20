@@ -4137,8 +4137,8 @@
   {
     "domain_name": "christmas_run_most",
     "name": "Christmas Run Most",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20261213",
@@ -4148,42 +4148,96 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "16:00",
     "location": "1. náměstí, Most, Ústecký kraj, Czech Republic",
     "latitude": 50.501994,
     "longitude": 13.6404084,
     "county": "Ústecký kraj",
     "nearest_city": "Ústí nad Labem",
     "nearby_cities": [],
-    "distances": "[\"5\"]",
+    "distances": "[\"5\", \"2\", \"1\"]",
     "distance_m": [
-      5000
+      5000,
+      2000,
+      1000
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "5 km",
-    "organizer": null,
+    "distance_verbose": "5 km, 2 km, 1 km",
+    "organizer": "Event media s.r.o.",
     "contact": null,
-    "website": null,
+    "website": "https://christmasrun.cz/zavody/-346-most.html",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "Hlavní závod 650–900 Kč; dětský běh 200–400 Kč; Fénix Run 250–300 Kč",
+    "price_tiers": [
+      {
+        "distance": "CHRISTMAS RUN - 5 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "800 Kč",
+            "deadline": "20261211",
+            "description": "Registrace ONLINE do 11.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "900 Kč",
+          "deadline": "20261213"
+        }
+      },
+      {
+        "distance": "CHRISTMAS KIDS RUN - 1 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "300 Kč",
+            "deadline": "20261211",
+            "description": "Registrace ONLINE do 11.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "400 Kč",
+          "deadline": "20261213"
+        }
+      },
+      {
+        "distance": "FÉNIX RUN - 2 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "250 Kč",
+            "deadline": "20261211",
+            "description": "Registrace ONLINE do 11.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "300 Kč",
+          "deadline": "20261213"
+        }
+      }
+    ],
+    "registration_close_date": "20261213",
+    "registration_url": "https://christmasrun.cz/zavody/-346-most.html#ceny",
+    "race_info_url": "https://christmasrun.cz/zavody/-346-most.html",
+    "presumed_organizer_email": "dotazy@eventmedia.cz",
+    "website_emails_found": [
+      "dotazy@eventmedia.cz"
+    ],
+    "description": "Christmas Run Most is an atmospheric night run taking place on 13 December 2026 in the centre of Most. It offers three race options: the 5 km main race, the 2 km Fénix Run charity race, and a 1 km non-competitive children’s run. The event also features a warm-up with Santa and a festive awards ceremony. The race is suitable for runners aged 12 and over; younger participants may take part only with written consent from a legal guardian. The event is organised by EVENT media s.r.o.",
+    "course_highlights": [
+      "Night run in the centre of Most",
+      "Main course: 5 km (2 × 2.5 km laps)",
+      "2 km Fénix Run charity race and 1 km children’s run"
+    ],
+    "additional": "Registration is valid only once the entry fee has been credited to the organiser’s account. No further registrations are possible once the race capacity has been reached. Children under 15 must have written consent from a legal guardian. The race pack includes a bag with gifts from the event’s partners. The main race has a capacity of 1,000 runners. The children’s run is non-competitive, and children may run with their parents. Participants in the main race receive a medal; proceeds from the Fénix Run and voluntary contributions support non-profit organisations.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://www.svetbehu.cz/terminovka/ceps-christmas-run-most/"
     ],
@@ -4201,8 +4255,8 @@
   {
     "domain_name": "trailova_zavist",
     "name": "Trailová Závist",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261213",
@@ -4212,7 +4266,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "10:30",
     "location": "TJ Sokol Zvole clubhouse, Hlavní 197, 252 45 Zvole, Czech Republic",
     "latitude": 49.9362854,
     "longitude": 14.4159239,
@@ -4221,33 +4275,37 @@
     "nearby_cities": [
       "Praha"
     ],
-    "distances": "[\"17.3\"]",
+    "distances": "[\"17.4\"]",
     "distance_m": [
-      17300
+      17400
     ],
     "distance_keywords": [],
-    "distance_verbose": "17.3 km",
+    "distance_verbose": "17.4 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://trailovazavist.cz/",
+    "fb_link": "https://www.facebook.com/trailovazavist/?locale=cs_CZ",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://sportt.cz/register/1560",
+    "race_info_url": "https://trailovazavist.cz/propozice/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Trailová Závist is a running race across three valleys in an area of rugged slopes and steep-sided ravines above the Vltava River. The approximately 17.3 km course runs through deep forests and combines challenging climbs, technical descents, and running sections with beautiful views. The race is open to runners of all abilities and is included among the UTMB Index Races, allowing participants to earn a 20 km Index. The start and registration take place at the TJ Sokol Zvole clubhouse, which also provides baggage storage and refreshments after the finish. After the race, participants receive soup, a medal, and a pin, all included in the entry fee.",
+    "course_highlights": [
+      "The course crosses rugged slopes and steep-sided ravines above the Vltava River",
+      "Challenging climbs and technical descents, with a mix of asphalt, gravel, mud, and leaves",
+      "Beautiful views and running through deep forests with a Celtic historical backdrop"
+    ],
+    "additional": "The race is limited to 250 starters. Race numbers can also be purchased on site until 9:30. The entry fee includes a timing chip on loan, refreshments at the finish (soup), a medal, and a pin. After the race, outdoor seating and the clubhouse are available as shelter from bad weather. There are no showers or heated changing rooms. Entries can be transferred to another person until 11.12.2026 12:00 via sportovniservis.cz. T-shirts, hoodies, and caps featuring the race design are also available for purchase. The entry fee includes a timing chip on loan, refreshments at the finish, soup, a finisher’s medal, and a pin. The race is limited to 250 runners.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.svetbehu.cz/terminovka/trailova-zavist/"
     ],
@@ -4265,8 +4323,8 @@
   {
     "domain_name": "beh_cyklistu",
     "name": "Běh cyklistů",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261213",
@@ -4277,9 +4335,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Jinonice, Prague 5, Prague, Czech Republic",
-    "latitude": 50.0543302,
-    "longitude": 14.3636338,
+    "location": "Novoveská ulice, Jinonice, Prague, Czech Republic",
+    "latitude": 50.045593,
+    "longitude": 14.3593548,
     "county": "Hlavní město Praha",
     "nearest_city": "Praha",
     "nearby_cities": [
@@ -4295,27 +4353,36 @@
       "3000 meter"
     ],
     "distance_verbose": "6 km, 3000 meter",
-    "organizer": null,
+    "organizer": "TJ Stodůlky Praha",
     "contact": null,
-    "website": null,
+    "website": "https://ceskybeh.cz/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://ceskybeh.cz/",
     "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "website_emails_found": [
+      "obec@obeckruh.cz",
+      "petr.lundak@vaseliga.cz",
+      "broncovi@seznam.cz",
+      "redpoint@seznam.cz"
+    ],
+    "description": "Běh cyklistů is a challenging cross-country race in Prague’s Jinonice district, taking runners over hilly terrain on forest and meadow paths. The race offers 6 km and 3 km courses; in previous editions, the longer course was for men and the shorter one for women, juniors, and veterans. Expect a fast-paced off-road race with repeated climbs and steep descents.",
+    "course_highlights": [
+      "A hilly cross-country course on forest and meadow paths.",
+      "A loop course with sharp climbs and steep descents.",
+      "Two course distances: 6 km and 3 km."
+    ],
+    "additional": "Race facilities are on Novoveská Street in Prague-Jinonice.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.82,
     "sources": [
       "https://ceskybeh.cz/zavody/beh-cyklistu-2026/"
     ],
@@ -4693,35 +4760,41 @@
     "nearby_cities": [
       "Ostrava"
     ],
-    "distances": "[\"6\"]",
+    "distances": "[\"6\", \"3\"]",
     "distance_m": [
-      6000
+      6000,
+      3000
     ],
     "distance_keywords": [
-      "5 km"
+      "5 km",
+      "3000 meter"
     ],
-    "distance_verbose": "6 km",
-    "organizer": null,
+    "distance_verbose": "6 km, 3000 meter",
+    "organizer": "Maratón klub Seitl Ostrava z.s.",
     "contact": null,
-    "website": null,
+    "website": "https://www.mkseitl.cz/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://www.mkseitl.cz/registrace-mbp",
+    "race_info_url": "https://www.mkseitl.cz/o-nas",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "The Christmas Cross-Country Race in Bělský les invites runners to enjoy the natural surroundings of Ostrava’s forest park. Participants can choose between 3 km and 6 km courses, combining a sawdust track with forest paths. The start and race facilities are at Areál zdraví in Ostrava-Zábřeh. The race is part of the Drahomír Gromotovič and Bohumil Prauzek Memorial.",
+    "course_highlights": [
+      "The routes follow both the sawdust track and the forest paths of Bělský les.",
+      "Choose between 3 km and 6 km courses.",
+      "The start and finish facilities are located at Areál zdraví."
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.svetbehu.cz/terminovka/vanocni-kros-ostrava-belsky-les/"
     ],
@@ -6999,8 +7072,8 @@
   {
     "domain_name": "beh_partyzanskou_stezkou",
     "name": "Běh Partyzánskou stezkou",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270109",
@@ -7010,7 +7083,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "10:15",
     "location": "Restaurace Slavoj, Osek, Středočeský kraj, Czech Republic",
     "latitude": 49.8195706,
     "longitude": 13.8583105,
@@ -7019,35 +7092,63 @@
     "nearby_cities": [
       "Příbram"
     ],
-    "distances": "[\"9.95\"]",
+    "distances": "[\"9\"]",
     "distance_m": [
-      9950
+      9000
     ],
     "distance_keywords": [
       "10 km"
     ],
-    "distance_verbose": "9.95 km",
-    "organizer": null,
+    "distance_verbose": "9 km",
+    "organizer": "Slavoj Osek u Hořovic, Domeček Hořovice",
     "contact": null,
-    "website": null,
+    "website": "https://brdskypohar.cz/propozice?id_zavodu=1",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "Hlavní závod 9 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "50 Kč",
+            "deadline": null,
+            "description": "děti 50,-Kč"
+          },
+          {
+            "label": "tier_2",
+            "price": "150 Kč",
+            "deadline": null,
+            "description": "dospělí 150,-Kč, při platbě předem"
+          }
+        ],
+        "late_fee": {
+          "price": "200 Kč",
+          "deadline": null
+        }
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://brdskypohar.cz/propozice?id_zavodu=1",
+    "race_info_url": "https://brdskypohar.cz/propozice?id_zavodu=1",
+    "presumed_organizer_email": "info@brdskypohar.cz",
+    "website_emails_found": [
+      "info@brdskypohar.cz"
+    ],
+    "description": "The Run Along the Partisan Trail is a winter cross-country race held mainly on forest roads, with the first and last two kilometres on asphalt. The course is approximately 9 km long and is typically snowy and muddy, adding to the challenge and atmosphere of the race. The race starts in Osek near Hořovice, by the Slavoj restaurant, and also offers children’s races on asphalt. The event is part of the Brdy Running Cup and is suitable for anyone who enjoys running outdoors in winter.",
+    "course_highlights": [
+      "A 9 km course combining asphalt and forest roads",
+      "Winter conditions, often with snow and mud",
+      "Children’s races on asphalt"
+    ],
+    "additional": "Registration is available both on site and in advance. The course surface is a combination of asphalt and forest roads. The organiser is Slavoj Osek u Hořovic. Children’s races are part of the event. Results are available in the system and as a PDF. The organisers also hold a pairs relay and other running events as part of the cup. Children’s and youth courses are approximately 200 to 2,000 metres long and run on asphalt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.86,
     "sources": [
       "https://www.svetbehu.cz/terminovka/beh-partyzanskou-stezkou/"
     ],
@@ -7065,8 +7166,8 @@
   {
     "domain_name": "innogy_winter_run_hradec_kralove",
     "name": "innogy Winter Run Hradec Králové",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20270109",
@@ -7076,7 +7177,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "10:00",
     "location": "Smetanovo nábřeží, Hradec Králové, Czech Republic",
     "latitude": 50.2158155,
     "longitude": 15.8266897,
@@ -7085,33 +7186,125 @@
     "nearby_cities": [
       "Hradec Králové"
     ],
-    "distances": "[\"8.6\"]",
+    "distances": "[\"8.6\", \"4.3\", \"4\", \"1\", \"0.8\", \"0.4\"]",
     "distance_m": [
-      8600
+      8600,
+      4300,
+      4000,
+      1000,
+      800,
+      400
     ],
-    "distance_keywords": [],
-    "distance_verbose": "8.6 km",
-    "organizer": null,
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "8.6 km, 4.3 km, 4 km, 1 km, 0.8 km, 0.4 km",
+    "organizer": "Event media s.r.o.",
     "contact": null,
-    "website": null,
+    "website": "https://winter-run.cz/zavody/-309-hradec-kralove.html",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "250–1 800 Kč",
+    "price_tiers": [
+      {
+        "distance": "innogy WINTER RUN 8 km",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "700 Kč",
+            "deadline": "20261231",
+            "description": "Registrace ONLINE do 31.12.2026 do 00:00"
+          },
+          {
+            "label": "tier_3",
+            "price": "800 Kč",
+            "deadline": "20270107",
+            "description": "Registrace ONLINE do 7.1.2027 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "900 Kč",
+          "deadline": "20270109"
+        }
+      },
+      {
+        "distance": "innogy WINTER RUN 4 km",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "700 Kč",
+            "deadline": "20261231",
+            "description": "Registrace ONLINE do 31.12.2026 do 00:00"
+          },
+          {
+            "label": "tier_3",
+            "price": "800 Kč",
+            "deadline": "20270107",
+            "description": "Registrace ONLINE do 7.1.2027 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "900 Kč",
+          "deadline": "20270109"
+        }
+      },
+      {
+        "distance": "innogy WINTER RUN štafeta 2x4 km",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "1400 Kč",
+            "deadline": "20261231",
+            "description": "Registrace ONLINE do 31.12.2026 do 00:00"
+          },
+          {
+            "label": "tier_3",
+            "price": "1600 Kč",
+            "deadline": "20270107",
+            "description": "Registrace ONLINE do 7.1.2027 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "1800 Kč",
+          "deadline": "20270109"
+        }
+      },
+      {
+        "distance": "WINTER KIDS CUP",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "250 Kč",
+            "deadline": "20270107",
+            "description": "Registrace ONLINE do 7.1.2027 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "300 Kč",
+          "deadline": "20270109"
+        }
+      }
+    ],
+    "registration_close_date": "20270109",
+    "registration_url": "https://www.eventreg.cz/cs/innogy-winter-run-hradec-kralove-2027",
+    "race_info_url": "https://winter-run.cz/zavody/-354-hradec-kralove.html",
+    "presumed_organizer_email": "dotazy@eventmedia.cz",
+    "website_emails_found": [
+      "dotazy@eventmedia.cz"
+    ],
+    "description": "The innogy Winter Run Hradec Králové is a winter running event for everyone, held in all weather in the picturesque setting of Smetana Embankment. It offers individual 8 km and 4 km races, a 2 × 4 km relay, and a children’s race. The event is part of the Winter RUN series and is suitable for all ages and fitness levels. The start and finish are near the Aldis on Eliščino Embankment, providing convenient access and a pleasant atmosphere. After the race, there is an awards ceremony and the option to purchase an official technical T-shirt and headband.",
+    "course_highlights": [
+      "A winter run in all weather in the centre of Hradec Králové",
+      "Individual 8.6 km and 4.3 km courses, with the option of a 2 × 4 km relay",
+      "Children’s races over 400 m and 800 m"
+    ],
+    "additional": "A 30% discount is available to students with an ISIC card when registering and paying online by the regular deadline. Official technical T-shirts can be ordered for 600 Kč and headbands for 200 Kč until 20.12.2026. The race pack includes a bag with leaflets and gifts from partners. On-site registration is available at a higher price. Children’s races start from 10:00, and the main races start at 12:00 and 13:00. The entry fee for the main races includes a race number, timing chip, refreshments at the finish, and a metal medal.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.svetbehu.cz/terminovka/winter-run-hradec-kralove/"
     ],
@@ -9388,19 +9581,19 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "website",
-      "race_dates",
-      "contact",
+      "location",
+      "name",
+      "latitude",
       "start_time",
       "additional",
-      "name",
-      "longitude",
-      "price_range",
-      "location",
       "distances",
-      "description",
-      "organizer",
+      "longitude",
+      "contact",
+      "race_dates",
       "type",
-      "latitude"
+      "organizer",
+      "price_range",
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47666,17 +47859,17 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "website",
-      "race_dates",
-      "contact",
-      "additional",
-      "name",
-      "longitude",
       "location",
+      "name",
+      "latitude",
+      "additional",
       "distances",
-      "description",
-      "organizer",
+      "longitude",
+      "contact",
+      "race_dates",
       "type",
-      "latitude"
+      "organizer",
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -78451,19 +78644,19 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "website",
-      "race_dates",
-      "contact",
+      "location",
+      "name",
+      "latitude",
       "start_time",
       "additional",
-      "name",
-      "longitude",
-      "price_range",
-      "location",
       "distances",
-      "description",
-      "organizer",
+      "longitude",
+      "contact",
+      "race_dates",
       "type",
-      "latitude"
+      "organizer",
+      "price_range",
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -78541,17 +78734,17 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "website",
-      "race_dates",
-      "contact",
-      "start_time",
-      "name",
-      "longitude",
-      "price_range",
       "location",
-      "description",
-      "organizer",
+      "name",
+      "latitude",
+      "start_time",
+      "longitude",
+      "contact",
+      "race_dates",
       "type",
-      "latitude"
+      "organizer",
+      "price_range",
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,

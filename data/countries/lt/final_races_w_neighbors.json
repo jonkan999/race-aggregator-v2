@@ -297,8 +297,8 @@
   {
     "domain_name": "prangli_seiklusjooks",
     "name": "Prangli seiklusjooks",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "trail",
+    "type_local": "Trailijooks",
     "race_dates": [
       [
         "20261121",
@@ -308,10 +308,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Prangli Island, Viimsi Parish, Estonia",
-    "latitude": 59.62535409999999,
-    "longitude": 25.0105801,
+    "start_time": "09:00",
+    "location": "Leppneeme Harbour, Leppneeme, Viimsi Parish, Harju County, Estonia",
+    "latitude": 59.55126180000001,
+    "longitude": 24.8666823,
     "county": "Harju maakond",
     "nearest_city": "Tallinna",
     "nearby_cities": [
@@ -323,27 +323,47 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "12 km",
-    "organizer": null,
+    "organizer": "Runaway Adventures",
     "contact": null,
-    "website": null,
+    "website": "https://fienta.com/et/runaway-adventures-prangli-seiklus",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "63 €",
+    "price_tiers": [
+      {
+        "distance": "12 km jooks",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "63 €",
+            "deadline": null,
+            "description": "Kõik kokku 63 €. Sina pakid jooksuriided ja saunakoti, meie korraldame päeva."
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261121",
+    "registration_url": "https://fienta.com/et/runaway-adventures-prangli-seiklus",
+    "race_info_url": "https://fienta.com/et/runaway-adventures-prangli-seiklus",
+    "presumed_organizer_email": "adventuresrunaway@gmail.com",
+    "website_emails_found": [
+      "adventuresrunaway@gmail.com",
+      "hello@fienta.com"
+    ],
+    "description": "Prangli Adventure Run is an event taking place on November 21, starting from Leppneeme Harbour at 09:00. Participants can enjoy a 12 km run along the scenic trails of Prangli Island at a pace of 6:30–7:00 min/km. After the run, participants can look forward to a hot lunch and a hot sauna. Return ferry tickets from Prangli are also arranged. This is a great opportunity to spend a day in the fresh sea air, meet new people, and enjoy the island’s peaceful atmosphere.",
+    "course_highlights": [
+      "12 km run on the trails of Prangli Island",
+      "Refreshment stop at the 7th kilometre",
+      "Hot lunch and a hot sauna after the run"
+    ],
+    "additional": "Participants must be at Leppneeme Harbour 15 minutes before the start, at 08:45. The return ferry from Prangli departs at 16:30. The event is limited to 20 participants. The event includes return ferry tickets to Prangli. The price includes return ferry tickets, lunch, and sauna. Meeting at Leppneeme Harbour at 8:45; return ferry from Prangli at 16:30. There are 20 places. Bring running clothes and a sauna bag.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.98,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/prangli-seiklusjooks-2026-12-km"
     ],
@@ -361,6 +381,7 @@
       "Šiauliai",
       "Panevėžys",
       "Mažeikiai",
+      "Jonava",
       "Utena",
       "Kėdainiai",
       "Telšiai",
@@ -1294,6 +1315,71 @@
     ]
   },
   {
+    "domain_name": "795_paloheinamaraton",
+    "name": "795. Paloheinämaraton",
+    "type": "other",
+    "type_local": "Muu",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Paloheinä, Helsinki, Finland",
+    "latitude": 60.25381709999999,
+    "longitude": 24.9280509,
+    "county": "Uusimaa",
+    "nearest_city": "Helsinki",
+    "nearby_cities": [
+      "Helsinki"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Sekoitettu matka",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://juoksija.fi/tapahtumat/795-paloheinamaraton/"
+    ],
+    "consolidated_ids": [
+      "22347dbb-e31a-43c9-8ea6-ee1be9e0842f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "fi",
+    "nearby_foreign_cities": [
+      "Šiauliai",
+      "Mažeikiai"
+    ]
+  },
+  {
     "domain_name": "begimas_atgal_i_praeiti",
     "name": "Bėgimas Atgal į Praeitį",
     "type": "road",
@@ -1356,17 +1442,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1401,9 +1487,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Vääna-Jõesuu, Harku Parish, Harju County, Estonia",
-    "latitude": 59.43352350000001,
-    "longitude": 24.3672188,
+    "location": "Vääna-Jõesuu beach parking, Luige tee 9, Vääna-Jõesuu, Estonia",
+    "latitude": 59.4345605,
+    "longitude": 24.3582161,
     "county": "Harju maakond",
     "nearest_city": "Tallinna",
     "nearby_cities": [
@@ -1415,27 +1501,33 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "14 km",
-    "organizer": null,
+    "organizer": "TreeningPluss",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://kalender.harku.ee/kalender/treeningpluss-vaana-joesuu-jooks-matk-3/",
+    "fb_link": "https://www.facebook.com/TreeningPluss/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://kalender.harku.ee/juhend",
+    "race_info_url": "https://kalender.harku.ee/kalender/treeningpluss-vaana-jooks-matk-3/",
+    "presumed_organizer_email": "harku@harku.ee",
+    "website_emails_found": [
+      "harku@harku.ee"
+    ],
+    "description": "TreeningPluss Vääna-Jõesuu run and hike is a running and hiking activity for recreational participants, held at Vääna-Jõesuu Beach Park. The event offers an opportunity to enjoy nature and exercise in a beautiful coastal area and is suitable for participants of different fitness levels. It is organized by Harku Rural Municipality, which supports an active and healthy lifestyle in the community.",
+    "course_highlights": [
+      "The route runs through Vääna-Jõesuu Beach Park",
+      "Pleasant natural surroundings in a coastal area",
+      "Suitable for both running and hiking"
+    ],
+    "additional": "The event takes place at the beach park at Luige tee 9, Vääna-Jõesuu. The organizer is Harku Rural Municipality. Participants must register via the Harku Rural Municipality information page. Start at 13:00. Contact person: Taavi Kasela; treeningpluss@gmail.com, +372 5667 6737.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.79,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/treeningpluss-vaana-joesuu-jooks-matk-2026-25-km"
     ],
@@ -1538,11 +1630,11 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://tautassports.lv/pasakumi/noskrien-ziemu-ropazi/",
-      "https://noskrienziemu.lv",
-      "https://www.noskrien.lv/kalendars/noskrien-ziemu-1-posms-ropazi/",
       "https://runbaltic.com/lv/races/noskrien-ziemu-stage-1-2026",
-      "https://ultrataka.lv/pasakumu-kalendars/"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/noskrien-ziemu-1-posms-ropazi/",
+      "https://tautassports.lv/pasakumi/noskrien-ziemu-ropazi/",
+      "https://noskrienziemu.lv"
     ],
     "consolidated_ids": [
       "3a381f38-0aed-4b8e-8420-8244dbe1225d"
@@ -2962,17 +3054,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3043,16 +3135,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3148,17 +3240,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3256,17 +3348,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3303,8 +3395,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Kadrina, Lääne-Viru County, Estonia",
+    "start_time": "12:00",
+    "location": "Kadrina Stadium, Kadrina, Lääne-Viru County, Estonia",
     "latitude": 59.339128,
     "longitude": 26.1414751,
     "county": "Lääne-Viru maakond",
@@ -3320,27 +3412,47 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Huviklubi Nelson",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.lvsl.ee/event-details/3-kadrina-kadripaeva-kadrijooks",
+    "fb_link": "https://www.facebook.com/events/kadrina-keskv%C3%A4ljak/5-kadrina-kadrip%C3%A4eva-kadrijooks/1350890490288717/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 eurot",
+            "deadline": null,
+            "description": "Osalustasu: 10 eurot, kooliõpilastel tasuta"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.lvsl.ee/event-details/3-kadrina-kadripaeva-kadrijooks",
+    "presumed_organizer_email": "info@lvsl.ee",
+    "website_emails_found": [
+      "info@lvsl.ee",
+      "LVSL@4x.png"
+    ],
+    "description": "Kadrina’s Kadripäev costume run is a fun 5 km race held for the third time in Kadrina. The race starts at Kadrina Stadium and is open to both recreational runners and school students, who can participate for free. A special requirement is that participants wear a white item as part of their outfit, adding a traditional touch to the event. Race bibs can be collected and on-site registration is available at Kadrina Youth Centre, next to the stadium.",
+    "course_highlights": [
+      "A 5 km run starting at Kadrina Stadium",
+      "The race takes place in the Kadrina area",
+      "Participants must wear a white item as part of their outfit, in keeping with the Kadripäev tradition"
+    ],
+    "additional": "Race bibs can be collected and on-site registration is available from 10:30 to 11:30 at Kadrina Youth Centre, next to the stadium. After the race, participants can use the sauna at Kadrina Sports Hall. Participants must wear a white item as part of their outfit.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/kadrina-kadripaeva-kadrijooks-2026-5-km"
     ],
@@ -3822,16 +3934,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3903,16 +4015,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4341,17 +4453,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4427,16 +4539,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5075,10 +5187,14 @@
     "nearby_cities": [
       "Poznań"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -5680,16 +5796,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5755,15 +5871,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6241,10 +6357,14 @@
     "nearby_cities": [
       "Częstochowa"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
+    "distances": "[\"21.098\"]",
+    "distance_m": [
+      21098
+    ],
+    "distance_keywords": [
+      "Półmaraton"
+    ],
+    "distance_verbose": "Półmaraton",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -6414,17 +6534,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6560,27 +6680,33 @@
       "Poolmaraton"
     ],
     "distance_verbose": "25 km, 20 km, 14 km",
-    "organizer": null,
+    "organizer": "TreeningPluss",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://kalender.harku.ee/kalender/treeningpluss-muraste-jooks-matk/",
+    "fb_link": "https://www.facebook.com/TreeningPluss",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://kalender.harku.ee/kalender/treeningpluss-muraste-jooks-matk/",
+    "presumed_organizer_email": "harku@harku.ee",
+    "website_emails_found": [
+      "harku@harku.ee"
+    ],
+    "description": "TreeningPluss Muraste Run-Hike is a winter running and hiking festival in the Muraste area, taking place on December 13. The event offers participants the chance to enjoy nature and stay active even in the colder months. The routes pass through beautiful landscapes and are suitable for both running and hiking. The event is for everyone who wants to spend active time outdoors in the fresh air.",
+    "course_highlights": [
+      "Winter run and hike in the Muraste area",
+      "Beautiful nature trails and forest roads",
+      "Suitable for both running and hiking"
+    ],
+    "additional": "Start at 10:00.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.77,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/treeningpluss-muraste-jooks-matk-2026-25-km"
     ],
@@ -6666,9 +6792,9 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.noskrien.lv/kalendars/noskrien-ziemu-2-posms-koknese-2026/",
-      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/noskrien-ziemu-2-posms-2026",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/noskrien-ziemu-2-posms-koknese-2026/",
       "https://tautassports.lv/pasakumi/noskrien-ziemu-koknese/"
     ],
     "consolidated_ids": [
@@ -7302,16 +7428,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7451,17 +7577,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7593,8 +7719,8 @@
   {
     "domain_name": "druskininku_kaledinis_begimas",
     "name": "Druskininkų Kalėdinis bėgimas",
-    "type": "other",
-    "type_local": "Kita",
+    "type": "road",
+    "type_local": "Kelių",
     "race_dates": [
       [
         "20261219",
@@ -7604,45 +7730,72 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Druskininkai, Lietuva",
-    "latitude": 54.00490689999999,
-    "longitude": 23.9864279,
+    "start_time": "11:45",
+    "location": "Turistų gatvė prie Vijūnėlės tvenkinio, Druskininkai, Lietuva",
+    "latitude": 54.01567,
+    "longitude": 23.968603,
     "county": "Alytaus apskritis",
     "nearest_city": "Druskininkai",
     "nearby_cities": [
       "Druskininkai"
     ],
-    "distances": "[\"8\", \"4\"]",
+    "distances": "[\"8\", \"4\", \"0.5\"]",
     "distance_m": [
       8000,
-      4000
+      4000,
+      500
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "8 km, 4 km",
-    "organizer": null,
+    "distance_verbose": "8 km, 4 km, 0.5 km",
+    "organizer": "Asociacija „Sporto renginiai“ ir Druskininkų sporto centras",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://sportorenginiai.lt/lt/druskininku-kaledinis-begimas-2026/",
+    "fb_link": "https://www.facebook.com/Druskinairun/?locale=lt_LT",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "0–20 Eur",
+    "price_tiers": [
+      {
+        "distance": "Visos distancijos",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 Eur",
+            "deadline": null,
+            "description": "0 Eur – dalyvis bėga su šventiniu kalėdiniu kostiumu"
+          },
+          {
+            "label": "tier_2",
+            "price": "20 Eur",
+            "deadline": null,
+            "description": "20 Eur – paprasta bėgiko ar kita apranga (bėgimas be kalėdinio kostiumo)"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261219",
+    "registration_url": "https://sportorenginiai.lt/registracija/124",
+    "race_info_url": "https://sportorenginiai.lt/lt/druskininku-kaledinis-begimas-2026/",
+    "presumed_organizer_email": "info@sportorenginiai.lt",
+    "website_emails_found": [
+      "info@sportorenginiai.lt",
+      "evaldas@sportorenginiai.lt"
+    ],
+    "description": "Druskininkų Kalėdinis bėgimas 2026 yra šventinis bėgimo renginys, vykstantis gruodžio 19 dieną Turistų gatvėje prie Vijūnėlės tvenkinio Druskininkuose. Renginį organizuoja Asociacija „Sporto renginiai“ kartu su Druskininkų sporto centru, siekdami skatinti bėgimą kaip sveiką gyvenimo būdą ir didinti vietos gyventojų aktyvumą. Varžybose gali dalyvauti visi norintys, o dalyviai bus apdovanoti specialiais renginio medaliais. Renginys apima 500 m, 4 km ir 8 km distancijas, kurios vyksta be laiko fiksavimo, todėl tinka tiek profesionalams, tiek mėgėjams.",
+    "course_highlights": [
+      "Startas ir finišas Turistų gatvėje prie Vijūnėlės tvenkinio",
+      "500 m, 4 km ir 8 km distancijos be laiko fiksavimo",
+      "Šventinė atmosfera su galimybe bėgti kalėdiniu kostiumu"
+    ],
+    "additional": "Maksimalus dalyvių skaičius - 100. Registracija ir numerių išdavimas vyksta gruodžio 19 d. šalia starto vietos. Dalyviai registruojasi tik savo vardu. Visi dalyviai apdovanojami specialiais renginio medaliais. Dalyvių skaičius ribojamas iki 100; kiekvienas dalyvis gaus renginio medalį. Registracija ir numerių išdavimas renginio dieną vyks prie starto vietos.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "http://bkmaratonas.fweb.lt/begimai"
     ],
@@ -8234,17 +8387,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -8779,16 +8932,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -8961,16 +9114,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9039,17 +9192,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9306,19 +9459,19 @@
     "website_emails_found": [
       "jakubkozlowski@maratonczykteam.szczecin.pl"
     ],
-    "description": "Szczecin New Year’s Run 2027 is an annual running event held on January 1 by the Helena Majdaniec Summer Theatre in Szczecin. The program includes a 5 km Main Run, Nordic Walking, and children’s races for different age groups. The Main Run route follows paths in Jan Kasprowicz Park, passes by Psia Polana and goes around Jasne Błonia. The start and finish are by the Summer Theatre. The event is a great opportunity to start the new year actively in a family-friendly, sporty atmosphere.",
+    "description": "Szczeciński Bieg Noworoczny 2027 is an annual running event held on January 1 at the Helena Majdaniec Summer Theatre in Szczecin. The program includes the 5 km Main Run, Nordic Walking, and children’s races for different age groups. The Main Run route follows the paths of Jan Kasprowicz Park, passes by Psia Polana, and loops around Jasne Błonia. The start and finish are at the same location. The event is a great opportunity to start the new year actively in a sporting atmosphere, with medals for every participant.",
     "course_highlights": [
-      "The 5 km route consists of two 2.5 km loops",
-      "The route follows paths in Jan Kasprowicz Park, passes by Psia Polana and goes around Jasne Błonia",
-      "Start and finish by the Helena Majdaniec Summer Theatre"
+      "The Main Run route consists of two 2.5 km loops",
+      "The route follows the paths of Jan Kasprowicz Park, passes by Psia Polana, and loops around Jasne Błonia",
+      "Start and finish at the Helena Majdaniec Summer Theatre"
     ],
-    "additional": "Children’s races take place before the Main Run at 13:20, 13:30, and 13:40 for different age groups. Capacity: 470 places combined for the Main Run and Nordic Walking, and 115 for the children’s races. Race bibs can be collected on December 29 and 30, 2026, from 17:00 to 19:30. A bag drop is available by the race office. Changing rooms are available in the start area. The program also includes Nordic Walking over two 2.5 km loops and children’s races of approximately 100, 200, and 400 m, depending on age group. Places are limited.",
+    "additional": "Race bibs are distributed on December 29 and 30, 2026, from 17:00 to 19:30. A baggage deposit is available at the race office throughout the event. Changing rooms are available in the start area by the Summer Theatre from the time the race office opens. Capacity: 470 places for the Main Run and Nordic Walking combined, and 115 places for the children’s races. Children start in three heats according to age group, over distances of approximately 100, 200, and 400 m. Every child participating in a race receives a commemorative medal. The program includes Nordic Walking and children’s races over distances of approximately 100, 200, and 400 m. Places are limited.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.97,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91407&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87339&bieganie",
@@ -10385,17 +10538,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -10799,16 +10952,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -11066,7 +11219,7 @@
     "distance_verbose": "10 km, 5 km",
     "organizer": "Fundacja Duet – Rozwój z Pasją; Stowarzyszenie Wroniecki Klub Biegacza",
     "contact": null,
-    "website": "https://wkb.wronki.pl/bieg-noworoczny/regulamin/",
+    "website": "https://wkb.wronki.pl/",
     "fb_link": null,
     "ig_link": null,
     "price_range": "70–110 zł",
@@ -11105,26 +11258,26 @@
         }
       }
     ],
-    "registration_close_date": "20261228",
-    "registration_url": null,
+    "registration_close_date": "20270103",
+    "registration_url": "https://plus-timing.pl/zgloszenia/bieg-noworoczny-wronki-2027",
     "race_info_url": "https://wkb.wronki.pl/bieg-noworoczny/",
     "presumed_organizer_email": "wroniecki.klub.biegacza@gmail.com",
     "website_emails_found": [
       "wroniecki.klub.biegacza@gmail.com"
     ],
-    "description": "The New Year’s Run is an annual running event organized by the Wronki Runners Club, held on scenic routes in the Wronki municipality. Participants can choose distances of approximately 5 km or 10 km for runners, or approximately 5 km for walkers. The start and finish are on Rzecińska Street in Wronki, and times are recorded using a chip timing system. The event promotes an active, healthy lifestyle and brings together local residents and running enthusiasts in a friendly atmosphere.",
+    "description": "The New Year’s Run kicks off the new year and running season in the Wronki Municipality on January 3, 2027. The running and walking route passes through the picturesque forests and landscapes of the Noteć Forest, offering participants an unforgettable experience. The event is open to runners and walkers of different ages and fitness levels, promoting a healthy lifestyle and physical activity. At the finish, participants can enjoy attractions, prizes, and the chance to connect with fellow running enthusiasts.",
     "course_highlights": [
-      "A route of approximately 5.5 km for runners and Nordic walking participants",
-      "Scenic forests and landscapes of the Wronki municipality",
-      "Start and finish on Rzecińska Street in Wronki"
+      "The route passes through the picturesque forests of the Noteć Forest",
+      "Distances of approximately 5 km and 10 km are available for runners, and 5 km for walkers",
+      "The start and finish are on Rzecińska Street in Wronki"
     ],
-    "additional": "The race office is open on race day from 9:45 to 10:45 by the start line on Rzecińska Street. Chip timing is provided by PLUS TIMING. Participants under 18 must submit written consent from a parent or guardian. The organizer does not allow participants under 15 to take part. Hot tea and coffee will be available in the catering area after the race. The winners’ awards ceremony will take place at the Zamość estate community center on Topolowa Street. The start is at 11:00. Participation is open from age 15; minors need written consent from a parent or guardian. Paying the entry fee on race day does not guarantee a medal.",
+    "additional": "The race office will be open on race day from 9:45 to 10:45 on Rzecińska Street. Chip timing will be provided by PLUS TIMING. The winners’ awards ceremony will take place at the Zamość estate community center on Topolowa Street. A food and drink area with hot tea and coffee will be available at the finish. Participants under 18 must submit written consent from a parent or guardian. The organizer does not allow anyone under 15 to take part in the race. Participation is open from age 15; minors need written consent from a guardian.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.96,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91420&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87562&bieganie"
@@ -12088,9 +12241,10 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://tautassports.lv/pasakumi/noskrien-ziemu-smiltene/",
       "https://runbaltic.com/lv/races/noskrien-ziemu-3-posms-tumsas-posms-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/noskrien-ziemu-3-posms-sigulda/"
     ],
     "consolidated_ids": [
@@ -13727,17 +13881,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14967,15 +15121,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -15268,18 +15422,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "location",
-      "name",
-      "start_time",
-      "contact",
+      "distances",
       "description",
-      "organizer",
-      "longitude",
       "race_dates",
       "price_range",
-      "distances",
+      "start_time",
+      "type",
+      "location",
+      "contact",
+      "organizer",
+      "longitude",
+      "name",
       "latitude"
     ],
     "is_series": false,
@@ -20234,9 +20388,10 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://runbaltic.com/lv/races/noskrien-ziemu-4-posms-2027",
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://tautassports.lv/pasakumi/noskrien-ziemu-salacgriva/",
-      "https://runbaltic.com/lv/races/noskrien-ziemu-4-posms-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/noskrien-ziemu-4-posms-laudona/"
     ],
     "consolidated_ids": [
@@ -20541,7 +20696,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "12:00",
     "location": "Osiedle Chomiczówka, Bielany, Warsaw, Poland",
     "latitude": 52.27319860000001,
     "longitude": 20.9240837,
@@ -20559,7 +20714,7 @@
       "5 km"
     ],
     "distance_verbose": "15 km, 5 km",
-    "organizer": "Warszawa – Dzielnica Bielany",
+    "organizer": "Bielański Bieg Chomiczówki",
     "contact": null,
     "website": "https://www.biegchomiczowki.eu/",
     "fb_link": "https://www.facebook.com/bielanskibiegchomiczowki/",
@@ -20571,26 +20726,14 @@
         "tiers": [
           {
             "label": "tier_1",
-            "price": "109 zł",
+            "price": "nie podano dokładnej kwoty",
             "deadline": "20261130",
-            "description": "Opłata startowa do 30 listopada"
-          },
-          {
-            "label": "tier_2",
-            "price": "129 zł",
-            "deadline": "20270131",
-            "description": "Opłata startowa od 1 grudnia do 31 stycznia"
-          },
-          {
-            "label": "tier_3",
-            "price": "149 zł",
-            "deadline": "20270218",
-            "description": "Opłata startowa od 1 lutego do 18 lutego"
+            "description": "W listopadzie pakiety są w wyjątkowo atrakcyjnej cenie."
           }
         ],
         "late_fee": {
-          "price": "do ustalenia w Biurze Zawodów",
-          "deadline": "20270221"
+          "price": null,
+          "deadline": "20270218"
         }
       },
       {
@@ -20598,47 +20741,35 @@
         "tiers": [
           {
             "label": "tier_1",
-            "price": "79 zł",
+            "price": "nie podano dokładnej kwoty",
             "deadline": "20261130",
-            "description": "Opłata startowa do 30 listopada"
-          },
-          {
-            "label": "tier_2",
-            "price": "99 zł",
-            "deadline": "20270131",
-            "description": "Opłata startowa od 1 grudnia do 31 stycznia"
-          },
-          {
-            "label": "tier_3",
-            "price": "119 zł",
-            "deadline": "20270218",
-            "description": "Opłata startowa od 1 lutego do 18 lutego"
+            "description": "W listopadzie pakiety są w wyjątkowo atrakcyjnej cenie."
           }
         ],
         "late_fee": {
-          "price": "do ustalenia w Biurze Zawodów",
-          "deadline": "20270221"
+          "price": null,
+          "deadline": "20270218"
         }
       }
     ],
     "registration_close_date": "20270218",
     "registration_url": "https://liveds.datasport.pl/zawody_files/zawody12872.html",
-    "race_info_url": "https://www.biegchomiczowki.eu",
+    "race_info_url": "https://www.biegchomiczowki.eu/index.php/regulamin-biegu/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "The Chomiczówka Run is a historic road race held in Bielany, Warsaw, with a tradition dating back to 1984. The main race is 15 km long and attracts runners from across Poland, bringing together the local community and running enthusiasts. The event also features a shorter 5 km race for the Bielany Cup. The organizers provide electronic registration and set a participant limit to ensure runners’ comfort and safety.",
+    "description": "The Bieg Chomiczówki is a historic running event held in Bielany, Warsaw, with traditions dating back to 1984. The main race is approximately 15 km long and attracts runners from across Poland, bringing together the local community and running enthusiasts. The event is a great opportunity to start the year actively and in a sporting spirit, with a rich history and a welcoming atmosphere.",
     "course_highlights": [
-      "15 km main race route in Bielany",
-      "Historic connection to the first race in 1984",
-      "Additional 5 km race for the Bielany Cup"
+      "A route of approximately 15 km through the Bielany district",
+      "Historic start and finish locations tied to a running tradition dating back to 1984",
+      "Picturesque urban areas of Warsaw with Bielany’s distinctive atmosphere"
     ],
-    "additional": "Participant limit: 3,000 (1,800 for the 15 km race, 1,200 for the 5 km race). Registration is exclusively online through the datasport.pl system. Participants can pay extra for clothing and a running shirt when registering. Registration will close if the participant limit is reached. Registration at the Race Office is available from February 19–21, 2027, at different prices. The official website states that registration for the 2027 edition opens on November 9. Available materials indicate that the 44th Chomiczówka Run will take place in 2027, so the stated edition and date may be inconsistent.",
+    "additional": "The participant limit is 3,000: 1,800 places for the 15 km race and 1,200 places for the 5 km race. Registration is available exclusively online via the datasport.pl system. The entry fee must be paid within 48 hours of registration; otherwise, the place may be released. It may be possible to register at the Race Office a few days before the race if the participant limit has not been reached. During registration, participants can purchase clothing and running shirts from the Bieg Chomiczówki collection.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.55,
+    "max_description_relevance": 0.76,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86800&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91421&bieganie"
@@ -23107,11 +23238,15 @@
       [
         "20270220",
         "20270220"
+      ],
+      [
+        "20270227",
+        "20270227"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Esport Arena, Espoo, Finland",
     "latitude": 60.2054911,
@@ -23121,43 +23256,44 @@
     "nearby_cities": [
       "Helsinki"
     ],
-    "distances": "[\"160.934\", \"100\"]",
+    "distances": "[\"100\"]",
     "distance_m": [
-      160934,
       100000
     ],
     "distance_keywords": [
-      "100 miles",
       "50 miles"
     ],
-    "distance_verbose": "100 miles, 100 km",
+    "distance_verbose": "100 km",
     "organizer": "Endurance Ultrarunning Team Finland",
     "contact": null,
     "website": "https://endurance.fi/e24/",
     "fb_link": "https://www.facebook.com/endurance24h.espoo/?locale=fi_FI",
     "ig_link": null,
-    "price_range": "160–180 EUR",
+    "price_range": "160–180 €",
     "price_tiers": [
       {
-        "distance": "24h",
+        "distance": "Endurance 24h",
         "tiers": [
           {
             "label": "tier_1",
             "price": "160 EUR",
             "deadline": "20261130",
-            "description": "OSALLISTUMISMAKSU: 160 EUR 30.11.2026 saakka"
+            "description": "160 EUR 30.11.2026 saakka"
           },
           {
             "label": "tier_2",
             "price": "180 EUR",
-            "deadline": "20270219",
+            "deadline": "20270226",
             "description": "1.12.2026 alkaen 180 EUR"
           }
         ],
-        "late_fee": null
+        "late_fee": {
+          "price": "180 EUR",
+          "deadline": "20270227"
+        }
       }
     ],
-    "registration_close_date": "20270220",
+    "registration_close_date": "20270227",
     "registration_url": "https://endurance.fi/kilpailut/ilmo/e24h-2027/",
     "race_info_url": "https://endurance.fi/e24/#perustiedot",
     "presumed_organizer_email": "e24-2027@endurance.fi",
@@ -23165,19 +23301,19 @@
       "e24-2027@endurance.fi",
       "e24-2025@endurance.fi"
     ],
-    "description": "Endurance 24h is a 24-hour running race held at Esport Arena in Espoo. The race takes place on an indoor track measuring 390.04 metres with a mondo surface. There are men’s and women’s categories, and the number of participants is limited to 160 runners in order of registration. The race is applying for IAU Silver Label status for the 24-hour race and IAU Bronze Label status for the intermediate results. Participants may transfer their entry or defer their participation to the following year under certain conditions.",
+    "description": "Endurance 24h is a 24-hour running competition held at Esport Arena in Espoo. The race takes place on an indoor track measuring 390.04 metres, with a mondo surface. There are men’s and women’s categories, and the number of participants is limited to 160 runners on a first-come, first-served basis. The event is seeking IAU Silver Label status, and intermediate results are recorded at several distances, including 12 hours, 100 km and 100 miles. Participation may be deferred to the following year with a medical certificate, and entry fees are non-refundable.",
     "course_highlights": [
-      "390.04-metre indoor track with a mondo surface",
-      "The race is held at Esport Arena in Espoo",
-      "Applying for IAU Silver Label status for the 24-hour race and Bronze Label status for the intermediate results"
+      "390.04-metre indoor lap on a mondo surface",
+      "Indoor race at Esport Arena in Espoo",
+      "IAU Silver Label competition in the 24-hour run"
     ],
-    "additional": "Late registration is possible on race day until 11:00, provided the race is not sold out. Transferring an entry to another runner costs 10 euros. The race director is Arto Ahola, tel. +358 40 513 2051. The official sports drink is Tailwind Endurance Fuel. The race accepts a maximum of 160 participants. The 24-hour race has IAU Silver Label recognition.",
+    "additional": "Late registration is possible until 11 a.m. on race day, provided the event is not sold out. Transferring an entry to another runner costs €10. The race director is Arto Ahola, tel. +358 40 513 2051. The official sports drink is Tailwind Endurance Fuel. Intermediate results are tracked at 12 hours, 100 km and 100 miles. An entry may be transferred to another runner for a €10 fee; participation may be deferred to the following year once with a medical certificate.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.93,
+    "max_description_relevance": 0.97,
     "sources": [
       "https://endurance.fi/e24"
     ],
@@ -26871,9 +27007,10 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/noskrien-ziemu-5-posms-2027",
       "https://tautassports.lv/pasakumi/noskrien-ziemu-liepaja/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/noskrien-ziemu-5-posms-talsi/"
     ],
     "consolidated_ids": [
@@ -31836,8 +31973,9 @@
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/skrejiens-rozentalam-pa-pedam-2027",
       "https://www.sportlat.lv/files/1198/Rozentalam_pa_pedam_2026_NOLIKUMS_apstiprinats.docx",
-      "https://www.noskrien.lv/kalendars/apvidus-skrejiens-rozentalam-pa-pedam-2026/",
-      "https://www.sportlat.lv"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.sportlat.lv",
+      "https://www.noskrien.lv/kalendars/apvidus-skrejiens-rozentalam-pa-pedam-2026/"
     ],
     "consolidated_ids": [
       "7aebc821-524e-4840-8b3b-c267f5804b54"
@@ -33251,6 +33389,7 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/taurupes-stacijas-xvi-maratons/"
     ],
     "consolidated_ids": [
@@ -33666,6 +33805,7 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/latvijas-valsts-mezu-stirnu-buks-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/lvm-tervetes-stirnu-buks-2026-1/"
     ],
     "consolidated_ids": [
@@ -42768,10 +42908,11 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://runbaltic.com/lv/races/backyard-ultra-lusa-pedas-2027",
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://tautassports.lv/pasakumi/byu-lusa-pedas-2027/",
-      "https://runbaltic.com/lv/races/backyard-ultra-lusa-pedas-2027",
       "https://tautassports.lv/pasakumi/byu-lusa-pedas-2026/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/backyard-ultra-lusa-pedas-2026/"
     ],
     "consolidated_ids": [
@@ -42867,8 +43008,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://www.sportlat.lv/files/1197/NOLIKUMS_Aizkraukles_Pusmaratons_2026.pdf",
-      "https://www.noskrien.lv/kalendars/aizkraukles-novada-12-pusmaratons-2026/",
-      "https://runbaltic.com/lv/races/aizkraukles-novada-12-pusmaratons-2026"
+      "https://runbaltic.com/lv/races/aizkraukles-novada-12-pusmaratons-2026",
+      "https://www.noskrien.lv/kalendars/aizkraukles-novada-12-pusmaratons-2026/"
     ],
     "consolidated_ids": [
       "ce3b518a-cfa2-4443-b1af-f280ae2a1053"
@@ -44427,8 +44568,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": "10:00",
     "location": "Kaarinan keskusurheilukenttä, Kaarina, Finland",
     "latitude": 60.40950639999999,
@@ -44460,19 +44601,19 @@
     "race_info_url": "https://run.karu.run/fi-yleisinfo.html",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Kaarina Rata Ultra (KARU) is an annual track-running event offering six- and 12-hour ultramarathons, as well as a track marathon and half marathon. The competition takes place on the running track at Kaarina Central Sports Field, providing a challenging but well-organised setting for both elite runners and recreational athletes. The event has been awarded IAU Bronze Label status and is known for its high standard and several Finnish records. The running direction is changed halfway through, and the tracks are precisely measured, ensuring the competition is reliable.",
+    "description": "Kaarina Rata Ultra is an annual track-running event featuring six- and 12-hour races, as well as a track marathon and track half marathon. The event offers a challenging and varied running experience at Kaarina Central Sports Field, where the running direction changes halfway through the race. The competition has been awarded IAU Bronze Label status and attracts both elite runners and enthusiastic recreational runners. The event also has a strong community spirit and a long tradition that includes several Finnish records.",
     "course_highlights": [
-      "The running direction changes at the three-hour mark",
-      "Elite runners use lanes 1 and 2; other runners use lanes 5 and 6",
-      "Lane 1 is 400 m long; lane 5 is 430.66 m long"
+      "The running direction changes after 3 hours",
+      "The course consists of 400 m and 430.66 m laps",
+      "The competition takes place at Kaarina Central Sports Field"
     ],
-    "additional": "The number of participants is limited to 120. The marathon and six-hour race start at 10:00, and the half marathon starts at 13:00. The time limit is approximately six hours for the marathon and three hours for the half marathon. Late registration is available at the race office up to one hour before the start, but payment must be made in exact cash. Race numbers must be collected at least 30 minutes before the start. Entry fees are non-refundable, but in cases of illness, participation may be deferred to the following year with a medical certificate. Payment can also be made using sports and culture vouchers (Smartum, Edenred, ePassi). There is ample parking, and signage is provided.",
+    "additional": "The number of participants is limited to 120. The running direction changes after 3 hours. Elite runners use lanes 1 and 2; other runners use lanes 5 and 6. The race office is open on race day from 08:30 to 09:30 and 11:30 to 12:30. Race numbers must be collected at least 30 minutes before the start of your distance. Late registration is possible up to one hour before the start, but payment is accepted in cash only. Entry fees are non-refundable, but in the event of illness, participation may be transferred to the following year with a medical certificate. There is ample parking, and directions are provided. Payment can also be made with sports and culture vouchers.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.79,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://run.karu.run/"
     ],
@@ -46494,8 +46635,9 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/pilsettakas-stirnu-buks-2027",
-      "https://www.noskrien.lv/kalendars/tukuma-pilsettakas-stirnu-buks-2026-2/",
-      "https://Stirnubuks.lv"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://Stirnubuks.lv",
+      "https://www.noskrien.lv/kalendars/tukuma-pilsettakas-stirnu-buks-2026-2/"
     ],
     "consolidated_ids": [
       "014c4492-3fec-4f45-8f4e-98dbf2081f94"
@@ -53916,13 +54058,14 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://tautassports.lv/pasakumi/skrejiensolojums-riga-valmiera-107-km-2027/",
+      "https://www.sportlat.lv/kalendars/viss",
       "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2027/",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.sportlat.lv/kalendars/viss",
-      "https://tautassports.lv/pasakumi/skrejiensolojums-riga-valmiera-107-km-2027/",
       "https://runbaltic.com/lv/races/skrejiensolojums-riga-valmiera-2027",
-      "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2026/",
-      "https://www.sportlat.lv"
+      "https://www.sportlat.lv/kalendars/viss",
+      "https://www.sportlat.lv",
+      "https://www.noskrien.lv/kalendars/skrejiensolojums-riga-valmiera-2026/"
     ],
     "consolidated_ids": [
       "9e9ced22-4a85-49d1-8058-16c004ae35da"
@@ -54963,8 +55106,9 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.sportlat.lv/files/1215/RitmaSkrejiens_nolikums_2026.docx",
-      "https://www.noskrien.lv/kalendars/ritma-skrejiens-2026/",
-      "https://runbaltic.com/lv/races/ritma-skrejiens-2026"
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://runbaltic.com/lv/races/ritma-skrejiens-2026",
+      "https://www.noskrien.lv/kalendars/ritma-skrejiens-2026/"
     ],
     "consolidated_ids": [
       "586db531-c2d6-47d7-9462-dbadb487e80f"
@@ -56729,8 +56873,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.noskrien.lv/kalendars/jurmalas-skriesanas-svetki-2026/",
-      "https://baltijasmaratoni.lv/"
+      "https://baltijasmaratoni.lv/",
+      "https://www.noskrien.lv/kalendars/jurmalas-skriesanas-svetki-2026/"
     ],
     "consolidated_ids": [
       "1db3ab2c-7196-4b32-af0a-7e59c2d24c02"
@@ -57772,8 +57916,8 @@
   {
     "domain_name": "bodom_team",
     "name": "Bodom Team",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "trail",
+    "type_local": "Polku",
     "race_dates": [
       [
         "20260508",
@@ -57787,10 +57931,10 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Espoo, Finland",
-    "latitude": 60.2054911,
-    "longitude": 24.6559001,
+    "start_time": "14:00",
+    "location": "Pirttimäen ulkoilualue, Espoo, Finland",
+    "latitude": 60.26962989999999,
+    "longitude": 24.6510302,
     "county": "Uusimaa",
     "nearest_city": "Helsinki",
     "nearby_cities": [
@@ -57807,25 +57951,31 @@
     "distance_verbose": "10 km, 7 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://bodomtrail.com/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://bodomtrail.com/ilmoittautuminen/",
+    "race_info_url": "https://bodomtrail.com/tervetuloa-mukaan/",
+    "presumed_organizer_email": "bodomtrail@gmail.com",
+    "website_emails_found": [
+      "bodomtrail@gmail.com"
+    ],
+    "description": "Bodom Trail is a spring trail-running event in the Pirttimäki outdoor recreation area in Espoo, offering a variety of distances for individuals and teams. The event includes a 10 km team race and individual trail runs of 6 km, 12 km and 21 km (half marathon). The routes cross varied terrain, with both easy-to-run outdoor paths and technical trail sections. The event is known for its great atmosphere, careful organisation and the opportunity to explore the route on group runs before race day.",
+    "course_highlights": [
+      "Varied trail sections along pond shores and over rocky, pine-covered terrain",
+      "Approximately 230 metres of elevation gain on the 10 km route and 500 metres on the 21 km route",
+      "The 21 km route consists of two laps, the second of which is more technically challenging and more remote"
+    ],
+    "additional": "The Bodom Team 10 km starts on Friday at 14:00, with teams starting one minute apart. A race bus transports participants from various parts of the Helsinki metropolitan area. The entry fee includes timing, results services, water stations, first aid, a race video and race photos. Young people may take part in different distances, subject to age limits. Late registration is available at the race venue at the highest price tier.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "http://bodomtrail.com/"
     ],
@@ -57840,7 +57990,6 @@
     "origin_country": "fi",
     "nearby_foreign_cities": [
       "Šiauliai",
-      "Panevėžys",
       "Mažeikiai",
       "Telšiai"
     ]
@@ -59066,7 +59215,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "09:00",
     "location": "Olsztyn, Warmian-Masurian Voivodeship, Poland",
     "latitude": 53.778422,
     "longitude": 20.4801193,
@@ -59095,19 +59244,19 @@
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://superczas.pl/warneland2025#main",
-    "race_info_url": "https://warneland.pl/vii-ultramaraton-warminski-warneland-2025-olsztyn-10-05-2025/",
+    "registration_url": null,
+    "race_info_url": "https://warneland.pl/",
     "presumed_organizer_email": "biuro@warneland.pl",
     "website_emails_found": [
       "biuro@warneland.pl"
     ],
-    "description": "The Warmiński Warneland Ultramarathon is a unique running event held on scenic routes in Warmia, near Olsztyn. The event offers a range of distances, including an ultramarathon and shorter races, giving participants a chance to test their endurance and enjoy the beauty of nature. It is an event for trail-running enthusiasts looking for an unforgettable adventure and a chance to recharge. The organizers provide professional event management and updated routes available to download in GPX format.",
+    "description": "The Warmian Ultramarathon Warneland is a unique running event held on scenic routes in Warmia, near Olsztyn. The event offers three varied distances, allowing participants to experience the beauty of nature as they run along soft, natural trails through autumn forests. It is not only a competition, but also a chance to recharge your batteries and take part in a true ritual surrounded by Warmia’s landscapes. The ultramarathon is part of the Warmia Trail Running Grand Prix, underlining its sporting character and prestige.",
     "course_highlights": [
-      "Scenic routes in Warmia, near Olsztyn",
-      "Updated GPX tracks for the W25+ and W50+ routes available to download",
-      "A range of distances, including an ultramarathon and shorter races"
+      "The routes follow natural, soft forest trails",
+      "Views of golden-red tunnels of autumn leaves",
+      "Scenic areas of Warmia and its lakes"
     ],
-    "additional": "The Warmiński Warneland Ultramarathon also includes races for the youngest participants (Ultra Warmiaczek) and the W10+ race (approx. 12.3 km), which hosts the Olsztyn Open Trail Running Championships. Routes are available in GPX format for download and self-extraction. The organizers invite participants to two editions each year—a spring and an autumn edition—which together make up the Grand Prix of Warmia, offering double the satisfaction and medals.",
+    "additional": "The race office is open from 07:00 to 10:00. The W25+ and W50+ distances start at 09:00. Checkpoint No. 2 (27 km) closes at 13:00. The finish line officially closes and the races end at 17:00. Updated GPX tracks for the W25+ and W50+ routes are available to download on the website in the Downloads section.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -61051,10 +61200,10 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Espoo, Finland",
-    "latitude": 60.2054911,
-    "longitude": 24.6559001,
+    "start_time": "10:00",
+    "location": "Pirttimäki, Espoo, Finland",
+    "latitude": 60.26962989999999,
+    "longitude": 24.6510302,
     "county": "Uusimaa",
     "nearest_city": "Helsinki",
     "nearby_cities": [
@@ -61073,25 +61222,31 @@
     "distance_verbose": "Puolimaraton, 12 km, 6 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://bodomtrail.com/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/bodomtrail/?hl=fi",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://bodomtrail.com/ilmoittautuminen/",
+    "race_info_url": "https://bodomtrail.com/tervetuloa-mukaan/",
+    "presumed_organizer_email": "bodomtrail@gmail.com",
+    "website_emails_found": [
+      "bodomtrail@gmail.com"
+    ],
+    "description": "Bodom Trail is a spring trail-running event set amid the beautiful forest scenery of Pirttimäki, Espoo. It offers races over several distances: a 6 km race for children and young people, a 12 km race, a 21 km half marathon, and a 10 km team race. The routes traverse varied terrain, with both easy trails and technical sections, and the event is known for its great atmosphere and careful organization. The race is part of the Trail Tour Finland series and attracts trail-running enthusiasts and professionals every year. Participants have access to aid stations, first-aid services, and prizes in the different categories.",
+    "course_highlights": [
+      "Varied trail sections along pond shores and over pine-covered rocky outcrops",
+      "The 21 km route consists of two laps, with around 500 m of total elevation gain",
+      "Technical, wilderness-like sections where your shoes may get wet"
+    ],
+    "additional": "The start takes place in waves of around 30 runners, one minute apart. A race bus transports participants from various parts of the Helsinki metropolitan area to the venue. The entry fee includes timing, results services, a race video and race photos, aid stations, and first aid. Late registration is available at the venue. Minimum age requirements apply to young participants in the different distances. The race centre has washing facilities and a café, as well as the restaurant and saunas at Backby Manor. The race venue is in Pirttimäki, Espoo.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "http://bodomtrail.com/"
     ],
@@ -61106,7 +61261,6 @@
     "origin_country": "fi",
     "nearby_foreign_cities": [
       "Šiauliai",
-      "Panevėžys",
       "Mažeikiai",
       "Telšiai"
     ]
@@ -63656,9 +63810,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/rimi-rigas-maratons-2027/",
       "https://www.sportlat.lv/kalendars/viss",
+      "https://www.noskrien.lv/kalendars/rimi-rigas-maratons-2027/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/rrm-2026-dpd-judze-un-bernu-diena/",
       "https://www.noskrien.lv/kalendars/rimi-rigas-maratons-2026/"
     ],
@@ -68723,6 +68877,7 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/mezonigas-vidzemes-stirnu-buks-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/mezonigas-vidzemes-stirnu-buks-2026-3/"
     ],
     "consolidated_ids": [
@@ -73249,6 +73404,7 @@
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/24h-roja-ultramarathon-festival-2027",
       "https://www.sportlat.lv/sacensibas/1849/24h-roja-ultramarathon-festival-2026-latvijas-cempionats-24h-skrejiena/nolikums",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/24h-roja-ultramarathon-festival-2026/"
     ],
     "consolidated_ids": [
@@ -81669,9 +81825,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/11-vilkacu-maratons-2027/",
       "https://runbaltic.com/lv/races/vilkacu-maratons-2027",
-      "https://www.noskrien.lv/kalendars/10-vilkacu-maratons-2026/"
+      "https://ultrataka.lv/pasakumu-kalendars/"
     ],
     "consolidated_ids": [
       "23beea28-93c9-43f8-b837-033005d08564"
@@ -83490,9 +83646,9 @@
     "sources": [
       "https://www.sportlat.lv/sacensibas/1915/ventspils-pusmaratons-2027/nolikums",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/ventspils-half-marathon-2027",
       "https://www.sportlat.lv/sacensibas/1845/ventspils-pusmaratons-2026/nolikums",
-      "https://www.noskrien.lv/kalendars/15-ventspils-pusmaratons-2026/"
+      "https://runbaltic.com/lv/races/ventspils-half-marathon-2027",
+      "https://www.noskrien.lv/kalendars/16-ventspils-pusmaratons-2027/"
     ],
     "consolidated_ids": [
       "e5c4d134-72fb-4dc1-b137-cdd32b9513ab"
@@ -86029,10 +86185,11 @@
     "max_description_relevance": 0.72,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/13-ezerkaulini-salaspils-pilsetas-pusmaratons-2027",
-      "https://tautassports.lv/pasakumi/13-ezerkaulini-salaspils-pilsetas-pusmaratons-2027/",
       "https://www.sportlat.lv/files/1193/Nolikums_12.Salaspils_pusmaratons_2026.docx",
+      "https://tautassports.lv/pasakumi/13-ezerkaulini-salaspils-pilsetas-pusmaratons-2027/",
+      "https://runbaltic.com/lv/races/13-ezerkaulini-salaspils-pilsetas-pusmaratons-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://www.noskrien.lv/kalendars/13-ezerkaulinu-salaspils-pilsetas-pusmaratons-2027/",
       "https://www.noskrien.lv/kalendars/12-ezerkaulinu-salaspils-pusmaratons-2026/"
     ],
     "consolidated_ids": [
@@ -91542,8 +91699,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": "09:00",
-    "location": "Birštonas, Birštono savivaldybė, Kauno apskritis, Lietuva",
+    "start_time": null,
+    "location": "Birštonas, Lietuva",
     "latitude": 54.6055989,
     "longitude": 24.0281746,
     "county": "Kauno apskritis",
@@ -91551,46 +91708,46 @@
     "nearby_cities": [
       "Alytus"
     ],
-    "distances": "[\"21.1\", \"10\"]",
+    "distances": "[\"21.1\", \"10\", \"5.2\", \"5\"]",
     "distance_m": [
       21100,
-      10000
+      10000,
+      5200,
+      5000
     ],
     "distance_keywords": [
       "Pusmaratonas",
-      "10 km"
+      "10 km",
+      "5 km"
     ],
-    "distance_verbose": "Pusmaratonas, 10 km",
-    "organizer": "Všį Birštono sportas, Asociacija Sporto renginiai",
+    "distance_verbose": "Pusmaratonas, 10 km, 5.2 km, 5 km",
+    "organizer": "VšĮ Birštono sportas ir Asociacija Sporto renginiai",
     "contact": null,
-    "website": "https://birstonasrun.lt/taisykles",
-    "fb_link": "https://www.facebook.com/AudrysV/?locale=lt_LT",
+    "website": "https://www.birstonasrun.lt/",
+    "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": "20270626",
-    "registration_url": "https://birstonasrun.lt/registracija",
-    "race_info_url": "https://birstonasrun.lt/site/page/view/1",
-    "presumed_organizer_email": "info@sportasbirstone.lt",
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.birstonasrun.lt/",
+    "presumed_organizer_email": null,
     "website_emails_found": [
-      "info@kaunasmarathon.lt",
-      "info@sportorenginiai.lt",
-      "info@sportasbirstone.lt",
       "logo@2x.png"
     ],
-    "description": "Birštono pusmaratonis Powered by Vytautas yra kasmetinis bėgimo renginys, vykstantis Birštone, kuris suburia tiek pradedančiuosius, tiek patyrusius bėgikus. Renginio metu siūlomos kelios distancijos, įskaitant pusmaratonį, 10 km bėgimą, kuris tuo pačiu yra Lietuvos 10 km bėgimo plentu čempionatas, 5,2 km bėgimą ir estafetę. Trasa veda per miesto centrą, Nemuno pakrantę, promenadą ir Žvėrinčiaus miško prieigas, suteikdama galimybę mėgautis tiek rezultatu, tiek aplinka. Birštonas garsėja savo sveikatingumo tradicijomis, o šis renginys skatina aktyvų gyvenimo būdą ir bendruomeniškumą.",
+    "description": "Birštono pusmaratonis yra tradicinis bėgimo renginys Birštone, kuriame vyksta Lietuvos 10 km bėgimo plentu čempionatas. Renginys pritraukia tiek profesionalius sportininkus, tiek mėgėjus, siūlydamas puikias sąlygas varžytis ir mėgautis bėgimu gražioje aplinkoje. Dalyviai gali tikėtis gerai organizuotos trasos ir draugiškos atmosferos.",
     "course_highlights": [
-      "Trasa veda per miesto centrą, Nemuno pakrantę ir promenadą",
-      "Pusmaratonis sudarytas iš 4 ratų, 10 km bėgimas - 2 ratai",
-      "Estafetė 2x5 km mišri (1 vyras + 1 moteris)"
+      "10 km asfaltuota plento trasa",
+      "Varžybos Lietuvos 10 km bėgimo plentu čempionato rėmuose",
+      "Graži Birštono miesto aplinka"
     ],
-    "additional": "Startai: 10 km bėgimas 9:00 Basanavičiaus aikštėje, pusmaratonis 9:05 Jaunimo g., 5,2 km bėgimas 9:05, estafetė 2x5 km 9:05, vaikų 800 m bėgimas 12:15. Dalyvių avalynė turi atitikti LLAF rekomendacijas. 10 km čempionato dalyviams būtinas galiojantis antidopingo mokymų sertifikatas. Registracija tik savo vardu, numerio perdavimas draudžiamas. Dalyviai sutinka, kad renginio metu darytos nuotraukos ir filmuotė gali būti naudojamos rinkodarai be atskiro sutikimo. Renginio dalyviams siūloma registruotis užpildant formą, o renginio taisyklėse nurodyta, kad 10 km bėgime būtina turėti doping kontrolės pažymėjimą. Renginyje taip pat vyksta apdovanojimai ir rėmėjų dovanos.",
+    "additional": "Galimybė prisiregistruoti naujienlaiškiui, kad gauti informaciją apie registracijos pradžią ir naujienas. Lietuvos 10 km bėgimo plentu čempionato įskaitoje dalyvaujantiems bėgikams reikalingas galiojantis antidopingo mokymų sertifikatas.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.lbma.lt/index.php?kalendorius&year=2027",
       "https://www.lbma.lt/files/races/2026-06-20_Birstono_pusmaratonis._Lietuvos_10_km_begimo_plentu_cempionatas._nuostatai.pdf"
@@ -91996,8 +92153,8 @@
     "max_description_relevance": 0.62,
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
-      "https://www.noskrien.lv/kalendars/45-skrejiens-apkart-vaidavas-ezeram-2026/",
-      "https://runbaltic.com/lv/races/45-skrejiens-apkart-vaidavas-ezeram-2026"
+      "https://runbaltic.com/lv/races/45-skrejiens-apkart-vaidavas-ezeram-2026",
+      "https://www.noskrien.lv/kalendars/45-skrejiens-apkart-vaidavas-ezeram-2026/"
     ],
     "consolidated_ids": [
       "95070e0b-ea3f-4c76-b5ec-abbdac7551f4"
@@ -94505,6 +94662,7 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/saulgriezu-nakts-stirnu-buks-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/saulgriezu-nakts-stirnu-buks-2026-4/"
     ],
     "consolidated_ids": [
@@ -96830,27 +96988,47 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Fundacja Dorastaj z Nami",
     "contact": null,
-    "website": null,
+    "website": "https://dorastajznami.org/wydarzenia/v-charytatywny-bieg-dla-dzieci-bohaterow/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "minimum 40 zł",
+    "price_tiers": [
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "40 zł",
+            "deadline": null,
+            "description": "Minimum 40 zł, a w przypadku chęci otrzymania prezentu dla dziecka - minimum 50 zł"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://dorastajznami.org/wydarzenia/v-charytatywny-bieg-dla-dzieci-bohaterow/",
+    "race_info_url": "https://dorastajznami.org/wydarzenia/v-charytatywny-bieg-dla-dzieci-bohaterow/",
+    "presumed_organizer_email": "biuro@dorastajznami.org",
+    "website_emails_found": [
+      "w@dorastajznami.org",
+      "biuro@dorastajznami.org"
+    ],
+    "description": "The 5th Charity Run for Children of Heroes is a special initiative by the Dorastaj z Nami Foundation, which supports the children of public service and medical workers who were killed or injured while on duty. Participants choose a 5 km route and can run it at any time between June 1 and 23, submitting a screenshot from their running app. The run symbolically brings together Children’s Day and Father’s Day, highlighting remembrance of the heroes and support for their children. This charitable event combines sport with help and remembrance.",
+    "course_highlights": [
+      "A 5 km route chosen by the participant",
+      "The run can take place at any time from June 1 to 23",
+      "Participation is possible from anywhere in Poland"
+    ],
+    "additional": "After registering, participants receive a link to pay the entry fee and a link to submit a screenshot from the app used to track the run. The event is virtual, allowing participation from any place and at any time during the designated period. After the run, participants should send the organizers a screenshot from the app used to record their activity.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88999&bieganie"
     ],
@@ -97203,27 +97381,31 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Mieszana odległość",
-    "organizer": null,
+    "organizer": "KOS BnO Szczecin",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://bno.szczecin.pl/szczecinska-dobranocka-27/",
+    "fb_link": "https://www.facebook.com/bno.szczecin/?locale=pl_PL",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://bno.szczecin.pl/bukowa-cup-viii-parametry-tras-courses-details/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Szczecińska Dobranocka is a series of orienteering races organized by the BnO Szczecin Orienteering Club. The races take place in various areas around Szczecin, giving participants the chance to test their navigation and running skills. The event is open to competitors of all ability levels, from beginners to experienced runners. Its tradition and varied courses make it a popular event in the orienteering community.",
+    "course_highlights": [
+      "Varied woodland areas around Szczecin",
+      "Courses suited to different ability levels",
+      "The option to confirm control points using pictograms"
+    ],
+    "additional": "The event is organized by the BnO Szczecin Orienteering Club. It is a recurring event and forms part of the wider regional orienteering calendar. Maps for the races and instructions for beginners on confirming control points are available on the website.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89308&bieganie"
     ],
@@ -97728,27 +97910,33 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Botaniczna Piątka",
     "contact": null,
-    "website": null,
+    "website": "https://botaniczna5.pl/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://botaniczna5.pl/",
+    "presumed_organizer_email": "botanicznapiatka@gmail.com",
+    "website_emails_found": [
+      "botanicznapiatka@gmail.com"
+    ],
+    "description": "Botaniczna Piątka is a series of cross-country races organized since 2014, combining a passion for running with the beauty of natural and scenic locations. The event promotes outdoor physical activity, especially in picturesque gardens and green spaces. The night edition in Kielce is a unique opportunity to compete and celebrate sport together in unusual conditions. The organizers focus on a welcoming atmosphere and promoting running among people of different ages and ability levels.",
+    "course_highlights": [
+      "A cross-country course through picturesque green spaces",
+      "A run in a unique nighttime atmosphere",
+      "A scenic, welcoming setting ideal for recreation"
+    ],
+    "additional": "The organizer is a group of running enthusiasts with experience dating back to 2014, specializing in cross-country races. Events take place at various locations, often in botanical gardens and green spaces. In summer 2026, Botaniczna Piątka celebrated its 10th anniversary. The organizer encourages people to subscribe to the newsletter to stay up to date with race news.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.64,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88954&bieganie"
     ],
@@ -106245,11 +106433,11 @@
     "is_series": false,
     "max_description_relevance": 0.77,
     "sources": [
-      "https://tautassports.lv/pasakumi/liepajas-pusmaratons-2026-juras-svetki/",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/14-liepajas-pusmaratons-2026/",
+      "https://distantrace.com/lv/sacensibas/liepajas-pusmaratons-2026/rezultati/?distance_id=675",
       "https://runbaltic.com/lv/races/liepajas-juras-svetku-pusmaratons-2026",
-      "https://distantrace.com/lv/sacensibas/liepajas-pusmaratons-2026/rezultati/?distance_id=675"
+      "https://tautassports.lv/pasakumi/liepajas-pusmaratons-2026-juras-svetki/",
+      "https://www.noskrien.lv/kalendars/14-liepajas-pusmaratons-2026/"
     ],
     "consolidated_ids": [
       "557d275a-c2bf-4ea3-a472-396d67753282"
@@ -108000,10 +108188,10 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.noskrien.lv/kalendars/ozolkalna-vk-2027/",
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/ozolkalns-vertical-kilometer-2027",
       "https://tautassports.lv/pasakumi/ozolkalna-vk-2027/",
+      "https://www.noskrien.lv/kalendars/ozolkalna-vk-2027/",
+      "https://runbaltic.com/lv/races/ozolkalns-vertical-kilometer-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/ozolkalna-vk-2026/"
     ],
     "consolidated_ids": [
@@ -108578,10 +108766,11 @@
     "is_series": false,
     "max_description_relevance": 0.67,
     "sources": [
+      "https://runbaltic.com/lv/races/12-skrejiens-piltene-2027",
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/12-skrejiens-piltene-2027",
       "https://www.sportlat.lv/files/1232/Nolikums_Piltene_2026.docx",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/skrejiens-piltene-2026-latvijas-cempionats-10-km-soseja/"
     ],
     "consolidated_ids": [
@@ -116616,6 +116805,10 @@
       [
         "20270806",
         "20270806"
+      ],
+      [
+        "20270807",
+        "20270807"
       ]
     ],
     "upcoming_dates": [],
@@ -116745,9 +116938,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/gauja-trail-by-utmb-2027/",
-      "https://runbaltic.com/lv/races/gauja-trail-by-utmb-2027"
+      "https://runbaltic.com/lv/races/gauja-trail-by-utmb-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/"
     ],
     "consolidated_ids": [
       "64435d3a-f4ae-42f8-ae01-1aa4ce7a0499"
@@ -120060,14 +120253,14 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/kuldigas-22-pusmaratons-2027",
-      "https://tautassports.lv/pasakumi/kuldigas-22-pusmaratons-2027/",
       "https://www.sportlat.lv/kalendars/viss",
-      "https://www.noskrien.lv/kalendars/22-kuldigas-pusmaratons-2027/",
+      "https://runbaltic.com/lv/races/kuldigas-22-pusmaratons-2027",
       "https://www.sportlat.lv/sacensibas/1842/kuldigas-21-pusmaratons/nolikums",
-      "https://www.noskrien.lv/kalendars/21-kuldigas-pusmaratons-2026/",
-      "https://runbaltic.com/lv/races/kuldigas-21-pusmaratons-2026"
+      "https://www.noskrien.lv/kalendars/22-kuldigas-pusmaratons-2027/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://runbaltic.com/lv/races/kuldigas-21-pusmaratons-2026",
+      "https://tautassports.lv/pasakumi/kuldigas-22-pusmaratons-2027/",
+      "https://www.noskrien.lv/kalendars/21-kuldigas-pusmaratons-2026/"
     ],
     "consolidated_ids": [
       "c8e1471c-eae7-4bdb-915c-a213837bb11f"
@@ -126225,9 +126418,10 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://runbaltic.com/lv/races/taurlandia-2027",
       "https://tautassports.lv/pasakumi/taurlandia-2027-taur-50-21/",
+      "https://runbaltic.com/lv/races/taurlandia-2027",
+      "https://itra.run/Races/RaceDetails/TAURLANDIA.TAUR.50K/2027/127165",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/taurlandia-2026/"
     ],
     "consolidated_ids": [
@@ -133921,8 +134115,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://valmierasskrejiens.lv/pages/valmieras-skrejiens-2026-nolikums",
-      "https://www.noskrien.lv/kalendars/valmieras-skrejiens-2026/",
-      "https://runbaltic.com/lv/races/valmieras-skrejiens-2026"
+      "https://runbaltic.com/lv/races/valmieras-skrejiens-2026",
+      "https://www.noskrien.lv/kalendars/valmieras-skrejiens-2026/"
     ],
     "consolidated_ids": [
       "cda5bd17-4bdb-49f0-9dd9-96178a047092"
@@ -136887,6 +137081,7 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/zilo-kalnu-stirnu-buks-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/zilo-kalnu-stirnu-buks-2/"
     ],
     "consolidated_ids": [
@@ -142647,10 +142842,10 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://ultrataka.lv/pasakumu-kalendars/",
+      "https://tautassports.lv/pasakumi/we-run-riga-2027/",
       "https://www.sportlat.lv/kalendars/viss",
       "https://runbaltic.com/lv/races/we-run-riga-2027",
-      "https://tautassports.lv/pasakumi/we-run-riga-2027/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://werunriga.lv/#sakums",
       "https://www.noskrien.lv/kalendars/we-run-riga-2026/"
     ],
@@ -153526,6 +153721,7 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://tautassports.lv/pasakumi/dubultmaratons-taisnais-2026/",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/dubultmaratons-taisnais-2026/"
     ],
     "consolidated_ids": [
@@ -155919,8 +156115,8 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://docs.google.com/document/d/1CsnSztSIs5nsbovgwgwFCEO55vPGGLtwy2G5H-DJ6Zs/edit?tab=t.0",
-      "https://www.noskrien.lv/kalendars/piebalgas-zelta-skrejienspargajiens-2026/",
-      "https://Sportlat.lv"
+      "https://Sportlat.lv",
+      "https://www.noskrien.lv/kalendars/piebalgas-zelta-skrejienspargajiens-2026/"
     ],
     "consolidated_ids": [
       "c95aeb41-615f-46f2-87af-6c51403f3fab"
@@ -159240,6 +159436,7 @@
     "sources": [
       "https://ultrataka.lv/pasakumu-kalendars/",
       "https://runbaltic.com/lv/races/liela-finala-stirnu-buks-2027",
+      "https://ultrataka.lv/pasakumu-kalendars/",
       "https://www.noskrien.lv/kalendars/priekulu-liela-finala-stirnu-buks-2026-6/"
     ],
     "consolidated_ids": [
@@ -161808,8 +162005,8 @@
     "sources": [
       "https://www.sportlat.lv/kalendars/viss",
       "https://ultrataka.lv/pasakumu-kalendars/",
-      "https://www.noskrien.lv/kalendars/latvijas-cempionats-krosa-2026/",
-      "https://athletics.lv/lv/event/41653/latvijas-cempionats-krosa"
+      "https://athletics.lv/lv/event/41653/latvijas-cempionats-krosa",
+      "https://www.noskrien.lv/kalendars/latvijas-cempionats-krosa-2026/"
     ],
     "consolidated_ids": [
       "fa1e9cf9-7abd-4fdf-9e9a-e0bff4a0b844"
@@ -166666,9 +166863,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Kaunas, Lietuva",
-    "latitude": 54.8985207,
-    "longitude": 23.9035965,
+    "location": "Vytautas Magnus University Botanical Garden, Kaunas, Lietuva",
+    "latitude": 54.8715763,
+    "longitude": 23.9107814,
     "county": "Kauno apskritis",
     "nearest_city": "Kaunas",
     "nearby_cities": [
@@ -166682,27 +166879,33 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "VDU Botanikos sodas",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://botanika.vdu.lt/aktualijos/bekite-musu-sode-kviecia-botanic-five-begimas",
+    "fb_link": "https://www.facebook.com/events/vdu-botanikos-sodas-kaune/botanic-five-kaunas-2026/1083057890785621/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://botanika.vdu.lt/aktualijos/bekite-musu-sode-kviecia-botanic-five-begimas",
+    "presumed_organizer_email": "vitalija.petrauskaite@vdu.lt",
+    "website_emails_found": [
+      "vitalija.petrauskaite@vdu.lt"
+    ],
+    "description": "Bėgimas Botanic Five vyks Vytauto Didžiojo universiteto Botanikos sode Kaune, kviesdamas dalyvius atrasti botanikos sodą bėgimo metu. Tai unikali galimybė pajusti gamtos grožį ir pažinti sodą kitaip, dalyvaujant tarptautinėje iniciatyvoje. Renginys skirtas tiek aktyviems bėgikams, tiek gamtos mylėtojams, norintiems praleisti laiką gamtos apsuptyje.",
+    "course_highlights": [
+      "Bėgimas vyksta Botanikos sodo teritorijoje",
+      "Unikali galimybė pažinti sodą bėgant",
+      "Renginys vyksta gamtos apsuptyje Kaune"
+    ],
+    "additional": "Renginio metu galima mėgautis Botanikos sodo edukacijomis ir parodomis. Vardiniai suoleliai sodą puošia ir yra galima prisidėti prie jų įsigijimo. Botanikos sodas siūlo įvairias edukacines programas ir renginius visiems amžiaus grupėms.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.66,
     "sources": [
       "http://bkmaratonas.fweb.lt/begimai"
     ],
@@ -168640,6 +168843,72 @@
       "Šiauliai",
       "Mažeikiai",
       "Telšiai",
+      "Palanga"
+    ]
+  },
+  {
+    "domain_name": "halloweenlobet_2027",
+    "name": "Halloweenløbet 2027",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20271020",
+        "20271020"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Rønne, Bornholm, Denmark",
+    "latitude": 55.101017,
+    "longitude": 14.708329,
+    "county": "Hovedstaden",
+    "nearest_city": "København",
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Blandet distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20275"
+    ],
+    "consolidated_ids": [
+      "90e342ad-6547-4e5a-9b7d-88a9418c22d3"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "dk",
+    "nearby_foreign_cities": [
+      "Klaipėda",
+      "Mažeikiai",
+      "Telšiai",
+      "Tauragė",
       "Palanga"
     ]
   },
@@ -173182,8 +173451,8 @@
   {
     "domain_name": "puhali_maraton",
     "name": "Pühali maraton",
-    "type": "road",
-    "type_local": "Tänavajooks",
+    "type": "trail",
+    "type_local": "Trailijooks",
     "race_dates": [
       [
         "20261101",
@@ -173197,10 +173466,10 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Pihali, Estonia",
-    "latitude": 59.1335383,
-    "longitude": 24.6009057,
+    "start_time": "10:00",
+    "location": "Pühali Spordimaja, Pihali, Estonia",
+    "latitude": 59.13954620000001,
+    "longitude": 24.5933166,
     "county": "Rapla maakond",
     "nearest_city": "Tallinna",
     "nearby_cities": [
@@ -173214,27 +173483,44 @@
       "Maraton"
     ],
     "distance_verbose": "Maraton",
-    "organizer": null,
+    "organizer": "Pühali Hea Elu Keskus",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://puhali.ee/matkaauto/puhali-maraton/",
+    "fb_link": "https://www.facebook.com/events/s%C3%B5eru-talu-kohila-vald-raplamaa-pihali-rapla-county-estonia/p%C3%BChali-maraton-1-november-2026/2161519508102930/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://puhali.ee/matkaauto/puhali-maraton/",
+    "presumed_organizer_email": "info@puhali.ee",
+    "website_emails_found": [
+      "info@puhali.ee",
+      "pyhali_white@2x.png",
+      "pyhali_white@2x-300x88.png",
+      "pyhali_white@2x-1024x301.png",
+      "pyhali_white@2x-768x226.png",
+      "pyhali_white@2x-1200x353.png",
+      "pyhali_white@2x-780x230.png",
+      "pyhali_white@2x-600x177.png",
+      "pyhali_white@2x-550x162.png",
+      "pyhali_white@2x-370x109.png",
+      "pyhali_white@2x-255x75.png",
+      "pyhali_white@2x-150x44.png"
+    ],
+    "description": "The Pühali Marathon is Estonia’s newest marathon, offering a great opportunity to enjoy beautiful nature and test your endurance. The event takes place at Pühali Sports Centre and is suitable for families, friends, and colleagues. It offers a range of distances so everyone can find a challenge that suits them. Participants can use the sauna and spa area at no extra cost, included in the race ticket price. Accommodation is available before and after the event, offering a convenient place to rest and recover.",
+    "course_highlights": [
+      "A scenic trail through the beautiful Estonian countryside",
+      "Race centre at Pühali Sports Centre and the area in front of it",
+      "Sauna and spa area included in the price for all runners"
+    ],
+    "additional": "Seniors and young people up to 18 years old receive a 30% discount on the entry fee with the discount code Pühali2024. Accommodation is available in various holiday homes and campsites. Accommodation can be booked before and after the marathon. The sauna and spa area will be open to runners free of charge on Saturday evening. Registration takes place on Fienta. At previous events, sauna access has been included in the race ticket price.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.76,
     "sources": [
       "https://marathon100.com/kalender/eesti/yritus/puhali-maraton-2026-42-km"
     ],
@@ -173433,8 +173719,8 @@
   {
     "domain_name": "coop_tartu_jooksuohtud_2026_v_etapp",
     "name": "Coop Tartu jooksuõhtud 2026 V etapp",
-    "type": "other",
-    "type_local": "Muu",
+    "type": "terrain",
+    "type_local": "Maastikujooks",
     "race_dates": [
       [
         "20261102",
@@ -173457,31 +173743,41 @@
     "nearby_cities": [
       "Tartu"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Segadistants",
-    "organizer": null,
+    "distances": "[\"4\", \"1\", \"0.5\"]",
+    "distance_m": [
+      4000,
+      1000,
+      500
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "4 km, 1 km, 0.5 km",
+    "organizer": "Tartu Suusaklubi",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://tartusuusaklubi.ee/jooksuohtud/",
+    "fb_link": "https://www.facebook.com/events/toomem%C3%A4gi/coop-tartu-jooksu%C3%B5htud-v-etapp/3725263587626433/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://tartusuusaklubi.ee/jooksuohtud/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Coop Tartu Running Evenings is the fifth event in a traditional running series, held on Toomemägi Hill in Tartu. It is an enjoyable, athletic evening run suitable for both recreational and experienced runners. The routes follow the beautiful terrain of Toomemägi, offering participants a pleasant running experience in an urban setting. The event is part of the Coop Tartu Running Evenings series, which brings together running enthusiasts of different age groups.",
+    "course_highlights": [
+      "The runs take place on Toomemägi Hill in Tartu",
+      "The routes cross the beautiful terrain of Toomemägi",
+      "An evening run in an urban setting"
+    ],
+    "additional": "No times are recorded and no rankings are compiled for the children’s runs.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.sportos.eu/ee/et/coop-tartu-jooksuohtud-2026-v-etapp/"
     ],
@@ -175278,27 +175574,44 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Mišri distancija",
-    "organizer": null,
+    "organizer": "Rimanto Kaukėno paramos grupė",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://usaibega.kaukenoparama.lt",
+    "fb_link": "https://www.facebook.com/usaibega/videos/ultrarunner-aleksandr-sorokin-kvie%C4%8Dia-%C4%AF-%C5%ABsai-b%C4%97ga-ir-pats-stos-prie-starto-linij/1518814970057716/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "Visos distancijos",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 Eur",
+            "deadline": null,
+            "description": "Registracijos Mokestis 10 Eur. Skiriama Rimanto Kaukėno Paramos Fondui."
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://usaibega.kaukenoparama.lt#content",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Ūsai bėga 2026 yra prasminga visos dienos sporto šventė, vykstanti Vingio parke, Vilniuje, skirta palaikyti vyrų psichologinės ir fizinės sveikatos prevenciją. Renginio metu surinktos lėšos skiriamos Rimanto Kaukėno paramos fondui, kuris padeda su urologinėmis ligomis susiduriantiems žmonėms ir sunkiai sergantiems vaikams. Bėgimas taip pat simbolizuoja vyriškumo ir solidarumo idėją, kviečiant dalyvius palaikyti „no shave november“ judėjimą ir dėvėti ūsus. Renginys siekia atkreipti dėmesį į vyrų sveikatos svarbą ir skatinti rūpintis savo fizine bei emocine gerove.",
+    "course_highlights": [
+      "Bėgimo trasos Vingio parke, Vilniuje",
+      "Distancijos: 5 km, 10 km ir 500 m vaikų bėgimas",
+      "Renginio metu kviečiama dėvėti ūsus kaip vyriškumo simbolį"
+    ],
+    "additional": "Visos lėšos skiriamos Rimanto Kaukėno paramos fondui, kuris padeda sunkiai sergantiems vaikams ir jų šeimoms. Renginio metu renkamos aukos bus panaudotos pažangioms biopsinėms adatoms ir pacientų relaksacijos kambario įrengimui NVC urologijos skyriuje.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.57,
     "sources": [
       "https://www.lbma.lt/files/races/2026-11-08_Begimo_varzybos_Usai_bega_2026_nuostatai.pdf"
     ],
@@ -176869,130 +177182,6 @@
       "Marijampolė",
       "Tauragė",
       "Palanga"
-    ]
-  },
-  {
-    "domain_name": "10_bieg_niepodleglosci_z_wasem",
-    "name": "10 Bieg Niepodległości z wąsem",
-    "type": "road",
-    "type_local": "Bieg uliczny",
-    "race_dates": [
-      [
-        "20261111",
-        "20261111"
-      ],
-      [
-        "20271110",
-        "20271110"
-      ],
-      [
-        "20271111",
-        "20271111"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:11",
-    "location": "Inowrocław, Kuyavian-Pomeranian Voivodeship, Poland",
-    "latitude": 52.7993317,
-    "longitude": 18.2562032,
-    "county": "Kujawsko-Pomorskie",
-    "nearest_city": "Inowrocław",
-    "nearby_cities": [
-      "Inowrocław"
-    ],
-    "distances": "[\"10\", \"5\"]",
-    "distance_m": [
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
-    "contact": null,
-    "website": "http://biegniepodleglosci.pro-run.pl/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "10 km i 5 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "50 zł + wysyłka",
-            "deadline": null,
-            "description": "Opłata startowa: 50 zł + wysyłka."
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "Pas na numer startowy",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "30 zł",
-            "deadline": null,
-            "description": "Okolicznościowy pas na numer startowy – 30 zł."
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": "https://www.datasport.pl/zapisy/portal/zawody.php?zawody=4977",
-    "race_info_url": "http://biegniepodleglosci.pro-run.pl/informacje-organizacyjne/",
-    "presumed_organizer_email": "zawody@pro-run.pl",
-    "website_emails_found": [
-      "zawody@pro-run.pl",
-      "biuro@pro-run.pl",
-      "pieczarka@pro-run.pl"
-    ],
-    "description": "The Wrocław Independence Day Run with a Moustache is an annual running event held on November 11, commemorating the 108th anniversary of Poland regaining its independence. Participants can choose between a PZLA-certified 10 km distance and a 5 km fun run. The start and finish are located at the Olympic Stadium in Wrocław. The routes are closed to road traffic. Participants can purchase a commemorative T-shirt and a medal that is part of a six-race series, with the medals together forming the outline of Poland.",
-    "course_highlights": [
-      "The 10 km route is a single PZLA-certified loop on asphalt and gravel",
-      "The 5 km route runs along the Oder Canal embankments and the Chrobry Bridges; it is not PZLA-certified",
-      "Start and finish at the Pergola at the Olympic Stadium"
-    ],
-    "additional": "Race packs include a race bib, race wristband, stick-on moustache, Nose Up strip, a Primator Polska product, GO Tarczyński kabanos sausages, a 2027 calendar, and a medal at the finish. The race office is open from 8:00 on race day and on the preceding days at the Olympic Stadium. Travelling by tram is recommended due to limited parking and road closures. After the race, participants receive a recovery snack (a sweet roll/doughnut and tea).",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86845&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91426&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91346&bieganie"
-    ],
-    "consolidated_ids": [
-      "531955a2-c30a-4dca-8b09-b5ce8a6fcfc8"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261118",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "pl",
-    "nearby_foreign_cities": [
-      "Kaunas",
-      "Klaipėda",
-      "Šiauliai",
-      "Alytus",
-      "Marijampolė",
-      "Mažeikiai",
-      "Jonava",
-      "Kėdainiai",
-      "Telšiai",
-      "Tauragė",
-      "Palanga",
-      "Druskininkai"
     ]
   },
   {
@@ -180908,16 +181097,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181008,16 +181197,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181090,17 +181279,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181188,17 +181377,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181287,15 +181476,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181386,17 +181575,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181483,16 +181672,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181588,17 +181777,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181697,16 +181886,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181797,17 +181986,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -181903,17 +182092,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182006,17 +182195,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182110,17 +182299,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182212,17 +182401,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182322,17 +182511,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182424,17 +182613,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182525,17 +182714,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182624,16 +182813,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182726,17 +182915,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182828,17 +183017,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -182937,16 +183126,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183036,16 +183225,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "description",
+      "name",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183139,17 +183328,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183314,17 +183503,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183411,15 +183600,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
-      "website",
+      "race_dates",
       "latitude",
-      "longitude",
-      "description",
       "type",
-      "name"
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183579,17 +183768,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183687,17 +183876,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
       "county",
+      "race_dates",
       "distances",
       "latitude",
-      "website",
-      "longitude",
-      "description",
-      "contact",
       "type",
-      "name"
+      "contact",
+      "location",
+      "name",
+      "description",
+      "longitude",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183835,19 +184024,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "additional",
-      "name",
-      "location",
-      "start_time",
-      "contact",
+      "distances",
       "description",
+      "race_dates",
+      "start_time",
+      "type",
+      "location",
+      "contact",
       "organizer",
       "longitude",
-      "race_dates",
-      "distances",
-      "latitude"
+      "name",
+      "latitude",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -183941,18 +184130,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "location",
-      "name",
-      "start_time",
-      "contact",
+      "distances",
       "description",
-      "organizer",
-      "longitude",
       "race_dates",
       "price_range",
-      "distances",
+      "start_time",
+      "type",
+      "location",
+      "contact",
+      "organizer",
+      "longitude",
+      "name",
       "latitude"
     ],
     "is_series": false,
@@ -184116,16 +184305,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "location",
-      "name",
-      "start_time",
-      "contact",
-      "description",
-      "longitude",
-      "race_dates",
       "distances",
+      "description",
+      "race_dates",
+      "start_time",
+      "type",
+      "location",
+      "contact",
+      "longitude",
+      "name",
       "latitude"
     ],
     "is_series": false,
@@ -184270,15 +184459,15 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
+      "description",
+      "race_dates",
+      "start_time",
       "type",
       "location",
-      "name",
-      "start_time",
       "contact",
-      "description",
       "organizer",
       "longitude",
-      "race_dates",
+      "name",
       "latitude"
     ],
     "is_series": false,
@@ -184468,19 +184657,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "additional",
-      "name",
-      "location",
-      "contact",
+      "distances",
       "description",
-      "organizer",
-      "longitude",
       "race_dates",
       "price_range",
-      "distances",
-      "latitude"
+      "type",
+      "location",
+      "contact",
+      "organizer",
+      "longitude",
+      "name",
+      "latitude",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -184589,19 +184778,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "additional",
-      "name",
-      "location",
-      "start_time",
-      "contact",
       "description",
-      "organizer",
-      "longitude",
       "race_dates",
       "price_range",
-      "latitude"
+      "start_time",
+      "type",
+      "location",
+      "contact",
+      "organizer",
+      "longitude",
+      "name",
+      "latitude",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -184705,19 +184894,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "additional",
-      "name",
-      "location",
-      "start_time",
-      "contact",
       "description",
-      "organizer",
-      "longitude",
       "race_dates",
       "price_range",
-      "latitude"
+      "start_time",
+      "type",
+      "location",
+      "contact",
+      "organizer",
+      "longitude",
+      "name",
+      "latitude",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -184836,16 +185025,16 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
       "website",
-      "location",
-      "name",
-      "contact",
+      "distances",
       "description",
+      "race_dates",
+      "type",
+      "location",
+      "contact",
       "organizer",
       "longitude",
-      "race_dates",
-      "distances",
+      "name",
       "latitude"
     ],
     "is_series": false,
@@ -184933,18 +185122,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "additional",
-      "name",
-      "location",
-      "start_time",
-      "contact",
+      "distances",
       "description",
+      "race_dates",
+      "start_time",
+      "type",
+      "location",
+      "contact",
       "organizer",
       "longitude",
-      "race_dates",
-      "distances",
-      "latitude"
+      "name",
+      "latitude",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -185121,9 +185310,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://runbaltic.com/lv/races/apkaimju-brivibas-skrejiens-2026",
+      "https://tautassports.lv/pasakumi/apkaimju-brivibas-skrejiens-2026/",
       "https://atgazene.lv/apkaimju-brivibas-skrejiens/",
-      "https://tautassports.lv/pasakumi/apkaimju-brivibas-skrejiens-2026/"
+      "https://runbaltic.com/lv/races/apkaimju-brivibas-skrejiens-2026"
     ],
     "consolidated_ids": [
       "91ad9aed-87b8-4485-aac5-b188d2e96677"
@@ -185206,9 +185395,9 @@
     "is_series": false,
     "max_description_relevance": 0.36,
     "sources": [
-      "https://tautassports.lv/pasakumi/rembates-aplis-2026/",
       "https://runbaltic.com/lv/races/rembates-aplis-2026",
-      "https://www.ogresnovads.lv/lv/notikums/rembates-aplim-40"
+      "https://www.ogresnovads.lv/lv/notikums/rembates-aplim-40",
+      "https://tautassports.lv/pasakumi/rembates-aplis-2026/"
     ],
     "consolidated_ids": [
       "aee1530a-fcaa-4634-8109-afff40a2862a"
@@ -186396,18 +186585,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "organizer",
-      "start_time",
-      "website",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
+      "website",
+      "latitude",
+      "description",
+      "distances",
+      "start_time",
+      "location",
       "longitude",
-      "location"
+      "contact",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -186567,18 +186756,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "price_range",
-      "organizer",
-      "start_time",
-      "website",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
+      "website",
+      "latitude",
+      "description",
+      "price_range",
+      "location",
+      "start_time",
       "longitude",
-      "location"
+      "contact",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -186678,20 +186867,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "price_range",
-      "organizer",
-      "start_time",
-      "website",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
-      "additional",
+      "website",
+      "latitude",
+      "description",
+      "distances",
+      "price_range",
+      "location",
+      "start_time",
       "longitude",
-      "location"
+      "contact",
+      "additional",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -186861,19 +187050,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "organizer",
-      "start_time",
-      "website",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
-      "additional",
+      "website",
+      "latitude",
+      "description",
+      "distances",
+      "start_time",
+      "location",
       "longitude",
-      "location"
+      "contact",
+      "additional",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -187061,20 +187250,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "price_range",
-      "organizer",
-      "start_time",
-      "website",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
-      "additional",
+      "website",
+      "latitude",
+      "description",
+      "distances",
+      "price_range",
+      "location",
+      "start_time",
       "longitude",
-      "location"
+      "contact",
+      "additional",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -187166,18 +187355,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "price_range",
-      "start_time",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
-      "additional",
+      "latitude",
+      "description",
+      "distances",
+      "price_range",
+      "location",
+      "start_time",
       "longitude",
-      "location"
+      "contact",
+      "additional",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -187288,18 +187477,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "organizer",
-      "start_time",
-      "website",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
+      "website",
+      "latitude",
+      "description",
+      "distances",
+      "start_time",
+      "location",
       "longitude",
-      "location"
+      "contact",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -187392,20 +187581,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "price_range",
-      "organizer",
-      "start_time",
-      "website",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
-      "additional",
+      "website",
+      "latitude",
+      "description",
+      "distances",
+      "price_range",
+      "location",
+      "start_time",
       "longitude",
-      "location"
+      "contact",
+      "additional",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -187513,18 +187702,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "organizer",
-      "start_time",
-      "website",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
+      "website",
+      "latitude",
+      "description",
+      "distances",
+      "start_time",
+      "location",
       "longitude",
-      "location"
+      "contact",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -187617,18 +187806,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "organizer",
-      "start_time",
-      "distances",
-      "description",
-      "contact",
-      "name",
       "race_dates",
-      "type",
-      "additional",
+      "latitude",
+      "description",
+      "distances",
+      "start_time",
+      "location",
       "longitude",
-      "location"
+      "contact",
+      "additional",
+      "organizer",
+      "type",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -190787,14 +190976,14 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "name"
+      "latitude",
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -190891,16 +191080,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191000,17 +191189,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191117,17 +191306,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191220,16 +191409,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191324,16 +191513,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191431,16 +191620,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191536,16 +191725,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191650,17 +191839,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191754,17 +191943,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191861,16 +192050,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -191968,17 +192157,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192079,17 +192268,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192183,17 +192372,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192280,17 +192469,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192399,17 +192588,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192489,17 +192678,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192596,17 +192785,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192711,17 +192900,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192815,16 +193004,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -192923,17 +193112,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193027,17 +193216,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193133,17 +193322,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193241,16 +193430,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193346,17 +193535,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193436,16 +193625,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193541,17 +193730,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193643,17 +193832,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193727,17 +193916,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193845,17 +194034,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -193951,24 +194140,22 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://juoksija.fi/tapahtumat/helsinki-halloween-run-2027/",
-      "https://juoksija.fi/tapahtumat/helsinki-halloween-run-2026/",
-      "ranking_bridge"
+      "https://juoksija.fi/tapahtumat/helsinki-halloween-run-2027/"
     ],
     "consolidated_ids": [
       "3ea58f83-fcc7-46ae-bddf-1606c04d7ea2"
@@ -194062,17 +194249,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194175,17 +194362,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194280,16 +194467,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194392,15 +194579,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
+      "county",
       "type",
+      "website",
+      "name",
+      "longitude",
       "race_dates",
       "latitude",
-      "longitude",
-      "distances",
-      "name",
-      "county"
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194497,17 +194684,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194593,15 +194780,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
+      "county",
       "type",
-      "location",
-      "race_dates",
-      "latitude",
-      "longitude",
+      "website",
       "name",
-      "county"
+      "race_dates",
+      "longitude",
+      "location",
+      "latitude",
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194698,17 +194885,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194806,17 +194993,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -194910,17 +195097,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -195022,17 +195209,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -195129,17 +195316,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -195224,16 +195411,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
+      "name",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "location",
+      "latitude",
+      "description",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -195331,17 +195518,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
       "county",
-      "description",
       "type",
-      "location",
+      "website",
       "contact",
       "race_dates",
-      "latitude",
       "longitude",
-      "distances",
-      "name"
+      "name",
+      "latitude",
+      "description",
+      "location",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -195414,14 +195601,14 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "distances",
-      "longitude",
-      "description",
       "race_dates",
-      "name",
+      "longitude",
       "latitude",
-      "location",
+      "description",
+      "county",
       "type",
-      "county"
+      "location",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
