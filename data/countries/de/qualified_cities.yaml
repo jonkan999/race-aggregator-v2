@@ -22,7 +22,7 @@ cities:
   population: 515140
   latitude: 52.3705
   longitude: 9.73322
-  nearby_race_count: 73
+  nearby_race_count: 74
 - name: Hamburg
   original_name: Hamburg
   population: 1739117
@@ -46,7 +46,7 @@ cities:
   population: 963395
   latitude: 50.9333
   longitude: 6.95
-  nearby_race_count: 53
+  nearby_race_count: 54
 - name: Kassel
   original_name: Kassel
   population: 194501
@@ -65,29 +65,29 @@ cities:
   latitude: 49.2326
   longitude: 7.00982
   nearby_race_count: 47
+- name: Trier
+  original_name: Trier
+  population: 100129
+  latitude: 49.7556
+  longitude: 6.63935
+  nearby_race_count: 46
 - name: Bielefeld
   original_name: Bielefeld
   population: 331906
   latitude: 52.0333
   longitude: 8.53333
   nearby_race_count: 45
-- name: Trier
-  original_name: Trier
-  population: 100129
-  latitude: 49.7556
-  longitude: 6.63935
-  nearby_race_count: 45
-- name: Mannheim
-  original_name: Mannheim
-  population: 307960
-  latitude: 49.4891
-  longitude: 8.46694
-  nearby_race_count: 38
 - name: Koblenz
   original_name: Koblenz
   population: 107319
   latitude: 50.3536
   longitude: 7.57883
+  nearby_race_count: 39
+- name: Mannheim
+  original_name: Mannheim
+  population: 307960
+  latitude: 49.4891
+  longitude: 8.46694
   nearby_race_count: 38
 - name: Münster
   original_name: Muenster
@@ -100,30 +100,30 @@ cities:
   population: 546501
   latitude: 53.0752
   longitude: 8.80777
-  nearby_race_count: 32
+  nearby_race_count: 34
 - name: Nürnberg
   original_name: Nuernberg
   population: 499237
   latitude: 49.4542
   longitude: 11.0775
-  nearby_race_count: 32
+  nearby_race_count: 33
 - name: Aachen
   original_name: Aachen
   population: 265208
   latitude: 50.7766
   longitude: 6.08342
   nearby_race_count: 32
-- name: München
-  original_name: Munich
-  population: 1260391
-  latitude: 48.1374
-  longitude: 11.5755
-  nearby_race_count: 29
 - name: Braunschweig
   original_name: Braunschweig
   population: 244715
   latitude: 52.2659
   longitude: 10.5267
+  nearby_race_count: 30
+- name: München
+  original_name: Munich
+  population: 1260391
+  latitude: 48.1374
+  longitude: 11.5755
   nearby_race_count: 29
 - name: Aalen
   original_name: Aalen
@@ -178,7 +178,7 @@ cities:
   population: 212207
   latitude: 53.8689
   longitude: 10.6873
-  nearby_race_count: 17
+  nearby_race_count: 18
 - name: Augsburg
   original_name: Augsburg
   population: 259196
@@ -191,23 +191,29 @@ cities:
   latitude: 49.0151
   longitude: 12.1016
   nearby_race_count: 16
+- name: Emden
+  original_name: Emden
+  population: 51526
+  latitude: 53.3675
+  longitude: 7.20778
+  nearby_race_count: 16
 - name: Halberstadt
   original_name: Halberstadt
   population: 39729
   latitude: 51.8956
   longitude: 11.0562
   nearby_race_count: 16
+- name: Würzburg
+  original_name: Wuerzburg
+  population: 133731
+  latitude: 49.7939
+  longitude: 9.95121
+  nearby_race_count: 15
 - name: Siegen
   original_name: Siegen
   population: 107242
   latitude: 50.8748
   longitude: 8.02431
-  nearby_race_count: 15
-- name: Emden
-  original_name: Emden
-  population: 51526
-  latitude: 53.3675
-  longitude: 7.20778
   nearby_race_count: 15
 - name: Magdeburg
   original_name: Magdeburg
@@ -220,12 +226,6 @@ cities:
   population: 203254
   latitude: 50.9787
   longitude: 11.0328
-  nearby_race_count: 14
-- name: Würzburg
-  original_name: Wuerzburg
-  population: 133731
-  latitude: 49.7939
-  longitude: 9.95121
   nearby_race_count: 14
 - name: Ulm
   original_name: Ulm
@@ -287,6 +287,12 @@ cities:
   latitude: 48.7651
   longitude: 11.4237
   nearby_race_count: 8
+- name: Rosenheim
+  original_name: Rosenheim
+  population: 60167
+  latitude: 47.8564
+  longitude: 12.1225
+  nearby_race_count: 8
 - name: Amberg
   original_name: Amberg
   population: 44737
@@ -305,12 +311,6 @@ cities:
   latitude: 50.5516
   longitude: 9.67518
   nearby_race_count: 7
-- name: Rosenheim
-  original_name: Rosenheim
-  population: 60167
-  latitude: 47.8564
-  longitude: 12.1225
-  nearby_race_count: 7
 - name: Passau
   original_name: Passau
   population: 50560
@@ -323,6 +323,18 @@ cities:
   latitude: 47.8824
   longitude: 10.6219
   nearby_race_count: 7
+- name: Chemnitz
+  original_name: Chemnitz
+  population: 247220
+  latitude: 50.8357
+  longitude: 12.9292
+  nearby_race_count: 6
+- name: Konstanz
+  original_name: Konstanz
+  population: 81275
+  latitude: 47.6603
+  longitude: 9.17582
+  nearby_race_count: 6
 - name: Dessau
   original_name: Dessau
   population: 77315
@@ -341,18 +353,6 @@ cities:
   latitude: 52.6069
   longitude: 11.8587
   nearby_race_count: 6
-- name: Chemnitz
-  original_name: Chemnitz
-  population: 247220
-  latitude: 50.8357
-  longitude: 12.9292
-  nearby_race_count: 5
-- name: Konstanz
-  original_name: Konstanz
-  population: 81275
-  latitude: 47.6603
-  longitude: 9.17582
-  nearby_race_count: 5
 - name: Hoyerswerda
   original_name: Hoyerswerda
   population: 43681
