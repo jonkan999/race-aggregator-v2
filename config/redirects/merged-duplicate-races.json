@@ -3136,13 +3136,25 @@
     },
     {
       "source": "/looppaginas/van_oers_marathon/:path*",
-      "destination": "/looppaginas/van_oers_marathon_2/:path*",
+      "destination": "/looppaginas/van_oers_marathon/:path*",
       "permanent": true,
       "market": "nl"
     },
     {
       "source": "/en/race-pages/van_oers_marathon/:path*",
-      "destination": "/en/race-pages/van_oers_marathon_2/:path*",
+      "destination": "/en/race-pages/van_oers_marathon/:path*",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/van_oers_marathon_2/:path*",
+      "destination": "/looppaginas/van_oers_marathon/:path*",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/van_oers_marathon_2/:path*",
+      "destination": "/en/race-pages/van_oers_marathon/:path*",
       "permanent": true,
       "market": "nl"
     },
