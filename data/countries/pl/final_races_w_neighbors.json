@@ -552,8 +552,8 @@
   {
     "domain_name": "louceni_s_turistickym_rokem",
     "name": "Loučení s turistickým rokem",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261120",
@@ -564,43 +564,54 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Důlce, Ústí nad Labem, Ústí nad Labem District, Czech Republic",
-    "latitude": 50.6642998,
-    "longitude": 14.0464117,
+    "location": "Krajská organizace Pionýr, Důlce 3092/74, Ústí nad Labem, Czech Republic",
+    "latitude": 50.6640547,
+    "longitude": 14.0466476,
     "county": "Ústecký kraj",
     "nearest_city": "Ústí nad Labem",
     "nearby_cities": [
       "Ústí nad Labem"
     ],
-    "distances": "[\"107\"]",
+    "distances": "[\"115\", \"64\", \"37\", \"29\", \"16\", \"11\"]",
     "distance_m": [
-      107000
+      115000,
+      64000,
+      37000,
+      29000,
+      16000,
+      11000
     ],
     "distance_keywords": [
-      "100 km"
+      "10 km"
     ],
-    "distance_verbose": "107 km",
-    "organizer": null,
+    "distance_verbose": "115 km, 64 km, 37 km, 29 km, 16 km, 11 km",
+    "organizer": "KČT LOKO Teplice",
     "contact": null,
-    "website": null,
+    "website": "https://dalkovepochody.cz/louceni/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://dalkovepochody.cz/louceni/",
+    "presumed_organizer_email": "maly.turista@seznam.cz",
+    "website_emails_found": [
+      "maly.turista@seznam.cz"
+    ],
+    "description": "Loučení s turistickým rokem is a long-distance hike and ultra trail held in Ústí nad Labem, offering several routes of varying lengths from 11 km to 115 km. Routes are marked with KČT hiking signs and, in Germany, Saxon hiking signs, with supplementary reflective-arrow markings where there are no hiking signs. The event is suitable for hiking and ultra-trail enthusiasts who want to end the hiking season with a challenging, well-organized event. The facilities offer overnight accommodation, showers, and luggage storage. There are checkpoints and aid stations with food and drinks along the route.",
+    "course_highlights": [
+      "Routes from 11 km to 115 km, with varying levels of difficulty",
+      "Marked with KČT hiking signs and Saxon hiking signs in Germany",
+      "Timed checkpoints and aid stations every 20–30 km"
+    ],
+    "additional": "Overnight accommodation on the floor in your own sleeping bag is available for 50 Kč per night; showers and luggage storage are also available. Recommended parking is in parking garages in central Ústí nad Labem. A headlamp or flashlight is required for all routes. Participants take part at their own risk and responsibility. The start venue is at the Krajská organizace Pionýr, Důlce 3092/74. Refreshments or restaurants are available approximately every 20–30 km; a headlamp or flashlight is required for all routes. Overnight accommodation in your own sleeping bag is available for 50 Kč per night.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.svetbehu.cz/terminovka/louceni-s-turistickym-rokem/"
     ],
@@ -994,8 +1005,8 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88834&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88719&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88719&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88834&bieganie"
     ],
     "consolidated_ids": [
       "5c09a960-871a-43fe-a6aa-d93a8b9ce436"
@@ -1278,8 +1289,8 @@
     "is_series": false,
     "max_description_relevance": 0.77,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89751&bieganie",
-      "https://kalendarzbiegowy.pl/biegi/botaniczna-piatka-gdynia-edycja-jesienna-2/"
+      "https://kalendarzbiegowy.pl/biegi/botaniczna-piatka-gdynia-edycja-jesienna-2/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89751&bieganie"
     ],
     "consolidated_ids": [
       "fbc7db0c-48ea-451b-a746-3ad19511275d"
@@ -1585,8 +1596,8 @@
     "is_series": false,
     "max_description_relevance": 0.91,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90471&bieganie",
-      "https://kalendarzbiegowy.pl/biegi/lovelas-jesienia-2026/"
+      "https://kalendarzbiegowy.pl/biegi/lovelas-jesienia-2026/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90471&bieganie"
     ],
     "consolidated_ids": [
       "02e045f1-f5ca-4014-a405-e0410dd0c36f"
@@ -1672,6 +1683,113 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "811_90_smak_maraton",
+    "name": "811-90 Smak Maraton",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20261031",
+        "20261031"
+      ],
+      [
+        "20261103",
+        "20261103"
+      ],
+      [
+        "20261108",
+        "20261108"
+      ],
+      [
+        "20261109",
+        "20261109"
+      ],
+      [
+        "20261110",
+        "20261110"
+      ],
+      [
+        "20261111",
+        "20261111"
+      ],
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20261119",
+        "20261119"
+      ],
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20261122",
+        "20261122"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Warszawa, Polska",
+    "latitude": 52.2296756,
+    "longitude": 21.0122287,
+    "county": "Mazowieckie",
+    "nearest_city": "Warsaw",
+    "nearby_cities": [
+      "Warsaw"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91435&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91309&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91228&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91145&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91434&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91311&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91310&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91226&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91312&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91433&bieganie"
+    ],
+    "consolidated_ids": [
+      "b39a37cd-204e-4be8-b33b-d2472e57afdd"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -1795,8 +1913,8 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91182&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91181&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91181&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91182&bieganie"
     ],
     "consolidated_ids": [
       "a697645f-b658-4969-8443-b0edebaaec27"
@@ -3567,8 +3685,8 @@
   {
     "domain_name": "offene_lm_crosslauf",
     "name": "Offene LM Crosslauf",
-    "type": "terrain",
-    "type_local": "Gelände",
+    "type": "other",
+    "type_local": "Sonstiges",
     "race_dates": [
       [
         "20261121",
@@ -3579,9 +3697,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "39114 Magdeburg, Germany",
-    "latitude": 52.0883969,
-    "longitude": 11.7068022,
+    "location": "Leichtathletikstadion an der Friedrich-Ebert-Straße, Magdeburg, Germany",
+    "latitude": 52.1244469,
+    "longitude": 11.6652179,
     "county": "Sachsen-Anhalt",
     "nearest_city": "Magdeburg",
     "nearby_cities": [
@@ -3591,27 +3709,33 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "organizer": "Sportclub Magdeburg",
     "contact": null,
-    "website": null,
+    "website": "https://www.lvsa.de/index.php?article_id=2080",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.lvsa.de/index.php?article_id=45",
+    "race_info_url": "https://www.lvsa.de/index.php?article_id=2080",
+    "presumed_organizer_email": "info@lvsa.de",
+    "website_emails_found": [
+      "info@lvsa.de"
+    ],
+    "description": "The Open State Cross-Country Championships will take place on November 21, 2026, at the athletics stadium on Friedrich-Ebert-Straße in Magdeburg. The event is for runners of various age groups and ability levels and features a challenging cross-country course. The championships are an established event on the Athletics Association of Saxony-Anhalt calendar and promote regional running.",
+    "course_highlights": [
+      "Cross-country course at the Magdeburg athletics stadium",
+      "A range of age groups and distances",
+      "Traditional state championships with regional significance"
+    ],
+    "additional": "Online registration is available.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.laufen.de/laufkalender/details/offene-lm-crosslauf"
     ],
@@ -5076,8 +5200,8 @@
   {
     "domain_name": "gp_vytrvalcu_kamenneho_ujezda",
     "name": "GP vytrvalců Kamenného Újezda",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20261121",
@@ -5088,7 +5212,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Kamenný Újezd, South Bohemian Region, Czech Republic",
+    "location": "Fotbalové hřiště, Kamenný Újezd, South Bohemian Region, Czech Republic",
     "latitude": 48.8976367,
     "longitude": 14.4463788,
     "county": "Jihočeský kraj",
@@ -5102,27 +5226,31 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "6.5 km",
-    "organizer": null,
+    "organizer": "TJ Sokol Kamenný Újezd",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenny-ujezda-2026/",
+    "fb_link": "https://www.facebook.com/p/B%C4%9B%C5%BEeck%C3%A9-z%C3%A1vody-GP-Kamenn%C3%BD-%C3%9Ajezd-100063727734678/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenny-ujezda-2026/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "The GP of Kamenný Újezd Endurance Runners is a running race held at the football pitch in Kamenný Újezd. The race offers routes of various lengths, running mostly on roads and terrain with gentle elevation changes. The event is part of the South Bohemian Running Cup and is suitable for a wide range of runners looking for a challenge in the autumn. It is organized by TJ Sokol Kamenný Újezd, which provides a welcoming atmosphere and good facilities for participants.",
+    "course_highlights": [
+      "The race is part of the South Bohemian Running Cup",
+      "The course runs on roads and mixed terrain with gentle elevation changes",
+      "The start and finish are at the football pitch in Kamenný Újezd"
+    ],
+    "additional": "The race offers a 6.5 km route. It takes place on Saturday, November 21, 2026. The course is mixed and suitable for running in autumn.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.66,
     "sources": [
       "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenneho-ujezda-1-2026/"
     ],
@@ -6540,8 +6668,8 @@
     "is_series": false,
     "max_description_relevance": 0.87,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89101&bieganie",
-      "https://kalendarzbiegowy.pl/biegi/biegi-im-pplk-maksymiliana-ciezkiego-dycha-ciezkiego-i-biegi-maksia/"
+      "https://kalendarzbiegowy.pl/biegi/biegi-im-pplk-maksymiliana-ciezkiego-dycha-ciezkiego-i-biegi-maksia/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89101&bieganie"
     ],
     "consolidated_ids": [
       "98c12b3d-7817-4cfc-a0f3-66c1b290fff8"
@@ -7023,8 +7151,8 @@
     "is_series": false,
     "max_description_relevance": 0.94,
     "sources": [
-      "https://kalendarzbiegowy.pl/biegi/radwanice-polmaraton-slonia/",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90314&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90314&bieganie",
+      "https://kalendarzbiegowy.pl/biegi/radwanice-polmaraton-slonia/"
     ],
     "consolidated_ids": [
       "45515607-b720-47ab-bb82-39983be60ac4"
@@ -7261,16 +7389,16 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90586&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90553&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90581&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90594&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90590&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90591&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90593&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90584&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90586&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90590&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90592&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90585&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90594&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90584&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90593&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90585&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90553&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90581&bieganie"
     ],
     "consolidated_ids": [
       "6204a6a2-57cf-45c3-8c88-37ab6d0fada6"
@@ -7701,6 +7829,69 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "ultramaraton_palindromowy_im_kamila_sli",
+    "name": "Ultramaraton Palindromowy im. Kamila Śli...",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20261122",
+        "20261122"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Wrocław, Polska",
+    "latitude": 51.10929480000001,
+    "longitude": 17.0386019,
+    "county": "Dolnośląskie",
+    "nearest_city": "Wrocław",
+    "nearby_cities": [
+      "Wrocław",
+      "Świdnica"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91452&bieganie"
+    ],
+    "consolidated_ids": [
+      "0af4b8ce-c8ce-4b30-bfb7-7bc0c65094e8"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -8144,8 +8335,8 @@
   {
     "domain_name": "offene_kreismeisterschaft_crosslauf",
     "name": "Offene Kreismeisterschaft Crosslauf",
-    "type": "terrain",
-    "type_local": "Gelände",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261122",
@@ -8156,7 +8347,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "25826 Sankt Peter-Ording, Germany",
+    "location": "Dünenareal, Bad, Sankt Peter-Ording, Germany",
     "latitude": 54.3048043,
     "longitude": 8.6522205,
     "county": "Schleswig-Holstein",
@@ -8177,27 +8368,33 @@
       "1500 Meter"
     ],
     "distance_verbose": "9 km, 4.5 km, 3000 Meter, 1500 Meter, 1 km",
-    "organizer": null,
+    "organizer": "KLV Nordfriesland",
     "contact": null,
-    "website": null,
+    "website": "https://ladv.de/ausschreibung/detail/49306/Offene-Kreismeisterschaft-Crosslauf-Sankt-Peter-Ording.htm",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
+    "registration_close_date": "20261118",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://ladv.de/ausschreibung/detail/49306/Offene-Kreismeisterschaft-Crosslauf-Sankt-Peter-Ording.htm",
+    "presumed_organizer_email": "meldung_klvnf@web.de",
+    "website_emails_found": [
+      "meldung_klvnf@web.de"
+    ],
+    "description": "The Open District Cross-Country Championship in Sankt Peter-Ording is a traditional running competition held in the dunes in the Bad district. Organized by KLV Nordfriesland and hosted by TSV St. Peter-Ording, the cross-country race offers competitions for various age groups, from children to Masters. The event takes place on November 22, 2026, and welcomes runners of all ability levels to a challenging run through the dune landscape.",
+    "course_highlights": [
+      "Run through the dunes in the Bad district",
+      "A range of age groups, from children to Masters",
+      "Traditional district cross-country championship"
+    ],
+    "additional": "TSV St. Peter-Ording hosts the event. Competitions are offered for children, youth, adults, and Masters.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.92,
     "sources": [
       "https://www.laufen.de/laufkalender/details/offene-kreismeisterschaft-crosslauf"
     ],
@@ -8992,17 +9189,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9124,9 +9321,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Paderborn-Sande, Paderborn, North Rhine-Westphalia, Germany",
-    "latitude": 51.761669,
-    "longitude": 8.667297999999999,
+    "location": "Parkplatz beim Gut Lippesee, Paderborn-Sande, Germany",
+    "latitude": 51.7541843,
+    "longitude": 8.672255,
     "county": "Nordrhein-Westfalen",
     "nearest_city": "Bielefeld",
     "nearby_cities": [],
@@ -9138,27 +9335,33 @@
       "Marathon"
     ],
     "distance_verbose": "42.7 km",
-    "organizer": null,
+    "organizer": "Bernd Neumann",
     "contact": null,
-    "website": null,
+    "website": "https://www.marathonsammlerberndneumann.com/marathonveranstaltungen/lippesee/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "Keine Startgebühr; 5 € Spende erbeten",
     "price_tiers": [],
-    "registration_close_date": null,
+    "registration_close_date": "20261123",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.marathonsammlerberndneumann.com/marathonveranstaltungen/",
+    "presumed_organizer_email": "marathonsammler@gmx.de",
+    "website_emails_found": [
+      "marathonsammler@gmx.de"
+    ],
+    "description": "The 41st Lippesee Marathon takes place in Paderborn-Sande and is held in accordance with the rules of the 100 Marathon Club Germany. The course consists of seven large laps of 6.1 km each, for a total of 42.7 km, and is very busy in good weather. Timing is done with a manual stopwatch; a photo of the watch must be submitted by email on race day as proof. There is no entry fee, but a €5 donation to environmental or social projects is requested. The event is limited to 15 participants, and the minimum age is 18.",
+    "course_highlights": [
+      "Seven laps of 6.1 km each, for a total of 42.7 km",
+      "Course measured with a measuring wheel and GPS watch",
+      "Self-service is possible, with supplies available at your car after each lap"
+    ],
+    "additional": "Timing is done with a manual stopwatch, which is started at the start and stopped only at the finish. Participants who stop the watch during breaks will be disqualified. Showers and changing rooms are not available on site. The course will be provided 2–3 days before the race with a GPX track, map, and Komoot access. The event will take place only if there are at least five participants. Participant limit: 15; minimum age: 18. Register by email by 6 p.m. on the day before the race. Self-service, hand-timed results, and a certificate by email.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.marathonsammlerberndneumann.com/marathonveranstaltungen/lippesee/"
     ],
@@ -9350,16 +9553,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
+      "name",
       "county",
       "location",
       "contact",
-      "name",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -10667,8 +10870,8 @@
   {
     "domain_name": "beh_svateho_andreja_rajecke_teplice",
     "name": "Beh svätého Andreja",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261128",
@@ -10678,52 +10881,75 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Rajecké Teplice, Žilina District, Žilina Region, Slovakia",
-    "latitude": 49.1282666,
-    "longitude": 18.6827411,
+    "start_time": "16:50",
+    "location": "Námestie SNP, Rajecké Teplice, Slovakia",
+    "latitude": 49.1279792,
+    "longitude": 18.6823848,
     "county": "Region of Žilina",
     "nearest_city": "Žilina",
     "nearby_cities": [
       "Žilina"
     ],
-    "distances": "[\"13.7\", \"10\", \"8.3\", \"6\", \"5\", \"4.5\", \"3.2\", \"1\"]",
+    "distances": "[\"4.5\"]",
     "distance_m": [
-      13700,
-      10000,
-      8300,
-      6000,
-      5000,
-      4500,
-      3200,
-      1000
+      4500
     ],
     "distance_keywords": [
-      "10 km",
       "5 km"
     ],
-    "distance_verbose": "13.7 km, 10 km, 8.3 km, 6 km, 5 km, 4.5 km, 3.2 km, 1 km",
-    "organizer": null,
+    "distance_verbose": "4.5 km",
+    "organizer": "Občianske združenie ŠRT v spolupráci s Mestom Rajecké Teplice",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.rajecke-teplice.info/pages/beh-svateho-andreja-2026",
+    "fb_link": "https://www.facebook.com/100063442250596/posts/%EF%B8%8F-beh-sv%C3%A4t%C3%A9ho-andreja-2025-%EF%B8%8Frajeck%C3%A9-teplice-n%C3%A1mestie-snp29112025srde%C4%8Dne-v%C3%A1s-poz%C3%BD/1225689149555815/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "Detský beh zdarma; hlavný beh 15 € online",
+    "price_tiers": [
+      {
+        "distance": "Hlavný beh",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15 €",
+            "deadline": null,
+            "description": "Štartovné: 15 € pri online registrácii"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Detský beh Malý Caesar",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné: zdarma"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://casomierapt.com",
+    "race_info_url": "https://www.rajecke-teplice.info/pages/beh-svateho-andreja-2026",
+    "presumed_organizer_email": "primator@rajecke-teplice.sk",
+    "website_emails_found": [
+      "primator@rajecke-teplice.sk"
+    ],
+    "description": "The 2026 Saint Andrew’s Run in Rajecké Teplice is a sporting event organized by the ŠRT civic association in cooperation with the City of Rajecké Teplice. The main race follows a 4.5 km asphalt course and starts at SNP Square. The event also includes a Firefighters category and the free Little Caesar children’s run for the youngest athletes. Alongside the sporting events, participants can enjoy a competition for the best-decorated Christmas stroller, adding to the pre-Christmas atmosphere.",
+    "course_highlights": [
+      "4.5 km asphalt course for the main race",
+      "Start and finish at SNP Square in Rajecké Teplice",
+      "Winter edition of the Little Caesar children’s run for ages 1–3, 4–6, and 7–9"
+    ],
+    "additional": "Registration for the main race is open from 14:30 to 16:30. Registration for the children’s run opens at 14:00 in the lobby of the Municipal Office. The children’s run starts at 16:00. The competition for the best-decorated Christmas stroller is part of the event. The main race starts at 16:50 and the children’s run at 16:00. Sign up for the main race at casomierapt.com. The event also includes a competition for the best-decorated Christmas stroller.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.bezeckypretek.sk/beh-svateho-andreja-rajecke-teplice-2026/",
       "https://beh.sk/pretek/beh-svataho-andreja-6/"
@@ -11411,17 +11637,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12907,16 +13133,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13436,8 +13662,8 @@
     "max_description_relevance": 0.9,
     "sources": [
       "https://itra.run/Races/RaceDetails/Garmin.Ultra.Race.Gdansk.GUR101/2026/113866",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87121&bieganie",
-      "https://kalendarzbiegowy.pl/biegi/garmin-ultra-race-gdansk-2026/"
+      "https://kalendarzbiegowy.pl/biegi/garmin-ultra-race-gdansk-2026/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87121&bieganie"
     ],
     "consolidated_ids": [
       "fff2eaad-5f93-4e53-aed6-3beeec36d9c5"
@@ -13604,8 +13830,8 @@
   {
     "domain_name": "prazska_stovka",
     "name": "Pražská stovka",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261204",
@@ -13615,7 +13841,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "00:00",
     "location": "Milín, Central Bohemian Region, Czech Republic",
     "latitude": 49.6330588,
     "longitude": 14.046405,
@@ -13624,33 +13850,69 @@
     "nearby_cities": [
       "Příbram"
     ],
-    "distances": "[\"135\"]",
+    "distances": "[\"130\", \"70\", \"37\"]",
     "distance_m": [
-      135000
+      130000,
+      70000,
+      37000
     ],
     "distance_keywords": [],
-    "distance_verbose": "135 km",
+    "distance_verbose": "130 km, 70 km, 37 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.dalkovepochody.cz/prazskastovka/cs",
+    "fb_link": "https://www.facebook.com/groups/166858292654/?locale=cs_CZ",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Trasa A",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "1 100 Kč",
+            "deadline": "20261031",
+            "description": "při registraci a platbě do 31. 10. 2026"
+          },
+          {
+            "label": "tier_2",
+            "price": "1 500 Kč",
+            "deadline": "20261115",
+            "description": "při registraci a platbě do 15. 11. 2026"
+          },
+          {
+            "label": "tier_3",
+            "price": "1 900 Kč",
+            "deadline": "20261203",
+            "description": "při registraci a platbě do 3. 12. 2026"
+          }
+        ],
+        "late_fee": {
+          "price": "2 200 Kč",
+          "deadline": "20261204"
+        }
+      }
+    ],
+    "registration_close_date": "20261204",
+    "registration_url": "https://www.dalkovepochody.cz/prazskastovka/cs/kontakt",
+    "race_info_url": "https://www.dalkovepochody.cz/prazskastovka/cs/#trasy",
+    "presumed_organizer_email": "olaf.cihak@dalkovepochody.cz",
+    "website_emails_found": [
+      "olaf.cihak@dalkovepochody.cz"
+    ],
+    "description": "Pražská stovka is a traditional winter long-distance hike and ultratrail race with a history dating back to 1994. The event takes place on a challenging route with significant elevation gain and distinctive winter conditions, bringing together runners, long-distance hikers, and enthusiasts of extreme trekking each year. The main Route A starts in Český Brod at midnight on Friday and finishes in Prague. The race is known for its friendly, supportive atmosphere, where helping one another matters more than rivalry, and it brings elite ultrarunners together with enthusiastic long-distance hikers.",
+    "course_highlights": [
+      "Main Route A: 130 km with +4400 m elevation gain",
+      "Starts in Český Brod at midnight on Friday and finishes in Prague",
+      "Challenging terrain and winter conditions with significant elevation gain"
+    ],
+    "additional": "Luggage transport between the start in Český Brod and the finish in Prague is provided; only closed and labelled luggage is accepted. At the finish, warm showers, a gym for sleeping in your own sleeping bag and on your own sleeping mat, and light refreshments are available. It is recommended that participants have completed at least one off-road event of over 50 km as a qualifying recommendation. The start is accessible by PID suburban trains from Prague. Pražská stovka is the final stage of the EKUT 2026 series.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.92,
     "sources": [
       "https://www.svetbehu.cz/terminovka/prazska-stovka/"
     ],
@@ -14862,6 +15124,68 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "mikolajkowa_piatka",
+    "name": "Mikołajkowa Piątka",
+    "type": "trail",
+    "type_local": "Bieg trailowy",
+    "race_dates": [
+      [
+        "20261205",
+        "20261205"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Opalenica, Greater Poland Voivodeship, Polska",
+    "latitude": 52.30876,
+    "longitude": 16.4128,
+    "county": "Wielkopolskie",
+    "nearest_city": "Poznań",
+    "nearby_cities": [
+      "Poznań"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91440&bieganie"
+    ],
+    "consolidated_ids": [
+      "56aa71dc-81eb-4b08-80ad-b90b8f01087c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -17658,8 +17982,8 @@
   {
     "domain_name": "christmas_run_olomouc",
     "name": "Christmas Run Olomouc",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20261205",
@@ -17669,7 +17993,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "16:00",
     "location": "Výstaviště Flora, pavilion E, Olomouc, Czech Republic",
     "latitude": 49.5893211,
     "longitude": 17.2453499,
@@ -17678,35 +18002,89 @@
     "nearby_cities": [
       "Olomouc"
     ],
-    "distances": "[\"5\"]",
+    "distances": "[\"5\", \"2\", \"1\"]",
     "distance_m": [
-      5000
+      5000,
+      2000,
+      1000
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "5 km",
-    "organizer": null,
+    "distance_verbose": "5 km, 2 km, 1 km",
+    "organizer": "Event media s.r.o.",
     "contact": null,
-    "website": null,
+    "website": "https://christmasrun.cz/zavody/-345-olomouc.html",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "200–900 Kč",
+    "price_tiers": [
+      {
+        "distance": "CHRISTMAS RUN - 5 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "800 Kč",
+            "deadline": "20261203",
+            "description": "Registrace ONLINE do 3.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "900 Kč",
+          "deadline": "20261205"
+        }
+      },
+      {
+        "distance": "CHRISTMAS KIDS RUN - 1 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "300 Kč",
+            "deadline": "20261203",
+            "description": "Registrace ONLINE do 3.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "400 Kč",
+          "deadline": "20261205"
+        }
+      },
+      {
+        "distance": "FÉNIX RUN - 2 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "250 Kč",
+            "deadline": "20261203",
+            "description": "Registrace ONLINE do 3.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "300 Kč",
+          "deadline": "20261205"
+        }
+      }
+    ],
+    "registration_close_date": "20261205",
+    "registration_url": "https://christmasrun.cz/zavody/-345-olomouc.html#ceny",
+    "race_info_url": "https://christmasrun.cz/zavody/-345-olomouc.html",
+    "presumed_organizer_email": "dotazy@eventmedia.cz",
+    "website_emails_found": [
+      "dotazy@eventmedia.cz"
+    ],
+    "description": "Christmas Run Olomouc is an atmospheric night run taking place on 5 December 2026 in Olomouc at Výstaviště Flora. It offers three race courses: the 5 km INTERSPORT CHRISTMAS RUN, the 2 km Fénix Run charity race, and the 1 km non-competitive NN KIDS CHRISTMAS RUN for children. The event is suitable for runners aged 12 and over; younger participants may start only with written consent from a legal guardian. The programme also includes warm-ups with Santa and an awards ceremony. The event is organized by EVENT media s.r.o.",
+    "course_highlights": [
+      "The 5 km INTERSPORT CHRISTMAS RUN course in the nighttime setting of Olomouc",
+      "The 2 km Fénix Run charity race",
+      "The 1 km non-competitive NN KIDS CHRISTMAS RUN for children"
+    ],
+    "additional": "Registration is valid only once the entry fee has been credited to the organizer’s account. Once race capacity is reached, no further registration is possible, either online or on site. Children under 15 must have written consent from a legal guardian. The race pack includes a bag with gifts from the event’s partners. The main race is intended for runners aged 12 and over; participants under 15 need written consent from a legal guardian. The children’s run is non-competitive, and children may run with their parents. The main race has a capacity of 1,000 runners.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.svetbehu.cz/terminovka/christmas-run-olomouc/"
     ],
@@ -19457,17 +19835,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -19567,16 +19945,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23396,51 +23774,75 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Kuchajda, Bratislava, Slovakia",
-    "latitude": 48.1691036,
-    "longitude": 17.1446742,
+    "start_time": "10:00",
+    "location": "Park Ostredky or Kuchajda swimming pool grounds, Bratislava, Slovakia",
+    "latitude": 48.161595,
+    "longitude": 17.1712325,
     "county": "Region of Bratislava",
     "nearest_city": "Bratislava",
     "nearby_cities": [
       "Bratislava"
     ],
-    "distances": "[\"42.2\", \"16\", \"11.6\", \"10\", \"5\", \"3.2\"]",
+    "distances": "[\"3.22\", \"0.2\"]",
     "distance_m": [
-      42200,
-      16000,
-      11600,
-      10000,
-      5000,
-      3200
+      3220,
+      200
     ],
-    "distance_keywords": [
-      "Maratón",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Maratón, 16 km, 11.6 km, 10 km, 5 km, 3.2 km",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "3.22 km, 0.2 km",
+    "organizer": "Sri Chinmoy Marathon Team",
     "contact": null,
-    "website": null,
+    "website": "https://vsetkybehy.sk/seria/beh-2-mile-bratislava",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "2 míle",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné zdarma"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Detské behy",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 €",
+            "deadline": null,
+            "description": "Štartovné zdarma"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/seria/beh-2-mile-bratislava",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The 2 Miles Run Bratislava is a running series organized by the Sri Chinmoy Marathon Team, held in Bratislava at Park Ostredky and the Kuchajda swimming pool grounds. The race is run on a paved road course measuring 2 miles (3.22 km), and also includes children’s races. The series features a points competition for a perpetual trophy, with points awarded in each round based on participation and placing. Entry is free, allowing the general public to take part without financial burden. Check-in and registration take place on site before the races.",
+    "course_highlights": [
+      "A 2-mile (3.22 km) course on paved roads",
+      "The races take place in the pleasant surroundings of Park Ostredky and the Kuchajda swimming pool grounds",
+      "Children’s races are also held: 200 m for children under 13"
+    ],
+    "additional": "Check-in and registration take place on site behind Komunitné námestie from 9:30. Parking is available in the large car park on Sputniková Street or near OC Budúcnosť. The nearest public transport stops are Súmračná, Clementisova and Maximiliána Hella. There are no public toilets in the park.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.58,
     "sources": [
       "https://www.bezeckypretek.sk/beh-2-mile-bratislava-2026-12/"
     ],
@@ -24537,6 +24939,68 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "vii_zimowy_polmaraton_myszkowski",
+    "name": "VII Zimowy Półmaraton Myszkowski",
+    "type": "trail",
+    "type_local": "Bieg trailowy",
+    "race_dates": [
+      [
+        "20261212",
+        "20261212"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Myszków, Silesian Voivodeship, Polska",
+    "latitude": 50.5706845,
+    "longitude": 19.3144637,
+    "county": "Śląskie",
+    "nearest_city": "Częstochowa",
+    "nearby_cities": [
+      "Częstochowa"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91430&bieganie"
+    ],
+    "consolidated_ids": [
+      "23b8244b-801f-4a59-ba42-e9709057a61d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -26044,8 +26508,8 @@
   {
     "domain_name": "christmas_run_praha",
     "name": "CHRISTMAS RUN Praha",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20261212",
@@ -26055,8 +26519,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Před Rudolfinem, náměstí Jana Palacha, Prague, Czech Republic",
+    "start_time": "16:00",
+    "location": "Rudolfinum, náměstí Jana Palacha, Prague, Czech Republic",
     "latitude": 50.0899562,
     "longitude": 14.4154393,
     "county": "Hlavní město Praha",
@@ -26064,35 +26528,89 @@
     "nearby_cities": [
       "Praha"
     ],
-    "distances": "[\"5\"]",
+    "distances": "[\"5\", \"2\", \"1\"]",
     "distance_m": [
-      5000
+      5000,
+      2000,
+      1000
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "5 km",
-    "organizer": null,
+    "distance_verbose": "5 km, 2 km, 1 km",
+    "organizer": "Event media s.r.o.",
     "contact": null,
-    "website": null,
+    "website": "https://christmasrun.cz/",
     "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "ig_link": "https://www.instagram.com/christmasrun_cz/",
+    "price_range": "650–900 Kč",
+    "price_tiers": [
+      {
+        "distance": "CHRISTMAS RUN - 5 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "800 Kč",
+            "deadline": "20261210",
+            "description": "Registrace ONLINE do 10.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "900 Kč",
+          "deadline": "20261212"
+        }
+      },
+      {
+        "distance": "CHRISTMAS KIDS RUN - 1 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "300 Kč",
+            "deadline": "20261210",
+            "description": "Registrace ONLINE do 10.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "400 Kč",
+          "deadline": "20261212"
+        }
+      },
+      {
+        "distance": "FÉNIX RUN - 2 km",
+        "tiers": [
+          {
+            "label": "tier_3",
+            "price": "250 Kč",
+            "deadline": "20261210",
+            "description": "Registrace ONLINE do 10.12.2026 do 18:00"
+          }
+        ],
+        "late_fee": {
+          "price": "300 Kč",
+          "deadline": "20261212"
+        }
+      }
+    ],
+    "registration_close_date": "20261212",
+    "registration_url": "https://www.eventreg.cz",
+    "race_info_url": "https://christmasrun.cz/zavody/-343-praha.html",
+    "presumed_organizer_email": "dotazy@eventmedia.cz",
+    "website_emails_found": [
+      "dotazy@eventmedia.cz"
+    ],
+    "description": "Christmas Run Prague is an experiential 5 km night run held in the center of Prague in front of the Rudolfinum. The event is part of the INTERSPORT Christmas Run series and also features a children’s race and the charitable Fénix Run. The run is accompanied by a festive Christmas atmosphere, a warm-up with Santa, and the option to purchase a red “SANTA” hat. The race is suitable for runners aged 12 and over; younger participants may start with written consent from a legal guardian.",
+    "course_highlights": [
+      "The course runs through the center of Prague in front of the Rudolfinum",
+      "A night run with a Christmas atmosphere and a warm-up with Santa",
+      "Option to purchase a red “SANTA” hat as part of the event"
+    ],
+    "additional": "People aged 12 and over may register; those under 15 may participate only with written consent from a legal guardian. Registration is valid only once the entry fee has been credited to the organizer’s account. No further registration is possible once race capacity is reached. The race package includes a bag with gifts from event partners. The children’s run is 1 km long, and children may run with their parents. The Fénix Run is 2 km long, and its proceeds support nonprofit organizations. Participants in the main race receive a medal at the finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.svetbehu.cz/terminovka/christmas-run-praha/"
     ],
@@ -27069,16 +27587,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
+      "name",
       "county",
       "location",
       "contact",
-      "name",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -27180,15 +27698,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "description",
-      "race_dates",
       "type",
+      "name",
       "county",
       "location",
-      "name",
+      "longitude",
+      "latitude",
+      "race_dates",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -29378,17 +29896,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -29882,6 +30400,68 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "bieg_urodzinowy_70_okrazen_na_70_lat",
+    "name": "Bieg Urodzinowy — 70 okrążeń na 70 lat",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20261219",
+        "20261219"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Bytów, Polska",
+    "latitude": 54.1706219,
+    "longitude": 17.4916088,
+    "county": "Pomorskie",
+    "nearest_city": "Słupsk",
+    "nearby_cities": [
+      "Słupsk"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91436&bieganie"
+    ],
+    "consolidated_ids": [
+      "e6644304-ce08-4843-b7f0-82fd60e603bf"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "seligenstadter_winterlaufserie_lauf_2",
     "name": "Seligenstädter Winterlaufserie, Lauf 2",
     "type": "road",
@@ -30199,17 +30779,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -31464,17 +32044,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -33873,6 +34453,69 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "iv_bieg_pamieci_powstania_wielkopolskieg",
+    "name": "IV Bieg Pamięci Powstania Wielkopolskieg...",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20261227",
+        "20261227"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Poznań, Greater Poland Voivodeship, Polska",
+    "latitude": 52.40567859999999,
+    "longitude": 16.9312766,
+    "county": "Wielkopolskie",
+    "nearest_city": "Poznań",
+    "nearby_cities": [
+      "Poznań",
+      "Gniezno"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91450&bieganie"
+    ],
+    "consolidated_ids": [
+      "d7eb3b5d-09fc-4bd9-84b6-d17b9ac27cae"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "pred_silvestrovsky_beh_lysa_nad_labem",
     "name": "(Před)Silvestrovský běh Lysá nad Labem",
     "type": "road",
@@ -34156,8 +34799,8 @@
   {
     "domain_name": "kaledinis_begimas_aktyvus_trakai_365",
     "name": "Kalėdinis bėgimas „AKTYVŪS TRAKAI 365“",
-    "type": "other",
-    "type_local": "Kita",
+    "type": "terrain",
+    "type_local": "Krosas",
     "race_dates": [
       [
         "20261227",
@@ -34167,7 +34810,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "11:00",
     "location": "Užutrakis Manor Estate Park, Trakai District Municipality, Lithuania",
     "latitude": 54.6597076,
     "longitude": 24.9436468,
@@ -34176,31 +34819,40 @@
     "nearby_cities": [
       "Vilnius"
     ],
-    "distances": "[]",
-    "distance_m": [],
+    "distances": "[\"13.5\"]",
+    "distance_m": [
+      13500
+    ],
     "distance_keywords": [],
-    "distance_verbose": "Mišri distancija",
-    "organizer": null,
+    "distance_verbose": "13.5 km",
+    "organizer": "Trakų sporto centras",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://trakusc.lt/?tsce_event=aktyvus-trakai-365-kaledinis-begimas",
+    "fb_link": "https://www.facebook.com/trakusportocentras/posts/jau-prasid%C4%97jo-registracija-%C4%AF-nemokam%C4%85-aktyv%C5%ABs-trakai-365-kal%C4%97din%C4%AF-b%C4%97gim%C4%85-kuris-v/1546705010836672/",
     "ig_link": null,
-    "price_range": null,
+    "price_range": "Nemokamas",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://trakusc.lt/?tsce_event=aktyvus-trakai-365-kaledinis-begimas",
+    "presumed_organizer_email": "info@trakusc.lt",
+    "website_emails_found": [
+      "info@trakai.lt",
+      "info@trakusc.lt"
+    ],
+    "description": "On December 27, the “Aktyvūs Trakai 365” Christmas run will take place in the park of Užutrakis Manor, welcoming both experienced runners and anyone looking to spend time actively and enjoy the festive atmosphere. Distances from 1 to 13.5 km allow participants to choose the one best suited to their age and ability. All participants will receive original finisher medals, while prize-winners will receive trophies and prizes. The event is free, so gather a team and join us in Trakai for an active and fun day.",
+    "course_highlights": [
+      "The run takes place in the park of the Užutrakis Manor estate, one of Lithuania’s most beautiful locations",
+      "Distances from 1 to 13.5 km, suited to participants of different ages and abilities",
+      "A festive atmosphere and the chance to spend time actively with like-minded people"
+    ],
+    "additional": "The event will take place from 11:00 to 17:00. The run is free. Original medals are planned for all participants, and trophies and prizes for prize-winners.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://www.lbma.lt/files/races/2026-12-27_Kaledinis_begimas_AKTYVUS_TRAKAI_365_nuostatai.pdf"
     ],
@@ -34461,16 +35113,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
+      "name",
       "county",
       "location",
       "contact",
-      "name",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -35515,11 +36167,15 @@
       [
         "20261231",
         "20261231"
+      ],
+      [
+        "20270101",
+        "20270101"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": "14:00",
     "location": "Teatr Letni im. Heleny Majdaniec, Szczecin, Polska",
     "latitude": 53.44519709999999,
@@ -35578,6 +36234,7 @@
     "is_series": false,
     "max_description_relevance": 0.97,
     "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91407&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87339&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86297&bieganie"
     ],
@@ -43569,16 +44226,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -43683,17 +44340,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44971,17 +45628,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45345,8 +46002,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": "11:00",
     "location": "ul. Rzecińska, Wronki, Polska",
     "latitude": 52.7175582,
@@ -45426,6 +46083,7 @@
     "is_series": false,
     "max_description_relevance": 0.96,
     "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91420&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87562&bieganie"
     ],
     "consolidated_ids": [
@@ -46464,16 +47122,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49605,8 +50263,8 @@
   {
     "domain_name": "trojkralovy_beh_na_hrad_lietava_lietava",
     "name": "Trojkráľový beh na Hrad Lietava",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270109",
@@ -49616,10 +50274,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Lietava Castle, Lietava, Žilina District, Žilina Region, Slovakia",
-    "latitude": 49.16063639999999,
-    "longitude": 18.6845348,
+    "start_time": "10:00",
+    "location": "Základná škola Lietava, Lietava, Slovakia",
+    "latitude": 49.17140329999999,
+    "longitude": 18.6672995,
     "county": "Region of Žilina",
     "nearest_city": "Žilina",
     "nearby_cities": [
@@ -49641,27 +50299,50 @@
       "5 km"
     ],
     "distance_verbose": "13.7 km, 10 km, 8.3 km, 6 km, 5 km, 4.5 km, 3.2 km, 1 km",
-    "organizer": null,
+    "organizer": "o100dušu Lietava – bežecký klub o.z.",
     "contact": null,
-    "website": null,
+    "website": "https://vsetkybehy.sk/podujatie/trojkralovy-beh-na-hrad-lietava-2027",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_range": "12–15 €",
+    "price_tiers": [
+      {
+        "distance": "Hlavný beh",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12 €",
+            "deadline": null,
+            "description": "Online registrácia 12 €"
+          }
+        ],
+        "late_fee": {
+          "price": "15 €",
+          "deadline": "20270109"
+        }
+      }
+    ],
+    "registration_close_date": "20270109",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vsetkybehy.sk/podujatie/trojkralovy-beh-na-hrad-lietava-2027#main-content",
+    "presumed_organizer_email": "kontakt@vsetkybehy.sk",
+    "website_emails_found": [
+      "kontakt@vsetkybehy.sk",
+      "privacy@vsetkybehy.sk"
+    ],
+    "description": "The Three Kings Run to Lietava Castle is a mountain trail race with 367 metres of elevation gain, running from the grounds of the primary school in Lietava to the upper courtyard of Lietava Castle. The course is 8.3 km long, with approximately 1 km on asphalt and the rest on marked forest trails and meadows. The race is open to adults and younger runners with parental consent, and mountain insurance is required. Each participant receives a race pack with a bag, a baguette and presents, as well as a finisher’s medal at the finish. The race results and prize-giving will take place after all participants have finished.",
+    "course_highlights": [
+      "367 metres of elevation gain",
+      "Approximately 1 km on asphalt, with the rest on forest trails and meadows",
+      "Finish in the upper courtyard of Lietava Castle"
+    ],
+    "additional": "Race check-in and bib collection take place on 9 January 2027 from 08:00 to 09:30 in the primary school building in Lietava. On-site registration is possible only if places are available, for €15 in cash. There is space to change and a storage area for personal belongings on the school grounds. The time limit for completing the course is 2 hours. Race check-in and bib distribution take place on the grounds of Lietava Primary School. Mountain insurance covering mountain rescue intervention is compulsory.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.bezeckypretek.sk/trojkralovy-beh-na-lietava-2027/",
       "https://beh.sk/pretek/trojkralovy-beh-na-hrad-lietava-2/"
@@ -50070,8 +50751,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90310&bieganie",
       "https://kalendarzbiegowy.pl/biegi/poznanski-bieg-noworoczny-2027/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90310&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86823&bieganie"
     ],
     "consolidated_ids": [
@@ -55032,17 +55713,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -56752,15 +57433,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "description",
-      "race_dates",
       "type",
+      "name",
       "county",
       "location",
-      "name",
+      "longitude",
+      "latitude",
+      "race_dates",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -58042,8 +58723,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Kraków, Polska",
     "latitude": 50.06465009999999,
@@ -58083,6 +58764,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91413&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87088&bieganie"
     ],
     "consolidated_ids": [
@@ -67642,11 +68324,15 @@
       [
         "20270207",
         "20270207"
+      ],
+      [
+        "20270221",
+        "20270221"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Osiedle Chomiczówka, Bielany, Warsaw, Polska",
     "latitude": 52.27319860000001,
@@ -67746,7 +68432,8 @@
     "is_series": false,
     "max_description_relevance": 0.55,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86800&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86800&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91421&bieganie"
     ],
     "consolidated_ids": [
       "9194f76e-0c70-4613-8d60-85ffc06233ff"
@@ -68540,8 +69227,8 @@
   {
     "domain_name": "raciansky_kros_zima",
     "name": "Račiansky kros ZIMA",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270207",
@@ -68552,50 +69239,50 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Rača, Bratislava, Slovakia",
-    "latitude": 48.21202840000001,
-    "longitude": 17.1546065,
+    "location": "Amfiteáter, Knižkova dolina, Rača, Bratislava, Slovakia",
+    "latitude": 48.2139548,
+    "longitude": 17.1452778,
     "county": "Region of Bratislava",
     "nearest_city": "Bratislava",
     "nearby_cities": [
       "Bratislava"
     ],
-    "distances": "[\"42.2\", \"16\", \"10\", \"9.5\", \"5\", \"3.2\"]",
+    "distances": "[\"16\", \"9.5\"]",
     "distance_m": [
-      42200,
       16000,
-      10000,
-      9500,
-      5000,
-      3200
+      9500
     ],
     "distance_keywords": [
-      "Maratón",
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "Maratón, 16 km, 10 km, 9.5 km, 5 km, 3.2 km",
-    "organizer": null,
+    "distance_verbose": "16 km, 9.5 km",
+    "organizer": "OZ PERUN",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.racianskykros.sk/zima/",
+    "fb_link": "https://www.facebook.com/racianskykros/?locale=sk_SK",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.racianskykros.sk/zima/",
+    "presumed_organizer_email": "racianskykros@gmail.com",
+    "website_emails_found": [
+      "racianskykros@gmail.com"
+    ],
+    "description": "Račiansky kros ZIMA is a forest run in Rača, Bratislava, along paths in the Little Carpathians. The start and finish are in Knižkova dolina, near the amphitheatre. Runners can choose between two courses, 9.5 km and 16 km long. The event is organised by OZ PERUN.",
+    "course_highlights": [
+      "Forest paths in the Little Carpathians",
+      "Two courses: 9.5 km and 16 km",
+      "Start and finish near the amphitheatre in Knižkova dolina"
+    ],
+    "additional": "Timing is provided by an RFID chip system.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://www.bezeckypretek.sk/raciansky-kros-zima-bratislava-raca-2027/",
       "https://www.terminovka.sk/podujatie/raciansky-kros-zima",
@@ -70132,6 +70819,72 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "xi_memorial_stanislawa_michonia",
+    "name": "XI Memoriał Stanisława Michonia",
+    "type": "other",
+    "type_local": "Inne",
+    "race_dates": [
+      [
+        "20260214",
+        "20260214"
+      ],
+      [
+        "20270213",
+        "20270213"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Szklarska Poręba, Polska",
+    "latitude": 50.8274316,
+    "longitude": 15.5261478,
+    "county": "Dolnośląskie",
+    "nearest_city": "Jelenia Góra",
+    "nearby_cities": [
+      "Jelenia Góra"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91455&bieganie"
+    ],
+    "consolidated_ids": [
+      "7ff35f88-b8fd-4e99-ad5c-f24d77aeec54"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -72166,6 +72919,68 @@
     ]
   },
   {
+    "domain_name": "nocna_12",
+    "name": "Nocna 12",
+    "type": "other",
+    "type_local": "Inne",
+    "race_dates": [
+      [
+        "20270215",
+        "20270215"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Szklarska Poręba, Polska",
+    "latitude": 50.8274316,
+    "longitude": 15.5261478,
+    "county": "Dolnośląskie",
+    "nearest_city": "Jelenia Góra",
+    "nearby_cities": [
+      "Jelenia Góra"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91454&bieganie"
+    ],
+    "consolidated_ids": [
+      "940fde68-1066-4a18-a147-f0a05f780224"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "begimas_varzybos_begame_uz_laisve_2026",
     "name": "Bėgimas varžybos „Bėgame už Laisvę“ 2026",
     "type": "road",
@@ -73165,6 +73980,103 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "14_cross_trzebnicki",
+    "name": "14 Cross Trzebnicki",
+    "type": "trail",
+    "type_local": "Bieg trailowy",
+    "race_dates": [
+      [
+        "20260222",
+        "20260222"
+      ],
+      [
+        "20270220",
+        "20270220"
+      ],
+      [
+        "20270221",
+        "20270221"
+      ],
+      [
+        "20270221",
+        "20270221"
+      ],
+      [
+        "20270221",
+        "20270221"
+      ],
+      [
+        "20270221",
+        "20270221"
+      ],
+      [
+        "20270221",
+        "20270221"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "11:00",
+    "location": "Trzebnica, Polska",
+    "latitude": 51.3104211,
+    "longitude": 17.0632716,
+    "county": "Dolnośląskie",
+    "nearest_city": "Wrocław",
+    "nearby_cities": [
+      "Wrocław"
+    ],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": "Pro-Run",
+    "contact": null,
+    "website": "http://cross.pro-run.pl/",
+    "fb_link": "https://www.facebook.com/events/bukowy-las-trzebnica/14-cross-trzebnicki/795159840013806/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "http://cross.pro-run.pl/#features",
+    "presumed_organizer_email": "zawody@pro-run.pl",
+    "website_emails_found": [
+      "zawody@pro-run.pl"
+    ],
+    "description": "Cross Trzebnicki to wymagający bieg terenowy odbywający się w malowniczym otoczeniu bukowego lasu i terenów zielonych przy Stawach Trzebnickich. Zawodnicy pokonują dystans 10 km, podzielony na trzy pętle po około 3,333 metra każda, na trasie o charakterze pagórkowatym z licznymi podbiegami i zbiegami. Bieg cieszy się popularnością wśród miłośników biegów górskich i terenowych, oferując piękne widoki i różnorodną nawierzchnię, głównie leśne ścieżki, szuter oraz fragmenty asfaltu. Uczestnicy otrzymują pakiet startowy z praktycznymi gadżetami oraz pamiątkowy medal.",
+    "course_highlights": [
+      "Trasa przełajowa o długości 10 km podzielona na 3 pętle po około 3,333 m",
+      "Pagórkowaty teren z licznymi podbiegami i zbiegami o różnym kącie nachylenia",
+      "Nawierzchnia: 90% leśne ścieżki i szuter, 10% asfalt i kostka"
+    ],
+    "additional": "Biuro zawodów czynne od godziny 9:00 w dniu biegu przy Stawach Trzebnickich. Start i meta w tym samym miejscu. Pakiet startowy zawiera skarpetki sportowe. Pomiar czasu za pomocą chipów w numerach startowych. Punkt odświeżania przy starcie/mecie. Parking dostępny przy Aqua-Zdrój Trzebnica oraz Hali Sportowej Trzebnica. Dekoracja zwycięzców od godziny 12:30. Depozyt i przebieralnie dostępne przy biurze zawodów.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.68,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86762&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91427&bieganie"
+    ],
+    "consolidated_ids": [
+      "a132c88e-ea5a-4ecb-abb0-a5cfc6cc1b30"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "obertrubacher_crosslauf",
     "name": "Obertrubacher Crosslauf",
     "type": "terrain",
@@ -73833,8 +74745,8 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87895&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=84200&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=84200&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87895&bieganie"
     ],
     "consolidated_ids": [
       "be606f15-1a5f-4785-9378-c6d2dbfec730"
@@ -74103,98 +75015,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261030",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "14_cross_trzebnicki",
-    "name": "14 Cross Trzebnicki",
-    "type": "trail",
-    "type_local": "Bieg trailowy",
-    "race_dates": [
-      [
-        "20260222",
-        "20260222"
-      ],
-      [
-        "20270221",
-        "20270221"
-      ],
-      [
-        "20270221",
-        "20270221"
-      ],
-      [
-        "20270221",
-        "20270221"
-      ],
-      [
-        "20270221",
-        "20270221"
-      ],
-      [
-        "20270221",
-        "20270221"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "11:00",
-    "location": "Trzebnica, Polska",
-    "latitude": 51.3104211,
-    "longitude": 17.0632716,
-    "county": "Dolnośląskie",
-    "nearest_city": "Wrocław",
-    "nearby_cities": [
-      "Wrocław"
-    ],
-    "distances": "[\"10\"]",
-    "distance_m": [
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": "Pro-Run",
-    "contact": null,
-    "website": "http://cross.pro-run.pl/",
-    "fb_link": "https://www.facebook.com/events/bukowy-las-trzebnica/14-cross-trzebnicki/795159840013806/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "http://cross.pro-run.pl/#features",
-    "presumed_organizer_email": "zawody@pro-run.pl",
-    "website_emails_found": [
-      "zawody@pro-run.pl"
-    ],
-    "description": "Cross Trzebnicki to wymagający bieg terenowy odbywający się w malowniczym otoczeniu bukowego lasu i terenów zielonych przy Stawach Trzebnickich. Zawodnicy pokonują dystans 10 km, podzielony na trzy pętle po około 3,333 metra każda, na trasie o charakterze pagórkowatym z licznymi podbiegami i zbiegami. Bieg cieszy się popularnością wśród miłośników biegów górskich i terenowych, oferując piękne widoki i różnorodną nawierzchnię, głównie leśne ścieżki, szuter oraz fragmenty asfaltu. Uczestnicy otrzymują pakiet startowy z praktycznymi gadżetami oraz pamiątkowy medal.",
-    "course_highlights": [
-      "Trasa przełajowa o długości 10 km podzielona na 3 pętle po około 3,333 m",
-      "Pagórkowaty teren z licznymi podbiegami i zbiegami o różnym kącie nachylenia",
-      "Nawierzchnia: 90% leśne ścieżki i szuter, 10% asfalt i kostka"
-    ],
-    "additional": "Biuro zawodów czynne od godziny 9:00 w dniu biegu przy Stawach Trzebnickich. Start i meta w tym samym miejscu. Pakiet startowy zawiera skarpetki sportowe. Pomiar czasu za pomocą chipów w numerach startowych. Punkt odświeżania przy starcie/mecie. Parking dostępny przy Aqua-Zdrój Trzebnica oraz Hali Sportowej Trzebnica. Dekoracja zwycięzców od godziny 12:30. Depozyt i przebieralnie dostępne przy biurze zawodów.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.68,
-    "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86762&bieganie"
-    ],
-    "consolidated_ids": [
-      "a132c88e-ea5a-4ecb-abb0-a5cfc6cc1b30"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -74848,6 +75668,70 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "liga_biegowa_i_nordic_walking",
+    "name": "Liga Biegowa i Nordic Walking",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20270221",
+        "20270221"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Sandomierz, Świętokrzyskie Voivodeship, Polska",
+    "latitude": 50.6822405,
+    "longitude": 21.7501781,
+    "county": "Świętokrzyskie",
+    "nearest_city": "Stalowa Wola",
+    "nearby_cities": [
+      "Stalowa Wola",
+      "Ostrowiec Świętokrzyski",
+      "Mielec"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91437&bieganie"
+    ],
+    "consolidated_ids": [
+      "1b9db4f9-dc4a-4953-8bf0-a1b36a0e696d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -86538,20 +87422,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "latitude",
-      "distances",
-      "start_time",
-      "name",
-      "additional",
-      "race_dates",
       "website",
-      "longitude",
-      "description",
+      "race_dates",
       "contact",
-      "location",
+      "start_time",
+      "additional",
+      "name",
+      "longitude",
       "price_range",
-      "organizer"
+      "location",
+      "distances",
+      "description",
+      "organizer",
+      "type",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -90599,8 +91483,8 @@
     "is_series": false,
     "max_description_relevance": 0.94,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86139&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90113&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86139&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86134&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90116&bieganie"
     ],
@@ -93790,8 +94674,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Kraków, Polska",
     "latitude": 50.06465009999999,
@@ -93873,6 +94757,8 @@
     "is_series": false,
     "max_description_relevance": 0.94,
     "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91439&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91439",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86893&bieganie"
     ],
     "consolidated_ids": [
@@ -126726,7 +127612,7 @@
   },
   {
     "domain_name": "xxxiv_memorial_uliczny",
-    "name": "XXXIV Memoriał Uliczny",
+    "name": "XXXIV Memoriał Uliczny im. Michała Fludra we Wleniu",
     "type": "road",
     "type_local": "Bieg uliczny",
     "race_dates": [
@@ -126738,39 +127624,94 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Wleń, Lower Silesian Voivodeship, Polska",
-    "latitude": 51.0176058,
-    "longitude": 15.677587,
+    "start_time": "11:00:00",
+    "location": "Wleń",
+    "latitude": 51.0173346519544,
+    "longitude": 15.6745033274638,
     "county": "Dolnośląskie",
     "nearest_city": "Jelenia Góra",
     "nearby_cities": [
       "Jelenia Góra",
       "Legnica"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
-    "organizer": null,
-    "contact": null,
-    "website": null,
+    "distances": "[\"10\", \"6\"]",
+    "distance_m": [
+      10000,
+      6000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 6 km",
+    "organizer": "Ośrodek Kultury Sportu i Turystyki we Wleniu",
+    "contact": "dyrektor.oksit@wlen.pl",
+    "website": "https://oksit.wlen.pl/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
+    "description": "Dzień dobry,\n\nzwracam się z uprzejmą prośbą o zamieszczenie na Państwa portalu/stronie internetowej informacji o nadchodzącym wydarzeniu sportowym – XXXIV Memoriale Ulicznym im. Michała Fludra, który odbędzie się we Wleniu w dniu 18 kwietnia 2027 roku.\n\nMemoriał to jedno z najważniejszych i najstarszych wydarzeń biegowych w naszym regionie, przyciągające co roku zarówno doświadczonych zawodników, jak i amatorów biegania, dzieci oraz młodzież. W ramach imprezy tradycyjnie odbędzie się bieg główny na dystansie 10 km ulicami miasta oraz biegi towarzyszące dla najmłodszych.\n\nPoniżej przesyłam gotowy tekst informacji prasowej do wykorzystania \nPropozycja tekstu do publikacji:\n\nXXXIV Memoriał Uliczny im. Michała Fludra we Wleniu \n\nOśrodek Kultury, Sportu i Turystyki we Wleniu serdecznie zaprasza wszystkich miłośników biegania na XXXIV Memoriał Uliczny im. Michała Fludra, który odbędzie się w niedzielę, 18 kwietnia 2027 roku.\n\nTrasa biegu głównego o długości 10 km poprowadzi malowniczymi ulicami Wlenia i okolic. Wydarzenie ma charakter otwarty i skierowane jest zarówno do biegaczy walczących o życiowe rekordy, jak i tych, którzy chcą aktywnie spędzić czas w sportowej atmosferze. Tradycyjnie przed biegiem głównym rozegrane zostaną biegi dziecięce i młodzieżowe na krótszych dystansach.\n\nSzczegółowy regulamin, program minutowy oraz link do zapisów elektronicznych dostępne będą wkrótce  na stronie internetowej:  oksit.pl oraz w mediach społecznościowych facebook : OKSiT Wleń.\n\nDo zobaczenia na starcie we Wleniu!\nW załączniku przesyłam zdjęcia  poprzedniego biegu do wykorzystania w publikacji.\nUdostępniam link do relacji z poprzedniego biegu - https://oksit.wlen.pl/wiadomosci/33831/za-nami-xxxiii-memorial-uliczny-im-michala-fludra-we-wleniu\nZ wyrazami szacunku,\n\nMarcin Jaworski\nOśrodek Kultury, Sportu i Turystyki we Wleniu\ntel. 536 578 724\nkultura@wlen.pl",
     "course_highlights": [],
     "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxxiv_memorial_uliczny_supplied%2Fxxxiv_memorial_uliczny_1.webp?alt=media",
+        "alt_text": "XXXIV Memoriał Uliczny im. Michała Fludra we Wleniu"
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxxiv_memorial_uliczny_supplied%2Fxxxiv_memorial_uliczny_2.webp?alt=media",
+        "alt_text": "Baner XXXIII Memoriał Uliczny im. Michała Fludra we Wleniu 2026 na ścianie budynku"
+      },
+      {
+        "number": 3,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxxiv_memorial_uliczny_supplied%2Fxxxiv_memorial_uliczny_3.webp?alt=media",
+        "alt_text": "Start biegu ulicznego z zawodnikami i widzami na tle zabytkowych kamienic we Wleniu"
+      },
+      {
+        "number": 4,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxxiv_memorial_uliczny_supplied%2Fxxxiv_memorial_uliczny_4.webp?alt=media",
+        "alt_text": "Zegar na wieży i lecące ptaki na tle nieba"
+      },
+      {
+        "number": 5,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxxiv_memorial_uliczny_supplied%2Fxxxiv_memorial_uliczny_5.webp?alt=media",
+        "alt_text": "Dzieci biegające ulicami Wlenia podczas biegu dziecięcego Memoriału Ulicznego"
+      },
+      {
+        "number": 6,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxxiv_memorial_uliczny_supplied%2Fxxxiv_memorial_uliczny_6.webp?alt=media",
+        "alt_text": "Dzieci z medalami na podium podczas Memoriału Ulicznego im. Michała Fludra we Wleniu"
+      },
+      {
+        "number": 7,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxxiv_memorial_uliczny_supplied%2Fxxxiv_memorial_uliczny_7.webp?alt=media",
+        "alt_text": "Ludzie i dzieci wykonują rozgrzewkę na rynku przed biegiem ulicznym we Wleniu."
+      }
+    ],
+    "supplied_images": true,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "latitude",
+      "organizer",
+      "start_time",
+      "website",
+      "distances",
+      "description",
+      "race_dates",
+      "contact",
+      "name",
+      "type",
+      "longitude",
+      "location"
+    ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
@@ -126779,8 +127720,10 @@
     "consolidated_ids": [
       "7cfd9f0c-3788-446e-a992-166f36e4c0c0"
     ],
-    "supplied_ids": [],
-    "supplied_at": null,
+    "supplied_ids": [
+      "15a09015-1d2c-41c3-80cd-b6909b620b47"
+    ],
+    "supplied_at": "20261118",
     "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
@@ -170954,8 +171897,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Olsztyn, Warmian-Masurian Voivodeship, Polska",
     "latitude": 53.778422,
@@ -170965,10 +171908,18 @@
     "nearby_cities": [
       "Olsztyn"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
+    "distances": "[\"53\", \"27\", \"12\", \"6\"]",
+    "distance_m": [
+      53000,
+      27000,
+      12000,
+      6000
+    ],
+    "distance_keywords": [
+      "50 km",
+      "5 km"
+    ],
+    "distance_verbose": "53 km, 27 km, 12 km, 6 km",
     "organizer": null,
     "contact": null,
     "website": "https://warneland.pl/",
@@ -170997,6 +171948,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://itra.run/Races/RaceDetails/Ultramaraton.Warmiński.Warneland.W50/2027/127008",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86746&bieganie"
     ],
     "consolidated_ids": [
@@ -198649,7 +199601,6 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://itra.run/Races/RaceDetails/Ultramaraton.Jaga.Kora.Ultamaraton.Jaga.Kora..Eagle..100km/2026/112494",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87154&bieganie"
     ],
     "consolidated_ids": [
@@ -205240,7 +206191,7 @@
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.02,
     "sources": [
       "https://ceskybeh.cz/zavody/velka-cena-przechwozd-2026/"
     ],
@@ -210051,40 +211002,40 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fmyslenicki_polmaraton_supplied%2Fmyslenicki_polmaraton_1.webp?alt=media",
-        "alt_text": "Stadion sportowy i parking o zachodzie słońca w otoczeniu zielonych wzgórz"
+        "alt_text": "Stadion lekkoatletyczny z widokiem na bieżnię i boisko przy zachodzie słońca"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fmyslenicki_polmaraton_supplied%2Fmyslenicki_polmaraton_2.webp?alt=media",
-        "alt_text": "Biegacze na zielonym moście nad rzeką podczas zachodu słońca."
+        "alt_text": "Biegacze biegnący przez most nad rzeką w otoczeniu zieleni o zmierzchu"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fmyslenicki_polmaraton_supplied%2Fmyslenicki_polmaraton_3.webp?alt=media",
-        "alt_text": "Widok z lotu ptaka na rynek i kościół w Myślenicach przy słonecznej pogodzie"
+        "alt_text": "Widok z lotu ptaka na rynek i zabudowania Myślenic w słoneczny dzień"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fmyslenicki_polmaraton_supplied%2Fmyslenicki_polmaraton_4.webp?alt=media",
-        "alt_text": "Rynek miasta z kamienicami i górami w tle przy słonecznej pogodzie"
+        "alt_text": "Rynek w Myślenicach z widokiem na góry i budynki w tle"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "start_time",
+      "latitude",
+      "price_range",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "price_range",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -210097,7 +211048,7 @@
     "supplied_ids": [
       "46029d11-6ced-417c-a919-472f4aa4d11b"
     ],
-    "supplied_at": "20261015",
+    "supplied_at": "20261117",
     "created_date": "20261023",
     "editors_uid": [],
     "pipeline_log": [],
@@ -223992,11 +224943,15 @@
       [
         "20270530",
         "20270530"
+      ],
+      [
+        "20270606",
+        "20270606"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": "09:00",
     "location": "Siechnice, Polska",
     "latitude": 51.03364999999999,
@@ -224106,7 +225061,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86863&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86863&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91425&bieganie"
     ],
     "consolidated_ids": [
       "1c6cb130-a605-43ee-8122-edc7ba41badc"
@@ -274589,8 +275545,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91283&bieganie",
-      "https://kalendarzbiegowy.pl/biegi/challenge-gdansk-2026/"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91283&bieganie"
     ],
     "consolidated_ids": [
       "c8513e2b-59ce-4c15-87ea-7a8f654a89b7"
@@ -282600,18 +283555,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "latitude",
-      "distances",
-      "name",
-      "race_dates",
-      "additional",
       "website",
-      "longitude",
-      "description",
+      "race_dates",
       "contact",
+      "additional",
+      "name",
+      "longitude",
       "location",
-      "organizer"
+      "distances",
+      "description",
+      "organizer",
+      "type",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -326370,8 +327325,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://kalendarzbiegowy.pl/biegi/tatra-skymarathon-2027/",
-      "https://kalendarzbiegowy.pl/biegi/tatra-skymarathon-2026/"
+      "https://kalendarzbiegowy.pl/biegi/tatra-skymarathon-2027/"
     ],
     "consolidated_ids": [
       "4ae75f49-cbba-4ffb-8c8c-0450df65e362"
@@ -416141,87 +417095,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "xi_zadyszka",
-    "name": "XI ZaDyszka Gminy Bełchhatów",
-    "type": "road",
-    "type_local": "Bieg uliczny",
-    "race_dates": [
-      [
-        "20260920",
-        "20260920"
-      ],
-      [
-        "20270919",
-        "20270919"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Bełchatów, Łódź Voivodeship, Polska",
-    "latitude": 51.3687535,
-    "longitude": 19.3564248,
-    "county": "Łódzkie",
-    "nearest_city": "Piotrków Trybunalski",
-    "nearby_cities": [
-      "Piotrków Trybunalski",
-      "Pabianice"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "additional",
-      "type",
-      "start_time",
-      "organizer",
-      "distances",
-      "description",
-      "name",
-      "longitude",
-      "latitude",
-      "race_dates",
-      "location",
-      "contact"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "supplied",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89604&bieganie"
-    ],
-    "consolidated_ids": [
-      "bfe7e890-a630-4cf3-99c4-9d3b897d1bd4"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "stadtlauf_erding_2026",
     "name": "Stadtlauf Erding 2026",
     "type": "road",
@@ -419739,8 +420612,8 @@
   {
     "domain_name": "taurostos_ruduo",
     "name": "Taurostos ruduo",
-    "type": "other",
-    "type_local": "Kita",
+    "type": "road",
+    "type_local": "Kelių",
     "race_dates": [
       [
         "20260920",
@@ -419754,46 +420627,50 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Jonava, Lithuania",
-    "latitude": 55.0727223,
-    "longitude": 24.2794638,
+    "start_time": "11:00",
+    "location": "Taurostos Park, Jonava, Lithuania",
+    "latitude": 55.0767845,
+    "longitude": 24.2985241,
     "county": "Kauno apskritis",
     "nearest_city": "Kaunas",
     "nearby_cities": [],
-    "distances": "[\"21.1\", \"7\"]",
+    "distances": "[\"21.1\", \"7\", \"1\"]",
     "distance_m": [
       21100,
-      7000
+      7000,
+      1000
     ],
     "distance_keywords": [
       "Pusmaratonas"
     ],
-    "distance_verbose": "Pusmaratonas, 7 km",
-    "organizer": null,
+    "distance_verbose": "Pusmaratonas, 7 km, 1 km",
+    "organizer": "BJ Bėgimai Jonavoje",
     "contact": null,
-    "website": "https://www.aliojonava.lt/story/5018/naujame-taurostos-metrastyje-vakar-siandien-ir-rytoj",
-    "fb_link": null,
+    "website": "https://uzjudek.lt/events/begimas-taurostos-ruduo-4gh64",
+    "fb_link": "https://www.facebook.com/events/taurostos-parkas/b%C4%97gimas-taurostos-ruduo/1453284729556182/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.aliojonava.lt/story/5018/naujame-taurostos-metrastyje-vakar-siandien-ir-rytoj",
-    "presumed_organizer_email": "redakcija@dzindra.lt",
+    "registration_url": "https://uzjudek.lt/register",
+    "race_info_url": "https://uzjudek.lt/events/begimas-taurostos-ruduo-4gh64",
+    "presumed_organizer_email": "info@uzjudek.lt",
     "website_emails_found": [
-      "redakcija@dzindra.lt",
-      "redakcija@aliojonava.lt"
+      "info@uzjudek.lt"
     ],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Taurostos Autumn is an autumn race held in Taurostos Park and across the bridges of Jonava, in memory of club member Jonas Verikas. The event offers three distances: 1 km, 7 km and a half marathon (21.1 km). Race numbers are issued from 9:30, with the 1 km race starting at 11:00 and the 7 km and half-marathon races at around 11:30. This traditional event brings running enthusiasts together in Jonava and offers a chance to enjoy autumn scenery and active leisure.",
+    "course_highlights": [
+      "The race takes place in Taurostos Park and across the bridges of Jonava",
+      "Choose from three distances: 1 km, 7 km and a half marathon",
+      "The event is held in memory of club member Jonas Verikas"
+    ],
+    "additional": "On race day, registration or changing distance on site costs 10 Eur. The event is also held in memory of club member Jonas Verikas.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://www.lbma.lt/index.php?kalendorius&year=2026"
     ],
@@ -419825,7 +420702,6 @@
       "Siedlce",
       "Inowrocław",
       "Suwałki",
-      "Ostrowiec Świętokrzyski",
       "Zamość",
       "Pruszków",
       "Łomża",
@@ -420351,27 +421227,27 @@
     "distance_verbose": "1 km, 0.5 km, 0.3 km",
     "organizer": null,
     "contact": null,
-    "website": "https://www.piliuona.kaunas.lm.lt/",
-    "fb_link": null,
+    "website": "https://krsportocentras.lt/event/begimo-varzybos-kauno-rajono-mero-valerijaus-makuno-ir-olimpiecio-kestucio-orento-taurei-laimeti/",
+    "fb_link": "https://www.facebook.com/kaunorajonobendruomene/",
     "ig_link": null,
-    "price_range": null,
+    "price_range": "Nemokamas",
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.piliuona.kaunas.lm.lt/",
-    "presumed_organizer_email": "piliuonosgimnazija@gmail.com",
+    "registration_url": "https://krsportocentras.lt/registracijos-forma/",
+    "race_info_url": "https://krsportocentras.lt/event/begimo-varzybos-kauno-rajono-mero-valerijaus-makuno-ir-olimpiecio-kestucio-orento-taurei-laimeti/",
+    "presumed_organizer_email": "info@krsportocentras.lt",
     "website_emails_found": [
-      "piliuonosgimnazija@gmail.com"
+      "info@krsportocentras.lt"
     ],
-    "description": null,
+    "description": "The traditional running competition in Zapyškis, held for the Kaunas District Mayor Valerijus Makūnas and Olympian Kęstutis Orentas Cup, invites running enthusiasts to take part and test their abilities. The competition takes place in a natural setting in Kaunas District, offering the chance to enjoy sport and a sense of community. The event is a great opportunity to meet recreational and professional runners and find inspiration in Olympian Kęstutis Orentas’s example.",
     "course_highlights": [],
-    "additional": null,
+    "additional": "The competition is free of charge. The event takes place in Zapyškis, Kaunas District. Organizer: Kaunas District Sports Centre. Registration is through the official registration form on the website.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://www.lbma.lt/files/races/2026-09-30_Begimo_varzybos_Kauno_rajono_mero_Valerijaus_Makuno_ir_olimpiecio_Kestucio_Orento_taurei_laimeti_rezultatai.xlsx"
     ],
@@ -442346,8 +443222,8 @@
   {
     "domain_name": "begimas_skirtas_sporto_ir_kuno_kulturos_dienai_pamineti",
     "name": "Bėgimas skirtas Sporto ir kūno kultūros dienai paminėti",
-    "type": "other",
-    "type_local": "Kita",
+    "type": "road",
+    "type_local": "Kelių",
     "race_dates": [
       [
         "20261003",
@@ -442361,7 +443237,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "11:30",
     "location": "Alytus, Alytus County, Lithuania",
     "latitude": 54.39610690000001,
     "longitude": 24.0460962,
@@ -442376,25 +443252,29 @@
     "distance_verbose": "Mišri distancija",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.lbmaregistracija.lt/sportodiena/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_close_date": "20271002",
+    "registration_url": "https://www.lbmaregistracija.lt/sportodiena/",
+    "race_info_url": "https://www.lbmaregistracija.lt/sportodiena/nuostatai/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "The Lithuanian Sports Day Run in Alytus is a mass running event aimed at promoting physical activity and a healthy lifestyle. The event is part of the National Physical Activity Programme and takes place in October. Participants can choose from three distances designed for different age groups. All finishers receive commemorative souvenirs, and the top performers are awarded medals.",
+    "course_highlights": [
+      "Course within the city of Alytus",
+      "Different distances for different age groups: 1.5 km, 3 km and 6 km",
+      "Start and finish near the Alytus Sports Centre"
+    ],
+    "additional": "Registration is available both online in advance and on the event day from 10:00 to 11:15. Race bibs must be worn on the front of the shirt. Participants take part voluntarily and assume all risks associated with running.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.38,
     "sources": [
       "https://www.lbma.lt/files/races/2026-10-03_Begimas_skirtas_Sporto_ir_kuno_kulturos_dienai_pamineti_rezultatai.xlsx"
     ],
@@ -448584,35 +449464,50 @@
     "nearby_cities": [
       "Košice"
     ],
-    "distances": "[\"21.098\"]",
+    "distances": "[\"21.1\"]",
     "distance_m": [
-      21098
+      21100
     ],
     "distance_keywords": [
       "Polmaratón"
     ],
     "distance_verbose": "Polmaratón",
-    "organizer": null,
+    "organizer": "Slovenský atletický zväz",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.kosicemarathon.com/",
+    "fb_link": "https://www.facebook.com/atletikasvk/posts/-m-sr-2026-v-polmarat%C3%B3ne-d%C3%B4le%C5%BEit%C3%BD-oznam-%C5%A1portovo-technick%C3%A9ho-deleg%C3%A1ta%E2%84%B9-na-majstr/1425337913016237/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.kosicemarathon.com/propozicie-mmm/",
+    "race_info_url": "https://www.kosicemarathon.com/propozicie-mmm/",
+    "presumed_organizer_email": "info@kosicemarathon.com",
+    "website_emails_found": [
+      "KMSR-MMM2026_1280x757-300x177@2x.jpg",
+      "Tromso-AIMS2026_1280x757-300x177@2x.jpg",
+      "1-rok-MarathonPointu-MMM2026_1280x757-300x177@2x.jpg",
+      "KPHM2026-vysledky_1280x757-300x177@2x.jpg",
+      "info@kosicemarathon.com",
+      "BAUERNEBLOV-DOM-foto_1280x757-300x177@2x.jpg",
+      "progress@progress.sk",
+      "MMM_foto_1280x757-300x177@2x.jpg",
+      "KPHM-2026-plagat-210x300@2x.png",
+      "PROGRAM-MMM-2015-foto_1280x757-300x177@2x.jpg"
+    ],
+    "description": "The Slovak Republic Championships in the Men’s and Women’s Half Marathon are part of the Košice Peace Marathon, held in Košice. The half-marathon course is fast, with few sharp turns and a favourable elevation profile, allowing runners to achieve excellent times. The start and finish are on Hlavná Street in the city centre, creating a pleasant atmosphere for runners and spectators alike. The event is organised with an emphasis on professional preparation and support for the running community.",
+    "course_highlights": [
+      "A fast course with few sharp turns",
+      "A favourable elevation profile suited to fast times",
+      "Start and finish on Hlavná Street in Košice"
+    ],
+    "additional": "The start of all events is on Hlavná Street, between the DoubleTree by Hilton hotel and the Dargov department store. The MMM relays consist of four runners, with legs of 12 km, 9 km and 12 km. The organiser awards age categories for the marathon and half marathon. Registration is available online only through the official website.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.67,
     "sources": [
       "https://www.kosicemarathon.com/wp-content/uploads/docs/msr/MSR-PM-2026.pdf"
     ],
@@ -471537,8 +472432,8 @@
   {
     "domain_name": "atviros_vilniaus_rajono_kroso_pirmenybes",
     "name": "Atviros Vilniaus rajono kroso pirmenybės",
-    "type": "other",
-    "type_local": "Kita",
+    "type": "trail",
+    "type_local": "Trailo",
     "race_dates": [
       [
         "20261017",
@@ -471553,7 +472448,7 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Nemenčinė, Vilnius District Municipality, Lithuania",
+    "location": "Miško slidinėjimo trasos prie biatlono šaudyklos, Nemenčinė, Vilnius County, Lithuania",
     "latitude": 54.8493153,
     "longitude": 25.4685349,
     "county": "Vilniaus apskritis",
@@ -471561,31 +472456,42 @@
     "nearby_cities": [
       "Vilnius"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mišri distancija",
-    "organizer": null,
+    "distances": "[\"5\", \"0.3\"]",
+    "distance_m": [
+      5000,
+      300
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km, 0.3 km",
+    "organizer": "Vilniaus rajono sporto centras",
     "contact": null,
-    "website": null,
+    "website": "https://vrsa.lt/titulinio-naujienos/424/atviros-vilniaus-rajono-kroso-pirmenybes-nemencineje:7812",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://vrsa.lt/titulinio-naujienos/424/atviros-vilniaus-rajono-kroso-pirmenybes-nemencineje:7812",
+    "presumed_organizer_email": "vrsa@vrsa.lt",
+    "website_emails_found": [
+      "vrsa@vrsa.lt"
+    ],
+    "description": "The Open Vilnius District Cross-Country Championships take place on the forest ski trails near the biathlon shooting range in Nemenčinė. These traditional races bring together participants competing in various age groups and distances, striving for their best results on the cross-country courses. The event draws running enthusiasts from Vilnius District and nearby areas, encouraging an active lifestyle and sportsmanship.",
+    "course_highlights": [
+      "The races take place on forest ski trails",
+      "The trails are near the biathlon shooting range in Nemenčinė",
+      "Cross-country courses of varying difficulty and length"
+    ],
+    "additional": "Separate men's and women's categories are planned for the competition.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.76,
     "sources": [
       "https://www.lbma.lt/files/races/2026-10-17_Atviros_Vilniaus_rajono_kroso_pirmenybes_nuostatai.pdf"
     ],
@@ -477524,39 +478430,49 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Botanical Garden of Vytautas Magnus University, Kaunas, Lithuania",
-    "latitude": 54.89916359999999,
-    "longitude": 23.9148984,
+    "location": "Vytautas Magnus University Botanical Garden, Kaunas, Lithuania",
+    "latitude": 54.8715763,
+    "longitude": 23.9107814,
     "county": "Kauno apskritis",
     "nearest_city": "Kaunas",
     "nearby_cities": [
       "Kaunas"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mišri distancija",
-    "organizer": null,
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": "VDU Botanikos sodas",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://botanika.vdu.lt/ivykiai/botanic-five-kaunas-2026",
+    "fb_link": "https://www.facebook.com/100063522101853/posts/-botanic-five-kaunas-2026/1690679846392736/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://botanika.vdu.lt/ivykiai/botanic-five-kaunas-2026",
+    "presumed_organizer_email": "vitalija.petrauskaite@vdu.lt",
+    "website_emails_found": [
+      "vitalija.petrauskaite@vdu.lt"
+    ],
+    "description": "Botanic Five Kaunas is a unique 5 km run held at the Botanical Garden of Vytautas Magnus University in Kaunas. The event offers the chance to run in beautiful natural surroundings and enjoy the diversity and scents of the garden’s plants. Children’s races are also organized, making the event suitable for the whole family. The Botanical Garden offers a sense of peace and connection with nature, making running here a special experience for both beginners and experienced runners.",
+    "course_highlights": [
+      "5 km route through the VMU Botanical Garden",
+      "Run surrounded by nature, with a variety of plants and scents",
+      "Children’s races for families"
+    ],
+    "additional": "The event takes place at the VMU Botanical Garden, which is open from 09:00 to 19:00 outside the season. The garden has a greenhouse and a tropical butterfly exhibition, which visitors can visit during the event. Visitors can purchase admission tickets, and after 17:00, entry to the park is permitted only with an electronic ticket or season pass.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.79,
     "sources": [
       "https://www.lbma.lt/files/races/2026-10-18_Botanic_Five_Kaunas_rezultatai.pdf"
     ],
@@ -501082,10 +501998,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://itra.run/Races/RaceDetails/Gorlicki.Bieg.Górski.24k/2026/111799",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89984&bieganie",
-      "https://itra.run/Races/RaceDetails/Gorlicki.Bieg.Górski.Pólmaraton.Beskid.Niski/2026/111799",
-      "https://kalendarzbiegowy.pl/biegi/gorlicki-bieg-gorski-2/"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89984&bieganie"
     ],
     "consolidated_ids": [
       "4ea06ab1-3930-494b-ae9c-784fdf05eb0e"
@@ -514154,11 +515067,15 @@
       [
         "20271110",
         "20271110"
+      ],
+      [
+        "20271111",
+        "20271111"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": "10:11",
     "location": "Inowrocław, Kuyavian-Pomeranian Voivodeship, Polska",
     "latitude": 52.7993317,
@@ -514234,6 +515151,7 @@
     "max_description_relevance": 0.0,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86845&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91426&bieganie",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91346&bieganie"
     ],
     "consolidated_ids": [
@@ -516702,7 +517620,6 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://kalendarzbiegowy.pl/biegi/xii-elblaski-bieg-niepodleglosci/",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91355&bieganie"
     ],
     "consolidated_ids": [
@@ -517578,8 +518495,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91348&bieganie",
-      "https://kalendarzbiegowy.pl/biegi/biegne-dla-niepodleglej-2/"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91348&bieganie"
     ],
     "consolidated_ids": [
       "d52cdebf-c35b-414f-b879-08dac582a224"
@@ -519914,6 +520830,72 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "8_rosbieg_niepodleglosci",
+    "name": "8 Rosbieg Niepodległości",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20261111",
+        "20261111"
+      ],
+      [
+        "20271110",
+        "20271110"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Rokietnica, Polska",
+    "latitude": 52.5094874,
+    "longitude": 16.7474972,
+    "county": "Wielkopolskie",
+    "nearest_city": "Poznań",
+    "nearby_cities": [
+      "Poznań"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91418&bieganie"
+    ],
+    "consolidated_ids": [
+      "0d865d08-a5aa-4a5c-befd-23d44b846d2c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "beh_na_dobrosov",
     "name": "Běh na Dobrošov",
     "type": "terrain",
@@ -520064,6 +521046,199 @@
       "Będzin",
       "Zgierz"
     ]
+  },
+  {
+    "domain_name": "topolcianska_bezecka_liga_2026_12_kolo",
+    "name": "Topoľčianska bežecká liga 2026 – 12. kolo",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261112",
+        "20261112"
+      ],
+      [
+        "20271111",
+        "20271111"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Park Tovarníky, Odbojárov Street, Topoľčany, Slovakia",
+    "latitude": 48.5646803,
+    "longitude": 18.1458711,
+    "county": "Region of Nitra",
+    "nearest_city": "Nitra",
+    "nearby_cities": [
+      "Nitra"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Zmiešané vzdialenosti",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/topolcianska-bezecka-liga-2026-12-kolo/"
+    ],
+    "consolidated_ids": [
+      "8d7ddb51-4ec3-4114-a887-11e2eb49b566"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261119",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Warsaw",
+      "Kraków",
+      "Łódź",
+      "Wrocław",
+      "Poznań",
+      "Lublin",
+      "Katowice",
+      "Częstochowa",
+      "Radom",
+      "Rzeszów",
+      "Toruń",
+      "Sosnowiec",
+      "Kielce",
+      "Gliwice",
+      "Zabrze",
+      "Bielsko-Biała",
+      "Bytom",
+      "Zielona Góra",
+      "Rybnik",
+      "Ruda Śląska",
+      "Tychy",
+      "Dąbrowa Górnicza",
+      "Płock",
+      "Wałbrzych",
+      "Włocławek",
+      "Tarnów",
+      "Chorzów",
+      "Kalisz",
+      "Legnica",
+      "Jaworzno",
+      "Jastrzębie-Zdrój",
+      "Nowy Sącz",
+      "Jelenia Góra",
+      "Siedlce",
+      "Mysłowice",
+      "Konin",
+      "Piotrków Trybunalski",
+      "Lubin",
+      "Inowrocław",
+      "Ostrów Wielkopolski",
+      "Gniezno",
+      "Ostrowiec Świętokrzyski",
+      "Siemianowice Śląskie",
+      "Głogów",
+      "Pabianice",
+      "Leszno",
+      "Żory",
+      "Zamość",
+      "Pruszków",
+      "Tarnowskie Góry",
+      "Tomaszów Mazowiecki",
+      "Chełm",
+      "Mielec",
+      "Kędzierzyn-Koźle",
+      "Przemyśl",
+      "Stalowa Wola",
+      "Bełchatów",
+      "Świdnica",
+      "Będzin",
+      "Zgierz"
+    ]
+  },
+  {
+    "domain_name": "nocny_jelczanski_bieg_towarzyski_4",
+    "name": "Nocny Jelczański Bieg Towarzyski 4",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20261113",
+        "20261113"
+      ],
+      [
+        "20271112",
+        "20271112"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Jelcz-Laskowice, Polska",
+    "latitude": 51.0212945,
+    "longitude": 17.3164789,
+    "county": "Dolnośląskie",
+    "nearest_city": "Wrocław",
+    "nearby_cities": [
+      "Wrocław"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88929&bieganie"
+    ],
+    "consolidated_ids": [
+      "c3f31ba4-d7b7-48cc-aeb6-25d8a68043f4"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
   },
   {
     "domain_name": "alten_busecker_winterlaufserie_1_event",
@@ -520747,68 +521922,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "nocny_jelczanski_bieg_towarzyski_4",
-    "name": "Nocny Jelczański Bieg Towarzyski 4",
-    "type": "road",
-    "type_local": "Bieg uliczny",
-    "race_dates": [
-      [
-        "20261113",
-        "20261113"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Jelcz-Laskowice, Polska",
-    "latitude": 51.0212945,
-    "longitude": 17.3164789,
-    "county": "Dolnośląskie",
-    "nearest_city": "Wrocław",
-    "nearby_cities": [
-      "Wrocław"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88929&bieganie"
-    ],
-    "consolidated_ids": [
-      "1a3c9c12-c32d-4545-accb-250f2bc69890"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "bieg_z_wasem",
     "name": "Bieg z Wąsem",
     "type": "road",
@@ -520921,7 +522034,6 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://itra.run/Races/RaceDetails/Borówkowa.Trail.21.km/2026/125725",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89960&bieganie"
     ],
     "consolidated_ids": [
@@ -521302,7 +522414,6 @@
     "is_series": true,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://kalendarzbiegowy.pl/biegi/botaniczna-piatka-zielona-gora-edycja-jesienna-2/",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90232&bieganie"
     ],
     "consolidated_ids": [
@@ -521672,39 +522783,39 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flodz_track_day_supplied%2Flodz_track_day_1.webp?alt=media",
-        "alt_text": "Biegacze na czerwonym torze lekkoatletycznym z logo Track Day"
+        "alt_text": "Zawodnicy na tartanowej bieżni z logo Track Day na czerwonym tle."
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flodz_track_day_supplied%2Flodz_track_day_2.webp?alt=media",
-        "alt_text": "Białe buty do biegania na czerwonym torze lekkoatletycznym"
+        "alt_text": "Białe kolce biegowe na tartanowej bieżni lekkoatletycznej na stadionie"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flodz_track_day_supplied%2Flodz_track_day_3.webp?alt=media",
-        "alt_text": "Ręka trzymająca kartkę \"TRACK DAY\" na bieżni lekkoatletycznej o zachodzie słońca"
+        "alt_text": "Bieżnia tartanowa z napisem \"TRACK DAY\" trzymanym przez rękę z zegarkiem sportowym"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flodz_track_day_supplied%2Flodz_track_day_4.webp?alt=media",
-        "alt_text": "Biegacze rywalizujący na bieżni podczas zawodów lekkoatletycznych."
+        "alt_text": "Zawodnicy biegną na tartanowej bieżni podczas wydarzenia Łódź Track Day."
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "start_time",
+      "latitude",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -521837,18 +522948,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "start_time",
-      "organizer",
-      "description",
-      "name",
-      "price_range",
-      "website",
-      "longitude",
       "latitude",
+      "price_range",
+      "organizer",
+      "start_time",
+      "website",
+      "description",
+      "contact",
+      "name",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -521924,41 +523035,41 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxvii_bieg_sokola_supplied%2Fxvii_bieg_sokola_1.webp?alt=media",
-        "alt_text": "Grupa biegaczy rywalizujących na ulicy podczas biegu w słoneczny dzień"
+        "alt_text": "Grupa biegaczy na asfaltowej drodze w otoczeniu zieleni i domów podczas biegu ulicznego."
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxvii_bieg_sokola_supplied%2Fxvii_bieg_sokola_2.webp?alt=media",
-        "alt_text": "Biegacze przekraczający linię mety pod zieloną bramą Podkarpackie podczas wyścigu ulicznego"
+        "alt_text": "Biegacze podczas ulicznego biegu pod zieloną bramą reklamową Podkarpackie."
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxvii_bieg_sokola_supplied%2Fxvii_bieg_sokola_3.webp?alt=media",
-        "alt_text": "Zawodnicy na linii startu/mety biegu Sokoła w Sokołowie Małopolskim."
+        "alt_text": "Start biegu XVII Bieg Sokoła w Sokołowie Małopolskim z zawodnikami pod dmuchaną bramą meta"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxvii_bieg_sokola_supplied%2Fxvii_bieg_sokola_4.webp?alt=media",
-        "alt_text": "Plakat XVII Biegu Sokoła z datą, trasami i zdjęciami biegaczy oraz mistrza olimpijskiego"
+        "alt_text": "Plakat promujący XVII Bieg Sokoła z datą, dystansami i gościem specjalnym Robertem Korzeniowskim."
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "type",
-      "start_time",
+      "latitude",
+      "price_range",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "price_range",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "additional",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -522091,35 +523202,35 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fcross_roslon_kabaty_supplied%2Fcross_roslon_kabaty_1.webp?alt=media",
-        "alt_text": "Logo biegu Cross Rosłon Kabaty z informacjami o organizatorze i partnerach."
+        "alt_text": "Logo i baner biegu Cross Rosłon Kabaty z informacjami organizatora i sponsorów"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fcross_roslon_kabaty_supplied%2Fcross_roslon_kabaty_2.webp?alt=media",
-        "alt_text": "Uczestnicy biegu Cross Rosłon Kabaty w Parku Kultury w Powsinie jesienią."
+        "alt_text": "Plakat promujący bieg przełajowy Cross Rosłon Kabaty z datą, miejscem i zdjęciami biegaczy."
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fcross_roslon_kabaty_supplied%2Fcross_roslon_kabaty_3.webp?alt=media",
-        "alt_text": "Medal z napisem Cross Rosłon Kabaty i datą 24.10.2026 z ilustracjami biegaczy i jesiennymi liśćmi"
+        "alt_text": "Medal z logo i biegaczami na Cross Rosłon Kabaty 24.10.2026 w Parku Kultury w Powsinie"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "type",
-      "start_time",
+      "latitude",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "additional",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -522132,100 +523243,8 @@
     "supplied_ids": [
       "ef8d21f5-f4a9-43f5-b8b7-4b12efda92b6"
     ],
-    "supplied_at": "20261012",
+    "supplied_at": "20261117",
     "created_date": "20261103",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "811_90_smak_maraton",
-    "name": "811-90 Smak Maraton",
-    "type": "road",
-    "type_local": "Bieg uliczny",
-    "race_dates": [
-      [
-        "20261031",
-        "20261031"
-      ],
-      [
-        "20261103",
-        "20261103"
-      ],
-      [
-        "20261108",
-        "20261108"
-      ],
-      [
-        "20261109",
-        "20261109"
-      ],
-      [
-        "20261110",
-        "20261110"
-      ],
-      [
-        "20261111",
-        "20261111"
-      ],
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Warszawa, Polska",
-    "latitude": 52.2296756,
-    "longitude": 21.0122287,
-    "county": "Mazowieckie",
-    "nearest_city": "Warsaw",
-    "nearby_cities": [
-      "Warsaw"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91309&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91228&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91145&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91226&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91312&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91310&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91311&bieganie"
-    ],
-    "consolidated_ids": [
-      "b39a37cd-204e-4be8-b33b-d2472e57afdd"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -522469,41 +523488,41 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_supplied%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_1.webp?alt=media",
-        "alt_text": "Plakat biegu III Kórnicki Bieg Zamoyskiego z biegaczem i zabytkami Kórnika."
+        "alt_text": "Plakat promujący III Kórnicki Bieg Zamoyskiego z biegaczem i architekturą Kórnika."
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_supplied%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_2.webp?alt=media",
-        "alt_text": "Grupa biegaczy pozujących przed startem na biegu ulicznym na zewnątrz."
+        "alt_text": "Grupa biegaczy z numerami startowymi na starcie III Kórnickiego Biegu Zamoyskiego."
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_supplied%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_3.webp?alt=media",
-        "alt_text": "Biegacze rozgrzewają się na trawie przed startem biegu na świeżym powietrzu"
+        "alt_text": "Biegacze rozgrzewają się na trawie przed startem III Kórnickiego Biegu Zamoyskiego."
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_supplied%2Fiii_kornicki_bieg_zamoyskiego_kornickie_centrum_rekreacji_i_sportu_oaza_4.webp?alt=media",
-        "alt_text": "Medale ułożone na stole przygotowane na III KÓRNICKI BIEG ZAMOYSKIEGO"
+        "alt_text": "Medale ułożone na drewnianym stole z kolorowymi wstążkami do biegu"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "type",
-      "start_time",
+      "latitude",
+      "price_range",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "price_range",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "additional",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -522574,34 +523593,34 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fi_bieg_jabloni_supplied%2Fi_bieg_jabloni_1.webp?alt=media",
-        "alt_text": "Budynek urzędu gminy Jabłonna Lacka z zegarem na froncie i flagami przed wejściem"
+        "alt_text": "Budynek Urzędu Gminy Jabłonna Lacka z flagami na tle nieba"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fi_bieg_jabloni_supplied%2Fi_bieg_jabloni_2.webp?alt=media",
-        "alt_text": "Plakat promujący Pierwszy Bieg Jabłoni w Jabłonnej Lackiej, wydarzenie sportowo-kulturalne na 2026 rok."
+        "alt_text": "Plakat I Bieg Jabłoni 2026 z informacjami o biegu i zapisami online."
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fi_bieg_jabloni_supplied%2Fi_bieg_jabloni_3.webp?alt=media",
-        "alt_text": "Nowoczesny budynek z czerwonym panelem i literami SCKS udekorowany balonami"
+        "alt_text": "Budynek SCKS w Jabłonnie Lackiej na tle nieba i drzew"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "type",
+      "latitude",
+      "price_range",
       "start_time",
       "distances",
       "description",
+      "contact",
       "name",
-      "price_range",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "additional",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -522671,51 +523690,51 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fii_bieg_transgranicznej_przyjazni_supplied%2Fii_bieg_transgranicznej_przyjazni_1.webp?alt=media",
-        "alt_text": "Grupa biegaczy na starcie biegu z maskotką i klaunem w kolorowych strojach"
+        "alt_text": "Uczestnicy biegu ustawieni na starcie, wśród nich maskotka i klaun w stroju."
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fii_bieg_transgranicznej_przyjazni_supplied%2Fii_bieg_transgranicznej_przyjazni_2.webp?alt=media",
-        "alt_text": "Grupa biegaczy przygotowujących się do startu podczas imprezy biegowej na zewnątrz"
+        "alt_text": "Uczestnicy biegu stojący razem przed startem na ulicy podczas imprezy biegowej."
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fii_bieg_transgranicznej_przyjazni_supplied%2Fii_bieg_transgranicznej_przyjazni_3.webp?alt=media",
-        "alt_text": "Biegacze podczas II Biegu Transgranicznej Przyjaźni na drodze w otoczeniu zieleni"
+        "alt_text": "Biegacze podczas II Biegu Transgranicznej Przyjaźni na asfaltowej drodze wśród zieleni"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fii_bieg_transgranicznej_przyjazni_supplied%2Fii_bieg_transgranicznej_przyjazni_4.webp?alt=media",
-        "alt_text": "Biegacze na leśnej ścieżce podczas wyścigu, dwie kobiety skaczące z radości."
+        "alt_text": "Biegacze na trasie biegu na 5 kilometrów podczas II Biegu Transgranicznej Przyjaźni"
       },
       {
         "number": 5,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fii_bieg_transgranicznej_przyjazni_supplied%2Fii_bieg_transgranicznej_przyjazni_5.webp?alt=media",
-        "alt_text": "Biegacze na starcie podczas II Biegu Transgranicznej Przyjaźni na ulicy"
+        "alt_text": "Biegacze startujący w drogowym biegu na 5 kilometrów pod dmuchaną bramą startową."
       },
       {
         "number": 6,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fii_bieg_transgranicznej_przyjazni_supplied%2Fii_bieg_transgranicznej_przyjazni_6.webp?alt=media",
-        "alt_text": "Kobieta skacząca podczas biegu na tle zieleni i wysokiego komina"
+        "alt_text": "Kobieta skacząca podczas biegu na tle zieleni i komina przemysłowego"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "type",
-      "start_time",
+      "latitude",
+      "price_range",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "price_range",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "additional",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -522788,39 +523807,39 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fwarszawa_track_day_supplied%2Fwarszawa_track_day_1.webp?alt=media",
-        "alt_text": "Czerwony tor lekkoatletyczny z biegaczami i logo Track Day."
+        "alt_text": "Bieżnia tartanowa z biegaczami i logo Track Day na czerwonym tle"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fwarszawa_track_day_supplied%2Fwarszawa_track_day_2.webp?alt=media",
-        "alt_text": "Biegacze ścigający się na bieżni podczas zawodów Warszawa Track Day 2026."
+        "alt_text": "Biegacze ścigają się na tartanowej bieżni podczas zawodów lekkoatletycznych"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fwarszawa_track_day_supplied%2Fwarszawa_track_day_3.webp?alt=media",
-        "alt_text": "Biegacz w pozycji startowej na bieżni lekkoatletycznej podczas treningu na świeżym powietrzu"
+        "alt_text": "Biegacz w pozycji startowej na tartanowej bieżni stadionu lekkoatletycznego"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fwarszawa_track_day_supplied%2Fwarszawa_track_day_4.webp?alt=media",
-        "alt_text": "Białe kolce do biegania na czerwonym torze lekkoatletycznym na stadionie"
+        "alt_text": "Białe kolce lekkoatletyczne na tartanowej bieżni stadionu lekkoatletycznego"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "start_time",
+      "latitude",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -522890,26 +523909,26 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxxv_bieg_sobiborski_supplied%2Fxxv_bieg_sobiborski_1.webp?alt=media",
-        "alt_text": "Biegacz przekracza metę XXV Biegu Sobiborskiego z datą i hasłem biegu."
+        "alt_text": "Plakat promujący XXV Bieg Sobiborski z datą i hasłem biegu oraz zawodnikiem na mecie"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "type",
-      "start_time",
+      "latitude",
+      "price_range",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "price_range",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "additional",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -522981,36 +524000,36 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fbieg_wolnosci_podatkowej_ifirma_bieg_stacjonarny_i_wirtualny_supplied%2Fbieg_wolnosci_podatkowej_ifirma_bieg_stacjonarny_i_wirtualny_1.webp?alt=media",
-        "alt_text": "Grafika promująca Bieg Wolności Podatkowej z biegaczem i datą 13 czerwca 2026."
+        "alt_text": "Ilustracja biegacza na tle Wrocławia z napisem Bieg Wolności Podatkowej i datą 13 czerwca 2026"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fbieg_wolnosci_podatkowej_ifirma_bieg_stacjonarny_i_wirtualny_supplied%2Fbieg_wolnosci_podatkowej_ifirma_bieg_stacjonarny_i_wirtualny_2.webp?alt=media",
-        "alt_text": "Zielona sylwetka biegacza na czarnym tle"
+        "alt_text": "Zielona sylwetka biegacza na białym tle, symbol biegania."
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fbieg_wolnosci_podatkowej_ifirma_bieg_stacjonarny_i_wirtualny_supplied%2Fbieg_wolnosci_podatkowej_ifirma_bieg_stacjonarny_i_wirtualny_3.webp?alt=media",
-        "alt_text": "Grafika promująca Bieg Wolności Podatkowej z datą i dystansami do wyboru."
+        "alt_text": "Grafika promująca Bieg Wolności Podatkowej z datą i możliwością biegu w całej Polsce."
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "additional",
-      "type",
-      "start_time",
+      "latitude",
+      "price_range",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "price_range",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "additional",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -523083,39 +524102,39 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flublin_track_day_supplied%2Flublin_track_day_1.webp?alt=media",
-        "alt_text": "Logo wydarzenia Track Day na tle czerwonej bieżni lekkoatletycznej"
+        "alt_text": "Widok z góry na tartanową bieżnię z biegaczami i logo Track Day"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flublin_track_day_supplied%2Flublin_track_day_2.webp?alt=media",
-        "alt_text": "Biegacz w pozycji startowej na bieżni lekkoatletycznej podczas treningu na zewnątrz"
+        "alt_text": "Młody biegacz w pozycji startowej na tartanowej bieżni lekkoatletycznej"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flublin_track_day_supplied%2Flublin_track_day_3.webp?alt=media",
-        "alt_text": "Biegacze ścigający się na bieżni podczas zawodów lekkoatletycznych"
+        "alt_text": "Biegacze rywalizują na tartanowej bieżni podczas zawodów lekkoatletycznych na stadionie."
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Flublin_track_day_supplied%2Flublin_track_day_4.webp?alt=media",
-        "alt_text": "Białe buty do biegania na kolcach na czerwonej bieżni lekkoatletycznej outdoors"
+        "alt_text": "Białe kolce lekkoatletyczne na tartanowej bieżni stadionu w Lublinie"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "start_time",
+      "latitude",
       "organizer",
+      "start_time",
+      "website",
       "distances",
       "description",
+      "contact",
       "name",
-      "website",
-      "longitude",
-      "latitude",
       "race_dates",
-      "location",
-      "contact"
+      "type",
+      "longitude",
+      "location"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -523130,6 +524149,161 @@
     ],
     "supplied_at": "20260717",
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "xi_zadyszka",
+    "name": "XI ZaDyszka Gminy Bełchhatów",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20260920",
+        "20260920"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "12:00:00",
+    "location": "Kurnos Drugi",
+    "latitude": 51.3260535566342,
+    "longitude": 19.3081873655319,
+    "county": "Łódzkie",
+    "nearest_city": "Piotrków Trybunalski",
+    "nearby_cities": [
+      "Piotrków Trybunalski",
+      "Pabianice"
+    ],
+    "distances": "[\"10.2\", \"3.4\"]",
+    "distance_m": [
+      10200,
+      3400
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10.2 km, 3.4 km",
+    "organizer": "Centrum Sportu i Promocji Gminy Bełchatów",
+    "contact": "p.weglewski@csip.ugbelchatow.pl",
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Wszystkich miłośników biegania zachęcamy, aby grubą linią zaznaczyć w kalendarzu datę 20 września. Właśnie wtedy odbędzie się jedenasta już edycja ZaDyszki Gminy Bełchatów. Uliczny bieg charytatywny, po rocznej przerwie wraca do Kurnosa (w ubiegłym roku ZaDyszka odbyła się w Postękalicach). Bieg odbędzie się na znanej wszystkim pętli przez Kurnos Drugi i Pierwszy, ze startem i metą przy Szkole Podstawowej im. Alfonsa Brandta. \n\nTradycyjnie na biegaczki i biegaczy czekać będą do wyboru dwa dystanse - 10 km w biegu głównym oraz 3,4 km, czyli jedno okrążenie trasy w biegu rekreacyjnym. Na najmłodszych czekać będzie Bieg Krasnala, a dla uczniów szkół podstawowych biegi na dystansach od 400 do 1000m. \n\nJak zwykle na terenie szkoły wyrośnie miasteczko zawodów, ze strefą zabaw dla dzieci i miejscem na regeneracyjny posiłek.",
+    "course_highlights": [],
+    "additional": "W programie:\n Bieg główny – 10 km (3 × 3,4 km = 10,2 km)\n Bieg rekreacyjny – 3,4 km (jedno okrążenie)\n Bieg Krasnali dla najmłodszych przedszkolaków\n Biegi dzieci i młodzieży (klasy I–VIII) na dystansach 400 m, 800 m i 1000 m",
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxi_zadyszka_supplied%2Fxi_zadyszka_1.webp?alt=media",
+        "alt_text": "Logo i plakat XI ZaDyszki Gminy Bełchatów z biegaczką i datą 20 września 2026 roku"
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fpl%2Fxi_zadyszka_supplied%2Fxi_zadyszka_2.webp?alt=media",
+        "alt_text": "Osoba sznurowa białe buty do biegania na zewnątrz obok bidonu i słuchawek"
+      }
+    ],
+    "supplied_images": true,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "latitude",
+      "organizer",
+      "start_time",
+      "distances",
+      "description",
+      "contact",
+      "name",
+      "race_dates",
+      "type",
+      "additional",
+      "longitude",
+      "location"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "supplied",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89604&bieganie"
+    ],
+    "consolidated_ids": [
+      "bfe7e890-a630-4cf3-99c4-9d3b897d1bd4"
+    ],
+    "supplied_ids": [
+      "9f2321b9-9272-4ed3-824a-2d191fe42c9a"
+    ],
+    "supplied_at": "20260720",
+    "created_date": "20261023",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "v_bieg_charytatywny_trigar_dla_mikolaja",
+    "name": "V Bieg Charytatywny Trigar dla Mikołaja",
+    "type": "road",
+    "type_local": "Bieg uliczny",
+    "race_dates": [
+      [
+        "20261115",
+        "20261115"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Czerwonak",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Mieszana odległość",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91419&bieganie"
+    ],
+    "consolidated_ids": [
+      "625edb61-ed70-49dc-84e5-88e0dce8b034"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -525646,19 +526820,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "description",
-      "latitude",
-      "name",
       "organizer",
-      "start_time",
-      "longitude",
-      "race_dates",
-      "price_range",
       "website",
-      "location",
-      "distances",
+      "price_range",
+      "name",
       "type",
-      "contact"
+      "distances",
+      "latitude",
+      "description",
+      "race_dates",
+      "location",
+      "contact",
+      "start_time",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -525749,19 +526923,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "description",
-      "latitude",
-      "name",
       "organizer",
-      "start_time",
-      "longitude",
-      "race_dates",
-      "price_range",
       "website",
-      "location",
-      "distances",
+      "price_range",
+      "name",
       "type",
-      "contact"
+      "distances",
+      "latitude",
+      "description",
+      "race_dates",
+      "location",
+      "contact",
+      "start_time",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -529392,20 +530566,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "latitude",
-      "distances",
-      "start_time",
-      "name",
-      "additional",
-      "race_dates",
       "website",
-      "longitude",
-      "description",
+      "race_dates",
       "contact",
-      "location",
+      "start_time",
+      "additional",
+      "name",
+      "longitude",
       "price_range",
-      "organizer"
+      "location",
+      "distances",
+      "description",
+      "organizer",
+      "type",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -529546,18 +530720,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "type",
-      "latitude",
+      "website",
+      "race_dates",
+      "contact",
       "start_time",
       "name",
-      "race_dates",
-      "website",
       "longitude",
-      "description",
-      "contact",
-      "location",
       "price_range",
-      "organizer"
+      "location",
+      "description",
+      "organizer",
+      "type",
+      "latitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -530486,129 +531660,6 @@
       "Przemyśl",
       "Stalowa Wola",
       "Biała Podlaska",
-      "Bełchatów",
-      "Świdnica",
-      "Będzin",
-      "Zgierz"
-    ]
-  },
-  {
-    "domain_name": "topolcianska_bezecka_liga_2026_12_kolo",
-    "name": "Topoľčianska bežecká liga 2026 – 12. kolo",
-    "type": "other",
-    "type_local": "Ostatné",
-    "race_dates": [
-      [
-        "20261112",
-        "20261112"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Park Tovarníky, Odbojárov Street, Topoľčany, Slovakia",
-    "latitude": 48.5646803,
-    "longitude": 18.1458711,
-    "county": "Region of Nitra",
-    "nearest_city": "Nitra",
-    "nearby_cities": [
-      "Nitra"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Zmiešané vzdialenosti",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://beh.sk/pretek/topolcianska-bezecka-liga-2026-12-kolo/"
-    ],
-    "consolidated_ids": [
-      "2f180913-b1ee-4fe7-a3d5-e348b54ce851"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "sk",
-    "nearby_foreign_cities": [
-      "Warsaw",
-      "Kraków",
-      "Łódź",
-      "Wrocław",
-      "Poznań",
-      "Lublin",
-      "Katowice",
-      "Częstochowa",
-      "Radom",
-      "Rzeszów",
-      "Toruń",
-      "Sosnowiec",
-      "Kielce",
-      "Gliwice",
-      "Zabrze",
-      "Bielsko-Biała",
-      "Bytom",
-      "Zielona Góra",
-      "Rybnik",
-      "Ruda Śląska",
-      "Tychy",
-      "Dąbrowa Górnicza",
-      "Płock",
-      "Wałbrzych",
-      "Włocławek",
-      "Tarnów",
-      "Chorzów",
-      "Kalisz",
-      "Legnica",
-      "Jaworzno",
-      "Jastrzębie-Zdrój",
-      "Nowy Sącz",
-      "Jelenia Góra",
-      "Siedlce",
-      "Mysłowice",
-      "Konin",
-      "Piotrków Trybunalski",
-      "Lubin",
-      "Inowrocław",
-      "Ostrów Wielkopolski",
-      "Gniezno",
-      "Ostrowiec Świętokrzyski",
-      "Siemianowice Śląskie",
-      "Głogów",
-      "Pabianice",
-      "Leszno",
-      "Żory",
-      "Zamość",
-      "Pruszków",
-      "Tarnowskie Góry",
-      "Tomaszów Mazowiecki",
-      "Chełm",
-      "Mielec",
-      "Kędzierzyn-Koźle",
-      "Przemyśl",
-      "Stalowa Wola",
       "Bełchatów",
       "Świdnica",
       "Będzin",
@@ -532308,19 +533359,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "organizer",
-      "description",
-      "price_range",
-      "name",
-      "latitude",
-      "start_time",
-      "distances",
-      "longitude",
       "location",
+      "distances",
+      "type",
+      "price_range",
       "contact",
       "website",
+      "description",
+      "longitude",
       "race_dates",
-      "type"
+      "start_time",
+      "latitude",
+      "organizer",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -532919,113 +533970,6 @@
     ]
   },
   {
-    "domain_name": "kaledinis_begimas_2",
-    "name": "Kalėdinis Bėgimas",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20261118",
-        "20261118"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Vilnius",
-    "latitude": 54.6871555,
-    "longitude": 25.2796514,
-    "county": "Vilniaus apskritis",
-    "nearest_city": "Vilnius",
-    "nearby_cities": [
-      "Vilnius"
-    ],
-    "distances": "[\"12\", \"6\", \"3\"]",
-    "distance_m": [
-      12000,
-      6000,
-      3000
-    ],
-    "distance_keywords": [
-      "5 km",
-      "3000 metrai"
-    ],
-    "distance_verbose": "12 km, 6 km, 3000 metrai",
-    "organizer": null,
-    "contact": "info@kaledinisbegimas.lt",
-    "website": "https://kaledinisbegimas.lt/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "The Eurovaistinė Christmas Run stands out not only for its festive atmosphere, but also for its distinctive participants, who dress up especially for the running celebration in Christmas (and other!) costumes. This year, the event schedule has been shifted so participants can run after dark, when the capital’s streets will reveal their magical Christmas spirit! We invite you to prepare not only Christmas costumes, but also glowing accessories that will turn the runners into a truly radiant Christmas spectacle!",
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "latitude",
-      "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
-      "name",
-      "website",
-      "longitude"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "fb6b3abf-6f37-4475-ac08-d14bb87b429e"
-    ],
-    "supplied_ids": [
-      "dbc847e7-f44e-43a8-b935-8af27b6c2fb1"
-    ],
-    "supplied_at": "20260906",
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "lt",
-    "nearby_foreign_cities": [
-      "Warsaw",
-      "Gdańsk",
-      "Lublin",
-      "Białystok",
-      "Gdynia",
-      "Radom",
-      "Toruń",
-      "Olsztyn",
-      "Elbląg",
-      "Płock",
-      "Włocławek",
-      "Grudziądz",
-      "Siedlce",
-      "Suwałki",
-      "Ostrowiec Świętokrzyski",
-      "Zamość",
-      "Pruszków",
-      "Łomża",
-      "Ełk",
-      "Tomaszów Mazowiecki",
-      "Chełm",
-      "Tczew",
-      "Biała Podlaska"
-    ]
-  },
-  {
     "domain_name": "bastardai_bega_is_lenkijos",
     "name": "Bastardai bėga iš Lenkijos",
     "type": "other",
@@ -533097,16 +534041,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -533222,16 +534166,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -533292,6 +534236,113 @@
       "Biała Podlaska",
       "Bełchatów",
       "Zgierz"
+    ]
+  },
+  {
+    "domain_name": "kaledinis_begimas_2",
+    "name": "Kalėdinis Bėgimas",
+    "type": "road",
+    "type_local": "Kelių",
+    "race_dates": [
+      [
+        "20261118",
+        "20261118"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Vilnius",
+    "latitude": 54.6871555,
+    "longitude": 25.2796514,
+    "county": "Vilniaus apskritis",
+    "nearest_city": "Vilnius",
+    "nearby_cities": [
+      "Vilnius"
+    ],
+    "distances": "[\"12\", \"6\", \"3\"]",
+    "distance_m": [
+      12000,
+      6000,
+      3000
+    ],
+    "distance_keywords": [
+      "5 km",
+      "3000 metrai"
+    ],
+    "distance_verbose": "12 km, 6 km, 3000 metrai",
+    "organizer": null,
+    "contact": "info@kaledinisbegimas.lt",
+    "website": "https://kaledinisbegimas.lt/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "The Eurovaistinė Christmas Run stands out not only for its festive atmosphere, but also for its distinctive participants, who dress up especially for the running celebration in Christmas (and other!) costumes. This year, the event schedule has been shifted so participants can run after dark, when the capital’s streets will reveal their magical Christmas spirit! We invite you to prepare not only Christmas costumes, but also glowing accessories that will turn the runners into a truly radiant Christmas spectacle!",
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "type",
+      "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
+      "website",
+      "description"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "ranking_bridge"
+    ],
+    "consolidated_ids": [
+      "fb6b3abf-6f37-4475-ac08-d14bb87b429e"
+    ],
+    "supplied_ids": [
+      "dbc847e7-f44e-43a8-b935-8af27b6c2fb1"
+    ],
+    "supplied_at": "20260906",
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "lt",
+    "nearby_foreign_cities": [
+      "Warsaw",
+      "Gdańsk",
+      "Lublin",
+      "Białystok",
+      "Gdynia",
+      "Radom",
+      "Toruń",
+      "Olsztyn",
+      "Elbląg",
+      "Płock",
+      "Włocławek",
+      "Grudziądz",
+      "Siedlce",
+      "Suwałki",
+      "Ostrowiec Świętokrzyski",
+      "Zamość",
+      "Pruszków",
+      "Łomża",
+      "Ełk",
+      "Tomaszów Mazowiecki",
+      "Chełm",
+      "Tczew",
+      "Biała Podlaska"
     ]
   },
   {
@@ -533362,17 +534413,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -533490,15 +534541,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "description",
-      "race_dates",
       "type",
+      "name",
       "county",
       "location",
-      "name",
+      "longitude",
+      "latitude",
+      "race_dates",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -533611,17 +534662,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -533729,16 +534780,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
+      "name",
       "county",
       "location",
       "contact",
-      "name",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -533870,17 +534921,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -533997,16 +535048,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -534121,17 +535172,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -534252,17 +535303,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -534390,17 +535441,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -534516,17 +535567,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -534661,17 +535712,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -534807,17 +535858,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -534924,17 +535975,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -535060,17 +536111,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -535181,16 +536232,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -535318,17 +536369,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -535450,17 +536501,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -535584,16 +536635,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -535726,16 +536777,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "longitude",
-      "latitude",
       "type",
-      "description",
-      "county",
-      "distances",
-      "location",
       "name",
+      "county",
+      "location",
+      "distances",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "race_dates"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -535859,17 +536910,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -536084,17 +537135,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -536208,15 +537259,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "description",
-      "race_dates",
       "type",
+      "name",
       "county",
       "location",
-      "name",
+      "longitude",
+      "latitude",
+      "race_dates",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -536439,17 +537490,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -536566,17 +537617,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
       "type",
-      "race_dates",
-      "description",
-      "county",
-      "distances",
-      "location",
-      "contact",
       "name",
+      "county",
+      "location",
+      "distances",
+      "contact",
+      "race_dates",
+      "latitude",
+      "longitude",
       "website",
-      "longitude"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
