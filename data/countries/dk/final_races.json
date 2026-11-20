@@ -1,96 +1,5 @@
 [
   {
-    "domain_name": "aura_nytarslobene_2026",
-    "name": "AURA Nytårsløbene 2026",
-    "type": "road",
-    "type_local": "Landevej",
-    "race_dates": [
-      [
-        "20261108",
-        "20261108"
-      ],
-      [
-        "20261119",
-        "20261119"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Tivoli Friheden, Aarhus, Danmark",
-    "latitude": 56.1368148,
-    "longitude": 10.1969443,
-    "county": "Midtjylland",
-    "nearest_city": "Aarhus",
-    "nearby_cities": [
-      "Aarhus"
-    ],
-    "distances": "[\"7.5\", \"5\", \"2.5\"]",
-    "distance_m": [
-      7500,
-      5000,
-      2500
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "7.5 km, 5 km, 2.5 km",
-    "organizer": "Aarhus 1900 Atletik og Løb & AURA",
-    "contact": null,
-    "website": "https://www.1900al.dk/nytaarsloebene",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "5 km & 10 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "199 kr",
-            "deadline": null,
-            "description": "Pris : kr. 199,- uanset distance // Børn under 15 år kr. 125,-"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": "https://www.1900al.dk/atletikudvalget",
-    "race_info_url": "https://www.1900al.dk/nytaarsloebene",
-    "presumed_organizer_email": "info@1900al.dk",
-    "website_emails_found": [
-      "info@1900al.dk"
-    ],
-    "description": "AURA Nytårsløbene 2026 byder velkommen til en smuk løbetur i efterårets gyldne farver i Marselisborg Skovene. Deltagerne kan vælge mellem 5 km og 10 km distancer, som løbes på en afspærret rute, der både giver mulighed for at sætte en hurtig tid eller nyde en hyggelig oplevelse i roligt tempo med familie og venner. Start og mål er ved Aarhus Atletik- og Løbeakademi, og alle modtages i mål med kakao og godt humør. Løbet er en del af en hyggelig løbsserie arrangeret af Aarhus 1900 Atletik og Løb & AURA.",
-    "course_highlights": [
-      "Løb i Marselisborg Skovene med efterårets flotte farver",
-      "Afspærret rute med mulighed for både hurtig tid og hyggeligt tempo",
-      "Start og mål ved Aarhus Atletik- og Løbeakademi"
-    ],
-    "additional": "Deltagerne kan vælge at løbe eller gå distancerne. Der er kakao og godt humør ved målet. Løbet er en del af en løbsserie med flere arrangementer i Aarhus, herunder Lysløbet og Adventsløbet.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.91,
-    "sources": [
-      "https://www.sportstiming.dk/event/19653"
-    ],
-    "consolidated_ids": [
-      "41aa6cea-0725-4742-b3bc-f24d3503d351"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260914",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "24h_online_running_4",
     "name": "24H Online Running",
     "type": "other",
@@ -138,15 +47,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -345,6 +254,10 @@
       [
         "20261122",
         "20261122"
+      ],
+      [
+        "20271121",
+        "20271121"
       ]
     ],
     "upcoming_dates": [],
@@ -412,6 +325,7 @@
     "is_series": false,
     "max_description_relevance": 0.91,
     "sources": [
+      "https://www.sportstiming.dk/event/20102",
       "https://www.sportstiming.dk/event/17471"
     ],
     "consolidated_ids": [
@@ -893,15 +807,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -971,15 +885,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1649,15 +1563,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1961,13 +1875,13 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "latitude",
+      "race_dates",
+      "location",
+      "name",
+      "type",
       "description",
       "longitude",
-      "race_dates",
-      "name",
-      "latitude",
-      "location",
-      "type",
       "county"
     ],
     "is_series": false,
@@ -2193,15 +2107,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2421,15 +2335,15 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2867,15 +2781,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3490,15 +3404,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3521,22 +3435,22 @@
   },
   {
     "domain_name": "total_el_nytarslobet",
-    "name": "Total El Nytårsløbet",
+    "name": "TOTAL EL Nytårsløbet 2026",
     "type": "road",
     "type_local": "Landevej",
     "race_dates": [
       [
-        "20261230",
-        "20261230"
+        "20261231",
+        "20261231"
       ]
     ],
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "09:30:00",
     "location": "Sportscenter Herning, Holingknuden 3, 7400, Herning.",
-    "latitude": 56.15652945831061,
-    "longitude": 8.963812440633776,
+    "latitude": 56.1578780640872,
+    "longitude": 8.96668553341442,
     "county": "Midtjylland",
     "nearest_city": "Herning",
     "nearby_cities": [
@@ -3554,41 +3468,46 @@
       "5 km"
     ],
     "distance_verbose": "Halvmarathon, 10 km, 5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
+    "organizer": "Herning Løbeklub",
+    "contact": "claushviid@mail.dk",
+    "website": "https://www.xn--nytrslbet-72a6s.dk/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "125 - 275",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Nytårsløbet i Herning 2025– En festlig start på det nye år!\nTag hul på det nye år med frisk luft, god stemning og masser af energi til Nytår",
+    "description": "🎆⚡ Fest eller PR? Hvorfor ikke begge dele! ⚡🎆\n\nAfslut 2026 med maven fuld af sommerfugle og en tid, du kan prale af ved nytårsmiddagen. TOTAL EL Nytårsløbet i Herning har plads til både dig, der jagter rekorden, og dig, der løber i paillet-pandebånd. 🥂🏃‍♀️\n\n🏁 Hurtig rute. Din sidste chance for et PR i år\n✨ 5 km, 10 km eller halvmaraton. Løb, gå eller giv den gas\n🎉 Nytårsstemning, musik og masser af hygge\n📍 Sportscenter Herning, Holingknuden 3\n\nForbrænd kransekagen på forskud, eller sæt et flot punktum for løbeåret. Du bestemmer selv. 😉\n\n👉 Tilmeld dig på nytårsløbet.dk, og tag vennerne med!\n\n#Nytårsløbet #TOTALEL #Herning #PRhunt #Løb #Nytår2026 #LøbDetGamleÅrUd",
     "course_highlights": [],
-    "additional": null,
+    "additional": "Løbsfakta \n \n\nTidspunkt\n\nTorsdag den 31/12 2026 kl. 10.00 /10.10 / 10.20\nEarly starters halvmaraton 09.30\n\nDistancer:\n\nHalvmaraton Early starter: Løb start kl. 09.30, DAF opmålt .\nHalvmaraton: Løb start kl. 10.00, DAF opmålt .\n10 km: Løb start kl. 10.10, DAF opmålt\n5 km: Løb/gang start kl. 10.20, DAF opmålt\n\nStart/mål\n\nBad/omkl.\n\nSportscenter Herning, Holingknuden 3, 7400, Herning.\n\nDer er mulighed for bad og omklædning. Herrer i stueplan og kvinder på første sal.\n\nParkering\n\nParkering ved Ishockey hallen og vandrehjemmet. Indkørsel fra Vesterholmvej\nSamt ved ishockeyhallen indkørsel fra Brændgårdvej\n\nTilmelding\n\nOnlinetilmelding : Se menuen øverst på siden\nTilmelding er også muligt på selve løbsdagen fra kl. 8.30 til 9.30\n\nStartgebyr\n\nHalvmaraton: 225kr. ved tilmelding senest 1. nov. Herefter 250 kr. ved tilmelding til og med 1. dec. Herefter 275 kr.\n10 km: henholdsvis 175,- / 200,- / 225, kr.\n5 km : henholdsvis 125,- / 150,- / 175, kr.\nEarly starters halvmaraton : henholdsvis 225,- / 250,- / 275, kr.\nPriserne er excl. gebyr\n\nDer kan bruges Mobilepay og kontanter på løbsdagen\n\nAldersbegr\n\nDeltagere skal være fyldt 15 år på løbsdagen ved halvmaraton distancen\n\nStartnumre\n\nUdleveres på løbsdagen fra kl. 08.30 til ½ time før løbsstart.\n\nHenstilling\n\nLøbere med hunde samt barfodsløbere er ikke tilladt.\n\nPræmier\n\nOBS! Store lodtrækningspræmier kan afhentes når du er kommet i mål. Husk at se efter i hallen om du har vundet\n\nDer er medaljer til alle deltagere ved målstregen\n\n\nPengepræmier til de 3 hurtigste herrer/damer på alle 3 distancer.\nPræmieoverrækkelse 5 og 10 km ca. kl. 11.15\nPræmieoverrækkelse halvmaraton ca. kl. 12.00\n\nYderligere lodtrækningspræmier til forhåndstilmeldte fra Sport24, kan ses på en ophængt liste.\n\nTidtagning\n\nTidtagning med Chip på startnummeret fra RaceResult\n\nResultatliste /Diplomer\n\nKan ses og udskrives direkte fra hjemmesiden\n\nRuterne\n\nDer er væskedepot på 10 km og halvmaraton samt i målområdet\n\n\nDer er samaritter fra ASF i målområdet.\n\nEfter løbet\n\nDer serveres en sandwich og en øl / vand til alle deltagere. Det er ikke muligt for tilskuere at købe sandwich m.m.\n\nMere Info\n\nClaus Hviid Christensen, 23707040 , claushviid@mail.dk\n\n\nAflysning\n\nVi forbeholder os retten til at aflyse løbet, hvis løbsledelsen skønner at vejrforholdene eller andre sikkerhedsproblemer gør, at løbet ikke kan gennemføres.\nI tilfælde af aflysning tilbagebetales max halvdelen af deltagergebyret.\n\nDoping kontrol\n\nDer kan forekomme dopingkontrol.",
     "images": [
       {
         "number": 1,
-        "url": "https://storage.googleapis.com/aggregatory-440306.firebasestorage.app/race-images/dk/total_el_nytarslobet_supplied/total_el_nytarslobet_1.webp?v=1",
         "firebase_url": "https://storage.googleapis.com/aggregatory-440306.firebasestorage.app/race-images/dk/total_el_nytarslobet_supplied/total_el_nytarslobet_1.webp?v=1",
         "alt_text": "Total El Nytårsløbet"
       }
     ],
-    "supplied_images": true,
+    "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "organizer",
+      "race_dates",
+      "start_time",
+      "price_range",
       "location",
+      "name",
       "type",
-      "county"
+      "additional",
+      "description",
+      "website",
+      "longitude",
+      "county",
+      "distances",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3599,9 +3518,9 @@
       "393f52a9-49a5-553a-a94e-bfd2a8dff842"
     ],
     "supplied_ids": [
-      "a781d156-e2ed-5364-93d2-ff8a95ee01b9"
+      "d14fa1d1-b89b-4208-bef6-ac8131f18ceb"
     ],
-    "supplied_at": "20260914",
+    "supplied_at": "20261116",
     "created_date": "20260914",
     "editors_uid": [],
     "pipeline_log": [],
@@ -6757,75 +6676,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "sydvest_crosslob_2026_27_afd_8_byparken_brorup",
-    "name": "Sydvest Crossløb 2026/27 - afd. 8 - Byparken Brørup",
-    "type": "road",
-    "type_local": "Landevej",
-    "race_dates": [
-      [
-        "20270227",
-        "20270227"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Byparken, Brørup, Danmark",
-    "latitude": 55.486328,
-    "longitude": 9.016345,
-    "county": "Syddanmark",
-    "nearest_city": "Kolding",
-    "nearby_cities": [
-      "Kolding",
-      "Esbjerg"
-    ],
-    "distances": "[\"7.5\", \"5\", \"2.5\"]",
-    "distance_m": [
-      7500,
-      5000,
-      2500
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "7.5 km, 5 km, 2.5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.sportstiming.dk/event/18956"
-    ],
-    "consolidated_ids": [
-      "4d62d42f-7fef-4c4c-9c1c-be6c0e801d76"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260914",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "sydvest_crosslob_2026_27_cup_tilmelding_alle_lob",
     "name": "Sydvest Crossløb 2026/27 - Cup tilmelding alle løb",
     "type": "road",
@@ -7236,6 +7086,75 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260914",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "sydvest_crosslob_2026_27_afd_8_byparken_brorup",
+    "name": "Sydvest Crossløb 2026/27 - afd. 8 - Byparken Brørup",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20270228",
+        "20270228"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Byparken, Brørup, Danmark",
+    "latitude": 55.486328,
+    "longitude": 9.016345,
+    "county": "Syddanmark",
+    "nearest_city": "Kolding",
+    "nearby_cities": [
+      "Kolding",
+      "Esbjerg"
+    ],
+    "distances": "[\"7.5\", \"5\", \"2.5\"]",
+    "distance_m": [
+      7500,
+      5000,
+      2500
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "7.5 km, 5 km, 2.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/18956"
+    ],
+    "consolidated_ids": [
+      "4111f16a-ced3-4332-ad41-d373a7fa018e"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -9394,41 +9313,41 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fthe_royal_copenhagen_city_half_supplied%2Fthe_royal_copenhagen_city_half_1.webp?alt=media",
-        "alt_text": "Løbere i bevægelse foran en historisk bygning i København under et løb."
+        "alt_text": "Løbere i bevægelse foran Marmorkirken i København under et byløb"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fthe_royal_copenhagen_city_half_supplied%2Fthe_royal_copenhagen_city_half_2.webp?alt=media",
-        "alt_text": "Løbere krydser en bro under et byløb i København med vand og bygninger i baggrunden"
+        "alt_text": "Løbere på bro i København under byhalvmaraton med vand og bygninger i baggrunden"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fthe_royal_copenhagen_city_half_supplied%2Fthe_royal_copenhagen_city_half_3.webp?alt=media",
-        "alt_text": "Løbere i byløb får high-five fra tilskuere langs gaden under løbet."
+        "alt_text": "Løbere i bymiljø giver high fives til tilskuere under et gadeløb i København."
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fthe_royal_copenhagen_city_half_supplied%2Fthe_royal_copenhagen_city_half_4.webp?alt=media",
-        "alt_text": "Løbere deltager i Royal Copenhagen City Half løb gennem byens gader."
+        "alt_text": "Løbere deltager i et halvmaratonløb gennem Københavns gader med startnummer på brystet."
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "additional",
-      "race_dates",
-      "price_range",
-      "organizer",
-      "description",
-      "name",
-      "location",
-      "start_time",
       "latitude",
+      "organizer",
+      "start_time",
+      "price_range",
+      "location",
+      "name",
       "type",
-      "contact",
-      "website"
+      "additional",
+      "description",
+      "website",
+      "longitude",
+      "race_dates",
+      "distances",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -9771,6 +9690,72 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "kinnekulle_trail",
+    "name": "Kinnekulle Trail",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20270418",
+        "20270418"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Hällekis, Götene Municipality, Västra Götaland County, Sweden",
+    "latitude": 58.6322458,
+    "longitude": 13.4378399,
+    "county": null,
+    "nearest_city": "Hjørring",
+    "nearby_cities": [],
+    "distances": "[\"19\", \"11.5\", \"5.5\"]",
+    "distance_m": [
+      19000,
+      11500,
+      5500
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "19 km, 11.5 km, 5.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20322"
+    ],
+    "consolidated_ids": [
+      "4faa67d2-374b-45ba-a51e-f16ad028bae5"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -12551,6 +12536,75 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "red_horse_midsommerstafetten_2027",
+    "name": "RED HORSE Midsommerstafetten 2027",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20270601",
+        "20270601"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Skanderborg, Danmark",
+    "latitude": 56.037247,
+    "longitude": 9.9297989,
+    "county": "Midtjylland",
+    "nearest_city": "Aarhus",
+    "nearby_cities": [
+      "Aarhus"
+    ],
+    "distances": "[\"7\", \"5\", \"2.5\", \"1\"]",
+    "distance_m": [
+      7000,
+      5000,
+      2500,
+      1000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "7 km, 5 km, 2.5 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20000"
+    ],
+    "consolidated_ids": [
+      "69adda24-24aa-4dc7-8dc4-62fc0b1e6887"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "hillerod_halvmaraton_2027",
     "name": "Hillerød Halvmaraton 2027",
     "type": "road",
@@ -12692,6 +12746,88 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "alt_for_damernes_kvindelob_27_kobenhavn",
+    "name": "ALT for damernes Kvindeløb 27 - København",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20270606",
+        "20270606"
+      ],
+      [
+        "20270607",
+        "20270607"
+      ],
+      [
+        "20270613",
+        "20270613"
+      ],
+      [
+        "20270614",
+        "20270614"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "København S, Copenhagen, Danmark",
+    "latitude": 55.6508754,
+    "longitude": 12.5991891,
+    "county": "Hovedstaden",
+    "nearest_city": "København",
+    "nearby_cities": [
+      "København"
+    ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20305",
+      "https://www.sportstiming.dk/event/20304",
+      "https://www.sportstiming.dk/event/20087"
+    ],
+    "consolidated_ids": [
+      "58ea1fd6-8fc6-4bc7-9912-eb842636c1a4"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "gladsaxe_lobet_2027",
     "name": "Gladsaxe-Løbet 2027",
     "type": "road",
@@ -12824,6 +12960,142 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "alt_for_damernes_kvindelob_27_frdericia",
+    "name": "ALT for damernes Kvindeløb 27 - Frdericia",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20270616",
+        "20270616"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Fredericia, Danmark",
+    "latitude": 55.5689298,
+    "longitude": 9.749516999999999,
+    "county": "Syddanmark",
+    "nearest_city": "Kolding",
+    "nearby_cities": [
+      "Kolding"
+    ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20316"
+    ],
+    "consolidated_ids": [
+      "dbb3f184-7523-4fe6-bb9a-27697f37ea55"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "alt_for_damernes_kvindelob_27_odense",
+    "name": "ALT for damernes Kvindeløb 27 - Odense",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20270617",
+        "20270617"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Aarhus C, Aarhus, Danmark",
+    "latitude": 56.14666570000001,
+    "longitude": 10.203769,
+    "county": "Midtjylland",
+    "nearest_city": "Aarhus",
+    "nearby_cities": [
+      "Aarhus"
+    ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20317"
+    ],
+    "consolidated_ids": [
+      "55ad90ed-6e06-4ef3-87c0-95ae0ef38f50"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -15788,26 +16060,26 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Forestad_half_marathon_10k_supplied%2Forestad_half_marathon_10k_1.webp?alt=media",
-        "alt_text": "Løbere samlet ved startlinjen til Ørestad Half Marathon med race skilte og bib-numre."
+        "alt_text": "Løbere samlet ved start til Ørestad Half Marathon & 10K ved Naturcenter Amager."
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "additional",
-      "race_dates",
-      "price_range",
-      "organizer",
-      "description",
-      "name",
-      "location",
-      "start_time",
       "latitude",
+      "organizer",
+      "start_time",
+      "price_range",
+      "location",
+      "name",
       "type",
-      "contact",
-      "website"
+      "additional",
+      "description",
+      "website",
+      "longitude",
+      "race_dates",
+      "distances",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -15820,8 +16092,68 @@
     "supplied_ids": [
       "df1530c1-c5d4-4d31-9dd0-2121dae15aa4"
     ],
-    "supplied_at": "20261005",
+    "supplied_at": "20261117",
     "created_date": "20261024",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "grebbestadsloppet",
+    "name": "Grebbestadsloppet",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20270905",
+        "20270905"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Grebbestad, Danmark",
+    "latitude": 58.6930388,
+    "longitude": 11.2549947,
+    "county": null,
+    "nearest_city": "Hjørring",
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Blandet distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20320"
+    ],
+    "consolidated_ids": [
+      "d61bd18c-ac6c-4f6b-a75c-d8c84c51fd9d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -18329,11 +18661,15 @@
       [
         "20271003",
         "20271003"
+      ],
+      [
+        "20271010",
+        "20271010"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Silkeborg, Danmark",
     "latitude": 56.176362,
@@ -18343,10 +18679,14 @@
     "nearby_cities": [
       "Herning"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distance",
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
     "organizer": null,
     "contact": null,
     "website": null,
@@ -18369,7 +18709,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportstiming.dk/event/17294"
+      "https://www.sportstiming.dk/event/17294",
+      "https://www.sportstiming.dk/event/20292"
     ],
     "consolidated_ids": [
       "d6070413-7f5b-42e0-81e8-7a98006ef836"
@@ -18845,18 +19186,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
+      "latitude",
       "race_dates",
       "price_range",
-      "name",
       "location",
-      "latitude",
+      "name",
       "type",
-      "contact",
+      "description",
       "website",
-      "county"
+      "longitude",
+      "county",
+      "distances",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -18870,7 +19211,7 @@
     "supplied_ids": [
       "822c57ef-8f76-45d1-949b-0242f96cdfeb"
     ],
-    "supplied_at": "20261005",
+    "supplied_at": "20261117",
     "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
@@ -19059,41 +19400,41 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Froyal_aarhus_city_marathon_2027_supplied%2Froyal_aarhus_city_marathon_2027_1.webp?alt=media",
-        "alt_text": "Luftfoto af Aarhus med information om Royal Aarhus City Marathon 2027 og løbsdetaljer."
+        "alt_text": "Panoramabillede af Aarhus med Royal Aarhus City Marathon logo og løbsinformationer."
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Froyal_aarhus_city_marathon_2027_supplied%2Froyal_aarhus_city_marathon_2027_2.webp?alt=media",
-        "alt_text": "Luftfoto af Aarhus havneområde med moderne bygninger og vand under klart vejr"
+        "alt_text": "Luftfoto af Aarhus Ø med havnefront og bygninger ved vandet i Aarhus."
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Froyal_aarhus_city_marathon_2027_supplied%2Froyal_aarhus_city_marathon_2027_3.webp?alt=media",
-        "alt_text": "Luftfoto af Aarhus havnefront med moderne bygninger og vand under klart vejr"
+        "alt_text": "Luftfoto af Aarhus havn med Dokk1 og byens skyline i baggrunden"
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Froyal_aarhus_city_marathon_2027_supplied%2Froyal_aarhus_city_marathon_2027_4.webp?alt=media",
-        "alt_text": "Luftfoto af en marina med både og bygninger i Aarhus ved solnedgang"
+        "alt_text": "Luftfoto af Aarhus havn med både og industribygninger ved vandet ved solnedgang"
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "additional",
-      "race_dates",
-      "price_range",
-      "organizer",
-      "description",
-      "name",
-      "location",
-      "start_time",
       "latitude",
+      "organizer",
+      "start_time",
+      "price_range",
+      "location",
+      "name",
       "type",
-      "contact",
-      "website"
+      "additional",
+      "description",
+      "website",
+      "longitude",
+      "race_dates",
+      "distances",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -19106,7 +19447,7 @@
     "supplied_ids": [
       "b578bcad-5773-4f33-96b6-d3e757d76584"
     ],
-    "supplied_at": "20261029",
+    "supplied_at": "20261117",
     "created_date": "20261030",
     "editors_uid": [],
     "pipeline_log": [],
@@ -19506,6 +19847,66 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261030",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "halloweenlobet_2027",
+    "name": "Halloweenløbet 2027",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20271020",
+        "20271020"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Rønne, Bornholm, Danmark",
+    "latitude": 55.101017,
+    "longitude": 14.708329,
+    "county": "Hovedstaden",
+    "nearest_city": "København",
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Blandet distance",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20275"
+    ],
+    "consolidated_ids": [
+      "90e342ad-6547-4e5a-9b7d-88a9418c22d3"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -22192,6 +22593,169 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "mjolner_trail_march_2026",
+    "name": "Mjølner Trail & March 2026",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20261112",
+        "20261112"
+      ],
+      [
+        "20261113",
+        "20261113"
+      ],
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20271111",
+        "20271111"
+      ],
+      [
+        "20271112",
+        "20271112"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Danmark",
+    "latitude": 56.26392,
+    "longitude": 9.501785,
+    "county": "Midtjylland",
+    "nearest_city": "Herning",
+    "nearby_cities": [
+      "Herning"
+    ],
+    "distances": "[\"248\", \"124\", \"45\", \"35\", \"25.7\", \"21.7\"]",
+    "distance_m": [
+      248000,
+      124000,
+      45000,
+      35000,
+      25700,
+      21700
+    ],
+    "distance_keywords": [
+      "50 km",
+      "Halvmarathon"
+    ],
+    "distance_verbose": "248 km, 124 km, 45 km, 35 km, 25.7 km, 21.7 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/20281",
+      "https://www.sportstiming.dk/event/19069"
+    ],
+    "consolidated_ids": [
+      "b53d6f96-fdca-4c48-91e2-64e3f9d0f05a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261030",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "julefrokost_halvmarathon_2026",
+    "name": "JULEFROKOST HALVMARATHON 2026",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20261113",
+        "20261113"
+      ],
+      [
+        "20271112",
+        "20271112"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Aalborg, North Jutland, Danmark",
+    "latitude": 57.0488195,
+    "longitude": 9.921747,
+    "county": "Nordjylland",
+    "nearest_city": "Aalborg",
+    "nearby_cities": [
+      "Aalborg"
+    ],
+    "distances": "[\"21.098\"]",
+    "distance_m": [
+      21098
+    ],
+    "distance_keywords": [
+      "Halvmarathon"
+    ],
+    "distance_verbose": "Halvmarathon",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.sportstiming.dk/event/19377"
+    ],
+    "consolidated_ids": [
+      "8c62af27-40bf-40ba-840d-a57c801fd10f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "hareskovens_4_arstider_4_efterar_2026",
     "name": "Hareskovens 4 årstider (4) Efterår 2026",
     "type": "trail",
@@ -22257,8 +22821,7 @@
     "is_series": false,
     "max_description_relevance": 0.87,
     "sources": [
-      "https://www.sportstiming.dk/event/20106",
-      "https://www.sportstiming.dk/event/17175"
+      "https://www.sportstiming.dk/event/20106"
     ],
     "consolidated_ids": [
       "5d1e7729-9c15-407d-ad54-92730c0384ca"
@@ -22324,22 +22887,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportstiming.dk/event/20101",
-      "ranking_bridge",
-      "https://www.sportstiming.dk/event/17470"
+      "https://www.sportstiming.dk/event/20101"
     ],
     "consolidated_ids": [
       "33e1b8d8-98ba-55fd-bd88-68464b151fd5"
@@ -22408,15 +22969,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22438,62 +22999,87 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "julefrokost_halvmarathon_2026",
-    "name": "JULEFROKOST HALVMARATHON 2026",
+    "domain_name": "aura_nytarslobene_2026",
+    "name": "AURA Nytårsløbene 2026",
     "type": "road",
     "type_local": "Landevej",
     "race_dates": [
       [
-        "20261113",
-        "20261113"
+        "20261108",
+        "20261108"
+      ],
+      [
+        "20261119",
+        "20261119"
       ]
     ],
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Aalborg, North Jutland, Danmark",
-    "latitude": 57.0488195,
-    "longitude": 9.921747,
-    "county": "Nordjylland",
-    "nearest_city": "Aalborg",
+    "start_time": "10:00",
+    "location": "Tivoli Friheden, Aarhus, Danmark",
+    "latitude": 56.1368148,
+    "longitude": 10.1969443,
+    "county": "Midtjylland",
+    "nearest_city": "Aarhus",
     "nearby_cities": [
-      "Aalborg"
+      "Aarhus"
     ],
-    "distances": "[\"21.098\"]",
+    "distances": "[\"7.5\", \"5\", \"2.5\"]",
     "distance_m": [
-      21098
+      7500,
+      5000,
+      2500
     ],
     "distance_keywords": [
-      "Halvmarathon"
+      "5 km"
     ],
-    "distance_verbose": "Halvmarathon",
-    "organizer": null,
+    "distance_verbose": "7.5 km, 5 km, 2.5 km",
+    "organizer": "Aarhus 1900 Atletik og Løb & AURA",
     "contact": null,
-    "website": null,
+    "website": "https://www.1900al.dk/nytaarsloebene",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "5 km & 10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "199 kr",
+            "deadline": null,
+            "description": "Pris : kr. 199,- uanset distance // Børn under 15 år kr. 125,-"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.1900al.dk/atletikudvalget",
+    "race_info_url": "https://www.1900al.dk/nytaarsloebene",
+    "presumed_organizer_email": "info@1900al.dk",
+    "website_emails_found": [
+      "info@1900al.dk"
+    ],
+    "description": "AURA Nytårsløbene 2026 byder velkommen til en smuk løbetur i efterårets gyldne farver i Marselisborg Skovene. Deltagerne kan vælge mellem 5 km og 10 km distancer, som løbes på en afspærret rute, der både giver mulighed for at sætte en hurtig tid eller nyde en hyggelig oplevelse i roligt tempo med familie og venner. Start og mål er ved Aarhus Atletik- og Løbeakademi, og alle modtages i mål med kakao og godt humør. Løbet er en del af en hyggelig løbsserie arrangeret af Aarhus 1900 Atletik og Løb & AURA.",
+    "course_highlights": [
+      "Løb i Marselisborg Skovene med efterårets flotte farver",
+      "Afspærret rute med mulighed for både hurtig tid og hyggeligt tempo",
+      "Start og mål ved Aarhus Atletik- og Løbeakademi"
+    ],
+    "additional": "Deltagerne kan vælge at løbe eller gå distancerne. Der er kakao og godt humør ved målet. Løbet er en del af en løbsserie med flere arrangementer i Aarhus, herunder Lysløbet og Adventsløbet.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
-      "https://www.sportstiming.dk/event/19377"
+      "https://www.sportstiming.dk/event/19653"
     ],
     "consolidated_ids": [
-      "3bb59e72-dd76-4d3e-87d3-5803e41deb17"
+      "41aa6cea-0725-4742-b3bc-f24d3503d351"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -22692,15 +23278,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22767,13 +23353,13 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "latitude",
+      "race_dates",
+      "location",
+      "name",
+      "type",
       "description",
       "longitude",
-      "race_dates",
-      "name",
-      "latitude",
-      "location",
-      "type",
       "county"
     ],
     "is_series": false,
@@ -22847,15 +23433,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -22926,15 +23512,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23007,15 +23593,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23091,15 +23677,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23132,8 +23718,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "vogndækket ved færgens ankomst til Læsø",
     "latitude": 57.2766331,
@@ -23173,21 +23759,22 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "ranking_bridge",
       "https://www.sportstiming.dk/event/17009",
-      "ranking_bridge"
+      "https://www.sportstiming.dk/event/20036"
     ],
     "consolidated_ids": [
       "61a842a9-8618-4539-a54b-d38b5a890aa8"
@@ -23258,21 +23845,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportstiming.dk/event/17324",
-      "ranking_bridge",
       "https://www.sportstiming.dk/event/19907"
     ],
     "consolidated_ids": [
@@ -23340,15 +23925,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23424,15 +24009,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23503,15 +24088,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23580,15 +24165,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23656,15 +24241,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23730,13 +24315,13 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "latitude",
+      "race_dates",
+      "location",
+      "name",
+      "type",
       "description",
       "longitude",
-      "race_dates",
-      "name",
-      "latitude",
-      "location",
-      "type",
       "county"
     ],
     "is_series": false,
@@ -23809,15 +24394,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23892,15 +24477,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -23970,15 +24555,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24045,13 +24630,13 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "latitude",
+      "race_dates",
+      "location",
+      "name",
+      "type",
       "description",
       "longitude",
-      "race_dates",
-      "name",
-      "latitude",
-      "location",
-      "type",
       "county"
     ],
     "is_series": false,
@@ -24127,15 +24712,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24207,15 +24792,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24289,15 +24874,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24365,13 +24950,13 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "latitude",
+      "race_dates",
+      "location",
+      "name",
+      "type",
       "description",
       "longitude",
-      "race_dates",
-      "name",
-      "latitude",
-      "location",
-      "type",
       "county"
     ],
     "is_series": false,
@@ -24404,8 +24989,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Køge Bugt Strandpark",
     "latitude": 55.5976807,
@@ -24447,21 +25032,22 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://www.sportstiming.dk/event/17085",
       "ranking_bridge",
-      "https://www.sportstiming.dk/event/17085"
+      "https://www.sportstiming.dk/event/20023"
     ],
     "consolidated_ids": [
       "c4e7e219-aa53-474f-9763-a324791e700d"
@@ -24526,15 +25112,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24603,15 +25189,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24682,41 +25268,41 @@
       {
         "number": 1,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fguldfeber_aarhus_golden_fever_1_supplied%2Fguldfeber_aarhus_golden_fever_1_1.webp?alt=media",
-        "alt_text": "Skærmbillede af løbeapp med kort og startknap til løb."
+        "alt_text": "Skærmbillede af GPS-kort og startknap i løbeapp til Guldfeber Aarhus løb"
       },
       {
         "number": 2,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fguldfeber_aarhus_golden_fever_1_supplied%2Fguldfeber_aarhus_golden_fever_1_2.webp?alt=media",
-        "alt_text": "Kort over Aarhus med markeringer af løbspunkter i en løbeapp"
+        "alt_text": "Kort over Aarhus med markerede løbssegmenter i en løbeapp"
       },
       {
         "number": 3,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fguldfeber_aarhus_golden_fever_1_supplied%2Fguldfeber_aarhus_golden_fever_1_3.webp?alt=media",
-        "alt_text": "Skærmbillede med oplysninger om Guldfeber Aarhus Golden Fever løb i Århus."
+        "alt_text": "Skærmbillede af Guldfeber Aarhus løbsinformation i SplitRace appen."
       },
       {
         "number": 4,
         "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fdk%2Fguldfeber_aarhus_golden_fever_1_supplied%2Fguldfeber_aarhus_golden_fever_1_4.webp?alt=media",
-        "alt_text": "Kort over løbssegmenter i Aarhus til Guldfeber Aarhus løbet"
+        "alt_text": "Kort over løbssegmenter i Aarhus for Guldfeber Aarhus løbet med afstande og placeringer."
       }
     ],
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "additional",
-      "race_dates",
-      "price_range",
-      "organizer",
-      "description",
-      "name",
-      "location",
-      "start_time",
       "latitude",
+      "organizer",
+      "start_time",
+      "price_range",
+      "location",
+      "name",
       "type",
-      "contact",
-      "website"
+      "additional",
+      "description",
+      "website",
+      "longitude",
+      "race_dates",
+      "distances",
+      "contact"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24731,86 +25317,6 @@
     ],
     "supplied_at": "20261006",
     "created_date": "20261024",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "mjolner_trail_march_2026",
-    "name": "Mjølner Trail & March 2026",
-    "type": "road",
-    "type_local": "Landevej",
-    "race_dates": [
-      [
-        "20261112",
-        "20261112"
-      ],
-      [
-        "20261113",
-        "20261113"
-      ],
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Danmark",
-    "latitude": 56.26392,
-    "longitude": 9.501785,
-    "county": "Midtjylland",
-    "nearest_city": "Herning",
-    "nearby_cities": [
-      "Herning"
-    ],
-    "distances": "[\"248\", \"124\", \"45\", \"35\", \"25.7\", \"21.7\"]",
-    "distance_m": [
-      248000,
-      124000,
-      45000,
-      35000,
-      25700,
-      21700
-    ],
-    "distance_keywords": [
-      "50 km",
-      "Halvmarathon"
-    ],
-    "distance_verbose": "248 km, 124 km, 45 km, 35 km, 25.7 km, 21.7 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.sportstiming.dk/event/19069"
-    ],
-    "consolidated_ids": [
-      "b53d6f96-fdca-4c48-91e2-64e3f9d0f05a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261030",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -24873,15 +25379,15 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -24953,15 +25459,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -25035,22 +25541,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportstiming.dk/event/20100",
-      "ranking_bridge",
-      "https://www.sportstiming.dk/event/17469"
+      "https://www.sportstiming.dk/event/20100"
     ],
     "consolidated_ids": [
       "c81f2a02-cbd3-4813-8ea9-d8d4ac42ec76"
@@ -25116,15 +25620,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -25194,21 +25698,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.sportstiming.dk/event/17534",
-      "ranking_bridge",
       "https://www.sportstiming.dk/event/20043"
     ],
     "consolidated_ids": [
@@ -25274,15 +25776,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "distances",
-      "longitude",
-      "description",
-      "race_dates",
-      "name",
       "latitude",
+      "race_dates",
       "location",
+      "name",
       "type",
-      "county"
+      "description",
+      "longitude",
+      "county",
+      "distances"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
