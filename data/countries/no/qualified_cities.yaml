@@ -1,6 +1,6 @@
 selection_rule:
   nearby_radius_km: 50.0
-  target_city_count: 14
+  target_city_count: 15
   min_eligible_races: 3
   similarity_distance_km: 40.0
   similarity_jaccard: 0.85
@@ -64,7 +64,7 @@ cities:
   population: 63814
   latitude: 58.1467
   longitude: 7.9956
-  nearby_race_count: 44
+  nearby_race_count: 45
 - name: Skien
   original_name: Skien
   population: 50595
@@ -89,3 +89,9 @@ cities:
   latitude: 69.6489
   longitude: 18.9551
   nearby_race_count: 19
+- name: Svolvær
+  original_name: Svolvaer
+  population: 4720
+  latitude: 68.2335
+  longitude: 14.5684
+  nearby_race_count: 7
