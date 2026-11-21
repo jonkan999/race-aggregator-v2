@@ -14651,17 +14651,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "race_dates",
-      "location",
+      "website",
       "name",
+      "contact",
+      "description",
+      "location",
+      "race_dates",
+      "start_time",
+      "distances",
+      "type",
       "latitude",
       "organizer",
-      "website",
-      "contact",
-      "distances",
-      "description",
-      "start_time",
-      "type",
       "longitude"
     ],
     "is_series": false,
@@ -16059,42 +16059,84 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Rome, Italy",
-    "latitude": 41.8967068,
-    "longitude": 12.4822025,
+    "start_time": "08:00",
+    "location": "Fori Imperiali, Rome, Italy",
+    "latitude": 41.8932453,
+    "longitude": 12.487146,
     "county": null,
     "nearest_city": "Nagykanizsa",
     "nearby_cities": [],
-    "distances": "[\"42\"]",
+    "distances": "[\"42.2\", \"5\"]",
     "distance_m": [
-      42000
+      42200,
+      5000
     ],
     "distance_keywords": [
-      "Maraton"
+      "Maraton",
+      "5 km"
     ],
-    "distance_verbose": "Maraton",
+    "distance_verbose": "Maraton, 5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.runromethemarathon.com/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Maratona",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "50 €",
+            "deadline": "20270131",
+            "description": "Quota minima"
+          },
+          {
+            "label": "tier_2",
+            "price": "70 €",
+            "deadline": "20270307",
+            "description": "Quota massima"
+          }
+        ],
+        "late_fee": {
+          "price": "90 €",
+          "deadline": "20270307"
+        }
+      }
+    ],
+    "registration_close_date": "20270307",
+    "registration_url": "https://www.runromethemarathon.com/home-2025/maratona/",
+    "race_info_url": "https://www.runromethemarathon.com/home-2025/maratona/",
+    "presumed_organizer_email": "info@runromethemarathon.com",
+    "website_emails_found": [
+      "coachmarco@runromethemarathon.com",
+      "info@runromethemarathon.com",
+      "rrtm@evodata.it",
+      "run4rome@evodata.it",
+      "funrunrome@evodata.it",
+      "stampa@runromethemarathon.com",
+      "Hyundai_Banner-HP_970x250@2x.jpg",
+      "Hyundai_Banner-HP_970x250@2x-300x77.jpg",
+      "Hyundai_Banner-HP_970x250@2x-1024x264.jpg",
+      "Hyundai_Banner-HP_970x250@2x-768x198.jpg",
+      "Hyundai_Banner-HP_970x250@2x-1536x396.jpg",
+      "Hyundai_Banner-HP_970x250@2x-350x90.jpg",
+      "Hyundai_Banner-HP_970x250@2x-uai-720x186.jpg"
+    ],
+    "description": "A Run Rome The Marathon nem csupán egy futóverseny, hanem egy utazás Róma szívébe, amely ötvözi a sportot, az érzelmeket és a szépséget. A verseny 42,195 km-es távon halad ikonikus történelmi helyszínek között, mint a Colosseum, a Piazza Venezia, a Circo Massimo, a Szent Péter-bazilika és a Bocca della Verità, egyedülálló panorámákat és élményeket kínálva a futóknak. A maraton különlegessége, hogy a résztvevők akár fitwalking formájában is teljesíthetik a távot, pacerek támogatásával. A verseny a Fori Imperiali területéről indul, és a Circo Massimo-ban ér véget, ahol a futók ünnepélyes befutóban részesülnek.",
+    "course_highlights": [
+      "Indulás a Fori Imperiali területéről, a Colosseummal a háttérben",
+      "Áthaladás a Piazza Venezia, Palatino, Circo Massimo, Szent Péter-bazilika és Bocca della Verità ikonikus helyszínein",
+      "A táv 42,195 km, amely történelmi és modern városi panorámákat kínál"
+    ],
+    "additional": "A rajt hullámokban történik: 8:00-kor indulnak a kerekesszékes és segítők, majd 8:10-től 9:00-ig öt hullámban a különböző rajtpozíciók szerint. Az Expo Village a Circo Massimo metrómegállótól 50 méterre található, ingyenes belépéssel. A versenyen VIP csomagok is elérhetők az online regisztráció lezárása után a hivatalos boltban. A hivatalos oldal a maraton mellett négyfős váltót és 5 kilométeres Fun Run-t is felsorol.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.84,
     "sources": [
       "https://www.runromethemarathon.com/en/home-2025-en-2/"
     ],
@@ -16254,8 +16296,8 @@
   {
     "domain_name": "eged_futas",
     "name": "EGED-FUTÁS",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260328",
@@ -16269,7 +16311,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "11:00",
     "location": "Érsekkert, Eger, Hungary",
     "latitude": 47.8963307,
     "longitude": 20.3801982,
@@ -16282,27 +16324,31 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "13.4 km",
-    "organizer": null,
+    "organizer": "Egri Atlétikáért Alapítvány",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.nse.hu/rendezvenyeink/eged-hegyi-futoverseny-terepfutas/informaciok",
+    "fb_link": "https://www.facebook.com/egedfutas/?locale=hu_HU",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://www.odinsport.hu",
+    "race_info_url": "https://www.nse.hu/rendezvenyeink/eged-hegyi-futoverseny-terepfutas/informaciok",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Az Eged-futás egy hagyományos terepfutó verseny Egerben, amely a város és környéke természeti szépségeit mutatja be. A verseny célja az egészséges életmód népszerűsítése, és alkalmat kínál atlétáknak, tájékozódási futóknak, triatlonistáknak és amatőr futóknak egyaránt. A táv 13,4 km, amely aszfalt és földút kombinációjából áll, jelentős szintkülönbséggel. A rajt az Érsekkert mellett, a Kemény Ferenc Sportcsarnok előtt van, és chipes időméréssel zajlik. Emellett egy rövidebb, 6 km-es körverseny is elérhető az Érsekkertben, amely 5 kört jelent.",
+    "course_highlights": [
+      "13,4 km-es táv, 4,5 km aszfalt és 8,9 km földút",
+      "Kb. 480 méteres szintkülönbség az Eged-hegyi kilátóig",
+      "6 km-es Érsekkerti körök, 5 kör egy kijelölt pályán"
+    ],
+    "additional": "Chipes időmérés a Tempo Sport szolgáltatásával. 14 év alattiaknak a hosszabb táv nem ajánlott a szintkülönbség miatt. A rajtszám másra át nem ruházható. A verseny helyszíne az Érsekkert, a rajt a Kemény Ferenc Sportcsarnok előtt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.68,
     "sources": [
       "https://egrispartacus.hu/eged-futas.html"
     ],
@@ -16320,8 +16366,8 @@
   {
     "domain_name": "futapest_terepfutas_szigetmonostor",
     "name": "FUTAPEST TEREPFUTÁS",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260328",
@@ -16344,45 +16390,50 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Szigetmonostor, Hungary",
-    "latitude": 47.6886911,
-    "longitude": 19.0996531,
+    "location": "Szigetmonostori Faluház, Árpád utca 15., Szigetmonostor, Hungary",
+    "latitude": 47.68373680000001,
+    "longitude": 19.1060084,
     "county": "Pest",
     "nearest_city": "Budapest",
     "nearby_cities": [
       "Budapest"
     ],
-    "distances": "[\"15\", \"5\", \"0.4\"]",
+    "distances": "[\"15\", \"5\"]",
     "distance_m": [
       15000,
-      5000,
-      400
+      5000
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "15 km, 5 km, 0.4 km",
-    "organizer": null,
+    "distance_verbose": "15 km, 5 km",
+    "organizer": "Futapest Klub Egyesület",
     "contact": null,
-    "website": null,
+    "website": "https://www.futapest.hu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.futapest.hu/",
+    "presumed_organizer_email": "futapestklub@gmail.com",
+    "website_emails_found": [
+      "futapestklub@gmail.com"
+    ],
+    "description": "A FUTAPEST TEREPFUTÁS egy változatos terepfutó versenysorozat, amely a természet közelségét és a kihívást kedvelő futók számára kínál izgalmas pályákat. A versenyek különböző helyszíneken zajlanak, mint például Szigetmonostor, Csömör, Várgesztes és Iklad, változatos terepviszonyokkal és szép természeti környezettel. A rendezvényeket a Futapest Klub szervezi, amely hosszú évek óta támogatja a terepfutás népszerűsítését Magyarországon. A versenyek barátságos hangulatúak, minden korosztály számára nyitottak, és a természetjárás élményét ötvözik a sportteljesítménnyel.",
+    "course_highlights": [
+      "Változatos terepviszonyok erdei és dombos környezetben",
+      "Szép természeti tájak és panorámák a futópályák mentén",
+      "Különböző távok és nehézségi fokok a kezdőktől a haladókig"
+    ],
+    "additional": "A versenyek több helyszínen kerülnek megrendezésre, például Csömör, Várgesztes, Iklad, és Szigetmonostor településeken. A Futapest Klub biztosítja a versenyszabályzatot és a tagsági információkat, valamint eredménylistákat tesz közzé a honlapon. A versenyek természetközeli, terepfutó jellegűek, amelyek a crossfutás és a mountain running kategóriába tartoznak. A korábbi kiírásban a versenyközpont a Szigetmonostori Faluház, Árpád utca 15. volt. A résztvevők befutóérmet kapnak, a győzteseket és a korcsoportos dobogósokat díjazzák.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.75,
     "sources": [
       "https://www.futapest.hu",
       "https://www.futapest.hu/kiiras/SZM_2026.htm",
@@ -16417,8 +16468,8 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Baj, Hungary",
+    "start_time": "10:00",
+    "location": "Integrált Közösségi Szolgáltató Tér, Baj, Hungary",
     "latitude": 47.6503885,
     "longitude": 18.3649403,
     "county": "Komárom-Esztergom",
@@ -16426,38 +16477,44 @@
     "nearby_cities": [
       "Tatabánya"
     ],
-    "distances": "[\"26\", \"15\", \"7.5\", \"1.5\"]",
+    "distances": "[\"26\", \"15\", \"7.5\", \"3\"]",
     "distance_m": [
       26000,
       15000,
       7500,
-      1500
+      3000
     ],
     "distance_keywords": [
-      "1500 meter"
+      "3000 meter"
     ],
-    "distance_verbose": "26 km, 15 km, 7.5 km, 1500 meter",
-    "organizer": null,
+    "distance_verbose": "26 km, 15 km, 7.5 km, 3000 meter",
+    "organizer": "Tatai Tömegsport és Tájfutó Honvéd Sportegyesület (TTT-HSE)",
     "contact": null,
-    "website": null,
+    "website": "https://ttt.ttt-tata.hu/gtt/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://ttt.ttt-tata.hu/eredmenyek-gerecse-terepfutas/",
+    "race_info_url": "https://ttt.ttt-tata.hu/gtt/#content",
+    "presumed_organizer_email": "ttt.tata.2004@gmail.com",
+    "website_emails_found": [
+      "ttt.tata.2004@gmail.com"
+    ],
+    "description": "A GERECSE Tavaszi Terepfutás egy változatos terepfutó verseny, amely Baj városában, az Integrált Közösségi Szolgáltató Téren kerül megrendezésre. A verseny több távon kínál kihívást, így mindenki megtalálhatja a számára megfelelőt, legyen az rövid, közepes vagy hosszú táv. A futók gyönyörű természetes környezetben, változatos terepen mérhetik össze erejüket, miközben élvezhetik a Gerecse-hegység panorámáját. A rendezvény családias hangulatú, és külön kategóriát biztosít kutyás futóknak is. A verseny a Magyar Honvédség Terepfutó Bajnokságának része, így komoly sportolók is részt vesznek rajta.",
+    "course_highlights": [
+      "Változatos terep a Gerecse-hegységben",
+      "Három táv: 7,5 km, 15 km és 26 km, különböző szintkülönbségekkel",
+      "Kutyás futás 7,5 km-es távon"
+    ],
+    "additional": "A verseny programja több rajtidőpontot tartalmaz a különböző távoknak: 10:00-kor indul a 26 km-es táv, 10:30-kor a 15 km-es, 10:40-kor a 7,5 km-es kutyás futás, 10:50-kor a 7,5 km-es táv, és 10:55-kor a 3 km-es táv. Az eredményhirdetés 12:00-kor kezdődik. A nevezés online történik, és a nevezési lap kitöltése kötelező. A verseny a Magyar Honvédség Terepfutó Bajnokságának része, így a katonai versenyzők külön jelentkeznek a sporttisztjeiken keresztül. A 7,5, 15 és 26 km-es távok szintemelkedése rendre 47, 361 és 697 méter. A programban Magyar Honvédség-bajnokság is szerepel.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.87,
     "sources": [
       "https://ttt-tata.hu/2026gtf/"
     ],
@@ -16490,46 +16547,51 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Hétkápolna, Vác, Hungary",
+    "start_time": "10:30",
+    "location": "Hétkápolna Kegyhely, Vác, Hungary",
     "latitude": 47.7636057,
     "longitude": 19.1403908,
     "county": "Pest",
     "nearest_city": "Budapest",
     "nearby_cities": [],
-    "distances": "[\"20.2\", \"10.1\", \"6.4\", \"1.6\"]",
+    "distances": "[\"12\", \"8\", \"4\", \"1.6\"]",
     "distance_m": [
-      20200,
-      10100,
-      6400,
+      12000,
+      8000,
+      4000,
       1600
     ],
     "distance_keywords": [
-      "Félmaraton",
-      "10 km"
+      "5 km"
     ],
-    "distance_verbose": "20.2 km, 10.1 km, 6.4 km, 1.6 km",
-    "organizer": null,
+    "distance_verbose": "12 km, 8 km, 4 km, 1.6 km",
+    "organizer": "Mária Út Közhasznú Egyesület, a Mária Rádió és a Váci Reménység Egyesület Természetjáró Szakosztálya közreműködésével",
     "contact": null,
-    "website": null,
+    "website": "http://mariamaraton.mariaut.hu/tart/index/1280/1",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "http://mariamaraton.mariaut.hu/tart-index-1364-1/Jelentkezes_2024",
+    "race_info_url": "http://mariamaraton.mariaut.hu/tart-index-1288-1/Bemutatkozas",
+    "presumed_organizer_email": "mariamaraton2023@gmail.com",
+    "website_emails_found": [
+      "mariamaraton2023@gmail.com"
+    ],
+    "description": "A Mária Maraton egy családi futóesemény, amelyet a Mária Út, a Mária Rádió és a Váci Reménység Egyesület Természetjáró Szakosztálya közösen rendez Vácon, a Hétkápolna Kegyhelyen. A résztvevők 1,6, 4, 8 és 12 kilométeres távokon futhatnak, a Mária Út jelzéseit követve a történelmi Duna-parton. Az eseményhez hitéleti programok, szentmise és kegyhely bemutatás is kapcsolódik, így a futás mellett lelki élményt is nyújt. A versenyen chipes időmérés biztosítja a pontos eredményeket, és minden táv befutóérmével díjazott. A rendezvény nyitott minden korosztálynak, gyermekek szülői felügyelettel vehetnek részt.",
+    "course_highlights": [
+      "A futópálya a Hétkápolnától indul és a Mária Út jelzéseit követi",
+      "Vác történelmi Duna-partján halad",
+      "Chipes időmérés és befutóérem minden 4, 8 és 12 km táv teljesítőjének"
+    ],
+    "additional": "A rajt a Hétkápolna Kegyhelyen lesz, a létszámtól függően egyszerre indulnak a futók. A nevezési díj tartalmazza a részvételi jogot, biztosított útvonalat, befutóérmet, chipes időmérést, egyedi rajtszámot, frissítést az útvonalon és a célban, egészségügyi felügyeletet, valamint a versenyfotókat. 10 év alatti gyermekek csak szülői felügyelettel és beleegyezéssel vehetnek részt. A nevezés átruházható e-mailben legkésőbb március 25-ig. Az útvonal földutas és aszfaltos szakaszokat is tartalmazott; a hosszabb távokon chipes nettó időmérést alkalmaztak.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.74,
     "sources": [
       "https://www.facebook.com/hashtag/m%C3%A1riamaraton"
     ],
@@ -44030,78 +44092,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "gulyakupa_2026_piliscsaba",
-    "name": "GULYAKUPA 2026",
-    "type": "other",
-    "type_local": "Egyéb",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ],
-      [
-        "20261031",
-        "20261031"
-      ],
-      [
-        "20271030",
-        "20271030"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Piliscsaba, Hungary",
-    "latitude": 47.6356691,
-    "longitude": 18.8335907,
-    "county": "Pest",
-    "nearest_city": "Budapest",
-    "nearby_cities": [
-      "Budapest"
-    ],
-    "distances": "[\"6.4\"]",
-    "distance_m": [
-      6400
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "6.4 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://gulyakor.hu/hu/node/60049"
-    ],
-    "consolidated_ids": [
-      "408133bf-64ce-44e8-b85b-89efb92fcd8a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "torokbalinti_hendikep_futas_oktober",
     "name": "Törökbálinti Hendikep futás október",
     "type": "other",
@@ -44373,6 +44363,82 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261111",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "gulyakupa_2026_piliscsaba",
+    "name": "GULYAKUPA 2026",
+    "type": "other",
+    "type_local": "Egyéb",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20261031",
+        "20261031"
+      ],
+      [
+        "20271030",
+        "20271030"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Piliscsaba, Hungary",
+    "latitude": 47.6356691,
+    "longitude": 18.8335907,
+    "county": "Pest",
+    "nearest_city": "Budapest",
+    "nearby_cities": [
+      "Budapest"
+    ],
+    "distances": "[\"6.4\"]",
+    "distance_m": [
+      6400
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "6.4 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://gulyakor.hu/hu/node/60049"
+    ],
+    "consolidated_ids": [
+      "decbf685-3425-4de1-a14b-863e9880c8cc"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -45432,21 +45498,27 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Badacsonytomaj, Balaton-felvidéki Nemzeti Park, Hungary",
-    "latitude": 46.9759453,
-    "longitude": 17.927869,
+    "location": "Halászkert, Badacsonytomaj, Hungary",
+    "latitude": 46.7902526,
+    "longitude": 17.5074348,
     "county": "Veszprém",
-    "nearest_city": "Székesfehérvár",
+    "nearest_city": "Kaposvár",
     "nearby_cities": [],
-    "distances": "[\"42\", \"21\", \"7\"]",
+    "distances": "[\"42\", \"41.7\", \"41\", \"21\", \"7\"]",
     "distance_m": [
       42000,
+      41700,
+      41000,
       21000,
       7000
     ],
@@ -45454,60 +45526,44 @@
       "Maraton",
       "Félmaraton"
     ],
-    "distance_verbose": "Maraton, Félmaraton, 7 km",
-    "organizer": "Terepfutó Műhely Sportegyesület",
+    "distance_verbose": "Maraton, 41.7 km, 41 km, Félmaraton, 7 km",
+    "organizer": null,
     "contact": null,
     "website": "https://www.tanuhegyektrail.hu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Maraton",
-        "tiers": [],
-        "late_fee": null
-      },
-      {
-        "distance": "Félmaraton",
-        "tiers": [],
-        "late_fee": null
-      },
-      {
-        "distance": "Minimaraton",
-        "tiers": [],
-        "late_fee": null
-      }
-    ],
+    "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://www.tanuhegyektrail.hu/hu/tavok/maraton",
-    "race_info_url": "https://www.tanuhegyektrail.hu/",
+    "registration_url": null,
+    "race_info_url": "https://www.tanuhegyektrail.hu/#tavok",
     "presumed_organizer_email": "info@tanuhegyektrail.hu",
     "website_emails_found": [
       "info@tanuhegyektrail.hu"
     ],
-    "description": "A Tanúhegyek Trail egy terepfutó verseny, amelyet a Terepfutó Műhely Sportegyesület rendez a Balaton-felvidéki Nemzeti Park egyik legszebb részén, Badacsonytomajban. A verseny során 7, 21 és 42 km-es távokon lehet indulni, amelyek során 1, 3 vagy 5 tanúhegyet lehet meghódítani, csodálatos kilátással a Balatonra és a környező tájra. A rajt és a cél a Halászkertben van, és a verseny jótékonysági céllal is zajlik, az időmérő chip letéti díját az Ürömi Állatotthon javára lehet felajánlani. A legrövidebb távon kutyás futamot is rendeznek, mindenkit szeretettel várnak a 2026. november 14-i eseményre.",
+    "description": "A Tanúhegyek Trail egy terepfutó verseny, amelyet a Terepfutó Műhely Sportegyesület rendez a Balaton-felvidéki Nemzeti Park egyik legszebb részén. A verseny során 1, 3 vagy 5 tanúhegyet lehet meghódítani, amelyekről káprázatos kilátás nyílik a Balatonra és az őszi színekben pompázó tájra. A rajt és a cél Badacsonytomajban, a Halászkertben található. A legrövidebb, 7 km-es távon kutyás futamot is rendeznek, és a rendezvény jótékonysági célt szolgál, az időmérő chip letéti díját az Ürömi Állatotthon javára lehet felajánlani.",
     "course_highlights": [
       "Terepfutás a Balaton-felvidéki Nemzeti Parkban",
-      "Káprázatos kilátás a Balatonra és az őszi színekben pompázó tájra",
-      "Útvonal 1, 3 vagy 5 tanúhegy meghódításával"
+      "Kilátás a Balatonra és a színes őszi tájra",
+      "Útvonal erdei utakon és jelölt turistaösvényeken"
     ],
-    "additional": "Időmérés elektronikusan, chip segítségével történik, a chip letéti díja 2000 Ft, amely visszajár vagy jótékony célra felajánlható. A verseny útvonalán előre be nem jelentett ellenőrzőpontok lehetnek. A legrövidebb távon kutyás futamot is rendeznek. A verseny nem zárja le a közutakat, ezért a közlekedési szabályok betartása kötelező. Távok: 7 km, 21 km, 42 km; kutyás futam a 7 km-en; jótékonysági esemény az időmérő csip letéti díjával",
+    "additional": "Időmérés elektronikusan, chip segítségével történik, a chip letéti díja 2000 Ft, amely visszajár vagy jótékony célra felajánlható. A verseny útvonalán előre be nem jelentett ellenőrzőpontok lehetnek. A közutakon a forgalom nincs lezárva, ezért a közlekedési szabályok betartása kötelező. A versenyen 12 év felettiek vehetnek részt, 12-18 évesek csak szülői beleegyezéssel.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://tanuhegyektrail.hu/hu/",
       "https://sportnaptar.hu/tanuhegyek-trail-7-21-42_4EFCBA0BC5425375"
     ],
     "consolidated_ids": [
-      "cd30adaa-f1fc-4bc6-9a27-67898b0468f1"
+      "6e6615f2-f8c6-4c2f-9816-055a7729f11c"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260414",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -45522,11 +45578,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Bartók Béla út, Gyöngyössolymos, Hungary",
     "latitude": 47.818778,
@@ -45574,11 +45634,379 @@
       "https://gyotri.hu/wp-content/uploads/2026/10/2.Solymos-Trail_kiiras.pdf"
     ],
     "consolidated_ids": [
-      "0b7f7d36-f9d0-4812-ad8d-2af9d0d6b07b"
+      "00017c2c-47e8-419a-8e09-4daa6e63461e"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261012",
+    "created_date": "20261121",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "evadzaro_gyalogtura_a_nyakason_6_11_16_26",
+    "name": "Évadzáró Gyalogtúra a Nyakason 6 / 11 / 16 / 26",
+    "type": "other",
+    "type_local": "Egyéb",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Piac köz 8, Zsámbék, Hungary",
+    "latitude": 47.547115,
+    "longitude": 18.7189765,
+    "county": "Pest",
+    "nearest_city": "Tatabánya",
+    "nearby_cities": [
+      "Tatabánya",
+      "Budapest"
+    ],
+    "distances": "[\"26\", \"11\", \"6\"]",
+    "distance_m": [
+      26000,
+      11000,
+      6000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "26 km, 11 km, 6 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://sportnaptar.hu/evadzaro-gyalogtura-a-nyakason-6-11-16-26_95B6F58D5D658824"
+    ],
+    "consolidated_ids": [
+      "f9d0c296-ea33-458d-8f6d-9749439fd494"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261121",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "iii_egri_portya_tajekozodasi_teljesitmenytura_es_futas_3_6_10_15",
+    "name": "III. „Egri Portya” tájékozódási teljesítménytúra és futás 3 / 6 / 10 / 15",
+    "type": "terrain",
+    "type_local": "Terep",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Eger, Hungary",
+    "latitude": 47.9025348,
+    "longitude": 20.3772284,
+    "county": "Heves",
+    "nearest_city": "Miskolc",
+    "nearby_cities": [],
+    "distances": "[\"15\", \"10\", \"6\", \"3\"]",
+    "distance_m": [
+      15000,
+      10000,
+      6000,
+      3000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km",
+      "3000 meter"
+    ],
+    "distance_verbose": "15 km, 10 km, 6 km, 3000 meter",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://sportnaptar.hu/iii-egri-portya-tajekozodasi-teljesitmenytura-es-futas-3-6-10-15_EA0E793535480392"
+    ],
+    "consolidated_ids": [
+      "71066d83-a92e-4b42-ab79-38b030077e84"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261121",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "elo_mikulasnapi_futoverseny",
+    "name": "(Elő)Mikulásnapi Futóverseny",
+    "type": "other",
+    "type_local": "Egyéb",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Albert pihenő, Pétfürdő, Hungary",
+    "latitude": 47.16160559999999,
+    "longitude": 18.1337393,
+    "county": "Veszprém",
+    "nearest_city": "Székesfehérvár",
+    "nearby_cities": [
+      "Székesfehérvár"
+    ],
+    "distances": "[\"11\", \"6\", \"2\", \"1\"]",
+    "distance_m": [
+      11000,
+      6000,
+      2000,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "11 km, 6 km, 2 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "http://marathontke.hu/index.php/110-xxxiii-elo-mikulasnapi-futoverseny"
+    ],
+    "consolidated_ids": [
+      "b54bf659-7089-4760-aaa5-b849cb2423ef"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261121",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "mezei_futo_magyar_bajnoksag",
+    "name": "MEZEI FUTÓ MAGYAR BAJNOKSÁG",
+    "type": "other",
+    "type_local": "Egyéb",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Grassalkovich Castle, Gödöllő, Hungary",
+    "latitude": 47.606045,
+    "longitude": 19.356159,
+    "county": "Pest",
+    "nearest_city": "Budapest",
+    "nearby_cities": [
+      "Budapest"
+    ],
+    "distances": "[\"8\", \"6\", \"4.5\", \"3\"]",
+    "distance_m": [
+      8000,
+      6000,
+      4500,
+      3000
+    ],
+    "distance_keywords": [
+      "5 km",
+      "3000 meter"
+    ],
+    "distance_verbose": "8 km, 6 km, 4.5 km, 3000 meter",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://futocentrum.hu/races/2020s/2026.11.14.mezei_ob.pdf"
+    ],
+    "consolidated_ids": [
+      "c7419ff8-f68a-4e7e-a1b2-0012d4892dcd"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261121",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "rajkai_kerekgyarto_emlekverseny",
+    "name": "RAJKAI – KERÉKGYÁRTÓ EMLÉKVERSENY",
+    "type": "other",
+    "type_local": "Egyéb",
+    "race_dates": [
+      [
+        "20261114",
+        "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Nagyerdő, Debrecen, Hungary",
+    "latitude": 47.5666667,
+    "longitude": 21.6333333,
+    "county": "Hajdú-Bihar",
+    "nearest_city": "Debrecen",
+    "nearby_cities": [
+      "Debrecen"
+    ],
+    "distances": "[\"10\", \"5\", \"2.5\"]",
+    "distance_m": [
+      10000,
+      5000,
+      2500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 2.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://frissoxigen.hu/oxigen-kupa/versenykiiras"
+    ],
+    "consolidated_ids": [
+      "21793835-3592-44e2-a4f2-dbe42dc9d778"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -45652,421 +46080,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "evadzaro_gyalogtura_a_nyakason_6_11_16_26",
-    "name": "Évadzáró Gyalogtúra a Nyakason 6 / 11 / 16 / 26",
-    "type": "other",
-    "type_local": "Egyéb",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Piac köz 8, Zsámbék, Hungary",
-    "latitude": 47.547115,
-    "longitude": 18.7189765,
-    "county": "Pest",
-    "nearest_city": "Tatabánya",
-    "nearby_cities": [
-      "Tatabánya",
-      "Budapest"
-    ],
-    "distances": "[\"26\", \"11\", \"6\"]",
-    "distance_m": [
-      26000,
-      11000,
-      6000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "26 km, 11 km, 6 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://sportnaptar.hu/evadzaro-gyalogtura-a-nyakason-6-11-16-26_95B6F58D5D658824"
-    ],
-    "consolidated_ids": [
-      "1af7b3cb-4ae0-4d72-b451-cd333ef8218a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "iii_egri_portya_tajekozodasi_teljesitmenytura_es_futas_3_6_10_15",
-    "name": "III. „Egri Portya” tájékozódási teljesítménytúra és futás 3 / 6 / 10 / 15",
-    "type": "terrain",
-    "type_local": "Terep",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Eger, Hungary",
-    "latitude": 47.9025348,
-    "longitude": 20.3772284,
-    "county": "Heves",
-    "nearest_city": "Miskolc",
-    "nearby_cities": [],
-    "distances": "[\"15\", \"10\", \"6\", \"3\"]",
-    "distance_m": [
-      15000,
-      10000,
-      6000,
-      3000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km",
-      "3000 meter"
-    ],
-    "distance_verbose": "15 km, 10 km, 6 km, 3000 meter",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://sportnaptar.hu/iii-egri-portya-tajekozodasi-teljesitmenytura-es-futas-3-6-10-15_EA0E793535480392"
-    ],
-    "consolidated_ids": [
-      "ee5ef886-79a9-43a1-aa5a-b9455b315067"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "elo_mikulasnapi_futoverseny",
-    "name": "(Elő)Mikulásnapi Futóverseny",
-    "type": "other",
-    "type_local": "Egyéb",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Albert pihenő, Pétfürdő, Hungary",
-    "latitude": 47.16160559999999,
-    "longitude": 18.1337393,
-    "county": "Veszprém",
-    "nearest_city": "Székesfehérvár",
-    "nearby_cities": [
-      "Székesfehérvár"
-    ],
-    "distances": "[\"11\", \"6\", \"2\", \"1\"]",
-    "distance_m": [
-      11000,
-      6000,
-      2000,
-      1000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "11 km, 6 km, 2 km, 1 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "http://marathontke.hu/index.php/110-xxxiii-elo-mikulasnapi-futoverseny"
-    ],
-    "consolidated_ids": [
-      "2f885710-15be-44f2-be0b-9f0d3e3852c7"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "mezei_futo_magyar_bajnoksag",
-    "name": "MEZEI FUTÓ MAGYAR BAJNOKSÁG",
-    "type": "other",
-    "type_local": "Egyéb",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Grassalkovich Castle, Gödöllő, Hungary",
-    "latitude": 47.606045,
-    "longitude": 19.356159,
-    "county": "Pest",
-    "nearest_city": "Budapest",
-    "nearby_cities": [
-      "Budapest"
-    ],
-    "distances": "[\"8\", \"6\", \"4.5\", \"3\"]",
-    "distance_m": [
-      8000,
-      6000,
-      4500,
-      3000
-    ],
-    "distance_keywords": [
-      "5 km",
-      "3000 meter"
-    ],
-    "distance_verbose": "8 km, 6 km, 4.5 km, 3000 meter",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://futocentrum.hu/races/2020s/2026.11.14.mezei_ob.pdf"
-    ],
-    "consolidated_ids": [
-      "9b8e7486-44d4-49ac-bddf-d3cce54b4f0a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "rajkai_kerekgyarto_emlekverseny",
-    "name": "RAJKAI – KERÉKGYÁRTÓ EMLÉKVERSENY",
-    "type": "other",
-    "type_local": "Egyéb",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Nagyerdő, Debrecen, Hungary",
-    "latitude": 47.5666667,
-    "longitude": 21.6333333,
-    "county": "Hajdú-Bihar",
-    "nearest_city": "Debrecen",
-    "nearby_cities": [
-      "Debrecen"
-    ],
-    "distances": "[\"10\", \"5\", \"2.5\"]",
-    "distance_m": [
-      10000,
-      5000,
-      2500
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km, 2.5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://frissoxigen.hu/oxigen-kupa/versenykiiras"
-    ],
-    "consolidated_ids": [
-      "62066aa0-21ee-41cb-96d9-6c63ccd0da61"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "tanuhegyek_trail",
-    "name": "TANÚHEGYEK TRAIL",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Halászkert, Badacsonytomaj, Hungary",
-    "latitude": 46.7902526,
-    "longitude": 17.5074348,
-    "county": "Veszprém",
-    "nearest_city": "Kaposvár",
-    "nearby_cities": [],
-    "distances": "[\"41.7\", \"21\", \"7\"]",
-    "distance_m": [
-      41700,
-      21000,
-      7000
-    ],
-    "distance_keywords": [
-      "Maraton",
-      "Félmaraton"
-    ],
-    "distance_verbose": "41.7 km, Félmaraton, 7 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://tanuhegyektrail.hu/hu/"
-    ],
-    "consolidated_ids": [
-      "e21ee2e9-4ee8-4f4b-a70a-82f55222def3"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,

@@ -1,67 +1,5 @@
 [
   {
-    "domain_name": "250_de_ture_pentru_o_cauza",
-    "name": "250 de ture pentru o cauză",
-    "type": "other",
-    "type_local": "Altele",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Arad, România",
-    "latitude": 46.1865606,
-    "longitude": 21.3122677,
-    "county": "ARAD",
-    "nearest_city": "Arad",
-    "nearby_cities": [
-      "Arad"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Distanțe mixte",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.facebook.com/events/s/250-de-ture-un-singur-scop/3743021512513083/"
-    ],
-    "consolidated_ids": [
-      "a6afc05c-28e4-41b3-bf71-c1e8a36bd98f"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "november_run",
     "name": "November Run",
     "type": "other",
@@ -2866,8 +2804,8 @@
   {
     "domain_name": "alba_iulia_city_race",
     "name": "Alba Iulia City Race",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20270313",
@@ -2877,49 +2815,122 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Alba Iulia, Alba County, România",
-    "latitude": 46.07327249999999,
-    "longitude": 23.5804886,
+    "start_time": "10:00",
+    "location": "Piața Cetății, Alba Iulia, România",
+    "latitude": 46.0679395,
+    "longitude": 23.5722061,
     "county": "ALBA",
     "nearest_city": "Alba Iulia",
     "nearby_cities": [
       "Alba Iulia"
     ],
-    "distances": "[\"21\", \"11\", \"5\", \"2.7\"]",
+    "distances": "[\"21\", \"10\", \"3\", \"2.1\"]",
     "distance_m": [
       21000,
-      11000,
-      5000,
-      2700
+      10000,
+      3000,
+      2100
     ],
     "distance_keywords": [
       "Semimaraton",
       "10 km",
-      "5 km"
+      "3000 metri"
     ],
-    "distance_verbose": "Semimaraton, 11 km, 5 km, 2.7 km",
-    "organizer": null,
+    "distance_verbose": "Semimaraton, 10 km, 3000 metri, 2.1 km",
+    "organizer": "Asociația Mamut Atletic Alba Iulia",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://albaiulia.cityrace.ro/",
+    "fb_link": "https://www.facebook.com/AlbaIuliaCityRace/?locale=ro_RO",
+    "ig_link": "https://www.instagram.com/albaiuliacityrace/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Semimaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": "20270131",
+            "description": "Intre 2 decembrie 2026 și 31 ianuarie 2027"
+          },
+          {
+            "label": "tier_2",
+            "price": null,
+            "deadline": "20270308",
+            "description": "Intre 1 și 8 martie – in limita locurilor disponibile"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Cros",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": "20270131",
+            "description": "Intre 2 decembrie 2026 și 31 ianuarie 2027"
+          },
+          {
+            "label": "tier_2",
+            "price": null,
+            "deadline": "20270308",
+            "description": "Intre 1 și 8 martie – in limita locurilor disponibile"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Cursa Populară",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": "20270131",
+            "description": "Intre 2 decembrie 2026 și 31 ianuarie 2027"
+          },
+          {
+            "label": "tier_2",
+            "price": null,
+            "deadline": "20270308",
+            "description": "Intre 1 și 8 martie – in limita locurilor disponibile"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Kids Race",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": null,
+            "description": "KIDS RACE"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270308",
+    "registration_url": "https://albaiulia.cityrace.ro/inscriere/",
+    "race_info_url": "https://albaiulia.cityrace.ro/",
+    "presumed_organizer_email": "mamut.atletic@yahoo.com",
+    "website_emails_found": [
+      "mamut.atletic@yahoo.com"
+    ],
+    "description": "Alba Iulia City Race este un eveniment atletic anual care se desfășoară în inima istorică a orașului Alba Iulia, oferind participanților o experiență unică de alergare prin Cetatea Alba Carolina și împrejurimile sale. Evenimentul include mai multe curse, printre care semimaratonul de 21 km, crosul de 10 km, cursa populară și Kids Race, toate concepute pentru a atrage alergători de toate nivelurile. Traseele combină asfaltul cu drumuri forestiere și poteci, oferind peisaje spectaculoase și o incursiune în istoria și natura zonei. Atmosfera este una festivă, cu socializare, premii și tombole, făcând din acest eveniment o sărbătoare a alergării și a comunității locale.",
+    "course_highlights": [
+      "Semimaraton de 21 km cu 700 metri diferență de nivel",
+      "Traseu mixt: 50% asfalt și 50% drumuri forestiere și poteci",
+      "Puncte de susținere cu hidratare și alimentare pe traseu"
+    ],
+    "additional": "Validarea înscrierilor și ridicarea kitului se face în ziua precedentă între 14:00 și 22:00 la Centrul de Concurs din interiorul Porții a IV-a a Cetății Alba Carolina. Startul semimaratonului și crosului este comun la ora 10:00 din Piața Cetății Alba Carolina, iar cursa populară începe la 10:15. Kids Race începe la ora 12:00. Kitul de participare include număr personalizat, tricou tehnic pentru cursele principale și tricou de bumbac pentru Kids Race, precum și alte materiale promoționale. Cronometrarea este electronică cu cip, iar la final se oferă medalii de finisher și premii. Organizatorii asigură ambulanță și fotografii pe traseu și la sosire. După curse, este organizată o tombolă aniversară și socializare cu echipa la Zocco Cafee. Evenimentul include cronometraj cu cip, puncte de apă și medalie de finisher. În ziua cursei, cetatea este închisă traficului auto.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://321start.run/eveniment/alba-iulia-city-race-2027",
       "https://calendar.sportic.ro/events/view?hash=7e7b3dfc-c0f4-41f6-b45a-c3b0e7421e37",
@@ -4120,38 +4131,41 @@
     "nearby_cities": [
       "Bistriţa"
     ],
-    "distances": "[\"42\", \"22\", \"8\"]",
+    "distances": "[\"42.2\", \"21.1\"]",
     "distance_m": [
-      42000,
-      22000,
-      8000
+      42200,
+      21100
     ],
     "distance_keywords": [
       "Maraton",
       "Semimaraton"
     ],
-    "distance_verbose": "Maraton, 22 km, 8 km",
+    "distance_verbose": "Maraton, Semimaraton",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://cspaduribistritene.ro/bistritatrailrunning/",
+    "fb_link": "https://www.facebook.com/bistritatrailrunning/?locale=ro_RO",
+    "ig_link": "https://www.instagram.com/bistrita.trail.running/",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://cspaduribistritene.ro/bistritatrailrunning/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "Bistrița Trail Running este o cursă de alergare montană organizată în zona Bistriței, cu trasee care îi poartă pe participanți prin peisaje naturale. Sunt anunțate probe de maraton și semimaraton, potrivite pentru alergători care vor să-și testeze limitele pe teren variat. Evenimentul invită alergătorii să descopere pădurile și împrejurimile orașului.",
+    "course_highlights": [
+      "Trasee prin pădurile Ghinzii și Codrișor",
+      "Teren variat, cu păduri, poieni și pășuni",
+      "Probe de maraton și semimaraton"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.49,
     "sources": [
       "https://cspaduribistritene.ro/"
     ],
@@ -4169,8 +4183,8 @@
   {
     "domain_name": "resita_stairs_challenge",
     "name": "Reșița Stairs Challenge",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260404",
@@ -4184,10 +4198,10 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Reșița, Caraș-Severin County, România",
-    "latitude": 45.3049703,
-    "longitude": 21.8821033,
+    "start_time": "10:00",
+    "location": "Dealul Golului, Reșița, Caraș-Severin County, România",
+    "latitude": 45.2852452,
+    "longitude": 21.8942301,
     "county": "CARAS-SEVERIN",
     "nearest_city": "Reşiţa",
     "nearby_cities": [
@@ -4199,27 +4213,34 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "0.4 km",
-    "organizer": null,
+    "organizer": "Asociația Club Sportiv „Reșița Alpină”",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://sites.google.com/view/stairschallenge",
+    "fb_link": "https://www.facebook.com/resita.stairs.challenge/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://sites.google.com/view/stairschallenge/Inscriere",
+    "race_info_url": "https://sites.google.com/view/stairschallenge/concurs/Info",
+    "presumed_organizer_email": "resita.trail.race@gmail.com",
+    "website_emails_found": [
+      "resita.trail.race@gmail.com",
+      "kokovicslaszlon@yahoo.com"
+    ],
+    "description": "Reșița Stairs Challenge este un concurs anual de alergare pe scări beton, trail și potecă, desfășurat pe Dealul Golului din Reșița. Evenimentul este deschis atât alergătorilor profesioniști, cât și amatorilor, având ca scop promovarea unui stil de viață sănătos și creșterea atractivității zonei. Participanții se vor bucura de o competiție verticală intensă, cu premii în bani și produse, într-un cadru natural și urban unic. Startul se dă individual, cu intervale de 30 de secunde între concurenți, iar traseele sunt bine marcate și variate ca dificultate.",
+    "course_highlights": [
+      "Traseu aproape integral pe scări, prin pădure, cu finish pe dealul Golului, la punctul de belvedere La Stemă",
+      "Probe cu diferite lungimi și dificultăți: proba scurtă (400 m, +110 m vertical), proba half (7 km, +650 m vertical, 5 ture), proba lungă (14,5 km, +1250 m vertical, 10 ture)",
+      "Startul se face de la baza scărilor, vizavi de Lidl, la aproximativ 300 m de centrul municipiului Reșița"
+    ],
+    "additional": "Startul se dă individual, cu 30 secunde distanță între concurenți, în ordinea performanțelor anterioare. Validarea și ridicarea kiturilor se face între 9:00 și 9:45 în zona delimitată lângă parcarea Lidl. Timpul limită pentru parcurgerea traseelor este de 30 minute pentru proba scurtă și 3 ore pentru proba lungă (10 ture). Traseele pot fi descărcate în format .gpx din Google Drive. Evenimentul este deschis atât alergătorilor amatori, cât și celor profesioniști; sunt anunțate premii în bani și produse.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.87,
     "sources": [
       "https://www.facebook.com/events/1343312217020585/",
       "https://sites.google.com/view/stairschallenge"
@@ -4425,9 +4446,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Galați, Galați County, România",
-    "latitude": 45.4353208,
-    "longitude": 28.0079945,
+    "location": "Pădurea Gârboavele, Galați County, România",
+    "latitude": 45.57647559999999,
+    "longitude": 28.0046214,
     "county": "GALATI",
     "nearest_city": "Galaţi",
     "nearby_cities": [
@@ -4445,27 +4466,33 @@
       "10 km"
     ],
     "distance_verbose": "Maraton, Semimaraton, 10 km",
-    "organizer": null,
+    "organizer": "Asociația Profesională a Polițiștilor Locali Galați (GALPOL)",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://runmap.ro/events/ultrarace-24h-galati-2026",
+    "fb_link": "https://www.facebook.com/UltraRace24hGalati/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://runmap.ro/register",
+    "race_info_url": "https://runmap.ro/events/ultramaraton-galati-24-2026",
+    "presumed_organizer_email": "runmap.ro@gmail.com",
+    "website_emails_found": [
+      "runmap.ro@gmail.com"
+    ],
+    "description": "UltraRace 24h Galați este o competiție de alergare de anduranță desfășurată în Pădurea Gârboavele, organizată de Asociația Profesională a Polițiștilor Locali Galați. Evenimentul include probe variate, de la crosuri scurte până la ultramaraton individual și pe echipe, desfășurate pe un traseu de 3,25 km cu suprafață mixtă de pământ și asfalt și o diferență de nivel de 20 m. Participanții beneficiază de servicii precum număr de concurs cu cip, medalie de finisher, puncte de hidratare și asistență medicală. Câștigătorii sunt desemnați în funcție de distanța parcursă sau timpul înregistrat, iar atmosfera este una de solidaritate și provocare sportivă.",
+    "course_highlights": [
+      "Traseu de 3,25 km cu 1,85 km pe pământ și 1,4 km pe asfalt",
+      "Diferență de nivel de 20 metri pe circuitul marcat și iluminat",
+      "Probe variate de la cros la ultramaraton individual și pe echipe"
+    ],
+    "additional": "Participanții pot alerga, merge, lua pauze sau dormi pe întreaga perioadă a celor 24 de ore. Sunt disponibile probe speciale precum ștafeta pe echipe și curse pentru copii. Se oferă spațiu de depozitare a echipamentului și serviciu medical de urgență. Evenimentul are și probe pe echipe, ștafetă și curse pentru copii; cursa pentru utilizatorii de scaune rulante este fără taxă de participare. Are și o componentă caritabilă.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.facebook.com/photo?fbid=1087700290679346&set=a.147791101336941",
       "https://www.facebook.com/UltraRace24hGalati"
@@ -4573,8 +4600,8 @@
   {
     "domain_name": "ultrarace_24h_galati",
     "name": "Ultrarace 24H Galați",
-    "type": "time",
-    "type_local": "Pe timp",
+    "type": "other",
+    "type_local": "Altele",
     "race_dates": [
       [
         "20260404",
@@ -4601,39 +4628,42 @@
     "nearby_cities": [
       "Galaţi"
     ],
-    "distances": "[\"42\", \"21\", \"10\"]",
+    "distances": "[\"42.25\", \"19.5\", \"9.75\"]",
     "distance_m": [
-      42000,
-      21000,
-      10000
+      42250,
+      19500,
+      9750
     ],
     "distance_keywords": [
       "Maraton",
-      "Semimaraton",
       "10 km"
     ],
-    "distance_verbose": "Maraton, Semimaraton, 10 km",
-    "organizer": null,
+    "distance_verbose": "Maraton, 19.5 km, 9.75 km",
+    "organizer": "Asociația Profesională a Polițiștilor Locali Galați (GALPOL)",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.facebook.com/UltraRace24hGalati/",
+    "fb_link": "https://www.facebook.com/UltraRace24hGalati/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.facebook.com/UltraRace24hGalati/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "UltraRace 24h Galați este o competiție de alergare de anduranță desfășurată în Pădurea Gârboavele, cu probe individuale și pe echipe de 24 de ore, alături de curse pe distanțe mai scurte. Participanții pot alege între maraton, semimaraton și cros, iar evenimentul include și ștafetă, o cursă pentru utilizatorii de scaune rulante și curse pentru copii. Este o ocazie de a alerga în natură, într-o competiție cu opțiuni pentru mai multe niveluri și vârste.",
+    "course_highlights": [
+      "Traseul are forma unei bucle de 3,25 km, cu aproximativ 1,85 km pe pământ și 1,4 km pe asfalt.",
+      "Bucla are o diferență de nivel de aproximativ 20 m.",
+      "Probe disponibile: 24 de ore individual sau pe echipe, maraton de 42,25 km, semimaraton de 19,5 km și cros de 9,75 km."
+    ],
+    "additional": "Ștafeta de 24 de ore este formată din patru membri, fiecare alergând câte o oră. Sunt organizate și curse pentru copii, cu distanțe între 200 și 1.000 m.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.74,
     "sources": [
       "https://www.facebook.com/events/1169960537861748/",
       "https://www.facebook.com/photo?fbid=1087700290679346&set=a.147791101336941"
@@ -4906,48 +4936,54 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Brașov, România",
-    "latitude": 45.6426802,
-    "longitude": 25.5887252,
+    "location": "Piața Sfatului, Brașov, România",
+    "latitude": 45.642576,
+    "longitude": 25.5893945,
     "county": "BRASOV",
     "nearest_city": "Braşov",
     "nearby_cities": [
       "Braşov"
     ],
-    "distances": "[\"21\", \"10\", \"5\", \"2.5\"]",
+    "distances": "[\"21\", \"10\", \"5\", \"2.5\", \"1\", \"0.6\"]",
     "distance_m": [
       21000,
       10000,
       5000,
-      2500
+      2500,
+      1000,
+      600
     ],
     "distance_keywords": [
       "Semimaraton",
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "Semimaraton, 10 km, 5 km, 2.5 km",
-    "organizer": null,
+    "distance_verbose": "Semimaraton, 10 km, 5 km, 2.5 km, 1 km, 0.6 km",
+    "organizer": "YOLO Events",
     "contact": null,
-    "website": null,
+    "website": "https://brasov.21k.ro/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "21K/10K/5K: 160–275 lei; 2,5K: 70–110 lei; Kids Run: 50 lei",
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://brasov.21k.ro/inscriere/",
+    "race_info_url": "https://brasov.21k.ro/despre/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Brașov 21k este un eveniment de alergare care îmbină provocarea urbană cu frumusețea munților din jurul Brașovului. Fiecare alergător, fie el elită sau amator, găsește o cursă potrivită pentru nivelul său, într-un oraș plin de energie și istorie. Evenimentul face parte din seria 21K Romania Running Series by YoloEvents.ro și oferă o experiență unică de a descoperi Brașovul prin alergare. Atmosfera este una prietenoasă și motivantă, cu trasee diverse pentru toate vârstele și nivelurile de pregătire.",
+    "course_highlights": [
+      "Trasee variate în orașul Brașov și împrejurimi montane",
+      "Cursă pentru toate nivelurile: 21k, 10k, 5k, 2.5k și Kids Run",
+      "Descoperirea orașului Brașov într-un cadru energic și prietenos"
+    ],
+    "additional": "Evenimentul include curse multiple: 21k, 10k, 5k, 2.5k și Kids Run, adresate atât alergătorilor de elită, cât și amatorilor. Plata contribuției de participare trebuie făcută în termen de 3 zile de la înscrierea online, altfel înregistrarea este anulată. Evenimentul este organizat de Yolo Events și face parte din seria 21K Romania Running Series. Semimaratonul se desfășoară pe două ture, cu limită de timp de 3 ore și puncte de alimentare la 5,5 km, 11 km, 16,5 km și la finish. Kids Run include distanțe de 600 m și 1000 m.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://brasov.21k.ro/"
     ],
@@ -29540,11 +29576,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "București, România",
     "latitude": 44.4267674,
@@ -29583,11 +29623,11 @@
       "https://skyrun.skytower.ro/"
     ],
     "consolidated_ids": [
-      "0bf50e68-cc11-4a92-a944-0e5bcd76414f"
+      "e8e2361c-2730-4f5d-bc68-d41061c5395b"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260415",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29596,8 +29636,8 @@
   {
     "domain_name": "crosul_de_noapte_cluj_napoca",
     "name": "Crosul de noapte",
-    "type": "trail",
-    "type_local": "Trail",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20261114",
@@ -29606,15 +29646,19 @@
       [
         "20261106",
         "20261106"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "18:00",
-    "location": "Cluj-Napoca, Cluj County, România",
-    "latitude": 46.7712101,
-    "longitude": 23.6236353,
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Parcul Central, Cluj-Napoca, România",
+    "latitude": 46.7691448,
+    "longitude": 23.5774005,
     "county": "CLUJ",
     "nearest_city": "Cluj-Napoca",
     "nearby_cities": [
@@ -29630,7 +29674,7 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 4 km",
-    "organizer": "Cluj-Napoca Runners Club",
+    "organizer": null,
     "contact": null,
     "website": "https://runnersclub.ro/crosulhoia/",
     "fb_link": null,
@@ -29643,19 +29687,19 @@
           {
             "label": "tier_1",
             "price": "50 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru 15 km"
           },
           {
             "label": "tier_2",
             "price": "70 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru 15 km"
           }
         ],
         "late_fee": {
           "price": "90 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       },
       {
@@ -29664,19 +29708,19 @@
           {
             "label": "tier_1",
             "price": "40 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru 7 km"
           },
           {
             "label": "tier_2",
             "price": "60 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru 7 km"
           }
         ],
         "late_fee": {
           "price": "80 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       },
       {
@@ -29685,19 +29729,19 @@
           {
             "label": "tier_1",
             "price": "30 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru 3 km"
           },
           {
             "label": "tier_2",
             "price": "50 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru 3 km"
           }
         ],
         "late_fee": {
           "price": "70 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       },
       {
@@ -29706,53 +29750,53 @@
           {
             "label": "tier_1",
             "price": "20 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru proba familiei"
           },
           {
             "label": "tier_2",
             "price": "30 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru proba familiei"
           }
         ],
         "late_fee": {
           "price": "40 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       }
     ],
-    "registration_close_date": "20261114",
+    "registration_close_date": "20271113",
     "registration_url": "https://runnersclub.ro/crosulhoia/#inscriere",
     "race_info_url": "https://runnersclub.ro/crosulhoia/#content",
     "presumed_organizer_email": "office@runnersclub.ro",
     "website_emails_found": [
       "office@runnersclub.ro"
     ],
-    "description": "Crosul Hoia GlobalLogic este o cursă de alergare organizată în Cluj-Napoca, care oferă participanților oportunitatea de a alerga pe potecile răcoroase din Pădurea Hoia. Evenimentul include mai multe probe de alergare, cu distanțe de 15 km, 7 km, 3 km și o probă dedicată familiilor, fiind potrivit pentru toate vârstele și nivelurile de pregătire. Organizatorii Runners Club promovează o atmosferă prietenoasă și susțin comunitatea locală de alergători. Participanții se pot bucura de un traseu natural, departe de asfalt, într-un cadru pitoresc și sănătos.",
+    "description": "Crosul Hoia GlobalLogic este o cursă de alergare organizată în Cluj-Napoca, care oferă participanților oportunitatea de a alerga pe potecile răcoroase din Pădurea Hoia. Evenimentul include mai multe probe de alergare, cu distanțe de 15 km, 7 km, 3 km și o probă dedicată familiilor, fiind potrivit pentru toate vârstele și nivelurile de pregătire. Organizatorii Runners Club promovează o atmosferă prietenoasă și susțin comunitatea locală de alergători. Cursa are loc în Parcul Central și în împrejurimile sale, oferind un cadru natural și provocator.",
     "course_highlights": [
       "Traseu pe potecile răcoroase din Pădurea Hoia",
       "Distanțe variate: 15 km, 7 km, 3 km și proba familiei",
-      "Eveniment organizat în mijlocul naturii, departe de asfalt"
+      "Eveniment organizat în Parcul Central, Cluj-Napoca"
     ],
-    "additional": "Evenimentul include pachet de înscriere cu tricou și număr de concurs. Se organizează probe pentru toate vârstele, inclusiv o probă dedicată familiilor. Traseul este pe poteci naturale în pădure, oferind o experiență de alergare în natură. Startul are loc seara, oferind o atmosferă specială de cros nocturn. Taxa de participare include medalia, cronometrare și asistență medicală, cu înscriere exclusiv online și limită de înscrieri până pe 13 iunie 2026.",
+    "additional": "Evenimentul este organizat de Runners Club, care oferă și antrenamente de grup gratuite în Cluj-Napoca. Sunt premii pentru participanți și pachete de înscriere care includ tricouri și alte beneficii.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.35,
     "sources": [
       "https://runnersclub.ro/crosuldenoapte/",
       "https://runnersclub.ro/crosuldenoapte/",
       "https://runnersclub.ro/crosuldenoapte/"
     ],
     "consolidated_ids": [
-      "d3f4c6c9-a16e-4200-a384-b883459b9de0"
+      "c38ae1f5-f19d-4814-bd55-68b70c52c54a"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260415",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29767,13 +29811,17 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": "11:00",
-    "location": "Brașov, România",
+    "location": "Brașov, Brașov County, România",
     "latitude": 45.6426802,
     "longitude": 25.5887252,
     "county": "BRASOV",
@@ -29789,42 +29837,42 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": "Clubul Sportiv Împreună Pentru Mișcare",
+    "organizer": null,
     "contact": null,
     "website": "https://15noiembrie.ro/",
-    "fb_link": "https://www.facebook.com/15noiembrie/",
+    "fb_link": null,
     "ig_link": null,
-    "price_range": "gratuit",
+    "price_range": null,
     "price_tiers": [],
-    "registration_close_date": "20251112",
-    "registration_url": "https://15noiembrie.ro/inscriere/",
-    "race_info_url": "https://15noiembrie.ro/regulament/",
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://15noiembrie.ro/15-noiembrie-2026/",
     "presumed_organizer_email": "contact@15noiembrie.ro",
     "website_emails_found": [
       "contact@15noiembrie.ro"
     ],
-    "description": "Crosul 15 Noiembrie este un eveniment sportiv anual organizat la Brașov, care comemorează Revolta Anticomunistă din 15 Noiembrie 1987 a muncitorilor de la Uzina de Autocamioane Roman. Cursa principală este o alergare pe șosea de 5 kilometri, desfășurată pe traseul istoric al revoltei, deschisă tuturor pasionaților de alergare. De asemenea, există curse dedicate copiilor, cu distanțe adaptate vârstei, pentru a promova mișcarea și spiritul de echipă. Evenimentul este organizat de Primăria Municipiului Brașov în parteneriat cu Asociația 15 Noiembrie 1987 Brașov și Clubul Sportiv Împreună Pentru Mișcare.",
+    "description": "Crosul 15 Noiembrie este un eveniment sportiv anual organizat la Brașov, care comemorează Revolta muncitorilor de la Uzina de Autocamioane Roman din 1987. Traseul de 5 km urmează drumul parcurs de manifestanți în acea perioadă, oferind participanților o experiență simbolică și plină de semnificație. Evenimentul include și curse pentru copii, cu distanțe adaptate pe categorii de vârstă. Participarea este gratuită, iar atmosfera este una de recunoștință și libertate.",
     "course_highlights": [
-      "Traseu istoric de 5 km pe străzile Revoltei de la Brașov din 1987",
-      "Traseu urban pe șosea prin Brașov, inclusiv puncte istorice și culturale",
-      "Curse pentru copii cu distanțe între 250m și 1.2km, adaptate pe grupe de vârstă"
+      "Traseu de 5 km pe drumul Revoltei de la Brașov din 1987",
+      "Startul în interiorul parcului industrial SC Roman, lângă fosta Secție 440",
+      "Curse pentru copii cu distanțe între 250 m și 1,2 km, în funcție de vârstă"
     ],
-    "additional": "Înscrierile sunt gratuite și limitate la 1800 participanți (1500 adulți și 300 copii). Ridicarea kit-urilor se face în ziua anterioară la Magazinul Sport Guru Brașov între orele 15:30 și 20:00. Startul cursei are loc în interiorul parcului industrial SC Roman, exact din dreptul fostei Secții 440 a Uzinei de Autocamioane, locul unde a izbucnit revolta. alergare pe străzile din Brașov, traseu de 5 km, curse pentru toate vârstele, eveniment comemorativ, organizat în noiembrie 2025",
+    "additional": "Ridicarea kiturilor de concurs se face în ziua de vineri, 13 noiembrie, între orele 15:30 și 20:00 la Magazinul Sport Guru Brașov. Există un moment de încălzire și stretching susținut de WePlay. Timpul limită pentru cursa de 5 km este de 60 de minute. Festivitatea de premiere și tombola au loc după curse.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://15noiembrie.ro/"
     ],
     "consolidated_ids": [
-      "55cbf078-ce99-4d30-b1b8-ca2078e29efe"
+      "bcef6472-767a-422a-b056-7225aa24e695"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260415",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29839,11 +29887,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Parcul Micălata, Arad, România",
     "latitude": 46.16827199999999,
@@ -29889,11 +29941,11 @@
       "https://aradrun.ro/"
     ],
     "consolidated_ids": [
-      "39770538-70d5-4451-8430-593e32fe96a5"
+      "d7d4d135-16cc-4f9d-abf6-45a60b184caa"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261012",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29908,11 +29960,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "SkyTower, Calea Floreasca 246C, Bucharest, România",
     "latitude": 44.4781003,
@@ -29951,11 +30007,11 @@
       "https://321start.run/eveniment/skyrun-skys-the-limit-2026"
     ],
     "consolidated_ids": [
-      "ed04a01f-431b-48af-90a5-a12afeedf503"
+      "a981ea0c-38d2-4e16-a320-f9fff9bc2de0"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261023",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29970,11 +30026,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Cluj-Napoca, România",
     "latitude": 46.7712101,
@@ -30015,11 +30075,11 @@
       "https://www.facebook.com/events/1073233129079010/"
     ],
     "consolidated_ids": [
-      "c54744ad-1350-4465-be72-d426103e8932"
+      "bcabe8f4-ba8d-4d7c-99fe-8b6e525ef489"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -30034,11 +30094,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Reșița, Caraș-Severin County, România",
     "latitude": 45.3049703,
@@ -30079,11 +30143,11 @@
       "https://www.facebook.com/events/s/alpine-resita-semenic-challeng/1860000825013141/"
     ],
     "consolidated_ids": [
-      "ea2c0708-0159-482c-80d5-8619c290d5fa"
+      "0053439a-6672-4bd4-9559-4833aeaae65c"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261114",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -30147,6 +30211,68 @@
     ],
     "consolidated_ids": [
       "aa5c9c2c-c4f3-4b9b-ab59-9c97bccc9e21"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "250_de_ture_pentru_o_cauza",
+    "name": "250 de ture pentru o cauză",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Arad, România",
+    "latitude": 46.1865606,
+    "longitude": 21.3122677,
+    "county": "ARAD",
+    "nearest_city": "Arad",
+    "nearby_cities": [
+      "Arad"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.facebook.com/events/s/250-de-ture-un-singur-scop/3743021512513083/"
+    ],
+    "consolidated_ids": [
+      "a6afc05c-28e4-41b3-bf71-c1e8a36bd98f"
     ],
     "supplied_ids": [],
     "supplied_at": null,

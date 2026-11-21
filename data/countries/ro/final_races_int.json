@@ -1,67 +1,5 @@
 [
   {
-    "domain_name": "250_de_ture_pentru_o_cauza",
-    "name": "250 de ture pentru o cauză",
-    "type": "other",
-    "type_local": "Altele",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Arad, Romania",
-    "latitude": 46.1865606,
-    "longitude": 21.3122677,
-    "county": "ARAD",
-    "nearest_city": "Arad",
-    "nearby_cities": [
-      "Arad"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Distanțe mixte",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.facebook.com/events/s/250-de-ture-un-singur-scop/3743021512513083/"
-    ],
-    "consolidated_ids": [
-      "a6afc05c-28e4-41b3-bf71-c1e8a36bd98f"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "november_run",
     "name": "November Run",
     "type": "other",
@@ -2866,8 +2804,8 @@
   {
     "domain_name": "alba_iulia_city_race",
     "name": "Alba Iulia City Race",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20270313",
@@ -2877,49 +2815,122 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Alba Iulia, Alba County, Romania",
-    "latitude": 46.07327249999999,
-    "longitude": 23.5804886,
+    "start_time": "10:00",
+    "location": "Piața Cetății, Alba Iulia, Romania",
+    "latitude": 46.0679395,
+    "longitude": 23.5722061,
     "county": "ALBA",
     "nearest_city": "Alba Iulia",
     "nearby_cities": [
       "Alba Iulia"
     ],
-    "distances": "[\"21\", \"11\", \"5\", \"2.7\"]",
+    "distances": "[\"21\", \"10\", \"3\", \"2.1\"]",
     "distance_m": [
       21000,
-      11000,
-      5000,
-      2700
+      10000,
+      3000,
+      2100
     ],
     "distance_keywords": [
       "Semimaraton",
       "10 km",
-      "5 km"
+      "3000 metri"
     ],
-    "distance_verbose": "Semimaraton, 11 km, 5 km, 2.7 km",
-    "organizer": null,
+    "distance_verbose": "Semimaraton, 10 km, 3000 metri, 2.1 km",
+    "organizer": "Asociația Mamut Atletic Alba Iulia",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://albaiulia.cityrace.ro/",
+    "fb_link": "https://www.facebook.com/AlbaIuliaCityRace/?locale=ro_RO",
+    "ig_link": "https://www.instagram.com/albaiuliacityrace/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Semimaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": "20270131",
+            "description": "Intre 2 decembrie 2026 și 31 ianuarie 2027"
+          },
+          {
+            "label": "tier_2",
+            "price": null,
+            "deadline": "20270308",
+            "description": "Intre 1 și 8 martie – in limita locurilor disponibile"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Cros",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": "20270131",
+            "description": "Intre 2 decembrie 2026 și 31 ianuarie 2027"
+          },
+          {
+            "label": "tier_2",
+            "price": null,
+            "deadline": "20270308",
+            "description": "Intre 1 și 8 martie – in limita locurilor disponibile"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Cursa Populară",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": "20270131",
+            "description": "Intre 2 decembrie 2026 și 31 ianuarie 2027"
+          },
+          {
+            "label": "tier_2",
+            "price": null,
+            "deadline": "20270308",
+            "description": "Intre 1 și 8 martie – in limita locurilor disponibile"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Kids Race",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": null,
+            "description": "KIDS RACE"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270308",
+    "registration_url": "https://albaiulia.cityrace.ro/inscriere/",
+    "race_info_url": "https://albaiulia.cityrace.ro/",
+    "presumed_organizer_email": "mamut.atletic@yahoo.com",
+    "website_emails_found": [
+      "mamut.atletic@yahoo.com"
+    ],
+    "description": "Alba Iulia City Race is an annual athletic event held in the historic heart of Alba Iulia, offering participants a unique running experience through the Alba Carolina Citadel and its surroundings. The event includes several races, including a 21 km half marathon, a 10 km cross-country race, a fun run, and the Kids Race, all designed to attract runners of every level. The courses combine paved roads with forest roads and trails, offering spectacular scenery and a glimpse into the history and nature of the area. The atmosphere is festive, with socializing, prizes, and raffles, making the event a celebration of running and the local community.",
+    "course_highlights": [
+      "21 km half marathon with 700 meters of elevation gain",
+      "Mixed course: 50% paved roads and 50% forest roads and trails",
+      "Support stations with hydration and refreshments along the course"
+    ],
+    "additional": "Registration validation and race-kit pickup take place the day before the event, from 14:00 to 22:00, at the Race Center inside Gate IV of the Alba Carolina Citadel. The half marathon and cross-country race share a 10:00 start from Alba Carolina Citadel Square, while the fun run starts at 10:15. The Kids Race starts at 12:00. The race kit includes a personalized bib, a technical T-shirt for the main races and a cotton T-shirt for the Kids Race, as well as other promotional materials. Timing is electronic with a chip, and finisher medals and prizes are awarded at the finish. The organizers provide an ambulance and photography along the course and at the finish. After the races, an anniversary raffle and a get-together with the team are held at Zocco Cafee. The event includes chip timing, water stations, and a finisher medal. On race day, the citadel is closed to car traffic.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://321start.run/eveniment/alba-iulia-city-race-2027",
       "https://calendar.sportic.ro/events/view?hash=7e7b3dfc-c0f4-41f6-b45a-c3b0e7421e37",
@@ -4120,38 +4131,41 @@
     "nearby_cities": [
       "Bistriţa"
     ],
-    "distances": "[\"42\", \"22\", \"8\"]",
+    "distances": "[\"42.2\", \"21.1\"]",
     "distance_m": [
-      42000,
-      22000,
-      8000
+      42200,
+      21100
     ],
     "distance_keywords": [
       "Maraton",
       "Semimaraton"
     ],
-    "distance_verbose": "Maraton, 22 km, 8 km",
+    "distance_verbose": "Maraton, Semimaraton",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://cspaduribistritene.ro/bistritatrailrunning/",
+    "fb_link": "https://www.facebook.com/bistritatrailrunning/?locale=ro_RO",
+    "ig_link": "https://www.instagram.com/bistrita.trail.running/",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://cspaduribistritene.ro/bistritatrailrunning/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "description": "Bistrița Trail Running is a mountain running race held in the Bistrița area, with courses that take participants through natural landscapes. Marathon and half-marathon events are announced, suited to runners who want to test their limits on varied terrain. The event invites runners to discover the forests and surroundings of the city.",
+    "course_highlights": [
+      "Courses through the Ghinzii and Codrișor forests",
+      "Varied terrain, with forests, clearings, and pastures",
+      "Marathon and half-marathon events"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.49,
     "sources": [
       "https://cspaduribistritene.ro/"
     ],
@@ -4169,8 +4183,8 @@
   {
     "domain_name": "resita_stairs_challenge",
     "name": "Reșița Stairs Challenge",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260404",
@@ -4184,10 +4198,10 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Reșița, Caraș-Severin County, Romania",
-    "latitude": 45.3049703,
-    "longitude": 21.8821033,
+    "start_time": "10:00",
+    "location": "Dealul Golului, Reșița, Caraș-Severin County, Romania",
+    "latitude": 45.2852452,
+    "longitude": 21.8942301,
     "county": "CARAS-SEVERIN",
     "nearest_city": "Reşiţa",
     "nearby_cities": [
@@ -4199,27 +4213,34 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "0.4 km",
-    "organizer": null,
+    "organizer": "Asociația Club Sportiv „Reșița Alpină”",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://sites.google.com/view/stairschallenge",
+    "fb_link": "https://www.facebook.com/resita.stairs.challenge/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://sites.google.com/view/stairschallenge/Inscriere",
+    "race_info_url": "https://sites.google.com/view/stairschallenge/concurs/Info",
+    "presumed_organizer_email": "resita.trail.race@gmail.com",
+    "website_emails_found": [
+      "resita.trail.race@gmail.com",
+      "kokovicslaszlon@yahoo.com"
+    ],
+    "description": "Reșița Stairs Challenge is an annual race on concrete stairs, trails, and paths, held on Dealul Golului in Reșița. The event is open to both professional and amateur runners and aims to promote a healthy lifestyle and increase the area’s appeal. Participants can enjoy an intense vertical competition, with cash and product prizes, in a unique natural and urban setting. Runners start individually, at 30-second intervals, and the courses are clearly marked and vary in difficulty.",
+    "course_highlights": [
+      "A course running almost entirely on stairs through the forest, finishing on Dealul Golului at the La Stemă viewpoint",
+      "Events of varying lengths and difficulty: short race (400 m, +110 m elevation), half race (7 km, +650 m elevation, 5 laps), long race (14.5 km, +1250 m elevation, 10 laps)",
+      "The start is at the bottom of the stairs, opposite Lidl, approximately 300 m from the center of Reșița"
+    ],
+    "additional": "Runners start individually, 30 seconds apart, in order of previous performances. Check-in and race-kit pickup take place from 9:00 to 9:45 in the designated area beside the Lidl parking lot. The time limit is 30 minutes for the short race and 3 hours for the long race (10 laps). The courses can be downloaded in .gpx format from Google Drive. The event is open to both amateur and professional runners; cash and product prizes are offered.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.87,
     "sources": [
       "https://www.facebook.com/events/1343312217020585/",
       "https://sites.google.com/view/stairschallenge"
@@ -4425,9 +4446,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Galați, Galați County, Romania",
-    "latitude": 45.4353208,
-    "longitude": 28.0079945,
+    "location": "Pădurea Gârboavele, Galați County, Romania",
+    "latitude": 45.57647559999999,
+    "longitude": 28.0046214,
     "county": "GALATI",
     "nearest_city": "Galaţi",
     "nearby_cities": [
@@ -4445,27 +4466,33 @@
       "10 km"
     ],
     "distance_verbose": "Maraton, Semimaraton, 10 km",
-    "organizer": null,
+    "organizer": "Asociația Profesională a Polițiștilor Locali Galați (GALPOL)",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://runmap.ro/events/ultrarace-24h-galati-2026",
+    "fb_link": "https://www.facebook.com/UltraRace24hGalati/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://runmap.ro/register",
+    "race_info_url": "https://runmap.ro/events/ultramaraton-galati-24-2026",
+    "presumed_organizer_email": "runmap.ro@gmail.com",
+    "website_emails_found": [
+      "runmap.ro@gmail.com"
+    ],
+    "description": "UltraRace 24h Galați is an endurance running competition held in Gârboavele Forest and organized by the Professional Association of Local Police Officers of Galați. The event includes a variety of races, from short cross-country runs to individual and team ultramarathons, on a 3.25 km course with a mixed dirt and asphalt surface and 20 m of elevation gain. Participants receive services such as a race bib with a chip, a finisher’s medal, hydration points, and medical assistance. Winners are determined by the distance covered or the time recorded, and the atmosphere is one of solidarity and sporting challenge.",
+    "course_highlights": [
+      "A 3.25 km course, with 1.85 km on dirt and 1.4 km on asphalt",
+      "20 metres of elevation gain on a marked and illuminated circuit",
+      "A variety of races, from cross-country runs to individual and team ultramarathons"
+    ],
+    "additional": "Participants can run, walk, take breaks, or sleep throughout the 24-hour period. Special events include a team relay and races for children. Equipment storage and emergency medical services are available. The event also includes team events, a relay, and races for children; the race for wheelchair users has no participation fee. It also has a charitable component.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.facebook.com/photo?fbid=1087700290679346&set=a.147791101336941",
       "https://www.facebook.com/UltraRace24hGalati"
@@ -4573,8 +4600,8 @@
   {
     "domain_name": "ultrarace_24h_galati",
     "name": "Ultrarace 24H Galați",
-    "type": "time",
-    "type_local": "Pe timp",
+    "type": "other",
+    "type_local": "Altele",
     "race_dates": [
       [
         "20260404",
@@ -4601,39 +4628,42 @@
     "nearby_cities": [
       "Galaţi"
     ],
-    "distances": "[\"42\", \"21\", \"10\"]",
+    "distances": "[\"42.25\", \"19.5\", \"9.75\"]",
     "distance_m": [
-      42000,
-      21000,
-      10000
+      42250,
+      19500,
+      9750
     ],
     "distance_keywords": [
       "Maraton",
-      "Semimaraton",
       "10 km"
     ],
-    "distance_verbose": "Maraton, Semimaraton, 10 km",
-    "organizer": null,
+    "distance_verbose": "Maraton, 19.5 km, 9.75 km",
+    "organizer": "Asociația Profesională a Polițiștilor Locali Galați (GALPOL)",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.facebook.com/UltraRace24hGalati/",
+    "fb_link": "https://www.facebook.com/UltraRace24hGalati/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.facebook.com/UltraRace24hGalati/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "UltraRace 24h Galați is an endurance running competition held in Gârboavele Forest, featuring individual and team 24-hour events alongside shorter-distance races. Participants can choose between the marathon, half marathon, and cross-country race, and the event also includes a relay, a race for wheelchair users, and children’s races. It is an opportunity to run in nature in a competition with options for different ability levels and ages.",
+    "course_highlights": [
+      "The course is a 3.25 km loop, with approximately 1.85 km on dirt and 1.4 km on asphalt.",
+      "The loop has an elevation gain of approximately 20 m.",
+      "Available events: 24 hours individually or in teams, a 42.25 km marathon, a 19.5 km half marathon, and a 9.75 km cross-country race."
+    ],
+    "additional": "The 24-hour relay consists of four members, each running for one hour. Children’s races are also held, with distances ranging from 200 to 1,000 m.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.74,
     "sources": [
       "https://www.facebook.com/events/1169960537861748/",
       "https://www.facebook.com/photo?fbid=1087700290679346&set=a.147791101336941"
@@ -4906,48 +4936,54 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Brașov, Romania",
-    "latitude": 45.6426802,
-    "longitude": 25.5887252,
+    "location": "Piața Sfatului, Brașov, Romania",
+    "latitude": 45.642576,
+    "longitude": 25.5893945,
     "county": "BRASOV",
     "nearest_city": "Braşov",
     "nearby_cities": [
       "Braşov"
     ],
-    "distances": "[\"21\", \"10\", \"5\", \"2.5\"]",
+    "distances": "[\"21\", \"10\", \"5\", \"2.5\", \"1\", \"0.6\"]",
     "distance_m": [
       21000,
       10000,
       5000,
-      2500
+      2500,
+      1000,
+      600
     ],
     "distance_keywords": [
       "Semimaraton",
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "Semimaraton, 10 km, 5 km, 2.5 km",
-    "organizer": null,
+    "distance_verbose": "Semimaraton, 10 km, 5 km, 2.5 km, 1 km, 0.6 km",
+    "organizer": "YOLO Events",
     "contact": null,
-    "website": null,
+    "website": "https://brasov.21k.ro/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "21K/10K/5K: 160–275 lei; 2,5K: 70–110 lei; Kids Run: 50 lei",
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://brasov.21k.ro/inscriere/",
+    "race_info_url": "https://brasov.21k.ro/despre/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Brașov 21k is a running event that combines an urban challenge with the beauty of the mountains surrounding Brașov. Every runner, whether elite or amateur, can find a race suited to their level in a city full of energy and history. The event is part of the 21K Romania Running Series by YoloEvents.ro and offers a unique way to discover Brașov by running. The atmosphere is friendly and motivating, with varied courses for all ages and fitness levels.",
+    "course_highlights": [
+      "Varied courses in the city of Brașov and the surrounding mountains",
+      "Races for all levels: 21k, 10k, 5k, 2.5k and Kids Run",
+      "Discover Brașov in an energetic and friendly setting"
+    ],
+    "additional": "The event includes several races: 21k, 10k, 5k, 2.5k and Kids Run, for both elite runners and amateurs. The participation fee must be paid within 3 days of online registration; otherwise, the registration will be canceled. The event is organized by Yolo Events and is part of the 21K Romania Running Series. The half marathon is run over two laps, with a time limit of 3 hours and aid stations at 5.5 km, 11 km, 16.5 km and the finish. Kids Run includes distances of 600 m and 1000 m.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://brasov.21k.ro/"
     ],
@@ -29540,11 +29576,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "București, Romania",
     "latitude": 44.4267674,
@@ -29583,11 +29623,11 @@
       "https://skyrun.skytower.ro/"
     ],
     "consolidated_ids": [
-      "0bf50e68-cc11-4a92-a944-0e5bcd76414f"
+      "e8e2361c-2730-4f5d-bc68-d41061c5395b"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260415",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29596,8 +29636,8 @@
   {
     "domain_name": "crosul_de_noapte_cluj_napoca",
     "name": "Crosul de noapte",
-    "type": "trail",
-    "type_local": "Trail",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20261114",
@@ -29606,15 +29646,19 @@
       [
         "20261106",
         "20261106"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "18:00",
-    "location": "Cluj-Napoca, Cluj County, Romania",
-    "latitude": 46.7712101,
-    "longitude": 23.6236353,
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Parcul Central, Cluj-Napoca, Romania",
+    "latitude": 46.7691448,
+    "longitude": 23.5774005,
     "county": "CLUJ",
     "nearest_city": "Cluj-Napoca",
     "nearby_cities": [
@@ -29630,7 +29674,7 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 4 km",
-    "organizer": "Cluj-Napoca Runners Club",
+    "organizer": null,
     "contact": null,
     "website": "https://runnersclub.ro/crosulhoia/",
     "fb_link": null,
@@ -29643,19 +29687,19 @@
           {
             "label": "tier_1",
             "price": "50 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru 15 km"
           },
           {
             "label": "tier_2",
             "price": "70 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru 15 km"
           }
         ],
         "late_fee": {
           "price": "90 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       },
       {
@@ -29664,19 +29708,19 @@
           {
             "label": "tier_1",
             "price": "40 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru 7 km"
           },
           {
             "label": "tier_2",
             "price": "60 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru 7 km"
           }
         ],
         "late_fee": {
           "price": "80 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       },
       {
@@ -29685,19 +29729,19 @@
           {
             "label": "tier_1",
             "price": "30 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru 3 km"
           },
           {
             "label": "tier_2",
             "price": "50 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru 3 km"
           }
         ],
         "late_fee": {
           "price": "70 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       },
       {
@@ -29706,53 +29750,53 @@
           {
             "label": "tier_1",
             "price": "20 lei",
-            "deadline": "20261015",
-            "description": "Taxa de participare Early bird până la 15 octombrie"
+            "deadline": "20270930",
+            "description": "Taxă de participare Early Bird pentru proba familiei"
           },
           {
             "label": "tier_2",
             "price": "30 lei",
-            "deadline": "20261110",
-            "description": "Taxa standard de participare până la 10 noiembrie"
+            "deadline": "20271110",
+            "description": "Taxă de participare standard pentru proba familiei"
           }
         ],
         "late_fee": {
           "price": "40 lei",
-          "deadline": "20261114"
+          "deadline": "20271113"
         }
       }
     ],
-    "registration_close_date": "20261114",
+    "registration_close_date": "20271113",
     "registration_url": "https://runnersclub.ro/crosulhoia/#inscriere",
     "race_info_url": "https://runnersclub.ro/crosulhoia/#content",
     "presumed_organizer_email": "office@runnersclub.ro",
     "website_emails_found": [
       "office@runnersclub.ro"
     ],
-    "description": "The Hoia GlobalLogic Cross-Country Race is a running event held in Cluj-Napoca, offering participants the opportunity to run along the cool trails of Hoia Forest. The event includes several races over distances of 15 km, 7 km and 3 km, as well as a race for families, making it suitable for all ages and fitness levels. The organizers, Runners Club, promote a friendly atmosphere and support the local running community. Participants can enjoy a natural, scenic and healthy setting, away from paved roads.",
+    "description": "The Crosul Hoia GlobalLogic is a running race organized in Cluj-Napoca, offering participants the opportunity to run along the cool trails of Hoia Forest. The event includes several races, with distances of 15 km, 7 km and 3 km, as well as a race dedicated to families, making it suitable for all ages and fitness levels. The organizers, Runners Club, promote a friendly atmosphere and support the local running community. The race takes place in Central Park and its surroundings, offering a natural and challenging setting.",
     "course_highlights": [
       "Route along the cool trails of Hoia Forest",
-      "Various distances: 15 km, 7 km, 3 km and a family race",
-      "Event held in nature, away from paved roads"
+      "Various distances: 15 km, 7 km, 3 km and the family race",
+      "Event held in Central Park, Cluj-Napoca"
     ],
-    "additional": "The event includes a registration package with a T-shirt and race number. Races are held for all ages, including one dedicated to families. The route follows natural forest trails, offering a running experience in nature. The race starts in the evening, creating a special night-race atmosphere. The participation fee includes a medal, timing and medical assistance. Registration is exclusively online, with entries open until June 13, 2026.",
+    "additional": "The event is organized by Runners Club, which also offers free group training sessions in Cluj-Napoca. Prizes are available for participants, and registration packages include T-shirts and other benefits.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.35,
     "sources": [
       "https://runnersclub.ro/crosuldenoapte/",
       "https://runnersclub.ro/crosuldenoapte/",
       "https://runnersclub.ro/crosuldenoapte/"
     ],
     "consolidated_ids": [
-      "d3f4c6c9-a16e-4200-a384-b883459b9de0"
+      "c38ae1f5-f19d-4814-bd55-68b70c52c54a"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260415",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29767,13 +29811,17 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": "11:00",
-    "location": "Brașov, Romania",
+    "location": "Brașov, Brașov County, Romania",
     "latitude": 45.6426802,
     "longitude": 25.5887252,
     "county": "BRASOV",
@@ -29789,42 +29837,42 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": "Clubul Sportiv Împreună Pentru Mișcare",
+    "organizer": null,
     "contact": null,
     "website": "https://15noiembrie.ro/",
-    "fb_link": "https://www.facebook.com/15noiembrie/",
+    "fb_link": null,
     "ig_link": null,
-    "price_range": "gratuit",
+    "price_range": null,
     "price_tiers": [],
-    "registration_close_date": "20251112",
-    "registration_url": "https://15noiembrie.ro/inscriere/",
-    "race_info_url": "https://15noiembrie.ro/regulament/",
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://15noiembrie.ro/15-noiembrie-2026/",
     "presumed_organizer_email": "contact@15noiembrie.ro",
     "website_emails_found": [
       "contact@15noiembrie.ro"
     ],
-    "description": "The 15 November Run is an annual sporting event held in Brașov, commemorating the Anti-Communist Revolt of 15 November 1987 by workers at the Roman Truck Factory. The main event is a 5-kilometre road race along the historic route of the revolt, open to all running enthusiasts. There are also races for children, with distances adapted to their ages, promoting physical activity and team spirit. The event is organized by Brașov City Hall in partnership with the 15 November 1987 Brașov Association and the Together for Movement Sports Club.",
+    "description": "The 15 November Cross-Country Race is an annual sporting event held in Brașov, commemorating the 1987 workers’ revolt at the Roman Truck Factory. The 5 km route follows the path taken by the demonstrators at the time, offering participants a symbolic and meaningful experience. The event also includes children’s races, with distances adapted to age groups. Participation is free, and the atmosphere is one of gratitude and freedom.",
     "course_highlights": [
-      "A historic 5 km route along the streets associated with the 1987 Brașov Revolt",
-      "An urban road route through Brașov, including historic and cultural landmarks",
-      "Children’s races from 250 m to 1.2 km, adapted for different age groups"
+      "A 5 km route following the path of the 1987 Brașov Revolt",
+      "The start is inside the SC Roman industrial park, near the former Section 440",
+      "Children’s races ranging from 250 m to 1.2 km, depending on age"
     ],
-    "additional": "Registration is free and limited to 1,800 participants (1,500 adults and 300 children). Race kits can be collected the day before at the Sport Guru Brașov store between 15:30 and 20:00. The race starts inside the SC Roman industrial park, right outside the former Section 440 of the Truck Factory, where the revolt began. Running on the streets of Brașov, a 5 km route, races for all ages, commemorative event, organized in November 2025",
+    "additional": "Race kits can be picked up on Friday, 13 November, between 15:30 and 20:00 at the Sport Guru Brașov store. A warm-up and stretching session is led by WePlay. The time limit for the 5 km race is 60 minutes. The awards ceremony and raffle take place after the races.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://15noiembrie.ro/"
     ],
     "consolidated_ids": [
-      "55cbf078-ce99-4d30-b1b8-ca2078e29efe"
+      "bcef6472-767a-422a-b056-7225aa24e695"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260415",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29839,11 +29887,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Parcul Micălata, Arad, Romania",
     "latitude": 46.16827199999999,
@@ -29889,11 +29941,11 @@
       "https://aradrun.ro/"
     ],
     "consolidated_ids": [
-      "39770538-70d5-4451-8430-593e32fe96a5"
+      "d7d4d135-16cc-4f9d-abf6-45a60b184caa"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261012",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29908,11 +29960,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "SkyTower, Calea Floreasca 246C, Bucharest, Romania",
     "latitude": 44.4781003,
@@ -29951,11 +30007,11 @@
       "https://321start.run/eveniment/skyrun-skys-the-limit-2026"
     ],
     "consolidated_ids": [
-      "ed04a01f-431b-48af-90a5-a12afeedf503"
+      "a981ea0c-38d2-4e16-a320-f9fff9bc2de0"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261023",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -29970,11 +30026,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Cluj-Napoca, Romania",
     "latitude": 46.7712101,
@@ -30015,11 +30075,11 @@
       "https://www.facebook.com/events/1073233129079010/"
     ],
     "consolidated_ids": [
-      "c54744ad-1350-4465-be72-d426103e8932"
+      "bcabe8f4-ba8d-4d7c-99fe-8b6e525ef489"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261030",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -30034,11 +30094,15 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20271113",
+        "20271113"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Reșița, Caraș-Severin County, Romania",
     "latitude": 45.3049703,
@@ -30079,11 +30143,11 @@
       "https://www.facebook.com/events/s/alpine-resita-semenic-challeng/1860000825013141/"
     ],
     "consolidated_ids": [
-      "ea2c0708-0159-482c-80d5-8619c290d5fa"
+      "0053439a-6672-4bd4-9559-4833aeaae65c"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261114",
+    "created_date": "20261121",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -30147,6 +30211,68 @@
     ],
     "consolidated_ids": [
       "aa5c9c2c-c4f3-4b9b-ab59-9c97bccc9e21"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "250_de_ture_pentru_o_cauza",
+    "name": "250 de ture pentru o cauză",
+    "type": "other",
+    "type_local": "Altele",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Arad, Romania",
+    "latitude": 46.1865606,
+    "longitude": 21.3122677,
+    "county": "ARAD",
+    "nearest_city": "Arad",
+    "nearby_cities": [
+      "Arad"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Distanțe mixte",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.facebook.com/events/s/250-de-ture-un-singur-scop/3743021512513083/"
+    ],
+    "consolidated_ids": [
+      "a6afc05c-28e4-41b3-bf71-c1e8a36bd98f"
     ],
     "supplied_ids": [],
     "supplied_at": null,
