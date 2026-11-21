@@ -1,6 +1,6 @@
 selection_rule:
   nearby_radius_km: 50.0
-  target_city_count: 15
+  target_city_count: 18
   min_eligible_races: 3
   similarity_distance_km: 40.0
   similarity_jaccard: 0.85
@@ -89,9 +89,27 @@ cities:
   latitude: 69.6489
   longitude: 18.9551
   nearby_race_count: 19
+- name: Arendal
+  original_name: Arendal
+  population: 30916
+  latitude: 58.4615
+  longitude: 8.77253
+  nearby_race_count: 18
+- name: Steinkjer
+  original_name: Steinkjer
+  population: 20000
+  latitude: 64.0149
+  longitude: 11.4954
+  nearby_race_count: 7
 - name: Svolvær
   original_name: Svolvaer
   population: 4720
   latitude: 68.2335
   longitude: 14.5684
   nearby_race_count: 7
+- name: Bodø
+  original_name: Bodo
+  population: 34073
+  latitude: 67.28
+  longitude: 14.405
+  nearby_race_count: 4
