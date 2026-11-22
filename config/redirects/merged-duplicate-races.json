@@ -6447,14 +6447,14 @@
       "market": "se"
     },
     {
-      "source": "/loppsidor/bjornlunken_2026/:path*",
-      "destination": "/loppsidor/bjornlunken/:path*",
+      "source": "/loppsidor/bjornlunken/:path*",
+      "destination": "/loppsidor/bjornlunken_2026/:path*",
       "permanent": true,
       "market": "se"
     },
     {
-      "source": "/en/race-pages/bjornlunken_2026/:path*",
-      "destination": "/en/race-pages/bjornlunken/:path*",
+      "source": "/en/race-pages/bjornlunken/:path*",
+      "destination": "/en/race-pages/bjornlunken_2026/:path*",
       "permanent": true,
       "market": "se"
     },
@@ -6575,6 +6575,18 @@
     {
       "source": "/en/race-pages/coop_eskistunarunt/:path*",
       "destination": "/en/race-pages/coop_eskilstuna_runt/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppsidor/coop_kungsholmen_runt/:path*",
+      "destination": "/loppsidor/kungsholmen_runt_stockholm/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/coop_kungsholmen_runt/:path*",
+      "destination": "/en/race-pages/kungsholmen_runt_stockholm/:path*",
       "permanent": true,
       "market": "se"
     },
@@ -6731,18 +6743,6 @@
     {
       "source": "/en/race-pages/kung_bjornloppet_2026/:path*",
       "destination": "/en/race-pages/kung_bjorn_loppet/:path*",
-      "permanent": true,
-      "market": "se"
-    },
-    {
-      "source": "/loppsidor/kungsholmen_runt_stockholm/:path*",
-      "destination": "/loppsidor/coop_kungsholmen_runt/:path*",
-      "permanent": true,
-      "market": "se"
-    },
-    {
-      "source": "/en/race-pages/kungsholmen_runt_stockholm/:path*",
-      "destination": "/en/race-pages/coop_kungsholmen_runt/:path*",
       "permanent": true,
       "market": "se"
     },
