@@ -1863,6 +1863,18 @@
       "market": "hu"
     },
     {
+      "source": "/futoversenyek/etyekrun_terep_es_aszfaltverseny_othaz_u_2_5p/:path*",
+      "destination": "/futoversenyek/etyekrun/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/en/race-pages/etyekrun_terep_es_aszfaltverseny_othaz_u_2_5p/:path*",
+      "destination": "/en/race-pages/etyekrun/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
       "source": "/futoversenyek/extreme_tarcal_tokaj_kor/:path*",
       "destination": "/futoversenyek/ix_extreme_tarcal_tokaj_kor/:path*",
       "permanent": true,
@@ -2171,6 +2183,18 @@
     {
       "source": "/en/race-pages/szalamandrun_futonap/:path*",
       "destination": "/en/race-pages/szalamandrun_futonap_3_5_11_21_42/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/futoversenyek/szegedi_jotekonysagi_felmaraton_erzsebet_liget_5p/:path*",
+      "destination": "/futoversenyek/szegedi_jotekonysagi_felmaraton/:path*",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/en/race-pages/szegedi_jotekonysagi_felmaraton_erzsebet_liget_5p/:path*",
+      "destination": "/en/race-pages/szegedi_jotekonysagi_felmaraton/:path*",
       "permanent": true,
       "market": "hu"
     },
@@ -3587,6 +3611,30 @@
     {
       "source": "/en/race-pages/floymila_2027/:path*",
       "destination": "/en/race-pages/floymila/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/frikarusellen_2_lop/:path*",
+      "destination": "/lopssider/frikarusellen_3_lop_bergen/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/frikarusellen_2_lop/:path*",
+      "destination": "/en/race-pages/frikarusellen_3_lop_bergen/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/frikarusellen_lop_3/:path*",
+      "destination": "/lopssider/frikarusellen_3_lop_bergen/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/frikarusellen_lop_3/:path*",
+      "destination": "/en/race-pages/frikarusellen_3_lop_bergen/:path*",
       "permanent": true,
       "market": "no"
     },
