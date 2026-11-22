@@ -358,46 +358,89 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Несебър, България",
-    "latitude": 42.6592159,
-    "longitude": 27.7355858,
+    "start_time": "10:00",
+    "location": "Mesambria Square, Nessebar, България",
+    "latitude": 42.65839829999999,
+    "longitude": 27.7332745,
     "county": "Burgas",
     "nearest_city": "Бургас",
     "nearby_cities": [
       "Бургас"
     ],
-    "distances": "[\"21.1\", \"10\"]",
+    "distances": "[\"21.1\", \"10\", \"3\"]",
     "distance_m": [
       21100,
-      10000
+      10000,
+      3000
     ],
     "distance_keywords": [
       "Полумаратон",
-      "10 km"
+      "10 km",
+      "3000 метра"
     ],
-    "distance_verbose": "Полумаратон, 10 km",
-    "organizer": null,
+    "distance_verbose": "Полумаратон, 10 km, 3000 метра",
+    "organizer": "Nesebar Sport",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://nesebarsport.com/bg/event/polumaraton-nesebar-2026",
+    "fb_link": "https://www.facebook.com/5kmrunNesebar/?locale=bg_BG",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "price_range": "25–45 €; деца до 14 г. участват безплатно",
+    "price_tiers": [
+      {
+        "distance": "21.1 км",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "45,00 €",
+            "deadline": "20261220",
+            "description": "45,00 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "10 км",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "45,00 €",
+            "deadline": "20261220",
+            "description": "45,00 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "3 км - детско бягане",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "Безплатно",
+            "deadline": "20261220",
+            "description": "Безплатно за деца до 13 години"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261220",
+    "registration_url": "https://nesebarsport.com/bg/event/polumaraton-nesebar-2026/register?step=tickets",
+    "race_info_url": "https://nesebarsport.com/bg/polumaraton-nesebar",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Полумаратон Несебър е твоят епичен завършек на състезанията за годината, провеждащ се в магичния коледен сезон в Несебър. Трасето е едно от най-бързите и живописни в България, съчетаващо красотата на синьото море с величествения Балкан. Калдъръмените улички на многовековния Несебър създават уникална атмосфера, а природата всяка година поднася различни изненади, правейки състезанието неповторимо. Това е последното състезание за годината с перфектна организация и чудесно изживяване за всички участници.",
+    "course_highlights": [
+      "Бързо и живописно трасе, съчетаващо море и планина",
+      "Магична атмосфера в калдъръмените улички на Несебър",
+      "Състезание в коледния сезон с уникални природни изненади"
+    ],
+    "additional": "Деца до 14 години участват безплатно на всяка от дистанциите. Раздаване на стартови пакети на 19.12 от 10:00 до 18:00 и на 20.12 от 07:00 до 09:00. На 19.12 има екскурзоводска разходка, организирана от музей \"Старинен Несебър\" от 14:00 до 15:00. Стартът е в 10:00 ч. На 19 декември са предвидени раздаване на стартови пакети и екскурзоводска разходка, организирана от музей „Старинен Несебър“. Пакети се раздават и в деня на състезанието от 07:00 до 09:00 ч.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.nesebarsport.com/bg/polumaraton-nesebar"
     ],
@@ -772,8 +815,8 @@
   {
     "domain_name": "oppening_season_ultra_trail_run_xcm_cycling_2027",
     "name": "OPPENING SEASON Ultra Trail Run&XCM Cycling 2027",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "trail",
+    "type_local": "Трейл",
     "race_dates": [
       [
         "20270321",
@@ -783,47 +826,55 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Ayazmoto Park, Stara Zagora, България",
-    "latitude": 42.4377618,
-    "longitude": 25.6151085,
+    "start_time": "09:00",
+    "location": "Meadow above the Rakia Still, Metropolitan Methodius Kusev Park (Ayazmoto), Stara Zagora, България",
+    "latitude": 42.4370792,
+    "longitude": 25.6135531,
     "county": "Stara Zagora",
     "nearest_city": "Стара Загора",
     "nearby_cities": [
       "Стара Загора"
     ],
-    "distances": "[\"42\", \"34\", \"21\"]",
+    "distances": "[\"42\", \"34\", \"21\", \"5\"]",
     "distance_m": [
       42000,
       34000,
-      21000
+      21000,
+      5000
     ],
     "distance_keywords": [
       "Маратон",
-      "Полумаратон"
+      "Полумаратон",
+      "5 km"
     ],
-    "distance_verbose": "Маратон, 34 km, Полумаратон",
-    "organizer": null,
+    "distance_verbose": "Маратон, 34 km, Полумаратон, 5 km",
+    "organizer": "Клуб по колоездене и туризъм „Сърнена гора“ – Стара Загора",
     "contact": null,
-    "website": null,
+    "website": "https://tracksport.live/e/oppening-season-ultra-trail-runxcm-cycling-2027",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://tracksport.live/e/oppening-season-ultra-trail-runxcm-cycling-2027/route-information",
+    "presumed_organizer_email": "kktsarnenagora@abv.bg",
+    "website_emails_found": [
+      "kktsarnenagora@abv.bg"
+    ],
+    "description": "OPENING SEASON Ultra Trail Run & XCM Cycling 2027 е емблематично спортно събитие, което открива спортния сезон в Стара Загора. Организирано от Клуб по колоездене и туризъм „Сърнена гора“ с подкрепата на Община Стара Загора, състезанието предлага разнообразни дисциплини - ултра трейл бягане и крос-кънтри колоездене. Стартът и финалът са на поляната над ракиения казан в парк „Митрополит Методий Кусев“ (Аязмото). Участниците могат да избират между няколко дистанции с различна трудност и маркировка, подходящи както за начинаещи, така и за напреднали.",
+    "course_highlights": [
+      "Динамично 5 км трасе в пределите на парка с бяла маркировка",
+      "Средно трудна 11 км дистанция с жълта маркировка и умерена денивелация",
+      "Кралската 42 км дистанция с оранжева маркировка, включваща предизвикателствата на Сърнена гора"
+    ],
+    "additional": "Регистрацията започва в 06:30 и продължава до 08:30 с получаване на стартови пакети и номера с чипове. Техническият брифинг е от 08:30 до 08:50. Стартът на колоезденето (XCM и E-Bike) е в 09:00, а стартът на бягането е в 09:30. Голямото награждаване е в 17:00. Дистанциите са маркирани с цветни ленти и включват както бягане, така и колоездене. Има специални категории за електрически велосипеди и възрастови групи. За колоездачите каската е задължителна.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://tracksport.live/e/oppening-season-nagraden-fond-5000eur-ultra-trail-runxcm-cycling"
     ],
@@ -1159,8 +1210,8 @@
   {
     "domain_name": "panagiurishche_ultra",
     "name": "Панагюрище ултра",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "trail",
+    "type_local": "Трейл",
     "race_dates": [
       [
         "20270403",
@@ -1177,38 +1228,41 @@
     "county": "Pazardzhik",
     "nearest_city": "Пазарджик",
     "nearby_cities": [],
-    "distances": "[\"61\", \"41\", \"26\", \"12\"]",
+    "distances": "[\"61\", \"26\"]",
     "distance_m": [
       61000,
-      41000,
-      26000,
-      12000
+      26000
     ],
-    "distance_keywords": [
-      "Маратон"
-    ],
-    "distance_verbose": "61 km, 41 km, 26 km, 12 km",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "61 km, 26 km",
+    "organizer": "„Прайм Таим“ ПР",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://panagurishteultra.com/",
+    "fb_link": "https://www.facebook.com/PanagyurishteUltra/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270321",
+    "registration_url": "https://panagurishteultra.com/регистрация/",
+    "race_info_url": "https://panagurishteultra.com/трасета/",
+    "presumed_organizer_email": "panagurishteultra@gmail.com",
+    "website_emails_found": [
+      "panagurishteultra@gmail.com",
+      "sisoko6@gmail.com"
+    ],
+    "description": "Панагюрище Ултра е състезание по планинско бягане и колоездене, което се провежда в сърцето на Средна гора край Панагюрище. Събитието събира хора, които обичат движението и търсят предизвикателства по горски и полски пътища с различна дължина и денивелация. Участниците могат да избират между няколко дистанции, които предлагат уникални гледки и възможност да се срещнат с природата и собствените си възможности. Състезанието се отличава с приятелска атмосфера и общностен дух, като предлага и подкрепа по трасето, както и награди за завършилите.",
+    "course_highlights": [
+      "Трасетата са изцяло по горски и полски пътища след първия километър асфалт",
+      "Дистанции с различна дължина и положителна денивелация - от 12 км до 61 км",
+      "Съчетание на планинско бягане и колоездене с красиви гледки и предизвикателства"
+    ],
+    "additional": "Таксата за участие включва тениска на събитието, стартов номер с чип, електронно измерване и класиране, медицинска подкрепа, маркиране на трасетата, вода и храна на подкрепителните пунктове, медал за завършилите и подаръци от спонсори. Участниците трябва да са навършили 14 години, а тези между 14 и 18 години трябва да бъдат с родител или настойник. Състезателите трябва да бъдат поне 30 минути преди старта на мястото за получаване на номера и чипове. Състезанието включва дисциплини по трейл бягане и планинско колоездене.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://panagurishteultra.com/"
     ],
@@ -1395,46 +1449,50 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Pleven, България",
-    "latitude": 43.4170423,
-    "longitude": 24.6066847,
+    "location": "Totlebenov Val Reservoir, Kaylaka Park, Pleven, България",
+    "latitude": 43.3884281,
+    "longitude": 24.6226458,
     "county": "Pleven",
     "nearest_city": "Плевен",
     "nearby_cities": [
       "Плевен"
     ],
-    "distances": "[\"30\", \"21\", \"13\", \"7\"]",
+    "distances": "[\"30\", \"21\", \"16\", \"7\"]",
     "distance_m": [
       30000,
       21000,
-      13000,
+      16000,
       7000
     ],
     "distance_keywords": [
       "Полумаратон"
     ],
-    "distance_verbose": "30 km, Полумаратон, 13 km, 7 km",
-    "organizer": null,
+    "distance_verbose": "30 km, Полумаратон, 16 km, 7 km",
+    "organizer": "Сдружение „Да бягаш“ в партньорство с Община Плевен",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://kaylakatrail.com/",
+    "fb_link": "https://www.facebook.com/p/Kaylaka-Trail-Run-61574198477332/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://kaylakatrail.com/home/zasbitieto/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Кайлъка трейл рън е планинско бягане в природен парк Кайлъка, Плевен, което съчетава спорт, природа и кауза. Състезанието предлага четири дистанции - 7 км, 16 км, 21 км и 30 км, преминаващи през живописни горски пътеки, стръмни хълмове и скални участъци с панорамни гледки към долината на Тученишка река. Трасетата са подходящи както за начинаещи, така и за опитни трейлъри. Събитието подкрепя подобряването на инфраструктурата в парка и насърчава връзката между човека и природата. Всеки финиширал получава специално изработен медал, символ на постоянството и силата на гората.",
+    "course_highlights": [
+      "Живописни горски пътеки и стръмни хълмове",
+      "Скални участъци с панорамни гледки към долината на Тученишка река",
+      "Разнообразна настилка - асфалт, горски път и туристически екопътеки"
+    ],
+    "additional": "Пунктове с вода и храна са разположени по трасетата. Трасето 7 км е подходящо за бегачи, пешеходци и деца. Трасето 30 км започва от язовир Тотлебенов вал и минава през исторически и природни забележителности като крепост Сторгозия и Мъртвата долина. Настилката включва около 6% асфалт, останалото са горски пътища и екопътеки. Старт-финалът в предишното издание е бил при язовир „Тотлебенов вал“.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.82,
     "sources": [
       "https://kaylakatrail.com/"
     ],
@@ -1746,8 +1804,8 @@
   {
     "domain_name": "plovdiv_run",
     "name": "Plovdiv Run",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "road",
+    "type_local": "Шосейно бягане",
     "race_dates": [
       [
         "20270417",
@@ -1758,18 +1816,18 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Plovdiv, България",
-    "latitude": 42.1354079,
-    "longitude": 24.7452904,
+    "location": "Plovdiv Rowing Canal (Гребна база), Plovdiv, България",
+    "latitude": 42.1420427,
+    "longitude": 24.7068185,
     "county": "Plovdiv",
     "nearest_city": "Пловдив",
     "nearby_cities": [
       "Пловдив"
     ],
-    "distances": "[\"42.195\", \"21.097\", \"10\", \"5\"]",
+    "distances": "[\"42.2\", \"21.1\", \"10\", \"5\"]",
     "distance_m": [
-      42195,
-      21097,
+      42200,
+      21100,
       10000,
       5000
     ],
@@ -1782,25 +1840,93 @@
     "distance_verbose": "Маратон, Полумаратон, 10 km, 5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://plovdiv.run/bg",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "Корпоративна щафета: €40 на човек; таксите за останалите дистанции не са посочени.",
+    "price_tiers": [
+      {
+        "distance": "Маратон",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "40 €",
+            "deadline": "20261231",
+            "description": "40 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Полумаратон",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "30 €",
+            "deadline": "20261231",
+            "description": "30 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "10 км",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "20 €",
+            "deadline": "20261231",
+            "description": "20 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "5 км",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "20 €",
+            "deadline": "20261231",
+            "description": "20 €"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Corporate Run 5 км",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "160 € за отбор",
+            "deadline": "20261231",
+            "description": "160 € за отбор"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270417",
+    "registration_url": "https://plovdiv.run/bg/registration",
+    "race_info_url": "https://plovdiv.run/bg",
+    "presumed_organizer_email": "contact@plovdiv.run",
+    "website_emails_found": [
+      "contact@plovdiv.run",
+      "support@plovdiv.run"
+    ],
+    "description": "Plovdiv Run е събитие, което обединява маратон, полумаратон, 10 км, 5 км и корпоративна щафета с старт и финал на Гребна база Пловдив. Трасетата са международно сертифицирани по стандартите на World Athletics и AIMS, преминават покрай река Марица и през центъра на Пловдив, предлагайки уникално съчетание от спорт и култура. Участниците могат да се насладят на разнообразни дистанции, подходящи както за опитни бегачи, така и за начинаещи, с възможност за участие в състезания през целия уикенд. Организаторите осигуряват стартови пакети с медали, тениски, храна и напитки, както и медицинска помощ и застраховка.",
+    "course_highlights": [
+      "Международно сертифицирани трасета по стандартите на World Athletics и AIMS",
+      "Две обиколки за маратон и една за полумаратон покрай река Марица и през центъра на Пловдив",
+      "Старт и финал на Гребна база Пловдив с равни и живописни трасета"
+    ],
+    "additional": "Стартовите пакети се раздават в петък и събота. В стартовия пакет са включени стартов номер с чип, медал, тениска (за 5 км, 10 км, полумаратон и маратон), вода, изотонични напитки и плодове по трасето, медицинска помощ и застраховка за деня на старта, както и храна и напитки на финала. Всеки участник получава ваучери за пътуване на стойност 300 € от Екватор БГ. Стартовите пакети се получават в петък и събота. Корпоративната щафета е за четирима участници, по 1,25 км на човек. Таксата включва стартов номер с чип, медал за финиширалите, напитки, храна на финала и медицинска помощ. Всеки записан участник получава ваучери за пътуване на обща стойност €300.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://plovdiv.run/"
     ],
@@ -11681,8 +11807,8 @@
   {
     "domain_name": "novi_pazar_r_n_novi_pazar_run",
     "name": "Нови Пазар Рън / Novi Pazar Run",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "road",
+    "type_local": "Шосейно бягане",
     "race_dates": [
       [
         "20261006",
@@ -11713,27 +11839,31 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "13 km, 6.5 km, 1 km",
-    "organizer": null,
+    "organizer": "Българска федерация по лека атлетика, КЛА „Нови пазар“ и община Нови пазар",
     "contact": null,
-    "website": "http://www.runbulgaria.org",
+    "website": "https://www.runbulgaria.org",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "http://www.runbulgaria.org",
+    "race_info_url": "https://www.runbulgaria.org",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "„Нови Пазар Рън“ е шосейно състезание в Нови пазар, част от веригата „Рън България“. Предишните издания предлагат дистанции от 6,5 и 13 км, както и късо бягане за деца и начинаещи. Състезанието съчетава спортно предизвикателство с маршрут между Нови пазар и историческа Плиска.",
+    "course_highlights": [
+      "Дългата дистанция от 13 км свързва центъра на Нови пазар с Плиска и обратно.",
+      "Трасето от 6,5 км следва същия маршрут с обръщане на 3,25 км.",
+      "Късото бягане от 1 км е подходящо за деца и начинаещи."
+    ],
+    "additional": "Състезанието е финално събитие от веригата „Рън България“ и е свързано с празника на Нови пазар.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.84,
     "sources": [
       "https://runbulgaria.org/event/novi-pazar-ran-novi-pazar-run/"
     ],
@@ -11751,8 +11881,8 @@
   {
     "domain_name": "a3_ultra_trail_run_xcm_cycling",
     "name": "A³ Ultra Trail Run&XCM Cycling",
-    "type": "other",
-    "type_local": "Друго",
+    "type": "trail",
+    "type_local": "Трейл",
     "race_dates": [
       [
         "20261010",
@@ -11766,10 +11896,10 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Park Ayazmoto, Stara Zagora, България",
-    "latitude": 42.4370792,
-    "longitude": 25.6135531,
+    "start_time": "07:00",
+    "location": "Ayazmoto Park, Stara Zagora, България",
+    "latitude": 42.4377618,
+    "longitude": 25.6151085,
     "county": "Stara Zagora",
     "nearest_city": "Стара Загора",
     "nearby_cities": [
@@ -11785,27 +11915,33 @@
       "Полумаратон"
     ],
     "distance_verbose": "39.79 km, 34.38 km, Полумаратон",
-    "organizer": null,
+    "organizer": "ККТ „Сърнена гора“, ТД „Сърнена гора“, Вело клуб „Зарата“ и Община Стара Загора",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://tracksport.live/e/a3-ultra-trail-runxcm-cycling",
+    "fb_link": "https://www.facebook.com/p/%D0%9A%D0%9A%D0%A2-%D0%A1%D1%8A%D1%80%D0%BD%D0%B5%D0%BD%D0%B0-%D0%93%D0%BE%D1%80%D0%B0-%D0%A1%D1%82%D0%B0%D1%80%D0%B0-%D0%97%D0%B0%D0%B3%D0%BE%D1%80%D0%B0-100093077704000/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://tracksport.live/e/a3-ultra-trail-runxcm-cycling#intro",
+    "presumed_organizer_email": "kktsarnenagora@abv.bg",
+    "website_emails_found": [
+      "kktsarnenagora@abv.bg"
+    ],
+    "description": "A³ Ultra Trail Run & XCM Cycling е емблематично състезание, което събира най-добрите планински бегачи и колоездачи в България. Провежда се в парк „Аязмото“ в Стара Загора и предлага разнообразни трасета с различна трудност, подходящи както за начинаещи, така и за професионалисти. Събитието комбинира технични маршрути, красива природа и високо адреналинно преживяване в сърцето на Сърнена Средна гора. Участниците могат да избират между няколко дистанции за бягане и колоездене, като всички трасета са професионално маркирани и обезопасени.",
+    "course_highlights": [
+      "Трасета с различна трудност от 6 км до 40 км, подходящи за начинаещи и елитни атлети",
+      "Панорамни гледки и разнообразен терен в Сърнена Средна гора",
+      "Професионално маркирани маршрути с доброволци на ключови разклонения"
+    ],
+    "additional": "Старт и финал са в централна поляна в парк „Аязмото“ с GPS координати 42.438023, 25.617366. Програма включва технически брифинг и масов старт за колоездачи в 08:55, последван от поетапен старт за бегачите в 09:30. Награждаване и закриване на събитието е в 16:00. Дисциплини включват планинско бягане и планинско колоездене (XCM и E-Bike). Предвидено е електронно отчитане с чипове.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.73,
     "sources": [
       "https://tracksport.live/r/a3-ultra-trail-runxcm-cycling"
     ],
@@ -13176,8 +13312,8 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": "",
     "location": "Бургас",
     "latitude": 42.5105770984241,
@@ -13251,18 +13387,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "latitude",
-      "location",
-      "price_range",
       "race_dates",
-      "name",
-      "type",
-      "description",
       "distances",
+      "longitude",
       "website",
       "organizer",
-      "longitude",
-      "contact"
+      "latitude",
+      "description",
+      "location",
+      "price_range",
+      "type",
+      "contact",
+      "name"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13270,13 +13406,13 @@
       "https://burgasmarathon.bg/"
     ],
     "consolidated_ids": [
-      "98a1e6b6-42eb-4cae-9b66-47ebf3377659"
+      "ff57f1f2-8c72-4b0a-8213-7382c6942f1e"
     ],
     "supplied_ids": [
       "227ce781-6d14-4070-b1cd-15ee5a16ebc3"
     ],
     "supplied_at": "20260530",
-    "created_date": "20261012",
+    "created_date": "20261122",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
