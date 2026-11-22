@@ -1,0 +1,43 @@
+{
+  "id": "nl-unpublished",
+  "market": "nl",
+  "note": "Unpublished NL races and neighbour-market copies kept in Supabase (published=false, never deleted). 308 the retired page to the merged-into race, else a city page, else the calendar. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated).",
+  "redirects": [
+    {
+      "source": "/looppaginas/trails_flyvestationen",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/trails_flyvestationen/",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/trails_flyvestationen/:path*",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/trails_flyvestationen",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/trails_flyvestationen/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/trails_flyvestationen/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    }
+  ]
+}
