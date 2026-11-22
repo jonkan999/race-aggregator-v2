@@ -74,6 +74,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "lv"
+    },
+    {
+      "source": "/skrejiena_lapas/orbyhus_half_marathon_10k_orbyhus",
+      "destination": "/skrejienu-kalendars/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/skrejiena_lapas/orbyhus_half_marathon_10k_orbyhus/",
+      "destination": "/skrejienu-kalendars/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/skrejiena_lapas/orbyhus_half_marathon_10k_orbyhus/:path*",
+      "destination": "/skrejienu-kalendars/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/en/race-pages/orbyhus_half_marathon_10k_orbyhus",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/en/race-pages/orbyhus_half_marathon_10k_orbyhus/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "lv"
+    },
+    {
+      "source": "/en/race-pages/orbyhus_half_marathon_10k_orbyhus/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "lv"
     }
   ]
 }

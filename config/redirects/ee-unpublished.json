@@ -1,0 +1,43 @@
+{
+  "id": "ee-unpublished",
+  "market": "ee",
+  "note": "Unpublished EE races and neighbour-market copies kept in Supabase (published=false, never deleted). 308 the retired page to a city page if one exists, otherwise the calendar. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated). orbyhus_half_marathon_10k_orbyhus: SE neighbour copy, unpublished 2026-11-22 (no such race); no Uppsala city page here.",
+  "redirects": [
+    {
+      "source": "/jooksulehed/orbyhus_half_marathon_10k_orbyhus",
+      "destination": "/jooksuvoistlused/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/jooksulehed/orbyhus_half_marathon_10k_orbyhus/",
+      "destination": "/jooksuvoistlused/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/jooksulehed/orbyhus_half_marathon_10k_orbyhus/:path*",
+      "destination": "/jooksuvoistlused/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/en/race-pages/orbyhus_half_marathon_10k_orbyhus",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/en/race-pages/orbyhus_half_marathon_10k_orbyhus/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/en/race-pages/orbyhus_half_marathon_10k_orbyhus/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ee"
+    }
+  ]
+}
