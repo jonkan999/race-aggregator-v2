@@ -398,6 +398,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "se"
+    },
+    {
+      "source": "/loppsidor/bataljonsmasterskap_25hvbat_terrang",
+      "destination": "/loppkalender/stockholm/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppsidor/bataljonsmasterskap_25hvbat_terrang/",
+      "destination": "/loppkalender/stockholm/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppsidor/bataljonsmasterskap_25hvbat_terrang/:path*",
+      "destination": "/loppkalender/stockholm/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/bataljonsmasterskap_25hvbat_terrang",
+      "destination": "/en/race-calendar/stockholm/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/bataljonsmasterskap_25hvbat_terrang/",
+      "destination": "/en/race-calendar/stockholm/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/bataljonsmasterskap_25hvbat_terrang/:path*",
+      "destination": "/en/race-calendar/stockholm/",
+      "permanent": true,
+      "market": "se"
     }
   ]
 }
