@@ -6591,6 +6591,18 @@
       "market": "se"
     },
     {
+      "source": "/loppsidor/btr_5_km/:path*",
+      "destination": "/loppsidor/bocksten_trailrun/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/btr_5_km/:path*",
+      "destination": "/en/race-pages/bocksten_trailrun/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
       "source": "/loppsidor/coop_eskistunarunt/:path*",
       "destination": "/loppsidor/coop_eskilstuna_runt/:path*",
       "permanent": true,
