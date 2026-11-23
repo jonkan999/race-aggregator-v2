@@ -8,6 +8,10 @@
       [
         "20261201",
         "20261201"
+      ],
+      [
+        "20271201",
+        "20271201"
       ]
     ],
     "upcoming_dates": [],
@@ -12789,10 +12793,10 @@
     "nearby_cities": [
       "Făgăraș"
     ],
-    "distances": "[\"42\", \"21\", \"10\", \"5\"]",
+    "distances": "[\"42.2\", \"21.1\", \"10\", \"5\"]",
     "distance_m": [
-      42000,
-      21000,
+      42200,
+      21100,
       10000,
       5000
     ],
@@ -12805,25 +12809,92 @@
     "distance_verbose": "Maraton, Semimaraton, 10 km, 5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://bloodfluencermarathon.ro/",
+    "fb_link": "https://www.facebook.com/bloodfluencerMarathon/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "120-160 RON",
+    "price_tiers": [
+      {
+        "distance": "Family Run",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "135 RON",
+            "deadline": null,
+            "description": "Contribuția este 135 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Cursa populară",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "135 RON",
+            "deadline": null,
+            "description": "Contribuția este 135 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Cros",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "175 RON",
+            "deadline": null,
+            "description": "Contribuția curentă este 175 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Semimaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "200 RON",
+            "deadline": null,
+            "description": "Contribuția curentă este 200 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Maraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "230 RON",
+            "deadline": null,
+            "description": "Contribuția curentă este 230 RON"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://bloodfluencermarathon.ro/inscrieri/",
+    "race_info_url": "https://bloodfluencermarathon.ro/curse/",
+    "presumed_organizer_email": "contact@n-avemsange.ro",
+    "website_emails_found": [
+      "contact@n-avemsange.ro"
+    ],
+    "description": "Bloodfluencer Marathon is an annual running event held to mark World Blood Donor Day, in the picturesque village of Dejani, at the foothills of the Făgăraș Mountains. The event promotes voluntary blood donation and a healthy lifestyle, bringing together a community dedicated to this cause. Participants can choose from several races, from the Family Run to the Marathon, in a remarkable natural setting. The organizer is the HEM Association, which supports the national program “N-avem SÂNGE?!”.",
+    "course_highlights": [
+      "Routes in the picturesque area at the foothills of the Făgăraș Mountains",
+      "Several races: Family Run, Popular Race, Cross-Country, Half Marathon, Marathon",
+      "An event dedicated to promoting voluntary blood donation"
+    ],
+    "additional": "Organized minibus transport between Făgăraș and Dejani is available for participants on request. A camping area for approximately 30 tents is available, no more than 2 km from the Start/Finish, with advance reservation. Easy access by car and several accommodation options are available in the area. Tourist recommendations are available for visiting nearby attractions. For the 2027 edition, the registration page shows that registration is closed. Listed fees: Family Run and Popular Race 135 RON, Cross-Country 120 RON, Half Marathon 140 RON, and Marathon 160 RON.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.92,
     "sources": [
       "https://bloodfluencermarathon.ro/inscrieri/",
       "https://n-avemsange.ro/bloodfluencer-marathon/"
@@ -16945,8 +17016,8 @@
   {
     "domain_name": "szent_gellert_cross",
     "name": "SZENT GELLERT CROSS",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20250720",
@@ -16968,41 +17039,50 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Ditrău, Harghita County, Romania",
-    "latitude": 46.8107477,
-    "longitude": 25.5014359,
+    "start_time": "08:00",
+    "location": "Kakastaréj Fogadó, Ditrău, Harghita County, Romania",
+    "latitude": 46.8214187,
+    "longitude": 25.5410556,
     "county": "HARGHITA",
     "nearest_city": "Miercurea-Ciuc",
     "nearby_cities": [],
-    "distances": "[\"23\", \"8\"]",
+    "distances": "[\"45\", \"23\", \"8\"]",
     "distance_m": [
+      45000,
       23000,
       8000
     ],
-    "distance_keywords": [],
-    "distance_verbose": "23 km, 8 km",
-    "organizer": null,
+    "distance_keywords": [
+      "50 km"
+    ],
+    "distance_verbose": "45 km, 23 km, 8 km",
+    "organizer": "Szent Gellért Sport Klub Egyesület",
     "contact": null,
-    "website": null,
+    "website": "https://szentgellertcross.ro/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://szentgellertcross.ro/ro/inscriere",
+    "race_info_url": "https://szentgellertcross.ro/ro/program",
+    "presumed_organizer_email": "szentgellertcross@gmail.com",
+    "website_emails_found": [
+      "szentgellertcross@gmail.com"
+    ],
+    "description": "Szent Gellért Cross is a mountain running competition held in Ditrău at Kakastaréj Fogadó, offering athletes of all ages an excellent opportunity to enjoy running in nature. The event promotes a healthy lifestyle and gives participants the chance to discover the area’s natural and cultural beauty. The competition includes races for adults, children, and families, with varied courses and prizes for the top runners. The organizers provide amenities such as free camping spots and a welcoming environment for athletes.",
+    "course_highlights": [
+      "Varied courses for adults, children, and families, with distances from 500 m to 45 km",
+      "The start and competition hub are at Kakastaréj Fogadó, surrounded by the nature of Ditrău",
+      "An opportunity to discover the natural landscapes and local attractions of the commune of Ditrău"
+    ],
+    "additional": "The start and race-pack pickup take place at Kakastaréj Fogadó. Free tent pitches are available. On-site registration is possible on competition days, but without an official T-shirt. There is a technical briefing and warm-up before the start. The start is at Kakastaréj Fogadó in Ditrău. A free camping spot is available.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.79,
     "sources": [
       "https://szentgellertcross.ro/",
       "https://szentgellertcross.ro/ro"
@@ -19019,8 +19099,8 @@
   {
     "domain_name": "scorilo_sky_race",
     "name": "SCORILO SKY RACE",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20250830",
@@ -19042,47 +19122,116 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Poiana Mărului, Caraș-Severin, Romania",
-    "latitude": 45.399563,
-    "longitude": 22.5421706,
+    "start_time": "09:00",
+    "location": "Pine Hill, Poiana Mărului, Caraș-Severin, Romania",
+    "latitude": 45.4040269,
+    "longitude": 22.5441352,
     "county": "CARAS-SEVERIN",
     "nearest_city": "Hunedoara",
     "nearby_cities": [],
-    "distances": "[\"45\", \"44\", \"26\", \"12\", \"8\"]",
+    "distances": "[\"45\", \"44\", \"26\", \"12\", \"8\", \"4\"]",
     "distance_m": [
       45000,
       44000,
       26000,
       12000,
-      8000
+      8000,
+      4000
     ],
     "distance_keywords": [
       "50 km",
-      "Maraton"
+      "Maraton",
+      "5 km"
     ],
-    "distance_verbose": "45 km, 44 km, 26 km, 12 km, 8 km",
-    "organizer": null,
+    "distance_verbose": "45 km, 44 km, 26 km, 12 km, 8 km, 4 km",
+    "organizer": "Asociația Sportivă Montană Banat",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.scoriloskyrace.ro/",
+    "fb_link": "https://www.facebook.com/PoianaMaruluiCaras/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "Tarcu Maraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "180 RON",
+            "deadline": null,
+            "description": "Tarcu Maraton 45 km +2633 m 180 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Muntele Mic Semimaraton",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "160 RON",
+            "deadline": null,
+            "description": "Muntele Mic Semimaraton 26 km +1100 m 160 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Crosul La Mesteceni",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "140 RON",
+            "deadline": null,
+            "description": "Crosul La Mesteceni 12 km +576 m 140 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Kids Race",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "90 RON",
+            "deadline": null,
+            "description": "Kids Race TBA +20 m 90 RON"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Family Run",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "90 RON",
+            "deadline": null,
+            "description": "Family Run 0.8 km +20 m 90 RON"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.scoriloskyrace.ro/register",
+    "race_info_url": "https://www.scoriloskyrace.ro/events/ssr#curse",
+    "presumed_organizer_email": "contact@scoriloskyrace.ro",
+    "website_emails_found": [
+      "contact@scoriloskyrace.ro"
+    ],
+    "description": "Scorilo Sky Race is an international mountain running event held at Pine Hill, Poiana Mărului, offering a variety of races for runners of all levels. The routes include the 45 km Țarcu Marathon, with over 2600 m of elevation gain, the Muntele Mic Half Marathon, the La Mesteceni Cross-Country Race, as well as races for children and families. The event is recognized by international associations such as ITRA and UTMB, ensuring high standards for participants. It has a community- and tradition-oriented atmosphere, with attractive prizes and a local story connected to the area’s landscapes and legends.",
+    "course_highlights": [
+      "The Țarcu Marathon route features sustained climbs through forest and alpine terrain with spectacular scenery",
+      "Strategically located refreshment and control points, including at the route’s highest peaks",
+      "Varied routes, from technical mountain races to short races for children and families"
+    ],
+    "additional": "Race kits can be picked up in the Start/Finish area at Pine Hill cabin from 08:30 on race day. Each race has time limits (cutoffs), and participants who exceed them are stopped. The event provides official T-shirts and medals for participants. An active community of volunteers supports the event at key points along the route. The routes combine marked trails and forest roads, with short stretches of asphalt. The event also includes a 4 km race for children and a Family Run.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.84,
     "sources": [
       "https://www.scoriloskyrace.ro",
       "https://www.scoriloskyrace.ro/"
@@ -20864,8 +21013,8 @@
   {
     "domain_name": "running_festival_csikszereda",
     "name": "RUNNING FESTIVAL CSIKSZEREDA",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20250913",
@@ -20887,18 +21036,20 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Miercurea Ciuc, Harghita County, Romania",
-    "latitude": 46.3695574,
-    "longitude": 25.7953655,
+    "start_time": "10:00",
+    "location": "Piața Libertății, Miercurea Ciuc, Romania",
+    "latitude": 46.3611583,
+    "longitude": 25.8005896,
     "county": "HARGHITA",
     "nearest_city": "Miercurea-Ciuc",
     "nearby_cities": [
       "Miercurea-Ciuc"
     ],
-    "distances": "[\"42\", \"21\", \"10\", \"7\", \"5\"]",
+    "distances": "[\"42.2\", \"42\", \"21.1\", \"21\", \"10\", \"7\", \"5\"]",
     "distance_m": [
+      42200,
       42000,
+      21100,
       21000,
       10000,
       7000,
@@ -20911,27 +21062,33 @@
       "5 km"
     ],
     "distance_verbose": "Maraton, Semimaraton, 10 km, 7 km, 5 km",
-    "organizer": null,
+    "organizer": "Asociația Club Sportiv Anyvent Move",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://runningfestival.ro/",
+    "fb_link": "https://www.facebook.com/visitharghita/posts/-running-festival-miercurea-ciuc-dou%C4%83-zile-mai-multe-curse-mii-de-alerg%C4%83tori-o-e/1415299127362102/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://runningfestival.ro/inregistrare/",
+    "race_info_url": "https://runningfestival.ro/2026/info/#program",
+    "presumed_organizer_email": "info@runningfestival.ro",
+    "website_emails_found": [
+      "info@runningfestival.ro"
+    ],
+    "description": "Running Festival Csíkszereda is a running event that combines the urban beauty of Miercurea Ciuc with the natural scenery of the surrounding area. The routes pass through historic and picturesque places such as Márton Áron High School, Mikó Fortress, and the Șumuleu Ciuc area, offering spectacular views of Șumuleu Mare Mountain. The festival features a variety of races, from the marathon and half marathon to children’s and family races, all accompanied by cultural and social activities. It is more than a race—it is a community experience with live music, a pasta party, and other recreational activities.",
+    "course_highlights": [
+      "Routes through urban and natural areas, with views of Șumuleu Mare Mountain",
+      "Passing historic landmarks such as Márton Áron High School and Mikó Fortress",
+      "Trail-running paths in the Șumuleu area and at the mountaintop altar"
+    ],
+    "additional": "The event includes a 10 km night trail race starting at 19:30 on the preceding day, multiple races for all ages, a post-race pasta party, live music along the route, cultural and recreational activities, including visits to the Székely Museum of Ciuc and relaxation at Csíki Csobbanó. The program includes 5 km and 10 km races, a half marathon, marathon, marathon relay, night trail, children’s race, and family race. The festival also offers activities such as a pasta party and live bands along the route.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.runningfestival.ro/"
     ],
@@ -23180,8 +23337,8 @@
   {
     "domain_name": "run_for_life",
     "name": "RUN FOR LIFE",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20250927",
@@ -23204,7 +23361,7 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Dumbrava Vlăsiei, Snagov, Ilfov County, Romania",
+    "location": "Pădurea Vlădiceasca, Dumbrava Vlăsiei, Snagov, Romania",
     "latitude": 44.65119130000001,
     "longitude": 26.1154064,
     "county": "ILFOV",
@@ -23225,27 +23382,33 @@
       "3000 metri"
     ],
     "distance_verbose": "22 km, 12 km, 6 km, 3000 metri",
-    "organizer": null,
+    "organizer": "Asociația Life Call",
     "contact": null,
-    "website": null,
+    "website": "https://runforlife.ro",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/runforlife.ro/",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://runforlife.ro/dumbrava/inscriere/",
+    "race_info_url": "https://runforlife.ro/dumbrava/",
+    "presumed_organizer_email": "contact@runforlife.ro",
+    "website_emails_found": [
+      "contact@runforlife.ro"
+    ],
+    "description": "Run for Life is a charity running event supporting the construction of the Life Call Maternal Center, a safe space for mothers and children in crisis situations. The event takes place in Vlădiceasca Forest, Dumbrava Vlăsiei, offering races for all ages and experience levels. Participants can choose from several distances, run in nature, and contribute to a worthy cause. Every kilometer run turns hope into concrete support for those in need.",
+    "course_highlights": [
+      "Routes through the spectacular natural scenery of the Vlăsiei Forests",
+      "Events for all ages and experience levels",
+      "Charity event supporting the construction of the Life Call Maternal Center"
+    ],
+    "additional": "Each participant receives a technical T-shirt with a special-edition design, a handmade heart-shaped medal, a race number, chip timing, and surprises from partners.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.82,
     "sources": [
       "https://runforlife.ro/",
       "https://runforlife.ro/dumbrava/"

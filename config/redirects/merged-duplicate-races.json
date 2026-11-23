@@ -3579,6 +3579,18 @@
       "market": "no"
     },
     {
+      "source": "/lopssider/fedrelandet_backyard/:path*",
+      "destination": "/lopssider/fedrelandet_backyard_lillestrom/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/fedrelandet_backyard/:path*",
+      "destination": "/en/race-pages/fedrelandet_backyard_lillestrom/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
       "source": "/lopssider/fjellmaraton/:path*",
       "destination": "/lopssider/orsta_fjellmaraton/:path*",
       "permanent": true,
@@ -4318,6 +4330,18 @@
     },
     {
       "source": "/en/race-pages/ryggejoggen_lop_nr_2306_moss/:path*",
+      "destination": "/en/race-pages/ryggejoggen_lop_nr_2306/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/ryggejoggen_lop_nr_2307/:path*",
+      "destination": "/lopssider/ryggejoggen_lop_nr_2306/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/ryggejoggen_lop_nr_2307/:path*",
       "destination": "/en/race-pages/ryggejoggen_lop_nr_2306/:path*",
       "permanent": true,
       "market": "no"
@@ -7043,6 +7067,18 @@
     {
       "source": "/en/race-pages/varruset_4/:path*",
       "destination": "/en/race-pages/varruset_halmstad/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppsidor/varruset_5/:path*",
+      "destination": "/loppsidor/varruset_jonkoping/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/varruset_5/:path*",
+      "destination": "/en/race-pages/varruset_jonkoping/:path*",
       "permanent": true,
       "market": "se"
     },
