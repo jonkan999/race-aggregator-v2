@@ -218,6 +218,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "dk"
+    },
+    {
+      "source": "/lobsider/k9b_virtuelt_adventslob",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/k9b_virtuelt_adventslob/",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/k9b_virtuelt_adventslob/:path*",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/k9b_virtuelt_adventslob",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/k9b_virtuelt_adventslob/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/k9b_virtuelt_adventslob/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
     }
   ]
 }
