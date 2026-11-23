@@ -362,6 +362,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "se"
+    },
+    {
+      "source": "/loppsidor/trolljeger_juleninja",
+      "destination": "/loppkalender/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppsidor/trolljeger_juleninja/",
+      "destination": "/loppkalender/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppsidor/trolljeger_juleninja/:path*",
+      "destination": "/loppkalender/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/trolljeger_juleninja",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/trolljeger_juleninja/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/trolljeger_juleninja/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "se"
     }
   ]
 }
