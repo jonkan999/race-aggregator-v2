@@ -1,0 +1,79 @@
+{
+  "id": "pl-unpublished",
+  "market": "pl",
+  "note": "Unpublished PL races kept in Supabase (published=false, never deleted). 308 the retired page to the city or calendar listing. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated). Delisting record: race-collector-v2 data/countries/pl/delisted/*.csv.",
+  "redirects": [
+    {
+      "source": "/strony_biegow/9_x_kopa_cwila",
+      "destination": "/kalendarz-biegow/miasta/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/9_x_kopa_cwila/",
+      "destination": "/kalendarz-biegow/miasta/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/9_x_kopa_cwila/:path*",
+      "destination": "/kalendarz-biegow/miasta/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila",
+      "destination": "/en/race-calendar/cities/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila/",
+      "destination": "/en/race-calendar/cities/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila/:path*",
+      "destination": "/en/race-calendar/cities/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/9_x_kopa_cwila_warszawa",
+      "destination": "/kalendarz-biegow/miasta/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/9_x_kopa_cwila_warszawa/",
+      "destination": "/kalendarz-biegow/miasta/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/9_x_kopa_cwila_warszawa/:path*",
+      "destination": "/kalendarz-biegow/miasta/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila_warszawa",
+      "destination": "/en/race-calendar/cities/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila_warszawa/",
+      "destination": "/en/race-calendar/cities/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/9_x_kopa_cwila_warszawa/:path*",
+      "destination": "/en/race-calendar/cities/warsaw/",
+      "permanent": true,
+      "market": "pl"
+    }
+  ]
+}
