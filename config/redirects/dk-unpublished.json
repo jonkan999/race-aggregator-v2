@@ -254,6 +254,78 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "dk"
+    },
+    {
+      "source": "/lobsider/fedrelandet_backyard",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/fedrelandet_backyard/",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/fedrelandet_backyard/:path*",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/fedrelandet_backyard",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/fedrelandet_backyard/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/fedrelandet_backyard/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/ryggejoggen_lop_nr_2307",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/ryggejoggen_lop_nr_2307/",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/ryggejoggen_lop_nr_2307/:path*",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/ryggejoggen_lop_nr_2307",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/ryggejoggen_lop_nr_2307/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/ryggejoggen_lop_nr_2307/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
     }
   ]
 }
