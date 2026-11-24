@@ -15,6 +15,17 @@ import {
   upcomingWindowStart,
 } from '../src/lib/upcomingRaceWindow';
 
+function raceListNeighborsFromRoute(route: { request: () => { url: () => string; postData: () => string | null } }): string[] {
+  const url = route.request().url();
+  if (url.includes('/api/race-list')) {
+    const neighbors = new URL(url).searchParams.get('p_neighbor_countries') ?? '';
+    return neighbors ? neighbors.split(',').map((item) => item.trim()).filter(Boolean) : [];
+  }
+  const rawBody = route.request().postData();
+  const body = rawBody ? (JSON.parse(rawBody) as { p_neighbor_countries?: string[] | null }) : {};
+  return Array.isArray(body.p_neighbor_countries) ? body.p_neighbor_countries : [];
+}
+
 test.beforeEach(async ({ page }) => {
   await page.route('https://race-aggregator-tests.supabase.co/rest/v1/rpc/**', async (route) => {
     await route.fulfill({
@@ -119,10 +130,8 @@ test('neighbor overlay control does not reflow the map popup', async ({ page }) 
 
 test('race list neighbor controls stay additive and link to SEO neighbor pages', async ({ page }) => {
   const nextDate = yyyymmddOffset(30);
-  await page.route('**/rest/v1/rpc/get_races_list_page', async (route) => {
-    const rawBody = route.request().postData();
-    const body = rawBody ? (JSON.parse(rawBody) as { p_neighbor_countries?: string[] | null }) : {};
-    const neighbors = Array.isArray(body.p_neighbor_countries) ? body.p_neighbor_countries : [];
+  const fulfillNeighborList = async (route: { request: () => { url: () => string; postData: () => string | null }; fulfill: (info: { status: number; contentType: string; body: string }) => Promise<void> }) => {
+    const neighbors = raceListNeighborsFromRoute(route);
       const rows = [
         {
           id: 'overlay-domestic',
@@ -178,7 +187,9 @@ test('race list neighbor controls stay additive and link to SEO neighbor pages',
         contentType: 'application/json',
         body: JSON.stringify({ total: rows.length, rows }),
       });
-  });
+  };
+  await page.route('**/rest/v1/rpc/get_races_list_page', fulfillNeighborList);
+  await page.route('**/api/race-list**', fulfillNeighborList);
 
   await page.goto('/loppkalender/');
   await expect(page.locator('.section-filters[data-hydrated="true"]')).toBeVisible();
@@ -238,9 +249,7 @@ test('race list uses the next in-window date for card display and ordering', asy
   const nextDate = yyyymmddOffset(30);
   const laterDate = yyyymmddOffset(40);
 
-  await page.route(
-    'https://race-aggregator-tests.supabase.co/rest/v1/rpc/get_races_list_page',
-    async (route) => {
+  const fulfillWindowList = async (route: { fulfill: (info: { status: number; contentType: string; body: string }) => Promise<void> }) => {
       await route.fulfill({
         status: 200,
         contentType: 'application/json',
@@ -308,8 +317,9 @@ test('race list uses the next in-window date for card display and ordering', asy
           ],
         }),
       });
-    },
-  );
+  };
+  await page.route('https://race-aggregator-tests.supabase.co/rest/v1/rpc/get_races_list_page', fulfillWindowList);
+  await page.route('**/api/race-list**', fulfillWindowList);
 
   await page.goto('/loppkalender/?county=uppsala');
 

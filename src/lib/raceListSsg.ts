@@ -344,6 +344,13 @@ function mergeTranslationDetailFields(
   });
 }
 
+function isMissingRelation(error: unknown): boolean {
+  if (!error || typeof error !== 'object') return false;
+  const code = 'code' in error ? String((error as { code?: string }).code ?? '') : '';
+  const message = 'message' in error ? String((error as { message?: string }).message ?? '') : '';
+  return code === '42P01' || message.includes('races_for_pages');
+}
+
 // PostgREST caps a single response (max-rows) and the large markets hit the
 // statement timeout on one unbounded select, so page through by id.
 async function fetchPublishedRacesPaged(
@@ -351,13 +358,14 @@ async function fetchPublishedRacesPaged(
   sb: any,
   countryCode: string,
   select: string,
+  table = 'races_for_pages',
 ): Promise<{ data: unknown[] | null; error: unknown }> {
   const rows: unknown[] = [];
   let pageSize = 400;
   let offset = 0;
   while (offset < 20000) {
     const { data, error } = await sb
-      .from('races')
+      .from(table)
       .select(select)
       .eq('country_code', countryCode)
       .eq('published', true)
@@ -387,8 +395,11 @@ async function loadAllRowsFromSupabase(countryCode: string): Promise<SsgRaceRow[
   try {
     const sb = createClient(url, secret);
     let { data, error: dataErr } = await fetchPublishedRacesPaged(sb, countryCode, listSelect);
+    if (dataErr && isMissingRelation(dataErr)) {
+      ({ data, error: dataErr } = await fetchPublishedRacesPaged(sb, countryCode, listSelect, 'races'));
+    }
     if (dataErr && missingTranslationDetailColumns(dataErr)) {
-      ({ data, error: dataErr } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect));
+      ({ data, error: dataErr } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect, 'races'));
     }
     if (dataErr || !data) return null;
     return [...(data as unknown as SsgRaceRow[])].sort(compareRaceRowsByDateThenDomain);

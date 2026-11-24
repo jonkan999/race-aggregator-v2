@@ -13,7 +13,8 @@ import RaceMapIsland from './RaceMapIsland';
 import NeighboringCountriesControl from './NeighboringCountriesControl';
 import HighlightedRacesStrip, { type HighlightedRaceEntry } from './HighlightedRacesStrip';
 import type { NewsletterPopupContext } from '../lib/newsletterPopup';
-import { getSupabaseBrowserClient, isSupabaseConfigured } from '../lib/supabase';
+import { isSupabaseConfigured } from '../lib/supabase';
+import { fetchRaceListPage } from '../lib/fetchRaceListPage';
 import { RACE_LIST_PAGE_SIZE } from '../lib/raceListConfig';
 import type { CategoryFilterOption } from '../lib/categoryFilterOptions';
 import {
@@ -791,10 +792,7 @@ export default function RaceListPageIsland(props: {
     setLoading(true);
     setError(null);
     try {
-      const sb = getSupabaseBrowserClient();
-      const { data, error: rpcErr } = await sb.rpc('get_races_list_page', rpcParams);
-      if (rpcErr) throw rpcErr;
-      const parsed = data as RpcResult;
+      const parsed = (await fetchRaceListPage(rpcParams)) as RpcResult;
       setTotal(typeof parsed?.total === 'number' ? parsed.total : 0);
       setRows(Array.isArray(parsed?.rows) ? parsed.rows! : []);
     } catch {

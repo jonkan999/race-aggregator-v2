@@ -22,6 +22,11 @@ function missingTranslationDetailColumns(error) {
   return error.code === '42703' || String(error.message ?? '').includes('race_translations_1.additional does not exist');
 }
 
+function isMissingRelation(error) {
+  if (!error || typeof error !== 'object') return false;
+  return error.code === '42P01' || String(error.message ?? '').includes('races_for_pages');
+}
+
 function toFiniteNumber(value) {
   if (typeof value === 'number' && Number.isFinite(value)) return value;
   if (typeof value === 'string' && value.trim()) {
@@ -291,7 +296,7 @@ function isStatementTimeout(error) {
 // select with embedded translations + payload jsonb exceeded the PostgREST
 // statement_timeout on the largest markets (PL, code 57014), so we page through
 // the result and halve the page size on a timeout instead of failing the build.
-async function fetchPublishedRacesPaged(sb, countryCode, select) {
+async function fetchPublishedRacesPaged(sb, countryCode, select, table = 'races_for_pages') {
   // Keyset pagination (id > last id) keeps each page O(page size) instead of
   // OFFSET scans that get slower deeper into big markets.
   const rows = [];
@@ -300,7 +305,7 @@ async function fetchPublishedRacesPaged(sb, countryCode, select) {
   let transientFailures = 0;
   while (rows.length < SNAPSHOT_MAX_ROWS) {
     let query = sb
-      .from('races')
+      .from(table)
       .select(select)
       .eq('country_code', countryCode)
       .eq('published', true)
@@ -379,13 +384,13 @@ async function fetchLightPublishedRows(sb, countryCode) {
   return { data: rows, error: null };
 }
 
-async function fetchFullRowsByIds(sb, ids, select) {
+async function fetchFullRowsByIds(sb, ids, select, table = 'races_for_pages') {
   const rows = [];
   for (let i = 0; i < ids.length; i += FULL_FETCH_CHUNK) {
     const chunk = ids.slice(i, i + FULL_FETCH_CHUNK);
     let attempt = 0;
     for (;;) {
-      const { data, error } = await sb.from('races').select(select).in('id', chunk);
+      const { data, error } = await sb.from(table).select(select).in('id', chunk);
       if (!error) {
         rows.push(...(data ?? []));
         break;
@@ -403,8 +408,11 @@ async function fetchFullRowsByIds(sb, ids, select) {
 
 async function fetchFullRowsByIdsWithLegacyFallback(sb, ids) {
   let result = await fetchFullRowsByIds(sb, ids, listSelect);
+  if (result.error && isMissingRelation(result.error)) {
+    result = await fetchFullRowsByIds(sb, ids, listSelect, 'races');
+  }
   if (result.error && missingTranslationDetailColumns(result.error)) {
-    result = await fetchFullRowsByIds(sb, ids, legacyListSelect);
+    result = await fetchFullRowsByIds(sb, ids, legacyListSelect, 'races');
   }
   return result;
 }
@@ -455,8 +463,11 @@ async function fetchPublishedRacesHybrid(sb, countryCode, jsonRows) {
       `Snapshot ${countryCode}: committed JSON differs from Supabase (${mismatches.slice(0, 3).join(' | ') || 'sample rows missing'}); using full Supabase export.`,
     );
     let full = await fetchPublishedRacesPaged(sb, countryCode, listSelect);
+    if (full.error && isMissingRelation(full.error)) {
+      full = await fetchPublishedRacesPaged(sb, countryCode, listSelect, 'races');
+    }
     if (full.error && missingTranslationDetailColumns(full.error)) {
-      full = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect);
+      full = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect, 'races');
     }
     return { ...full, mode: 'full' };
   }
@@ -487,8 +498,11 @@ async function exportCountrySnapshot(sb, countryCode, outputDir) {
   }
   if (mode === 'full' && data == null && !error) {
     ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, listSelect));
+    if (error && isMissingRelation(error)) {
+      ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, listSelect, 'races'));
+    }
     if (error && missingTranslationDetailColumns(error)) {
-      ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect));
+      ({ data, error } = await fetchPublishedRacesPaged(sb, countryCode, legacyListSelect, 'races'));
     }
   }
 
