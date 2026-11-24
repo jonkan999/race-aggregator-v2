@@ -6459,6 +6459,18 @@
       "market": "se"
     },
     {
+      "source": "/loppsidor/adidas_stockholm_halvmaraton/:path*",
+      "destination": "/loppsidor/stockholm_halvmarathon/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/en/race-pages/adidas_stockholm_halvmaraton/:path*",
+      "destination": "/en/race-pages/stockholm_halvmarathon/:path*",
+      "permanent": true,
+      "market": "se"
+    },
+    {
       "source": "/loppsidor/alpaca_race/:path*",
       "destination": "/loppsidor/the_alpaca_race/:path*",
       "permanent": true,

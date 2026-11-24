@@ -14,7 +14,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": "18:00",
-    "location": "Geiteryggen Lufthavn",
+    "location": "Skien, Telemark",
     "latitude": 59.1843216,
     "longitude": 9.5698666,
     "county": "Vestfold og Telemark",
@@ -70,17 +70,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -115,8 +115,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Flygt Bil",
+    "start_time": "18:00",
+    "location": "Flygt Bil, Bodø",
     "latitude": 67.27608529999999,
     "longitude": 14.4211946,
     "county": "Nordland",
@@ -134,7 +134,7 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Nordland Bedriftsidrettskrets",
     "contact": "nordland@bedriftsidrett.no",
     "website": "https://nordland.bedriftsidretten.no/next/events/p/1000135087/flygt-bil---adventslopet-2025",
     "fb_link": null,
@@ -143,12 +143,16 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://nordland.bedriftsidretten.no/next/events/p/1000180867/adventsloepet---flygt-bil-2026",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Bedriftsidretten i Nordland sammen med Flygt Bil arrangerer Adventsløpet! Onsdag 3. desember, løper vi advent i møte med et morsomt og familievennlig løp! Dette er virkelig for alle, da du selv kan velge om du vil gå, jogge eller løpe. Distanse: Velg mellom 5 og 10 kilometer, som tilsvarer en eller to runder i Tokleløypa. Løpestart er kl. 18.00 ved Flygt Bil.",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Adventsløpet er et familievennlig løp i Bodø som Bedriftsidretten i Nordland arrangerer sammen med Flygt Bil. Start og mål er inne i bilhallen til Flygt Bil, og løypa er en velkjent og rask trasé i Tokleløypa. Du velger mellom 5 km og 10 km, altså én eller to runder, og du bestemmer selv om du vil gå, jogge eller løpe. Det blir lys, musikk, varme, gløgg og julestemning.",
+    "course_highlights": [
+      "Start og mål inne i bilhallen til Flygt Bil",
+      "Én runde er 5 km, to runder er 10 km",
+      "Lys, musikk og gløgg i adventstiden"
+    ],
+    "additional": "Arrangøren oppfordrer alle til å løpe med refleksvest og hodelykt. Etter løpet er det en liten avslutning for deltakerne.",
     "images": [
       {
         "number": 1,
@@ -159,20 +163,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "ranking_bridge",
       "https://terminlista.kondis.no/arrangementer/flygt-bil-adventsloepet-2026-11-25"
@@ -391,16 +395,12 @@
       [
         "20261219",
         "20261219"
-      ],
-      [
-        "20261223",
-        "20261226"
       ]
     ],
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "12:00",
     "location": "Sarpsborg, Østfold",
     "latitude": 59.29827539999999,
     "longitude": 11.0402486,
@@ -425,7 +425,7 @@
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Torsdagsløpet i Sarpsborg ble en skikkelig påskeperle på Skjærtorsdag, med strålende vær og en velfortjent pause fra det lenge varslede regnet. Løpet, som går på torsdager fram til midten av oktober, byr på flotte turer i det rike stinettet i Kalnesskogen. Selv om det var noen isete partier, var forholdene generelt helt topp for både løpere og arrangører.",
+    "description": "Torsdagsløpet er et 5,1 km mosjonsløp i Kalnesskogens blå løype i Sarpsborg. Løpet går som en serie med flere løp, og i vintersesongen arrangeres det på lørdager kl. 12.00. Serien avsluttes før jul med Torsdagsløpets juleløp.",
     "course_highlights": [],
     "additional": null,
     "images": [
@@ -453,17 +453,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -496,6 +496,10 @@
       [
         "20261114",
         "20261114"
+      ],
+      [
+        "20261121",
+        "20261121"
       ],
       [
         "20261128",
@@ -559,16 +563,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -583,103 +587,6 @@
     ],
     "supplied_ids": [
       "082a4d04-f2fc-5016-aed1-e64869cf780a"
-    ],
-    "supplied_at": "20261104",
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "trolljeger_juleninja",
-    "name": "Trolljeger JuleNinja",
-    "type": "other",
-    "type_local": "Annet",
-    "race_dates": [
-      [
-        "20261128",
-        "20261128"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Trolljeger treningssenter, Kvernelandsveien 126, Sandnes, Norge",
-    "latitude": 58.80388540000001,
-    "longitude": 5.731215199999999,
-    "county": "Rogaland",
-    "nearest_city": "Stavanger",
-    "nearby_cities": [
-      "Stavanger"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "",
-    "organizer": null,
-    "contact": "post@trolljeger.no",
-    "website": "https://www.trolljeger.no/events/en-siste-juleninja",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Bli med på en kort og teknisk innendørs hinderløype på Trolljeger treningssenter i Sandnes! Her vil grep, balanse, styrke, smidighet og utholdenhet få kjørt seg. Løypen passer for alle som liker en god utfordring, og du har 15 minutter på å gjennomføre med 3 forsøk per hinder før du må gå videre. Personen med minst feil og best tid vinner.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Ftrolljeger_juleninja%2Ftrolljeger_juleninja_1.webp?alt=media",
-        "alt_text": "Fargerike kettlebells på et treningssenter, med Trolljeger banner i bakgrunnen."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Ftrolljeger_juleninja%2Ftrolljeger_juleninja_2.webp?alt=media",
-        "alt_text": "Ung person klatrer over hinder i utendørs løype."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Ftrolljeger_juleninja%2Ftrolljeger_juleninja_3.webp?alt=media",
-        "alt_text": "Deltakere klatrer i hinderløype i skogen."
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Ftrolljeger_juleninja%2Ftrolljeger_juleninja_4.webp?alt=media",
-        "alt_text": "Barn i gjørmebad på hinderløp."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
-      "description",
-      "distances",
-      "latitude",
-      "type",
-      "county",
-      "website",
-      "contact"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "63bd0893-c79c-5493-a0d3-c384cffa2da1"
-    ],
-    "supplied_ids": [
-      "56901183-1a43-53e4-aab0-db8e5730f951"
     ],
     "supplied_at": "20261104",
     "created_date": "20261104",
@@ -949,19 +856,19 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Bjørgene",
-    "latitude": 60.335431,
-    "longitude": 5.2512652,
-    "county": "Vestland",
-    "nearest_city": "Bergen",
+    "location": "Bjørgene, Karmøy",
+    "latitude": 59.3833333,
+    "longitude": 5.2666667,
+    "county": "Rogaland",
+    "nearest_city": "Leirvik",
     "nearby_cities": [
-      "Bergen"
+      "Leirvik"
     ],
     "distances": "[]",
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "",
-    "organizer": null,
+    "organizer": "Torvastad Idrettslag",
     "contact": "til@torvastad.no",
     "website": "https://www.facebook.com/p/Bj%C3%B8rgene-l%C3%B8pskarusell-100054481479148/?locale=nb_NO",
     "fb_link": null,
@@ -970,12 +877,15 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.torvastad.no",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Da ønsker friidrettsgruppen velkommen til ny løpskarusell i Bjørgene, 4. februar! Snøen er borte og løypene er fine i Bjørgene. Vi håper å se deg på startstreken!",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Bjørgene Løpskarusell er en løpskarusell i Bjørgene på Karmøy, arrangert av Torvastad Idrettslag. Løpene går på tirsdagskvelder, og 3. løp går tirsdag 1. desember 2026. På novemberløpet stilte 124 løpere til start.",
+    "course_highlights": [
+      "Tirsdagsløp i Bjørgene på Karmøy",
+      "Lokal løpskarusell i regi av Torvastad IL"
+    ],
+    "additional": "Påmelding og resultater publiseres på Torvastad Idrettslag sine nettsider.",
     "images": [
       {
         "number": 1,
@@ -1001,20 +911,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "ranking_bridge",
       "https://terminlista.kondis.no/arrangementer/bjoergene-loepskarusell-3-loep-5"
@@ -1026,76 +936,6 @@
       "bf392d2b-f718-5caa-9d39-fd0fd3027b0e"
     ],
     "supplied_at": "20261104",
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "track_glow_2026",
-    "name": "Track & Glow 2026",
-    "type": "track",
-    "type_local": "Løpebane",
-    "race_dates": [
-      [
-        "20261203",
-        "20261203"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Gjesdal Idrettspark, Ålgård, Gjesdal, Norge",
-    "latitude": 58.77536060000001,
-    "longitude": 5.8636563,
-    "county": "Rogaland",
-    "nearest_city": "Stavanger",
-    "nearby_cities": [
-      "Stavanger"
-    ],
-    "distances": "[\"10\"]",
-    "distance_m": [
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": null,
-    "contact": null,
-    "website": "https://www.trackandglow10k.no/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.trackandglow10k.no/sample-page/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Track & Glow 10K arrangeres på Gjesdal Idrettspark, en av Norges få løpebaner med Wavelight-teknologi. Løpet tilbyr et eget elitefelt og flere mosjonsfelt, med automatisk rundetelling vist på storskjerm. Alle deltakere får deltaker-medalje, og det deles ut premier til puljevinnere i dame- og herreklassen. Arrangementet er åpent for publikum med gratis inngang, og det finnes fasiliteter som kiosker og toaletter på stedet.",
-    "course_highlights": [
-      "Løpet går på en løpebane med Wavelight-teknologi",
-      "Automatisk rundetelling med visning på storskjerm",
-      "Mulighet for oppvarming på gang- og sykkelstier samt grusvei til Flassavatnet"
-    ],
-    "additional": "Startnummerutdeling starter kl. 16:00 inne på Gjesdal IL Klubbhus. Løpere i eliteheat må følge World Athletics regler for sko (maks 20 mm såle). Det er 6 toaletter i klubbhuset og flere under tribunen. Vinner av hver pulje får premie. Bilder fra løpet postes på sosiale medier. Kiosken er åpen i klubbhuset. Oppført som avlyst.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.78,
-    "sources": [
-      "https://live.eqtiming.com/79855#dashboard"
-    ],
-    "consolidated_ids": [
-      "580d06c2-0a81-455a-ade8-c640e5013248"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
     "created_date": "20261104",
     "editors_uid": [],
     "pipeline_log": [],
@@ -1258,17 +1098,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1358,17 +1198,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1467,16 +1307,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1698,16 +1538,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1800,17 +1640,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2152,16 +1992,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2251,17 +2091,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2343,16 +2183,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2529,12 +2369,14 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": "13:00",
-    "location": "BestDrive i Fremmerholen",
-    "latitude": 60.47202399999999,
-    "longitude": 8.468945999999999,
-    "county": "Viken",
-    "nearest_city": "Lillehammer",
-    "nearby_cities": [],
+    "location": "BestDrive, Fremmerholen, Ålesund",
+    "latitude": 62.4660459,
+    "longitude": 6.378731399999999,
+    "county": "Møre og Romsdal",
+    "nearest_city": "Ålesund",
+    "nearby_cities": [
+      "Ålesund"
+    ],
     "distances": "[\"10\", \"5\"]",
     "distance_m": [
       10000,
@@ -2557,9 +2399,13 @@
     "race_info_url": "https://xn--lesundlpene-w8a8w.no/vinterkarusellen/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Ålesund Vinterkarusell består av 5 løp gjennom vinteren, med felles start kl. 14.00 fra BestDrive i Fremmerholen den andre lørdagen i månedene november, desember, januar, februar og mars. Det neste løpet i vinterkarusellen 2025/2026 går lørdag 8. november 2025. Løpet har to distanser på 5 og 10 km som går i kontrollmålte løyper innover Brusdalen, med snu etter 2,5 og 5 km. 5 km-distansen inkluderer en klasse for trimmere uten tidtaking, og det er vanligvis lite biltrafikk på Gamle Brusdals veg.",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Ålesund Vinterkarusell består av fem løp gjennom vinteren, med start fra BestDrive i Fremmerholen andre søndag i månedene november til mars. Løp 2 i vinterkarusellen 2026/2027 går søndag 13. desember 2026. Du kan velge mellom 5 og 10 km i kontrollmålte løyper som går innover Brusdalen og snur etter 2,5 og 5 km. 5 km har også en klasse for trimmere uten tidtaking.",
+    "course_highlights": [
+      "Kontrollmålte løyper på 5 og 10 km",
+      "Start fra BestDrive i Fremmerholen",
+      "Medalje til alle som deltar på tre eller flere løp"
+    ],
+    "additional": "10 km starter kl. 13.00 og 5 km kl. 13.05. Det er som regel lite biltrafikk på Gamle Brusdals veg, men vær obs ved avkjørselen til Hageland og bruk gjerne refleks. Etter løpet er det saft, cola, kake og kaffe i målområdet, og det trekkes gavepremier etter hvert løp. Påmelding skjer via EQ Timing.",
     "images": [
       {
         "number": 1,
@@ -2590,20 +2436,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "ranking_bridge",
       "https://terminlista.kondis.no/arrangementer/vinterkarusellen-i-aalesund-2-loep-4"
@@ -2673,17 +2519,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2775,17 +2621,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2863,17 +2709,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3034,17 +2880,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3206,17 +3052,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3387,17 +3233,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3484,16 +3330,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3592,17 +3438,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3695,17 +3541,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -3799,17 +3645,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4078,17 +3924,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4255,16 +4101,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4645,17 +4491,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4744,17 +4590,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4846,17 +4692,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -4952,17 +4798,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5044,16 +4890,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5147,17 +4993,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5333,17 +5179,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5436,17 +5282,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5518,17 +5364,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5603,16 +5449,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5852,17 +5698,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -5874,111 +5720,6 @@
     ],
     "supplied_ids": [
       "de6841bf-66ff-5118-b6b9-7fd2af590b98"
-    ],
-    "supplied_at": "20261104",
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "vinterkarusellen_3_lop_2",
-    "name": "Vinterkarusellen 3. løp",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20270110",
-        "20270110"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Dekkmann i Fremmerholen",
-    "latitude": 62.46929,
-    "longitude": 6.378081,
-    "county": "Møre og Romsdal",
-    "nearest_city": "Ålesund",
-    "nearby_cities": [
-      "Ålesund",
-      "Molde"
-    ],
-    "distances": "[\"10\", \"5\"]",
-    "distance_m": [
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
-    "contact": "helge.fuglseth@gmail.com",
-    "website": "https://www.gneist.org/vinterkarusellen/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Vinterkarusellen 3. løp tilbyr to distanser på 5 og 10 km, som går i kontrollmålte løyper gjennom Brusdalen. Løpet snur etter 2,5 km og 5 km, og returnerer til start/mål. Den 5 km lange distansen har en klasse for trimmere uten tidtaking. Det er vanligvis lite biltrafikk på Gamle Brusdals veg på søndager, men vær oppmerksom på mulige biler i området.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_3_lop_2%2Fvinterkarusellen_3_lop_2_1.webp?alt=media",
-        "alt_text": "Løpere krysser målstreken under Vinterkarusellen i Ålesund."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_3_lop_2%2Fvinterkarusellen_3_lop_2_2.webp?alt=media",
-        "alt_text": "Løpere koser seg med gløgg og pepperkaker etter løpet."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_3_lop_2%2Fvinterkarusellen_3_lop_2_3.webp?alt=media",
-        "alt_text": "Løpere i Vinterkarusellen, snørike omgivelser."
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_3_lop_2%2Fvinterkarusellen_3_lop_2_4.webp?alt=media",
-        "alt_text": "Snødekka løpebane på Fana Stadion, klar for Vinterkarusellen."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
-      "description",
-      "distances",
-      "latitude",
-      "type",
-      "county",
-      "website",
-      "contact"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/vinterkarusellen-i-aalesund-3-loep",
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "4235c00c-e477-547b-b7fa-fe9ee69fae6d"
-    ],
-    "supplied_ids": [
-      "b6ab9e2f-f905-5fb9-aafd-5b3d3d807fca"
     ],
     "supplied_at": "20261104",
     "created_date": "20261104",
@@ -6136,17 +5877,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6316,16 +6057,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6397,17 +6138,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6506,16 +6247,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6806,17 +6547,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6963,17 +6704,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7155,17 +6896,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7258,17 +6999,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7357,20 +7098,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "organizer",
-      "race_dates",
-      "start_time",
       "description",
+      "start_time",
+      "location",
+      "race_dates",
+      "organizer",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
+      "type",
       "contact",
-      "price_range"
+      "latitude",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -7463,16 +7204,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -65457,6 +65198,117 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "necon_vinterkarusellen_lop_2",
+    "name": "Necon Vinterkarusellen Løp 2",
+    "type": "road",
+    "type_local": "Landevei",
+    "race_dates": [
+      [
+        "20261116",
+        "20261116"
+      ],
+      [
+        "20271115",
+        "20271115"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "18:45",
+    "location": "Fana Stadion, Bergen",
+    "latitude": 60.29047600000001,
+    "longitude": 5.3178483,
+    "county": "Vestland",
+    "nearest_city": "Bergen",
+    "nearby_cities": [
+      "Bergen"
+    ],
+    "distances": "[\"10\", \"5\"]",
+    "distance_m": [
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km",
+    "organizer": "IL Gneist",
+    "contact": null,
+    "website": "https://www.eqtiming.com/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://gneist.no/friidrett/stevner-og-arrangement/vinterkarusellen",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Necon Vinterkarusellen er en vinterløpsserie i regi av IL Gneist med åtte løp gjennom vinteren, der du kan velge mellom 5 og 10 km. Start og mål er på Fana Stadion i Bergen, og løpene starter kl. 18.45. Løp 2 i sesongen 2026-2027 gikk mandag 16. november 2026. All påmelding skjer individuelt via EQ Timing.",
+    "course_highlights": [
+      "Velg mellom 5 og 10 km",
+      "Start og mål på Fana Stadion",
+      "Åtte løp på mandager fra oktober til april"
+    ],
+    "additional": "Medlemmer i IL Gneist får rabatt med egne rabattkoder ved påmelding. Har du ikke helårslisens, betaler du 50 kr for lisens ved påmelding.",
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_1.webp?alt=media",
+        "alt_text": "Løpere ved startstreken for Necon Vinterkarusellen Bergen."
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_2.webp?alt=media",
+        "alt_text": "Fana Stadion, stedet for Necon Vinterkarusellen Bergen - løp 2."
+      },
+      {
+        "number": 3,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_3.webp?alt=media",
+        "alt_text": "Bilde av Fana Stadion, arenaen for Necon Vinterkarusellen Bergen løp 2."
+      },
+      {
+        "number": 4,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_4.webp?alt=media",
+        "alt_text": "Fana Stadion, stedet for Necon Vinterkarusellen Bergen - løp 2."
+      }
+    ],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "description",
+      "location",
+      "race_dates",
+      "distances",
+      "name",
+      "county",
+      "website",
+      "type",
+      "latitude",
+      "longitude"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://terminlista.kondis.no/arrangementer/necon-vinterkarusellen-bergen-loep-2-4",
+      "ranking_bridge"
+    ],
+    "consolidated_ids": [
+      "fc6eace6-8aa5-4078-94dd-2ebac0ac5a38"
+    ],
+    "supplied_ids": [
+      "576fb4b8-f589-5ee4-b4ce-c988cb9d0efb"
+    ],
+    "supplied_at": "20261104",
+    "created_date": "20261123",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "fakkeltoget_lovstakken",
     "name": "Fakkeltoget Løvstakken",
     "type": "terrain",
@@ -65523,16 +65375,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -65616,16 +65468,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -65638,212 +65490,6 @@
     ],
     "supplied_ids": [
       "066950ba-0761-5dd8-934c-bd349a093707"
-    ],
-    "supplied_at": "20261104",
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "snokuten_glestadrunden",
-    "name": "Snøkuten Glestadrunden",
-    "type": "terrain",
-    "type_local": "Terreng",
-    "race_dates": [
-      [
-        "20261117",
-        "20261117"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Ringsaker, Innlandet",
-    "latitude": 60.9114665,
-    "longitude": 10.7372457,
-    "county": "Innlandet",
-    "nearest_city": "Hamar",
-    "nearby_cities": [
-      "Hamar",
-      "Lillehammer"
-    ],
-    "distances": "[\"9.5\", \"7.4\"]",
-    "distance_m": [
-      9500,
-      7400
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "9.5 km, 7.4 km",
-    "organizer": null,
-    "contact": null,
-    "website": "https://www.facebook.com/VeldreFriidrett/photos/sn%C3%B8kuten-4februar-glestadrunden-sjekk-vfs-hjemmeside-for-resultater-i-alt-deltok/2994363287280466/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Snøkuten Glestadrunden er et terrengløp som finner sted i Innlandet den 10. februar. Løpet tilbyr distanser på 7,4 km og 9,5 km, og er designet for å gi en spennende og utfordrende opplevelse for deltakere på alle nivåer. Deltakerne får muligheten til å oppleve vakker natur og utfordrende terreng.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_1.webp?alt=media",
-        "alt_text": "Spektakulært fjellandskap med innsjø og person på en klippe."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_2.webp?alt=media",
-        "alt_text": "Løpere på snødekt vei med solnedgang i bakgrunnen."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_3.webp?alt=media",
-        "alt_text": "Vinterlandskap med snødekt vei, som passer for terrengløp."
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_4.webp?alt=media",
-        "alt_text": "Løpere med hodelykter og refleksvest i mørket."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
-      "description",
-      "distances",
-      "latitude",
-      "type",
-      "county",
-      "website"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge",
-      "https://terminlista.kondis.no/arrangementer/snoekuten-glestadrunden-4"
-    ],
-    "consolidated_ids": [
-      "b5393db8-c9a9-5b92-9113-8d4f43fbc4c0"
-    ],
-    "supplied_ids": [
-      "6a14a116-1e82-52c2-8e42-7ff0603d954a"
-    ],
-    "supplied_at": "20261104",
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "hamarkarusellen_vinter_lop_2",
-    "name": "Hamarkarusellen Vinter Løp 2",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20261117",
-        "20261117"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Prestrudhallen",
-    "latitude": 60.8075318,
-    "longitude": 11.0334166,
-    "county": "Innlandet",
-    "nearest_city": "Hamar",
-    "nearby_cities": [
-      "Hamar",
-      "Lillehammer"
-    ],
-    "distances": "[\"5\"]",
-    "distance_m": [
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5 km",
-    "organizer": null,
-    "contact": "917237298@autoinvoice.no",
-    "website": "https://innlandet.bedriftsidretten.no/next/events/p/1000076215/hamarkarusellen---vinter",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Hamarkarusellen Vinter er vinterutgaven av Hamarkarusellen. I motsetning til sommerversjonen går denne i samme 5 kilometer løype for alle løp, på belyste gang- og sykkelveier i Prestrudområdet på Hamar. Vi beholder samme kontrollmålte 5 kilometer i alle løpene, og dette er en ypperlig anledning til å benytte som testløp. Arrangementet ønsker alle ambisjoner hjertelig velkommen: gående (uten tid/med tid), løpende (uten tid/med tid), «konkurrere med meg selv», «slå naboen» og aktive superløpere.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_1.webp?alt=media",
-        "alt_text": "Løpere på vintervei under Hamarkarusellen Vinter."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_2.webp?alt=media",
-        "alt_text": "Løpere i Hamarkarusellen vinter løp. Vinterløp på snødekte veier."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_3.webp?alt=media",
-        "alt_text": "Løpere i Hamarkarusellen Vinterløp 2, iført vintertøy og startnummer, løper på vintervei."
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_4.webp?alt=media",
-        "alt_text": "Løpere ved et løp, noen står, noen sitter. Klart vær, grønt gress og trær."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
-      "description",
-      "distances",
-      "latitude",
-      "type",
-      "county",
-      "website",
-      "contact"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge",
-      "https://terminlista.kondis.no/arrangementer/hamarkarusellen-vinter-loep-2-4"
-    ],
-    "consolidated_ids": [
-      "19680546-11ae-59b8-a54f-99bf4c50d201"
-    ],
-    "supplied_ids": [
-      "6a40d165-f2ca-5e62-b22c-47b4c4ad30ec"
     ],
     "supplied_at": "20261104",
     "created_date": "20261104",
@@ -65906,17 +65552,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -66008,17 +65654,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -66112,17 +65758,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -66201,17 +65847,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -66279,17 +65925,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -66385,17 +66031,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67016,16 +66662,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67116,16 +66762,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67220,16 +66866,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67464,16 +67110,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67570,17 +67216,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67681,17 +67327,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67704,108 +67350,6 @@
     ],
     "supplied_ids": [
       "ba7a0200-7206-5c5d-987b-0063eca16b7a"
-    ],
-    "supplied_at": "20261104",
-    "created_date": "20261115",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "vinterkarusellen_2_lop",
-    "name": "Vinterkarusellen 2. løp",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20261114",
-        "20261114"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Nybøbakken 23 E 6011 Ålesund",
-    "latitude": 62.4671073,
-    "longitude": 6.3659113,
-    "county": "Møre og Romsdal",
-    "nearest_city": "Ålesund",
-    "nearby_cities": [
-      "Ålesund"
-    ],
-    "distances": "[\"3\"]",
-    "distance_m": [
-      3000
-    ],
-    "distance_keywords": [
-      "3000 meter"
-    ],
-    "distance_verbose": "3000 meter",
-    "organizer": null,
-    "contact": "helge.fuglseth@gmail.com",
-    "website": "https://www.gneist.org/vinterkarusellen/?page_id=1856",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Påmelding for sesongens 2. løp av Ålesund Vinterkarusell, som finner sted 28. november, er nå åpnet. Deltakere kan også melde seg på hele karusellen frem til 20. februar 2017. Vinterkarusellen startet på midten av 1980-tallet i området Furmyra/Åse, men har siden 2001 hatt en ny løype på Gamle Brusdals veg. Fra vinteren 2023 er det Ålesundløpene som er arrangør av dette tradisjonsrike løpet.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_2_lop%2Fvinterkarusellen_2_lop_1.webp?alt=media",
-        "alt_text": "Løper under et løp, med tidtaker og omgivelser."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_2_lop%2Fvinterkarusellen_2_lop_2.webp?alt=media",
-        "alt_text": "Løpere i vinterløp på snødekt vei. Tidtaking og startnummer synlig."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_2_lop%2Fvinterkarusellen_2_lop_3.webp?alt=media",
-        "alt_text": "Løpere på landevei under et nattløp, med en tidtakerklokke."
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fvinterkarusellen_2_lop%2Fvinterkarusellen_2_lop_4.webp?alt=media",
-        "alt_text": "Løpere under et vinterløp på en veistrekning."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
-      "description",
-      "distances",
-      "latitude",
-      "type",
-      "county",
-      "website",
-      "contact"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/vinterkarusellen-i-aalesund-1-loep-5",
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "86765e2e-a88c-459f-93f7-3b87550a666d"
-    ],
-    "supplied_ids": [
-      "bd1481a5-e631-559e-8f8c-4aadc517c250"
     ],
     "supplied_at": "20261104",
     "created_date": "20261115",
@@ -67879,17 +67423,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -67958,17 +67502,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -68194,17 +67738,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
       "website",
-      "contact"
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -68226,103 +67770,206 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "necon_vinterkarusellen_lop_2",
-    "name": "Necon Vinterkarusellen Løp 2",
-    "type": "road",
-    "type_local": "Landevei",
+    "domain_name": "snokuten_glestadrunden",
+    "name": "Snøkuten Glestadrunden",
+    "type": "terrain",
+    "type_local": "Terreng",
     "race_dates": [
       [
-        "20261116",
-        "20261116"
+        "20261117",
+        "20261117"
       ]
     ],
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": "18:45",
-    "location": "Fana Stadion",
-    "latitude": 60.29047600000001,
-    "longitude": 5.3178483,
-    "county": "Vestland",
-    "nearest_city": "Bergen",
+    "start_time": null,
+    "location": "Ringsaker, Innlandet",
+    "latitude": 60.9114665,
+    "longitude": 10.7372457,
+    "county": "Innlandet",
+    "nearest_city": "Hamar",
     "nearby_cities": [
-      "Bergen"
+      "Hamar",
+      "Lillehammer"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"9.5\", \"7.4\"]",
     "distance_m": [
-      10000,
-      5000
+      9500,
+      7400
     ],
     "distance_keywords": [
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": "IL Gneist",
+    "distance_verbose": "9.5 km, 7.4 km",
+    "organizer": null,
     "contact": null,
-    "website": "https://www.eqtiming.com/",
+    "website": "https://www.facebook.com/VeldreFriidrett/photos/sn%C3%B8kuten-4februar-glestadrunden-sjekk-vfs-hjemmeside-for-resultater-i-alt-deltok/2994363287280466/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://gneist.no/friidrett/stevner-og-arrangement/vinterkarusellen",
+    "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Necon Vinterkarusell fortsetter i dag med sesongens 2. løp, som finner sted på Fana Stadion. Startnummer hentes i gymsalen fra kl 17.00, og det vil være et begrenset utvalg av Necon Vinterkarusell sine Craftprodukter til salgs. Betaling skjer kun med Vipps, og live-resultater fra løpet vil bli tilgjengelige etter kl 19.15.",
+    "description": "Snøkuten Glestadrunden er et terrengløp som finner sted i Innlandet den 10. februar. Løpet tilbyr distanser på 7,4 km og 9,5 km, og er designet for å gi en spennende og utfordrende opplevelse for deltakere på alle nivåer. Deltakerne får muligheten til å oppleve vakker natur og utfordrende terreng.",
     "course_highlights": [],
     "additional": null,
     "images": [
       {
         "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_1.webp?alt=media",
-        "alt_text": "Løpere ved startstreken for Necon Vinterkarusellen Bergen."
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_1.webp?alt=media",
+        "alt_text": "Spektakulært fjellandskap med innsjø og person på en klippe."
       },
       {
         "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_2.webp?alt=media",
-        "alt_text": "Fana Stadion, stedet for Necon Vinterkarusellen Bergen - løp 2."
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_2.webp?alt=media",
+        "alt_text": "Løpere på snødekt vei med solnedgang i bakgrunnen."
       },
       {
         "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_3.webp?alt=media",
-        "alt_text": "Bilde av Fana Stadion, arenaen for Necon Vinterkarusellen Bergen løp 2."
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_3.webp?alt=media",
+        "alt_text": "Vinterlandskap med snødekt vei, som passer for terrengløp."
       },
       {
         "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fnecon_vinterkarusellen_lop_2%2Fnecon_vinterkarusellen_lop_2_4.webp?alt=media",
-        "alt_text": "Fana Stadion, stedet for Necon Vinterkarusellen Bergen - løp 2."
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fsnokuten_glestadrunden%2Fsnokuten_glestadrunden_4.webp?alt=media",
+        "alt_text": "Løpere med hodelykter og refleksvest i mørket."
       }
     ],
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "name",
-      "location",
-      "longitude",
-      "race_dates",
       "description",
+      "location",
+      "race_dates",
       "distances",
-      "latitude",
-      "type",
+      "name",
       "county",
-      "website"
+      "website",
+      "type",
+      "latitude",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://terminlista.kondis.no/arrangementer/necon-vinterkarusellen-bergen-loep-2-4",
-      "ranking_bridge"
+      "ranking_bridge",
+      "https://terminlista.kondis.no/arrangementer/snoekuten-glestadrunden-4"
     ],
     "consolidated_ids": [
-      "fc6eace6-8aa5-4078-94dd-2ebac0ac5a38"
+      "a4ffba52-23c8-4261-a50b-6e0d25f876b8"
     ],
     "supplied_ids": [
-      "576fb4b8-f589-5ee4-b4ce-c988cb9d0efb"
+      "6a14a116-1e82-52c2-8e42-7ff0603d954a"
     ],
     "supplied_at": "20261104",
-    "created_date": "20261123",
+    "created_date": "20261124",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "hamarkarusellen_vinter_lop_2",
+    "name": "Hamarkarusellen Vinter Løp 2",
+    "type": "road",
+    "type_local": "Landevei",
+    "race_dates": [
+      [
+        "20261117",
+        "20261117"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Prestrudhallen",
+    "latitude": 60.8075318,
+    "longitude": 11.0334166,
+    "county": "Innlandet",
+    "nearest_city": "Hamar",
+    "nearby_cities": [
+      "Hamar",
+      "Lillehammer"
+    ],
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": null,
+    "contact": "917237298@autoinvoice.no",
+    "website": "https://innlandet.bedriftsidretten.no/next/events/p/1000076215/hamarkarusellen---vinter",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Hamarkarusellen Vinter er vinterutgaven av Hamarkarusellen. I motsetning til sommerversjonen går denne i samme 5 kilometer løype for alle løp, på belyste gang- og sykkelveier i Prestrudområdet på Hamar. Vi beholder samme kontrollmålte 5 kilometer i alle løpene, og dette er en ypperlig anledning til å benytte som testløp. Arrangementet ønsker alle ambisjoner hjertelig velkommen: gående (uten tid/med tid), løpende (uten tid/med tid), «konkurrere med meg selv», «slå naboen» og aktive superløpere.",
+    "course_highlights": [],
+    "additional": null,
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_1.webp?alt=media",
+        "alt_text": "Løpere på vintervei under Hamarkarusellen Vinter."
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_2.webp?alt=media",
+        "alt_text": "Løpere i Hamarkarusellen vinter løp. Vinterløp på snødekte veier."
+      },
+      {
+        "number": 3,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_3.webp?alt=media",
+        "alt_text": "Løpere i Hamarkarusellen Vinterløp 2, iført vintertøy og startnummer, løper på vintervei."
+      },
+      {
+        "number": 4,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fhamarkarusellen_vinter_lop_2%2Fhamarkarusellen_vinter_lop_2_4.webp?alt=media",
+        "alt_text": "Løpere ved et løp, noen står, noen sitter. Klart vær, grønt gress og trær."
+      }
+    ],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "description",
+      "location",
+      "race_dates",
+      "distances",
+      "name",
+      "county",
+      "website",
+      "type",
+      "contact",
+      "latitude",
+      "longitude"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "ranking_bridge",
+      "https://terminlista.kondis.no/arrangementer/hamarkarusellen-vinter-loep-2-4"
+    ],
+    "consolidated_ids": [
+      "241e5fc4-995a-44b0-87e8-9246da8d500b"
+    ],
+    "supplied_ids": [
+      "6a40d165-f2ca-5e62-b22c-47b4c4ad30ec"
+    ],
+    "supplied_at": "20261104",
+    "created_date": "20261124",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,

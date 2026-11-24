@@ -391,18 +391,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2251,17 +2251,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
       "name",
-      "longitude",
-      "contact",
-      "latitude",
       "race_dates",
-      "type",
-      "description",
+      "location",
+      "latitude",
+      "longitude",
       "distances",
+      "type",
+      "organizer",
+      "contact",
       "website",
-      "organizer"
+      "description"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -11072,19 +11072,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -11099,6 +11099,241 @@
     ],
     "supplied_at": "20260514",
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "brakneans_dalgang_25_k",
+    "name": "Bräkneåns Dalgång 25 K",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20270508",
+        "20270508"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "09:00:00",
+    "location": "Ekebacksvägen 1, 37261 Bräkne-hoby",
+    "latitude": 56.2263864451954,
+    "longitude": 15.1119089126587,
+    "county": "Blekinge",
+    "nearest_city": "Karlskrona",
+    "nearby_cities": [],
+    "distances": "[\"25\"]",
+    "distance_m": [
+      25000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "25 km",
+    "organizer": "Ute tillsammans",
+    "contact": "ultrarunning@utetillsammans.se",
+    "website": "https://mittlopp.se/anm/ultrarunning-hoby-2027/25k",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "350-550",
+    "price_tiers": [],
+    "registration_close_date": "20270331",
+    "registration_url": null,
+    "race_info_url": "https://mittlopp.se/anm/ultrarunning-hoby-2027/25k",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Tekniskt trail-lopp som går genom Bräkneåns dalgång med start i Hoby Ekebacke. Banan är delvis teknisk men innehåller även partier med asfalt.\nBanan har en totalstigning på ca 400 höjdmeter.\nGenerös maxtid på 5 timmar. Vilket ger ett snittempo på  max 12 min/km.\nMålgången är i Hoby Eckebacke.\n\nBanan kommer att vara tydligt uppmärkt och det kommer även att finnas en GPX-fil som ni kan ladda ner till er klocka eller mobil.\nEnergi/vätskestation kommer att finnas halvvägs, samt vid start och mål.\n\nAlla som fullföljer loppet inom tidsramen får en fin medalj från RawCut studio.",
+    "course_highlights": [],
+    "additional": "Start och mål i Ekebacken Bräkne-hoby\n\nDam/herrklass",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "description",
+      "additional",
+      "name",
+      "type",
+      "start_time",
+      "contact",
+      "race_dates",
+      "latitude",
+      "location",
+      "organizer",
+      "price_range",
+      "longitude"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "supplied"
+    ],
+    "consolidated_ids": [
+      "e870f378-ca75-4b57-868e-13430b1e8af5"
+    ],
+    "supplied_ids": [
+      "d96512fd-5741-489b-bbc0-0f95f2657867"
+    ],
+    "supplied_at": "20260517",
+    "created_date": "20261023",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "hoby_backyard_ultra_24_h",
+    "name": "Hoby Backyard Ultra 24 H",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
+    "race_dates": [
+      [
+        "20270508",
+        "20270509"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "10:00:00",
+    "location": "Ekebacksvägen 1, 37261 Bräkne-hoby",
+    "latitude": 56.2261144723884,
+    "longitude": 15.1115334033966,
+    "county": "Blekinge",
+    "nearest_city": "Karlskrona",
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [
+      "Backyard Ultra"
+    ],
+    "distance_verbose": "Backyard Ultra",
+    "organizer": "Ute tillsammans",
+    "contact": "ultrarunning@utetillsammans.e",
+    "website": "https://mittlopp.se/anm/ultrarunning-hoby-2027/byu-24h",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "595:-  -795:-",
+    "price_tiers": [],
+    "registration_close_date": "20270331",
+    "registration_url": null,
+    "race_info_url": "https://mittlopp.se/anm/ultrarunning-hoby-2027/byu-24h",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Hoby Backyard Ultra 24H. Start och mål i Ekebacken i Bräkne-hoby lördagen den 26/9 kl 10:00. \nBanan är samma som tidigare med varierande terräng och cirka 60 höjdmeter. \nBanan är kontrollmätt med mäthjul och är 6706 meter. \nVarje varv startar varje hel timme. För att klara varvet och få fortsätta med nästa varv måste varje varv klaras inom 1 timme. \n\nEnergi, dryck, sportdryck samt varma mål kommer serveras under hela loppet till alla deltagare.\n\nAlla som fullföljer minst 1 varv inom tidsramen kommer få en snygg medalj från RawCut Studio.\n\nAlla deltagare har möjlighet att få vara under tak inne i Rotundan i Ekebacken under hela loppet. \n\nSjukvårdskunniga funktionärer finns på plats under hela loppet.\n\nVälkommen till ännu en grym löparfest!",
+    "course_highlights": [],
+    "additional": "Start och målgång i Ekebacken i Bräkne-Hoby. \n\nDam och Herrklass.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "distances",
+      "description",
+      "additional",
+      "name",
+      "type",
+      "start_time",
+      "contact",
+      "race_dates",
+      "latitude",
+      "location",
+      "organizer",
+      "price_range",
+      "longitude"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "supplied"
+    ],
+    "consolidated_ids": [
+      "09a47965-7c91-40ed-b0c9-7d8c7b1662ad"
+    ],
+    "supplied_ids": [
+      "a1ccc27c-eb3d-4bf2-816f-981b4ae3bd56"
+    ],
+    "supplied_at": "20260517",
+    "created_date": "20261023",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "vildmarksleden_100_miles",
+    "name": "Vildmarksleden 100 miles",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20270508",
+        "20270509"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "08:00:00",
+    "location": "Ekebacksvägen 1, 37261 Bräkne-hoby",
+    "latitude": 56.2261240155501,
+    "longitude": 15.1116728782654,
+    "county": "Blekinge",
+    "nearest_city": "Karlskrona",
+    "nearby_cities": [],
+    "distances": "[\"160.9\"]",
+    "distance_m": [
+      160900
+    ],
+    "distance_keywords": [
+      "100 miles"
+    ],
+    "distance_verbose": "100 miles",
+    "organizer": "Ute tillsammans",
+    "contact": "ultrarunning@utetillsammans.se",
+    "website": "https://mittlopp.se/anm/ultrarunning-hoby-2027/100-miles",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "1195-1395",
+    "price_tiers": [],
+    "registration_close_date": "20270331",
+    "registration_url": null,
+    "race_info_url": "https://mittlopp.se/anm/ultrarunning-hoby-2027/100-miles",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Första upplagan av Vildmarksleden 100 Miles, exklusivt med enbart 25 platser.\n\nTraillopp med vändbana som tar dig från Hoby Ekebacke till Eringsboda och sedan tillbaka till Hoby Ekebacke. \n\nBanan går på valda delar av Vildmarksleden som består av teknisk trail, grusväg och asfalt. Cirka 1850 höjdmeter. \n\n1 dropbox som transporteras av arrangör till vändplats ( 50 miles ) Eringsboda. Påfyllning av vätska/energi på flera ställen längs med banan. \n\nGPX-fil i klocka eller mobil är obligatoriskt. \n\nAllt deltagande sker på egen risk och deltagare har ansvar att ha den kunskap och utrustning som krävs för att genomföra loppet.",
+    "course_highlights": [],
+    "additional": "start och mål i Ekebacken Bräkne-hoby\ndam och herrklass",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "distances",
+      "description",
+      "additional",
+      "name",
+      "type",
+      "start_time",
+      "contact",
+      "race_dates",
+      "latitude",
+      "location",
+      "organizer",
+      "price_range",
+      "longitude"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "supplied"
+    ],
+    "consolidated_ids": [
+      "71a30d62-d3f6-4f92-981d-a24f548368c9"
+    ],
+    "supplied_ids": [
+      "b0c5e48f-2b2f-4d36-bfe3-471e8ef20eb8"
+    ],
+    "supplied_at": "20260517",
+    "created_date": "20261023",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -13652,18 +13887,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -15261,20 +15496,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -17185,20 +17420,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.74,
@@ -17731,19 +17966,19 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "location",
-      "name",
-      "longitude",
+      "distances",
+      "description",
+      "website",
+      "additional",
+      "organizer",
       "price_range",
+      "name",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
-      "website",
-      "organizer"
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.55,
@@ -18047,19 +18282,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -18511,19 +18746,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.78,
@@ -18692,17 +18927,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -20189,6 +20424,78 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "tjejjoggen_sjulsmark",
+    "name": "Tjejjoggen Sjulsmark",
+    "type": "road",
+    "type_local": "Landsväg",
+    "race_dates": [
+      [
+        "20260607",
+        "20260607"
+      ],
+      [
+        "20270606",
+        "20270606"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Gamla Sjulsmarksvägen 41, Sjulsmark",
+    "latitude": 65.5234813,
+    "longitude": 21.4869828,
+    "county": "Norrbottens",
+    "nearest_city": "Umeå",
+    "nearby_cities": [],
+    "distances": "[\"5.8\"]",
+    "distance_m": [
+      5800
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5.8 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://tjejjoggen.se/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://tjejjoggen.se/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Tjejjoggen är ett motionslopp för tjejer i alla åldrar i Sjulsmark. Banan är cirka 5,8 km och du kan gå, lunka eller springa. Upplagan 2026 gick söndagen den 7 juni med start kl. 13.00. Alla anmälda får en goodiebag och alla anmälda lag får en fikakorg.",
+    "course_highlights": [
+      "Cirka 5,8 km i Sjulsmark",
+      "För tjejer i alla åldrar, gå, lunka eller spring",
+      "Prisutlottning på startnummer kl. 14.30"
+    ],
+    "additional": "Inför loppet 2026 fanns gemensam uppladdning med Åse Borgeryd på onsdagar i maj vid Folkets Hus i Sjulsmark för alla anmälda. Sista anmälningsdag 2026 var den 25 maj.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14686/about"
+    ],
+    "consolidated_ids": [
+      "cf2093d7-d7b0-4b40-b072-7cb651a79d38"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "gallaberget_trailrun",
     "name": "Gallaberget Trailrun",
     "type": "trail",
@@ -20771,6 +21078,87 @@
     "sources": [],
     "consolidated_ids": [
       "f7615a30-967d-4264-a0f4-65335a8deb91"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "ljungskileslingan",
+    "name": "Ljungskileslingan",
+    "type": "road",
+    "type_local": "Landsväg",
+    "race_dates": [
+      [
+        "20260613",
+        "20260613"
+      ],
+      [
+        "20270612",
+        "20270612"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Ljungskile centrum",
+    "latitude": 58.222051,
+    "longitude": 11.9182903,
+    "county": "Västra Götalands",
+    "nearest_city": "Trollhättan",
+    "nearby_cities": [
+      "Trollhättan"
+    ],
+    "distances": "[\"10\", \"5\", \"1\", \"0.2\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000,
+      200
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km, 0.2 km",
+    "organizer": "Hälle IF",
+    "contact": null,
+    "website": "https://www.halleif.nu/?page_id=7514",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.halleif.nu/?page_id=7514",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Ljungskileslingan är ett motionslopp i kustmiljö med start och mål i Ljungskile centrum, och banan går runt centrala Ljungskile och Ljungskileviken. Loppet arrangeras av Hälle IF och går samtidigt som marknadsdagen LjungskileDagen. Upplagan 2026 gick lördagen den 13 juni med knattelopp, 1 km för barn samt 5 km och 10 km för juniorer och vuxna. De främsta i varje klass får priser och övriga priser lottas ut bland alla som fullföljer.",
+    "course_highlights": [
+      "Start och mål i Ljungskile centrum",
+      "Bana runt Ljungskileviken",
+      "10 km tillbaka 2026 med ny sträckning"
+    ],
+    "additional": "Loppet startades 1994 av Ljungskile Friluftsklubb, och sedan 2024 är det Hälle IF som arrangerar Ljungskileslingan. Knatteloppet är 200 m och för de allra yngsta.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14544/about",
+      "friidrott_se_langlopp",
+      "raceid_com_se",
+      "http://www.halleif.nu"
+    ],
+    "consolidated_ids": [
+      "809491d8-6121-463a-9cfa-50df08aaf072"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -21894,6 +22282,80 @@
         "model_confidence": 0.98
       }
     ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "bjursjoterrangen_9_km",
+    "name": "Bjursjöterrängen 9 km",
+    "type": "terrain",
+    "type_local": "Terräng",
+    "race_dates": [
+      [
+        "20260616",
+        "20260616"
+      ],
+      [
+        "20270622",
+        "20270622"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "18:30",
+    "location": "Bjursjöstugan, Uddevalla",
+    "latitude": 58.3839933,
+    "longitude": 11.9661276,
+    "county": "Västra Götalands",
+    "nearest_city": "Trollhättan",
+    "nearby_cities": [
+      "Trollhättan"
+    ],
+    "distances": "[\"9\", \"1.6\", \"0.8\"]",
+    "distance_m": [
+      9000,
+      1600,
+      800
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "9 km, 1.6 km, 0.8 km",
+    "organizer": "Uddevalla SK",
+    "contact": null,
+    "website": "https://uddevalla-sk.se/bjursjoterrangen/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "100 kr (ungdom 50 kr)",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://uddevalla-sk.se/bjursjoterrangen/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Bjursjöterrängen är ett terränglopp på stigar och grusvägar runt Bjursjön i norra Uddevalla, arrangerat av Uddevalla SK. Start och mål är vid Bjursjöstugan. Upplagan 2027 går den 22 juni med 9 km för damer och herrar kl. 18.30 samt barn- och ungdomslopp kl. 18.00. Loppet ingår i Västsvenska löparcupen 2027, och det går även bra att promenera banan.",
+    "course_highlights": [
+      "9 km på stigar och grusvägar runt Bjursjön",
+      "Start och mål vid Bjursjöstugan",
+      "Del av Västsvenska löparcupen 2027"
+    ],
+    "additional": "Barn upp till 11 år springer 800 m och ungdomar 12-15 år springer 1 600 m. Anmälan görs via formuläret på Uddevalla SK:s hemsida eller via mejl, och efteranmälan går bra fram till en timme före start. Alla löpare bjuds på fika efter tävlingen, och medlemmar i USK springer gratis.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "007cf6df-9c35-4705-8f58-a00e24e54f3e"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -23683,10 +24145,78 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "sprit_frontyard_sovde_2026",
+    "name": "SPRIT FRONTYARD - SÖVDE 2026",
+    "type": "frontyard",
+    "type_local": "Frontyard Ultra",
+    "race_dates": [
+      [
+        "20260705",
+        "20260705"
+      ],
+      [
+        "20270704",
+        "20270704"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "MTB-spåret vid Sövdesjön, Sövde",
+    "latitude": 55.57590709999999,
+    "longitude": 13.6651564,
+    "county": "Skåne",
+    "nearest_city": "Malmö",
+    "nearby_cities": [],
+    "distances": "[\"1\"]",
+    "distance_m": [
+      1000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "1 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://runtgs.se/sprit-frontyard-sovde/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "245 kr",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://runtgs.se/sprit-frontyard-sovde/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "SpriT Frontyard Sövde är en frontyardtävling på MTB-spåret vid Sövdesjön. Varvet är 1 km och ska springas så många gånger du orkar eller tills klockan stoppar dig, med kortare maxtid för varje varv: 10 minuter på första varvet, 9.40 på andra och 9.20 på tredje. Banan är en lätt kuperad och lagom teknisk blandning av grusväg, skogsstig och sand, helt utan asfalt. Upplagan 2027 går den 4 juli.",
+    "course_highlights": [
+      "1 km varv på MTB-spåret vid Sövdesjön",
+      "Maxtiden per varv minskar för varje varv",
+      "Grusväg, skogsstig och sand, ingen asfalt"
+    ],
+    "additional": "Vatten, cola och andra goda saker finns vid varvningen och efter målgång. Anmälan är bindande efter betalning och antalet platser är begränsat.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "9bb794b3-611a-40fb-b75e-2fcff9e16081"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "riddarspranget",
     "name": "Riddarsprånget",
-    "type": "other",
-    "type_local": "Övrigt",
+    "type": "road",
+    "type_local": "Landsväg",
     "race_dates": [
       [
         "20260706",
@@ -23701,12 +24231,14 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Hova, Gullspång Municipality, Sverige",
-    "latitude": 58.8516394,
-    "longitude": 14.2174399,
-    "county": "Västra Götalands",
-    "nearest_city": "Skövde",
-    "nearby_cities": [],
+    "location": "Riddarparken, Hova",
+    "latitude": 59.4235535,
+    "longitude": 17.8396035,
+    "county": "Stockholms",
+    "nearest_city": "Stockholm",
+    "nearby_cities": [
+      "Stockholm"
+    ],
     "distances": "[\"10\"]",
     "distance_m": [
       10000
@@ -23717,25 +24249,29 @@
     "distance_verbose": "10 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.riddarveckan.com/hojdpunkter-riddarspranget/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.riddarveckan.com/hojdpunkter-riddarspranget/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Riddarsprånget är Hova Riddarveckas eget gatlopp, som går på måndagen under Riddarveckan med start kl. 18.00. Det finns 29 klasser för åldrarna 2 till 80+ år, och loppet lockar varje år mellan 300 och 400 löpare. Den längsta distansen är 10 km, två varv på en 5-kilometersslinga som nästan helt går på Hovas gator. Alla som genomför loppet får en riddarmedalj, och alla barn och ungdomar upp till 16 år får en T-shirt.",
+    "course_highlights": [
+      "Gatlopp på Hovas gator under Riddarveckan",
+      "10 km, två varv på en 5 km-slinga",
+      "Riddarmedalj till alla som fullföljer"
+    ],
+    "additional": "Anmälan görs via Hova IF:s hemsida eller på plats i Riddarparken kl. 16.00-17.30 på tävlingsdagen. Prisutdelningen sker i Riddarparken.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [],
     "consolidated_ids": [
       "1797eb35-da0f-4f1a-916d-2e53cbb0db90"
@@ -24856,6 +25392,80 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "asele_trailrun",
+    "name": "Åsele Trailrun",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260718",
+        "20260718"
+      ],
+      [
+        "20270717",
+        "20270717"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Åslia 6, Åsele",
+    "latitude": 64.1622123,
+    "longitude": 17.414021,
+    "county": "Västerbottens",
+    "nearest_city": "Örnsköldsvik",
+    "nearby_cities": [],
+    "distances": "[\"22\", \"11\"]",
+    "distance_m": [
+      22000,
+      11000
+    ],
+    "distance_keywords": [
+      "Halvmarathon",
+      "10 km"
+    ],
+    "distance_verbose": "22 km, 11 km",
+    "organizer": "Åsele Idrottsklubb",
+    "contact": null,
+    "website": "https://aseleik.web.sportadmin.se/nyheter/?ID=108155&NID=1340475",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://aseleik.web.sportadmin.se/nyheter/?ID=108155&NID=1340475",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Åsele Trail Run arrangeras av Åsele Idrottsklubb den tredje lördagen i juli, med tävlingscentral, start och mål vid Åslia strax utanför Åsele samhälle. Banan går längs stig, skoterled, lite obanad terräng och en bit grusväg. Upplagan 2026 var den andra och gick den 18 juli med ny bansträckning och gemensam start för alla klasser kl. 11.00. De tre första i varje klass får priser från sponsorerna.",
+    "course_highlights": [
+      "Start och mål vid Åslia utanför Åsele",
+      "Stig, skoterled och grusväg",
+      "Vatten och sportdryck på två platser längs banan"
+    ],
+    "additional": "Dusch och ombyte finns på Åsele ishall, cirka 4 km bort. Efteranmälan i mån av plats görs på tävlingscentralen mot en extra avgift på 100 kronor.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "trailrunning_sweden_se"
+    ],
+    "consolidated_ids": [
+      "8db705dc-b172-4486-8dd3-224675d85d6f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "garvikloppet",
     "name": "Gårvikloppet",
     "type": "other",
@@ -25505,6 +26115,157 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "ulvoruset_2026",
+    "name": "Ulvöruset 2026",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260725",
+        "20260725"
+      ],
+      [
+        "20270724",
+        "20270724"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Ulvö Hotell, Ulvöhamn",
+    "latitude": 63.0222447,
+    "longitude": 18.6581859,
+    "county": "Västernorrlands",
+    "nearest_city": "Örnsköldsvik",
+    "nearby_cities": [],
+    "distances": "[\"22\", \"10\", \"5\", \"1.5\"]",
+    "distance_m": [
+      22000,
+      10000,
+      5000,
+      1500
+    ],
+    "distance_keywords": [
+      "Halvmarathon",
+      "10 km",
+      "5 km",
+      "1500 meter"
+    ],
+    "distance_verbose": "22 km, 10 km, 5 km, 1500 meter",
+    "organizer": null,
+    "contact": null,
+    "website": "https://ulvoruset.se/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://ulvoruset.se/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Ulvöruset är ett lopp på Ulvön i Höga Kustens skärgård, med start och kansli vid hamnområdet vid Ulvö Hotell. Den längsta distansen är 22 km Extrem över hela ön, med tekniska stigar, kuststräckor och 512 m total stigning. Det finns även 10 km i varierad och teknisk terräng och 5 km Motion längs havslinjen på bred skogsstig. Upplagan 2027 går lördagen den 24 juli.",
+    "course_highlights": [
+      "22 km Extrem över hela Ulvön",
+      "10 km och 5 km med utsikt över havet",
+      "Lilla Ulvöruset 1,5 km och Ulvöspringet för barn"
+    ],
+    "additional": "Till Ulvön åker du med M/F Ulvön eller M/F Minerva från Köpmanholmen, eller under sommaren med Högakustenbåtarna från Ullånger, Docksta och Mjällomslandet. Lilla Ulvöruset är för barn upp till 12 år.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "022f3df6-0924-48ea-b6db-0288e732b505"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "engelbrektsloppet_trail",
+    "name": "Engelbrektsloppet Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260725",
+        "20260725"
+      ],
+      [
+        "20270724",
+        "20270724"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Torget, Norberg",
+    "latitude": 60.06504200000001,
+    "longitude": 15.923796,
+    "county": "Västmanlands",
+    "nearest_city": "Borlänge",
+    "nearby_cities": [],
+    "distances": "[\"22\", \"12\", \"5\", \"1.8\", \"0.5\"]",
+    "distance_m": [
+      22000,
+      12000,
+      5000,
+      1800,
+      500
+    ],
+    "distance_keywords": [
+      "Halvmarathon",
+      "5 km"
+    ],
+    "distance_verbose": "22 km, 12 km, 5 km, 1.8 km, 0.5 km",
+    "organizer": "Föreningen Engelbrektsloppet",
+    "contact": null,
+    "website": "https://www.engelbrektsloppet.se/engelbrektsloppet-trail",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.engelbrektsloppet.se/engelbrektsloppet-trail",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Engelbrektsloppet Trail är ett traillopp i Norberg som arrangeras av Föreningen Engelbrektsloppet. Banan går på stigar i skogarna kring Karlberg och runt Ötjärn, och målet ligger på Torget i Norberg. Kort efter starten passerar loppet Nya Lapphyttan, Europas äldsta kända masugn från 1100-talet, och delar av den gamla sträckningen av Engelbrektsloppet på skidor. Upplagan 2026 var den andra och samlade 815 anmälda löpare på distanser från 500 m till 22 km.",
+    "course_highlights": [
+      "Passage förbi Nya Lapphyttan, Europas äldsta kända masugn",
+      "Delar av Engelbrektsloppets gamla skidsträckning",
+      "Målgång på Torget i Norberg"
+    ],
+    "additional": "Distanserna 2026 var Knattar 500 m, Lilla Trailen 1,8 km, 5 km, 12 km och 22 km. Arrangören har meddelat att loppet kommer tillbaka nästa sommar.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "f108b6dd-ab61-4574-a73e-99e0714914d4"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "kil_till_skutberget",
     "name": "Kil till Skutberget",
     "type": "trail",
@@ -26093,6 +26854,74 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "ottsjo_8k",
+    "name": "Ottsjö 8k",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260730",
+        "20260730"
+      ],
+      [
+        "20270729",
+        "20270729"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "18:00",
+    "location": "Kia Fjällmaratoncentret, Ottsjö",
+    "latitude": 63.21561190000001,
+    "longitude": 13.0556852,
+    "county": "Jämtlands",
+    "nearest_city": "Östersund",
+    "nearby_cities": [],
+    "distances": "[\"7\"]",
+    "distance_m": [
+      7000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "7 km",
+    "organizer": "Fjällmaraton",
+    "contact": null,
+    "website": "https://fjallmaraton.se/fjallmaratonveckan/ottsjo-8k/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://fjallmaraton.se/fjallmaratonveckan/ottsjo-8k/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Ottsjö 8K är ett kortare fjällopp under Fjällmaratonveckan med start och mål vid Kia Fjällmaratoncentret i Ottsjö. Banan följer en inte alltför tekniskt krävande stig och led på drygt 7 km med totalt cirka 150 höjdmeter, och 2026 kördes loppet under namnet Vivobarefoot 7K. Loppet går på torsdagskvällen samma dag som Fjällmaraton 100K, med festivalstämning i målområdet. Alla priser lottas ut bland deltagarna som fullföljer.",
+    "course_highlights": [
+      "Start och mål vid Kia Fjällmaratoncentret i Ottsjö",
+      "Drygt 7 km stig och led med cirka 150 höjdmeter",
+      "Priser värda över 100 000 kr lottas ut bland dem som fullföljer"
+    ],
+    "additional": "2026 gick starten i två grupper, kl 18:00 och 18:10. Under dagen fanns bastu, kallbad och matservering i målområdet.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "78c7587a-a820-45fd-afca-cb28d71e8fc9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "falkenbergs_stadslopp",
     "name": "Falkenbergs Stadslopp",
     "type": "road",
@@ -26498,10 +27327,10 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "bohuslans_hogsta_krokstrand_mountain",
-    "name": "Bohusläns Högsta - Krokstrand Mountain ...",
-    "type": "other",
-    "type_local": "Övrigt",
+    "domain_name": "blidoloppen_2026",
+    "name": "Blidöloppen 2026",
+    "type": "terrain",
+    "type_local": "Terräng",
     "race_dates": [
       [
         "20260801",
@@ -26515,43 +27344,120 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Krokstrand, Strömstad Municipality, Sverige",
-    "latitude": 59.00000000000001,
-    "longitude": 11.433333,
+    "start_time": "11:00",
+    "location": "Blidö IP, Blidö",
+    "latitude": 59.6349195,
+    "longitude": 18.951996,
+    "county": "Stockholms",
+    "nearest_city": "Stockholm",
+    "nearby_cities": [],
+    "distances": "[\"9\", \"5\", \"2.5\", \"0.8\"]",
+    "distance_m": [
+      9000,
+      5000,
+      2500,
+      800
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "9 km, 5 km, 2.5 km, 0.8 km",
+    "organizer": "Blidö IF",
+    "contact": null,
+    "website": "https://www.blidoif.nu/blid%C3%B6loppet",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "100-300 kr",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.blidoif.nu/blid%C3%B6loppet",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Blidöloppet är ett motionslopp för barn och vuxna som Blidö IF har arrangerat sedan 1999. Loppen går i omväxlande terräng runt Blidö IP, Björkudden, Granö, Söderäng, Fällgate och Bromskärsvägen, med start och mål på Blidö IP. Vuxna väljer mellan 5 och 9 km terränglöpning i dam- och herrklasser, och det finns även 2,5 km och ett barnlopp på 800 m. Under dagen är klubbhusets café öppet.",
+    "course_highlights": [
+      "Start och mål på Blidö IP",
+      "Omväxlande terräng runt Björkudden, Granö och Söderäng",
+      "Barnlopp på 800 m för de minsta"
+    ],
+    "additional": "Anmälan och betalning görs via Raceid.com och det går inte att efteranmäla sig på plats. 2026 var samlingen kl 10.30 och första start kl 11.00. Den som bara vill motionera kan gå någon av två promenadslingor från klubbhuset.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14698/about"
+    ],
+    "consolidated_ids": [
+      "d414dc58-729b-40ee-a826-54bec68ebea3"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "bohuslans_hogsta_krokstrand_mountain",
+    "name": "Bohusläns Högsta - Krokstrand Mountain ...",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260801",
+        "20260801"
+      ],
+      [
+        "20270731",
+        "20270731"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "11:00",
+    "location": "Folkets Hus, Krokstrand",
+    "latitude": 59.0069755,
+    "longitude": 11.4410832,
     "county": "Västra Götalands",
     "nearest_city": "Trollhättan",
     "nearby_cities": [],
-    "distances": "[\"10\", \"3.1\"]",
+    "distances": "[\"3.1\"]",
     "distance_m": [
-      10000,
       3100
     ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km, 3.1 km",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "3.1 km",
+    "organizer": "Idefjordens SK och Strömstad Löparklubb",
     "contact": null,
-    "website": null,
+    "website": "https://stromstadloparklubb.com/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://stromstadloparklubb.com/2026/07/25/bohuslans-hogsta-krokstrand-mountain-trail-2026/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Bohusläns Högsta - Krokstrand Mountain Trail är ett backlopp från havsnivån i Krokstrand upp till Björnerödspiggen, Bohusläns högsta punkt på 222 meter över havet. Loppet arrangeras av Idefjordens SK och Strömstad Löparklubb, och 2026 kördes den tredje upplagan. Banan är 3,1 km lång med totalt 236 meters stigning och blandar asfalt, grusväg, stig och vandringsled i berg och skog. Starten går på grusvägen vid Folkets Hus i Krokstrand och målet ligger på toppen.",
+    "course_highlights": [
+      "Från havsnivån till Bohusläns högsta punkt, Björnerödspiggen",
+      "3,1 km med 236 meters stigning",
+      "Avslutande 1 400 m på vandringsled i berg och skog"
+    ],
+    "additional": "Alla som fullföljer får en specialdesignad medalj och de tre första i varje klass får prestationspriser. Det finns ingen omklädning eller dusch, så kom ombytt. Efter målgång joggar eller promenerar deltagarna tillbaka till startområdet.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [],
     "consolidated_ids": [
       "3d20154e-57d7-456e-bfed-f49afb765301"
@@ -26787,6 +27693,78 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "trans_scania",
+    "name": "Trans Scania",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260807",
+        "20260807"
+      ],
+      [
+        "20270806",
+        "20270806"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "08:00",
+    "location": "Långa bryggan, Bjärred",
+    "latitude": 55.7114527,
+    "longitude": 13.0254185,
+    "county": "Skåne",
+    "nearest_city": "Malmö",
+    "nearby_cities": [
+      "Malmö"
+    ],
+    "distances": "[\"246\"]",
+    "distance_m": [
+      246000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "246 km",
+    "organizer": "Scania Road Runners",
+    "contact": null,
+    "website": "https://www.scaniaroadrunners.se/trans-scania-about",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "950 kr",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.scaniaroadrunners.se/trans-scania-about",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Trans Scania är ett nästan helt osupportat traillopp på 246 km genom Skåne, med vissa partier på väg. Starten går längst ut på Långa bryggan i Bjärred och målet ligger vid Hotel Lundia i Lund, intill tågstationen. Banan följer främst Skåneleden och maxtiden är 56 timmar, vilket innebär att många löpare är ute i minst två dygn. Loppet är bara öppet för kvalificerade löpare som har genomfört till exempel ett 100 miles- eller 24-timmarslopp de senaste två åren.",
+    "course_highlights": [
+      "Start längst ut på Långa bryggan i Bjärred",
+      "Följer främst Skåneleden genom Skåne",
+      "Maxtid 56 timmar och bara en dropbag"
+    ],
+    "additional": "Startavgiften är 950 kr och inkluderar t-shirt till dem som fullföljer, hyra av GPS-sändare, hantering av dropbag och valfri transport från Lund till starten. Om fler än 20 kvalificerade löpare anmäler sig första veckan lottas startplatserna. Starten går kl 08:00.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://itra.run/Races/RaceDetails/Trans.Scania..Trans.Scania/2027/124762"
+    ],
+    "consolidated_ids": [
+      "4768ae25-9ca9-4071-a640-50fb38db6893"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260429",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -27883,17 +28861,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -28279,6 +29257,80 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "park_till_park_loppet_2026",
+    "name": "Park Till Park Loppet 2026",
+    "type": "road",
+    "type_local": "Landsväg",
+    "race_dates": [
+      [
+        "20260814",
+        "20260814"
+      ],
+      [
+        "20270813",
+        "20270813"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "17:30",
+    "location": "Nicolaiskolan, Nyköping",
+    "latitude": 58.75292400000001,
+    "longitude": 17.010452,
+    "county": "Södermanlands",
+    "nearest_city": "Nyköping",
+    "nearby_cities": [
+      "Nyköping"
+    ],
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.park-till-park-loppet.com/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.park-till-park-loppet.com/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Park till Park-loppet är ett stadslopp i Nyköping med start och mål vid Nicolaiskolan. Banan följer Nyköpingsån och har ett upplopp från Stadshuset ner för Storgatan. Först går ett barnlopp och sedan ett 5 km-lopp, och löpare, lufsare, gående och rullande är alla välkomna. Den som klär ut sig kan tävla om pris för bästa utklädnad, och alla deltagare får medalj.",
+    "course_highlights": [
+      "Banan följer Nyköpingsån",
+      "Upplopp från Stadshuset ner för Storgatan",
+      "Pris för bästa utklädnad för barn och vuxna"
+    ],
+    "additional": "2026 startade barnloppet kl 16:30 och 5 km kl 17:30. Om det finns platser kvar går det att efteranmäla sig på plats eller online fram till kl 16:00 på tävlingsdagen. Pallplatserna på 5 km får priser och en cykel lottas ut bland deltagarna i barnloppet.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14866/about"
+    ],
+    "consolidated_ids": [
+      "d298d106-1065-4a37-8076-675c19fc963a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "tavelsjo_halvmarathon",
     "name": "Tavelsjö Halvmarathon",
     "type": "road",
@@ -28648,19 +29700,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -28752,19 +29804,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -29204,6 +30256,76 @@
     ],
     "consolidated_ids": [
       "814eac88-a33b-4edf-9027-d5737988140f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "trailvasan",
+    "name": "Trailvasan",
+    "type": "terrain",
+    "type_local": "Terräng",
+    "race_dates": [
+      [
+        "20260814",
+        "20260814"
+      ],
+      [
+        "20270820",
+        "20270820"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "18:00",
+    "location": "Vasaloppsmålet, Mora",
+    "latitude": 61.0074882,
+    "longitude": 14.5456558,
+    "county": "Dalarnas",
+    "nearest_city": "Borlänge",
+    "nearby_cities": [],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": "Vasaloppet",
+    "contact": null,
+    "website": "https://vasaloppet.se/lopning/trailvasan-10/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://vasaloppet.se/lopning/trailvasan-10/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Trailvasan 10 är ett kvällslopp på 10 km med start och mål vid Vasaloppsmålet i centrala Mora. Banan går på parkvägar längs Vasaloppsspåret mot Mora skidstadion och vidare på stig och skogsväg genom lövskogar längs Österdalälven, innan den går tillbaka genom centrala Mora. Underlaget är 8 km skogsväg och stig och 2 km asfalt. Målgången sker under den historiska portalen med texten I fäders spår för framtids segrar.",
+    "course_highlights": [
+      "Start och mål vid Vasaloppsmålet i Mora",
+      "Stig och skogsväg längs Österdalälven",
+      "Vätskekontroller efter 5,5 km och 8,3 km"
+    ],
+    "additional": "Gemensam start kl 18.00 och därefter öppet spår-start fram till 18.15. Loppet är öppet från 11 år och har plats för 1 000 deltagare. Nummerlappen hämtas i Mora samma dag som loppet går.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "f4d294a5-5b4d-4f50-b62d-d7c84c1eeda8"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -29742,6 +30864,152 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "adolfsberg_frontyard",
+    "name": "Adolfsberg Frontyard",
+    "type": "frontyard",
+    "type_local": "Frontyard Ultra",
+    "race_dates": [
+      [
+        "20260822",
+        "20260822"
+      ],
+      [
+        "20270821",
+        "20270821"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Adolfsbergsgården, Örebro",
+    "latitude": 59.24666060000001,
+    "longitude": 15.1656349,
+    "county": "Örebro",
+    "nearest_city": "Örebro",
+    "nearby_cities": [
+      "Örebro"
+    ],
+    "distances": "[\"3\"]",
+    "distance_m": [
+      3000
+    ],
+    "distance_keywords": [
+      "3000 meter"
+    ],
+    "distance_verbose": "3000 meter",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.korskyrkanorebro.se/kalender/adolfsberg-front-yard-30",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.korskyrkanorebro.se/kalender/adolfsberg-front-yard-30",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Adolfsberg Frontyard är ett frontyardlopp i Adolfsberg i Örebro som finns i Korskyrkan Örebros kalender. Löparna springer varv på 3 km, där det första varvet ska klaras på 30 minuter, det andra på 29 minuter och så vidare. Man springer så många varv man orkar och hinner med. Under loppet har det funnits ett öppet café där publiken kan fika och heja på löparna.",
+    "course_highlights": [
+      "Varv på 3 km med en minut kortare tid för varje varv",
+      "Spring så många varv du orkar och hinner",
+      "Café med fika för publiken"
+    ],
+    "additional": "Tidigare upplagor har haft första start kl 10.00, andra start kl 10.30 och tredje kl 10.59. Mer information finns hos arrangören och på jogg.se.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "892a06ba-a0df-42a2-9d4e-86c1b6fec3d9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "vasterlosa_five_point_challenge_2",
+    "name": "Västerlösa Five Point Challenge",
+    "type": "other",
+    "type_local": "Övrigt",
+    "race_dates": [
+      [
+        "20260822",
+        "20260822"
+      ],
+      [
+        "20270821",
+        "20270821"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Västerlösa",
+    "latitude": 58.4204295,
+    "longitude": 15.3384857,
+    "county": "Östergötlands",
+    "nearest_city": "Linköping",
+    "nearby_cities": [
+      "Linköping"
+    ],
+    "distances": "[\"10\", \"4.5\"]",
+    "distance_m": [
+      10000,
+      4500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 4.5 km",
+    "organizer": "Västerlösa Running Beer Club",
+    "contact": null,
+    "website": "https://www.vrbc.app/five-point-challenge",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "200 kr",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.vrbc.app/five-point-challenge",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Västerlösa Five Point Challenge är ett lopp i Västerlösa som arrangeras av Västerlösa Running Beer Club. I stället för att springa runt i cirklar ska deltagarna ta sig till fem olika checkpoints och hämta ett armband vid varje, och den som först hänger upp alla fem armband på sin krok i HQ vinner. Varje deltagare väljer själv i vilken ordning armbanden hämtas, men man får bara bära ett armband i taget. Heldistansen omfattar alla checkpoints, cirka 10 km, och halvdistansen tre checkpoints, cirka 4,5 km.",
+    "course_highlights": [
+      "Fem checkpoints med ett armband att hämta vid varje",
+      "Du väljer själv i vilken ordning du tar checkpointsen",
+      "Start och mål i HQ, loppets mittpunkt"
+    ],
+    "additional": "Anmälningsavgiften är 200 kr oavsett distans. 2026 öppnade HQ kl 12:00 och tävlingsgenomgången hölls kl 13:45. Arrangören hoppas på en ny upplaga sensommaren 2027.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "4d32f948-c9e2-412b-939c-ca383479c66c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "tough_viking",
     "name": "Tough Viking",
     "type": "other",
@@ -29882,6 +31150,106 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "stockholm_halvmarathon",
+    "name": "Stockholm Halvmarathon",
+    "type": "road",
+    "type_local": "Landsväg",
+    "race_dates": [
+      [
+        "20250830",
+        "20250830"
+      ],
+      [
+        "20260829",
+        "20260829"
+      ],
+      [
+        "20270821",
+        "20270821"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "15:30",
+    "location": "Strömbron, Stockholm, Sverige",
+    "latitude": 59.3287547,
+    "longitude": 18.0730371,
+    "county": "Stockholms",
+    "nearest_city": "Stockholm",
+    "nearby_cities": [
+      "Stockholm"
+    ],
+    "distances": "[\"21.1\"]",
+    "distance_m": [
+      21100
+    ],
+    "distance_keywords": [
+      "Halvmarathon"
+    ],
+    "distance_verbose": "Halvmarathon",
+    "organizer": "Marathongruppen",
+    "contact": null,
+    "website": "https://stockholmhalfmarathon.se/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "Halvmarathon",
+        "tiers": [
+          {
+            "label": "tier_2",
+            "price": "1045 SEK",
+            "deadline": "20270214",
+            "description": "7/9 2026 – 14/2 2027"
+          },
+          {
+            "label": "tier_3",
+            "price": "1195 SEK",
+            "deadline": "20270821",
+            "description": "15/2 2027 – 21/8 2027"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270821",
+    "registration_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
+    "race_info_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
+    "presumed_organizer_email": "info@stockholmhalfmarathon.se",
+    "website_emails_found": [
+      "info@stockholmhalfmarathon.se",
+      "info@stockholmhalvmarathon.se"
+    ],
+    "description": "Stockholm Halvmarathon är ett populärt halvmaratonlopp på 21 098 meter som går genom Stockholms innerstad. Start och mål är belägna vid Strömbron och Norrbron, mitt i stadens historiska hjärta nära Slottet, Riksdagshuset och Operan. Banan är lättlöpt och inspirerande, och löparna passerar flera av stadens mest kända byggnader och områden som Norrmalm, Vasastan, Kungsholmen, Gamla Stan och Södermalm. Första start är preliminärt kl. 15:30. Efter målgång erbjuds en after run i Kungsträdgården.",
+    "course_highlights": [
+      "Lättlöpt bana genom Norrmalm, Vasastan, Kungsholmen, Gamla Stan och Södermalm",
+      "Start och mål vid kungliga slottet, Riksdagshuset och Operan",
+      "Passerar flera av Stockholms mest kända byggnader och historiska platser"
+    ],
+    "additional": "Anmälan är bindande och personlig. Deltagare måste vara minst 17 år (födda 2010 eller tidigare). Betalning kan ske via internetbank, Visa, MasterCard, Swish eller faktura via Klarna. Efter loppet erbjuds en after run i Kungsträdgården. Efter målgång väntar after run i Kungsträdgården. Den officiella appen erbjuder live tracking, resultat i realtid, kartor och evenemangsinformation.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.84,
+    "sources": [
+      "https://www.stockholmhalvmarathon.se/"
+    ],
+    "consolidated_ids": [
+      "65cdd116-17a7-4e22-b357-d335fd93ad2a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261106",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -30744,18 +32112,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -31010,19 +32378,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -31035,114 +32403,6 @@
     ],
     "supplied_at": "20261117",
     "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "stockholm_halvmarathon",
-    "name": "Stockholm Halvmarathon",
-    "type": "road",
-    "type_local": "Landsväg",
-    "race_dates": [
-      [
-        "20250830",
-        "20250830"
-      ],
-      [
-        "20260829",
-        "20260829"
-      ],
-      [
-        "20270828",
-        "20270828"
-      ],
-      [
-        "20270828",
-        "20270828"
-      ],
-      [
-        "20270828",
-        "20270828"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "15:30",
-    "location": "Strömbron, Stockholm, Sverige",
-    "latitude": 59.3287547,
-    "longitude": 18.0730371,
-    "county": "Stockholms",
-    "nearest_city": "Stockholm",
-    "nearby_cities": [
-      "Stockholm"
-    ],
-    "distances": "[\"21.1\"]",
-    "distance_m": [
-      21100
-    ],
-    "distance_keywords": [
-      "Halvmarathon"
-    ],
-    "distance_verbose": "Halvmarathon",
-    "organizer": "Marathongruppen",
-    "contact": null,
-    "website": "https://stockholmhalfmarathon.se/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Halvmarathon",
-        "tiers": [
-          {
-            "label": "tier_2",
-            "price": "1045 SEK",
-            "deadline": "20270214",
-            "description": "7/9 2026 – 14/2 2027"
-          },
-          {
-            "label": "tier_3",
-            "price": "1195 SEK",
-            "deadline": "20270821",
-            "description": "15/2 2027 – 21/8 2027"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20270821",
-    "registration_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-    "race_info_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-    "presumed_organizer_email": "info@stockholmhalfmarathon.se",
-    "website_emails_found": [
-      "info@stockholmhalfmarathon.se",
-      "info@stockholmhalvmarathon.se"
-    ],
-    "description": "Stockholm Halvmarathon är ett populärt halvmaratonlopp på 21 098 meter som går genom Stockholms innerstad. Start och mål är belägna vid Strömbron och Norrbron, mitt i stadens historiska hjärta nära Slottet, Riksdagshuset och Operan. Banan är lättlöpt och inspirerande, och löparna passerar flera av stadens mest kända byggnader och områden som Norrmalm, Vasastan, Kungsholmen, Gamla Stan och Södermalm. Första start är preliminärt kl. 15:30. Efter målgång erbjuds en after run i Kungsträdgården.",
-    "course_highlights": [
-      "Lättlöpt bana genom Norrmalm, Vasastan, Kungsholmen, Gamla Stan och Södermalm",
-      "Start och mål vid kungliga slottet, Riksdagshuset och Operan",
-      "Passerar flera av Stockholms mest kända byggnader och historiska platser"
-    ],
-    "additional": "Anmälan är bindande och personlig. Deltagare måste vara minst 17 år (födda 2010 eller tidigare). Betalning kan ske via internetbank, Visa, MasterCard, Swish eller faktura via Klarna. Efter loppet erbjuds en after run i Kungsträdgården. Efter målgång väntar after run i Kungsträdgården. Den officiella appen erbjuder live tracking, resultat i realtid, kartor och evenemangsinformation.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.84,
-    "sources": [
-      "https://www.stockholmhalvmarathon.se/"
-    ],
-    "consolidated_ids": [
-      "65cdd116-17a7-4e22-b357-d335fd93ad2a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261106",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -31867,6 +33127,88 @@
     ],
     "consolidated_ids": [
       "e0c89efc-e02b-494e-9a71-8466a8010fb4"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261106",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "godisjoggen_2026",
+    "name": "Godisjoggen 2026",
+    "type": "road",
+    "type_local": "Landsväg",
+    "race_dates": [
+      [
+        "20260829",
+        "20260829"
+      ],
+      [
+        "20270828",
+        "20270828"
+      ],
+      [
+        "20270828",
+        "20270828"
+      ],
+      [
+        "20270828",
+        "20270828"
+      ],
+      [
+        "20270828",
+        "20270828"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Gröna Dalens IP, Bålsta",
+    "latitude": 59.56532170000001,
+    "longitude": 17.5235933,
+    "county": "Uppsala",
+    "nearest_city": "Uppsala",
+    "nearby_cities": [],
+    "distances": "[\"1.2\"]",
+    "distance_m": [
+      1200
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "1.2 km",
+    "organizer": "Bålsta IK",
+    "contact": null,
+    "website": "https://godisjoggen.se/about/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://godisjoggen.se/about/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Godisjoggen är ett barnlopp i Bålsta som Bålsta IK har arrangerat sedan 1995. Barn från 0 till 11 år springer en snitslad bana från Gröna Dalens IP mot Bålsta centrum och tillbaka, och 2026 leddes banan genom Bålsta centrum, vilket gjorde den ungefär 1,2 km lång. I mål får barnen diplom eller medalj, frukt, glass och en godispåse, och när alla har kommit i mål avslutas loppet med ett godisregn. Loppet är numera starten på Håbo festdag och har ett tak på 1 500 deltagare.",
+    "course_highlights": [
+      "Godisregn när alla barn har kommit i mål",
+      "Banan går genom Bålsta centrum",
+      "Lotteri på alla nummerlappar"
+    ],
+    "additional": "Anhöriga får gärna springa med sitt barn. Anmälan görs via godisjoggen.se, och i mån av plats går det att efteranmäla sig på Gröna Dalens IP. Anmälan till nästa upplaga öppnar under 2027.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14931/about"
+    ],
+    "consolidated_ids": [
+      "12facdef-e48e-40f2-851f-73ba750775ca"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -33032,20 +34374,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -33076,6 +34418,82 @@
         "model_confidence": 0.98
       }
     ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "lydinge_resort_stafett",
+    "name": "Lydinge Resort Stafett",
+    "type": "relay",
+    "type_local": "Stafett",
+    "race_dates": [
+      [
+        "20260905",
+        "20260905"
+      ],
+      [
+        "20270904",
+        "20270904"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "09:45",
+    "location": "Sundstorget, Helsingborg",
+    "latitude": 56.0475746,
+    "longitude": 12.6902033,
+    "county": "Skåne",
+    "nearest_city": "Helsingborg",
+    "nearby_cities": [
+      "Helsingborg"
+    ],
+    "distances": "[\"42.195\", \"21.098\"]",
+    "distance_m": [
+      42195,
+      21098
+    ],
+    "distance_keywords": [
+      "Marathon",
+      "Halvmarathon"
+    ],
+    "distance_verbose": "Marathon, Halvmarathon",
+    "organizer": null,
+    "contact": null,
+    "website": "https://helsingborgmarathon.se/relay/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "1700 kr",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://helsingborgmarathon.se/relay/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Lydinge Resort Stafett är en stafett i Helsingborg där lagen springer antingen halvmaraton eller maraton uppdelat på fyra sträckor. Starten går på Sundstorget utanför Dunkers Kulturhus. Stafetten på 21 km följer banan för HOKA Helsingborg Half Marathon med växlingar vid Pålsjö kiosk, i Pålsjö skog och ovanför Tinkarpsbacken, och avslutas längs Strandpromenaden mot målet på Gröningen. Stafetten på 42 km följer Helsingborg Marathon via Råå, Ättekulla, Fredriksdal och Pålsjö skog.",
+    "course_highlights": [
+      "Fyra sträckor per lag",
+      "Passage förbi medeltidsborgen Kärnan",
+      "Utsikt över Öresund från Ättekulla på 42 km"
+    ],
+    "additional": "Upplagan 2027 går den 4 september med start kl 09:45 och 10:15. Startavgiften är 1700 kr och antalet startplatser är 500. Klasserna är Män, Kvinnor, Mix och Företag.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "jogg_se_road"
+    ],
+    "consolidated_ids": [
+      "e047ef2d-bde4-49ec-8657-e929c74246f5"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -33324,6 +34742,297 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "arsta_gravel_run",
+    "name": "Årsta Gravel Run",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260905",
+        "20260905"
+      ],
+      [
+        "20270904",
+        "20270904"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "15:00",
+    "location": "Liljeholmskajen, Stockholm",
+    "latitude": 59.30685750000001,
+    "longitude": 18.0310372,
+    "county": "Stockholms",
+    "nearest_city": "Stockholm",
+    "nearby_cities": [
+      "Stockholm"
+    ],
+    "distances": "[\"8\"]",
+    "distance_m": [
+      8000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "8 km",
+    "organizer": "Adam Widén, Stockholms Simfestival och CHPO Brand",
+    "contact": null,
+    "website": "https://www.skneptun.se/event/dockside-swim-and-gravel-run",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.skneptun.se/event/dockside-swim-and-gravel-run",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Årsta Gravel Run är ett lopp på 8 km som kombinerar trail, grus och stadslöpning i området kring Årstaskogen i Stockholm. Loppet ingår i Dockside Swim & Gravel Run och går parallellt med en simtävling på 1 500 meter i öppet vatten längs Liljeholmskajen, med målgång vid samma kaj. Man kan inte både springa och simma, men det går att tävla i lag där en simmar och en springer och tiderna läggs ihop. Efter loppen hålls en gemensam efterfest i Plåtparken.",
+    "course_highlights": [
+      "8 km trail, grus och stad runt Årstaskogen",
+      "Målgång vid Liljeholmskajen",
+      "Efterfest i Plåtparken vid målområdet"
+    ],
+    "additional": "Dockside Swim & Gravel Run arrangeras av Adam Widén, Stockholms Simfestival och CHPO Brand, och funktionärerna kommer främst från Zinken Löpklubb och Simklubben Neptun. I anmälningsavgiften ingår chiptidtagning, en öl eller alkoholfri dryck i Plåtparken och ett par solglasögon. 2026 började loppen kl 15.00.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14818/about"
+    ],
+    "consolidated_ids": [
+      "618650c1-0ecb-4feb-bee7-476e7f4becfe"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "enskede_backyard_kvarterslopp_2026",
+    "name": "Enskede Backyard Kvarterslopp 2026",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
+    "race_dates": [
+      [
+        "20260905",
+        "20260905"
+      ],
+      [
+        "20270904",
+        "20270904"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Fågelkärrskroken, Enskede",
+    "latitude": 59.2762834,
+    "longitude": 18.0385285,
+    "county": "Stockholms",
+    "nearest_city": "Stockholm",
+    "nearby_cities": [
+      "Stockholm"
+    ],
+    "distances": "[\"6.7\", \"4.5\"]",
+    "distance_m": [
+      6700,
+      4500
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "6.7 km, 4.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://enskedebackyard.se/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://enskedebackyard.se/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Enskede Backyard Kvarterslopp är ett backyardlopp i kvarteren kring Fågelkärrskroken i Enskede där flest varv vinner. Deltagarna väljer mellan två slingor, 4,5 km eller 6,7 km, och springer så många varv de vill och orkar. Banan finns som GPX-fil i Strava-gruppen Enskede Backyard. Arrangören har meddelat att loppet återkommer 2027.",
+    "course_highlights": [
+      "Två slingor att välja mellan, 4,5 km och 6,7 km",
+      "Flest varv vinner",
+      "Start och mål vid Fågelkärrskroken i Enskede"
+    ],
+    "additional": "Datum och anmälan för 2027 är ännu inte publicerade. Arrangören lägger ut löpande information på Instagram.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14835/about"
+    ],
+    "consolidated_ids": [
+      "8c0761f4-47db-4b7b-a5ef-79df3537b59f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "billingen_x_trail_challenge_2",
+    "name": "Billingen X-trail Challenge",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260905",
+        "20260905"
+      ],
+      [
+        "20270904",
+        "20270904"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Billingen, Skövde",
+    "latitude": 58.4028071,
+    "longitude": 13.8213427,
+    "county": "Västra Götalands",
+    "nearest_city": "Skövde",
+    "nearby_cities": [
+      "Skövde"
+    ],
+    "distances": "[\"15\", \"5\"]",
+    "distance_m": [
+      15000,
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "15 km, 5 km",
+    "organizer": "Billingen X-trail Sportsclub",
+    "contact": null,
+    "website": "https://billingenxtrail.hemsida24.se/t%C3%A4vlingar/x-trail-challenge-45016938",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://billingenxtrail.hemsida24.se/t%C3%A4vlingar/x-trail-challenge-45016938",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Billingen X-Trail Challenge är ett traillopp på Billingen i Skövde där deltagarna väljer mellan 5 km och 15 km i naturskön och varierad terräng. Loppet passar både den som vill testa sitt första traillopp och den som vill utmana sig själv, och det går bra att springa, jogga eller gå i egen takt. Tävlingscentrat ligger vid toppen av Billingens slalombacke, nära starten vid Billingecenter. Det finns en energistation ute på banan och en i målområdet.",
+    "course_highlights": [
+      "Stigar och backar på Billingen",
+      "Två distanser: 5 km och 15 km",
+      "Dusch och omklädning i Billingecenter vid starten"
+    ],
+    "additional": "2026 startade 15 km kl 10:00 och 5 km kl 10:30. För 15 km måste du vara minst 16 år och för 5 km minst 12 år. Anmälan görs via Race-ID och det går även att anmäla sig vid nummerlappsutdelningen på tävlingsdagen.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "3018ccd1-25b8-469f-ae10-8468ab5d0fa3"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "3st_3_sjoar_trail",
+    "name": "3ST - 3 SJÖAR TRAIL",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260912",
+        "20260912"
+      ],
+      [
+        "20270904",
+        "20270904"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:15",
+    "location": "Sövde badplats, Sövde",
+    "latitude": 55.5852312,
+    "longitude": 13.6717675,
+    "county": "Skåne",
+    "nearest_city": "Malmö",
+    "nearby_cities": [],
+    "distances": "[\"15\", \"5\"]",
+    "distance_m": [
+      15000,
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "15 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://runtgs.se/3st-3-sjoar-trail/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "150-330 kr",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://runtgs.se/3st-3-sjoar-trail/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "3ST - 3 Sjöar Trail är ett traillopp i Sövde med start och mål vid stranden, som arrangeras som en aktivitet under Sjöfestivalen. Distansen 5 km är en lätt trailbana som passar alla åldrar och nivåer, medan 15 km är mer avancerad men fortfarande tillgänglig för alla, med några mer tekniska partier. Det finns även en promenadklass på 5 km. Banan är väl markerad och har elektronisk tidtagning.",
+    "course_highlights": [
+      "Start och mål vid stranden i Sövde",
+      "Bemannad station med mat och dryck på 15 km",
+      "Stavar är inte tillåtna"
+    ],
+    "additional": "Anmälningsavgiften anges till 150-195 kr / 330 kr och antalet platser är begränsat. Anmälan görs via Sportstiming och är bindande efter betalning. 2026 startade 15 km kl 10.15, 5 km kl 10.30 och promenadklassen kl 10.35. Barn och ungdomar får medalj och alla får en finisher-gåva.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "0492d0ee-5cf0-4d7b-9199-122b8e3f5c3f"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "lasse_majaloppet",
     "name": "Lasse-Majaloppet",
     "type": "trail",
@@ -33561,19 +35270,19 @@
     "organizer_submitted": true,
     "supplied_fields": [
       "location",
-      "name",
-      "longitude",
+      "distances",
+      "description",
+      "website",
+      "additional",
+      "organizer",
       "price_range",
+      "name",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
-      "website",
-      "organizer"
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -33588,6 +35297,77 @@
     ],
     "supplied_at": "20261117",
     "created_date": "20261117",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "halahult_blackwood_manor_trailrun",
+    "name": "Hålahult Blackwood Manor TrailRun",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260927",
+        "20260927"
+      ],
+      [
+        "20270905",
+        "20270905"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Hålahult, Örebro",
+    "latitude": 59.43872589999999,
+    "longitude": 15.1143388,
+    "county": "Örebro",
+    "nearest_city": "Örebro",
+    "nearby_cities": [
+      "Örebro"
+    ],
+    "distances": "[\"17\", \"7\"]",
+    "distance_m": [
+      17000,
+      7000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "17 km, 7 km",
+    "organizer": "Trailmakaren",
+    "contact": null,
+    "website": "https://trailmakaren.webnode.se/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://trailmakaren.webnode.se/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Hålahult Blackwood Manor TrailRun är ett traillopp med start och mål vid det före detta sanatoriet Hålahult vid foten av Kilsbergen, två mil norr om Örebro. Loppet arrangeras av Trailmakaren i samarbete med Almby IK och har två banor, 17 km Amboberget med cirka 400 höjdmeter och 7 km Falleraberget. Stigarna går mellan Falleraberget, Hålaberget och Amboberget med utsikt över Närkeslätten. Arrangören har meddelat att nästa upplaga går söndagen den 5 september 2027.",
+    "course_highlights": [
+      "Start över den gamla stenbron Suckarnas bro",
+      "Utsikt från Ambobergets branter och över Närkeslätten",
+      "360 graders panoramautsikt från Hålaberget"
+    ],
+    "additional": "På 17 km-banan finns en energistation vid cirka 9 km, och vätska och energi finns vid målgång för båda banorna. Efter loppet blir det häng vid Hålahults fikaservering. Anmälan är bindande men kan överlåtas till någon annan via arrangören. 2026 kostade 17 km 350-400 kr och 7 km 300-350 kr beroende på anmälningsdatum.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "5375a60c-114b-4809-9c0f-52876a239a83"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -34882,6 +36662,153 @@
     ],
     "consolidated_ids": [
       "e04b868f-ecb5-4ed5-a77d-af0e546b86c7"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "paltmilen",
+    "name": "Paltmilen",
+    "type": "road",
+    "type_local": "Landsväg",
+    "race_dates": [
+      [
+        "20260912",
+        "20260912"
+      ],
+      [
+        "20270911",
+        "20270911"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Badhusparken, Piteå",
+    "latitude": 65.3131896,
+    "longitude": 21.488858,
+    "county": "Norrbottens",
+    "nearest_city": "Umeå",
+    "nearby_cities": [],
+    "distances": "[\"10\", \"1.5\", \"0.5\"]",
+    "distance_m": [
+      10000,
+      1500,
+      500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "1500 meter"
+    ],
+    "distance_verbose": "10 km, 1500 meter, 0.5 km",
+    "organizer": "Pite Runners",
+    "contact": null,
+    "website": "https://www.laget.se/piterunners/News/8040179/Paltmilen-2026-Inbjudan",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.laget.se/piterunners/News/8040179/Paltmilen-2026-Inbjudan",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Paltmilen är ett stadslopp på 10 km mitt i Piteå som arrangeras av Pite Runners. Banan är platt och kontrollmätt och går längs några av stadens mest natursköna sträckor innan den avslutas i centrum via Sveriges första gågata. Start och mål ligger i Badhusparken, ett stenkast från centrum. 2026 kördes den andra upplagan.",
+    "course_highlights": [
+      "Platt och kontrollmätt 10 km-bana",
+      "Avslutning via Sveriges första gågata",
+      "Barnlopp på cirka 500 m och 1 500 m"
+    ],
+    "additional": "Efter målgång får alla deltagare medalj och något att dricka. I huvudloppet lottas priser ut, och de tre bästa i dam- och herrklassen tävlar om prispengar. Anmälan sker via Jp7an Timing.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [],
+    "consolidated_ids": [
+      "6cc46565-d1bb-46d5-9952-54df386b0ff9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "umemilen",
+    "name": "Umemilen",
+    "type": "road",
+    "type_local": "Landsväg",
+    "race_dates": [
+      [
+        "20260912",
+        "20260912"
+      ],
+      [
+        "20270911",
+        "20270911"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Nydalasjön, Umeå",
+    "latitude": 63.84338479999999,
+    "longitude": 20.342136,
+    "county": "Västerbottens",
+    "nearest_city": "Umeå",
+    "nearby_cities": [
+      "Umeå"
+    ],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": "IFK Umeå",
+    "contact": null,
+    "website": "https://ifkumea.web.sportadmin.se/sida/?ID=203614",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://ifkumea.web.sportadmin.se/sida/?ID=203614",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Umemilen är IFK Umeås stora motionslopp på hösten. Loppet är kontrollmätt och går på en lättlöpt milslinga runt Nydalasjön i Umeå. För de yngre löparna finns Lilla Umemilen. Anmälan görs via Race ID.",
+    "course_highlights": [
+      "Kontrollmätt milslinga runt Nydalasjön",
+      "Lättlöpt bana",
+      "Lilla Umemilen för yngre löpare"
+    ],
+    "additional": "IFK Umeå publicerar resultaten från loppet på klubbens webbplats.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.ifkumea.com/start/?ID=465022"
+    ],
+    "consolidated_ids": [
+      "04877ce5-0182-4854-b4a8-91741333f98e"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -36819,6 +38746,154 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "kraftloppet",
+    "name": "Kraftloppet",
+    "type": "relay",
+    "type_local": "Stafett",
+    "race_dates": [
+      [
+        "20260920",
+        "20260920"
+      ],
+      [
+        "20270919",
+        "20270919"
+      ],
+      [
+        "20270919",
+        "20270919"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Grosvads IP, Arena Grosvad, Finspång",
+    "latitude": 58.7152346,
+    "longitude": 15.8037779,
+    "county": "Östergötlands",
+    "nearest_city": "Linköping",
+    "nearby_cities": [],
+    "distances": "[\"31\"]",
+    "distance_m": [
+      31000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "31 km",
+    "organizer": "Finspångs AIK Friidrott",
+    "contact": null,
+    "website": "https://kraftloppet.se/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://kraftloppet.se/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Kraftloppet är ett stafettlopp i Finspång med sju sträckor på sammanlagt cirka 31 kilometer. Alla sträckor startar och slutar vid Grosvads IP, Arena Grosvad, och loppet går i naturskön terräng i Finspångs kommun. Det finns sträckor som passar alla, oavsett ålder eller löpform. Huvudarrangör är Finspångs AIK Friidrott. Upplagan 2026 gick söndagen den 20 september med start kl. 11.00.",
+    "course_highlights": [
+      "Sju sträckor på totalt cirka 31 km",
+      "Start och mål för alla sträckor vid Grosvads IP, Arena Grosvad",
+      "Klasser för dam-, herr- och mixlag"
+    ],
+    "additional": "Ett lag består av minst fyra olika löpare och en löpare får springa högst två sträckor. I mixklassen ska minst två damer ingå i laget. 2026 var anmälningsavgiften 1 000 kr per lag (1 500 kr efter den 12 september) och anmälan gjordes via AnmälMigNu.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https//kraftloppet.se"
+    ],
+    "consolidated_ids": [
+      "33c4a4c6-21e0-46d8-a2f1-ec229574daf9"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261023",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "lindeholmsstafetten",
+    "name": "Lindholmenstafetten",
+    "type": "relay",
+    "type_local": "Stafett",
+    "race_dates": [
+      [
+        "20260924",
+        "20260924"
+      ],
+      [
+        "20270923",
+        "20270923"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Vassen, Pumpgatan 10, Göteborg",
+    "latitude": 57.7096607,
+    "longitude": 11.9509763,
+    "county": "Västra Götalands",
+    "nearest_city": "Göteborg",
+    "nearby_cities": [
+      "Göteborg"
+    ],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": "Ullevi Friidrott (IK Vikingen)",
+    "contact": null,
+    "website": "https://ikvikingen.web.sportadmin.se/start/?ID=600308",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://ikvikingen.web.sportadmin.se/start/?ID=600308",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Lindholmenstafetten är ett stafettlopp på Lindholmen i Göteborg som arrangeras av Ullevi Friidrott som en del av Lindholmen Open Day. Lagen består av fyra löpare som springer 2,5 km var, totalt 10 km. Start och mål ligger vid Vassen på Pumpgatan 10. Upplagan 2026 gick torsdagen den 24 september kl. 18.00 med klasser för kvinnor, män och mix.",
+    "course_highlights": [
+      "4 x 2,5 km stafett på Lindholmen",
+      "Start och mål vid Vassen, Pumpgatan 10",
+      "Pris till företaget som anmäler flest lag"
+    ],
+    "additional": "2026 kostade ett lag 1 595 kr till och med 30 juni och därefter 1 795 kr, med 20 procent rabatt för den som anmälde minst fem lag. I startavgiften ingick en goodiebag. Efter målgång blev det After Run på Vassen med lättare förtäring och dryck.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://raceid.com/races/14986/about"
+    ],
+    "consolidated_ids": [
+      "b6dee458-b142-4a84-8d93-01f803880c9d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "tcs_lidingoloppet_lidingoloppshelgen",
     "name": "TCS Lidingöloppet (Lidingöloppshelgen)",
     "type": "trail",
@@ -37822,47 +39897,55 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Bengtsfors, Sverige",
-    "latitude": 59.028612,
-    "longitude": 12.226943,
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "11:30",
+    "location": "Långevi idrottsplats, Bengtsfors",
+    "latitude": 59.0218398,
+    "longitude": 12.2168432,
     "county": "Västra Götalands",
-    "nearest_city": "Karlstad",
+    "nearest_city": "Trollhättan",
     "nearby_cities": [],
-    "distances": "[\"22\", \"13\", \"9\"]",
+    "distances": "[\"22\", \"13\", \"9\", \"1.5\", \"1\", \"0.5\"]",
     "distance_m": [
       22000,
       13000,
-      9000
+      9000,
+      1500,
+      1000,
+      500
     ],
     "distance_keywords": [
       "Halvmarathon",
-      "10 km"
+      "10 km",
+      "1500 meter"
     ],
-    "distance_verbose": "22 km, 13 km, 9 km",
-    "organizer": null,
+    "distance_verbose": "22 km, 13 km, 9 km, 1500 meter, 1 km, 0.5 km",
+    "organizer": "Camp Dalsland",
     "contact": null,
-    "website": null,
+    "website": "https://www.campdalsland.se/?page_id=1665",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "350-400 kr (vandring 200 kr, barnlopp gratis)",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.campdalsland.se/?page_id=1665",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Dalsland X-Trail är ett terränglopp på stigar i skogen kring Bengtsfors, arrangerat av Camp Dalsland. Det finns tre löpdistanser, 9 km, 13 km och 22 km, där 22 km springer ett varv på 13 km-banan och ett på 9 km-banan, samt en vandringsklass på 13 km. Start och mål ligger på Långevi idrottsplats i Bengtsfors. Nästa upplaga går lördagen den 2 oktober 2027.",
+    "course_highlights": [
+      "22 km Utmaningen: ett varv på 13 km och ett på 9 km",
+      "Vandringsklass på 13 km med avstickare till utsiktspunkter",
+      "Gratis Mini-DXT för barn på 500 m, 1 km och 1,5 km"
+    ],
+    "additional": "Starttider: 13 km och 22 km kl. 11.30, 9 km kl. 12.00, vandringen kl. 09.30 och barnloppen cirka kl. 11.00. Startnummer hämtas från kl. 9.00 vid Camp Dalslands incheckningstält och efteranmälan går att göra på plats kl. 9.30-11.00. Vätskekontroller finns på banorna och omklädningsrum med dusch finns vid start och mål. Alla som fullföljer får en medalj.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [],
     "consolidated_ids": [
       "d26b9e38-8d03-484c-bf07-7046490444f4"
@@ -37894,41 +39977,43 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Avesta, Dalarna County, Sverige",
+    "location": "Slalombacken Åsbo, Avesta",
     "latitude": 60.14532999999999,
     "longitude": 16.1738399,
     "county": "Dalarnas",
     "nearest_city": "Borlänge",
     "nearby_cities": [],
-    "distances": "[\"6.7\"]",
+    "distances": "[\"6.706\"]",
     "distance_m": [
-      6700
+      6706
     ],
-    "distance_keywords": [
-      "Backyard Ultra"
-    ],
-    "distance_verbose": "6.7 km, Backyard Ultra",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "6.71 km",
+    "organizer": "Dalaportens OL",
     "contact": null,
-    "website": null,
+    "website": "https://www.dalaporten.se/sida/98378/avesta-backyard",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.dalaporten.se/sida/98378/avesta-backyard",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Avesta Backyard Ultra är en backyardtävling i Avesta som arrangeras av Dalaportens OL. Varvet är 6 706 meter, går mestadels på gång- och cykelbana och utgår från Åsbo friluftsområde med start och mål vid Slalombacken Åsbo. Varje hel timme startar ett nytt varv med gemensam start och tävlingen pågår tills bara en deltagare är kvar. Upplagan 2026 gick lördagen den 3 oktober med start kl. 11.00.",
+    "course_highlights": [
+      "6,7 km varv med gemensam start varje hel timme",
+      "Start och mål vid Slalombacken Åsbo",
+      "Resultat finns från alla upplagor sedan 2018"
+    ],
+    "additional": "Vid varvningen finns en välutrustad depå med dryck och energi, men ingen vätskedepå ute på varvet. Alla som fullföljt minst ett varv får ett slutresultat. 2026 gjordes anmälan via mejl till AvestaUltra@outlook.com, avgiften var 350 kr och max 80 deltagare.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [],
     "consolidated_ids": [
       "51cd6440-2a07-4a9d-8de5-2f941cc6b161"
@@ -40100,19 +42185,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -41437,78 +43522,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261103",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "bataljonsmasterskap_25hvbat_terrang",
-    "name": "Bataljonsmästerskap 25HVBAT terräng",
-    "type": "terrain",
-    "type_local": "Terräng",
-    "race_dates": [
-      [
-        "20261027",
-        "20261027"
-      ],
-      [
-        "20271026",
-        "20271026"
-      ],
-      [
-        "20271026",
-        "20271026"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Lida friluftsgård, Tullinge, Botkyrka, Sverige",
-    "latitude": 59.1635347,
-    "longitude": 17.8800303,
-    "county": "Stockholms",
-    "nearest_city": "Stockholm",
-    "nearby_cities": [
-      "Stockholm"
-    ],
-    "distances": "[\"5.8\"]",
-    "distance_m": [
-      5800
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5.8 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [],
-    "consolidated_ids": [
-      "77ff1f4b-8ab3-4243-ba47-bc6be3587691"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261106",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -43167,6 +45180,86 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "satila_trail",
+    "name": "Sätila Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261107",
+        "20261107"
+      ],
+      [
+        "20271113",
+        "20271113"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Lygnevi IP, Sätila",
+    "latitude": 57.5425354,
+    "longitude": 12.4333167,
+    "county": "Västra Götalands",
+    "nearest_city": "Göteborg",
+    "nearby_cities": [],
+    "distances": "[\"85\", \"43\", \"22\", \"10\", \"5\"]",
+    "distance_m": [
+      85000,
+      43000,
+      22000,
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "50 miles",
+      "Marathon",
+      "Halvmarathon",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "85 km, 43 km, 22 km, 10 km, 5 km",
+    "organizer": "OK Räven",
+    "contact": null,
+    "website": "https://www.satilatrail.se/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "200-1300 kr",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.satilatrail.se/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Sätila Trail är ett traillopp runt sjön Lygnern med start och mål på Lygnerns strand i Sätila, arrangerat av orienteringsklubben OK Räven. Distanserna är 5, 10, 22, 43 och 85 km och går på stigar, skogsvägar och grusvägar genom urskog, förbi sjöar, genom Äskhults gamla kulturbygd och över Texelberg. Längsta banan, Lygnernslingan på 85 km, går runt hela sjön. Nästa upplaga går lördagen den 13 november 2027.",
+    "course_highlights": [
+      "Lygnernslingan 85 km runt hela Lygnern",
+      "Passage genom Äskhults gamla kulturbygd och över Texelberg",
+      "Fem distanser från 5 till 85 km"
+    ],
+    "additional": "Anmälan till 2027 öppnar den 1 december 2026. Lygnernslingan har max 150 löpare och anmälan stänger en vecka före loppet, övriga distanser är öppna för anmälan fram till tävlingsdagen. Priser till och med 30 september/från 1 oktober: 85 km 1 050/1 300 kr, 43 km 850/1 000 kr, 22 km 450/600 kr, 10 km 300/400 kr, 5 km 200 kr. Start och mål vid Lygnevi IP, och på 85 km finns en dropbag vid Äskhult.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://itra.run/Races/RaceDetails/Sätila.Trail.2026.85km/2026/122830"
+    ],
+    "consolidated_ids": [
+      "5f601e41-6376-4894-b9c6-e5ed8351120b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261116",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "granso_trailrun",
     "name": "Gränsö Trailrun",
     "type": "trail",
@@ -43698,18 +45791,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -43780,17 +45873,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -43861,20 +45954,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -43969,18 +46062,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
-      "organizer"
+      "location",
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44071,17 +46164,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44153,18 +46246,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44272,18 +46365,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44374,20 +46467,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44467,20 +46560,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44551,17 +46644,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44657,19 +46750,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.7,
@@ -44764,19 +46857,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.65,
@@ -44863,20 +46956,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -44953,20 +47046,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45036,18 +47129,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45136,18 +47229,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45237,20 +47330,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45334,17 +47427,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "website"
+      "location",
+      "website",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45416,18 +47509,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45514,18 +47607,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "additional",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45612,19 +47705,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45698,20 +47791,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45743,6 +47836,91 @@
         "model_confidence": 0.99
       }
     ],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "ostgota_ultra_trail",
+    "name": "Östgöta Ultra Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20260926",
+        "20260926"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "07:00",
+    "location": "Kisa",
+    "latitude": 57.94305020733503,
+    "longitude": 15.55858611711301,
+    "county": "Östergötlands",
+    "nearest_city": "Linköping",
+    "nearby_cities": [],
+    "distances": "[\"165\", \"110\", \"55\"]",
+    "distance_m": [
+      165000,
+      110000,
+      55000
+    ],
+    "distance_keywords": [
+      "100 miles",
+      "100 km",
+      "50 km"
+    ],
+    "distance_verbose": "165 km, 110 km, 55 km",
+    "organizer": "Östgöta Ultra Trail",
+    "contact": "ostgotaultratrail@gmail.com",
+    "website": "https://www.ostgotaultratrail.com/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": "625-1175",
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.ostgotaultratrail.com/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "På Östgöta Ultra Trail stimuleras sinnet samtidigt som kroppen får jobba och vi har valt trakterna väster om Kisa för sina vackra utsiktsplatser, stigar och sjöar för att förstärka detta. På vägen till målet får du ta dig över stock och sten, möta trevliga funktionärer och åka båt. Väl framme i mål får du mat, dryck och medalj och tid att prata och hänga med andra löpare.",
+    "course_highlights": [],
+    "additional": "",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "distances",
+      "description",
+      "name",
+      "type",
+      "start_time",
+      "contact",
+      "race_dates",
+      "latitude",
+      "location",
+      "website",
+      "organizer",
+      "price_range",
+      "longitude"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://itra.run/Races/RaceDetails/Östgöta.Ultra.Trail.165K/2026/113551",
+      "trailrunning_sweden_se"
+    ],
+    "consolidated_ids": [
+      "e114ef90-52b6-4fce-84b3-7204ccd3d8ea"
+    ],
+    "supplied_ids": [
+      "0fkrdACA9u1wDbJwqK2H"
+    ],
+    "supplied_at": "20260101",
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
@@ -45799,18 +47977,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -45903,17 +48081,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46024,19 +48202,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46115,17 +48293,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
-      "website"
+      "location",
+      "website",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46201,19 +48379,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46281,19 +48459,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46370,17 +48548,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -46458,20 +48636,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46548,19 +48726,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46630,19 +48808,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46722,19 +48900,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46826,20 +49004,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -46938,19 +49116,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47030,18 +49208,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47108,17 +49286,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "organizer"
+      "location",
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47186,20 +49364,20 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47275,17 +49453,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47355,18 +49533,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47439,18 +49617,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47524,18 +49702,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47609,18 +49787,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47697,20 +49875,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47812,19 +49990,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -47922,20 +50100,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48015,20 +50193,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48042,239 +50220,6 @@
       "3ad550b4-e93e-47a1-a176-3e2b41b074d6"
     ],
     "supplied_at": "20260519",
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "brakneans_dalgang_25_k",
-    "name": "Bräkneåns Dalgång 25 K",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260926",
-        "20260926"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "09:00:00",
-    "location": "Ekebacksvägen 1, 37261 Bräkne-hoby",
-    "latitude": 56.2263864451954,
-    "longitude": 15.1119089126587,
-    "county": "Blekinge",
-    "nearest_city": "Karlskrona",
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandad distans",
-    "organizer": "Ute tillsammans",
-    "contact": "ultrarunning@utetillsammans.se",
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "350-550",
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Tekniskt trail-lopp som går genom Bräkneåns dalgång med start i Hoby Ekebacke. Banan är delvis teknisk men innehåller även partier med asfalt.\nBanan har en totalstigning på ca 400 höjdmeter.\nGenerös maxtid på 5 timmar. Vilket ger ett snittempo på  max 12 min/km.\nMålgången är i Hoby Eckebacke.\n\nBanan kommer att vara tydligt uppmärkt och det kommer även att finnas en GPX-fil som ni kan ladda ner till er klocka eller mobil.\nEnergi/vätskestation kommer att finnas halvvägs, samt vid start och mål.\n\nAlla som fullföljer loppet inom tidsramen får en fin medalj från RawCut studio.",
-    "course_highlights": [],
-    "additional": "Start och mål i Ekebacken Bräkne-hoby\n\nDam/herrklass",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "location",
-      "name",
-      "longitude",
-      "contact",
-      "price_range",
-      "race_dates",
-      "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "organizer"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "supplied"
-    ],
-    "consolidated_ids": [
-      "e870f378-ca75-4b57-868e-13430b1e8af5"
-    ],
-    "supplied_ids": [
-      "d96512fd-5741-489b-bbc0-0f95f2657867"
-    ],
-    "supplied_at": "20260517",
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "hoby_backyard_ultra_24_h",
-    "name": "Hoby Backyard Ultra 24 H",
-    "type": "backyard",
-    "type_local": "Backyard Ultra",
-    "race_dates": [
-      [
-        "20260926",
-        "20260927"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "10:00:00",
-    "location": "Ekebacksvägen 1, 37261 Bräkne-hoby",
-    "latitude": 56.2261144723884,
-    "longitude": 15.1115334033966,
-    "county": "Blekinge",
-    "nearest_city": "Karlskrona",
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [
-      "Backyard Ultra"
-    ],
-    "distance_verbose": "Backyard Ultra",
-    "organizer": "Ute tillsammans",
-    "contact": "ultrarunning@utetillsammans.e",
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "595:-  -795:-",
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Hoby Backyard Ultra 24H. Start och mål i Ekebacken i Bräkne-hoby lördagen den 26/9 kl 10:00. \nBanan är samma som tidigare med varierande terräng och cirka 60 höjdmeter. \nBanan är kontrollmätt med mäthjul och är 6706 meter. \nVarje varv startar varje hel timme. För att klara varvet och få fortsätta med nästa varv måste varje varv klaras inom 1 timme. \n\nEnergi, dryck, sportdryck samt varma mål kommer serveras under hela loppet till alla deltagare.\n\nAlla som fullföljer minst 1 varv inom tidsramen kommer få en snygg medalj från RawCut Studio.\n\nAlla deltagare har möjlighet att få vara under tak inne i Rotundan i Ekebacken under hela loppet. \n\nSjukvårdskunniga funktionärer finns på plats under hela loppet.\n\nVälkommen till ännu en grym löparfest!",
-    "course_highlights": [],
-    "additional": "Start och målgång i Ekebacken i Bräkne-Hoby. \n\nDam och Herrklass.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "location",
-      "name",
-      "longitude",
-      "contact",
-      "price_range",
-      "race_dates",
-      "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
-      "organizer"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "supplied"
-    ],
-    "consolidated_ids": [
-      "09a47965-7c91-40ed-b0c9-7d8c7b1662ad"
-    ],
-    "supplied_ids": [
-      "a1ccc27c-eb3d-4bf2-816f-981b4ae3bd56"
-    ],
-    "supplied_at": "20260517",
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "vildmarksleden_100_miles",
-    "name": "Vildmarksleden 100 miles",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20260926",
-        "20260927"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "08:00:00",
-    "location": "Ekebacksvägen 1, 37261 Bräkne-hoby",
-    "latitude": 56.2261240155501,
-    "longitude": 15.1116728782654,
-    "county": "Blekinge",
-    "nearest_city": "Karlskrona",
-    "nearby_cities": [],
-    "distances": "[\"160.9\"]",
-    "distance_m": [
-      160900
-    ],
-    "distance_keywords": [
-      "100 miles"
-    ],
-    "distance_verbose": "100 miles",
-    "organizer": "Ute tillsammans",
-    "contact": "ultrarunning@utetillsammans.se",
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "1195-1395",
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Första upplagan av Vildmarksleden 100 Miles, exklusivt med enbart 25 platser.\n\nTraillopp med vändbana som tar dig från Hoby Ekebacke till Eringsboda och sedan tillbaka till Hoby Ekebacke. \n\nBanan går på valda delar av Vildmarksleden som består av teknisk trail, grusväg och asfalt. Cirka 1850 höjdmeter. \n\n1 dropbox som transporteras av arrangör till vändplats ( 50 miles ) Eringsboda. Påfyllning av vätska/energi på flera ställen längs med banan. \n\nGPX-fil i klocka eller mobil är obligatoriskt. \n\nAllt deltagande sker på egen risk och deltagare har ansvar att ha den kunskap och utrustning som krävs för att genomföra loppet.",
-    "course_highlights": [],
-    "additional": "start och mål i Ekebacken Bräkne-hoby\ndam och herrklass",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "location",
-      "name",
-      "longitude",
-      "contact",
-      "price_range",
-      "race_dates",
-      "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
-      "organizer"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "supplied"
-    ],
-    "consolidated_ids": [
-      "71a30d62-d3f6-4f92-981d-a24f548368c9"
-    ],
-    "supplied_ids": [
-      "b0c5e48f-2b2f-4d36-bfe3-471e8ef20eb8"
-    ],
-    "supplied_at": "20260517",
     "created_date": "20261023",
     "editors_uid": [],
     "pipeline_log": [],
@@ -48330,18 +50275,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48413,16 +50358,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48512,17 +50457,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
-      "website"
+      "location",
+      "website",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48594,17 +50539,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48670,19 +50615,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48770,18 +50715,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48854,19 +50799,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -48961,18 +50906,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49066,19 +51011,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49182,16 +51127,16 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49279,17 +51224,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49384,20 +51329,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49471,18 +51416,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49578,18 +51523,18 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
       "contact",
       "race_dates",
       "latitude",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49684,20 +51629,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49791,20 +51736,20 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
+      "location",
       "website",
-      "organizer"
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -49857,14 +51802,14 @@
     "distance_verbose": "Marathon, Halvmarathon",
     "organizer": "Apladalens LK på uppdrag av Svenska Marathonsällskapet",
     "contact": "micael@apladalenslk.se",
-    "website": null,
+    "website": "https://marathonsallskapet.se/vintermarathon-14-november-2026/",
     "fb_link": null,
     "ig_link": null,
     "price_range": "400 kr för maraton, 200 kr för halvmaraton. Svenska Marathonsällskapets medlemmar får 200 kr i rabatt.",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://marathonsallskapet.se/vintermarathon-14-november-2026/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
     "description": "Svenska Marathonsällskapets Vintermaraton genomförs årligen på olika platser i Sverige. 2026 är det Apladalens LK som på Svenska Marathonsällskapets uppdrag arrangerar loppet i Värnamo.",
@@ -49874,19 +51819,19 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "location",
+      "distances",
+      "description",
+      "additional",
       "name",
-      "longitude",
+      "type",
+      "start_time",
       "contact",
-      "price_range",
       "race_dates",
       "latitude",
-      "start_time",
-      "type",
-      "additional",
-      "description",
-      "distances",
-      "organizer"
+      "location",
+      "organizer",
+      "price_range",
+      "longitude"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
