@@ -74,6 +74,42 @@
       "destination": "/en/race-calendar/cities/warsaw/",
       "permanent": true,
       "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/mother_of_dragons_virtual_challenge",
+      "destination": "/kalendarz-biegow/miasta/gdynia/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/mother_of_dragons_virtual_challenge/",
+      "destination": "/kalendarz-biegow/miasta/gdynia/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/mother_of_dragons_virtual_challenge/:path*",
+      "destination": "/kalendarz-biegow/miasta/gdynia/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/mother_of_dragons_virtual_challenge",
+      "destination": "/en/race-calendar/cities/gdynia/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/mother_of_dragons_virtual_challenge/",
+      "destination": "/en/race-calendar/cities/gdynia/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/mother_of_dragons_virtual_challenge/:path*",
+      "destination": "/en/race-calendar/cities/gdynia/",
+      "permanent": true,
+      "market": "pl"
     }
   ]
 }
