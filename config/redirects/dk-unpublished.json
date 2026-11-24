@@ -362,6 +362,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "dk"
+    },
+    {
+      "source": "/lobsider/frivilligfest_2026",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/frivilligfest_2026/",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/frivilligfest_2026/:path*",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/frivilligfest_2026",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/frivilligfest_2026/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/frivilligfest_2026/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
     }
   ]
 }
