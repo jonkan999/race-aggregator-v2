@@ -23,7 +23,8 @@ const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
 const absoluteCurrent = currentUrl && /^https?:/.test(currentUrl) ? currentUrl : undefined;
 const absoluteAlternate = alternateUrl && /^https?:/.test(alternateUrl) ? alternateUrl : undefined;
 const hreflangs = disableCanonical ? [] : buildHreflangLinks({ locale, nativeLang, currentUrl: absoluteCurrent, alternateUrl: absoluteAlternate });
-const fallbackImage = baseUrl ? `${baseUrl}/common_images/logo100px.jpg` : undefined;
+const fallbackImage = baseUrl ? `${baseUrl}/og/${country.toLowerCase()}.jpg` : undefined;
+const usingFallbackImage = !image;
 const ogImage = image ? (/^https?:/.test(image) ? image : `${baseUrl}${image.startsWith('/') ? '' : '/'}${image}`) : fallbackImage;
 const siteName = String(nativeContent.page_name ?? '').trim();
 const ogLocale = locale === 'en' ? 'en_GB' : `${nativeLang}_${country.toUpperCase()}`;
@@ -37,7 +38,9 @@ const ogLocale = locale === 'en' ? 'en_GB' : `${nativeLang}_${country.toUpperCas
 {siteName && <meta property="og:site_name" content={siteName} />}
 <meta property="og:locale" content={ogLocale} />
 {ogImage && <meta property="og:image" content={ogImage} />}
-<meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+{ogImage && usingFallbackImage && <meta property="og:image:width" content="1200" />}
+{ogImage && usingFallbackImage && <meta property="og:image:height" content="630" />}
+<meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
 <meta name="twitter:title" content={title} />
 {description && <meta name="twitter:description" content={description} />}
 {ogImage && <meta name="twitter:image" content={ogImage} />}
