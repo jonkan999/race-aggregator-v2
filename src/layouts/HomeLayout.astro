@@ -1,4 +1,5 @@
 ---
+import '../styles/fonts.css';
 import SeoHead from '../components/SeoHead.astro';
 import { fitMetaDescription } from '../lib/seoMeta.js';
 import '../styles/legacy/legacy-race-list.css';
@@ -42,13 +43,42 @@ const baseUrl = String(content.base_url ?? '').replace(/\/$/, '');
 const currentPath = Astro.url.pathname;
 const currentUrl = baseUrl ? `${baseUrl}${currentPath}` : currentPath;
 const alternateUrl = alternateHref && baseUrl ? `${baseUrl}${alternateHref}` : alternateHref;
+const siteName = String(content.page_name ?? '').trim();
+const siteRoot = baseUrl ? `${baseUrl}/` : '/';
+const websiteId = `${siteRoot}#website`;
+const organizationId = `${siteRoot}#organization`;
 const pageSchema = JSON.stringify({
   '@context': 'https://schema.org',
-  '@type': 'WebPage',
-  name: title,
-  description,
-  url: currentUrl,
-  inLanguage: lang,
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      name: siteName || title,
+      url: siteRoot,
+      inLanguage: lang,
+      publisher: { '@id': organizationId },
+    },
+    {
+      '@type': 'Organization',
+      '@id': organizationId,
+      name: siteName || title,
+      url: siteRoot,
+      logo: {
+        '@type': 'ImageObject',
+        url: baseUrl ? `${baseUrl}/common_images/logo512.png` : '/common_images/logo512.png',
+        width: 512,
+        height: 512,
+      },
+    },
+    {
+      '@type': 'WebPage',
+      name: title,
+      description,
+      url: currentUrl,
+      inLanguage: lang,
+      isPartOf: { '@id': websiteId },
+    },
+  ],
 });
 const metaDescription = fitMetaDescription(description, [title, String(content.page_name ?? '')]);
 const newsletterContext: NewsletterPopupContext = {
@@ -68,8 +98,7 @@ const newsletterContext: NewsletterPopupContext = {
     <title>{title}</title>
     <SeoHead country={country} locale={locale} content={content} title={title} description={metaDescription} currentUrl={currentUrl} alternateUrl={alternateUrl} disableCanonical={disableCanonical} />
     {noindex && <meta name="robots" content="noindex" />}
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin />
     <GoogleAdsConsent />
     <script type="application/ld+json" set:html={pageSchema} />
     <slot name="head" />

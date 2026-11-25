@@ -1,4 +1,5 @@
 ---
+import '../styles/fonts.css';
 import SeoHead from '../components/SeoHead.astro';
 import { fitMetaDescription } from '../lib/seoMeta.js';
 import '../styles/legacy/legacy-race-list.css';
@@ -50,8 +51,7 @@ const metaDescription = fitMetaDescription(description, [title, String(content.p
     <title>{title}</title>
     <SeoHead country={country} locale={locale} content={content} title={title} description={metaDescription} currentUrl={currentUrl} alternateUrl={alternateUrl} disableCanonical={disableCanonical} />
     {noindex && <meta name="robots" content="noindex" />}
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
     <GoogleAdsConsent />
     <script is:inline set:html={`window.__MARKET_ROUTE_TARGETS__ = ${marketRouteTargetsJson};`} />
