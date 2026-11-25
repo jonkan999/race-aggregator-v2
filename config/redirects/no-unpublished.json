@@ -1,0 +1,43 @@
+{
+  "id": "no-unpublished",
+  "market": "no",
+  "note": "Unpublished NO races kept in Supabase (published=false, never deleted). 308 the retired page to the city or calendar listing. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated). Delisting record: race-collector-v2 data/countries/no/delisted/*.csv.",
+  "redirects": [
+    {
+      "source": "/lopssider/lierlopet_14",
+      "destination": "/terminliste/byer/oslo/",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/lierlopet_14/",
+      "destination": "/terminliste/byer/oslo/",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/lopssider/lierlopet_14/:path*",
+      "destination": "/terminliste/byer/oslo/",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/lierlopet_14",
+      "destination": "/en/race-calendar/cities/oslo/",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/lierlopet_14/",
+      "destination": "/en/race-calendar/cities/oslo/",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/lierlopet_14/:path*",
+      "destination": "/en/race-calendar/cities/oslo/",
+      "permanent": true,
+      "market": "no"
+    }
+  ]
+}
