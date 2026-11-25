@@ -9,6 +9,7 @@ import {
   mergeVercelConfig,
   mergeVercelRedirects,
   redirectToRoute,
+  sanitizeRedirects,
 } from '../scripts/merge-vercel-redirects.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -188,5 +189,43 @@ test('real config stays under the Vercel 2048 route limit for every market', asy
     const merged = mergeVercelConfig(vercelJson, filterConfigsForMarket(all, code));
     const total = merged.routes.length + merged.redirects.length;
     assert.ok(total < 2048, `${code}: ${total} routes`);
+  }
+});
+
+test('sanitizeRedirects drops self-loops, collapses chains and drops cycles', () => {
+  const out = sanitizeRedirects([
+    { source: '/p/a/:path*', destination: '/p/a/:path*' },
+    { source: '/p/self', destination: '/p/self/' },
+    { source: '/p/b/:path*', destination: '/p/c/:path*' },
+    { source: '/p/c/:path*', destination: '/p/d/:path*' },
+    { source: '/p/x/:path*', destination: '/p/y/:path*' },
+    { source: '/p/y/:path*', destination: '/p/x/:path*' },
+    { source: '/p/m', destination: '/p/n/' },
+    { source: '/p/m/:path*', destination: '/p/n/:path*' },
+    { source: '/p/n/:path*', destination: '/cal/' },
+    { source: '/keep', destination: '/elsewhere/' },
+  ]);
+  assert.deepEqual(out, [
+    { source: '/p/b/:path*', destination: '/p/d/:path*' },
+    { source: '/p/c/:path*', destination: '/p/d/:path*' },
+    { source: '/p/m', destination: '/cal/' },
+    { source: '/p/m/:path*', destination: '/cal/' },
+    { source: '/p/n/:path*', destination: '/cal/' },
+    { source: '/keep', destination: '/elsewhere/' },
+  ]);
+});
+
+test('real redirect config has no self-loops, cycles or two-hop chains for any market', async () => {
+  const { filterConfigsForMarket, vercelRedirectsFromConfigs } = await import('../scripts/merge-vercel-redirects.mjs');
+  const all = loadRedirectConfigs(path.join(repoRoot, 'config/redirects'));
+  const markets = JSON.parse(fs.readFileSync(path.join(repoRoot, 'config/deploy-markets.json'), 'utf8')).markets;
+  const base = (value) => value.replace(/\/:path\*$/, '').replace(/\/+$/, '');
+  for (const { marketCode } of markets) {
+    const redirects = vercelRedirectsFromConfigs(filterConfigsForMarket(all, marketCode));
+    const sources = new Set(redirects.map((redirect) => base(redirect.source)));
+    for (const redirect of redirects) {
+      assert.notEqual(base(redirect.source), base(redirect.destination), `${marketCode}: self-loop ${redirect.source}`);
+      assert.ok(!sources.has(base(redirect.destination)), `${marketCode}: chain ${redirect.source} -> ${redirect.destination}`);
+    }
   }
 });

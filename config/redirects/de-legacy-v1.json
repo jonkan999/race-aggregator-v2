@@ -8,6 +8,7 @@
   "fallbackRoutes": [
     { "src": "^/rennseiten/.+$", "destination": "/laufkalender/" },
     { "src": "^/race-pages/(.+?)/?$", "destination": "/en/race-pages/$1/" },
+    { "src": "^/en/race-pages/.+$", "destination": "/en/race-calendar/" },
     { "src": "^/race-calendar(?:/.*)?$", "destination": "/en/race-calendar/" },
     { "src": "^/laufkalender/([^/]+)/alle-laufarten/?$", "destination": "/laufkalender/$1/" },
     { "src": "^/laufkalender/([^/]+)/alle-laufarten/(.+?)/?$", "destination": "/laufkalender/$1/$2/" },

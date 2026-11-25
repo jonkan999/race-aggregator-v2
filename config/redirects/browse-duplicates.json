@@ -1,0 +1,42 @@
+{
+  "id": "browse-duplicates",
+  "note": "Retired duplicate browse pages: a race type nested under a category with the same slug (type/category = backyard-ultra/backyard-ultra) listed exactly the category page. See isRedundantTypeCategoryCombination in src/lib/browseSeoIndexing.js. Hand-maintained.",
+  "redirects": [
+    {
+      "source": "/loppkalender/alla-lan/backyard-ultra/backyard-ultra",
+      "destination": "/loppkalender/alla-lan/backyard-ultra/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppkalender/alla-lan/backyard-ultra/backyard-ultra/",
+      "destination": "/loppkalender/alla-lan/backyard-ultra/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/loppkalender/alla-lan/backyard-ultra/backyard-ultra/:path*",
+      "destination": "/loppkalender/alla-lan/backyard-ultra/",
+      "permanent": true,
+      "market": "se"
+    },
+    {
+      "source": "/laufkalender/alle-bundeslaender/backyard-ultra/backyard-ultra",
+      "destination": "/laufkalender/alle-bundeslaender/backyard-ultra/",
+      "permanent": true,
+      "market": "de"
+    },
+    {
+      "source": "/laufkalender/alle-bundeslaender/backyard-ultra/backyard-ultra/",
+      "destination": "/laufkalender/alle-bundeslaender/backyard-ultra/",
+      "permanent": true,
+      "market": "de"
+    },
+    {
+      "source": "/laufkalender/alle-bundeslaender/backyard-ultra/backyard-ultra/:path*",
+      "destination": "/laufkalender/alle-bundeslaender/backyard-ultra/",
+      "permanent": true,
+      "market": "de"
+    }
+  ]
+}

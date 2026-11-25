@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 import { getActiveMarketCode, resolveCountriesRoot } from './lib/market-config.mjs';
+import { compileRedirectMatchers, isRedirectSource } from './lib/redirect-match.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -39,9 +40,22 @@ export function toServingBaseUrl(value) {
   return `${url.protocol}//${url.host}`;
 }
 
-function isNoindexHtml(filePath) {
-  const html = fs.readFileSync(filePath, 'utf8');
+function loadRedirectMatchers() {
+  const vercelPath = path.join(root, 'vercel.json');
+  if (!fs.existsSync(vercelPath)) return [];
+  return compileRedirectMatchers(JSON.parse(fs.readFileSync(vercelPath, 'utf8')));
+}
+
+export function isNoindexHtmlSource(html) {
   return /<meta\s+name="robots"\s+content="[^"]*noindex/i.test(html);
+}
+
+/** `<meta property="og:updated_time">` on race pages -> `YYYY-MM-DD` for `<lastmod>`. */
+export function extractLastmod(html) {
+  const match = html.match(/<meta\s+property="og:updated_time"\s+content="([^"]+)"/i);
+  if (!match) return null;
+  const date = new Date(match[1]);
+  return Number.isNaN(date.getTime()) ? null : date.toISOString().slice(0, 10);
 }
 
 function walkHtmlFiles(dir, files = []) {
@@ -107,11 +121,13 @@ function xmlEscape(value) {
     .replaceAll("'", '&apos;');
 }
 
-function buildSitemapXml(urls) {
+function buildSitemapXml(urls, lastmods = new Map()) {
   const lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'];
   for (const url of urls) {
     lines.push('  <url>');
     lines.push(`    <loc>${xmlEscape(url)}</loc>`);
+    const lastmod = lastmods.get(url);
+    if (lastmod) lines.push(`    <lastmod>${lastmod}</lastmod>`);
     lines.push('  </url>');
   }
   lines.push('</urlset>');
@@ -125,17 +141,33 @@ function main() {
 
   const configuredCountries = new Set(listConfiguredCountries());
   const baseUrl = loadDefaultBaseUrl();
-  const urls = walkHtmlFiles(distDir)
-    .filter((filePath) => !isNoindexHtml(filePath))
-    .map((filePath) => path.relative(distDir, filePath))
-    .map((relativePath) => toRoutePath(relativePath))
-    .filter((routePath) => shouldIncludeRoute(routePath, configuredCountries))
-    .map((routePath) => (routePath === '/' ? `${baseUrl}/` : `${baseUrl}${routePath}`))
-    .filter((url, index, values) => values.indexOf(url) === index);
+  const redirectMatchers = loadRedirectMatchers();
+  const lastmods = new Map();
+  let skippedRedirectSources = 0;
+  const urls = [];
+  const seen = new Set();
+  for (const filePath of walkHtmlFiles(distDir)) {
+    const routePath = toRoutePath(path.relative(distDir, filePath));
+    if (!shouldIncludeRoute(routePath, configuredCountries)) continue;
+    const html = fs.readFileSync(filePath, 'utf8');
+    if (isNoindexHtmlSource(html)) continue;
+    if (isRedirectSource(routePath, redirectMatchers)) {
+      skippedRedirectSources += 1;
+      continue;
+    }
+    const url = routePath === '/' ? `${baseUrl}/` : `${baseUrl}${routePath}`;
+    if (seen.has(url)) continue;
+    seen.add(url);
+    urls.push(url);
+    const lastmod = extractLastmod(html);
+    if (lastmod) lastmods.set(url, lastmod);
+  }
   const canonicalUrls = preferAsciiCanonical(urls).sort((a, b) => a.localeCompare(b));
 
-  fs.writeFileSync(sitemapPath, buildSitemapXml(canonicalUrls), 'utf8');
-  console.log(`Wrote ${canonicalUrls.length} sitemap URLs to ${path.relative(root, sitemapPath)}`);
+  fs.writeFileSync(sitemapPath, buildSitemapXml(canonicalUrls, lastmods), 'utf8');
+  console.log(
+    `Wrote ${canonicalUrls.length} sitemap URLs (${lastmods.size} with lastmod, ${skippedRedirectSources} redirect sources skipped) to ${path.relative(root, sitemapPath)}`,
+  );
 
   const robots = ['User-agent: *', 'Allow: /', 'Disallow: /auth/', 'Disallow: /en/auth/', '', `Sitemap: ${baseUrl}/sitemap.xml`, ''];
   fs.writeFileSync(path.join(distDir, 'robots.txt'), robots.join('\n'), 'utf8');

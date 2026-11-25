@@ -12,10 +12,10 @@ const root = path.join(__dirname, '..');
 const countriesRoot = resolveCountriesRoot(root);
 
 const legacyListSelect =
-  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description )';
+  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, updated_at, race_translations ( locale, name, type_local, distance_verbose, description )';
 
 const listSelect =
-  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, race_translations ( locale, name, type_local, distance_verbose, description, additional, course_highlights )';
+  'id, domain_name, county, race_type, origin_country, race_dates, latitude, longitude, distance_m, website, payload, updated_at, race_translations ( locale, name, type_local, distance_verbose, description, additional, course_highlights )';
 
 function missingTranslationDetailColumns(error) {
   if (!error || typeof error !== 'object') return false;

@@ -23,6 +23,8 @@ export type RaceListRow = {
   distance_m: unknown;
   website: string | null;
   payload?: Record<string, unknown> | null;
+  /** Last time the row changed in Supabase (used for sitemap lastmod / og:updated_time). */
+  updated_at?: string | null;
   race_translations: RaceTranslationRow[] | null;
 };
 

@@ -64,13 +64,65 @@ export function filterConfigsForMarket(configs, market) {
     }));
 }
 
+const PATH_STAR = '/:path*';
+const MAX_REDIRECT_HOPS = 10;
+
+/** `/a/b/:path*`, `/a/b/` and `/a/b` all share the base `/a/b`. */
+function redirectBase(value) {
+  let base = String(value ?? '');
+  if (base.endsWith(PATH_STAR)) base = base.slice(0, -PATH_STAR.length);
+  return base.replace(/\/+$/, '');
+}
+
+/**
+ * Make a redirect list safe to serve:
+ *  - drop self-redirects (source base == destination base). They loop forever and make a live page
+ *    unreachable (the collector used to emit them when a merge survivor flipped between runs);
+ *  - collapse chains (a -> b, b -> c  =>  a -> c) so crawlers and users take a single 308;
+ *  - drop redirects that sit on a cycle (a -> b -> a): there is no valid target to send them to.
+ * Pure and order-preserving; unrelated redirects are returned untouched.
+ */
+export function sanitizeRedirects(redirects) {
+  const live = redirects.filter(
+    (redirect) => redirectBase(redirect.source) !== redirectBase(redirect.destination),
+  );
+  const byBase = new Map();
+  for (const redirect of live) {
+    const base = redirectBase(redirect.source);
+    if (!byBase.has(base)) byBase.set(base, redirect);
+  }
+  const resolved = [];
+  for (const redirect of live) {
+    let destination = redirect.destination;
+    const seen = new Set([redirectBase(redirect.source)]);
+    let cyclic = false;
+    for (let hop = 0; hop < MAX_REDIRECT_HOPS; hop += 1) {
+      const key = redirectBase(destination);
+      const next = byBase.get(key);
+      if (!next) break;
+      if (seen.has(key)) {
+        cyclic = true;
+        break;
+      }
+      seen.add(key);
+      // A fixed destination (no :path*) wins; two path-star redirects keep forwarding the suffix.
+      destination = next.destination;
+    }
+    if (cyclic) continue;
+    resolved.push(destination === redirect.destination ? redirect : { ...redirect, destination });
+  }
+  return resolved;
+}
+
 export function vercelRedirectsFromConfigs(configs) {
-  return configs.flatMap((config) =>
-    config.redirects.map((redirect) => ({
-      source: redirect.source,
-      destination: redirect.destination,
-      permanent: redirect.permanent !== false,
-    })),
+  return sanitizeRedirects(
+    configs.flatMap((config) =>
+      config.redirects.map((redirect) => ({
+        source: redirect.source,
+        destination: redirect.destination,
+        permanent: redirect.permanent !== false,
+      })),
+    ),
   );
 }
 

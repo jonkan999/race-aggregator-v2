@@ -38,6 +38,78 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "nl"
+    },
+    {
+      "source": "/looppaginas/van_oers_marathon",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/van_oers_marathon/",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/van_oers_marathon/:path*",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/van_oers_marathon",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/van_oers_marathon/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/van_oers_marathon/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/van_oers_marathon_2",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/van_oers_marathon_2/",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/looppaginas/van_oers_marathon_2/:path*",
+      "destination": "/hardloopkalender/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/van_oers_marathon_2",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/van_oers_marathon_2/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/van_oers_marathon_2/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "nl"
     }
   ]
 }
