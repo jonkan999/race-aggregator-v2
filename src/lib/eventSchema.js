@@ -29,12 +29,13 @@ function httpUrl(value) {
 }
 
 /**
- * eventStatus is only asserted when the date is confirmed. An estimated (next-year guess) date
+ * An edition that already took place is not an upcoming event: no eventStatus and no offers are
+ * published for it, only its (past) dates. eventStatus is only asserted when the date is confirmed. An estimated (next-year guess) date
  * is not a scheduled event, so no status is claimed. schema.org defines EventScheduled as
  * "taking place or has taken place on the startDate", so it is correct for past confirmed dates.
  */
-export function eventStatusFor({ isEstimated }) {
-  return isEstimated ? undefined : 'https://schema.org/EventScheduled';
+export function eventStatusFor({ isEstimated, isPast = false }) {
+  return isEstimated || isPast ? undefined : 'https://schema.org/EventScheduled';
 }
 
 export function buildEventSchema(input) {
@@ -45,6 +46,7 @@ export function buildEventSchema(input) {
     endIso,
     startTime,
     isEstimated = false,
+    isPast = false,
     locationName,
     locality,
     region,
@@ -68,8 +70,8 @@ export function buildEventSchema(input) {
   const geo = validCoordinate(latitude, longitude);
   const upcoming = Boolean(isoEnd && todayIso && isoEnd >= todayIso);
 
-  let schemaOffers = offers.length > 0 ? offers : undefined;
-  if (!schemaOffers && !isEstimated && upcoming) {
+  let schemaOffers = offers.length > 0 && !isPast ? offers : undefined;
+  if (!schemaOffers && !isEstimated && !isPast && upcoming) {
     const range = parsePriceRange(priceRange);
     if (range) {
       schemaOffers =
@@ -97,7 +99,7 @@ export function buildEventSchema(input) {
     startDate: isoStart ? (time ? `${isoStart}T${time}` : isoStart) : undefined,
     endDate: isoEnd ? (time && isoEnd === isoStart ? undefined : isoEnd) : undefined,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    eventStatus: eventStatusFor({ isEstimated }),
+    eventStatus: eventStatusFor({ isEstimated, isPast }),
     image: images.length > 0 ? images : undefined,
     location: {
       '@type': 'Place',

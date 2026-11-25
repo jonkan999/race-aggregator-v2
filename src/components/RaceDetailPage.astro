@@ -14,6 +14,9 @@ import type { RaceListRow } from '../lib/raceListRow';
 import { deriveSiteIdentity } from '../lib/siteIdentity';
 import { fitMetaDescription, marketCurrency, parsePriceAmount } from '../lib/seoMeta.js';
 import { buildEventSchema } from '../lib/eventSchema.js';
+import { buildRaceTitle, extractCity } from '../lib/raceTitle.js';
+import { isPastEdition, nextDateNotAnnouncedText } from '../lib/pastEdition.js';
+import { loadIndexYaml } from '../lib/content';
 
 interface Props {
   country: string;
@@ -52,7 +55,6 @@ const lang = locale === 'en' ? 'en' : String(content.country_language_code ?? 's
 const countyLabel = detail.county
   ? ((content.county_mapping as Record<string, string> | undefined)?.[detail.county] ?? detail.county)
   : String(content.country_native ?? '');
-const title = detail.raceName;
 const rawDescription = detail.description || detail.additionalInfo || '';
 const descriptionParagraphs = raceDetailParagraphs(detail.description);
 const additionalParagraphs = raceDetailParagraphs(detail.additionalInfo);
@@ -75,6 +77,19 @@ const offerUrl = detail.registrationUrl || detail.raceInfoUrl || detail.website 
 // Prices of an estimated edition are last year's; only publish offers for confirmed dates
 // and drop tiers whose deadline has already passed.
 const todayIso = new Date().toISOString().slice(0, 10);
+const nativeContent = locale === 'en' ? loadIndexYaml(country, 'native') : content;
+const countyMapping = (content.county_mapping as Record<string, string> | undefined) ?? {};
+const eventLocality = extractCity(detail.location, {
+  countryNames: [content.country_native, content.country, nativeContent.country_native, nativeContent.country].map((value) => String(value ?? '')),
+  adminNames: [...Object.keys(countyMapping), String(detail.county ?? '')],
+});
+const title = buildRaceTitle({
+  name: detail.raceName,
+  startIso: primaryDetailDate?.startIso,
+  city: eventLocality,
+});
+const pastEdition = isPastEdition(detail.displayDateEntries, todayIso);
+const nextDateNote = nextDateNotAnnouncedText(locale === 'en' ? 'en' : String(content.country_language_code ?? 'en'));
 const createdRaw = String((row.payload as Record<string, unknown> | null | undefined)?.created_date ?? '');
 const listedSinceIso = /^\d{8}$/.test(createdRaw)
   ? `${createdRaw.slice(0, 4)}-${createdRaw.slice(4, 6)}-${createdRaw.slice(6, 8)}`
@@ -140,9 +155,6 @@ const updatedTimeIso = (() => {
   const parsed = raw ? new Date(raw) : null;
   return parsed && !Number.isNaN(parsed.getTime()) ? parsed.toISOString() : null;
 })();
-const eventLocality =
-  String(detail.location ?? '').split(',')[0].replace(/^\d{4,5}\s+/, '').trim() ||
-  (typeof row.payload?.nearest_city === 'string' ? row.payload.nearest_city.trim() : '');
 const eventJson = JSON.stringify(
   buildEventSchema({
     name: detail.raceName,
@@ -151,6 +163,7 @@ const eventJson = JSON.stringify(
     endIso: comparableDateForSchema(detail.displayDateEntries, 'endIso'),
     startTime: detail.startTime,
     isEstimated: primaryDetailDate ? primaryDetailDate.isEstimated : hasEstimatedDates,
+    isPast: pastEdition,
     locationName: detail.location || countyLabel,
     locality: eventLocality || undefined,
     region: countyLabel || undefined,
@@ -280,7 +293,7 @@ const newsletterContext = {
               detail.displayDateEntries.map((entry) => (
                 <div class="race-detail-chip race-detail-chip--date">
                   <span>{entry.label}</span>
-                  {entry.isEstimated ? (
+                  {entry.isEstimated && !pastEdition ? (
                     <span class="race-detail-chip__estimated">
                       {String(content.race_page_estimated_date_label ?? '')}
                     </span>
@@ -475,7 +488,15 @@ const newsletterContext = {
     }
 
     {
-      hasEstimatedDates ? (
+      pastEdition ? (
+        <div class="race-detail-note race-detail-note--past" role="note">
+          <span>{nextDateNote}</span>
+        </div>
+      ) : null
+    }
+
+    {
+      hasEstimatedDates && !pastEdition ? (
         <div class="race-detail-note" role="note">
           <strong>{String(content.race_page_estimated_date_label ?? '')}.</strong>{' '}
           <span>{String(content.race_page_estimated_disclaimer ?? '')}</span>
