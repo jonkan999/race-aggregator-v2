@@ -127,9 +127,14 @@
   z-index: 10000;
   min-width: 30rem;
 }
-.auth-modal h2 {
+.auth-modal h2,
+.auth-modal .auth-modal__title {
   margin-bottom: 0.2rem;
   font-size: 1.6rem;
+}
+.auth-modal .auth-modal__title {
+  margin-top: 0.83em;
+  font-weight: 700;
 }
 @media (max-width: 34em) {
   .auth-modal {

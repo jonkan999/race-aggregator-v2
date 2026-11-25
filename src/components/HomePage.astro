@@ -1,6 +1,6 @@
 ---
 import type { IndexYaml, Locale } from '../lib/content';
-import type { HomePageData } from '../lib/homePage';
+import { heroTitleParts, type HomePageData } from '../lib/homePage';
 
 interface Props {
   country: string;
@@ -11,6 +11,7 @@ interface Props {
 
 const { content, data } = Astro.props;
 const navigation = content.navigation ?? {};
+const heroTitle = heroTitleParts(content);
 const featuredLead = data.featuredRaces[0] ?? null;
 const featuredStrip = data.featuredRaces.slice(1, 7);
 const trendingLead = data.trendingRaces[0] ?? null;
@@ -48,8 +49,8 @@ const toolIconViewBoxes: Record<string, string> = {
           <div class="home-hero__intro">
             <p class="home-hero__eyebrow">{content.page_name}</p>
             <h1 class="home-hero__title">
-              {String(content.title ?? '')}
-              <span class="home-hero__accent new-amsterdam">{String(content.country_native ?? '')}</span>
+              {heroTitle.lead}
+              <span class="home-hero__accent new-amsterdam">{heroTitle.accent}</span>
             </h1>
             <p class="home-hero__description">{String(content.description ?? '')}</p>
 

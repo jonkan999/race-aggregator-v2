@@ -592,7 +592,7 @@ export default function NewsletterPopup({ context }: Props) {
                   >
                     <div className="newsletter-popup__media-content">
                       <div className="newsletter-popup__media-kicker">{config?.siteName}</div>
-                      <h2 className="newsletter-popup__media-title">{popupKicker(config, activePopup)}</h2>
+                      <p className="newsletter-popup__media-title">{popupKicker(config, activePopup)}</p>
                     </div>
                   </div>
                   <div className="newsletter-popup__content">
@@ -609,9 +609,9 @@ export default function NewsletterPopup({ context }: Props) {
                       <div className="newsletter-popup__eyebrow">{activePopup.eyebrow}</div>
                     ) : null}
 
-                    <h3 id="newsletter-popup-title" className="newsletter-popup__title">
+                    <p id="newsletter-popup-title" className="newsletter-popup__title">
                       {activePopup.title}
-                    </h3>
+                    </p>
                     <p className="newsletter-popup__body">{activePopup.body}</p>
 
                     {activePopup.highlights.length > 0 ? (

@@ -407,7 +407,7 @@ export default function HeaderAuth({
         <div className="auth-modal-backdrop" onClick={closeModal} />
         <div className="auth-modal">
           <div id="loginForm" className="auth-form-container" style={{ display: modalView === 'login' ? 'block' : 'none' }}>
-            <h2>{messages.titleSignIn}</h2>
+            <p className="auth-modal__title">{messages.titleSignIn}</p>
             <form id="authForm" onSubmit={handleLoginSubmit}>
 
               <input type="email" id="loginEmail" placeholder={messages.emailPlaceholder} required value={loginEmail} onChange={(e) => setLoginEmail(e.target.value)} />
@@ -468,7 +468,7 @@ export default function HeaderAuth({
           </div>
 
           <div id="createAccountForm" className="auth-form-container" style={{ display: modalView === 'create' ? 'block' : 'none' }}>
-            <h2>{messages.titleCreateAccount}</h2>
+            <p className="auth-modal__title">{messages.titleCreateAccount}</p>
             <form id="signupForm" onSubmit={handleSignupSubmit}>
               <button
                 type="button"
@@ -498,7 +498,7 @@ export default function HeaderAuth({
           </div>
 
           <div id="resetPasswordForm" className="auth-form-container" style={{ display: modalView === 'reset' ? 'block' : 'none' }}>
-            <h2>{messages.titleResetPassword}</h2>
+            <p className="auth-modal__title">{messages.titleResetPassword}</p>
             <form id="resetForm" onSubmit={handleResetSubmit}>
               <input type="email" id="resetEmail" placeholder={messages.emailPlaceholder} required value={resetEmail} onChange={(e) => setResetEmail(e.target.value)} />
               <div className="error" id="resetError">{resetError}</div>
@@ -512,7 +512,7 @@ export default function HeaderAuth({
           </div>
 
           <div id="loggedInUserForm" className="auth-form-container" style={{ display: modalView === 'logged-in' ? 'block' : 'none' }}>
-            <h2>{messages.alreadyLoggedIn}</h2>
+            <p className="auth-modal__title">{messages.alreadyLoggedIn}</p>
             <div className="logged-in-user-info">
               <p><strong id="currentUserName">{currentDisplayName}</strong></p>
               <p id="currentUserEmail">{messages.asEmail}: {currentUser?.email ?? ''}</p>
@@ -528,7 +528,7 @@ export default function HeaderAuth({
           </div>
 
           <div id="accountCreatedForm" className="auth-form-container" style={{ display: modalView === 'success' ? 'block' : 'none' }}>
-            <h2>{messages.accountCreated}</h2>
+            <p className="auth-modal__title">{messages.accountCreated}</p>
             <div className="logged-in-user-info">
               <p>{messages.accountCreatedDetails}</p>
               <p><strong id="newUserName">{successUser?.displayName ?? ''}</strong></p>

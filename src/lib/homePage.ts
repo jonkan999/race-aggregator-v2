@@ -649,3 +649,16 @@ export function homeTitle(content: Record<string, unknown>): string {
   if (!country || base.toLowerCase().endsWith(country.toLowerCase())) return base;
   return `${base} ${country}`.trim();
 }
+
+/**
+ * Hero heading parts. When the YAML title already ends with the country ("Alt om løb i Danmark"),
+ * the trailing country becomes the accent span instead of being printed twice.
+ */
+export function heroTitleParts(content: Record<string, unknown>): { lead: string; accent: string } {
+  const title = String(content.title ?? '').trim();
+  const country = String(content.country_native ?? content.country ?? '').trim();
+  if (country && title.toLowerCase().endsWith(country.toLowerCase())) {
+    return { lead: title.slice(0, title.length - country.length).trim(), accent: country };
+  }
+  return { lead: title, accent: country };
+}
