@@ -13,6 +13,7 @@ import type { IndexYaml, Locale } from '../lib/content';
 import type { RaceListRow } from '../lib/raceListRow';
 import { deriveSiteIdentity } from '../lib/siteIdentity';
 import { fitMetaDescription, marketCurrency, parsePriceAmount } from '../lib/seoMeta.js';
+import { buildEventSchema } from '../lib/eventSchema.js';
 
 interface Props {
   country: string;
@@ -134,41 +135,39 @@ function toAbsoluteUrl(path: string | null | undefined): string | undefined {
   return `${baseUrl}${path.startsWith('/') ? path : `/${path}`}`;
 }
 
-const eventJson = JSON.stringify({
-  '@context': 'https://schema.org',
-  '@type': 'Event',
-  name: detail.raceName,
-  description,
-  startDate: comparableDateForSchema(detail.displayDateEntries, 'startIso'),
-  endDate: comparableDateForSchema(detail.displayDateEntries, 'endIso'),
-  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-  eventStatus: 'https://schema.org/EventScheduled',
-  image: detail.images.map((image) => toAbsoluteUrl(image.src)).filter(Boolean),
-  location: {
-    '@type': 'Place',
-    name: detail.location || countyLabel,
-    address: countyLabel
-      ? {
-          '@type': 'PostalAddress',
-          addressLocality:
-            String(detail.location ?? '').split(',')[0].replace(/^\d{4,5}\s+/, '').trim() ||
-            (typeof row.payload?.nearest_city === 'string' ? row.payload.nearest_city.trim() : '') ||
-            undefined,
-          addressRegion: countyLabel,
-          addressCountry: String(row.origin_country ?? country).trim().toUpperCase(),
-        }
-      : undefined,
-  },
-  organizer: detail.organizer
-    ? {
-        '@type': 'Organization',
-        name: detail.organizer,
-        url: detail.website || undefined,
-      }
-    : undefined,
-  offers: offers.length > 0 ? offers : undefined,
-  url: toAbsoluteUrl(canonicalPath) ?? canonicalPath,
-});
+const updatedTimeIso = (() => {
+  const raw = row.updated_at;
+  const parsed = raw ? new Date(raw) : null;
+  return parsed && !Number.isNaN(parsed.getTime()) ? parsed.toISOString() : null;
+})();
+const eventLocality =
+  String(detail.location ?? '').split(',')[0].replace(/^\d{4,5}\s+/, '').trim() ||
+  (typeof row.payload?.nearest_city === 'string' ? row.payload.nearest_city.trim() : '');
+const eventJson = JSON.stringify(
+  buildEventSchema({
+    name: detail.raceName,
+    description: rawDescription,
+    startIso: comparableDateForSchema(detail.displayDateEntries, 'startIso'),
+    endIso: comparableDateForSchema(detail.displayDateEntries, 'endIso'),
+    startTime: detail.startTime,
+    isEstimated: primaryDetailDate ? primaryDetailDate.isEstimated : hasEstimatedDates,
+    locationName: detail.location || countyLabel,
+    locality: eventLocality || undefined,
+    region: countyLabel || undefined,
+    countryCode: String(row.origin_country ?? country).trim().toUpperCase(),
+    latitude: row.latitude,
+    longitude: row.longitude,
+    images: detail.images.map((image) => toAbsoluteUrl(image.src)).filter(Boolean) as string[],
+    organizerName: detail.organizer,
+    organizerUrl: detail.website,
+    offers,
+    priceRange: detail.priceRange,
+    currency: marketCurrency(country),
+    offerUrl,
+    todayIso,
+    url: toAbsoluteUrl(canonicalPath) ?? canonicalPath,
+  }),
+);
 
 const breadcrumbJson = JSON.stringify({
   '@context': 'https://schema.org',
@@ -216,6 +215,7 @@ const newsletterContext = {
   disableCanonical={disableCanonical}
   noindex={noindex}
 >
+  {updatedTimeIso && <meta slot="head" property="og:updated_time" content={updatedTimeIso} />}
   <script slot="head" type="application/ld+json" set:html={eventJson} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbJson} />
   <NewsletterPopup client:load context={newsletterContext} />

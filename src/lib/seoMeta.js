@@ -22,10 +22,22 @@ function clean(text) {
   return String(text ?? '').replace(/\s+/g, ' ').trim();
 }
 
-/** Truncate at a word boundary so the result is at most `max` chars (ellipsis included). */
+/**
+ * Truncate so the result is at most `max` chars (ellipsis included). Prefers to end on a full
+ * sentence when one fits in the upper part of the budget, so the text is not cut mid-sentence;
+ * otherwise cuts at a word boundary and adds an ellipsis.
+ */
 export function truncateAtWord(text, max = 160) {
   const value = clean(text);
   if (value.length <= max) return value;
+  const window = value.slice(0, max);
+  let sentenceEnd = -1;
+  for (const match of window.matchAll(/[.!?…](?=\s|$)/g)) sentenceEnd = match.index;
+  if (sentenceEnd >= max * 0.5) {
+    const sentences = window.slice(0, sentenceEnd + 1);
+    // Skip a "sentence end" that is really an abbreviation or a number ("5 km.", "Dr.", "1.").
+    if (!/(?:^|\s)\S{1,3}\.$/.test(sentences) || /[!?…]$/.test(sentences)) return sentences;
+  }
   const cut = value.slice(0, max - 1);
   const lastSpace = cut.lastIndexOf(' ');
   const base = lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut;
@@ -57,4 +69,23 @@ export function buildHreflangLinks({ locale, nativeLang, currentUrl, alternateUr
     { hreflang: 'en', href: englishUrl },
     { hreflang: 'x-default', href: nativeUrl },
   ];
+}
+
+/**
+ * First number of a price range. Accepts short values only ("100–600 kr", "€ 12,50 tot € 15,-",
+ * "300"); long free text ("400 kr for the marathon, 200 kr for the half ...") returns null.
+ */
+export function parsePriceRange(text) {
+  const value = String(text ?? '').replace(/\u00a0/g, ' ').trim();
+  if (!value || value.length > 40) return null;
+  const numbers = [...value.matchAll(/\d{1,3}(?:[ .]\d{3})+(?:[.,]\d{1,2})?|\d+(?:[.,]\d{1,2})?/g)].map((match) => {
+    let raw = match[0];
+    if (/^\d{1,3}([ .]\d{3})+$/.test(raw)) raw = raw.replace(/[ .]/g, '');
+    return Number(raw.replace(/ /g, '').replace(',', '.'));
+  });
+  const valid = numbers.filter((n) => Number.isFinite(n) && n > 0);
+  if (valid.length === 0 || valid.length > 2) return null;
+  const low = Math.min(...valid);
+  const high = Math.max(...valid);
+  return { low, high };
 }
