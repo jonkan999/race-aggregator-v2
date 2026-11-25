@@ -1,0 +1,43 @@
+{
+  "id": "hu-unpublished",
+  "market": "hu",
+  "note": "Unpublished HU races kept in Supabase (published=false, never deleted). 308 the retired page to the city or calendar listing. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated). Delisting record: race-collector-v2 data/countries/hu/delisted/*.csv.",
+  "redirects": [
+    {
+      "source": "/futoversenyek/wings_for_life_world_run",
+      "destination": "/futonaptar/varosok/budapest/",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/futoversenyek/wings_for_life_world_run/",
+      "destination": "/futonaptar/varosok/budapest/",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/futoversenyek/wings_for_life_world_run/:path*",
+      "destination": "/futonaptar/varosok/budapest/",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_run",
+      "destination": "/en/race-calendar/cities/budapest/",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_run/",
+      "destination": "/en/race-calendar/cities/budapest/",
+      "permanent": true,
+      "market": "hu"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_run/:path*",
+      "destination": "/en/race-calendar/cities/budapest/",
+      "permanent": true,
+      "market": "hu"
+    }
+  ]
+}

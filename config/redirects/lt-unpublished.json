@@ -110,6 +110,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "lt"
+    },
+    {
+      "source": "/begimo_puslapiai/red_bull_wings_for_life_world_run",
+      "destination": "/begimo-kalendorius/miestai/vilnius/",
+      "permanent": true,
+      "market": "lt"
+    },
+    {
+      "source": "/begimo_puslapiai/red_bull_wings_for_life_world_run/",
+      "destination": "/begimo-kalendorius/miestai/vilnius/",
+      "permanent": true,
+      "market": "lt"
+    },
+    {
+      "source": "/begimo_puslapiai/red_bull_wings_for_life_world_run/:path*",
+      "destination": "/begimo-kalendorius/miestai/vilnius/",
+      "permanent": true,
+      "market": "lt"
+    },
+    {
+      "source": "/en/race-pages/red_bull_wings_for_life_world_run",
+      "destination": "/en/race-calendar/cities/vilnius/",
+      "permanent": true,
+      "market": "lt"
+    },
+    {
+      "source": "/en/race-pages/red_bull_wings_for_life_world_run/",
+      "destination": "/en/race-calendar/cities/vilnius/",
+      "permanent": true,
+      "market": "lt"
+    },
+    {
+      "source": "/en/race-pages/red_bull_wings_for_life_world_run/:path*",
+      "destination": "/en/race-calendar/cities/vilnius/",
+      "permanent": true,
+      "market": "lt"
     }
   ]
 }

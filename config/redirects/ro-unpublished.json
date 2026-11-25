@@ -74,6 +74,78 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "ro"
+    },
+    {
+      "source": "/pagini-cursa/wings_for_life_world_app_run_oradea",
+      "destination": "/calendar-alergari/orase/oradea/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/pagini-cursa/wings_for_life_world_app_run_oradea/",
+      "destination": "/calendar-alergari/orase/oradea/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/pagini-cursa/wings_for_life_world_app_run_oradea/:path*",
+      "destination": "/calendar-alergari/orase/oradea/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_app_run_oradea",
+      "destination": "/en/race-calendar/cities/oradea/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_app_run_oradea/",
+      "destination": "/en/race-calendar/cities/oradea/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_app_run_oradea/:path*",
+      "destination": "/en/race-calendar/cities/oradea/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/pagini-cursa/wings_for_life_world_run",
+      "destination": "/calendar-alergari/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/pagini-cursa/wings_for_life_world_run/",
+      "destination": "/calendar-alergari/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/pagini-cursa/wings_for_life_world_run/:path*",
+      "destination": "/calendar-alergari/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_run",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_run/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ro"
+    },
+    {
+      "source": "/en/race-pages/wings_for_life_world_run/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ro"
     }
   ]
 }
