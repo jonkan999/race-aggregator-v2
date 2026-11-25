@@ -1,98 +1,5 @@
 [
   {
-    "domain_name": "begimas_atgal_i_praeiti",
-    "name": "Bėgimas Atgal į Praeitį",
-    "type": "road",
-    "type_local": "Kelių",
-    "race_dates": [
-      [
-        "20261122",
-        "20261122"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Vilnius, Laisvalaikio erdvė prie Baltojo tilto",
-    "latitude": 54.6927301,
-    "longitude": 25.2725099,
-    "county": "Vilniaus apskritis",
-    "nearest_city": "Vilnius",
-    "nearby_cities": [
-      "Vilnius"
-    ],
-    "distances": "[\"42.2\", \"4.2\"]",
-    "distance_m": [
-      42200,
-      4200
-    ],
-    "distance_keywords": [
-      "Maratonas",
-      "5 km"
-    ],
-    "distance_verbose": "Maratonas, 4.2 km",
-    "organizer": null,
-    "contact": "maratomanija@gmail.com",
-    "website": "https://www.myrace.lt/maratonadienis/nuostatai-atgal-i-praeiti/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Running Back to the Past is a unique event where history becomes the present. All the award medals, trophies, and prizes from previous years’ races are given a second life and new meaning, symbolizing the bond within the running community. The essence of the event is not the novelty of the trophies, but the joy of running and the opportunity to rediscover the meaning of sport. Every participant who completes the full marathon distance will receive a Saulėtekis Marathon neck gaiter.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fbegimas_atgal_i_praeiti%2Fbegimas_atgal_i_praeiti_1.webp?alt=media",
-        "alt_text": "Bėgimo varžybų startas. Bėgikai po starto linija. Arka su asociacijos pavadinimu ir logotipu."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fbegimas_atgal_i_praeiti%2Fbegimas_atgal_i_praeiti_2.webp?alt=media",
-        "alt_text": "Bėgimo \"Atgal į praeitį\" pavadinimas."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "contact",
-      "name",
-      "longitude",
-      "location"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "051954a7-1764-494d-b45f-1ca16c248970"
-    ],
-    "supplied_ids": [
-      "327e1f04-d3c4-4b87-a0a4-cd713ebf3c9c"
-    ],
-    "supplied_at": "20260906",
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "temple_x_nike_winterized_challenge",
     "name": "Temple x Nike Winterized Challenge",
     "type": "road",
@@ -138,16 +45,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
+      "location",
       "county",
+      "description",
+      "name",
+      "race_dates",
       "latitude",
+      "longitude",
       "type",
       "contact",
-      "name",
-      "longitude",
-      "location",
-      "race_dates"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -243,17 +150,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -326,16 +233,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -495,17 +402,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -581,16 +488,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -679,16 +586,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
+      "location",
       "county",
+      "description",
+      "name",
+      "race_dates",
       "latitude",
+      "longitude",
       "type",
       "contact",
-      "name",
-      "longitude",
-      "location",
-      "race_dates"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -754,15 +661,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
       "county",
-      "latitude",
-      "type",
-      "name",
-      "longitude",
+      "description",
       "location",
-      "race_dates"
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -830,17 +737,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -908,17 +815,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1264,17 +1171,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1440,16 +1347,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
+      "location",
       "county",
+      "description",
+      "name",
+      "race_dates",
       "latitude",
+      "longitude",
       "type",
       "contact",
-      "name",
-      "longitude",
-      "location",
-      "race_dates"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1543,16 +1450,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1621,17 +1528,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1773,17 +1680,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -1954,16 +1861,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2116,17 +2023,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2195,15 +2102,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
       "county",
-      "latitude",
-      "type",
-      "name",
-      "longitude",
+      "description",
       "location",
-      "race_dates"
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -2524,8 +2431,8 @@
         "20260216"
       ],
       [
-        "20270215",
-        "20270215"
+        "20270216",
+        "20270216"
       ]
     ],
     "upcoming_dates": [],
@@ -2601,8 +2508,8 @@
         "20260216"
       ],
       [
-        "20270215",
-        "20270215"
+        "20270216",
+        "20270216"
       ]
     ],
     "upcoming_dates": [],
@@ -2755,8 +2662,8 @@
         "20260311"
       ],
       [
-        "20270310",
-        "20270310"
+        "20270311",
+        "20270311"
       ]
     ],
     "upcoming_dates": [],
@@ -2830,8 +2737,8 @@
         "20260311"
       ],
       [
-        "20270310",
-        "20270310"
+        "20270311",
+        "20270311"
       ]
     ],
     "upcoming_dates": [],
@@ -2911,8 +2818,8 @@
         "20260311"
       ],
       [
-        "20270310",
-        "20270310"
+        "20270311",
+        "20270311"
       ]
     ],
     "upcoming_dates": [],
@@ -4104,6 +4011,96 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "vilnius_trail_run_2026",
+    "name": "Vilnius trail run 2026",
+    "type": "trail",
+    "type_local": "Trailo",
+    "race_dates": [
+      [
+        "20260509",
+        "20260509"
+      ],
+      [
+        "20270501",
+        "20270501"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Vilnius, Vilnius County, Lithuania",
+    "latitude": 54.6871555,
+    "longitude": 25.2796514,
+    "county": "Vilniaus apskritis",
+    "nearest_city": "Vilnius",
+    "nearby_cities": [
+      "Vilnius"
+    ],
+    "distances": "[\"109\", \"108\", \"73\", \"70\", \"42\", \"22\", \"21\", \"15\", \"4\", \"1.8\"]",
+    "distance_m": [
+      109000,
+      108000,
+      73000,
+      70000,
+      42000,
+      22000,
+      21000,
+      15000,
+      4000,
+      1800
+    ],
+    "distance_keywords": [
+      "100 km",
+      "Maratonas",
+      "Pusmaratonas",
+      "5 km"
+    ],
+    "distance_verbose": "109 km, 108 km, 73 km, 70 km, Maratonas, 22 km, Pusmaratonas, 15 km, 4 km, 1.8 km",
+    "organizer": "VšĮ Vilnius Trail Run",
+    "contact": null,
+    "website": "https://www.vilniustrailrun.lt/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.vilniustrailrun.lt/registracija",
+    "race_info_url": "https://www.vilniustrailrun.lt/trasos/",
+    "presumed_organizer_email": "info@vilniustrailrun.lt",
+    "website_emails_found": [
+      "info@vilniustrailrun.lt"
+    ],
+    "description": "Vilnius Trail Run 2027 invites runners to experience a unique variety of courses in Vilnius’s natural surroundings and urban environment. The event offers routes ranging from 15+ km for beginners to a challenging 108 km course around Vilnius. Participants can enjoy varied terrain, including forest trails, mountain roads, and scenic viewpoints offering unforgettable views of the Lithuanian landscape. It is a great opportunity to test your endurance and discover the city’s nature and culture while running.",
+    "course_highlights": [
+      "Unique routes in Vilnius from 15+ km to 108 km",
+      "Varied terrain: forest trails and mountain roads",
+      "Scenic viewpoints with views of the Lithuanian landscape"
+    ],
+    "additional": "The event takes place at Kalnų Park Stadium, T. Kosciuškos g. 5, Vilnius. The number of participants exceeds 1,000. Organizer: VšĮ, address: Balžio g. 21C-5, Vilnius, telephone: +370 610 24484. The event offers courses featuring forest trails, mountain tracks, and scenic viewpoints; participants can choose from various distances and age groups, including an ultramarathon and children’s races.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.facebook.com/events/949550857905229/",
+      "https://itra.run/Races/RaceDetails/Vilnius.Trail.Run.108KM/2027/119046",
+      "https://www.lbma.lt/files/races/2026-05-09_Vilnius_trail_run_2026_rezultatai.xlsx"
+    ],
+    "consolidated_ids": [
+      "4ff92e3c-9223-4973-8a79-8f0e2ecf8365"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260906",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "63_asis_tradicinis_begimas_anyksciai_puntuko_akmuo_anyksciai",
     "name": "63-asis tradicinis bėgimas „Anykščiai - Puntuko akmuo - Anykščiai“",
     "type": "trail",
@@ -4114,8 +4111,8 @@
         "20260501"
       ],
       [
-        "20270430",
-        "20270430"
+        "20270501",
+        "20270501"
       ]
     ],
     "upcoming_dates": [],
@@ -4231,8 +4228,8 @@
         "20260501"
       ],
       [
-        "20270430",
-        "20270430"
+        "20270501",
+        "20270501"
       ]
     ],
     "upcoming_dates": [],
@@ -4290,96 +4287,6 @@
     ],
     "consolidated_ids": [
       "418ee695-c1ca-4c00-a30b-55bbec54b140"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260906",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "vilnius_trail_run_2026",
-    "name": "Vilnius trail run 2026",
-    "type": "trail",
-    "type_local": "Trailo",
-    "race_dates": [
-      [
-        "20260509",
-        "20260509"
-      ],
-      [
-        "20270501",
-        "20270501"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Vilnius, Vilnius County, Lithuania",
-    "latitude": 54.6871555,
-    "longitude": 25.2796514,
-    "county": "Vilniaus apskritis",
-    "nearest_city": "Vilnius",
-    "nearby_cities": [
-      "Vilnius"
-    ],
-    "distances": "[\"109\", \"108\", \"73\", \"70\", \"42\", \"22\", \"21\", \"15\", \"4\", \"1.8\"]",
-    "distance_m": [
-      109000,
-      108000,
-      73000,
-      70000,
-      42000,
-      22000,
-      21000,
-      15000,
-      4000,
-      1800
-    ],
-    "distance_keywords": [
-      "100 km",
-      "Maratonas",
-      "Pusmaratonas",
-      "5 km"
-    ],
-    "distance_verbose": "109 km, 108 km, 73 km, 70 km, Maratonas, 22 km, Pusmaratonas, 15 km, 4 km, 1.8 km",
-    "organizer": "VšĮ Vilnius Trail Run",
-    "contact": null,
-    "website": "https://www.vilniustrailrun.lt/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.vilniustrailrun.lt/registracija",
-    "race_info_url": "https://www.vilniustrailrun.lt/trasos/",
-    "presumed_organizer_email": "info@vilniustrailrun.lt",
-    "website_emails_found": [
-      "info@vilniustrailrun.lt"
-    ],
-    "description": "Vilnius Trail Run 2027 invites runners to experience a unique variety of courses in Vilnius’s natural surroundings and urban environment. The event offers routes ranging from 15+ km for beginners to a challenging 108 km course around Vilnius. Participants can enjoy varied terrain, including forest trails, mountain roads, and scenic viewpoints offering unforgettable views of the Lithuanian landscape. It is a great opportunity to test your endurance and discover the city’s nature and culture while running.",
-    "course_highlights": [
-      "Unique routes in Vilnius from 15+ km to 108 km",
-      "Varied terrain: forest trails and mountain roads",
-      "Scenic viewpoints with views of the Lithuanian landscape"
-    ],
-    "additional": "The event takes place at Kalnų Park Stadium, T. Kosciuškos g. 5, Vilnius. The number of participants exceeds 1,000. Organizer: VšĮ, address: Balžio g. 21C-5, Vilnius, telephone: +370 610 24484. The event offers courses featuring forest trails, mountain tracks, and scenic viewpoints; participants can choose from various distances and age groups, including an ultramarathon and children’s races.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.facebook.com/events/949550857905229/",
-      "https://itra.run/Races/RaceDetails/Vilnius.Trail.Run.108KM/2027/119046",
-      "https://www.lbma.lt/files/races/2026-05-09_Vilnius_trail_run_2026_rezultatai.xlsx"
-    ],
-    "consolidated_ids": [
-      "4ff92e3c-9223-4973-8a79-8f0e2ecf8365"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -4475,18 +4382,6 @@
       [
         "20260509",
         "20260509"
-      ],
-      [
-        "20270508",
-        "20270508"
-      ],
-      [
-        "20270508",
-        "20270508"
-      ],
-      [
-        "20270508",
-        "20270508"
       ],
       [
         "20270508",
@@ -5649,18 +5544,6 @@
       [
         "20270526",
         "20270526"
-      ],
-      [
-        "20270526",
-        "20270526"
-      ],
-      [
-        "20270526",
-        "20270526"
-      ],
-      [
-        "20270526",
-        "20270526"
       ]
     ],
     "upcoming_dates": [],
@@ -5725,18 +5608,6 @@
       [
         "20260530",
         "20260530"
-      ],
-      [
-        "20270529",
-        "20270529"
-      ],
-      [
-        "20270529",
-        "20270529"
-      ],
-      [
-        "20270529",
-        "20270529"
       ],
       [
         "20270529",
@@ -6894,18 +6765,6 @@
       [
         "20270620",
         "20270620"
-      ],
-      [
-        "20270620",
-        "20270620"
-      ],
-      [
-        "20270620",
-        "20270620"
-      ],
-      [
-        "20270620",
-        "20270620"
       ]
     ],
     "upcoming_dates": [],
@@ -6976,18 +6835,6 @@
       [
         "20260621",
         "20260621"
-      ],
-      [
-        "20270620",
-        "20270620"
-      ],
-      [
-        "20270620",
-        "20270620"
-      ],
-      [
-        "20270620",
-        "20270620"
       ],
       [
         "20270620",
@@ -7227,8 +7074,8 @@
         "20260706"
       ],
       [
-        "20270705",
-        "20270705"
+        "20270706",
+        "20270706"
       ]
     ],
     "upcoming_dates": [],
@@ -8291,8 +8138,8 @@
         "20260815"
       ],
       [
-        "20270814",
-        "20270814"
+        "20270815",
+        "20270815"
       ]
     ],
     "upcoming_dates": [],
@@ -10172,14 +10019,6 @@
       [
         "20270529",
         "20270529"
-      ],
-      [
-        "20270529",
-        "20270529"
-      ],
-      [
-        "20270529",
-        "20270529"
       ]
     ],
     "upcoming_dates": [],
@@ -11651,42 +11490,41 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "kaledinis_begimas_2",
-    "name": "Kalėdinis Bėgimas",
+    "domain_name": "begimas_atgal_i_praeiti",
+    "name": "Bėgimas Atgal į Praeitį",
     "type": "road",
     "type_local": "Kelių",
     "race_dates": [
       [
-        "20261118",
-        "20261118"
+        "20261122",
+        "20261122"
       ]
     ],
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Vilnius",
-    "latitude": 54.6871555,
-    "longitude": 25.2796514,
+    "location": "Vilnius, Laisvalaikio erdvė prie Baltojo tilto",
+    "latitude": 54.6927301,
+    "longitude": 25.2725099,
     "county": "Vilniaus apskritis",
     "nearest_city": "Vilnius",
     "nearby_cities": [
       "Vilnius"
     ],
-    "distances": "[\"12\", \"6\", \"3\"]",
+    "distances": "[\"42.2\", \"4.2\"]",
     "distance_m": [
-      12000,
-      6000,
-      3000
+      42200,
+      4200
     ],
     "distance_keywords": [
-      "5 km",
-      "3000 metrai"
+      "Maratonas",
+      "5 km"
     ],
-    "distance_verbose": "12 km, 6 km, 3000 metrai",
+    "distance_verbose": "Maratonas, 4.2 km",
     "organizer": null,
-    "contact": "info@kaledinisbegimas.lt",
-    "website": "https://kaledinisbegimas.lt/",
+    "contact": "maratomanija@gmail.com",
+    "website": "https://www.myrace.lt/maratonadienis/nuostatai-atgal-i-praeiti/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
@@ -11696,24 +11534,35 @@
     "race_info_url": null,
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "The Eurovaistinė Christmas Run stands out not only for its festive atmosphere, but also for its distinctive participants, who dress up especially for the running celebration in Christmas (and other!) costumes. This year, the event schedule has been shifted so participants can run after dark, when the capital’s streets will reveal their magical Christmas spirit! We invite you to prepare not only Christmas costumes, but also glowing accessories that will turn the runners into a truly radiant Christmas spectacle!",
+    "description": "Running Back to the Past is a unique event where history becomes the present. All the award medals, trophies, and prizes from previous years’ races are given a second life and new meaning, symbolizing the bond within the running community. The essence of the event is not the novelty of the trophies, but the joy of running and the opportunity to rediscover the meaning of sport. Every participant who completes the full marathon distance will receive a Saulėtekis Marathon neck gaiter.",
     "course_highlights": [],
     "additional": null,
-    "images": [],
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fbegimas_atgal_i_praeiti%2Fbegimas_atgal_i_praeiti_1.webp?alt=media",
+        "alt_text": "Bėgimo varžybų startas. Bėgikai po starto linija. Arka su asociacijos pavadinimu ir logotipu."
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Flt%2Fbegimas_atgal_i_praeiti%2Fbegimas_atgal_i_praeiti_2.webp?alt=media",
+        "alt_text": "Bėgimo \"Atgal į praeitį\" pavadinimas."
+      }
+    ],
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -11721,10 +11570,10 @@
       "ranking_bridge"
     ],
     "consolidated_ids": [
-      "fb6b3abf-6f37-4475-ac08-d14bb87b429e"
+      "051954a7-1764-494d-b45f-1ca16c248970"
     ],
     "supplied_ids": [
-      "dbc847e7-f44e-43a8-b935-8af27b6c2fb1"
+      "327e1f04-d3c4-4b87-a0a4-cd713ebf3c9c"
     ],
     "supplied_at": "20260906",
     "created_date": "20260906",
@@ -11947,17 +11796,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12046,15 +11895,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
       "county",
-      "latitude",
-      "type",
-      "name",
-      "longitude",
+      "description",
       "location",
-      "race_dates"
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12145,17 +11994,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12242,16 +12091,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
+      "location",
       "county",
+      "description",
+      "name",
+      "race_dates",
       "latitude",
+      "longitude",
       "type",
       "contact",
-      "name",
-      "longitude",
-      "location",
-      "race_dates"
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12347,17 +12196,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12456,16 +12305,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12556,17 +12405,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12662,17 +12511,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12765,17 +12614,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12869,17 +12718,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -12971,17 +12820,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13081,17 +12930,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13183,17 +13032,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13284,17 +13133,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13383,16 +13232,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13485,17 +13334,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13587,17 +13436,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13696,16 +13545,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13795,16 +13644,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -13898,17 +13747,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14002,17 +13851,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14099,15 +13948,15 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
       "county",
-      "latitude",
-      "type",
-      "name",
-      "longitude",
+      "description",
       "location",
-      "race_dates"
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14267,17 +14116,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14375,17 +14224,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "race_dates",
-      "description",
+      "location",
       "county",
-      "latitude",
-      "type",
+      "description",
       "distances",
-      "contact",
       "name",
+      "race_dates",
+      "latitude",
       "longitude",
-      "location"
+      "type",
+      "contact",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14477,16 +14326,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14577,16 +14426,16 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "description",
-      "county",
-      "latitude",
-      "type",
-      "distances",
-      "name",
-      "longitude",
       "location",
-      "race_dates"
+      "county",
+      "description",
+      "distances",
+      "race_dates",
+      "name",
+      "latitude",
+      "longitude",
+      "type",
+      "website"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -14601,6 +14450,89 @@
     ],
     "supplied_at": "20260906",
     "created_date": "20261122",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "kaledinis_begimas_2",
+    "name": "Kalėdinis Bėgimas",
+    "type": "road",
+    "type_local": "Kelių",
+    "race_dates": [
+      [
+        "20261118",
+        "20261118"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Vilnius",
+    "latitude": 54.6871555,
+    "longitude": 25.2796514,
+    "county": "Vilniaus apskritis",
+    "nearest_city": "Vilnius",
+    "nearby_cities": [
+      "Vilnius"
+    ],
+    "distances": "[\"12\", \"6\", \"3\"]",
+    "distance_m": [
+      12000,
+      6000,
+      3000
+    ],
+    "distance_keywords": [
+      "5 km",
+      "3000 metrai"
+    ],
+    "distance_verbose": "12 km, 6 km, 3000 metrai",
+    "organizer": null,
+    "contact": "info@kaledinisbegimas.lt",
+    "website": "https://kaledinisbegimas.lt/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "The Eurovaistinė Christmas Run stands out not only for its festive atmosphere, but also for its distinctive participants, who dress up especially for the running celebration in Christmas (and other!) costumes. This year, the event schedule has been shifted so participants can run after dark, when the capital’s streets will reveal their magical Christmas spirit! We invite you to prepare not only Christmas costumes, but also glowing accessories that will turn the runners into a truly radiant Christmas spectacle!",
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "location",
+      "county",
+      "description",
+      "distances",
+      "name",
+      "race_dates",
+      "latitude",
+      "longitude",
+      "type",
+      "contact",
+      "website"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "ranking_bridge"
+    ],
+    "consolidated_ids": [
+      "3301cf67-5842-45c6-a056-8f5aff6c6b75"
+    ],
+    "supplied_ids": [
+      "dbc847e7-f44e-43a8-b935-8af27b6c2fb1"
+    ],
+    "supplied_at": "20260906",
+    "created_date": "20261125",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
