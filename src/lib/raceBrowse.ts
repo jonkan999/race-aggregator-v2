@@ -8,6 +8,7 @@ import { categoryFilterOptionsFromYaml } from './categoryFilterOptions';
 import {
   getBrowseSeoIndexingPolicy,
   isBrowseCombinationAllowed,
+  isRedundantTypeCategoryCombination,
   isBrowseStandaloneAllowed,
 } from './browseSeoIndexing.js';
 import { cityNamesMatch } from './cityNames';
@@ -272,10 +273,15 @@ export function getCategoryTypePageHref(args: {
   raceTypeKey: string;
 }): string {
   const { countryCode, locale, content, categorySlug, raceTypeKey } = args;
+  const typeSlug = raceTypeSlug(countryCode, locale, content, raceTypeKey);
+  // `/x/x/` would duplicate the category page `/x/`; link to the category page instead.
+  if (isRedundantTypeCategoryCombination(typeSlug, categorySlug)) {
+    return getCategoryPageHref({ countryCode, locale, content, categorySlug });
+  }
   return `${raceListBasePath(countryCode, locale, content)}${allCountiesSlug(
     countryCode,
     content,
-  )}/${raceTypeSlug(countryCode, locale, content, raceTypeKey)}/${categorySlug}/`;
+  )}/${typeSlug}/${categorySlug}/`;
 }
 
 export function loadBrowseDistanceMapping(countryCode: string): {
@@ -367,13 +373,18 @@ export async function getBrowseCategoryEntries(args: {
         });
 
         const allTypes = [...typeCounts.entries()]
-          .filter(([typeKey, count]) =>
-            isBrowseCombinationAllowed(policy, 'race_type_category', {
-              raceTypeKey: typeKey,
-              categoryKey: option.key,
-              label: option.label,
-              count,
-            }),
+          .filter(
+            ([typeKey, count]) =>
+              !isRedundantTypeCategoryCombination(
+                raceTypeSlug(countryCode, locale, content, typeKey),
+                slug,
+              ) &&
+              isBrowseCombinationAllowed(policy, 'race_type_category', {
+                raceTypeKey: typeKey,
+                categoryKey: option.key,
+                label: option.label,
+                count,
+              }),
           )
           .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'sv'))
           .map(([typeKey, count]) => ({

@@ -106,3 +106,13 @@ export function isBrowseCombinationAllowed(policy, kind, args = {}) {
   if (kind === 'race_type_city' && family.requireQualifiedCity && !args.isQualifiedCity) return false;
   return true;
 }
+
+/**
+ * A race type page nested under a category with the same slug (`/backyard-ultra/backyard-ultra/`)
+ * lists exactly what the category page lists, so it is a duplicate with a doubled title
+ * ("Backyard Ultra (Backyard Ultra)"). The category page already represents it.
+ */
+export function isRedundantTypeCategoryCombination(typeSlug, categorySlug) {
+  const type = String(typeSlug ?? '').trim().toLowerCase();
+  return type !== '' && type === String(categorySlug ?? '').trim().toLowerCase();
+}
