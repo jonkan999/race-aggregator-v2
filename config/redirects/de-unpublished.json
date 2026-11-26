@@ -362,6 +362,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "de"
+    },
+    {
+      "source": "/rennseiten/1_wroclaw_hills_marathon",
+      "destination": "/laufkalender/",
+      "permanent": true,
+      "market": "de"
+    },
+    {
+      "source": "/rennseiten/1_wroclaw_hills_marathon/",
+      "destination": "/laufkalender/",
+      "permanent": true,
+      "market": "de"
+    },
+    {
+      "source": "/rennseiten/1_wroclaw_hills_marathon/:path*",
+      "destination": "/laufkalender/",
+      "permanent": true,
+      "market": "de"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "de"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "de"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "de"
     }
   ]
 }

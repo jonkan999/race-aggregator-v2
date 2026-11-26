@@ -3602,6 +3602,42 @@
       "destination": "/en/race-calendar/cities/tychy/",
       "permanent": true,
       "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/1_wroclaw_hills_marathon",
+      "destination": "/kalendarz-biegow/miasta/wroclaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/1_wroclaw_hills_marathon/",
+      "destination": "/kalendarz-biegow/miasta/wroclaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/1_wroclaw_hills_marathon/:path*",
+      "destination": "/kalendarz-biegow/miasta/wroclaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon",
+      "destination": "/en/race-calendar/cities/wroclaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/",
+      "destination": "/en/race-calendar/cities/wroclaw/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/:path*",
+      "destination": "/en/race-calendar/cities/wroclaw/",
+      "permanent": true,
+      "market": "pl"
     }
   ]
 }

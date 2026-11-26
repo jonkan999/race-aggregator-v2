@@ -758,6 +758,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "sk"
+    },
+    {
+      "source": "/stranky-pretekov/1_wroclaw_hills_marathon",
+      "destination": "/terminovka/",
+      "permanent": true,
+      "market": "sk"
+    },
+    {
+      "source": "/stranky-pretekov/1_wroclaw_hills_marathon/",
+      "destination": "/terminovka/",
+      "permanent": true,
+      "market": "sk"
+    },
+    {
+      "source": "/stranky-pretekov/1_wroclaw_hills_marathon/:path*",
+      "destination": "/terminovka/",
+      "permanent": true,
+      "market": "sk"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "sk"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "sk"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "sk"
     }
   ]
 }

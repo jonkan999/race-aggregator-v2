@@ -470,6 +470,42 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "cz"
+    },
+    {
+      "source": "/stranky-zavodu/1_wroclaw_hills_marathon",
+      "destination": "/bezecky-kalendar/",
+      "permanent": true,
+      "market": "cz"
+    },
+    {
+      "source": "/stranky-zavodu/1_wroclaw_hills_marathon/",
+      "destination": "/bezecky-kalendar/",
+      "permanent": true,
+      "market": "cz"
+    },
+    {
+      "source": "/stranky-zavodu/1_wroclaw_hills_marathon/:path*",
+      "destination": "/bezecky-kalendar/",
+      "permanent": true,
+      "market": "cz"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "cz"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "cz"
+    },
+    {
+      "source": "/en/race-pages/1_wroclaw_hills_marathon/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "cz"
     }
   ]
 }
