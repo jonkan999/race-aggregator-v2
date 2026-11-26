@@ -3375,6 +3375,18 @@
       "market": "nl"
     },
     {
+      "source": "/looppaginas/volksloop_monthly/:path*",
+      "destination": "/looppaginas/ijzeren_man_volksloop_11/:path*",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
+      "source": "/en/race-pages/volksloop_monthly/:path*",
+      "destination": "/en/race-pages/ijzeren_man_volksloop_11/:path*",
+      "permanent": true,
+      "market": "nl"
+    },
+    {
       "source": "/looppaginas/warandeloop_zondag/:path*",
       "destination": "/looppaginas/warandeloop_tilburg_zaterdag/:path*",
       "permanent": true,

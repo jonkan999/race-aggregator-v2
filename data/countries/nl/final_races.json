@@ -5017,7 +5017,8 @@
     "sources": [
       "https://www.runinfo.nl/loopagenda.htm",
       "ranking_bridge",
-      "https://uitslagen.nl/evenement.php?id=2026120616344"
+      "https://uitslagen.nl/evenement.php?id=2026120616344",
+      "https://www.hardlopen.nl/evenementen/64968-volksloop-iedere-eerste-zondag-van-de-maand/"
     ],
     "consolidated_ids": [
       "4838b806-4134-56b3-b4c5-ac0370c41934"
@@ -6339,74 +6340,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261024",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "volksloop_monthly",
-    "name": "Volksloop (monthly)",
-    "type": "road",
-    "type_local": "Wegwedstrijd",
-    "race_dates": [
-      [
-        "20261206",
-        "20261206"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Nederland",
-    "latitude": 52.132633,
-    "longitude": 5.291265999999999,
-    "county": "Utrecht",
-    "nearest_city": "Amersfoort",
-    "nearby_cities": [
-      "Amersfoort",
-      "Utrecht",
-      "Almere",
-      "Ede",
-      "Tiel",
-      "Harderwijk",
-      "Amsterdam"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemengde afstand",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": true,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.hardlopen.nl/evenementen/64968-volksloop-iedere-eerste-zondag-van-de-maand/"
-    ],
-    "consolidated_ids": [
-      "f3e5bc33-76ac-45a1-9371-f316e2c6f725"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -16800,8 +16733,8 @@
   {
     "domain_name": "4e_daamencross_av_waterweg",
     "name": "4e Daamencross AV Waterweg",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261227",
@@ -16812,15 +16745,15 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Maassluis",
-    "latitude": 51.9226067,
-    "longitude": 4.254565599999999,
+    "location": "Sterrenbos, Maassluis, Nederland",
+    "latitude": 51.9269671,
+    "longitude": 4.2325449,
     "county": "Zuid-Holland",
     "nearest_city": "Nissewaard",
     "nearby_cities": [
       "Nissewaard",
-      "Rotterdam",
       "Den Haag",
+      "Rotterdam",
       "Leiden",
       "Dordrecht"
     ],
@@ -16836,27 +16769,53 @@
       "3000 meter"
     ],
     "distance_verbose": "9 km, 6 km, 3000 meter",
-    "organizer": null,
+    "organizer": "AV Waterweg",
     "contact": null,
-    "website": null,
+    "website": "https://www.avwaterweg.nl/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "AVW Daamencross",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "€4,-",
+            "deadline": null,
+            "description": "Het inschrijfgeld bedraagt € 4,-"
+          },
+          {
+            "label": "tier_2",
+            "price": "€1,-",
+            "deadline": null,
+            "description": "voor de jeugd t/m 15 jaar € 1,-"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.avwaterweg.nl/index.php?page=Crosscircuit&sid=1",
+    "race_info_url": "https://www.avwaterweg.nl/index.php?page=Crosscircuit&sid=1",
+    "presumed_organizer_email": "kalender@avwaterweg.nl",
+    "website_emails_found": [
+      "kalender@avwaterweg.nl",
+      "www.info@dijc-bertus.nl"
+    ],
+    "description": "De AV Waterweg Daamencross is een jaarlijks terugkerend crosscircuit dat plaatsvindt in het Sterrenbos te Maassluis. Het parcours van ongeveer 3 kilometer biedt een uitdagende en afwisselende route over grasdijken en door gevarieerde begroeiing, geschikt voor zowel jong als oud. De cross is een populaire conditietest in een ontspannen sfeer zonder prestatiedruk. De 4e editie vindt plaats op zondag 27 december 2026 en maakt deel uit van het najaarscrosscircuit van AV Waterweg.",
+    "course_highlights": [
+      "Rondje van circa 3 km door het Sterrenbos",
+      "Variatie in begroeiing en grasdijken",
+      "Geschikt voor alle leeftijden en niveaus"
+    ],
+    "additional": "Inschrijving kan via een formulier op de website met betaling via QR-code of directe betaalverzoeklink. De cross maakt deel uit van een circuit met meerdere wedstrijden in het najaar. Er is een grote deelname van jeugdige lopers en recreanten. De sfeer is ontspannen en het parcours wisselt per editie. De Daamencross maakt deel uit van een reeks van vier najaarscrossen met een klassement.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.hardlopen.nl/evenementen/52188-4e-daamencross-av-waterweg/"
     ],
@@ -16874,8 +16833,8 @@
   {
     "domain_name": "physique_derde_kerstdagloop_2026",
     "name": "Physique Derde Kerstdagloop 2026",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261227",
@@ -16886,9 +16845,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Arnhem",
-    "latitude": 51.9851034,
-    "longitude": 5.898729599999999,
+    "location": "Sportcentrum Valkenhuizen, Arnhem, Nederland",
+    "latitude": 52.0076461,
+    "longitude": 5.9332649,
     "county": "Gelderland",
     "nearest_city": "Arnhem",
     "nearby_cities": [
@@ -16896,14 +16855,12 @@
       "Ede",
       "Nijmegen",
       "Doetinchem",
-      "Tiel",
       "Deventer",
-      "Amersfoort"
+      "Tiel"
     ],
-    "distances": "[\"21.1\", \"21\", \"14\", \"7\"]",
+    "distances": "[\"21.1\", \"14\", \"7\"]",
     "distance_m": [
       21100,
-      21000,
       14000,
       7000
     ],
@@ -16911,27 +16868,33 @@
       "Halve marathon"
     ],
     "distance_verbose": "Halve marathon, 14 km, 7 km",
-    "organizer": null,
+    "organizer": "Atletiekvereniging Ciko’66",
     "contact": null,
-    "website": null,
+    "website": "https://derdekerstdagloop.nl/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://derdekerstdagloop.nl/#inschrijven",
+    "race_info_url": "https://derdekerstdagloop.nl/#informatie",
+    "presumed_organizer_email": "info@derdekerstdagloop.nl",
+    "website_emails_found": [
+      "info@derdekerstdagloop.nl"
+    ],
+    "description": "De Physique Derde Kerstdagloop in Arnhem is een sfeervolle hardloopwedstrijd die plaatsvindt op zondag 27 december 2026. Het hoofdnummer is de halve marathon, bekend als een van de mooiste en zwaarste halve marathons van Nederland, met een uitdagend parcours door bossen en heidevelden. Daarnaast zijn er ook afstanden van 14 km en 7 km, die deels over onverharde paden lopen en diverse hoogteverschillen bevatten. De wedstrijd wordt georganiseerd bij Sportcentrum Valkenhuizen en biedt faciliteiten zoals kleedruimtes, douches en bewaakte bagage-opslag.",
+    "course_highlights": [
+      "Halve marathon parcours van 21,1 km met 90% verharde fietspaden door bossen en heidevelden",
+      "14 km route met meer dan 50% onverharde paden en snelle start over heuvels en lanen",
+      "7 km parcours met bosgedeelte, veel klimmen en dalen, inclusief de beruchte 'Geitenbult'"
+    ],
+    "additional": "Er zijn drankposten op de halve marathon na circa 8 en 17 km en op de 14 km na circa 10 km. De tijdregistratie gebeurt met het Ipico-systeem en chips moeten na afloop worden ingeleverd. Er is EHBO aanwezig en gratis bewaakte bagage-opslag. Vrijwilligers zijn voornamelijk leden van Ciko’66. Er zijn drankposten op de halve marathon rond 8 en 17 km en op de 14 km rond 10 km. De tijdregistratie werkt met Ipico-chips; een niet-ingeleverde chip kost €10. Parkeergelegenheid is beperkt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.hardlopen.nl/evenementen/54306-physique-derde-kerstdagloop-2026/",
       "https://uitslagen.nl/evenement.php?id=2026122700294",
@@ -18807,8 +18770,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Cadzand",
+    "start_time": "14:30",
+    "location": "Cadzand, Sluis, Zeeland, Nederland",
     "latitude": 51.3692317,
     "longitude": 3.4077694,
     "county": "Zeeland",
@@ -18818,41 +18781,49 @@
       "Terneuzen",
       "Goes"
     ],
-    "distances": "[\"9.6\", \"4.8\", \"2.4\", \"1.5\", \"0.8\"]",
+    "distances": "[\"9.6\", \"4.8\", \"2.4\", \"1.5\", \"0.75\"]",
     "distance_m": [
       9600,
       4800,
       2400,
       1500,
-      800
+      750
     ],
     "distance_keywords": [
       "10 km",
       "5 km",
       "1500 meter"
     ],
-    "distance_verbose": "9.6 km, 4.8 km, 2.4 km, 1500 meter, 0.8 km",
-    "organizer": null,
+    "distance_verbose": "9.6 km, 4.8 km, 2.4 km, 1500 meter, 0.75 km",
+    "organizer": "AV De Wielingen",
     "contact": null,
-    "website": null,
+    "website": "https://www.avdewielingen.nl/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/avdewielingen/",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.avdewielingen.nl/wedstrijden/winterlopen/",
+    "presumed_organizer_email": "secretaris@avdewielingen.nl",
+    "website_emails_found": [
+      "secretaris@avdewielingen.nl",
+      "hmcadzand@zeelandnet.nl",
+      "jwhuigh@zeelandnet.nl"
+    ],
+    "description": "De 2e RENEWI Natuurloop 2026-27 Sylvestercross is een van de vier trimlopen in competitieverband die tijdens de wintermaanden in de kuststreek van West Zeeuws-Vlaanderen worden georganiseerd. Deze Sylvestercross vindt plaats op zondag 31 december 2026 en biedt verschillende afstanden voor jeugd en volwassenen. De loop start in het Bos van Erasmus, tussen Nieuwvliet en Cadzand, en is onderdeel van een serie waarbij deelnemers die aan minimaal drie van de vier wedstrijden deelnemen in aanmerking komen voor prijzen. De organisatie verzorgt elektronische tijdwaarneming en een gezellige sfeer voor alle niveaus.",
+    "course_highlights": [
+      "Trimloop door het Bos van Erasmus tussen Nieuwvliet en Cadzand",
+      "Afstanden voor jeugd (750m en 1500m) en volwassenen (2,4 / 4,8 / 9,6 km)",
+      "De loop maakt deel uit van een wintercompetitie met vier natuurlopen in West Zeeuws-Vlaanderen"
+    ],
+    "additional": "Jeugd start om 14:15 uur. De uitslagen worden samengesteld met elektronische tijdwaarneming. De loop maakt deel uit van een competitie waarbij minimaal 3 van de 4 natuurlopen gelopen moeten worden om in aanmerking te komen voor prijzen.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.35,
     "sources": [
       "https://www.hardlopen.nl/evenementen/24246-2e-renewi-natuurloop-2026-27-sylvestercross/"
     ],
@@ -18881,8 +18852,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Elsloo",
+    "start_time": "17:45",
+    "location": "Elsloo, Limburg, Nederland",
     "latitude": 50.9484656,
     "longitude": 5.7696738,
     "county": "Limburg",
@@ -18893,40 +18864,45 @@
       "Roermond",
       "Weert"
     ],
-    "distances": "[\"10\", \"5\", \"1.9\", \"1.3\", \"0.6\"]",
+    "distances": "[\"10\", \"5\", \"1.28\", \"0.64\"]",
     "distance_m": [
       10000,
       5000,
-      1900,
-      1300,
-      600
+      1280,
+      640
     ],
     "distance_keywords": [
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km, 1.9 km, 1.3 km, 0.6 km",
-    "organizer": null,
+    "distance_verbose": "10 km, 5 km, 1.28 km, 0.64 km",
+    "organizer": "Hardloopvrienden Elsloo",
     "contact": null,
-    "website": null,
+    "website": "https://www.sylvesterloopelsloo.nl/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20261228",
+    "registration_url": "https://www.sylvesterloopelsloo.nl/inschrijven.html",
+    "race_info_url": "https://www.sylvesterloopelsloo.nl/parcours.html",
+    "presumed_organizer_email": "info@sylvesterloopelsloo.nl",
+    "website_emails_found": [
+      "info@sylvesterloopelsloo.nl"
+    ],
+    "description": "De Sylvesterloop Elsloo is een sfeervolle hardloopklassieker die jaarlijks op oudejaarsavond plaatsvindt in Elsloo. Deze 43e editie wordt volledig bij kunstlicht gelopen, wat zorgt voor een unieke en gezellige dorpssfeer. Het evenement trekt lopers uit de wijde omgeving en biedt diverse afstanden, waaronder kidsruns en recreatieve en hoofdlopen van 5 en 10 km. Het parcours is vlak, snel en exact uitgemeten, ideaal voor het lopen van een persoonlijk record.",
+    "course_highlights": [
+      "Vlak en snel parcours met een rondje van 1,4 km",
+      "Kidsruns van 640 meter en 1280 meter op een kleine ronde",
+      "Uniek volledig verlicht parcours bij kunstlicht"
+    ],
+    "additional": "Startnummers liggen op de dag van de wedstrijd klaar in de sporthal aan de Joannes Riviusstraat. Na-inschrijving is mogelijk op de dag zelf vanaf 16:30 uur tot 30 minuten voor de start, uitsluitend contant. De tijdregistratie wordt verzorgd met een chip in het startnummer, dat na afloop niet ingeleverd hoeft te worden. Direct na de finish krijgen deelnemers aan de kidsruns een medaille en deelnemers aan de 5 en 10 km een herinnering. Prijsuitreikingen vinden direct na afloop van elke wedstrijd plaats bij de jurywagen. Startnummers ophalen en na-inschrijven kan in de sporthal aan de Joannes Riviusstraat. De tijdregistratie wordt verzorgd door Racetimer met een chip in het startnummer. Deelname is op eigen risico.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://uitslagen.nl/evenement.php?id=2026123117310",
       "https://www.hardlopen.nl/evenementen/30503-sylvesterloop-elsloo/",
@@ -18957,10 +18933,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Weert",
-    "latitude": 51.2439415,
-    "longitude": 5.7142222,
+    "start_time": "11:00",
+    "location": "AV Weert, Parklaan, Weert, Nederland",
+    "latitude": 51.2401177,
+    "longitude": 5.6949498,
     "county": "Limburg",
     "nearest_city": "Weert",
     "nearby_cities": [
@@ -18970,31 +18946,47 @@
       "Sittard-Geleen",
       "Venlo"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemengde afstand",
-    "organizer": null,
+    "distances": "[\"10\", \"5\", \"3\", \"1\"]",
+    "distance_m": [
+      10000,
+      5000,
+      3000,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km",
+      "3000 meter"
+    ],
+    "distance_verbose": "10 km, 5 km, 3000 meter, 1 km",
+    "organizer": "AV Weert",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://avweert.nl/gamma-weert-oliebollenloop/",
+    "fb_link": "https://www.facebook.com/avweert",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://avweert.nl/gamma-weert-oliebollenloop/",
+    "presumed_organizer_email": "info@avweert.nl",
+    "website_emails_found": [
+      "info@avweert.nl",
+      "wandelen@avweert.nl"
+    ],
+    "description": "De Gamma Weert Oliebollenloop is een jaarlijks hardloopevenement dat plaatsvindt op 31 december bij AV Weert in Weert. Het evenement biedt een sportieve afsluiting van het jaar met een sfeervolle loop op de atletiekbaan en in de omgeving. De loop is toegankelijk voor verschillende leeftijden en niveaus, en staat bekend om zijn gezellige en feestelijke karakter. De organisatie nodigt iedereen uit om mee te doen en het jaar actief af te sluiten.",
+    "course_highlights": [
+      "Start en finish op de atletiekbaan van AV Weert",
+      "Sfeervolle loop op 31 december als eindejaarsactiviteit",
+      "Geschikt voor diverse leeftijden en prestatieniveaus"
+    ],
+    "additional": "Het evenement vindt plaats op de atletiekbaan van AV Weert aan Parklaan 1C, Weert. De loop duurt van 11:00 tot 15:30 uur. Er is een gezellige sfeer met een afsluitend moment rond de jaarwisseling. De organisatie adviseert deelnemers om hun telefoonnummer in de communicatie op te nemen voor snelle contactmogelijkheden. Er is plaats voor maximaal 600 deelnemers. Voorzieningen bij de startlocatie omvatten kleedruimtes, douches en een bewaakte garderobe.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.hardlopen.nl/evenementen/30677-gammaav-weert-oliebollenloop/"
     ],
@@ -19024,18 +19016,19 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Apeldoorn",
-    "latitude": 52.21115700000001,
-    "longitude": 5.9699231,
+    "location": "Sportpark Orderbos, Apeldoorn, Nederland",
+    "latitude": 52.2026926,
+    "longitude": 5.9220422,
     "county": "Gelderland",
     "nearest_city": "Deventer",
     "nearby_cities": [
       "Deventer",
       "Arnhem",
-      "Harderwijk",
       "Ede",
+      "Harderwijk",
+      "Doetinchem",
       "Zwolle",
-      "Doetinchem"
+      "Amersfoort"
     ],
     "distances": "[\"23\", \"16\", \"8.5\", \"5\"]",
     "distance_m": [
@@ -19048,27 +19041,47 @@
       "5 km"
     ],
     "distance_verbose": "23 km, 16 km, 8.5 km, 5 km",
-    "organizer": null,
+    "organizer": "Atletiekvereniging Veluwe",
     "contact": null,
-    "website": null,
+    "website": "https://www.avveluwe.nl/event/wisentwintertrail-2026/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "9-12 euro",
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.wisenttrail.nl/",
+    "race_info_url": "https://www.avveluwe.nl/event/wisentwintertrail-2026/#content",
+    "presumed_organizer_email": "wedstrijden@avveluwe.nl",
+    "website_emails_found": [
+      "leden@avveluwe.nl",
+      "beginners@avveluwe.nl",
+      "secretaris@avveluwe.nl",
+      "voorzitter@avveluwe.nl",
+      "tcg-secretaris@avveluwe.nl",
+      "runningcoach@avveluwe.nl",
+      "wedstrijden@avveluwe.nl",
+      "communicatie@avveluwe.nl",
+      "prpers@avveluwe.nl",
+      "clubrecords@avveluwe.nl",
+      "vrijwilligers@avveluwe.nl",
+      "liefenleed@avveluwe.nl",
+      "penningmeester@avveluwe.nl",
+      "vertrouwenspersoon-vrouw@avveluwe.nl",
+      "vertrouwenspersoon-man@avveluwe.nl"
+    ],
+    "description": "De Wisent Wintertrail is de gezelligste trail om het jaar mee af te sluiten, gehouden op oudejaarsdag in Apeldoorn. De trail biedt vier afstanden van ongeveer 5, 8,5, 16 en 23 kilometer, elk bestaande uit één grote, uitstekend bewegwijzerde ronde. De route bevat uitdagende beklimmingen zoals de Topberg en stukken vals plat, met afwisselende singletrails, trappen en mul zand. Na de finish kunnen deelnemers genieten van een kop soep en oliebollen, en is er gelegenheid om na te praten in de sportkantine. Er is geen prijsuitreiking, maar wel tijdwaarneming voor alle afstanden.",
+    "course_highlights": [
+      "Vier afstanden van circa 5, 8,5, 16 en 23 km, elk één grote ronde",
+      "Beklimmingen zoals de Topberg en stukken vals plat in de eerste kilometers",
+      "Afwisselende singletrails, trappen en mul zand in het laatste deel van de route"
+    ],
+    "additional": "Startnummer ligt klaar bij het wedstrijdsecretariaat, wordt niet opgestuurd. Bij annulering geen restitutie. Tijdens de trail kan de afstand aangepast worden of het startnummer overgedragen aan een ander, mits de nieuwe naam en noodnummer gemeld worden aan de wedstrijdcommissie. Voor alle afstanden zijn GPX-routes beschikbaar. Er is volop kleed- en douchegelegenheid. Na afloop is er een sportkantine om na te praten. Start en parkeren bij CSV Apeldoorn in Sportpark Orderbos. Er is kleed- en douchegelegenheid en een sportkantine. Er is tijdwaarneming, maar geen uitslag of prijsuitreiking; onderweg is geen verzorgingspost.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://www.hardlopen.nl/evenementen/36502-wisent-winter-trail-2026/",
       "https://uitslagen.nl/evenement.php?id=2026123119445",
@@ -20203,8 +20216,8 @@
   {
     "domain_name": "vegelinboscross",
     "name": "Vegelinboscross",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270102",
@@ -20214,8 +20227,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Sint Nicolaasga",
+    "start_time": "11:00",
+    "location": "Vijver in het Vegelinbos, Sint Nicolaasga, Friesland, Nederland",
     "latitude": 52.9243196,
     "longitude": 5.7406279,
     "county": "Fryslân",
@@ -20226,37 +20239,45 @@
       "Leeuwarden",
       "Drachten"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10.6\", \"5.3\"]",
     "distance_m": [
-      10000,
-      5000
+      10600,
+      5300
     ],
     "distance_keywords": [
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10.6 km, 5.3 km",
+    "organizer": "AV Heerenveen",
     "contact": null,
-    "website": null,
+    "website": "https://avheerenveen.nl/agenda/wintercompetitie-vegelinboscross/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "€5-€6",
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270101",
+    "registration_url": "https://avheerenveen.nl/agenda/wintercompetitie-vegelinboscross/#content",
+    "race_info_url": "https://avheerenveen.nl/agenda/wintercompetitie-vegelinboscross/#content",
+    "presumed_organizer_email": "wintercompetitie@avheerenveen.nl",
+    "website_emails_found": [
+      "wintercompetitie@avheerenveen.nl",
+      "secretariaat@avheerenveen.nl",
+      "ledenadministratie@avheerenveen.nl"
+    ],
+    "description": "De Vegelinboscross is de vierde loop van de Wintercompetitie georganiseerd door AV Heerenveen. De wedstrijd vindt plaats in het Vegelinbos bij Sint Nicolaasga en biedt twee afstanden: een korte van 5,3 km en een lange van circa 10,6 km. Het parcours is grotendeels onverhard en start bij de vijver in het Vegelinbos, op ongeveer tien minuten lopen vanaf de Doniahal. De wedstrijd start om 11:00 uur en het afhalen van de schoentag kan vanaf 9:30 uur.",
+    "course_highlights": [
+      "Parcours grotendeels onverhard",
+      "Route door het Vegelinbos bij Sint Nicolaasga",
+      "Start bij de vijver in het Vegelinbos"
+    ],
+    "additional": "Alle wedstrijden van de Wintercompetitie starten om 11:00 uur en het afhalen van de schoentag kan vanaf 9:30 uur. De startlocatie is tien minuten lopen vanaf de Doniahal. Deelname geschiedt voor eigen risico. Na inschrijving op 1 januari 19:00 uur is niet meer mogelijk. De korte cross is toegankelijk vanaf 12 jaar en de lange cross vanaf 14 jaar. Startnummers zijn af te halen bij de Doniahal, waar ook toiletten en kleedkamers beschikbaar zijn.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.96,
     "sources": [
       "https://uitslagen.nl/evenement.php?id=2027010223504",
       "https://www.hardlopen.nl/evenementen/43636-vegelinboscross/"

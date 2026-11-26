@@ -9284,8 +9284,8 @@
   {
     "domain_name": "lysacup_malenovice_rajska_bouda_finale",
     "name": "Lysacup – Malenovice, Rajská bouda – finále",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270227",
@@ -9295,7 +9295,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "10:00",
     "location": "Rajská bouda, Malenovice, Frýdlant nad Ostravicí, Moravian-Silesian Region, Česko",
     "latitude": 49.57442469999999,
     "longitude": 18.4039554,
@@ -9312,25 +9312,29 @@
     "distance_verbose": "5.7 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://lysacup.cz/rocnik/rozpis-etap",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://lysacup.cz/homepage/about",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Lysacup je zimní etapový pohár v běhu, který se koná převážně na Lysé hoře v Beskydech. Každý víkend se běží z jiného místa, přičemž závod v Malenovicích u Rajské boudy je finálovou etapou. Soutěž je určena jak jednotlivcům, tak týmům, a nabízí jedinečnou příležitost vyzkoušet si běh v zimních podmínkách s krásnými horskými výhledy. Start je obvykle v 10:00 a účastníci používají čipy aktivované na celý ročník za dobrovolný příspěvek.",
+    "course_highlights": [
+      "Zimní běh v horském terénu Beskyd",
+      "Etapový závod s různými startovními místy každý víkend",
+      "Finálová etapa v Malenovicích u Rajské boudy"
+    ],
+    "additional": "Startovní čip se aktivuje na celý ročník zasláním dobrovolného příspěvku na účet. Jednorázová cena čipu je 100 Kč. Čipy lze odkoupit od jiných závodníků nebo získat od pořadatelů, obvykle v září. V závodě je možné se účastnit i jako chodec, který získává body podle pravidel poháru. Závěrečná etapa je bodována dvojnásobně. Týmová soutěž sčítá nejlepší výsledky tří závodníků z týmu. Finálová etapa je dvojnásobně bodovaná. Závěr seriálu zahrnuje vyhlášení celkového pořadí.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.svetbehu.cz/terminovka/lysacup-malenovice-rajska-bouda-finale/"
     ],
@@ -9348,8 +9352,8 @@
   {
     "domain_name": "zeleznohorak",
     "name": "Železnohorák",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270227",
@@ -9359,8 +9363,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Bezděkov u Chotěboře, Vysočina, Česko",
+    "start_time": "13:00",
+    "location": "Bezděkov, Chotěboř, Česko",
     "latitude": 49.7328313,
     "longitude": 15.7304011,
     "county": "Kraj Vysočina",
@@ -9374,27 +9378,56 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Železnohorský pohár",
     "contact": null,
-    "website": null,
+    "website": "https://zeleznohorsky-pohar.webnode.cz/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_tiers": [
+      {
+        "distance": "Železnohorák",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "100 Kč",
+            "deadline": "20270225",
+            "description": "100 Kč - pro registrované on-line"
+          },
+          {
+            "label": "tier_2",
+            "price": "150 Kč",
+            "deadline": "20270227",
+            "description": "150 Kč - pro registrované na místě"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270227",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://zeleznohorsky-pohar.webnode.cz/zeleznohorak-2027/",
+    "presumed_organizer_email": "zeleznohorskypohar@seznam.cz",
+    "website_emails_found": [
+      "zeleznohorskypohar@seznam.cz",
+      "kutin@centrum.cz",
+      "info@bobrbiketeam.com",
+      "pradac.leos@seznam.cz",
+      "konrad76@seznam.cz"
+    ],
+    "description": "Železnohorák je součástí Železnohorského poháru, seriálu běhů do vrchu v krásné přírodě Železných hor. Závod nabízí sportovní výzvu v kopcovitém terénu s cílem na nejvyšším bodě Železných hor, Horním Vestci. Běží se v malebné obci Bezděkov u Chotěboře a je vhodný jak pro závodníky usilující o nejlepší čas, tak pro běžce běžící pro radost z pohybu. Start je hromadný v 13:00 na návsi v Bezděkově.",
+    "course_highlights": [
+      "Běh do vrchu v kopcovitém terénu Železných hor",
+      "Cíl na nejvyšším bodě Železných hor, Horním Vestci (668 m n. m.)",
+      "Start a cíl v malebné obci Bezděkov u Chotěboře"
+    ],
+    "additional": "Startovné je zdarma pro závodníky v úboru Železnohoráka (bílé triko, červené trenýrky, zmijovka/rádiovka) a startovné jim bude vráceno při slavnostním ceremoniálu. Přihlášky jsou možné on-line do půlnoci 25. února nebo na místě v den závodu od 11:30 do 12:40.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.svetbehu.cz/terminovka/zeleznohorak/"
     ],
@@ -9412,8 +9445,8 @@
   {
     "domain_name": "ludgerovicka_15",
     "name": "Ludgeřovická 15",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20270306",
@@ -9432,33 +9465,41 @@
     "nearby_cities": [
       "Ostrava"
     ],
-    "distances": "[\"15\"]",
+    "distances": "[\"15\", \"3\", \"0.5\"]",
     "distance_m": [
-      15000
+      15000,
+      3000,
+      500
     ],
-    "distance_keywords": [],
-    "distance_verbose": "15 km",
-    "organizer": null,
+    "distance_keywords": [
+      "3000 meter"
+    ],
+    "distance_verbose": "15 km, 3000 meter, 0.5 km",
+    "organizer": "Běžecký klub Ludgeřovice, z.s.",
     "contact": null,
-    "website": null,
+    "website": "https://www.bkludgerovice.cz/l-15/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.bkludgerovice.cz/l-15/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Ludgeřovická 15 je běžecký závod v Ludgeřovicích s hlavní tratí dlouhou 15 km. Součástí programu bývá také kratší běh na 3 km, patnáctikilometrový závod pro chodce a dětský běh na 500 m. Závod je součástí Prajzsko-opavské běžecké ligy a Moravskoslezského běžeckého poháru.",
+    "course_highlights": [
+      "Patnáctikilometrová trasa vede převážně Černým lesem.",
+      "Trať míjí vojenské bunkry.",
+      "Povrch trasy tvoří přibližně 90 % silnice a 10 % trailu."
+    ],
+    "additional": "Program zahrnuje také dětský běh na 500 m a závod pro chodce na 15 km.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.svetbehu.cz/terminovka/ludgerovicka-patnactka/"
     ],
@@ -9757,8 +9798,8 @@
   {
     "domain_name": "kobericka_dvacitka",
     "name": "Kobeřická dvacítka",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20270314",
@@ -9777,35 +9818,72 @@
     "nearby_cities": [
       "Ostrava"
     ],
-    "distances": "[\"20\"]",
+    "distances": "[\"20\", \"10\", \"6\"]",
     "distance_m": [
-      20000
+      20000,
+      10000,
+      6000
     ],
     "distance_keywords": [
-      "Půlmaraton"
+      "Půlmaraton",
+      "10 km",
+      "5 km"
     ],
-    "distance_verbose": "20 km",
-    "organizer": null,
+    "distance_verbose": "20 km, 10 km, 6 km",
+    "organizer": "Atletický oddíl TJ Sokol Kobeřice",
     "contact": null,
-    "website": null,
+    "website": "https://tjsokolkoberice.cz/?page_id=327",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://tjsokolkoberice.cz/?page_id=10",
+    "race_info_url": "https://tjsokolkoberice.cz/?p=9182",
+    "presumed_organizer_email": "p.stuchlik@seznam.cz",
+    "website_emails_found": [
+      "p.stuchlik@seznam.cz",
+      "schlischka24@gmail.com",
+      "jancujek@seznam.cz",
+      "jiri.oberherr@centrum.cz",
+      "hanajurckova@centrum.cz",
+      "stuchlicka@post.cz",
+      "Jan-Christoph@seznam.cz",
+      "pavel.krautwurst@centrum.cz",
+      "jaso.tomas@seznam.cz",
+      "d.latka@seznam.cz",
+      "stuchlik10@seznam.cz",
+      "pavel.harazim@agroup.cz",
+      "marekvidlak@seznam.cz",
+      "zboza.j@seznam.cz",
+      "TomikMrazek@seznam.cz",
+      "jurin1989@seznam.cz",
+      "malcharek.dav@seznam.cz",
+      "krcmapavel62@seznam.cz",
+      "martin.stribny@seznam.cz",
+      "martinobrusnik@seznam.cz",
+      "allen.sotornik@seznam.cz",
+      "marek.jasek@seznam.cz",
+      "matrika@koberice.cz",
+      "petr.kraut@seznam.cz",
+      "daniel.bocek@seznam.cz",
+      "kamen67@centrum.cz",
+      "zdenek.jurcek@stavebniny-janik.cz",
+      "frank.martin76@seznam.cz"
+    ],
+    "description": "Kobeřická dvacítka je tradiční atletický běh pořádaný TJ Sokol Kobeřice, který má dlouholetou historii sahající až do roku 1982. Závod se koná v areálu hřiště TJ Sokol Kobeřice v Moravskoslezském kraji a je součástí série Kobeřických běhů, které zahrnují i půlmaraton a zimní běh. Tento závod je určen pro širokou veřejnost včetně mládeže i dospělých a je známý svou přátelskou atmosférou a podporou atletického oddílu zaměřeného na rozvoj běžeckých talentů. Pořadatelé kladou důraz na tradici a sportovní hodnoty, které jsou součástí místní běžecké komunity.",
+    "course_highlights": [
+      "Silniční tratě vedou po mírně členitém okruhu v okolí Kobeřic.",
+      "Na výběr jsou vzdálenosti 20, 10 a 6 km.",
+      "Dětské a mládežnické běhy se konají v okolí hřiště TJ Sokol Kobeřice."
+    ],
+    "additional": "Kobeřická dvacítka je součástí tří veřejných závodů pořádaných TJ Sokol Kobeřice, které jsou určeny jak pro mládež, tak pro dospělé. Atletický oddíl se zaměřuje na rozvoj mladých běžců a má za sebou řadu úspěšných sportovců včetně maratónců. Závody se konají v areálu hřiště TJ Sokol Kobeřice, který je centrem místní atletické činnosti. Závod je součástí Prajzsko-opavské běžecké ligy (POBL).",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.82,
     "sources": [
       "https://www.svetbehu.cz/terminovka/kobericka-dvacitka-2022/"
     ],
@@ -9896,8 +9974,8 @@
   {
     "domain_name": "jarni_desitka_kravare",
     "name": "Jarní desítka Kravaře",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20270321",
@@ -9908,9 +9986,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Kouty, Kravaře, Moravian-Silesian Region, Česko",
-    "latitude": 49.9280571,
-    "longitude": 18.0313259,
+    "location": "Sportovní areál Olšinky, Kravaře-Kouty, Kravaře, Česko",
+    "latitude": 49.9240975,
+    "longitude": 18.0418187,
     "county": "Moravskoslezský kraj",
     "nearest_city": "Ostrava",
     "nearby_cities": [
@@ -9924,27 +10002,33 @@
       "10 km"
     ],
     "distance_verbose": "10 km",
-    "organizer": null,
+    "organizer": "Prajzský BK Kravaře",
     "contact": null,
-    "website": null,
+    "website": "https://prajzskybk.webnode.cz/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://prajzskybk.webnode.cz/registrace/",
+    "race_info_url": "https://prajzskybk.webnode.cz/jarni-desitka/",
+    "presumed_organizer_email": "prajzskybk@atlas.cz",
+    "website_emails_found": [
+      "prajzskybk@atlas.cz"
+    ],
+    "description": "Jarní desítka Kravaře je silniční běžecký závod na 10 km se startem a cílem ve sportovním areálu Olšinky v Kravařích-Koutech. Převážně rovinatá trať vede po cyklostezce mezi poli a loukami, mimo běžný silniční provoz. Závod je součástí Prajzsko-opavské běžecké ligy.",
+    "course_highlights": [
+      "Rovinatá cyklostezka otevřenou krajinou mezi poli a loukami.",
+      "Trať vede směrem na Kravaře a Zábřeh, s otočkou a smyčkou.",
+      "Přibližně 200 metrů trasy tvoří krosový úsek."
+    ],
+    "additional": "Start i cíl jsou ve sportovním areálu Olšinky.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.svetbehu.cz/terminovka/jarni-desitka-kravare/"
     ],
@@ -33240,8 +33324,8 @@
   {
     "domain_name": "sudicky_hranicak",
     "name": "Sudický hraničák",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270522",
@@ -33260,33 +33344,86 @@
     "nearby_cities": [
       "Ostrava"
     ],
-    "distances": "[\"14\"]",
+    "distances": "[\"15\", \"7\"]",
     "distance_m": [
-      14000
+      15000,
+      7000
     ],
     "distance_keywords": [],
-    "distance_verbose": "14 km",
-    "organizer": null,
+    "distance_verbose": "15 km, 7 km",
+    "organizer": "Energy sports team",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://energy-team.net/sudicky-hranicak/",
+    "fb_link": "https://www.facebook.com/EnergySportsTeam",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "150–200 Kč; děti 50 Kč",
+    "price_tiers": [
+      {
+        "distance": "15 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "150 Kč",
+            "deadline": null,
+            "description": "Platba předem (online) 150,- Kč"
+          }
+        ],
+        "late_fee": {
+          "price": "200 Kč",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "7 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "150 Kč",
+            "deadline": null,
+            "description": "Platba předem (online) 150,- Kč"
+          }
+        ],
+        "late_fee": {
+          "price": "200 Kč",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Nordic Walking 7 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "150 Kč",
+            "deadline": null,
+            "description": "Platba předem (online) 150,- Kč"
+          }
+        ],
+        "late_fee": {
+          "price": "200 Kč",
+          "deadline": null
+        }
+      }
+    ],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://energy-team.net/sudicky-hranicak/",
+    "presumed_organizer_email": "hlavac@auditweb.eu",
+    "website_emails_found": [
+      "hlavac@auditweb.eu"
+    ],
+    "description": "Sudický hraničák je běžecký závod a Nordic Walking, který se koná v areálu fotbalového hřiště v Sudicích. Trasa hlavního závodu měří 15 km a vede přes několik překročení státní hranice mezi Českem a Polskem, s průběhem přes malebné vesnice a přírodní oblasti moravsko-slezského pohraničí. Na trati jsou dvě náročná stoupání, která prověří kondici závodníků, a na konci čeká na všechny finišerská medaile. Kapacita závodu je omezena na 120 účastníků, proto je doporučeno se registrovat včas.",
+    "course_highlights": [
+      "Trasa vede přes státní hranice mezi Českem a Polskem, včetně vesnic Pietraszyn, Rohov a Ściborzyce Wielkie",
+      "Dvě výrazná stoupání: Warm-Up Hill (6. km, 20 m převýšení, 500 m délka) a Breathtaking Hill",
+      "Start i cíl na fotbalovém hřišti v Sudicích s cílovou rovinkou plnou fanoušků"
+    ],
+    "additional": "Kapacita hlavních závodů (15 km, 7 km, Nordic Walking) je omezena na 120 účastníků. Na trati 15 km jsou dvě obsluhované občerstvovací stanice s vodou a iontovým nápojem. Platba je možná také v hotovosti na místě, včetně platby v polských zlotých (25 PLN). Hlavní závody na 7 km a 15 km i Nordic Walking mají omezenou kapacitu 120 účastníků. Na 7km trati není občerstvovací stanice.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.svetbehu.cz/terminovka/sudicky-hranicak/"
     ],
@@ -39283,8 +39420,8 @@
   {
     "domain_name": "heroes_race",
     "name": "Heroes Race",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "terrain",
+    "type_local": "Terén",
     "race_dates": [
       [
         "20270605",
@@ -39294,42 +39431,138 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Hradec nad Moravicí, Moravian-Silesian Region, Česko",
-    "latitude": 49.8708323,
-    "longitude": 17.8758088,
+    "start_time": "06:30",
+    "location": "Belaria Resort, Hradec nad Moravicí, Česko",
+    "latitude": 49.8637958,
+    "longitude": 17.8664699,
     "county": "Moravskoslezský kraj",
     "nearest_city": "Ostrava",
     "nearby_cities": [],
-    "distances": "[\"10\"]",
+    "distances": "[\"10\", \"5\", \"2\"]",
     "distance_m": [
-      10000
+      10000,
+      5000,
+      2000
     ],
     "distance_keywords": [
-      "10 km"
+      "10 km",
+      "5 km"
     ],
-    "distance_verbose": "10 km",
+    "distance_verbose": "10 km, 5 km, 2 km",
     "organizer": null,
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://www.heroesrace.cz/",
+    "fb_link": "https://www.facebook.com/heroesrace.cz/?locale=cs_CZ",
+    "ig_link": "https://www.instagram.com/heroes_race_hradec/?hl=cs",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Trail 10+ km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "499 Kč",
+            "deadline": "20261130",
+            "description": "Cena do 30.11."
+          },
+          {
+            "label": "tier_2",
+            "price": "599 Kč",
+            "deadline": "20270331",
+            "description": "Cena do 31.3."
+          }
+        ],
+        "late_fee": {
+          "price": "699 Kč",
+          "deadline": "20270605"
+        }
+      },
+      {
+        "distance": "Odvaha 5+ km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "399 Kč",
+            "deadline": "20261130",
+            "description": "Cena do 30.11."
+          },
+          {
+            "label": "tier_2",
+            "price": "499 Kč",
+            "deadline": "20270331",
+            "description": "Cena do 31.3."
+          }
+        ],
+        "late_fee": {
+          "price": "599 Kč",
+          "deadline": "20270605"
+        }
+      },
+      {
+        "distance": "Síla 10+ km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "599 Kč",
+            "deadline": "20261130",
+            "description": "Cena do 30.11."
+          },
+          {
+            "label": "tier_2",
+            "price": "699 Kč",
+            "deadline": "20270331",
+            "description": "Cena do 31.3."
+          }
+        ],
+        "late_fee": {
+          "price": "799 Kč",
+          "deadline": "20270605"
+        }
+      },
+      {
+        "distance": "Kids 2+ km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "199 Kč",
+            "deadline": "20261130",
+            "description": "Cena do 30.11."
+          },
+          {
+            "label": "tier_2",
+            "price": "249 Kč",
+            "deadline": "20270331",
+            "description": "Cena do 31.3."
+          }
+        ],
+        "late_fee": {
+          "price": "299 Kč",
+          "deadline": "20270605"
+        }
+      }
+    ],
+    "registration_close_date": "20270605",
+    "registration_url": "https://www.heroesrace.cz/#registrace",
+    "race_info_url": "https://www.heroesrace.cz/#zavody",
+    "presumed_organizer_email": "info@heroesrace.cz",
+    "website_emails_found": [
+      "info@heroesrace.cz",
+      "registrace@heroesrace.cz",
+      "dobrovolnici@heroesrace.cz"
+    ],
+    "description": "Heroes Race je překážkový OCR závod v Hradci nad Moravicí, který prověří nejen běžeckou kondici, ale i sílu, úchop, vytrvalost a odvahu. Závod nabízí různé tratě včetně překážkových OCR Odvaha (5+ km), OCR Síla (10+ km), čistě běžeckého Trailu (10+ km) a dětského závodu Kids (2+ km). Trať je náročná, zahrnuje vodu, bláto, prudké výběhy a technické překážky, které vyžadují fyzickou i mentální odolnost. Závod je vhodný jak pro začátečníky, tak pro zkušené závodníky, kteří chtějí překonat své limity.",
+    "course_highlights": [
+      "Překážky zahrnují vodu, bláto a prudké výběhy",
+      "Trať OCR Síla nabízí technické překážky a delší vzdálenost přes 10 km",
+      "Trail je čistě běžecký závod v lese s převýšením bez překážek"
+    ],
+    "additional": "Prezentace závodníků probíhá od 6:30 do 12:00, nejdříve 90 minut před startem. K dispozici jsou samostatné kategorie pro děti a fun běhy na 5+ a 10+ km. Web nabízí možnost vytvořit si závodní fotku a sledovat živé výsledky. Na výběr jsou závodní formáty pro děti i dospělé.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.97,
     "sources": [
       "https://www.svetbehu.cz/terminovka/heroes-race/"
     ],
