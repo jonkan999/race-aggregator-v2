@@ -686,6 +686,114 @@
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "dk"
+    },
+    {
+      "source": "/lobsider/festiwal_biegowy_szpot",
+      "destination": "/lobsider/5_polmaraton_szpot_swarzedz/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/festiwal_biegowy_szpot/",
+      "destination": "/lobsider/5_polmaraton_szpot_swarzedz/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/festiwal_biegowy_szpot/:path*",
+      "destination": "/lobsider/5_polmaraton_szpot_swarzedz/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/festiwal_biegowy_szpot",
+      "destination": "/en/race-pages/5_polmaraton_szpot_swarzedz/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/festiwal_biegowy_szpot/",
+      "destination": "/en/race-pages/5_polmaraton_szpot_swarzedz/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/festiwal_biegowy_szpot/:path*",
+      "destination": "/en/race-pages/5_polmaraton_szpot_swarzedz/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/mno_jaszczur_i_czerwony_most",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/mno_jaszczur_i_czerwony_most/",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/mno_jaszczur_i_czerwony_most/:path*",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/mno_jaszczur_i_czerwony_most",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/mno_jaszczur_i_czerwony_most/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/mno_jaszczur_i_czerwony_most/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/wiosenna_hala",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/wiosenna_hala/",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/lobsider/wiosenna_hala/:path*",
+      "destination": "/lobekalender/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/wiosenna_hala",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/wiosenna_hala/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
+    },
+    {
+      "source": "/en/race-pages/wiosenna_hala/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "dk"
     }
   ]
 }

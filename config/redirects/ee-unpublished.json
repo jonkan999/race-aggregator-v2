@@ -290,6 +290,42 @@
       "destination": "/en/race-calendar/cities/viljandi/",
       "permanent": true,
       "market": "ee"
+    },
+    {
+      "source": "/jooksulehed/elcka_zmarzlina",
+      "destination": "/jooksuvoistlused/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/jooksulehed/elcka_zmarzlina/",
+      "destination": "/jooksuvoistlused/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/jooksulehed/elcka_zmarzlina/:path*",
+      "destination": "/jooksuvoistlused/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/en/race-pages/elcka_zmarzlina",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/en/race-pages/elcka_zmarzlina/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ee"
+    },
+    {
+      "source": "/en/race-pages/elcka_zmarzlina/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "ee"
     }
   ]
 }

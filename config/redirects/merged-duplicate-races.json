@@ -5235,6 +5235,18 @@
       "market": "pl"
     },
     {
+      "source": "/strony_biegow/festiwal_biegowy_szpot/:path*",
+      "destination": "/strony_biegow/5_polmaraton_szpot_swarzedz/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/festiwal_biegowy_szpot/:path*",
+      "destination": "/en/race-pages/5_polmaraton_szpot_swarzedz/:path*",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
       "source": "/strony_biegow/garmin_ultra_race_tolkmicko_kadyny/:path*",
       "destination": "/strony_biegow/garmin_ultra_race_tolkmicko/:path*",
       "permanent": true,
