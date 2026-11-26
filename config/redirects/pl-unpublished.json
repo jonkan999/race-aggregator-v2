@@ -3638,6 +3638,42 @@
       "destination": "/en/race-calendar/cities/wroclaw/",
       "permanent": true,
       "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/mazurskie_tropy",
+      "destination": "/kalendarz-biegow/miasta/olsztyn/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/mazurskie_tropy/",
+      "destination": "/kalendarz-biegow/miasta/olsztyn/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/strony_biegow/mazurskie_tropy/:path*",
+      "destination": "/kalendarz-biegow/miasta/olsztyn/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/mazurskie_tropy",
+      "destination": "/en/race-calendar/cities/olsztyn/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/mazurskie_tropy/",
+      "destination": "/en/race-calendar/cities/olsztyn/",
+      "permanent": true,
+      "market": "pl"
+    },
+    {
+      "source": "/en/race-pages/mazurskie_tropy/:path*",
+      "destination": "/en/race-calendar/cities/olsztyn/",
+      "permanent": true,
+      "market": "pl"
     }
   ]
 }
