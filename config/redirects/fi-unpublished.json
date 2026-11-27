@@ -1,7 +1,7 @@
 {
   "id": "fi-unpublished",
   "market": "fi",
-  "note": "Unpublished FI races and neighbour-market copies kept in Supabase (published=false, never deleted). 308 the retired page to a city page if one exists, otherwise the calendar. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated). orbyhus_half_marathon_10k_orbyhus: SE neighbour copy, unpublished 2026-11-22 (no such race); no Uppsala city page here.",
+  "note": "Unpublished FI races and neighbour-market copies kept in Supabase (published=false, never deleted). 308 the retired page to a city page if one exists, otherwise the calendar. Hand-maintained; do not fold into merged-duplicate-races.json (that file is regenerated). orbyhus_half_marathon_10k_orbyhus: SE neighbour copy, unpublished 2026-11-22 (no such race); no Uppsala city page here. mantsalan_pikkujoulumaraton_petra_100_juhlamaraton: self-timed omatoimimaraton in Mäntsälä, unpublished 2026-11-27 (bot session 20261127-1317); no Mäntsälä city page.",
   "redirects": [
     {
       "source": "/kilpailusivut/orbyhus_half_marathon_10k_orbyhus",
@@ -251,6 +251,42 @@
     },
     {
       "source": "/en/race-pages/halloween_run_2026_virtuaaljooks/:path*",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "fi"
+    },
+    {
+      "source": "/kilpailusivut/mantsalan_pikkujoulumaraton_petra_100_juhlamaraton",
+      "destination": "/juoksukalenteri/",
+      "permanent": true,
+      "market": "fi"
+    },
+    {
+      "source": "/kilpailusivut/mantsalan_pikkujoulumaraton_petra_100_juhlamaraton/",
+      "destination": "/juoksukalenteri/",
+      "permanent": true,
+      "market": "fi"
+    },
+    {
+      "source": "/kilpailusivut/mantsalan_pikkujoulumaraton_petra_100_juhlamaraton/:path*",
+      "destination": "/juoksukalenteri/",
+      "permanent": true,
+      "market": "fi"
+    },
+    {
+      "source": "/en/race-pages/mantsalan_pikkujoulumaraton_petra_100_juhlamaraton",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "fi"
+    },
+    {
+      "source": "/en/race-pages/mantsalan_pikkujoulumaraton_petra_100_juhlamaraton/",
+      "destination": "/en/race-calendar/",
+      "permanent": true,
+      "market": "fi"
+    },
+    {
+      "source": "/en/race-pages/mantsalan_pikkujoulumaraton_petra_100_juhlamaraton/:path*",
       "destination": "/en/race-calendar/",
       "permanent": true,
       "market": "fi"
