@@ -18808,9 +18808,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Mehren, Vulkaneifel, Rhineland-Palatinate, Deutschland",
-    "latitude": 50.1770735,
-    "longitude": 6.8805416,
+    "location": "Sportstätte Josef Ring am Sportplatz, Mehren, Rhineland-Palatinate, Deutschland",
+    "latitude": 50.1840088,
+    "longitude": 6.876189500000001,
     "county": "Rheinland-Pfalz",
     "nearest_city": "Trier",
     "nearby_cities": [],
@@ -18818,27 +18818,33 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "organizer": "SV Mehren",
     "contact": null,
-    "website": null,
+    "website": "https://sv-mehren.de/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://sv-mehren.de/infos/",
+    "presumed_organizer_email": "kontakt@sv-mehren.de",
+    "website_emails_found": [
+      "kontakt@sv-mehren.de"
+    ],
+    "description": "Die Crosslaufserie Vulkaneifel ist eine traditionsreiche Laufserie mit abwechslungsreichen und anspruchsvollen Crossstrecken in der schönen Vulkaneifel-Region. Der Lauf in Mehren findet auf naturnahen Waldwegen statt und bietet eine familiäre Atmosphäre mit lautstarkem Applaus im Zielbereich. Die Veranstaltung richtet sich an Läufer aller Leistungsstufen, vom Nachwuchstalent bis zum Freizeitläufer, und verbindet sportlichen Ehrgeiz mit Naturerlebnis.",
+    "course_highlights": [
+      "Abwechslungsreiche Waldwege statt Asphalt",
+      "Familiäre Atmosphäre mit lautstarkem Applaus im Zielbereich",
+      "Anspruchsvolle Crossstrecken in der Vulkaneifel"
+    ],
+    "additional": "Die Crosslaufserie besteht aus mehreren Läufen an verschiedenen Orten in der Vulkaneifel. Für die Gesamtwertung müssen drei von vier Läufen absolviert werden, ein Streichergebnis ist möglich. Die Serie wird von der Sparkasse Vulkaneifel unterstützt. Der Lauf ist als Volkslauf beim Leichtathletik-Verband Rheinhessen-Rheinland genehmigt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.76,
     "sources": [
       "https://www.laufen.de/laufkalender/details/crosslaufserie-vulkaneifel-2027-lauf-1"
     ],
@@ -18867,40 +18873,85 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "23730 Neustadt in Holstein, Deutschland",
-    "latitude": 54.1071426,
-    "longitude": 10.8136713,
+    "start_time": "11:00",
+    "location": "Sportplatz am Gogenkrog, Neustadt in Holstein, Schleswig-Holstein, Deutschland",
+    "latitude": 54.107592,
+    "longitude": 10.8060094,
     "county": "Schleswig-Holstein",
     "nearest_city": "Lübeck",
     "nearby_cities": [
       "Lübeck"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
+    "distances": "[\"10\", \"0.8\"]",
+    "distance_m": [
+      10000,
+      800
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km, 0.8 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://lauf.der-reporter.de/",
     "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "ig_link": "https://www.instagram.com/der_reporter/",
+    "price_range": "5-12 €",
+    "price_tiers": [
+      {
+        "distance": "10,0 km / 5,0 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12,-€",
+            "deadline": "20270108",
+            "description": "Startgeld: 10,0 km/5,0 km – m/w 12,-€"
+          }
+        ],
+        "late_fee": {
+          "price": "14,-€",
+          "deadline": "20270110"
+        }
+      },
+      {
+        "distance": "2,0 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "5,-€",
+            "deadline": "20270108",
+            "description": "Startgeld: 2,0 km – m/w, Jugendl. unter 20 J. 5,-€"
+          }
+        ],
+        "late_fee": {
+          "price": "7,-€",
+          "deadline": "20270110"
+        }
+      }
+    ],
+    "registration_close_date": "20270108",
+    "registration_url": "https://lauf.der-reporter.de/",
+    "race_info_url": "https://lauf.der-reporter.de/ausschreibung/",
+    "presumed_organizer_email": "info@der-reporter.de",
+    "website_emails_found": [
+      "info@der-reporter.de",
+      "frank.gundlach@hub24.de",
+      "info@luebecker-bucht-ostsee.de",
+      "massny.peter@gmail.com"
+    ],
+    "description": "Der reporter Lauf ist ein Landschaftslauf in Neustadt in Holstein, der am 10. Januar 2027 stattfindet. Die Veranstaltung bietet verschiedene Distanzen von 800 m bis 10 km für unterschiedliche Altersklassen an. Die Läufe starten am Sportplatz am Gogenkrog und zeichnen sich durch eine familiäre Atmosphäre mit Urkunden und Sachpreisen für die besten Teilnehmer aus. Die Zeitmessung erfolgt mit einem Transpondersystem, und Umkleiden sowie Duschen sind vor Ort verfügbar.",
+    "course_highlights": [
+      "Landschaftslauf-Strecken über 10 km, 5 km, 2 km und 800 m Bambini-Lauf",
+      "Start und Ziel am Sportplatz am Gogenkrog",
+      "Familienfreundliche Veranstaltung mit Urkunden und Sachpreisen für alle Altersklassen"
+    ],
+    "additional": "Nachmeldungen sind bis kurz vor Startbeginn gegen eine Gebühr von 2,00 € möglich. Umkleiden und Duschen sind am Sportplatz des TSV Neustadt am Gogenkrog vorhanden. Parkmöglichkeiten befinden sich am Zuckerdamm. Die Zeitmessung erfolgt per Transponder. Die Starts der Hauptläufe sind für den späten Vormittag vorgesehen.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.92,
     "sources": [
       "https://www.laufen.de/laufkalender/details/9-der-reporter-lauf"
     ],
@@ -18938,46 +18989,54 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "24340 Eckernförde, Deutschland",
-    "latitude": 54.4689457,
-    "longitude": 9.838446700000002,
+    "location": "Baltic Fit, Westerrade 1, Eckernförde, Deutschland",
+    "latitude": 54.45178,
+    "longitude": 9.8446724,
     "county": "Schleswig-Holstein",
     "nearest_city": "Kiel",
     "nearby_cities": [
       "Kiel"
     ],
-    "distances": "[\"15\", \"10\", \"5\"]",
+    "distances": "[\"21.1\", \"15\", \"10\", \"5\"]",
     "distance_m": [
+      21100,
       15000,
       10000,
       5000
     ],
     "distance_keywords": [
+      "Halbmarathon",
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "15 km, 10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "Halbmarathon, 15 km, 10 km, 5 km",
+    "organizer": "BALTIC-FIT",
     "contact": null,
-    "website": null,
+    "website": "https://www.baltic-fit.info/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.baltic-fit.info/",
+    "presumed_organizer_email": "info@baltic-fit.info",
+    "website_emails_found": [
+      "info@baltic-fit.info"
+    ],
+    "description": "Die Eckernförder Winterlaufserie ist eine etablierte Laufveranstaltung in Eckernförde, die im modernen Gesundheitszentrum Baltic FIT stattfindet. Die Serie bietet Läufern eine motivierende Atmosphäre mit individueller Betreuung durch erfahrene Trainer. Teilnehmer profitieren von einem ganzheitlichen Konzept, das Fitness, Gesundheit und Wohlbefinden verbindet. Die Veranstaltung richtet sich an Läufer aller Leistungsstufen, die Spaß am Winterlauf haben möchten.",
+    "course_highlights": [
+      "Flacher, DLV-vermessenener 5-km-Rundkurs",
+      "Distanzen von 5 km bis zum Halbmarathon, je nach Serie und Termin",
+      "Streckenführung mit Höhenmeterangaben und GPX-Download"
+    ],
+    "additional": "Die Veranstaltung findet im Baltic FIT Gesundheitszentrum statt, das über neue Umkleiden und Duschen verfügt. Die Öffnungszeiten des Studios sind Montag bis Freitag 07:00 bis 20:30 Uhr, Samstag 09:00 bis 13:00 Uhr und Sonntag 09:00 bis 17:00 Uhr. Die Läufe starten um 10:00 Uhr am Baltic Fit, Westerrade 1, Eckernförde. Zeitmessung per Transponder; im Ziel gibt es Tee, Obst und Waffeln. Wer alle drei Läufe einer Serie absolviert, erhält eine Medaille.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.laufen.de/laufkalender/details/4-eckernförder-winterlaufserie-3",
       "https://www.laufen.de/laufkalender/details/4-eckernförder-winterlaufserie",
@@ -19102,37 +19161,50 @@
     "county": "Schleswig-Holstein",
     "nearest_city": "Flensburg",
     "nearby_cities": [],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"21.1\", \"10\", \"5\"]",
     "distance_m": [
+      21100,
       10000,
       5000
     ],
     "distance_keywords": [
+      "Halbmarathon",
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "Halbmarathon, 10 km, 5 km",
+    "organizer": "Husumer Sportverein seit 1875 e.V.",
     "contact": null,
-    "website": null,
+    "website": "https://sportinhusum.de/sportangebot/outdoor/lav/veranstaltungen/winterstrassenlaufserie-drelsdorf/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "https://sportinhusum.de/sportangebot/outdoor/lav/veranstaltungen/winterstrassenlaufserie-drelsdorf/",
+    "presumed_organizer_email": "leichtathletik-winterserie@sportinhusum.de",
+    "website_emails_found": [
+      "leichtathletik-winterserie@sportinhusum.de",
+      "info@sportinhusum.de",
+      "wp@dwa.sh",
+      "leichtathletik@sportinhusum.de",
+      "s1s52crvvk2k8ife2ht4sshe48@group.calendar.google.com",
+      "tsvhusum@googlemail.com"
+    ],
+    "description": "Die NOSPA Winterstraßenlaufserie in Drelsdorf ist eine traditionsreiche Laufveranstaltung, die vom Husumer Sportverein seit 1875 e.V. organisiert wird. Die Serie bietet Läufern verschiedener Leistungsstufen die Möglichkeit, sich im Winter auf Straßenkursen zu messen. Die Veranstaltung fördert den Individualsport und ist Teil eines vielfältigen Sportangebots des Vereins. Die Läufe finden in der winterlichen Landschaft von Drelsdorf statt und bieten eine sportliche Herausforderung in der kalten Jahreszeit.",
+    "course_highlights": [
+      "Straßenläufe in winterlicher Umgebung",
+      "Vielfältige Distanzen für unterschiedliche Leistungsstufen",
+      "Traditionelle Veranstaltung des Husumer Sportvereins"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.77,
     "sources": [
       "https://www.laufen.de/laufkalender/details/47-nospa-winterstraßenlaufserie",
       "https://www.laufen.de/laufkalender/details/47-nospa-winterstraßenlaufserie-2",
@@ -19163,40 +19235,142 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Rheinzabern, Rhineland-Palatinate, Deutschland",
-    "latitude": 49.116328,
-    "longitude": 8.276516899999999,
+    "start_time": "10:50",
+    "location": "Schulcampus der IGS Rheinzabern, Rheinzabern, Deutschland",
+    "latitude": 49.104951,
+    "longitude": 8.281452,
     "county": "Rheinland-Pfalz",
     "nearest_city": "Karlsruhe",
     "nearby_cities": [
       "Karlsruhe"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "distances": "[\"20\", \"15\", \"10\"]",
+    "distance_m": [
+      20000,
+      15000,
+      10000
+    ],
+    "distance_keywords": [
+      "Halbmarathon",
+      "10 km"
+    ],
+    "distance_verbose": "20 km, 15 km, 10 km",
+    "organizer": "Turnverein 1890 Rheinzabern e.V.",
     "contact": null,
-    "website": null,
+    "website": "https://winterlauf.tv-rheinzabern.de/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "7-42 €",
+    "price_tiers": [
+      {
+        "distance": "10 km Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12,00 €",
+            "deadline": null,
+            "description": "Serienläufe 10 km 12,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "15 km Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "16,00 €",
+            "deadline": null,
+            "description": "Serienläufe 15 km 16,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "20 km Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "19,00 €",
+            "deadline": null,
+            "description": "Serienläufe 20 km 19,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Serie (alle 3 Läufe)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "42,00 €",
+            "deadline": null,
+            "description": "Serie (alle 3 Läufe) 42,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Rahmenprogramm",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "7,00 €",
+            "deadline": null,
+            "description": "Rahmenprogramm 5 km 7,00 €"
+          },
+          {
+            "label": "tier_2",
+            "price": "4,00 €",
+            "deadline": null,
+            "description": "Rahmenprogramm 1000 m 4,00 €"
+          },
+          {
+            "label": "tier_3",
+            "price": "2,00 €",
+            "deadline": null,
+            "description": "Rahmenprogramm 300 m 2,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      }
+    ],
+    "registration_close_date": "20270104",
+    "registration_url": "https://winterlauf.tv-rheinzabern.de/anmeldung/",
+    "race_info_url": "https://winterlauf.tv-rheinzabern.de/strecken/",
+    "presumed_organizer_email": "leichtathletik@tv-rheinzabern.de",
+    "website_emails_found": [
+      "leichtathletik@tv-rheinzabern.de",
+      "geschaeftsstelle@tv-rheinzabern.de"
+    ],
+    "description": "Die Rheinzaberner Winterlaufserie ist eine traditionsreiche Laufveranstaltung in der Südpfalz, die seit 1984 jährlich stattfindet. Sie umfasst drei Winterläufe über 10 km, 15 km und 20 km, die auf asphaltierten Rund- und Wendepunktstrecken rund um den Schulcampus der IGS Rheinzabern ausgetragen werden. Die Serie bietet eine Brutto- und Nettozeitmessung sowie eine zeitnahe Veröffentlichung der Ergebnisse. Neben den Hauptläufen gibt es ein Rahmenprogramm mit Wettbewerben für Einsteiger, Kinder und Familien.",
+    "course_highlights": [
+      "Asphaltierte Rund- und Wendepunktstrecken",
+      "Amtlich vermessene und bestenlistenfähige 10-km-Strecke",
+      "Verpflegungsstellen bei 15 km und 20 km Läufen sowie im Ziel"
+    ],
+    "additional": "Maximal 1.500 Teilnehmer je Lauf. Startnummern behalten ihre Gültigkeit über alle drei Serienläufe hinweg und müssen bei jedem Lauf mitgebracht werden. Verpflegung bei 15 km und 20 km Läufen ca. bei km 11 sowie im Ziel. 10 km Lauf ist ausgebucht, Nachmeldung vor Ort für 10 km nicht möglich. Die Teilnahme ist für die gesamte Serie oder für einzelne Läufe möglich. Die Serienwertung umfasst die drei Hauptläufe; die Startnummer gilt über die gesamte Serie hinweg.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.98,
     "sources": [
       "https://www.laufen.de/laufkalender/details/43-rheinzaberner-winterlaufserie-5-km",
       "https://www.laufen.de/laufkalender/details/43-rheinzaberner-winterlaufserie-15-km"
@@ -19215,8 +19389,8 @@
   {
     "domain_name": "sandkruger_schleife",
     "name": "Sandkruger Schleife",
-    "type": "road",
-    "type_local": "Straße",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270110",
@@ -19226,7 +19400,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "09:15",
     "location": "26209 Hatten, Deutschland",
     "latitude": 53.03490410000001,
     "longitude": 8.3216418,
@@ -19244,27 +19418,35 @@
       "5 km"
     ],
     "distance_verbose": "13 km, 5 km",
-    "organizer": null,
+    "organizer": "TSG Hatten-Sandkrug",
     "contact": null,
-    "website": null,
+    "website": "https://sandkruger-schleife.de/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270103",
+    "registration_url": "https://sandkruger-schleife.de/anmeldung.html",
+    "race_info_url": "https://sandkruger-schleife.de/ausschreibung.html",
+    "presumed_organizer_email": "sandkruger-schleife@tsg-hatten-sandkrug.de",
+    "website_emails_found": [
+      "TSG-Geschaeftsstelle@tsg-hatten-sandkrug.de",
+      "tapken.mara@gmx.de",
+      "sandkruger-schleife@tsg-hatten-sandkrug.de"
+    ],
+    "description": "Die Sandkruger Schleife ist ein traditionsreicher Lauf im Landkreis Oldenburg, der am 10. Januar 2027 seine 30. Auflage feiert. Die Veranstaltung bietet anspruchsvolle Wald- und Asphaltstrecken über 13 Kilometer sowie eine schnelle 5-Kilometer-Runde und einen Kinderlauf. Die Strecke ist gut ausgeschildert und führt durch abwechslungsreiche Landschaften mit leicht welligem Profil im Wald und flachen Abschnitten. Die Veranstaltung ist besonders beliebt und bereits frühzeitig ausgebucht, was die große Nachfrage und den Stellenwert des Laufs unterstreicht.",
+    "course_highlights": [
+      "13 km Rundkurs mit Wald- und Asphaltwegen, leicht welliges Profil im Wald",
+      "5 km Strecke führt in einer Runde durch den Wald",
+      "Strecke ist mit Absperrband und Pfeilen gut gekennzeichnet"
+    ],
+    "additional": "Startnummernausgabe am 09.01.2027 von 11:00 bis 13:00 Uhr und am Veranstaltungstag ab 07:30 Uhr in der Sporthalle Schultredde 17. Nachmeldungen/Ummeldungen sind bis 60 Minuten vor dem jeweiligen Start möglich, mit einer Gebühr von 3,00 Euro. Die Zeitmessung erfolgt mit einem Chip auf der Startnummer, der nicht zurückgegeben werden muss. Duschen und Umkleiden sind in der Sporthalle vorhanden. Parkplätze sind begrenzt an der Schultredde sowie im Gewerbepark und auf öffentlichen Flächen. Öffentliche Verkehrsmittel halten am Bahnhof Sandkrug, 750 Meter Fußweg zur Sporthalle. Die Veranstaltung ist ausgebucht; über die Social-Media-Kanäle gibt es eine Startplatz-Tauschbörse.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://www.laufen.de/laufkalender/details/30-sandkruger-schleife"
     ],
@@ -19322,27 +19504,27 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "organizer": "TuS Jaderberg e.V.",
     "contact": null,
-    "website": null,
+    "website": "https://www.tusjaderberg.de/sportarten/winterlauf-und-wanderserie",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.tusjaderberg.de/sportarten/winterlauf-und-wanderserie",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
+    "description": "Die Winterlauf- und Wanderserie des TuS Jaderberg ist eine traditionsreiche Laufveranstaltung in der Region Wesermarsch. Sie bietet Läufern und Wanderern die Möglichkeit, in der kalten Jahreszeit aktiv zu bleiben und gemeinsam sportliche Herausforderungen zu meistern. Die Serie ist offen für alle Altersgruppen und Leistungsniveaus und fördert den Gemeinschaftssinn im Verein und der Region. Die Veranstaltung findet in der Gemeinde Jaderberg statt und ist Teil des vielfältigen Sportangebots des TuS Jaderberg e.V.",
     "course_highlights": [],
-    "additional": null,
+    "additional": "Die Winterlaufserie sucht aktuell Nachfolger für die Organisation. Die Veranstaltung ist eingebettet in ein vielfältiges Vereinsleben mit zahlreichen Sportarten und Aktivitäten beim TuS Jaderberg.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.46,
     "sources": [
       "https://www.laufen.de/laufkalender/details/34-winterlauf-wanderserie-tus-jaderberg-2-teil-5",
       "https://www.laufen.de/laufkalender/details/34-winterlauf-wanderserie-tus-jaderberg-2-teil-2",
@@ -23791,40 +23973,142 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Rheinzabern, Rhineland-Palatinate, Deutschland",
-    "latitude": 49.116328,
-    "longitude": 8.276516899999999,
+    "start_time": "10:50",
+    "location": "Schulcampus der IGS Rheinzabern, Rheinzabern, Deutschland",
+    "latitude": 49.104951,
+    "longitude": 8.281452,
     "county": "Rheinland-Pfalz",
     "nearest_city": "Karlsruhe",
     "nearby_cities": [
       "Karlsruhe"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "distances": "[\"20\", \"15\", \"10\"]",
+    "distance_m": [
+      20000,
+      15000,
+      10000
+    ],
+    "distance_keywords": [
+      "Halbmarathon",
+      "10 km"
+    ],
+    "distance_verbose": "20 km, 15 km, 10 km",
+    "organizer": "Turnverein 1890 Rheinzabern e.V.",
     "contact": null,
-    "website": null,
+    "website": "https://winterlauf.tv-rheinzabern.de/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "12-19 € pro Serienlauf; 42 € für alle drei Läufe",
+    "price_tiers": [
+      {
+        "distance": "10 km Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12,00 €",
+            "deadline": null,
+            "description": "Serienläufe 10 km 12,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "15 km Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "16,00 €",
+            "deadline": null,
+            "description": "Serienläufe 15 km 16,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "20 km Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "19,00 €",
+            "deadline": null,
+            "description": "Serienläufe 20 km 19,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Serie (alle 3 Läufe)",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "42,00 €",
+            "deadline": null,
+            "description": "Serie (alle 3 Läufe) 42,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Rahmenprogramm",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "7,00 €",
+            "deadline": null,
+            "description": "Rahmenprogramm 5 km 7,00 €"
+          },
+          {
+            "label": "tier_2",
+            "price": "4,00 €",
+            "deadline": null,
+            "description": "Rahmenprogramm 1000 m 4,00 €"
+          },
+          {
+            "label": "tier_3",
+            "price": "2,00 €",
+            "deadline": null,
+            "description": "Rahmenprogramm 300 m 2,00 €"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      }
+    ],
+    "registration_close_date": "20270201",
+    "registration_url": "https://winterlauf.tv-rheinzabern.de/anmeldung/",
+    "race_info_url": "https://winterlauf.tv-rheinzabern.de/strecken/",
+    "presumed_organizer_email": "leichtathletik@tv-rheinzabern.de",
+    "website_emails_found": [
+      "leichtathletik@tv-rheinzabern.de",
+      "geschaeftsstelle@tv-rheinzabern.de"
+    ],
+    "description": "Die Rheinzaberner Winterlaufserie ist eine traditionsreiche Laufveranstaltung in der Südpfalz, die seit 1984 jährlich stattfindet. Sie umfasst drei Winterläufe über 10 km, 15 km und 20 km, die auf asphaltierten Rund- und Wendepunktstrecken rund um den Schulcampus der IGS Rheinzabern ausgetragen werden. Die Serie bietet eine Brutto- und Nettozeitmessung sowie eine zeitnahe Veröffentlichung der Ergebnisse. Neben den Hauptläufen gibt es beim zweiten und dritten Lauf zusätzliche Wettbewerbe für Einsteiger, Kinder und Familien.",
+    "course_highlights": [
+      "Asphaltierte Rund- und Wendepunktstrecken",
+      "Amtlich vermessene und bestenlistenfähige 10-km-Strecke",
+      "Verpflegungsstellen bei 15 km und 20 km Läufen sowie im Ziel"
+    ],
+    "additional": "Maximal 1.500 Teilnehmer je Lauf. Startnummern behalten ihre Gültigkeit über alle drei Serienläufe hinweg. Verpflegung bei 15 km und 20 km Läufen ca. bei km 11 sowie im Ziel. Beim 2. und 3. Lauf gibt es zusätzliche Wettbewerbe für Einsteiger, Kinder und Familien. Einzelstarts sind möglich. Zum Rahmenprogramm gehören ein 5-km-Einsteigerlauf sowie 300-m-Bambini- und 1.000-m-Schülerläufe. Für die Serienwertung werden alle drei Läufe berücksichtigt; es gibt auch eine Mannschaftswertung.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.laufen.de/laufkalender/details/43-rheinzaberner-winterlaufserie-1-km",
       "https://www.laufen.de/laufkalender/details/43-rheinzaberner-winterlaufserie-20km"
@@ -70538,8 +70822,8 @@
   {
     "domain_name": "greifenstein_berglauf",
     "name": "Greifenstein Berglauf",
-    "type": "trail",
-    "type_local": "Trail",
+    "type": "road",
+    "type_local": "Straße",
     "race_dates": [
       [
         "20270605",
@@ -70550,11 +70834,11 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Katzenfurt, Ehringshausen, Hesse, Deutschland",
-    "latitude": 50.6188054,
-    "longitude": 8.348823399999999,
+    "location": "Burg Greifenstein, Greifenstein, Hesse, Deutschland",
+    "latitude": 50.6205735,
+    "longitude": 8.2953332,
     "county": "Hessen",
-    "nearest_city": "Marburg an der Lahn",
+    "nearest_city": "Siegen",
     "nearby_cities": [],
     "distances": "[\"5.3\"]",
     "distance_m": [
@@ -70564,7 +70848,7 @@
       "5 km"
     ],
     "distance_verbose": "5.3 km",
-    "organizer": "Fussfit Petry GmbH, webconcept GbR, weitere lokale Sponsoren",
+    "organizer": null,
     "contact": null,
     "website": "https://berglauf-greifenstein.de/",
     "fb_link": "https://www.facebook.com/berglauf.greifenstein/",
@@ -70572,23 +70856,23 @@
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://berglauf-greifenstein.de/berglauf/anmeldung",
-    "race_info_url": "https://berglauf-greifenstein.de/berglauf/ausschreibung",
+    "registration_url": null,
+    "race_info_url": "https://berglauf-greifenstein.de/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Der Greifenstein Berglauf ist ein anspruchsvoller Straßenlauf über 5,3 km von Ehringshausen-Katzenfurt zur Burg Greifenstein, der zum 27. Mal stattfindet. Die Strecke führt über Landstraße und Wirtschaftswege mit insgesamt 260 Höhenmetern bis zum Ziel auf der Burg, die einen traumhaften Ausblick auf die Region bietet. Der Lauf ist offen für Jugend, Männer, Frauen und Senioren, es gibt eine gemeinsame Wertung für alle Klassen. Nordic Walking wird ohne Altersklassenwertung angeboten, und ein kostenfreier Bambinilauf für die Kleinsten findet separat am Nachmittag statt. Die Veranstaltung endet mit Siegerehrung und Bewirtung im Burghof der Burg Greifenstein.",
+    "description": "Der Greifenstein Berglauf ist ein anspruchsvoller Straßenlauf über 5,3 km von Ehringshausen-Katzenfurt mit Ziel am Burghof der Burg Greifenstein. Die Strecke bietet Läufern eine sportliche Herausforderung und endet mit einem traumhaften Ausblick auf die gesamte Region vom Burghof der Burg. Die Veranstaltung findet am 5. Juni 2027 statt und ist bereits die 28. Ausgabe dieses beliebten Berglaufs.",
     "course_highlights": [
-      "5,3 km Straßenlauf mit 260 Höhenmetern",
-      "Start in Katzenfurt, Ziel auf der Burg Greifenstein mit Panoramablick",
-      "Anspruchsvoller Streckenabschnitt oberhalb von Edingen"
+      "5,3 km Straßenlauf von Ehringshausen-Katzenfurt zur Burg Greifenstein",
+      "Ziel am Burghof der Burg mit beeindruckendem Ausblick über das Dilltal",
+      "Lauf durch die äußeren Westerwaldausläufer mit abwechslungsreichem Terrain"
     ],
-    "additional": "In der Startgebühr sind Bustransfer zum Start, Kleidertransport zum Ziel sowie Getränke an Start und Ziel enthalten. Die Startnummern und Finisher-Shirts werden am Veranstaltungstag ab 14:00 Uhr im Burghof der Burg Greifenstein ausgegeben. Am Veranstaltungstag ist eine Nachmeldung bis 30 Minuten vor dem Start möglich. Parkplätze sind am Ortsausgang Greifenstein Richtung Beilstein vorhanden. Ein kostenfreier Bambinilauf für Kinder wird um ca. 16:50 Uhr angeboten, begleitet von Mitgliedern der LG Dill. Die Siegerehrung und Bewirtung mit Kaffee, Kuchen, kühlen Getränken und Bratwurst findet im Burghof der Burg statt. Bei klarem Wetter bietet der Burghof eine beeindruckende Aussicht über das Dilltal bis zum Feldberg im Taunus.",
+    "additional": "Start und Ziel befinden sich am Burghof der Burg Greifenstein. Ein Bus bringt die Teilnehmer vom Burghof zum Start in Katzenfurt. Vor Ort gibt es die Möglichkeit, das Burgmuseum, die Burgkirche und das Glockenmuseum zu besuchen. Ein großer Wanderparkplatz am Ortseingang Greifenstein erleichtert die Anreise mit dem Auto. Urkunden- und Ergebnislisten sind online verfügbar.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.92,
     "sources": [
       "https://www.laufen.de/laufkalender/details/28-greifenstein-berglauf"
     ],
@@ -85559,8 +85843,8 @@
   {
     "domain_name": "3_schluchthof_backyard_ultra",
     "name": "3. Schluchthof Backyard Ultra",
-    "type": "other",
-    "type_local": "Sonstiges",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
     "race_dates": [
       [
         "20260620",
@@ -85575,9 +85859,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Kleinostheim (Bayern)",
-    "latitude": 50.0042304,
-    "longitude": 9.0658932,
+    "location": "Schluchthof, Kleinostheim, Bavaria, Deutschland",
+    "latitude": 50.0234264,
+    "longitude": 9.069080099999999,
     "county": "Bayern",
     "nearest_city": "Frankfurt am Main",
     "nearby_cities": [
@@ -85598,12 +85882,16 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://spoferan.com/events/3-schluchthof-backyard-ultra-2026/news",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Der 3. Schluchthof Backyard Ultra findet in Kleinostheim am Main, nahe Aschaffenburg, statt. Dieses liebevoll organisierte, private Backyard-Ultra-Rennen legt Wert auf eine familiäre Atmosphäre und eine kleine Teilnehmerzahl, sodass jede Runde gemeinsam gelaufen wird. Die Veranstaltung bietet eine charakterstarke Umgebung in einer grünen Ecke zwischen Rhein-Main und Spessart, bei der Stunde für Stunde gelaufen wird, bis nur noch ein Läufer übrig bleibt.",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Der 3. Schluchthof Backyard Ultra findet in Kleinostheim am Main, nahe Aschaffenburg, statt. Dieses liebevoll organisierte private Backyard-Ultra ist keine Massenveranstaltung, sondern ein Rennen unter Gleichgesinnten mit besonderem Wert auf Atmosphäre. Die kleine Teilnehmerzahl sorgt dafür, dass jede Runde gemeinsam gelaufen wird und die Grenze zwischen Läufern und Zuschauern fließend ist. Das Rennen fordert Stunde für Stunde Ausdauer, bis nur noch ein Läufer übrig bleibt. Die Veranstaltung findet im Sommer in einer grünen Ecke zwischen Rhein-Main und Spessart statt und bietet eine charakterstarke Umgebung für ein einzigartiges Lauferlebnis.",
+    "course_highlights": [
+      "Kleine, charakterstarke Laufumgebung im Schluchthof Kleinostheim",
+      "Gemeinsames Laufen jeder Runde mit fließendem Übergang zwischen Teilnehmern und Zuschauern",
+      "Sommerliches Rennen in der grünen Region zwischen Rhein-Main und Spessart"
+    ],
+    "additional": "Das Rennen ist bewusst klein gehalten, um eine familiäre Atmosphäre zu schaffen. Es handelt sich um ein Backyard Ultra, bei dem jede Runde gemeinsam gelaufen wird, bis nur noch ein Teilnehmer übrig bleibt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -88495,21 +88783,30 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "15741 Bestensee",
-    "latitude": 52.240496,
-    "longitude": 13.640905,
+    "location": "Bestensee, Brandenburg, Deutschland",
+    "latitude": 52.2426854,
+    "longitude": 13.6336052,
     "county": "Brandenburg",
     "nearest_city": "Berlin",
     "nearby_cities": [],
-    "distances": "[\"16\", \"7.5\", \"2\"]",
+    "distances": "[\"21.1\", \"15\", \"12\", \"11.5\", \"10\", \"8\", \"7.2\", \"5\"]",
     "distance_m": [
-      16000,
-      7500,
-      2000
+      21100,
+      15000,
+      12000,
+      11500,
+      10000,
+      8000,
+      7200,
+      5000
     ],
-    "distance_keywords": [],
-    "distance_verbose": "16 km, 7.5 km, 2 km",
-    "organizer": "Heimat&Kulturverein Bestensee e.V. und WSG 81 KWeV",
+    "distance_keywords": [
+      "Halbmarathon",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Halbmarathon, 15 km, 12 km, 11.5 km, 10 km, 8 km, 7.2 km, 5 km",
+    "organizer": null,
     "contact": null,
     "website": "https://www.bestensee.de/index.php?id=863",
     "fb_link": null,
@@ -88518,7 +88815,7 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.bestensee.de/index.php?id=863",
     "presumed_organizer_email": null,
     "website_emails_found": [],
     "description": "Der Bestenseer Seenlauf ist ein traditionsreicher Lauf, der seit 2002 jährlich in Bestensee stattfindet. Er bietet drei unterschiedliche Streckenlängen von 2 km, 7,5 km und 16 km, die sowohl für Anfänger als auch für erfahrene Läufer geeignet sind. Der Start erfolgt in der Landkostarena, umgeben von der idyllischen Seen- und Waldlandschaft der Region. Die Veranstaltung ist offen für alle Altersgruppen, wobei Kinder und Jugendliche bis 13 Jahre kostenlos teilnehmen können.",
@@ -101863,8 +102160,8 @@
   {
     "domain_name": "6_o_see_backyard_ultra",
     "name": "6. O-SEE Backyard Ultra",
-    "type": "other",
-    "type_local": "Sonstiges",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
     "race_dates": [
       [
         "20260711",
@@ -101882,10 +102179,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Zittau/Pethau (Sachsen)",
-    "latitude": 50.89375680000001,
-    "longitude": 14.7723836,
+    "start_time": "10:00",
+    "location": "Olbersdorfer See, Olbersdorf, Saxony, Deutschland",
+    "latitude": 50.88961930000001,
+    "longitude": 14.7798625,
     "county": "Sachsen",
     "nearest_city": "Hoyerswerda",
     "nearby_cities": [],
@@ -101895,21 +102192,27 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "6.7 km",
-    "organizer": "O-SEE Sports e.V.",
+    "organizer": null,
     "contact": null,
     "website": "https://o-see-backyard.de/",
-    "fb_link": null,
+    "fb_link": "https://www.facebook.com/oseebackyardultra",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Der O-SEE Backyard Ultra ist ein einzigartiges Ausscheidungsrennen rund um den Olbersdorfer See bei Zittau. Das Rennen im Backyard-Ultra-Format fordert Ausdauer, mentale Stärke und Gemeinschaftssinn, da alle Läufer jede volle Stunde gemeinsam eine Runde von 6,7 km absolvieren, bis nur noch ein Läufer übrig bleibt. Der Sieger qualifiziert sich direkt für die Deutsche Meisterschaft und hat die Chance, bei der Weltmeisterschaft in Tennessee teilzunehmen. Das Rennen ist auf 200 Teilnehmer limitiert und bietet eine familiäre Atmosphäre mit echtem Teamgeist.",
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://o-see-backyard.de/",
+    "presumed_organizer_email": "mike@o-see-backyard.de",
+    "website_emails_found": [
+      "mike@o-see-backyard.de"
+    ],
+    "description": "Der O-SEE Backyard Ultra ist ein einzigartiges Ausscheidungsrennen, das am Olbersdorfer See bei Zittau stattfindet. Bis zu 200 Läufer starten gemeinsam und laufen stündlich eine Runde von 6,7 Kilometern, bis nur noch ein Läufer übrig bleibt, der die letzte Runde im Zeitlimit beendet. Das Rennen fordert Ausdauer, mentale Stärke und Gemeinschaftssinn und dient als Qualifikation für die Weltmeisterschaft im Oktober 2027. Die Strecke führt über perfekte Wanderwege mit 70 Höhenmetern und ist nachts beleuchtet. Das Event ist familiär organisiert und bietet eine besondere Atmosphäre für Läufer aller Leistungsniveaus.",
+    "course_highlights": [
+      "Rundkurs von 6,7056 Kilometern Länge mit 70 Höhenmetern",
+      "Perfekte Wanderwege am Olbersdorfer See mit Markierungen und Absperrband",
+      "Nachts durch Lichter geführte Strecke"
+    ],
+    "additional": "Das Rennen ist auf 200 Läufer limitiert. Start und Ziel ist das Westparkstadion in Zittau/Pethau. Das Rennen hat eine DUV-Lizenz und fließt in die Wertung ein. Die Ergebnisliste enthält die zurückgelegte Distanz und wird auf Facebook und der offiziellen Webseite veröffentlicht.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -103985,36 +104288,86 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "52349 Düren",
-    "latitude": 50.8037168,
-    "longitude": 6.4793683,
+    "start_time": "08:30",
+    "location": "52349 Düren, Deutschland",
+    "latitude": 50.804453,
+    "longitude": 6.4701808,
     "county": "Nordrhein-Westfalen",
     "nearest_city": "Aachen",
     "nearby_cities": [
       "Aachen"
     ],
-    "distances": "[\"0.5\"]",
+    "distances": "[\"21.098\", \"8\", \"5\", \"1\", \"0.5\"]",
     "distance_m": [
+      21098,
+      8000,
+      5000,
+      1000,
       500
     ],
-    "distance_keywords": [],
-    "distance_verbose": "0.5 km",
+    "distance_keywords": [
+      "Halbmarathon",
+      "5 km"
+    ],
+    "distance_verbose": "Halbmarathon, 8 km, 5 km, 1 km, 0.5 km",
     "organizer": null,
     "contact": null,
     "website": "https://stadtlauf-dueren.de/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Der Stadtlauf Düren bietet ein vielfältiges Lauferlebnis in der Innenstadt von Düren mit Wettbewerben für Kinder, Hobby- und ambitionierte Läufer. Die Strecken führen durch urbane Passagen, entlang der Rur und durch grüne Parkbereiche, wobei der Start und das Ziel zentral am Marktplatz liegen. Besonders spannend ist das First or Burst Eliminationsrennen auf einem 500-Meter-Rundkurs. Für alle Teilnehmer gibt es ein offizielles MIZUNO Teilnehmershirt, eine Finisher-Medaille und Zugang zur Zielverpflegung.",
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Parma Immobilien 5 KM Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "20 €",
+            "deadline": "20270707",
+            "description": "Startgebühr ab 20 € Gebühr je nach Anmeldephase. Meldeschluss: 07.07.2027, keine Nachmeldungen."
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Medici21 Halbmarathon",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "49 €",
+            "deadline": "20270707",
+            "description": "Einzelstart ab 49 € Staffel ab 59 € pro Team. Je nach Anmeldephase können die Gebühren variieren. Meldeschluss: 07.07.2027."
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Medici21 Halbmarathon Staffel",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "59 €",
+            "deadline": "20270707",
+            "description": "Einzelstart ab 49 € Staffel ab 59 € pro Team. Je nach Anmeldephase können die Gebühren variieren. Meldeschluss: 07.07.2027."
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270707",
+    "registration_url": "https://stadtlauf-dueren.de/allgemeine-infos/",
+    "race_info_url": "https://stadtlauf-dueren.de/allgemeine-infos/",
+    "presumed_organizer_email": "info@stadtlauf-dueren.de",
+    "website_emails_found": [
+      "info@stadtlauf-dueren.de"
+    ],
+    "description": "Der Stadtlauf Düren am 11. Juli 2027 bietet ein vielfältiges Lauferlebnis für alle Alters- und Leistungsklassen mit Wettbewerben wie dem Medici21 Halbmarathon, dem Parma Immobilien 5 KM Lauf, dem SWD Kinderlauf und dem spannenden Eliminationsrennen First or Burst. Die Strecken führen durch die Innenstadt, den Burgauer Wald und entlang der Rur und verbinden sportliche Herausforderung mit einer besonderen Atmosphäre. Teilnehmer erhalten ein offizielles MIZUNO-Teilnehmershirt, eine hochwertige Finisher-Medaille, Goodiebags, elektronische Zeitmessung und kostenlose Eventfotos. Start und Ziel sind zentral am Marktplatz Düren, der auch das Zentrum des Veranstaltungsgeschehens mit Bühne und Verpflegung bildet.",
+    "course_highlights": [
+      "Medici21 Halbmarathon mit 21,1 km durch Innenstadt, Burgauer Wald und entlang der Rur mit vielen schattigen Abschnitten",
+      "Parma Immobilien 5 KM Lauf auf flacher, abwechslungsreicher Innenstadtstrecke mit Abschnitten entlang der Rur",
+      "First or Burst Eliminationsrennen auf kompaktem Rundkurs mitten in der Innenstadt mit packenden Duellen"
+    ],
+    "additional": "Der SWD Kinderlauf startet in zwei Blöcken vormittags und mittags. Das Eliminationsrennen First or Burst startet um 12:00 Uhr und ist ein K.O.-Format mit acht Wertungsrunden über je 1 km. Die Siegerehrungen finden direkt im Anschluss an die jeweiligen Wettbewerbe auf dem Marktplatz statt. Die Zielverpflegung wird von EDEKA Vogel, Reissdorf und Nobis bereitgestellt. Die hochwertigen Eventfotos von JD-PhotoArt sind für alle Teilnehmenden kostenlos inklusive.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -107177,8 +107530,8 @@
   {
     "domain_name": "3kings3hills_trailrunning_festival",
     "name": "3Kings3Hills Trailrunning-Festival",
-    "type": "other",
-    "type_local": "Sonstiges",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260724",
@@ -107192,31 +107545,32 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "14:00",
     "location": "Alter Sportplatz, 94145 Haidmühle, Deutschland",
-    "latitude": 48.8260377,
-    "longitude": 13.7781872,
+    "latitude": 48.8194959,
+    "longitude": 13.76912,
     "county": "Bayern",
     "nearest_city": "Passau",
     "nearby_cities": [],
-    "distances": "[\"169\", \"116\", \"53\", \"40\", \"25\", \"14\", \"6\"]",
+    "distances": "[\"169\", \"118\", \"85\", \"59\", \"40\", \"26\", \"16\", \"6\"]",
     "distance_m": [
       169000,
-      116000,
-      53000,
+      118000,
+      85000,
+      59000,
       40000,
-      25000,
-      14000,
+      26000,
+      16000,
       6000
     ],
     "distance_keywords": [
       "100 Meilen",
       "Ultramarathon",
-      "50 km",
+      "50 Meilen",
       "Marathon",
       "5 km"
     ],
-    "distance_verbose": "169 km, 116 km, 53 km, 40 km, 25 km, 14 km, 6 km",
+    "distance_verbose": "169 km, 118 km, 85 km, 59 km, 40 km, 26 km, 16 km, 6 km",
     "organizer": null,
     "contact": null,
     "website": "https://www.3kings-3hills.com/",
@@ -107224,14 +107578,20 @@
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Das 3Kings3Hills Trailrunning-Festival im Dreiländereck bei Haidmühle bietet anspruchsvolle Trails mit knackigen Uphills, fetzigen Downhills und flowigen Passagen. Die Streckenlängen reichen von 6 km bis 168 km und sind für alle Leistungsniveaus geeignet. Das Festival verbindet sportliche Herausforderung mit einer einzigartigen Landschaft im Bayerischen Wald und Böhmerwald. Finisher erhalten neben einer Erinnerung auch ein frisches Pizzastück im Ziel. Die Veranstaltung ist international anerkannt und vergibt ITRA-Punkte sowie UTMB-Index.",
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270723",
+    "registration_url": "https://www.3kings-3hills.com/trailanmeldung/",
+    "race_info_url": "https://www.3kings-3hills.com/en/the-trail-running-festival/",
+    "presumed_organizer_email": "servus@3kings-3hills.com",
+    "website_emails_found": [
+      "servus@3kings-3hills.com"
+    ],
+    "description": "Das 3Kings3Hills Trailrunning-Festival findet am 23. und 24. Juli 2027 in Haidmühle im Dreiländereck Deutschland-Österreich-Tschechien statt. Es bietet sieben Distanzen von 5 bis 168 km mit abwechslungsreichen Trails, die von flowigen Abschnitten bis zu technisch anspruchsvollen Passagen reichen. Die Strecke führt durch den Bayerischen Wald und Böhmerwald mit beeindruckenden Ausblicken und umfasst anspruchsvolle Uphills und Downhills. Das Festival ist international anerkannt und bietet neben dem Lauf auch ein Finisher-Shirt und eine Pizza für alle Finisher. Für die längeren Distanzen ist eine Tracking-App Pflicht, und es gibt die Möglichkeit, Dropbags zu nutzen.",
+    "course_highlights": [
+      "Atemberaubende Singletrails und der berühmte Grenzsteig entlang des ehemaligen Eisernen Vorhangs",
+      "Höchste Berge der Region wie Dreisessel, Haidl und Bayerischer Plöckenstein",
+      "Technisch anspruchsvolle Trails mit flowigen Abschnitten und einem 35 m hohen Aussichtsturm mit Verpflegungsstation"
+    ],
+    "additional": "Startnummernausgabe am 23. Juli von 10:00 bis 22:00 Uhr und am 24. Juli ab 05:30 Uhr. Für die 100 Miles ULTRA TRAIL® und ULTRA TRAIL® XL gibt es Dropbags am Festivalgelände. Es gibt keine Trinkbecher an den Verpflegungsstationen, daher muss ein Trinkbehälter mit mindestens 1 Liter Volumen mitgeführt werden. Das Rennen ist ITRA- und UTMB-registriert, Punkte werden gutgeschrieben. Alle Finisher erhalten ein frisches Pizzastück von Gozney im Ziel. Pflichtausrüstung wird stichprobenartig kontrolliert.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -119704,14 +120064,16 @@
     "nearby_cities": [
       "Bremen"
     ],
-    "distances": "[\"5\"]",
+    "distances": "[\"10\", \"5\"]",
     "distance_m": [
+      10000,
       5000
     ],
     "distance_keywords": [
+      "10 km",
       "5 km"
     ],
-    "distance_verbose": "5 km",
+    "distance_verbose": "10 km, 5 km",
     "organizer": null,
     "contact": null,
     "website": "https://www.otbremen.com/",
@@ -126824,8 +127186,8 @@
   {
     "domain_name": "4_backyard_ultra_munich",
     "name": "4. Backyard Ultra Munich",
-    "type": "other",
-    "type_local": "Sonstiges",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
     "race_dates": [
       [
         "20260905",
@@ -126839,10 +127201,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "München (Bayern)",
-    "latitude": 48.2522461,
-    "longitude": 11.559062,
+    "start_time": "00:00",
+    "location": "Munich, Bavaria, Deutschland",
+    "latitude": 48.1351253,
+    "longitude": 11.5819806,
     "county": "Bayern",
     "nearest_city": "München",
     "nearby_cities": [
@@ -126862,13 +127224,17 @@
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://www.munichbackyard.de/tickets",
+    "race_info_url": "https://www.munichbackyard.de/tickets",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Der Munich Backyard Ultra ist ein einzigartiges Laufevent in Oberschleißheim bei München, bei dem jede Stunde eine Runde von 6,7 km gelaufen wird. Das Besondere ist, dass immer dieselbe Strecke gelaufen wird und nur eine Person am Ende als Sieger:in hervorgeht. Das Event lebt von einer starken Community, bei der sich Läufer:innen, Helfer:innen und Zuschauer:innen gegenseitig unterstützen und gemeinsam eine besondere Atmosphäre schaffen. Für Sicherheit, Verpflegung und Komfort ist gesorgt, sodass sich die Teilnehmer:innen voll auf ihr Lauferlebnis konzentrieren können.",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Der Munich Backyard Ultra ist ein einzigartiges Lauf-Event in München, bei dem alle Teilnehmenden dieselbe 6,7 Kilometer lange Runde immer wieder laufen. Zu jeder vollen Stunde startet eine neue Runde, und das Rennen endet erst, wenn nur noch eine Person übrig bleibt. Das Event lebt von Gemeinschaft, gegenseitiger Unterstützung und einer besonderen Atmosphäre, bei der alle gemeinsam starten, pausieren und feiern. Die Strecke führt teilweise ins Grüne und ist komplett markiert, mit einem gut ausgestatteten Basecamp an der Olympia-Regattaanlage Oberschleißheim.",
+    "course_highlights": [
+      "6,7 Kilometer lange Runde, die immer wieder gelaufen wird",
+      "Strecke teilweise im Grünen und komplett markiert",
+      "Veranstaltungsort ist die Olympia-Regattaanlage Oberschleißheim mit Basecamp und Cheering Zone"
+    ],
+    "additional": "Start ist zu jeder vollen Stunde mit Glockensignal, verspäteter Start ist nicht möglich. Jede Runde muss innerhalb von 60 Minuten beendet werden. Persönlicher Support ist nur im Start- und Zielbereich erlaubt. Langsamere Läufer lassen schnellere passieren. Es gibt ein Basecamp mit Verpflegung, Beleuchtung, medizinischem Personal und Helfer:innen. Fotograf:innen begleiten das Event. Pflicht-Equipment umfasst Laufschuhe, wetterfeste Kleidung, Stirnlampe und persönliche Verpflegung.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -126892,8 +127258,8 @@
   {
     "domain_name": "palatina_backyard_ultra",
     "name": "Palatina Backyard Ultra",
-    "type": "other",
-    "type_local": "Sonstiges",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
     "race_dates": [
       [
         "20260905",
@@ -126908,7 +127274,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Erfweiler (Rheinland-Pfalz)",
+    "location": "Erfweiler, Rhineland-Palatinate, Deutschland",
     "latitude": 49.1570058,
     "longitude": 7.812037999999999,
     "county": "Rheinland-Pfalz",
@@ -126920,7 +127286,7 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "6.7 km",
-    "organizer": "Palatina Backyard Ultra",
+    "organizer": null,
     "contact": null,
     "website": "https://www.palatina-backyard-ultra.de/",
     "fb_link": null,
@@ -126928,13 +127294,19 @@
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Der Palatina Backyard Ultra ist ein einzigartiger Laufwettbewerb in Erfweiler, bei dem jede volle Stunde eine 6,7 km lange Runde gestartet wird. Die Teilnehmer laufen so lange, bis nur noch ein Läufer eine Runde innerhalb der Stunde schafft. Die Strecke führt vom Belmontplatz aus über Straßen, Felder und Waldwege mit etwa 100 Höhenmetern und bietet eine abwechslungsreiche Landschaft. Am Vortag findet ein gemütliches Treffen statt, und die Veranstaltung zeichnet sich durch eine offene Endzeit und eine familiäre Atmosphäre aus.",
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.palatina-backyard-ultra.de/anmeldung",
+    "race_info_url": "https://www.palatina-backyard-ultra.de/weitere-infos",
+    "presumed_organizer_email": "matzig@r-m-p.de",
+    "website_emails_found": [
+      "matzig@r-m-p.de"
+    ],
+    "description": "Der Palatina Backyard Ultra ist eine einzigartige Laufveranstaltung in Erfweiler, bei der jede volle Stunde eine 6,7 km lange Runde gestartet wird. Gewonnen hat, wer als letzter eine Runde innerhalb einer Stunde erfolgreich absolviert. Die Strecke führt durch malerische Waldwege, das Glastal und das Langenbachtal mit einem Trail rund um den Langenbach Weiher. Die Veranstaltung zeichnet sich durch eine familiäre Atmosphäre, ein gut ausgestattetes Basecamp und ein engagiertes Helferteam aus.",
+    "course_highlights": [
+      "Start und Ziel auf dem Belmontplatz in Erfweiler",
+      "Runde über breite Waldwege, Pfade und Trails rund um den Langenbach Weiher",
+      "Landschaftlich reizvolle Strecke mit leichtem Anstieg und abwechslungsreichem Terrain"
+    ],
+    "additional": "Zelt- und Stellplätze sowie Materialdepots sind am Start/Ziel auf dem Belmontplatz verfügbar, jedoch begrenzt und nach dem Prinzip \"first come, first serve\" vergeben. Ein Gemeinschaftszelt dient als Startnummernausgabe und Verpflegungsstation, ist aber keine Unterkunft. WC und Duschen sind vor Ort vorhanden. Versicherung ist Sache der Teilnehmenden, ein Sanitätsdienst ist während der Veranstaltung vor Ort.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -140570,9 +140942,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "34131 Kassel",
-    "latitude": 51.3150999,
-    "longitude": 9.4155182,
+    "location": "Wilhelmshöher Allee near Mulangstraße, Kassel, Deutschland",
+    "latitude": 51.3129599,
+    "longitude": 9.4587779,
     "county": "Hessen",
     "nearest_city": "Kassel",
     "nearby_cities": [
@@ -140584,27 +140956,31 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "8 km",
-    "organizer": "PSV Kassel",
+    "organizer": "PSV Grün-Weiß Kassel",
     "contact": null,
-    "website": "https://leichtathletik.psv-kassel.de/",
+    "website": "https://leichtathletik.psv-kassel.de/herkules-berglauf/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/rehamed_herkules_berglauf/",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://www.raceresult.com/143393/",
+    "race_info_url": "https://leichtathletik.psv-kassel.de/herkules-berglauf/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Der REHAmed Herkules-Berglauf ist ein anspruchsvoller Berglauf durch den Bergpark Wilhelmshöhe in Kassel, der fast ausschließlich auf befestigten Naturwegen verläuft. Die Strecke führt vorbei an zahlreichen Sehenswürdigkeiten wie der Löwenburg, dem Steinhöfer Wasserfall und endet am Herkules-Denkmal. Der Lauf richtet sich an Läufer:innen und Walker:innen und bietet neben der Einzelwertung auch eine Staffelwertung für Dreierteams, ideal für Familien, Vereine und Firmen. Umkleiden und Duschen stehen in der nahegelegenen Turnhalle der Reformschule zur Verfügung, und ein Kleidertransport zum Ziel ist organisiert.",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Der REHAmed Herkules-Berglauf ist ein traditionsreicher Berglauf in Kassel, der auf befestigten Naturwegen durch den Bergpark Wilhelmshöhe führt. Die Strecke bietet abwechslungsreiche Abschnitte mit teilweise nassem und rutschigem Untergrund und endet am Herkules-Denkmal. Neben dem Einzelwettkampf gibt es auch einen Staffelwettbewerb für Familien, Vereine und Firmen. Die Veranstaltung richtet sich an Läufer und Walker ab U16 und bietet eine Mannschaftswertung.",
+    "course_highlights": [
+      "Strecke fast ausschließlich auf befestigten Naturwegen im Bergpark Wilhelmshöhe",
+      "Passage bekannter Sehenswürdigkeiten wie Apolloberg, Teufelsbrücke, Löwenburg und Steinhöfer Wasserfall",
+      "Ziel am Herkules-Denkmal mit abwechslungsreichem Streckenverlauf"
+    ],
+    "additional": "Start und Ziel befinden sich an der Wilhelmshöher Allee nahe Mulangstraße. Startnummernausgabe und Wettkampfbüro sind in der Turnhalle der Reformschule, Schulstraße 2, Kassel. Kleidertransport zum Ziel ist organisiert, Abgabe der Beutel ab 10 Uhr am Startbereich. Rückweg zum Start erfolgt eigenständig zu Fuß oder mit Buslinie 22, bei Bedarf kann Rückfahrt organisiert werden. Staffelwettbewerb mit drei Teilstrecken und Zeitaddition der Einzelzeiten. Der Startbereich liegt an der Wilhelmshöher Allee nahe der Einmündung Mulangstraße. Kleiderbeutel mit trockener Kleidung können vor dem Start abgegeben werden; der Rückweg vom Ziel führt zu Fuß durch den Bergpark. Bei nasser Witterung können die Wege rutschig sein.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.laufen.de/laufkalender/details/38-rehamed-herkules-berglauf"
     ],
@@ -147060,7 +147436,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "74177 Bad Friedrichshall",
+    "location": "Bad Friedrichshall, Deutschland",
     "latitude": 49.2282271,
     "longitude": 9.2165086,
     "county": "Baden-Württemberg",
@@ -147070,7 +147446,7 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Gemischte Distanz",
-    "organizer": "Stadtmarketing Bad Friedrichshall",
+    "organizer": null,
     "contact": null,
     "website": "https://www.friedrichshall-tourismus.de/fuehrungen-veranstaltungen/veranstaltungen/friedrichshaller-runde.html",
     "fb_link": null,
@@ -147079,12 +147455,19 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Die Friedrichshaller Runde ist eine traditionsreiche Laufveranstaltung in Bad Friedrichshall. Sie ist Teil des 3-Flüsse-Cups und bietet Läufern eine attraktive Strecke durch die reizvolle Landschaft der Region. Die Veranstaltung richtet sich an Laufbegeisterte aller Leistungsstufen und verbindet sportliche Herausforderung mit landschaftlichen Highlights. Die Organisation erfolgt durch das Stadtmarketing Bad Friedrichshall, das auch für weitere touristische Angebote in der Region bekannt ist.",
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.friedrichshall-tourismus.de/fuehrungen-veranstaltungen/veranstaltungen/friedrichshaller-runde.html",
+    "presumed_organizer_email": "info@stimme.net",
+    "website_emails_found": [
+      "info@stimme.net",
+      "support@stimme.net"
+    ],
+    "description": "Die Friedrichshaller Runde ist eine Laufveranstaltung in Bad Friedrichshall, die am 25. September 2027 stattfindet. Sie ist Teil des 3-Flüsse-Cups und bietet Läufern eine attraktive Strecke durch die landschaftlich reizvolle Umgebung der Stadt. Die Veranstaltung richtet sich an Laufbegeisterte aller Altersgruppen und bietet neben dem sportlichen Erlebnis auch die Möglichkeit, die Region aktiv zu entdecken. Die Organisation erfolgt durch das Stadtmarketing Bad Friedrichshall, das auch für weitere touristische Angebote in der Region zuständig ist.",
+    "course_highlights": [
+      "Lauf durch die landschaftlich reizvolle Umgebung von Bad Friedrichshall",
+      "Teil des 3-Flüsse-Cups mit abwechslungsreicher Strecke",
+      "Strecke führt entlang bekannter Rad- und Wanderwege wie dem Kocher-Jagst-Radweg"
+    ],
+    "additional": "Die Veranstaltung wird vom Stadtmarketing Bad Friedrichshall organisiert. Kontakt ist telefonisch unter 07136/832-106 oder per E-Mail tourist@friedrichshall.de möglich. Die Friedrichshaller Runde ist eingebettet in ein vielfältiges Freizeitangebot mit Radfahren, Wandern und kulturellen Führungen in der Region.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -150596,8 +150979,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "94099 Ruhstorf an der Rott",
+    "start_time": "09:45",
+    "location": "Ruhstorf an der Rott, Bavaria, Deutschland",
     "latitude": 48.4388803,
     "longitude": 13.3331522,
     "county": "Bayern",
@@ -150605,12 +150988,15 @@
     "nearby_cities": [
       "Passau"
     ],
-    "distances": "[\"7.5\"]",
+    "distances": "[\"3\", \"1\"]",
     "distance_m": [
-      7500
+      3000,
+      1000
     ],
-    "distance_keywords": [],
-    "distance_verbose": "7.5 km",
+    "distance_keywords": [
+      "3000 Meter"
+    ],
+    "distance_verbose": "3000 Meter, 1 km",
     "organizer": null,
     "contact": null,
     "website": "https://spoferan.com/events/gruber-maler-ruhstorfer-gelaendelauf",
@@ -150620,12 +151006,19 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Der Ruhstorfer Geländelauf ist ein ca. 7,5 Kilometer langer Traillauf rund um Ruhstorf an der Rott, der durch eine schöne Landschaft mit einigen Steigungen führt. Die Strecke besteht etwa zur Hälfte aus Asphalt und zur Hälfte aus Feld- und Wiesenwegen. Der Lauf ist sowohl für ambitionierte Läufer:innen als auch für Neueinsteiger:innen aufgrund der reizvollen Natur bestens geeignet. Er findet jährlich statt und ist Teil des Grenzland-Laufcups 2024. Die Veranstaltung wird vom SVG Ruhstorf e.V. organisiert und bietet eine freundliche Atmosphäre für alle Teilnehmer.",
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://spoferan.com/events/gruber-maler-ruhstorfer-gelaendelauf/info",
+    "presumed_organizer_email": "johannes.gruebl@gmx.de",
+    "website_emails_found": [
+      "johannes.gruebl@gmx.de",
+      "max@example.com"
+    ],
+    "description": "Der Ruhstorfer Geländelauf ist ein traditionsreicher Lauf in Niederbayern, der Läuferinnen und Läufer aller Altersklassen zu einem sportlichen Tag in der schönen Landschaft rund um Ruhstorf an der Rott einlädt. Das vielseitige Programm umfasst Bambini- und Schülerläufe, einen Hobbylauf sowie den sportlichen Hauptlauf über 7,5 Kilometer. Die abwechslungsreiche Strecke verbindet Asphaltpassagen mit Feld- und Wiesenwegen und bietet einige Steigungen, die für eine ausgewogene Mischung aus Tempo, Natur und sportlicher Herausforderung sorgen. Der Lauf ist Teil des Grenzland-Laufcups sowie des Landkreis- und Sparkassen Laufcups für Schüler und Jugend. Start und Ziel befinden sich am Parkplatz der Niederbayernhalle.",
+    "course_highlights": [
+      "Rundkurs durch die Landschaft rund um Ruhstorf",
+      "Kombination aus Asphalt, Feld- und Wiesenwegen",
+      "Einige Steigungen für sportliche Herausforderung"
+    ],
+    "additional": "Es gibt Bambini-, Schüler-, Hobby- und Hauptläufe. Veranstalter ist SVG Ruhstorf e.V. 1923 - Leichtathletik und Laufen.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,

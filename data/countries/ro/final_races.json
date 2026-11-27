@@ -13064,7 +13064,7 @@
       "5 km"
     ],
     "distance_verbose": "Semimaraton, 20 km, 5 km, 2 km",
-    "organizer": null,
+    "organizer": "Asociația Voluntarilor Invictus - Filiala Bistrița",
     "contact": null,
     "website": "https://semimaratonuleroilor.ro/",
     "fb_link": null,
@@ -13079,19 +13079,19 @@
       "invictusbistrita@outlook.com",
       "nume@exemplu.ro"
     ],
-    "description": "Semimaratonul Eroilor Invictus este un eveniment sportiv anual organizat în Bistrița, dedicat comemorării Zilei Eroilor și promovării sănătății prin sport. Evenimentul reunește atât sportivi amatori, cât și elite, oferind o experiență de alergare pe un traseu special amenajat în oraș. Organizatorii pun accent pe respectarea memoriei eroilor și pe implicarea comunității locale. Participanții beneficiază de kit de participare cu număr de concurs și cip de cronometrare.",
+    "description": "Semimaratonul Eroilor Invictus, care va avea loc pe 12 iunie 2027 în Bistrița, este un eveniment sportiv dedicat comemorării eroilor care și-au pierdut viața în serviciul forțelor armate. Evenimentul promovează activitățile sportive de masă și beneficiile acestora asupra sănătății fizice și psihice, fiind deschis atât sportivilor amatori, cât și elitelor. Organizarea este realizată de Asociația Voluntarilor Invictus - Filiala Bistrița, în colaborare cu instituții locale și naționale, sub înaltul patronaj al Principelui Radu. Participanții pot alege între mai multe probe, inclusiv semimaraton și cros, toate desfășurate pe trasee atent stabilite în orașul Bistrița.",
     "course_highlights": [
-      "Traseu urban în orașul Bistrița",
-      "Start și sosire în Piața Centrală",
-      "Eveniment dedicat Zilei Eroilor, 10 iunie"
+      "Traseul semimaratonului are o lungime de 21 km, cu start și sosire în Piața Centrală din Bistrița",
+      "Evenimentul include și o cursă de cros de 5,2 km, potrivită pentru toate vârstele și nivelurile de pregătire",
+      "Traseele sunt marcate și asigurate pentru siguranța participanților, promovând spiritul comunitar și memoria eroilor"
     ],
-    "additional": "Participanții primesc număr de concurs și cip de cronometrare. Evenimentul este organizat sub Înaltul Patronaj al Principelui Radu și implică numeroși parteneri și colaboratori locali. Există posibilitatea de a obține tricoul oficial Invictus și alte produse merch.",
+    "additional": "Participanții primesc număr de concurs și cip de cronometrare. Există tricouri personalizate Invictus disponibile. Evenimentul este organizat sub înaltul patronaj al Principelui Radu și implică numeroși parteneri și sponsori locali. Înscrierile se validează până la 12 mai 2027, iar organizatorul își rezervă dreptul de a refuza participarea. Înscrierea presupune alegerea unei curse și efectuarea unei donații. Tricoul INVICTUS se ridică în kitul concursului pe baza donației și nu va fi disponibil pentru cumpărare în ziua evenimentului.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.89,
     "sources": [
       "https://semimaratonuleroilor.ro/",
       "http://semimaratonuleroilor.ro/",
@@ -13366,8 +13366,8 @@
   {
     "domain_name": "the_color_run_timisoara_2",
     "name": "The Color Run Timișoara",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20270612",
@@ -13386,31 +13386,74 @@
     "nearby_cities": [
       "Timişoara"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Distanțe mixte",
-    "organizer": null,
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": "The Color Run România",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "website": "https://www.thecolorrun.ro/evenimente/timisoara/",
+    "fb_link": "https://www.facebook.com/TheColorRunRO/",
+    "ig_link": "https://www.instagram.com/thecolorrunromania/",
+    "price_range": "220 lei",
+    "price_tiers": [
+      {
+        "distance": "Standard",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "170 lei",
+            "deadline": "20261205",
+            "description": "SUPER EARLY BIRD = 170 RON – 26.11.2026 – 05.12.2026"
+          },
+          {
+            "label": "tier_2",
+            "price": "180 lei",
+            "deadline": "20270214",
+            "description": "EARLY BIRD = 180 RON – 06.12.2026 – 14.02.2027"
+          },
+          {
+            "label": "tier_3",
+            "price": "200 lei",
+            "deadline": "20270404",
+            "description": "NORMAL PRICE = 200 RON – 15.02.2027 – 04.04.2027"
+          },
+          {
+            "label": "tier_4",
+            "price": "220 lei",
+            "deadline": "20270417",
+            "description": "LAST MINUTE = 220 RON – 05.04.2027 – 17.04.2027"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270417",
+    "registration_url": "https://www.thecolorrun.ro/despre/",
+    "race_info_url": "https://www.thecolorrun.ro/evenimente/timisoara/",
+    "presumed_organizer_email": "contact@thecolorrun.ro",
+    "website_emails_found": [
+      "contact@thecolorrun.ro",
+      "catalin.blindu@kickoff.ro",
+      "gdpr@kickoff.ro"
+    ],
+    "description": "The Color Run Timișoara este o cursă necronometrată de 5 kilometri, cunoscută drept \"Happiest 5k on the Planet\", care celebrează sănătatea, bucuria și originalitatea printr-o experiență plină de culoare și energie. Participanții aleargă, dansează sau merg pe un traseu unde sunt colorați cu pudră colorată la fiecare kilometru, iar la final se bucură de o petrecere vibrantă cu muzică și momente pline de veselie. Evenimentul este deschis tuturor vârstelor și promovează un stil de viață activ și pozitiv. Este o sărbătoare a comunității și a mișcării, oferind o zi memorabilă pentru toți participanții.",
+    "course_highlights": [
+      "Traseu de aproximativ 5 km necronometrat",
+      "Pudră colorată aplicată la fiecare kilometru",
+      "Petrecere vibrantă cu muzică și activități după cursă"
+    ],
+    "additional": "Copiii între 0 și 6 ani pot participa gratuit cu număr de concurs, medalie și pudră colorată, dar fără tricou. Kitul de participare include tricou, număr de concurs, tatuaje temporare, bandană, medalie și pudră colorată. Nu există cronometrare oficială, iar participanții trebuie să poarte numărul de concurs vizibil pe tot parcursul evenimentului. Nu există spațiu de depozitare bagaje. Accesul în zona de eveniment se face pe baza brățării primite la intrare. Medalia și pudra colorată se primesc în ziua evenimentului. Copiii cu vârste între 0 și 6 ani au acces gratuit.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.86,
     "sources": [
       "https://www.thecolorrun.ro/evenimente/timisoara/"
     ],
@@ -18529,8 +18572,8 @@
   {
     "domain_name": "oslea_run",
     "name": "OSLEA RUN",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260829",
@@ -18544,11 +18587,11 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Câmpușel, Hunedoara",
-    "latitude": 45.2616536,
-    "longitude": 22.8717273,
-    "county": "GORJ",
+    "start_time": "08:00",
+    "location": "Camping Valea Iarului, Câmpușel, Hunedoara County, România",
+    "latitude": 45.26202319999999,
+    "longitude": 22.8653196,
+    "county": "HUNEDOARA",
     "nearest_city": "Petroşani",
     "nearby_cities": [],
     "distances": "[\"41\", \"26\", \"15\", \"8.5\"]",
@@ -18562,27 +18605,33 @@
       "Maraton"
     ],
     "distance_verbose": "41 km, 26 km, 15 km, 8.5 km",
-    "organizer": null,
+    "organizer": "Clubul Alpin Valea Jiului",
     "contact": null,
-    "website": "https://run.oslea.ro/",
+    "website": "https://run.oslea.ro",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/camping_valea_iarului/",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Oslea Run este o competiție de alergare montană desfășurată în munții Retezat și Vâlcan, în zona masivelor Oslea, Paltina și Piatra Iorgovanului. Evenimentul, organizat de Clubul Alpin Valea Jiului, continuă tradiția alergărilor montane din zonă, oferind patru curse pe timp de zi care evidențiază trasee spectaculoase în mijlocul naturii, la confluența Parcurilor Naționale Retezat și Domogled-Valea Cernei. Participanții se bucură de o experiență autentică în natură, cu trasee provocatoare și peisaje impresionante. Evenimentul include și o cursă pentru copii, precum și activități sociale și culturale conexe.",
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://run.oslea.ro/inscrieri",
+    "race_info_url": "https://run.oslea.ro/program",
+    "presumed_organizer_email": "runoslea@gmail.com",
+    "website_emails_found": [
+      "runoslea@gmail.com"
+    ],
+    "description": "Oslea Run este o competiție de alergare montană desfășurată în munții Retezat și Vâlcan, în zona masivelor Oslea, Paltina și Piatra Iorgovanului, la confluența dintre Parcul Național Retezat și Domogled - Valea Cernei. Evenimentul oferă patru curse pe timp de zi, cu trasee montane variate și provocatoare, continuând tradiția începută în 2011. Participanții se pot bucura de o experiență completă, cu tricou tehnic, medalie de finisher, puncte de susținere pe traseu și la finish, precum și de activități sociale și degustări de vinuri. Competiția este organizată de Clubul Alpin Valea Jiului și se desfășoară în Camping Valea Iarului, Câmpușel, Hunedoara.",
+    "course_highlights": [
+      "Trasee montane prin Parcul Național Retezat și Domogled - Valea Cernei",
+      "Patru curse cu distanțe de 8,5 km, 15 km, 26 km și 41 km",
+      "Puncte de susținere și cronometrare individuală cu clasament online"
+    ],
+    "additional": "Tricou tehnic ediție limitată și medalie de finisher pentru participanții care termină în timpul limită. Acces la degustare de vinuri Corcova Roy & Dâmboviceanu și cină tradițională sâmbătă seara. Acces cu reducere la campare în Camping Valea Iarului pentru concurenți. Puncte UTMB și ITRA pentru cursele Paltina și Scorota. Ambulanță prezentă în zona de start/finish. Ședință tehnică și vizionare film în aer liber înaintea cursei. Sistem de sonorizare și MC la eveniment. Acces la workshopuri și spațiu de socializare sâmbătă seara. Probele Paltina și Scorota au fost indicate ca oferind puncte ITRA și UTMB.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://run.oslea.ro/"
     ],
@@ -21748,8 +21797,8 @@
   {
     "domain_name": "crosul_memoriei_5k",
     "name": "Crosul Memoriei 5K",
-    "type": "road",
-    "type_local": "Șosea",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260919",
@@ -21763,10 +21812,10 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Mărgău, Cluj County, România",
-    "latitude": 46.7478922,
-    "longitude": 22.953839,
+    "start_time": "11:30",
+    "location": "Calea Partizanilor, Mărgău, Cluj County, România",
+    "latitude": 46.672729,
+    "longitude": 22.830464,
     "county": "CLUJ",
     "nearest_city": "Cluj-Napoca",
     "nearby_cities": [],
@@ -21778,27 +21827,34 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Asociația Clubul Monarhiștilor Clujeni și Asociația Hai Afară",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://competi.ro/ro/events/crosul-memoriei-2026-2026-09-19",
+    "fb_link": "https://www.facebook.com/events/comuna-m%C4%83rg%C4%83u-cluj/crosul-memoriei-5k-19-septembrie-2026-m%C4%83rg%C4%83u/943620302087682/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://competi.ro/ro/events/crosul-memoriei-2026-2026-09-19#main-content",
+    "presumed_organizer_email": "salut@versantulpartizanilor.ro",
+    "website_emails_found": [
+      "salut@versantulpartizanilor.ro",
+      "support@competi.ro"
+    ],
+    "description": "Crosul Memoriei este o alergare montană de aproximativ 5 km desfășurată pe Calea Partizanilor în comuna Mărgău, Munții Apuseni. Este primul traseu tematic memorial din România, dedicat memoriei grupării de rezistență anticomunistă „Teodor Șușman”. Evenimentul face parte din Apuseni - Serbările Memoriei și oferă o experiență sportivă și culturală, cu invitați speciali și un program bogat ce include drumeții tematice, expoziții și muzică la foc de tabără. Startul cursei are loc în jurul orei 11:30.",
+    "course_highlights": [
+      "Traseu montan de aproximativ 5 km pe Calea Partizanilor",
+      "Primul traseu tematic memorial din România",
+      "Zona Munții Apuseni, cu puncte panoramice și elemente istorice"
+    ],
+    "additional": "Evenimentul face parte dintr-un program mai larg ce include drumeție tematică, premiera unui film documentar, expoziții de bandă desenată, pictură și icoane, dezbateri și seară de muzică la foc de tabără. Participarea în ediția 2026 s-a făcut online pe my-run.ro în două variante: Participare Standard și Participare Kit + Tombolă.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.83,
     "sources": [
       "https://www.facebook.com/events/943620302087682/"
     ],
@@ -21816,8 +21872,8 @@
   {
     "domain_name": "delicium_run_fest",
     "name": "Delicium Run Fest",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260919",
@@ -21832,9 +21888,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Borșa, Cluj County, România",
-    "latitude": 46.9305287,
-    "longitude": 23.6624335,
+    "location": "Ferma Delicium, Borșa, Cluj County, România",
+    "latitude": 46.92031979999999,
+    "longitude": 23.6958437,
     "county": "CLUJ",
     "nearest_city": "Cluj-Napoca",
     "nearby_cities": [
@@ -21846,27 +21902,33 @@
     ],
     "distance_keywords": [],
     "distance_verbose": "1.6 km",
-    "organizer": null,
+    "organizer": "Pro Atletic SRL – Perform Cluj",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://runmap.ro/events/delicium-run-fest-2026",
+    "fb_link": "https://www.facebook.com/proatleticsummercamp2025/posts/-v%C4%83-invit%C4%83m-cu-drag-la-delicium-run-fest-%EF%B8%8F%EF%B8%8Fpe-19-septembrie-2026-ne-vedem-la-fer/122274532616076057/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://runmap.ro/register",
+    "race_info_url": "https://runmap.ro/events/delicium-run-fest-2026",
+    "presumed_organizer_email": "runmap.ro@gmail.com",
+    "website_emails_found": [
+      "runmap.ro@gmail.com"
+    ],
+    "description": "Delicium RUN Fest este un eveniment de alergare organizat la Ferma Delicium din Borșa, județul Cluj, care celebrează mișcarea, familia și comunitatea într-un cadru natural unic. Traseele trec prin plantațiile de zmeură și mure ale fermei, oferind o experiență accesibilă și plăcută pentru toate vârstele, inclusiv curse pentru adulți și ștafete părinte-copil. Evenimentul pune accent pe bucuria mișcării și pe petrecerea timpului împreună, nu pe performanță sau distanțe lungi. După cursă, participanții pot savura produse locale și se pot relaxa în zonele special amenajate ale fermei.",
+    "course_highlights": [
+      "Traseu prin plantațiile de zmeură și mure ale Fermei Delicium",
+      "Cursă scurtă și accesibilă de aproximativ 1,6 km în interiorul fermei",
+      "Ștafete părinte-copil pentru o experiență de familie și echipă"
+    ],
+    "additional": "Toți participanții primesc medalii. După cursă, există zone de relaxare cu hamace, fructe proaspete, posibilitatea de a cumpăra produse locale din shopul fermei și de a servi masa la restaurant. Evenimentul pune în valoare produsele locale ale fermei și oferă un cadru potrivit pentru participarea în familie.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.facebook.com/proatleticsummercamp2025"
     ],
@@ -21952,8 +22014,8 @@
   {
     "domain_name": "oradea_city_running_day",
     "name": "Oradea City Running Day",
-    "type": "other",
-    "type_local": "Altele",
+    "type": "road",
+    "type_local": "Șosea",
     "race_dates": [
       [
         "20260920",
@@ -21967,20 +22029,19 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Oradea, România",
-    "latitude": 47.04650050000001,
-    "longitude": 21.9189438,
+    "start_time": "10:00",
+    "location": "Piața Ferdinand, Oradea, România",
+    "latitude": 47.0561604,
+    "longitude": 21.9294797,
     "county": "BIHOR",
     "nearest_city": "Oradea",
     "nearby_cities": [
       "Oradea"
     ],
-    "distances": "[\"21\", \"10.5\", \"10\", \"5\"]",
+    "distances": "[\"21\", \"10.5\", \"5\"]",
     "distance_m": [
       21000,
       10500,
-      10000,
       5000
     ],
     "distance_keywords": [
@@ -21988,28 +22049,34 @@
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "Semimaraton, 10.5 km, 10 km, 5 km",
+    "distance_verbose": "Semimaraton, 10.5 km, 5 km",
     "organizer": null,
     "contact": null,
-    "website": "https://oradeacityrunningday.ro/info/mId95",
-    "fb_link": null,
+    "website": "https://oradeacityrunningday.ro/",
+    "fb_link": "https://www.facebook.com/runningdayoradea/?locale=ro_RO",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Oradea City Running Day este un eveniment sportiv anual ce se desfășoară în Oradea, oferind curse de alergare pentru toate vârstele și nivelurile de pregătire. Traseele includ semimaraton, stafeta firmelor, cursa de 10,5 km și crosul popular de 5 km, toate desfășurate pe un traseu urban marcat cu săgeți albastre, ce trece prin zone reprezentative ale orașului. Evenimentul promovează un stil de viață sănătos și spiritul de echipă, în special prin proba de stafeta dedicată angajaților firmelor. Participanții beneficiază de kituri de start cu cip electronic și puncte de revitalizare pe traseu.",
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://oradeacityrunningday.ro/info/mId95",
+    "race_info_url": "https://oradeacityrunningday.ro/info/mId95",
+    "presumed_organizer_email": "info@oradeacityrunningday.ro",
+    "website_emails_found": [
+      "info@oradeacityrunningday.ro"
+    ],
+    "description": "Oradea City Running Day este un eveniment sportiv anual care include curse de semimaraton, stafetă, crosuri de 10,5 km și 5 km, precum și crosul copiilor. Traseele sunt urbane, cu start și sosire în Piața Ferdinand, traversând poduri și zone pitorești de-a lungul râului Criș. Evenimentul este dedicat atât alergătorilor amatori, cât și celor competitivi, oferind o atmosferă prietenoasă și oportunități de socializare și promovare a unui stil de viață sănătos. Participanții pot ridica kiturile de concurs cu o zi înainte sau în ziua cursei, iar organizarea este asigurată de Asociația Clubul Sportiv Xterra Sport Bihor.",
+    "course_highlights": [
+      "Traseu urban cu start și sosire în Piața Ferdinand, Oradea",
+      "Parcurgerea a 4 ture pentru semimaraton și 2 ture pentru crosul de 10,5 km",
+      "Trecerea pe sub podurile Decebal și Carol I și alergare pe malul Crișului"
+    ],
+    "additional": "Ridicarea kiturilor de concurs se face în Piața Ferdinand lângă Teatrul Regina Maria, sâmbătă între 16:30-20:00 și duminică între 7:30-9:30. Crosul copiilor începe la ora 13:00 și este dedicat copiilor până în 12 ani, fără caracter competitiv și fără premiere la sosire. Pentru stafeta semimaraton, echipele sunt formate din 4 alergători, fiecare alergând o tură de 5,2 km. Taxele de participare se plătesc online prin sistemul EuPlătesc, iar înscrierile nu se fac în ziua concursului. Sunt organizate și curse pentru copii.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.86,
     "sources": [
       "https://oradeacityrunningday.ro/"
     ],
@@ -22195,7 +22262,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "09:00",
     "location": "Brăila, România",
     "latitude": 45.2652463,
     "longitude": 27.9594714,
@@ -22204,39 +22271,45 @@
     "nearby_cities": [
       "Galaţi"
     ],
-    "distances": "[\"21\", \"11\", \"5\"]",
+    "distances": "[\"21\", \"8.5\", \"5\", \"2.5\"]",
     "distance_m": [
       21000,
-      11000,
-      5000
+      8500,
+      5000,
+      2500
     ],
     "distance_keywords": [
       "Semimaraton",
-      "10 km",
       "5 km"
     ],
-    "distance_verbose": "Semimaraton, 11 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "Semimaraton, 8.5 km, 5 km, 2.5 km",
+    "organizer": "Elite Running",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://semimaratonbraila.ro/",
+    "fb_link": "https://www.facebook.com/runbraila/?locale=ro_RO",
+    "ig_link": "https://www.instagram.com/runbraila",
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270918",
+    "registration_url": "https://semimaratonbraila.ro/formular-inscriere/",
+    "race_info_url": "https://semimaratonbraila.ro/trasee/",
+    "presumed_organizer_email": "contact@semimaratonbraila.ro",
+    "website_emails_found": [
+      "contact@semimaratonbraila.ro"
+    ],
+    "description": "Brăila Bridge Half Marathon este un eveniment anual care adună mii de alergători pe faleza Dunării, oferind o experiență unică de alergare peste și pe lângă Dunăre. Cu trei probe principale - semimaraton 21 km, cursa de 8,5 km și cursa de 5 km - plus curse pentru copii și familii, evenimentul este potrivit pentru toate vârstele și nivelurile de pregătire. Traseul este spectaculos, incluzând podul peste Dunăre și panorama fluviului, iar atmosfera după cursă este animată de muzică și bucuria comunității. Organizatorii pun accent pe participare și cauze caritabile, făcând din această cursă o sărbătoare a sportului și solidarității.",
+    "course_highlights": [
+      "Traseu pe faleza Dunării, drept și deschis, ideal pentru recorduri personale",
+      "Trecerea peste podul Brăila cu panoramă asupra fluviului",
+      "Atmosferă vibrantă după cursă cu muzică și întâlniri în oraș"
+    ],
+    "additional": "Starturile sunt programate astfel: semimaratonul și cursa de 8,5 km încep la ora 9:00 de la Centrul de Întreținere și Coordonare Pod Brăila, cursa de 5 km începe la ora 9:30 din Piața Independenței, iar cursele pentru copii și Family Fun Run au starturi separate mai târziu. Kiturile de participare se ridică în zilele premergătoare la Braila Mall și în zona de start/sosire. Pentru cursele competitive nu se acceptă înscrieri în ziua concursului. Există curse speciale pentru copii între 6 și 14 ani și pentru familii, promovând o zi de alergare pentru toți. Sunt disponibile curse pentru copii și Family Fun Run, alături de opțiuni caritabile.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.86,
     "sources": [
       "https://calendar.sportic.ro/events/view?hash=b6b574ab-07a6-4737-9df6-f62fc34e6b32",
       "https://semimaratonbraila.ro/"
@@ -22270,48 +22343,56 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Lugoj, Timiș County, România",
-    "latitude": 45.6909898,
-    "longitude": 21.9034608,
-    "county": "TIMIS",
-    "nearest_city": "Lugoj",
+    "start_time": "09:00",
+    "location": "Stadionul Tineretului, Lugoj, România",
+    "latitude": 47.0490416,
+    "longitude": 21.9197885,
+    "county": "BIHOR",
+    "nearest_city": "Oradea",
     "nearby_cities": [
-      "Lugoj"
+      "Oradea"
     ],
-    "distances": "[\"10\", \"5\", \"3\"]",
+    "distances": "[\"10\", \"5\", \"3\", \"1.2\", \"0.8\", \"0.2\", \"0.1\"]",
     "distance_m": [
       10000,
       5000,
-      3000
+      3000,
+      1200,
+      800,
+      200,
+      100
     ],
     "distance_keywords": [
       "10 km",
       "5 km",
       "3000 metri"
     ],
-    "distance_verbose": "10 km, 5 km, 3000 metri",
-    "organizer": null,
+    "distance_verbose": "10 km, 5 km, 3000 metri, 1.2 km, 0.8 km, 0.2 km, 0.1 km",
+    "organizer": "Honeywell Technologies",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.honeyrun.ro/",
+    "fb_link": "https://www.facebook.com/HoneyRunLugoj/",
     "ig_link": null,
-    "price_range": null,
+    "price_range": "Gratuit",
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://www.honeyrun.ro/formular-de-inscriere/",
+    "race_info_url": "https://www.honeyrun.ro/curse/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "HoneyRun este un eveniment sportiv organizat în Lugoj, dedicat promovării unui stil de viață activ și sănătos. Toate cursele se desfășoară pe Stadionul Tineretului, oferind probe pentru copii și adulți, cu distanțe variate potrivite pentru toate vârstele și nivelurile de pregătire fizică. Evenimentul este gratuit, cu un număr limitat de locuri, și este susținut de Honeywell Technologies. Participanții se pot bucura de o atmosferă prietenoasă și de oportunitatea de a petrece timp de calitate în aer liber alături de familie și prieteni.",
+    "course_highlights": [
+      "Toate cursele se desfășoară pe Stadionul Tineretului din Lugoj",
+      "Distanțe variate de la 200 m pentru copii până la 10.000 m pentru adulți",
+      "Traseele sunt compuse din mai multe ture pe stadion, cu număr precis de ture pentru fiecare distanță"
+    ],
+    "additional": "Evenimentul este gratuit, cu un număr limitat de 500 de locuri globale sau 100 locuri per cursă. Kiturile de participare se ridică în Piața Iosif Constantin Drăgan și la Stadionul Tineretului. Programul include distribuirea kiturilor în zilele premergătoare și în ziua cursei, iar cursele încep de la ora 09:00 cu probe pentru copii și adulți, inclusiv o ștafetă FunRun 4 x 100 m. Înscrierea este limitată la o singură cursă per persoană, cu excepția Ștafetei FunRun; locurile sunt limitate.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.62,
     "sources": [
       "https://www.honeyrun.ro/",
       "https://calendar.sportic.ro/events/view?hash=e35173f8-7d8d-461a-9c63-d41ed7d0be8d"

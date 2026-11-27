@@ -52285,8 +52285,8 @@
   {
     "domain_name": "moravskosazavska_50k",
     "name": "MORAVSKOSÁZAVSKA 50K",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270717",
@@ -52296,7 +52296,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "08:00",
     "location": "Zábřeh, Olomouc Region, Czech Republic",
     "latitude": 49.8825995,
     "longitude": 16.8722323,
@@ -52315,25 +52315,57 @@
     "distance_verbose": "50 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://moravaflow.cz/moravska-sazava-ultra-50/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "ULTRA 50",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "1000 Kč",
+            "deadline": null,
+            "description": "Startovné ULTRA 50 je stanoveno na 1.000,- Kč"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "DVOJICE",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "1000 Kč / člen dvojice",
+            "deadline": null,
+            "description": "Startovné DVOJIC je stanoveno na 1.000,- Kč / člen dvojice"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://moravaflow.cz/moravska-sazava-ultra-50/registrace/",
+    "race_info_url": "https://moravaflow.cz/moravska-sazava-ultra-50/propozice-sazavy/",
+    "presumed_organizer_email": "vsem@moravaflow.cz",
+    "website_emails_found": [
+      "vsem@moravaflow.cz",
+      "kuba@moravaflow.cz"
+    ],
+    "description": "Moravská Sázava 50K is a 50 km ultramarathon that follows the valleys of the Moravská Sázava from Zábřeh to the river’s source on Buková hora. The course offers a varied mix of forest roads, natural trails and paved sections, with 1,369 metres of elevation gain, including a climb to the summit of Buková hora. The race is suitable both for experienced ultramarathon runners and for runners looking for a new challenge. It finishes at the summit of Buková hora, where runners can take the cable car down. After the race, participants can camp at the finish area, where showers are available, and have breakfast on Sunday morning.",
+    "course_highlights": [
+      "A varied mix of forest roads, natural trails and paved sections",
+      "1,369 metres of total elevation gain, including a climb to the summit of Buková hora",
+      "The finish line is right at the summit of Buková hora, with the option to take the cable car down"
+    ],
+    "additional": "Participants receive an ID wristband, a race bib and a GPS tracker. Aid stations along the course provide water, isotonic drink powder, Coca-Cola and seasonal fruit. After the race, participants can camp at the Buková Hora resort finish area and use the showers. GPS trackers are used to monitor runners, and results are electronically timed. The cable car from the finish is covered and provides a convenient ride down to the race facilities. The race is included in the UTMB and ITRA rankings. Mandatory equipment includes an ID wristband, a clearly visible race bib, a tracker and a charged, working phone.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://itra.run/Races/RaceDetails/MORAVSKOSÁZAVSKA.50K.MORAVSKÁ.SÁZAVA...ULTRA.50/2027/126208"
     ],
@@ -73685,17 +73717,19 @@
     "distance_verbose": "20 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.svetbehu.cz/terminovka/betelny-bergl-virtualni-bezecka-serie-zavodu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
+    "race_info_url": "https://www.svetbehu.cz/terminovka/betelny-bergl-virtualni-bezecka-serie-zavodu/",
+    "presumed_organizer_email": "DAVID.GLADIS@SVETBEHU.CZ",
+    "website_emails_found": [
+      "DAVID.GLADIS@SVETBEHU.CZ"
+    ],
+    "description": "Betelný Bergl is a virtual running race series in the Brno region. Runners can take part in the series by running on their own in the area around Brno.",
     "course_highlights": [],
     "additional": null,
     "images": [],
@@ -73703,7 +73737,7 @@
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.3,
     "sources": [
       "https://www.svetbehu.cz/terminovka/betelny-bergl-virtualni-bezecka-serie-zavodu/"
     ],
@@ -73721,8 +73755,8 @@
   {
     "domain_name": "beh_na_babi_lom",
     "name": "Běh na Babí lom",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261101",
@@ -73736,42 +73770,49 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Babí lom, Kuřim, South Moravian Region, Czech Republic",
-    "latitude": 49.3133563,
-    "longitude": 16.5751564,
+    "start_time": "10:00",
+    "location": "Babí lom lookout tower, Kuřim, Czech Republic",
+    "latitude": 49.30512909999999,
+    "longitude": 16.5761101,
     "county": "Jihomoravský kraj",
     "nearest_city": "Brno",
     "nearby_cities": [
       "Brno"
     ],
-    "distances": "[\"3.8\"]",
+    "distances": "[\"3.8\", \"2.6\"]",
     "distance_m": [
-      3800
+      3800,
+      2600
     ],
     "distance_keywords": [],
-    "distance_verbose": "3.8 km",
-    "organizer": null,
+    "distance_verbose": "3.8 km, 2.6 km",
+    "organizer": "Kuřimská běžecká liga",
     "contact": null,
-    "website": null,
+    "website": "https://kbl.kurim.cz/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://kbl.kurim.cz/info",
+    "presumed_organizer_email": "vitek@sikora.cz",
+    "website_emails_found": [
+      "vitek@sikora.cz"
+    ],
+    "description": "The Run to Babí lom is part of the Kuřim Running League and takes place in the beautiful natural surroundings of the lookout tower on Babí lom in Kuřim. The race offers trail running away from road traffic, with stunning views and a great atmosphere. The event also includes a fun run for children, making it suitable for the general public and families. After the race, participants can relax together at a local pub.",
+    "course_highlights": [
+      "Trail running away from road traffic",
+      "Finish at the lookout tower on Babí lom, with a view",
+      "A 2.6 km fun run for children"
+    ],
+    "additional": "Registration takes place at the race venue, with the option to show an online discount on the entry fee. The entry fee is 100 Kč for adults; children pay what they wish. After the race, trophies are presented to the top runners of the entire Kuřim Running League season. Trophies are also presented to the top women and men of the league season after the race.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.svetbehu.cz/terminovka/beh-na-babi-lom/"
     ],
@@ -73899,7 +73940,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "18:00",
     "location": "Občerstvení Pod Lesem, Benešov nad Ploučnicí, Ústecký kraj, Czech Republic",
     "latitude": 50.7377461,
     "longitude": 14.2972795,
@@ -73916,27 +73957,33 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": null,
+    "organizer": "Město Benešov nad Ploučnicí",
     "contact": null,
-    "website": null,
+    "website": "https://www.benesovnpl.cz/volny-cas/kalendar-akci/benesovska-dusickova-souteska-1531_96cs.html",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.benesovnpl.cz/volny-cas/kalendar-akci/benesovska-dusickova-souteska-1531_96cs.html#gcm-content",
+    "presumed_organizer_email": "urad@benesovnpl.cz",
+    "website_emails_found": [
+      "urad@benesovnpl.cz"
+    ],
+    "description": "Benešov All Souls’ Day Gorge is a night-time autumn run held in Benešov nad Ploučnicí. The event offers a unique autumn running atmosphere, with a start in the early evening. The run is suitable for the general public and is part of the town’s cultural calendar. The route passes through the town and the surrounding countryside, making it an enjoyable experience for all participants.",
+    "course_highlights": [
+      "Night-time run in autumn",
+      "The route passes through Benešov nad Ploučnicí and the surrounding countryside",
+      "The event’s atmosphere is associated with the All Souls’ Day period"
+    ],
+    "additional": "The start is at 18:00. The event takes place in Benešov nad Ploučnicí. It is listed in the running category. The organizer’s contact details are available on the town’s website.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.71,
     "sources": [
       "https://www.svetbehu.cz/terminovka/benesovska-dusickova-souteska/"
     ],
@@ -75429,8 +75476,8 @@
   {
     "domain_name": "adrkros_memorial_ivanky_cadove_a_miry_smida",
     "name": "Ádrkros, memoriál Ivanky Čadové a Míry Šmída",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261107",
@@ -75445,9 +75492,9 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Dolní Adršpach, Adršpach, Czech Republic",
-    "latitude": 50.61865599999999,
-    "longitude": 16.1085733,
+    "location": "Adršpašské skalní město, Dolní Adršpach, Czech Republic",
+    "latitude": 50.6168561,
+    "longitude": 16.1221924,
     "county": "Královéhradecký kraj",
     "nearest_city": "Hradec Králové",
     "nearby_cities": [],
@@ -75461,25 +75508,31 @@
     "distance_verbose": "9 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.svetbehu.cz/terminovka/adrkros-memorial-ivanky-cadove-a-miry-smida/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "https://www.svetbehu.cz/terminovka/adrkros-memorial-ivanky-cadove-a-miry-smida/",
+    "presumed_organizer_email": "DAVID.GLADIS@SVETBEHU.CZ",
+    "website_emails_found": [
+      "DAVID.GLADIS@SVETBEHU.CZ"
+    ],
+    "description": "Ádrkros, the Ivanka Čadová and Míra Šmíd Memorial, is a 9 km race that takes runners through very varied terrain, including stairs, in the picturesque Adršpach Rock City. This cross-country race is the biggest sporting battle between climbers and civilians, giving it a unique atmosphere and challenge. It is intended for runners looking for demanding terrain and beautiful natural scenery.",
+    "course_highlights": [
+      "A 9 km race on varied terrain",
+      "The route passes through Adršpach Rock City",
+      "Includes running on stairs and among rock formations"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.86,
     "sources": [
       "https://www.svetbehu.cz/terminovka/adrkros-memorial-ivanky-cadove-a-miry-smida/"
     ],
@@ -78737,6 +78790,82 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "louceni_s_turistickym_rokem",
+    "name": "Loučení s turistickým rokem",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ],
+      [
+        "20271119",
+        "20271119"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Důlce, Ústí nad Labem, Ústí nad Labem District, Czech Republic",
+    "latitude": 50.6642998,
+    "longitude": 14.0464117,
+    "county": "Ústecký kraj",
+    "nearest_city": "Ústí nad Labem",
+    "nearby_cities": [
+      "Ústí nad Labem"
+    ],
+    "distances": "[\"107\"]",
+    "distance_m": [
+      107000
+    ],
+    "distance_keywords": [
+      "100 km"
+    ],
+    "distance_verbose": "107 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://dalkovepochody.cz/louceni/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://dalkovepochody.cz/louceni/",
+    "race_info_url": "https://dalkovepochody.cz/louceni/",
+    "presumed_organizer_email": "maly.turista@seznam.cz",
+    "website_emails_found": [
+      "maly.turista@seznam.cz"
+    ],
+    "description": "Loučení s turistickým rokem is a long-distance hike and ultratrail held around Ústí nad Labem-Důlce. It offers several routes of varying lengths, from 11 km to 115 km, mainly following KČT hiking markers and, in Germany, Saxon hiking markers. The routes feature checkpoints and refreshment stations with light food and drinks; soup is included at restaurants. The event is suitable for hiking and ultramarathon enthusiasts who want to end the hiking season actively with support from the organizers. Participants can sleep in their own sleeping bags, and showers and luggage storage are available.",
+    "course_highlights": [
+      "Routes from 11 km to 115 km following KČT and Saxon hiking markers in Germany",
+      "Timed checkpoints along the route",
+      "Refreshment stations and restaurants serving food and drinks approximately every 20–30 km"
+    ],
+    "additional": "A headlamp or flashlight is required for all routes. Overnight floor space in your own sleeping bag is available for 50 Kč per night. Bringing KČT maps or uploading the route to a GPS device is recommended. The organizer does not arrange transport for participants from the route; participation is at your own risk and responsibility. Parking is recommended in the parking garages in central Ústí nad Labem.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.svetbehu.cz/terminovka/louceni-s-turistickym-rokem/"
+    ],
+    "consolidated_ids": [
+      "319866e5-f4ac-44f2-b792-5db408021879"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "kruzska_kundraticka_memorial_honzy_sira",
     "name": "Kružská Kundratická - Memoriál Honzy Šíra",
     "type": "road",
@@ -79271,83 +79400,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "louceni_s_turistickym_rokem",
-    "name": "Loučení s turistickým rokem",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Krajská organizace Pionýr, Důlce 3092/74, Ústí nad Labem, Czech Republic",
-    "latitude": 50.6640547,
-    "longitude": 14.0466476,
-    "county": "Ústecký kraj",
-    "nearest_city": "Ústí nad Labem",
-    "nearby_cities": [
-      "Ústí nad Labem"
-    ],
-    "distances": "[\"115\", \"64\", \"37\", \"29\", \"16\", \"11\"]",
-    "distance_m": [
-      115000,
-      64000,
-      37000,
-      29000,
-      16000,
-      11000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "115 km, 64 km, 37 km, 29 km, 16 km, 11 km",
-    "organizer": "KČT LOKO Teplice",
-    "contact": null,
-    "website": "https://dalkovepochody.cz/louceni/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://dalkovepochody.cz/louceni/",
-    "presumed_organizer_email": "maly.turista@seznam.cz",
-    "website_emails_found": [
-      "maly.turista@seznam.cz"
-    ],
-    "description": "Loučení s turistickým rokem is a long-distance hike and ultra trail held in Ústí nad Labem, offering several routes of varying lengths from 11 km to 115 km. Routes are marked with KČT hiking signs and, in Germany, Saxon hiking signs, with supplementary reflective-arrow markings where there are no hiking signs. The event is suitable for hiking and ultra-trail enthusiasts who want to end the hiking season with a challenging, well-organized event. The facilities offer overnight accommodation, showers, and luggage storage. There are checkpoints and aid stations with food and drinks along the route.",
-    "course_highlights": [
-      "Routes from 11 km to 115 km, with varying levels of difficulty",
-      "Marked with KČT hiking signs and Saxon hiking signs in Germany",
-      "Timed checkpoints and aid stations every 20–30 km"
-    ],
-    "additional": "Overnight accommodation on the floor in your own sleeping bag is available for 50 Kč per night; showers and luggage storage are also available. Recommended parking is in parking garages in central Ústí nad Labem. A headlamp or flashlight is required for all routes. Participants take part at their own risk and responsibility. The start venue is at the Krajská organizace Pionýr, Důlce 3092/74. Refreshments or restaurants are available approximately every 20–30 km; a headlamp or flashlight is required for all routes. Overnight accommodation in your own sleeping bag is available for 50 Kč per night.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.91,
-    "sources": [
-      "https://www.svetbehu.cz/terminovka/louceni-s-turistickym-rokem/"
-    ],
-    "consolidated_ids": [
-      "628d4c0b-acb0-4667-808d-8a0fd3aebc3e"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,

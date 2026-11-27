@@ -21438,10 +21438,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Deventer",
-    "latitude": 52.2660751,
-    "longitude": 6.1552165,
+    "start_time": "09:15",
+    "location": "Schouwburg op de Brink, Deventer, Nederland",
+    "latitude": 52.2520573,
+    "longitude": 6.1603869,
     "county": "Overijssel",
     "nearest_city": "Deventer",
     "nearby_cities": [
@@ -21451,36 +21451,87 @@
       "Arnhem",
       "Harderwijk"
     ],
-    "distances": "[\"10\", \"1\"]",
+    "distances": "[\"10\"]",
     "distance_m": [
-      10000,
-      1000
+      10000
     ],
     "distance_keywords": [
       "10 km"
     ],
-    "distance_verbose": "10 km, 1 km",
+    "distance_verbose": "10 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.brinktotbrinkloop.nl/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": null,
+            "deadline": "20261213",
+            "description": "Voor-inschrijving stopt 13 december a.s."
+          }
+        ],
+        "late_fee": {
+          "price": null,
+          "deadline": "20270103"
+        }
+      },
+      {
+        "distance": "Bedrijvenloop",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "150 €",
+            "deadline": "20261213",
+            "description": "De kosten voor deelname zijn € 150,- per team."
+          }
+        ],
+        "late_fee": {
+          "price": null,
+          "deadline": "20270103"
+        }
+      },
+      {
+        "distance": "Studententeams",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "GRATIS",
+            "deadline": "20261213",
+            "description": "De kosten voor deelname zijn GRATIS"
+          }
+        ],
+        "late_fee": {
+          "price": null,
+          "deadline": "20270103"
+        }
+      }
+    ],
+    "registration_close_date": "20270103",
+    "registration_url": "https://www.brinktotbrinkloop.nl/inschrijven",
+    "race_info_url": "https://www.brinktotbrinkloop.nl/info",
+    "presumed_organizer_email": "info@brinktotbrinkloop.nl",
+    "website_emails_found": [
+      "info@brinktotbrinkloop.nl"
+    ],
+    "description": "De 18e editie van de Brink tot Brinkloop is een hardloopwedstrijd over een geijkt parcours van 10 km. De loop start op de Brink in Deventer en finisht op de Brink in Bathmen, waarmee het de verbinding tussen deze twee plaatsen symboliseert. Naast de 10 km wedstrijd zijn er ook speciale looponderdelen zoals de Bedrijvenloop en een Kidsrun voor basisschoolleerlingen. De wedstrijd biedt een sfeervolle winterloopervaring met een duidelijk herkenbare route.",
+    "course_highlights": [
+      "Geijkt parcours van 10 km tussen Deventer en Bathmen",
+      "Start op de Brink in Deventer en finish op de Brink in Bathmen",
+      "Symboliseert de verbinding tussen Bathmen en Deventer"
+    ],
+    "additional": "Na-inschrijving is mogelijk op de wedstrijddag tussen 09:15 en 10:45 uur in de tent bij de Schouwburg in Deventer. Teams voor de Bedrijvenloop en Studententeams bestaan uit 3 tot 5 lopers. Betaling voor individuele inschrijvingen verloopt via iDEAL. Bij inschrijving ontvangt men direct een bevestiging per e-mail. Naast de 10 km zijn er een bedrijvenloop, studentenloop en kidsrun. De 10 km heeft elektronische tijdregistratie en een tijdslimiet van 1 uur en 30 minuten.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.97,
     "sources": [
       "https://www.hardlopen.nl/evenementen/52189-18e-editie-brink-tot-brinkloop/",
       "https://uitslagen.nl/evenement.php?id=2027010351200",
@@ -22317,10 +22368,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Alphen aan den Rijn",
-    "latitude": 52.1293731,
-    "longitude": 4.6577655,
+    "start_time": "20:00",
+    "location": "Hendrick’s Pub, Prins Hendrikstraat 119, Alphen aan den Rijn, Nederland",
+    "latitude": 52.1245026,
+    "longitude": 4.6620748,
     "county": "Zuid-Holland",
     "nearest_city": "Leiden",
     "nearby_cities": [
@@ -22328,8 +22379,8 @@
       "Den Haag",
       "Rotterdam",
       "Haarlem",
-      "Amsterdam",
       "Utrecht",
+      "Amsterdam",
       "Dordrecht"
     ],
     "distances": "[\"10\", \"5\"]",
@@ -22342,27 +22393,31 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Alphen a/d Run, CAS Alphen en Hendrick’s Pub",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.bruggenrun.nl/",
+    "fb_link": "https://www.facebook.com/AlphenseBruggenrun/?locale=nl_NL",
     "ig_link": null,
-    "price_range": null,
+    "price_range": "Gratis",
     "price_tiers": [],
-    "registration_close_date": null,
+    "registration_close_date": "20270107",
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.bruggenrun.nl/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "De Alphense Bruggenrun is een sfeervolle hardloopwedstrijd die plaatsvindt in het oude centrum van Alphen aan den Rijn. De 19e editie vindt plaats op donderdagavond 7 januari 2027 en biedt twee afstanden: 10 km met 33 bruggen en 5 km met 21 bruggen, waarbij de 5 km ook wandelbaar is. De start en finish zijn in Hendrick’s Pub, waar ook na afloop gezelligheid en winterse versnaperingen wachten. De route is technisch, bochtig en kent veel hoogtemeters, met een unieke hoge brugdichtheid die deze loop bijzonder maakt.",
+    "course_highlights": [
+      "10 km route met 33 bruggen en veel hoogtemeters",
+      "5 km route met 21 bruggen, ook geschikt om te wandelen",
+      "Start en finish in Hendrick’s Pub, midden in het centrum"
+    ],
+    "additional": "Inschrijven kan alleen op de avond zelf tussen 18:00 en 19:45 uur en deelname is gratis. Verlichting is verplicht vanwege de donkere winteravond. Rondom het evenement is er een gezellige sfeer met speciaalbieren en versnaperingen in Hendrick’s Pub. Start om 20.00 uur bij Hendrick’s Pub aan de Prins Hendrikstraat 119. Inschrijven kan op de avond zelf; verlichting is verplicht. De 5 km-route is ook geschikt om te wandelen en donaties voor een lokaal goed doel zijn welkom.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.hardlopen.nl/evenementen/48332-19e-alphense-bruggenrun/",
       "https://runphy.nl/events/alphense-bruggenrun/2027-01-07"
@@ -22478,10 +22533,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Appelscha",
-    "latitude": 52.9523997,
-    "longitude": 6.3563031,
+    "start_time": "10:30",
+    "location": "Recreatiepark RCN de Roggeberg, Appelscha, Nederland",
+    "latitude": 52.9381549,
+    "longitude": 6.341620199999999,
     "county": "Fryslân",
     "nearest_city": "Assen",
     "nearby_cities": [
@@ -22491,10 +22546,9 @@
       "Heerenveen",
       "Groningen"
     ],
-    "distances": "[\"43\", \"23\", \"22\", \"13\"]",
+    "distances": "[\"43\", \"22\", \"13\"]",
     "distance_m": [
       43000,
-      23000,
       22000,
       13000
     ],
@@ -22502,28 +22556,32 @@
       "Marathon",
       "Halve marathon"
     ],
-    "distance_verbose": "43 km, 23 km, 22 km, 13 km",
-    "organizer": null,
+    "distance_verbose": "43 km, 22 km, 13 km",
+    "organizer": "RUNFORESTRUN",
     "contact": null,
-    "website": null,
+    "website": "https://runforestrun.nl/drentsfriesewold/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://runforestrun.nl/drentsfriesewold/deelnemer-info",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "De RUNFORESTRUN Drents Friese Wold is een exclusieve trailrun die plaatsvindt in het grootste aaneengesloten bosgebied van Nederland. De deelnemers lopen langs het Kanadameer, over uitgestrekte heidevelden, door het magnifieke Aekingerzand en over pittige heuveltjes. Het evenement staat bekend om zijn relaxte sfeer, prachtige natuur en kleinschaligheid, waardoor het een unieke beleving biedt voor trailrunners die van natuur en uitdaging houden.",
+    "course_highlights": [
+      "Langs het Kanadameer",
+      "Door het grootste aaneengesloten bosgebied van Nederland",
+      "Magnifiek Aekingerzand en pittige heuveltjes"
+    ],
+    "additional": "De route is uitgepijld en er is een Routefabriek app beschikbaar waarmee deelnemers hun locatie live kunnen volgen. Er zijn gecertificeerde verkeersregelaars op gevaarlijke oversteekplaatsen en gediplomeerde EHBO'ers aanwezig. De start en finish zijn bij RCN Vakantiepark De Roggeberg in Appelscha. De organisatie werkt met een kleinschalige opzet en doneert een vast bedrag van iedere inschrijving aan natuurprojecten in het gebied. De routes zijn uitgepijld. Deelnemersbijdragen ondersteunen een natuurproject in het evenementengebied. Startlocatie: Recreatiepark RCN de Roggeberg.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.97,
     "sources": [
       "https://www.runinfo.nl/loopagenda.htm",
       "https://runphy.nl/events/runforestrun-drents-friese-wold/2027-01-09",
@@ -23830,8 +23888,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Hengelo OV",
+    "start_time": "09:00",
+    "location": "Hengelo, Overijssel, Nederland",
     "latitude": 52.2574121,
     "longitude": 6.7927725,
     "county": "Overijssel",
@@ -23851,27 +23909,31 @@
       "5 km"
     ],
     "distance_verbose": "15 km, 10 km, 5.1 km, 1.4 km",
-    "organizer": null,
+    "organizer": "MPM",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.wooldereslopen.nl/",
+    "fb_link": "https://www.facebook.com/wooldereslopen/?locale=nl_NL",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_close_date": "20270103",
+    "registration_url": "https://www.wooldereslopen.nl/inschrijven",
+    "race_info_url": "https://www.wooldereslopen.nl/informatie",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "De Wooldereslopen is een traditionele hardloopcompetitie die al ruim 45 jaar wordt georganiseerd door MPM in Hengelo. De competitie bestaat uit vier wedstrijden die verspreid over de eerste maanden van het jaar plaatsvinden. De afstanden variëren van 1,4 tot 15 kilometer en het parcours loopt door het buitengebied van Hengelo. Start en finish zijn op dezelfde locatie in de Woolderes, wat zorgt voor een overzichtelijke en sfeervolle wedstrijdomgeving.",
+    "course_highlights": [
+      "Parcours door het buitengebied van Hengelo",
+      "Start en finish op dezelfde plek in de Woolderes",
+      "Afstanden van 1,4, 5,1, 10 en 15 kilometer"
+    ],
+    "additional": "Elektronische tijdregistratie. Startnummer ophalen kan op zaterdag 9 januari tussen 15:00 en 17:00 uur of op de wedstrijddag vanaf 9:00 uur. Er is een eenmalig startnummer voor alle vier de wedstrijden. Douchegelegenheid is beschikbaar in de Gymzaal Woolderesweg. Betaling kan contant of per pin. Het dragen van oordopjes/koptelefoon wordt afgeraden. Het meenemen van dieren, kinderwagens e.d. is niet toegestaan. Voor het klassement moet je aan minstens drie van de vier lopen deelnemen. Inschrijven en startnummers ophalen kan bij IKC De Wooldermarke, Semmelweisstraat 46; vanaf daar is het ongeveer tien minuten lopen naar de start. Douchen kan bij Gymzaal Woolderesweg, Woolderesweg 126.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.hardlopen.nl/evenementen/52155-1e-wooldereslopen/"
     ],
@@ -26192,8 +26254,8 @@
   {
     "domain_name": "rutbeekcross",
     "name": "Rutbeekcross",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270117",
@@ -26203,10 +26265,10 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Enschede",
-    "latitude": 52.2215372,
-    "longitude": 6.8936619,
+    "start_time": "10:30",
+    "location": "Het Rutbeek, Enschede, Nederland",
+    "latitude": 52.178698,
+    "longitude": 6.8384404,
     "county": "Overijssel",
     "nearest_city": "Enschede",
     "nearby_cities": [
@@ -26227,27 +26289,79 @@
       "1500 meter"
     ],
     "distance_verbose": "10 km, 5 km, 2.5 km, 2 km, 1500 meter, 1 km",
-    "organizer": null,
+    "organizer": "AC TION",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.rutbeekcross.nl/",
+    "fb_link": "https://www.facebook.com/rutbeekcross/?locale=nl_NL",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "10 Km Cross",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": "20270114",
+            "description": "Voor-inschrijving: € 10 per deelnemer"
+          }
+        ],
+        "late_fee": {
+          "price": "11 €",
+          "deadline": "20270117"
+        }
+      },
+      {
+        "distance": "5 Km Cross",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": "20270114",
+            "description": "Voor-inschrijving: € 10 per deelnemer"
+          }
+        ],
+        "late_fee": {
+          "price": "11 €",
+          "deadline": "20270117"
+        }
+      },
+      {
+        "distance": "1 en 2 Km Kidscross",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "5 €",
+            "deadline": "20270114",
+            "description": "Voor-inschrijving: € 5 per deelnemer"
+          }
+        ],
+        "late_fee": {
+          "price": "5 €",
+          "deadline": "20270117"
+        }
+      }
+    ],
+    "registration_close_date": "20270117",
+    "registration_url": "https://www.rutbeekcross.nl/afstanden",
+    "race_info_url": "https://www.rutbeekcross.nl/afstanden",
+    "presumed_organizer_email": "info@rutbeekcross.nl",
+    "website_emails_found": [
+      "info@rutbeekcross.nl"
+    ],
+    "description": "De Rutbeekcross is een sfeervolle wintercross die plaatsvindt in het prachtige recreatiegebied Het Rutbeek in Enschede. Deze cross maakt deel uit van de Twentse Cross Competitie en biedt uitdagende parcoursen langs water, bos en een beklimming over het mountainbikepad bij de skiheuvel. Met afstanden variërend van de Kids Cross tot 10 km is er voor elke loper een passende uitdaging. De organisatie, Atletiek Club TION, zorgt voor een professionele en informele sfeer waarin sportiviteit en natuurbeleving centraal staan.",
+    "course_highlights": [
+      "Parcours langs waterkant en door bos",
+      "Beklimming over mountainbikepad bij skiheuvel",
+      "Start en finish op strand bij skicentrum Moser"
+    ],
+    "additional": "Startnummers kunnen op de wedstrijddag vanaf 09:00 uur tot een kwartier voor de start worden opgehaald bij het wedstrijdsecretariaat. Er is beperkte parkeergelegenheid bij de start/finishlocatie op Parkeerplaats 3, met alternatieve parkeermogelijkheden bij de buslus achter het skicentrum. De finishtijden worden elektronisch geregistreerd en de uitslagen worden zo snel mogelijk gepubliceerd op www.uitslagen.nl en de officiële website. De 10 km start om 10:30, gevolgd door de jeugdcategorieën en de 5 km.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.93,
     "sources": [
       "https://runphy.nl/events/rutbeekcross/2027-01-17",
       "https://www.hardlopen.nl/evenementen/48295-rutbeekcross/",
@@ -26374,8 +26488,8 @@
   {
     "domain_name": "almeerderstrandcross",
     "name": "Almeerderstrandcross",
-    "type": "terrain",
-    "type_local": "Cross",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270117",
@@ -26386,18 +26500,19 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Almere",
-    "latitude": 52.3507849,
-    "longitude": 5.2647016,
+    "location": "Almeerderstrand, Almere, Nederland",
+    "latitude": 52.3361026,
+    "longitude": 5.138516399999999,
     "county": "Flevoland",
     "nearest_city": "Almere",
     "nearby_cities": [
       "Almere",
+      "Amsterdam",
       "Amersfoort",
+      "Utrecht",
       "Lelystad",
       "Harderwijk",
-      "Amsterdam",
-      "Utrecht",
+      "Haarlem",
       "Hoorn"
     ],
     "distances": "[\"9\", \"6\", \"3\", \"2\", \"1\"]",
@@ -26416,25 +26531,33 @@
     "distance_verbose": "9 km, 6 km, 3000 meter, 2 km, 1 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://nextrace.nl/events/almeerderstrandcross-almere",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "5 euro voor jeugd; 18 euro voor volwassenen",
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://nextrace.nl/register",
+    "race_info_url": "https://nextrace.nl/events/almeerderstrandcross-almere#info",
+    "presumed_organizer_email": "events@nextrace.nl",
+    "website_emails_found": [
+      "hi@nextrace.nl",
+      "adverteren@nextrace.nl",
+      "events@nextrace.nl"
+    ],
+    "description": "De Almeerderstrandcross is een jaarlijkse hardloopwedstrijd die plaatsvindt op het Almeerderstrand in Almere. Het parcours loopt voornamelijk over het strand en door de duinen, met een afwisselend landschap van vlakke en heuvelachtige stukken over los en compact zand, wat de loop fysiek uitdagend maakt. De race trekt zowel amateur- als ervaren lopers aan en biedt verschillende afstanden, zodat iedereen kan deelnemen. De organisatie zorgt voor goede faciliteiten zoals kleedkamers, drinkstations en EHBO, en na afloop is er een gezellige sfeer met muziek en eet- en drinkgelegenheden.",
+    "course_highlights": [
+      "Parcours over strand en duinen van Almere",
+      "Afwisselend terrein met vlakke en heuvelachtige stukken",
+      "Grotendeels over los en compact zand"
+    ],
+    "additional": "Er zijn kleedkamers en voldoende drinkstations langs het parcours. EHBO is aanwezig en vrijwilligers zorgen voor een goede organisatie. Er zijn jeugdonderdelen van 1 km en 2 km; de overige afstanden zijn 3 km, 6 km en 9 km. Voor junioren U16, U18 en U20 geldt 50% korting op het reguliere tarief.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.76,
     "sources": [
       "https://uitslagen.nl/evenement.php?id=2027011702114",
       "https://www.hardlopen.nl/evenementen/53206-almeerderstrandcross/"
@@ -26464,8 +26587,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "'s-Heerenberg",
+    "start_time": "11:00",
+    "location": "'s-Heerenberg, Montferland, Nederland",
     "latitude": 51.8765436,
     "longitude": 6.258652199999999,
     "county": "Gelderland",
@@ -26487,27 +26610,80 @@
       "5 km"
     ],
     "distance_verbose": "Halve marathon, 10 km, 5 km",
-    "organizer": null,
+    "organizer": "Stichting Zevenheuvelenloop",
     "contact": null,
-    "website": null,
+    "website": "https://montferlandhalvemarathon.nl/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
+    "price_range": "14,95-30,95 euro",
+    "price_tiers": [
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "14,95 €",
+            "deadline": null,
+            "description": "Deelname aan de Montferland Halve Marathon 2027 kost €14,95 (5 km)"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "22,95 €",
+            "deadline": null,
+            "description": "Deelname aan de Montferland Halve Marathon 2027 kost €22,95 (10 km)"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "halve marathon",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "30,95 €",
+            "deadline": null,
+            "description": "Deelname aan de Montferland Halve Marathon 2027 kost €30,95 (halve marathon)"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "5 km jeugd t/m 18 jaar",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10,00 €",
+            "deadline": null,
+            "description": "Voor jeugd tot en met 18 jaar kost deelname aan de 5 km €10,00"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://montferlandhalvemarathon.nl/montferland-halve-marathon",
+    "race_info_url": "https://montferlandhalvemarathon.nl/montferland-halve-marathon",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "De Montferland Halve Marathon is een sfeervol hardloopevenement dat plaatsvindt in het pittoreske 's-Heerenberg en de prachtige natuur van de Achterhoek. Deelnemers kunnen kiezen uit drie afstanden: 5 km, 10 km en de halve marathon van 21,1 km. Het parcours voert langs historische gebouwen, het Bergherbos en landelijke gebieden met uitdagende heuvels, waardoor het een afwisselende en mooie loopervaring biedt. Start en finish zijn in het centrum van 's-Heerenberg, waar je je prestatie kunt vieren met familie en vrienden.",
+    "course_highlights": [
+      "Start en finish in het historische centrum van 's-Heerenberg",
+      "Halve marathon met ongeveer 120 hoogtemeters, inclusief de Peeskesbult en Bergherbos",
+      "10 km parcours met 50 hoogtemeters en een vlammende eindsprint bergaf"
+    ],
+    "additional": "Er zijn drie drankposten onderweg bij de halve marathon met sportdrank van Maurten en water. Bewaakte garderobe is aanwezig op het Stadsplein. Medaillegravering is mogelijk op de dag zelf tot 16:00 uur. Er is een app met live tracking en persoonlijke actiefoto's tijdens de race. Start en finish zijn op de Molenstraat in 's-Heerenberg. Er is beperkte omkleedgelegenheid en verspreid over het terrein zijn toiletten aanwezig. De halve marathon heeft drankposten na 6, 11 en 16 kilometer. De tijdregistratie gebeurt met MYLAPS Bibtag.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.98,
     "sources": [
       "https://runphy.nl/events/montferland-halve-marathon/2027-01-17",
       "https://www.hardlopen.nl/evenementen/53247-montferland-halve-marathon/"
@@ -105529,6 +105705,364 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "usp_night_run_powered_by_runnersworld_utrecht",
+    "name": "USP Night Run - powered by Runnersworld Utrecht",
+    "type": "road",
+    "type_local": "Wegwedstrijd",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ],
+      [
+        "20261113",
+        "20261113"
+      ],
+      [
+        "20271119",
+        "20271119"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Barneveld, Gelderland, Nederland",
+    "latitude": 52.1401901,
+    "longitude": 5.5841509,
+    "county": "Gelderland",
+    "nearest_city": "Ede",
+    "nearby_cities": [
+      "Ede",
+      "Amersfoort",
+      "Harderwijk",
+      "Arnhem",
+      "Tiel",
+      "Almere",
+      "Utrecht"
+    ],
+    "distances": "[\"15\", \"10\", \"5\", \"1.5\", \"0.8\"]",
+    "distance_m": [
+      15000,
+      10000,
+      5000,
+      1500,
+      800
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km",
+      "1500 meter"
+    ],
+    "distance_verbose": "15 km, 10 km, 5 km, 1500 meter, 0.8 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.uspnightrun.nl/information-in-english",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "5 km, 10 km en 15 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "27,50 €",
+            "deadline": null,
+            "description": "€27,50 Voor volwassenen en kids!"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": "https://www.uspnightrun.nl/inschrijven",
+    "race_info_url": "https://www.uspnightrun.nl/information-in-english",
+    "presumed_organizer_email": "info@uspnightrun.nl",
+    "website_emails_found": [
+      "info@uspnightrun.nl",
+      "info@centralevents.nl"
+    ],
+    "description": "De USP Night Run is een sfeervolle hardloopwedstrijd door het verlichte Utrecht Science Park in Barneveld. Deelnemers kunnen kiezen uit afstanden van 5 km, 10 km en 15 km, waarbij ze genieten van een unieke avondloopervaring met licht en entertainment. Het evenement is geschikt voor zowel volwassenen als kinderen en biedt een gezellige en sportieve sfeer met een start en finish bij Sportcentrum Olympos. Naast de wedstrijd is er ook aandacht voor goede doelen, zoals de ALS Stichting.",
+    "course_highlights": [
+      "Loop door het sfeervol verlichte Utrecht Science Park",
+      "Spectaculaire passage door de verlichte Botanische Tuinen",
+      "Start en finish bij Sportcentrum Olympos"
+    ],
+    "additional": "Inclusief startnummer met registratiechip, waterpost onderweg en bij de finish, mogelijkheid tot bestellen van hardloopshirt, pastamaaltijd en consumptiemunten. Er is een Kidsrun van 800 meter en 1,5 km. Er zijn startvakken en een sfeervol start/finishterrein. Bedrijventeams kunnen samen meedoen met extra opties zoals teamshirts en gezamenlijke bestellingen.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.hardlopen.nl/evenementen/52042-usp-night-run-powered-by-runnersworld-utrecht/"
+    ],
+    "consolidated_ids": [
+      "a45b4d4d-6e10-43c3-9f5f-1be616d5ba24"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "utrecht_science_park_night_run",
+    "name": "Utrecht Science Park Night Run",
+    "type": "road",
+    "type_local": "Wegwedstrijd",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ],
+      [
+        "20271119",
+        "20271119"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Utrecht Science Park, Utrecht, Nederland",
+    "latitude": 52.08486569999999,
+    "longitude": 5.176576499999999,
+    "county": "Utrecht",
+    "nearest_city": "Utrecht",
+    "nearby_cities": [
+      "Utrecht",
+      "Amersfoort",
+      "Tiel",
+      "Almere",
+      "Ede",
+      "Amsterdam"
+    ],
+    "distances": "[\"15\", \"10\", \"5\", \"1.5\"]",
+    "distance_m": [
+      15000,
+      10000,
+      5000,
+      1500
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km",
+      "1500 meter"
+    ],
+    "distance_verbose": "15 km, 10 km, 5 km, 1500 meter",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.uspnightrun.nl/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "27,50 €",
+            "deadline": null,
+            "description": "€27,50"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": "https://www.uspnightrun.nl/inschrijven",
+    "race_info_url": "https://www.uspnightrun.nl/parcours",
+    "presumed_organizer_email": "info@uspnightrun.nl",
+    "website_emails_found": [
+      "info@uspnightrun.nl",
+      "info@centralevents.nl"
+    ],
+    "description": "De Utrecht Science Park Night Run is een sfeervolle hardloopwedstrijd die plaatsvindt in het donker op het Utrecht Science Park. Deelnemers kunnen kiezen uit afstanden van 5 km, 10 km en 15 km. Het parcours voert langs verlichte routes met muziek en lichtshows, waaronder een spectaculaire passage door de Botanische Tuinen. Het evenement is toegankelijk voor zowel volwassenen als kinderen en biedt een unieke nachtelijke hardloopervaring.",
+    "course_highlights": [
+      "Parcours door het verlichte Utrecht Science Park",
+      "Spectaculaire passage door de verlichte Botanische Tuinen",
+      "Afstanden van 5 km, 10 km en 15 km"
+    ],
+    "additional": "Start en finish zijn bij Sportcentrum Olympos. Er zijn startvakken en een Kidsrun van 800 meter en 1,5 km. De inschrijving is inclusief deelname aan het goede doel Stichting ALS Nederland. Er is een hardloopshirt te bestellen en er zijn groeps- en studentenkortingen mogelijk.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://runphy.nl/events/utrecht-science-park-night-run/2026-11-20"
+    ],
+    "consolidated_ids": [
+      "60b2a80a-f9e2-4eee-b522-b139dab82af2"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "derko_night_trail",
+    "name": "Derko Night Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ],
+      [
+        "20271119",
+        "20271119"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Skipiste Nieuwegein, Nieuwegein, Utrecht, Nederland",
+    "latitude": 52.035622,
+    "longitude": 5.0612677,
+    "county": "Utrecht",
+    "nearest_city": "Utrecht",
+    "nearby_cities": [
+      "Utrecht",
+      "Amersfoort",
+      "Tiel",
+      "Dordrecht",
+      "Almere",
+      "Amsterdam"
+    ],
+    "distances": "[\"15\", \"7.5\", \"5\"]",
+    "distance_m": [
+      15000,
+      7500,
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "15 km, 7.5 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.derko.nl/derko-night-trail/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.derko.nl/meer-informatie-derko-night-trail/inschrijven-en-kosten~9dCx5Rlb/",
+    "race_info_url": "https://www.derko.nl/meer-informatie-derko-night-trail/derko-night-trail~fXj3cdW1/",
+    "presumed_organizer_email": "info@derko.nl",
+    "website_emails_found": [
+      "info@derko.nl",
+      "info@ijrun.nl"
+    ],
+    "description": "De Derko Night Trail is hét hardloopevenement in het donker van de regio Utrecht, georganiseerd door BodyRun en IJ-run samen met vele vrijwilligers. De start en finish vinden plaats bij Skipiste Nieuwegein, waar ook een gezellige afterparty wordt gehouden. De trail loopt door een prachtig natuurgebied en biedt diverse afstanden voor zowel trail- als verhard terrein lopers. Deelnemers dienen zelf een hoofdlamp mee te nemen vanwege het lopen in het donker, wat bijdraagt aan de unieke sfeer van het evenement.",
+    "course_highlights": [
+      "Trailruns over onverharde ondergrond door een natuurgebied",
+      "Start en finish bij Skipiste Nieuwegein met horecagelegenheid",
+      "Verlichting van de route met reflectoren en linten, hoofdlamp verplicht"
+    ],
+    "additional": "Deelnemers dienen minimaal 12 jaar te zijn voor de trails. Het evenement is bekerarm; deelnemers nemen hun eigen afval mee. Er is een gemengde omkleedruimte beschikbaar. Feestelijke verlichting is toegestaan en kan een prijs opleveren voor de mooist verlichte persoon.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://uitslagen.nl/evenement.php?id=2026112050597"
+    ],
+    "consolidated_ids": [
+      "c44499e9-8018-452a-ad42-4eb0f29a6301"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "abdijcross",
+    "name": "Abdijcross",
+    "type": "other",
+    "type_local": "Overig",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ],
+      [
+        "20271119",
+        "20271119"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Abdij Rolduc, Kerkrade, Nederland",
+    "latitude": 50.86832740000001,
+    "longitude": 6.081693400000001,
+    "county": "Limburg",
+    "nearest_city": "Sittard-Geleen",
+    "nearby_cities": [
+      "Sittard-Geleen",
+      "Maastricht",
+      "Roermond"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Gemengde afstand",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.runinfo.nl/loopagenda.htm"
+    ],
+    "consolidated_ids": [
+      "3a7401fb-4c06-42c4-98e3-914b4b724738"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "runforestrun_springendal",
     "name": "RUNFORESTRUN Springendal",
     "type": "trail",
@@ -106452,106 +106986,6 @@
       "78071b98-20f8-5339-a182-c22bfb7b204c"
     ],
     "supplied_at": "20260917",
-    "created_date": "20260917",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "usp_night_run_powered_by_runnersworld_utrecht",
-    "name": "USP Night Run - powered by Runnersworld Utrecht",
-    "type": "road",
-    "type_local": "Wegwedstrijd",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ],
-      [
-        "20261113",
-        "20261113"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Utrecht Science Park, Utrecht, Nederland",
-    "latitude": 52.08486569999999,
-    "longitude": 5.176576499999999,
-    "county": "Utrecht",
-    "nearest_city": "Utrecht",
-    "nearby_cities": [
-      "Utrecht",
-      "Amersfoort",
-      "Tiel",
-      "Almere",
-      "Ede",
-      "Amsterdam"
-    ],
-    "distances": "[\"15\", \"10\", \"5\", \"1.5\", \"0.8\"]",
-    "distance_m": [
-      15000,
-      10000,
-      5000,
-      1500,
-      800
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km",
-      "1500 meter"
-    ],
-    "distance_verbose": "15 km, 10 km, 5 km, 1500 meter, 0.8 km",
-    "organizer": "Runnersworld Utrecht en Central Events",
-    "contact": null,
-    "website": "https://www.uspnightrun.nl/information-in-english",
-    "fb_link": null,
-    "ig_link": "https://www.instagram.com/uspnightrun/",
-    "price_range": "€27.50 voor het shirt",
-    "price_tiers": [
-      {
-        "distance": "all",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "27,50 €",
-            "deadline": null,
-            "description": "€27,50 Voor volwassenen en kids!"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": "https://www.uspnightrun.nl/inschrijven",
-    "race_info_url": "https://www.uspnightrun.nl/information-in-english",
-    "presumed_organizer_email": "info@uspnightrun.nl",
-    "website_emails_found": [
-      "info@uspnightrun.nl"
-    ],
-    "description": "De USP Night Run is een sfeervolle nachtloop door het verlichte Utrecht Science Park, met afstanden voor zowel volwassenen als kinderen. De route voert onder andere door de prachtige, verlichte Botanische Tuinen, wat zorgt voor een unieke en spectaculaire loopervaring. Het evenement biedt een gezellige en sportieve avond met een sfeervol start- en finishterrein, inclusief waterposten onderweg en bij de finish. Er is ook aandacht voor teams en bedrijven die samen willen deelnemen, met extra opties zoals hardloopshirts en pastamaaltijden.",
-    "course_highlights": [
-      "Loop door het verlichte Utrecht Science Park",
-      "Spectaculaire passage door de verlichte Botanische Tuinen",
-      "Afstanden van 5 km, 10 km, 15 km en kidsruns van 800 m en 1,5 km"
-    ],
-    "additional": "Start en finish bij Sportcentrum Olympos. Er zijn startvakken en waterposten onderweg en bij de finish. Extra te bestellen items bij inschrijving: USP Night Run shirt, annuleringsverzekering, pastamaaltijd. Bedrijventeams kunnen met eigen hardloopshirts en consumptiemunten deelnemen. Voornaam op startnummer met registratiechip. Het evenement ondersteunt goede doelen en biedt kortingen en extra items zoals een hardloopshirt en pasta-maaltijd.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.hardlopen.nl/evenementen/52042-usp-night-run-powered-by-runnersworld-utrecht/"
-    ],
-    "consolidated_ids": [
-      "b933eae4-1376-4cd1-92a8-d2016f67585d"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
     "created_date": "20260917",
     "editors_uid": [],
     "pipeline_log": [],
@@ -107584,245 +108018,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "utrecht_science_park_night_run",
-    "name": "Utrecht Science Park Night Run",
-    "type": "road",
-    "type_local": "Wegwedstrijd",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Utrecht Science Park, Utrecht, Nederland",
-    "latitude": 52.08486569999999,
-    "longitude": 5.176576499999999,
-    "county": "Utrecht",
-    "nearest_city": "Utrecht",
-    "nearby_cities": [
-      "Utrecht",
-      "Amersfoort",
-      "Tiel",
-      "Almere",
-      "Ede",
-      "Amsterdam"
-    ],
-    "distances": "[\"12.5\", \"9\", \"6\", \"3\"]",
-    "distance_m": [
-      12500,
-      9000,
-      6000,
-      3000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km",
-      "3000 meter"
-    ],
-    "distance_verbose": "12.5 km, 9 km, 6 km, 3000 meter",
-    "organizer": "Central Events",
-    "contact": null,
-    "website": "https://www.uspnightrun.nl/",
-    "fb_link": null,
-    "ig_link": "https://www.instagram.com/uspnightrun/",
-    "price_range": "€27,50",
-    "price_tiers": [
-      {
-        "distance": "all",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "27,50 €",
-            "deadline": null,
-            "description": "€27,50 Voor volwassenen en kids!"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": "https://www.uspnightrun.nl/inschrijven",
-    "race_info_url": "https://www.uspnightrun.nl/programma",
-    "presumed_organizer_email": "info@uspnightrun.nl",
-    "website_emails_found": [
-      "info@uspnightrun.nl"
-    ],
-    "description": "De Utrecht Science Park Night Run is een sfeervolle hardloopwedstrijd die plaatsvindt op vrijdagavond 20 november 2026. Deelnemers rennen door het verlichte Utrecht Science Park, waarbij ze onder andere een spectaculaire passage maken door de verlichte Botanische Tuinen. Er zijn verschillende afstanden beschikbaar, waaronder 5 km, 10 km, 15 km en kidsruns. Het evenement wordt georganiseerd door Central Events en ondersteunt het goede doel Stichting ALS Nederland.",
-    "course_highlights": [
-      "Loop door het verlichte Utrecht Science Park",
-      "Spectaculaire passage door de verlichte Botanische Tuinen",
-      "Afstanden van 5 km, 10 km en 15 km, plus kidsruns"
-    ],
-    "additional": "Start en finish bij Sportcentrum Olympos. Er zijn startvakken en een wedstrijd met prijsuitreiking. Extra opties bij inschrijving zoals een hardloopshirt, annuleringsverzekering en pastamaaltijd. Er is ook een speciale kidsrun van 800 meter en 1,5 km. Inschrijving inclusief opties voor shirts, verzekering, pasta maaltijd en donaties aan ALS, opbrengst gaat naar Stichting ALS Nederland",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://runphy.nl/events/utrecht-science-park-night-run/2026-11-20"
-    ],
-    "consolidated_ids": [
-      "9a7e2625-a4a8-407d-8419-98fb689e3a60"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260918",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "derko_night_trail",
-    "name": "Derko Night Trail",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Skipiste Nieuwegein, Nieuwegein, Utrecht, Nederland",
-    "latitude": 52.035622,
-    "longitude": 5.0612677,
-    "county": "Utrecht",
-    "nearest_city": "Utrecht",
-    "nearby_cities": [
-      "Utrecht",
-      "Amersfoort",
-      "Tiel",
-      "Dordrecht",
-      "Almere",
-      "Amsterdam"
-    ],
-    "distances": "[\"15\", \"7.5\", \"5\"]",
-    "distance_m": [
-      15000,
-      7500,
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "15 km, 7.5 km, 5 km",
-    "organizer": "BodyRun en IJ-run",
-    "contact": null,
-    "website": "https://www.derko.nl/derko-night-trail/",
-    "fb_link": "https://www.facebook.com/NightTrailRunUtr/?locale=nl_NL",
-    "ig_link": null,
-    "price_range": "€ 12,50 - € 17,50",
-    "price_tiers": [
-      {
-        "distance": "ValidR 15 km trail",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "24,95 euro",
-            "deadline": "20261020",
-            "description": "Vroege inschrijving"
-          },
-          {
-            "label": "tier_2",
-            "price": "29,95 euro",
-            "deadline": "20261115",
-            "description": "Normale inschrijving"
-          }
-        ],
-        "late_fee": {
-          "price": "35,00 euro",
-          "deadline": "20261119"
-        }
-      },
-      {
-        "distance": "Protify 7,5 km trail",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "19,95 euro",
-            "deadline": "20261020",
-            "description": "Vroege inschrijving"
-          },
-          {
-            "label": "tier_2",
-            "price": "24,95 euro",
-            "deadline": "20261115",
-            "description": "Normale inschrijving"
-          }
-        ],
-        "late_fee": {
-          "price": "30,00 euro",
-          "deadline": "20261119"
-        }
-      },
-      {
-        "distance": "Runnersworld 5 km funrun",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "12,50 euro",
-            "deadline": "20261020",
-            "description": "Vroege inschrijving"
-          },
-          {
-            "label": "tier_2",
-            "price": "15,00 euro",
-            "deadline": "20261115",
-            "description": "Normale inschrijving"
-          }
-        ],
-        "late_fee": {
-          "price": "20,00 euro",
-          "deadline": "20261119"
-        }
-      }
-    ],
-    "registration_close_date": "20261119",
-    "registration_url": "https://www.derko.nl/meer-informatie-derko-night-trail/inschrijven-en-kosten~9dCx5Rlb/",
-    "race_info_url": "https://www.derko.nl/meer-informatie-derko-night-trail/derko-night-trail~fXj3cdW1/",
-    "presumed_organizer_email": "info@derko.nl",
-    "website_emails_found": [
-      "info@derko.nl",
-      "info@ijrun.nl"
-    ],
-    "description": "De Derko Night Trail is hét hardloopevenement in het donker van de regio Utrecht, georganiseerd door BodyRun en IJ-run samen met vele vrijwilligers. De start en finish vinden plaats bij Skipiste Nieuwegein, waar ook een gezellige afterparty wordt gehouden. De trail loopt door een prachtig natuurgebied en biedt diverse afstanden voor zowel trail- als verhard terrein lopers. Deelnemers dienen een hoofdlamp te gebruiken vanwege het lopen in het donker, wat bijdraagt aan de unieke sfeer van het evenement.",
-    "course_highlights": [
-      "Trailruns over onverharde paden door een natuurgebied",
-      "Start en finish bij Skipiste Nieuwegein met horecagelegenheid",
-      "Verlichting van de route met reflectoren en linten, hoofdlamp verplicht"
-    ],
-    "additional": "Alle deelnemers dienen een hoofdlamp te gebruiken vanwege het lopen in het donker; bij de trails is dit verplicht, bij de funrun aanbevolen. De route is verlicht met reflectoren en linten. Er is een gemengde omkleedruimte en EHBO aanwezig. Het evenement is bekerarm; deelnemers nemen hun eigen afval mee. Na afloop is er een afterparty in de horecagelegenheid bij de start/finish. Trail- en verharde routes, hoofdlamp verplicht, inschrijving online, goede doelen ondersteund",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://uitslagen.nl/evenement.php?id=2026112050597"
-    ],
-    "consolidated_ids": [
-      "71a2766d-4902-4936-9c2f-44a48f36d2a9"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260918",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "eemsmondloop",
     "name": "Eemsmondloop",
     "type": "road",
@@ -108633,70 +108828,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260918",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "abdijcross",
-    "name": "Abdijcross",
-    "type": "other",
-    "type_local": "Overig",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Abdij Rolduc, Kerkrade, Nederland",
-    "latitude": 50.86832740000001,
-    "longitude": 6.081693400000001,
-    "county": "Limburg",
-    "nearest_city": "Sittard-Geleen",
-    "nearby_cities": [
-      "Sittard-Geleen",
-      "Maastricht",
-      "Roermond"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemengde afstand",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.runinfo.nl/loopagenda.htm"
-    ],
-    "consolidated_ids": [
-      "46546170-e265-4cef-a0cc-7975294105bd"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,

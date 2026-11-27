@@ -100,8 +100,8 @@
   {
     "domain_name": "beh_devinskou_kobylou",
     "name": "Beh Devínskou kobylou",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261128",
@@ -111,7 +111,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "09:00",
     "location": "Devínská Kobyla, Bratislava, Slovakia",
     "latitude": 48.1888888,
     "longitude": 16.9930555,
@@ -120,7 +120,7 @@
     "nearby_cities": [
       "Bratislava"
     ],
-    "distances": "[\"534\", \"50\", \"42.2\", \"21.098\", \"16\", \"11.6\", \"11.5\", \"11\", \"10\", \"7\", \"6\", \"5\", \"3.2\", \"3\", \"1\"]",
+    "distances": "[\"534\", \"50\", \"42.2\", \"21.098\", \"16\", \"11.6\", \"11.5\", \"11\", \"10\", \"7\", \"6.5\", \"6\", \"5\", \"3.2\", \"3\", \"1\", \"0.5\"]",
     "distance_m": [
       534000,
       50000,
@@ -132,11 +132,13 @@
       11000,
       10000,
       7000,
+      6500,
       6000,
       5000,
       3200,
       3000,
-      1000
+      1000,
+      500
     ],
     "distance_keywords": [
       "50 km",
@@ -146,28 +148,62 @@
       "5 km",
       "3000 meter"
     ],
-    "distance_verbose": "534 km, 50 km, Maratón, Polmaratón, 16 km, 11.6 km, 11.5 km, 11 km, 10 km, 7 km, 6 km, 5 km, 3.2 km, 3000 meter, 1 km",
-    "organizer": null,
+    "distance_verbose": "534 km, 50 km, Maratón, Polmaratón, 16 km, 11.6 km, 11.5 km, 11 km, 10 km, 7 km, 6.5 km, 6 km, 5 km, 3.2 km, 3000 meter, 1 km, 0.5 km",
+    "organizer": "DANUBIUS – Klub športov v prírode; Karloveský športový klub",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.bdk.sk/",
+    "fb_link": "https://www.facebook.com/p/Beh-Dev%C3%ADnskou-Kobylou-100063938084176/?locale=sk_SK",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "všetky kategórie",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": null,
+            "description": "kategórie do 18 rokov – 10,- €"
+          },
+          {
+            "label": "tier_2",
+            "price": "5 €",
+            "deadline": null,
+            "description": "kategórie do 9 rokov (500m trať) – 5,- €"
+          },
+          {
+            "label": "tier_3",
+            "price": "15 €",
+            "deadline": null,
+            "description": "kategórie 19 a viac rokov – 15,- €"
+          }
+        ],
+        "late_fee": {
+          "price": "25 €",
+          "deadline": null
+        }
+      }
+    ],
+    "registration_close_date": "20261128",
+    "registration_url": "https://www.bdk.sk/propozicie/",
+    "race_info_url": "https://www.bdk.sk/propozicie/",
+    "presumed_organizer_email": "behdevinskoukobylou@gmail.com",
+    "website_emails_found": [
+      "behdevinskoukobylou@gmail.com"
+    ],
+    "description": "The Devínska Kobyla Run is Slovakia’s oldest forest run, held in the natural surroundings of Devínska Kobyla in Bratislava. The event is open to all runners, from children to professionals, who want to test their abilities on challenging hilly courses. The route follows forest trails marked with colored indicators and offers a traditional atmosphere, with refreshments at the finish. The run has a long-standing tradition and is known for its friendly community and beautiful natural surroundings.",
+    "course_highlights": [
+      "Forest terrain on Devínska Kobyla with a hilly profile",
+      "Routes marked with colored flags, tape, and signs on trees",
+      "Refreshments at the finish—Horalka wafer and tea"
+    ],
+    "additional": "The race starts in pairs at 15-second intervals. Race-day registration is available 30 minutes before the start at the starting area. Children under 15 must be registered by a legal guardian or by their club/school. Results are announced within 60 minutes after each category finishes, provided there are at least three classified runners. The entry fee paid is to be refunded in full.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.99,
     "sources": [
       "https://www.bezeckypretek.sk/beh-devinskou-kobylou-bratislava-iv-2026/"
     ],
@@ -31764,7 +31800,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "18:30",
     "location": "Hlavné námestie, Nové Zámky, Slovakia",
     "latitude": 47.9859131,
     "longitude": 18.1634313,
@@ -31783,27 +31819,34 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Spartan Training Group Nové Zámky",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.vysledkovyservis.sk/novozamocka-vecerna-desiatka-propozicie",
+    "fb_link": "https://www.facebook.com/events/hlavn%C3%A9-n%C3%A1mestie-940-02-nov%C3%A9-z%C3%A1mky-slovensko/novoz%C3%A1mock%C3%A1-ve%C4%8Dern%C3%A1-desiatka-2026/1381405460649337/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.vysledkovyservis.sk/novozamocka-vecerna-desiatka-prihlaska",
+    "race_info_url": "https://www.vysledkovyservis.sk/novozamocka-vecerna-desiatka-propozicie",
+    "presumed_organizer_email": "mgr.marian.rybar@gmail.com",
+    "website_emails_found": [
+      "mgr.marian.rybar@gmail.com",
+      "prihlaska@vysledkovyservis.sk"
+    ],
+    "description": "The Nové Zámky Evening 10K is a sporting event with a charitable dimension that promotes exercise, a healthy lifestyle, and community spirit. The race takes place in the evening in the town of Nové Zámky and offers 5 km and 10 km courses on a certified asphalt urban route with public street lighting and additional lighting on selected sections. The event also includes children’s races of various distances. All participants receive a medal, and part of the proceeds goes to charity.",
+    "course_highlights": [
+      "Certified urban course through the streets of Nové Zámky, with an asphalt surface",
+      "The route runs mostly along publicly lit roads, with additional lighting on selected sections",
+      "Evening race requiring reflective gear and personal lighting for safety"
+    ],
+    "additional": "Race check-in begins at 16:30 at Main Square. The children’s races start from 17:30, and the 5 km and 10 km main races start from 18:30. The participant limit is 100 for the children’s races and 250 for the main races. All categories will be assessed and awarded immediately after the last runners finish. Required equipment includes reflective gear and personal lighting (a headlamp or running light) because the event takes place in the evening. The evening race requires reflective gear and personal lighting.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.76,
     "sources": [
       "https://beh.sk/pretek/novozamocka-vecerna-desiatka-2/"
     ],
@@ -31919,8 +31962,8 @@
   {
     "domain_name": "majcichovsky_maraton",
     "name": "Majcichovský maratón",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261031",
@@ -31934,8 +31977,8 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Základná škola Jána Palárika, Majcichov, Slovakia",
+    "start_time": "08:00",
+    "location": "ZŠ Jána Palárika, Majcichov, Slovakia",
     "latitude": 48.282879,
     "longitude": 17.6285013,
     "county": "Region of Trnava",
@@ -31951,25 +31994,44 @@
     "distance_verbose": "10 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://maratonmajcichov.webnode.sk/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15 €",
+            "deadline": null,
+            "description": "Štartovné: 15 € zahŕňa štartovný balíček a medailu v cieli"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://maratonmajcichov.webnode.sk/ucastnici/",
+    "race_info_url": "https://maratonmajcichov.webnode.sk/kopia-propozicie-1/",
+    "presumed_organizer_email": "cyril.bohunicky63@gmail.com",
+    "website_emails_found": [
+      "cyril.bohunicky63@gmail.com"
+    ],
+    "description": "The Majcichov Marathon is a traditional running race held in Majcichov, with several events including a 10 km race, half marathon, marathon, and marathon relay. The marathon course is officially measured and runs from Majcichov through Voderady, Hnojisko and Pavlice to Bistro Šachor. Runners can use a gym for changing and showers. The start and participant registration take place at Ján Palárik Primary School in Majcichov. The organizer is Cyril Bohunický, who ensures the smooth running of the event and communication with participants.",
+    "course_highlights": [
+      "The marathon course is 42.210 km long and consists of a 7 km section run three times out and back",
+      "The route passes through Majcichov, Voderady, Hnojisko and Pavlice, and finishes at Bistro Šachor",
+      "Officially measured course, certified by an SAZ measurer"
+    ],
+    "additional": "The entry fee is paid on-site during registration. The race number must be worn visibly on the chest and is non-transferable. The organizer reserves the right to change the conditions or cancel the event in the event of unforeseen circumstances. A gym for changing and showers are available; the organizer is not responsible for belongings left behind.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.37,
     "sources": [
       "https://beh.sk/pretek/majcichovsky-maraton-8/"
     ],
@@ -34942,36 +35004,38 @@
       [
         "20261120",
         "20261120"
+      ],
+      [
+        "20271119",
+        "20271119"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "17:45",
-    "location": "Námestie osloboditeľov, Michalovce, Slovakia",
-    "latitude": 48.7563048,
-    "longitude": 21.9181592,
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Michalovce, Slovakia",
+    "latitude": 48.7556769,
+    "longitude": 21.9183859,
     "county": "Region of Košice",
     "nearest_city": "Michalovce",
     "nearby_cities": [
       "Michalovce"
     ],
-    "distances": "[\"5.8\"]",
+    "distances": "[\"7.4\"]",
     "distance_m": [
-      5800
+      7400
     ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5.8 km",
-    "organizer": "Mesto Michalovce, Atletický klub Michalovce, ZŠ Pavla Horova Michalovce",
+    "distance_keywords": [],
+    "distance_verbose": "7.4 km",
+    "organizer": null,
     "contact": null,
     "website": "https://bomm.preteky.com/propozicie.html",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "17 € - 20 €",
+    "price_range": null,
     "price_tiers": [],
-    "registration_close_date": "20261120",
+    "registration_close_date": "20271119",
     "registration_url": "https://bomm.preteky.com/registracia.html",
     "race_info_url": "https://bomm.preteky.com/propozicie.html",
     "presumed_organizer_email": "maraton@podvihorlatskymaraton.sk",
@@ -34979,29 +35043,99 @@
       "maraton@podvihorlatskymaraton.sk",
       "sabog61@gmail.com"
     ],
-    "description": "The Michalovce Liberation Run is a traditional evening race held in the city center of Michalovce. Runners follow city streets over a course of approximately 5.8 km made up of several laps. After finishing, they receive refreshments and a participant medal. The race is suitable for the general public and offers a pleasant atmosphere, with the option to register in person on race day.",
+    "description": "The Michalovce City Liberation Run is a traditional race that attracts runners of various age groups every year. The race takes place in the city of Michalovce and offers a quality course with an urban character. The organizers provide race numbers, race-day check-in, and the option to register on the day of the race. The event has a friendly atmosphere and is suitable for the general public.",
     "course_highlights": [
-      "Evening run through the center of Michalovce",
-      "5.8 km course made up of 1,450 m laps",
-      "Refreshments and a participant medal after the finish"
+      "The course runs through the city of Michalovce on urban surfaces",
+      "The race is suitable for various age groups",
+      "The start and finish are located by the Michalovce Municipal Office"
     ],
-    "additional": "In-person registration takes place in the lobby of the Town Hall from 16:30 to 17:45. Headlamps are recommended for safety. After finishing, runners return their race number and receive a medal. The results ceremony is at 19:30 in the gymnasium of P. Horov Elementary School No. 8. The course has been shortened to 5.8 km and runs on asphalt and stone surfaces. Registration is available online or in person. The entry fee is €20; a reduced fee applies to online registration by 19.11.2025.",
+    "additional": "Registration is also available on race day during check-in from 16:30 to 17:45 at the Michalovce Municipal Office. The on-site entry fee is €20. The number of race numbers is limited.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://www.terminovka.sk/podujatie/beh-oslobodenia-mesta-michalovce",
       "https://beh.sk/pretek/beh-o-stit-mesta-michalovce-17/"
     ],
     "consolidated_ids": [
-      "845c168f-a42a-47f3-9a6e-3920aa324d15"
+      "118c5b6a-1d50-4cbb-9274-4f671ffef37f"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260411",
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "katarinsky_vecerny_beh",
+    "name": "Katarínsky večerný beh",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261120",
+        "20261120"
+      ],
+      [
+        "20271119",
+        "20271119"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Námestie Jána Vojtaššáka, Dolný Kubín, Slovakia",
+    "latitude": 49.2133161,
+    "longitude": 19.3043005,
+    "county": "Region of Žilina",
+    "nearest_city": "Liptovský Mikuláš",
+    "nearby_cities": [
+      "Liptovský Mikuláš"
+    ],
+    "distances": "[\"9\"]",
+    "distance_m": [
+      9000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "9 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/katarinsky-vecerny-beh/"
+    ],
+    "consolidated_ids": [
+      "0ea31cbb-f6a1-4c44-8d50-832cea540bfb"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -35464,72 +35598,6 @@
     ],
     "consolidated_ids": [
       "baef9384-5a20-4297-b9ca-63de5fe5d5ff"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "katarinsky_vecerny_beh",
-    "name": "Katarínsky večerný beh",
-    "type": "other",
-    "type_local": "Ostatné",
-    "race_dates": [
-      [
-        "20261120",
-        "20261120"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Námestie Jána Vojtaššáka, Dolný Kubín, Slovakia",
-    "latitude": 49.2133161,
-    "longitude": 19.3043005,
-    "county": "Region of Žilina",
-    "nearest_city": "Liptovský Mikuláš",
-    "nearby_cities": [
-      "Liptovský Mikuláš"
-    ],
-    "distances": "[\"9\"]",
-    "distance_m": [
-      9000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "9 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://beh.sk/pretek/katarinsky-vecerny-beh/"
-    ],
-    "consolidated_ids": [
-      "bae63d8c-2965-4d9f-9484-a02f2a883610"
     ],
     "supplied_ids": [],
     "supplied_at": null,
