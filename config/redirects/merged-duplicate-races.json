@@ -1755,6 +1755,18 @@
       "market": "gr"
     },
     {
+      "source": "/selides-agonon/5o_pentelikon_marathon/:path*",
+      "destination": "/selides-agonon/pentelikon_marathon/:path*",
+      "permanent": true,
+      "market": "gr"
+    },
+    {
+      "source": "/en/race-pages/5o_pentelikon_marathon/:path*",
+      "destination": "/en/race-pages/pentelikon_marathon/:path*",
+      "permanent": true,
+      "market": "gr"
+    },
+    {
       "source": "/selides-agonon/6o_vamvakou_mountain_run/:path*",
       "destination": "/selides-agonon/vamvakou_mountain_run/:path*",
       "permanent": true,
@@ -1775,6 +1787,18 @@
     {
       "source": "/en/race-pages/corfu_mountain_trail/:path*",
       "destination": "/en/race-pages/14o_corfu_mountain_trail/:path*",
+      "permanent": true,
+      "market": "gr"
+    },
+    {
+      "source": "/selides-agonon/dirfys_trail_run/:path*",
+      "destination": "/selides-agonon/dirfys_trail_run_2026/:path*",
+      "permanent": true,
+      "market": "gr"
+    },
+    {
+      "source": "/en/race-pages/dirfys_trail_run/:path*",
+      "destination": "/en/race-pages/dirfys_trail_run_2026/:path*",
       "permanent": true,
       "market": "gr"
     },

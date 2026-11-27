@@ -8,6 +8,10 @@
       [
         "20261128",
         "20261128"
+      ],
+      [
+        "20261129",
+        "20261129"
       ]
     ],
     "upcoming_dates": [],
@@ -60,13 +64,86 @@
     "supplied_fields": [],
     "is_series": false,
     "max_description_relevance": 0.95,
-    "sources": [],
+    "sources": [
+      "https://xathlos.com/el/event/6th-dirfys-trail-run-2026-katzou-path-5k",
+      "https://xathlos.com/el/event/6th-dirfys-trail-run-2026-big-bear-downhill-4k",
+      "https://irunmag.gr/news/6o-dirfys-trail-run/",
+      "https://xathlos.com/el/event/6th-dirfys-trail-run-2026-dirfya-trails-15k",
+      "https://xathlos.com/el/event/6th-dirfys-trail-run-2026-iraios-athlos-30k",
+      "https://itra.run/Races/RaceDetails/Dirfys.trail.run.Iraios.Athlos.30k/2026/124099"
+    ],
     "consolidated_ids": [
       "1507738c-ec12-484d-acdf-c96b9a4d6139"
     ],
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "dromos_10khlm_olumpias_2026",
+    "name": "Δρόμος 10χλμ Ολυμπίας 2026",
+    "type": "road",
+    "type_local": "Δρόμος",
+    "race_dates": [
+      [
+        "20261128",
+        "20261128"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Ancient Olympia, Ελλάδα",
+    "latitude": 37.6465714,
+    "longitude": 21.623055,
+    "county": "Peloponisos-W. Greece & Ionian",
+    "nearest_city": "Pýrgos",
+    "nearby_cities": [
+      "Pýrgos"
+    ],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://xathlos.com/el/event/olympia-10k-2026"
+    ],
+    "consolidated_ids": [
+      "6678e5b9-08da-4d38-afb4-d79237759bed"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -234,7 +311,9 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://irunmag.gr/races/road/olympia-marathon-2026/"
+      "https://xathlos.com/el/event/olympia-half-marathon-2026",
+      "https://irunmag.gr/races/road/olympia-marathon-2026/",
+      "https://xathlos.com/el/event/olympia-international-marathon-2026"
     ],
     "consolidated_ids": [
       "a27c537a-a8c3-484e-ad57-1ec2c6b5b540"
@@ -242,104 +321,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260530",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "3os_agonas_medenikon_diakriseon",
-    "name": "3ος Αγώνας Μηδενικών Διακρίσεων",
-    "type": "other",
-    "type_local": "Άλλο",
-    "race_dates": [
-      [
-        "20261129",
-        "20261129"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "08:00",
-    "location": "Olympic Stadium, OAKA, Marousi, Ελλάδα",
-    "latitude": 38.0359096,
-    "longitude": 23.7869732,
-    "county": "Attica",
-    "nearest_city": "Athens",
-    "nearby_cities": [
-      "Athens"
-    ],
-    "distances": "[\"5\", \"1\"]",
-    "distance_m": [
-      5000,
-      1000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5 km, 1 km",
-    "organizer": "Σύλλογος Δρομέων Ελπίδας – The Hope Runners",
-    "contact": null,
-    "website": "http://www.hoperunners.gr",
-    "fb_link": "https://www.facebook.com/events/957979356711748/",
-    "ig_link": null,
-    "price_range": "5 χλμ.: 12€ · 1 χλμ.: 3€ · αγώνας ΑμεΑ: δωρεάν",
-    "price_tiers": [
-      {
-        "distance": "5 χλμ",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "12 ευρώ",
-            "deadline": "20261122",
-            "description": "Κόστος εγγραφής 5 χλμ. 12 ευρώ"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "Παιδικός Αγώνας - Αγώνας ΑΜΕΑ 1000 μ.",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "3 ευρώ",
-            "deadline": "20261122",
-            "description": "Ο παιδικός Αγώνας έχει ένα συμβολικό κόστος 3 ευρώ"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20261122",
-    "registration_url": "https://register.chronolog.gr/r/873acb79707fcd9e4743b58c4196282f",
-    "race_info_url": "https://www.hoperunners.gr/3o-discrimination-run-2026",
-    "presumed_organizer_email": "dromeis.elpidas@gmail.com",
-    "website_emails_found": [
-      "dromeis.elpidas@gmail.com"
-    ],
-    "description": "Ο 3ος Αγώνας Μηδενικών Διακρίσεων διοργανώνεται από τον Σύλλογο Δρομείς Ελπίδας και πραγματοποιείται στο Ολυμπιακό Στάδιο ΟΑΚΑ. Σκοπός του αγώνα είναι η προώθηση της ισότητας και η καταπολέμηση κάθε μορφής διάκρισης, με έμφαση στην κοινωνική ένταξη και την υποστήριξη παιδιών με αναπηρία. Η εκκίνηση και ο τερματισμός γίνονται στη Στοά της Αγοράς, προσφέροντας μια όμορφη ατμόσφαιρα σε ένα ιστορικό περιβάλλον. Ο αγώνας περιλαμβάνει διαδρομές 5 χιλιομέτρων και παιδικό αγώνα 1000 μέτρων, με όλα τα έσοδα να υποστηρίζουν την αγορά αμαξιδίου για παιδιά με αναπηρία.",
-    "course_highlights": [
-      "Εκκίνηση και τερματισμός στη Στοά της Αγοράς στο ΟΑΚΑ",
-      "Διαδρομή 5 χλμ με υδροδοσία στα 2,5 χλμ και στον τερματισμό",
-      "Παιδικός αγώνας και αγώνας ΑΜΕΑ 1000 μ."
-    ],
-    "additional": "Παραλαβή πακέτου συμμετοχής από τη Γραμματεία στην είσοδο VIP του ΟΑΚΑ (Πύλη Α) από 8:00 έως 9:45 πμ. Υπάρχει εθελοντική υγειονομική κάλυψη με γιατρό αγώνα και ασθενοφόρο ΕΚΑΒ. Η συμμετοχή γίνεται μόνο ηλεκτρονικά και η εγγραφή επιβεβαιώνεται με αποστολή καταθετηρίου στο email του διοργανωτή. Τα έσοδα θα διατεθούν για την αγορά αμαξιδίου για τον σύλλογο.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.94,
-    "sources": [
-      "https://irunmag.gr/races/road/3rd-zero-discrimination-run/"
-    ],
-    "consolidated_ids": [
-      "6c259bfa-fed1-44c9-ae6f-5150764ff22a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -399,7 +380,8 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://irunmag.gr/races/trail/5o-arta-trail/"
+      "https://irunmag.gr/races/trail/5o-arta-trail/",
+      "https://xathlos.com/el/event/5th-arta-trail-2026-22km"
     ],
     "consolidated_ids": [
       "85b44da9-57cd-408b-a8d1-d7b376ca3378"
@@ -467,7 +449,11 @@
     "supplied_fields": [],
     "is_series": false,
     "max_description_relevance": 0.9,
-    "sources": [],
+    "sources": [
+      "https://xathlos.com/el/event/7th-goritsa-trail-2026-24km",
+      "https://irunmag.gr/races/trail/7o-goritsa-trail/",
+      "https://xathlos.com/el/event/7th-goritsa-trail-2026-panorama-8km"
+    ],
     "consolidated_ids": [
       "782584af-9af4-479a-8397-d1f8360a2c23"
     ],
@@ -539,8 +525,10 @@
     "is_series": false,
     "max_description_relevance": 0.94,
     "sources": [
+      "https://xathlos.com/el/event/palamideios-athlos-2026-10km-historical-memory-road-race",
+      "https://irunmag.gr/races/road-trail/palamideios-athlos-nafplio/",
       "https://irunmag.gr/races/road-trail/palamideios-athlos-2026/",
-      "https://irunmag.gr/races/road-trail/palamideios-athlos-nafplio/"
+      "https://xathlos.com/el/event/palamideios-athlos-2026-5km-road-race"
     ],
     "consolidated_ids": [
       "319b8747-b4cd-47a7-8769-ff1838be7104"
@@ -640,84 +628,12 @@
     "supplied_fields": [],
     "is_series": false,
     "max_description_relevance": 0.96,
-    "sources": [],
+    "sources": [
+      "https://xathlos.com/el/event/5th-spata-run-2026-5000-meters",
+      "https://xathlos.com/el/event/5th-spata-run-2026-10000-meters"
+    ],
     "consolidated_ids": [
       "d2951699-ca39-4829-a63c-d21a21212882"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "dirfys_trail_run",
-    "name": "Dirfys Trail Run",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261129",
-        "20261129"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Steni Dirfios, Dirfys-Messapia, Ελλάδα",
-    "latitude": 38.581347,
-    "longitude": 23.8379926,
-    "county": "Thessalia-Central Greece",
-    "nearest_city": "Chalkída",
-    "nearby_cities": [
-      "Chalkída"
-    ],
-    "distances": "[\"30\", \"15\", \"5\", \"4\"]",
-    "distance_m": [
-      30000,
-      15000,
-      5000,
-      4000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "30 km, 15 km, 5 km, 4 km",
-    "organizer": "Α.Π.Σ. Δρομέων Ευβοίας",
-    "contact": null,
-    "website": "https://dromeisevias.gr/dtrhomegr/",
-    "fb_link": "https://www.facebook.com/p/Dirfys-Trail-Run-100076007177337/?locale=el_GR",
-    "ig_link": "https://www.instagram.com/dirfystrail/",
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://dromeisevias.gr/register/",
-    "race_info_url": "https://dromeisevias.gr/dtr-announ-gr-2/",
-    "presumed_organizer_email": "apsdromeonevias@gmail.com",
-    "website_emails_found": [
-      "apsdromeonevias@gmail.com"
-    ],
-    "description": "Ο αγώνας Dirfys Trail Run είναι ένας απαιτητικός ορεινός αγώνας που διεξάγεται στην περιοχή της Δίρφυς στην Εύβοια. Περιλαμβάνει διαδρομές διαφορετικών αποστάσεων, προσφέροντας μια μοναδική εμπειρία σε δρομείς που αγαπούν το βουνό και τη φύση. Η διοργάνωση φροντίζει για την ασφάλεια και την υποστήριξη των συμμετεχόντων, ενώ η διαδρομή προσφέρει εντυπωσιακά τοπία και ποικιλία εδάφους. Ο αγώνας αποτελεί παράδοση για την περιοχή και προσελκύει δρομείς από όλη την Ελλάδα.",
-    "course_highlights": [
-      "Διαδρομές σε ορεινό και δασικό περιβάλλον της Δίρφυς",
-      "Εντυπωσιακά φυσικά τοπία και θέα",
-      "Ποικιλία εδάφους με μονοπάτια και ανηφόρες"
-    ],
-    "additional": "Ο αγώνας περιλαμβάνει τέσσερις διαδρομές: 30km, 15km, 5km και 4km downhill. Υπάρχουν διαθέσιμες λίστες συμμετεχόντων και αποτελέσματα για κάθε διαδρομή. Παρέχεται τεχνική ενημέρωση και κανονισμοί αγώνα. Υπάρχει ζωντανή μετάδοση (livestream) και φωτογραφίες από προηγούμενες διοργανώσεις.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.91,
-    "sources": [
-      "https://itra.run/Races/RaceDetails/Dirfys.trail.run.Iraios.Athlos.30k/2026/124099"
-    ],
-    "consolidated_ids": [
-      "7d46b3e4-2d7e-4239-9d5e-43139e3c5781"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -791,6 +707,104 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261030",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "3os_agonas_medenikon_diakriseon",
+    "name": "3ος Αγώνας Μηδενικών Διακρίσεων",
+    "type": "other",
+    "type_local": "Άλλο",
+    "race_dates": [
+      [
+        "20261129",
+        "20261129"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "08:00",
+    "location": "Olympic Stadium, OAKA, Marousi, Ελλάδα",
+    "latitude": 38.0359096,
+    "longitude": 23.7869732,
+    "county": "Attica",
+    "nearest_city": "Athens",
+    "nearby_cities": [
+      "Athens"
+    ],
+    "distances": "[\"5\", \"1\"]",
+    "distance_m": [
+      5000,
+      1000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km, 1 km",
+    "organizer": "Σύλλογος Δρομέων Ελπίδας – The Hope Runners",
+    "contact": null,
+    "website": "http://www.hoperunners.gr",
+    "fb_link": "https://www.facebook.com/events/957979356711748/",
+    "ig_link": null,
+    "price_range": "5 χλμ.: 12€ · 1 χλμ.: 3€ · αγώνας ΑμεΑ: δωρεάν",
+    "price_tiers": [
+      {
+        "distance": "5 χλμ",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12 ευρώ",
+            "deadline": "20261122",
+            "description": "Κόστος εγγραφής 5 χλμ. 12 ευρώ"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Παιδικός Αγώνας - Αγώνας ΑΜΕΑ 1000 μ.",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3 ευρώ",
+            "deadline": "20261122",
+            "description": "Ο παιδικός Αγώνας έχει ένα συμβολικό κόστος 3 ευρώ"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261122",
+    "registration_url": "https://register.chronolog.gr/r/873acb79707fcd9e4743b58c4196282f",
+    "race_info_url": "https://www.hoperunners.gr/3o-discrimination-run-2026",
+    "presumed_organizer_email": "dromeis.elpidas@gmail.com",
+    "website_emails_found": [
+      "dromeis.elpidas@gmail.com"
+    ],
+    "description": "Ο 3ος Αγώνας Μηδενικών Διακρίσεων διοργανώνεται από τον Σύλλογο Δρομείς Ελπίδας και πραγματοποιείται στο Ολυμπιακό Στάδιο ΟΑΚΑ. Σκοπός του αγώνα είναι η προώθηση της ισότητας και η καταπολέμηση κάθε μορφής διάκρισης, με έμφαση στην κοινωνική ένταξη και την υποστήριξη παιδιών με αναπηρία. Η εκκίνηση και ο τερματισμός γίνονται στη Στοά της Αγοράς, προσφέροντας μια όμορφη ατμόσφαιρα σε ένα ιστορικό περιβάλλον. Ο αγώνας περιλαμβάνει διαδρομές 5 χιλιομέτρων και παιδικό αγώνα 1000 μέτρων, με όλα τα έσοδα να υποστηρίζουν την αγορά αμαξιδίου για παιδιά με αναπηρία.",
+    "course_highlights": [
+      "Εκκίνηση και τερματισμός στη Στοά της Αγοράς στο ΟΑΚΑ",
+      "Διαδρομή 5 χλμ με υδροδοσία στα 2,5 χλμ και στον τερματισμό",
+      "Παιδικός αγώνας και αγώνας ΑΜΕΑ 1000 μ."
+    ],
+    "additional": "Παραλαβή πακέτου συμμετοχής από τη Γραμματεία στην είσοδο VIP του ΟΑΚΑ (Πύλη Α) από 8:00 έως 9:45 πμ. Υπάρχει εθελοντική υγειονομική κάλυψη με γιατρό αγώνα και ασθενοφόρο ΕΚΑΒ. Η συμμετοχή γίνεται μόνο ηλεκτρονικά και η εγγραφή επιβεβαιώνεται με αποστολή καταθετηρίου στο email του διοργανωτή. Τα έσοδα θα διατεθούν για την αγορά αμαξιδίου για τον σύλλογο.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.94,
+    "sources": [
+      "https://irunmag.gr/races/road/3rd-zero-discrimination-run/"
+    ],
+    "consolidated_ids": [
+      "6c259bfa-fed1-44c9-ae6f-5150764ff22a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -1314,6 +1328,203 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "24os_minoikos_athlos",
+    "name": "24ος Μινωικός Αθλος",
+    "type": "other",
+    "type_local": "Άλλο",
+    "race_dates": [
+      [
+        "20261206",
+        "20261206"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Phaistos to Knossos, Crete, Ελλάδα",
+    "latitude": 35.2984804,
+    "longitude": 25.1595555,
+    "county": "Crete",
+    "nearest_city": "Irákleion",
+    "nearby_cities": [
+      "Irákleion"
+    ],
+    "distances": "[\"140\", \"70\"]",
+    "distance_m": [
+      140000,
+      70000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "140 km, 70 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://irunmag.gr/races/ultra/24os-minoikos-athlos/"
+    ],
+    "consolidated_ids": [
+      "5c47ca30-87b9-4fd1-8660-2aba7763b6a0"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "dromos_kalabrutinou_olokautomatos",
+    "name": "Δρόμος Καλαβρυτινού Ολοκαυτώματος",
+    "type": "road",
+    "type_local": "Δρόμος",
+    "race_dates": [
+      [
+        "20261206",
+        "20261206"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Kalavryta, Ελλάδα",
+    "latitude": 38.033281,
+    "longitude": 22.1103462,
+    "county": "Peloponisos-W. Greece & Ionian",
+    "nearest_city": "Pátra",
+    "nearby_cities": [],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://irunmag.gr/races/road/dromos-kalavrytinou-olokaftomatos-stis-6-dekemvriou-2026/"
+    ],
+    "consolidated_ids": [
+      "7e0b4221-4488-49ee-a4cd-267bee51bebc"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "mylopotamos_run",
+    "name": "Mylopotamos Run",
+    "type": "road",
+    "type_local": "Δρόμος",
+    "race_dates": [
+      [
+        "20261206",
+        "20261206"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Rethymno, Crete, Ελλάδα",
+    "latitude": 35.3662897,
+    "longitude": 24.4768045,
+    "county": "Crete",
+    "nearest_city": "Rethymno",
+    "nearby_cities": [
+      "Rethymno"
+    ],
+    "distances": "[\"21\", \"5\"]",
+    "distance_m": [
+      21000,
+      5000
+    ],
+    "distance_keywords": [
+      "Ημιμαραθώνιος",
+      "5 km"
+    ],
+    "distance_verbose": "Ημιμαραθώνιος, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://irunmag.gr/races/road/mylopotamos-run/"
+    ],
+    "consolidated_ids": [
+      "ce12556c-94fc-4e2b-a760-80677b546c95"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "1o_mani_backyard_ultra",
     "name": "1ο Mani Backyard Ultra",
     "type": "road",
@@ -1510,6 +1721,7 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
+      "https://irunmag.gr/races/road/14a-liofilia/",
       "https://www.facebook.com/www.marathonclub.gr/?locale=el_GR"
     ],
     "consolidated_ids": [
@@ -1524,72 +1736,68 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "pentelikon_marathon",
-    "name": "Πεντελικόν Μάραθων",
-    "type": "trail",
-    "type_local": "Trail",
+    "domain_name": "12os_nukhterinos_agonas_dromou_khanion",
+    "name": "12ος Νυχτερινός Αγώνας Δρόμου Χανίων",
+    "type": "road",
+    "type_local": "Δρόμος",
     "race_dates": [
       [
-        "20261213",
-        "20261213"
+        "20261212",
+        "20261212"
       ]
     ],
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Marathonas, Attica, Ελλάδα",
-    "latitude": 38.1532814,
-    "longitude": 23.9619908,
-    "county": "Attica",
-    "nearest_city": "Athens",
+    "start_time": null,
+    "location": "Chania, Crete, Ελλάδα",
+    "latitude": 35.5137828,
+    "longitude": 24.0203104,
+    "county": "Crete",
+    "nearest_city": "Chaniá",
     "nearby_cities": [
-      "Athens"
+      "Chaniá"
     ],
-    "distances": "[\"12\", \"6\"]",
+    "distances": "[\"10\", \"5\"]",
     "distance_m": [
-      12000,
-      6000
+      10000,
+      5000
     ],
     "distance_keywords": [
+      "10 km",
       "5 km"
     ],
-    "distance_verbose": "12 km, 6 km",
-    "organizer": "Σύλλογος Μαραθωνοδρόμων ΤΕΛΜΗΣΣΟΣ Ν.Μάκρης",
+    "distance_verbose": "10 km, 5 km",
+    "organizer": null,
     "contact": null,
-    "website": "https://www.runningnews.gr/item.php?id=62461",
+    "website": null,
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://www.runningnews.gr/item.php?id=62461",
-    "presumed_organizer_email": "info@telmissos.gr",
-    "website_emails_found": [
-      "info@telmissos.gr",
-      "info@runningnews.gr"
-    ],
-    "description": "Ο Πεντελικόν Μάραθων είναι ένας ορεινός αγώνας 12 χιλιομέτρων που διοργανώνεται για τέταρτη συνεχή χρονιά από τον Σύλλογο Μαραθωνοδρόμων Τελμησσός Νέας Μάκρης σε συνεργασία με το Σωματείο Εθελοντών Δασοπυροσβεστών Μαραθώνα. Η διαδρομή είναι δασική και μονοπάτι, με εκκίνηση στην Αγία Μαρίνα Νέας Μάκρης. Ο αγώνας έχει ως στόχο την οικονομική στήριξη του Σωματείου Εθελοντών Δασοπυροσβεστών Μαραθώνα για την προστασία των δασών και την εθελοντική προσφορά προς τους συμπολίτες. Ο Πεντελικόν Όρος, παρά την πρόσφατη καταστροφή από πυρκαγιά, διατηρεί την απίστευτη ομορφιά και ιστορική σημασία του, και ο αγώνας συμβάλλει στην προσπάθεια αναγέννησης των βουνών.",
-    "course_highlights": [
-      "Ορεινή διαδρομή 12 χλμ σε δασικό μονοπάτι",
-      "Εκκίνηση από την Αγία Μαρίνα Νέας Μάκρης",
-      "Περιοχή με μεγάλη ιστορική σημασία και φυσική ομορφιά"
-    ],
-    "additional": "Ο αγώνας διοργανώνεται με την υποστήριξη του Δήμου Μαραθώνος και υπό την αιγίδα της ΕΟΣΛΜΑ-Υ. Η εκκίνηση δίνεται στις 10:00 πμ. Η διοργάνωση επιδιώκει να στηρίξει οικονομικά το Σωματείο Εθελοντών Δασοπυροσβεστών Μαραθώνα για την προστασία των δασών και την εθελοντική προσφορά. Η διαδρομή περνά από το Σ.Ε.Δ.Μ. (Σωματείο Εθελοντών Δασοπυροσβεστών Μαραθώνα) και είναι μονοπάτι μέσα σε δάσος που υπέστη πυρκαγιά τον Αύγουστο του 2024. Ο αγώνας περιλαμβάνει αγωνιστικές και εθελοντικές συμμετοχές, με έμφαση στην απόλαυση της φύσης και την προώθηση του ορεινού τρεξίματος.",
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [],
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://irunmag.gr/races/road/12os-night-chania/"
+    ],
     "consolidated_ids": [
-      "62e53185-c639-4679-9d28-5a125231ea26"
+      "d99d176c-f281-409d-8627-7d29a207a412"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260530",
+    "created_date": "20261127",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -1882,7 +2090,9 @@
     "supplied_fields": [],
     "is_series": false,
     "max_description_relevance": 0.0,
-    "sources": [],
+    "sources": [
+      "https://irunmag.gr/races/road/2o-oloi-diaforetikoi-oloi-isoi/"
+    ],
     "consolidated_ids": [
       "598a2f45-88d1-4b7c-8d7f-6b798be67285"
     ],
@@ -1958,6 +2168,142 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261114",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "santa_night_run",
+    "name": "Santa Night Run",
+    "type": "road",
+    "type_local": "Δρόμος",
+    "race_dates": [
+      [
+        "20261213",
+        "20261213"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Piraeus, Ελλάδα",
+    "latitude": 37.9429857,
+    "longitude": 23.6469832,
+    "county": "Attica",
+    "nearest_city": "Athens",
+    "nearby_cities": [
+      "Athens"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Μικτές αποστάσεις",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://irunmag.gr/races/road/santa-night-run-2026/"
+    ],
+    "consolidated_ids": [
+      "f21924ef-6471-4506-b910-00e0cec77416"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "pentelikon_marathon",
+    "name": "Πεντελικόν Μάραθων",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261213",
+        "20261213"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": "10:00",
+    "location": "Marathonas, Attica, Ελλάδα",
+    "latitude": 38.1532814,
+    "longitude": 23.9619908,
+    "county": "Attica",
+    "nearest_city": "Athens",
+    "nearby_cities": [
+      "Athens"
+    ],
+    "distances": "[\"12\", \"6\"]",
+    "distance_m": [
+      12000,
+      6000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "12 km, 6 km",
+    "organizer": "Σύλλογος Μαραθωνοδρόμων ΤΕΛΜΗΣΣΟΣ Ν.Μάκρης",
+    "contact": null,
+    "website": "https://www.runningnews.gr/item.php?id=62461",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.runningnews.gr/item.php?id=62461",
+    "presumed_organizer_email": "info@telmissos.gr",
+    "website_emails_found": [
+      "info@telmissos.gr",
+      "info@runningnews.gr"
+    ],
+    "description": "Ο Πεντελικόν Μάραθων είναι ένας ορεινός αγώνας 12 χιλιομέτρων που διοργανώνεται για τέταρτη συνεχή χρονιά από τον Σύλλογο Μαραθωνοδρόμων Τελμησσός Νέας Μάκρης σε συνεργασία με το Σωματείο Εθελοντών Δασοπυροσβεστών Μαραθώνα. Η διαδρομή είναι δασική και μονοπάτι, με εκκίνηση στην Αγία Μαρίνα Νέας Μάκρης. Ο αγώνας έχει ως στόχο την οικονομική στήριξη του Σωματείου Εθελοντών Δασοπυροσβεστών Μαραθώνα για την προστασία των δασών και την εθελοντική προσφορά προς τους συμπολίτες. Ο Πεντελικόν Όρος, παρά την πρόσφατη καταστροφή από πυρκαγιά, διατηρεί την απίστευτη ομορφιά και ιστορική σημασία του, και ο αγώνας συμβάλλει στην προσπάθεια αναγέννησης των βουνών.",
+    "course_highlights": [
+      "Ορεινή διαδρομή 12 χλμ σε δασικό μονοπάτι",
+      "Εκκίνηση από την Αγία Μαρίνα Νέας Μάκρης",
+      "Περιοχή με μεγάλη ιστορική σημασία και φυσική ομορφιά"
+    ],
+    "additional": "Ο αγώνας διοργανώνεται με την υποστήριξη του Δήμου Μαραθώνος και υπό την αιγίδα της ΕΟΣΛΜΑ-Υ. Η εκκίνηση δίνεται στις 10:00 πμ. Η διοργάνωση επιδιώκει να στηρίξει οικονομικά το Σωματείο Εθελοντών Δασοπυροσβεστών Μαραθώνα για την προστασία των δασών και την εθελοντική προσφορά. Η διαδρομή περνά από το Σ.Ε.Δ.Μ. (Σωματείο Εθελοντών Δασοπυροσβεστών Μαραθώνα) και είναι μονοπάτι μέσα σε δάσος που υπέστη πυρκαγιά τον Αύγουστο του 2024. Ο αγώνας περιλαμβάνει αγωνιστικές και εθελοντικές συμμετοχές, με έμφαση στην απόλαυση της φύσης και την προώθηση του ορεινού τρεξίματος.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://irunmag.gr/races/trail/5o-pentelikon-marathon/"
+    ],
+    "consolidated_ids": [
+      "62e53185-c639-4679-9d28-5a125231ea26"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20260530",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -2164,6 +2510,142 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261120",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "12o_run_the_lake_vouliagmeni",
+    "name": "12ο Run The Lake Vouliagmeni",
+    "type": "road",
+    "type_local": "Δρόμος",
+    "race_dates": [
+      [
+        "20261220",
+        "20261220"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Vouliagmeni, Ελλάδα",
+    "latitude": 37.8216582,
+    "longitude": 23.7754127,
+    "county": "Attica",
+    "nearest_city": "Athens",
+    "nearby_cities": [
+      "Athens"
+    ],
+    "distances": "[\"10\", \"5\", \"1\"]",
+    "distance_m": [
+      10000,
+      5000,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://irunmag.gr/races/road/12o-run-the-lake-vouliagmeni/"
+    ],
+    "consolidated_ids": [
+      "d555a184-318a-4b08-997f-b9b94f5ce071"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "guros_kadmeias",
+    "name": "Γύρος Καδμείας",
+    "type": "road",
+    "type_local": "Δρόμος",
+    "race_dates": [
+      [
+        "20261231",
+        "20261231"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Θήβα (Thebes), Ελλάδα",
+    "latitude": 38.322579,
+    "longitude": 23.3204309,
+    "county": "Thessalia-Central Greece",
+    "nearest_city": "Chalkída",
+    "nearby_cities": [
+      "Chalkída"
+    ],
+    "distances": "[\"6\", \"1\"]",
+    "distance_m": [
+      6000,
+      1000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "6 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://irunmag.gr/races/road/gyros-kadmeias-2026/"
+    ],
+    "consolidated_ids": [
+      "59fd7513-4fe7-4997-b1ad-8040c407683b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -41856,8 +42338,7 @@
     "is_series": false,
     "max_description_relevance": 0.9,
     "sources": [
-      "https://irunmag.gr/races/trail/4o-gidi-methanon-2026/",
-      "https://xathlos.com/el/event/4th-goat-of-methana-2026-polo-fun-run-5km"
+      "https://irunmag.gr/races/trail/4o-gidi-methanon-2026/"
     ],
     "consolidated_ids": [
       "cb04fc62-b202-4f98-ad4e-1b0700210546"
@@ -42125,10 +42606,7 @@
     "supplied_fields": [],
     "is_series": false,
     "max_description_relevance": 0.93,
-    "sources": [
-      "https://xathlos.com/el/event/9th-olympic-day-run-greece-half-marathon-2026",
-      "https://xathlos.com/el/event/9th-olympic-day-run-greece-10k-2026"
-    ],
+    "sources": [],
     "consolidated_ids": [
       "f8b3adcc-231b-44aa-82a1-e0895f1bc55d"
     ],
@@ -42262,12 +42740,7 @@
     "is_series": false,
     "max_description_relevance": 0.94,
     "sources": [
-      "https://itra.run/Races/RaceDetails/Giona.Mountain.Race..Giona.Race.28k/2026/125754",
-      "https://xathlos.com/el/event/giona-mountain-race-2026-panagiorema-trail-12km",
-      "https://xathlos.com/el/event/giona-mountain-race-2026-run-for-all",
-      "https://irunmag.gr/races/trail/giona-mountain-race/",
-      "https://xathlos.com/el/event/giona-mountain-race-2026-giona-trail-28km",
-      "https://xathlos.com/el/event/giona-mountain-race-2026-amfissa-city-trail-5km"
+      "https://irunmag.gr/races/trail/giona-mountain-race/"
     ],
     "consolidated_ids": [
       "842d6bcc-1376-4112-a834-204cd04fea89"
@@ -42341,10 +42814,7 @@
     "is_series": false,
     "max_description_relevance": 0.91,
     "sources": [
-      "https://xathlos.com/el/event/lailias-wolves-races-2026-lailias-run-8k",
-      "https://xathlos.com/el/event/lailias-wolves-races-2026-serreslailias-ultra-vertical-30k",
-      "https://irunmag.gr/races/road-trail/lailias-wolves-races/",
-      "https://xathlos.com/el/event/lailias-wolves-races-2026-lailias-vertical"
+      "https://irunmag.gr/races/road-trail/lailias-wolves-races/"
     ],
     "consolidated_ids": [
       "33779c6a-d7d2-4d81-9753-7c0720a8f904"
@@ -42430,10 +42900,7 @@
     "supplied_fields": [],
     "is_series": false,
     "max_description_relevance": 0.83,
-    "sources": [
-      "https://itra.run/Races/RaceDetails/Nymfea.Trail.Races.40km/2026/124261",
-      "https://xathlos.com/el/event/mountain-races-of-nymfaia-2026-40km"
-    ],
+    "sources": [],
     "consolidated_ids": [
       "2662ca3d-8f9c-40e0-9b54-45939b91d60d"
     ],
@@ -42706,6 +43173,64 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "21os_emimarathonios_raxas",
+    "name": "21ος Ημιμαραθώνιος Ράξας",
+    "type": "road",
+    "type_local": "Δρόμος",
+    "race_dates": [
+      [
+        "20261122",
+        "20261122"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Ράξα Τρικάλων",
+    "latitude": null,
+    "longitude": null,
+    "county": null,
+    "nearest_city": null,
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Μικτές αποστάσεις",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [],
+    "consolidated_ids": [
+      "d6d24b67-e62b-4be2-902d-05c0581c6a9d"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
