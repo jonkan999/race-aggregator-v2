@@ -360,6 +360,76 @@
     ]
   },
   {
+    "domain_name": "tartu_valla_maraton",
+    "name": "Tartu valla maraton",
+    "type": "trail",
+    "type_local": "Trailijooks",
+    "race_dates": [
+      [
+        "20261129",
+        "20261129"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Raadi, Tartu Parish, Eesti",
+    "latitude": 58.4075542,
+    "longitude": 26.7479221,
+    "county": "Tartu maakond",
+    "nearest_city": "Tartu",
+    "nearby_cities": [
+      "Tartu"
+    ],
+    "distances": "[\"42\", \"21\", \"10\"]",
+    "distance_m": [
+      42000,
+      21000,
+      10000
+    ],
+    "distance_keywords": [
+      "Maraton",
+      "Poolmaraton",
+      "10 km"
+    ],
+    "distance_verbose": "Maraton, Poolmaraton, 10 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://marathon100.com/kalender/eesti/yritus/tartu-valla-maraton-2026-42-km"
+    ],
+    "consolidated_ids": [
+      "40a6f941-15e3-43e5-bf71-ee33c4ea9c6e"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261127",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "adventsjoggen",
     "name": "Adventsjoggen",
     "type": "terrain",
@@ -1043,8 +1113,8 @@
     "max_description_relevance": 0.9,
     "sources": [
       "https://itra.run/Races/RaceDetails/Garmin.Ultra.Race.Gdansk.GUR101/2026/113866",
-      "https://kalendarzbiegowy.pl/biegi/garmin-ultra-race-gdansk-2026/",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87121&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87121&bieganie",
+      "https://kalendarzbiegowy.pl/biegi/garmin-ultra-race-gdansk-2026/"
     ],
     "consolidated_ids": [
       "fff2eaad-5f93-4e53-aed6-3beeec36d9c5"
@@ -1354,15 +1424,15 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": "11:45",
-    "location": "Mikołajki, Warmian-Masurian Voivodeship, Poland",
+    "location": "Mikołajki",
     "latitude": 53.8027021,
     "longitude": 21.5706044,
     "county": "Warmińsko-Mazurskie",
     "nearest_city": "Ełk",
     "nearby_cities": [],
-    "distances": "[\"21.1\", \"10\"]",
+    "distances": "[\"21\", \"10\"]",
     "distance_m": [
-      21100,
+      21000,
       10000
     ],
     "distance_keywords": [
@@ -1370,74 +1440,31 @@
       "10 km"
     ],
     "distance_verbose": "Półmaraton, 10 km",
-    "organizer": "Półmaraton Mikołajkowy w Mikołajkach",
+    "organizer": null,
     "contact": null,
-    "website": "https://elektronicznezapisy.pl/event/16078/strona.html",
-    "fb_link": "https://www.facebook.com/p/P%C3%B3%C5%82maraton-Miko%C5%82ajkowy-w-Miko%C5%82ajkach-61566453210802/",
+    "website": "https://mikolajki.eu/kalendarz/481/biegi-mikolajkowe-polmaraton",
+    "fb_link": null,
     "ig_link": null,
-    "price_range": "80–140 zł",
-    "price_tiers": [
-      {
-        "distance": "21 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "90.00 PLN",
-            "deadline": "20261030",
-            "description": "2026.09.15 - 2026.10.30 21 km 90.00 PLN"
-          },
-          {
-            "label": "tier_2",
-            "price": "100.00 PLN",
-            "deadline": "20261201",
-            "description": "2026.10.31 - 2026.12.01 21 km 100.00 PLN"
-          }
-        ],
-        "late_fee": {
-          "price": "140.00 PLN",
-          "deadline": "20261205"
-        }
-      },
-      {
-        "distance": "10 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "80.00 PLN",
-            "deadline": "20261030",
-            "description": "2026.09.15 - 2026.10.30 10 km 80.00 PLN"
-          },
-          {
-            "label": "tier_2",
-            "price": "90.00 PLN",
-            "deadline": "20261201",
-            "description": "2026.10.31 - 2026.12.01 10 km 90.00 PLN"
-          }
-        ],
-        "late_fee": {
-          "price": "130.00 PLN",
-          "deadline": "20261205"
-        }
-      }
-    ],
+    "price_range": "80-140 zł",
+    "price_tiers": [],
     "registration_close_date": "20261201",
-    "registration_url": "https://elektronicznezapisy.pl/event/16078/event/16078/signup.html",
-    "race_info_url": "https://elektronicznezapisy.pl/event/16078/event/16078.html",
+    "registration_url": null,
+    "race_info_url": "https://mikolajki.eu/kalendarz/481/biegi-mikolajkowe-polmaraton",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "The 12th Mikołajki St. Nicholas Half Marathon is an annual running event taking place on 5 December 2026. Participants can compete over 21 km and 10 km, as well as in children’s and youth races. The event starts and race-pack pickup take place in the morning. After the races, trophies, prizes, and certificates are presented in a formal ceremony. The participant limit is 450, ensuring an intimate atmosphere.",
+    "description": "The 12th St Nicholas Half Marathon takes place in Mikołajki on 5 December 2026 together with the 20th St Nicholas Street Runs. Runners can choose the 21 km half marathon or the 10 km Mikołajkowa Dyszka, and children's and youth races are held in the morning. The half marathon and 10 km start at 11:45. The field is limited to 450 registered runners.",
     "course_highlights": [
-      "21 km and 10 km routes through the streets of Mikołajki",
-      "Children’s and youth races with a separate schedule",
-      "Participant limit of 450"
+      "21 km half marathon and 10 km race",
+      "Children's and youth races before the main races",
+      "Free entry for over-70s and residents of Mikołajki municipality"
     ],
-    "additional": "Registration and race-pack pickup take place from 8:00 to 11:00. The children’s and youth races start at 10:30, with results and prize-giving immediately afterwards. Results and awards for the 10 km and half marathon take place at 14:15. Participation is free for people over 70, people with disabilities, and residents of the Mikołajki Municipality in both distances. The event is scheduled to start at 11:45. Online registration runs from 16 September to 1 December 2026; payment on the day is also available. The limit is 450 runners.",
+    "additional": "Children's registration and bib pickup run from 8:00 to 11:00, and the children's races start at 10:30. The 10 km and half marathon prize giving is at 14:15. Online registration runs until 1 December 2026, and payment on site is also possible. Runners aged 60-69 and people with disabilities pay half price.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.91,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90229&bieganie"
     ],
@@ -1468,8 +1495,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Lasnamäe Kergejõustikuhall, Tallinn, Eesti",
+    "start_time": "11:00",
+    "location": "Lasnamäe Kergejõustikuhall, Tallinn",
     "latitude": 59.4361405,
     "longitude": 24.8390584,
     "county": "Harju maakond",
@@ -1477,35 +1504,36 @@
     "nearby_cities": [
       "Tallinna"
     ],
-    "distances": "[\"3\", \"0.8\", \"0.2\"]",
+    "distances": "[\"3\", \"0.8\", \"0.2\", \"0.06\"]",
     "distance_m": [
       3000,
       800,
-      200
+      200,
+      60
     ],
     "distance_keywords": [
       "3000 meetrit"
     ],
-    "distance_verbose": "3000 meetrit, 0.8 km, 0.2 km",
-    "organizer": "Eesti Kergejõustikuveteranide Assotsiatsioon",
+    "distance_verbose": "3000 meetrit, 0.8 km, 0.2 km, 0.06 km",
+    "organizer": null,
     "contact": null,
-    "website": "https://omegakiirus.ee/",
-    "fb_link": "https://www.facebook.com/p/Omega-kiirus-100087858475761/?locale=et_EE",
+    "website": "https://www.omegakiirus.ee/",
+    "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "5-40 €",
     "price_tiers": [],
     "registration_close_date": "20261201",
     "registration_url": null,
-    "race_info_url": "https://omegakiirus.ee/",
+    "race_info_url": "https://www.omegakiirus.ee/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Omega kiirus on siseruumides toimuv sprint- ja keskmise distantsi võistlus, mis ühendab erinevas vanuses osalejad põnevas põlvkondade vastasseisus. Võistlus toimub Lasnamäe Kergejõustikuhallis Tallinnas ning pakub dünaamilist ja kaasahaaravat kogemust kõigile vanusegruppidele. Registreerimine on avatud kuni 1. detsembrini 2026.",
+    "description": "Omega kiirus on sisejooksuvõistlus Tallinnas Lasnamäe kergejõustikuhallis, kus noored ja veteranid (35+) võistlevad ühes lõpuprotokollis. Vanemate sportlaste tulemusi korrigeeritakse vanusekoefitsientidega, nii et eri vanuses jooksjad saavad omavahel võistelda. Distantsid on 60 m, 200 m, 800 m ja 3000 m, lisaks 4x200 m segateatejooks ja 200 m alla 14-aastastele lastele. Igal alal autasustatakse kolme paremat rahaauhinnaga.",
     "course_highlights": [
-      "Siseruumides toimuv sprint- ja keskmise distantsi võistlus",
-      "Vanusepõhine põlvkondade vastasseis",
-      "Toimumiskoht Lasnamäe Kergejõustikuhall Tallinnas"
+      "Sprindi- ja keskmaadistantsid siseareenil",
+      "Veteranide tulemused vanusekoefitsiendiga ühes protokollis",
+      "4x200 m segateade, võistkonna liikmete vanus kokku vähemalt 170 aastat"
     ],
-    "additional": null,
+    "additional": "Võistlus toimub 6. detsembril 2026 kell 11.00-16.00, programm algab lastejooksudega. Osalustasu on 15 eurot esimese ala eest ja 10 eurot iga järgmise eest, teatevõistkond 40 eurot, lapsed 5 eurot ja 70+ sportlased tasuta. Registreerimine on avatud kuni 1. detsembrini 2026, võistluspäeval saab registreerida ainult teatevõistkondi. Ajavõtt on automaatne fotofinišiga.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
@@ -4852,107 +4880,6 @@
     ]
   },
   {
-    "domain_name": "elcka_zmarzlina",
-    "name": "Ełcka Zmarzlina",
-    "type": "other",
-    "type_local": "Inne",
-    "race_dates": [
-      [
-        "20260103",
-        "20260103"
-      ],
-      [
-        "20270102",
-        "20270102"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": "08:00",
-    "location": "Ełk, Warmian-Masurian Voivodeship, Poland",
-    "latitude": 53.8280529,
-    "longitude": 22.3646629,
-    "county": "Warmińsko-Mazurskie",
-    "nearest_city": "Ełk",
-    "nearby_cities": [
-      "Ełk",
-      "Suwałki"
-    ],
-    "distances": "[\"50\", \"25\"]",
-    "distance_m": [
-      50000,
-      25000
-    ],
-    "distance_keywords": [
-      "50 km"
-    ],
-    "distance_verbose": "50 km, 25 km",
-    "organizer": "MOSiR Ełk",
-    "contact": null,
-    "website": "https://mosir.elk.pl/imprezy/elcka-zmarzlina-2027-2/",
-    "fb_link": "https://www.facebook.com/mosirelk/posts/nasza-chluba-i-dumae%C5%82cka-zmarzlina-edycja-20263-stycznia-2026-mo%C5%BCna-pokona%C4%87-z-ma/1389747143151259/",
-    "ig_link": null,
-    "price_range": "90–150 zł",
-    "price_tiers": [
-      {
-        "distance": "TP 50 km, TP 25 km",
-        "tiers": [
-          {
-            "label": "tier_2",
-            "price": "120 zł",
-            "deadline": "20261211",
-            "description": "W terminie do 11 grudnia 2026 r., dla dystansu TP 50 km, TP 25 km – 120 zł"
-          },
-          {
-            "label": "tier_3",
-            "price": "150 zł",
-            "deadline": "20270109",
-            "description": "W terminie do 9 stycznia 2027 r., dla dystansu TP 50 km, TP 25 km – 150 zł"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20270109",
-    "registration_url": "https://competitions.timekeeper.pl/elcki-maraton-pieszy-na-orientacje-elcka-zmarzlina-2027",
-    "race_info_url": "https://mosir.elk.pl/imprezy/elcka-zmarzlina-2027-2/",
-    "presumed_organizer_email": "mosir@mosir.elk.pl",
-    "website_emails_found": [
-      "mosir@mosir.elk.pl",
-      "info@turystyka.elk.pl"
-    ],
-    "description": "Ełcka Zmarzlina 2027 is a walking orienteering marathon held in Ełk, offering two routes of 50 km and 25 km. The event takes place on January 9, 2027, and is funded from the budget of the City of Ełk. Participants can expect professional organization, registration at the marathon office, and a celebratory closing with a feast. It is a unique opportunity to spend an active winter day on routes of varying difficulty.",
-    "course_highlights": [
-      "50 km walking orienteering route",
-      "Alternative 25 km route",
-      "Time limits: 12 hours for 50 km and 9 hours for 25 km"
-    ],
-    "additional": "Participant registration takes place on January 8, 2027, from 16:00 to 20:00, and on January 9 from 6:00 to 9:30 at the race office. The time limit is 12 hours for the 50 km route and 9 hours for the 25 km route. A celebratory closing and a feast for participants are planned for 21:00 after the event. Registration is conducted through Timekeeper. According to the 2027 event page, TP 50 km starts at 08:00, and TP 25 km at 10:00. The event is funded from the budget of the City of Ełk, and KOMA EŁK is a partner.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.89,
-    "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87393&bieganie"
-    ],
-    "consolidated_ids": [
-      "74e57dc9-1b93-4e78-88db-5528c121ee2b"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "pl",
-    "nearby_foreign_cities": [
-      "Kuressaare",
-      "Valga"
-    ]
-  },
-  {
     "domain_name": "lbt_kedainiai",
     "name": "LBT Kėdainiai",
     "type": "track",
@@ -6360,19 +6287,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
+      "description",
+      "longitude",
       "organizer",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
-      "price_range",
-      "name",
-      "description",
-      "type",
-      "race_dates",
       "location",
-      "distances"
+      "name",
+      "type",
+      "price_range",
+      "distances",
+      "website",
+      "race_dates"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -6405,11 +6332,15 @@
       [
         "20270123",
         "20270123"
+      ],
+      [
+        "20270206",
+        "20270206"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
+    "date_status": "confirmed",
+    "estimated_dates": false,
     "start_time": null,
     "location": "Gdynia, Poland",
     "latitude": 54.518352,
@@ -6456,7 +6387,8 @@
     "is_series": false,
     "max_description_relevance": 0.57,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87034&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87034&bieganie",
+      "https://kalendarzbiegowy.pl/biegi/botaniczna-piatka-gdynia-edycja-zimowa/"
     ],
     "consolidated_ids": [
       "04330a0f-aec3-4839-89e3-6d431d460cf8"
@@ -15617,8 +15549,9 @@
     "is_series": false,
     "max_description_relevance": 0.86,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90549&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=85044&bieganie"
+      "https://kalendarzbiegowy.pl/biegi/energa-gdansk-maraton-2027/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=85044&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90549&bieganie"
     ],
     "consolidated_ids": [
       "6ec873b0-23e9-445f-a4ab-3e397d9e7c1a"
@@ -17384,8 +17317,9 @@
     "max_description_relevance": 0.87,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=85045&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90564",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90564&bieganie"
+      "https://kalendarzbiegowy.pl/biegi/gdynia-polmaraton-2/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90564&bieganie",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=90564"
     ],
     "consolidated_ids": [
       "dbfb64e9-ff74-478a-83cc-1e5146c784bd"
@@ -23754,7 +23688,7 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Lidzbark Warmiński, Poland",
+    "location": "Lidzbark Warmiński",
     "latitude": 54.1249116,
     "longitude": 20.5859507,
     "county": "Warmińsko-Mazurskie",
@@ -23770,30 +23704,31 @@
       "Półmaraton"
     ],
     "distance_verbose": "Półmaraton",
-    "organizer": null,
+    "organizer": "Stowarzyszenie Polskie Miasta Cittaslow, Gmina Miejska Górowo Iławeckie, Gmina Miejska Lidzbark Warmiński",
     "contact": null,
-    "website": "http://www.osir.lidzbarkw.pl",
+    "website": "https://osir.lidzbarkw.pl/polmaraton-slimaka-2026/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "http://www.osir.lidzbarkw.pl",
-    "presumed_organizer_email": "osir@lidzbarkwarminski.pl",
-    "website_emails_found": [
-      "osir@lidzbarkwarminski.pl",
-      "osirlwarm@gmail.com"
+    "race_info_url": "https://osir.lidzbarkw.pl/polmaraton-slimaka-2026/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Półmaraton Ślimaka is a half marathon on a certified point-to-point course from Górowo Iławeckie to Lidzbark Warmiński. It is part of the Lidzbark Warmiński Running Festival, which also includes the 5 km Night Run with Copernicus the day before and children's runs in Górowo Iławeckie. The organisers are the Polish Cittaslow Towns Association and the town municipalities of Górowo Iławeckie and Lidzbark Warmiński. The organiser provides bus transport to the start and a bag drop that is carried to the finish.",
+    "course_highlights": [
+      "Certified half marathon course from Górowo Iławeckie to Lidzbark Warmiński",
+      "Part of the Lidzbark Warmiński Running Festival",
+      "Transport to the start and bag drop delivered to the finish"
     ],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "additional": "In 2026 the half marathon started on 10 May at 13:00. The date of the 2027 edition has not been announced yet.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=86760&bieganie"
     ],
@@ -29087,8 +29022,8 @@
   {
     "domain_name": "botaniczna_piatka_gdynia_edycja_wiosenna_2026",
     "name": "Botaniczna Piątka Gdynia – edycja wiosenna 2026",
-    "type": "trail",
-    "type_local": "Bieg trailowy",
+    "type": "terrain",
+    "type_local": "Bieg terenowy",
     "race_dates": [
       [
         "20260523",
@@ -29103,7 +29038,7 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": "10:00",
-    "location": "Leśny Ogród Botaniczny Marszewo, Gdynia, Poland",
+    "location": "Leśny Ogród Botaniczny Marszewo, ul. Marszewska 5, Gdynia",
     "latitude": 54.51988619999999,
     "longitude": 18.4163744,
     "county": "Pomorskie",
@@ -29122,31 +29057,29 @@
     "distance_verbose": "5 km",
     "organizer": null,
     "contact": null,
-    "website": "https://botaniczna5.pl/wydarzenia/",
+    "website": "https://botaniczna5.pl/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://botaniczna5.pl/events/botaniczna-piatka-gdynia-edycja-wiosenna-2026/",
-    "presumed_organizer_email": "botanicznapiatka@gmail.com",
-    "website_emails_found": [
-      "botanicznapiatka@gmail.com"
-    ],
-    "description": "Botaniczna Piątka Gdynia - Spring 2026 edition is a cross-country race held in the picturesque Marszewo Forest Botanical Garden in Gdynia. The event is part of the Botaniczna Piątka race series, which has been promoting running and the beauty of natural routes in Poland since 2014. The race attracts running enthusiasts who value being close to nature and the beauty of their surroundings. It’s a great opportunity to spend time outdoors among greenery and enjoy a unique atmosphere.",
+    "race_info_url": "https://botaniczna5.pl/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Botaniczna Piątka Gdynia is a 5 km run and walk in the Marszewo Forest Botanical Garden in Gdynia, part of the nationwide Botaniczna Piątka series. The 2026 spring edition took place on 23 May at 10:00 at ul. Marszewska 5. The series is run by a group of runners who have organised mainly cross-country events since 2014. The edition also included children's runs.",
     "course_highlights": [
-      "Cross-country route in the Marszewo Forest Botanical Garden",
-      "Picturesque natural surroundings and scenic beauty",
-      "Spring race as part of the Botaniczna Piątka series"
+      "5 km course in the Marszewo Forest Botanical Garden",
+      "Part of a series of races in botanical gardens",
+      "Children's runs over shorter distances"
     ],
-    "additional": "The race takes place between 10:00 and 14:00. The organizers are a group of running enthusiasts who focus on cross-country races and the scenic appeal of the locations. The event is part of a race series held in various cities across Poland during the spring season.",
+    "additional": "The 2027 spring date in Gdynia has not yet been announced on the organiser's site.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87778&bieganie"
     ],
@@ -32204,8 +32137,8 @@
   {
     "domain_name": "rungdn_hevelianum",
     "name": "RUNGDN Hevelianum",
-    "type": "road",
-    "type_local": "Bieg uliczny",
+    "type": "terrain",
+    "type_local": "Bieg terenowy",
     "race_dates": [
       [
         "20260530",
@@ -32219,8 +32152,8 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Hevelianum, Gdańsk, Poland",
+    "start_time": "11:00",
+    "location": "Hevelianum, Góra Gradowa, Gdańsk",
     "latitude": 54.3565426,
     "longitude": 18.6389617,
     "county": "Pomorskie",
@@ -32233,27 +32166,31 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Mieszana odległość",
-    "organizer": null,
+    "organizer": "Gdański Ośrodek Sportu",
     "contact": null,
-    "website": null,
+    "website": "https://sportgdansk.pl/biegowy-kalendarz-gos-na-rok-20206/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://sportgdansk.pl/biegowy-kalendarz-gos-na-rok-20206/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "#RUNGDN Hevelianum is a run on Gradowa Hill in Gdańsk, around the Hevelianum Centre, organised by Gdańsk Sports Centre (GOS). It is the final event of the spring #RUNGDN series, where the best three of four results count. Besides the main run there is a nordic walking race and children's runs. The best athletes of the whole series are honoured at the end. In 2026 the start was on 30 May at 11:00.",
+    "course_highlights": [
+      "Hilly course on Gradowa Hill around the Hevelianum Centre",
+      "Sections over stones and cobbles",
+      "Finale of the #RUNGDN series with overall standings"
+    ],
+    "additional": "The race office opens one hour before the start. The date of the 2027 edition has not been announced yet.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88889&bieganie"
     ],
@@ -36262,6 +36199,87 @@
     ]
   },
   {
+    "domain_name": "coconaut_pomerania_summer_trail",
+    "name": "Coconaut Pomerania Summer Trail",
+    "type": "trail",
+    "type_local": "Bieg trailowy",
+    "race_dates": [
+      [
+        "20260613",
+        "20260613"
+      ],
+      [
+        "20270606",
+        "20270606"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Gniewino",
+    "latitude": 54.7169505,
+    "longitude": 18.0167672,
+    "county": "Pomorskie",
+    "nearest_city": "Gdynia",
+    "nearby_cities": [
+      "Gdynia"
+    ],
+    "distances": "[\"55\", \"42\", \"25\", \"10\"]",
+    "distance_m": [
+      55000,
+      42000,
+      25000,
+      10000
+    ],
+    "distance_keywords": [
+      "50 km",
+      "Maraton",
+      "10 km"
+    ],
+    "distance_verbose": "55 km, Maraton, 25 km, 10 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://summer.pomeraniatrail.pl/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://summer.pomeraniatrail.pl/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Pomerania Summer Trail is a summer trail running event in the Pomerania Trail series, held on hilly and technical trails in Kashubia. It has four distances from 55 km down to 10 km plus a Junior Trail for young runners. The race is part of the Pomerania Trail 2027 Ultra Kaszub series.",
+    "course_highlights": [
+      "Four distances: 55, 42, 25 and 10 km",
+      "Hilly and technical Pomeranian trails",
+      "Junior Trail for young runners"
+    ],
+    "additional": "Rules in Polish and English, the courses and results are published on the race website.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://kalendarzbiegowy.pl/biegi/coconaut-pomerania-summer-trail/"
+    ],
+    "consolidated_ids": [
+      "a5ae34e9-bd96-4cdc-9d91-7651b2078b66"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261012",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "pl",
+    "nearby_foreign_cities": [
+      "Kuressaare"
+    ]
+  },
+  {
     "domain_name": "iii_bieg_charytatywny_dookola_jeziora_cz",
     "name": "III Bieg Charytatywny Dookoła Jeziora Cz...",
     "type": "road",
@@ -37804,75 +37822,6 @@
       "Valga",
       "Haapsalu",
       "Jõhvi"
-    ]
-  },
-  {
-    "domain_name": "mazurskie_tropy",
-    "name": "Mazurskie Tropy",
-    "type": "other",
-    "type_local": "Inne",
-    "race_dates": [
-      [
-        "20260613",
-        "20260613"
-      ],
-      [
-        "20270612",
-        "20270612"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "estimated",
-    "estimated_dates": true,
-    "start_time": null,
-    "location": "Orneta, Warmian-Masurian Voivodeship, Poland",
-    "latitude": 54.11537999999999,
-    "longitude": 20.13023,
-    "county": "Warmińsko-Mazurskie",
-    "nearest_city": "Olsztyn",
-    "nearby_cities": [
-      "Olsztyn",
-      "Elbląg"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Mieszana odległość",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=88816&bieganie"
-    ],
-    "consolidated_ids": [
-      "235a420b-54cd-4aba-8613-32bc899e5b42"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "pl",
-    "nearby_foreign_cities": [
-      "Kuressaare"
     ]
   },
   {
@@ -78555,8 +78504,9 @@
     "is_series": false,
     "max_description_relevance": 0.0,
     "sources": [
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87646&bieganie",
-      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91211&bieganie"
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=91211&bieganie",
+      "https://kalendarzbiegowy.pl/biegi/pko-sopot-polmaraton-2027/",
+      "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=87646&bieganie"
     ],
     "consolidated_ids": [
       "8703c0ff-8f67-42c7-868f-70d3d64afee3"
@@ -83763,19 +83713,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
+      "description",
+      "longitude",
       "organizer",
-      "additional",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
-      "name",
-      "description",
-      "type",
-      "race_dates",
       "location",
-      "distances"
+      "name",
+      "type",
+      "distances",
+      "website",
+      "race_dates",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -83843,17 +83793,17 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
+      "description",
+      "longitude",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
-      "name",
-      "description",
-      "type",
-      "race_dates",
       "location",
-      "distances"
+      "name",
+      "type",
+      "distances",
+      "website",
+      "race_dates"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -83985,16 +83935,16 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
+      "description",
+      "longitude",
       "organizer",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
+      "location",
       "name",
-      "description",
       "type",
-      "race_dates",
-      "location"
+      "race_dates"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -84167,19 +84117,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
-      "organizer",
-      "additional",
-      "latitude",
-      "longitude",
-      "contact",
-      "price_range",
-      "name",
       "description",
-      "type",
-      "race_dates",
+      "longitude",
+      "organizer",
+      "latitude",
+      "contact",
       "location",
-      "distances"
+      "name",
+      "type",
+      "price_range",
+      "distances",
+      "website",
+      "race_dates",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.9,
@@ -84276,19 +84226,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
+      "description",
+      "longitude",
       "organizer",
-      "additional",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
-      "price_range",
+      "location",
       "name",
-      "description",
       "type",
+      "price_range",
+      "website",
       "race_dates",
-      "location"
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -84380,19 +84330,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
+      "description",
+      "longitude",
       "organizer",
-      "additional",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
-      "price_range",
+      "location",
       "name",
-      "description",
       "type",
+      "price_range",
+      "website",
       "race_dates",
-      "location"
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -84499,17 +84449,17 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
+      "description",
+      "longitude",
       "organizer",
       "latitude",
-      "longitude",
       "contact",
-      "name",
-      "description",
-      "type",
-      "race_dates",
       "location",
-      "distances"
+      "name",
+      "type",
+      "distances",
+      "website",
+      "race_dates"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -84584,18 +84534,18 @@
     "supplied_images": false,
     "organizer_submitted": true,
     "supplied_fields": [
+      "description",
+      "longitude",
       "organizer",
-      "additional",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
-      "name",
-      "description",
-      "type",
-      "race_dates",
       "location",
-      "distances"
+      "name",
+      "type",
+      "distances",
+      "race_dates",
+      "additional"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -84830,19 +84780,19 @@
     "supplied_images": true,
     "organizer_submitted": true,
     "supplied_fields": [
-      "website",
+      "description",
+      "longitude",
       "organizer",
       "start_time",
       "latitude",
-      "longitude",
       "contact",
-      "price_range",
-      "name",
-      "description",
-      "type",
-      "race_dates",
       "location",
-      "distances"
+      "name",
+      "type",
+      "price_range",
+      "distances",
+      "website",
+      "race_dates"
     ],
     "is_series": false,
     "max_description_relevance": 0.0,
@@ -104397,7 +104347,6 @@
     "is_series": false,
     "max_description_relevance": 0.77,
     "sources": [
-      "https://kalendarzbiegowy.pl/biegi/botaniczna-piatka-gdynia-edycja-jesienna-2/",
       "https://www.maratonypolskie.pl/mp_index.php?dzial=3&action=5&code=89751&bieganie"
     ],
     "consolidated_ids": [
