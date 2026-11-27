@@ -3927,6 +3927,18 @@
       "market": "no"
     },
     {
+      "source": "/lopssider/hodelyktlopet_ostmarka/:path*",
+      "destination": "/lopssider/hodelyktlopet_i_ostmarka/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
+      "source": "/en/race-pages/hodelyktlopet_ostmarka/:path*",
+      "destination": "/en/race-pages/hodelyktlopet_i_ostmarka/:path*",
+      "permanent": true,
+      "market": "no"
+    },
+    {
       "source": "/lopssider/hoka_solastranden_halvmaraton_sola/:path*",
       "destination": "/lopssider/hoka_solastranden_halvmaraton/:path*",
       "permanent": true,
