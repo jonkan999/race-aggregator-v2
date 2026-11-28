@@ -221,8 +221,8 @@
   {
     "domain_name": "beh_na_tabor",
     "name": "Beh na Tábor",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261128",
@@ -232,7 +232,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "15:30",
     "location": "Kysucké Nové Mesto, Žilinský kraj, Slovensko",
     "latitude": 49.3006944,
     "longitude": 18.7842827,
@@ -241,37 +241,69 @@
     "nearby_cities": [
       "Žilina"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\"]",
     "distance_m": [
-      10000,
-      5000
+      10000
     ],
     "distance_keywords": [
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km",
+    "organizer": "Bajk Relax Kysuce o.z.",
     "contact": null,
-    "website": null,
+    "website": "https://beh.neslusskymchotarom.sk/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "3–17 €",
+    "price_tiers": [
+      {
+        "distance": "Beh na Tábor",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12 eur",
+            "deadline": "20261125",
+            "description": "12 eur online do 25.11 2026 pripísané na účte číslo SK73 8330 0000 0024 0194 8766 ( do správy pre prijímateľa – celé meno a rok narodenia). Prihláseným sa účastník stáva až po uhradení štartovného ."
+          },
+          {
+            "label": "tier_2",
+            "price": "3 eurá",
+            "deadline": "20261125",
+            "description": "3 eurá ú častník preteku mladší ako 18 rokov."
+          },
+          {
+            "label": "tier_3",
+            "price": "5 eur",
+            "deadline": "20261125",
+            "description": "5 eur nordic walking (bez kategórií a ocenení)"
+          }
+        ],
+        "late_fee": {
+          "price": "17 eur",
+          "deadline": "20261128"
+        }
+      }
+    ],
+    "registration_close_date": "20261128",
+    "registration_url": "https://beh.neslusskymchotarom.sk/propozicie/",
+    "race_info_url": "https://beh.neslusskymchotarom.sk/propozicie/",
+    "presumed_organizer_email": "beh.jakubovsky@gmail.com",
+    "website_emails_found": [
+      "beh.jakubovsky@gmail.com"
+    ],
+    "description": "Beh na Tábor je bežecká akcia určená pre športových nadšencov a ľudí s aktívnym životným štýlom, ktorá vedie na vrch Tábor v Kysuckom Novom Meste. Trať vedie po asfaltovej, štrkovitej a lesnej ceste, pričom ponúka krásne prírodné prostredie a výhľady. Podujatie je vhodné pre rôzne vekové kategórie a zahŕňa aj nordic walking. Organizátori zabezpečujú občerstvenie, zdravotnú starostlivosť a ďalšie služby pre pohodlie bežcov.",
+    "course_highlights": [
+      "Trať vedie po asfalte, šutolinovej ceste a lesnej ceste na záver",
+      "Štart na vrch Tábor s návratom späť po zelenej turistickej značke",
+      "Trasa späť má dĺžku 2,2 km a trvá približne 15 minút"
+    ],
+    "additional": "Registrácia a prezentácia prebieha online a na mieste v deň preteku od 15:00 do 16:10 v areáli Svet dverí. Po poučení pretekárov o 16:20 nasleduje presun na štart cca 500 metrov od zázemia. Po skončení preteku je zabezpečený vývoz vecí do cieľa, tombola a suvenír. Povinná výbava je čelovka alebo baterka. Za posledným pretekárom ide auto s horskou službou a na trati sú regulovčíci. Vyhodnotenie prebehne približne o 19:00 v zázemí podujatia. Čelovka alebo baterka je povinnou výbavou. Kapacita je obmedzená na 150 účastníkov. Štartovné zahŕňa kapustnicu, nápoj, šatne, úschovňu batožiny, zdravotné zabezpečenie a suvenír.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.bezeckypretek.sk/beh-na-tabor-kysucke-nove-mesto-2026/"
     ],
@@ -289,8 +321,8 @@
   {
     "domain_name": "paradny_nocny_beh_humenne_zima",
     "name": "Parádny nočný beh Humenné - zima",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261128",
@@ -300,8 +332,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Humenné, Prešovský kraj, Slovensko",
+    "start_time": "16:30",
+    "location": "Južné námestie, Humenné, Slovensko",
     "latitude": 48.932454,
     "longitude": 21.9078917,
     "county": "Region of Prešov",
@@ -320,27 +352,83 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km, 4 km",
-    "organizer": null,
+    "organizer": "Rádio Paráda",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://racetime.sk/registracie/140",
+    "fb_link": "https://www.facebook.com/mestohumennemsu/posts/od%C5%A1tartovan%C3%A1-registr%C3%A1cia-pr%C3%ADpravy-na-par%C3%A1dny-no%C4%8Dn%C3%BD-beh-humenn%C3%A9-2026-500-zima-poz/1480579894100367/",
+    "ig_link": "https://www.instagram.com/p/DgPxzJ9tqoR/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Beh a Nordic walking",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "13 €",
+            "deadline": null,
+            "description": "13 € do prvých 100 potvrdených platieb"
+          },
+          {
+            "label": "tier_2",
+            "price": "18 €",
+            "deadline": null,
+            "description": "18 € potom"
+          }
+        ],
+        "late_fee": {
+          "price": "23 €",
+          "deadline": "20261128"
+        }
+      },
+      {
+        "distance": "Deti",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "8 €",
+            "deadline": "20261128",
+            "description": "deti 8 €"
+          }
+        ],
+        "late_fee": {
+          "price": "8 €",
+          "deadline": "20261128"
+        }
+      },
+      {
+        "distance": "Štafeta MIX",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": null,
+            "description": "10 € za člena"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261128",
+    "registration_url": "https://racetime.sk/reg/paradny-nocny-beh-zima-2026",
+    "race_info_url": "https://racetime.sk/preteky/paradny-nocny-beh-zima-2026#plagat",
+    "presumed_organizer_email": "obchod@radioparada.sk",
+    "website_emails_found": [
+      "info@racetime.sk",
+      "obchod@radioparada.sk"
+    ],
+    "description": "Parádny nočný beh Humenné - zima 2026 je štvrtý ročník nočného bežeckého podujatia, ktoré sa uskutoční 28. novembra 2026 na Južnom námestí pred CVČ v Humennom. Organizuje ho Rádio Paráda s podporou mesta Humenné a miestnych sponzorov. Pretekári môžu súťažiť na tratiach 5 km a 4 km, pričom sú pripravené kategórie pre rôzne vekové skupiny vrátane detí a štafiet MIX. Každý účastník s uhradeným štartovným získa medailu, štartové číslo s čipom, fotografie, video, občerstvenie a balíček pretekára. Podujatie ponúka tri fázy štartu hlavného behu a zabezpečuje šatne a WC pre komfort bežcov.",
+    "course_highlights": [
+      "Nočný beh na tratiach 5 km a 4 km v centre Humenného",
+      "Tri fázy štartu hlavného behu s vlnami o 16:30, 17:15 a 18:00",
+      "Štafeta MIX s trojčlennými zmiešanými tímami"
+    ],
+    "additional": "Štartovné sa platí iba na mieste pri prezentácii od 14:00. Beh 5 km štartuje v troch vlnách: čísla 1 - 100 o 16:30, 101 - 200 o 17:15, od 201 o 18:00. Čísla sa prideľujú podľa potvrdenia úhrady; skoršia platba znamená skoršiu vlnu. Nordic walking štartuje o 17:30, deti o 15:00, štafety MIX o 18:45. Každý online prihlásený účastník s uhradeným štartovným má garantovanú medailu, štartové číslo s čipom, fotografie a video, občerstvenie/večeru v cieli a balíček pretekára. K dispozícii sú šatne a WC. Pretekári mladší ako 18 rokov potrebujú písomný súhlas zákonného zástupcu. Súčasťou popoludnia je aj možnosť stretnúť hráčov FK Humenné, odfotiť sa s nimi alebo získať ich podpis.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.bezeckypretek.sk/paradny-nocny-beh-humenne-2026/"
     ],
@@ -378,37 +466,41 @@
     "nearby_cities": [
       "Poprad"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\"]",
     "distance_m": [
-      10000,
-      5000
+      10000
     ],
     "distance_keywords": [
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km",
+    "organizer": "Spartan Race",
     "contact": null,
-    "website": null,
+    "website": "https://sk.spartan.com/sk/race/detail/11367/overview",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://sk.spartan.com/sk/race/find-race",
+    "presumed_organizer_email": "dobrovolnici.sk@spartan-ceu.com",
+    "website_emails_found": [
+      "dobrovolnici.sk@spartan-ceu.com"
+    ],
+    "description": "Telgárt Spartan Trail je klasický trailový beh bez prekážok, ktorý sa koná v krásnom a členitom prostredí Telgártu v Banskobystrickom kraji. Pretekári môžu očakávať náročný terén s prírodnými výzvami, ktoré preveria ich vytrvalosť a rýchlosť. Tento trailový beh je súčasťou série Spartan Trail, ktorá ponúka rôzne vzdialenosti od 10 km až po extrémne dlhé trate. Každý účastník získa finišerský balíček vrátane medaily a trička, ktoré sú symbolom úspešného dokončenia pretekov.",
+    "course_highlights": [
+      "Klasický trailový beh bez umelých prekážok",
+      "Nádherné a členité prírodné prostredie Telgártu",
+      "Výzva pre vytrvalosť a rýchlosť na rôznych vzdialenostiach"
+    ],
+    "additional": "Každý účastník dostane finišerské tričko a medailu. Pretekári môžu využiť možnosť dobrovoľníctva s benefitmi ako voľná vstupenka na preteky, tričko a občerstvenie. Spartan Trail ponúka aj nočné behy a špeciálne balíky pretekov Trailfecta, ktoré motivujú k absolvovaniu viacerých vzdialeností v sezóne. Časový limit na dokončenie trate je 4 hodiny.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.bezeckypretek.sk/telgart-spartan-trail-2026/"
     ],
@@ -500,8 +592,8 @@
   {
     "domain_name": "polancanska_patka",
     "name": "Poľančanska päťka",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261129",
@@ -511,7 +603,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "14:00",
     "location": "Sečovská Polianka, Vranov nad Topľou District, Prešov Region, Slovensko",
     "latitude": 48.78654299999999,
     "longitude": 21.6808551,
@@ -520,37 +612,64 @@
     "nearby_cities": [
       "Michalovce"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"5\"]",
     "distance_m": [
-      10000,
       5000
     ],
     "distance_keywords": [
-      "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "5 km",
+    "organizer": "Bežecký klub ZasRun Šarišské Bohdanovce",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://zasrun.sk/preteky/polancanska-patka-1-rocnik",
+    "fb_link": "https://www.facebook.com/events/se%C4%8Dovsk%C3%A1-polianka/po%C4%BEan%C4%8Danska-p%C3%A4%C5%A5ka/1314331826854303/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "15–20 €",
+    "price_tiers": [
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15€",
+            "deadline": "20261128",
+            "description": "15€ online prihlásení so zaplateným štartovným"
+          },
+          {
+            "label": "tier_2",
+            "price": "20€",
+            "deadline": "20261129",
+            "description": "20€ na mieste v deň preteku"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261129",
+    "registration_url": "https://zasrun.sk/helpdesk?sekcia=preteky&pretek=389&adresat=portal",
+    "race_info_url": "https://zasrun.sk/preteky/polancanska-patka-1-rocnik",
+    "presumed_organizer_email": "info@zasrun.sk",
+    "website_emails_found": [
+      "majka.kocisova826@gmail.com",
+      "michal.kociss@gmail.com",
+      "info@zasrun.sk",
+      "helpdesk@zasrun.sk",
+      "jan@example.sk"
+    ],
+    "description": "Poľančanska päťka je bežecký pretek na 5 km, ktorý sa koná v obci Sečovská Polianka. Trať vedie po asfaltovom chodníku cez obec a je hodnotená ako nízko náročná s vytrvalostnou náročnosťou 1 z 5. Pretek je určený pre širokú verejnosť vrátane kategórií podľa veku a pohlavia, pričom ocenení sú najlepší bežci v jednotlivých kategóriách. Organizátori zabezpečujú pitný režim na trati a občerstvenie v cieli, vrátane nápojov, ovocia a guláša. Pretek sa štartuje o 14:00 hod a prebieha podľa pravidiel Slovenského atletického zväzu.",
+    "course_highlights": [
+      "5 km asfaltový chodník cez obec Sečovská Polianka",
+      "Nízka vytrvalostná náročnosť 1/5",
+      "Trať je riadne označená a regulovaná poučenými osobami"
+    ],
+    "additional": "Pretekári musia mať štartové číslo pripnuté na hrudi alebo opasku. Pretekári do 18 rokov štartujú len s písomným súhlasom zákonného zástupcu. Po dobehnutí posledného bežca je vyhlásenie výsledkov približne o 15:00. Organizátor nepreberá zodpovednosť za škody na majetku alebo zdraví súvisiace s účasťou na podujatí. Účastníci sú povinní mať individuálne zdravotné poistenie. Prezentácia a výdaj štartových balíčkov prebiehajú v kultúrnom dome; k dispozícii sú šatne, úschovňa a toalety. Na trati je zabezpečený pitný režim a v cieli občerstvenie. Počet účastníkov je limitovaný na 120 a časový limit na dokončenie trate je 1 hodina.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.bezeckypretek.sk/polancanska-patka-secovska-polianka-2026/"
     ],
@@ -568,8 +687,8 @@
   {
     "domain_name": "zimna_bezecka_seria_2_kolo",
     "name": "Zimná bežecká séria 2. kolo",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261202",
@@ -597,27 +716,40 @@
       "5 km"
     ],
     "distance_verbose": "7 km, 5 km",
-    "organizer": null,
+    "organizer": "Sport club 1896 Štrbské pleso",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.tatry.sk/zimna-bezecka-seria-2-kolo-nova-polianka/",
+    "fb_link": "https://www.facebook.com/RegionVysokeTatry/posts/%EF%B8%8F-zimn%C3%A1-be%C5%BEeck%C3%A1-s%C3%A9ria-prich%C3%A1dza-s-novinkou-2-kolo-v%C3%A1s-zavedie-na-popradsk%C3%A9-pleso/1574806728021332/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.pretekaj.sk",
+    "race_info_url": "https://www.tatry.sk/zimna-bezecka-seria-2-kolo-nova-polianka/",
+    "presumed_organizer_email": "vtatry@hzs.sk",
+    "website_emails_found": [
+      "operacne@hzs.sk",
+      "vtatry@hzs.sk",
+      "miroslav.kolodzej@vysoketatry.sk",
+      "info@vt.sk",
+      "strbske@vt.sk",
+      "info@gopass.sk",
+      "info@slovakrail.sk",
+      "hovorca@zsr.sk"
+    ],
+    "description": "Zimná bežecká séria - 2. kolo v Nová Polianka je zimný bežecký pretek organizovaný v areáli hotela Granit. Registrácia prebieha výlučne online a štartovné listiny sa uzatvárajú najneskôr v deň pretekov o 8:00. Podujatie je podporované Ministerstvom cestovného ruchu a športu Slovenskej republiky a ponúka športovcom možnosť zažiť beh v krásnom zimnom prostredí Vysokých Tatier.",
+    "course_highlights": [
+      "Pretek sa koná v areáli klimatických kúpeľov hotela Granit v Nová Polianka",
+      "Zimné bežecké trate vhodné pre rôzne úrovne bežcov",
+      "Podpora a organizácia pod záštitou Ministerstva cestovného ruchu a športu SR"
+    ],
+    "additional": "Registrácia na mieste nie je možná. Pokyny pre účastníkov budú zverejnené v týždni pred podujatím. K dispozícii je situačná mapka a foto príjazdu k hotelu Granit a areálu klimatických kúpeľov. Registrácia prebieha výlučne online cez pretekaj.sk; registrácia na mieste nie je možná.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://beh.sk/pretek/zimna-bezecka-seria-2-kolo-7/"
     ],
@@ -672,27 +804,34 @@
       "3000 meter"
     ],
     "distance_verbose": "22 km, 15 km, 12 km, 10 km, 5 km, 3000 meter, 1 km",
-    "organizer": null,
+    "organizer": "AK Družstevná Run Team o. z. v spolupráci s obcou Družstevná pri Hornáde a Základnou školou Družstevná pri Hornáde",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://pretekaj.sk/mikulasskekilometrenadeje",
+    "fb_link": "https://www.facebook.com/61555839093090/posts/-mikul%C3%A1%C5%A1ske-kilometre-n%C3%A1deje-pre-kl%C3%A1rku-4-december-2026-dru%C5%BEstevn%C3%A1-pri-horn%C3%A1demi/122339225048194636/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://pretekaj.sk/sk/podujatia/mikulasskekilometrenadeje/registration",
+    "race_info_url": "https://pretekaj.sk/sk/podujatia/mikulasskekilometrenadeje",
+    "presumed_organizer_email": "info@pretekaj.sk",
+    "website_emails_found": [
+      "info@pretekaj.sk",
+      "nieco@domena.sk"
+    ],
+    "description": "Mikulášske kilometre nádeje pre Klárku je charitatívny beh organizovaný AK Družstevná Run Team o.z v spolupráci s obcou Družstevná pri Hornáde a Základnou školou Družstevná pri Hornáde. Podujatie spája radosť z pohybu s pomocou, pričom tento rok je venované Klárke, ktorá navštevuje hipoterapiu a potrebuje podporu na jej pokračovanie. Bežci môžu prispieť svojím úsilím na dobrú vec a zároveň si užiť atmosféru Mikulášskeho behu v krásnom prostredí obce Družstevná pri Hornáde.",
+    "course_highlights": [
+      "Hlavná bežecká trať meria 3 km.",
+      "Na výber je aj 3 km Nordic Walking.",
+      "Súčasťou programu sú detské behy na rôznych vzdialenostiach."
+    ],
+    "additional": "Podujatie organizuje AK Družstevná Run Team o.z v spolupráci s obcou a základnou školou. Registrácia prebieha cez stránku pretekaj.sk, kde je potrebné mať vytvorený účet. Bežci môžu využiť vernostné alebo členské karty partnerov na rýchlu registráciu. Súťaže zahŕňajú 3000 m Mikulášsky beh a 3000 m Mikulášsky nordic walking. Prezentácia a prevzatie štartových čísel prebiehajú v telocvični; účastníci dostanú tašku s darčekmi a v cieli účastnícku medailu.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.bezeckypretek.sk/mikulasske-kilometre-druzstevna-pri-hornade-2026/"
     ],
@@ -35150,52 +35289,64 @@
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": "10:00",
-    "location": "Šemša, Košice okolie, Slovensko",
-    "latitude": 48.67481309999999,
-    "longitude": 21.1138898,
+    "location": "Obecný úrad Šemša, Šemša, Košice-okolie District, Slovensko",
+    "latitude": 48.6755682,
+    "longitude": 21.1137961,
     "county": "Region of Košice",
     "nearest_city": "Košice",
     "nearby_cities": [
       "Košice"
     ],
-    "distances": "[\"22\", \"11\", \"5.5\"]",
+    "distances": "[\"22\", \"15\", \"12\", \"11\", \"10\", \"6\", \"5.5\", \"5\", \"3\", \"1\"]",
     "distance_m": [
       22000,
+      15000,
+      12000,
       11000,
-      5500
+      10000,
+      6000,
+      5500,
+      5000,
+      3000,
+      1000
     ],
     "distance_keywords": [
       "Polmaratón",
       "10 km",
-      "5 km"
+      "5 km",
+      "3000 meter"
     ],
-    "distance_verbose": "22 km, 11 km, 5.5 km",
-    "organizer": "občianske združenie Šemša v pohybe",
+    "distance_verbose": "22 km, 15 km, 12 km, 11 km, 10 km, 6 km, 5.5 km, 5 km, 3000 meter, 1 km",
+    "organizer": null,
     "contact": null,
     "website": "https://beh.sk/pretek/lesny-beh-priatelov-semse-9/",
-    "fb_link": "https://www.facebook.com/events/774699382149504/?acontext=%7B%22event_action_history%22%3A%5B%7B%22mechanism%22%3A%22your_upcoming_events_unit%22%2C%22surface%22%3A%22bookmark%22%7D%5D%2C%22ref_notif_type%22%3Anull",
+    "fb_link": null,
     "ig_link": null,
-    "price_range": "12-18 € v závislosti od dĺžky trate a spôsobu registrácie",
+    "price_range": null,
     "price_tiers": [
       {
         "distance": "5,5 a 11 km trať",
         "tiers": [
           {
             "label": "tier_1",
-            "price": "12,-€",
-            "deadline": "20261120",
+            "price": "12 €",
+            "deadline": null,
             "description": "5,5 a 11 km trať 12,-€ online"
           }
         ],
         "late_fee": {
-          "price": "15,-€",
-          "deadline": "20261121"
+          "price": "15 €",
+          "deadline": null
         }
       },
       {
@@ -35203,53 +35354,49 @@
         "tiers": [
           {
             "label": "tier_1",
-            "price": "15,-€",
-            "deadline": "20261120",
+            "price": "15 €",
+            "deadline": null,
             "description": "22 km trať 15,-€ online"
           }
         ],
         "late_fee": {
-          "price": "18,-€",
-          "deadline": "20261121"
+          "price": "18 €",
+          "deadline": null
         }
       }
     ],
-    "registration_close_date": "20261121",
+    "registration_close_date": null,
     "registration_url": null,
     "race_info_url": "https://beh.sk/pretek/lesny-beh-priatelov-semse-9/",
     "presumed_organizer_email": "lesnybeh@gmail.com",
     "website_emails_found": [
       "lesnybeh@gmail.com",
       "logo-beh-with-claim@2x.png",
-      "logo-beh-no-claim@2x.png",
-      "info@beh.sk",
-      "ferenc@beh.sk",
-      "hrcka@beh.sk",
-      "dolejsi@beh.sk"
+      "logo-beh-no-claim@2x.png"
     ],
-    "description": "Lesný beh priateľov Šemše je bežecké podujatie v obci Šemša v okrese Košice okolie, ktoré ponúka tri trate rôznej dĺžky: 22 km, 11 km a 5,5 km. Trať vedie po spevnených lesných cestách, cestičkách, poľných cestách a asfalte, čo vytvára príjemné a rozmanité bežecké prostredie. Preteky sú otvorené pre všetky vekové kategórie bez rozdelenia na vekové skupiny a organizuje ich občianske združenie Šemša v pohybe. Štart je rozdelený na dve vlny, pričom dlhšia trať začína o 10:00 a kratšie trate o 11:00 hodine. Podujatie je vhodné pre bežcov, ktorí hľadajú lesný beh s rôznou náročnosťou a dĺžkou trasy.",
+    "description": "Lesný beh priateľov Šemše je bežecký pretek konajúci sa v malebnom prostredí obce Šemša v okrese Košice okolie. Pretek ponúka tri trate rôznej dĺžky - 5,5 km, 11 km a 22 km, ktoré vedú prevažne po spevnených lesných cestách, poľných cestách a asfalte. Podujatie je vhodné pre všetky vekové kategórie, vrátane detí, a organizuje ho občianske združenie Šemša v pohybe. Štart pretekov je rozdelený podľa dĺžky trate, pričom dlhšia trať začína o 10:00 a kratšie trate o 11:00 hodine.",
     "course_highlights": [
       "Trať vedie po spevnených lesných cestách a cestičkách",
-      "Zahrnuté sú poľné cesty a asfaltové úseky",
-      "Tri dĺžky tratí: 22 km, 11 km a 5,5 km"
+      "Zahrnuté sú aj poľné cesty a asfaltové úseky",
+      "Viacero dĺžok tratí: 5,5 km, 11 km a 22 km"
     ],
-    "additional": "Štart je rozdelený na dve vlny: o 10:00 štartuje 22 km trať, o 11:00 štartujú trate 5,5 km a 11 km. Kategórie sú bez vekových obmedzení, určené pre deti, mužov a ženy. Organizátorom je občianske združenie Šemša v pohybe. Povrch trate je rôznorodý, zahŕňa lesné cesty, poľné cesty a asfalt. Preteky sa konajú na teréne s lesnými cestami, poľnými cestami a asfaltom. Registrácia je možná online alebo na mieste. Súčasťou sú kategórie pre deti, mužov a ženy, s možnosťou výberu medzi krátkymi a dlhými traťami.",
+    "additional": "Štart pretekov je rozdelený podľa dĺžky trate: 22 km trať štartuje o 10:00 hod., kratšie trate 5,5 km a 11 km štartujú o 11:00 hod. Kategórie sú bez vekových obmedzení, vrátane detí. Organizátorom je občianske združenie Šemša v pohybe.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://www.bezeckypretek.sk/lesny-beh-semsa-2026/",
       "https://beh.sk/pretek/lesny-beh-priatelov-semse-11/"
     ],
     "consolidated_ids": [
-      "d06a48f1-81ea-4ef9-b831-fbc550c46561"
+      "9db53d8c-bd13-4e7d-9ef9-79727c5705ab"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260411",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -35258,19 +35405,23 @@
   {
     "domain_name": "beh_na_kysacky_hrad",
     "name": "Beh na Kysacký hrad",
-    "type": "terrain",
-    "type_local": "Terén",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Kysak, Kysak, Slovensko",
+    "location": "Kultúrny dom, Kysak, Slovensko",
     "latitude": 48.8534182,
     "longitude": 21.2210413,
     "county": "Region of Košice",
@@ -35286,68 +35437,45 @@
       "5 km"
     ],
     "distance_verbose": "5 km",
-    "organizer": "Klub orientačného behu Kysak, Obec Kysak",
+    "organizer": null,
     "contact": null,
     "website": "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-7/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "8,00 € - 12,00 €",
-    "price_tiers": [
-      {
-        "distance": "Beh na Kysacký hrad",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "8,00 €",
-            "deadline": "20241118",
-            "description": "8,00 € - dorastenci, dorastenky, juniori, juniorky a pretekári nad 60 rokov, pri prihlásení cez prihlasovací formulár a platbe prevodom do 18.11.2024."
-          },
-          {
-            "label": "tier_2",
-            "price": "12,00 €",
-            "deadline": "20241118",
-            "description": "12.00 € - účastníci preteku Beh na Hrad v kategórii „M - A, B, C a Ž - E, F, G“, pri prihlásení cez prihlasovací formulár a platbe prevodom do 18.11.2024."
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20241118",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
     "registration_url": null,
     "race_info_url": "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-7/",
     "presumed_organizer_email": "obkysak@obkysak.info",
     "website_emails_found": [
       "obkysak@obkysak.info",
       "logo-beh-with-claim@2x.png",
-      "logo-beh-no-claim@2x.png",
-      "info@beh.sk",
-      "ferenc@beh.sk",
-      "hrcka@beh.sk",
-      "dolejsi@beh.sk"
+      "logo-beh-no-claim@2x.png"
     ],
-    "description": "Beh na Kysacký hrad je bežecké podujatie organizované Klubom orientačného behu Kysak a obcou Kysak, ktoré sa koná pri Kultúrnom Dome v Kysaku. Trať vedie prevažne lesnými cestami (85 %) s menším podielom asfaltu (15 %). Pretek je určený pre rôzne vekové kategórie od dorastencov až po veteránov, s rozdelením podľa veku a pohlavia. Štartovné je rozdelené podľa kategórií a platí sa pri registrácii a platbe prevodom do určitého termínu. Podujatie ponúka príjemnú atmosféru a možnosť súťažiť v krásnom prírodnom prostredí.",
+    "description": "Beh na Kysacký hrad je bežecký pretek organizovaný Klubom orientačného behu Kysak a Obcou Kysak. Trať vedie prevažne po lesných cestách s menším podielom asfaltu, čo ponúka kombináciu prírodného prostredia a pevného povrchu. Pretek je určený pre rôzne vekové kategórie od dorastencov až po veteránov, čím podporuje širokú účasť bežcov všetkých úrovní. Štart preteku je pri Kultúrnom Dome v Kysaku, čo je tradičné miesto konania.",
     "course_highlights": [
-      "85 % lesné cesty, 15 % asfalt",
-      "Štart pri Kultúrnom Dome v Kysaku",
-      "Viacero vekových kategórií od dorastencov po veteránov"
+      "85 % trasy vedie po lesných cestách",
+      "15 % trasy je po asfalte",
+      "Pretek pre rôzne vekové kategórie od dorastencov po veteránov"
     ],
-    "additional": "Kategórie sú rozdelené podľa veku a pohlavia: dorastenci, juniori, muži a ženy v rôznych vekových skupinách. Miesto štartu je pri Kultúrnom Dome v Kysaku. Pretek je organizovaný v prostredí historického Kysackého hradu s možnosťou registrácie cez online formulár a platbou bankovým prevodom do 18.11.2024. Súčasťou sú kategórie pre rôzne vekové skupiny a pohlavia.",
+    "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-10/",
       "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-9/"
     ],
     "consolidated_ids": [
-      "3a800854-e063-41eb-b116-e21a7be8b5f8"
+      "1f62e1e9-83bb-4a3f-a2be-a2650b6854aa"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260411",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -35362,13 +35490,17 @@
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Kultúrny dom Slepčany, Slepčany, Slovensko",
+    "location": "Kultúrny dom, Slepčany, Zlaté Moravce District, Slovensko",
     "latitude": 48.3102682,
     "longitude": 18.3376046,
     "county": "Region of Nitra",
@@ -35390,46 +35522,124 @@
       "5 km"
     ],
     "distance_verbose": "20 km, 15 km, 10 km, 7.5 km, 5 km",
-    "organizer": "Obec Slepčany, DHZ Slepčany a o. z. Krajšie Slepčany",
+    "organizer": null,
     "contact": null,
     "website": "https://www.slepcany.sk/slepcianska-15-tka-21-11-2026-oznam/mid/493949/.html",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "15–17 €; detské behy zdarma",
+    "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": "https://www.slepcany.sk/registracia-na-portal.html",
-    "race_info_url": "https://www.slepcany.sk/oznamy/slepcianska-15-tka-21-11-2026.html",
+    "race_info_url": "https://www.slepcany.sk/slepcianska-15tka.html",
     "presumed_organizer_email": "info@slepcany.sk",
     "website_emails_found": [
       "info@slepcany.sk",
       "webyportal@webygroup.sk",
       "starosta@slepcany.sk"
     ],
-    "description": "Slepčianska pätnástka je tradičný bežecký pretek, ktorý sa koná v obci Slepčany. Bežci majú možnosť prebehnúť trasou s dĺžkou 15 kilometrov, ktorá vedie malebným prostredím obce a jej okolia. Podujatie je vhodné pre širokú verejnosť a ponúka príležitosť na športové vyžitie a komunitné stretnutie. Organizátorom je obec Slepčany, ktorá zabezpečuje kvalitný priebeh pretekov a príjemnú atmosféru.",
+    "description": "Slepčianska pätnástka je tradičný bežecký pretek, ktorý sa koná v obci Slepčany v okrese Zlaté Moravce. Bežci majú možnosť zúčastniť sa na 15-kilometrovej trati vedúcej malebnou prírodou a okolo kultúrneho domu v Slepčanoch. Podujatie je vhodné pre širokú verejnosť a ponúka príjemnú atmosféru športového zápolenia v komunitnom prostredí.",
     "course_highlights": [
-      "Trasa dlhá 15 km vedúca okolo obce Slepčany",
-      "Malebné prírodné prostredie a kultúrne okolie",
-      "Tradičný bežecký pretek s komunitnou atmosférou"
+      "Trasa vedie malebnou prírodou okolo obce Slepčany",
+      "Štart a cieľ pred Kultúrnym domom v Slepčanoch",
+      "Dĺžka trate 15 kilometrov"
     ],
-    "additional": "Dospelé behy štartujú o 13:00, detské behy sa začínajú o 12:00. Prezentácia dospelých je v Kultúrnom dome Slepčany. Účastníci dostanú medailu, občerstvenie, pitný režim a ovocie.",
+    "additional": "Štart a cieľ preteku je pred Kultúrnym domom v Slepčanoch. Organizátorom je obec Slepčany, ktorá zabezpečuje aj technickú podporu cez WEBY GROUP s.r.o. Na stránke je dostupná mobilná aplikácia Virtuálne zadarmo pre získavanie aktuálnych informácií.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.91,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://www.terminovka.sk/podujatie/slepcianska-patnastka",
       "https://www.bezeckypretek.sk/slepcianska-patnastka-slepcany-2026/",
       "https://beh.sk/pretek/slepcianska-patnastka-19/"
     ],
     "consolidated_ids": [
-      "c3fce05d-09cf-4e46-b9d2-ad5dc5dff393"
+      "878a636f-2de7-40d5-a6b9-533e1f1ebdff"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20261012",
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "gobala_pol_maraton",
+    "name": "GoBala Pól&Maratón",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Komjatice, Nové Zámky District, Nitra Region, Slovensko",
+    "latitude": 48.1481625,
+    "longitude": 18.1629184,
+    "county": "Region of Nitra",
+    "nearest_city": "Nitra",
+    "nearby_cities": [
+      "Nitra"
+    ],
+    "distances": "[\"42.2\", \"21.1\", \"21\", \"10\", \"5\"]",
+    "distance_m": [
+      42200,
+      21100,
+      21000,
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "Maratón",
+      "Polmaratón",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Maratón, Polmaratón, 10 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/gobala-polmaraton/",
+      "https://www.bezeckypretek.sk/gobala-pol-maraton-komjatice-2026/"
+    ],
+    "consolidated_ids": [
+      "f99f16d3-4542-4d3a-9d92-78b4fb269566"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -35598,80 +35808,6 @@
     ],
     "consolidated_ids": [
       "baef9384-5a20-4297-b9ca-63de5fe5d5ff"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "gobala_pol_maraton",
-    "name": "GoBala Pól&Maratón",
-    "type": "other",
-    "type_local": "Ostatné",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Komjatice, Nové Zámky District, Nitra Region, Slovensko",
-    "latitude": 48.1481625,
-    "longitude": 18.1629184,
-    "county": "Region of Nitra",
-    "nearest_city": "Nitra",
-    "nearby_cities": [
-      "Nitra"
-    ],
-    "distances": "[\"42.2\", \"21.1\", \"21\", \"10\", \"5\"]",
-    "distance_m": [
-      42200,
-      21100,
-      21000,
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "Maratón",
-      "Polmaratón",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Maratón, Polmaratón, 10 km, 5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://beh.sk/pretek/gobala-polmaraton/",
-      "https://www.bezeckypretek.sk/gobala-pol-maraton-komjatice-2026/"
-    ],
-    "consolidated_ids": [
-      "352fed68-9847-424f-b1c6-4874842e0ad2"
     ],
     "supplied_ids": [],
     "supplied_at": null,

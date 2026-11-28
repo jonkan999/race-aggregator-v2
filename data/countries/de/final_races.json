@@ -19665,27 +19665,33 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "organizer": "SVW 06 Ahnatal e. V. – Orgateam der Winterlaufserie",
     "contact": null,
-    "website": null,
+    "website": "https://sportverein-weimar.de/winterlauf-2026-2027/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://sportverein-weimar.de/wp-content/uploads/2021/10/Anmeldung-Internet-2021-1.pdf",
+    "race_info_url": "https://sportverein-weimar.de/winterlauf-2026-2027/#content",
+    "presumed_organizer_email": "Kontakt@sportverein-weimar.de",
+    "website_emails_found": [
+      "Kontakt@sportverein-weimar.de"
+    ],
+    "description": "Die Winterlaufserie des SVW 06 Ahnatal e. V. ist eine traditionsreiche Laufveranstaltung in Nordhessen, die seit über 40 Jahren stattfindet. Sie wird von der Leichtathletikabteilung des Vereins organisiert und bietet Läufern eine Serie von Läufen in der kalten Jahreszeit. Die Serie startet und umfasst mehrere Wertungsläufe, bei denen die Teilnehmer ihre Ausdauer und Lauftechnik auf abwechslungsreichen Strecken unter Beweis stellen können. Die Veranstaltung ist offen für alle Altersgruppen und Leistungsniveaus und fördert den Gemeinschaftssport in der Region.",
+    "course_highlights": [
+      "Traditionelle Winterlaufserie mit über 40 Jahren Geschichte",
+      "Veranstaltet vom SVW 06 Ahnatal e. V. in Nordhessen",
+      "Mehrere Wertungsläufe in der kalten Jahreszeit"
+    ],
+    "additional": "Die Anmeldung erfolgt in der Regel schriftlich und muss vollständig ausgefüllt zum Start mitgebracht werden. Der SVW 06 Ahnatal e. V. bietet eine Vielzahl von Sportangeboten und organisiert die Winterlaufserie seit 2003 über die Leichtathletikabteilung. Vollständig ausgefüllte Anmeldungen sollen zum Start mitgebracht werden.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.46,
     "sources": [
       "https://www.laufen.de/laufkalender/details/51-winterlaufserie-2026-2027-3-wertungslauf"
     ],
@@ -20038,14 +20044,14 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "54538 Bengel, Deutschland",
+    "start_time": "13:00",
+    "location": "Turnhalle, Bengel, Rhineland-Palatinate, Deutschland",
     "latitude": 50.0162747,
     "longitude": 7.0641428,
     "county": "Rheinland-Pfalz",
     "nearest_city": "Trier",
     "nearby_cities": [],
-    "distances": "[\"7.7\", \"7.2\", \"7.15\", \"7\", \"4\", \"3.85\", \"3.8\", \"3.18\"]",
+    "distances": "[\"7.7\", \"7.2\", \"7.15\", \"7\", \"4\", \"3.85\", \"3.8\", \"3.18\", \"0.3\"]",
     "distance_m": [
       7700,
       7200,
@@ -20054,33 +20060,83 @@
       4000,
       3850,
       3800,
-      3180
+      3180,
+      300
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "7.7 km, 7.2 km, 7.15 km, 7 km, 4 km, 3.85 km, 3.8 km, 3.18 km",
-    "organizer": null,
+    "distance_verbose": "7.7 km, 7.2 km, 7.15 km, 7 km, 4 km, 3.85 km, 3.8 km, 3.18 km, 0.3 km",
+    "organizer": "LG Bernkastel-Wittlich",
     "contact": null,
-    "website": null,
+    "website": "https://lg-bernkastel-wittlich.de/crossanmeldung/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "Bambini kostenlos; Kinder und Jugendliche 4 €; Erwachsene 8 €",
+    "price_tiers": [
+      {
+        "distance": "Bambini",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "0 Euro",
+            "deadline": "20270113",
+            "description": "Bambini frei"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "Kinder- und Jugendklassen",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "4,00 Euro",
+            "deadline": "20270113",
+            "description": "Kinder- und Jugendklassen 4,00 Euro"
+          }
+        ],
+        "late_fee": {
+          "price": "6,00 Euro",
+          "deadline": "20270116"
+        }
+      },
+      {
+        "distance": "Erwachsene",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "8,00 Euro",
+            "deadline": "20270113",
+            "description": "Erwachsene 8,00 Euro"
+          }
+        ],
+        "late_fee": {
+          "price": "10,00 Euro",
+          "deadline": "20270116"
+        }
+      }
+    ],
+    "registration_close_date": "20270113",
+    "registration_url": "https://lg-bernkastel-wittlich.de/crossanmeldung/",
+    "race_info_url": "https://lg-bernkastel-wittlich.de/crossanmeldung/",
+    "presumed_organizer_email": "crosslauf@lg-bernkastel-wittlich.de",
+    "website_emails_found": [
+      "crosslauf@lg-bernkastel-wittlich.de"
+    ],
+    "description": "Die Lauf Crosslaufserie der LG Bernkastel-Wittlich ist eine traditionsreiche Veranstaltungsreihe mit vier Läufen an verschiedenen Orten in der Region. Die Wettkämpfe umfassen verschiedene Altersklassen von Bambini bis Erwachsene mit Streckenlängen von 200 bis 7700 Metern. Die Läufe führen durch flache Weinlagen und bieten eine abwechslungsreiche Crosslauf-Erfahrung. Für Kinder und Jugendliche gibt es Jahrgangswertungen und Urkunden, während ab der Altersklasse U14 auch Preisgelder vergeben werden. Teilnehmer, die an drei Veranstaltungen teilnehmen, erhalten ein Geschenk, und bei jeder Veranstaltung werden T-Shirts mit Autogrammen verlost.",
+    "course_highlights": [
+      "Läufe durch flache Weinlagen",
+      "Vielfältige Streckenlängen von 200 bis 7700 Metern",
+      "Jahrgangswertung für Kinder und Jugendklassen"
+    ],
+    "additional": "Nachmeldungen sind vor Ort bis 1 Stunde vor dem Start möglich (außer in Bengel) gegen eine Nachmeldegebühr von 2,00 Euro. Duschen und Umkleiden sind im Vereinsheim am Sportplatz vorhanden. Bei jeder Veranstaltung gibt es eine Tombola mit Verlosung von T-Shirts mit Autogrammen bekannter Athleten. Die Seriensieger erhalten Urkunden und ab U14 Preisgelder. Die Seriensieger werden anschließend in Bengel geehrt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.laufen.de/laufkalender/details/3-lauf-crosslaufserie-lg-bernkastel-wittlich-2026-27"
     ],
@@ -20109,40 +20165,81 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Watzenborn-Steinberg, Pohlheim, Hesse, Deutschland",
-    "latitude": 50.5338787,
-    "longitude": 8.714127999999999,
+    "start_time": "14:00",
+    "location": "Sporthalle der Adolf-Reichwein-Schule, Watzenborn-Steinberg, Pohlheim, Deutschland",
+    "latitude": 50.53904,
+    "longitude": 8.726289999999999,
     "county": "Hessen",
     "nearest_city": "Marburg an der Lahn",
     "nearby_cities": [],
-    "distances": "[\"15\"]",
+    "distances": "[\"15\", \"5\"]",
     "distance_m": [
-      15000
+      15000,
+      5000
     ],
-    "distance_keywords": [],
-    "distance_verbose": "15 km",
-    "organizer": null,
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "15 km, 5 km",
+    "organizer": "Turnverein 07 Watzenborn-Steinberg e. V.",
     "contact": null,
-    "website": null,
+    "website": "https://turnverein07.de/winterlaufserie/news",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "15 km Lauf",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": "20270115",
+            "description": "10 km / 15 km / 21,1 km: jeweils 10 € pro Lauf"
+          }
+        ],
+        "late_fee": null
+      },
+      {
+        "distance": "5 km Lauf und Walking",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "8 €",
+            "deadline": "20270115",
+            "description": "5-km-Lauf und -Walking: jeweils 8 € pro Lauf"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20270115",
+    "registration_url": "https://my.raceresult.com/434771/registration",
+    "race_info_url": "https://turnverein07.de/winterlaufserie/ausschreibung",
+    "presumed_organizer_email": "winterlauf@turnverein07.de",
+    "website_emails_found": [
+      "rempel@turnverein07.de",
+      "finanzen@turnverein07.de",
+      "protokoll@turnverein07.de",
+      "presse@turnverein07.de",
+      "svenjareuter@web.de",
+      "daschke@turnverein07.de",
+      "sebastian.hucht@gmx.net",
+      "winterlauf@turnverein07.de"
+    ],
+    "description": "Die Limes-Winterlaufserie ist eine traditionsreiche Laufveranstaltung in Pohlheim, die Läuferinnen und Läufern verschiedener Leistungsniveaus eine sportliche Herausforderung im Winter bietet. Der zweite Lauf der Serie am 16. Januar 2027 umfasst eine 15-km-Strecke, die Teil des Mittelhessen-Cups ist, sowie kürzere 5-km-Läufe und Walking-Wettbewerbe. Die Veranstaltung findet in der Sporthalle der Adolf-Reichwein-Schule in Watzenborn-Steinberg statt und bietet eine familiäre Atmosphäre mit der Möglichkeit, an allen drei Läufen der Serie teilzunehmen und eine besondere Jubiläumsmedaille zu sammeln.",
+    "course_highlights": [
+      "15 km Lauf mit Wertung im Mittelhessen-Cup",
+      "Start und Ziel an der Sporthalle der Adolf-Reichwein-Schule",
+      "Teil einer dreiteiligen Winterlaufserie mit Medaillensegmenten"
+    ],
+    "additional": "Die Zeitmessung erfolgt über Race Result mit Bruttozeitmessung. Ausgabe der Startunterlagen ab 12:30 Uhr in der Sporthalle. Duschen sind in der Sporthalle (kalt) oder im nahegelegenen Hallenbad (warm) möglich. Nachmeldungen am Veranstaltungstag sind nicht möglich. Der Start des Hauptlaufs ist um 14 Uhr. Startunterlagen gibt es am Veranstaltungstag ab 12:30 Uhr in der Sporthalle. Angeboten werden außerdem ein 5-km-Lauf und 5-km-Walking.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": true,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.laufen.de/laufkalender/details/50-limes-winterlaufserie-2-lauf-über-15-km"
     ],
@@ -20180,31 +20277,42 @@
     "nearby_cities": [
       "Würzburg"
     ],
-    "distances": "[]",
-    "distance_m": [],
+    "distances": "[\"15\", \"7.5\"]",
+    "distance_m": [
+      15000,
+      7500
+    ],
     "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "distance_verbose": "15 km, 7.5 km",
+    "organizer": "LG Karlstadt",
     "contact": null,
-    "website": null,
+    "website": "https://www.lg-main-spessart.de/veranstaltungen/",
     "fb_link": null,
-    "ig_link": null,
+    "ig_link": "https://www.instagram.com/lg_main_spessart/?hl=de",
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "https://www.lg-main-spessart.de/veranstaltungen/",
+    "presumed_organizer_email": "alfredmaasz@t-online.de",
+    "website_emails_found": [
+      "alfredmaasz@t-online.de",
+      "leichtathletik-mar@gmx.de",
+      "leichtathletik@tsv-lohr.de"
+    ],
+    "description": "Der Sparkassen-Staustufenlauf ist eine traditionsreiche Laufveranstaltung in Karlstadt, die Läufer aller Leistungsstufen anspricht. Die Veranstaltung wird von der LG Karlstadt organisiert und bietet eine attraktive Strecke entlang der Staustufen mit abwechslungsreichem Terrain. Der Lauf fördert den Breitensport und ist ein beliebtes Event in der Region Main-Spessart.",
+    "course_highlights": [
+      "Lauf entlang der Staustufen mit landschaftlich reizvollen Abschnitten",
+      "Abwechslungsreiches Terrain für Hobby- und Leistungsläufer",
+      "Veranstaltung in der malerischen Umgebung von Karlstadt"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.laufen.de/laufkalender/details/35-sparkassen-staustufenlauf"
     ],
@@ -20425,8 +20533,8 @@
   {
     "domain_name": "crosslauf_der_arnstorfer_lg",
     "name": "Crosslauf der Arnstorfer LG",
-    "type": "terrain",
-    "type_local": "Gelände",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20270117",
@@ -20437,9 +20545,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "94424 Arnstorf, Deutschland",
-    "latitude": 48.5578577,
-    "longitude": 12.8175555,
+    "location": "Reitplatz, Wiesenstraße, Arnstorf, Deutschland",
+    "latitude": 48.5652858,
+    "longitude": 12.8184764,
     "county": "Bayern",
     "nearest_city": "Passau",
     "nearby_cities": [],
@@ -20447,27 +20555,31 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "organizer": "Arnstorfer LG e.V.",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://info-arnstorfer-lg.jimdofree.com/crosslauf-2026/",
+    "fb_link": "https://www.facebook.com/p/Arnstorfer-Laufgemeinschaft-eV-100071900211258/",
     "ig_link": null,
-    "price_range": null,
+    "price_range": "5–15 €",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://info-arnstorfer-lg.jimdofree.com/crosslauf-2026/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Der Crosslauf der Arnstorfer LG ist eine traditionsreiche Laufveranstaltung, die jährlich im Januar in Arnstorf stattfindet. Die Strecke führt über den Reitplatz an der Wiesenstraße und bietet Läufern aller Altersklassen eine sportliche Herausforderung. Der Lauf ist Teil des Grenzlandcups und beinhaltet Wertungen für verschiedene Alters- und Geschlechterklassen. Die Veranstaltung wird von der Arnstorfer Laufgemeinschaft organisiert, die sich der Förderung von Freude an Bewegung und Gemeinschaft verschrieben hat.",
+    "course_highlights": [
+      "Gelände am Reitplatz Wiesenstraße in Arnstorf",
+      "Wertung im Grenzlandcup für Frauen- und Männerstrecken",
+      "Inklusive Niederbayerische Crosslauf-Meisterschaften mit Kreismeisterschaften"
+    ],
+    "additional": "Der Crosslauf wird nach den BLV-Richtlinien für Wettkampfbetrieb durchgeführt. Es gibt eine zusätzliche Frauen-Langstrecke über 7000 m ohne Altersklassenwertung. Die Veranstaltung wird von zahlreichen lokalen Sponsoren unterstützt. Spikes sind erlaubt. Ab der Altersklasse U14 zählen die Wettbewerbe zum Grenzland-Laufcup. Umkleiden und Duschen stehen im Vereinsheim des TSV-FC Arnstorf zur Verfügung; die ersten 100 Anmeldungen erhalten ein Starterpaket.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.laufen.de/laufkalender/details/12-crosslauf-der-arnstorfer-lg"
     ],
@@ -20496,44 +20608,51 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Dinkelsbühl, Bavaria, Deutschland",
-    "latitude": 49.0670187,
-    "longitude": 10.3259395,
+    "start_time": "11:00",
+    "location": "TSV-Turnhalle, Alte Promenade, Dinkelsbühl, Deutschland",
+    "latitude": 49.06773,
+    "longitude": 10.31411,
     "county": "Bayern",
     "nearest_city": "Aalen",
     "nearby_cities": [],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\", \"5\", \"1\"]",
     "distance_m": [
       10000,
-      5000
+      5000,
+      1000
     ],
     "distance_keywords": [
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km, 5 km, 1 km",
+    "organizer": "TSV Dinkelsbühl",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.dinkelsbuehler-staffellauf.de",
+    "fb_link": "https://www.facebook.com/StadtlaufDKB/?locale=de_DE",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.dinkelsbuehler-staffellauf.de/anmeldung/",
+    "race_info_url": "https://www.dinkelsbuehler-staffellauf.de/ueber-den-lauf/ausschreibung-allgemein/",
+    "presumed_organizer_email": "info@dinkelsbuehler-staffellauf.de",
+    "website_emails_found": [
+      "info@dinkelsbuehler-staffellauf.de"
+    ],
+    "description": "Der Dinkelsbühler Staffellauf ist ein sportliches Familienfest voller Teamgeist und Emotionen, das jährlich in Dinkelsbühl stattfindet. Der Staffellauf umfasst einen Rundkurs von etwa 3 Kilometern um die historische Altstadt, der von allen Staffelmitgliedern gemeinsam gelaufen wird. Zusätzlich gibt es den Funtasia Kids-Run mit kindgerechten Strecken von 700 bis 1200 Metern. Die Veranstaltung bietet neben dem sportlichen Wettkampf auch ein buntes Rahmenprogramm mit Hüpfburg, Essen, Getränken und einer Tombola.",
+    "course_highlights": [
+      "Rundkurs von ca. 3 Kilometern um die historische Altstadt",
+      "Funtasia Kids-Run mit 700 m und 1200 m Runden entlang der Stadtmauer",
+      "Strecke gut sichtbar mit Pfeilen markiert und für Zuschauer gut einsehbar"
+    ],
+    "additional": "Start- und Zielbereich ist die Dreifachturnhalle Ulmer Weg 6, Dinkelsbühl. Der Staffellauf startet um 11:00 Uhr mit dem Gesamtstart aller Staffeln. Vorher gibt es eine Ausgabe der Startunterlagen ab 08:45 Uhr und ein Warm-Up für die Kids. Nach dem Lauf finden Siegerehrungen und eine Tombola statt. Für die Kids gibt es ein spezielles Rahmenprogramm mit Hüpfburg, Gratis-Eis, Kaffee & Kuchen sowie Essen und Getränke. Die TSV-Turnhalle bietet Umkleiden und Duschen. Für den 10-km-Lauf gibt es eine Altersklassenwertung; beim 5-km-Lauf werden Männer, Frauen und Jugendklassen gewertet. Finisher erhalten Urkunden.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.87,
     "sources": [
       "https://www.laufen.de/laufkalender/details/24-dinkelsbühler-stadtlauf-winterlauf"
     ],
@@ -20562,40 +20681,109 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "63674 Altenstadt, Hesse, Deutschland",
-    "latitude": 50.2830501,
-    "longitude": 8.9482264,
+    "start_time": "09:30",
+    "location": "Altenstadthalle, Vogelsbergstraße 42, 63674 Altenstadt, Deutschland",
+    "latitude": 50.288432,
+    "longitude": 8.948792599999999,
     "county": "Hessen",
     "nearest_city": "Frankfurt am Main",
     "nearby_cities": [
       "Frankfurt am Main"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": "VfL Altenstadt",
     "contact": null,
-    "website": null,
+    "website": "https://www.vfl-altenstadt.de/dreikoenigslauf",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
+    "price_tiers": [
+      {
+        "distance": "Hauptlauf 10 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10,00 €",
+            "deadline": null,
+            "description": "Hauptlauf 10 Km € 10,00"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Jedermannlauf 4,2 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10,00 €",
+            "deadline": null,
+            "description": "Jedermann 4,2 KM € 10,00"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Schüler/Jugend 1,6/4,2 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "5,00 €",
+            "deadline": null,
+            "description": "Schüler/innen/Jugend bis U20 1,6/4,2 KM € 5,00"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "Bambini 300 m",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "3,00 €",
+            "deadline": null,
+            "description": "Bambini 300 M € 3,00"
+          }
+        ],
+        "late_fee": {
+          "price": "2,00 €",
+          "deadline": null
+        }
+      }
+    ],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://www.oberhessencup.de",
+    "race_info_url": "https://www.vfl-altenstadt.de/dreikoenigslauf",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Der Dreikönigslauf des VfL Altenstadt ist ein traditionsreicher Laufwettbewerb, der jährlich in Altenstadt stattfindet. Die Veranstaltung bietet verschiedene Laufdistanzen für alle Altersgruppen, vom Bambinilauf bis zum 10-km-Hauptlauf. Start und Ziel befinden sich an der Altenstadthalle, und die Läufe finden auf abwechslungsreichen Strecken statt, die sowohl für Hobbyläufer als auch für ambitionierte Athleten geeignet sind. Die Veranstaltung zeichnet sich durch eine familiäre Atmosphäre und eine lange Tradition aus.",
+    "course_highlights": [
+      "10 km Hauptlauf mit Streckenrekorden bei Männern und Frauen",
+      "4,2 km Jedermannlauf und Jugendlauf für U16 bis U20",
+      "Kinderläufe über 1,6 km und 300 m für jüngere Altersklassen"
+    ],
+    "additional": "Die Veranstaltung umfasst mehrere Startzeiten: 9:30 Uhr für den 4,2 km Jedermannlauf, 10:00 Uhr für den 10 km Hauptlauf, 10:05 Uhr für den 1,6 km Schülerlauf und 10:30 Uhr für den 300 m Bambinilauf. Klassensieger erhalten Pokale, und es gibt eine Nachmeldegebühr von 2 Euro. Die Teilnehmer erklären mit der Anmeldung ihr Einverständnis zur Speicherung der Daten und zur Nutzung von Foto- und Filmaufnahmen. Der Lauf zählt zum Sparkasse Oberhessen Cup. Start und Ziel: Altenstadthalle, Vogelsbergstraße 42, 63674 Altenstadt.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.laufen.de/laufkalender/details/48-dreikönigslauf-vfl-altenstadt"
     ],
@@ -184101,6 +184289,1275 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "13_schloss_marienburg_marathon",
+    "name": "13. Schloss Marienburg Marathon",
+    "type": "terrain",
+    "type_local": "Gelände",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "09:00",
+    "location": "Adensen, Nordstemmen, Lower Saxony, Deutschland",
+    "latitude": 52.17716069999999,
+    "longitude": 9.7300322,
+    "county": "Niedersachsen",
+    "nearest_city": "Hannover",
+    "nearby_cities": [
+      "Hannover"
+    ],
+    "distances": "[\"42.195\"]",
+    "distance_m": [
+      42195
+    ],
+    "distance_keywords": [
+      "Marathon"
+    ],
+    "distance_verbose": "Marathon",
+    "organizer": null,
+    "contact": null,
+    "website": "https://schloss-marienburg-marathon.de",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://schloss-marienburg-marathon.de/Marathon/Der-Marathonlauf/Anmeldung/",
+    "race_info_url": "https://schloss-marienburg-marathon.de/Marathon/Der-Marathonlauf/Ausschreibung/",
+    "presumed_organizer_email": "heiner.schuette@htp-tel.de",
+    "website_emails_found": [
+      "heiner.schuette@htp-tel.de"
+    ],
+    "description": "Der Schloss Marienburg Marathon ist ein landschaftlich reizvoller Landschaftsmarathon, der vor allem für Vielläufer organisiert wird, aber auch Einsteigern eine abwechslungsreiche Strecke bietet. Die Laufstrecke von 21,1 km in Form einer Acht führt über Dorfstraßen, asphaltierte und unbefestigte Feldwege, Waldwege und Trails. Ein besonderes Highlight ist die Verpflegungsstelle auf dem Innenhof des Schlosses Marienburg, die zum Ausruhen einlädt. Die Strecke beinhaltet zwei kleinere Berge mit etwa 560 Höhenmetern und bietet bei gutem Wetter eine schöne Aussicht auf das Calenberger Land und das Leinebergland. Nach dem Lauf gibt es Gelegenheit zur Stärkung und zum Verweilen.",
+    "course_highlights": [
+      "Abwechslungsreiche Strecke mit Dorfstraßen, Feldwegen, Waldwegen und Trails",
+      "Verpflegungsstelle auf dem Innenhof des Schlosses Marienburg",
+      "Zwei kleinere Berge mit ca. 560 Höhenmetern und schöne Aussicht bei gutem Wetter"
+    ],
+    "additional": "Start und Ziel befinden sich an der Sporthalle in Nordstemmen-Adensen. Es gibt eine Frühstartoption um 9:00 Uhr für Marathonläufer, die mehr als 6 Stunden benötigen. Die Strecke ist ein hügeliger 21,1 km Rundkurs mit ca. 40% Asphaltanteil. Verpflegung wird ca. alle 5 km mit Wasser, Tee, Isogetränken, Cola, Obst und Lebkuchen angeboten. Umkleiden, Duschen, Toiletten und Gepäckaufbewahrung sind im Start- und Zielbereich vorhanden. Zeitmessung erfolgt elektronisch. Die Veranstaltung endet um 18:00 Uhr. Es gibt eine Teilnehmerbegrenzung von 550 Läufern, davon maximal 300 Halbmarathonis. Parken wird eingewiesen. Die Wertung erfolgt nach DLO in 5er-Jahrgangsklassen, Staffel nur Gesamtwertung, Wandern/Walking ohne Platzierung.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.schloss-marienburg-marathon.de/"
+    ],
+    "consolidated_ids": [
+      "0499f965-4c63-4a3d-9835-da8cf8084c98"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "4_heartbeat_ultra",
+    "name": "4. Heartbeat Ultra",
+    "type": "other",
+    "type_local": "Sonstiges",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "06:00",
+    "location": "Fulda, Hesse, Deutschland",
+    "latitude": 50.5558095,
+    "longitude": 9.6808449,
+    "county": "Hessen",
+    "nearest_city": "Fulda",
+    "nearby_cities": [
+      "Fulda"
+    ],
+    "distances": "[\"6\"]",
+    "distance_m": [
+      6000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "6 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.heartbeat-ultra.de/",
+    "fb_link": null,
+    "ig_link": "https://www.instagram.com/heartbeat.ultra",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": "20271120",
+    "registration_url": "https://www.heartbeat-ultra.de/anmeldung",
+    "race_info_url": "https://www.heartbeat-ultra.de/das-event",
+    "presumed_organizer_email": "jenny@heartbeat-ultra.de",
+    "website_emails_found": [
+      "jenny@heartbeat-ultra.de",
+      "info@fontanherzen.de"
+    ],
+    "description": "Der Heartbeat Ultra ist ein einzigartiger Mitmach-Ultra-Lauf in Fulda, bei dem jeder Teilnehmer selbst entscheidet, wie viele Kilometer er laufen oder walken möchte - auf einer etwa sechs Kilometer langen Runde bis zu maximal 112 Kilometern. Die Veranstaltung unterstützt herzkranke Kinder und ihre Familien, indem die gesamte Startgebühr gespendet wird. Neben dem Lauf vor Ort gibt es auch die Möglichkeit, virtuell von überall auf der Welt teilzunehmen. Die persönliche Spendenseite ermöglicht es, Unterstützer zu gewinnen, die pro Kilometer oder mit einem Festbetrag spenden.",
+    "course_highlights": [
+      "Rund sechs Kilometer lange Runde im Sportpark Johannisau",
+      "Bis zu 112 Kilometer Lauf- oder Walking-Distanz möglich",
+      "Start zu jeder vollen Stunde ab 06:00 Uhr, Zielschluss um 21:00 Uhr"
+    ],
+    "additional": "Start ist ab 06:00 Uhr im Stadion Sportpark Johannisau mit Startmöglichkeiten zu jeder vollen Stunde. Zielschluss ist um 21:00 Uhr. Pausen während des Laufes sind erlaubt. Nach der Anmeldung erhält jeder Teilnehmer eine persönliche Spendenseite auf Fundoo, über die Unterstützer Spenden pro Kilometer oder als Festbetrag zusagen können. Jede Startgebühr wird zu 100 % gespendet. Es gibt auch einen virtuellen Start von überall auf der Welt.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.heartbeat-ultra.de/"
+    ],
+    "consolidated_ids": [
+      "e9a2fa0d-6a49-45a0-b141-4c7f6b2ed65a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "50_see_park_lauf",
+    "name": "50. See-Park-Lauf",
+    "type": "road",
+    "type_local": "Straße",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Seepark, Bad Gandersheim, Niedersachsen, Deutschland",
+    "latitude": 51.87179769999999,
+    "longitude": 10.023903,
+    "county": "Niedersachsen",
+    "nearest_city": "Braunschweig",
+    "nearby_cities": [],
+    "distances": "[\"10\", \"0.4\"]",
+    "distance_m": [
+      10000,
+      400
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km, 0.4 km",
+    "organizer": "SVG GW Bad Gandersheim",
+    "contact": null,
+    "website": null,
+    "fb_link": "https://facebook.com/seeparklauf",
+    "ig_link": "https://instagram.com/seeparklauf",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://trainerday.com/de/events/de/50-bad-gandersheimer-see-park-lauf-64fad7-2026-11-21",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Der 50. Bad Gandersheimer See-Park-Lauf ist ein traditionsreicher Straßenlauf, der Ende November im Seepark von Bad Gandersheim stattfindet. Organisiert vom SVG GW Bad Gandersheim, bietet der Lauf Wertungen für verschiedene Alters- und Leistungsklassen, darunter Jungen, Mädchen, Männer, Frauen, Junioren, offene Läufer sowie Masters bis 95+. Die Veranstaltung ist eng mit der Oberschule Bad Gandersheim verbunden, deren Schülerinnen, Schüler und Lehrkräfte aktiv teilnehmen und das Organisationsteam unterstützen. Nach dem Lauf werden Ergebnisse, persönliche Urkunden und eine Fotogalerie online bereitgestellt.",
+    "course_highlights": [
+      "Straßenlauf auf dem Gelände des Seeparks Bad Gandersheim",
+      "Eigene Wertungen für diverse Alters- und Leistungsklassen",
+      "Enger Bezug zur Oberschule Bad Gandersheim mit aktiver Beteiligung"
+    ],
+    "additional": "Es gibt zwei Distanzen: 400 m und 10 km. Typisches Novemberwetter mit etwa 7 °C Tageshöchsttemperatur und regnerischen Tagen wird erwartet. Das Organisationsteam umfasst etwa 50 Personen, unterstützt von rund 80 Schülerinnen, Schülern und Lehrkräften. Straßenlauf im Seepark, Distanzen 400 m und 10 km, organisiert von der Schule, wetterbedingt regnerisch im November",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.gw-gan.de/",
+      "https://www.laufen.de/dlv-laufkalender",
+      "https://www.laufen.de/laufkalender/details/26V09000161760000",
+      "https://trainerday.com/de/events/de/50-bad-gandersheimer-see-park-lauf-64fad7-2026-11-21"
+    ],
+    "consolidated_ids": [
+      "9990aa31-3913-4d99-87be-b81e051c7d03"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "ainringer_crosslauf",
+    "name": "Ainringer Crosslauf",
+    "type": "terrain",
+    "type_local": "Gelände",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Ainring, Bavaria, Deutschland",
+    "latitude": 47.8145816,
+    "longitude": 12.9415464,
+    "county": "Bayern",
+    "nearest_city": "Rosenheim",
+    "nearby_cities": [],
+    "distances": "[\"5\", \"2.6\"]",
+    "distance_m": [
+      5000,
+      2600
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km, 2.6 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://sc-ainring.de/ergebnislisten/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://sc-ainring.de/ausschreibung-2/",
+    "presumed_organizer_email": "vorstand@sc-ainring.de",
+    "website_emails_found": [
+      "vorstand@sc-ainring.de"
+    ],
+    "description": "Der Ainringer Crosslauf ist eine traditionsreiche Laufveranstaltung des Ski-Club Ainring e.V., die in der Gemeinde Ainring stattfindet. Start und Ziel befinden sich an der Schwimmbadstraße. Die Veranstaltung bietet Läufern die Möglichkeit, auf abwechslungsreichen Crosslaufstrecken ihre Ausdauer und Lauftechnik zu testen. Der Lauf ist Teil des vielfältigen Sportprogramms des Vereins und richtet sich an Läufer aller Altersklassen und Leistungsniveaus.",
+    "course_highlights": [
+      "Start und Ziel an der Schwimmbadstraße in Ainring",
+      "Abwechslungsreiche Crosslaufstrecken im Gemeindegebiet",
+      "Traditionelle Laufveranstaltung des Ski-Club Ainring"
+    ],
+    "additional": "Gelaufen wird im Ainringer Moos und rund um den Bereich Eschlberg; Start und Ziel sind an der Schwimmbadstraße; Kinder- und Schulläufe inklusive.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.laufen.de/dlv-laufkalender",
+      "https://www.laufen.de/laufkalender/details/26V02000150060000"
+    ],
+    "consolidated_ids": [
+      "008efdfd-f7a6-46ec-b223-ce6cfb9085a6"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "braunsteichlauf_weisswasser",
+    "name": "Braunsteichlauf Weißwasser",
+    "type": "road",
+    "type_local": "Straße",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Braunsteich, Weißwasser/Oberlausitz, Saxony, Deutschland",
+    "latitude": 51.50588620000001,
+    "longitude": 14.6688851,
+    "county": "Sachsen",
+    "nearest_city": "Hoyerswerda",
+    "nearby_cities": [],
+    "distances": "[\"10\", \"5\", \"2\"]",
+    "distance_m": [
+      10000,
+      5000,
+      2000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 5 km, 2 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://laufbewegung-wsw.de/braunsteichlauf-weisswasser/",
+    "fb_link": "https://www.facebook.com/laufbewegungwsw",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://laufbewegung-wsw.de/braunsteichlauf-weisswasser/",
+    "presumed_organizer_email": "technik@laufbewegung-wsw.de",
+    "website_emails_found": [
+      "technik@laufbewegung-wsw.de"
+    ],
+    "description": "Der Braunsteichlauf Weißwasser ist ein traditionsreicher Lauf am Ende der Laufsaison, der durch das Landschaftsschutzgebiet Braunsteich führt. Besonders hervorzuheben ist die Überquerung des Braunsteichs auf der hölzernen Braunsteichbrücke, die einen malerischen Blick über das Wasser bietet. Der Lauf richtet sich an alle Altersgruppen von Kindern bis Senioren, die Freude am Laufen und Walken haben. Er ist zudem ein Wertungslauf der Bezirksrangliste Dresden und des Niederlausitz-Cups und im Walking-Anteil offiziell vom Deutschen Leichtathletik-Verband anerkannt.",
+    "course_highlights": [
+      "Lauf durch das Landschaftsschutzgebiet Braunsteich",
+      "Überquerung des Braunsteichs auf der hölzernen Braunsteichbrücke",
+      "Herbstliche November-Atmosphäre"
+    ],
+    "additional": "Der Lauf ist offen für alle Altersklassen von Kind bis Senior und umfasst Lauf- und Walking-Disziplinen. Er wird von der Laufbewegung Weißwasser unter dem Dach des Stadtsportvereins ausgerichtet.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/dlv-laufkalender",
+      "https://www.laufen.de/laufkalender/details/26V15900001860003"
+    ],
+    "consolidated_ids": [
+      "b4ab97be-1acb-448d-9727-04d479256182"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "crossmeisterschaft_sc_magdeburg",
+    "name": "Crossmeisterschaft SC Magdeburg",
+    "type": "terrain",
+    "type_local": "Gelände",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Magdeburg, Sachsen-Anhalt, Deutschland",
+    "latitude": 52.1131758,
+    "longitude": 11.6080863,
+    "county": "Sachsen-Anhalt",
+    "nearest_city": "Magdeburg",
+    "nearby_cities": [
+      "Magdeburg"
+    ],
+    "distances": "[\"1.4\", \"0.7\"]",
+    "distance_m": [
+      1400,
+      700
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "1.4 km, 0.7 km",
+    "organizer": "SC Magdeburg",
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://trainerday.com/de/events/de/13-crossmeisterschaft-sc-magdeburg-2026",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Die Crossmeisterschaft SC Magdeburg ist ein traditionsreicher Crosslauf-Wettkampf, der vom SC Magdeburg und der Stadt Magdeburg in Sachsen-Anhalt ausgerichtet wird. Als Meisterschafts-Cross im deutschen Leichtathletik-Kalender bietet das Rennen eine anspruchsvolle Geländestrecke, die sich von klassischen Bahnläufen unterscheidet. Die Veranstaltung ist eingebettet in das DLV-System mit offiziellen Meldungen, Regeln und Zeitmessung und wird von der ehrenamtlichen Vereins- und Verbandskultur getragen. Die Läufe finden im November bei typischem kühlem und regnerischem Wetter statt und bieten eine authentische Crosslauf-Erfahrung für Vereins- und Verbandsläufer.",
+    "course_highlights": [
+      "Geländelauf im Cross-Stil, nicht auf der Bahn",
+      "Distanzen: 700 m und 1,4 km",
+      "Veranstaltung im Rahmen des deutschen Leichtathletik-Kalenders"
+    ],
+    "additional": "Die Veranstaltung ist offiziell im DLV-System gelistet mit Meldungen, Regeln und Zeitmessung. Typisches Wetter im November ist kühl (7 °C, Tiefstwert 2 °C) und regnerisch mit durchschnittlich 45 mm Niederschlag. Der Startort ist in Magdeburg, genaue Anfahrtsbeschreibung ist verfügbar. Geländelauf, Distanzen 700 m und 1.4 km, im November bei regnerischem Wetter",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.9,
+    "sources": [
+      "https://www.laufen.de/dlv-laufkalender",
+      "https://www.laufen.de/laufkalender/details/13-crossmeisterschaft-sc-magdeburg",
+      "https://trainerday.com/de/events/de/13-crossmeisterschaft-sc-magdeburg-2026"
+    ],
+    "consolidated_ids": [
+      "e24fb9d7-c694-4efd-8bf9-bea149796302"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "rhadenlauf",
+    "name": "Rhädenlauf",
+    "type": "road",
+    "type_local": "Straße",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Obersuhl, Wildeck, Hesse, Deutschland",
+    "latitude": 50.9487403,
+    "longitude": 10.0302001,
+    "county": "Hessen",
+    "nearest_city": "Fulda",
+    "nearby_cities": [],
+    "distances": "[\"10\", \"7\", \"5\", \"2\", \"1\"]",
+    "distance_m": [
+      10000,
+      7000,
+      5000,
+      2000,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "10 km, 7 km, 5 km, 2 km, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://tvo1888.de/leichtathletik/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://tvo1888.de/leichtathletik/",
+    "presumed_organizer_email": "meldebuero@tvo-la.de",
+    "website_emails_found": [
+      "meldebuero@tvo-la.de",
+      "info@tvo1888.de"
+    ],
+    "description": "Der Rhädenlauf ist eine traditionelle Laufveranstaltung des TV 1888 Obersuhl, die jährlich in Wildeck-Obersuhl stattfindet. Die Veranstaltung zieht zahlreiche Läuferinnen und Läufer an und bietet eine gut organisierte Wettkampfatmosphäre mit moderner Zeitmessung. Die Strecke führt durch die reizvolle Umgebung der Region und ist sowohl für ambitionierte Läufer als auch für Freizeitläufer geeignet. Die Veranstaltung wird vom engagierten Team des TV 1888 Obersuhl betreut, das für einen reibungslosen Ablauf sorgt.",
+    "course_highlights": [],
+    "additional": "Seit 2022 wird eine Zeitmessanlage von ALGE mit integriertem Blitzlicht E-Start verwendet. Die Abteilungsleiterin ist Luisa Wunn (Tel. 0177 4691132). Trainingszeiten der Leichtathletikabteilung sind Montag, Mittwoch und Freitag jeweils von 17:30 bis 19:00 Uhr im Stadion oder der Großsporthalle Obersuhl.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/dlv-laufkalender",
+      "https://tvo1888.de/leichtathletik/",
+      "https://www.laufen.de/laufkalender/details/rhädenlauf"
+    ],
+    "consolidated_ids": [
+      "25edc6d8-3e56-4b3f-9f1c-aaf9f25eaae4"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "berliner_mannschaftslauf_einzeln_oder_als_team",
+    "name": "Berliner Mannschaftslauf - einzeln oder als Team",
+    "type": "road",
+    "type_local": "Straße",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Berlin-Britz, Berlin, Deutschland",
+    "latitude": 52.4526678,
+    "longitude": 13.438604,
+    "county": "Berlin",
+    "nearest_city": "Berlin",
+    "nearby_cities": [
+      "Berlin"
+    ],
+    "distances": "[\"3.7\"]",
+    "distance_m": [
+      3700
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "3.7 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.ssv-lichtenrade.de/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.ssv-lichtenrade.de/aktuelles/wettkaempfe#c1524",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Der Berliner Mannschaftslauf rund um den Britzer Garten ist ein traditionsreicher Laufwettbewerb, der sowohl Einzel- als auch Teamwertungen anbietet. Die Veranstaltung bietet Strecken für verschiedene Leistungsniveaus, darunter einen 3,7-Kilometer-Lauf, einen Viertelmarathon und einen Halbmarathon. Die Läuferinnen und Läufer kämpfen um Sekunden und genießen dabei eine abwechslungsreiche Strecke in einer grünen Parklandschaft. Der Lauf ist bekannt für seine familiäre Atmosphäre und die Förderung von Talenten sowie Breitensport.",
+    "course_highlights": [
+      "Rundkurs um den Britzer Garten",
+      "Streckenlängen von 3,7 km bis Halbmarathon",
+      "Lauf in grüner Parklandschaft mit Einzel- und Teamwertung"
+    ],
+    "additional": "Der Lauf findet jährlich statt und zieht mehrere hundert Teilnehmer an. Es gibt Wertungen für Einzelstarter und Mannschaften. Die Veranstaltung wird vom SSV Lichtenrade organisiert, der auch weitere Leichtathletik- und Breitensportangebote bietet.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/47-berliner-mannschaftslauf-einzeln-oder-als-team"
+    ],
+    "consolidated_ids": [
+      "7abe8fa4-d7b0-4cd5-8c23-7e9f15404034"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "crosslauf_denzlingen",
+    "name": "Crosslauf Denzlingen",
+    "type": "terrain",
+    "type_local": "Gelände",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Denzlingen, Baden-Württemberg, Deutschland",
+    "latitude": 48.0690429,
+    "longitude": 7.8890649,
+    "county": "Baden-Württemberg",
+    "nearest_city": "Freiburg",
+    "nearby_cities": [
+      "Freiburg"
+    ],
+    "distances": "[\"8.15\", \"0.65\"]",
+    "distance_m": [
+      8150,
+      650
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "8.15 km, 0.65 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.tvd-la.de/",
+    "fb_link": null,
+    "ig_link": "https://instagram.com/tvd_la",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.tvd-la.de/veranstaltungen-2026/",
+    "presumed_organizer_email": "info@tvd-la.de",
+    "website_emails_found": [
+      "info@tvd-la.de",
+      "20info@tvd-la.de",
+      "Rebecca.kiefer@tvd-la.de",
+      "jugend@tvd-la.de"
+    ],
+    "description": "Der Crosslauf Denzlingen ist eine traditionsreiche Laufveranstaltung, die von der Leichtathletikabteilung des TV Denzlingen organisiert wird. Die Strecke führt durch die schöne Umgebung von Denzlingen und ist aufgrund der Witterung teilweise rutschig, weshalb Spikes oder Schuhe mit gutem Profil empfohlen werden. Die Veranstaltung bietet Läufen für verschiedene Altersklassen und Leistungsniveaus und legt Wert auf Gemeinschaft und sportlichen Ehrgeiz. Die Startnummernausgabe erfolgt direkt an der Strecke, Nachmeldungen sind bis eine Stunde vor dem jeweiligen Lauf möglich.",
+    "course_highlights": [
+      "Strecke durch die schöne Umgebung von Denzlingen",
+      "Teilweise rutschige Passagen, daher Spikes oder profilstarke Schuhe empfohlen",
+      "Leicht angepasste Streckenführung aufgrund der Streckenverhältnisse"
+    ],
+    "additional": "Nachmeldungen sind bis eine Stunde vor dem jeweiligen Laufbeginn an der Startnummernausgabe möglich, es wird eine Nachmeldegebühr von 2 € erhoben. Die Startnummernausgabe und Zahlung des Meldegeldes erfolgen nur vereinsweise an der Strecke.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/crosslauf-denzlingen"
+    ],
+    "consolidated_ids": [
+      "9d2756e6-8f8f-458a-905d-1b22e6a92252"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "flvw_crossmeisterschaften",
+    "name": "FLVW Crossmeisterschaften",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Stadion am Merschweg, Schloß Neuhaus, Paderborn, Deutschland",
+    "latitude": 51.7483922,
+    "longitude": 8.7036144,
+    "county": "Nordrhein-Westfalen",
+    "nearest_city": "Bielefeld",
+    "nearby_cities": [],
+    "distances": "[\"10\", \"1\"]",
+    "distance_m": [
+      10000,
+      1000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km, 1 km",
+    "organizer": "Fußball- und Leichtathletik-Verband Westfalen",
+    "contact": null,
+    "website": "https://flvw.de/de/athletics/event/26L19000000051004/flvw-crossmeisterschaften.htm",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://flvw.de/de/athletics/event/26L19000000051004/flvw-crossmeisterschaften.htm",
+    "presumed_organizer_email": "post@flvw.de",
+    "website_emails_found": [
+      "post@flvw.de"
+    ],
+    "description": "Die FLVW Crossmeisterschaften sind ein traditionsreicher Crosslauf im Stadion am Merschweg in Paderborn-Schloß Neuhaus. Die Veranstaltung bietet verschiedene Wettbewerbe über Kurz-, Mittel- und Langstrecken mit Distanzen von 1,0 km bis 10,0 km. Die Läufe finden auf abwechslungsreichem Cross- und Waldlaufterrain statt und sind offen für unterschiedliche Alters- und Leistungsklassen. Die Veranstaltung ist ein wichtiger Termin im westfälischen Laufkalender und fördert den regionalen Laufsport.",
+    "course_highlights": [
+      "Vielfältige Streckenlängen von 1,0 km bis 10,0 km",
+      "Cross- und Waldlaufterrain im Stadion am Merschweg",
+      "Traditionelle Crosslaufveranstaltung in Westfalen"
+    ],
+    "additional": "Die Veranstaltung umfasst mehrere Wettbewerbe, darunter Rahmenwettbewerbe und verschiedene Crosslauf-Distanzen. Die Läufe sind bestenlistenfähig. Der Veranstaltungsort ist das Stadion am Merschweg in Paderborn-Schloß Neuhaus. Ab der Altersklasse M/W12 werden die Wettbewerbe als westfalenweite Landesmeisterschaften im Crosslauf ausgetragen; außerdem gibt es Mannschaftswertungen.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.76,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/flvw-crossmeisterschaften"
+    ],
+    "consolidated_ids": [
+      "cd11f89c-382d-45ca-8f4e-59a483a651f1"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "harsefelder_klosterparklauf",
+    "name": "Harsefelder Klosterparklauf",
+    "type": "road",
+    "type_local": "Straße",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Harsefeld, Lower Saxony, Deutschland",
+    "latitude": 53.4539625,
+    "longitude": 9.5037217,
+    "county": "Niedersachsen",
+    "nearest_city": "Hamburg",
+    "nearby_cities": [],
+    "distances": "[\"50\"]",
+    "distance_m": [
+      50000
+    ],
+    "distance_keywords": [
+      "50 km"
+    ],
+    "distance_verbose": "50 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://volkslauf-harsefeld.de/klosterparklauf/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.raceresult.com/registration?eventid=123456",
+    "race_info_url": "https://volkslauf-harsefeld.de/klosterparklauf/",
+    "presumed_organizer_email": "info@lauftreff-harsefeld.de",
+    "website_emails_found": [
+      "info@lauftreff-harsefeld.de"
+    ],
+    "description": "Der 6-Stundenlauf im Klosterpark Harsefeld ist eine anspruchsvolle Ausdauerveranstaltung, die im malerischen Klosterpark stattfindet. Die Strecke ist offiziell vermessen und führt überwiegend über befestigte Sandwege, was ein angenehmes Laufgefühl ermöglicht. Die Veranstaltung ist offen für alle ab 18 Jahren und wird vom Deutschen Leichtathletik Verband genehmigt. Für Verpflegung während des Laufes ist mit einem gut ausgestatteten Verpflegungsstand gesorgt, der in jeder Runde passiert wird.",
+    "course_highlights": [
+      "Offiziell vermessene Runde von 1.461,4 m Länge",
+      "Überwiegend befestigte Sandwege im Klosterpark",
+      "Start und Ziel auf dem Parkplatz hinter dem Rathaus"
+    ],
+    "additional": "Startunterlagen werden am Veranstaltungstag von 8:30 bis 9:30 Uhr direkt am Start/Ziel ausgegeben. Die Rundenzählung erfolgt mit einem kostenlosen Leihchip von RaceResult. Toiletten und eine Umkleidemöglichkeit sind vorhanden, Duschen jedoch nicht. Die Siegerehrung findet direkt im Anschluss an den Lauf statt. Die Zeit über die 50 km-Strecke wird zusätzlich auf der Urkunde ausgewiesen.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/9-harsefelder-klosterparklauf"
+    ],
+    "consolidated_ids": [
+      "a7ed34f6-6a80-46d9-9dd3-7ba143e6c219"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "nordrhein_meisterschaften_2026_10km_strasse",
+    "name": "Nordrhein Meisterschaften 2026 10km Straße",
+    "type": "road",
+    "type_local": "Straße",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "45133 Essen, Deutschland",
+    "latitude": 51.4068406,
+    "longitude": 6.9881259,
+    "county": "Nordrhein-Westfalen",
+    "nearest_city": "Essen",
+    "nearby_cities": [
+      "Essen"
+    ],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://lvnordrhein.de/wettkaempfe/veranstaltungskalender/event/26L10000000051001",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://lvnordrhein.de/wettkaempfe/wettkaepfe/infos-online-meldungen",
+    "race_info_url": "https://lvnordrhein.de/wettkaempfe/meisterschaften/basisinformation",
+    "presumed_organizer_email": "ulrike.fehr@lvnordrhein.de",
+    "website_emails_found": [
+      "ulrike.fehr@lvnordrhein.de",
+      "lvnordrhein@lvn-sport.de",
+      "markus.paehler@lvnordrhein.de"
+    ],
+    "description": "Die Nordrhein Meisterschaften im 10km Straßenlauf finden in Essen statt und sind eine bedeutende Veranstaltung des Leichtathletik-Verbandes Nordrhein. Der Wettkampf bietet Athleten aus der Region die Möglichkeit, sich auf einer offiziellen Strecke zu messen und ihre Leistungen im Straßenlauf zu zeigen. Die Veranstaltung ist Teil der Landesmeisterschaften und richtet sich an ambitionierte Läufer, die sich mit anderen Talenten aus Nordrhein-Westfalen messen möchten. Die Organisation erfolgt durch den Leichtathletik-Verband Nordrhein e.V., der für einen reibungslosen Ablauf sorgt.",
+    "course_highlights": [
+      "Offizielle 10km Straßenlaufstrecke in Essen",
+      "Teil der Landesmeisterschaften Nordrhein",
+      "Veranstaltet vom Leichtathletik-Verband Nordrhein e.V."
+    ],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/nordrhein-meisterschaften-2026-10km-straße"
+    ],
+    "consolidated_ids": [
+      "6dcbb22e-468d-490d-9ea6-9da141a3e081"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "offene_lm_crosslauf",
+    "name": "Offene LM Crosslauf",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Leichtathletikstadion, Friedrich-Ebert-Straße 68, Magdeburg, Deutschland",
+    "latitude": 52.1250642,
+    "longitude": 11.6681259,
+    "county": "Sachsen-Anhalt",
+    "nearest_city": "Magdeburg",
+    "nearby_cities": [
+      "Magdeburg"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Gemischte Distanz",
+    "organizer": "Sportclub Magdeburg",
+    "contact": null,
+    "website": "https://www.leichtathletik.de/wettkaempfe/termine/wettkampf-kalender/termin-detail/detail/offene-LM-Crosslauf-26L16000260151001",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.leichtathletik.de/wettkaempfe/termine/wettkampf-kalender/termin-detail/detail/offene-LM-Crosslauf-26L16000260151001",
+    "presumed_organizer_email": "wo@lvsa.de",
+    "website_emails_found": [
+      "wo@lvsa.de",
+      "events@leichtathletik.de"
+    ],
+    "description": "Der Offene LM Crosslauf ist ein Crosslauf-Wettkampf in Magdeburg, der Läuferinnen und Läufern verschiedener Altersklassen offensteht. Start und Ziel befinden sich im Leichtathletikstadion an der Friedrich-Ebert-Straße. Die Veranstaltung verbindet den Meisterschaftswettkampf mit einer Gelegenheit, sich auf einer anspruchsvollen Crosslaufstrecke zu messen.",
+    "course_highlights": [
+      "Crosslaufstrecke im Umfeld des Leichtathletikstadions",
+      "Start und Ziel am Leichtathletikstadion, Friedrich-Ebert-Straße 68",
+      "Wettkampf für verschiedene Altersklassen"
+    ],
+    "additional": "Ausschreibung und Live-Ergebnisse werden online bereitgestellt.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.69,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/offene-lm-crosslauf"
+    ],
+    "consolidated_ids": [
+      "abae5bea-e8ad-4654-8d02-0784c62dfd57"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "waldstrasser_crosslauf",
+    "name": "Waldsträßer Crosslauf",
+    "type": "terrain",
+    "type_local": "Gelände",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "11:30",
+    "location": "65189 Wiesbaden, Deutschland",
+    "latitude": 50.0726721,
+    "longitude": 8.2570237,
+    "county": "Hessen",
+    "nearest_city": "Frankfurt am Main",
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Gemischte Distanz",
+    "organizer": null,
+    "contact": null,
+    "website": "https://tv-waldstrasse.de/34-waldstraesser-crosslauf",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://tv-waldstrasse.de/34-waldstraesser-crosslauf",
+    "presumed_organizer_email": "la-meldungen@tv-waldstrasse.de",
+    "website_emails_found": [
+      "info@tv-waldstrasse.de",
+      "la-meldungen@tv-waldstrasse.de"
+    ],
+    "description": "Der Waldsträßer Crosslauf ist ein traditionsreicher Crosslauf, der im Schlosspark Wiesbaden-Biebrich stattfindet. Die Veranstaltung bietet Läufern verschiedener Altersklassen und Leistungsniveaus die Möglichkeit, auf abwechslungsreichem Terrain ihre Ausdauer und Technik zu testen. Der Lauf findet jährlich im November statt und zieht zahlreiche Teilnehmer aus der Region an. Die Organisation erfolgt durch den TV Waldstraße Wiesbaden, der für eine familiäre und sportliche Atmosphäre sorgt.",
+    "course_highlights": [
+      "Lauf durch den malerischen Schlosspark Wiesbaden-Biebrich",
+      "Abwechslungsreiches Crosslauf-Gelände mit natürlichen Hindernissen",
+      "Veranstaltung im November mit herbstlicher Atmosphäre"
+    ],
+    "additional": "Meldungen erfolgen vorzugsweise über das Meldeportal LA.Net3. Vereine und Schulen ohne Zugang melden per Mail an la-meldungen@tv-waldstrasse.de. Die Veranstaltung bietet eine Teilnehmerliste, Zeitplan und Ergebnisse im LA-Portal. Der Lauf beginnt um 11:30 Uhr und endet gegen 15:00 Uhr.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/34-waldsträßer-crosslauf"
+    ],
+    "consolidated_ids": [
+      "6506540f-0fe9-4cd5-ac26-cf95d51883dc"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "kreismeisterschaften_crosslauf_26160_ofen_bad_zwischenahn",
+    "name": "Kreismeisterschaften Crosslauf",
+    "type": "terrain",
+    "type_local": "Gelände",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Ofen, Bad Zwischenahn, Lower Saxony, Deutschland",
+    "latitude": 53.1679074,
+    "longitude": 8.1524548,
+    "county": "Niedersachsen",
+    "nearest_city": "Oldenburg",
+    "nearby_cities": [
+      "Oldenburg"
+    ],
+    "distances": "[\"12.5\", \"10.6\", \"10\", \"6.4\", \"5.1\", \"4\", \"2.7\", \"2\"]",
+    "distance_m": [
+      12500,
+      10600,
+      10000,
+      6400,
+      5100,
+      4000,
+      2700,
+      2000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "12.5 km, 10.6 km, 10 km, 6.4 km, 5.1 km, 4 km, 2.7 km, 2 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.laufen.de/laufkalender/details/kreismeisterschaften-crosslauf-4"
+    ],
+    "consolidated_ids": [
+      "33377300-302b-427b-97ba-1b13e0c4300c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "4_plesse_ultrarun_pur",
+    "name": "4. Plesse UltraRun (PUR)",
+    "type": "other",
+    "type_local": "Sonstiges",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Bovenden, Lower Saxony, Deutschland",
+    "latitude": 51.5903058,
+    "longitude": 9.932688500000001,
+    "county": "Niedersachsen",
+    "nearest_city": "Kassel",
+    "nearby_cities": [],
+    "distances": "[\"160.934\", \"72\"]",
+    "distance_m": [
+      160934,
+      72000
+    ],
+    "distance_keywords": [
+      "100 Meilen",
+      "Ultramarathon"
+    ],
+    "distance_verbose": "100 Meilen, 72 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.bovendersv.de/index.php/leichtathletik/2579-4-plesse-ultrarun-pur-20256"
+    ],
+    "consolidated_ids": [
+      "a4fcd4ee-bdf8-4952-be63-a0fc28d6e0ff"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "9_6_stundenlauf_im_klosterpark_harsefeld",
+    "name": "9. 6-Stundenlauf im Klosterpark Harsefeld",
+    "type": "time",
+    "type_local": "Zeitlauf",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Klosterpark, Harsefeld, Deutschland",
+    "latitude": 53.4545458,
+    "longitude": 9.5013667,
+    "county": "Niedersachsen",
+    "nearest_city": "Hamburg",
+    "nearby_cities": [],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Gemischte Distanz",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://volkslauf-harsefeld.de/klosterparklauf/"
+    ],
+    "consolidated_ids": [
+      "69ee5929-940e-466d-b07f-07e427e38fcf"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "lila_eule_cross",
     "name": "Lila-Eule-Cross",
     "type": "terrain",
@@ -184524,603 +185981,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "13_schloss_marienburg_marathon",
-    "name": "13. Schloss Marienburg Marathon",
-    "type": "terrain",
-    "type_local": "Gelände",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "09:00",
-    "location": "Nordstemmen-Adensen, Lower Saxony, Deutschland",
-    "latitude": 52.17716069999999,
-    "longitude": 9.7300322,
-    "county": "Niedersachsen",
-    "nearest_city": "Hannover",
-    "nearby_cities": [
-      "Hannover"
-    ],
-    "distances": "[\"42.2\", \"21.1\"]",
-    "distance_m": [
-      42200,
-      21100
-    ],
-    "distance_keywords": [
-      "Marathon",
-      "Halbmarathon"
-    ],
-    "distance_verbose": "Marathon, Halbmarathon",
-    "organizer": "VfL Adensen-Hallerburg",
-    "contact": null,
-    "website": "https://schloss-marienburg-marathon.de",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "25-50 EUR",
-    "price_tiers": [
-      {
-        "distance": "Marathon",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "25 EUR",
-            "deadline": "20260630",
-            "description": "Marathon bis 30.6.2026"
-          },
-          {
-            "label": "tier_2",
-            "price": "30 EUR",
-            "deadline": "20261115",
-            "description": "Marathon bis 15.11.2026"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "REWE-Halbmarathon",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "20 EUR",
-            "deadline": "20260630",
-            "description": "REWE-Halbmarathon bis 30.6.2026"
-          },
-          {
-            "label": "tier_2",
-            "price": "25 EUR",
-            "deadline": "20261115",
-            "description": "REWE-Halbmarathon bis 15.11.2026"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "Staffel",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "50 EUR",
-            "deadline": "20261115",
-            "description": "Staffel"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "Wandern/Walking",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "15 EUR",
-            "deadline": "20261115",
-            "description": "Wandern/Walking"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20261115",
-    "registration_url": "https://schloss-marienburg-marathon.de/Marathon/Der-Marathonlauf/Anmeldung/",
-    "race_info_url": "https://schloss-marienburg-marathon.de/Marathon/Der-Marathonlauf/Ausschreibung/",
-    "presumed_organizer_email": "heiner.schuette@htp-tel.de",
-    "website_emails_found": [
-      "heiner.schuette@htp-tel.de"
-    ],
-    "description": "Der 13. Schloss Marienburg Marathon findet am 21. November 2026 in Nordstemmen-Adensen statt. Der Landschaftsmarathon ist abwechslungsreich und für Vielläufer sowie Einsteiger geeignet. Die Strecke führt über Dorfstraßen, asphaltierte und unbefestigte Feldwege, Waldwege und Trails mit etwa 560 Höhenmetern. Ein besonderes Highlight ist die Verpflegungsstelle auf dem Innenhof des Schlosses Marienburg, die zum Ausruhen einlädt. Die Laufstrecke von 21,1 km hat die Form einer Acht, mit drei Verpflegungsstationen in Adensen und bietet bei gutem Wetter schöne Ausblicke auf das Calenberger Land und das Leinebergland.",
-    "course_highlights": [
-      "Abwechslungsreiche Strecke mit Dorfstraßen, Feldwegen, Waldwegen und Trails",
-      "Verpflegungsstelle auf dem Innenhof des Schlosses Marienburg",
-      "Rundkurs in Form einer Acht mit ca. 560 Höhenmetern und Ausblicken auf Calenberger Land und Leinebergland"
-    ],
-    "additional": "Frühstart Marathon um 9:00 Uhr für Läufer, die mehr als 6 Stunden benötigen. Offizielle Zeitmessung elektronisch. Verpflegung ca. alle 5 km mit Wasser, Tee, Isogetränk, Cola, Obst und Lebkuchen. Umkleiden, Duschen, Toiletten und Gepäckaufbewahrung im Start- und Zielbereich. DRK-Sanitätsdienst im Start-/Zielbereich und auf der Strecke. Teilnehmerlimit: 550 Läufer, davon maximal 300 Halbmarathonis. Hügelige Strecke mit Trails, 560 Höhenmeter, scenic views, aid stations every 5 km",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.schloss-marienburg-marathon.de/"
-    ],
-    "consolidated_ids": [
-      "cd0e1b15-1297-4d1f-8e6c-d7c27e75f272"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "4_heartbeat_ultra",
-    "name": "4. Heartbeat Ultra",
-    "type": "terrain",
-    "type_local": "Gelände",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "06:00",
-    "location": "Fulda, Hesse, Deutschland",
-    "latitude": 50.5558095,
-    "longitude": 9.6808449,
-    "county": "Hessen",
-    "nearest_city": "Fulda",
-    "nearby_cities": [
-      "Fulda"
-    ],
-    "distances": "[\"112\"]",
-    "distance_m": [
-      112000
-    ],
-    "distance_keywords": [
-      "Ultramarathon"
-    ],
-    "distance_verbose": "112 km",
-    "organizer": "Heartbeat Ultra",
-    "contact": null,
-    "website": "https://www.heartbeat-ultra.de/",
-    "fb_link": null,
-    "ig_link": "https://www.instagram.com/heartbeat.ultra/",
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Heartbeat Ultra",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "25 €",
-            "deadline": "20261031",
-            "description": "Frühbucherpreis bis 31.10.2026"
-          },
-          {
-            "label": "tier_2",
-            "price": "30 €",
-            "deadline": "20261120",
-            "description": "Regulärer Preis bis 20.11.2026"
-          }
-        ],
-        "late_fee": {
-          "price": "35 €",
-          "deadline": "20261121"
-        }
-      }
-    ],
-    "registration_close_date": "20261121",
-    "registration_url": "https://www.heartbeat-ultra.de/anmeldung",
-    "race_info_url": "https://www.heartbeat-ultra.de/das-rennen",
-    "presumed_organizer_email": "jenny@heartbeat-ultra.de",
-    "website_emails_found": [
-      "steffi.saenger@fontanherzen.de",
-      "jenny@heartbeat-ultra.de",
-      "info@fontanherzen.de"
-    ],
-    "description": "Heartbeat Ultra ist ein Mitmach-Ultra-Spendenlauf in Fulda, der am 21. November 2026 stattfindet. Die Teilnehmenden laufen auf einer etwa 6 km langen Runde bis zu 112 km und entscheiden selbst, wann sie starten, pausieren und ihren Lauf beenden. Mit jeder gelaufenen Runde werden Spenden für Kinder mit halbem Herzen gesammelt, um Forschung und Lebensfreude zu fördern. Der Lauf ist offen für alle, vom Laufanfänger bis zum Ultraläufer, und auch Rollstuhlfahrende sind herzlich willkommen.",
-    "course_highlights": [
-      "Rundkurs von ca. 6 km im Sportpark Johannisau, Fulda",
-      "Bis zu 112 km lange Spendenrunden",
-      "Flexibler Start und Laufzeit zwischen 06:00 und 21:00 Uhr"
-    ],
-    "additional": "Der Lauf ist ein Spendenlauf, bei dem jede Runde zählt und die Startgebühr komplett gespendet wird. Die Teilnehmer erhalten eine persönliche Spenden-Seite, über die Unterstützer pro gelaufener Runde spenden können. Es gibt einen 400 Meter Kinderlauf im Stadion, der pro Runde gezählt wird. Der Lauf ist auch virtuell möglich, sodass man weltweit teilnehmen kann. Flexible Laufzeit, virtuelle Teilnahme, Spenden für Kinder mit Herzfehler, Registrierung mit persönlicher Spenden-Seite, Medaille für die ersten 1500 Teilnehmer.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.heartbeat-ultra.de/"
-    ],
-    "consolidated_ids": [
-      "5be25097-8d8e-45ae-8db8-eeb4de8812ff"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "50_see_park_lauf",
-    "name": "50. See-Park-Lauf",
-    "type": "road",
-    "type_local": "Straße",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Seepark, Bad Gandersheim, Niedersachsen, Deutschland",
-    "latitude": 51.87179769999999,
-    "longitude": 10.023903,
-    "county": "Niedersachsen",
-    "nearest_city": "Braunschweig",
-    "nearby_cities": [],
-    "distances": "[\"10\", \"0.4\"]",
-    "distance_m": [
-      10000,
-      400
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km, 0.4 km",
-    "organizer": "SVG GW Bad Gandersheim",
-    "contact": null,
-    "website": null,
-    "fb_link": "https://facebook.com/seeparklauf",
-    "ig_link": "https://instagram.com/seeparklauf",
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://trainerday.com/de/events/de/50-bad-gandersheimer-see-park-lauf-64fad7-2026-11-21",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Der 50. Bad Gandersheimer See-Park-Lauf ist ein traditionsreicher Straßenlauf, der Ende November im Seepark von Bad Gandersheim stattfindet. Organisiert vom SVG GW Bad Gandersheim, bietet der Lauf Wertungen für verschiedene Alters- und Leistungsklassen, darunter Jungen, Mädchen, Männer, Frauen, Junioren, offene Läufer sowie Masters bis 95+. Die Veranstaltung ist eng mit der Oberschule Bad Gandersheim verbunden, deren Schülerinnen, Schüler und Lehrkräfte aktiv teilnehmen und das Organisationsteam unterstützen. Nach dem Lauf werden Ergebnisse, persönliche Urkunden und eine Fotogalerie online bereitgestellt.",
-    "course_highlights": [
-      "Straßenlauf auf dem Gelände des Seeparks Bad Gandersheim",
-      "Eigene Wertungen für diverse Alters- und Leistungsklassen",
-      "Enger Bezug zur Oberschule Bad Gandersheim mit aktiver Beteiligung"
-    ],
-    "additional": "Es gibt zwei Distanzen: 400 m und 10 km. Typisches Novemberwetter mit etwa 7 °C Tageshöchsttemperatur und regnerischen Tagen wird erwartet. Das Organisationsteam umfasst etwa 50 Personen, unterstützt von rund 80 Schülerinnen, Schülern und Lehrkräften. Nach dem Lauf werden Ergebnisse, Urkunden und eine Fotogalerie online gestellt. Straßenlauf im Seepark, Distanzen 400 m und 10 km, organisiert von der Schule, wetterbedingt regnerisch im November",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.gw-gan.de/",
-      "https://www.laufen.de/dlv-laufkalender",
-      "https://www.laufen.de/laufkalender/details/26V09000161760000",
-      "https://trainerday.com/de/events/de/50-bad-gandersheimer-see-park-lauf-64fad7-2026-11-21"
-    ],
-    "consolidated_ids": [
-      "48132fe5-449a-4e0a-8c33-d5f13b0f69c6"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "ainringer_crosslauf",
-    "name": "Ainringer Crosslauf",
-    "type": "terrain",
-    "type_local": "Gelände",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Ainring, Bayern, Deutschland",
-    "latitude": 47.8145816,
-    "longitude": 12.9415464,
-    "county": "Bayern",
-    "nearest_city": "Rosenheim",
-    "nearby_cities": [],
-    "distances": "[\"5\", \"2.6\"]",
-    "distance_m": [
-      5000,
-      2600
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5 km, 2.6 km",
-    "organizer": "Ski-Club Ainring e.V.",
-    "contact": null,
-    "website": "https://sc-ainring.de/ergebnislisten/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://sc-ainring.de/ergebnislisten/",
-    "presumed_organizer_email": "vorstand@sc-ainring.de",
-    "website_emails_found": [
-      "vorstand@sc-ainring.de"
-    ],
-    "description": "Der Ainringer Crosslauf ist eine traditionsreiche Laufveranstaltung des Ski-Club Ainring e.V., die in der Gemeinde Ainring stattfindet. Start und Ziel befinden sich an der Schwimmbadstraße. Die Veranstaltung bietet Läufern die Möglichkeit, auf abwechslungsreichen Crosslaufstrecken ihre Ausdauer und Lauftechnik zu testen. Der Lauf ist Teil des vielfältigen Sportprogramms des Vereins und richtet sich an Läufer aller Altersklassen und Leistungsniveaus.",
-    "course_highlights": [
-      "Start und Ziel an der Schwimmbadstraße in Ainring",
-      "Abwechslungsreiche Crosslaufstrecken im Gemeindegebiet",
-      "Traditionelle Laufveranstaltung des Ski-Club Ainring"
-    ],
-    "additional": "Gelaufen wird im Ainringer Moos und rund um den Bereich Eschlberg; Start und Ziel sind an der Schwimmbadstraße; Kinder- und Schulläufe inklusive.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.laufen.de/dlv-laufkalender",
-      "https://www.laufen.de/laufkalender/details/26V02000150060000"
-    ],
-    "consolidated_ids": [
-      "77e42651-5246-448c-b905-9708e3354431"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "braunsteichlauf_weisswasser",
-    "name": "Braunsteichlauf Weißwasser",
-    "type": "road",
-    "type_local": "Straße",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Weißwasser, Saxony, Deutschland",
-    "latitude": 51.50435179999999,
-    "longitude": 14.6345926,
-    "county": "Sachsen",
-    "nearest_city": "Hoyerswerda",
-    "nearby_cities": [
-      "Hoyerswerda"
-    ],
-    "distances": "[\"10\", \"5\", \"2\"]",
-    "distance_m": [
-      10000,
-      5000,
-      2000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km, 2 km",
-    "organizer": "Laufbewegung Weißwasser",
-    "contact": null,
-    "website": "https://laufbewegung-wsw.de/braunsteichlauf-weisswasser/",
-    "fb_link": "https://www.facebook.com/laufbewegung.wsw",
-    "ig_link": null,
-    "price_range": "null",
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://laufbewegung-wsw.de/braunsteichlauf-weisswasser/braunsteichlauf-der-lauf/",
-    "presumed_organizer_email": "technik@laufbewegung-wsw.de",
-    "website_emails_found": [
-      "technik@laufbewegung-wsw.de"
-    ],
-    "description": "Der Braunsteichlauf Weißwasser ist ein traditionsreicher Lauf am Ende der Laufsaison, der durch das Landschaftsschutzgebiet Braunsteich führt. Besonders hervorzuheben ist die Überquerung des Braunsteichs auf der hölzernen Braunsteichbrücke, die einen malerischen Blick über das Wasser bietet. Die Veranstaltung richtet sich an alle Altersgruppen von Kindern bis Senioren, die Freude am Laufen und Walken haben. Der Lauf ist Teil der Bezirksrangliste Dresden und des Niederlausitz-Cups und wird offiziell vom Deutschen Leichtathletik-Verband im Walking-Bereich anerkannt.",
-    "course_highlights": [
-      "Überquerung des Braunsteichs auf der hölzernen Braunsteichbrücke mit Blick über das Wasser",
-      "Strecke führt überwiegend über öffentliche Waldwege mit drei kurzen Abschnitten auf ruhigen Anlieger-Sackgassen",
-      "Herbstliche November-Atmosphäre im Landschaftsschutzgebiet Braunsteich"
-    ],
-    "additional": "Die 5km- und 10km-Strecken führen auf drei kurzen Abschnitten über öffentliche Straßen, die als Anlieger-Sackgassen wenig Verkehr haben. Die restliche Strecke verläuft über moderate, teilweise cross-lastige Waldwege. Der Lauf ist offen für alle Altersklassen und auch Walking ist offiziell anerkannt. Teilnehmerlimit von 300-500, Medaillen für Finisher, Anmeldung vor Ort oder online, kostenlose Duschen und Umkleiden vorhanden, in die regionale Leichtathletik eingebunden",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.laufen.de/dlv-laufkalender",
-      "https://www.laufen.de/laufkalender/details/26V15900001860003"
-    ],
-    "consolidated_ids": [
-      "650d44ac-3f29-4d98-87ad-f96193725e6a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "crossmeisterschaft_sc_magdeburg",
-    "name": "Crossmeisterschaft SC Magdeburg",
-    "type": "terrain",
-    "type_local": "Gelände",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Magdeburg, Sachsen-Anhalt, Deutschland",
-    "latitude": 52.1131758,
-    "longitude": 11.6080863,
-    "county": "Sachsen-Anhalt",
-    "nearest_city": "Magdeburg",
-    "nearby_cities": [
-      "Magdeburg"
-    ],
-    "distances": "[\"1.4\", \"0.7\"]",
-    "distance_m": [
-      1400,
-      700
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "1.4 km, 0.7 km",
-    "organizer": "SC Magdeburg",
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://trainerday.com/de/events/de/13-crossmeisterschaft-sc-magdeburg-2026",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Die Crossmeisterschaft SC Magdeburg ist ein traditionsreicher Crosslauf-Wettkampf, der vom SC Magdeburg und der Stadt Magdeburg in Sachsen-Anhalt ausgerichtet wird. Als Meisterschafts-Cross im deutschen Leichtathletik-Kalender bietet das Rennen eine anspruchsvolle Geländestrecke, die sich von klassischen Bahnläufen unterscheidet. Die Veranstaltung ist eingebettet in das DLV-System mit offiziellen Meldungen, Regeln und Zeitmessung und wird von der ehrenamtlichen Vereins- und Verbandskultur getragen. Die Läufe finden im November bei typischem kühlem und regnerischem Wetter statt und bieten eine authentische Crosslauf-Erfahrung für Vereins- und Verbandsläufer.",
-    "course_highlights": [
-      "Geländelauf im Cross-Stil, nicht auf der Bahn",
-      "Distanzen: 700 m und 1,4 km",
-      "Veranstaltung im Rahmen des deutschen Leichtathletik-Kalenders"
-    ],
-    "additional": "Die Veranstaltung ist offiziell im DLV-System gelistet mit Meldungen, Regeln und Zeitmessung. Typisches Wetter im November ist kühl (7 °C, Tiefstwert 2 °C) und regnerisch mit durchschnittlich 45 mm Niederschlag. Der Startort ist in Magdeburg, genaue Anfahrtsbeschreibung ist verfügbar. Geländelauf, Distanzen 700 m und 1.4 km, im November bei regnerischem Wetter",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.laufen.de/dlv-laufkalender",
-      "https://www.laufen.de/laufkalender/details/13-crossmeisterschaft-sc-magdeburg",
-      "https://trainerday.com/de/events/de/13-crossmeisterschaft-sc-magdeburg-2026"
-    ],
-    "consolidated_ids": [
-      "6d9c3954-15a5-4578-98bf-c0b0e7d587cf"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "rhadenlauf",
-    "name": "Rhädenlauf",
-    "type": "road",
-    "type_local": "Straße",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Naturschutzgebiet Rhäden, Wildeck-Obersuhl, Hesse, Deutschland",
-    "latitude": 50.9425447,
-    "longitude": 10.0105555,
-    "county": "Hessen",
-    "nearest_city": "Fulda",
-    "nearby_cities": [],
-    "distances": "[\"10\", \"5\"]",
-    "distance_m": [
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": "TV 1888 Obersuhl",
-    "contact": null,
-    "website": "https://tvo1888.de/leichtathletik/",
-    "fb_link": "https://www.facebook.com/rhaedenlauf/?locale=de_DE",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://tvo1888.de/leichtathletik/#main",
-    "presumed_organizer_email": "meldebuero@tvo-la.de",
-    "website_emails_found": [
-      "meldebuero@tvo-la.de",
-      "info@tvo1888.de"
-    ],
-    "description": "Der Rhädenlauf findet am 21. November 2026 im Naturschutzgebiet Rhäden in Wildeck-Obersuhl statt. Der Lauf wird vom TV 1888 Obersuhl organisiert und ist Teil des Wettkampfjahres 2026. Die Veranstaltung richtet sich an Läufer, die eine naturnahe Strecke in einer geschützten Landschaft erleben möchten. Die Zeitmessung erfolgt seit 2022 mit einer modernen ALGE-Anlage, die für präzise Ergebnisse sorgt.",
-    "course_highlights": [
-      "Lauf durch das Naturschutzgebiet Rhäden",
-      "Naturnahe und landschaftlich reizvolle Strecke",
-      "Moderne Zeitmessanlage von ALGE seit 2022 im Einsatz"
-    ],
-    "additional": "Die Zeitmessung erfolgt mit einer ALGE-Zeitmessanlage inklusive Startauslöser mit integriertem Blitzlicht (E-Start). Die Abteilungsleiterin ist Luisa Wunn, erreichbar unter 0177 4691132. Trainingszeiten des Vereins sind Montag, Mittwoch und Freitag jeweils von 17:30 bis 19:00 Uhr im Stadion oder der Großsporthalle Obersuhl. Streckenführung im Naturschutzgebiet, Trainingspläne für Teilnehmer",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.laufen.de/dlv-laufkalender",
-      "https://tvo1888.de/leichtathletik/",
-      "https://www.laufen.de/laufkalender/details/rhädenlauf"
-    ],
-    "consolidated_ids": [
-      "ed741ba3-4403-46e3-bfb4-ada48fcfa747"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "artenschutzlauf",
     "name": "Artenschutzlauf",
     "type": "road",
@@ -185251,519 +186111,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260525",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "berliner_mannschaftslauf_einzeln_oder_als_team",
-    "name": "Berliner Mannschaftslauf - einzeln oder als Team",
-    "type": "road",
-    "type_local": "Straße",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Stadion An der Windmühle, Buckower Damm 150, 12349 Berlin, Deutschland",
-    "latitude": 52.429486,
-    "longitude": 13.4329829,
-    "county": "Berlin",
-    "nearest_city": "Berlin",
-    "nearby_cities": [
-      "Berlin"
-    ],
-    "distances": "[\"21.1\", \"10.55\", \"3.7\"]",
-    "distance_m": [
-      21100,
-      10550,
-      3700
-    ],
-    "distance_keywords": [
-      "Halbmarathon",
-      "10 km"
-    ],
-    "distance_verbose": "Halbmarathon, 10.55 km, 3.7 km",
-    "organizer": "SSV Lichtenrade e.V.",
-    "contact": null,
-    "website": "https://www.ssv-lichtenrade.de/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20261119",
-    "registration_url": "https://www.ssv-lichtenrade.de/fileadmin/user_upload/Redaktion_ssv_lichtenrade_de/Dokumente/2026/Mannschaftslauf_2026_Ausschreibung.pdf",
-    "race_info_url": "https://www.ssv-lichtenrade.de/fileadmin/user_upload/Redaktion_ssv_lichtenrade_de/Dokumente/2026/Mannschaftslauf_2026_Ausschreibung.pdf",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Der Berliner Mannschaftslauf am 21. November 2026 ist ein traditionsreicher Lauf rund um den Britzer Garten mit Strecken für Halbmarathon, Viertelmarathon und 3,7 km. Das besondere Format mit Teamstart im 20-Sekunden-Takt sorgt für Spannung und Teamgeist. Die Veranstaltung richtet sich an Jugendliche und Erwachsene mit verschiedenen Wertungen, darunter Jugendpokal und Läufercup. Die abwechslungsreiche Strecke führt durch Grünanlagen und bietet ein Naturgefühl mitten in der Stadt. Fotos der Läufer werden kostenlos bereitgestellt.",
-    "course_highlights": [
-      "Abwechslungsreiche Strecke durch Grünanlagen und vorbei am Britzer Garten",
-      "Teamstart im 20-Sekunden-Takt für besondere Spannung",
-      "Wertungen für Jugendliche und Erwachsene inklusive Jugendpokal und Läufercup"
-    ],
-    "additional": "Start und Ziel sind am Stadion „An der Windmühle“, Buckower Damm 150, 12349 Berlin. Teamnamen können am Veranstaltungstag ergänzt werden. Die Teilnahme ist sowohl einzeln als auch als Team möglich. Fotos der Läufer werden kostenlos zur Verfügung gestellt, wenn sie vor der Kamera erfasst werden. Start und Ziel: Stadion „An der Windmühle“, Buckower Damm 150, 12349 Berlin. Vorgesehen sind Wertungen für Jugend, Aktive, Masters und den Volkslauf.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.94,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/47-berliner-mannschaftslauf-einzeln-oder-als-team"
-    ],
-    "consolidated_ids": [
-      "25dfaff2-a4e4-4e23-a94f-efdd1b52b4aa"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "crosslauf_denzlingen",
-    "name": "Crosslauf Denzlingen",
-    "type": "other",
-    "type_local": "Sonstiges",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Mauracher Hof, Denzlingen, Deutschland",
-    "latitude": 48.0741589,
-    "longitude": 7.9012469,
-    "county": "Baden-Württemberg",
-    "nearest_city": "Freiburg",
-    "nearby_cities": [
-      "Freiburg"
-    ],
-    "distances": "[\"8.15\", \"0.65\"]",
-    "distance_m": [
-      8150,
-      650
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "8.15 km, 0.65 km",
-    "organizer": "TV Denzlingen – Leichtathletikabteilung",
-    "contact": null,
-    "website": "https://www.tvd-la.de/",
-    "fb_link": null,
-    "ig_link": "https://www.instagram.com/tvd_la",
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20261121",
-    "registration_url": "https://my.raceresult.com/424510/info",
-    "race_info_url": "https://www.tvd-la.de/veranstaltungen-2026/",
-    "presumed_organizer_email": "info@tvd-la.de",
-    "website_emails_found": [
-      "info@tvd-la.de",
-      "20info@tvd-la.de",
-      "Rebecca.kiefer@tvd-la.de",
-      "jugend@tvd-la.de"
-    ],
-    "description": "Der Crosslauf Denzlingen findet am 21. November 2026 am Mauracher Hof in Denzlingen statt. Die Veranstaltung wird von der Leichtathletikabteilung des TV Denzlingen organisiert und bietet Läufern aller Altersklassen eine attraktive Wettkampfmöglichkeit. Die Strecke wurde aufgrund der Streckenverhältnisse leicht angepasst, aktuelle Streckenpläne sind in der Ausschreibung verfügbar. Die Veranstaltung ist bekannt für ihre familiäre Atmosphäre und die schöne Umgebung des Schulzentrums Denzlingen.",
-    "course_highlights": [
-      "Leicht angepasste Strecke aufgrund der Streckenverhältnisse",
-      "Start und Ziel am Leichtathletikstadion des Schulzentrums Denzlingen",
-      "Lauf durch die naturnahe Umgebung rund um den Mauracher Hof"
-    ],
-    "additional": "Die Anmeldung erfolgt über RaceResult. Die Veranstaltung wird von erfahrenen Übungsleitern begleitet. Trainingsmöglichkeiten bestehen im Leichtathletikstadion und bei geeigneter Witterung in der Schulsporthalle. Spikes mit langen Nägeln werden bei feuchtem Untergrund empfohlen. Anmeldung über https://my.raceresult.com/424510/info.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.94,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/crosslauf-denzlingen"
-    ],
-    "consolidated_ids": [
-      "014f4d3d-7f1e-4785-bcfa-548c071e5155"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "flvw_crossmeisterschaften",
-    "name": "FLVW Crossmeisterschaften",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Stadion am Merschweg, Schloß Neuhaus, Paderborn, Deutschland",
-    "latitude": 51.7483922,
-    "longitude": 8.7036144,
-    "county": "Nordrhein-Westfalen",
-    "nearest_city": "Bielefeld",
-    "nearby_cities": [],
-    "distances": "[\"10\", \"1\"]",
-    "distance_m": [
-      10000,
-      1000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km, 1 km",
-    "organizer": "Fußball- und Leichtathletik-Verband Westfalen (FLVW)",
-    "contact": null,
-    "website": "https://flvw.de/de/athletics/event/26L19000000051004/flvw-crossmeisterschaften.htm",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20261111",
-    "registration_url": null,
-    "race_info_url": "https://flvw.de/de/athletics/event/26L19000000051004/flvw-crossmeisterschaften.htm",
-    "presumed_organizer_email": "post@flvw.de",
-    "website_emails_found": [
-      "post@flvw.de"
-    ],
-    "description": "Die FLVW Crossmeisterschaften sind ein traditionsreicher Crosslauf-Wettbewerb, der am Stadion am Merschweg in Paderborn-Schloß Neuhaus stattfindet. Die Veranstaltung bietet verschiedene Distanzen von 1,0 km bis 10,0 km und richtet sich an Läuferinnen und Läufer unterschiedlicher Leistungsstufen. Die abwechslungsreiche Strecke führt durch Wald- und Crossgelände und verspricht spannende Wettkämpfe in einer naturnahen Umgebung. Die Veranstaltung ist offen für alle und fördert den Laufsport in Westfalen.",
-    "course_highlights": [
-      "Vielfältige Streckenlängen von 1,0 km bis 10,0 km",
-      "Gelände mit Wald- und Crosslaufcharakter",
-      "Austragungsort Stadion am Merschweg in Paderborn-Schloß Neuhaus"
-    ],
-    "additional": "Die Veranstaltung umfasst mehrere Wettbewerbe mit unterschiedlichen Distanzen, darunter Kurzstrecken, Mittelstrecken und Langstrecken. Die Anmeldung ist bis zum 11.11.2026 möglich. Start und Ziel befinden sich am Stadion am Merschweg.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.91,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/flvw-crossmeisterschaften"
-    ],
-    "consolidated_ids": [
-      "b6463cfb-6df5-4563-a58e-993f5f227e6b"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "harsefelder_klosterparklauf",
-    "name": "Harsefelder Klosterparklauf",
-    "type": "other",
-    "type_local": "Sonstiges",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Parkplatz hinter dem Rathaus, Harsefeld, Deutschland",
-    "latitude": 53.45612260000001,
-    "longitude": 9.4989773,
-    "county": "Niedersachsen",
-    "nearest_city": "Hamburg",
-    "nearby_cities": [],
-    "distances": "[\"50\"]",
-    "distance_m": [
-      50000
-    ],
-    "distance_keywords": [
-      "50 km"
-    ],
-    "distance_verbose": "50 km",
-    "organizer": "Lauftreff Harsefeld 05",
-    "contact": null,
-    "website": "https://volkslauf-harsefeld.de/klosterparklauf/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "20 €",
-    "price_tiers": [
-      {
-        "distance": "6-Stundenlauf",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "20,00 Euro",
-            "deadline": "20261114",
-            "description": "Voranmeldung bis zum 14.11.2026: 20,00 Euro"
-          }
-        ],
-        "late_fee": {
-          "price": "25,00 Euro",
-          "deadline": "20261121"
-        }
-      }
-    ],
-    "registration_close_date": "20261121",
-    "registration_url": "https://www.raceresult.com/registration?eventid=123456",
-    "race_info_url": "https://volkslauf-harsefeld.de/klosterparklauf/",
-    "presumed_organizer_email": "info@lauftreff-harsefeld.de",
-    "website_emails_found": [
-      "info@lauftreff-harsefeld.de"
-    ],
-    "description": "Der 9. 6-Stundenlauf im Klosterpark Harsefeld findet am 21. November 2026 statt und bietet Läufern die Möglichkeit, innerhalb von sechs Stunden so viele Runden wie möglich auf einer offiziell vermessenen 1.461,4 Meter langen Strecke zu absolvieren. Die Strecke führt überwiegend über befestigte Sandwege im idyllischen Klosterpark. Die Veranstaltung ist offen für alle ab 18 Jahren und wird vom Lauftreff Harsefeld 05 organisiert. Für Verpflegung ist mit einem gut ausgestatteten Stand in jeder Runde gesorgt, und die Zeitnahme erfolgt mit einem Leihchip von RaceResult.",
-    "course_highlights": [
-      "Offiziell vermessene 1.461,4 m lange Runde",
-      "Überwiegend befestigte Sandwege im Klosterpark",
-      "Rundenzählung mit Leihchip und Verpflegungsstand im Startbereich"
-    ],
-    "additional": "Startunterlagen werden am Veranstaltungstag von 8:30 bis 9:30 Uhr direkt am Start/Ziel ausgegeben. Toiletten und eine Umkleidemöglichkeit sind vorhanden, Duschmöglichkeiten gibt es nicht. Die Veranstaltung findet bei jedem Wetter statt und ist durch den Deutschen Leichtathletik Verband genehmigt. Teilnahme ab 18 Jahren; auf 150 Personen begrenzt. Start und Ziel befinden sich auf dem Parkplatz hinter dem Rathaus. Verpflegung während des Laufs ist vorgesehen; Toiletten und Umkleidemöglichkeit sind vorhanden, Duschen gibt es nicht.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.95,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/9-harsefelder-klosterparklauf"
-    ],
-    "consolidated_ids": [
-      "c81a033d-a2b3-4615-86eb-28d9291704a0"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "nordrhein_meisterschaften_2026_10km_strasse",
-    "name": "Nordrhein Meisterschaften 2026 10km Straße",
-    "type": "road",
-    "type_local": "Straße",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Baldeneysee, Freiherr-von-Stein-Straße, Essen, Deutschland",
-    "latitude": 51.4051875,
-    "longitude": 7.012283099999999,
-    "county": "Nordrhein-Westfalen",
-    "nearest_city": "Essen",
-    "nearby_cities": [
-      "Essen"
-    ],
-    "distances": "[\"10\"]",
-    "distance_m": [
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": "Leichtathletik-Verband Nordrhein e.V.",
-    "contact": null,
-    "website": "https://lvnordrhein.de/wettkaempfe/veranstaltungskalender/event/26L10000000051001",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://lvnordrhein.de/wettkaempfe/wettkaepfe/infos-online-meldungen",
-    "race_info_url": "https://lvnordrhein.de/wettkaempfe/meisterschaften/basisinformation",
-    "presumed_organizer_email": "ulrike.fehr@lvnordrhein.de",
-    "website_emails_found": [
-      "ulrike.fehr@lvnordrhein.de",
-      "lvnordrhein@lvn-sport.de",
-      "markus.paehler@lvnordrhein.de"
-    ],
-    "description": "Die Nordrhein Meisterschaften 2026 im 10km Straßenlauf finden am 21. November 2026 am Baldeneysee in Essen statt. Diese Meisterschaft ist eine bedeutende Veranstaltung im Leichtathletik-Verband Nordrhein und bietet Athleten die Möglichkeit, sich auf einer landschaftlich reizvollen Strecke zu messen. Der Lauf zeichnet sich durch eine attraktive Streckenführung entlang des Baldeneysees aus, die sowohl sportlich anspruchsvoll als auch landschaftlich schön ist. Die Veranstaltung richtet sich an leistungsorientierte Läufer und fördert den regionalen Wettkampfgeist.",
-    "course_highlights": [
-      "Landschaftlich reizvolle Strecke entlang des Baldeneysees",
-      "Asphaltierte Straßen mit flachem bis leicht welligem Profil",
-      "Start und Ziel an der Freiherr-von-Stein-Straße in Essen"
-    ],
-    "additional": "Die Veranstaltung wird vom Leichtathletik-Verband Nordrhein e.V. organisiert. Es gibt keine auf der Website explizit genannten Startzeiten oder Preisstaffelungen für die 10km Straßenlauf-Meisterschaft. Die Anmeldung erfolgt online über das Portal des LV Nordrhein. Weitere Informationen zu Rahmenprogrammen oder besonderen Teilnehmerbedingungen sind auf den verlinkten Seiten des Verbandes zu finden. Die Wettkampfstätte befindet sich am Baldeneysee.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.94,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/nordrhein-meisterschaften-2026-10km-straße"
-    ],
-    "consolidated_ids": [
-      "d8f855b9-b257-45d6-a7fc-106641bcf783"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "offene_lm_crosslauf",
-    "name": "Offene LM Crosslauf",
-    "type": "other",
-    "type_local": "Sonstiges",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Leichtathletikstadion an der Friedrich-Ebert-Straße, Magdeburg, Deutschland",
-    "latitude": 52.1244469,
-    "longitude": 11.6652179,
-    "county": "Sachsen-Anhalt",
-    "nearest_city": "Magdeburg",
-    "nearby_cities": [
-      "Magdeburg"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
-    "organizer": "Sportclub Magdeburg",
-    "contact": null,
-    "website": "https://www.lvsa.de/index.php?article_id=2080",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.lvsa.de/index.php?article_id=45",
-    "race_info_url": "https://www.lvsa.de/index.php?article_id=2080",
-    "presumed_organizer_email": "info@lvsa.de",
-    "website_emails_found": [
-      "info@lvsa.de"
-    ],
-    "description": "Der Offene Landesmeisterschafts-Crosslauf findet am 21. November 2026 im Leichtathletikstadion an der Friedrich-Ebert-Straße in Magdeburg statt. Die Veranstaltung richtet sich an Läufer verschiedener Altersklassen und Leistungsniveaus und bietet eine anspruchsvolle Crosslaufstrecke. Die Meisterschaft ist eine etablierte Veranstaltung im Kalender des Leichtathletik-Verbandes Sachsen-Anhalt und fördert den regionalen Laufsport.",
-    "course_highlights": [
-      "Crosslaufstrecke im Leichtathletikstadion Magdeburg",
-      "Vielfältige Altersklassen und Distanzen",
-      "Traditionelle Landesmeisterschaft mit regionaler Bedeutung"
-    ],
-    "additional": "Online-Meldung wird angeboten.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.78,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/offene-lm-crosslauf"
-    ],
-    "consolidated_ids": [
-      "aa0fd0ca-ad5f-4563-80a8-2d968c497e7b"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "waldstrasser_crosslauf",
-    "name": "Waldsträßer Crosslauf",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "11:30",
-    "location": "Schlosspark Biebrich, Wiesbaden, Deutschland",
-    "latitude": 50.0428644,
-    "longitude": 8.234950399999999,
-    "county": "Hessen",
-    "nearest_city": "Frankfurt am Main",
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
-    "organizer": "TV Waldstraße 1902 e.V.",
-    "contact": null,
-    "website": "https://tv-waldstrasse.de/34-waldstraesser-crosslauf",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20261118",
-    "registration_url": null,
-    "race_info_url": "https://tv-waldstrasse.de/sites/default/files/documents/Ausschreibung_TVW-Coss_2026%20final.pdf",
-    "presumed_organizer_email": "la-meldungen@tv-waldstrasse.de",
-    "website_emails_found": [
-      "info@tv-waldstrasse.de",
-      "la-meldungen@tv-waldstrasse.de"
-    ],
-    "description": "Der 34. Waldsträßer Crosslauf findet am 21. November 2026 im Schlosspark Wiesbaden-Biebrich statt. Die Veranstaltung beginnt um 11:30 Uhr und bietet Läufern verschiedener Altersklassen und Leistungsniveaus die Möglichkeit, auf abwechslungsreichem Crosslauf-Gelände anzutreten. Die Anmeldung erfolgt vorzugsweise über das Meldeportal LA.Net3, wobei Vereine und Schulen ohne Zugang per E-Mail melden können. Die Veranstaltung ist eine etablierte Crosslauf-Tradition in der Region und wird vom TV Waldstraße Wiesbaden organisiert.",
-    "course_highlights": [
-      "Crosslauf im Schlosspark Wiesbaden-Biebrich",
-      "Vielfältiges Gelände mit natürlichen Hindernissen",
-      "Traditionelle Veranstaltung mit regionaler Bedeutung"
-    ],
-    "additional": "Meldungen erfolgen vorzugsweise über das Meldeportal LA.Net3. Vereine und Schulen ohne Zugang melden per E-Mail möglichst in Tabellenform mit Nachname, Vorname, Geschlecht, Jahrgang, Verein und Lauf-Nr. Die Veranstaltung bietet eine Teilnehmerliste, Zeitplan und Ergebnisse im LA-Portal. Meldungen erfolgen vorzugsweise über LA.Net3. Vereine und Schulen ohne Zugang können per E-Mail an la-meldungen@tv-waldstrasse.de melden.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.91,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/34-waldsträßer-crosslauf"
-    ],
-    "consolidated_ids": [
-      "c52fd04e-6526-4180-b1d2-048cd0f9f194"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -185986,80 +186333,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "kreismeisterschaften_crosslauf_26160_ofen_bad_zwischenahn",
-    "name": "Kreismeisterschaften Crosslauf",
-    "type": "terrain",
-    "type_local": "Gelände",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Ofen, Bad Zwischenahn, Lower Saxony, Deutschland",
-    "latitude": 53.1679074,
-    "longitude": 8.1524548,
-    "county": "Niedersachsen",
-    "nearest_city": "Oldenburg",
-    "nearby_cities": [
-      "Oldenburg"
-    ],
-    "distances": "[\"12.5\", \"10.6\", \"10\", \"6.4\", \"5.1\", \"4\", \"2.7\", \"2\"]",
-    "distance_m": [
-      12500,
-      10600,
-      10000,
-      6400,
-      5100,
-      4000,
-      2700,
-      2000
-    ],
-    "distance_keywords": [
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "12.5 km, 10.6 km, 10 km, 6.4 km, 5.1 km, 4 km, 2.7 km, 2 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.laufen.de/laufkalender/details/kreismeisterschaften-crosslauf-4"
-    ],
-    "consolidated_ids": [
-      "20f0d236-1f1b-4374-a162-e128757c6226"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -186297,132 +186570,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20261030",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "4_plesse_ultrarun_pur",
-    "name": "4. Plesse UltraRun (PUR)",
-    "type": "other",
-    "type_local": "Sonstiges",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Bovenden, Lower Saxony, Deutschland",
-    "latitude": 51.5903058,
-    "longitude": 9.932688500000001,
-    "county": "Niedersachsen",
-    "nearest_city": "Kassel",
-    "nearby_cities": [],
-    "distances": "[\"160.934\", \"72\"]",
-    "distance_m": [
-      160934,
-      72000
-    ],
-    "distance_keywords": [
-      "100 Meilen",
-      "Ultramarathon"
-    ],
-    "distance_verbose": "100 Meilen, 72 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.bovendersv.de/index.php/leichtathletik/2579-4-plesse-ultrarun-pur-20256"
-    ],
-    "consolidated_ids": [
-      "90bb97ae-b6a8-4475-be97-3eb963b6f021"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "9_6_stundenlauf_im_klosterpark_harsefeld",
-    "name": "9. 6-Stundenlauf im Klosterpark Harsefeld",
-    "type": "time",
-    "type_local": "Zeitlauf",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Klosterpark, Harsefeld, Deutschland",
-    "latitude": 53.4545458,
-    "longitude": 9.5013667,
-    "county": "Niedersachsen",
-    "nearest_city": "Hamburg",
-    "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Gemischte Distanz",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://volkslauf-harsefeld.de/klosterparklauf/"
-    ],
-    "consolidated_ids": [
-      "f9d5da63-064b-47d7-afa9-d64d9a6655aa"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,

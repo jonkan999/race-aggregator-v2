@@ -1270,8 +1270,8 @@
   {
     "domain_name": "sprit_frontyard_dalby_by_night_2026",
     "name": "SpriT Frontyard - Dalby by Night 2026",
-    "type": "road",
-    "type_local": "Landevej",
+    "type": "frontyard",
+    "type_local": "Frontyard Ultra",
     "race_dates": [
       [
         "20261212",
@@ -1281,15 +1281,13 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Dalby Badet, Dalby, Denmark",
-    "latitude": 55.3102781,
-    "longitude": 12.0629011,
-    "county": "Sjælland",
-    "nearest_city": "Næstved",
-    "nearby_cities": [
-      "Næstved"
-    ],
+    "start_time": "15:30",
+    "location": "Dalby badet, Dalby, Sverige",
+    "latitude": 55.674659,
+    "longitude": 13.354125,
+    "county": null,
+    "nearest_city": "København",
+    "nearby_cities": [],
     "distances": "[\"1\"]",
     "distance_m": [
       1000
@@ -1298,27 +1296,29 @@
     "distance_verbose": "1 km",
     "organizer": null,
     "contact": null,
-    "website": "https://www.sportstiming.dk/event/19418",
+    "website": "https://runtgs.se/sprit-frontyard-sprint-trail-frontyard/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "245 kr.",
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://www.sportstiming.dk/event/19418/registration?invitation=",
-    "race_info_url": "https://www.sportstiming.dk/event/19418",
-    "presumed_organizer_email": "laurent.leloup@gmx.de",
-    "website_emails_found": [
-      "laurent.leloup@gmx.de"
+    "registration_url": null,
+    "race_info_url": "https://runtgs.se/sprit-frontyard-sprint-trail-frontyard/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "SpriT Frontyard Dalby by Night is a frontyard race after dark at Dalby badet in Skåne. The course is a 1 km light trail lap with a steep hill at the start and 24 m of climbing per lap. The first lap must be completed in 10 minutes, and the time limit gets shorter each lap until runners can no longer keep up. The race combines speed and pacing strategy.",
+    "course_highlights": [
+      "1 km light trail lap at Dalby badet",
+      "24 m of climbing per lap with a hill at the start",
+      "Time limit drops from 10 minutes by 20 seconds per lap"
     ],
-    "description": "SpriT Frontyard - Dalby by Night is an evening race in Dalby. The race takes place at Dalby Badet and gives participants the opportunity to run in the dark. Look forward to a running experience focused on community and challenge.",
-    "course_highlights": [],
-    "additional": null,
+    "additional": "Start at 15:30 from the Dalby badet car park. Water, cola and some food are available at the lap change. Entry costs 245 kr and places are limited.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.43,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.sportstiming.dk/event/19418"
     ],
@@ -1348,9 +1348,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": "09:30",
-    "location": "Løbestationen, Odder, Denmark",
-    "latitude": 55.975718,
-    "longitude": 10.149958,
+    "location": "Spektrum Odder, Parkvej 5, Odder",
+    "latitude": 55.9783752,
+    "longitude": 10.1524615,
     "county": "Midtjylland",
     "nearest_city": "Aarhus",
     "nearby_cities": [
@@ -1371,80 +1371,29 @@
     "distance_verbose": "Halvmarathon, 15.83 km, 10.55 km, 5.28 km",
     "organizer": "Odder Atletik & Motion",
     "contact": null,
-    "website": "https://lobeklubben.dk/run-events/x-mas-loebet-2026/",
-    "fb_link": "https://www.facebook.com/groups/odderatletikxmas/",
+    "website": "https://www.odderatletik.dk/vores-lob/x-mas-loebet/",
+    "fb_link": null,
     "ig_link": null,
     "price_range": "195 kr. + gebyr",
-    "price_tiers": [
-      {
-        "distance": "5,28 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "195,00 DKK",
-            "deadline": "20261206",
-            "description": "5,28 km: 195,00 DKK + gebyr"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "10,55 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "195,00 DKK",
-            "deadline": "20261206",
-            "description": "10,55 km: 195,00 DKK + gebyr"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "15,83 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "195,00 DKK",
-            "deadline": "20261206",
-            "description": "15,83 km: 195,00 DKK + gebyr"
-          }
-        ],
-        "late_fee": null
-      },
-      {
-        "distance": "21,1 km",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "195,00 DKK",
-            "deadline": "20261206",
-            "description": "21,1 km: 195,00 DKK + gebyr"
-          }
-        ],
-        "late_fee": null
-      }
-    ],
+    "price_tiers": [],
     "registration_close_date": "20261206",
-    "registration_url": "https://lobeklubben.dk/tilmeld-lob/",
-    "race_info_url": "https://lobeklubben.dk/run-events/x-mas-loebet-2026/",
-    "presumed_organizer_email": "kontakt@xn--lbeklubben-0cb.dk",
-    "website_emails_found": [
-      "kontakt@xn--lbeklubben-0cb.dk"
-    ],
-    "description": "X-Mas Race 2026 in Odder is a cosy Christmas race organised by Odder Atletik & Motion, welcoming both beginners and experienced runners. The race takes place on a 5.275 km loop, which runners can complete several times to reach distances of 5.28 km, 10.55 km, 15.83 km or the half marathon distance of 21.1 km. It is a perfect opportunity to take a break from the Christmas rush and celebrate the year’s running season with a run and socialising. The start and finish are at Løbestationen, where refreshments are also available. Multiple start times give participants flexibility.",
+    "registration_url": null,
+    "race_info_url": "https://www.odderatletik.dk/vores-lob/x-mas-loebet/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "X-Mas løbet is the Christmas race of Odder Atletik & Motion in Odder, closing the running season with a run and a social get-together. The race is run on a 5.275 km loop, and runners choose one, two, three or four laps up to a half marathon. Flexible start times let everyone finish in time for the shared Christmas lunch. The race is part of the Martinsen Midtjysk Mini Major series.",
     "course_highlights": [
-      "Loop race on a 5.275 km circuit",
-      "Start and finish at Løbestationen, with refreshments available",
-      "Route suitable for both beginners and experienced runners"
+      "5.275 km loop with start and finish at Spektrum Odder",
+      "Distances of 5.28, 10.55, 15.83 and 21.1 km",
+      "Refreshment station after each lap"
     ],
-    "additional": "Race numbers can be collected from 9:00. Multiple start times, with different maximum durations, from 9:30 to 12:00. Martinsen Midtjysk Mini Major medals will be handed out. Handling fee of 16.00 DKK plus 0.8% per participant. Start times are spread between 9:30 and 12:00. The entry fee includes a timing chip and a beer or water; a medal can be purchased separately. There is no time limit.",
+    "additional": "Bibs are handed out from 9:00. The early start is at 9:30, then starts every half hour until 12:00, each with a maximum duration so everyone finishes before the joint closing at 13:00. After the race there is a Christmas meal and a cold beer or water, and the Mini Major medals are presented at 13:30. Showers and toilets are available in the Spektrum hall.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.92,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://www.sportstiming.dk/event/17010"
     ],
@@ -1474,9 +1423,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Design & Idrætsefterskolen Skamling",
-    "latitude": 55.407391934688434,
-    "longitude": 9.549458026885986,
+    "location": "Design & Idrætsefterskolen Skamling, 6093 Sjølund",
+    "latitude": 55.4071154,
+    "longitude": 9.550510899999999,
     "county": "Syddanmark",
     "nearest_city": "Kolding",
     "nearby_cities": [
@@ -1499,19 +1448,23 @@
     "distance_verbose": "Halvmarathon, 10 km, 6 km, 5 km, 3000 meter",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://xmas.skamlingraces.dk/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "50-250 kr.",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://xmas.skamlingraces.dk/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Held since 2012 in the historic, hilly surroundings on and around Skamlingsbanken, with routes for the whole family. From the family route to",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Juleløbet Skamling is a Christmas race on and around Skamlingsbanken, starting from Design & Idrætsefterskolen Skamling near Sjølund. There are routes for everyone, from an orienteering run for small children to a cross-country half marathon. The routes are mostly on grass, gravel and forest paths with some asphalt, and the hills make it tough. After the race there is mulled wine, juice and æbleskiver in the hall.",
+    "course_highlights": [
+      "Rudolf is a 10 km cross race with more than 350 m of climbing",
+      "Julemanden is a half marathon running the 10 km route twice, the second time in reverse",
+      "Fine views over Skamlingsbanken and the water"
+    ],
+    "additional": "Routes are Nissepus (orienteering for children up to 8-9), Kaneturen (5 km cross), Kravlenissen (5 km walk), Nissekompasset (6 km orienteering), Rudolf (10 km) and Julemanden (half marathon). Prices start at DKK 50 for Nissepus and are DKK 150 or 250 on the longer routes, under 15s pay half. Trail shoes are recommended.",
     "images": [
       {
         "number": 1,
@@ -1534,9 +1487,11 @@
       "description"
     ],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
-      "ranking_bridge"
+      "ranking_bridge",
+      "https://www.sportstiming.dk/event/18720",
+      "https://www.sportstiming.dk/event/20026"
     ],
     "consolidated_ids": [
       "2fba9290-5edd-5849-a9ad-97a887e09113"
@@ -1647,82 +1602,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "julelobet_skamling_et_anderledes_juleeventyr_2026",
-    "name": "Juleløbet Skamling - Et anderledes Juleeventyr 2026",
-    "type": "trail",
-    "type_local": "Trailløb",
-    "race_dates": [
-      [
-        "20261213",
-        "20261213"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Skamlinghallen, Sjølund, Denmark",
-    "latitude": 55.4044706,
-    "longitude": 9.5284321,
-    "county": "Syddanmark",
-    "nearest_city": "Kolding",
-    "nearby_cities": [
-      "Kolding"
-    ],
-    "distances": "[\"21.1\", \"10.5\", \"6.5\", \"6\", \"2\"]",
-    "distance_m": [
-      21100,
-      10500,
-      6500,
-      6000,
-      2000
-    ],
-    "distance_keywords": [
-      "Halvmarathon",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Halvmarathon, 10.5 km, 6.5 km, 6 km, 2 km",
-    "organizer": "SkamlingRaces",
-    "contact": null,
-    "website": "https://xmas.skamlingraces.dk/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://xmas.skamlingraces.dk/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Juleløbet Skamling is a different kind of Christmas adventure, offering several distances and running experiences for all ages. From the little Nissepus children’s race to the demanding Julemanden half marathon, the races take place in the beautiful and challenging terrain of Skamlingsbanken, with hills, views, and varied surfaces such as mud or snow. The event is organized in collaboration with Kolding Orienteering Club and combines cross-country running and orienteering in a cozy Christmas atmosphere. Participants can also enjoy Julemandens Købmandsgård and Christmas merchandise, creating a festive setting for the event.",
-    "course_highlights": [
-      "Cross-country running on and around Skamlingsbanken, with beautiful views and hills",
-      "Orienteering with a map on trails, suitable for all levels",
-      "Varied surfaces with mud or snow add an extra challenge"
-    ],
-    "additional": "The event includes several distances: Nissepus (children’s race for ages up to 8–9), Kaneturen (5 km cross-country race), Nissekompasset (6 km orienteering race), Rudolf (10 km cross-country race with +350 metres of elevation gain), Julemanden (half-marathon cross-country race, running the 10 km route twice in the opposite direction), and Kravlenissen (5 km walk). The event also features Julemandens Købmandsgård and Christmas merchandise for sale. Mulled wine and æbleskiver are served after the race, along with warm blackcurrant drink and pebernødder on the routes. Trail shoes are recommended.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.91,
-    "sources": [
-      "https://www.sportstiming.dk/event/18720"
-    ],
-    "consolidated_ids": [
-      "eb493303-fa8f-440b-8975-2a79dea961ec"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260914",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "taastrup_lobet_nr_617",
     "name": "Taastrup Løbet nr. 617",
     "type": "road",
@@ -1803,72 +1682,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260914",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "julelobet_2026",
-    "name": "Juleløbet 2026",
-    "type": "road",
-    "type_local": "Landevej",
-    "race_dates": [
-      [
-        "20261213",
-        "20261213"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Kolding, Denmark",
-    "latitude": 55.495973,
-    "longitude": 9.4730519,
-    "county": "Syddanmark",
-    "nearest_city": "Kolding",
-    "nearby_cities": [
-      "Kolding"
-    ],
-    "distances": "[\"3\"]",
-    "distance_m": [
-      3000
-    ],
-    "distance_keywords": [
-      "3000 meter"
-    ],
-    "distance_verbose": "3000 meter",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.sportstiming.dk/event/20026"
-    ],
-    "consolidated_ids": [
-      "f7b47f9b-da6a-488b-bc12-69b0b21632f1"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261024",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -22803,6 +22616,84 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "sydvest_crosslob_2026_27_afd_3_bramming",
+    "name": "Sydvest Crossløb 2026/27 - afd. 3 - Bramming",
+    "type": "road",
+    "type_local": "Landevej",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "11:00",
+    "location": "Bramming Fjernvarme, Grønningen 7, Bramming, Denmark",
+    "latitude": 55.476757,
+    "longitude": 8.699071,
+    "county": "Syddanmark",
+    "nearest_city": "Esbjerg",
+    "nearby_cities": [
+      "Esbjerg"
+    ],
+    "distances": "[\"7.5\", \"5\", \"2.5\"]",
+    "distance_m": [
+      7500,
+      5000,
+      2500
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "7.5 km, 5 km, 2.5 km",
+    "organizer": "Brørup Løbeklub, Billund Løbeklub, Bramming IF Motion, Byparken Running Brørup, Varde Løbemotion, SGI Løb, Sdr. Omme Atletik og Motion og Blåbjerg Gå- og Løbemotion",
+    "contact": null,
+    "website": "https://lobeklubben.dk/run-events/sydvest-crossloeb-2026-27-afd-3-bramming/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://lobeklubben.dk/tilmeld-lob/",
+    "race_info_url": "https://lobeklubben.dk/run-events/sydvest-crossloeb-2026-27-afd-3-bramming/",
+    "presumed_organizer_email": "kontakt@xn--lbeklubben-0cb.dk",
+    "website_emails_found": [
+      "kontakt@xn--lbeklubben-0cb.dk"
+    ],
+    "description": "Sydvest Crossløb 2026/27 - Round 3 in Bramming is part of a winter race series offering short, manageable distances for both runners and walkers. The race takes place at Bramming Fjernvarme and offers distances of 2.5 km, 5 km and 7.5 km, plus walks of 2.5 km and 5 km. Walkers can choose to complete one or two laps of the 2.5 km route. Walk routes are timed to record participation in the team competition. Participants can sign up for individual rounds or choose a series entry; at least five rounds must be completed to qualify for prizes.",
+    "course_highlights": [
+      "A short, manageable winter race with distances of 2.5 km, 5 km and 7.5 km",
+      "Start at Bramming Fjernvarme, Grønningen 7",
+      "Walkers can choose one or two laps of the 2.5 km route, with timing"
+    ],
+    "additional": "Both runners and walkers are timed, primarily to record the number of participants in the team competition. You can sign up for individual rounds or choose a series entry. At least 5 rounds must be completed to qualify for prizes. On the 2.5 km walking route, you can choose one or two laps. You can sign up for the Bramming round alone or for the full series; participation in at least five rounds is required to qualify for prizes.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.94,
+    "sources": [
+      "https://www.sportstiming.dk/event/18951"
+    ],
+    "consolidated_ids": [
+      "148f6aa3-65e8-422c-8568-1abd1d32086a"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "trails_flyvestationen_2026",
     "name": "TRAILS - Flyvestationen 2026",
     "type": "trail",
@@ -23043,82 +22934,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "24h_online_running_4",
-    "name": "24H Online Running",
-    "type": "other",
-    "type_local": "Andet",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "None",
-    "latitude": 56.26392,
-    "longitude": 9.501785,
-    "county": "Midtjylland",
-    "nearest_city": "Herning",
-    "nearby_cities": [
-      "Herning"
-    ],
-    "distances": "[\"24\"]",
-    "distance_m": [
-      24000
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "24 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "24H Online Running is a unique race that takes place over 24 hours, where participants can choose to run, walk, or cycle. This event offers the possibi",
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "location",
-      "type",
-      "name",
-      "county",
-      "race_dates",
-      "distances",
-      "latitude",
-      "longitude",
-      "description"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "b771001c-74f0-5514-94f9-f2489515b00e"
-    ],
-    "supplied_ids": [
-      "c237a9ed-f66b-5b7a-97ed-85c68e9c1884"
-    ],
-    "supplied_at": "20260914",
-    "created_date": "20260914",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "night_trail_afd_1_2026",
     "name": "Night TRAIL afd. 1 - 2026",
     "type": "trail",
@@ -23189,80 +23004,6 @@
     ],
     "consolidated_ids": [
       "42b366e2-e891-482b-af93-83dabc9f3359"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260914",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "sydvest_crosslob_2026_27_afd_3_bramming",
-    "name": "Sydvest Crossløb 2026/27 - afd. 3 - Bramming",
-    "type": "road",
-    "type_local": "Landevej",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "11:00",
-    "location": "Bramming Fjernvarme, Grønningen 7, Bramming, Denmark",
-    "latitude": 55.476757,
-    "longitude": 8.699071,
-    "county": "Syddanmark",
-    "nearest_city": "Esbjerg",
-    "nearby_cities": [
-      "Esbjerg"
-    ],
-    "distances": "[\"7.5\", \"5\", \"2.5\"]",
-    "distance_m": [
-      7500,
-      5000,
-      2500
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "7.5 km, 5 km, 2.5 km",
-    "organizer": "Brørup Løbeklub, Billund Løbeklub, Bramming IF Motion, Byparken Running Brørup, Varde Løbemotion, SGI Løb, Sdr. Omme Atletik og Motion og Blåbjerg Gå- og Løbemotion",
-    "contact": null,
-    "website": "https://lobeklubben.dk/run-events/sydvest-crossloeb-2026-27-afd-3-bramming/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20261121",
-    "registration_url": "https://lobeklubben.dk/tilmeld-lob/",
-    "race_info_url": "https://lobeklubben.dk/run-events/sydvest-crossloeb-2026-27-afd-3-bramming/",
-    "presumed_organizer_email": "kontakt@xn--lbeklubben-0cb.dk",
-    "website_emails_found": [
-      "kontakt@xn--lbeklubben-0cb.dk"
-    ],
-    "description": "Sydvest Crossløb 2026/27 - Round 3 in Bramming is part of a winter race series offering short, manageable distances for both runners and walkers. The race takes place at Bramming Fjernvarme and offers distances of 2.5 km, 5 km and 7.5 km, plus walks of 2.5 km and 5 km. Walkers can choose to complete one or two laps of the 2.5 km route. Walk routes are timed to record participation in the team competition. Participants can sign up for individual rounds or choose a series entry; at least five rounds must be completed to qualify for prizes.",
-    "course_highlights": [
-      "A short, manageable winter race with distances of 2.5 km, 5 km and 7.5 km",
-      "Start at Bramming Fjernvarme, Grønningen 7",
-      "Walkers can choose one or two laps of the 2.5 km route, with timing"
-    ],
-    "additional": "Both runners and walkers are timed, primarily to record the number of participants in the team competition. You can sign up for individual rounds or choose a series entry. At least 5 rounds must be completed to qualify for prizes. On the 2.5 km walking route, you can choose one or two laps. You can sign up for the Bramming round alone or for the full series; participation in at least five rounds is required to qualify for prizes.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.94,
-    "sources": [
-      "https://www.sportstiming.dk/event/18951"
-    ],
-    "consolidated_ids": [
-      "4dac13b5-004b-4f34-ba6e-90da39f7cf43"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -26098,6 +25839,82 @@
     ],
     "supplied_at": "20260914",
     "created_date": "20261121",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "24h_online_running_4",
+    "name": "24H Online Running",
+    "type": "other",
+    "type_local": "Andet",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "None",
+    "latitude": 56.26392,
+    "longitude": 9.501785,
+    "county": "Midtjylland",
+    "nearest_city": "Herning",
+    "nearby_cities": [
+      "Herning"
+    ],
+    "distances": "[\"24\"]",
+    "distance_m": [
+      24000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "24 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "24H Online Running is a unique race that takes place over 24 hours, where participants can choose to run, walk, or cycle. This event offers the possibi",
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "location",
+      "type",
+      "name",
+      "county",
+      "race_dates",
+      "distances",
+      "latitude",
+      "longitude",
+      "description"
+    ],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "ranking_bridge"
+    ],
+    "consolidated_ids": [
+      "ce268d0f-7903-41e7-8a27-01e9df36d317"
+    ],
+    "supplied_ids": [
+      "c237a9ed-f66b-5b7a-97ed-85c68e9c1884"
+    ],
+    "supplied_at": "20260914",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,

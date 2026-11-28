@@ -75478,8 +75478,8 @@
   {
     "domain_name": "beh_okolo_prehrady_kretinky",
     "name": "Běh okolo přehrady Křetínky",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20261107",
@@ -75493,41 +75493,59 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Křetínka Reservoir, Letovice, South Moravian Region, Česko",
-    "latitude": 49.5673502,
-    "longitude": 16.4971117,
+    "start_time": "14:00",
+    "location": "AFK Letovice, Tyršova, Letovice, Česko",
+    "latitude": 49.5431313,
+    "longitude": 16.570998,
     "county": "Jihomoravský kraj",
     "nearest_city": "Brno",
     "nearby_cities": [],
-    "distances": "[\"14.7\", \"14\"]",
+    "distances": "[\"14\"]",
     "distance_m": [
-      14700,
       14000
     ],
     "distance_keywords": [],
-    "distance_verbose": "14.7 km, 14 km",
-    "organizer": null,
+    "distance_verbose": "14 km",
+    "organizer": "Fan club „BOP KŘETÍNKA“ z.s.",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://fanclubbopkretinka.cz/",
+    "fb_link": "https://www.facebook.com/mestoLetovice/posts/b%C4%9Bh-okolo-p%C5%99ehrady-k%C5%99et%C3%ADnky-39-ro%C4%8Dn%C3%ADk-sobota-7-11-2026-zm%C4%9Bna-m%C3%ADsta-z-d%C5%AFvodu-p%C5%99es/1598825725622793/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_tiers": [
+      {
+        "distance": "all",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "300 Kč",
+            "deadline": null,
+            "description": "300,-Kč ve všech kategoriích ( v ceně je zahrnuto občerstvení)"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20271106",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://fanclubbopkretinka.cz/index.php?id01=akce&id02=bop&id03=prop",
+    "presumed_organizer_email": "plsekr@letostav.cz",
+    "website_emails_found": [
+      "plsekr@letostav.cz"
+    ],
+    "description": "Běh okolo přehrady Křetínky je tradiční závod s dlouholetou historií, který vede kolem malebné přehrady Křetínky v okolí Letovic. Start i cíl jsou umístěny v areálu fotbalového hřiště AFK Letovice, kde je zajištěno sociální zázemí, šatny a občerstvení. Trať o délce 14 km vede převážně po asfaltových komunikacích a je zřetelně značená žlutými šipkami. Závod probíhá za plného silničního provozu a je vhodný pro širokou škálu věkových kategorií. V roce 2027 se závod uskuteční 6. listopadu s možností registrace na místě před startem.",
+    "course_highlights": [
+      "Trasa vede kolem přehrady Křetínky ve směru hodinových ručiček",
+      "Délka trati je 14 km s mírným převýšením a asfaltovým povrchem",
+      "Start a cíl jsou v areálu fotbalového hřiště AFK Letovice s občerstvením a zázemím"
+    ],
+    "additional": "Prezence a registrace jsou možné na místě v den závodu od 11:00 do 13:30 v areálu fotbalového hřiště AFK Letovice. Po doběhu je zajištěno průběžné občerstvení a v 16:00 vyhlášení výsledků s předáním cen. Trať může mít v den závodu dvě varianty podle aktuálního stavu stavebních úprav. Závod probíhá za plného silničního provozu a každý závodník startuje na vlastní nebezpečí. Start a cíl jsou v areálu AFK Letovice na Tyršově ulici.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.76,
     "sources": [
       "https://www.svetbehu.cz/terminovka/beh-okolo-prehrady-kretinky/",
       "https://ceskybeh.cz/zavody/beh-okolo-prehrady-kretinky-2026/"
@@ -75546,8 +75564,8 @@
   {
     "domain_name": "beh_na_ceskou_chalupu_memorial_mirko_grafa",
     "name": "Běh na Českou chalupu, memoriál Mirko Gräfa",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261107",
@@ -75561,8 +75579,8 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Lidové sady, Liberec, Liberec Region, Česko",
+    "start_time": "09:30",
+    "location": "Konečná tramvaje, Lidové sady, Liberec, Česko",
     "latitude": 50.7774702,
     "longitude": 15.0814494,
     "county": "Liberecký kraj",
@@ -75570,33 +75588,69 @@
     "nearby_cities": [
       "Liberec"
     ],
-    "distances": "[\"2.5\"]",
+    "distances": "[\"2.5\", \"0.6\", \"0.35\"]",
     "distance_m": [
-      2500
+      2500,
+      600,
+      350
     ],
     "distance_keywords": [],
-    "distance_verbose": "2.5 km",
-    "organizer": null,
+    "distance_verbose": "2.5 km, 0.6 km, 0.35 km",
+    "organizer": "AC Slovan Liberec",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.behnaceskouchalupu.cz",
+    "fb_link": "https://www.facebook.com/behnaceskouchalupu/",
     "ig_link": null,
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
+    "price_tiers": [
+      {
+        "distance": "Hlavní závod",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "300 Kč",
+            "deadline": "20271105",
+            "description": "Startovné na hlavní závod je při přihlášení online 300 Kč."
+          }
+        ],
+        "late_fee": {
+          "price": "400 Kč",
+          "deadline": "20271106"
+        }
+      },
+      {
+        "distance": "Dětský závod k Vodárně",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "100 Kč",
+            "deadline": "20271105",
+            "description": "Na dětský běh k Vodárně je startovné 100 Kč online i na místě."
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20271106",
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.behnaceskouchalupu.cz/propozice",
+    "presumed_organizer_email": "info@behnaceskouchalupu.cz",
+    "website_emails_found": [
+      "info@behnaceskouchalupu.cz"
+    ],
+    "description": "Běh na Českou chalupu je tradiční liberecký běh do kopce dlouhý 2500 metrů s převýšením 250 metrů, který se koná každoročně první listopadovou sobotu. Závod je náročný, ale přístupný širokému spektru běžců, od amatérů po vrcholové sportovce. Součástí závodu je také dětský běh k Vodárně na tratích 350 a 600 metrů s převýšením 45 metrů. Závod je zároveň memoriálem Mirko Gräfa a nabízí příjemnou atmosféru s vyhlášením a cenami pro nejlepší závodníky.",
+    "course_highlights": [
+      "Start u konečné tramvaje v Lidových sadech, trasa vede po červené turistické značce",
+      "Nejprudší část trati je zkratka ke Strážnímu buku",
+      "Cíl u restaurace Česká chalupa před hlavní silnicí z Liberce do Bedřichova"
+    ],
+    "additional": "Startovní čísla jsou opatřena čipem nalepeným přímo na čísle. Čísla si lze vyzvednout v den závodu od 8:00 v závodní kanceláři v Royal Residence, nejpozději 20 minut před startem kategorie. Úschovna cenných věcí je k dispozici v závodní kanceláři. Parkování je doporučeno na parkovišti ZOO s příjezdem pouze z ulice Javorová kvůli uzavírce v Sovově ulici. Pro děti do 7 let je připravena trať dlouhá 350 metrů.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.svetbehu.cz/terminovka/beh-na-ceskou-chalupu-memorial-mirko-grafa/"
     ],
@@ -75685,8 +75739,8 @@
   {
     "domain_name": "humpolecke_sestistovky",
     "name": "Humpolecké šestistovky",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261107",
@@ -75717,25 +75771,31 @@
     "distance_verbose": "28 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.svetbehu.cz/terminovka/humpolecke-sestistovky/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "https://www.svetbehu.cz/terminovka/humpolecke-sestistovky/",
+    "presumed_organizer_email": "DAVID.GLADIS@SVETBEHU.CZ",
+    "website_emails_found": [
+      "DAVID.GLADIS@SVETBEHU.CZ"
+    ],
+    "description": "Humpolecké šestistovky je pohodový trailovo-krosový závod, který nabízí vyběhnutí na deset šestisetmetrových vrcholů v okolí Humpolce, s výjimkou Havlova vrchu. Závod je situován v malebné přírodě Vysočiny a je vhodný pro běžce, kteří hledají kombinaci výzvy a krásných výhledů. Start probíhá v uličce mezi restaurací Karamba a koupalištěm Žabák, což dodává závodu příjemnou atmosféru. Tento závod je ideální pro milovníky horského běhu a trailu, kteří chtějí zažít autentický běžecký zážitek v přírodě.",
+    "course_highlights": [
+      "Vyšlápnutí na deset šestisetmetrových vrcholů v okolí Humpolce",
+      "Krosový a trailový charakter závodu v přírodě Vysočiny",
+      "Malebné výhledy a přírodní scenérie mimo Havlův vrch"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.svetbehu.cz/terminovka/humpolecke-sestistovky/"
     ],
@@ -76469,8 +76529,8 @@
   {
     "domain_name": "drsny_beh_okolo_hradu_potstejn",
     "name": "Drsný běh okolo hradu Potštejn",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261108",
@@ -76491,33 +76551,40 @@
     "county": "Královéhradecký kraj",
     "nearest_city": "Hradec Králové",
     "nearby_cities": [],
-    "distances": "[\"7.8\"]",
+    "distances": "[\"7.8\", \"3.9\"]",
     "distance_m": [
-      7800
+      7800,
+      3900
     ],
     "distance_keywords": [],
-    "distance_verbose": "7.8 km",
+    "distance_verbose": "7.8 km, 3.9 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.svetbehu.cz/terminovka/drsny-beh-okolo-hradu-potstejn/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
+    "race_info_url": "https://www.svetbehu.cz/terminovka/drsny-beh-okolo-hradu-potstejn/",
+    "presumed_organizer_email": "DAVID.GLADIS@SVETBEHU.CZ",
+    "website_emails_found": [
+      "DAVID.GLADIS@SVETBEHU.CZ"
+    ],
+    "description": "Drsný běh okolo hradu Potštejn je náročný závod dlouhý 7,8 km s převýšením 335 metrů, který vede převážně terénem a končí posledních 700 metrů po asfaltu. Součástí závodu je také Hobby běh na 3,9 km, který nabízí kratší variantu pro méně zkušené běžce. Závod je vhodný pro milovníky přírody a terénního běhu, kteří chtějí zažít výzvu v krásném prostředí okolo hradu Potštejn. Trasa kombinuje technické úseky s krásnými výhledy a zajímavým profilem. Závod je součástí běžecké komunity a nabízí příležitost pro setkání s dalšími běžci.",
+    "course_highlights": [
+      "Délka 7,8 km s převýšením 335 m",
+      "Převážně terénní trať s posledními 700 m po asfaltu",
+      "Součástí je i kratší Hobby běh na 3,9 km"
+    ],
     "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://www.svetbehu.cz/terminovka/drsny-beh-okolo-hradu-potstejn/"
     ],
@@ -76535,8 +76602,8 @@
   {
     "domain_name": "pohodova_devitka_velka_bites",
     "name": "PoHodová devítka",
-    "type": "other",
-    "type_local": "Ostatní",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261108",
@@ -76550,8 +76617,8 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Football Stadium, Velká Bíteš, Vysočina, Česko",
+    "start_time": "11:00",
+    "location": "Fotbalový stadion, Velká Bíteš, Česko",
     "latitude": 49.2886269,
     "longitude": 16.2258566,
     "county": "Kraj Vysočina",
@@ -76567,27 +76634,33 @@
       "10 km"
     ],
     "distance_verbose": "9 km",
-    "organizer": null,
+    "organizer": "Bítešský spolek vytrvalostních sportů",
     "contact": null,
-    "website": null,
+    "website": "https://ceskybeh.cz/zavody/pohodova-devitka-2026/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://ceskybeh.cz/zavody/pohodova-devitka-2026/",
+    "presumed_organizer_email": "bitesskybeh@seznam.cz",
+    "website_emails_found": [
+      "bitesskybeh@seznam.cz"
+    ],
+    "description": "PoHodová devítka je krosový a trailový běh konaný v krásné přírodě Velkobítešska s tratěmi o délce 9 km a 2 km. Závod se odehrává na fotbalovém stadionu ve Velké Bíteši a nabízí příjemnou atmosféru pro běžce všech věkových kategorií. Součástí programu jsou také dětské závody a lidový běh na 2 km. Pořádá jej Bítešský spolek vytrvalostních sportů s cílem přivítat běžce v přátelském prostředí Vysočiny.",
+    "course_highlights": [
+      "Krosový a trailový charakter tratě",
+      "Krásná příroda Velkobítešska",
+      "Start a cíl na fotbalovém stadionu ve Velké Bíteši"
+    ],
+    "additional": "Hlavní závod na 9 km startuje v 12:00, první kategorie začíná v 11:00. V neděli 20. 9. 2026 jsou plánovány dětské závody a lidový běh na 2 km. Pořadatelem je Bítešský spolek vytrvalostních sportů, kontaktní osoba Ondřej Plechatý.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.77,
     "sources": [
       "https://www.svetbehu.cz/terminovka/pohodova-devitka/"
     ],
@@ -78802,11 +78875,15 @@
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
     "location": "Kruh, Liberecký kraj, Česko",
     "latitude": 50.5655377,
@@ -78814,19 +78891,21 @@
     "county": "Liberecký kraj",
     "nearest_city": "Liberec",
     "nearby_cities": [],
-    "distances": "[\"12\", \"5\"]",
+    "distances": "[\"11\", \"5\", \"2\"]",
     "distance_m": [
-      12000,
-      5000
+      11000,
+      5000,
+      2000
     ],
     "distance_keywords": [
+      "10 km",
       "5 km"
     ],
-    "distance_verbose": "12 km, 5 km",
+    "distance_verbose": "11 km, 5 km, 2 km",
     "organizer": null,
     "contact": null,
     "website": "https://www.svetbehu.cz/terminovka/kruzska-kundraticka/",
-    "fb_link": "https://www.facebook.com/groups/jilkrak/posts/26862881460004002/",
+    "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
@@ -78837,29 +78916,29 @@
     "website_emails_found": [
       "DAVID.GLADIS@SVETBEHU.CZ"
     ],
-    "description": "Kružská Kundratická - Memoriál Honzy Šíra je kopcovitý silniční závod v Kruhu, Liberecký kraj, který nabízí mužům trať dlouhou 12 km s obrátkou v Kundraticích a ženám trať 5 km, která se obrací dříve. Závod je pojmenován na památku Honzy Šíra a je vhodný pro běžce, kteří hledají výzvu v kopcovitém terénu. Pro více informací je k dispozici kontakt na pořadatele. Závod je součástí běžecké komunity a nabízí příležitost poměřit síly na náročné trati.",
+    "description": "Kružská Kundratická - Memoriál Honzy Šíra je kopcovitý silniční běžecký závod konaný v Kruhu v Libereckém kraji. Muži běží trať dlouhou 12 km s obrátkou v Kundraticích, zatímco ženy absolvují kratší 5 km trasu, která se obrací dříve. Závod je vhodný pro běžce, kteří hledají výzvu v podobě kopcovitého terénu a chtějí si změřit síly na zajímavé trati s různými délkami. Akce nese památku Honzy Šíra a nabízí příležitost pro sportovní setkání v krásném prostředí.",
     "course_highlights": [
       "Kopcovitý silniční terén",
-      "12 km trať pro muže s obrátkou v Kundraticích",
+      "12 km trať s obrátkou v Kundraticích pro muže",
       "5 km trať pro ženy s dřívější obrátkou"
     ],
-    "additional": "Pro informace o závodě lze kontaktovat Jiřího Sedláčka (606280856) a Jana Šíra (732851697). Informace o závodě jsou dostupné na telefonních číslech Jiřího Sedláčka (606280856) a Jana Šíra (732851697).",
+    "additional": "Kontaktní osoby pro informace o závodě jsou Jiří Sedláček (606280856) a Jan Šír (732851697).",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.8,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://ceskybeh.cz/zavody/kruzska-kundraticka-memorial-honzy-sira-2026/",
       "https://www.bezim.cz/zavody/kruzska-kundraticka-memorial-honzy-sira-2026"
     ],
     "consolidated_ids": [
-      "20da6e08-eab5-42b3-9fdd-4d0ef122edfd"
+      "e1a9809a-0744-4939-84e8-f51aaeb46977"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260409",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -78874,13 +78953,17 @@
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Přáslavice u Olomouce, Olomouc, Česko",
+    "location": "Přáslavice, Olomouc District, Olomouc Region, Česko",
     "latitude": 49.58729659999999,
     "longitude": 17.3900592,
     "county": "Olomoucký kraj",
@@ -78896,7 +78979,7 @@
       "10 km"
     ],
     "distance_verbose": "10 km",
-    "organizer": "TJ Liga stovkařů Olomouc",
+    "organizer": null,
     "contact": null,
     "website": "https://www.liga100.cz/zavody/13-beh-praslavicka-desitka/",
     "fb_link": null,
@@ -78910,30 +78993,30 @@
     "website_emails_found": [
       "info@liga100.cz"
     ],
-    "description": "Přáslavická desítka je tradiční běžecký závod pořádaný TJ Liga stovkařů Olomouc, který se koná v obci Přáslavice u Olomouce. Závod nabízí příležitost pro kondiční i výkonnostní běžce, kteří si mohou užít trať v malebném prostředí střední Moravy. Liga stovkařů je známá svou dlouholetou tradicí a podporou běžecké komunity v regionu. Přáslavická desítka je součástí série závodů Velké ceny vytrvalců Olomouckého kraje a přitahuje běžce všech věkových kategorií a úrovní.",
+    "description": "Přáslavická desítka je tradiční běžecký závod pořádaný TJ Liga stovkařů Olomouc, který nabízí běžcům možnost změřit síly na desetikilometrové trati v malebném prostředí Přáslavic. Klub Liga stovkařů je známý svou dlouholetou tradicí v propagaci kondičního a výkonnostního běhu na střední Moravě a pořádá řadu vytrvalostních závodů v regionu. Závod je vhodný pro širokou veřejnost, od rekreačních běžců po závodníky s ambicemi, a je součástí Velké ceny vytrvalců Olomouckého kraje. Přáslavická desítka je tak ideální příležitostí pro sportovní setkání a podporu běžecké komunity.",
     "course_highlights": [
-      "Trasa vede malebnou krajinou Přáslavic u Olomouce",
-      "Převážně asfaltový a lesní povrch",
+      "Desetikilometrová trať v okolí obce Přáslavice",
+      "Malebné přírodní prostředí střední Moravy",
       "Součást Velké ceny vytrvalců Olomouckého kraje"
     ],
-    "additional": "Závod se koná 21. dubna 2026, součástí série místních běhů, trať je převážně na asfaltových cestách.",
+    "additional": null,
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://ceskybeh.cz/zavody/praslavicka-desitka-2026/",
       "https://www.bezim.cz/zavody/praslavicka-desitka-2026",
       "https://www.svetbehu.cz/terminovka/praslavicka-devitka/"
     ],
     "consolidated_ids": [
-      "1429bae0-6a81-4a16-abec-2571ba225181"
+      "4ecaeb32-bbad-4497-8c13-18311f949858"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260409",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -78942,19 +79025,23 @@
   {
     "domain_name": "beh_na_cap",
     "name": "Běh na Čáp",
-    "type": "trail",
-    "type_local": "Trail",
+    "type": "terrain",
+    "type_local": "Terén",
     "race_dates": [
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Teplice nad Metují, Hradec Králové, Česko",
+    "location": "Teplice nad Metují, Česko",
     "latitude": 50.5945936,
     "longitude": 16.1700952,
     "county": "Královéhradecký kraj",
@@ -78968,44 +79055,49 @@
       "5 km"
     ],
     "distance_verbose": "5.8 km",
-    "organizer": "SPORTiV REDPOINT Teplice nad Metují",
+    "organizer": null,
     "contact": null,
     "website": "https://redpointteam.cz/stp/propozice/bezecke-vrsky/beh-na-cap/propozice-behu-na-cap/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "50,-Kč",
+    "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": "https://redpointteam.cz/stp/propozice/bezecke-vrsky/beh-na-cap/propozice-behu-na-cap/",
+    "registration_url": null,
     "race_info_url": "https://redpointteam.cz/stp/propozice/bezecke-vrsky/beh-na-cap/propozice-behu-na-cap/",
     "presumed_organizer_email": "redpoint@seznam.cz",
     "website_emails_found": [
       "redpoint@seznam.cz",
-      "bezdekpavel01@gmail.com"
+      "bezdekpavel01@gmail.com",
+      "martin.osoba@centrum.cz",
+      "vena.hornych@gmail.com",
+      "david.srutek@seznam.cz",
+      "demjanek@seznam.cz",
+      "mira-mira@seznam.cz"
     ],
-    "description": "Běh na Čáp je veřejný závod v běhu do vrchu s hromadným startem, který se koná v Teplicích nad Metují. Tento tradiční závod je součástí série Běžecké vršky a nabízí sportovní zážitek v krásné přírodě. Závod je vhodný pro širokou veřejnost a přináší možnost poměřit síly v náročném terénu. Pořádá ho Redpoint Teplice nad Metují, který dbá na kvalitní organizaci a přátelskou atmosféru.",
+    "description": "Běh na Čáp je veřejný závod v běhu do vrchu s hromadným startem, který se koná v Teplicích nad Metují. Závod je součástí série Běžecké vršky a nabízí trať dlouhou 5,8 km s převýšením, která prověří vytrvalost i sílu běžců. Tento závod tradičně uzavírá běžeckou sezónu a je oblíbený mezi místními i přespolními běžci. Pořadatelem je Redpoint Teplice nad Metují, který zajišťuje kvalitní organizaci a příjemnou atmosféru závodu.",
     "course_highlights": [
-      "Běh do vrchu s hromadným startem",
-      "Náročný terén v okolí Teplic nad Metují",
-      "Součást Běžeckých vršků s tradicí a historií"
+      "Trať dlouhá 5,8 km s převýšením 230 m",
+      "Běh do vrchu v malebném prostředí Teplických skal",
+      "Hromadný start s možností poměřit síly s ostatními běžci"
     ],
-    "additional": "Závod v běhu do vrchu s kategoriemi, registrace je možná za startovné 50 Kč, závod se koná v terénu s náročným převýšením. Výsledky jsou pravidelně zveřejňovány a závod má dlouhou tradici.",
+    "additional": "Závod je součástí Vrchařské ligy a Běžeckých vršků. Trať vede po lesních cestách a stezkách v přírodním parku Teplické skály. Po závodě je možnost občerstvení a vyhlášení výsledků v příjemném prostředí.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://ceskybeh.cz/zavody/beh-na-cap-2026/",
       "https://www.svetbehu.cz/terminovka/beh-na-cap-2/"
     ],
     "consolidated_ids": [
-      "86daa6ed-75e3-4d4b-a776-1c7567c99129"
+      "6fa93ce4-828e-48ee-9f95-7ec14b9c62e6"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260409",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -79020,34 +79112,38 @@
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": "18:00",
-    "location": "Záluží u Plzně, Plzeň-sever, Plzeňský kraj, Česko",
-    "latitude": 49.8129651,
-    "longitude": 13.369468,
+    "location": "Záluží, Nýřany, Plzeň Region, Česko",
+    "latitude": 49.7127158,
+    "longitude": 13.2046047,
     "county": "Plzeňský kraj",
     "nearest_city": "Plzeň",
     "nearby_cities": [
       "Plzeň"
     ],
-    "distances": "[\"5\"]",
+    "distances": "[\"6\"]",
     "distance_m": [
-      5000
+      6000
     ],
     "distance_keywords": [
       "5 km"
     ],
-    "distance_verbose": "5 km",
-    "organizer": "Jiří Cipra a kolektiv",
+    "distance_verbose": "6 km",
+    "organizer": null,
     "contact": null,
     "website": "https://ceskybeh.cz/zavody/forestovo-nocnik-2026/?iframe=1",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "165,- Kč online / 250,- Kč na místě",
+    "price_range": null,
     "price_tiers": [
       {
         "distance": "5 km",
@@ -79055,48 +79151,48 @@
           {
             "label": "tier_1",
             "price": "165 Kč",
-            "deadline": "20261120",
+            "deadline": null,
             "description": "165,- Kč online"
           },
           {
             "label": "tier_2",
             "price": "250 Kč",
-            "deadline": "20261121",
+            "deadline": null,
             "description": "250,- Kč na místě"
           }
         ],
         "late_fee": null
       }
     ],
-    "registration_close_date": "20261121",
+    "registration_close_date": null,
     "registration_url": null,
     "race_info_url": "https://ceskybeh.cz/zavody/forestovo-nocnik-2026/?iframe=1",
     "presumed_organizer_email": "jiriciprag@gmail.com",
     "website_emails_found": [
       "jiriciprag@gmail.com"
     ],
-    "description": "Forestovo Nočník je noční terénní závod v Záluží u Plzně, který nabízí 5 km trať plnou zábavy a výzev. Závod se koná za tmy, proto je čelovka povinná a trať je značená reflexními prvky, což zajišťuje bezpečnost a jedinečnou atmosféru. Po doběhu je pro účastníky připraven čaj a občerstvení. Tento závod je ideální pro milovníky nočního běhu a trailových výzev, kteří chtějí zažít běh v netradičním prostředí s přátelskou atmosférou.",
+    "description": "Forestovo Nočník je noční terénní závod v Záluží u Plzně, který nabízí 5 km trať plnou zábavy a výzev. Závod je charakteristický startem za tmy, kdy je čelovka povinná a trať je bezpečně značená reflexními prvky. Po doběhu čeká na účastníky čaj a občerstvení, což přispívá k příjemné atmosféře závodu. Tento krosový závod je ideální pro milovníky nočního běhu a terénních výzev.",
     "course_highlights": [
-      "Noční terénní trať 5 km",
-      "Trať značená reflexními prvky",
-      "Povinná čelovka pro bezpečný běh"
+      "Noční terénní trať dlouhá 5 km",
+      "Trať značená reflexními prvky pro bezpečný běh ve tmě",
+      "Povinná čelovka pro všechny běžce"
     ],
-    "additional": "V cíli je pro závodníky připraven čaj a občerstvení. Závod je charakteristický 100% tmou a 100% zábavou. Pořadatelem je Jiří Cipra a kolektiv. Trať je dlouhá 5 km, povinná čelovka, reflexní značení, občerstvení v cíli, závod je určen pro různé věkové skupiny.",
+    "additional": "V cíli je zajištěn čaj a občerstvení. Závod je pořádán Jiřím Ciprou a kolektivem. Pořadatel doporučuje čelovku jako povinnou výbavu pro bezpečný běh v noci.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://ceskybeh.cz/zavody/forestovo-nocnik-2026/"
     ],
     "consolidated_ids": [
-      "15939e95-29a2-4af2-9bf1-36fc815a4007"
+      "9afb4466-de72-4c15-908d-9bfbc6eea72f"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260409",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -79105,19 +79201,23 @@
   {
     "domain_name": "slanske_behy",
     "name": "Slánské běhy",
-    "type": "terrain",
-    "type_local": "Terén",
+    "type": "road",
+    "type_local": "Silniční běh",
     "race_dates": [
       [
         "20261121",
         "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Slaný, Středočeský kraj, Česko",
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Slaný, Central Bohemian Region, Česko",
     "latitude": 50.23046220000001,
     "longitude": 14.0869438,
     "county": "Středočeský kraj",
@@ -79125,49 +79225,284 @@
     "nearby_cities": [
       "Praha"
     ],
-    "distances": "[\"21.1\", \"12\"]",
+    "distances": "[\"12\"]",
     "distance_m": [
-      21100,
       12000
     ],
-    "distance_keywords": [
-      "Půlmaraton"
-    ],
-    "distance_verbose": "Půlmaraton, 12 km",
-    "organizer": "SKOB Slaný",
+    "distance_keywords": [],
+    "distance_verbose": "12 km",
+    "organizer": null,
     "contact": null,
     "website": "http://www.skobslany.cz",
-    "fb_link": "https://facebook.com/kralovskemestoslany",
+    "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "http://www.skobslany.cz/zavody",
+    "registration_url": "http://www.skobslany.cz/kontakt",
+    "race_info_url": "http://www.skobslany.cz/clanek/323-slanske-behy-2026",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Slánské běhy jsou tradičním orientačním běžeckým závodem pořádaným Sportovním klubem orientačního běhu Slaný. Závod se koná v okolí města Slaný a nabízí různé kategorie včetně hlavní kategorie na 12 km a dětských kategorií. Závod je vhodný pro širokou veřejnost a přitahuje běžce všech věkových skupin. Pořadatelé zajišťují zázemí a přátelskou atmosféru pro všechny účastníky.",
+    "description": "Slánské běhy jsou tradiční běžecký závod pořádaný Sportovním klubem orientačního běhu Slaný. Hlavní trať měří 12 km a vede po silnicích a cestách přes Háje, Otruby a Kralovice. Kromě hlavního závodu jsou připraveny i kratší tratě pro děti a mládež. Závod se koná v listopadu a nabízí příjemné prostředí s podporou místního gymnázia jako zázemí pro závodníky.",
     "course_highlights": [
-      "Hlavní kategorie na 12 km v okolí Slaného",
-      "Dětské a mládežnické kategorie s kratšími tratěmi",
-      "Zázemí poskytuje Gymnázium V.B.T. Slaný"
+      "Hlavní trať 12 km po silnicích a cestách přes Háje, Otruby a Kralovice",
+      "Krátké a kratší tratě pro děti a mládež",
+      "Zázemí v přízemí Gymnázia V.B.T. Slaný"
     ],
-    "additional": "Závod se koná tradičně v listopadu, poslední ročník byl 29. listopadu 2025. Pořadatelé děkují všem závodníkům za účast a těší se na další ročník. V minulosti se účastnilo kolem 70 závodníků v hlavní kategorii a několik desítek dětí a mládeže. Hlavní závod je na 12 km, registrace probíhá v Gymnáziu V.B.T. Slaný, závody se konají v sobotu 21. listopadu 2026 v 10:00.",
+    "additional": "Prezentace závodníků probíhá od 9:00 do 9:30 v přízemí Gymnázia V.B.T. Slaný. Závod se koná za chladného, ale slunečného počasí. Pořadatelé děkují Gymnáziu V.B.T. za poskytnutí zázemí.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://ceskybeh.cz/zavody/slanske-behy-2026/"
     ],
     "consolidated_ids": [
-      "c461954c-74a3-4d97-8930-c9ecff7c1cf2"
+      "ff7cdefb-0508-4bdb-9c88-b531085021b6"
     ],
     "supplied_ids": [],
     "supplied_at": null,
-    "created_date": "20260409",
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "vranov_trail",
+    "name": "Vranov Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "11:00",
+    "location": "Vranov, Brno-Country District, South Moravian Region, Česko",
+    "latitude": 49.3092572,
+    "longitude": 16.613778,
+    "county": "Jihomoravský kraj",
+    "nearest_city": "Brno",
+    "nearby_cities": [
+      "Brno"
+    ],
+    "distances": "[\"21.1\"]",
+    "distance_m": [
+      21100
+    ],
+    "distance_keywords": [
+      "Půlmaraton"
+    ],
+    "distance_verbose": "Půlmaraton",
+    "organizer": null,
+    "contact": null,
+    "website": "https://vranovtrail.cz/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "Prádelna Trail",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "500 Kč",
+            "deadline": null,
+            "description": "Startovné: 500 Kč předem"
+          },
+          {
+            "label": "tier_2",
+            "price": "600 Kč",
+            "deadline": null,
+            "description": "600 při platbě na místě"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": "https://forms.gle/EASgvAbB98o9n97g7",
+    "race_info_url": "https://vranovtrail.cz/pradelna-trail/",
+    "presumed_organizer_email": "vranovtrailrunners@gmail.com",
+    "website_emails_found": [
+      "vranovtrailrunners@gmail.com",
+      "info@example.com"
+    ],
+    "description": "Vranov Trail je série běžeckých závodů pořádaných kamarády, kteří sami běhají ultratrail. Každý závod nabízí vychytané trasy, kvalitní občerstvení a pohodovou atmosféru. Závody se konají v okolí Brna a jsou vhodné pro různé skupiny běžců. Trasy jsou dobře značené a závodníci se mohou těšit na příjemné zázemí a doprovodný program.",
+    "course_highlights": [
+      "Trasy vedou Podkomorskými lesy a okolím přehrady, start i cíl jsou ve venkovních prostorách areálu Stará Prádelna",
+      "Trasy jsou značeny červenobílou páskou, žlutou páskou a reflexním sprejem",
+      "Noční trail v zimě s vyhřátým stanem, teplou kávou, čajem a italským teplým jídlem po závodě"
+    ],
+    "additional": "Zázemí závodů zahrnuje vyhřáté stany, dostatek vody a iontových nápojů na trati, teplé jídlo po závodě a afterparty. Parkování je omezené, doporučuje se využít veřejnou dopravu. Pro závod Prádelna Trail je kapacita omezena na 100 účastníků.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://ceskybeh.cz/zavody/vranov-trail-2026/"
+    ],
+    "consolidated_ids": [
+      "6729b303-f8a6-411f-983a-f3977359f720"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "gp_vytrvalcu_kamenneho_ujezda",
+    "name": "GP vytrvalců Kamenného Újezda",
+    "type": "other",
+    "type_local": "Ostatní",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Kamenný Újezd, South Bohemian Region, Česko",
+    "latitude": 48.8976367,
+    "longitude": 14.4463788,
+    "county": "Jihočeský kraj",
+    "nearest_city": "České Budějovice",
+    "nearby_cities": [
+      "České Budějovice"
+    ],
+    "distances": "[\"6.5\"]",
+    "distance_m": [
+      6500
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "6.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenny-ujezda-2026/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenny-ujezda-2026/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "GP vytrvalců Kamenného Újezda je běžecký závod pořádaný na fotbalovém hřišti v Kamenném Újezdě. Závod nabízí tratě různých délek, které vedou převážně po silnici a terénu s mírným převýšením. Akce je součástí Jihočeského běžeckého poháru a je vhodná pro širokou běžeckou veřejnost, která hledá výzvu v podzimním období. Pořadatelem je TJ Sokol Kamenný Újezd, který zajišťuje příjemnou atmosféru a kvalitní zázemí pro závodníky.",
+    "course_highlights": [
+      "Závod je součástí Jihočeského běžeckého poháru",
+      "Trať vede po silnici a smíšeném terénu s mírným převýšením",
+      "Start a cíl jsou na fotbalovém hřišti v Kamenném Újezdě"
+    ],
+    "additional": "Závod nabízí tratě o délce 6,5 km. Trať je smíšená, vhodná pro běh v podzimním období.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.66,
+    "sources": [
+      "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenneho-ujezda-1-2026/"
+    ],
+    "consolidated_ids": [
+      "80d6da91-713e-4b8b-b961-f9c2dd767983"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "lysacup_visalaje_parkoviste",
+    "name": "Lysacup – Visalaje, parkoviště",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Parkoviště Visalaje, Visalaje, Krásná, Moravian-Silesian Region, Česko",
+    "latitude": 49.5177486,
+    "longitude": 18.5285805,
+    "county": "Moravskoslezský kraj",
+    "nearest_city": "Ostrava",
+    "nearby_cities": [],
+    "distances": "[\"7.9\"]",
+    "distance_m": [
+      7900
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "7.9 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.lysacup.cz/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.lysacup.cz/user/prihlasovani/ziskat-uzivatele",
+    "race_info_url": "https://www.lysacup.cz/homepage/about",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Lysacup je zimní etapový pohár v běhu, který se většinou koná na Lysé hoře v Beskydech. Každý víkend se běží z jiného místa a závodí se jak jednotlivci, tak týmy. Trasa závodu je náročná, s kombinací krosových kilometrů a vrchařských úseků, které vyžadují jak běžeckou rychlost, tak sílu do kopce. Start je tradičně v 10:00 a závodníci používají čipy, které se aktivují na celý ročník zasláním dobrovolného příspěvku. Lysacup je známý svou atmosférou fair play a komunitním duchem mezi závodníky.",
+    "course_highlights": [
+      "Zimní etapový běh na Lysou horu (1323 m n.m.) v Beskydech",
+      "Kombinace krosových a vrchařských úseků s náročným terénem",
+      "Trasa vede méně frekventovanými turistickými cestami, kde je předbíhání obtížnější"
+    ],
+    "additional": "Startovní čip se aktivuje zasláním dobrovolného příspěvku na celý ročník, jednorázová cena čipu je 100 Kč. Start je v 10:00, čip je nutné vyzvednout alespoň 15 minut před startem. Parkování na místě startu je omezené, doporučuje se spolujízda nebo využití veřejné dopravy. V cíli je k dispozici občerstvení a nově testovaná měřicí aplikace.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.svetbehu.cz/terminovka/lysacup-visalaje-parkoviste/"
+    ],
+    "consolidated_ids": [
+      "da73b8df-53dd-4c41-85a0-366572193bb2"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -79240,162 +79575,6 @@
     "supplied_ids": [],
     "supplied_at": null,
     "created_date": "20260409",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "vranov_trail",
-    "name": "Vranov Trail",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "11:00",
-    "location": "Vranov, Brno-Country District, South Moravian Region, Česko",
-    "latitude": 49.3092572,
-    "longitude": 16.613778,
-    "county": "Jihomoravský kraj",
-    "nearest_city": "Brno",
-    "nearby_cities": [
-      "Brno"
-    ],
-    "distances": "[\"21.1\"]",
-    "distance_m": [
-      21100
-    ],
-    "distance_keywords": [
-      "Půlmaraton"
-    ],
-    "distance_verbose": "Půlmaraton",
-    "organizer": "Vranov Trail Runners",
-    "contact": null,
-    "website": "https://vranovtrail.cz/",
-    "fb_link": null,
-    "ig_link": "https://www.instagram.com/vranovtrailrunners/",
-    "price_range": null,
-    "price_tiers": [
-      {
-        "distance": "Prádelna Trail",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "500 Kč",
-            "deadline": null,
-            "description": "500 Kč předem"
-          }
-        ],
-        "late_fee": {
-          "price": "600 Kč",
-          "deadline": null
-        }
-      }
-    ],
-    "registration_close_date": null,
-    "registration_url": "https://forms.gle/EASgvAbB98o9n97g7",
-    "race_info_url": "https://vranovtrail.cz/about/",
-    "presumed_organizer_email": "vranovtrailrunners@gmail.com",
-    "website_emails_found": [
-      "vranovtrailrunners@gmail.com"
-    ],
-    "description": "Vranov Trail je série běžeckých závodů pořádaných kamarády, kteří běhají ultratrail a vytvářejí kvalitní závody s vychytanými trasami, dobrým jídlem a pohodovou atmosférou. Závody se konají v okolí Brna a Vranova, často v lesích a na trailech s pečlivě značenými trasami. Každý závod má své specifikum, například noční běh v zimě nebo jarní půlku symbolizující rovnováhu dne a noci. Po závodě je vždy připravena afterparty s teplým jídlem a nápoji, což podtrhuje přátelskou atmosféru celé akce.",
-    "course_highlights": [
-      "Trasy vedou po lesních a trailových cestách v okolí Brna a Vranova",
-      "Dobře značené trasy červenobílou a žlutou páskou a reflexním sprejem",
-      "Noční trail v zimě s vyhřátým stanem a teplými nápoji"
-    ],
-    "additional": "Zázemí závodů je často ve venkovních prostorách areálu Stará Prádelna nebo Samovýčepu. Na trati je dostatek občerstvení, včetně vody, iontových nápojů a teplého jídla po doběhu. Po závodě je afterparty s teplým jídlem a nápoji, včetně svařáku. Doporučená doprava je autobusem s blízkými zastávkami, parkování je omezené a je třeba dbát pokynů pořadatelů. Startovní čísla se vyzvedávají v určených časech před startem.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.57,
-    "sources": [
-      "https://ceskybeh.cz/zavody/vranov-trail-2026/"
-    ],
-    "consolidated_ids": [
-      "94439eab-5b71-425f-a3d8-d2a3acbe2802"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "gp_vytrvalcu_kamenneho_ujezda",
-    "name": "GP vytrvalců Kamenného Újezda",
-    "type": "road",
-    "type_local": "Silniční běh",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Fotbalové hřiště, Kamenný Újezd, South Bohemian Region, Česko",
-    "latitude": 48.8976367,
-    "longitude": 14.4463788,
-    "county": "Jihočeský kraj",
-    "nearest_city": "České Budějovice",
-    "nearby_cities": [
-      "České Budějovice"
-    ],
-    "distances": "[\"6.5\"]",
-    "distance_m": [
-      6500
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "6.5 km",
-    "organizer": "TJ Sokol Kamenný Újezd",
-    "contact": null,
-    "website": "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenny-ujezda-2026/",
-    "fb_link": "https://www.facebook.com/p/B%C4%9B%C5%BEeck%C3%A9-z%C3%A1vody-GP-Kamenn%C3%BD-%C3%9Ajezd-100063727734678/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenny-ujezda-2026/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "GP vytrvalců Kamenného Újezda je běžecký závod pořádaný na fotbalovém hřišti v Kamenném Újezdě. Závod nabízí tratě různých délek, které vedou převážně po silnici a terénu s mírným převýšením. Akce je součástí Jihočeského běžeckého poháru a je vhodná pro širokou běžeckou veřejnost, která hledá výzvu v podzimním období. Pořadatelem je TJ Sokol Kamenný Újezd, který zajišťuje příjemnou atmosféru a kvalitní zázemí pro závodníky.",
-    "course_highlights": [
-      "Závod je součástí Jihočeského běžeckého poháru",
-      "Trať vede po silnici a smíšeném terénu s mírným převýšením",
-      "Start a cíl jsou na fotbalovém hřišti v Kamenném Újezdě"
-    ],
-    "additional": "Závod nabízí tratě o délce 6,5 km. Pořadatelem je TJ Sokol Kamenný Újezd. Závod se koná v sobotu 21. listopadu 2026. Trať je smíšená, vhodná pro běh v podzimním období.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.66,
-    "sources": [
-      "https://ceskybeh.cz/zavody/gp-vytrvalcu-kamenneho-ujezda-1-2026/"
-    ],
-    "consolidated_ids": [
-      "bc580453-3ea0-444a-b285-9b64095730bf"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -79569,72 +79748,6 @@
     ],
     "supplied_at": "20261002",
     "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "lysacup_visalaje_parkoviste",
-    "name": "Lysacup – Visalaje, parkoviště",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Parkoviště ve Visalajích, Visalaje, Staré Hamry, Česko",
-    "latitude": 49.4688217,
-    "longitude": 18.4328468,
-    "county": "Moravskoslezský kraj",
-    "nearest_city": "Ostrava",
-    "nearby_cities": [],
-    "distances": "[\"7.9\"]",
-    "distance_m": [
-      7900
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "7.9 km",
-    "organizer": "Lysacup",
-    "contact": null,
-    "website": "https://www.lysacup.cz/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.lysacup.cz/user/prihlasovani/ziskat-uzivatele",
-    "race_info_url": "https://www.lysacup.cz/homepage/about",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Lysacup je zimní etapový běžecký pohár v Beskydech, který se koná většinou na Lysé hoře. Každý víkend se běží etapa z jiného místa a soutěží se jak jednotlivci, tak týmy. Start je obvykle v 10:00 a účastníci používají čipy, které se aktivují na celý ročník dobrovolným příspěvkem. Závod nabízí atmosféru tradičního horského běhu s možností zapojení i jako chodec. Celkový vítěz získává putovní pohár a závod je podporován řadou partnerů a sponzorů.",
-    "course_highlights": [
-      "Zimní etapový běh v horském terénu Beskyd",
-      "Každá etapa startuje z jiného místa, většinou na Lysé hoře (1323 m n.m.)",
-      "Atmosféra horského běhu s bodováním jednotlivců i týmů"
-    ],
-    "additional": "Start je obvykle v 10:00, účastníci musí mít čip aktivovaný na celý ročník, který se získává zasláním dobrovolného příspěvku. Čipy lze odkoupit od jiných závodníků nebo pořadatelů. V případě velkého počtu závodníků si pořadatel vyhrazuje právo upravit bodování. Do celkového hodnocení se škrtají dvě nejhorší etapy z první a druhé poloviny poháru. Možnost účasti i jako chodec s přiděleným počtem bodů. Celkový vítěz i nejlepší týmy získávají putovní poháry. Pořadatelé zajišťují pitný režim a ceny od sponzorů.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": true,
-    "max_description_relevance": 0.63,
-    "sources": [
-      "https://www.svetbehu.cz/terminovka/lysacup-visalaje-parkoviste/"
-    ],
-    "consolidated_ids": [
-      "f6493322-9ac7-4ad6-b65e-202605490e7b"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261106",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,

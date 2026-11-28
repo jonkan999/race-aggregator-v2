@@ -518,8 +518,8 @@
   {
     "domain_name": "beh_na_tabor",
     "name": "Beh na Tábor",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261128",
@@ -529,7 +529,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "15:30",
     "location": "Kysucké Nové Mesto, Žilinský kraj, Slovakia",
     "latitude": 49.3006944,
     "longitude": 18.7842827,
@@ -538,37 +538,69 @@
     "nearby_cities": [
       "Žilina"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\"]",
     "distance_m": [
-      10000,
-      5000
+      10000
     ],
     "distance_keywords": [
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km",
+    "organizer": "Bajk Relax Kysuce o.z.",
     "contact": null,
-    "website": null,
+    "website": "https://beh.neslusskymchotarom.sk/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "3–17 €",
+    "price_tiers": [
+      {
+        "distance": "Beh na Tábor",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12 eur",
+            "deadline": "20261125",
+            "description": "12 eur online do 25.11 2026 pripísané na účte číslo SK73 8330 0000 0024 0194 8766 ( do správy pre prijímateľa – celé meno a rok narodenia). Prihláseným sa účastník stáva až po uhradení štartovného ."
+          },
+          {
+            "label": "tier_2",
+            "price": "3 eurá",
+            "deadline": "20261125",
+            "description": "3 eurá ú častník preteku mladší ako 18 rokov."
+          },
+          {
+            "label": "tier_3",
+            "price": "5 eur",
+            "deadline": "20261125",
+            "description": "5 eur nordic walking (bez kategórií a ocenení)"
+          }
+        ],
+        "late_fee": {
+          "price": "17 eur",
+          "deadline": "20261128"
+        }
+      }
+    ],
+    "registration_close_date": "20261128",
+    "registration_url": "https://beh.neslusskymchotarom.sk/propozicie/",
+    "race_info_url": "https://beh.neslusskymchotarom.sk/propozicie/",
+    "presumed_organizer_email": "beh.jakubovsky@gmail.com",
+    "website_emails_found": [
+      "beh.jakubovsky@gmail.com"
+    ],
+    "description": "The Run to Tábor is a running event for sports enthusiasts and people with an active lifestyle, taking participants to Tábor Hill in Kysucké Nové Mesto. The route follows paved, gravel and forest roads, offering beautiful natural surroundings and views. The event is suitable for different age groups and also includes Nordic walking. The organizers provide refreshments, medical assistance and other services for runners’ comfort.",
+    "course_highlights": [
+      "The route follows paved roads, gravel roads and, towards the end, a forest road",
+      "The start is at Tábor Hill, with the return along the green hiking trail",
+      "The return route is 2.2 km long and takes approximately 15 minutes"
+    ],
+    "additional": "Registration and check-in take place online and at the venue on race day from 15:00 to 16:10 at the Svet dverí complex. After a briefing for participants at 16:20, they will move to the start, approximately 500 metres from the event facilities. After the race, participants’ belongings will be transported to the finish, and there will be a raffle and a souvenir. A headlamp or flashlight is mandatory. A mountain rescue vehicle follows the last participant, and course marshals are stationed along the route. The awards ceremony will take place at approximately 19:00 at the event facilities. A headlamp or flashlight is mandatory. Capacity is limited to 150 participants. The entry fee includes cabbage soup, a drink, changing rooms, baggage storage, medical services and a souvenir.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.bezeckypretek.sk/beh-na-tabor-kysucke-nove-mesto-2026/"
     ],
@@ -626,8 +658,8 @@
   {
     "domain_name": "paradny_nocny_beh_humenne_zima",
     "name": "Parádny nočný beh Humenné - zima",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261128",
@@ -637,8 +669,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Humenné, Prešovský kraj, Slovakia",
+    "start_time": "16:30",
+    "location": "Južné námestie, Humenné, Slovakia",
     "latitude": 48.932454,
     "longitude": 21.9078917,
     "county": "Region of Prešov",
@@ -657,27 +689,83 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km, 4 km",
-    "organizer": null,
+    "organizer": "Rádio Paráda",
     "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
+    "website": "https://racetime.sk/registracie/140",
+    "fb_link": "https://www.facebook.com/mestohumennemsu/posts/od%C5%A1tartovan%C3%A1-registr%C3%A1cia-pr%C3%ADpravy-na-par%C3%A1dny-no%C4%8Dn%C3%BD-beh-humenn%C3%A9-2026-500-zima-poz/1480579894100367/",
+    "ig_link": "https://www.instagram.com/p/DgPxzJ9tqoR/",
     "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_tiers": [
+      {
+        "distance": "Beh a Nordic walking",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "13 €",
+            "deadline": null,
+            "description": "13 € do prvých 100 potvrdených platieb"
+          },
+          {
+            "label": "tier_2",
+            "price": "18 €",
+            "deadline": null,
+            "description": "18 € potom"
+          }
+        ],
+        "late_fee": {
+          "price": "23 €",
+          "deadline": "20261128"
+        }
+      },
+      {
+        "distance": "Deti",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "8 €",
+            "deadline": "20261128",
+            "description": "deti 8 €"
+          }
+        ],
+        "late_fee": {
+          "price": "8 €",
+          "deadline": "20261128"
+        }
+      },
+      {
+        "distance": "Štafeta MIX",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "10 €",
+            "deadline": null,
+            "description": "10 € za člena"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261128",
+    "registration_url": "https://racetime.sk/reg/paradny-nocny-beh-zima-2026",
+    "race_info_url": "https://racetime.sk/preteky/paradny-nocny-beh-zima-2026#plagat",
+    "presumed_organizer_email": "obchod@radioparada.sk",
+    "website_emails_found": [
+      "info@racetime.sk",
+      "obchod@radioparada.sk"
+    ],
+    "description": "Parádny nočný beh Humenné - zima 2026 is the fourth edition of a night running event, taking place on November 28, 2026, at Južné námestie in front of the CVČ in Humenné. It is organized by Rádio Paráda with support from the City of Humenné and local sponsors. Runners can compete in the 5 km and 4 km races, with categories for different age groups, including children, as well as MIX relay teams. Every participant who has paid the entry fee receives a medal, a race number with a chip, photos, video, refreshments, and a race pack. The event offers three start waves for the main race and provides changing rooms and toilets for runners.",
+    "course_highlights": [
+      "Night races of 5 km and 4 km in the center of Humenné",
+      "Three start waves for the main race at 16:30, 17:15, and 18:00",
+      "MIX relay with three-person mixed teams"
+    ],
+    "additional": "The entry fee is payable only on site during registration, starting at 14:00. The 5 km race starts in three waves: bib numbers 1–100 at 16:30, 101–200 at 17:15, and 201 onward at 18:00. Bib numbers are assigned according to confirmation of payment; earlier payment means an earlier wave. Nordic walking starts at 17:30, the children’s race at 15:00, and the MIX relay at 18:45. Every participant who registered online and paid the entry fee is guaranteed a medal, a race number with a chip, photos and video, refreshments/dinner at the finish, and a race pack. Changing rooms and toilets are available. Competitors under 18 need written consent from a parent or legal guardian. The afternoon also offers the opportunity to meet FK Humenné players, take photos with them, or get their autographs.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.91,
     "sources": [
       "https://www.bezeckypretek.sk/paradny-nocny-beh-humenne-2026/"
     ],
@@ -755,37 +843,41 @@
     "nearby_cities": [
       "Poprad"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\"]",
     "distance_m": [
-      10000,
-      5000
+      10000
     ],
     "distance_keywords": [
-      "10 km",
-      "5 km"
+      "10 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km",
+    "organizer": "Spartan Race",
     "contact": null,
-    "website": null,
+    "website": "https://sk.spartan.com/sk/race/detail/11367/overview",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://sk.spartan.com/sk/race/find-race",
+    "presumed_organizer_email": "dobrovolnici.sk@spartan-ceu.com",
+    "website_emails_found": [
+      "dobrovolnici.sk@spartan-ceu.com"
+    ],
+    "description": "Telgárt Spartan Trail is a classic trail race without obstacles, held in the beautiful, rugged surroundings of Telgárt in the Banská Bystrica Region. Runners can expect challenging terrain and natural obstacles that will test their endurance and speed. This trail race is part of the Spartan Trail series, which offers distances ranging from 10 km to extremely long courses. Every participant receives a finisher’s pack, including a medal and T-shirt to commemorate completing the race.",
+    "course_highlights": [
+      "A classic trail race without artificial obstacles",
+      "Beautiful, rugged natural surroundings in Telgárt",
+      "A test of endurance and speed across a range of distances"
+    ],
+    "additional": "Every participant receives a finisher’s T-shirt and medal. Runners can also volunteer and receive benefits such as a free race entry, T-shirt, and refreshments. Spartan Trail also offers night runs and special Trailfecta race packages that encourage participants to complete multiple distances during the season. The course time limit is 4 hours.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.95,
     "sources": [
       "https://www.bezeckypretek.sk/telgart-spartan-trail-2026/"
     ],
@@ -1243,8 +1335,8 @@
   {
     "domain_name": "polancanska_patka",
     "name": "Poľančanska päťka",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "road",
+    "type_local": "Cestný beh",
     "race_dates": [
       [
         "20261129",
@@ -1254,7 +1346,7 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
+    "start_time": "14:00",
     "location": "Sečovská Polianka, Vranov nad Topľou District, Prešov Region, Slovakia",
     "latitude": 48.78654299999999,
     "longitude": 21.6808551,
@@ -1263,37 +1355,64 @@
     "nearby_cities": [
       "Michalovce"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"5\"]",
     "distance_m": [
-      10000,
       5000
     ],
     "distance_keywords": [
-      "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "5 km",
+    "organizer": "Bežecký klub ZasRun Šarišské Bohdanovce",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://zasrun.sk/preteky/polancanska-patka-1-rocnik",
+    "fb_link": "https://www.facebook.com/events/se%C4%8Dovsk%C3%A1-polianka/po%C4%BEan%C4%8Danska-p%C3%A4%C5%A5ka/1314331826854303/",
     "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "price_range": "15–20 €",
+    "price_tiers": [
+      {
+        "distance": "5 km",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15€",
+            "deadline": "20261128",
+            "description": "15€ online prihlásení so zaplateným štartovným"
+          },
+          {
+            "label": "tier_2",
+            "price": "20€",
+            "deadline": "20261129",
+            "description": "20€ na mieste v deň preteku"
+          }
+        ],
+        "late_fee": null
+      }
+    ],
+    "registration_close_date": "20261129",
+    "registration_url": "https://zasrun.sk/helpdesk?sekcia=preteky&pretek=389&adresat=portal",
+    "race_info_url": "https://zasrun.sk/preteky/polancanska-patka-1-rocnik",
+    "presumed_organizer_email": "info@zasrun.sk",
+    "website_emails_found": [
+      "majka.kocisova826@gmail.com",
+      "michal.kociss@gmail.com",
+      "info@zasrun.sk",
+      "helpdesk@zasrun.sk",
+      "jan@example.sk"
+    ],
+    "description": "Poľančanska päťka is a 5 km running race held in the village of Sečovská Polianka. The course follows a paved path through the village and is rated as low difficulty, with an endurance difficulty of 1 out of 5. The race is open to the general public, including age and gender categories, with the top runners in each category receiving awards. The organizers provide drinks along the course and refreshments at the finish, including drinks, fruit, and goulash. The race starts at 14:00 and is run according to the rules of the Slovak Athletics Federation.",
+    "course_highlights": [
+      "5 km paved path through the village of Sečovská Polianka",
+      "Low endurance difficulty: 1/5",
+      "The course is properly marked and managed by briefed personnel"
+    ],
+    "additional": "Runners must wear their race number pinned to their chest or attached to a belt. Runners under 18 may start only with the written consent of a legal guardian. Results will be announced at approximately 15:00, after the last runner finishes. The organizer accepts no responsibility for damage to property or health related to participation in the event. Participants are required to have individual health insurance. Check-in and race-pack collection take place at the cultural centre; changing rooms, a baggage storage area, and toilets are available. Drinks are provided along the course and refreshments at the finish. The number of participants is limited to 120, and the time limit for completing the course is 1 hour.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.88,
     "sources": [
       "https://www.bezeckypretek.sk/polancanska-patka-secovska-polianka-2026/"
     ],
@@ -2034,8 +2153,8 @@
   {
     "domain_name": "zimna_bezecka_seria_2_kolo",
     "name": "Zimná bežecká séria 2. kolo",
-    "type": "other",
-    "type_local": "Ostatné",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20261202",
@@ -2063,27 +2182,40 @@
       "5 km"
     ],
     "distance_verbose": "7 km, 5 km",
-    "organizer": null,
+    "organizer": "Sport club 1896 Štrbské pleso",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://www.tatry.sk/zimna-bezecka-seria-2-kolo-nova-polianka/",
+    "fb_link": "https://www.facebook.com/RegionVysokeTatry/posts/%EF%B8%8F-zimn%C3%A1-be%C5%BEeck%C3%A1-s%C3%A9ria-prich%C3%A1dza-s-novinkou-2-kolo-v%C3%A1s-zavedie-na-popradsk%C3%A9-pleso/1574806728021332/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://www.pretekaj.sk",
+    "race_info_url": "https://www.tatry.sk/zimna-bezecka-seria-2-kolo-nova-polianka/",
+    "presumed_organizer_email": "vtatry@hzs.sk",
+    "website_emails_found": [
+      "operacne@hzs.sk",
+      "vtatry@hzs.sk",
+      "miroslav.kolodzej@vysoketatry.sk",
+      "info@vt.sk",
+      "strbske@vt.sk",
+      "info@gopass.sk",
+      "info@slovakrail.sk",
+      "hovorca@zsr.sk"
+    ],
+    "description": "The Winter Running Series – Round 2 in Nová Polianka is a winter running race held on the grounds of the Granit Hotel. Registration is online only, and start lists close no later than 8:00 on race day. The event is supported by the Ministry of Tourism and Sport of the Slovak Republic and offers athletes the chance to run in the beautiful winter setting of the High Tatras.",
+    "course_highlights": [
+      "The race takes place on the grounds of the Granit Hotel’s climatic spa in Nová Polianka",
+      "Winter running routes suitable for runners of different levels",
+      "Supported and organized under the auspices of the Ministry of Tourism and Sport of the Slovak Republic"
+    ],
+    "additional": "On-site registration is not available. Participant instructions will be published during the week before the event. A site map and a photo showing the approach to the Granit Hotel and the climatic spa grounds are available. Registration is online only through pretekaj.sk; on-site registration is not available.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.78,
     "sources": [
       "https://beh.sk/pretek/zimna-bezecka-seria-2-kolo-7/"
     ],
@@ -2922,27 +3054,34 @@
       "3000 meter"
     ],
     "distance_verbose": "22 km, 15 km, 12 km, 10 km, 5 km, 3000 meter, 1 km",
-    "organizer": null,
+    "organizer": "AK Družstevná Run Team o. z. v spolupráci s obcou Družstevná pri Hornáde a Základnou školou Družstevná pri Hornáde",
     "contact": null,
-    "website": null,
-    "fb_link": null,
+    "website": "https://pretekaj.sk/mikulasskekilometrenadeje",
+    "fb_link": "https://www.facebook.com/61555839093090/posts/-mikul%C3%A1%C5%A1ske-kilometre-n%C3%A1deje-pre-kl%C3%A1rku-4-december-2026-dru%C5%BEstevn%C3%A1-pri-horn%C3%A1demi/122339225048194636/",
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_url": "https://pretekaj.sk/sk/podujatia/mikulasskekilometrenadeje/registration",
+    "race_info_url": "https://pretekaj.sk/sk/podujatia/mikulasskekilometrenadeje",
+    "presumed_organizer_email": "info@pretekaj.sk",
+    "website_emails_found": [
+      "info@pretekaj.sk",
+      "nieco@domena.sk"
+    ],
+    "description": "Mikuláš Hope Kilometres for Klárka is a charity run organised by AK Družstevná Run Team o.z. in cooperation with the Municipality of Družstevná pri Hornáde and Družstevná pri Hornáde Primary School. The event combines the joy of exercise with helping others. This year, it is dedicated to Klárka, who attends hippotherapy and needs support to continue. Runners can contribute to a good cause through their efforts while enjoying the atmosphere of a St. Nicholas run in the beautiful surroundings of Družstevná pri Hornáde.",
+    "course_highlights": [
+      "The main running course is 3 km long.",
+      "A 3 km Nordic walking route is also available.",
+      "The programme includes children’s races over various distances."
+    ],
+    "additional": "The event is organised by AK Družstevná Run Team o.z. in cooperation with the municipality and primary school. Registration takes place via pretekaj.sk, where participants need to have an account. Runners can use partners’ loyalty or membership cards to register quickly. The competitions include the 3000 m St. Nicholas Run and 3000 m St. Nicholas Nordic Walking. Race-day check-in and bib collection take place in the gym; participants receive a gift bag and a finisher’s medal at the finish.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.94,
     "sources": [
       "https://www.bezeckypretek.sk/mikulasske-kilometre-druzstevna-pri-hornade-2026/"
     ],
@@ -67910,8 +68049,8 @@
   {
     "domain_name": "dabasi_futonap",
     "name": "DABASI FUTÓNAP",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "road",
+    "type_local": "Országúti futás",
     "race_dates": [
       [
         "20260531",
@@ -67943,19 +68082,24 @@
       "10 km"
     ],
     "distance_verbose": "Félmaraton, 10.5 km, 2.5 km",
-    "organizer": null,
+    "organizer": "Dabas Város Önkormányzata",
     "contact": null,
-    "website": null,
+    "website": "https://www.dabas.hu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
+    "race_info_url": "https://www.dabas.hu/",
+    "presumed_organizer_email": "dabas@dabas.hu",
+    "website_emails_found": [
+      "dabas@dabas.hu",
+      "kozetkeztetes@dabas.hu",
+      "pest.human@katved.gov.hu",
+      "nagy.viktoria@dabas.hu"
+    ],
+    "description": "A Dabasi Futónap Dabas városi futóeseménye, amelynek korábbi kiadásait a város önkormányzata rendezte. A Diego Arénánál találkozhatnak a futás kedvelői, hogy együtt vegyenek részt a helyi sportprogramon.",
     "course_highlights": [],
     "additional": null,
     "images": [],
@@ -67963,7 +68107,7 @@
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.35,
     "sources": [
       "http://www.dabasifutonap.hu"
     ],
@@ -67981,8 +68125,8 @@
   {
     "domain_name": "kozep_zagyva_volgyi_felmaraton",
     "name": "KÖZÉP-ZAGYVA-VÖLGYI FÉLMARATON",
-    "type": "road",
-    "type_local": "Országúti futás",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260531",
@@ -67997,45 +68141,51 @@
     "date_status": "estimated",
     "estimated_dates": true,
     "start_time": null,
-    "location": "Lőrinci Football Field, Lőrinci, Hungary",
-    "latitude": 47.7390261,
-    "longitude": 19.6756558,
+    "location": "Selyp football field, Lőrinci, Hungary",
+    "latitude": 47.7630509,
+    "longitude": 19.670633,
     "county": "Heves",
     "nearest_city": "Salgótarján",
     "nearby_cities": [],
-    "distances": "[\"21\", \"12.6\", \"5\", \"0.3\"]",
+    "distances": "[\"21.4\", \"12.6\", \"5.4\", \"0.3\"]",
     "distance_m": [
-      21000,
+      21400,
       12600,
-      5000,
+      5400,
       300
     ],
     "distance_keywords": [
       "Félmaraton",
       "5 km"
     ],
-    "distance_verbose": "Félmaraton, 12.6 km, 5 km, 0.3 km",
-    "organizer": null,
+    "distance_verbose": "21.4 km, 12.6 km, 5.4 km, 0.3 km",
+    "organizer": "Futapest",
     "contact": null,
-    "website": null,
+    "website": "https://www.futapest.hu/kiiras/KZV_2026.htm",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "race_info_url": "https://www.futapest.hu/kiiras/KZV_2026.htm",
+    "presumed_organizer_email": "futapestklub@gmail.com",
+    "website_emails_found": [
+      "futapestklub@gmail.com"
+    ],
+    "description": "A Közép-Zagyva-völgyi Félmaraton egy terepfutó verseny, amely Lőrinci-Selyp focipályájáról indul. A futók változatos, természetközeli útvonalon haladnak, amely a Zagyva-völgy természeti szépségeit és változatos terepviszonyait mutatja be. A verseny ideális mind a tapasztalt terepfutók, mind a természetet kedvelő amatőrök számára, akik egy kihívásokkal teli, mégis élvezetes futóélményre vágynak. A rendezvény hagyományosan jó hangulatú, barátságos közösségi esemény, amely a futás örömét és a természet szeretetét ötvözi.",
+    "course_highlights": [
+      "Természetközeli, változatos terep a Zagyva-völgyben",
+      "Kihívást jelentő terepfutó útvonal",
+      "Indulás és cél a Lőrinci-Selyp focipályán"
+    ],
+    "additional": "A gyerekfutam távja körülbelül 300 méter.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.84,
     "sources": [
       "https://www.futapest.hu/kiiras/KZV_2026.htm"
     ],
@@ -68053,8 +68203,8 @@
   {
     "domain_name": "pronay_kastelykor_paloc_tm_kupa",
     "name": "PRÓNAY KASTÉLYKÖR – PALÓC TM KUPA",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "trail",
+    "type_local": "Trail",
     "race_dates": [
       [
         "20260531",
@@ -68068,46 +68218,49 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Prónay-kastély, Alsópetény, Hungary",
+    "start_time": "11:00",
+    "location": "Prónay-kastély parkja, Alsópetény, Hungary",
     "latitude": 47.8723361,
     "longitude": 19.247741,
     "county": "Nógrád",
     "nearest_city": "Budapest",
     "nearby_cities": [],
-    "distances": "[\"22\", \"11\", \"3\"]",
+    "distances": "[\"22\", \"11\", \"3.5\"]",
     "distance_m": [
       22000,
       11000,
-      3000
+      3500
     ],
     "distance_keywords": [
       "Félmaraton",
-      "10 km",
-      "3000 meter"
+      "10 km"
     ],
-    "distance_verbose": "22 km, 11 km, 3000 meter",
-    "organizer": null,
+    "distance_verbose": "22 km, 11 km, 3.5 km",
+    "organizer": "SPORTORIGO Egyesület",
     "contact": null,
-    "website": null,
+    "website": "https://sportorigo.com/HU/4/Nevezes/432/pronay-kastelykor-paloc-tm-kupa",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
+    "registration_url": "https://sportorigo.com/HU/4/Nevezes",
+    "race_info_url": "https://sportorigo.com/HU/2-113/Paloc-Terepmaraton-Kupa",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "A Prónay kastélykör - Palóc TM Kupa egy terepfutó verseny, amely Alsópetény festői Prónay-kastély parkjában kerül megrendezésre. A futók 3,5 km, 11 km és 22 km távokon mérhetik össze erejüket, változatos, emelkedőkkel tarkított erdei útvonalakon, kilátópontokkal és frissítőpontokkal. A verseny a Palóc Terepmaraton Kupa sorozat része, amely Nógrád megye természeti szépségeit és kihívásait kínálja a futóknak. A rendezvény családias hangulatú, minden korosztály számára nyitott, és a helyszínen is lehet nevezni.",
+    "course_highlights": [
+      "A futópálya a kastélyparkból indul, és a kilátóig tartó szakasz szinte folyamatosan emelkedik (+220 m).",
+      "Az 11 km és 22 km távok az erdei gerincen futnak tovább a Cser-tóig, majd vissza a kastélyparkba.",
+      "Három frissítőpont található a pályán: a kastélyparkban, a kilátónál és a Cser-tó előtt."
+    ],
+    "additional": "Rajtszámok színes jelzésekkel különböztetik meg a távokat (3 km narancs, 11 km kék, 22 km piros). A versenyiroda a kastélyparkban nyit 09:00 órakor. Helyszíni nevezés lehetséges 11 és 22 km távokra 09:00-10:00 között, 3 km-re 09:00-10:30 között. A versenyzők technikai tájékoztatót kapnak a rajt előtt. A nevezéshez frissítés, egyedi rajtszám, időmérés és rangsorolás tartozik. A PALÓC KUPA sorozatban a 10 km feletti távokon lehet pontokat gyűjteni.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.74,
     "sources": [
       "https://futocentrum.hu/races/2020s/2026.05.31.pronay.jpg"
     ],
@@ -68125,8 +68278,8 @@
   {
     "domain_name": "sulysapi_futonap",
     "name": "SÜLYSÁPI FUTÓNAP",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "road",
+    "type_local": "Országúti futás",
     "race_dates": [
       [
         "20260531",
@@ -68140,18 +68293,21 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
-    "location": "Dózsa György utca 110, Sülysáp, Hungary",
-    "latitude": 47.4583805,
-    "longitude": 19.5040655,
+    "start_time": "09:30",
+    "location": "Szent István Általános Iskola, Dózsa György út 110, Sülysáp, Hungary",
+    "latitude": 47.45844,
+    "longitude": 19.504092,
     "county": "Pest",
     "nearest_city": "Budapest",
     "nearby_cities": [],
-    "distances": "[\"21\", \"11\", \"3.7\", \"2\", \"1.5\", \"0.3\"]",
+    "distances": "[\"21.1\", \"21\", \"11\", \"10.7\", \"3.7\", \"2.1\", \"2\", \"1.5\", \"0.3\"]",
     "distance_m": [
+      21100,
       21000,
       11000,
+      10700,
       3700,
+      2100,
       2000,
       1500,
       300
@@ -68161,28 +68317,35 @@
       "10 km",
       "1500 meter"
     ],
-    "distance_verbose": "Félmaraton, 11 km, 3.7 km, 2 km, 1500 meter, 0.3 km",
+    "distance_verbose": "Félmaraton, 11 km, 10.7 km, 3.7 km, 2.1 km, 2 km, 1500 meter, 0.3 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.mozgasvilag.hu/futas/esemenynaptar/20--sulysapi-futonap",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "registration_close_date": "20270525",
+    "registration_url": "https://www.mozgasvilag.hu/futas/esemenynaptar/20--sulysapi-futonap",
+    "race_info_url": "https://www.mozgasvilag.hu/futas/esemenynaptar/20--sulysapi-futonap",
+    "presumed_organizer_email": "info@mozgasvilag.hu",
+    "website_emails_found": [
+      "info@mozgasvilag.hu",
+      "sales@mozgasvilag.hu"
+    ],
+    "description": "A Sülysápi Futónap egy jubileumi, 20. alkalommal megrendezett közösségi futóesemény, amely a Tápió-vidék egyik meghatározó sportprogramja. A rendezvény minden korosztály számára kínál futási lehetőséget, az óvodás távoktól egészen a félmaratonig. A hangsúly a közösségi élményen, az egészséges életmódon és a sport népszerűsítésén van. A családias hangulat és a helyi szervezés miatt különösen barátságos esemény, ahol kezdők és tapasztalt futók egyaránt megtalálják a számukra megfelelő kihívást.",
+    "course_highlights": [
+      "Távok óvodás kortól félmaratonig",
+      "Közösségi élmény és egészséges életmód hangsúlyozása",
+      "Családias hangulat, helyi szervezés"
+    ],
+    "additional": "Rajtok: 09:30 - 10,7 km és félmaraton, 12:10 - 2,1 km (serdülő / gyermek), 12:30 - 1,5 km (gyermek / kezdő). Létszámlimit kb. 500 fő. Fizetés átutalással vagy helyszínen, helyszíni nevezés magasabb díjjal (+500 - 1000 Ft). Díjazás korcsoportonként és nemenként, befutóérem a főbb távokon. Különdíjak, például legidősebb versenyző. Eredményhirdetés folyamatosan a futamok után. A korábbi eseményen a főbb távok teljesítői befutóérmet kaptak.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.72,
     "sources": [
       "https://www.tapiomenti-tomegsport.hu/images/sulysapifutonap/2026/sulysapi_futonap2026_vk04.18.pdf"
     ],
@@ -70513,8 +70676,8 @@
   {
     "domain_name": "hercegfutam_2026",
     "name": "HERCEGFUTAM 2026",
-    "type": "other",
-    "type_local": "Egyéb",
+    "type": "terrain",
+    "type_local": "Terep",
     "race_dates": [
       [
         "20260606",
@@ -70528,7 +70691,7 @@
     "upcoming_dates": [],
     "date_status": "estimated",
     "estimated_dates": true,
-    "start_time": null,
+    "start_time": "09:00",
     "location": "Herceghalomi Közösségi Ház, Herceghalom, Hungary",
     "latitude": 47.4940432,
     "longitude": 18.7431625,
@@ -70549,27 +70712,31 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km, 2 km",
-    "organizer": null,
+    "organizer": "Herceghalomi Sándor Móric Községi Könyvtár, Egyházi és Közösségi Ház",
     "contact": null,
-    "website": null,
+    "website": "https://www.hercegfutam.hu/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.hercegfutam.hu/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "A Hercegfutam 2026 terepfutó verseny Herceghalom madárcsicsergős lankáin kerül megrendezésre, ahol a lendület, az egészség és a közösség kap főszerepet. A résztvevők választhatnak 2, 5 vagy 10 km-es távok közül, a 2 km-es családi futás pedig ideális a közös, jó hangulatú élményhez. A verseny helyszínén egészségügyi állapotfelmérés, gyermek- és családi programok, valamint senior torna is várja a résztvevőket. A futamok rajtja a Mehrstetten Parkban van, és a részvétel ingyenes, az eredményért Ötpróba pontok járnak.",
+    "course_highlights": [
+      "Terepfutás Herceghalom madárcsicsergős lankáin",
+      "2 km-es családi futás babakocsival vagy hordozóval is teljesíthető",
+      "388 m-es gyerekfutam 6 ügyességi játékos állomással"
+    ],
+    "additional": "A verseny útvonalát szalagozás, felfestések és táblák jelölik, frissítőpontok vízvételi lehetőséggel. A részvételhez rajtszám és időmérő chip viselése kötelező. A családi futamon a nevező kap rajtszámot és érmet, a további családtagok részvétele biztosított, de számukra nem jár külön rajtszám vagy érem. A versenyen tilos kutyával futni, és reklámtevékenység csak a szervező engedélyével végezhető.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.55,
     "sources": [
       "https://www.hercegfutam.hu/"
     ],
@@ -149776,6 +149943,793 @@
     ]
   },
   {
+    "domain_name": "ratoti_csikotojas_trail",
+    "name": "RÁTÓTI CSIKÓTOJÁS TRAIL",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Gyulafirátót football field, Veszprém, Hungary",
+    "latitude": 47.1422469,
+    "longitude": 17.9490799,
+    "county": "Veszprém",
+    "nearest_city": "Székesfehérvár",
+    "nearby_cities": [],
+    "distances": "[\"21\", \"10.5\", \"6\", \"1\", \"0.5\"]",
+    "distance_m": [
+      21000,
+      10500,
+      6000,
+      1000,
+      500
+    ],
+    "distance_keywords": [
+      "Félmaraton",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Félmaraton, 10.5 km, 6 km, 1 km, 0.5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.facebook.com/events/1053299887080998"
+    ],
+    "consolidated_ids": [
+      "f16863a8-bf7f-434a-a77e-77ea64b2467c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "hello_pilis_trail",
+    "name": "Hello Pilis Trail",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Leányfalu, Hungary",
+    "latitude": 47.7181009,
+    "longitude": 19.0842471,
+    "county": "Pest",
+    "nearest_city": "Budapest",
+    "nearby_cities": [
+      "Budapest"
+    ],
+    "distances": "[\"14\", \"5\"]",
+    "distance_m": [
+      14000,
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "14 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://hellotrails.hu/hello-pilis-trail/"
+    ],
+    "consolidated_ids": [
+      "cafd7548-3eb5-4f4b-8d96-5335ea787276"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "lesny_beh_priatelov_semse",
+    "name": "Lesný beh priateľov Šemše",
+    "type": "terrain",
+    "type_local": "Terén",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "10:00",
+    "location": "Obecný úrad Šemša, Šemša, Košice-okolie District, Slovakia",
+    "latitude": 48.6755682,
+    "longitude": 21.1137961,
+    "county": "Region of Košice",
+    "nearest_city": "Košice",
+    "nearby_cities": [
+      "Košice"
+    ],
+    "distances": "[\"22\", \"15\", \"12\", \"11\", \"10\", \"6\", \"5.5\", \"5\", \"3\", \"1\"]",
+    "distance_m": [
+      22000,
+      15000,
+      12000,
+      11000,
+      10000,
+      6000,
+      5500,
+      5000,
+      3000,
+      1000
+    ],
+    "distance_keywords": [
+      "Polmaratón",
+      "10 km",
+      "5 km",
+      "3000 meter"
+    ],
+    "distance_verbose": "22 km, 15 km, 12 km, 11 km, 10 km, 6 km, 5.5 km, 5 km, 3000 meter, 1 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://beh.sk/pretek/lesny-beh-priatelov-semse-9/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [
+      {
+        "distance": "5,5 a 11 km trať",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "12 €",
+            "deadline": null,
+            "description": "5,5 a 11 km trať 12,-€ online"
+          }
+        ],
+        "late_fee": {
+          "price": "15 €",
+          "deadline": null
+        }
+      },
+      {
+        "distance": "22 km trať",
+        "tiers": [
+          {
+            "label": "tier_1",
+            "price": "15 €",
+            "deadline": null,
+            "description": "22 km trať 15,-€ online"
+          }
+        ],
+        "late_fee": {
+          "price": "18 €",
+          "deadline": null
+        }
+      }
+    ],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://beh.sk/pretek/lesny-beh-priatelov-semse-9/",
+    "presumed_organizer_email": "lesnybeh@gmail.com",
+    "website_emails_found": [
+      "lesnybeh@gmail.com",
+      "logo-beh-with-claim@2x.png",
+      "logo-beh-no-claim@2x.png"
+    ],
+    "description": "The Šemša Friends Forest Run is a running race held in the picturesque village of Šemša in the Košice-okolie District. The event offers three distances—5.5 km, 11 km and 22 km—running mainly on paved forest roads, field roads and asphalt. It is suitable for all age groups, including children, and is organized by the Šemša v pohybe civic association. Start times vary by distance: the long course starts at 10:00, while the shorter courses start at 11:00.",
+    "course_highlights": [
+      "The course runs along paved forest roads and paths",
+      "The route also includes field roads and asphalt sections",
+      "Several distances are available: 5.5 km, 11 km and 22 km"
+    ],
+    "additional": "Start times vary by distance: the 22 km course starts at 10:00, while the shorter 5.5 km and 11 km courses start at 11:00. There are no age restrictions, and children may participate. The event is organized by the Šemša v pohybe civic association.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.bezeckypretek.sk/lesny-beh-semsa-2026/",
+      "https://beh.sk/pretek/lesny-beh-priatelov-semse-11/"
+    ],
+    "consolidated_ids": [
+      "9db53d8c-bd13-4e7d-9ef9-79727c5705ab"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "beh_na_kysacky_hrad",
+    "name": "Beh na Kysacký hrad",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Kultúrny dom, Kysak, Slovakia",
+    "latitude": 48.8534182,
+    "longitude": 21.2210413,
+    "county": "Region of Košice",
+    "nearest_city": "Košice",
+    "nearby_cities": [
+      "Košice"
+    ],
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-7/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-7/",
+    "presumed_organizer_email": "obkysak@obkysak.info",
+    "website_emails_found": [
+      "obkysak@obkysak.info",
+      "logo-beh-with-claim@2x.png",
+      "logo-beh-no-claim@2x.png"
+    ],
+    "description": "The Run to Kysak Castle is a running race organized by the Kysak Orienteering Club and the Municipality of Kysak. The course runs mainly along forest roads, with a smaller proportion on asphalt, offering a combination of natural surroundings and firm surfaces. The race is open to various age categories, from juniors to veterans, encouraging broad participation from runners of all levels. The race starts at the Cultural House in Kysak, a traditional venue for the event.",
+    "course_highlights": [
+      "85% of the course runs along forest roads",
+      "15% of the course is on asphalt",
+      "Race for various age categories, from juniors to veterans"
+    ],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-10/",
+      "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-9/"
+    ],
+    "consolidated_ids": [
+      "1f62e1e9-83bb-4a3f-a2be-a2650b6854aa"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "slepcianska_patnastka",
+    "name": "Slepčianska pätnástka",
+    "type": "road",
+    "type_local": "Cestný beh",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Kultúrny dom, Slepčany, Zlaté Moravce District, Slovakia",
+    "latitude": 48.3102682,
+    "longitude": 18.3376046,
+    "county": "Region of Nitra",
+    "nearest_city": "Nitra",
+    "nearby_cities": [
+      "Nitra"
+    ],
+    "distances": "[\"20\", \"15\", \"10\", \"7.5\", \"5\"]",
+    "distance_m": [
+      20000,
+      15000,
+      10000,
+      7500,
+      5000
+    ],
+    "distance_keywords": [
+      "Polmaratón",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "20 km, 15 km, 10 km, 7.5 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.slepcany.sk/slepcianska-15-tka-21-11-2026-oznam/mid/493949/.html",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://www.slepcany.sk/registracia-na-portal.html",
+    "race_info_url": "https://www.slepcany.sk/slepcianska-15tka.html",
+    "presumed_organizer_email": "info@slepcany.sk",
+    "website_emails_found": [
+      "info@slepcany.sk",
+      "webyportal@webygroup.sk",
+      "starosta@slepcany.sk"
+    ],
+    "description": "Slepčany Fifteen is a traditional running race held in the municipality of Slepčany in Zlaté Moravce District. Runners can take part in the 15-kilometre course, which winds through picturesque countryside and past the cultural centre in Slepčany. The event is suitable for the general public and offers a pleasant atmosphere of sporting competition in a community setting.",
+    "course_highlights": [
+      "The course winds through picturesque countryside around the municipality of Slepčany",
+      "Start and finish in front of the Cultural Centre in Slepčany",
+      "Course distance: 15 kilometres"
+    ],
+    "additional": "The race starts and finishes in front of the Cultural Centre in Slepčany. It is organised by the municipality of Slepčany, which also provides technical support through WEBY GROUP s.r.o. The website offers the Virtuálne zadarmo mobile app for getting up-to-date information.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://www.terminovka.sk/podujatie/slepcianska-patnastka",
+      "https://www.bezeckypretek.sk/slepcianska-patnastka-slepcany-2026/",
+      "https://beh.sk/pretek/slepcianska-patnastka-19/"
+    ],
+    "consolidated_ids": [
+      "878a636f-2de7-40d5-a6b9-533e1f1ebdff"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "gobala_pol_maraton",
+    "name": "GoBala Pól&Maratón",
+    "type": "other",
+    "type_local": "Ostatné",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Komjatice, Nové Zámky District, Nitra Region, Slovakia",
+    "latitude": 48.1481625,
+    "longitude": 18.1629184,
+    "county": "Region of Nitra",
+    "nearest_city": "Nitra",
+    "nearby_cities": [
+      "Nitra"
+    ],
+    "distances": "[\"42.2\", \"21.1\", \"21\", \"10\", \"5\"]",
+    "distance_m": [
+      42200,
+      21100,
+      21000,
+      10000,
+      5000
+    ],
+    "distance_keywords": [
+      "Maratón",
+      "Polmaratón",
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "Maratón, Polmaratón, 10 km, 5 km",
+    "organizer": null,
+    "contact": null,
+    "website": null,
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.0,
+    "sources": [
+      "https://beh.sk/pretek/gobala-polmaraton/",
+      "https://www.bezeckypretek.sk/gobala-pol-maraton-komjatice-2026/"
+    ],
+    "consolidated_ids": [
+      "f99f16d3-4542-4d3a-9d92-78b4fb269566"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "sk",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
+    "domain_name": "karlovachki_smer_2026",
+    "name": "Карловачки смер 2026",
+    "type": "trail",
+    "type_local": "Trail",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Планинарски дом Стражилово, Фрушка гора, Serbia",
+    "latitude": 45.1570803,
+    "longitude": 19.7093272,
+    "county": "South Backa District",
+    "nearest_city": "Novi Sad",
+    "nearby_cities": [
+      "Novi Sad"
+    ],
+    "distances": "[\"11\"]",
+    "distance_m": [
+      11000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "11 km",
+    "organizer": "Удружење Зелени спорт, са партнерима",
+    "contact": null,
+    "website": "https://trci.rs/kalendar-trka/karlovacki-smer/2026/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://trci.rs/kalendar-trka/karlovacki-smer/2026/",
+    "presumed_organizer_email": "info@trci.rs",
+    "website_emails_found": [
+      "info@trci.rs"
+    ],
+    "description": "The Karlovci Route is a traditional race held in Fruška Gora, starting and finishing at the Stražilovo mountain lodge. The race is 11 kilometres long with 400 metres of elevation gain and includes two checkpoints. The event brings together hiking and running enthusiasts, continuing a tradition that began to mark 100 years of mountaineering in Sremski Karlovci. It is organised by the Green Sport Association, and participant numbers are limited to ensure the quality and safety of the race.",
+    "course_highlights": [
+      "11 km course with 400 m of elevation gain",
+      "Start and finish at the Stražilovo mountain lodge",
+      "Two checkpoints on the course"
+    ],
+    "additional": "The number of competitors is limited. All registered participants will receive payment instructions by email.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.78,
+    "sources": [
+      "https://mountain-race.rs/trka/karlovacki-smer/2026",
+      "https://mountain-race.rs/trka/karlovacki-smer/2026/"
+    ],
+    "consolidated_ids": [
+      "6d3009c2-8b4a-469e-be42-309b6fccda09"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": "rs",
+    "nearby_foreign_cities": [
+      "Budapest",
+      "Debrecen",
+      "Szeged",
+      "Miskolc",
+      "Pécs",
+      "Győr",
+      "Nyíregyháza",
+      "Kecskemét",
+      "Székesfehérvár",
+      "Szombathely",
+      "Érd",
+      "Szolnok",
+      "Tatabánya",
+      "Eger",
+      "Sopron",
+      "Dunaújváros",
+      "Kaposvár",
+      "Veszprém",
+      "Békéscsaba",
+      "Hódmezővásárhely",
+      "Zalaegerszeg",
+      "Nagykanizsa",
+      "Salgótarján",
+      "Ózd",
+      "Dunakeszi",
+      "Szigetszentmiklós",
+      "Cegléd",
+      "Baja",
+      "Vác",
+      "Mosonmagyaróvár",
+      "Gödöllő",
+      "Szekszárd",
+      "Hajdúböszörmény",
+      "Pápa",
+      "Kiskunfélegyháza",
+      "Gyula",
+      "Orosháza",
+      "Ajka",
+      "Jászberény"
+    ]
+  },
+  {
     "domain_name": "naszaly_trail",
     "name": "NASZÁLY TRAIL",
     "type": "trail",
@@ -149852,143 +150806,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "ratoti_csikotojas_trail",
-    "name": "RÁTÓTI CSIKÓTOJÁS TRAIL",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Gyulafirátót football field, Veszprém, Hungary",
-    "latitude": 47.1422469,
-    "longitude": 17.9490799,
-    "county": "Veszprém",
-    "nearest_city": "Székesfehérvár",
-    "nearby_cities": [],
-    "distances": "[\"21\", \"10.5\", \"6\", \"1\", \"0.5\"]",
-    "distance_m": [
-      21000,
-      10500,
-      6000,
-      1000,
-      500
-    ],
-    "distance_keywords": [
-      "Félmaraton",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Félmaraton, 10.5 km, 6 km, 1 km, 0.5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://www.facebook.com/events/1053299887080998"
-    ],
-    "consolidated_ids": [
-      "f880a543-8e73-4601-9062-cddab87412c0"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "hello_pilis_trail",
-    "name": "Hello Pilis Trail",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Leányfalu, Hungary",
-    "latitude": 47.7181009,
-    "longitude": 19.0842471,
-    "county": "Pest",
-    "nearest_city": "Budapest",
-    "nearby_cities": [
-      "Budapest"
-    ],
-    "distances": "[\"14\", \"5\"]",
-    "distance_m": [
-      14000,
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "14 km, 5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://hellotrails.hu/hello-pilis-trail/"
-    ],
-    "consolidated_ids": [
-      "1e20070f-d23b-483c-8807-1a64921c3208"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261023",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "puritan_kupa_abda_kor",
     "name": "PURITÁN KUPA /Abda kör/",
     "type": "other",
@@ -150051,420 +150868,6 @@
     "pipeline_log": [],
     "origin_country": null,
     "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "lesny_beh_priatelov_semse",
-    "name": "Lesný beh priateľov Šemše",
-    "type": "terrain",
-    "type_local": "Terén",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "10:00",
-    "location": "Šemša, Košice okolie, Slovakia",
-    "latitude": 48.67481309999999,
-    "longitude": 21.1138898,
-    "county": "Region of Košice",
-    "nearest_city": "Košice",
-    "nearby_cities": [
-      "Košice"
-    ],
-    "distances": "[\"22\", \"11\", \"5.5\"]",
-    "distance_m": [
-      22000,
-      11000,
-      5500
-    ],
-    "distance_keywords": [
-      "Polmaratón",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "22 km, 11 km, 5.5 km",
-    "organizer": "občianske združenie Šemša v pohybe",
-    "contact": null,
-    "website": "https://beh.sk/pretek/lesny-beh-priatelov-semse-9/",
-    "fb_link": "https://www.facebook.com/events/774699382149504/?acontext=%7B%22event_action_history%22%3A%5B%7B%22mechanism%22%3A%22your_upcoming_events_unit%22%2C%22surface%22%3A%22bookmark%22%7D%5D%2C%22ref_notif_type%22%3Anull",
-    "ig_link": null,
-    "price_range": "12-18 € v závislosti od dĺžky trate a spôsobu registrácie",
-    "price_tiers": [
-      {
-        "distance": "5,5 a 11 km trať",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "12,-€",
-            "deadline": "20261120",
-            "description": "5,5 a 11 km trať 12,-€ online"
-          }
-        ],
-        "late_fee": {
-          "price": "15,-€",
-          "deadline": "20261121"
-        }
-      },
-      {
-        "distance": "22 km trať",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "15,-€",
-            "deadline": "20261120",
-            "description": "22 km trať 15,-€ online"
-          }
-        ],
-        "late_fee": {
-          "price": "18,-€",
-          "deadline": "20261121"
-        }
-      }
-    ],
-    "registration_close_date": "20261121",
-    "registration_url": null,
-    "race_info_url": "https://beh.sk/pretek/lesny-beh-priatelov-semse-9/",
-    "presumed_organizer_email": "lesnybeh@gmail.com",
-    "website_emails_found": [
-      "lesnybeh@gmail.com",
-      "logo-beh-with-claim@2x.png",
-      "logo-beh-no-claim@2x.png",
-      "info@beh.sk",
-      "ferenc@beh.sk",
-      "hrcka@beh.sk",
-      "dolejsi@beh.sk"
-    ],
-    "description": "The Lesný beh priateľov Šemše is a running event in the municipality of Šemša, in the Košice-okolie District, offering three distances: 22 km, 11 km and 5.5 km. The course runs along paved forest roads and trails, country roads and asphalt, creating a pleasant and varied running environment. The race is open to all ages, with no age-group divisions, and is organised by the Šemša v pohybe civic association. The start is split into two waves: the longer distance starts at 10:00, and the shorter distances at 11:00. The event is suitable for runners looking for a forest run with a choice of distances and difficulty levels.",
-    "course_highlights": [
-      "The course follows paved forest roads and trails",
-      "Includes country roads and asphalt sections",
-      "Three distances: 22 km, 11 km and 5.5 km"
-    ],
-    "additional": "The start is split into two waves: the 22 km race starts at 10:00, and the 5.5 km and 11 km races start at 11:00. Categories have no age restrictions and are intended for children, men and women. The event is organised by the Šemša v pohybe civic association. The course surface is varied, including forest roads, country roads and asphalt. The race takes place on terrain featuring forest roads, country roads and asphalt. Registration is available online or on site. Categories are available for children, men and women, with a choice of short and long distances.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://www.bezeckypretek.sk/lesny-beh-semsa-2026/",
-      "https://beh.sk/pretek/lesny-beh-priatelov-semse-11/"
-    ],
-    "consolidated_ids": [
-      "d06a48f1-81ea-4ef9-b831-fbc550c46561"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260411",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "sk",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
-      "Jászberény"
-    ]
-  },
-  {
-    "domain_name": "beh_na_kysacky_hrad",
-    "name": "Beh na Kysacký hrad",
-    "type": "terrain",
-    "type_local": "Terén",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Kysak, Kysak, Slovakia",
-    "latitude": 48.8534182,
-    "longitude": 21.2210413,
-    "county": "Region of Košice",
-    "nearest_city": "Košice",
-    "nearby_cities": [
-      "Košice"
-    ],
-    "distances": "[\"5\"]",
-    "distance_m": [
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5 km",
-    "organizer": "Klub orientačného behu Kysak, Obec Kysak",
-    "contact": null,
-    "website": "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-7/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "8,00 € - 12,00 €",
-    "price_tiers": [
-      {
-        "distance": "Beh na Kysacký hrad",
-        "tiers": [
-          {
-            "label": "tier_1",
-            "price": "8,00 €",
-            "deadline": "20241118",
-            "description": "8,00 € - dorastenci, dorastenky, juniori, juniorky a pretekári nad 60 rokov, pri prihlásení cez prihlasovací formulár a platbe prevodom do 18.11.2024."
-          },
-          {
-            "label": "tier_2",
-            "price": "12,00 €",
-            "deadline": "20241118",
-            "description": "12.00 € - účastníci preteku Beh na Hrad v kategórii „M - A, B, C a Ž - E, F, G“, pri prihlásení cez prihlasovací formulár a platbe prevodom do 18.11.2024."
-          }
-        ],
-        "late_fee": null
-      }
-    ],
-    "registration_close_date": "20241118",
-    "registration_url": null,
-    "race_info_url": "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-7/",
-    "presumed_organizer_email": "obkysak@obkysak.info",
-    "website_emails_found": [
-      "obkysak@obkysak.info",
-      "logo-beh-with-claim@2x.png",
-      "logo-beh-no-claim@2x.png",
-      "info@beh.sk",
-      "ferenc@beh.sk",
-      "hrcka@beh.sk",
-      "dolejsi@beh.sk"
-    ],
-    "description": "The Run to Kysacký Castle is a running event organized by the Kysak Orienteering Club and the municipality of Kysak. It takes place at the Cultural House in Kysak. The course runs mainly on forest roads (85%), with a smaller proportion on asphalt (15%). The race is open to various age groups, from youth to veterans, divided by age and gender. Entry fees vary by category and are paid during registration, with payment by bank transfer available until a specified deadline. The event offers a pleasant atmosphere and the chance to compete in beautiful natural surroundings.",
-    "course_highlights": [
-      "85% forest roads, 15% asphalt",
-      "Start at the Cultural House in Kysak",
-      "Several age categories, from youth to veterans"
-    ],
-    "additional": "Categories are divided by age and gender: youth, juniors, men and women in various age groups. The start is at the Cultural House in Kysak. The race is held in the surroundings of historic Kysacký Castle. Registration is available through an online form, with payment by bank transfer until 18.11.2024. The event includes categories for various age groups and genders.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.9,
-    "sources": [
-      "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-10/",
-      "https://beh.sk/pretek/na-kysacky-hrad-a-este-dalej-9/"
-    ],
-    "consolidated_ids": [
-      "3a800854-e063-41eb-b116-e21a7be8b5f8"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20260411",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "sk",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
-      "Jászberény"
-    ]
-  },
-  {
-    "domain_name": "slepcianska_patnastka",
-    "name": "Slepčianska pätnástka",
-    "type": "road",
-    "type_local": "Cestný beh",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Kultúrny dom Slepčany, Slepčany, Slovakia",
-    "latitude": 48.3102682,
-    "longitude": 18.3376046,
-    "county": "Region of Nitra",
-    "nearest_city": "Nitra",
-    "nearby_cities": [
-      "Nitra"
-    ],
-    "distances": "[\"20\", \"15\", \"10\", \"7.5\", \"5\"]",
-    "distance_m": [
-      20000,
-      15000,
-      10000,
-      7500,
-      5000
-    ],
-    "distance_keywords": [
-      "Polmaratón",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "20 km, 15 km, 10 km, 7.5 km, 5 km",
-    "organizer": "Obec Slepčany, DHZ Slepčany a o. z. Krajšie Slepčany",
-    "contact": null,
-    "website": "https://www.slepcany.sk/slepcianska-15-tka-21-11-2026-oznam/mid/493949/.html",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": "15–17 €; detské behy zdarma",
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": "https://www.slepcany.sk/registracia-na-portal.html",
-    "race_info_url": "https://www.slepcany.sk/oznamy/slepcianska-15-tka-21-11-2026.html",
-    "presumed_organizer_email": "info@slepcany.sk",
-    "website_emails_found": [
-      "info@slepcany.sk",
-      "webyportal@webygroup.sk",
-      "starosta@slepcany.sk"
-    ],
-    "description": "Slepčianska Pätnástka is a traditional running race held in the village of Slepčany. Runners can take on a 15-kilometre course through the scenic village and its surroundings. The event is suitable for the general public and offers an opportunity for sport and community gathering. It is organised by the Municipality of Slepčany, which ensures the race runs smoothly and has a welcoming atmosphere.",
-    "course_highlights": [
-      "A 15 km course running around the village of Slepčany",
-      "Scenic natural surroundings and cultural landmarks",
-      "A traditional running race with a community atmosphere"
-    ],
-    "additional": "Adult races start at 13:00, and children’s races begin at 12:00. Adult registration takes place at the Slepčany Cultural Centre. Participants receive a medal, refreshments, drinks and fruit.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.91,
-    "sources": [
-      "https://www.terminovka.sk/podujatie/slepcianska-patnastka",
-      "https://www.bezeckypretek.sk/slepcianska-patnastka-slepcany-2026/",
-      "https://beh.sk/pretek/slepcianska-patnastka-19/"
-    ],
-    "consolidated_ids": [
-      "c3fce05d-09cf-4e46-b9d2-ad5dc5dff393"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "sk",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
-      "Jászberény"
-    ]
   },
   {
     "domain_name": "beh_komory_danovych_poradcu_cr_aneb_s_danovym_poradcem_vas_dane_nedobehnou",
@@ -150669,120 +151072,6 @@
     ],
     "consolidated_ids": [
       "baef9384-5a20-4297-b9ca-63de5fe5d5ff"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "sk",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
-      "Jászberény"
-    ]
-  },
-  {
-    "domain_name": "gobala_pol_maraton",
-    "name": "GoBala Pól&Maratón",
-    "type": "other",
-    "type_local": "Ostatné",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Komjatice, Nové Zámky District, Nitra Region, Slovakia",
-    "latitude": 48.1481625,
-    "longitude": 18.1629184,
-    "county": "Region of Nitra",
-    "nearest_city": "Nitra",
-    "nearby_cities": [
-      "Nitra"
-    ],
-    "distances": "[\"42.2\", \"21.1\", \"21\", \"10\", \"5\"]",
-    "distance_m": [
-      42200,
-      21100,
-      21000,
-      10000,
-      5000
-    ],
-    "distance_keywords": [
-      "Maratón",
-      "Polmaratón",
-      "10 km",
-      "5 km"
-    ],
-    "distance_verbose": "Maratón, Polmaratón, 10 km, 5 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://beh.sk/pretek/gobala-polmaraton/",
-      "https://www.bezeckypretek.sk/gobala-pol-maraton-komjatice-2026/"
-    ],
-    "consolidated_ids": [
-      "352fed68-9847-424f-b1c6-4874842e0ad2"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -151132,113 +151421,6 @@
       "Kiskunfélegyháza",
       "Gyula",
       "Orosháza",
-      "Jászberény"
-    ]
-  },
-  {
-    "domain_name": "karlovachki_smer_2026",
-    "name": "Карловачки смер 2026",
-    "type": "trail",
-    "type_local": "Trail",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Планинарски дом Стражилово, Фрушка гора, Serbia",
-    "latitude": 45.1570803,
-    "longitude": 19.7093272,
-    "county": "South Backa District",
-    "nearest_city": "Novi Sad",
-    "nearby_cities": [
-      "Novi Sad"
-    ],
-    "distances": "[\"11\"]",
-    "distance_m": [
-      11000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "11 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://mountain-race.rs/trka/karlovacki-smer/2026",
-      "https://mountain-race.rs/trka/karlovacki-smer/2026/"
-    ],
-    "consolidated_ids": [
-      "6903c5ab-8080-442a-8aed-d297e6823e3e"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261012",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": "rs",
-    "nearby_foreign_cities": [
-      "Budapest",
-      "Debrecen",
-      "Szeged",
-      "Miskolc",
-      "Pécs",
-      "Győr",
-      "Nyíregyháza",
-      "Kecskemét",
-      "Székesfehérvár",
-      "Szombathely",
-      "Érd",
-      "Szolnok",
-      "Tatabánya",
-      "Eger",
-      "Sopron",
-      "Dunaújváros",
-      "Kaposvár",
-      "Veszprém",
-      "Békéscsaba",
-      "Hódmezővásárhely",
-      "Zalaegerszeg",
-      "Nagykanizsa",
-      "Salgótarján",
-      "Ózd",
-      "Dunakeszi",
-      "Szigetszentmiklós",
-      "Cegléd",
-      "Baja",
-      "Vác",
-      "Mosonmagyaróvár",
-      "Gödöllő",
-      "Szekszárd",
-      "Hajdúböszörmény",
-      "Pápa",
-      "Kiskunfélegyháza",
-      "Gyula",
-      "Orosháza",
-      "Ajka",
       "Jászberény"
     ]
   },

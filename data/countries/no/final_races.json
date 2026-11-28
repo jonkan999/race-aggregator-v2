@@ -2328,8 +2328,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Porsgrunn Arena",
+    "start_time": "18:00",
+    "location": "Porsgrunn Arena, Kjølnes, Porsgrunn",
     "latitude": 59.1391819,
     "longitude": 9.6688564,
     "county": "Vestfold og Telemark",
@@ -2346,7 +2346,7 @@
       "10 km"
     ],
     "distance_verbose": "10 km, 3.3 km",
-    "organizer": null,
+    "organizer": "Telemark bedriftsidrettskrets",
     "contact": "telemark@bedriftsidrett.no",
     "website": "https://telemark.bedriftsidretten.no/next/events/p/1000116973/adventsmila-2024-i-samarbeid-med-kirkens-bymisjon-grenland",
     "fb_link": null,
@@ -2355,12 +2355,16 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://telemark.bedriftsidretten.no/events/p/1000182215/adventsmila-2026",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "I samarbeid med Kirkens Bymisjon i Grenland inviterer vi til Adventsmila på Kjølnes. Bli med på et stemningsfullt løp den 17. desember kl. 18, hvor en runde er på 3,3 km. For de som løper 10 km med tid, skal man løpe 3 runder, mens de som deltar i trimklassen uten tid kan gjennomføre 1, 2 eller 3 runder. Støtt Kirkens Bymisjon og gled en som gruer seg til jul!",
-    "course_highlights": [],
-    "additional": null,
+    "description": "Adventsmila er et stemningsfullt løp på Kjølnes i Porsgrunn, arrangert av Telemark bedriftsidrettskrets i samarbeid med Kirkens Bymisjon Grenland og Telemark Sparebank. Du kan velge 10 km med tidtaking eller trimklassen uten tid, der du selv velger én, to eller tre runder. Halvparten av kontingenten går til Kirkens Bymisjons arbeid Gled en som gruer seg til jul. Det deles ikke ut medalje, men det trekkes premier blant alle deltakerne.",
+    "course_highlights": [
+      "Rask runde på 3,3 km med start og mål utenfor Porsgrunn Arena",
+      "10 km med tid eller trimklasse med 1 til 3 runder",
+      "Gratis kaffe, gløgg og pepperkaker fra Kirkens Bymisjon"
+    ],
+    "additional": "Trimklassen uten tid kan starte fra kl. 17.00, og fellesstart med tid er kl. 18.00. Trimklassen er åpen fra 11 år, og fra 8 år i følge med voksen. Påmeldingsgebyr på 35 kr til EQ Timing kommer i tillegg til kontingenten. Det tas forbehold om føret siden løpet går i desember.",
     "images": [
       {
         "number": 1,
@@ -2384,7 +2388,7 @@
       "race_dates"
     ],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "ranking_bridge",
       "https://terminlista.kondis.no/arrangementer/adventsmila-kjoelnes-2026-12-15"
@@ -2807,72 +2811,6 @@
     ],
     "supplied_at": "20261104",
     "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "testkarusellny_lop6",
-    "name": "Testkarusellny løp6",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20261223",
-        "20261223"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Eina, Vestre Toten, Innlandet, Norge",
-    "latitude": 60.62816960000001,
-    "longitude": 10.600027,
-    "county": "Innlandet",
-    "nearest_city": "Hamar",
-    "nearby_cities": [
-      "Hamar"
-    ],
-    "distances": "[\"10\"]",
-    "distance_m": [
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://live.eqtiming.com/85262#dashboard"
-    ],
-    "consolidated_ids": [
-      "cfa57fe2-b7fd-4176-b761-83aa80d66871"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261127",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
@@ -4533,7 +4471,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": "11:00",
-    "location": "Lier Stasjon",
+    "location": "Lier stasjon, Lier",
     "latitude": 59.7633695,
     "longitude": 10.2900286,
     "county": "Viken",
@@ -4558,20 +4496,20 @@
     "website": "https://rundrm.no/lierlopet/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": "399-449 kr",
+    "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://rundrm.no/lierlopet/",
+    "race_info_url": "https://rundrm.no/nb/lierlopet/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": "Lierløpet er en av Norges aller raskeste traséer, som går på bred gangvei og er velbrukt av løpere og mosjonister i Drammensområdet. Løpet tilbyr distanser på 5 km, 10 km og halvmaraton (21 km), og er åpent for både de som ønsker å jogge eller gå, samt for de som er godt trente og raske. Det arrangeres også et barneløp, hvor alle deltakere får is. Startnummer kan kjøpes på Lier Stasjon, og løpet starter kl 12:00.",
+    "description": "Lierløpet er et fast mosjonsløp i regi av RUNDRM med målgang ved Lier stasjon. Løpet går i Linnesrunden, en lettløpt rundløype på 5,75 km på bred gangvei, og arrangøren omtaler den som en av Norges raskeste traseer. Det er 5 km, 10 km og halvmaraton med start klokka 11:00, og barneløpet LierSpurten starter klokka 12:15. Startstedet varierer med distansen, mens målgang og startnummerutdeling er ved parkeringen på Lier stasjon. Denne utgaven går søndag 3. januar 2027.",
     "course_highlights": [
-      "En av Norges raskeste løyper",
-      "Bred gangvei ved Lier stasjon",
-      "5 km, 10 km og halvmaraton med start klokka 11:00"
+      "Rundløype på 5,75 km på bred gangvei",
+      "5 km, 10 km og halvmaraton med start klokka 11:00",
+      "Barneløpet LierSpurten klokka 12:15"
     ],
-    "additional": "Startnummerutdeling åpner én time før løpsstart ved målområdet på Lier stasjon. Vanlige priser på arrangørens side: 5 km 399 kr, 10 km 449 kr, halvmaraton 449 kr, LierSpurten 150 kr. Offisiell kalender: https://rundrm.no/lierlopet/",
+    "additional": "Startnummerutdeling åpner én time før start ved målområdet på Lier stasjon. Etteranmelding på løpsdagen koster 100 kr mer, og uten helårslisens kommer en engangslisens på 40 kr i tillegg. Det er ikke parkering ved Lierkroa; arrangøren anbefaler Maxbo Lier, Biltema Lier, området rundt Amtmannsvingen eller Kiwi Gullaug.",
     "images": [
       {
         "number": 1,
@@ -13218,78 +13156,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "drammen_10k",
-    "name": "Drammen 10K",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20270403",
-        "20270403"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Drammen, Buskerud, Norge",
-    "latitude": 59.7440738,
-    "longitude": 10.2044564,
-    "county": "Viken",
-    "nearest_city": "Oslo",
-    "nearby_cities": [
-      "Oslo"
-    ],
-    "distances": "[\"10\"]",
-    "distance_m": [
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": "RUNDRM",
-    "contact": null,
-    "website": "https://rundrm.no/drammen10k/",
-    "fb_link": null,
-    "ig_link": "https://www.instagram.com/rundrm/",
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://rundrm.no/drammen10k/",
-    "presumed_organizer_email": "contact@rundrm.no",
-    "website_emails_found": [
-      "contact@rundrm.no"
-    ],
-    "description": "Drammen10K er Norges raskeste 10 kilometers løp, som går gjennom Drammen sentrum på en lettløpt trasé med kun 22 høydemeter. Løpet passer for alle som ønsker en rask og fin løpsopplevelse i urbane omgivelser. Arrangementet har en inkluderende atmosfære og tilbyr også morsomme digitale konkurranser i forkant. Velkommen til en flott løpshelg i Drammen!",
-    "course_highlights": [
-      "Norges raskeste 10 km løp",
-      "Lettløpt trasé med kun 22 høydemeter",
-      "Løpet går i Drammen sentrum"
-    ],
-    "additional": "Startnummer i grønn farge indikerer at medalje er kjøpt på forhånd. Det arrangeres også barneløp samme dag, inkludert Minimila. Det er ingen telefonkontakt, all kommunikasjon skjer via e-post og kontaktskjema. Det arrangeres en digital triatlon i forkant med premier og live-kåring på sosiale medier. Overføring av startnummer eller endring av deltaker koster 100 kr.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.83,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/drammen-10k-2027-04-03"
-    ],
-    "consolidated_ids": [
-      "17093ce5-de36-4db2-b514-c9b0d997f9e6"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "bergen_ultra_maratonkarusellen",
     "name": "Bergen Ultra - Maratonkarusellen",
     "type": "road",
@@ -13991,16 +13857,11 @@
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://rundrm.no/lierlopet/",
+    "race_info_url": "https://rundrm.no/nb/lierlopet/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
     "description": "Lierløpet er et jevnlig mosjonsløp ved Lier stasjon, arrangert av RUNDRM. Løypa går på bred gangvei og regnes som en av Norges aller raskeste. Start for 5 km, 10 km og halvmaraton er klokka 11:00. Påmelding skjer via USBL, og LierSpurten (barneløp) har påmelding ved Lier stasjon til 10 minutter før start. Dette løpet er oppført som Drammen10K WarmUp i kalenderen.",
-    "course_highlights": [
-      "En av Norges raskeste løyper",
-      "Bred gangvei ved Lier stasjon",
-      "5 km, 10 km og halvmaraton med start klokka 11:00",
-      "Oppført som Drammen10K WarmUp i arrangørens kalender"
-    ],
+    "course_highlights": [],
     "additional": "Startnummerutdeling åpner én time før løpsstart ved målområdet på Lier stasjon. Vanlige priser på arrangørens side: 5 km 399 kr, 10 km 449 kr, halvmaraton 449 kr, LierSpurten 150 kr. Offisiell kalender: https://rundrm.no/lierlopet/",
     "images": [],
     "supplied_images": false,
@@ -14022,7 +13883,7 @@
       "organizer"
     ],
     "is_series": false,
-    "max_description_relevance": 0.9,
+    "max_description_relevance": 0.0,
     "sources": [
       "https://live.eqtiming.com/85228#dashboard",
       "https://rundrm.no/lierlopet/",
@@ -14598,73 +14459,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "haugesund_il_terrenglopskarusellen_1",
-    "name": "Haugesund IL - Terrengløpskarusellen 1",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20270408",
-        "20270408"
-      ],
-      [
-        "20270415",
-        "20270415"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Haugesund, Rogaland, Norge",
-    "latitude": 59.41358100000001,
-    "longitude": 5.267986899999999,
-    "county": "Rogaland",
-    "nearest_city": "Leirvik",
-    "nearby_cities": [
-      "Leirvik"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/haugesund-il-terrengloepskarusellen-2-5",
-      "https://terminlista.kondis.no/arrangementer/haugesund-il-terrengloepskarusellen-1-5"
-    ],
-    "consolidated_ids": [
-      "61b8ca4d-19b7-4774-9534-8c8b1e90a4b0"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261127",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "1_karusellop_brannvaktalopet_2027",
     "name": "1. karuselløp Brannvaktaløpet 2027",
     "type": "terrain",
@@ -14678,8 +14472,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Kristiansand, Agder, Norge",
+    "start_time": "17:00",
+    "location": "Kristiansand",
     "latitude": 58.15991189999999,
     "longitude": 8.0182064,
     "county": "Agder",
@@ -14691,27 +14485,31 @@
     "distance_m": [],
     "distance_keywords": [],
     "distance_verbose": "Blandet distanse",
-    "organizer": null,
+    "organizer": "Agder bedriftsidrettskrets",
     "contact": null,
-    "website": null,
+    "website": "https://agder.bedriftsidretten.no/p/35926/kristiansand",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://agder.bedriftsidretten.no/p/35926/kristiansand",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Brannvaktaløpet er første løp i Terrengkarusellen Kristiansand 2027, torsdag 8. april. Karusellen arrangeres av Agder bedriftsidrettskrets og går fra april til oktober på stadig nye stier rundt Kristiansand. Torsdag er ordinær løpsdag med fellesstart for lang løype klokka 17:00 og kort løype klokka 17:30. Løypene er merket fra onsdag, og onsdag kan brukes som alternativ løpsdag.",
+    "course_highlights": [
+      "Fellesstart lang løype klokka 17:00 og kort løype klokka 17:30",
+      "Barneløp klokka 17:10 på noen av løpene",
+      "Onsdag som alternativ dag med registrering av egen tid"
+    ],
+    "additional": "Sekretariatet er åpent onsdag klokka 15-18 og torsdag klokka 13-18. Arrangementet følger regelverket til NIF og Norges Bedriftsidrettsforbund. Påmelding, priser og kart for ukens løp finner du på Bedriftsidrettens side.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/1-karuselloep-brannvaktaloepet-2027-2027-04-08"
     ],
@@ -14819,6 +14617,78 @@
     ],
     "consolidated_ids": [
       "431b27c8-d742-48c9-a754-7f31a4f8c466"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261104",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "drammen_10k",
+    "name": "Drammen 10K",
+    "type": "road",
+    "type_local": "Landevei",
+    "race_dates": [
+      [
+        "20270410",
+        "20270410"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "confirmed",
+    "estimated_dates": false,
+    "start_time": null,
+    "location": "Drammen, Buskerud, Norge",
+    "latitude": 59.7440738,
+    "longitude": 10.2044564,
+    "county": "Viken",
+    "nearest_city": "Oslo",
+    "nearby_cities": [
+      "Oslo"
+    ],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": "RUNDRM",
+    "contact": null,
+    "website": "https://rundrm.no/drammen10k/",
+    "fb_link": null,
+    "ig_link": "https://www.instagram.com/rundrm/",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://rundrm.no/drammen10k/",
+    "presumed_organizer_email": "contact@rundrm.no",
+    "website_emails_found": [
+      "contact@rundrm.no"
+    ],
+    "description": "Drammen10K er Norges raskeste 10 kilometers løp, som går gjennom Drammen sentrum på en lettløpt trasé med kun 22 høydemeter. Løpet passer for alle som ønsker en rask og fin løpsopplevelse i urbane omgivelser. Arrangementet har en inkluderende atmosfære og tilbyr også morsomme digitale konkurranser i forkant. Velkommen til en flott løpshelg i Drammen!",
+    "course_highlights": [
+      "Norges raskeste 10 km løp",
+      "Lettløpt trasé med kun 22 høydemeter",
+      "Løpet går i Drammen sentrum"
+    ],
+    "additional": "Startnummer i grønn farge indikerer at medalje er kjøpt på forhånd. Det arrangeres også barneløp samme dag, inkludert Minimila. Det er ingen telefonkontakt, all kommunikasjon skjer via e-post og kontaktskjema. Det arrangeres en digital triatlon i forkant med premier og live-kåring på sosiale medier. Overføring av startnummer eller endring av deltaker koster 100 kr.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.83,
+    "sources": [
+      "https://terminlista.kondis.no/arrangementer/drammen-10k-2027-04-03"
+    ],
+    "consolidated_ids": [
+      "17093ce5-de36-4db2-b514-c9b0d997f9e6"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -15043,8 +14913,8 @@
   {
     "domain_name": "hoyanger_bakgardsultra",
     "name": "Høyanger Bakgårdsultra",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
     "race_dates": [
       [
         "20270410",
@@ -15055,37 +14925,43 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Høyanger, Vestland, Norge",
+    "location": "Høyanger",
     "latitude": 61.2200648,
     "longitude": 6.0757442,
     "county": "Vestland",
     "nearest_city": "Bergen",
     "nearby_cities": [],
-    "distances": "[]",
-    "distance_m": [],
+    "distances": "[\"6.5\"]",
+    "distance_m": [
+      6500
+    ],
     "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
+    "distance_verbose": "6.5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://www.xn--hyangerbakgrdsultra-bxb20b.no/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.xn--hyangerbakgrdsultra-bxb20b.no/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Høyanger Bakgårdsultra går laurdag 10. april 2027 i Høyanger. Løpet følgjer backyard ultra-formatet, der ein ny runde startar kvar heile time. Kvar runde er 6,5 km, og det er maks 10 runder. Løpet er for alle, både dei som vil kjempe om førsteplassen og dei som vil prøve ei runde eller to. Påmeldinga opnar 4. januar 2027.",
+    "course_highlights": [
+      "Ny runde på 6,5 km kvar heile time",
+      "Maks 10 runder",
+      "Du bestemmer sjølv kor mange runder du spring"
+    ],
+    "additional": "Løypekart og program for 2026 ligg på arrangøren si side, og meir informasjon om 2027 kjem fortløpande.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/hoeyanger-bakgaardsultra-2027-04-10"
     ],
@@ -15103,68 +14979,6 @@
   {
     "domain_name": "vintarkarusell_eikanger_lop_7",
     "name": "Vintarkarusell Eikanger løp 7",
-    "type": "terrain",
-    "type_local": "Terreng",
-    "race_dates": [
-      [
-        "20270410",
-        "20270410"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Eikanger, Alver, Vestland, Norge",
-    "latitude": 60.6221393,
-    "longitude": 5.1584647,
-    "county": "Vestland",
-    "nearest_city": "Bergen",
-    "nearby_cities": [
-      "Bergen"
-    ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": true,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/vintarkarusell-eikanger-loep-7-5"
-    ],
-    "consolidated_ids": [
-      "ec2d5f11-0edb-4fa9-b012-4cc3cde0f1cd"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261127",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "drammen_10k_2027",
-    "name": "Drammen 10k 2027",
     "type": "road",
     "type_local": "Landevei",
     "race_dates": [
@@ -15176,49 +14990,51 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Lier, Buskerud, Norge",
-    "latitude": 59.8842148,
-    "longitude": 10.2227981,
-    "county": "Viken",
-    "nearest_city": "Oslo",
+    "start_time": "15:00",
+    "location": "Eikanger skule, Alver",
+    "latitude": 60.610474,
+    "longitude": 5.388592,
+    "county": "Vestland",
+    "nearest_city": "Bergen",
     "nearby_cities": [
-      "Oslo"
+      "Bergen"
     ],
-    "distances": "[\"10\"]",
+    "distances": "[\"2.2\"]",
     "distance_m": [
-      10000
+      2200
     ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": null,
+    "distance_keywords": [],
+    "distance_verbose": "2.2 km",
+    "organizer": "Eikanger IL",
     "contact": null,
-    "website": null,
+    "website": "https://eikangeril.no/p/94430/vinterkarusellen-2025-26",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "30-150 kr",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://eikangeril.no/p/94430/vinterkarusellen-2025-26",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Løp 7 er det siste av sju løp i Vinterkarusellen 2026-27 til Eikanger IL, laurdag 10. april 2027. Løpet har start og mål i porten på Eikanger skule, og løypa er knappe 2,2 km rundt Eikangervågen. Løpsklassen startar klokka 15:00, mens deltakarar utan tidtaking kan starte så snart dei har meldt seg på. Karusellen går inn i sesong 48 sidan starten i 1979.",
+    "course_highlights": [
+      "Knappe 2,2 km rundt Eikangervågen",
+      "Start og mål ved Eikanger skule",
+      "Medaljar etter sesongen til alle som har fullført minst tre løp"
+    ],
+    "additional": "Påmelding frå klokka 14:15. Startkontingent: born til og med 15 år 30 kr, vaksne 60 kr, familie 150 kr. Ved kvart løp blir det trekt premiar på startnummer, og det er enkle premiar til raskaste kvinne og mann.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
+    "is_series": true,
+    "max_description_relevance": 0.9,
     "sources": [
-      "https://live.eqtiming.com/85229#dashboard"
+      "https://terminlista.kondis.no/arrangementer/vintarkarusell-eikanger-loep-7-5"
     ],
     "consolidated_ids": [
-      "51343d0b-6821-4612-986c-edaa816f4735"
+      "ec2d5f11-0edb-4fa9-b012-4cc3cde0f1cd"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -19180,18 +18996,18 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": "09:00",
-    "location": "Dyreparken, Kristiansand, Agder, Norge",
-    "latitude": 58.18183699999999,
-    "longitude": 8.146151399999999,
+    "location": "Abra Havn, Dyreparken, Kristiansand",
+    "latitude": 58.1882993,
+    "longitude": 8.1513875,
     "county": "Agder",
     "nearest_city": "Kristiansand",
     "nearby_cities": [
       "Kristiansand",
       "Arendal"
     ],
-    "distances": "[\"21.098\", \"10\", \"5\"]",
+    "distances": "[\"21.1\", \"10\", \"5\"]",
     "distance_m": [
-      21098,
+      21100,
       10000,
       5000
     ],
@@ -19201,36 +19017,31 @@
       "5 km"
     ],
     "distance_verbose": "Halvmaraton, 10 km, 5 km",
-    "organizer": null,
+    "organizer": "Dyreparken og Bedriftsidretten",
     "contact": null,
     "website": "https://www.dyreparken.no/dyreparken-lopefestival/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "450-550 kr",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
     "race_info_url": "https://www.dyreparken.no/dyreparken-lopefestival/",
-    "presumed_organizer_email": "andre@dyreparken.no",
-    "website_emails_found": [
-      "karianne.sortveit@bedriftsidretten.no",
-      "andre@dyreparken.no",
-      "navn@eksempel.no",
-      "post@dyreparken.no"
-    ],
-    "description": "Dyreparken Løpefestival i Kristiansand tilbyr en unik løpsopplevelse gjennom Dyreparkens univers med distanser på 5 km, 10 km og 21,1 km. Løypa byr på variert terreng med svinger og bakker, og går gjennom kjente områder som Kardemomme by, nordiske skoger og Afrika med geparder. Festivalen er mer enn bare et løp, med arrangementer gjennom hele helgen inkludert after-party og recovery jog. Start og mål er flyttet til Abra Havn for bedre flyt og raskere start.",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Dyreparken Løpefestival går lørdag 24. april 2027 i Dyreparken i Kristiansand, med 5 km, 10 km, halvmaraton og barneløp. Én runde er 5 km og går fra Abra Havn gjennom Kardemomme by, nordiske skoger og KuToppen til Afrika med geparder, løver og savanne. Løypa har svinger og bakker, så arrangøren anbefaler å la klokka hvile og nyte turen. Løpefestivalen arrangeres av Dyreparken og Bedriftsidretten.",
     "course_highlights": [
-      "Løype gjennom Kardemomme by, nordiske skoger og Afrika med geparder",
-      "Start og mål i Abra Havn med ny trasé for bedre flyt",
-      "Underholdning og musikk flere steder langs løypa"
+      "5 km-runde gjennom Dyreparken, fra Kardemomme by til savannen",
+      "Start og mål i Abra Havn",
+      "Underholdning langs løypa og heiastemning i målområdet"
     ],
-    "additional": "Deltakere får rabatt på inngang til Dyreparken (kr 200,- per person, maks 5 per deltaker). Fredag før løpet er det mulighet for å hente startnummer og delta på en rolig shakeout run. Søndag arrangeres recovery jog med frokost (egen påmelding). Det er mulig å bestille egen finishermedalje for kr 50,- ved påmelding.",
+    "additional": "Starttider: halvmaraton klokka 09:00 (fire runder), 10 km klokka 11:30 (to runder), 5 km klokka 13:00 og barneløp klokka 14:30. Pris fra 450 kr for 5 km, 500 kr for 10 km og 550 kr for halvmaraton. Meld deg på innen 31. mars 2027 for å få t-skjorte. Fredag 23. april er det startnummerhenting fra klokka 15:00 og shakeout run klokka 17:30, og søndag 25. april er det recovery jog med frokost.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.16,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/abik-dyreparken-loepefestival-2027-04-24"
     ],
@@ -29176,39 +28987,51 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Fornebu, Bærum, Norge",
-    "latitude": 59.9018813,
-    "longitude": 10.6245934,
+    "location": "UNITY Arena, Fornebu",
+    "latitude": 59.90314100000001,
+    "longitude": 10.6238873,
     "county": "Viken",
     "nearest_city": "Oslo",
     "nearby_cities": [
       "Oslo"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
+    "distances": "[\"10\", \"5\", \"3\"]",
+    "distance_m": [
+      10000,
+      5000,
+      3000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km",
+      "3000 meter"
+    ],
+    "distance_verbose": "10 km, 5 km, 3000 meter",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://fornebulopet.no/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://fornebulopet.no/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Fornebuløpet er et gateløp på Fornebu i Bærum med barneløp, 3 km, 5 km, 10 km og Fornebutrippelen, der du løper alle tre distansene etter hverandre. Start og mål er ved UNITY Arena, og løypene går i stor grad på gang- og sykkelsti. 5 km går langs vannet ved Equinor-bygget og inn i Nansenparken, mens 10 km går via Rolfsbukta, Koksabukta og Storøya. Det er også en spaserklasse på 5 og 10 km uten tidtaking.",
+    "course_highlights": [
+      "Fornebutrippelen: 3, 5 og 10 km etter hverandre",
+      "Start og mål ved UNITY Arena",
+      "Drikkestasjoner underveis og ved mål"
+    ],
+    "additional": "3 og 5 km går på asfalt. 10 km har asfalt de første 4,5 km, deretter cirka 2,5 km grus og asfalt de siste 3 km. Budstikkas barneløp for barn opp til 10 år går på Festplassen i Nansenparken, med startkontingent 100 kr og premie til alle. Påmeldingen for 2027 skjer hos EQ Timing, der Fornebutrippelen koster 730 kr og spaserklassen og studentpris 299 kr.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://live.eqtiming.com/85162#dashboard"
     ],
@@ -34586,8 +34409,8 @@
   {
     "domain_name": "varhaugmila",
     "name": "Varhaugmilå",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "type": "road",
+    "type_local": "Landevei",
     "race_dates": [
       [
         "20270605",
@@ -34598,7 +34421,7 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Varhaug, Hå, Rogaland, Norge",
+    "location": "Varhaug sentrum, Hå",
     "latitude": 58.61470999999999,
     "longitude": 5.6457294,
     "county": "Rogaland",
@@ -34616,27 +34439,31 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Varhaug IL",
     "contact": null,
-    "website": null,
+    "website": "https://www.vil.no/varhaugmila-2026/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.vil.no/varhaugmila-2026/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Varhaugmilå er et mosjonsløp på 5 og 10 km med start og mål i Varhaug sentrum, arrangert av Varhaug IL. Løypa er flott og variert, rundt en tredjedel går på grus og resten på asfalt. 5 km løper én runde og 10 km to runder. Løypa er kontrollmålt av Norges Friidrettsforbund, og løpet arrangeres i forbindelse med Varhaugmarken, så det er rikt folkeliv i sentrum.",
+    "course_highlights": [
+      "Kontrollmålt løype med start og mål i Varhaug sentrum",
+      "5 km én runde, 10 km to runder",
+      "Arrangeres samtidig med Varhaugmarken"
+    ],
+    "additional": "I 2026 kostet 5 km 250 kr fram til 30. april og 300 kr fra 1. mai, og 10 km 300 kr fram til 30. april og 400 kr fra 1. mai. Påmelding skjer via EQ Timing.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/varhaugmilaa-2027-06-05"
     ],
@@ -34665,8 +34492,8 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Våler i Solør, Våler, Innlandet, Norge",
+    "start_time": "10:00",
+    "location": "Våler i Solør",
     "latitude": 60.64433940000001,
     "longitude": 11.7920983,
     "county": "Innlandet",
@@ -34674,35 +34501,41 @@
     "nearby_cities": [
       "Hamar"
     ],
-    "distances": "[\"5\"]",
+    "distances": "[\"10\", \"5\"]",
     "distance_m": [
+      10000,
       5000
     ],
     "distance_keywords": [
+      "10 km",
       "5 km"
     ],
-    "distance_verbose": "5 km",
+    "distance_verbose": "10 km, 5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://signup.eqtiming.com/?Event=Sees_i_Valer-Lopet_2027",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "200-300 kr",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://signup.eqtiming.com/?Event=Sees_i_Valer-Lopet_2027",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Sees i Våler er et inkluderende mosjonsløp for store og små i Våler i Solør, med fokus på løpeglede, mestring og fellesskap. Bakgrunnen er Oskar, som ble født blind, og løpet skal samle lokalsamfunnet og skape større forståelse for hverdagen til blinde og svaksynte. Det er 10 km, 5 km og barneløp, med paraklasse på 10 og 5 km. Overskuddet går til Norges Blindeforbunds Ungdom.",
+    "course_highlights": [
+      "10 km og 5 km med elektronisk tidtaking",
+      "Paraklasse, og ledsagere deltar gratis",
+      "Barneløp for de minste"
+    ],
+    "additional": "Fellesstart 10 km klokka 10:00, 5 km klokka 12:00 og barneløp klokka 14:00. Påmeldingen åpner 1. desember 2026; 10 og 5 km koster 200 kr ut desember og 300 kr etter nyttår. Initiativtaker og kontaktperson er Ingrid Lerudsmoen Walbækken.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://live.eqtiming.com/85255#dashboard"
     ],
@@ -37403,8 +37236,8 @@
   {
     "domain_name": "froylandsvatnet_rundt",
     "name": "Frøylandsvatnet Rundt",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "type": "road",
+    "type_local": "Landevei",
     "race_dates": [
       [
         "20270613",
@@ -37414,40 +37247,50 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Frøylandsvatnet, Time, Rogaland, Norge",
-    "latitude": 58.7625418,
-    "longitude": 5.6853731,
+    "start_time": "13:00",
+    "location": "Njåskogen, Time",
+    "latitude": 58.7520822,
+    "longitude": 5.6912682,
     "county": "Rogaland",
     "nearest_city": "Stavanger",
     "nearby_cities": [
       "Stavanger"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": null,
+    "distances": "[\"16.6\", \"9.5\", \"7\"]",
+    "distance_m": [
+      16600,
+      9500,
+      7000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "16.6 km, 9.5 km, 7 km",
+    "organizer": "Undheim IL",
     "contact": null,
-    "website": null,
+    "website": "https://undheimil.no/froylandsvatnet-rundt-2026/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://undheimil.no/froylandsvatnet-rundt-2026/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Frøylandsvatnet Rundt er eit løp rundt Frøylandsvatnet på Jæren, arrangert av Undheim IL. Distansane er Frøylandsvatnet Rundt på 16,6 km og Midgardsormen Rundt på 9,5 km. I 2026 gjekk starten frå Njåskogen, med Frøylandsvatnet Rundt klokka 13:00 og Midgardsormen Rundt klokka 13:30, slik at målgangen vart samla. Løypa følgjer sykkelsti til Kverneland og deretter turstien rundt vatnet, med om lag 7 km grus fram mot Bryne.",
+    "course_highlights": [
+      "16,6 km rundt Frøylandsvatnet eller 9,5 km Midgardsormen Rundt",
+      "Om lag 7 km grus på turstien mot Bryne",
+      "Gratis drikke og kake i målområdet"
+    ],
+    "additional": "Løypa er merka med kvite band og har løypevakter i alle store kryss. Det er drikkestasjon om lag 1 km før Sandtangen, og toalett i Njåskogen. Det er premiar til vinnarane i dame- og herreklassen på begge distansane. Løpet vart arrangert første gong i 1999.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/froeylandsvatnet-rundt-2027-06-13"
     ],
@@ -37477,45 +37320,50 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Sarpsborg, Østfold, Norge",
-    "latitude": 59.28407290000001,
-    "longitude": 11.1094028,
+    "location": "Kulåsparken, Sarpsborg",
+    "latitude": 59.2802066,
+    "longitude": 11.1105395,
     "county": "Viken",
     "nearest_city": "Fredrikstad",
     "nearby_cities": [
       "Fredrikstad"
     ],
-    "distances": "[\"10\", \"5\"]",
+    "distances": "[\"10\", \"5\", \"0.5\"]",
     "distance_m": [
       10000,
-      5000
+      5000,
+      500
     ],
     "distance_keywords": [
       "10 km",
       "5 km"
     ],
-    "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "distance_verbose": "10 km, 5 km, 0.5 km",
+    "organizer": "Fredrikstad Idrettsforening og Sarpsborg Idrettslag",
     "contact": null,
-    "website": null,
+    "website": "https://www.rodekors.no/gi-blod/nyheter/blodomlopet/blodomlopet-ostfold/",
     "fb_link": null,
     "ig_link": null,
-    "price_range": null,
+    "price_range": "400-1750 kr",
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.rodekors.no/gi-blod/nyheter/blodomlopet/blodomlopet-ostfold/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Blodomløpet Østfold går mandag 14. juni 2027 i Kulåsparken i Sarpsborg. Løpet arrangeres av Røde Kors Blodprogram sammen med blodbanken i Østfold, Fredrikstad Idrettsforening og Sarpsborg Idrettslag, og skal øke bevisstheten om behovet for blodgivere. Du kan gå, jogge eller løpe 5 eller 10 km, og barna kan bli med på Lille Blodomløpet på 500 meter. Overskuddet fra deltakeravgiften går uavkortet til de to friidrettsklubbene.",
+    "course_highlights": [
+      "5 og 10 km med tidtaking, eller 5 km gåtur",
+      "Gratis Lille Blodomløpet på 500 m for barn 0-11 år",
+      "T-skjorte og medalje til alle"
+    ],
+    "additional": "Pris 400 kr for 5 km, 10 km eller gåtur, og 1750 kr for lag på fem personer (med piknikkurv). Etterpåmelding fra klokka 16:00 fram til 30 minutter før start, med 50 kr i gebyr. Hund er bare tillatt i gåturklassen.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/blodomloepet-oestfold-2027-06-14"
     ],
@@ -43191,41 +43039,51 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Hornindal idrettspark, Hornindal, Norge",
+    "location": "Hornindal Idrettspark, Grodås",
     "latitude": 61.9808219,
     "longitude": 6.5151697,
     "county": "Møre og Romsdal",
     "nearest_city": "Ålesund",
     "nearby_cities": [],
-    "distances": "[\"42.195\"]",
+    "distances": "[\"42.195\", \"21.098\", \"10\", \"4.22\"]",
     "distance_m": [
-      42195
+      42195,
+      21098,
+      10000,
+      4220
     ],
     "distance_keywords": [
-      "Maraton"
+      "Maraton",
+      "Halvmaraton",
+      "10 km",
+      "5 km"
     ],
-    "distance_verbose": "Maraton",
-    "organizer": null,
+    "distance_verbose": "Maraton, Halvmaraton, 10 km, 4.22 km",
+    "organizer": "Hornindal IL, friidrettsgruppa",
     "contact": null,
-    "website": null,
+    "website": "https://hornindalsvatnetmaraton.no/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://hornindalsvatnetmaraton.no/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Hornindalsvatnet Maraton er et årlig løp langs Hornindalsvatnet, Europas dypeste innsjø, som friidrettsgruppa i Hornindal IL har arrangert siden 1992. Det løpes maraton, halvmaraton, 10 km og minimaraton, og alle distansene er nasjonalt sertifiserte og kontrollmålte. Løypa går rundt Hornindal Idrettspark og Grodås sentrum, og alle distanser har mål på idrettsparken. Maraton er åtte runder i 5 km-løypa, mens 10 km er to runder. Utgaven i 2027 går lørdag 24. juli.",
+    "course_highlights": [
+      "Løype langs Hornindalsvatnet, Europas dypeste innsjø",
+      "Fire sertifiserte distanser fra minimaraton til maraton",
+      "Felles mål på Hornindal Idrettspark"
+    ],
+    "additional": "Påmeldingen for 2027 er ikke åpnet ennå, og arrangøren oppgir at starttider og gebyrer er foreløpige. Startnummerutdeling, garderobe og matstasjon er ved Honndalshallen og Hornindal Idrettspark. Det trekkes gavepremier blant deltakerne.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://live.eqtiming.com/85245#dashboard"
     ],
@@ -45340,8 +45198,8 @@
   {
     "domain_name": "hof_toppers_ultralop",
     "name": "Hof Toppers Ultraløp",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "type": "trail",
+    "type_local": "Trail/Fjelløp",
     "race_dates": [
       [
         "20270807",
@@ -45352,39 +45210,46 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Holmestrand, Vestfold, Norge",
-    "latitude": 59.4899189,
-    "longitude": 10.315035,
+    "location": "Hof, Holmestrand",
+    "latitude": 59.53111449999999,
+    "longitude": 10.0861069,
     "county": "Vestfold og Telemark",
-    "nearest_city": "Fredrikstad",
+    "nearest_city": "Skien",
     "nearby_cities": [
-      "Fredrikstad"
+      "Skien"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": null,
+    "distances": "[\"47\"]",
+    "distance_m": [
+      47000
+    ],
+    "distance_keywords": [
+      "50 km"
+    ],
+    "distance_verbose": "47 km",
+    "organizer": "Hof IL",
     "contact": null,
-    "website": null,
+    "website": "https://hoftoppers.hof-il.no/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://hoftoppers.hof-il.no/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Hof Toppers Ultraløp er ultraløpet under Hof Toppers, et arrangement i regi av Hof IL i Holmestrand kommune. Hof Toppers er først og fremst kjent for duathlon med 5 Topper og Løke Challenge / 3 Topper, og ultraløpet står også på programmet i 2027. Ultraløpet var 47 km i 2026. Arrangementet går lørdag 7. august 2027, og påmeldingen er åpen.",
+    "course_highlights": [
+      "Ultraløp på 47 km (2026)",
+      "Del av Hof Toppers sammen med duathlondistansene"
+    ],
+    "additional": "Minitoppers for de yngste har tidligere vært arrangert samme dag.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/hof-toppers-ultraloep-2027-08-07"
     ],
@@ -47613,8 +47478,8 @@
   {
     "domain_name": "dynafit_randaberg_backyard_ultra",
     "name": "Dynafit Randaberg Backyard Ultra",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "type": "backyard",
+    "type_local": "Backyard Ultra",
     "race_dates": [
       [
         "20270814",
@@ -47625,39 +47490,49 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Randaberg, Rogaland, Norge",
-    "latitude": 58.99967460000001,
-    "longitude": 5.6187068,
+    "location": "Randabergfjellet, Randaberg",
+    "latitude": 59.0185263,
+    "longitude": 5.6005086,
     "county": "Rogaland",
     "nearest_city": "Stavanger",
     "nearby_cities": [
       "Stavanger"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": null,
+    "distances": "[\"80.467\", \"80\", \"6.7\"]",
+    "distance_m": [
+      80467,
+      80000,
+      6700
+    ],
+    "distance_keywords": [
+      "50 miles"
+    ],
+    "distance_verbose": "50 miles, 80 km, 6.7 km",
+    "organizer": "Grødem Runners Friidrettsklubb",
     "contact": null,
-    "website": null,
+    "website": "https://www.randabergbackyard.no/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.randabergbackyard.no/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Randaberg Backyard Ultra er et backyard-løp på Randaberg i regi av Grødem Runners Friidrettsklubb. Deltakerne løper en runde på 6,7 km hver hele time, og løpet har maks 12 runder, slik at man kan fullføre 50 miles eller 80 km. Løypa byr på fjell, asfalt, grus, strender, svaberg og golfbane. Start og mål er på Randabergfjellet, som bare er rundt 50 meter over havet. Løpet er lagt opp som et sosialt og inkluderende arrangement der hver deltaker selv velger hvor mange runder de vil løpe.",
+    "course_highlights": [
+      "Runde på 6,7 km som starter hver hele time",
+      "Maks 12 runder, til sammen 50 miles eller 80 km",
+      "Variert løype med strender, svaberg, grus og asfalt"
+    ],
+    "additional": "Mat og drikke under løpet er inkludert i påmeldingsavgiften, og Friluftslivets hus brukes som pauserom. Alle deltakere får medalje, og 7 runder kvalifiserer til ultradistansen. Det er ikke eget helsepersonell til stede. Nærmeste bussholdeplass er ved Randaberg Stadion.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/dynafit-randaberg-backyard-ultra-2027-08-14"
     ],
@@ -52371,9 +52246,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Arendal, Agder, Norge",
-    "latitude": 58.4617568,
-    "longitude": 8.7724499,
+    "location": "Torvet, Arendal",
+    "latitude": 58.4613697,
+    "longitude": 8.765966,
     "county": "Agder",
     "nearest_city": "Arendal",
     "nearby_cities": [
@@ -52395,25 +52270,29 @@
     "distance_verbose": "Maraton, Halvmaraton, 10 km, 5 km",
     "organizer": null,
     "contact": null,
-    "website": null,
+    "website": "https://tickettorun.com/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://tickettorun.com/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Ticket to Run er et punkt-til-punkt-løp i Arendal der toget tar deltakerne til start og de løper tilbake til byen. Arendalsbanen kjører løperne til fire startsteder: Nelaug for maraton, Froland for halvmaraton, Bråstad for 10 km og Stoa for 5 km. Løypene går gjennom skog og langs Nidelva, og maratonløypa passerer Haugsjå-dammen. Alle distanser har felles mål på Torvet i Arendal sentrum. Løpet går lørdag 28. august 2027.",
+    "course_highlights": [
+      "Tog til start på Arendalsbanen",
+      "Maraton fra Nelaug forbi Haugsjå-dammen og langs Nidelva",
+      "Felles mål på Torvet i Arendal"
+    ],
+    "additional": "Toget til maratonstart går fra Arendal klokka 08:10, til halvmaraton 10:10, til 10 km 12:10 og til 5 km 14:10. Etter løpet er det Trackside After-Run på Rise stasjon med musikk og matboder, med tog fra Arendal sentrum.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/ticket-to-run-2027-08-28"
     ],
@@ -55285,8 +55164,8 @@
   {
     "domain_name": "polsemila",
     "name": "Pølsemilå",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "type": "road",
+    "type_local": "Landevei",
     "race_dates": [
       [
         "20270904",
@@ -55297,9 +55176,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Klepp, Rogaland, Norge",
-    "latitude": 58.77263099999999,
-    "longitude": 5.632494599999999,
+    "location": "Håland Kjøtt, Orre",
+    "latitude": 58.7782825,
+    "longitude": 5.6282993,
     "county": "Rogaland",
     "nearest_city": "Stavanger",
     "nearby_cities": [
@@ -55313,98 +55192,35 @@
       "10 km"
     ],
     "distance_verbose": "10 km",
-    "organizer": null,
+    "organizer": "Orre Idrettslag",
     "contact": null,
-    "website": null,
+    "website": "https://www.orreil.no/p/82467/poelsemilaa",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.orreil.no/p/82467/poelsemilaa",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Pølsemilå er et løp i Orre i Klepp kommune som Orre Idrettslag arrangerer i samarbeid med Håland Kjøtt. Løpet starter og har startnummerutdeling ved Håland Kjøtt. I tillegg til hovedløpet er det turmarsj og barneløp samme dag. Hovedløpet har de siste årene startet klokka 14:00, mens turmarsjen og barneløpet starter klokka 13:00.",
+    "course_highlights": [
+      "Hovedløp, barneløp og turmarsj samme dag",
+      "Start og målområde ved Håland Kjøtt i Orre"
+    ],
+    "additional": "Billetter til turmarsjen og barneløpet kjøpes ved oppmøte.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/poelsemilaa-2027-09-04"
     ],
     "consolidated_ids": [
       "0b758a34-d8f1-4495-b023-991694654f91"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261127",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "drammen_21_1_2027",
-    "name": "Drammen 21.1 2027",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20270904",
-        "20270904"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Lier, Norge",
-    "latitude": 59.8842148,
-    "longitude": 10.2227981,
-    "county": "Viken",
-    "nearest_city": "Oslo",
-    "nearby_cities": [
-      "Oslo"
-    ],
-    "distances": "[\"21.098\"]",
-    "distance_m": [
-      21098
-    ],
-    "distance_keywords": [
-      "Halvmaraton"
-    ],
-    "distance_verbose": "Halvmaraton",
-    "organizer": null,
-    "contact": null,
-    "website": null,
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://live.eqtiming.com/85238#dashboard"
-    ],
-    "consolidated_ids": [
-      "18465b24-4b12-4b2a-8097-df761ab20def"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -56054,8 +55870,8 @@
   {
     "domain_name": "mosvannslopet",
     "name": "Mosvannsløpet",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "type": "road",
+    "type_local": "Landevei",
     "race_dates": [
       [
         "20270909",
@@ -56065,40 +55881,49 @@
     "upcoming_dates": [],
     "date_status": "confirmed",
     "estimated_dates": false,
-    "start_time": null,
-    "location": "Stavanger, Rogaland, Norge",
-    "latitude": 58.9699756,
-    "longitude": 5.7331073,
+    "start_time": "18:00",
+    "location": "Mosvangen Camping, Stavanger",
+    "latitude": 58.95237110000001,
+    "longitude": 5.7139625,
     "county": "Rogaland",
     "nearest_city": "Stavanger",
     "nearby_cities": [
       "Stavanger"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": null,
+    "distances": "[\"3\", \"0.5\"]",
+    "distance_m": [
+      3000,
+      500
+    ],
+    "distance_keywords": [
+      "3000 meter"
+    ],
+    "distance_verbose": "3000 meter, 0.5 km",
+    "organizer": "Idrettslaget Skjalg",
     "contact": null,
-    "website": null,
+    "website": "https://www.xn--mosvannslpet-3jb.no/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.xn--mosvannslpet-3jb.no/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Mosvannsløpet er et kveldsløp rundt Mosvannet i Stavanger, arrangert av Idrettslaget Skjalg. Løpet går alltid i starten av september. Runden er kontrollmålt til nøyaktig 3 km, med start og mål ved Mosvangen Camping. Det er en egen eliteklasse for friidrettsutøvere og klassevise resultatlister for øvrige deltakere, som får nettotid. Barneløpet på rundt 500 meter går før hovedløpet.",
+    "course_highlights": [
+      "Kontrollmålt runde på 3 km rundt Mosvannet",
+      "Start og mål ved Mosvangen Camping",
+      "Barneløp på rundt 500 meter"
+    ],
+    "additional": "Barneløpet koster 100 kr, og Mosvannsløpet koster 300 kr pluss lisens. Barneløpet starter klokka 17:00 og hovedløpet klokka 18:00.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/mosvannsloepet-2027-09-09"
     ],
@@ -60735,9 +60560,9 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Randaberg, Rogaland, Norge",
-    "latitude": 58.99967460000001,
-    "longitude": 5.6187068,
+    "location": "Randaberg sentrum",
+    "latitude": 58.99949,
+    "longitude": 5.616709999999999,
     "county": "Rogaland",
     "nearest_city": "Stavanger",
     "nearby_cities": [
@@ -60753,27 +60578,31 @@
       "5 km"
     ],
     "distance_verbose": "10 km, 5 km",
-    "organizer": null,
+    "organizer": "Grødem Runners",
     "contact": null,
-    "website": null,
+    "website": "https://www.pbmilå.no",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.pbmilå.no",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "PB-Milå er et gateløp i Randaberg i regi av Grødem Runners. Det er PB-Milå på 10 km, Hoka 5 km og et barneløp i sentrum. Løypa starter og slutter i Randaberg sentrum og går i landlige omgivelser, og den er flat og rask. Løyperekorden på 29:35 ble satt av Narve Gilje Nordås i 2023. Barna får eget startnummer og medalje, uten tidtaking.",
+    "course_highlights": [
+      "Flat og rask 10 km og 5 km",
+      "Start og mål i Randaberg sentrum",
+      "Løyperekord 29:35 fra 2023"
+    ],
+    "additional": "I 2026 var PB-Milå arena for NM i 10 km gateløp.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/pb-milaa-2027-09-25"
     ],
@@ -65785,39 +65614,49 @@
     "date_status": "confirmed",
     "estimated_dates": false,
     "start_time": null,
-    "location": "Stavanger, Rogaland, Norge",
-    "latitude": 58.9699756,
-    "longitude": 5.7331073,
+    "location": "Hinna Idrettspark, Stavanger",
+    "latitude": 58.9225845,
+    "longitude": 5.7237696,
     "county": "Rogaland",
     "nearest_city": "Stavanger",
     "nearby_cities": [
       "Stavanger"
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": null,
+    "distances": "[\"9.3\", \"6\"]",
+    "distance_m": [
+      9300,
+      6000
+    ],
+    "distance_keywords": [
+      "10 km",
+      "5 km"
+    ],
+    "distance_verbose": "9.3 km, 6 km",
+    "organizer": "Hinna Friidrett",
     "contact": null,
-    "website": null,
+    "website": "https://www.hinnafri.no/hinnalopet/",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": null,
+    "race_info_url": "https://www.hinnafri.no/hinnalopet/",
     "presumed_organizer_email": null,
     "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
+    "description": "Hinnaløpet er et terrengpreget løp i Stavanger i regi av Hinna Friidrett, arrangert siden 1981. Det er to løyper, 9,3 km og 6 km, fra Hinna Idrettspark gjennom Sørmarka. Den lengste er en utfordrende rundløype der rundt 70 prosent går på grus og resten på asfalt. Det deles ut debutantmedaljer og premier for ansiennitet.",
+    "course_highlights": [
+      "Rundløype på 9,3 km gjennom Sørmarka",
+      "Kortere løype på 6 km",
+      "Rundt 70 prosent grus"
+    ],
+    "additional": "Løpet har startet klokka 14:00 de siste årene. Klubben fører en ansiennitetsliste over alle som har løpt siden 1981.",
     "images": [],
     "supplied_images": false,
     "organizer_submitted": false,
     "supplied_fields": [],
     "is_series": false,
-    "max_description_relevance": 0.0,
+    "max_description_relevance": 0.9,
     "sources": [
       "https://terminlista.kondis.no/arrangementer/hinnaloepet-2027-10-30"
     ],
@@ -68730,6 +68569,526 @@
     "nearby_foreign_cities": null
   },
   {
+    "domain_name": "bergen_cider_marathon",
+    "name": "Bergen Cider Marathon",
+    "type": "road",
+    "type_local": "Landevei",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "09:00",
+    "location": "Oasen, Fyllingsdalen, Bergen, Norge",
+    "latitude": 60.3489463,
+    "longitude": 5.2910542,
+    "county": "Vestland",
+    "nearest_city": "Bergen",
+    "nearby_cities": [
+      "Bergen"
+    ],
+    "distances": "[\"42.2\", \"21.1\"]",
+    "distance_m": [
+      42200,
+      21100
+    ],
+    "distance_keywords": [
+      "Maraton",
+      "Halvmaraton"
+    ],
+    "distance_verbose": "Maraton, Halvmaraton",
+    "organizer": "Spreking",
+    "contact": null,
+    "website": "https://bergencidermarathon.no/",
+    "fb_link": "https://www.facebook.com/events/oasen-senter/bergen-cider-marathon-12marathon-ciderpartysiderbaren/1069188882156289/",
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": "https://bergencidermarathon.no/?page_id=323",
+    "race_info_url": "https://bergencidermarathon.no/?page_id=323",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Bergen Cider Marathon er et unikt løp som kombinerer løping, Bergen og sider i en annerledes maratonopplevelse. Løypa går gjennom Fyllingsdalstunnelen, verdens lengste tunnel for gående og syklende, og videre gjennom vakre omgivelser i Bergen. Halvmaratonløperne løper én runde, mens helmaratonløperne løper to runder, og passerer tunnelen fire ganger. Etter løpet inviteres deltakerne til en siderfest med smaking av ulike sidere og mat inspirert av Bergen og Hardanger.",
+    "course_highlights": [
+      "Løypa går gjennom Fyllingsdalstunnelen, verdens lengste tunnel for gående og syklende",
+      "Tre runder rundt Store Lungegårdsvannet i Bergen sentrum",
+      "Kontrollmålt løype med vakre omgivelser i Bergen"
+    ],
+    "additional": "Alle deltakere får en teknisk løpetrøye inkludert i prisen. Det blir ikke medalje, men det er mulig å skrive ut diplom etter løpet. Servering under løpet er alkoholfri med alkoholfri sider, vann og saft/energidrikk. Etter løpet arrangeres en separat Siderfest på Siderbaren med smaking av minst syv ulike sidere og mat, som krever egen billett og har begrenset kapasitet. Påmeldingen gjelder valgt distanse, og det er mulig å overføre startplass til andre. Start kl. 09:00. Drikkestasjonene serverer alkoholfri sider, vann og saft eller energidrikk. Siderfesten på Siderbaren krever separat påmelding og har begrenset kapasitet. Aldersgrense: 18 år.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.95,
+    "sources": [
+      "https://terminlista.kondis.no/arrangementer/bergen-cider-marathon"
+    ],
+    "consolidated_ids": [
+      "b9871e5f-c1ee-4395-af7c-c6ea6111e665"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "lordagsmila",
+    "name": "Lørdagsmila",
+    "type": "road",
+    "type_local": "Landevei",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Kristiansand, Agder, Norge",
+    "latitude": 58.15991189999999,
+    "longitude": 8.0182064,
+    "county": "Agder",
+    "nearest_city": "Kristiansand",
+    "nearby_cities": [
+      "Kristiansand"
+    ],
+    "distances": "[\"10\"]",
+    "distance_m": [
+      10000
+    ],
+    "distance_keywords": [
+      "10 km"
+    ],
+    "distance_verbose": "10 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://www.flekkeroylopeklubb.no/kalender/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.flekkeroylopeklubb.no/kalender/#x-main",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": null,
+    "course_highlights": [],
+    "additional": null,
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.05,
+    "sources": [
+      "https://terminlista.kondis.no/arrangementer/loerdagsmila-2026-11-21"
+    ],
+    "consolidated_ids": [
+      "80d502f2-da9c-452f-8906-cc78eb0e78c5"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "bartelopet_tonsberg",
+    "name": "Barteløpet Tønsberg",
+    "type": "other",
+    "type_local": "Annet",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "11:30",
+    "location": "Bobilparkeringen på Grevestien, Tønsberg, Norge",
+    "latitude": 59.2599581,
+    "longitude": 10.4254239,
+    "county": "Vestfold og Telemark",
+    "nearest_city": "Fredrikstad",
+    "nearby_cities": [
+      "Fredrikstad",
+      "Skien"
+    ],
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
+    ],
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": "Prostatakreftforeningen i Vestfold og Revetal Halvmaraton",
+    "contact": null,
+    "website": "https://racetracker.no/events/2026/bartelopet-tonsberg/",
+    "fb_link": "https://www.facebook.com/p/Bartel%C3%B8pet-T%C3%B8nsberg-61581466557798/",
+    "ig_link": "https://www.instagram.com/bartelop.tonsberg/",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://racetracker.no/events/2026/bartelopet-tonsberg/",
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Barteløpet Tønsberg er et veldedig løp til støtte for Prostatakreftforeningen i Vestfold. Løpet inkluderer en 5 km distanse som går i en flat løype fra bobilparkeringen på Grevestien, rundt Illene nasjonalpark og Semslinna, med underlag av grus og asfalt. Det arrangeres også et barneløp, og det kreves ingen forhåndsregistrering for å delta. Startnummer hentes i sekretariatet på løpsdagen.",
+    "course_highlights": [
+      "Flat løype på 5 km",
+      "Løypa går rundt Illene nasjonalpark",
+      "Underlag av grus og asfalt"
+    ],
+    "additional": "Barneløpet starter kl 11:30 uten behov for forhåndsregistrering. 5 km Barteløpet starter kl 12:00. Barneløpet starter kl. 11.30, og 5 km-løpet starter kl. 12.00. Forhåndsregistrering er ikke nødvendig for barneløpet.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.94,
+    "sources": [
+      "https://terminlista.kondis.no/arrangementer/barteloepet-toensberg"
+    ],
+    "consolidated_ids": [
+      "2c87e597-f3a4-43a5-a7c9-448e86ca3f6b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "nidaros_vinterkarusell_lop_1",
+    "name": "Nidaros Vinterkarusell: Løp 1",
+    "type": "track",
+    "type_local": "Løpebane",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "15:00",
+    "location": "Ranheimhallen, Trondheim, Norge",
+    "latitude": 63.4305149,
+    "longitude": 10.3950528,
+    "county": "Trøndelag",
+    "nearest_city": "Trondheim",
+    "nearby_cities": [
+      "Trondheim"
+    ],
+    "distances": "[\"3\", \"1\", \"0.6\"]",
+    "distance_m": [
+      3000,
+      1000,
+      600
+    ],
+    "distance_keywords": [
+      "3000 meter"
+    ],
+    "distance_verbose": "3000 meter, 1 km, 0.6 km",
+    "organizer": "Strindheim IL Friidrett",
+    "contact": null,
+    "website": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/",
+    "presumed_organizer_email": "strindheimfriidrett@gmail.com",
+    "website_emails_found": [
+      "strindheimfriidrett@gmail.com"
+    ],
+    "description": "Nidaros Vinterkarusell er en vinterløpsserie arrangert av Strindheim IL Friidrett, med løp i Ranheimshallen. Løp 1 arrangeres lørdag 7. februar fra kl 15, og byr på innendørs løpsopplevelse med tidtaking via EQTiming. Arrangementet er åpent for alle aldre med egne priser for under og over 18 år, og inkluderer også engangslisens. Serien fortsetter med flere løp i vinterhalvåret, og er en flott mulighet for både mosjonister og aktive friidrettsutøvere å konkurrere i et sosialt og inkluderende miljø.",
+    "course_highlights": [
+      "Innendørs løp i Ranheimshallen",
+      "Tidtaking med EQTiming",
+      "Løp for alle aldre med egne distanser for barn og voksne"
+    ],
+    "additional": "Påmelding på arrangementsdagen med gebyr. Engangslisens på 20/30 kr kan komme i tillegg. Resultater publiseres etter løpet. Løp 2 arrangeres også i Ranheimshallen med 3000 m for alle og 1000 m for barn. Tidligere og kommende arrangementer inkluderer Trønderjogg, Nidaroslekene, Nidaros løpefest og Jentebølgen. Tidligere løp har brukt tidtaking fra EQTiming. Oppførte prisopplysninger er ikke konkrete.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": true,
+    "max_description_relevance": 0.48,
+    "sources": [
+      "https://live.eqtiming.com/84879#dashboard"
+    ],
+    "consolidated_ids": [
+      "1df04b47-bda5-495c-9f87-8037fab4347b"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "nidaros_vinterkarusell_lop_1_trondheim",
+    "name": "Nidaros Vinterkarusell: Løp 1",
+    "type": "track",
+    "type_local": "Løpebane",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": "15:00",
+    "location": "Ranheimshallen, Trondheim, Norge",
+    "latitude": 63.4287761,
+    "longitude": 10.5224202,
+    "county": "Trøndelag",
+    "nearest_city": "Trondheim",
+    "nearby_cities": [
+      "Trondheim"
+    ],
+    "distances": "[\"0.6\"]",
+    "distance_m": [
+      600
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "0.6 km",
+    "organizer": "Strindheim IL Friidrett",
+    "contact": null,
+    "website": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/#content",
+    "presumed_organizer_email": "strindheimfriidrett@gmail.com",
+    "website_emails_found": [
+      "strindheimfriidrett@gmail.com"
+    ],
+    "description": "Nidaros Vinterkarusell er en vinterløpsserie arrangert av Strindheim IL Friidrett i Ranheimshallen, Trondheim. Løp 1 arrangeres lørdag 7. februar fra kl 15, med tidtaking via EQTiming, men tider godkjennes ikke for rekorder eller årsstatistikk. Serien tilbyr løp for ulike aldersgrupper og distanser, og er en del av et bredt tilbud med fokus på inkludering og et godt miljø for alle som liker friidrett. Strindheim IL Friidrett har en lang tradisjon og et sterkt miljø for både bredde og elite.",
+    "course_highlights": [
+      "Innendørs løp i Ranheimshallen",
+      "Løp for alle aldre med ulike distanser",
+      "Tidtaking med EQTiming, men ikke godkjent for rekorder"
+    ],
+    "additional": "Påmelding på arrangementsdagen med gebyr. Engangslisens kan komme i tillegg (20/30 kr). Løp 2 arrangeres også i Ranheimshallen søndag 8. mars fra kl 15 med 3000 m for alle og 1000 m for barn. Resultater publiseres etter løpet.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.35,
+    "sources": [
+      "https://terminlista.kondis.no/arrangementer/nidaros-vinterkarusell-loep-1-2",
+      "https://live.eqtiming.com/84879#dashboard"
+    ],
+    "consolidated_ids": [
+      "14db2a45-68f1-4486-afd3-ca4fc5807292"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "i_heiane_odderoya_opp",
+    "name": "i Heiane ODDERØYA OPP",
+    "type": "terrain",
+    "type_local": "Terreng",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Odderøya, Kristiansand, Norge",
+    "latitude": 58.1353403,
+    "longitude": 8.0041525,
+    "county": "Agder",
+    "nearest_city": "Kristiansand",
+    "nearby_cities": [
+      "Kristiansand"
+    ],
+    "distances": "[\"1\"]",
+    "distance_m": [
+      1000
+    ],
+    "distance_keywords": [],
+    "distance_verbose": "1 km",
+    "organizer": null,
+    "contact": null,
+    "website": "https://treni.no/lop.php",
+    "fb_link": null,
+    "ig_link": null,
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://treni.no/lop.php#last",
+    "presumed_organizer_email": "hei@treni.no",
+    "website_emails_found": [
+      "hei@treni.no"
+    ],
+    "description": "i Heiane ODDERØYA OPP er et fjelløp som arrangeres i Kristiansand. Løpet fokuserer på høydemeter og terreng, og passer for løpere som ønsker å utfordre seg i kupert terreng. Treni tilbyr treningsveiledning spesielt tilpasset løpet, med fokus på riktig trening av høydemeter opp og ned. Arrangementet er en flott mulighet for både erfarne og motiverte løpere som ønsker en krevende og givende løpsopplevelse i naturskjønne omgivelser.",
+    "course_highlights": [
+      "Fjelløp med fokus på høydemeter",
+      "Terrengløp i kupert terreng på Odderøya",
+      "Arrangert i naturskjønne omgivelser i Kristiansand"
+    ],
+    "additional": "Treni tilbyr en treningsapp med veiledning for løpet, inkludert en fagguide med fjelløper Eirik Haugsnes. Det anbefales å trene høydemeter opp og ned separat og trappe riktig ned før løpet.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.46,
+    "sources": [
+      "https://live.eqtiming.com/84482#dashboard"
+    ],
+    "consolidated_ids": [
+      "307ba0ab-8eff-4c4d-b53b-453bddd4203c"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
+    "domain_name": "tyn_deg_barnekarusell_odderoya",
+    "name": "Tyn_deg BARNEKARUSELL Odderøya",
+    "type": "road",
+    "type_local": "Landevei",
+    "race_dates": [
+      [
+        "20261121",
+        "20261121"
+      ],
+      [
+        "20271120",
+        "20271120"
+      ]
+    ],
+    "upcoming_dates": [],
+    "date_status": "estimated",
+    "estimated_dates": true,
+    "start_time": null,
+    "location": "Odderøya, Kristiansand, Norge",
+    "latitude": 58.1353403,
+    "longitude": 8.0041525,
+    "county": "Agder",
+    "nearest_city": "Kristiansand",
+    "nearby_cities": [
+      "Kristiansand"
+    ],
+    "distances": "[]",
+    "distance_m": [],
+    "distance_keywords": [],
+    "distance_verbose": "Blandet distanse",
+    "organizer": "Tyn deg 5K",
+    "contact": null,
+    "website": "https://treni.no/lop.php",
+    "fb_link": "https://www.facebook.com/Tyndeg5K/",
+    "ig_link": "https://www.instagram.com/tyn_deg/",
+    "price_range": null,
+    "price_tiers": [],
+    "registration_close_date": null,
+    "registration_url": null,
+    "race_info_url": "https://treni.no/arrangor/",
+    "presumed_organizer_email": "hei@treni.no",
+    "website_emails_found": [
+      "hei@treni.no"
+    ],
+    "description": "Tyn_deg BARNEKARUSELL Odderøya er et barnekarusell-løp som arrangeres på Odderøya i Kristiansand. Løpet fokuserer på å gi barn en trygg og morsom løpsopplevelse uten skader, med et tilpasset løpsmiljø. Det er en del av en karusell som oppmuntrer til løping og aktivitet blant barn i nærområdet. Arrangementet er godt egnet for unge løpere som ønsker å delta i et sosialt og inkluderende løp.",
+    "course_highlights": [
+      "Løpet går på Odderøya i Kristiansand",
+      "Barnekarusell med fokus på trygghet og skadeforebygging",
+      "Morsomt og inkluderende løpsmiljø for barn"
+    ],
+    "additional": "Løpet er en del av en karusell som legger vekt på løp uten skader og bygger treningsprogrammer basert på løperens faktiske aktivitet. Det oppfordres til å melde seg på løpet via tilknyttede tidtakersystemer, men direkte påmeldingslenke er ikke oppgitt.",
+    "images": [],
+    "supplied_images": false,
+    "organizer_submitted": false,
+    "supplied_fields": [],
+    "is_series": false,
+    "max_description_relevance": 0.55,
+    "sources": [
+      "https://live.eqtiming.com/84483#dashboard"
+    ],
+    "consolidated_ids": [
+      "671afffb-9571-445d-88db-aee221b5f155"
+    ],
+    "supplied_ids": [],
+    "supplied_at": null,
+    "created_date": "20261128",
+    "editors_uid": [],
+    "pipeline_log": [],
+    "origin_country": null,
+    "nearby_foreign_cities": null
+  },
+  {
     "domain_name": "apent_klubbmesterskap_5000m_2027",
     "name": "Åpent klubbmesterskap 5000m 2027",
     "type": "road",
@@ -68986,112 +69345,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "bislett_24_hour_indoor",
-    "name": "Bislett 24 Hour Indoor",
-    "type": "track",
-    "type_local": "Løpebane",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Bislett stadion, Louises gate 1, 0168 Oslo",
-    "latitude": 59.92555209999999,
-    "longitude": 10.7342752,
-    "county": "Oslo",
-    "nearest_city": "Oslo",
-    "nearby_cities": [
-      "Oslo"
-    ],
-    "distances": "[\"150\", \"130\", \"24\"]",
-    "distance_m": [
-      150000,
-      130000,
-      24000
-    ],
-    "distance_keywords": [
-      "100 miles"
-    ],
-    "distance_verbose": "150 km, 130 km, 24 km",
-    "organizer": null,
-    "contact": "olav@samgla.no",
-    "website": "https://www.romerikeultra.no/next/p/24684/bislett-24-timers",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Bislett 24-timers er et unikt innendørs løp som finner sted på den berømte Bislett stadion i Oslo. Deltakerne har 24 timer på seg til å løpe så langt som mulig rundt den 542 meter lange banen. Dette arrangementet tiltrekker seg både erfarne ultraløpere og nybegynnere som ønsker å teste grensene sine i et støttende og motiverende miljø. Løpet er utsolgt, og premiering inkluderer en stor prestasjonsmedalje til de som presterer 150 km (menn) og 130 km (kvinner).",
-    "course_highlights": [],
-    "additional": null,
-    "images": [
-      {
-        "number": 1,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_1.webp?alt=media",
-        "alt_text": "Bislett stadion innendørs løpebane. 24-timers løp."
-      },
-      {
-        "number": 2,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_2.webp?alt=media",
-        "alt_text": "Løpere på Bislett stadion sin innendørs løpebane."
-      },
-      {
-        "number": 3,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_3.webp?alt=media",
-        "alt_text": "Løper under Bislett 24-timers, 260 km!"
-      },
-      {
-        "number": 4,
-        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_4.webp?alt=media",
-        "alt_text": "Bislett 24-timers inne løp. Løpere og tilskuer på Bislett stadion."
-      }
-    ],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "type",
-      "contact",
-      "distances",
-      "location",
-      "latitude",
-      "longitude",
-      "name",
-      "website",
-      "county",
-      "description",
-      "race_dates"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "https://statistik.d-u-v.org/eventdetail.php?event=130611",
-      "https://statistik.d-u-v.org/eventdetail.php?event=130612",
-      "https://terminlista.kondis.no/arrangementer/bislett-24-hour-indoor-challenge-3",
-      "ranking_bridge"
-    ],
-    "consolidated_ids": [
-      "9f1b72b4-b76f-5ad9-9e4a-7f2d114ed069"
-    ],
-    "supplied_ids": [
-      "d9a1328b-187e-5bc0-b475-3ea10953a1d0"
-    ],
-    "supplied_at": "20261104",
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "5_km_sport_glexe",
     "name": "5 Km Sport Glexe",
     "type": "road",
@@ -69169,85 +69422,6 @@
     ],
     "supplied_ids": [
       "ebb7b843-4daf-594c-9201-6350d40289bd"
-    ],
-    "supplied_at": "20261104",
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "klubbmesterskap_5k",
-    "name": "Klubbmesterskap 5k",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Grønneset",
-    "latitude": 61.13531839999999,
-    "longitude": 12.5041279,
-    "county": "Innlandet",
-    "nearest_city": "Hamar",
-    "nearby_cities": [],
-    "distances": "[\"5\"]",
-    "distance_m": [
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5 km",
-    "organizer": null,
-    "contact": "post@tjome-lopeklubb.no",
-    "website": "https://tjome-lopeklubb.no/klubbrekorder-distanser/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": null,
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Klubbmesterskap 5k er en løpekonkurranse som er en del av Tjøme Løpeklubb sine arrangementer. Løypene er kontrollmålt, og det konkurreres på distansen 5 km. Dette mesterskapet gir medlemmer muligheten til å konkurrere om klubbmesterskapstitler og sette klubbrekorder. Løpet finner sted fra vakre Grønneset ved Ånøya onsdag 25. juni med start fra kl 1800, og er designet for å utfordre både nybegynnere og erfarne løpere.",
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": true,
-    "supplied_fields": [
-      "type",
-      "contact",
-      "distances",
-      "location",
-      "latitude",
-      "longitude",
-      "name",
-      "website",
-      "county",
-      "description",
-      "race_dates"
-    ],
-    "is_series": false,
-    "max_description_relevance": 0.0,
-    "sources": [
-      "ranking_bridge",
-      "https://live.eqtiming.com/79419#dashboard"
-    ],
-    "consolidated_ids": [
-      "24c9535e-811f-57c7-86ff-6789af480e37"
-    ],
-    "supplied_ids": [
-      "cce92966-5dcb-5930-bb1b-cab257d8110d"
     ],
     "supplied_at": "20261104",
     "created_date": "20261104",
@@ -69662,215 +69836,6 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "bergen_cider_marathon",
-    "name": "Bergen Cider Marathon",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "09:00",
-    "location": "Oasen, Fyllingsdalen, Bergen, Norge",
-    "latitude": 60.3489463,
-    "longitude": 5.2910542,
-    "county": "Vestland",
-    "nearest_city": "Bergen",
-    "nearby_cities": [
-      "Bergen"
-    ],
-    "distances": "[\"42.2\", \"21.1\"]",
-    "distance_m": [
-      42200,
-      21100
-    ],
-    "distance_keywords": [
-      "Maraton",
-      "Halvmaraton"
-    ],
-    "distance_verbose": "Maraton, Halvmaraton",
-    "organizer": "Spreking",
-    "contact": null,
-    "website": "https://bergencidermarathon.no/",
-    "fb_link": "https://www.facebook.com/events/oasen-senter/bergen-cider-marathon-12marathon-ciderpartysiderbaren/1069188882156289/",
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": "20261121",
-    "registration_url": "https://bergencidermarathon.no/?page_id=323",
-    "race_info_url": "https://bergencidermarathon.no/?page_id=323",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Bergen Cider Marathon er et unikt løp som kombinerer løping, Bergen og sider i en annerledes maratonopplevelse. Løypa går gjennom Fyllingsdalstunnelen, verdens lengste tunnel for gående og syklende, og videre gjennom vakre omgivelser i Bergen. Halvmaratonløperne løper én runde, mens helmaratonløperne løper to runder, og passerer tunnelen fire ganger. Etter løpet inviteres deltakerne til en siderfest med smaking av ulike sidere og mat inspirert av Bergen og Hardanger.",
-    "course_highlights": [
-      "Løypa går gjennom Fyllingsdalstunnelen, verdens lengste tunnel for gående og syklende",
-      "Tre runder rundt Store Lungegårdsvannet i Bergen sentrum",
-      "Kontrollmålt løype med vakre omgivelser i Bergen"
-    ],
-    "additional": "Alle deltakere får en teknisk løpetrøye inkludert i prisen. Det blir ikke medalje, men det er mulig å skrive ut diplom etter løpet. Servering under løpet er alkoholfri med alkoholfri sider, vann og saft/energidrikk. Etter løpet arrangeres en separat Siderfest på Siderbaren med smaking av minst syv ulike sidere og mat, som krever egen billett og har begrenset kapasitet. Påmeldingen gjelder valgt distanse, og det er mulig å overføre startplass til andre. Start kl. 09:00. Teknisk løpetrøye er inkludert. Drikkestasjonene serverer alkoholfri sider, vann og saft eller energidrikk. Siderfesten på Siderbaren krever separat påmelding og har begrenset kapasitet. Aldersgrense: 18 år.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.95,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/bergen-cider-marathon"
-    ],
-    "consolidated_ids": [
-      "132a26fa-4d92-432e-975f-dff8ae3bdf01"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "lordagsmila",
-    "name": "Lørdagsmila",
-    "type": "road",
-    "type_local": "Landevei",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": null,
-    "location": "Kristiansand, Agder, Norge",
-    "latitude": 58.15991189999999,
-    "longitude": 8.0182064,
-    "county": "Agder",
-    "nearest_city": "Kristiansand",
-    "nearby_cities": [
-      "Kristiansand"
-    ],
-    "distances": "[\"10\"]",
-    "distance_m": [
-      10000
-    ],
-    "distance_keywords": [
-      "10 km"
-    ],
-    "distance_verbose": "10 km",
-    "organizer": null,
-    "contact": null,
-    "website": "https://www.flekkeroylopeklubb.no/kalender/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.flekkeroylopeklubb.no/kalender/#x-main",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": null,
-    "course_highlights": [],
-    "additional": null,
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": true,
-    "max_description_relevance": 0.05,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/loerdagsmila-2026-11-21"
-    ],
-    "consolidated_ids": [
-      "d1eb91b4-9e3b-4d56-ad6b-a3e1e66b1827"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "bartelopet_tonsberg",
-    "name": "Barteløpet Tønsberg",
-    "type": "other",
-    "type_local": "Annet",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "11:30",
-    "location": "Bobilparkeringen på Grevestien, Tønsberg, Norge",
-    "latitude": 59.2599581,
-    "longitude": 10.4254239,
-    "county": "Vestfold og Telemark",
-    "nearest_city": "Fredrikstad",
-    "nearby_cities": [
-      "Fredrikstad",
-      "Skien"
-    ],
-    "distances": "[\"5\"]",
-    "distance_m": [
-      5000
-    ],
-    "distance_keywords": [
-      "5 km"
-    ],
-    "distance_verbose": "5 km",
-    "organizer": "Prostatakreftforeningen i Vestfold og Revetal Halvmaraton",
-    "contact": null,
-    "website": "https://racetracker.no/events/2026/bartelopet-tonsberg/",
-    "fb_link": "https://www.facebook.com/p/Bartel%C3%B8pet-T%C3%B8nsberg-61581466557798/",
-    "ig_link": "https://www.instagram.com/bartelop.tonsberg/",
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://racetracker.no/events/2026/bartelopet-tonsberg/",
-    "presumed_organizer_email": null,
-    "website_emails_found": [],
-    "description": "Barteløpet Tønsberg er et veldedig løp til støtte for Prostatakreftforeningen i Vestfold. Løpet inkluderer en 5 km distanse som går i en flat løype fra bobilparkeringen på Grevestien, rundt Illene nasjonalpark og Semslinna, med underlag av grus og asfalt. Det arrangeres også et barneløp, og det kreves ingen forhåndsregistrering for å delta. Startnummer hentes i sekretariatet på løpsdagen.",
-    "course_highlights": [
-      "Flat løype på 5 km",
-      "Løypa går rundt Illene nasjonalpark",
-      "Underlag av grus og asfalt"
-    ],
-    "additional": "Barneløpet starter kl 11:30 uten behov for forhåndsregistrering. 5 km Barteløpet starter kl 12:00. Startnummer hentes i sekretariatet på løpsdagen. Barneløpet starter kl. 11.30, og 5 km-løpet starter kl. 12.00. Forhåndsregistrering er ikke nødvendig for barneløpet. Startnummer hentes i sekretariatet.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.94,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/barteloepet-toensberg"
-    ],
-    "consolidated_ids": [
-      "12113854-79c9-4eaf-8001-94cfa7acc28a"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
     "domain_name": "stiglop",
     "name": "STIGLØP",
     "type": "terrain",
@@ -69993,80 +69958,6 @@
     ],
     "consolidated_ids": [
       "33ae80d4-1f5f-48cd-97e5-86339c3b8074"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261104",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "nidaros_vinterkarusell_lop_1",
-    "name": "Nidaros Vinterkarusell: Løp 1",
-    "type": "track",
-    "type_local": "Løpebane",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "15:00",
-    "location": "Ranheimhallen, Trondheim, Norge",
-    "latitude": 63.4305149,
-    "longitude": 10.3950528,
-    "county": "Trøndelag",
-    "nearest_city": "Trondheim",
-    "nearby_cities": [
-      "Trondheim"
-    ],
-    "distances": "[\"3\", \"1\", \"0.6\"]",
-    "distance_m": [
-      3000,
-      1000,
-      600
-    ],
-    "distance_keywords": [
-      "3000 meter"
-    ],
-    "distance_verbose": "3000 meter, 1 km, 0.6 km",
-    "organizer": "Strindheim IL Friidrett",
-    "contact": null,
-    "website": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/",
-    "presumed_organizer_email": "strindheimfriidrett@gmail.com",
-    "website_emails_found": [
-      "strindheimfriidrett@gmail.com"
-    ],
-    "description": "Nidaros Vinterkarusell er en vinterløpsserie arrangert av Strindheim IL Friidrett, med løp i Ranheimshallen. Løp 1 arrangeres lørdag 7. februar fra kl 15, og byr på innendørs løpsopplevelse med tidtaking via EQTiming. Arrangementet er åpent for alle aldre med egne priser for under og over 18 år, og inkluderer også engangslisens. Serien fortsetter med flere løp i vinterhalvåret, og er en flott mulighet for både mosjonister og aktive friidrettsutøvere å konkurrere i et sosialt og inkluderende miljø.",
-    "course_highlights": [
-      "Innendørs løp i Ranheimshallen",
-      "Tidtaking med EQTiming",
-      "Løp for alle aldre med egne distanser for barn og voksne"
-    ],
-    "additional": "Påmelding på arrangementsdagen med gebyr. Engangslisens på 20/30 kr kan komme i tillegg. Resultater publiseres etter løpet. Løp 2 arrangeres også i Ranheimshallen med 3000 m for alle og 1000 m for barn. Tidligere og kommende arrangementer inkluderer Trønderjogg, Nidaroslekene, Nidaros løpefest og Jentebølgen. Tidligere løp har brukt tidtaking fra EQTiming. Oppførte prisopplysninger er ikke konkrete.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": true,
-    "max_description_relevance": 0.48,
-    "sources": [
-      "https://live.eqtiming.com/84879#dashboard"
-    ],
-    "consolidated_ids": [
-      "d54910bf-1b3a-4c2f-b122-0110375ccab9"
     ],
     "supplied_ids": [],
     "supplied_at": null,
@@ -70492,77 +70383,6 @@
       "298cf330-ee11-5e0e-9a6f-0da291697511"
     ],
     "supplied_at": "20261104",
-    "created_date": "20261114",
-    "editors_uid": [],
-    "pipeline_log": [],
-    "origin_country": null,
-    "nearby_foreign_cities": null
-  },
-  {
-    "domain_name": "nidaros_vinterkarusell_lop_1_trondheim",
-    "name": "Nidaros Vinterkarusell: Løp 1",
-    "type": "track",
-    "type_local": "Løpebane",
-    "race_dates": [
-      [
-        "20261121",
-        "20261121"
-      ]
-    ],
-    "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
-    "start_time": "15:00",
-    "location": "Ranheimshallen, Trondheim, Norge",
-    "latitude": 63.4287761,
-    "longitude": 10.5224202,
-    "county": "Trøndelag",
-    "nearest_city": "Trondheim",
-    "nearby_cities": [
-      "Trondheim"
-    ],
-    "distances": "[\"0.6\"]",
-    "distance_m": [
-      600
-    ],
-    "distance_keywords": [],
-    "distance_verbose": "0.6 km",
-    "organizer": "Strindheim IL Friidrett",
-    "contact": null,
-    "website": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/",
-    "fb_link": null,
-    "ig_link": null,
-    "price_range": null,
-    "price_tiers": [],
-    "registration_close_date": null,
-    "registration_url": null,
-    "race_info_url": "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/#content",
-    "presumed_organizer_email": "strindheimfriidrett@gmail.com",
-    "website_emails_found": [
-      "strindheimfriidrett@gmail.com"
-    ],
-    "description": "Nidaros Vinterkarusell er en vinterløpsserie arrangert av Strindheim IL Friidrett i Ranheimshallen, Trondheim. Løp 1 arrangeres lørdag 7. februar fra kl 15, med tidtaking via EQTiming, men tider godkjennes ikke for rekorder eller årsstatistikk. Serien tilbyr løp for ulike aldersgrupper og distanser, og er en del av et bredt tilbud med fokus på inkludering og et godt miljø for alle som liker friidrett. Strindheim IL Friidrett har en lang tradisjon og et sterkt miljø for både bredde og elite.",
-    "course_highlights": [
-      "Innendørs løp i Ranheimshallen",
-      "Løp for alle aldre med ulike distanser",
-      "Tidtaking med EQTiming, men ikke godkjent for rekorder"
-    ],
-    "additional": "Påmelding på arrangementsdagen med gebyr. Engangslisens kan komme i tillegg (20/30 kr). Løp 2 arrangeres også i Ranheimshallen søndag 8. mars fra kl 15 med 3000 m for alle og 1000 m for barn. Resultater publiseres etter løpet. Arrangørens tilgjengelige informasjon oppgir en annen dato for løp 1 i 2026 enn datoen i denne oppføringen.",
-    "images": [],
-    "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
-    "is_series": false,
-    "max_description_relevance": 0.35,
-    "sources": [
-      "https://terminlista.kondis.no/arrangementer/nidaros-vinterkarusell-loep-1-2",
-      "https://live.eqtiming.com/84879#dashboard"
-    ],
-    "consolidated_ids": [
-      "54abc94f-7354-4a7b-a9ae-b7ac2e854525"
-    ],
-    "supplied_ids": [],
-    "supplied_at": null,
     "created_date": "20261114",
     "editors_uid": [],
     "pipeline_log": [],
@@ -71029,10 +70849,10 @@
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "i_heiane_odderoya_opp",
-    "name": "i Heiane ODDERØYA OPP",
-    "type": "terrain",
-    "type_local": "Terreng",
+    "domain_name": "bislett_24_hour_indoor",
+    "name": "Bislett 24 Hour Indoor",
+    "type": "track",
+    "type_local": "Løpebane",
     "race_dates": [
       [
         "20261121",
@@ -71040,67 +70860,103 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Odderøya, Kristiansand, Norge",
-    "latitude": 58.1353403,
-    "longitude": 8.0041525,
-    "county": "Agder",
-    "nearest_city": "Kristiansand",
+    "location": "Bislett stadion, Louises gate 1, 0168 Oslo",
+    "latitude": 59.92555209999999,
+    "longitude": 10.7342752,
+    "county": "Oslo",
+    "nearest_city": "Oslo",
     "nearby_cities": [
-      "Kristiansand"
+      "Oslo"
     ],
-    "distances": "[\"1\"]",
+    "distances": "[\"150\", \"130\", \"24\"]",
     "distance_m": [
-      1000
+      150000,
+      130000,
+      24000
     ],
-    "distance_keywords": [],
-    "distance_verbose": "1 km",
+    "distance_keywords": [
+      "100 miles"
+    ],
+    "distance_verbose": "150 km, 130 km, 24 km",
     "organizer": null,
-    "contact": null,
-    "website": "https://treni.no/lop.php",
+    "contact": "olav@samgla.no",
+    "website": "https://www.romerikeultra.no/next/p/24684/bislett-24-timers",
     "fb_link": null,
     "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://treni.no/lop.php#last",
-    "presumed_organizer_email": "hei@treni.no",
-    "website_emails_found": [
-      "hei@treni.no"
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Bislett 24-timers er et unikt innendørs løp som finner sted på den berømte Bislett stadion i Oslo. Deltakerne har 24 timer på seg til å løpe så langt som mulig rundt den 542 meter lange banen. Dette arrangementet tiltrekker seg både erfarne ultraløpere og nybegynnere som ønsker å teste grensene sine i et støttende og motiverende miljø. Løpet er utsolgt, og premiering inkluderer en stor prestasjonsmedalje til de som presterer 150 km (menn) og 130 km (kvinner).",
+    "course_highlights": [],
+    "additional": null,
+    "images": [
+      {
+        "number": 1,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_1.webp?alt=media",
+        "alt_text": "Bislett stadion innendørs løpebane. 24-timers løp."
+      },
+      {
+        "number": 2,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_2.webp?alt=media",
+        "alt_text": "Løpere på Bislett stadion sin innendørs løpebane."
+      },
+      {
+        "number": 3,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_3.webp?alt=media",
+        "alt_text": "Løper under Bislett 24-timers, 260 km!"
+      },
+      {
+        "number": 4,
+        "firebase_url": "https://firebasestorage.googleapis.com/v0/b/aggregatory-440306.firebasestorage.app/o/race-images%2Fno%2Fbislett_24_hour_indoor%2Fbislett_24_hour_indoor_4.webp?alt=media",
+        "alt_text": "Bislett 24-timers inne løp. Løpere og tilskuer på Bislett stadion."
+      }
     ],
-    "description": "i Heiane ODDERØYA OPP er et fjelløp som arrangeres i Kristiansand den 21. november 2026. Løpet fokuserer på høydemeter og terreng, og passer for løpere som ønsker å utfordre seg i kupert terreng. Treni tilbyr treningsveiledning spesielt tilpasset løpet, med fokus på riktig trening av høydemeter opp og ned. Arrangementet er en flott mulighet for både erfarne og motiverte løpere som ønsker en krevende og givende løpsopplevelse i naturskjønne omgivelser.",
-    "course_highlights": [
-      "Fjelløp med fokus på høydemeter",
-      "Terrengløp i kupert terreng på Odderøya",
-      "Arrangert i naturskjønne omgivelser i Kristiansand"
-    ],
-    "additional": "Treni tilbyr en treningsapp med veiledning for løpet, inkludert en fagguide med fjelløper Eirik Haugsnes. Det anbefales å trene høydemeter opp og ned separat og trappe riktig ned før løpet.",
-    "images": [],
     "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "type",
+      "contact",
+      "distances",
+      "location",
+      "latitude",
+      "longitude",
+      "name",
+      "website",
+      "county",
+      "description",
+      "race_dates"
+    ],
     "is_series": false,
-    "max_description_relevance": 0.46,
+    "max_description_relevance": 0.0,
     "sources": [
-      "https://live.eqtiming.com/84482#dashboard"
+      "https://statistik.d-u-v.org/eventdetail.php?event=130611",
+      "https://statistik.d-u-v.org/eventdetail.php?event=130612",
+      "https://terminlista.kondis.no/arrangementer/bislett-24-hour-indoor-challenge-3",
+      "ranking_bridge"
     ],
     "consolidated_ids": [
-      "c1f28f08-0c50-488c-a957-3559d1578280"
+      "5dca2927-0f11-4f6b-8c19-20d4d9bbf333"
     ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261104",
+    "supplied_ids": [
+      "d9a1328b-187e-5bc0-b475-3ea10953a1d0"
+    ],
+    "supplied_at": "20261104",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
     "nearby_foreign_cities": null
   },
   {
-    "domain_name": "tyn_deg_barnekarusell_odderoya",
-    "name": "Tyn_deg BARNEKARUSELL Odderøya",
+    "domain_name": "klubbmesterskap_5k",
+    "name": "Klubbmesterskap 5k",
     "type": "road",
     "type_local": "Landevei",
     "race_dates": [
@@ -71110,57 +70966,68 @@
       ]
     ],
     "upcoming_dates": [],
-    "date_status": "confirmed",
-    "estimated_dates": false,
+    "date_status": "estimated",
+    "estimated_dates": true,
     "start_time": null,
-    "location": "Odderøya, Kristiansand, Norge",
-    "latitude": 58.1353403,
-    "longitude": 8.0041525,
-    "county": "Agder",
-    "nearest_city": "Kristiansand",
-    "nearby_cities": [
-      "Kristiansand"
+    "location": "Grønneset",
+    "latitude": 61.13531839999999,
+    "longitude": 12.5041279,
+    "county": "Innlandet",
+    "nearest_city": "Hamar",
+    "nearby_cities": [],
+    "distances": "[\"5\"]",
+    "distance_m": [
+      5000
     ],
-    "distances": "[]",
-    "distance_m": [],
-    "distance_keywords": [],
-    "distance_verbose": "Blandet distanse",
-    "organizer": "Tyn deg 5K",
-    "contact": null,
-    "website": "https://treni.no/lop.php",
-    "fb_link": "https://www.facebook.com/Tyndeg5K/",
-    "ig_link": "https://www.instagram.com/tyn_deg/",
+    "distance_keywords": [
+      "5 km"
+    ],
+    "distance_verbose": "5 km",
+    "organizer": null,
+    "contact": "post@tjome-lopeklubb.no",
+    "website": "https://tjome-lopeklubb.no/klubbrekorder-distanser/",
+    "fb_link": null,
+    "ig_link": null,
     "price_range": null,
     "price_tiers": [],
     "registration_close_date": null,
     "registration_url": null,
-    "race_info_url": "https://treni.no/arrangor/",
-    "presumed_organizer_email": "hei@treni.no",
-    "website_emails_found": [
-      "hei@treni.no"
-    ],
-    "description": "Tyn_deg BARNEKARUSELL Odderøya er et barnekarusell-løp som arrangeres på Odderøya i Kristiansand. Løpet fokuserer på å gi barn en trygg og morsom løpsopplevelse uten skader, med et tilpasset løpsmiljø. Det er en del av en karusell som oppmuntrer til løping og aktivitet blant barn i nærområdet. Arrangementet er godt egnet for unge løpere som ønsker å delta i et sosialt og inkluderende løp.",
-    "course_highlights": [
-      "Løpet går på Odderøya i Kristiansand",
-      "Barnekarusell med fokus på trygghet og skadeforebygging",
-      "Morsomt og inkluderende løpsmiljø for barn"
-    ],
-    "additional": "Løpet er en del av en karusell som legger vekt på løp uten skader og bygger treningsprogrammer basert på løperens faktiske aktivitet. Det oppfordres til å melde seg på løpet via tilknyttede tidtakersystemer, men direkte påmeldingslenke er ikke oppgitt.",
+    "race_info_url": null,
+    "presumed_organizer_email": null,
+    "website_emails_found": [],
+    "description": "Klubbmesterskap 5k er en løpekonkurranse som er en del av Tjøme Løpeklubb sine arrangementer. Løypene er kontrollmålt, og det konkurreres på distansen 5 km. Dette mesterskapet gir medlemmer muligheten til å konkurrere om klubbmesterskapstitler og sette klubbrekorder. Løpet finner sted fra vakre Grønneset ved Ånøya onsdag 25. juni med start fra kl 1800, og er designet for å utfordre både nybegynnere og erfarne løpere.",
+    "course_highlights": [],
+    "additional": null,
     "images": [],
     "supplied_images": false,
-    "organizer_submitted": false,
-    "supplied_fields": [],
+    "organizer_submitted": true,
+    "supplied_fields": [
+      "type",
+      "contact",
+      "distances",
+      "location",
+      "latitude",
+      "longitude",
+      "name",
+      "website",
+      "county",
+      "description",
+      "race_dates"
+    ],
     "is_series": false,
-    "max_description_relevance": 0.55,
+    "max_description_relevance": 0.0,
     "sources": [
-      "https://live.eqtiming.com/84483#dashboard"
+      "ranking_bridge",
+      "https://live.eqtiming.com/79419#dashboard"
     ],
     "consolidated_ids": [
-      "cdb3cede-ebc7-4ab5-a674-75848d4404ef"
+      "439eaf83-64ad-4293-b3d5-bed18aae40dc"
     ],
-    "supplied_ids": [],
-    "supplied_at": null,
-    "created_date": "20261104",
+    "supplied_ids": [
+      "cce92966-5dcb-5930-bb1b-cab257d8110d"
+    ],
+    "supplied_at": "20261104",
+    "created_date": "20261128",
     "editors_uid": [],
     "pipeline_log": [],
     "origin_country": null,
